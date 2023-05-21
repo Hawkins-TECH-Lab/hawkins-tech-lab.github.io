@@ -29,14 +29,7 @@ website:
     style: "docked"
     search: true
     collapse-level: 1
-    contents:
-      - section: "Home"
-        contents:
-          - href: index.qmd
-            text: Home
-          - href: about.qmd
-            text: About Us
-
+    contents: auto
 
 format:
   html:
