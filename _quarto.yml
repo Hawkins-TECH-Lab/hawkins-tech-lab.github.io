@@ -1,0 +1,47 @@
+project:
+  type: website
+
+website:
+  title: "Hawkinslab"
+  
+  page-footer:
+    right: "This page is built with [Quarto](https://quarto.org/)."
+    left: "&copy; Copyright 2023, Hawkinslab"
+
+
+  sidebar:
+    pinned: true
+    align: center
+
+    # tools:
+    #   - icon: github
+    #     href: https://github.com/
+    #     text: "GitHub organization"
+      # - icon: person-fill
+      #   text: "Sakai"
+      #   menu:
+      #     - text: Test
+            # url: 
+
+      
+
+    style: "docked"
+    search: true
+    collapse-level: 1
+    contents:
+      - section: "Home"
+        contents:
+          - href: index.qmd
+            text: Home
+          - href: about.qmd
+            text: About Us
+
+
+format:
+  html:
+    theme: zephyr
+    css: styles.css
+    toc: true
+
+
+
