@@ -9,6 +9,25 @@ website:
     right: "This page is built with [Quarto](https://quarto.org/)."
     left: "&copy; Copyright 2023, Hawkinslab"
 
+  navbar:
+      background: primary
+      search: true
+      left:
+        - text: "Home"
+          file: index.qmd
+        - text: "Research"
+        menu:
+          - text: "Projects"
+            href: research.qmd
+          - text: "Team"
+            href: research-team.qmd
+                - text: "Research"
+        - text: "Teaching"
+        menu:
+          - text: "CIVE461/861"
+            href: CIVE461.qmd
+          - text: "CIVE864"
+            href: CIVE864.qmd 
 
   sidebar:
     pinned: true
@@ -28,8 +47,99 @@ website:
 
     style: "docked"
     search: true
-    collapse-level: 1
-    contents: auto
+    id: research
+
+id: CIVE461
+    collapse-level: 2
+    contents:
+      - section: "Administration"
+        contents:
+          - href: course-overview.qmd
+            text: Overview
+          - href: course-syllabus.qmd
+            text: Syllabus
+          - href: course-support.qmd
+            text: Support
+          - 
+            text: Teaching team
+          - href: index.qmd
+            text: Schedule
+          - href: course-links.qmd
+            text: Useful links
+          - href: course-faq.qmd
+            text: FAQ
+      - section: "Computing"
+        contents:
+          - href: computing-access.qmd
+            text: Access
+          - href: computing-troubleshooting.qmd
+            text: Troubleshooting
+      - section: "Project"
+        contents:
+          - href: project-description.qmd
+            text: Description
+          - href: project-tips-resources.qmd
+            text: Tips + resources
+      - section: "Weekly materials"
+        contents:
+          - href: weeks/week-1.qmd
+            text: "Week 1"
+          - href: weeks/week-2.qmd
+            text: "Week 2"
+      - section: "Supplemental notes"
+        contents:
+          - href: supplemental/slr-derivations.qmd
+            text: SLR derivations
+          - href: supplemental/model-diagnostics-matrix.qmd
+            text: Model diagnostics
+          - href: supplemental/mlr-matrix.qmd
+            text: MLR matrix notation
+          - href: supplemental/log-transformations.qmd
+            text: Log transformations
+          - href: supplemental/model-selection-criteria.qmd
+            text: Model selection criteria
+    id: CIVE864
+    collapse-level: 2
+    contents:
+      - section: "Administration"
+        contents:
+          - href: course-overview.qmd
+            text: Overview
+          - href: course-syllabus.qmd
+            text: Syllabus
+          - href: course-support.qmd
+            text: Support
+          - 
+            text: Teaching team
+          - href: index.qmd
+            text: Schedule
+          - href: course-links.qmd
+            text: Useful links
+          - href: course-faq.qmd
+            text: FAQ
+      - section: "Computing"
+        contents:
+          - href: computing-access.qmd
+            text: Access
+          - href: computing-troubleshooting.qmd
+            text: Troubleshooting
+      - section: "Project"
+        contents:
+          - href: project-description.qmd
+            text: Description
+          - href: project-tips-resources.qmd
+            text: Tips + resources
+      - section: "Weekly materials"
+        contents:
+          - href: weeks/week-1.qmd
+            text: "Week 1"
+          - href: weeks/week-2.qmd
+            text: "Week 2"
+          - href: weeks/week-3.qmd
+      - section: "Supplemental notes"
+        contents:
+          - href: supplemental/slr-derivations.qmd
+            text: SLR derivations
 
 format:
   html:
