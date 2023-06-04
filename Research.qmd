@@ -1,9 +1,9 @@
 ---
-pagetitle: "Home"
+pagetitle: "Research"
 page-layout: custom
 section-divs: false
-toc: false
 css: assets/css/index.css
+toc: false
 ---
 
 ::: {.hero-banner}
@@ -12,16 +12,15 @@ css: assets/css/index.css
 
 ::: {.hero-text}
 
-# Welcome to the Hawkins Research Group
+# Research
 
-### Department of Civil & Environmental Engineering
-### University of Nebraska Lincoln
 
+## Research Topics
 Our team examines the relationship between infrastructure systems, with a particular focus on transportation and land use. We use a variety of techniques including surveys, econometrics, simulation, and network science to assess the sustainability of infrastructure systems considering technical, economic, and social perspectives. The interdisciplinary nature of our work means we often work with engineers, economists, and political scientists - and welcome collaboration opportunities from any field of study with an interest in sustainable infrastructure systems.
 
 ::: {.hero-buttons}
-[Research](Research.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" #btn-hero-primary}
-[Teaching](Teaching.qmd){#btn-guide .btn-action .btn .btn-info .btn-lg role="button" #btn-hero-secondary}
+[Project](Research/projects.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" #btn-hero-primary}
+[Team](Research/team/research-team.qmd){#btn-guide .btn-action .btn .btn-info .btn-lg role="button" #btn-hero-secondary}
 
 
 ::: 
@@ -29,4 +28,3 @@ Our team examines the relationship between infrastructure systems, with a partic
 
 ::: 
 :::
-
