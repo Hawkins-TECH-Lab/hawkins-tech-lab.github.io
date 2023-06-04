@@ -25,6 +25,18 @@ website:
             href: teaching/CIVE864.qmd 
 
   sidebar:
+    - id: default
+      title: "Default"
+
+      style: "docked"
+      search: true
+      align: center
+      contents:
+        - section: "Home"
+          contents:
+            - href: index.qmd
+              text: Home
+
     - id: CIVE461
       title: "CIVE461"
 
