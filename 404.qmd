@@ -1,3 +1,8 @@
 ---
 title: '404'
+page-layout: custom
+section-divs: false
+toc: false
+css: assets/css/index.css
 ---
+

@@ -16,6 +16,8 @@ website:
             href:  research/projects.qmd
           - text: "Team"
             href: research/team/research-team.qmd
+          - text: "Publications"
+            href: research/publication/publication.qmd
       - text: "Teaching"
         menu:
           - text: "CIVE461/861"
@@ -115,7 +117,17 @@ website:
           contents:
             - href: supplemental/slr-derivations.qmd
               text: SLR derivations
-  
+
+    - id: Publication
+      style: "docked"
+      search: true
+      align: center
+      contents:
+        - section: "EV"
+          contents:
+            - href: research/publication/ev.qmd
+              text: EV Adoption Graphs
+       
 
   
 

@@ -13,3 +13,5 @@ staging/
 *.key
 *speaker.html
 .venv/
+data
+.DS_Store

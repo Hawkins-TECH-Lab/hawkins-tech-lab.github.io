@@ -1,0 +1,15 @@
+---
+title: "EV Adoption"
+sidebar: Publication
+section-divs: true
+toc: false
+echo: false
+# css: ../../assets/css/index.css
+---
+
+```{python}
+import ev_adopt_graphs.graphs as gh
+
+gh.get_next_veh_by_hh_size_graph().show()
+
+```
