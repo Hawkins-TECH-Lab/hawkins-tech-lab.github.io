@@ -5,7 +5,6 @@ project:
 website:
   title: "Hawkinslab"
   navbar:
-      # home, research, and teaching
     left:
       - href: index.qmd
         text: Home
@@ -26,97 +25,97 @@ website:
             href: teaching/CIVE864.qmd 
 
   sidebar:
-    # - id: CIVE461
-    #   title: "CIVE461"
+    - id: CIVE461
+      title: "CIVE461"
 
-    #   style: "docked"
-    #   search: true
-    #   align: center
-    #   contents:
-    #     - section: "Administration"
-    #       contents:
-    #         - href: course-overview.qmd
-    #           text: Overview
-    #         - href: course-syllabus.qmd
-    #           text: Syllabus
-    #         - href: course-support.qmd
-    #           text: Support
-    #         - href: team.qmd
-    #           text: "Teaching team"
-    #         - href: index.qmd
-    #           text: Schedule
-    #         - href: course-links.qmd
-    #           text: Useful links
-    #         - href: course-faq.qmd
-    #           text: FAQ
+      style: "docked"
+      search: true
+      align: center
+      contents:
+        - section: "Administration"
+          contents:
+            - href: course-overview.qmd
+              text: Overview
+            - href: course-syllabus.qmd
+              text: Syllabus
+            - href: course-support.qmd
+              text: Support
+            - href: team.qmd
+              text: "Teaching team"
+            - href: index.qmd
+              text: Schedule
+            - href: course-links.qmd
+              text: Useful links
+            - href: course-faq.qmd
+              text: FAQ
 
-    #     - section: "Computing Access"
-    #       contents:
-    #         - href: project-description.qmd
-    #           text: Description
-    #         - href: project-tips-resources.qmd
-    #           text: Tips + resources
+        - section: "Computing Access"
+          contents:
+            - href: project-description.qmd
+              text: Description
+            - href: project-tips-resources.qmd
+              text: Tips + resources
 
-    #     - section: "Weekly Materials"
-    #       contents:
-    #         - href: weeks/week-1.qmd
-    #           text: "Week 1"
-    #         - href: weeks/week-2.qmd
-    #           text: "Week 2"
+        - section: "Weekly Materials"
+          contents:
+            - href: weeks/week-1.qmd
+              text: "Week 1"
+            - href: weeks/week-2.qmd
+              text: "Week 2"
 
-    #     - section: "Supplemental Notes"
-    #       contents:
-    #         - href: supplemental/slr-derivations.qmd
-    #           text: SLR derivations
-    #         - href: supplemental/model-diagnostics-matrix.qmd
-    #           text: Model diagnostics
-    #         - href: supplemental/mlr-matrix.qmd
-    #           text: MLR matrix notation
-    #         - href: supplemental/log-transformations.qmd
-    #           text: Log transformations
-    #         - href: supplemental/model-selection-criteria.qmd
-    #           text: Model selection criteria
+        - section: "Supplemental Notes"
+          contents:
+            - href: supplemental/slr-derivations.qmd
+              text: SLR derivations
+            - href: supplemental/model-diagnostics-matrix.qmd
+              text: Model diagnostics
+            - href: supplemental/mlr-matrix.qmd
+              text: MLR matrix notation
+            - href: supplemental/log-transformations.qmd
+              text: Log transformations
+            - href: supplemental/model-selection-criteria.qmd
+              text: Model selection criteria
 
-    # - id: CIVE864
-    #   style: "docked"
-    #   search: true
-    #   align: center
-    #   contents:
-    #     - section: "Administration"
-    #       contents:
-    #         - href: course-overview.qmd
-    #           text: Overview
-    #         - href: course-syllabus.qmd
-    #           text: Syllabus
-    #         - href: course-support.qmd
-    #           text: Support
-    #         - href: team.qmd
-    #           text: "Teaching team"
-    #         - href: index.qmd
-    #           text: Schedule
-    #         - href: course-links.qmd
-    #           text: Useful links
-    #         - href: course-faq.qmd
-    #           text: FAQ
+    - id: CIVE864
+      style: "docked"
+      search: true
+      align: center
+      contents:
+        - section: "Administration"
+          contents:
+            - href: course-overview.qmd
+              text: Overview
+            - href: course-syllabus.qmd
+              text: Syllabus
+            - href: course-support.qmd
+              text: Support
+            - href: team.qmd
+              text: "Teaching team"
+            - href: index.qmd
+              text: Schedule
+            - href: course-links.qmd
+              text: Useful links
+            - href: course-faq.qmd
+              text: FAQ
 
-    #     - section: "Computing Access"
-    #       contents:
-    #         - href: project-description.qmd
-    #           text: Description
-    #         - href: project-tips-resources.qmd
-    #           text: Tips + resources
+        - section: "Computing Access"
+          contents:
+            - href: project-description.qmd
+              text: Description
+            - href: project-tips-resources.qmd
+              text: Tips + resources
 
-    #     - section: "Weekly Materials"
-    #       contents:
-    #         - href: weeks/week-1.qmd
-    #           text: "Week 1"
-    #         - href: weeks/week-2.qmd
-    #           text: "Week 2"
+        - section: "Weekly Materials"
+          contents:
+            - href: weeks/week-1.qmd
+              text: "Week 1"
+            - href: weeks/week-2.qmd
+              text: "Week 2"
 
-    #     - section: "Supplemental Notes"
-    #       contents:
-    #         - href: supplemental/slr-derivations.qmd
-    #           text: SLR derivations
+        - section: "Supplemental Notes"
+          contents:
+            - href: supplemental/slr-derivations.qmd
+              text: SLR derivations
 
     - id: Publication
       style: "docked"

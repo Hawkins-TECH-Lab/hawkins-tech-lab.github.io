@@ -12,5 +12,12 @@
     "title": "About",
     "section": "",
     "text": "About this site\n\nimport matplotlib.pyplot as plt\nplt.plot([1,2,3,4])\nplt.show()"
+  },
+  {
+    "objectID": "research/publication/ev.html",
+    "href": "research/publication/ev.html",
+    "title": "EV Adoption",
+    "section": "",
+    "text": "4"
   }
 ]
