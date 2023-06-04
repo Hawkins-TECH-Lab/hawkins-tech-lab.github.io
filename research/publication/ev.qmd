@@ -16,13 +16,12 @@ fig = gh.get_fig_next_veh_by_hh_size_graph()
 fig.update_layout(title_text=f"Next Vehicle Choice By Household Size", font_size=10)
 
 fig.show()
-
 ```
 
 ```{python}
 
 fig = gh.get_fig_off_freq_by_occ()
-
+# fig.update_layout(title_text=f"Off-road driving frequency by expected next vehicle type", font_size=10)
 
 fig.show()
 ```
@@ -43,7 +42,6 @@ fig.show()
 
 fig = gh.get_fig_time_fuel_type()
 
-
 fig.update_layout(title_text=f"Next vehicle type by next vehicle purchase time", font_size=10)
 
 fig.show()
@@ -54,17 +52,21 @@ fig.show()
 
 fig = gh.get_fig_parking()
 
-
 fig.update_layout(title_text=f"Charging Locations", font_size=10)
 
 fig.show()
+
 
 ```
 
 
 ```{python}
 
-gh.get_fig_sankey_sp_next_veh().show()
+fig = gh.get_fig_sankey_curr_sp_veh()
+fig.update_layout(title_text=f"Sankey Diagram: curr -> SP", font_size=10)
+
+
+fig.show()
 
 ```
 

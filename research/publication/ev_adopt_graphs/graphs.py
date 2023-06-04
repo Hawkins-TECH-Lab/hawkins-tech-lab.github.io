@@ -52,6 +52,43 @@ ctydf = gpd.read_file("data/county_shp/county_L48_only.shp")
 survey_states = ["19","20","27","29","31","38","46"]
 ctydf = ctydf.loc[ctydf.STATEFP.isin(survey_states)]
 
+
+unl_colors = [
+    '#001226',  # Midnight Blue
+    '#249ab5',  # Light Blue
+    '#bccb2a',  # Lime Green
+    '#f58a1f',  # Orange
+    '#005d84',  # Dark Cerulean
+    '#ffd74f',  # Mustard
+    '#a5228d',  # Electric Purple
+    '#ff2851',  # Coral Red
+    '#008080',  # Teal
+    '#f9a602',  # Goldenrod
+    '#4c516d',  # Charcoal
+    '#eb6101',  # Bright Orange
+    '#5dbb63',  # Moss Green
+    '#6930c3',  # Deep Purple
+    '#e83f6f',  # Razzmatazz
+    '#2e7d32',  # Medium Green
+    '#ffc400',  # Selective Yellow
+    '#1a237e',  # Indigo
+    '#c51162',  # Fuchsia Pink
+    '#006064',  # Dark Cyan
+    '#ff4081',  # Pink Flamingo
+    '#546e7a',  # Slate Gray
+    '#ffa000',  # Amber
+    '#1b5e20',  # Forest Green
+    '#4a148c',  # Purple
+    '#00acc1',  # Robin Egg Blue
+    '#e65100',  # Persimmon
+    '#7e57c2',  # Medium Purple
+    '#3e2723',  # Bistre
+    '#ef6c00',  # Pumpkin
+    '#00695c',  # Dark Green
+]
+
+
+
 hh_size_dict = {
     16.0: "1",
     17.0: "2",
@@ -68,12 +105,7 @@ next_veh_dict = {
     4: "Other vehicles"
 }
 
-color_map_veh_choice = {
-    1: 'black',   # Dark Blue
-    2: '#ff7f0e',   # Dark Orange
-    3: '#2ca02c',   # Dark Green
-    4: '#d62728',   # Dark Red
-}
+color_map_next_veh_choice = ['#bccb2a', '#f58a1f', '#005d84', '#ffd74f']
 
 
 occupation_dict = {
@@ -132,7 +164,8 @@ def get_fig_next_veh_by_hh_size_graph():
     # convert result next_veh_type_1 to string
     result['next_veh_type_1'] = result['next_veh_type_1'].astype(str)
 
-    fig = px.bar(result, x="hh_size", y="percentage", color="next_veh_type_1", barmode="stack")
+    fig = px.bar(result, x="hh_size", y="percentage", color="next_veh_type_1", barmode="stack", color_discrete_sequence=unl_colors)
+
     fig.update_layout(yaxis=dict(tickformat=".0%"))
 
     fig.update_layout(
@@ -171,7 +204,7 @@ def get_fig_off_freq_by_occ():
 
 
     # plot it in stacked bar chart
-    fig = px.bar(result, x="occupation_legend", y="percentage", color="off_road_freq", barmode="stack")
+    fig = px.bar(result, x="occupation_legend", y="percentage", color="off_road_freq", barmode="stack", color_discrete_sequence=unl_colors)
 
     fig.update_layout(
         xaxis=dict(
@@ -230,7 +263,7 @@ def get_fig_off_road_by_next_veh():
     # result['off_road_freq'] = result['off_road_freq'].map(color_map_off_road_freq)
 
     # plot it in stacked bar chart
-    fig = px.bar(result, x="next_veh_type_1", y="percentage", color="off_road_freq", barmode="stack")
+    fig = px.bar(result, x="next_veh_type_1", y="percentage", color="off_road_freq", barmode="stack", color_discrete_sequence=unl_colors)
 
     # change the percentage to 2 decimal places
     fig.for_each_trace(lambda t: t.update(name=t.name.replace("\n", "<br>")))
@@ -277,7 +310,7 @@ def get_fig_time_fuel_type():
     result['next_veh_purchase_time'] = result['next_veh_purchase_time'].astype(str)
 
     #show points on line chart
-    fig = px.line(result, x="next_veh_purchase_time", y="percentage", color="next_veh_type", markers=True)
+    fig = px.line(result, x="next_veh_purchase_time", y="percentage", color="next_veh_type", markers=True, color_discrete_sequence=unl_colors)
 
     fig.update_layout(
     xaxis=dict(
@@ -311,7 +344,7 @@ def get_fig_parking():
     result.columns = ['charging_loc', 'count']
 
     # make a pie chart
-    fig = px.pie(result, values='count', names='charging_loc', title='Charging location')
+    fig = px.pie(result, values='count', names='charging_loc', color_discrete_sequence=unl_colors)
 
     fig.update_layout(
     xaxis=dict(
@@ -336,66 +369,118 @@ def prepare_df_sankey(df, source, target):
 
     return df, label_list
 
+def apply_legend_curr_sp1(df):
+
+    veh_pt_dict = {1: "ICE", 2: "BEV", 3: "HEV", 4: "PHEV"}
+    veh_type_dict = {1: "Small Car", 2: "Large Car ", 3: "Pickup Truck", 4: "Other"}
+    sp1_dict = {1: "Small ICE", 2: "Small BEV", 3: "Large ICE", 4: "Large BEV", 5:"Pickup truck ICE", 6: "Pickup truck BEV"}
+
+    next_dict = {}
+    for i in sp1_dict.keys():
+            next_dict[i] = f"{sp1_dict[i]}"
+
+    curr_dict = {}
+    for i in veh_pt_dict.keys():
+        for j in veh_type_dict.keys():
+            # print(f"C_{i}_C_{j} = {veh_pt_dict[i]}__{veh_type_dict[j]}")
+            curr_dict[f"C_{i}_C_{j}"] = f"{veh_pt_dict[i]} {veh_type_dict[j]}"
+
+    df.loc[:, 'source_label'] = df['source'].map(curr_dict)
+    df.loc[:, 'target_label'] = df['target'].map(next_dict)
+
+    return df
 
 
-def get_fig_sankey_sp_next_veh():
+def get_fig_sankey_curr_sp_veh():
     df_for_sankey = geo_edf[['veh_pt_1', 'veh_type_1', 'sp1', 'comb_weight']].copy()
-    df_for_sankey['sp1'] = df_for_sankey['sp1'].map({1: "Small ICE", 2: "Small BEV", 3: "Large ICE", 4: "Large BEV", 5:"Pickup truck ICE", 6: "Pickup truck BEV"})
-    df_for_sankey['veh_pt_1'] = df_for_sankey['veh_pt_1'].map({1: "ICE", 2: "BEV", 3: "HEV", 4: "PHEV"})
-    df_for_sankey['veh_type_1'] = df_for_sankey['veh_type_1'].map({1: "Small Car", 2: "Large Car ", 3: "Pickup Truck", 4: "Other"})
-
 
     # filter anything that is not nan
     df_for_sankey.fillna(-1, inplace=True)
     df_for_sankey = df_for_sankey[(df_for_sankey['sp1'] != -1) & (df_for_sankey['veh_type_1'] != -1) & (df_for_sankey['veh_pt_1'] != -1)].copy()
 
 
-    #convert them to int
-    # df_for_sankey[['veh_type_1', 'veh_pt_1', 'sp1']] = df_for_sankey[['veh_type_1', 'veh_pt_1', 'sp1']].astype(int)
+    df_for_sankey[['veh_pt_1', 'veh_type_1', 'sp1',]] = df_for_sankey[['veh_pt_1', 'veh_type_1', 'sp1',]].copy().astype(int)
 
     # create a new column that is a combination of veh_pt_1 and veh_type_1
-    df_for_sankey['curr'] = df_for_sankey['veh_pt_1'].astype(str) + '_' + df_for_sankey['veh_type_1'].astype(str)
-    df_for_sankey.sort_values(by=['curr', 'sp1'], inplace=True)
-    df_for_sankey
+    df_for_sankey['source'] = f"C_{df_for_sankey['veh_pt_1']}_C_{df_for_sankey['veh_type_1']}"
 
 
-    df_for_sankey = df_for_sankey.groupby(['curr', 'sp1']).sum('comb_weight').reset_index()
-    df_for_sankey.sort_values(['curr', 'sp1'], inplace=True)
-    df_for_sankey
-
-    # Get unique values from 'veh_pt_1' and 'veh_type_1' columns
-    veh_pt_values = np.sort(np.array(geo_edf['veh_pt_1'].unique()))
-    veh_type_values = np.sort(np.array(geo_edf['veh_type_1'].unique()))
-
-    # Create the mapping dictionary using dictionary comprehension
-    mapping_dict = {f'{i+1}_{j+1}': num for num, (i, j) in enumerate(np.ndindex(len(veh_pt_values), len(veh_type_values)), start=1)}
-
-    df_for_sankey['curr_mapping'] = df_for_sankey['curr'].map(mapping_dict)
-    df_for_sankey
-
-    df, label_list = prepare_df_sankey(df_for_sankey, 'curr', 'sp1')
+    df_for_sankey['veh_type_1'] = "C_"+df_for_sankey['veh_type_1'].copy().astype(str) 
+    df_for_sankey['veh_pt_1'] = "C_"+df_for_sankey['veh_pt_1'].copy().astype(str) 
 
 
-    label_list = df_for_sankey['curr'].unique().tolist() + df_for_sankey['sp1'].unique().tolist()
+    df_for_sankey['source'] = df_for_sankey['veh_pt_1'] + "_" + df_for_sankey['veh_type_1']
+    df_for_sankey['target'] = df_for_sankey['sp1'].copy()
+
+    apply_legend_curr_sp1(df_for_sankey)
+
+    dfx = df_for_sankey.groupby(['source', 'target']).sum('comb_weight').reset_index()
+
+    df, label_list = prepare_df_sankey(dfx, 'source', 'target')
+
+    diff = 10
+
+    fig = go.Figure()
+
+    for i in range(0, int(df['comb_weight'].max()) + diff, diff):
+        df_x = df[df['comb_weight'] > i].copy()
+        apply_legend_curr_sp1(df_x)
+        df, label_list = prepare_df_sankey(df_x, 'source', 'target')
+
+        # values = df['comb_weight'].to_list()
+
+        label_list = df['source_label'].unique().tolist() + df['target_label'].unique().tolist()
 
 
-    fig = go.Figure(data=[go.Sankey(
-    node=dict(
-        pad=15,
-        thickness=20,
-        line=dict(color="black", width=0.5),
-        label=label_list,
-        # color="blue",
-        x=[0, 0, 0, 1, 1, 1, 1]  # Adjust x-axis position for each node
-    ),
-    link=dict(
-        source=df['source_index'].to_list(),
-        target=df['target_index'].to_list(),
-        value=df['comb_weight'].to_list()
+        fig.add_trace(
+            go.Sankey(
+                node=dict(
+                    pad=15,
+                    thickness=20,
+                    line=dict(color="black", width=0.5),
+                    label=label_list,
+                    color = unl_colors,
+                    x=[0, 0, 0, 1, 1, 1, 1]  # Adjust x-axis position for each node
+                ),
+                link=dict(
+                    source=df['source_index'].to_list(),
+                    target=df['target_index'].to_list(),
+                    value=df['comb_weight'].to_list(),
+                ),
+                visible=False  # Set the visibility of the trace to False initially
+            )
+        )
+
+
+
+    # Create and add slider
+    steps = []
+    for i in range(len(fig.data)-1):
+        step = dict(
+            method="update",
+            args=[{"visible": [False] * len(fig.data)},
+                #   {"title": f"Slider switched to comb weight > {str(i * diff)}"}],  # layout attribute
+            ],
+            label=f" "  # Set custom label for each step
+        )
+        step["args"][0]["visible"][i] = True  # Toggle i'th trace to "visible"
+        steps.append(step)
+
+    n = 2 # slider default value
+    sliders = [dict(
+    active=n,  # Set the default step index
+    currentvalue={"prefix": ""},
+    # pad={"t": 50},
+    steps=steps
+    )]
+
+    fig.update_layout(
+    sliders=sliders
     )
-    )])
 
-    fig.update_layout(title_text="Basic Sankey Diagram", font_size=10)
+    fig.data[n].visible = True  # Toggle first trace to "visible"
+    # fig.update_layout(title_text=f"Sankey Diagram: comb weight > {n*diff}", font_size=10)
+
 
     return fig
 
@@ -472,12 +557,13 @@ def get_fig_sankey_curr_next():
                     thickness=20,
                     line=dict(color="black", width=0.5),
                     label=label_list,
+                    color = unl_colors,
                     x=[0, 0, 0, 1, 1, 1, 1]  # Adjust x-axis position for each node
                 ),
                 link=dict(
                     source=df['source_index'].to_list(),
                     target=df['target_index'].to_list(),
-                    value=df['comb_weight'].to_list()
+                    value=df['comb_weight'].to_list(),
                 ),
                 visible=False  # Set the visibility of the trace to False initially
             )
