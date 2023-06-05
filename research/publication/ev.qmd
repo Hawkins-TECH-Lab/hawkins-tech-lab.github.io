@@ -1,5 +1,5 @@
 ---
-title: "EV Adoption"
+title: "EV Adoption in the US Midwest"
 sidebar: Publication
 section-divs: true
 toc: false
@@ -10,10 +10,25 @@ echo: false
 import ev_adopt_graphs.graphs as gh
 ```
 
+# Introduction
+
+Transportation is the largest greenhouse gas (GHG) emissions source in the United States (28 percent). As such, reducing emissions from this sector is an important step towards addressing climate change impacts. One strategy to address this impact is the electrification of personal vehicles. In this study, we focus on electric vehicle adoption factors. Past studies on this topic have framed the adoption around small vehicles. However, we know that most Americans drive larger vehicles (e.g., SUVs, minivans, and pickup trucks). 
+
+# Survey Design
+```{python}
+#| label: fig-polar
+#| fig-cap: "A line plot on a polar axis"
+fig = gh.get_fig_survey_locations()
+# fig.update_layout(title_text=f"Next Vehicle Choice By Household Size", font_size=10)
+
+fig.show()
+```
+
+
 ```{python}
 
 fig = gh.get_fig_next_veh_by_hh_size_graph()
-fig.update_layout(title_text=f"Next Vehicle Choice By Household Size", font_size=10)
+# fig.update_layout(title_text=f"Next Vehicle Choice By Household Size", font_size=10)
 
 fig.show()
 ```
@@ -31,7 +46,7 @@ fig.show()
 fig = gh.get_fig_off_road_by_next_veh()
 
 
-fig.update_layout(title_text=f"Off-road driving frequency by expected next vehicle type", font_size=10)
+# fig.update_layout(title_text=f"Off-road driving frequency by expected next vehicle type", font_size=10)
 
 fig.show()
 
@@ -42,7 +57,7 @@ fig.show()
 
 fig = gh.get_fig_time_fuel_type()
 
-fig.update_layout(title_text=f"Next vehicle type by next vehicle purchase time", font_size=10)
+# fig.update_layout(title_text=f"Next vehicle type by next vehicle purchase time", font_size=10)
 
 fig.show()
 
@@ -52,7 +67,7 @@ fig.show()
 
 fig = gh.get_fig_parking()
 
-fig.update_layout(title_text=f"Charging Locations", font_size=10)
+# fig.update_layout(title_text=f"Charging Locations", font_size=10)
 
 fig.show()
 
@@ -63,8 +78,7 @@ fig.show()
 ```{python}
 
 fig = gh.get_fig_sankey_curr_sp_veh()
-fig.update_layout(title_text=f"Sankey Diagram: curr -> SP", font_size=10)
-
+# fig.update_layout(title_text=f"Sankey Diagram: curr -> SP", font_size=10)
 
 fig.show()
 
@@ -74,7 +88,7 @@ fig.show()
 ```{python}
 
 fig = gh.get_fig_sankey_curr_next()
-fig.update_layout(title_text=f"Sankey Diagram: Curr -> Next", font_size=10)
+# fig.update_layout(title_text=f"Sankey Diagram: Curr -> Next", font_size=10)
 
 
 fig.show()

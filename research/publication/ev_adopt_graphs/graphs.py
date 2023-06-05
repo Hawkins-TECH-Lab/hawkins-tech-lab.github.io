@@ -23,13 +23,11 @@ def filter_edf(edf):
         edf = edf.merge(df, how="left", left_on=["veh_type_{0}".format(i),"veh_pt_{0}".format(i)], right_on=["veh_type","veh_pt"], suffixes=[None,"_{0}".format(i)])
     edf.rename(columns={"rp_code": "rp_code_1"}, inplace=True)
 
-    edf.veh_type_1.head(25)
     # Check condition that min SP response = max SP response - i.e., that all responses are the same
-    colmin = edf.loc[:,edf.filter(regex="^sp.*adj$").columns].min(axis=1)
-    colmax = edf.loc[:,edf.filter(regex="^sp.*adj$").columns].max(axis=1)
+    colmin = edf.loc[:,edf.filter(regex="^sp\d+$").columns].min(axis=1)
+    colmax = edf.loc[:,edf.filter(regex="^sp\d+$").columns].max(axis=1)
     cond1 = (colmin==colmax)
     # Check that none of the current HH vehicles are the same as the min SP choice, conditional on only one SP choice
-
 
     cond2 = edf.apply(check, axis=1)
 
@@ -46,15 +44,30 @@ geo_edf = gpd.GeoDataFrame(filt_edf,
     geometry = gpd.points_from_xy(filt_edf['longitude'], filt_edf['latitude']), 
     crs = 'EPSG:3857')
 
+geo_edf["x"] = geo_edf.geometry.x
+geo_edf["y"] = geo_edf.geometry.y
+
 ctydf = gpd.read_file("data/county_shp/county_L48_only.shp")
-# ctydf = ctydf.to_crs(3857)
 # filter states to include only survey region
 survey_states = ["19","20","27","29","31","38","46"]
 ctydf = ctydf.loc[ctydf.STATEFP.isin(survey_states)]
+stdf = pd.read_csv("data/us-state-fips.csv")
+stdict = dict(stdf.values)
+ctydf["state_name"] = ctydf.STATEFP.astype(int).map(stdict)
+ctydf["county_state"] = ctydf.NAME+", "+ctydf.state_name
+
+sp_dict = {1: "Small ICE", 2: "Small BEV", 3: "Large ICE", 4: "Large BEV", 5:"Pickup truck ICE", 6: "Pickup truck BEV"}
+geo_edf["Choice 1"] = geo_edf["sp1"].map(sp_dict)
+geo_edf["Choice 2"] = geo_edf["sp2"].map(sp_dict)
+geo_edf["Choice 3"] = geo_edf["sp3"].map(sp_dict)
+geo_edf["Choice 4"] = geo_edf["sp4"].map(sp_dict)
+geo_edf["Choice 5"] = geo_edf["sp5"].map(sp_dict)
+geo_edf["Choice 6"] = geo_edf["sp6"].map(sp_dict)
 
 
 unl_colors = [
-    '#001226',  # Midnight Blue
+    # '#001226',  # Midnight Blue
+    '#d00000',  # Scarlet
     '#249ab5',  # Light Blue
     '#bccb2a',  # Lime Green
     '#f58a1f',  # Orange
@@ -146,6 +159,45 @@ parking_dict = {
     "bev_dwell_7": "No dedicated parking facility"
 }
 
+def get_fig_survey_locations():
+    df_survey_locations = geo_edf.copy()
+    df_cty = ctydf.copy()
+    df_cty['state_name'] = pd.Categorical(df_cty['state_name'], ordered=True)
+    df_cty.sort_values("state_name", inplace=True)
+    fig1 = px.scatter_geo(df_survey_locations,
+                        color_discrete_sequence=['black'],
+                        lon=geo_edf["x"],
+                        lat=geo_edf["y"],
+                        hover_data={"Choice 1":True,
+                                    "Choice 2":True,
+                                    "Choice 3":True,
+                                    "Choice 4":True,
+                                    "Choice 5":True,
+                                    "Choice 6":True,
+                                    "x":False, 
+                                    "y":False,
+                                        },
+                        hover_name="CUID")
+    
+    fig1.update_traces(marker=dict(size=8,
+                              line=dict(width=1,
+                                        color='white')),
+                  selector=dict(mode='markers'))
+    
+    fig2 = px.choropleth(df_cty,
+                        locations=df_cty.index,
+                        color="state_name",
+                        color_discrete_sequence=unl_colors,
+                        geojson=df_cty.geometry,
+                        hover_data={"state_name":False},
+                        hover_name="county_state").add_traces(fig1.data)
+
+    fig2.update_geos(fitbounds="locations")
+    fig2.update_layout(
+            geo_scope='usa',
+            legend_title_text='State'
+        )
+    return fig2
 
 def get_fig_next_veh_by_hh_size_graph():
     """

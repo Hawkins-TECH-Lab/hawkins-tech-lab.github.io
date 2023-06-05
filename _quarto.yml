@@ -20,9 +20,9 @@ website:
       - text: "Teaching"
         menu:
           - text: "CIVE461/861"
-            href: teaching/CIVE461.qmd
+            href: teaching/CIVE461/CIVE461.qmd
           - text: "CIVE864"
-            href: teaching/CIVE864.qmd 
+            href: teaching/CIVE864/CIVE864.qmd 
 
   sidebar:
     - id: default
@@ -38,95 +38,85 @@ website:
               text: Home
 
     - id: CIVE461
-      title: "CIVE461"
-
+      title: "CIVE 461"
+      background: "#c7c8ca"
+      logo: "assets/images/cive461/logo.png"
       style: "docked"
       search: true
       align: center
       contents:
         - section: "Administration"
           contents:
-            - href: course-overview.qmd
+            - href: teaching/CIVE461/course-overview.qmd
               text: Overview
-            - href: course-syllabus.qmd
+            - href: teaching/CIVE461/course-syllabus.qmd
               text: Syllabus
-            - href: course-support.qmd
+            - href: teaching/CIVE461/course-support.qmd
               text: Support
-            - href: team.qmd
+            - href: teaching/CIVE461/team.qmd
               text: "Teaching team"
-            - href: index.qmd
+            - href: teaching/CIVE461/index.qmd
               text: Schedule
-            - href: course-links.qmd
+            - href: teaching/CIVE461/course-links.qmd
               text: Useful links
-            - href: course-faq.qmd
+            - href: teaching/CIVE461/course-faq.qmd
               text: FAQ
-
-        - section: "Computing Access"
-          contents:
-            - href: project-description.qmd
-              text: Description
-            - href: project-tips-resources.qmd
-              text: Tips + resources
 
         - section: "Weekly Materials"
           contents:
-            - href: weeks/week-1.qmd
+            - href: teaching/CIVE461/weeks/week-1.qmd
               text: "Week 1"
-            - href: weeks/week-2.qmd
+            - href: teaching/CIVE461/weeks/week-2.qmd
               text: "Week 2"
 
         - section: "Supplemental Notes"
           contents:
-            - href: supplemental/slr-derivations.qmd
+            - href: teaching/CIVE461/supplemental/slr-derivations.qmd
               text: SLR derivations
-            - href: supplemental/model-diagnostics-matrix.qmd
+            - href: teaching/CIVE461/supplemental/model-diagnostics-matrix.qmd
               text: Model diagnostics
-            - href: supplemental/mlr-matrix.qmd
+            - href: teaching/CIVE461/supplemental/mlr-matrix.qmd
               text: MLR matrix notation
-            - href: supplemental/log-transformations.qmd
+            - href: teaching/CIVE461/supplemental/log-transformations.qmd
               text: Log transformations
-            - href: supplemental/model-selection-criteria.qmd
+            - href: teaching/CIVE461/supplemental/model-selection-criteria.qmd
               text: Model selection criteria
 
     - id: CIVE864
+      title: "CIVE 864"
+      background: "#c7c8ca"
+      logo: "assets/images/cive864/logo.png"
       style: "docked"
       search: true
       align: center
       contents:
         - section: "Administration"
           contents:
-            - href: course-overview.qmd
+            - href: teaching/CIVE864/course-overview.qmd
               text: Overview
-            - href: course-syllabus.qmd
+            - href: teaching/CIVE864/course-syllabus.qmd
               text: Syllabus
-            - href: course-support.qmd
+            - href: teaching/CIVE864/course-support.qmd
               text: Support
-            - href: team.qmd
+            - href: teaching/CIVE864/team.qmd
               text: "Teaching team"
-            - href: index.qmd
+            - href: teaching/CIVE864/index.qmd
               text: Schedule
-            - href: course-links.qmd
+            - href: teaching/CIVE864/course-links.qmd
               text: Useful links
-            - href: course-faq.qmd
+            - href: teaching/CIVE864/course-faq.qmd
               text: FAQ
-
-        - section: "Computing Access"
-          contents:
-            - href: project-description.qmd
-              text: Description
-            - href: project-tips-resources.qmd
-              text: Tips + resources
 
         - section: "Weekly Materials"
           contents:
-            - href: weeks/week-1.qmd
+            - href: teaching/CIVE864/weeks/week-1.qmd
               text: "Week 1"
-            - href: weeks/week-2.qmd
+            - href: teaching/CIVE864/weeks/week-2.qmd
               text: "Week 2"
 
         - section: "Supplemental Notes"
           contents:
-            - href: supplemental/slr-derivations.qmd
+            - href: teaching/CIVE864/supplemental/slr-derivations.qmd
               text: SLR derivations
 
     - id: Publication
