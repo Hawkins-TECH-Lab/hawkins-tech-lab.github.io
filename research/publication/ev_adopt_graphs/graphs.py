@@ -118,6 +118,22 @@ next_veh_dict = {
     4: "Other vehicles"
 }
 
+next_pt_dict = {
+    1: "ICE",
+    2: "BEV",
+    3: "HEV",
+    4: "PHEV",
+    5: "Other"
+}
+
+next_veh_time_dict = {
+    1: "Within 1 year",
+    2: "In 1-3 years",
+    3: "In 4-7 years",
+    4: "In 8-10 years",
+    5: "In 11 or more years"
+}
+
 color_map_next_veh_choice = ['#bccb2a', '#f58a1f', '#005d84', '#ffd74f']
 
 
@@ -204,6 +220,8 @@ def get_fig_next_veh_by_hh_size_graph():
     returns graph for Next vehicle choice by household size
     """
     df_hh_size = geo_edf[['next_veh_type_1', 'hh_size']].copy()
+    # combine other vehicle to large car
+    df_hh_size['next_veh_type_1'] = df_hh_size['next_veh_type_1'].copy().apply(lambda x: 2 if x == 4 else x)
     df_hh_size.loc[:, 'hh_size'] = df_hh_size['hh_size'].map(hh_size_dict)
     df_hh_size.loc[:, 'next_veh_type_1'] = df_hh_size['next_veh_type_1'].map(next_veh_dict)
 
@@ -228,12 +246,12 @@ def get_fig_next_veh_by_hh_size_graph():
             title_text='Household size',
         ),
         yaxis=dict(
-            title_text=None,
+            title_text="Percent of sub-population",
 
         ),
         # height=500,
         legend=dict(
-            title_text=None  # Remove legend title
+            title_text="Next vehicle choice"
         ),
     )
 
@@ -263,15 +281,15 @@ def get_fig_off_freq_by_occ():
             tickmode='linear',
             dtick=1,
             tickangle=50,
-            title_text=None
+            title_text="Occupation"
         ),
         yaxis=dict(
-            title_text=None
+            title_text="Percent of sub-population"
         ),
         height=650,
-        title_text="Off-road driving frequency by occupation",
+        title_text=None,
         legend=dict(
-            title_text=None  # Remove legend title
+            title_text="Off-road driving frequency by occupation"
         ),
 
 
@@ -330,11 +348,11 @@ def get_fig_off_road_by_next_veh():
             title_text=None
         ),
         yaxis=dict(
-            title_text=None
+            title_text="Percent of sub-population"
         ),
         height=500,
         legend=dict(
-            title_text=None  # Remove legend title
+            title_text="Off-road driving frequency by next vehicle type"
         ),
     )
     #manually reorder the legend based on frequency
@@ -345,38 +363,38 @@ def get_fig_off_road_by_next_veh():
 
 
 def get_fig_time_fuel_type():
-    df_time_fuel_type = geo_edf[['next_veh', 'next_veh_type_1']].copy()
-    # combine other vehicle to large car
-    df_time_fuel_type['next_veh_type_1'] = df_time_fuel_type['next_veh_type_1'].copy().apply(lambda x: 2 if x == 4 else x)
+    df_time_fuel_type = geo_edf[['next_veh', 'next_veh_pt_1']].copy()
 
-    df_time_fuel_type.loc[:, 'next_veh_type_1'] = df_time_fuel_type['next_veh_type_1'].map(next_veh_dict)
-    df_time_fuel_type.columns = ['next_veh_purchase_time', 'next_veh_type']
+    df_time_fuel_type.loc[:, 'next_veh_pt_1'] = df_time_fuel_type['next_veh_pt_1'].map(next_pt_dict)
+    df_time_fuel_type = df_time_fuel_type.sort_values(by=['next_veh'])
+    df_time_fuel_type.loc[:, 'next_veh'] = df_time_fuel_type['next_veh'].map(next_veh_time_dict)
+    df_time_fuel_type.columns = ['next_veh_purchase_time', 'next_veh_pt']
 
-    result = df_time_fuel_type.groupby('next_veh_purchase_time')['next_veh_type'].value_counts().reset_index(name='count_each_fuel_type')
+    result = df_time_fuel_type.groupby('next_veh_purchase_time')['next_veh_pt'].value_counts().reset_index(name='count_each_fuel_type')
 
     # convert count to percentage
     result['percentage'] = result['count_each_fuel_type'] / result.groupby('next_veh_purchase_time')['count_each_fuel_type'].transform('sum')
 
-    # convert next_veh_type to string as it is categorical (We need to change this to proper categorical variable later)
-    result['next_veh_type'] = result['next_veh_type'].astype(str)
+    # convert next_veh_pt to string as it is categorical (We need to change this to proper categorical variable later)
+    result['next_veh_pt'] = result['next_veh_pt'].astype(str)
     result['next_veh_purchase_time'] = result['next_veh_purchase_time'].astype(str)
 
     #show points on line chart
-    fig = px.line(result, x="next_veh_purchase_time", y="percentage", color="next_veh_type", markers=True, color_discrete_sequence=unl_colors)
+    fig = px.line(result, x="next_veh_purchase_time", y="percentage", color="next_veh_pt", markers=True, color_discrete_sequence=unl_colors)
 
     fig.update_layout(
     xaxis=dict(
         tickmode='linear',
         dtick=1,
-        tickangle=0,
-        title_text = 'Year',
+        tickangle=50,
+        title_text = 'Purchase time',
     ),
     yaxis=dict(
-        title_text=None
+        title_text="Percent of sub-population"
     ),
     height=500,
     legend=dict(
-        title_text=None  # Remove legend title
+        title_text="Next vehicle by powertrain and purchase year"
     ),
     )
     fig.update_layout(yaxis=dict(tickformat=".0%"))
@@ -424,18 +442,18 @@ def prepare_df_sankey(df, source, target):
 def apply_legend_curr_sp1(df):
 
     veh_pt_dict = {1: "ICE", 2: "BEV", 3: "HEV", 4: "PHEV"}
-    veh_type_dict = {1: "Small Car", 2: "Large Car ", 3: "Pickup Truck", 4: "Other"}
-    sp1_dict = {1: "Small ICE", 2: "Small BEV", 3: "Large ICE", 4: "Large BEV", 5:"Pickup truck ICE", 6: "Pickup truck BEV"}
+    veh_type_dict = {1: "Small car - ", 2: "Large car - ", 3: "Pickup truck - "}
+    sp1_dict = {1: "Small car - ICE", 2: "Small car - BEV", 3: "Large car - ICE", 4: "Large car - BEV", 5:"Pickup truck - ICE", 6: "Pickup truck - BEV"}
 
     next_dict = {}
     for i in sp1_dict.keys():
             next_dict[i] = f"{sp1_dict[i]}"
 
     curr_dict = {}
-    for i in veh_pt_dict.keys():
-        for j in veh_type_dict.keys():
+    for i in veh_type_dict.keys():
+        for j in veh_pt_dict.keys():
             # print(f"C_{i}_C_{j} = {veh_pt_dict[i]}__{veh_type_dict[j]}")
-            curr_dict[f"C_{i}_C_{j}"] = f"{veh_pt_dict[i]} {veh_type_dict[j]}"
+            curr_dict[f"C_{i}_C_{j}"] = f"{veh_type_dict[i]} {veh_pt_dict[j]}"
 
     df.loc[:, 'source_label'] = df['source'].map(curr_dict)
     df.loc[:, 'target_label'] = df['target'].map(next_dict)
@@ -445,6 +463,8 @@ def apply_legend_curr_sp1(df):
 
 def get_fig_sankey_curr_sp_veh():
     df_for_sankey = geo_edf[['veh_pt_1', 'veh_type_1', 'sp1', 'comb_weight']].copy()
+    # update codes to replace other codes
+    df_for_sankey['veh_type_1'] = df_for_sankey['veh_type_1'].copy().apply(lambda x: 2 if x == 4 else x)
 
     # filter anything that is not nan
     df_for_sankey.fillna(-1, inplace=True)
@@ -538,22 +558,22 @@ def get_fig_sankey_curr_sp_veh():
 
 
 def apply_legend_curr_next(df):
-    curr_veh_pt_dict = {1: "ICE", 2: "BEV", 3: "HEV", 4: "PHEV"}
-    curr_veh_type_dict = {1: "Small Car", 2: "Large Car ", 3: "Pickup Truck", 4: "Other"}
+    curr_veh_pt_dict = {1: "ICE", 2: "BEV", 3: "HEV", 4: "PHEV", 5: "Other"}
+    curr_veh_type_dict = {1: "Small car - ", 2: "Large car - ", 3: "Pickup truck - "}
 
-    next_veh_pt_dict = {1: "Other", 2: "BEV", 3: "HEV", 4: "PHEV",  5: "ICE",}
-    next_veh_type_dict = {1: "Small Car", 2: "Other", 3: "Pickup Truck", 4: "Large Car"}
+    next_veh_pt_dict = {1: "ICE", 2: "BEV", 3: "HEV", 4: "PHEV", 5: "Other"}
+    next_veh_type_dict = {1: "Small car - ", 2: "Large car - ", 3: "Pickup truck - "}
 
     curr_dict = {}
-    for i in curr_veh_pt_dict.keys():
-        for j in curr_veh_type_dict.keys():
-            curr_dict[f"C_{i}_C_{j}"] = f"{curr_veh_pt_dict[i]} {curr_veh_type_dict[j]}"
+    for i in curr_veh_type_dict.keys():
+        for j in curr_veh_pt_dict.keys():
+            curr_dict[f"C_{i}_C_{j}"] = f"{curr_veh_type_dict[i]} {curr_veh_pt_dict[j]}"
 
     next_dict = {}
-    for i in next_veh_pt_dict.keys():
-        for j in next_veh_type_dict.keys():
+    for i in next_veh_type_dict.keys():
+        for j in next_veh_pt_dict.keys():
             # print(f"C_{i}_C_{j} = {next_veh_pt_dict[i]}__{next_veh_type_dict[j]}")
-            next_dict[f"N_{i}_N_{j}"] = f"{next_veh_pt_dict[i]} {next_veh_type_dict[j]}"
+            next_dict[f"N_{i}_N_{j}"] = f"{next_veh_type_dict[i]} {next_veh_pt_dict[j]}"
 
     df.loc[:, 'source_label'] = df['source'].map(curr_dict)
     df.loc[:, 'target_label'] = df['target'].map(next_dict)
@@ -566,6 +586,10 @@ def get_fig_sankey_curr_next():
     df_for_sankey = geo_edf[
         ['veh_type_1',  'veh_pt_1', 'next_veh_type_1', 'next_veh_pt_1', 'comb_weight']
     ].copy()
+
+    # update codes to replace other codes
+    df_for_sankey['veh_type_1'] = df_for_sankey['veh_type_1'].copy().apply(lambda x: 2 if x == 4 else x)
+    df_for_sankey['next_veh_type_1'] = df_for_sankey['next_veh_type_1'].copy().apply(lambda x: 2 if x == 4 else x)
 
     # filter out the rows that is not -1
     df_for_sankey.fillna(-1, inplace=True)
