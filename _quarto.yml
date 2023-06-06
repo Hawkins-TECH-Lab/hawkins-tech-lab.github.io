@@ -23,11 +23,12 @@ website:
             href: teaching/CIVE461/CIVE461.qmd
           - text: "CIVE864"
             href: teaching/CIVE864/CIVE864.qmd 
-
+    background: "#d00000"
+    
   sidebar:
     - id: default
       title: "Default"
-
+      background: "#f5f1e7"  
       style: "docked"
       search: true
       align: center
@@ -39,7 +40,7 @@ website:
 
     - id: CIVE461
       title: "CIVE 461"
-      background: "#c7c8ca"
+      background: "#f5f1e7"
       logo: "assets/images/cive461/logo.png"
       style: "docked"
       search: true
@@ -84,7 +85,7 @@ website:
 
     - id: CIVE864
       title: "CIVE 864"
-      background: "#c7c8ca"
+      background: "#f5f1e7"
       logo: "assets/images/cive864/logo.png"
       style: "docked"
       search: true
@@ -128,13 +129,6 @@ website:
           contents:
             - href: research/publication/ev.qmd
               text: EV Adoption Graphs
-       
-
-  
-
-
-        
-
 
   page-footer:
     left: |
@@ -153,7 +147,8 @@ website:
       - icon: github
         href: https://github.com/UNL-Hawkins-Lab/Hawkinslab
         aria-label: Quarto GitHub     
-
+    background: "#f5f1e7"
+    
 format:
   html:
     theme: cosmo
