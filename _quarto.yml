@@ -12,7 +12,7 @@ website:
       - text: Research
         menu:
           - text: "Projects"
-            href:  research/projects.qmd
+            href:  research/projects/projects.qmd
           - text: "Team"
             href: research/team/researchTeam.qmd
           - text: "Publications"
@@ -125,11 +125,11 @@ website:
       search: true
       align: center
       contents:
-        - href: research/projects.qmd
+        - href: research/projects/projects.qmd
           text: Research
         - section: "EV"
           contents:
-            - href: research/publication/ev.qmd
+            - href: research/projects/ev.qmd
               text: EV Adoption Graphs
 
     - id: Teaching
