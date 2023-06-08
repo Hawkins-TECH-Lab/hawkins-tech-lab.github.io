@@ -20,7 +20,7 @@ Our team examines the relationship between infrastructure systems, with a partic
 
 ::: {.hero-buttons}
 [Project](projects.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" #btn-hero-primary}
-[Team](team/research-team.qmd){#btn-guide .btn-action .btn .btn-info .btn-lg role="button" #btn-hero-secondary}
+[Team](team/researchTeam.qmd){#btn-guide .btn-action .btn .btn-info .btn-lg role="button" #btn-hero-secondary}
 
 
 ::: 

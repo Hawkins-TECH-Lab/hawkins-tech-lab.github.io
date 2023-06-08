@@ -14,7 +14,7 @@ website:
           - text: "Projects"
             href:  research/projects.qmd
           - text: "Team"
-            href: research/team/research-team.qmd
+            href: research/team/researchTeam.qmd
           - text: "Publications"
             href: research/publication/publication.qmd
       - text: "Teaching"
@@ -120,11 +120,13 @@ website:
             - href: teaching/CIVE864/supplemental/slr-derivations.qmd
               text: SLR derivations
 
-    - id: Publication
+    - id: Project
       style: "docked"
       search: true
       align: center
       contents:
+        - href: research/projects.qmd
+          text: Research
         - section: "EV"
           contents:
             - href: research/publication/ev.qmd

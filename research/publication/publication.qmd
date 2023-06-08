@@ -1,6 +1,6 @@
 ---
 title: "Publication"
-sidebar: Publication
+# sidebar: Publication
 section-divs: true
 toc: false
 echo: false
