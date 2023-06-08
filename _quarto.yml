@@ -41,7 +41,7 @@ website:
     - id: CIVE461
       title: "CIVE 461"
       background: "#f5f1e7"
-      logo: "assets/images/cive461/logo.png"
+      logo: "assets/images/teaching/cive_461_logo.png"
       style: "docked"
       search: true
       align: center
@@ -86,7 +86,7 @@ website:
     - id: CIVE864
       title: "CIVE 864"
       background: "#f5f1e7"
-      logo: "assets/images/cive864/logo.png"
+      logo: "assets/images/teaching/cive864_logo.png"
       style: "docked"
       search: true
       align: center
