@@ -26,7 +26,7 @@ css: ../../assets/css/index.css
     
     Mohammad is a Ph.D. student in transportation engineering at the University of Nebraska-Lincoln. He received both his M.Sc. and B.Sc. in Civil Engineering from Jordan University of Science and Technology. Mohammad spent a decade working in the transportation industry in the UAE.
 
-| ![](../../assets/images/team/blank_avatar.jpg){width="166"}         | Donya Negahbani
+| ![](../../assets/images/team/donya.jpg){width="166"}         | Donya Negahbani
     
     Donya is an M.Sc. student in transportation engineering at the University of Nebraska-Lincoln. She received her B.Sc. in Civil Engineering from the University of Tehran.
 
