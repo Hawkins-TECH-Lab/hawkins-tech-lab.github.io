@@ -2,12 +2,12 @@
 title: "EV Adoption in the US Midwest"
 sidebar: Project
 section-divs: true
-toc: false
 echo: false
 ---
 
 ```{python}
 import ev_adopt_graphs.graphs as gh
+
 ```
 
 # Introduction
@@ -25,7 +25,6 @@ The survey was administered in Qualtrics and distributed to 2,000  respondents i
 
 ```{python}
 fig = gh.get_fig_survey_locations()
-# fig.update_layout(title_text=f"Next Vehicle Choice By Household Size", font_size=10)
 
 fig.show()
 ```
@@ -50,8 +49,10 @@ Stated preference experiments are a standard approach in consumer analysis to ex
 
 We then presented respondents with a series of stated preference experiments. These experiments take the form of attribute tables. Respondents must select one option from among the six presented to them. Each option is described by its purchase price, fuel cost (per 100 miles), annual maintenance cost, tax rebeate, recharging time (at a station and at home), driving range (in miles), towing capacity (in lbs), and onboard generator capacity (in days of typical home demand). Most attributes were based on previous survey experiments. However, towing capacity and onboard generator capacity were added to the experiment as features relevant to pickup truck owners.
 
-:::
+::: {fig-survey}
+
 ![](../../assets/images/research/ev_adoption/sp_example.png){fig-align="center"}
+
 :::
 
 # Preliminary Findings
@@ -62,7 +63,6 @@ First, looking at respondents' expected next vehicle purchase there is an intuit
 ```{python}
 
 fig = gh.get_fig_next_veh_by_hh_size_graph()
-# fig.update_layout(title_text=f"Next Vehicle Choice By Household Size", font_size=10)
 
 fig.show()
 ```
@@ -74,7 +74,6 @@ Results for respondents who indicated they make... As expected, we found that th
 ```{python}
 
 fig = gh.get_fig_off_freq_by_occ()
-# fig.update_layout(title_text=f"Off-road driving frequency by expected next vehicle type", font_size=10)
 
 fig.show()
 ```
@@ -84,8 +83,6 @@ A second cross-tabulation with off-road driving frequency explored was next vehi
 
 fig = gh.get_fig_off_road_by_next_veh()
 
-
-# fig.update_layout(title_text=f"Off-road driving frequency by expected next vehicle type", font_size=10)
 
 fig.show()
 
@@ -97,7 +94,6 @@ Many people seem intersted in HEV. ICE purchase intention remains high...
 
 fig = gh.get_fig_time_fuel_type()
 
-# fig.update_layout(title_text=f"Next vehicle type by next vehicle purchase time", font_size=10)
 
 fig.show()
 
@@ -108,8 +104,6 @@ Another factor explored in the survey was access to parking at home. Parking acc
 
 fig = gh.get_fig_parking()
 
-# fig.update_layout(title_text=f"Charging Locations", font_size=10)
-
 fig.show()
 
 
@@ -119,7 +113,6 @@ fig.show()
 ```{python}
 
 fig = gh.get_fig_sankey_curr_sp_veh()
-# fig.update_layout(title_text=f"Sankey Diagram: curr -> SP", font_size=10)
 
 fig.show()
 
@@ -129,8 +122,6 @@ fig.show()
 ```{python}
 
 fig = gh.get_fig_sankey_curr_next()
-# fig.update_layout(title_text=f"Sankey Diagram: Curr -> Next", font_size=10)
-
 
 fig.show()
 

@@ -258,7 +258,9 @@ def get_fig_next_veh_by_hh_size_graph():
     return fig
 
 def get_fig_off_freq_by_occ():
-    df_off_freq_by_occ = geo_edf[['occupation', 'off_road_freq']].copy()
+    df_off_freq_by_occ = geo_edf[['occupation', 'veh_off_road', 'off_road_freq']].copy()
+    df_off_freq_by_occ[df_off_freq_by_occ['veh_off_road']==1.0]
+
     df_off_freq_by_occ = df_off_freq_by_occ.sort_values(by=['off_road_freq'])
     df_off_freq_by_occ.loc[:, 'occupation_legend'] = df_off_freq_by_occ['occupation'].map(occupation_dict)
     df_off_freq_by_occ.loc[:, 'off_road_freq'] = df_off_freq_by_occ['off_road_freq'].map(off_road_freq_dict)
@@ -304,7 +306,9 @@ def get_fig_off_freq_by_occ():
     return fig
 
 def get_fig_off_road_by_next_veh():
-    df_off_road_next_veh = geo_edf[['next_veh_type_1', 'off_road_freq']].copy()
+    df_off_road_next_veh = geo_edf[['next_veh_type_1', 'veh_off_road','off_road_freq']].copy()
+    df_off_road_next_veh[df_off_road_next_veh['veh_off_road']==1.0]
+
     # combine other vehicle to large car
     df_off_road_next_veh['next_veh_type_1'] = df_off_road_next_veh['next_veh_type_1'].copy().apply(lambda x: 2 if x == 4 else x)
 
@@ -369,6 +373,12 @@ def get_fig_time_fuel_type():
     df_time_fuel_type = df_time_fuel_type.sort_values(by=['next_veh'])
     df_time_fuel_type.loc[:, 'next_veh'] = df_time_fuel_type['next_veh'].map(next_veh_time_dict)
     df_time_fuel_type.columns = ['next_veh_purchase_time', 'next_veh_pt']
+
+    # reorder the next_veh_purchase_time based on the order of next_veh_time_dict not the alphabetical order
+    veh_buying_time_order = next_veh_time_dict.values()
+    df_time_fuel_type_copy = df_time_fuel_type.copy()
+    df_time_fuel_type_copy['next_veh_purchase_time'] = pd.Categorical(df_time_fuel_type_copy['next_veh_purchase_time'], categories=veh_buying_time_order, ordered=True)
+    df_time_fuel_type = df_time_fuel_type_copy
 
     result = df_time_fuel_type.groupby('next_veh_purchase_time')['next_veh_pt'].value_counts().reset_index(name='count_each_fuel_type')
 
