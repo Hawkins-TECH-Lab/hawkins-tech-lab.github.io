@@ -12,9 +12,9 @@ website:
       - text: Research
         menu:
           - text: "Projects"
-            href:  research/projects.qmd
+            href:  research/projects/projects.qmd
           - text: "Team"
-            href: research/team/research-team.qmd
+            href: research/team/researchTeam.qmd
           - text: "Publications"
             href: research/publication/publication.qmd
       - text: "Teaching"
@@ -120,15 +120,29 @@ website:
             - href: teaching/CIVE864/supplemental/slr-derivations.qmd
               text: SLR derivations
 
-    - id: Publication
+    - id: Project
       style: "docked"
       search: true
       align: center
       contents:
+        - href: research/projects/projects.qmd
+          text: Research
         - section: "EV"
           contents:
-            - href: research/publication/ev.qmd
+            - href: research/projects/ev.qmd
               text: EV Adoption Graphs
+
+    - id: Teaching
+      style: "docked"
+      search: true
+      align: center
+      contents:
+        - section: "Teaching"
+          contents:
+            - href: teaching/CIVE461/CIVE461.qmd
+              text: CIVE461
+            - href: teaching/CIVE864/CIVE864.qmd
+              text: CIVE864
 
   page-footer:
     left: |
