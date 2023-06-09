@@ -153,8 +153,10 @@ occupation_dict = {
     9.0: "Unemployed"
 }
 
+geo_edf.loc[geo_edf['veh_off_road'] == 2, 'off_road_freq'] = geo_edf.loc[geo_edf['veh_off_road'] == 2, 'off_road_freq'].fillna(0.0)
 
 off_road_freq_dict = {
+    0.0: "Do not drive off-road",
     1.0: "Rarely \n (1-3 times per year)",
     2.0: "Sometimes \n (1-3 times per month)",
     3.0: "Seasonally \n (1 or more times per week \n for one season)",
@@ -263,7 +265,6 @@ def get_fig_next_veh_by_hh_size_graph():
 
 def get_fig_off_freq_by_occ():
     df_off_freq_by_occ = geo_edf[['occupation', 'veh_off_road', 'off_road_freq']].copy()
-    df_off_freq_by_occ[df_off_freq_by_occ['veh_off_road']==1.0]
 
     df_off_freq_by_occ = df_off_freq_by_occ.sort_values(by=['off_road_freq'])
     df_off_freq_by_occ.loc[:, 'occupation_legend'] = df_off_freq_by_occ['occupation'].map(occupation_dict)
@@ -304,14 +305,14 @@ def get_fig_off_freq_by_occ():
     fig.update_layout(yaxis=dict(tickformat=".0%"))
 
     #manually reorder the legend based on frequency
-    data_reordered = [fig.data[0], fig.data[1], fig.data[3], fig.data[2]]
+    data_reordered = [fig.data[0], fig.data[2], fig.data[4], fig.data[1], fig.data[3]]
+
     fig.data = data_reordered
 
     return fig
 
 def get_fig_off_road_by_next_veh():
     df_off_road_next_veh = geo_edf[['next_veh_type_1', 'veh_off_road','off_road_freq']].copy()
-    df_off_road_next_veh[df_off_road_next_veh['veh_off_road']==1.0]
 
     # combine other vehicle to large car
     df_off_road_next_veh['next_veh_type_1'] = df_off_road_next_veh['next_veh_type_1'].copy().apply(lambda x: 2 if x == 4 else x)
@@ -364,7 +365,7 @@ def get_fig_off_road_by_next_veh():
         ),
     )
     #manually reorder the legend based on frequency
-    data_reordered = [fig.data[0], fig.data[1], fig.data[3], fig.data[2]]
+    data_reordered = [fig.data[0], fig.data[2], fig.data[4], fig.data[1], fig.data[3]]
     fig.data = data_reordered
 
     return fig
