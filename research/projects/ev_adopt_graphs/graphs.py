@@ -134,6 +134,10 @@ next_veh_time_dict = {
     5: "In 11 or more years"
 }
 
+veh_pt_dict = {1: "ICE", 2: "BEV", 3: "HEV", 4: "PHEV"}
+veh_type_dict = {1: "Small car - ", 2: "Large car - ", 3: "Pickup truck - "}
+sp1_dict = {1: "Small car - ICE", 2: "Small car - BEV", 3: "Large car - ICE", 4: "Large car - BEV", 5:"Pickup truck - ICE", 6: "Pickup truck - BEV"}
+
 color_map_next_veh_choice = ['#bccb2a', '#f58a1f', '#005d84', '#ffd74f']
 
 
@@ -149,8 +153,10 @@ occupation_dict = {
     9.0: "Unemployed"
 }
 
+geo_edf.loc[geo_edf['veh_off_road'] == 2, 'off_road_freq'] = geo_edf.loc[geo_edf['veh_off_road'] == 2, 'off_road_freq'].fillna(0.0)
 
 off_road_freq_dict = {
+    0.0: "Do not drive off-road",
     1.0: "Rarely \n (1-3 times per year)",
     2.0: "Sometimes \n (1-3 times per month)",
     3.0: "Seasonally \n (1 or more times per week \n for one season)",
@@ -258,7 +264,8 @@ def get_fig_next_veh_by_hh_size_graph():
     return fig
 
 def get_fig_off_freq_by_occ():
-    df_off_freq_by_occ = geo_edf[['occupation', 'off_road_freq']].copy()
+    df_off_freq_by_occ = geo_edf[['occupation', 'veh_off_road', 'off_road_freq']].copy()
+
     df_off_freq_by_occ = df_off_freq_by_occ.sort_values(by=['off_road_freq'])
     df_off_freq_by_occ.loc[:, 'occupation_legend'] = df_off_freq_by_occ['occupation'].map(occupation_dict)
     df_off_freq_by_occ.loc[:, 'off_road_freq'] = df_off_freq_by_occ['off_road_freq'].map(off_road_freq_dict)
@@ -298,13 +305,15 @@ def get_fig_off_freq_by_occ():
     fig.update_layout(yaxis=dict(tickformat=".0%"))
 
     #manually reorder the legend based on frequency
-    data_reordered = [fig.data[0], fig.data[1], fig.data[3], fig.data[2]]
+    data_reordered = [fig.data[0], fig.data[2], fig.data[4], fig.data[1], fig.data[3]]
+
     fig.data = data_reordered
 
     return fig
 
 def get_fig_off_road_by_next_veh():
-    df_off_road_next_veh = geo_edf[['next_veh_type_1', 'off_road_freq']].copy()
+    df_off_road_next_veh = geo_edf[['next_veh_type_1', 'veh_off_road','off_road_freq']].copy()
+
     # combine other vehicle to large car
     df_off_road_next_veh['next_veh_type_1'] = df_off_road_next_veh['next_veh_type_1'].copy().apply(lambda x: 2 if x == 4 else x)
 
@@ -356,7 +365,7 @@ def get_fig_off_road_by_next_veh():
         ),
     )
     #manually reorder the legend based on frequency
-    data_reordered = [fig.data[0], fig.data[1], fig.data[3], fig.data[2]]
+    data_reordered = [fig.data[0], fig.data[2], fig.data[4], fig.data[1], fig.data[3]]
     fig.data = data_reordered
 
     return fig
@@ -369,6 +378,12 @@ def get_fig_time_fuel_type():
     df_time_fuel_type = df_time_fuel_type.sort_values(by=['next_veh'])
     df_time_fuel_type.loc[:, 'next_veh'] = df_time_fuel_type['next_veh'].map(next_veh_time_dict)
     df_time_fuel_type.columns = ['next_veh_purchase_time', 'next_veh_pt']
+
+    # reorder the next_veh_purchase_time based on the order of next_veh_time_dict not the alphabetical order
+    veh_buying_time_order = next_veh_time_dict.values()
+    df_time_fuel_type_copy = df_time_fuel_type.copy()
+    df_time_fuel_type_copy['next_veh_purchase_time'] = pd.Categorical(df_time_fuel_type_copy['next_veh_purchase_time'], categories=veh_buying_time_order, ordered=True)
+    df_time_fuel_type = df_time_fuel_type_copy
 
     result = df_time_fuel_type.groupby('next_veh_purchase_time')['next_veh_pt'].value_counts().reset_index(name='count_each_fuel_type')
 
@@ -462,44 +477,39 @@ def apply_legend_curr_sp1(df):
 
 
 def get_fig_sankey_curr_sp_veh():
-    df_for_sankey = geo_edf[['veh_pt_1', 'veh_type_1', 'sp1', 'comb_weight']].copy()
-    # update codes to replace other codes
-    df_for_sankey['veh_type_1'] = df_for_sankey['veh_type_1'].copy().apply(lambda x: 2 if x == 4 else x)
+   # getting data
+    df_for_sankey = geo_edf[
+        ['veh_pt_1', 'veh_type_1', 'sp1', 'comb_weight']
+    ].copy()
 
-    # filter anything that is not nan
+    #data cleaning
     df_for_sankey.fillna(-1, inplace=True)
-    df_for_sankey = df_for_sankey[(df_for_sankey['sp1'] != -1) & (df_for_sankey['veh_type_1'] != -1) & (df_for_sankey['veh_pt_1'] != -1)].copy()
+    df_for_sankey = df_for_sankey[(df_for_sankey['veh_pt_1'] != -1)&(df_for_sankey['veh_type_1'] != -1)&(df_for_sankey['sp1'] != -1)].copy()
+    df_for_sankey [['veh_pt_1', 'veh_type_1', 'sp1',]] = df_for_sankey[['veh_pt_1', 'veh_type_1', 'sp1']].astype(int)
 
+    # data processing
+    result = df_for_sankey.groupby(['veh_type_1', 'veh_pt_1', 'sp1']).sum('comb_weight').reset_index()
+    result.sort_values(by=['veh_pt_1', 'veh_type_1', 'sp1'], inplace=True)
 
-    df_for_sankey[['veh_pt_1', 'veh_type_1', 'sp1',]] = df_for_sankey[['veh_pt_1', 'veh_type_1', 'sp1',]].copy().astype(int)
+    result['source'] = result['veh_pt_1'].astype(str) +"_" + result['veh_type_1'].astype(str)
+    result['target'] = result['sp1'].astype(str)
+    result['veh_pt_1'] = result['veh_pt_1'].map(veh_pt_dict)
+    result['veh_type_1'] = result['veh_type_1'].map(veh_type_dict)
+    result['sp1'] = result['sp1'].map(sp_dict)
 
-    # create a new column that is a combination of veh_pt_1 and veh_type_1
-    df_for_sankey['source'] = f"C_{df_for_sankey['veh_pt_1']}_C_{df_for_sankey['veh_type_1']}"
+    #preparing for sankey
+    result['source_label'] = result['veh_type_1'] + result['veh_pt_1']
+    result['target_label'] = result['sp1']
+    result = result[['source', 'target', 'comb_weight', 'source_label', 'target_label']].copy()
 
-
-    df_for_sankey['veh_type_1'] = "C_"+df_for_sankey['veh_type_1'].copy().astype(str) 
-    df_for_sankey['veh_pt_1'] = "C_"+df_for_sankey['veh_pt_1'].copy().astype(str) 
-
-
-    df_for_sankey['source'] = df_for_sankey['veh_pt_1'] + "_" + df_for_sankey['veh_type_1']
-    df_for_sankey['target'] = df_for_sankey['sp1'].copy()
-
-    apply_legend_curr_sp1(df_for_sankey)
-
-    dfx = df_for_sankey.groupby(['source', 'target']).sum('comb_weight').reset_index()
-
-    df, label_list = prepare_df_sankey(dfx, 'source', 'target')
-
-    diff = 10
+    diff = 15
 
     fig = go.Figure()
 
-    for i in range(0, int(df['comb_weight'].max()) + diff, diff):
-        df_x = df[df['comb_weight'] > i].copy()
-        apply_legend_curr_sp1(df_x)
-        df, label_list = prepare_df_sankey(df_x, 'source', 'target')
+    for i in range(0, int(result['comb_weight'].max()) + diff, diff):
+        df_x = result[result['comb_weight'] > i].copy()
+        df, tmp_label_list = prepare_df_sankey(df_x, 'source', 'target')
 
-        # values = df['comb_weight'].to_list()
 
         label_list = df['source_label'].unique().tolist() + df['target_label'].unique().tolist()
 
@@ -551,7 +561,7 @@ def get_fig_sankey_curr_sp_veh():
     )
 
     fig.data[n].visible = True  # Toggle first trace to "visible"
-    # fig.update_layout(title_text=f"Sankey Diagram: comb weight > {n*diff}", font_size=10)
+
 
 
     return fig
@@ -613,7 +623,7 @@ def get_fig_sankey_curr_next():
     df, label_list = prepare_df_sankey(df_x, 'source', 'target')
 
 
-    diff = 10
+    diff = 15
 
     fig = go.Figure()
 
