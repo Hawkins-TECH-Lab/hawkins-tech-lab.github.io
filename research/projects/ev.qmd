@@ -67,9 +67,9 @@ fig = gh.get_fig_next_veh_by_hh_size_graph()
 fig.show()
 ```
 
-One of the dimensions that was identified by the research team as missing in prior studies is driving frequency off public roads. It is widely known in the transportation planning community that active mode (walking and cycling) trips are underreported in traditional data sources (e.g., the National Household Travel Survey in the U.S.). When asked about daily trips, survey respondents frequently do not report recreational active mode trips, such as walking the dog around the block. We had the hypothesis that a similar under-reporting may occur among rural residents who use their personal vehicles on their property. This travel may be important for these residents when considering an EV, as it will deplete the vehicle battery (and therefore driving range). For example, a rancher may drive their pickup truck on their property to check on cows and then drive into town. Prior surveys likely missed this travel, resulting in an under-reporting of rural travel. The question was worded as follows: How often do you use your vehicle off public roads for work purposes (e.g., on your property or private roads)?
+One of the dimensions that was identified by the research team as missing in prior studies is driving frequency off public roads. It is widely known in the transportation planning community that active mode (walking and cycling) trips are underreported in traditional data sources (e.g., the National Household Travel Survey in the U.S.). When asked about daily trips, survey respondents frequently do not report recreational active mode trips, such as walking the dog around the block. We had the hypothesis that a similar under-reporting may occur among rural residents who use their personal vehicles on their property. This travel may be important for these residents when considering an EV, as it will deplete the vehicle battery (and therefore driving range). For example, a rancher may drive their pickup truck on their property to check on cows and then drive into town. Prior surveys likely missed this travel, resulting in an under-reporting of rural travel. The question was worded as follows: How often do you use your vehicle off public roads for work purposes (e.g., on your property or private roads)? after an initial screening question for whether the respondent makes such trips.
 
-Results for respondents who indicated they make... As expected, we found that those working in the farming, fishing, and foresty sectors travel off public roads for work at least once per week. However, we also found a high rates for other sectors, with the highest rate being among government workers. Government workers may be driving in parks or ... Professional workers may be engineers visiting work sites.
+As expected, we found that those working in the farming, fishing, and foresty sectors are the most likely to travel off public roads for work. Further, they are the most likely to make such trips at least once per week. We also found a high rates for government and construction workers. Government workers may be driving in parks or to perform inspections on farms or industrial sites. Management and professional works also report making off-road trips. These trips may include engineers and other professional employees visiting farm, forestry, and industrial work sites. However, our main finding is significant travel that we do not believe is reported on conventional travel surveys (e.g., the NHTS).
 
 ```{python}
 
@@ -78,7 +78,7 @@ fig = gh.get_fig_off_freq_by_occ()
 fig.show()
 ```
 
-A second cross-tabulation with off-road driving frequency explored was next vehicle type. There interest in this case is whether pickup truck owners are more likely to make such trips....
+A second cross-tabulation with off-road driving frequency explored was next vehicle type. There interest in this case is whether pickup truck owners are more likely to make such trips. We find evidence for this hypothesis, but it is not as strong as we anticipated, with many car owners reporting that they make trips off public roads 1-3 times per month.
 ```{python}
 
 fig = gh.get_fig_off_road_by_next_veh()
@@ -88,7 +88,7 @@ fig.show()
 
 ```
 
-Many people seem intersted in HEV. ICE purchase intention remains high...
+We also asked about the timing for the next vehicle purchase. The below figure summarizes these results by vehicle powertrain choice. We find that many people in the Midwest anticipate their next vehicle will have an internal combustion engine (ICE) powertrain - i.e., be either gasoline or diesel. However, those who plan to purchase their next vehicle in greater than 4 years are more likely to buy a hybrid electric vehicle (HEV). Battery electric vehicle (BEV) purchase intention may grow to 20% but generally hovers around the current national average sales rate of 10%. This result indicates that current intention does not align with climate mitigation scenarios requiring widescale BEV adoption across the country.
 ```{python}
 
 
@@ -109,6 +109,7 @@ fig.show()
 
 ```
 
+The following two figures are a special kind of diagram called a Sankey plot. Sankey plots are a great way to show shifts between two scenarios. The first Sankey plot shows current vehicle ownership (on the left) and stated vehicle choice in our stated preference experiment. The user can move the boxes around and use the slider below the plot to change the minimum flow (current -> stated choice) to appear in the plot. We can see that most current small vehicle owners also pick this option in our experiment. Few current pickup truck owners pick BEV options in the stated preference experiment. We see the largest shift towards BEV options among current small car owners.
 
 ```{python}
 
@@ -118,7 +119,7 @@ fig.show()
 
 ```
 
-
+The second Sankey plot shows the relationship between current vehicle ownership and the expected next vehicle purchase. Interestingly, here we see a larger share of people selecting BEV options than in our experiment.
 ```{python}
 
 fig = gh.get_fig_sankey_curr_next()
@@ -128,3 +129,14 @@ fig.show()
 ```
 
 # Conclusions
+Our initial results suggest that rural travel may be under-reported in conventional statistics due to travel on personal property and private roads for work purposes. This under-reporting will affect the viability of EV adoption in these areas because residents will face driving range factors not properly incorporated into existing analyses. We designed a novel stated preference experiment focused on electric pickup truck adoption. Our initial analysis indicates that electrification in this vehicle market will be slower than among small car owners.
+
+Further work will involve more advanced modeling methods and scenario analysis. These results will be published to the website in August 2023.
+
+We welcome feedback and suggestions for further analysis using our survey. We provide the complete survey as a pdf below. Please feel free to use this survey as a basis for your own work!
+
+<object data="../../assets/images/research/ev_adoption/qualtrics_ev_survey.pdf" type="application/pdf" width="100%" height="700px">
+    <embed src="../../assets/images/research/ev_adoption/qualtrics_ev_survey.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="../../assets/images/research/ev_adoption/qualtrics_ev_survey.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
