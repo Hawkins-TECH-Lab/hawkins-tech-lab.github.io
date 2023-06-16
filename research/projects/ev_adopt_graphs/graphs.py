@@ -101,7 +101,6 @@ unl_colors = [
 ]
 
 
-
 hh_size_dict = {
     16.0: "1",
     17.0: "2",
@@ -454,27 +453,6 @@ def prepare_df_sankey(df, source, target):
 
     return df, label_list
 
-def apply_legend_curr_sp1(df):
-
-    veh_pt_dict = {1: "ICE", 2: "BEV", 3: "HEV", 4: "PHEV"}
-    veh_type_dict = {1: "Small car - ", 2: "Large car - ", 3: "Pickup truck - "}
-    sp1_dict = {1: "Small car - ICE", 2: "Small car - BEV", 3: "Large car - ICE", 4: "Large car - BEV", 5:"Pickup truck - ICE", 6: "Pickup truck - BEV"}
-
-    next_dict = {}
-    for i in sp1_dict.keys():
-            next_dict[i] = f"{sp1_dict[i]}"
-
-    curr_dict = {}
-    for i in veh_type_dict.keys():
-        for j in veh_pt_dict.keys():
-            # print(f"C_{i}_C_{j} = {veh_pt_dict[i]}__{veh_type_dict[j]}")
-            curr_dict[f"C_{i}_C_{j}"] = f"{veh_type_dict[i]} {veh_pt_dict[j]}"
-
-    df.loc[:, 'source_label'] = df['source'].map(curr_dict)
-    df.loc[:, 'target_label'] = df['target'].map(next_dict)
-
-    return df
-
 
 def get_fig_sankey_curr_sp_veh():
    # getting data
@@ -567,28 +545,6 @@ def get_fig_sankey_curr_sp_veh():
     return fig
 
 
-def apply_legend_curr_next(df):
-    curr_veh_pt_dict = {1: "ICE", 2: "BEV", 3: "HEV", 4: "PHEV", 5: "Other"}
-    curr_veh_type_dict = {1: "Small car - ", 2: "Large car - ", 3: "Pickup truck - "}
-
-    next_veh_pt_dict = {1: "ICE", 2: "BEV", 3: "HEV", 4: "PHEV", 5: "Other"}
-    next_veh_type_dict = {1: "Small car - ", 2: "Large car - ", 3: "Pickup truck - "}
-
-    curr_dict = {}
-    for i in curr_veh_type_dict.keys():
-        for j in curr_veh_pt_dict.keys():
-            curr_dict[f"C_{i}_C_{j}"] = f"{curr_veh_type_dict[i]} {curr_veh_pt_dict[j]}"
-
-    next_dict = {}
-    for i in next_veh_type_dict.keys():
-        for j in next_veh_pt_dict.keys():
-            # print(f"C_{i}_C_{j} = {next_veh_pt_dict[i]}__{next_veh_type_dict[j]}")
-            next_dict[f"N_{i}_N_{j}"] = f"{next_veh_type_dict[i]} {next_veh_pt_dict[j]}"
-
-    df.loc[:, 'source_label'] = df['source'].map(curr_dict)
-    df.loc[:, 'target_label'] = df['target'].map(next_dict)
-
-    return df
 
 
 def get_fig_sankey_curr_next():
@@ -597,42 +553,50 @@ def get_fig_sankey_curr_next():
         ['veh_type_1',  'veh_pt_1', 'next_veh_type_1', 'next_veh_pt_1', 'comb_weight']
     ].copy()
 
-    # update codes to replace other codes
-    df_for_sankey['veh_type_1'] = df_for_sankey['veh_type_1'].copy().apply(lambda x: 2 if x == 4 else x)
-    df_for_sankey['next_veh_type_1'] = df_for_sankey['next_veh_type_1'].copy().apply(lambda x: 2 if x == 4 else x)
-
     # filter out the rows that is not -1
     df_for_sankey.fillna(-1, inplace=True)
     df_for_sankey = df_for_sankey[
-        (df_for_sankey['veh_type_1'] != -1) & (df_for_sankey['next_veh_type_1'] != -1) & (df_for_sankey['next_veh_pt_1'] != -1) & (df_for_sankey['veh_pt_1'] != -1)
-        ].copy()
+    (df_for_sankey['veh_type_1'] != -1) & (df_for_sankey['next_veh_type_1'] != -1) & (df_for_sankey['next_veh_pt_1'] != -1) & (df_for_sankey['veh_pt_1'] != -1)
+    ].copy()
 
+    # convert to int except comb_wt
     df_for_sankey[['veh_type_1',  'veh_pt_1', 'next_veh_type_1', 'next_veh_pt_1',]] = df_for_sankey[['veh_type_1',  'veh_pt_1', 'next_veh_type_1', 'next_veh_pt_1',]].copy().astype(int)
 
-    df_for_sankey['veh_type_1'] = "C_"+df_for_sankey['veh_type_1'].copy().astype(str) 
-    df_for_sankey['veh_pt_1'] = "C_"+df_for_sankey['veh_pt_1'].copy().astype(str) 
-    df_for_sankey['next_veh_type_1'] = "N_"+df_for_sankey['next_veh_type_1'].copy().astype(str)
-    df_for_sankey['next_veh_pt_1'] = "N_"+df_for_sankey['next_veh_pt_1'].copy().astype(str)
+    # update codes to replace other codes
+    df_for_sankey['next_veh_pt_1'] = df_for_sankey['next_veh_pt_1'].copy().apply(lambda x: 1 if x == 5 else x)
+    df_for_sankey['next_veh_type_1'] = df_for_sankey['next_veh_type_1'].copy().apply(lambda x: 2 if x == 4 else x)
 
-    df_for_sankey['source'] = df_for_sankey['veh_pt_1'] + "_" + df_for_sankey['veh_type_1']
-    df_for_sankey['target'] = df_for_sankey['next_veh_pt_1'] + "_" + df_for_sankey['next_veh_type_1']
-    df_x = df_for_sankey.groupby(['source', 'target']).sum('comb_weight').reset_index()
+    # groupby and sum
+    dfx = df_for_sankey.groupby(['veh_type_1', 'veh_pt_1', 'next_veh_type_1', 'next_veh_pt_1']).sum().reset_index()
 
 
+    dfx.sort_values(['veh_type_1', 'veh_pt_1', 'next_veh_type_1', 'next_veh_pt_1'], inplace=True)
 
-    df, label_list = prepare_df_sankey(df_x, 'source', 'target')
+    # get temp columns for sankey mapping
+    dfx['curr'] = "C_" + dfx['veh_type_1'].copy().astype(str) + "_C_" + dfx['veh_pt_1'].copy().astype(str)
+    dfx['next'] = "N_" + dfx['next_veh_type_1'].copy().astype(str) + "_N_" + dfx['next_veh_pt_1'].copy().astype(str)
+
+    # replace the original codes with the corespoding dict
+    dfx['veh_type_1'] = dfx['veh_type_1'].copy().replace(veh_type_dict)
+    dfx['veh_pt_1'] = dfx['veh_pt_1'].copy().replace(veh_pt_dict)
+    dfx['next_veh_type_1'] = dfx['next_veh_type_1'].copy().replace(veh_type_dict)
+    dfx['next_veh_pt_1'] = dfx['next_veh_pt_1'].copy().replace(veh_pt_dict)
+
+    # create a combined legend
+    dfx['source_label'] = dfx['veh_type_1'].copy() + " " + dfx['veh_pt_1'].copy()
+    dfx['target_label'] = dfx['next_veh_type_1'].copy() + " " + dfx['next_veh_pt_1'].copy()
+
+    df = dfx[['curr', 'next', 'source_label', 'target_label', 'comb_weight']]
 
 
     diff = 15
+
 
     fig = go.Figure()
 
     for i in range(0, int(df['comb_weight'].max()) + diff, diff):
         df_x = df[df['comb_weight'] > i].copy()
-        df, label_list = prepare_df_sankey(df_x, 'source', 'target')
-        apply_legend_curr_next(df)
-
-        # values = df['comb_weight'].to_list()
+        df, temp_label_list = prepare_df_sankey(df_x, 'curr', 'next')
 
         label_list = df['source_label'].unique().tolist() + df['target_label'].unique().tolist()
 
@@ -654,7 +618,6 @@ def get_fig_sankey_curr_next():
                 visible=False  # Set the visibility of the trace to False initially
             )
         )
-
 
 
     # Create and add slider
