@@ -56,7 +56,7 @@ stdict = dict(stdf.values)
 ctydf["state_name"] = ctydf.STATEFP.astype(int).map(stdict)
 ctydf["county_state"] = ctydf.NAME+", "+ctydf.state_name
 
-sp_dict = {1: "Small ICE", 2: "Small BEV", 3: "Large ICE", 4: "Large BEV", 5:"Pickup truck ICE", 6: "Pickup truck BEV"}
+sp_dict = {1: "Small car - ICE", 2: "Small car - BEV", 3: "Large car - ICE", 4: "Large car - BEV", 5:"Pickup truck - ICE", 6: "Pickup truck - BEV"}
 geo_edf["Choice 1"] = geo_edf["sp1"].map(sp_dict)
 geo_edf["Choice 2"] = geo_edf["sp2"].map(sp_dict)
 geo_edf["Choice 3"] = geo_edf["sp3"].map(sp_dict)
