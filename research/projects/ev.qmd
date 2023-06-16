@@ -119,7 +119,7 @@ fig.show()
 
 ```
 
-The second Sankey plot shows the relationship between current vehicle ownership and the expected next vehicle purchase. Interestingly, here we see a larger share of people selecting BEV options than in our experiment.
+The second Sankey plot shows the relationship between current vehicle ownership and the expected next vehicle purchase. Interestingly, here we see a smaller share of people selecting BEV options than in our experiments. The largest shifts are between vehicle sizes for ICE powertrain vehicles.
 ```{python}
 
 fig = gh.get_fig_sankey_curr_next()
