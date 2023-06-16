@@ -7,20 +7,9 @@ about:
   id: hero-heading
   template: jolla
   links:
-    - icon: twitter
-      text: twitter
-      href: https://twitter.com
     - icon: github
       text: Github
-      href: https://github.com
+      href: https://github.com/UNL-Hawkins-Lab/Hawkinslab
 
 ---
 
-About this site
-
-```{python}
-
-import matplotlib.pyplot as plt
-plt.plot([1,2,3,4])
-plt.show()
-```

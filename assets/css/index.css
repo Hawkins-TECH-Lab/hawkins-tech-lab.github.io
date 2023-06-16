@@ -1,7 +1,7 @@
 
 .content-block {
     padding-top: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     margin-left: 30px;
     margin-right: 30px;
   }
@@ -30,12 +30,12 @@
   }
   
   .hero-banner h1 {
-    color: #ff6a00;
+    color: #d00000;
     font-size: 2.5rem;
   }
   
   h1 {
-    color: #ff6a00;
+    color: #d00000;
     font-size: 2rem;
   }
   h1 {
@@ -57,6 +57,7 @@
   
   .hero-banner .content-block .hero-text {
     width: 85%;
+    text-align: justify;
   }
   
   .hero-banner .content-block .hero-animation {
@@ -115,6 +116,7 @@
     }
     .hero-banner .content-block .hero-text {
       width: 100%;
+      text-align: center;
     }
     
     .hero-banner .content-block .hero-animation {
@@ -128,6 +130,7 @@
     }
     .hero-banner .content-block .hero-text {
       width: 100%;
+      text-align: center;
     }
     
     .hero-banner .content-block .hero-animation {
@@ -281,15 +284,15 @@
   
   .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: #fff;
-    background-color: #ff7518;
+    background-color: #249ab5;
   }
 
 
 
-    #btn-hero-primary {
+  #btn-hero-primary {
     appearance: none;
-    background-color: #ff8c00;
-    border: 2px solid #ff8c00;
+    background-color: #249ab5;
+    border: 2px solid #249ab5;
     border-radius: 15px;
     box-sizing: border-box;
     color: #FFFFFF;
@@ -377,3 +380,37 @@
         margin-top: 2rem;
         padding: auto;
     }
+
+    #table-project {
+      table-layout: fixed;
+      width: 100%;
+    }
+    
+    #table-project td:nth-child(1) {
+      width: 20%;
+      text-align: right;
+    }
+    
+    #table-project td:nth-child(2) {
+      width: 80%;
+    }
+    
+    @media (max-width: 600px) {
+      #table-project {
+        display: block;
+      }
+      
+      #table-project td {
+        width: 100%;
+        display: block;
+      }
+    
+      #table-project td:nth-child(1),
+      #table-project td:nth-child(2) {
+        width: 100%;
+      }
+    }
+    
+    
+    
+    
