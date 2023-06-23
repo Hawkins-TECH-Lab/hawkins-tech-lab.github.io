@@ -1,0 +1,1381 @@
+[
+  {
+    "objectID": "research/projects/projects.html",
+    "href": "research/projects/projects.html",
+    "title": "Current Projects",
+    "section": "",
+    "text": "Overview: Non-motorized transportation modes, such as walking and biking, have gained increased popularity due to the benefits of physical activity, health, psychological well-being, leisure, and improved environmental quality. Walking and biking can be facilitated or constrained by the physical form of communities in general as well as transportation system in particular. Therefore the development of walkable and bikeable environment is one effective way to encourage active living and healthy community. Increasingly, local governments are considering how community design and transportation system will impact residents’ active and healthy life style. The motivation of the research is to enhance pedestrian and bicyclist safety with emerging active travel data. The main objective of the project is to develop a reliable methodology for measuring pedestrian and bicyclist exposure and analyzing associated risks.  PI and Co-PIs: Yunwoo Nam (PI, UNL Community and Regional Planning), Jason Hawkins (co-PI, UNL Civil and Environmental Engineering), and Don Butler (co-PI, Nebraska DOT)Sponsor: Nebraska DOTDuration: July 2022 - May 2024Products: TBD\n\n\n\n\n\n\n\n\n\n\n\n\n\nOverview: The transportation sector is among the largest contributors of greenhouse gas emissions in the United States. A key pathway to decarbonization for the sector is electrification of the private vehicle stock. This pathway is particularly important in rural areas, where transit and land use planning are less feasible options. Rural residents generally drive further than their urban counterparts, while facing a relative deficit in infrastructure investments.Many households remain hesitant to purchase an EV due to “range anxiety” and a lack of available charging infrastructure. On the other hand, both public and private sector actors are reticent to invest in infrastructure without a known demand source. The problem is often termed a “chicken and egg” scenario because EV purchases and charging infrastructure are co-dependent. This project has several research thrusts. 1. EV & EVSE relationship - using an historical database of vehicle purchases by county for the United States, we are examing the causal relationship between EV purchases and charging infrastructure investments. 2. Electric pickup truck adoption - much of the current vehicle US fleet comprises large vehicles, including pickup trucks. These vehicle owners are unlikely to downsize their vehicle in order to own an EV. Many pickup truck owners, particularly outside large metro areas, also have utilitarian requirements for their personal vehicles. We are developing surveys, and associated discrete choice models, to ascertain the effect of these needs on the propensity to own an EV and associated range considerations.  3. Rural EV adoption - Related to the second research thrust, we are taking a deeper dive into the needs of rural residents for EV adoption. This work focuses on activity pattern analysis and public engagement. PI and Co-PIs: Jason Hawkins (PI)  Sponsor: University of Nebraska-Lincoln (start-up) / National Science Foundation (NSF) Research Experience for Undergraduates (REU)Duration: February 2022 - February 2024 Products: TBD\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOverview: There is a growing consensus that the prevalent neoliberalism political-economic system fails to appropriately situate the human economy within biosphere constraints. The dominant engineering narrative that ingenuity will be sufficient to overcome Nature’s scarcity has also faced critism, notably in “The Economics of Biodiversity: The Dasgupta Review”. Fundamentally, engineering design seeks to satisfy the consumptive needs and desires of a globally increasingly affluent society. We use the tools of engineering policy analysis (i.e., computational modeling and environmental impact analysis) to develop novel analytic methods for sustainable resource consumption. This research combines network science and microeconomic consumer choice theory to represent resource constrained consumption patterns.PI and Co-PIs: Jason Hawkins (PI)Sponsor: University of NebraskaDuration: July 2022 - May 2024Products: TBD\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOverview: Transportation provides access to social and economic opportunity. Unfortunately, transportation access is not eqitably distributed across the population, with low income and minority households tending to experience lower accessibility. This research develops hierarchical (i.e., mixed) logit models using Bayesian inferential methods. Heterogeneity is explicitly captured in the model through contextual variables and specification in willingness-to-pay space. Travel survey data from the San Francisco Bay Area.PI and Co-PIs: Sami Hasnine (PI, Howard University) and Jason Hawkins (Co-PI-, UNL)Sponsor: NoneDuration: November 2021 - September 2022Products: TBD"
+  },
+  {
+    "objectID": "research/projects/projects.html#modeling-pedestrian-and-bicyclist-crash-exposure-with-location-based-service-data",
+    "href": "research/projects/projects.html#modeling-pedestrian-and-bicyclist-crash-exposure-with-location-based-service-data",
+    "title": "Current Projects",
+    "section": "",
+    "text": "Overview: Non-motorized transportation modes, such as walking and biking, have gained increased popularity due to the benefits of physical activity, health, psychological well-being, leisure, and improved environmental quality. Walking and biking can be facilitated or constrained by the physical form of communities in general as well as transportation system in particular. Therefore the development of walkable and bikeable environment is one effective way to encourage active living and healthy community. Increasingly, local governments are considering how community design and transportation system will impact residents’ active and healthy life style. The motivation of the research is to enhance pedestrian and bicyclist safety with emerging active travel data. The main objective of the project is to develop a reliable methodology for measuring pedestrian and bicyclist exposure and analyzing associated risks.  PI and Co-PIs: Yunwoo Nam (PI, UNL Community and Regional Planning), Jason Hawkins (co-PI, UNL Civil and Environmental Engineering), and Don Butler (co-PI, Nebraska DOT)Sponsor: Nebraska DOTDuration: July 2022 - May 2024Products: TBD\n\n\n\n\n\n\n\n\n\n\n\n\n\nOverview: The transportation sector is among the largest contributors of greenhouse gas emissions in the United States. A key pathway to decarbonization for the sector is electrification of the private vehicle stock. This pathway is particularly important in rural areas, where transit and land use planning are less feasible options. Rural residents generally drive further than their urban counterparts, while facing a relative deficit in infrastructure investments.Many households remain hesitant to purchase an EV due to “range anxiety” and a lack of available charging infrastructure. On the other hand, both public and private sector actors are reticent to invest in infrastructure without a known demand source. The problem is often termed a “chicken and egg” scenario because EV purchases and charging infrastructure are co-dependent. This project has several research thrusts. 1. EV & EVSE relationship - using an historical database of vehicle purchases by county for the United States, we are examing the causal relationship between EV purchases and charging infrastructure investments. 2. Electric pickup truck adoption - much of the current vehicle US fleet comprises large vehicles, including pickup trucks. These vehicle owners are unlikely to downsize their vehicle in order to own an EV. Many pickup truck owners, particularly outside large metro areas, also have utilitarian requirements for their personal vehicles. We are developing surveys, and associated discrete choice models, to ascertain the effect of these needs on the propensity to own an EV and associated range considerations.  3. Rural EV adoption - Related to the second research thrust, we are taking a deeper dive into the needs of rural residents for EV adoption. This work focuses on activity pattern analysis and public engagement. PI and Co-PIs: Jason Hawkins (PI)  Sponsor: University of Nebraska-Lincoln (start-up) / National Science Foundation (NSF) Research Experience for Undergraduates (REU)Duration: February 2022 - February 2024 Products: TBD\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOverview: There is a growing consensus that the prevalent neoliberalism political-economic system fails to appropriately situate the human economy within biosphere constraints. The dominant engineering narrative that ingenuity will be sufficient to overcome Nature’s scarcity has also faced critism, notably in “The Economics of Biodiversity: The Dasgupta Review”. Fundamentally, engineering design seeks to satisfy the consumptive needs and desires of a globally increasingly affluent society. We use the tools of engineering policy analysis (i.e., computational modeling and environmental impact analysis) to develop novel analytic methods for sustainable resource consumption. This research combines network science and microeconomic consumer choice theory to represent resource constrained consumption patterns.PI and Co-PIs: Jason Hawkins (PI)Sponsor: University of NebraskaDuration: July 2022 - May 2024Products: TBD\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOverview: Transportation provides access to social and economic opportunity. Unfortunately, transportation access is not eqitably distributed across the population, with low income and minority households tending to experience lower accessibility. This research develops hierarchical (i.e., mixed) logit models using Bayesian inferential methods. Heterogeneity is explicitly captured in the model through contextual variables and specification in willingness-to-pay space. Travel survey data from the San Francisco Bay Area.PI and Co-PIs: Sami Hasnine (PI, Howard University) and Jason Hawkins (Co-PI-, UNL)Sponsor: NoneDuration: November 2021 - September 2022Products: TBD"
+  },
+  {
+    "objectID": "research/projects/data/county_shp/county_L48_only.html",
+    "href": "research/projects/data/county_shp/county_L48_only.html",
+    "title": "Hawkinslab",
+    "section": "",
+    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     dataset\n\n\n                 0 0     false"
+  },
+  {
+    "objectID": "research/projects/ev.html",
+    "href": "research/projects/ev.html",
+    "title": "EV Adoption in the US Midwest",
+    "section": "",
+    "text": "Introduction\nTransportation is the largest greenhouse gas (GHG) emissions source in the United States (28%). As such, reducing emissions from this sector is an important step towards addressing climate change impacts. One strategy to address this impact is the electrification of personal vehicles. In this study, we focus on electric vehicle (EV) adoption factors. Past studies on this topic have framed the vehicle adoption question around small vehicles. However, most Americans (60-70%) drive larger vehicles (i.e., SUVs, minivans, and pickup trucks). Our goal in this study was to understand how attitudes about EV adoption vary across the population.\nThe core of the research study was a consumer survey administered to residents of Midwest states (Iowa, Kansas, Missouri, Minnesota, Nebraska, North Dakota, and South Dakota).\n\n\n\n\n\n\n\n\n\nSurvey Design\nThe survey was administered in Qualtrics and distributed to 2,000 respondents in March, 2023 via an online panel company. Responses were screened for completion time and various other quality checks. After further post-completion quality controls, 1,954 complete responses were used in analysis. Respondent locations are shown below in an interactive map. Each respondent completed six stated preference experiments about their vehicle choice preferences. The available responses were “small car - gas”, “small car - electric”, “large car - gas”, “large car - electric”, “pickup truck - gas”, and “pickup truck - electric” where gas is an internal combustion engine vehicle and electric is a plugin electric vehicle. Additional details on the stated preference experiment are provided below.\n\n\n\n                                                \n\n\nStated preference experiments are a standard approach in consumer analysis to examine the preference for discrete options, where one or more options may not be presently available. Our the case of vehicle ownership, electric pickup trucks have only recently entered the market. We first presented respondents with the following images to illustrate our vehicle class definitions, attempting to keep images generic and free of brand logos that might influence preferences.\n\n\n\n\n\n\nSmall car 1\n\n\n\n\n\n\n\nSmall car 2\n\n\n\n\n\n\n\nLarge car 1\n\n\n\n\n\n\n\n\n\nLarge car 2\n\n\n\n\n\n\n\nPickup truck 1\n\n\n\n\n\n\n\nPickup truck 2\n\n\n\n\n\nWe then presented respondents with a series of stated preference experiments. These experiments take the form of attribute tables. Respondents must select one option from among the six presented to them. Each option is described by its purchase price, fuel cost (per 100 miles), annual maintenance cost, tax rebeate, recharging time (at a station and at home), driving range (in miles), towing capacity (in lbs), and onboard generator capacity (in days of typical home demand). Most attributes were based on previous survey experiments. However, towing capacity and onboard generator capacity were added to the experiment as features relevant to pickup truck owners.\n\n\n\n\n\n\n\n\n\nPreliminary Findings\nThe survey provided a wealth of results to be explored by the research team. We present a few of these findings below, with additional analysis provided in forthcoming publications.\nFirst, looking at respondents’ expected next vehicle purchase there is an intuitive trend towards more large vehicles among larger households. Pickup truck preference appears to be relatively constant across household sizes.\n\n\n\n                                                \n\n\nOne of the dimensions that was identified by the research team as missing in prior studies is driving frequency off public roads. It is widely known in the transportation planning community that active mode (walking and cycling) trips are underreported in traditional data sources (e.g., the National Household Travel Survey in the U.S.). When asked about daily trips, survey respondents frequently do not report recreational active mode trips, such as walking the dog around the block. We had the hypothesis that a similar under-reporting may occur among rural residents who use their personal vehicles on their property. This travel may be important for these residents when considering an EV, as it will deplete the vehicle battery (and therefore driving range). For example, a rancher may drive their pickup truck on their property to check on cows and then drive into town. Prior surveys likely missed this travel, resulting in an under-reporting of rural travel. The question was worded as follows: How often do you use your vehicle off public roads for work purposes (e.g., on your property or private roads)? after an initial screening question for whether the respondent makes such trips.\nAs expected, we found that those working in the farming, fishing, and foresty sectors are the most likely to travel off public roads for work. Further, they are the most likely to make such trips at least once per week. We also found a high rates for government and construction workers. Government workers may be driving in parks or to perform inspections on farms or industrial sites. Management and professional works also report making off-road trips. These trips may include engineers and other professional employees visiting farm, forestry, and industrial work sites. However, our main finding is significant travel that we do not believe is reported on conventional travel surveys (e.g., the NHTS).\n\n\n\n                                                \n\n\nA second cross-tabulation with off-road driving frequency explored was next vehicle type. There interest in this case is whether pickup truck owners are more likely to make such trips. We find evidence for this hypothesis, but it is not as strong as we anticipated, with many car owners reporting that they make trips off public roads 1-3 times per month.\n\n\n\n                                                \n\n\nWe also asked about the timing for the next vehicle purchase. The below figure summarizes these results by vehicle powertrain choice. We find that many people in the Midwest anticipate their next vehicle will have an internal combustion engine (ICE) powertrain - i.e., be either gasoline or diesel. However, those who plan to purchase their next vehicle in greater than 4 years are more likely to buy a hybrid electric vehicle (HEV). Battery electric vehicle (BEV) purchase intention may grow to 20% but generally hovers around the current national average sales rate of 10%. This result indicates that current intention does not align with climate mitigation scenarios requiring widescale BEV adoption across the country.\n\n\n\n                                                \n\n\nAnother factor explored in the survey was access to parking at home. Parking access is a commonly cited barrier to EV adoption in prior research. We find that a large portion of the Midwest population (44.3%) have access to a private enclosed garage. There is a mix of other levels of access to potential home charging facilities. However, 17% of the population lacks a dedicated parking space and a further 12% rely on shared parking that could not accomodate EV charging equipment.\n\n\n\n                                                \n\n\nThe following two figures are a special kind of diagram called a Sankey plot. Sankey plots are a great way to show shifts between two scenarios. The first Sankey plot shows current vehicle ownership (on the left) and stated vehicle choice in our stated preference experiment. The user can move the boxes around and use the slider below the plot to change the minimum flow (current -&gt; stated choice) to appear in the plot. We can see that most current small vehicle owners also pick this option in our experiment. Few current pickup truck owners pick BEV options in the stated preference experiment. We see the largest shift towards BEV options among current small car owners.\n\n\n\n                                                \n\n\nThe second Sankey plot shows the relationship between current vehicle ownership and the expected next vehicle purchase. Interestingly, here we see a smaller share of people selecting BEV options than in our experiments. The largest shifts are between vehicle sizes for ICE powertrain vehicles.\n\n\n\n                                                \n\n\n\n\nConclusions\nOur initial results suggest that rural travel may be under-reported in conventional statistics due to travel on personal property and private roads for work purposes. This under-reporting will affect the viability of EV adoption in these areas because residents will face driving range factors not properly incorporated into existing analyses. We designed a novel stated preference experiment focused on electric pickup truck adoption. Our initial analysis indicates that electrification in this vehicle market will be slower than among small car owners.\nFurther work will involve more advanced modeling methods and scenario analysis. These results will be published to the website in August 2023.\nWe welcome feedback and suggestions for further analysis using our survey. We provide the complete survey as a pdf below. Please feel free to use this survey as a basis for your own work!\n\n\n\nThis browser does not support PDFs. Please download the PDF to view it: Download PDF."
+  },
+  {
+    "objectID": "research/team/researchTeam.html",
+    "href": "research/team/researchTeam.html",
+    "title": "Research Team",
+    "section": "",
+    "text": "Dr. Jason Hawkins is an Assistant Professor in the Department of Civil & Environmental Engineering at UNL. He holds a Ph.D. (2021) in Civil Engineering from the University of Toronto and M.Sc. (2016) and B.Sc. (2014) in Civil Engineering from the University of Calgary. Dr. Hawkins completed postdoctoral work at the University of Texas at Austin. His primary research focus is the analysis of sustainable infrastructure systems through the application of a wide range of analytic tools."
+  },
+  {
+    "objectID": "research/team/researchTeam.html#graduate-assistants",
+    "href": "research/team/researchTeam.html#graduate-assistants",
+    "title": "Research Team",
+    "section": "Graduate assistants",
+    "text": "Graduate assistants\n\n\n\n\n\n\n\n\n\nName\nAbout\n\n\n\n\n\nHania Afzal\nHania is a Ph.D. student in engineering policy at the University of Nebraska-Lincoln. She received her M.Sc. in Economics from IBA Karachi and her B.Sc. in Economics from Quaid-I-Azam University. Prior to joining UNL, Hania was a researcher at Pakistan Institute of Development Economics (PIDE). She is currently working on electric vehicle adoption in the United States.\n\n\n\nNick Aldridge\nNick is an M.Sc. student in transportation engineering at the University of Nebraska-Lincoln. He received his B.Sc. in Civil & Environmental Engineering from UNL. His research focuses on developing pedestrian & bicycle crash exposure metrics for the City of Lincoln.\n\n\n\nOmid Armantalab\nOmid is a Ph.D. student in transportation engineering at the University of Nebraska-Lincoln. He received his M.Sc. in Civil Engineering from Amirkabir University of Technology and his B.Sc. in Civil Engineering from Kharazmi University. He is currently working on Bayesian statistical representations of transportation accessibility for equity and Justice40 applications.\n\n\n\nMohammad Elayan\nMohammad is a Ph.D. student in transportation engineering at the University of Nebraska-Lincoln. He received both his M.Sc. and B.Sc. in Civil Engineering from Jordan University of Science and Technology. Mohammad spent a decade working in the transportation industry in the UAE.\n\n\n\nDonya Negahbani\nDonya is an M.Sc. student in transportation engineering at the University of Nebraska-Lincoln. She received her B.Sc. in Civil Engineering from the University of Tehran."
+  },
+  {
+    "objectID": "research/team/researchTeam.html#undergraduate-research-assistant",
+    "href": "research/team/researchTeam.html#undergraduate-research-assistant",
+    "title": "Research Team",
+    "section": "Undergraduate Research Assistant",
+    "text": "Undergraduate Research Assistant\nUndergraduate students at UNL and UNO are encouraged to reach out to Dr. Hawkins about research opportunities. Current opportunities are available via UCare.\n\n\n\n\n\n\n\n\n\nName\nAbout\n\n\n\n\n\nSagun Karki\nSagun is a freshman computer science student at the University of Nebraska-Lincoln. He is from Kathmandu, Nepal. Sagun is working on network science analysis and provides coding assistance to the research group."
+  },
+  {
+    "objectID": "teaching/CIVE864/course-links.html",
+    "href": "teaching/CIVE864/course-links.html",
+    "title": "Useful links",
+    "section": "",
+    "text": "RStudio containers\n🔗 on Duke Container Manager\n\n\nCourse GitHub organization\n🔗 on GitHub\n\n\nDiscussion forum\n🔗 on Sakai\n\n\nLecture streaming and recordings\n🔗 on Panopto\n\n\nGradebook\n🔗 on Sakai\n\n\nVirtual meetings\n🔗 on Sakai"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (10).html",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (10).html",
+    "title": "Week 1",
+    "section": "",
+    "text": "Important\n\n\n\nClasses are virtual this week. Find Zoom links here."
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (10).html#prepare",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (10).html#prepare",
+    "title": "Week 1",
+    "section": "Prepare",
+    "text": "Prepare\n📖 Read the syllabus\n📖 Read the support resources"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (10).html#participate",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (10).html#participate",
+    "title": "Week 1",
+    "section": "Participate",
+    "text": "Participate\n🖥️ Lab 0 -Meet+ greet\n🖥️ Lecture 1 - Welcome to STA 210"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (10).html#practice",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (10).html#practice",
+    "title": "Week 1",
+    "section": "Practice",
+    "text": "Practice\n📋 AE 0 - Movies"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (10).html#perform",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (10).html#perform",
+    "title": "Week 1",
+    "section": "Perform",
+    "text": "Perform\n⌨️ Lab 0 - Meet + greet\n\n\nBack to course schedule ⏎"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (6).html",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (6).html",
+    "title": "Week 1",
+    "section": "",
+    "text": "Important\n\n\n\nClasses are virtual this week. Find Zoom links here."
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (6).html#prepare",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (6).html#prepare",
+    "title": "Week 1",
+    "section": "Prepare",
+    "text": "Prepare\n📖 Read the syllabus\n📖 Read the support resources"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (6).html#participate",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (6).html#participate",
+    "title": "Week 1",
+    "section": "Participate",
+    "text": "Participate\n🖥️ Lab 0 -Meet+ greet\n🖥️ Lecture 1 - Welcome to STA 210"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (6).html#practice",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (6).html#practice",
+    "title": "Week 1",
+    "section": "Practice",
+    "text": "Practice\n📋 AE 0 - Movies"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (6).html#perform",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (6).html#perform",
+    "title": "Week 1",
+    "section": "Perform",
+    "text": "Perform\n⌨️ Lab 0 - Meet + greet\n\n\nBack to course schedule ⏎"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy.html",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy.html",
+    "title": "Week 1",
+    "section": "",
+    "text": "Important\n\n\n\nClasses are virtual this week. Find Zoom links here."
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy.html#prepare",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy.html#prepare",
+    "title": "Week 1",
+    "section": "Prepare",
+    "text": "Prepare\n📖 Read the syllabus\n📖 Read the support resources"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy.html#participate",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy.html#participate",
+    "title": "Week 1",
+    "section": "Participate",
+    "text": "Participate\n🖥️ Lab 0 -Meet+ greet\n🖥️ Lecture 1 - Welcome to STA 210"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy.html#practice",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy.html#practice",
+    "title": "Week 1",
+    "section": "Practice",
+    "text": "Practice\n📋 AE 0 - Movies"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy.html#perform",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy.html#perform",
+    "title": "Week 1",
+    "section": "Perform",
+    "text": "Perform\n⌨️ Lab 0 - Meet + greet\n\n\nBack to course schedule ⏎"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (7).html",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (7).html",
+    "title": "Week 1",
+    "section": "",
+    "text": "Important\n\n\n\nClasses are virtual this week. Find Zoom links here."
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (7).html#prepare",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (7).html#prepare",
+    "title": "Week 1",
+    "section": "Prepare",
+    "text": "Prepare\n📖 Read the syllabus\n📖 Read the support resources"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (7).html#participate",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (7).html#participate",
+    "title": "Week 1",
+    "section": "Participate",
+    "text": "Participate\n🖥️ Lab 0 -Meet+ greet\n🖥️ Lecture 1 - Welcome to STA 210"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (7).html#practice",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (7).html#practice",
+    "title": "Week 1",
+    "section": "Practice",
+    "text": "Practice\n📋 AE 0 - Movies"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (7).html#perform",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (7).html#perform",
+    "title": "Week 1",
+    "section": "Perform",
+    "text": "Perform\n⌨️ Lab 0 - Meet + greet\n\n\nBack to course schedule ⏎"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (11).html",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (11).html",
+    "title": "Week 1",
+    "section": "",
+    "text": "Important\n\n\n\nClasses are virtual this week. Find Zoom links here."
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (11).html#prepare",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (11).html#prepare",
+    "title": "Week 1",
+    "section": "Prepare",
+    "text": "Prepare\n📖 Read the syllabus\n📖 Read the support resources"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (11).html#participate",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (11).html#participate",
+    "title": "Week 1",
+    "section": "Participate",
+    "text": "Participate\n🖥️ Lab 0 -Meet+ greet\n🖥️ Lecture 1 - Welcome to STA 210"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (11).html#practice",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (11).html#practice",
+    "title": "Week 1",
+    "section": "Practice",
+    "text": "Practice\n📋 AE 0 - Movies"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (11).html#perform",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (11).html#perform",
+    "title": "Week 1",
+    "section": "Perform",
+    "text": "Perform\n⌨️ Lab 0 - Meet + greet\n\n\nBack to course schedule ⏎"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1.html",
+    "href": "teaching/CIVE864/weeks/week-1.html",
+    "title": "Week 1",
+    "section": "",
+    "text": ":::"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1.html#prepare",
+    "href": "teaching/CIVE864/weeks/week-1.html#prepare",
+    "title": "Week 1",
+    "section": "Prepare",
+    "text": "Prepare\n📖 Read the syllabus\n📖 Read the support resources"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1.html#participate",
+    "href": "teaching/CIVE864/weeks/week-1.html#participate",
+    "title": "Week 1",
+    "section": "Participate",
+    "text": "Participate\n🖥️ Lab 0 -Meet+ greet\n🖥️ Lecture 1 - Welcome to STA 210"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1.html#practice",
+    "href": "teaching/CIVE864/weeks/week-1.html#practice",
+    "title": "Week 1",
+    "section": "Practice",
+    "text": "Practice\n📋 AE 0 - Movies"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1.html#perform",
+    "href": "teaching/CIVE864/weeks/week-1.html#perform",
+    "title": "Week 1",
+    "section": "Perform",
+    "text": "Perform\n⌨️ Lab 0 - Meet + greet\n\n\nBack to course schedule ⏎"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (2).html",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (2).html",
+    "title": "Week 1",
+    "section": "",
+    "text": "Important\n\n\n\nClasses are virtual this week. Find Zoom links here."
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (2).html#prepare",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (2).html#prepare",
+    "title": "Week 1",
+    "section": "Prepare",
+    "text": "Prepare\n📖 Read the syllabus\n📖 Read the support resources"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (2).html#participate",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (2).html#participate",
+    "title": "Week 1",
+    "section": "Participate",
+    "text": "Participate\n🖥️ Lab 0 -Meet+ greet\n🖥️ Lecture 1 - Welcome to STA 210"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (2).html#practice",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (2).html#practice",
+    "title": "Week 1",
+    "section": "Practice",
+    "text": "Practice\n📋 AE 0 - Movies"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (2).html#perform",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (2).html#perform",
+    "title": "Week 1",
+    "section": "Perform",
+    "text": "Perform\n⌨️ Lab 0 - Meet + greet\n\n\nBack to course schedule ⏎"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (14).html",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (14).html",
+    "title": "Week 1",
+    "section": "",
+    "text": "Important\n\n\n\nClasses are virtual this week. Find Zoom links here."
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (14).html#prepare",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (14).html#prepare",
+    "title": "Week 1",
+    "section": "Prepare",
+    "text": "Prepare\n📖 Read the syllabus\n📖 Read the support resources"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (14).html#participate",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (14).html#participate",
+    "title": "Week 1",
+    "section": "Participate",
+    "text": "Participate\n🖥️ Lab 0 -Meet+ greet\n🖥️ Lecture 1 - Welcome to STA 210"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (14).html#practice",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (14).html#practice",
+    "title": "Week 1",
+    "section": "Practice",
+    "text": "Practice\n📋 AE 0 - Movies"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (14).html#perform",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (14).html#perform",
+    "title": "Week 1",
+    "section": "Perform",
+    "text": "Perform\n⌨️ Lab 0 - Meet + greet\n\n\nBack to course schedule ⏎"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (15).html",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (15).html",
+    "title": "Week 1",
+    "section": "",
+    "text": "Important\n\n\n\nClasses are virtual this week. Find Zoom links here."
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (15).html#prepare",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (15).html#prepare",
+    "title": "Week 1",
+    "section": "Prepare",
+    "text": "Prepare\n📖 Read the syllabus\n📖 Read the support resources"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (15).html#participate",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (15).html#participate",
+    "title": "Week 1",
+    "section": "Participate",
+    "text": "Participate\n🖥️ Lab 0 -Meet+ greet\n🖥️ Lecture 1 - Welcome to STA 210"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (15).html#practice",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (15).html#practice",
+    "title": "Week 1",
+    "section": "Practice",
+    "text": "Practice\n📋 AE 0 - Movies"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (15).html#perform",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (15).html#perform",
+    "title": "Week 1",
+    "section": "Perform",
+    "text": "Perform\n⌨️ Lab 0 - Meet + greet\n\n\nBack to course schedule ⏎"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (3).html",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (3).html",
+    "title": "Week 1",
+    "section": "",
+    "text": "Important\n\n\n\nClasses are virtual this week. Find Zoom links here."
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (3).html#prepare",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (3).html#prepare",
+    "title": "Week 1",
+    "section": "Prepare",
+    "text": "Prepare\n📖 Read the syllabus\n📖 Read the support resources"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (3).html#participate",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (3).html#participate",
+    "title": "Week 1",
+    "section": "Participate",
+    "text": "Participate\n🖥️ Lab 0 -Meet+ greet\n🖥️ Lecture 1 - Welcome to STA 210"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (3).html#practice",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (3).html#practice",
+    "title": "Week 1",
+    "section": "Practice",
+    "text": "Practice\n📋 AE 0 - Movies"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (3).html#perform",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (3).html#perform",
+    "title": "Week 1",
+    "section": "Perform",
+    "text": "Perform\n⌨️ Lab 0 - Meet + greet\n\n\nBack to course schedule ⏎"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (8).html",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (8).html",
+    "title": "Week 1",
+    "section": "",
+    "text": "Important\n\n\n\nClasses are virtual this week. Find Zoom links here."
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (8).html#prepare",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (8).html#prepare",
+    "title": "Week 1",
+    "section": "Prepare",
+    "text": "Prepare\n📖 Read the syllabus\n📖 Read the support resources"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (8).html#participate",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (8).html#participate",
+    "title": "Week 1",
+    "section": "Participate",
+    "text": "Participate\n🖥️ Lab 0 -Meet+ greet\n🖥️ Lecture 1 - Welcome to STA 210"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (8).html#practice",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (8).html#practice",
+    "title": "Week 1",
+    "section": "Practice",
+    "text": "Practice\n📋 AE 0 - Movies"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (8).html#perform",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (8).html#perform",
+    "title": "Week 1",
+    "section": "Perform",
+    "text": "Perform\n⌨️ Lab 0 - Meet + greet\n\n\nBack to course schedule ⏎"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (4).html",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (4).html",
+    "title": "Week 1",
+    "section": "",
+    "text": "Important\n\n\n\nClasses are virtual this week. Find Zoom links here."
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (4).html#prepare",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (4).html#prepare",
+    "title": "Week 1",
+    "section": "Prepare",
+    "text": "Prepare\n📖 Read the syllabus\n📖 Read the support resources"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (4).html#participate",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (4).html#participate",
+    "title": "Week 1",
+    "section": "Participate",
+    "text": "Participate\n🖥️ Lab 0 -Meet+ greet\n🖥️ Lecture 1 - Welcome to STA 210"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (4).html#practice",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (4).html#practice",
+    "title": "Week 1",
+    "section": "Practice",
+    "text": "Practice\n📋 AE 0 - Movies"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (4).html#perform",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (4).html#perform",
+    "title": "Week 1",
+    "section": "Perform",
+    "text": "Perform\n⌨️ Lab 0 - Meet + greet\n\n\nBack to course schedule ⏎"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (12).html",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (12).html",
+    "title": "Week 1",
+    "section": "",
+    "text": "Important\n\n\n\nClasses are virtual this week. Find Zoom links here."
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (12).html#prepare",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (12).html#prepare",
+    "title": "Week 1",
+    "section": "Prepare",
+    "text": "Prepare\n📖 Read the syllabus\n📖 Read the support resources"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (12).html#participate",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (12).html#participate",
+    "title": "Week 1",
+    "section": "Participate",
+    "text": "Participate\n🖥️ Lab 0 -Meet+ greet\n🖥️ Lecture 1 - Welcome to STA 210"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (12).html#practice",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (12).html#practice",
+    "title": "Week 1",
+    "section": "Practice",
+    "text": "Practice\n📋 AE 0 - Movies"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (12).html#perform",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (12).html#perform",
+    "title": "Week 1",
+    "section": "Perform",
+    "text": "Perform\n⌨️ Lab 0 - Meet + greet\n\n\nBack to course schedule ⏎"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (13).html",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (13).html",
+    "title": "Week 1",
+    "section": "",
+    "text": "Important\n\n\n\nClasses are virtual this week. Find Zoom links here."
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (13).html#prepare",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (13).html#prepare",
+    "title": "Week 1",
+    "section": "Prepare",
+    "text": "Prepare\n📖 Read the syllabus\n📖 Read the support resources"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (13).html#participate",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (13).html#participate",
+    "title": "Week 1",
+    "section": "Participate",
+    "text": "Participate\n🖥️ Lab 0 -Meet+ greet\n🖥️ Lecture 1 - Welcome to STA 210"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (13).html#practice",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (13).html#practice",
+    "title": "Week 1",
+    "section": "Practice",
+    "text": "Practice\n📋 AE 0 - Movies"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (13).html#perform",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (13).html#perform",
+    "title": "Week 1",
+    "section": "Perform",
+    "text": "Perform\n⌨️ Lab 0 - Meet + greet\n\n\nBack to course schedule ⏎"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (5).html",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (5).html",
+    "title": "Week 1",
+    "section": "",
+    "text": "Important\n\n\n\nClasses are virtual this week. Find Zoom links here."
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (5).html#prepare",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (5).html#prepare",
+    "title": "Week 1",
+    "section": "Prepare",
+    "text": "Prepare\n📖 Read the syllabus\n📖 Read the support resources"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (5).html#participate",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (5).html#participate",
+    "title": "Week 1",
+    "section": "Participate",
+    "text": "Participate\n🖥️ Lab 0 -Meet+ greet\n🖥️ Lecture 1 - Welcome to STA 210"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (5).html#practice",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (5).html#practice",
+    "title": "Week 1",
+    "section": "Practice",
+    "text": "Practice\n📋 AE 0 - Movies"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (5).html#perform",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (5).html#perform",
+    "title": "Week 1",
+    "section": "Perform",
+    "text": "Perform\n⌨️ Lab 0 - Meet + greet\n\n\nBack to course schedule ⏎"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (9).html",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (9).html",
+    "title": "Week 1",
+    "section": "",
+    "text": "Important\n\n\n\nClasses are virtual this week. Find Zoom links here."
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (9).html#prepare",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (9).html#prepare",
+    "title": "Week 1",
+    "section": "Prepare",
+    "text": "Prepare\n📖 Read the syllabus\n📖 Read the support resources"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (9).html#participate",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (9).html#participate",
+    "title": "Week 1",
+    "section": "Participate",
+    "text": "Participate\n🖥️ Lab 0 -Meet+ greet\n🖥️ Lecture 1 - Welcome to STA 210"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (9).html#practice",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (9).html#practice",
+    "title": "Week 1",
+    "section": "Practice",
+    "text": "Practice\n📋 AE 0 - Movies"
+  },
+  {
+    "objectID": "teaching/CIVE864/weeks/week-1 - Copy (9).html#perform",
+    "href": "teaching/CIVE864/weeks/week-1 - Copy (9).html#perform",
+    "title": "Week 1",
+    "section": "Perform",
+    "text": "Perform\n⌨️ Lab 0 - Meet + greet\n\n\nBack to course schedule ⏎"
+  },
+  {
+    "objectID": "teaching/CIVE864/course-overview.html",
+    "href": "teaching/CIVE864/course-overview.html",
+    "title": "STA 210: Regression Analysis",
+    "section": "",
+    "text": "Learn approaches for analyzing multivariate data sets, emphasizing analysis of variance, linear regression, and logistic regression. Learn techniques for checking the appropriateness of proposed models, such as residual analyses and case influence diagnostics, and techniques for selecting models. Gain experience dealing with the challenges that arise in practice through assignments that utilize real-world data. This class emphasizes data analysis over mathematical theory."
+  },
+  {
+    "objectID": "teaching/CIVE864/slides/lec-1.html#course-faq",
+    "href": "teaching/CIVE864/slides/lec-1.html#course-faq",
+    "title": "Lecture 1 - Course Introduction",
+    "section": "Course FAQ",
+    "text": "Course FAQ\n\n\nWhat background is assumed for the course? Intermediate statistics and probability\nWill be doing computing? Yes. We will use Python and R.\nWill we learn the mathematical and economic theory of demand? Yes. This course takes an advanced graduate treatment to the content. Much is covered and much is expected of you.\nAre these methods applicable to other problems? Yes. Demand analysis methods are applied in consumer choice, environmental valuation, location choice, and traffic safety fields."
+  },
+  {
+    "objectID": "teaching/CIVE864/slides/lec-1.html#course-learning-objectives",
+    "href": "teaching/CIVE864/slides/lec-1.html#course-learning-objectives",
+    "title": "Lecture 1 - Course Introduction",
+    "section": "Course Learning Objectives",
+    "text": "Course Learning Objectives\n\n\nExplain the theory of (dis)aggregate travel demand models.\nRelate economic theory to engineering problems.\nAnalyze the validity and limitations of survey and other datasets for use in travel demand analysis.\nEstimate simple discrete choice models for use in travel behavior studies.\nFormulate advanced behavioral models for use in travel behavior studies.\nStrengthen your understanding of research experimental design."
+  },
+  {
+    "objectID": "teaching/CIVE864/slides/lec-1.html#need-for-travel-demand-analysis---investment",
+    "href": "teaching/CIVE864/slides/lec-1.html#need-for-travel-demand-analysis---investment",
+    "title": "Lecture 1 - Course Introduction",
+    "section": "Need for Travel Demand Analysis - Investment",
+    "text": "Need for Travel Demand Analysis - Investment"
+  },
+  {
+    "objectID": "teaching/CIVE864/slides/lec-1.html#need-for-travel-demand-analysis---forecasting",
+    "href": "teaching/CIVE864/slides/lec-1.html#need-for-travel-demand-analysis---forecasting",
+    "title": "Lecture 1 - Course Introduction",
+    "section": "Need for Travel Demand Analysis - Forecasting**",
+    "text": "Need for Travel Demand Analysis - Forecasting**\n\n\n\n\nCIVE864 Home"
+  },
+  {
+    "objectID": "teaching/CIVE864/course-faq.html",
+    "href": "teaching/CIVE864/course-faq.html",
+    "title": "FAQ",
+    "section": "",
+    "text": "Go to your Files tab, check the box next to the file you want to download, then click on the blue gear icon on the Files tab to reveal the drop down menu, and select Export… If you have selected multiple files to export, RStudio will zip them up into a single zip file for you. If you’ve selected just a single file, it will only download that. The downloaded file will go to wherever files you download off the internet goes on your computer (usually your Downloads folder)."
+  },
+  {
+    "objectID": "teaching/CIVE864/course-faq.html#how-do-i-export-my-assignment-pdf-from-rstudio-to-upload-to-gradescope",
+    "href": "teaching/CIVE864/course-faq.html#how-do-i-export-my-assignment-pdf-from-rstudio-to-upload-to-gradescope",
+    "title": "FAQ",
+    "section": "",
+    "text": "Go to your Files tab, check the box next to the file you want to download, then click on the blue gear icon on the Files tab to reveal the drop down menu, and select Export… If you have selected multiple files to export, RStudio will zip them up into a single zip file for you. If you’ve selected just a single file, it will only download that. The downloaded file will go to wherever files you download off the internet goes on your computer (usually your Downloads folder)."
+  },
+  {
+    "objectID": "teaching/CIVE864/course-faq.html#how-can-i-submit-my-assignment-to-gradescope",
+    "href": "teaching/CIVE864/course-faq.html#how-can-i-submit-my-assignment-to-gradescope",
+    "title": "FAQ",
+    "section": "How can I submit my assignment to Gradescope?",
+    "text": "How can I submit my assignment to Gradescope?\nThe instructions for submitting your assignment to Gradescope can be found here. In a nutshell, you’ll upload your PDF and them mark the page(s) where each question can be found. It’s OK if a question spans multiple pages, just mark them all. It’s also OK if a page includes multiple questions."
+  },
+  {
+    "objectID": "teaching/CIVE864/course-faq.html#can-i-use-a-local-install-of-r-and-rstudio-instead-of-using-the-rstudio-containers",
+    "href": "teaching/CIVE864/course-faq.html#can-i-use-a-local-install-of-r-and-rstudio-instead-of-using-the-rstudio-containers",
+    "title": "FAQ",
+    "section": "Can I use a local install of R and RStudio instead of using the RStudio containers?",
+    "text": "Can I use a local install of R and RStudio instead of using the RStudio containers?\nThe short answer is, I’d rather you didn’t, to save yourself some headache. But, the long answer is, sure! But you will need to install a specific versions of R and RStudio for everything to work as expected. You will also need to install the R packages we’re using as well as have Git installed on your computer. These are not extremely challenging things to get right, but they are not trivial either, particularly on certain operating systems. Myself and the TAs are always happy to provide help with any computational questions when you’re working in the containers we have provided for you. If you’re working on your local setup, we can’t guarantee being able to resolve your issues, though we’re happy to try.\nIf you want to take this path, here is what you need to do:\n\nDownload and install R 4.1.2: https://cran.r-project.org/\nDownload and install a daily build of RStudio: https://dailies.rstudio.com/\nInstall Quarto CLI: https://quarto.org/docs/getting-started/installation.html\nInstall Git: https://happygitwithr.com/install-git.html\nInstall any necessary packages with install.packages(\"___\")\n\nAnd I’d like to reiterate again that successful installation of these software is not a learning goal of this course. So if any of this seems tedious or intimidating in any way, just use the computing environment we have set up for you. More on that here."
+  },
+  {
+    "objectID": "teaching/CIVE864/CIVE864.html",
+    "href": "teaching/CIVE864/CIVE864.html",
+    "title": "CIVE864",
+    "section": "",
+    "text": "This page contains an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses, with all changes documented here.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nDate\nTopic\nPrepare\nSlides\nAE\nHW\nExam\n\n\n\n\n\n\n1\nWed, Jan 5\nLab 0 - Meet + greet\n\n🖥️\n\n\n\n\n\n\n\n\nThu, Jan 6\nWelcome to STA 210!\n📖\n🖥️\n📋\n\n\n\n\n\n\n2\nMon, Jan 10\nLab 1 - Meet the toolkit\n\n🖥️\n\n\n\n\n\n\n\n\nTue, Jan 11\nSimple linear regression (SLR)\n📖\n🖥️\n\n\n\n\n\n\n\n\nThu, Jan 13\nSLR: Model fitting in R with tidymodels\n\n🖥️\n📋\n\n\n\n\n\n\n\nFri, Jan 14\nReleased: HW 5\n\n\n\n✍️\n\n\n\n\n\n\n\nDue: Lab 1\n\n\n\n\n\n\n\n\n\n3\nMon, Jan 17\nMartin Luther King, Jr. Day\n\n\n\n\n\n\n\n\n\n\nTue, Jan 18\nSLR: Prediction + model evaluation\n📖\n🖥️\n📋\n\n\n\n\n\n\n\nThu, Jan 20\nSLR: Simulation-based inference\n\n🖥️\n\n\n\n\n\n\n\n\nFri, Jan 21\nReleased: HW 1\n\n\n\n✍️\n\n\n\n\n\n4\nMon, Jan 24\nLab 2 - College scorecard\n\n🖥️\n\n\n\n\n\n\n\n\nTue, Jan 25\nSLR: Mathematical models for inference\n📖\n🖥️\n\n\n\n\n\n\n\n\nThu, Jan 27\nSLR: Model diagnostics\n\n🖥️\n📋\n\n\n\n\n\n\n\nFri, Jan 28\nDue: HW 1 + Lab 2\n\n\n\n✍️ 🗝️\n\n\n\n\n\n5\nMon, Jan 31\nLab 3 - Coffee ratings\n\n🖥️\n\n\n\n\n\n\n\n\nTue, Feb 1\nMultiple linear regression (MLR)\n📖\n🖥️\n\n\n\n\n\n\n\n\nThu, Feb 3\nExam 1 review\n\n🖥️\n📋\n\n\n\n\n\n\n\nFri, Feb 4\nReleased: Exam 1\n\n\n\n\n✅\n\n\n\n\n\n\nDue: Lab 3\n\n\n\n\n\n\n\n\n\n6\nMon, Feb 7\nNo lab: Work on Exam 1\n\n\n\n\n\n\n\n\n\n\n\nDue: Exam 1\n\n\n\n\n✅\n\n\n\n\n\nTue, Feb 8\nMLR: Types of predictors\n📖\n🖥️\n\n\n\n\n\n\n\n\nThu, Feb 10\nMLR: Model comparison\n\n🖥️\n\n\n\n\n\n\n\n\nFri, Feb 11\nReleased: HW 2\n\n\n\n✍️\n\n\n\n\n\n7\nMon, Feb 14\nLab: Project topic ideas\n\n\n\n\n\n\n\n\n\n\nTue, Feb 15\nMLR: Feature engineering\n📖\n🖥️\n📋\n\n\n\n\n\n\n\nThu, Feb 17\nMLR: Feature engineering\n\n🖥️\n\n\n\n\n\n\n\n\nFri, Feb 18\nDue: HW 2 + Project topic ideas\n\n\n\n✍️ 🗝️\n\n\n\n\n\n8\nMon, Feb 21\nLab 4: The Office\n\n\n\n\n\n\n\n\n\n\nTue, Feb 22\nMLR: Cross validation\n📖\n🖥️\n📋\n\n\n\n\n\n\n\nThu, Feb 24\nExam 2 review\n\n🖥️\n📋\n\n\n\n\n\n\n\nFri, Feb 25\nReleased: Exam 2\n\n\n\n\n✅\n\n\n\n\n\n\nDue: Lab 4\n\n\n\n\n\n\n\n\n\n9\nMon, Feb 28\nNo lab: Work on Exam 2\n\n\n\n\n\n\n\n\n\n\n\nDue: Exam 2\n\n\n\n\n✅\n\n\n\n\n\nTue, Mar 1\nMLR: Inference\n📖\n🖥️\n📋\n\n\n\n\n\n\n\nThu, Mar 3\nMLR: Inference conditions + multicollinearity\n\n🖥️\n\n\n\n\n\n\n\n\nMon, Mar 7\nSpring break\n\n\n\n\n\n\n\n\n\n\nTue, Mar 8\nSpring break\n\n\n\n\n\n\n\n\n\n\nThu, Mar 10\nSpring break\n\n\n\n\n\n\n\n\n\n10\nMon, Mar 14\nLab: Work on project proposals\n\n\n\n\n\n\n\n\n\n\nTue, Mar 15\nLogistic regression (LR)\n📖\n🖥️\n📋\n\n\n\n\n\n\n\nThu, Mar 17\nProbabilities, odds, and odds ratios\n\n🖥️\n\n\n\n\n\n\n\n\nFri, Mar 18\nDue: Project proposals\n\n\n\n\n\n\n\n\n\n\n\nReleased: HW 3\n\n\n\n✍️\n\n\n\n\n\n11\nMon, Mar 21\nLab 5: General Social Survey\n\n\n\n\n\n\n\n\n\n\nTue, Mar 22\nLR: Prediction / classification\n📖\n🖥️\n\n\n\n\n\n\n\n\nThu, Mar 24\nLR: Model comparison\n\n🖥️\n📋\n\n\n\n\n\n\n\nFri, Mar 25\nDue: HW 3 + Lab 5\n\n\n\n✍️ 🗝️\n\n\n\n\n\n12\nMon, Mar 28\nLab: Work on project drafts\n\n\n\n\n\n\n\n\n\n\nTue, Mar 29\nLR: Inference + conditions\n📖\n🖥️\n\n\n\n\n\n\n\n\nThu, Mar 31\nMultinomial Logistic Regression (MultiLR)\n\n🖥️\n\n\n\n\n\n\n\n\nFri, Apr 1\nReleased: HW 4\n\n\n\n✍️\n\n\n\n\n\n13\nMon, Apr 4\nLab 6: Why Many Americans Don’t Vote\n\n\n\n\n\n\n\n\n\n\nTue, Apr 5\nMultiLR: Prediction + inferential models\n📖\n🖥️\n\n\n\n\n\n\n\n\nThu, Apr 7\nMultiLR: Predictive models\n\n🖥️\n📋\n\n\n\n\n\n\n\nFri, Apr 8\nDue: Lab 6\n\n\n\n\n\n\n\n\n\n\nSun, Apr 10\nDue: Project drafts\n\n\n\n\n\n\n\n\n\n\nTue, Apr 12\nMultiLR: Predictive models (cont.)\n📖\n🖥️\n\n\n\n\n\n\n\n\nThu, Apr 14\nExam 3 review\n\n🖥️\n📋\n\n\n\n\n\n\n\n\nDue: Peer review\n\n\n\n\n\n\n\n\n\n\nFri, Apr 15\nReleased: Exam 3\n\n\n\n\n✅\n\n\n\n\n15\nMon, Apr 18\nNo lab: Work on Exam 3\n\n\n\n\n\n\n\n\n\n\n\nDue: Exam 3\n\n\n\n\n✅\n\n\n\n\n\nTue, Apr 19\nWrap-up\n📖\n🖥️\n📋\n\n\n\n\n\n\n\n\nDue: HW 5\n\n\n\n✍️\n\n\n\n\n\n16\nMon, Apr 25\nDue: Project write-up\n\n\n\n\n\n\n\n\n\n\nThu, Apr 28\nDue: Video presentation + repo\n\n\n\n\n\n\n\n\n\n\nSat, Apr 30\nDue: Video comments"
+  },
+  {
+    "objectID": "teaching/CIVE864/project-description.html",
+    "href": "teaching/CIVE864/project-description.html",
+    "title": "Project description",
+    "section": "",
+    "text": "Topic ideas due Fri, Feb 18\nProposal due Fri, Mar 18\nDraft report due Fri, Apr 8\nPeer review due Fri, Apr 15\nFinal report due Mon, Apr 25\nFinal GitHub repo due Thu, Apr 28"
+  },
+  {
+    "objectID": "teaching/CIVE864/project-description.html#timeline",
+    "href": "teaching/CIVE864/project-description.html#timeline",
+    "title": "Project description",
+    "section": "",
+    "text": "Topic ideas due Fri, Feb 18\nProposal due Fri, Mar 18\nDraft report due Fri, Apr 8\nPeer review due Fri, Apr 15\nFinal report due Mon, Apr 25\nFinal GitHub repo due Thu, Apr 28"
+  },
+  {
+    "objectID": "teaching/CIVE864/project-description.html#introduction",
+    "href": "teaching/CIVE864/project-description.html#introduction",
+    "title": "Project description",
+    "section": "Introduction",
+    "text": "Introduction\nTL;DR: Pick a data set and do a demand analysis. That is your final project.\nThe goal of the final project is for you to use aggregate and/or disaggregate demand analysis to analyze a data set of your own choosing. Choose the data based on your group’s interests or work you all have done in other courses or research projects. The goal of this project is for you to demonstrate proficiency in the techniques we have covered in this class (and beyond, if you like!) and apply them to a data set to analyze it in a meaningful way.\nAll analyses must be done in Python or R, and all components of the project must be reproducible.\n\nLogistics\nYou will work on the project with a partner, or in a group of three depending on class size.\nThe four primary deliverables for the final project are\n\nA written, reproducible report detailing your analysis\nA GitHub repository corresponding to your report\nFormal peer review on another team’s project"
+  },
+  {
+    "objectID": "teaching/CIVE864/project-description.html#topic-ideas",
+    "href": "teaching/CIVE864/project-description.html#topic-ideas",
+    "title": "Project description",
+    "section": "Topic ideas",
+    "text": "Topic ideas\nIdentify 2-3 data sets you’re interested in potentially using for the final project. If you’re unsure where to find data, you can use the list of potential data sources in the Tips + Resources section as a starting point. It may also help to think of topics you’re interested in investigating and find data sets on those topics.\nThe purpose of submitting project ideas is to give you time to find data for the project and to make sure you have a data set that can help you be successful in the project. Therefore, you must use one of the data sets submitted as a topic idea, unless otherwise notified to the course instructor.\nThe data sets should meet the following criteria:\n\nAt least 500 observations\nAt least 10 columns\nAt least 6 of the columns must be useful and unique predictor variables.\n\nIf you have multiple columns with the same information (e.g. “state abbreviation” and “state name”), then they are not unique predictors.\n\nAt least one variable that can be identified as a reasonable response variable.\n\nThe response variable can be quantitative or categorical.\n\nA mix of quantitative and categorical variables that can be used as predictors.\nYou may not use data that has previously been used in any course materials, or any derivation of data that has been used in course materials.\n\nPlease ask the course instructor if you’re unsure whether your data set meets the criteria.\nFor each data set, include the following:\n\nIntroduction and data\n\nState the source of the data set\nDescribe when and how it was originally collected (by the original data curator, not necessarily how you found the data)\nDescribe the observations and the general characteristics being measured in the data\n\n\n\nResearch question\n\nDescribe a research question you’re interested in answering using this data."
+  },
+  {
+    "objectID": "teaching/CIVE864/project-description.html#project-proposal",
+    "href": "teaching/CIVE864/project-description.html#project-proposal",
+    "title": "Project description",
+    "section": "Project proposal",
+    "text": "Project proposal\nThe purpose of the project proposal is to help you think about your analysis strategy early.\nInclude the following in the proposal:\n\nSection 1 - Introduction\nThe introduction section includes:\n\nAn introduction to the subject matter you’re investigating\nThe motivation for your research question (citing any relevant literature)\nThe general research question you wish to explore\nYour hypotheses regarding the research question of interest\n\n\n\nSection 2 - Data description\nIn this section, you will describe the data set you wish to explore. This includes:\n\nDescription of the observations in the data set,\nDescription of how the data was originally collected (not how you found the data but how the original curator of the data collected it).\n\n\n\nSection 3 - Analysis approach\nIn this section, you will provide a brief overview of your analysis approach. This includes:\n\nDescription of the response variable\nVisualization and summary statistics for the response variable\nList of variables that will be considered as predictors\nRegression model technique (e.g., multiple linear regression, logistic regression, mixed logit discrete choice)\n\n\n\nData dictionary (aka code book)\nSubmit a data dictionary for all the variables in your data set in the README of your project repo, in the data folder. Link to this file from your proposal writeup.\n\n\nSubmission\nPush all of your final changes to the GitHub repo, and submit the PDF of your proposal to Canvas.\n\n\nProposal grading\n\n\n\nTotal\n10 pts\n\n\n\n\nIntroduction\n3 pts\n\n\nData description\n2 pts\n\n\nAnalysis plan\n4 pts\n\n\nData dictionary\n1 pts\n\n\n\nEach component will be graded as follows:\n\nMeets expectations (full credit): All required elements are completed and are accurate. The narrative is written clearly, all tables and visualizations are nicely formatted, and the work would be presentable in a professional setting.\nClose to expectations (half credit): There are some elements missing and/or inaccurate. There are some issues with formatting.\nDoes not meet expectations (no credit): Major elements missing. Work is not neatly formatted and would not be presentable in a professional setting."
+  },
+  {
+    "objectID": "teaching/CIVE864/project-description.html#draft-report",
+    "href": "teaching/CIVE864/project-description.html#draft-report",
+    "title": "Project description",
+    "section": "Draft report",
+    "text": "Draft report\nThe purpose of the draft report and peer review is to give you an opportunity to get early feedback on your analysis. Therefore, the draft and peer review will focus primarily on the exploratory data analysis, modeling, and initial interpretations.\nYou do not need to submit the draft on Canvas.\nBelow is a brief description of the sections to focus on in the draft:\n\nIntroduction and data\nThis section includes an introduction to the project motivation, data, and research question. Describe the data and definitions of key variables. It should also include some exploratory data analysis. All of the EDA won’t fit in the paper, so focus on the EDA for the response variable and a few other interesting variables and relationships.\n\n\nMethodology\nThis section includes a brief description of your modeling process. Explain the reasoning for the type of model you’re fitting, predictor variables considered for the model including any interactions. Additionally, show how you arrived at the final model by describing the model selection process, any variable transformations (if needed), and any other relevant considerations that were part of the model fitting process.\n\n\nResults\nIn this section, you will output the final model and include a brief discussion of the model assumptions, diagnostics, and any relevant model fit statistics.\nThis section also includes initial interpretations and conclusions drawn from the model."
+  },
+  {
+    "objectID": "teaching/CIVE864/project-description.html#peer-review",
+    "href": "teaching/CIVE864/project-description.html#peer-review",
+    "title": "Project description",
+    "section": "Peer review",
+    "text": "Peer review\nCritically reviewing others’ work is a crucial part of the scientific process, and STA 210 is no exception. Each team will be assigned one other teams’s projects to review. Each team should push their draft to their GitHub repo by the due date.\nProvide your review in the form of GitHub issues to your partner team’s GitHub repo using the issue template provided. The peer review will be graded on the extent to which it comprehensively and constructively addresses the components of the partner team’s report: the research context and motivation, exploratory data analysis, modeling, interpretations, and conclusions.\n\nPairings\n\n\n\nTeam being reviewed\nReviewer\n\n\n\n\nchaa_chaa_chaa\nyay_stats\n\n\ndekk\nchaa_chaa_chaa\n\n\neight\ndekk\n\n\nhousecats\neight\n\n\nkrafthouse\nhousecats\n\n\nrrawr\nkrafthouse\n\n\nstat_over_flow\nrrawr\n\n\nyay_stats\nstat_over_flow\n\n\n\n\n\nProcess and questions\nSpend ~30 mins to review each team’s project.\n\nFind your team name in the Reviewer 1 column.\nFind the name of the team to review in the Team being reviewed column.\nOpen the repo of the team you’re reviewing, read their project draft, and browser around the rest of their repo.\nThen, go to the Issues tab in that repo, click on New issue, and click on Get started for the Peer review issue. Fill out this issue, answering the following questions:\n\nDescribe the goal of the project.\nDescribe the data used or collected, if any. If the proposal does not include the use of a specific dataset, comment on whether the project would be strengthened by the inclusion of a dataset.\nDescribe the approaches, tools, and methods that will be used.\nIs there anything that is unclear from the proposal?\nProvide constructive feedback on how the team might be able to improve their project. Make sure your feedback includes at least one comment on the statistical modeling aspect of the project, but do feel free to comment on aspects beyond the modeling.\nWhat aspect of this project are you most interested in and would like to see highlighted in the presentation.\nProvide constructive feedback on any issues with file and/or code organization.\n(Optional) Any further comments or feedback?"
+  },
+  {
+    "objectID": "teaching/CIVE864/project-description.html#written-report",
+    "href": "teaching/CIVE864/project-description.html#written-report",
+    "title": "Project description",
+    "section": "Written report",
+    "text": "Written report\nYour written report must be reproducible. All team members should contribute to the GitHub repository, with regular meaningful commits.\nYou will submit the PDF of your final report on Canvas.\nThe PDF you submit must match the files in your GitHub repository exactly. The mandatory components of the report are below. You are free to add additional sections as necessary. The report, including visualizations, should be no more than 15 pages long. There is no minimum page requirement; however, you should comprehensively address all of the analysis and report.\nBe selective in what you include in your final report. The goal is to write a cohesive narrative that demonstrates a thorough and comprehensive analysis rather than explain every step of the analysis.\nYou are welcome to include an appendix with additional work at the end of the written report document. The appendix should be neatly formatted and easy for the reader to navigate. It is not included in the 15-page limit.\nThe written report is worth 40 points, broken down as follows\n\n\n\nTotal\n40 pts\n\n\n\n\nIntroduction/data\n6 pts\n\n\nMethodology\n10 pts\n\n\nResults\n14 pts\n\n\nDiscussion + conclusion\n6 pts\n\n\nOrganization + formatting\n4 pts\n\n\n\nClick here for a PDF of the written report rubric.\n\nIntroduction and data\nThis section includes an introduction to the project motivation, data, and research question. Describe the data and definitions of key variables. It should also include some exploratory data analysis. All of the EDA won’t fit in the paper, so focus on the EDA for the response variable and a few other interesting variables and relationships.\n\nGrading criteria\nThe research question and motivation are clearly stated in the introduction, including citations for the data source and any external research. The data are clearly described, including a description about how the data were originally collected and a concise definition of the variables relevant to understanding the report. The data cleaning process is clearly described, including any decisions made in the process (e.g., creating new variables, removing observations, etc.) The explanatory data analysis helps the reader better understand the observations in the data along with interesting and relevant relationships between the variables. It incorporates appropriate visualizations and summary statistics.\n\n\n\nMethodology\nThis section includes a brief description of your modeling process. Explain the reasoning for the type of model you’re fitting, predictor variables considered for the model including any interactions. Additionally, show how you arrived at the final model by describing the model selection process, interactions considered, variable transformations (if needed), assessment of conditions and diagnostics, and any other relevant considerations that were part of the model fitting process.\n\nGrading criteria\nThe analysis steps are appropriate for the data and research question. The group used a thorough and careful approach to select the final model; the approach is clearly described in the report. The model selection process took into account potential interaction effects and addressed any violations in model conditions. The model conditions and diagnostics are thoroughly and accurately assessed for their model. If violations of model conditions are still present, there was a reasonable attempt to address the violations based on the course content.\n\n\n\nResults\nThis is where you will output the final model with any relevant model fit statistics.\nDescribe the key results from the model. The goal is not to interpret every single variable in the model but rather to show that you are proficient in using the model output to address the research questions, using the interpretations to support your conclusions. Focus on the variables that help you answer the research question and that provide relevant context for the reader.\n\nGrading criteria\nThe model fit is clearly assessed, and interesting findings from the model are clearly described. Interpretations of model coefficients are used to support the key findings and conclusions, rather than merely listing the interpretation of every model coefficient. If the primary modeling objective is prediction, the model’s predictive power is thoroughly assessed.\n\n\n\nDiscussion + Conclusion\nIn this section you’ll include a summary of what you have learned about your research question along with statistical arguments supporting your conclusions. In addition, discuss the limitations of your analysis and provide suggestions on ways the analysis could be improved. Any potential issues pertaining to the reliability and validity of your data and appropriateness of the statistical analysis should also be discussed here. Lastly, this section will include ideas for future work.\n\nGrading criteria\nOverall conclusions from analysis are clearly described, and the model results are put into the larger context of the subject matter and original research question. There is thoughtful consideration of potential limitations of the data and/or analysis, and ideas for future work are clearly described.\n\n\n\nOrganization + formatting\nThis is an assessment of the overall presentation and formatting of the written report.\n\nGrading criteria\nThe report neatly written and organized with clear section headers and appropriately sized figures with informative labels. Numerical results are displayed with a reasonable number of digits, and all visualizations are neatly formatted. All citations and links are properly formatted. If there is an appendix, it is reasonably organized and easy for the reader to find relevant information. All code, warnings, and messages are suppressed. The main body of the written report (not including the appendix) is no longer than 10 pages."
+  },
+  {
+    "objectID": "teaching/CIVE864/project-description.html#reproducibility-organization",
+    "href": "teaching/CIVE864/project-description.html#reproducibility-organization",
+    "title": "Project description",
+    "section": "Reproducibility + organization",
+    "text": "Reproducibility + organization\nAll written work should be reproducible and the GitHub repo should be neatly organized.\nThe GitHub repo should have the following structure:\n\nREADME: Short project description and data dictionary\nwritten-report.qmd & written-report.pdf: Final written report\n/data: Folder that contains the data set for the final project.\n/previous-work: Folder that contains the topic-ideas and project-proposal files.\n\nPoints for reproducibility + organization will be based on the reproducibility of the written report and the organization of the project GitHub repo. The repo should be neatly organized as described above, there should be no extraneous files, all text in the README should be easily readable."
+  },
+  {
+    "objectID": "teaching/CIVE864/project-description.html#overall-grading",
+    "href": "teaching/CIVE864/project-description.html#overall-grading",
+    "title": "Project description",
+    "section": "Overall grading",
+    "text": "Overall grading\nThe grade breakdown is as follows:\n\n\n\nTotal\n100 pts\n\n\n\n\nTopic ideas\n5 pts\n\n\nProject proposal\n10 pts\n\n\nPeer review\n10 pts\n\n\nWritten report\n40 pts\n\n\nSlides + video presentation\n20 pts\n\n\nReproducibility + organization\n5 pts\n\n\nVideo comments\n5 pts\n\n\nPeer teamwork evaluation\n5 pts\n\n\n\nNote: No late project reports are accepted.\n\nGrading summary\nGrading of the project will take into account the following:\n\nContent - What is the quality of research and/or policy question and relevancy of data to those questions?\nCorrectness - Are statistical procedures carried out and explained correctly?\nWriting and Presentation - What is the quality of the statistical presentation, writing, and explanations?\nCreativity and Critical Thought - Is the project carefully thought out? Are the limitations carefully considered? Does it appear that time and effort went into the planning and implementation of the project?\n\nA general breakdown of scoring is as follows:\n\n90%-100%: Outstanding effort. Student understands how to apply all statistical concepts, can put the results into a cogent argument, can identify weaknesses in the argument, and can clearly communicate the results to others.\n80%-89%: Good effort. Student understands most of the concepts, puts together an adequate argument, identifies some weaknesses of their argument, and communicates most results clearly to others.\n70%-79%: Passing effort. Student has misunderstanding of concepts in several areas, has some trouble putting results together in a cogent argument, and communication of results is sometimes unclear.\n60%-69%: Struggling effort. Student is making some effort, but has misunderstanding of many concepts and is unable to put together a cogent argument. Communication of results is unclear.\nBelow 60%: Student is not making a sufficient effort.\n\n\n\nLate work policy\nThere is no late work accepted on this project. Be sure to turn in your work early to avoid any technological mishaps."
+  },
+  {
+    "objectID": "teaching/CIVE864/course-syllabus.html",
+    "href": "teaching/CIVE864/course-syllabus.html",
+    "title": "Syllabus",
+    "section": "",
+    "text": "Click here to download a PDF copy of the syllabus."
+  },
+  {
+    "objectID": "teaching/CIVE864/course-syllabus.html#course-info",
+    "href": "teaching/CIVE864/course-syllabus.html#course-info",
+    "title": "Syllabus",
+    "section": "Course info",
+    "text": "Course info\n\n\n\n\n\n\n\n\n\n\nDay\nTime\nLocation\n\n\n\n\nLectures\nTue & Thu\n1:45 pm - 3:00 pm\nReuben-Cooke Building 130\n\n\nSection 1\nMon\n1:45 pm - 3:00 pm\nPerkins LINK 087 (Classroom 3)\n\n\nSection 2\nMon\n3:30 pm - 4:45 pm\nOld Chemistry 003\n\n\nSection 3\nMon\n5:15 pm - 6:30 pm\nSocial Sciences 311"
+  },
+  {
+    "objectID": "teaching/CIVE864/course-syllabus.html#learning-objectives",
+    "href": "teaching/CIVE864/course-syllabus.html#learning-objectives",
+    "title": "Syllabus",
+    "section": "Learning objectives",
+    "text": "Learning objectives\nBy the end of the semester, you will be able to…\n\nanalyze real-world data to answer questions about multivariable relationships.\nfit and evaluate linear and logistic regression models.\nassess whether a proposed model is appropriate and describe its limitations.\nuse Quarto to write reproducible reports and GitHub for version control and collaboration.\ncommunicate results from statistical analyses to a general audience."
+  },
+  {
+    "objectID": "teaching/CIVE864/course-syllabus.html#community",
+    "href": "teaching/CIVE864/course-syllabus.html#community",
+    "title": "Syllabus",
+    "section": "Community",
+    "text": "Community\n\nDuke Community Standard\nAs a student in this course, you have agreed to uphold the Duke Community Standard as well as the practices specific to this course.\n\n\n\n\nInclusive community\nIt is my intent that students from all diverse backgrounds and perspectives be well-served by this course, that students’ learning needs be addressed both in and out of class, and that the diversity that the students bring to this class be viewed as a resource, strength, and benefit. It is my intent to present materials and activities that are respectful of diversity and in alignment with Duke’s Commitment to Diversity and Inclusion. Your suggestions are encouraged and appreciated. Please let me know ways to improve the effectiveness of the course for you personally, or for other students or student groups.\nFurthermore, I would like to create a learning environment for my students that supports a diversity of thoughts, perspectives and experiences, and honors your identities. To help accomplish this:\n\nIf you feel like your performance in the class is being impacted by your experiences outside of class, please don’t hesitate to come and talk with me. If you prefer to speak with someone outside of the course, your academic dean is an excellent resource.\nI (like many people) am still in the process of learning about diverse perspectives and identities. If something was said in class (by anyone) that made you feel uncomfortable, please let me or a member of the teaching team know.\n\n\n\nAccessibility\nIf there is any portion of the course that is not accessible to you due to challenges with technology or the course format, please let me know so we can make appropriate accommodations.\nThe Student Disability Access Office (SDAO) is available to ensure that students are able to engage with their courses and related assignments. Students should be in touch with the Student Disability Access Office to request or update accommodations under these circumstances.\n\n\nCommunication\nAll lecture notes, assignment instructions, an up-to-date schedule, and other course materials may be found on the course website at sta210-s22.github.io/website.\nI will regularly send course announcements via email and Sakai, make sure to check one or the other of these regularly. If an announcement is sent Monday through Thursday, I will assume that you have read the announcement by the next day. If an announcement is sent on a Friday or over the weekend, I will assume that you have read it by Monday.\n\n\nWhere to get help\n\nIf you have a question during lecture or lab, feel free to ask it! There are likely other students with the same question, so by asking you will create a learning opportunity for everyone.\nThe teaching team is here to help you be successful in the course. You are encouraged to attend office hours to ask questions about the course content and assignments. Many questions are most effectively answered as you discuss them with others, so office hours are a valuable resource. Please use them!\nOutside of class and office hours, any general questions about course content or assignments should be posted on the course forum Conversations. There is a chance another student has already asked a similar question, so please check the other posts in Conversations before adding a new question. If you know the answer to a question posted in the discussion forum, I encourage you to respond!\nEmails should be reserved for questions not appropriate for the public forum. If you email me, please include “STA 210” in the subject line. Barring extenuating circumstances, I will respond to STA 210 emails within 48 hours Monday - Friday. Response time may be slower for emails sent Friday evening - Sunday.\n\nCheck out the Support page for more resources."
+  },
+  {
+    "objectID": "teaching/CIVE864/course-syllabus.html#textbooks",
+    "href": "teaching/CIVE864/course-syllabus.html#textbooks",
+    "title": "Syllabus",
+    "section": "Textbooks",
+    "text": "Textbooks\nWhile there is no official textbook for the course, we will be assigning readings from the following textbooks.\n\nR for Data Science by Garret Grolemund and Hadley Wickham\nIntroduction to Modern Statistics by Mine Çetinkaya-Rundel and Johanna Hardin\nTidy modeling with R by Max Kuhn and Julia Silge\nBeyond Multiple Linear Regression by Paul Roback and Julie Legler"
+  },
+  {
+    "objectID": "teaching/CIVE864/course-syllabus.html#lectures-and-labs",
+    "href": "teaching/CIVE864/course-syllabus.html#lectures-and-labs",
+    "title": "Syllabus",
+    "section": "Lectures and labs",
+    "text": "Lectures and labs\nThe goal of both the lectures and the labs is for them to be as interactive as possible. My role as instructor is to introduce you new tools and techniques, but it is up to you to take them and make use of them. A lot of what you do in this course will involve writing code, and coding is a skill that is best learned by doing. Therefore, as much as possible, you will be working on a variety of tasks and activities throughout each lecture and lab. You are expected to attend all lecture and lab sessions and meaningfully contribute to in-class exercises and discussion. Additionally, some lectures will feature application exercises that will be graded. In addition to application exercises will be periodic activities help build a learning community. These will be short, fun activities that will help everyone in the class connect throughout the semester.\nYou are expected to bring a laptop to each class so that you can take part in the in-class exercises. Please make sure your laptop is fully charged before you come to class as the number of outlets in the classroom will not be sufficient to accommodate everyone. More information on loaner laptops can be found here."
+  },
+  {
+    "objectID": "teaching/CIVE864/course-syllabus.html#teams",
+    "href": "teaching/CIVE864/course-syllabus.html#teams",
+    "title": "Syllabus",
+    "section": "Teams",
+    "text": "Teams\nYou will be assigned to a team at the beginning of the semester. You are encouraged to sit with your teammates in lecture and you will also work with them in the lab sessions. All team members are expected to contribute equally to the completion of the labs and project and you will be asked to evaluate your team members throughout the semester. Failure to adequately contribute to an assignment will result in a penalty to your mark relative to the team’s overall mark.\nYou are expected to make use of the provided GitHub repository as their central collaborative platform. Commits to this repository will be used as a metric (one of several) of each team member’s relative contribution for each project."
+  },
+  {
+    "objectID": "teaching/CIVE864/course-syllabus.html#assessment",
+    "href": "teaching/CIVE864/course-syllabus.html#assessment",
+    "title": "Syllabus",
+    "section": "Assessment",
+    "text": "Assessment\nAssessment for the course is comprised of six components: application exercises, homework assignments, labs, exams, projects, and teamwork.\n\nApplication exercises\nParts of some lectures will be dedicated to working on Application Exercises (AEs). These exercises which give you an opportunity to practice apply the statistical concepts and code introduced in the readings and lectures. These AEs are due within three days of the corresponding lecture period. Specifically, AEs from Tuesday lectures are due Friday by 11:59 pm ET, and AEs from Thursday lectures are due Sunday by 11:59 pm ET.\nBecause these AEs are for practice, they will be graded based on completion, i.e., a good-faith effort has been made in attempting all parts. Successful on-time completion of at least 80% of AEs will result in full credit for AEs in the final course grade.\n\n\nLabs\nIn labs, you will apply the concepts discussed in lecture to various data analysis scenarios, with a focus on the computation. Most lab assignments will be completed in teams, and all team members are expected to contribute equally to the completion of each assignment. You are expected to use the team’s GitHub repository on the course’s GitHub organization as the central platform for collaboration. Commits to this repository will be used as a metric of each team member’s relative contribution for each lab, and there will be periodic peer evaluation on the team collaboration. Lab assignments will be completed using Quarto, correspond to an appropriate GitHub repository, and submitted for grading in Gradescope.\nThe lowest lab grade will be dropped at the end of the semester.\n\n\nHomework\nIn homework, you will apply what you’ve learned during lecture and lab to complete data analysis tasks. You may discuss homework assignments with other students; however, homework should be completed and submitted individually. Similar to lab assignments, homework must be typed up using Quarto and GitHub and submitted as a PDF in Gradescope.\nOne homework assignment will be dedicated to a statistics experience. The statistics experience is an opportunity to engage with statistics and data science outside of the classroom through podcasts, books, seminars, data analysis competitions, and other activities. As you complete these experiences, the goal is to consider how the material you’re learning in the course connects with society more broadly.\nThe lowest homework grade will be dropped at the end of the semester.\n\n\nExams\nThere will be three, take-home, open-note exams. Through these exams you have the opportunity to demonstrate what you’ve learned in the course thus far. The exams will focus on the conceptual understanding of the content, and they may also include small analysis and computational tasks. The content of the exam will be related to the content in the prepare, practice, and perform assignments. More detail about the exams will be given during the semester.\n\n\nProject\nThe purpose of the project is to apply what you’ve learned throughout the semester to analyze an interesting, data-driven research question. The project will be completed with your lab teams, and each team will present their work in video and in writing during the final exam period. More information about the project will be provided during the semester."
+  },
+  {
+    "objectID": "teaching/CIVE864/course-syllabus.html#grading",
+    "href": "teaching/CIVE864/course-syllabus.html#grading",
+    "title": "Syllabus",
+    "section": "Grading",
+    "text": "Grading\nThe final course grade will be calculated as follows:\n\n\n\nCategory\nPercentage\n\n\n\n\nApplication exercises\n3%\n\n\nHomework\n35% (7% x 5)\n\n\nProject\n15%\n\n\nLab\n14% (2.33% x 6)\n\n\nExam 01\n10%\n\n\nExam 02\n10%\n\n\nExam 03\n10%\n\n\nTeamwork\n3%\n\n\n\nThe final letter grade will be determined based on the following thresholds:\n\n\n\nLetter Grade\nFinal Course Grade\n\n\n\n\nA\n&gt;= 93\n\n\nA-\n90 - 92.99\n\n\nB+\n87 - 89.99\n\n\nB\n83 - 86.99\n\n\nB-\n80 - 82.99\n\n\nC+\n77 - 79.99\n\n\nC\n73 - 76.99\n\n\nC-\n70 - 72.99\n\n\nD+\n67 - 69.99\n\n\nD\n63 - 66.99\n\n\nD-\n60 - 62.99\n\n\nF\n&lt; 60"
+  },
+  {
+    "objectID": "teaching/CIVE864/course-syllabus.html#five-tips-for-success",
+    "href": "teaching/CIVE864/course-syllabus.html#five-tips-for-success",
+    "title": "Syllabus",
+    "section": "Five tips for success",
+    "text": "Five tips for success\nYour success on this course depends very much on you and the effort you put into it. The course has been organized so that the burden of learning is on you. Your TAs and I will help you be providing you with materials and answering questions and setting a pace, but for this to work you must do the following:\n\nComplete all the preparation work before class.\nAsk questions. As often as you can. In class, out of class. Ask me, ask the TAs, ask your friends, ask the person sitting next to you. This will help you more than anything else. If you get a question wrong on an assessment, ask us why. If you’re not sure about the homework, ask. If you hear something on the news that sounds related to what we discussed, ask. If the reading is confusing, ask.\nDo the readings.\nDo the homework and lab.The earlier you start, the better. It’s not enough to just mechanically plow through the exercises. You should ask yourself how these exercises relate to earlier material, and imagine how they might be changed (to make questions for an exam, for example.)\nDon’t procrastinate. If something is confusing to you in Week 2, Week 3 will become more confusing, Week 4 even worse, and eventually you won’t know where to begin asking questions. Don’t let the week end with unanswered questions. But if you find yourself falling behind and not knowing where to begin asking, come to office hours, and let me help you identify a good (re)starting point."
+  },
+  {
+    "objectID": "teaching/CIVE864/course-syllabus.html#course-policies",
+    "href": "teaching/CIVE864/course-syllabus.html#course-policies",
+    "title": "Syllabus",
+    "section": "Course policies",
+    "text": "Course policies\n\nAcademic integrity\nTL;DR: Don’t cheat!\nAll students must adhere to the Duke Community Standard (DCS): Duke University is a community dedicated to scholarship, leadership, and service and to the principles of honesty, fairness, and accountability. Citizens of this community commit to reflect upon these principles in all academic and non-academic endeavors, and to protect and promote a culture of integrity.\nTo uphold the Duke Community Standard:\nStudents affirm their commitment to uphold the values of the Duke University community by signing a pledge that states:\n\nI will not lie, cheat, or steal in my academic endeavors;\nI will conduct myself honorably in all my endeavors;\nI will act if the Standard is compromised\n\nRegardless of course delivery format, it is your responsibility to understand and follow Duke policies regarding academic integrity, including doing one’s own work, following proper citation of sources, and adhering to guidance around group work projects. Ignoring these requirements is a violation of the Duke Community Standard. If you have any questions about how to follow these requirements, please contact Jeanna McCullers (jeanna.mccullers@duke.edu), Director of the Office of Student Conduct.\n\n\nCollaboration policy\nOnly work that is clearly assigned as team work should be completed collaboratively.\n\nThe homework assignments must be completed individually and you are welcomed to discuss the assignment with classmates at a high level (e.g., discuss what’s the best way for approaching a problem, what functions are useful for accomplishing a particular task, etc.). However you may not directly share answers to homework questions (including any code) with anyone other than myself and the teaching assistants.\nFor the projects, collaboration within teams is not only allowed, but expected. Communication between teams at a high level is also allowed however you may not share code or components of the project across teams.\n\n\n\nPolicy on sharing and reusing code\nI am well aware that a huge volume of code is available on the web to solve any number of problems. Unless I explicitly tell you not to use something, the course’s policy is that you may make use of any online resources (e.g. RStudio Community, StackOverflow) but you must explicitly cite where you obtained any code you directly use (or use as inspiration). Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism. On individual assignments you may not directly share code with another student in this class, and on team assignments you may not directly share code with another team in this class.\n\n\nLate work policy\nThe due dates for assignments are there to help you keep up with the course material and to ensure the teaching team can provide feedback within a timely manner. We understand that things come up periodically that could make it difficult to submit an assignment by the deadline. Note that the lowest homework and lab assignment will be dropped to accommodate such circumstances.\n\nHomework and labs may be submitted up to 3 days late. There will be a 5% deduction for each 24-hour period the assignment is late.\nThere is no late work accepted for application exercises, since these are designed to help you prepare for labs and homework.\nThe late work policy for exams will be provided with the exam instructions.\nThe late work policy for the project will be provided with the project instructions.\n\n\n\nWaiver for extenuating circumstances\nIf there are circumstances that prevent you from completing a lab or homework assignment by the stated due date, you may email Dr. Çetinkaya-Rundel and our head TA Rick Presman before the deadline to waive the late penalty. In your email, you only need to request the waiver; you do not need to provide explanation. This waiver may only be used for once in the semester, so only use it for a truly extenuating circumstance.\nIf there are circumstances that are having a longer-term impact on your academic performance, please let your academic dean know, as they can be a resource. Please let Dr. Çetinkaya-Rundel know if you need help contacting your academic dean.\n\n\nRegrade request policy\nRegrade requests must be submitted on Gradescope within a week of when an assignment is returned. Regrade requests will be considered if there was an error in the grade calculation or if you feel a correct answer was mistakenly marked as incorrect. Requests to dispute the number of points deducted for an incorrect response will not be considered. Note that by submitting a regrade request, the entire question will be graded which could potentially result in losing points.\nNo grades will be changed after the final project presentations.\n\n\nAttendance policy\nResponsibility for class attendance rests with individual students. Since regular and punctual class attendance is expected, students must accept the consequences of failure to attend. More details on Trinity attendance policies are available here.\nHowever, there may be many reasons why you cannot be in class on a given day, particularly with possible extra personal and academic stress and health concerns this semester. All course lectures will be recorded and available to enrolled students after class. If you miss a lecture, make sure to watch the recording and review the material before the next class session. Lab time is dedicated to working on your lab assignments and collaborating with your teammates on your project. If you miss a lab session, make sure to communicate with your team about how you can make up your contribution. Given the technologies we use in the course, this is straightforward to do asynchronously. If you know you’re going to miss a lab session and you’re feeling well enough to do so, notify your teammates ahead of time. Overall these policies are put in place to ensure communication between team members, respect for each others’ time, and also to give you a safety net in the case of illness or other reasons that keep you away from attending class.\n\n\nAttendance policy related to COVID symptoms, exposure, or infection\nStudent health, safety, and well-being are the university’s top priorities. To help ensure your well-being and the well-being of those around you, please do not come to class if you have symptoms related to COVID-19, have had a known exposure to COVID-19, or have tested positive for COVID-19. If any of these situations apply to you, you must follow university guidance related to the ongoing COVID-19 pandemic and current health and safety protocols. If you are experiencing any COVID-19 symptoms, contact student health at 919-681-9355. To keep the university community as safe and healthy as possible, you will be expected to follow these guidelines. Please reach out to me and your academic dean as soon as possible if you need to quarantine or isolate so that we can discuss arrangements for your continued participation in class.\n\n\nInclement weather policy\nIn the event of inclement weather or other connectivity-related events that prohibit class attendance, I will notify you how we will make up missed course content and work. This might entail holding the class on Zoom synchronously or watching a recording of the class.\n\n\nPolicy on video recording course content\nAll lectures will be recorded and available on Panopto, so students should not need to create their own recordings of lectures. If you feel that you need record the lectures yourself, you must get permission from me ahead of time and these recordings should be used for personal study only, no for distribution. The full policy on recording of lectures falls under the Duke University Policy on Intellectual Property Rights, available at provost.duke.edu/sites/default/files/FHB_App_P.pdf. Unauthorized distribution is a cause for disciplinary action by the Judicial Board."
+  },
+  {
+    "objectID": "teaching/CIVE864/course-syllabus.html#learning-during-a-pandemic",
+    "href": "teaching/CIVE864/course-syllabus.html#learning-during-a-pandemic",
+    "title": "Syllabus",
+    "section": "Learning during a pandemic",
+    "text": "Learning during a pandemic\nI want to make sure that you learn everything you were hoping to learn from this class. If this requires flexibility, please don’t hesitate to ask.\n\nYou never owe me personal information about your health (mental or physical) but you’re always welcome to talk to me. If I can’t help, I likely know someone who can.\nI want you to learn lots of things from this class, but I primarily want you to stay healthy, balanced, and grounded during this crisis.\n\nNote: If you’ve read this far in the syllabus, email me a picture of your pet if you have one or your favourite meme!"
+  },
+  {
+    "objectID": "teaching/CIVE864/course-syllabus.html#important-dates",
+    "href": "teaching/CIVE864/course-syllabus.html#important-dates",
+    "title": "Syllabus",
+    "section": "Important dates",
+    "text": "Important dates\n\nJanuary 5: Classes begin (Monday meeting schedule)\nJanuary 6: Regular class meeting schedule begins\nJanuary 17: Martin Luther King, Jr. Day holiday, no classes are held\nJanuary 19: Drop/add ends\nMarch 7-11: Spring recess, no classes are held\nMarch 23: Last day to withdraw with W\nApril 20: Classes end\nApril 21-24: Reading period\nApril 25-30: Final exams\n\nClick here for the full Duke academic calendar."
+  },
+  {
+    "objectID": "teaching/CIVE864/computing-troubleshooting.html",
+    "href": "teaching/CIVE864/computing-troubleshooting.html",
+    "title": "Computing troubleshooting",
+    "section": "",
+    "text": "If you’re having difficulty launching an RStudio session from your reserved container, go to status.oit.duke.edu and scroll down to Teaching and Learning Tools. Under this heading you’ll find an entry called Container Manager (CMGR Coursework Containers).\n\nIf the status shows something other than Operational, this means there is a known incident with the containers. Check back later to see if it’s been resolved. If there’s a deadline coming up soon, post on the course forum to let us know that there’s an issue. We can look into how quickly it might get resolved and decide on what to do about the deadline accordingly. Note: We don’t anticipate this to happen regularly, the systems are Operational a huge majority of the time!\nIf the status shows Operational, this means the system is expected to be working. Check your internet connection, if need be, restart your computer to ensure a fresh new connection. If your issue persists, post on the course forum with details on what you’ve tried and the errors you see (including verbatim errors and/or screenshots).\nEither way you can also fill out the form here, which will notify our the R TA for the department as well as our undergraduate coordinator. They’ll be able to help diagnose the issue."
+  },
+  {
+    "objectID": "teaching/CIVE461/course-links.html",
+    "href": "teaching/CIVE461/course-links.html",
+    "title": "Useful links",
+    "section": "",
+    "text": "RStudio containers\n🔗 on Duke Container Manager\n\n\nCourse GitHub organization\n🔗 on GitHub\n\n\nDiscussion forum\n🔗 on Sakai\n\n\nLecture streaming and recordings\n🔗 on Panopto\n\n\nGradebook\n🔗 on Sakai\n\n\nVirtual meetings\n🔗 on Sakai"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-1.html",
+    "href": "teaching/CIVE461/weeks/week-1.html",
+    "title": "Week 1",
+    "section": "",
+    "text": "Important\n\n\n\nClasses are virtual this week. Find Zoom links here."
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-1.html#prepare",
+    "href": "teaching/CIVE461/weeks/week-1.html#prepare",
+    "title": "Week 1",
+    "section": "Prepare",
+    "text": "Prepare\n📖 Read the syllabus\n📖 Read the support resources"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-1.html#participate",
+    "href": "teaching/CIVE461/weeks/week-1.html#participate",
+    "title": "Week 1",
+    "section": "Participate",
+    "text": "Participate\n🖥️ Lab 0 -Meet+ greet\n🖥️ Lecture 1 - Welcome to STA 210"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-1.html#practice",
+    "href": "teaching/CIVE461/weeks/week-1.html#practice",
+    "title": "Week 1",
+    "section": "Practice",
+    "text": "Practice\n📋 AE 0 - Movies"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-1.html#perform",
+    "href": "teaching/CIVE461/weeks/week-1.html#perform",
+    "title": "Week 1",
+    "section": "Perform",
+    "text": "Perform\n⌨️ Lab 0 - Meet + greet\n\n\nBack to course schedule ⏎"
+  },
+  {
+    "objectID": "teaching/CIVE461/CIVE461.html",
+    "href": "teaching/CIVE461/CIVE461.html",
+    "title": "CIVE461",
+    "section": "",
+    "text": "This page contains an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses, with all changes documented here.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nDate\nTopic\nPrepare\nSlides\nAE\nHW\nExam\n\n\n\n\n\n\n1\nWed, Jan 5\nLab 0 - Meet + greet\n\n🖥️\n\n\n\n\n\n\n\n\nThu, Jan 6\nWelcome to STA 210!\n📖\n🖥️\n📋\n\n\n\n\n\n\n2\nMon, Jan 10\nLab 1 - Meet the toolkit\n\n🖥️\n\n\n\n\n\n\n\n\nTue, Jan 11\nSimple linear regression (SLR)\n📖\n🖥️\n\n\n\n\n\n\n\n\nThu, Jan 13\nSLR: Model fitting in R with tidymodels\n\n🖥️\n📋\n\n\n\n\n\n\n\nFri, Jan 14\nReleased: HW 5\n\n\n\n✍️\n\n\n\n\n\n\n\nDue: Lab 1\n\n\n\n\n\n\n\n\n\n3\nMon, Jan 17\nMartin Luther King, Jr. Day\n\n\n\n\n\n\n\n\n\n\nTue, Jan 18\nSLR: Prediction + model evaluation\n📖\n🖥️\n📋\n\n\n\n\n\n\n\nThu, Jan 20\nSLR: Simulation-based inference\n\n🖥️\n\n\n\n\n\n\n\n\nFri, Jan 21\nReleased: HW 1\n\n\n\n✍️\n\n\n\n\n\n4\nMon, Jan 24\nLab 2 - College scorecard\n\n🖥️\n\n\n\n\n\n\n\n\nTue, Jan 25\nSLR: Mathematical models for inference\n📖\n🖥️\n\n\n\n\n\n\n\n\nThu, Jan 27\nSLR: Model diagnostics\n\n🖥️\n📋\n\n\n\n\n\n\n\nFri, Jan 28\nDue: HW 1 + Lab 2\n\n\n\n✍️ 🗝️\n\n\n\n\n\n5\nMon, Jan 31\nLab 3 - Coffee ratings\n\n🖥️\n\n\n\n\n\n\n\n\nTue, Feb 1\nMultiple linear regression (MLR)\n📖\n🖥️\n\n\n\n\n\n\n\n\nThu, Feb 3\nExam 1 review\n\n🖥️\n📋\n\n\n\n\n\n\n\nFri, Feb 4\nReleased: Exam 1\n\n\n\n\n✅\n\n\n\n\n\n\nDue: Lab 3\n\n\n\n\n\n\n\n\n\n6\nMon, Feb 7\nNo lab: Work on Exam 1\n\n\n\n\n\n\n\n\n\n\n\nDue: Exam 1\n\n\n\n\n✅\n\n\n\n\n\nTue, Feb 8\nMLR: Types of predictors\n📖\n🖥️\n\n\n\n\n\n\n\n\nThu, Feb 10\nMLR: Model comparison\n\n🖥️\n\n\n\n\n\n\n\n\nFri, Feb 11\nReleased: HW 2\n\n\n\n✍️\n\n\n\n\n\n7\nMon, Feb 14\nLab: Project topic ideas\n\n\n\n\n\n\n\n\n\n\nTue, Feb 15\nMLR: Feature engineering\n📖\n🖥️\n📋\n\n\n\n\n\n\n\nThu, Feb 17\nMLR: Feature engineering\n\n🖥️\n\n\n\n\n\n\n\n\nFri, Feb 18\nDue: HW 2 + Project topic ideas\n\n\n\n✍️ 🗝️\n\n\n\n\n\n8\nMon, Feb 21\nLab 4: The Office\n\n\n\n\n\n\n\n\n\n\nTue, Feb 22\nMLR: Cross validation\n📖\n🖥️\n📋\n\n\n\n\n\n\n\nThu, Feb 24\nExam 2 review\n\n🖥️\n📋\n\n\n\n\n\n\n\nFri, Feb 25\nReleased: Exam 2\n\n\n\n\n✅\n\n\n\n\n\n\nDue: Lab 4\n\n\n\n\n\n\n\n\n\n9\nMon, Feb 28\nNo lab: Work on Exam 2\n\n\n\n\n\n\n\n\n\n\n\nDue: Exam 2\n\n\n\n\n✅\n\n\n\n\n\nTue, Mar 1\nMLR: Inference\n📖\n🖥️\n📋\n\n\n\n\n\n\n\nThu, Mar 3\nMLR: Inference conditions + multicollinearity\n\n🖥️\n\n\n\n\n\n\n\n\nMon, Mar 7\nSpring break\n\n\n\n\n\n\n\n\n\n\nTue, Mar 8\nSpring break\n\n\n\n\n\n\n\n\n\n\nThu, Mar 10\nSpring break\n\n\n\n\n\n\n\n\n\n10\nMon, Mar 14\nLab: Work on project proposals\n\n\n\n\n\n\n\n\n\n\nTue, Mar 15\nLogistic regression (LR)\n📖\n🖥️\n📋\n\n\n\n\n\n\n\nThu, Mar 17\nProbabilities, odds, and odds ratios\n\n🖥️\n\n\n\n\n\n\n\n\nFri, Mar 18\nDue: Project proposals\n\n\n\n\n\n\n\n\n\n\n\nReleased: HW 3\n\n\n\n✍️\n\n\n\n\n\n11\nMon, Mar 21\nLab 5: General Social Survey\n\n\n\n\n\n\n\n\n\n\nTue, Mar 22\nLR: Prediction / classification\n📖\n🖥️\n\n\n\n\n\n\n\n\nThu, Mar 24\nLR: Model comparison\n\n🖥️\n📋\n\n\n\n\n\n\n\nFri, Mar 25\nDue: HW 3 + Lab 5\n\n\n\n✍️ 🗝️\n\n\n\n\n\n12\nMon, Mar 28\nLab: Work on project drafts\n\n\n\n\n\n\n\n\n\n\nTue, Mar 29\nLR: Inference + conditions\n📖\n🖥️\n\n\n\n\n\n\n\n\nThu, Mar 31\nMultinomial Logistic Regression (MultiLR)\n\n🖥️\n\n\n\n\n\n\n\n\nFri, Apr 1\nReleased: HW 4\n\n\n\n✍️\n\n\n\n\n\n13\nMon, Apr 4\nLab 6: Why Many Americans Don’t Vote\n\n\n\n\n\n\n\n\n\n\nTue, Apr 5\nMultiLR: Prediction + inferential models\n📖\n🖥️\n\n\n\n\n\n\n\n\nThu, Apr 7\nMultiLR: Predictive models\n\n🖥️\n📋\n\n\n\n\n\n\n\nFri, Apr 8\nDue: Lab 6\n\n\n\n\n\n\n\n\n\n\nSun, Apr 10\nDue: Project drafts\n\n\n\n\n\n\n\n\n\n\nTue, Apr 12\nMultiLR: Predictive models (cont.)\n📖\n🖥️\n\n\n\n\n\n\n\n\nThu, Apr 14\nExam 3 review\n\n🖥️\n📋\n\n\n\n\n\n\n\n\nDue: Peer review\n\n\n\n\n\n\n\n\n\n\nFri, Apr 15\nReleased: Exam 3\n\n\n\n\n✅\n\n\n\n\n15\nMon, Apr 18\nNo lab: Work on Exam 3\n\n\n\n\n\n\n\n\n\n\n\nDue: Exam 3\n\n\n\n\n✅\n\n\n\n\n\nTue, Apr 19\nWrap-up\n📖\n🖥️\n📋\n\n\n\n\n\n\n\n\nDue: HW 5\n\n\n\n✍️\n\n\n\n\n\n16\nMon, Apr 25\nDue: Project write-up\n\n\n\n\n\n\n\n\n\n\nThu, Apr 28\nDue: Video presentation + repo\n\n\n\n\n\n\n\n\n\n\nSat, Apr 30\nDue: Video comments"
+  },
+  {
+    "objectID": "teaching/CIVE461/course-overview.html",
+    "href": "teaching/CIVE461/course-overview.html",
+    "title": "STA 210: Regression Analysis",
+    "section": "",
+    "text": "Learn approaches for analyzing multivariate data sets, emphasizing analysis of variance, linear regression, and logistic regression. Learn techniques for checking the appropriateness of proposed models, such as residual analyses and case influence diagnostics, and techniques for selecting models. Gain experience dealing with the challenges that arise in practice through assignments that utilize real-world data. This class emphasizes data analysis over mathematical theory."
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-1.html#outline",
+    "href": "teaching/CIVE461/slides/lec-1.html#outline",
+    "title": "Lecture 1 - Introduction",
+    "section": "Outline",
+    "text": "Outline\n\n\nUrban transportation: challenges & opportunities\nDefining urban transportation planning\nHistory & context for urban transportation planning\nCourse overview"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-1.html#congestion",
+    "href": "teaching/CIVE461/slides/lec-1.html#congestion",
+    "title": "Lecture 1 - Introduction",
+    "section": "Congestion",
+    "text": "Congestion\n\n\n\nAverage Travel Time to Work"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-1.html#pollution",
+    "href": "teaching/CIVE461/slides/lec-1.html#pollution",
+    "title": "Lecture 1 - Introduction",
+    "section": "Pollution",
+    "text": "Pollution"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-1.html#traffic-safety",
+    "href": "teaching/CIVE461/slides/lec-1.html#traffic-safety",
+    "title": "Lecture 1 - Introduction",
+    "section": "Traffic Safety",
+    "text": "Traffic Safety"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-1.html#economics",
+    "href": "teaching/CIVE461/slides/lec-1.html#economics",
+    "title": "Lecture 1 - Introduction",
+    "section": "Economics",
+    "text": "Economics"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-1.html#equity-diversity",
+    "href": "teaching/CIVE461/slides/lec-1.html#equity-diversity",
+    "title": "Lecture 1 - Introduction",
+    "section": "Equity & Diversity",
+    "text": "Equity & Diversity"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-1.html#food-desert-tracks",
+    "href": "teaching/CIVE461/slides/lec-1.html#food-desert-tracks",
+    "title": "Lecture 1 - Introduction",
+    "section": "Food Desert Tracks",
+    "text": "Food Desert Tracks\n\n\n\nAccording to the USDA “a residence is considered in a food desert if it is more than one mile from a supermarket in an urban or suburban areas and more than 10 miles from a supermarket in a rural areas”."
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-1.html#transportation-land-use",
+    "href": "teaching/CIVE461/slides/lec-1.html#transportation-land-use",
+    "title": "Lecture 1 - Introduction",
+    "section": "Transportation & Land Use",
+    "text": "Transportation & Land Use"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-1.html#global-trends-urban-regions",
+    "href": "teaching/CIVE461/slides/lec-1.html#global-trends-urban-regions",
+    "title": "Lecture 1 - Introduction",
+    "section": "Global Trends & Urban Regions",
+    "text": "Global Trends & Urban Regions\n\nGlobalization\nCheap & high capacity telecommunications - reduced need to travel?\nGood transportation infrastructure enhances economic competitiveness\nLarger role of private sector in transport supply & operations"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-1.html#roads-their-many-roles",
+    "href": "teaching/CIVE461/slides/lec-1.html#roads-their-many-roles",
+    "title": "Lecture 1 - Introduction",
+    "section": "Roads & Their Many Roles",
+    "text": "Roads & Their Many Roles\n\n\n\n\n\n\n\n\nEconomic\nSocial\nCultural\n\n\n\n\n\n\n\n\n\nRecreational\n\nMobility"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-1.html#transportation-system-concepts",
+    "href": "teaching/CIVE461/slides/lec-1.html#transportation-system-concepts",
+    "title": "Lecture 1 - Introduction",
+    "section": "Transportation System Concepts",
+    "text": "Transportation System Concepts\n\nMobility: The ability to travel from one location to another in a reasonable time for acceptable cost.\n\n\nAccessibility: The ability to access an economic or social activity in a reasonable time for acceptable cost."
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-1.html#transportation-system-concepts-1",
+    "href": "teaching/CIVE461/slides/lec-1.html#transportation-system-concepts-1",
+    "title": "Lecture 1 - Introduction",
+    "section": "Transportation System Concepts",
+    "text": "Transportation System Concepts\n\nMobility: The ability to travel from one location to another in a reasonable time for acceptable cost.\n\n\nAccessibility: The ability to access an economic or social activity in a reasonable time for acceptable cost."
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-1.html#transportation-system-concepts-2",
+    "href": "teaching/CIVE461/slides/lec-1.html#transportation-system-concepts-2",
+    "title": "Lecture 1 - Introduction",
+    "section": "Transportation System Concepts",
+    "text": "Transportation System Concepts"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-1.html#transportation-system-concepts-3",
+    "href": "teaching/CIVE461/slides/lec-1.html#transportation-system-concepts-3",
+    "title": "Lecture 1 - Introduction",
+    "section": "Transportation System Concepts",
+    "text": "Transportation System Concepts"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-1.html#road-vs.-street",
+    "href": "teaching/CIVE461/slides/lec-1.html#road-vs.-street",
+    "title": "Lecture 1 - Introduction",
+    "section": "Road Vs. Street",
+    "text": "Road Vs. Street\nQuestion: What is the difference between these terms?\nRoad is a high speed connection between two places.\nStreet is a platform for building community wealth.\nStroad is a street with road design features."
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-1.html#road---but-is-it-in-the-right-place",
+    "href": "teaching/CIVE461/slides/lec-1.html#road---but-is-it-in-the-right-place",
+    "title": "Lecture 1 - Introduction",
+    "section": "Road - But is it in the right place?",
+    "text": "Road - But is it in the right place?"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-1.html#road---but-is-it-in-the-right-place-1",
+    "href": "teaching/CIVE461/slides/lec-1.html#road---but-is-it-in-the-right-place-1",
+    "title": "Lecture 1 - Introduction",
+    "section": "Road - But is it in the right place?",
+    "text": "Road - But is it in the right place?"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-1.html#street",
+    "href": "teaching/CIVE461/slides/lec-1.html#street",
+    "title": "Lecture 1 - Introduction",
+    "section": "Street",
+    "text": "Street"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-1.html#stroad---street",
+    "href": "teaching/CIVE461/slides/lec-1.html#stroad---street",
+    "title": "Lecture 1 - Introduction",
+    "section": "Stroad -> Street",
+    "text": "Stroad -&gt; Street"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-1.html#transportation-as-derived-demand",
+    "href": "teaching/CIVE461/slides/lec-1.html#transportation-as-derived-demand",
+    "title": "Lecture 1 - Introduction",
+    "section": "Transportation as Derived Demand",
+    "text": "Transportation as Derived Demand\n\n\nTransport demand is derived meaning it is not an end in itself – except sight-seeing\nQuestion: What do you think this means?\nPeople travel to satisfy a need at spatially dispersed locations (work, leisure, health) by undertaking an activity\nGood transport broadens opportunities to satisfy these needs – heavily congested or poorly connected system restricts options and limits economic and social development\nTransport demand is highly qualitative and differentiated\n\nBy time of day, day of week, journey purpose, type of cargo, importance of speed and frequency"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-1.html#transportation-supply",
+    "href": "teaching/CIVE461/slides/lec-1.html#transportation-supply",
+    "title": "Lecture 1 - Introduction",
+    "section": "Transportation Supply",
+    "text": "Transportation Supply\n\nTransportation supply a service - cannot stockpile it to use at different time of high demand\n\nService must be consumed when and where produced, otherwise benefit is lost\n\nSupply includes fixed assets (infrastructure) & mobile assets (vehicles) - in combination with rules of operation, make possible movement of goods & people\nOften infrastructure & vehicles not owned/operated by same group\n\nGenerates complex interactions b/w government (central & local), construction firms, developers, transport operators, travelers & shippers, & local residents"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-1.html#transportation-equilibrium",
+    "href": "teaching/CIVE461/slides/lec-1.html#transportation-equilibrium",
+    "title": "Lecture 1 - Introduction",
+    "section": "Transportation Equilibrium",
+    "text": "Transportation Equilibrium\n\nShort-term equilibrium: fixed activity system gives equilibrium points between supply and demand\nLong-term equilibrium: Levels of service changes over space and time - expect long-term equilibrium (or dynamic evolution)\nPlan for future that maximizes social welfare for all\n\nQuestion: What is social welfare to you?"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-1.html#car-public-transit-feedback-cycle",
+    "href": "teaching/CIVE461/slides/lec-1.html#car-public-transit-feedback-cycle",
+    "title": "Lecture 1 - Introduction",
+    "section": "Car-Public Transit Feedback Cycle",
+    "text": "Car-Public Transit Feedback Cycle"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-1.html#breaking-the-cycle",
+    "href": "teaching/CIVE461/slides/lec-1.html#breaking-the-cycle",
+    "title": "Lecture 1 - Introduction",
+    "section": "Breaking The Cycle",
+    "text": "Breaking The Cycle"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-1.html#transport-costs-subsidies-left-of-center-view",
+    "href": "teaching/CIVE461/slides/lec-1.html#transport-costs-subsidies-left-of-center-view",
+    "title": "Lecture 1 - Introduction",
+    "section": "Transport Costs & Subsidies (Left-Of-Center View)",
+    "text": "Transport Costs & Subsidies (Left-Of-Center View)\n\n\n\nIn addition to gas tax (federal tax 18 cents per gallon since 1980s!):\n\n$597 per U.S. household per year in general tax revenue dedicated to road construction & repair\n$199 to $675 per household per year in additional tax subsidies for driving - e.g., sales tax exemption for gasoline purchases in many states & federal income tax exclusion for commuter parking benefits\n$216 per household per year in government expenditures made necessary by vehicle crashes, plus additional, uncompensated damages to victims and property\n$93 to $360 per household per year in costs related to air pollution-induced health damage"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-1.html#transport-costs-subsidies-right-of-center-view",
+    "href": "teaching/CIVE461/slides/lec-1.html#transport-costs-subsidies-right-of-center-view",
+    "title": "Lecture 1 - Introduction",
+    "section": "Transport Costs & Subsidies (Right-Of-Center View)",
+    "text": "Transport Costs & Subsidies (Right-Of-Center View)\n\n\n\n\n\n\n\n\n\n\nDoes not include parking subsidy\nDoes not include crash costs\nTransit subsidy per mile estimated at 76% by APTA – 50% equity-justified\nNote farebox recovery ratios (user cost / total cost) can vary:\n\nHong Kong MTR = 172%\nAmsterdam = 88%\nToronto TTC = 66%\nNew York MTA = 24%\nChicago CTA = 16%"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-1.html#development-trap",
+    "href": "teaching/CIVE461/slides/lec-1.html#development-trap",
+    "title": "Lecture 1 - Introduction",
+    "section": "Development Trap",
+    "text": "Development Trap\n\nPrivate vehicle owners choose their work & home location without considering transit availability\nUrban sprawl results: low density development more difficult to service by efficient transit\nFurther congestion & higher proportion of time spent in slow moving vehicles"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-1.html#emerging-economy-cities",
+    "href": "teaching/CIVE461/slides/lec-1.html#emerging-economy-cities",
+    "title": "Lecture 1 - Introduction",
+    "section": "Emerging Economy Cities",
+    "text": "Emerging Economy Cities\n\n\n\nPopulation growth in many emerging economy cities will maintains demand for public transit\nQuestion: What about private vehicle ownership?"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-1.html#role-of-theory-data",
+    "href": "teaching/CIVE461/slides/lec-1.html#role-of-theory-data",
+    "title": "Lecture 1 - Introduction",
+    "section": "Role Of Theory & Data",
+    "text": "Role Of Theory & Data\n\nBoth theory & data required to understand complex interations in transportation system\nSometimes possible to derive same function form from different theoretical foundations\n\nGravity model from classical mechanics\nEntropy maximization from statistical mechanics\nMaximum utility from economics\n\nIf goal is flow measure on road links - any of above theories work\nIf goal is welfare evaluation - only theory based on human behavior is helpful"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-1.html#primer-on-logic",
+    "href": "teaching/CIVE461/slides/lec-1.html#primer-on-logic",
+    "title": "Lecture 1 - Introduction",
+    "section": "Primer On Logic",
+    "text": "Primer On Logic\n\nTwo classical approaches to theory development\n\nDeductive builds a theoretical model & tests its prediction against observation (common in pure & social sciences)\nInductive collects data & searches for general laws (common in engineering & computer science)\n\n\n\n\n\n\nDeductive Reasoning\n\n\n\n\n\n\n\n\n\nG\n\n  \n\nTheory\n\n Theory   \n\nHypothesis\n\n Hypothesis   \n\nTheory-&gt;Hypothesis\n\n    \n\nData\n\n Data   \n\nHypothesis-&gt;Data\n\n    \n\nHypothesis Test\n\n Hypothesis Test   \n\nData-&gt;Hypothesis Test\n\n   \n\n\n\n\n\n\n\n\n\nInductive Reasoning\n\n\n\n\n\n\n\n\n\nG\n\n  \n\nObservation\n\n Observation   \n\nPattern\n\n Pattern   \n\nObservation-&gt;Pattern\n\n    \n\nTheory\n\n Theory   \n\nPattern-&gt;Theory"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-1.html#primer-on-logic-1",
+    "href": "teaching/CIVE461/slides/lec-1.html#primer-on-logic-1",
+    "title": "Lecture 1 - Introduction",
+    "section": "Primer On Logic",
+    "text": "Primer On Logic\n\n\n\n\nDeductive Reasoning\n\n\n\n\n\n\n\n\n\nG\n\n  \n\nBus alwaysdelays\n\n Bus always have delays   \n\nH: If a personby bus,will be late\n\n H: If a person travels by bus, they will be late   \n\nBus alwaysdelays-&gt;H: If a personby bus,will be late\n\n    \n\nBus in cityon-time 59% of time\n\n Bus in city are on-time 59% of time   \n\nH: If a personby bus,will be late-&gt;Bus in cityon-time 59% of time\n\n    \n\nReject\n\n Reject hypothesis   \n\nBus in cityon-time 59% of time-&gt;Reject\n\n   \n\n\n\n\n\n\n\n\n\n\n\nDeductive reasoning begins from a premise that is proven through observation\n\nConclusions reliable provided premises are true\nArgument “All bald men are grandfathers. Harold is bald. Therefore, Harold is a grandfather” logically valid but untrue if original premise is false"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-1.html#primer-on-logic-2",
+    "href": "teaching/CIVE461/slides/lec-1.html#primer-on-logic-2",
+    "title": "Lecture 1 - Introduction",
+    "section": "Primer On Logic",
+    "text": "Primer On Logic\n\n\n\n\nDeductive Reasoning\n\n\n\n\n\n\n\n\n\nG\n\n  \n\nBus alwaysdelays\n\n Bus always have delays   \n\nH: If a personby bus,will be late\n\n H: If a person travels by bus, they will be late   \n\nBus alwaysdelays-&gt;H: If a personby bus,will be late\n\n    \n\nBus in cityon-time 59% of time\n\n Bus in city are on-time 59% of time   \n\nH: If a personby bus,will be late-&gt;Bus in cityon-time 59% of time\n\n    \n\nReject\n\n Reject hypothesis   \n\nBus in cityon-time 59% of time-&gt;Reject\n\n   \n\n\n\n\n\n\n\n\n\nInductive Reasoning\n\n\n\n\n\n\n\n\n\nG\n\n  \n\nA bus is delayed\n\n A bus is delayed   \n\nAnother 20 bus are delayed\n\n Another 20 bus are delayed   \n\nA bus is delayed-&gt;Another 20 bus are delayed\n\n    \n\nBus always have delays\n\n Bus always have delays   \n\nAnother 20 bus are delayed-&gt;Bus always have delays\n\n   \n\n\n\n\n\n\n\n\n\n\n\nInductive reasoning extracts a likely (but not certain) premise from specific & limited observations\n\nYou pull three coins from a bag & each coin is a penny\nInductive reasoning might suggest all coins in bag are pennies\nEven if initial observations are correct, inductive reasoning does not guarantee conclusion is true"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-1.html#role-of-data-theory",
+    "href": "teaching/CIVE461/slides/lec-1.html#role-of-data-theory",
+    "title": "Lecture 1 - Introduction",
+    "section": "Role Of Data & Theory",
+    "text": "Role Of Data & Theory\n\nData & aggregation\n\nHow many population strata do we need to understand problem?\nHow much detail do we need to measure certain variables to replicate phenonema?\nSpace is critical in transport: what level of detail to code trip origins & destinations to model trip-making behavior?"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-1.html#models-their-roles",
+    "href": "teaching/CIVE461/slides/lec-1.html#models-their-roles",
+    "title": "Lecture 1 - Introduction",
+    "section": "Models & Their Roles",
+    "text": "Models & Their Roles\n\n\n\nWe will devote large portion of class towards developing models\nModel is simply representation of part of real-world system of interest\nModel may be physical or abstract\n\nPhysical models used in architecture & fluid mechanics\nAbstract models are mental models used in daily interactions with world - formal & abstract (typically analytical) representations of theory about system of interest/how it works\nMental models important & enhance discussion, training, & experience but difficult to communicate"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-1.html#models-their-roles-1",
+    "href": "teaching/CIVE461/slides/lec-1.html#models-their-roles-1",
+    "title": "Lecture 1 - Introduction",
+    "section": "Models & Their Roles",
+    "text": "Models & Their Roles\n\nWe will focus on a class of abstract models: mathematical models that replicate system behavior via mathematical equations based on theory\nModels provide common ground for discussing policy and outcomes with a level of objectivity\nEngineers/planners can learn much about a system from the formulation, calibration, and experimentation with a model (not even use)\nMathematical models can help hone mental models and mean more intelligent management of transport system\nModels (mental) are inevitable but formal models are desirable"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-1.html#models-their-roles-2",
+    "href": "teaching/CIVE461/slides/lec-1.html#models-their-roles-2",
+    "title": "Lecture 1 - Introduction",
+    "section": "Models & Their Roles",
+    "text": "Models & Their Roles\n\nComputers can make error-free calculations BUT humans are error- and bias-prone"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-1.html#transportation-planning-and-cive461-focus-shift",
+    "href": "teaching/CIVE461/slides/lec-1.html#transportation-planning-and-cive461-focus-shift",
+    "title": "Lecture 1 - Introduction",
+    "section": "Transportation Planning (and CIVE461) Focus Shift",
+    "text": "Transportation Planning (and CIVE461) Focus Shift\n\nField is shifting towards methods that are more human-centered and realistic and away from the mechanistic methods adopted from physics analogy\nFocus on time, geographic space, social space, and institutional context\nWe ignored complexity, non-linearity, and uncertainty in past approaches\nTraditional viewpoint of transport experts and policy makers is that transportation systems exist to provide for the safe and efficient movement of people and goods in an environmentally responsible manner"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-1.html#transportation-planning-and-cive461-focus-shift-1",
+    "href": "teaching/CIVE461/slides/lec-1.html#transportation-planning-and-cive461-focus-shift-1",
+    "title": "Lecture 1 - Introduction",
+    "section": "Transportation Planning (and CIVE461) Focus Shift",
+    "text": "Transportation Planning (and CIVE461) Focus Shift\n\nDecisions historically reserved for technical experts with very little (if any) public input\nIn the 1970s, mainly because of the oil crisis, attention was also paid to managing the transportation system as a system of interconnected components\nRealizing increased capacity is not sufficient to satisfy increasing demand for services, policy analysts and policy makers shifted their attention to a more efficient management of facilities (e.g., utilize the capacity of a highway by spreading its use over the day)\nNew construction reserved for strategic interventions such as the provision of connectivity among existing roadways\nShift of policies away from expanding capacity to managing demand and the introduction of a systems approach to transportation has been advocated since the late 1960s – yet not adopted by many engineering undergraduate programs…"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-1.html#transportation-planning-and-cive461-focus-shift-2",
+    "href": "teaching/CIVE461/slides/lec-1.html#transportation-planning-and-cive461-focus-shift-2",
+    "title": "Lecture 1 - Introduction",
+    "section": "Transportation Planning (and CIVE461) Focus Shift",
+    "text": "Transportation Planning (and CIVE461) Focus Shift\n\nMore recent perspective: integrated and systematic view\nEconomic and social development role\nPrivate automobile can be examined in a more critical way and contrasted with many other mobility options that may yield the same benefits but at lower social costs\nAt the core is provision of access to activities and services for all (equity principle)\nUnfortunately, priority in transport policies has been given to higher mobility (ability to move) instead of higher accessibility (ability to reach locations and opportunities)\nSince mobility is “purchased,” specific groups of the urban or rural population do not have adequate access to basic services\nYet, they are burdened with the costs (e.g., health, taxation) of mobility\nI have re-focused CIVE461 to provide you with the tools and knowledge to compete in the current transportation workforce"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-1.html#workforce-trends",
+    "href": "teaching/CIVE461/slides/lec-1.html#workforce-trends",
+    "title": "Lecture 1 - Introduction",
+    "section": "Workforce Trends",
+    "text": "Workforce Trends\n\nMulti-modal transportation planning\nComplete Streets – Nebraska DOT focused on it for small communities\nLarger datasets = Excel -&gt; R & Python\nNon-infrastructure solutions – ridesharing, autonomous vehicles, pricing, and land use reform\n\n       \n\n\n\nCIVE461 Home"
+  },
+  {
+    "objectID": "teaching/CIVE461/course-faq.html",
+    "href": "teaching/CIVE461/course-faq.html",
+    "title": "FAQ",
+    "section": "",
+    "text": "Go to your Files tab, check the box next to the file you want to download, then click on the blue gear icon on the Files tab to reveal the drop down menu, and select Export… If you have selected multiple files to export, RStudio will zip them up into a single zip file for you. If you’ve selected just a single file, it will only download that. The downloaded file will go to wherever files you download off the internet goes on your computer (usually your Downloads folder)."
+  },
+  {
+    "objectID": "teaching/CIVE461/course-faq.html#how-do-i-export-my-assignment-pdf-from-rstudio-to-upload-to-gradescope",
+    "href": "teaching/CIVE461/course-faq.html#how-do-i-export-my-assignment-pdf-from-rstudio-to-upload-to-gradescope",
+    "title": "FAQ",
+    "section": "",
+    "text": "Go to your Files tab, check the box next to the file you want to download, then click on the blue gear icon on the Files tab to reveal the drop down menu, and select Export… If you have selected multiple files to export, RStudio will zip them up into a single zip file for you. If you’ve selected just a single file, it will only download that. The downloaded file will go to wherever files you download off the internet goes on your computer (usually your Downloads folder)."
+  },
+  {
+    "objectID": "teaching/CIVE461/course-faq.html#how-can-i-submit-my-assignment-to-gradescope",
+    "href": "teaching/CIVE461/course-faq.html#how-can-i-submit-my-assignment-to-gradescope",
+    "title": "FAQ",
+    "section": "How can I submit my assignment to Gradescope?",
+    "text": "How can I submit my assignment to Gradescope?\nThe instructions for submitting your assignment to Gradescope can be found here. In a nutshell, you’ll upload your PDF and them mark the page(s) where each question can be found. It’s OK if a question spans multiple pages, just mark them all. It’s also OK if a page includes multiple questions."
+  },
+  {
+    "objectID": "teaching/CIVE461/course-faq.html#can-i-use-a-local-install-of-r-and-rstudio-instead-of-using-the-rstudio-containers",
+    "href": "teaching/CIVE461/course-faq.html#can-i-use-a-local-install-of-r-and-rstudio-instead-of-using-the-rstudio-containers",
+    "title": "FAQ",
+    "section": "Can I use a local install of R and RStudio instead of using the RStudio containers?",
+    "text": "Can I use a local install of R and RStudio instead of using the RStudio containers?\nThe short answer is, I’d rather you didn’t, to save yourself some headache. But, the long answer is, sure! But you will need to install a specific versions of R and RStudio for everything to work as expected. You will also need to install the R packages we’re using as well as have Git installed on your computer. These are not extremely challenging things to get right, but they are not trivial either, particularly on certain operating systems. Myself and the TAs are always happy to provide help with any computational questions when you’re working in the containers we have provided for you. If you’re working on your local setup, we can’t guarantee being able to resolve your issues, though we’re happy to try.\nIf you want to take this path, here is what you need to do:\n\nDownload and install R 4.1.2: https://cran.r-project.org/\nDownload and install a daily build of RStudio: https://dailies.rstudio.com/\nInstall Quarto CLI: https://quarto.org/docs/getting-started/installation.html\nInstall Git: https://happygitwithr.com/install-git.html\nInstall any necessary packages with install.packages(\"___\")\n\nAnd I’d like to reiterate again that successful installation of these software is not a learning goal of this course. So if any of this seems tedious or intimidating in any way, just use the computing environment we have set up for you. More on that here."
+  },
+  {
+    "objectID": "teaching/CIVE461/project-description.html",
+    "href": "teaching/CIVE461/project-description.html",
+    "title": "Project description",
+    "section": "",
+    "text": "Topic ideas due Fri, Feb 18\nProposal due Fri, Mar 18\nDraft report due Fri, Apr 8\nPeer review due Fri, Apr 15\nFinal report due Mon, Apr 25\nFinal GitHub repo due Thu, Apr 28"
+  },
+  {
+    "objectID": "teaching/CIVE461/project-description.html#timeline",
+    "href": "teaching/CIVE461/project-description.html#timeline",
+    "title": "Project description",
+    "section": "",
+    "text": "Topic ideas due Fri, Feb 18\nProposal due Fri, Mar 18\nDraft report due Fri, Apr 8\nPeer review due Fri, Apr 15\nFinal report due Mon, Apr 25\nFinal GitHub repo due Thu, Apr 28"
+  },
+  {
+    "objectID": "teaching/CIVE461/project-description.html#introduction",
+    "href": "teaching/CIVE461/project-description.html#introduction",
+    "title": "Project description",
+    "section": "Introduction",
+    "text": "Introduction\nTL;DR: Pick a data set and do a demand analysis. That is your final project.\nThe goal of the final project is for you to use aggregate and/or disaggregate demand analysis to analyze a data set of your own choosing. Choose the data based on your group’s interests or work you all have done in other courses or research projects. The goal of this project is for you to demonstrate proficiency in the techniques we have covered in this class (and beyond, if you like!) and apply them to a data set to analyze it in a meaningful way.\nAll analyses must be done in Python or R, and all components of the project must be reproducible.\n\nLogistics\nYou will work on the project with a partner, or in a group of three depending on class size.\nThe four primary deliverables for the final project are\n\nA written, reproducible report detailing your analysis\nA GitHub repository corresponding to your report\nFormal peer review on another team’s project"
+  },
+  {
+    "objectID": "teaching/CIVE461/project-description.html#topic-ideas",
+    "href": "teaching/CIVE461/project-description.html#topic-ideas",
+    "title": "Project description",
+    "section": "Topic ideas",
+    "text": "Topic ideas\nIdentify 2-3 data sets you’re interested in potentially using for the final project. If you’re unsure where to find data, you can use the list of potential data sources in the Tips + Resources section as a starting point. It may also help to think of topics you’re interested in investigating and find data sets on those topics.\nThe purpose of submitting project ideas is to give you time to find data for the project and to make sure you have a data set that can help you be successful in the project. Therefore, you must use one of the data sets submitted as a topic idea, unless otherwise notified to the course instructor.\nThe data sets should meet the following criteria:\n\nAt least 500 observations\nAt least 10 columns\nAt least 6 of the columns must be useful and unique predictor variables.\n\nIf you have multiple columns with the same information (e.g. “state abbreviation” and “state name”), then they are not unique predictors.\n\nAt least one variable that can be identified as a reasonable response variable.\n\nThe response variable can be quantitative or categorical.\n\nA mix of quantitative and categorical variables that can be used as predictors.\nYou may not use data that has previously been used in any course materials, or any derivation of data that has been used in course materials.\n\nPlease ask the course instructor if you’re unsure whether your data set meets the criteria.\nFor each data set, include the following:\n\nIntroduction and data\n\nState the source of the data set\nDescribe when and how it was originally collected (by the original data curator, not necessarily how you found the data)\nDescribe the observations and the general characteristics being measured in the data\n\n\n\nResearch question\n\nDescribe a research question you’re interested in answering using this data."
+  },
+  {
+    "objectID": "teaching/CIVE461/project-description.html#project-proposal",
+    "href": "teaching/CIVE461/project-description.html#project-proposal",
+    "title": "Project description",
+    "section": "Project proposal",
+    "text": "Project proposal\nThe purpose of the project proposal is to help you think about your analysis strategy early.\nInclude the following in the proposal:\n\nSection 1 - Introduction\nThe introduction section includes:\n\nAn introduction to the subject matter you’re investigating\nThe motivation for your research question (citing any relevant literature)\nThe general research question you wish to explore\nYour hypotheses regarding the research question of interest\n\n\n\nSection 2 - Data description\nIn this section, you will describe the data set you wish to explore. This includes:\n\nDescription of the observations in the data set,\nDescription of how the data was originally collected (not how you found the data but how the original curator of the data collected it).\n\n\n\nSection 3 - Analysis approach\nIn this section, you will provide a brief overview of your analysis approach. This includes:\n\nDescription of the response variable\nVisualization and summary statistics for the response variable\nList of variables that will be considered as predictors\nRegression model technique (e.g., multiple linear regression, logistic regression, mixed logit discrete choice)\n\n\n\nData dictionary (aka code book)\nSubmit a data dictionary for all the variables in your data set in the README of your project repo, in the data folder. Link to this file from your proposal writeup.\n\n\nSubmission\nPush all of your final changes to the GitHub repo, and submit the PDF of your proposal to Canvas.\n\n\nProposal grading\n\n\n\nTotal\n10 pts\n\n\n\n\nIntroduction\n3 pts\n\n\nData description\n2 pts\n\n\nAnalysis plan\n4 pts\n\n\nData dictionary\n1 pts\n\n\n\nEach component will be graded as follows:\n\nMeets expectations (full credit): All required elements are completed and are accurate. The narrative is written clearly, all tables and visualizations are nicely formatted, and the work would be presentable in a professional setting.\nClose to expectations (half credit): There are some elements missing and/or inaccurate. There are some issues with formatting.\nDoes not meet expectations (no credit): Major elements missing. Work is not neatly formatted and would not be presentable in a professional setting."
+  },
+  {
+    "objectID": "teaching/CIVE461/project-description.html#draft-report",
+    "href": "teaching/CIVE461/project-description.html#draft-report",
+    "title": "Project description",
+    "section": "Draft report",
+    "text": "Draft report\nThe purpose of the draft report and peer review is to give you an opportunity to get early feedback on your analysis. Therefore, the draft and peer review will focus primarily on the exploratory data analysis, modeling, and initial interpretations.\nYou do not need to submit the draft on Canvas.\nBelow is a brief description of the sections to focus on in the draft:\n\nIntroduction and data\nThis section includes an introduction to the project motivation, data, and research question. Describe the data and definitions of key variables. It should also include some exploratory data analysis. All of the EDA won’t fit in the paper, so focus on the EDA for the response variable and a few other interesting variables and relationships.\n\n\nMethodology\nThis section includes a brief description of your modeling process. Explain the reasoning for the type of model you’re fitting, predictor variables considered for the model including any interactions. Additionally, show how you arrived at the final model by describing the model selection process, any variable transformations (if needed), and any other relevant considerations that were part of the model fitting process.\n\n\nResults\nIn this section, you will output the final model and include a brief discussion of the model assumptions, diagnostics, and any relevant model fit statistics.\nThis section also includes initial interpretations and conclusions drawn from the model."
+  },
+  {
+    "objectID": "teaching/CIVE461/project-description.html#peer-review",
+    "href": "teaching/CIVE461/project-description.html#peer-review",
+    "title": "Project description",
+    "section": "Peer review",
+    "text": "Peer review\nCritically reviewing others’ work is a crucial part of the scientific process, and STA 210 is no exception. Each team will be assigned one other teams’s projects to review. Each team should push their draft to their GitHub repo by the due date.\nProvide your review in the form of GitHub issues to your partner team’s GitHub repo using the issue template provided. The peer review will be graded on the extent to which it comprehensively and constructively addresses the components of the partner team’s report: the research context and motivation, exploratory data analysis, modeling, interpretations, and conclusions.\n\nPairings\n\n\n\nTeam being reviewed\nReviewer\n\n\n\n\nchaa_chaa_chaa\nyay_stats\n\n\ndekk\nchaa_chaa_chaa\n\n\neight\ndekk\n\n\nhousecats\neight\n\n\nkrafthouse\nhousecats\n\n\nrrawr\nkrafthouse\n\n\nstat_over_flow\nrrawr\n\n\nyay_stats\nstat_over_flow\n\n\n\n\n\nProcess and questions\nSpend ~30 mins to review each team’s project.\n\nFind your team name in the Reviewer 1 column.\nFind the name of the team to review in the Team being reviewed column.\nOpen the repo of the team you’re reviewing, read their project draft, and browser around the rest of their repo.\nThen, go to the Issues tab in that repo, click on New issue, and click on Get started for the Peer review issue. Fill out this issue, answering the following questions:\n\nDescribe the goal of the project.\nDescribe the data used or collected, if any. If the proposal does not include the use of a specific dataset, comment on whether the project would be strengthened by the inclusion of a dataset.\nDescribe the approaches, tools, and methods that will be used.\nIs there anything that is unclear from the proposal?\nProvide constructive feedback on how the team might be able to improve their project. Make sure your feedback includes at least one comment on the statistical modeling aspect of the project, but do feel free to comment on aspects beyond the modeling.\nWhat aspect of this project are you most interested in and would like to see highlighted in the presentation.\nProvide constructive feedback on any issues with file and/or code organization.\n(Optional) Any further comments or feedback?"
+  },
+  {
+    "objectID": "teaching/CIVE461/project-description.html#written-report",
+    "href": "teaching/CIVE461/project-description.html#written-report",
+    "title": "Project description",
+    "section": "Written report",
+    "text": "Written report\nYour written report must be reproducible. All team members should contribute to the GitHub repository, with regular meaningful commits.\nYou will submit the PDF of your final report on Canvas.\nThe PDF you submit must match the files in your GitHub repository exactly. The mandatory components of the report are below. You are free to add additional sections as necessary. The report, including visualizations, should be no more than 15 pages long. There is no minimum page requirement; however, you should comprehensively address all of the analysis and report.\nBe selective in what you include in your final report. The goal is to write a cohesive narrative that demonstrates a thorough and comprehensive analysis rather than explain every step of the analysis.\nYou are welcome to include an appendix with additional work at the end of the written report document. The appendix should be neatly formatted and easy for the reader to navigate. It is not included in the 15-page limit.\nThe written report is worth 40 points, broken down as follows\n\n\n\nTotal\n40 pts\n\n\n\n\nIntroduction/data\n6 pts\n\n\nMethodology\n10 pts\n\n\nResults\n14 pts\n\n\nDiscussion + conclusion\n6 pts\n\n\nOrganization + formatting\n4 pts\n\n\n\nClick here for a PDF of the written report rubric.\n\nIntroduction and data\nThis section includes an introduction to the project motivation, data, and research question. Describe the data and definitions of key variables. It should also include some exploratory data analysis. All of the EDA won’t fit in the paper, so focus on the EDA for the response variable and a few other interesting variables and relationships.\n\nGrading criteria\nThe research question and motivation are clearly stated in the introduction, including citations for the data source and any external research. The data are clearly described, including a description about how the data were originally collected and a concise definition of the variables relevant to understanding the report. The data cleaning process is clearly described, including any decisions made in the process (e.g., creating new variables, removing observations, etc.) The explanatory data analysis helps the reader better understand the observations in the data along with interesting and relevant relationships between the variables. It incorporates appropriate visualizations and summary statistics.\n\n\n\nMethodology\nThis section includes a brief description of your modeling process. Explain the reasoning for the type of model you’re fitting, predictor variables considered for the model including any interactions. Additionally, show how you arrived at the final model by describing the model selection process, interactions considered, variable transformations (if needed), assessment of conditions and diagnostics, and any other relevant considerations that were part of the model fitting process.\n\nGrading criteria\nThe analysis steps are appropriate for the data and research question. The group used a thorough and careful approach to select the final model; the approach is clearly described in the report. The model selection process took into account potential interaction effects and addressed any violations in model conditions. The model conditions and diagnostics are thoroughly and accurately assessed for their model. If violations of model conditions are still present, there was a reasonable attempt to address the violations based on the course content.\n\n\n\nResults\nThis is where you will output the final model with any relevant model fit statistics.\nDescribe the key results from the model. The goal is not to interpret every single variable in the model but rather to show that you are proficient in using the model output to address the research questions, using the interpretations to support your conclusions. Focus on the variables that help you answer the research question and that provide relevant context for the reader.\n\nGrading criteria\nThe model fit is clearly assessed, and interesting findings from the model are clearly described. Interpretations of model coefficients are used to support the key findings and conclusions, rather than merely listing the interpretation of every model coefficient. If the primary modeling objective is prediction, the model’s predictive power is thoroughly assessed.\n\n\n\nDiscussion + Conclusion\nIn this section you’ll include a summary of what you have learned about your research question along with statistical arguments supporting your conclusions. In addition, discuss the limitations of your analysis and provide suggestions on ways the analysis could be improved. Any potential issues pertaining to the reliability and validity of your data and appropriateness of the statistical analysis should also be discussed here. Lastly, this section will include ideas for future work.\n\nGrading criteria\nOverall conclusions from analysis are clearly described, and the model results are put into the larger context of the subject matter and original research question. There is thoughtful consideration of potential limitations of the data and/or analysis, and ideas for future work are clearly described.\n\n\n\nOrganization + formatting\nThis is an assessment of the overall presentation and formatting of the written report.\n\nGrading criteria\nThe report neatly written and organized with clear section headers and appropriately sized figures with informative labels. Numerical results are displayed with a reasonable number of digits, and all visualizations are neatly formatted. All citations and links are properly formatted. If there is an appendix, it is reasonably organized and easy for the reader to find relevant information. All code, warnings, and messages are suppressed. The main body of the written report (not including the appendix) is no longer than 10 pages."
+  },
+  {
+    "objectID": "teaching/CIVE461/project-description.html#reproducibility-organization",
+    "href": "teaching/CIVE461/project-description.html#reproducibility-organization",
+    "title": "Project description",
+    "section": "Reproducibility + organization",
+    "text": "Reproducibility + organization\nAll written work should be reproducible and the GitHub repo should be neatly organized.\nThe GitHub repo should have the following structure:\n\nREADME: Short project description and data dictionary\nwritten-report.qmd & written-report.pdf: Final written report\n/data: Folder that contains the data set for the final project.\n/previous-work: Folder that contains the topic-ideas and project-proposal files.\n\nPoints for reproducibility + organization will be based on the reproducibility of the written report and the organization of the project GitHub repo. The repo should be neatly organized as described above, there should be no extraneous files, all text in the README should be easily readable."
+  },
+  {
+    "objectID": "teaching/CIVE461/project-description.html#overall-grading",
+    "href": "teaching/CIVE461/project-description.html#overall-grading",
+    "title": "Project description",
+    "section": "Overall grading",
+    "text": "Overall grading\nThe grade breakdown is as follows:\n\n\n\nTotal\n100 pts\n\n\n\n\nTopic ideas\n5 pts\n\n\nProject proposal\n10 pts\n\n\nPeer review\n10 pts\n\n\nWritten report\n40 pts\n\n\nSlides + video presentation\n20 pts\n\n\nReproducibility + organization\n5 pts\n\n\nVideo comments\n5 pts\n\n\nPeer teamwork evaluation\n5 pts\n\n\n\nNote: No late project reports are accepted.\n\nGrading summary\nGrading of the project will take into account the following:\n\nContent - What is the quality of research and/or policy question and relevancy of data to those questions?\nCorrectness - Are statistical procedures carried out and explained correctly?\nWriting and Presentation - What is the quality of the statistical presentation, writing, and explanations?\nCreativity and Critical Thought - Is the project carefully thought out? Are the limitations carefully considered? Does it appear that time and effort went into the planning and implementation of the project?\n\nA general breakdown of scoring is as follows:\n\n90%-100%: Outstanding effort. Student understands how to apply all statistical concepts, can put the results into a cogent argument, can identify weaknesses in the argument, and can clearly communicate the results to others.\n80%-89%: Good effort. Student understands most of the concepts, puts together an adequate argument, identifies some weaknesses of their argument, and communicates most results clearly to others.\n70%-79%: Passing effort. Student has misunderstanding of concepts in several areas, has some trouble putting results together in a cogent argument, and communication of results is sometimes unclear.\n60%-69%: Struggling effort. Student is making some effort, but has misunderstanding of many concepts and is unable to put together a cogent argument. Communication of results is unclear.\nBelow 60%: Student is not making a sufficient effort.\n\n\n\nLate work policy\nThere is no late work accepted on this project. Be sure to turn in your work early to avoid any technological mishaps."
+  },
+  {
+    "objectID": "teaching/CIVE461/course-syllabus.html",
+    "href": "teaching/CIVE461/course-syllabus.html",
+    "title": "Syllabus",
+    "section": "",
+    "text": "Click here to download a PDF copy of the syllabus."
+  },
+  {
+    "objectID": "teaching/CIVE461/course-syllabus.html#course-info",
+    "href": "teaching/CIVE461/course-syllabus.html#course-info",
+    "title": "Syllabus",
+    "section": "Course Info",
+    "text": "Course Info\n\n\n\n\n\n\n\n\n\n\nDay\nTime\nLocation\n\n\n\n\nLectures\nMon\n1:30 pm - 2:45 pm\nPKI 164 (Omaha)\n\n\nLectures\nWed\n1:30 pm - 2:45 pm\nNH W 213 (Lincoln)\n\n\n\nNote: I am committed to lecturing from both Lincoln & Omaha each week. However, the days may vary depending upon other obligations. Unless otherwise indicated, I will lecture from Lincoln on Tuesdays and Omaha on Thursdays. When possible, I will announce one week in advance any lecture location changes.\nPrerequisites: CIVE361\nDescription: Development of urban transportation planning objectives and goals. Data collection procedures, land use and travel forecasting techniques, trip generation, trip distribution, modal choice analysis, and traffic assignment.\nCredit Hours: 3\n\nInstructor:\nDr. Jason Hawkins\nPKI 206C (Omaha) & NH 165 (Lincoln)\n402-472-0529 | civil.unl.edu | Email me through the course Canvas messenger system\n\n\nTeaching Assistant:\nOmid Armantalab\nOffice hours: NH 165 (Lincoln)\nEmail TA through the course Canvas messenger system"
+  },
+  {
+    "objectID": "teaching/CIVE461/course-syllabus.html#learning-objectives",
+    "href": "teaching/CIVE461/course-syllabus.html#learning-objectives",
+    "title": "Syllabus",
+    "section": "Learning objectives",
+    "text": "Learning objectives\nTo introduce senior undergraduate and graduate civil engineering students to the principles of urban transportation planning and to create an awareness of society’s transportation problems and identifying the tools, methodologies, and professional perspectives required to contribute to the solution to these problems. By the end of the semester, you will be able to…\n\nIdentify and assess the drivers of transportation demand\nDevelop statistical models of transportation demand and mode choice\nPresent technical results using Jupyter notebook format\nDiscuss the economic, social, and environmental impacts of transportation decision-making\nProcess and analyze common transportation datasets"
+  },
+  {
+    "objectID": "teaching/CIVE461/course-syllabus.html#textbooks",
+    "href": "teaching/CIVE461/course-syllabus.html#textbooks",
+    "title": "Syllabus",
+    "section": "Textbooks",
+    "text": "Textbooks\nWhile there is no official textbook for the course, I will be assigning readings from the following resources.\n\nModelling Transport by Juan de Dios Ortúzar and Luis G. Willumsen\nTravel Demand Forecasting: Parameters and Techniques by Mine Çetinkaya-Rundel and Johanna Hardin\nStatistical and Econometric Methods for Transportation Data Analysis by Max Kuhn and Julia Silge\nRegression and Other Stories by Paul Roback and Julie Legler"
+  },
+  {
+    "objectID": "teaching/CIVE461/course-syllabus.html#lectures",
+    "href": "teaching/CIVE461/course-syllabus.html#lectures",
+    "title": "Syllabus",
+    "section": "Lectures",
+    "text": "Lectures\nThe goal of lectures is for them to be as interactive as possible. My role as instructor is to introduce you to new theories, tools, and techniques, but it is up to you to take them and make use of them. Some of what you do in this course will involve writing code, and coding is a skill that is best learned by doing. Therefore, as much as possible, you will be working on a variety of tasks and activities during lecture. You are expected to attend all lecture sessions and meaningfully contribute to in-class exercises and discussions. Additionally, some lectures will feature application exercises that will be graded.\nYou are expected to bring a laptop to each class so that you can take part in the in-class exercises. Please make sure your laptop is fully charged before you come to class as the number of outlets in the classroom will not be sufficient to accommodate everyone. More information on loaner laptops can be found here and here."
+  },
+  {
+    "objectID": "teaching/CIVE461/course-syllabus.html#teams",
+    "href": "teaching/CIVE461/course-syllabus.html#teams",
+    "title": "Syllabus",
+    "section": "Teams",
+    "text": "Teams\nYou will be assigned to a team at the beginning of the semester. You are encouraged to sit with your teammates in lecture. All team members are expected to contribute equally to the completion of the term project and you will be asked to evaluate your team members throughout the semester. Failure to adequately contribute to an assignment will result in a penalty to your mark relative to the team’s overall mark."
+  },
+  {
+    "objectID": "teaching/CIVE461/course-syllabus.html#assessment",
+    "href": "teaching/CIVE461/course-syllabus.html#assessment",
+    "title": "Syllabus",
+    "section": "Assessment",
+    "text": "Assessment\nAssessment for the course is comprised of six components: application exercises, homework assignments, an exam, a project, and teamwork.\n\nApplication Exercises\nParts of some lectures will be dedicated to working on Application Exercises (AEs). These exercises which give you an opportunity to practice applying the transportation planning concepts and code introduced in the readings and lectures. These AEs are due within three days of the corresponding lecture period. Specifically, AEs from Monday lectures are due Thursday by 11:59 pm CT, and AEs from Wednesday lectures are due Saturday by 11:59 pm CT.\nBecause these AEs are for practice, they will be graded based on completion, i.e., a good-faith effort has been made in attempting all parts. Successful on-time completion of at least 80% of AEs will result in full credit for AEs in the final course grade.\n\n\nHomework\nIn homework, you will apply what you’ve learned during lecture to complete non-coding assignments. You may discuss homework assignments with other students; however, homework should be completed and submitted individually.\nOne homework assignment will be dedicated to a transportation planning experience. The transportation planning experience is an opportunity to engage with transportation planning and analysis outside of the classroom through podcasts, news stories, books, seminars, and other activities. As you complete these experiences, the goal is to consider how the material you’re learning in the course connects with society more broadly.\n\n\nExams\nThere will be one final exam. Through this exam you have the opportunity to demonstrate what you’ve learned in the course. The exam will focus on the conceptual understanding of the content and it may also include small analysis tasks. More detail about the exams will be given during the semester.\n\n\nProject\nThe purpose of the project is to apply what you’ve learned throughout the semester to a real-world dataset. The project will be completed with your teams, and each team will present their work in writing via deliverables due throughout the semester. More information about the project will be provided during the semester."
+  },
+  {
+    "objectID": "teaching/CIVE461/course-syllabus.html#grading",
+    "href": "teaching/CIVE461/course-syllabus.html#grading",
+    "title": "Syllabus",
+    "section": "Grading",
+    "text": "Grading\nThe final course grade will be calculated as follows:\n\n\n\nCategory\nPercentage\n\n\n\n\nApplication exercises\n10%\n\n\nHomework\n21% (7% x 3)\n\n\nProject\n34%\n\n\nFinal Exam\n35%\n\n\n\nThe final letter grade will be determined based on the following thresholds:\n\n\n\nLetter Grade\nFinal Course Grade\n\n\n\n\nA+\n&gt;= 97\n\n\nA\n93 - 96.99\n\n\nA-\n90 - 92.99\n\n\nB+\n87 - 89.99\n\n\nB\n83 - 86.99\n\n\nB-\n80 - 82.99\n\n\nC+\n77 - 79.99\n\n\nC\n73 - 76.99\n\n\nC-\n70 - 72.99\n\n\nD+\n67 - 69.99\n\n\nD\n63 - 66.99\n\n\nD-\n60 - 62.99\n\n\nF\n&lt; 60"
+  },
+  {
+    "objectID": "teaching/CIVE461/course-syllabus.html#five-tips-for-success",
+    "href": "teaching/CIVE461/course-syllabus.html#five-tips-for-success",
+    "title": "Syllabus",
+    "section": "Five tips for success",
+    "text": "Five tips for success\nYour success on this course depends very much on you and the effort you put into it. The course has been organized so that the burden of learning is on you. Your TA and I will help you be providing you with materials and answering questions and setting a pace, but for this to work you must do the following:\n\nComplete all the preparation work before class.\nAsk questions. As often as you can. In class, out of class. Ask me, ask the TA, ask your friends, ask the person sitting next to you. This will help you more than anything else. If you get a question wrong on an assessment, ask us why. If you’re not sure about the homework, ask. If you hear something on the news that sounds related to what we discussed, ask. If the reading is confusing, ask.\nDo the readings.\nDo the homework and contribute to the team project.The earlier you start, the better. It’s not enough to just mechanically plow through the exercises. You should ask yourself how these exercises relate to earlier material, and imagine how they might be changed (to make questions for an exam, for example.)\nDon’t procrastinate. If something is confusing to you in Week 2, Week 3 will become more confusing, Week 4 even worse, and eventually you won’t know where to begin asking questions. Don’t let the week end with unanswered questions. But if you find yourself falling behind and not knowing where to begin asking, come to office hours, and let me help you identify a good (re)starting point."
+  },
+  {
+    "objectID": "teaching/CIVE461/course-syllabus.html#diversity-and-inclusion",
+    "href": "teaching/CIVE461/course-syllabus.html#diversity-and-inclusion",
+    "title": "Syllabus",
+    "section": "Diversity and Inclusion",
+    "text": "Diversity and Inclusion\nIt is my intent that students from all diverse backgrounds and perspectives be well-served by this course, that students’ learning needs be addressed both in and out of class, and that the diversity that students bring to this class be viewed as a resource, strength and benefit. I would like to create a learning environment for my students that supports thoughts, perspectives, and experiences, and honors your identities (including gender, sexuality, disability, age, socioeconomic status, ethnicity, race, nationality, religion, culture, etc.). To help accomplish this: - If you have a name and/or set of pronouns that differ from those that appear in your official University of Nebraska records, please let me know! - If you feel like your performance in the class is being impacted by your experiences outside of class, please don’t hesitate to come and talk with me. I want to be a resource for you. Remember that you can also submit anonymous feedback (which will lead to me making a general announcement to the class, if necessary to address your concerns). If you prefer to speak with someone outside of the course, there are many resources available on-campus (e.g. CAPS). - I (like many people) am still in the process of learning about diverse perspectives and identities. If something was said in class (by anyone) that made you feel uncomfortable, please talk to me about it. (Again, anonymous feedback is always an option). Your suggestions are encouraged and appreciated."
+  },
+  {
+    "objectID": "teaching/CIVE461/course-syllabus.html#course-policies",
+    "href": "teaching/CIVE461/course-syllabus.html#course-policies",
+    "title": "Syllabus",
+    "section": "Course Policies",
+    "text": "Course Policies\nTL;DR: Don’t cheat! ### Academic Honesty Policy Academic integrity is of the utmost importance at Nebraska. Be sure you understand expectations of you and your academic work. View the complete list of academic dishonesty violations in the Student Code of Conduct, specifically Article III: Proscribed Conduct, Section B. Conduct – Rules and Regulations, 1. Acts of Academic Dishonesty. For more information, please visit https://studentconduct.unl.edu/. If you are unsure what counts as academic dishonesty in this course, please visit me during office hours. The first instance of academic dishonesty will result in a score of zero for the assignment or exam. The second incidence of academic dishonesty will result in a failing grade for the course.\n\nAccommodations for Students with Disabilities Policy\nIt is my goal that this class be an accessible and welcoming experience for all students. Reasonable accommodations are provided for students who are registered with the Accessibility Services Center and make their requests sufficiently in advance. For more information, contact: Lincoln campus: [Services for Students with Disabilities] (https://www.unl.edu/ssd/) Omaha campus: [Accessibility Services Center] (https://www.unomaha.edu/student-life/inclusion/disability-services/students/index.php)\n\n\nCommunication\nAll lecture notes, assignment instructions, an up-to-date schedule, and other course materials may be found on the course website at sta210-s22.github.io/website.\nI will regularly send course announcements via email and Canvas - make sure to check one or the other of these regularly. If an announcement is sent Monday through Thursday, I will assume that you have read the announcement by the next day. If an announcement is sent on a Friday or over the weekend, I will assume that you have read it by Monday.\n\n\nWhere to get help\n\nIf you have a question during lecture, feel free to ask it! There are likely other students with the same question, so by asking you will create a learning opportunity for everyone.\nThe teaching team is here to help you be successful in the course. You are encouraged to attend office hours to ask questions about the course content and assignments. Many questions are most effectively answered as you discuss them with others, so office hours are a valuable resource. Please use them!\nOutside of class and office hours, any general questions about course content or assignments should be posted on the course forum Conversations. There is a chance another student has already asked a similar question, so please check the other posts in Conversations before adding a new question. If you know the answer to a question posted in the discussion forum, I encourage you to respond!\nEmails should be reserved for questions not appropriate for the public forum. If you email me, please include “CIVE 461” in the subject line. Barring extenuating circumstances, I will respond to CIVE 461 emails within 48 hours Monday - Friday. Response time may be slower for emails sent Friday evening - Sunday.\n\nCheck out the Support page for more resources.\n\n\nCollaboration policy\nOnly work that is clearly assigned as team work should be completed collaboratively.\n\nThe homework assignments must be completed individually and you are welcome to discuss the assignment with classmates at a high level (e.g., discuss what’s the best way for approaching a problem, what functions are useful for accomplishing a particular task, etc.). However you may not directly share answers to homework questions with anyone other than myself and the teaching assistant.\nFor the projects, collaboration within teams is not only allowed, but expected. Communication between teams at a high level is also allowed; however, you may not share code or components of the project across teams.\n\n\n\nPolicy on sharing and reusing code\nI am well aware that a huge volume of code is available on the web to solve any number of problems. Unless I explicitly tell you not to use something, the course’s policy is that you may make use of any online resources (e.g. StackOverflow, ChatGPT) but you must explicitly cite where you obtained any code you directly use (or use as inspiration). Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism.\n\n\nLate work policy\nThe due dates for assignments are there to help you keep up with the course material and to ensure the teaching team can provide feedback within a timely manner. We understand that things come up periodically that could make it difficult to submit an assignment by the deadline.\n\nHomework and labs may be submitted up to 3 days late. There will be a 5% deduction for each 24-hour period the assignment is late.\nThere is no late work accepted for application exercises, since these are designed to help you prepare for homework.\nThe late work policy for the project will be provided with the project instructions.\n\n\n\nWaiver for extenuating circumstances\nIf there are circumstances that prevent you from completing a homework assignment by the stated due date, you may email Dr. Jason Hawkins and our TA Omid Armantalab before the deadline to waive the late penalty. In your email, you only need to request the waiver; you do not need to provide explanation. This waiver may only be used once in the semester, so only use it for a truly extenuating circumstance.\n\n\nRegrade request policy\nRegrade requests must be submitted by Canvas within a week of when an assignment is returned. Regrade requests will be considered if there was an error in the grade calculation or if you feel a correct answer was mistakenly marked as incorrect. Requests to dispute the number of points deducted for an incorrect response will not be considered. Note that by submitting a regrade request, the entire question will be graded which could potentially result in losing points.\nNo grades will be changed after the final project deadline.\n\n\nAttendance policy\nResponsibility for class attendance rests with individual students. Since regular and punctual class attendance is expected, students must accept the consequences of failure to attend.\nHowever, there may be many reasons why you cannot be in class on a given day. If you miss a lecture, make sure to communicate with your project team about how you can make up your contribution. Given the technologies we use in the course, this is straightforward to do asynchronously. Overall these policies are put in place to ensure communication between team members, respect for each others’ time, and also to give you a safety net in the case of illness or other reasons that keep you away from attending class.\n\n\nInclement weather policy\nIn the event of inclement weather or other connectivity-related events that prohibit class attendance, I will notify you how we will make up missed course content and work. This might entail holding the class on Zoom synchronously or watching a recording of the class."
+  },
+  {
+    "objectID": "teaching/CIVE461/course-syllabus.html#important-dates",
+    "href": "teaching/CIVE461/course-syllabus.html#important-dates",
+    "title": "Syllabus",
+    "section": "Important dates",
+    "text": "Important dates\n\nAugust 21: Classes begin.\nAugust 28: Last day for course registration.\nSeptember 01: Last day to withdraw with W.\nSeptember 04: Labor day. No class.\nOctober 16-17: Fall semester break. No class.\nNovember 22-26 25-30: Thanksgiving vacation. No class.\nDecember 04-09: Last week of classes.\nDecember 11-15: Final exam week.\n\nClick here for the full UNL academic calendar."
+  },
+  {
+    "objectID": "teaching/CIVE461/computing-troubleshooting.html",
+    "href": "teaching/CIVE461/computing-troubleshooting.html",
+    "title": "Computing troubleshooting",
+    "section": "",
+    "text": "If you’re having difficulty launching an RStudio session from your reserved container, go to status.oit.duke.edu and scroll down to Teaching and Learning Tools. Under this heading you’ll find an entry called Container Manager (CMGR Coursework Containers).\n\nIf the status shows something other than Operational, this means there is a known incident with the containers. Check back later to see if it’s been resolved. If there’s a deadline coming up soon, post on the course forum to let us know that there’s an issue. We can look into how quickly it might get resolved and decide on what to do about the deadline accordingly. Note: We don’t anticipate this to happen regularly, the systems are Operational a huge majority of the time!\nIf the status shows Operational, this means the system is expected to be working. Check your internet connection, if need be, restart your computer to ensure a fresh new connection. If your issue persists, post on the course forum with details on what you’ve tried and the errors you see (including verbatim errors and/or screenshots).\nEither way you can also fill out the form here, which will notify our the R TA for the department as well as our undergraduate coordinator. They’ll be able to help diagnose the issue."
+  }
+]
