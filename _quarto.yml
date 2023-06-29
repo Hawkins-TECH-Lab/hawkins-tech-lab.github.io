@@ -20,9 +20,9 @@ website:
       - text: "Teaching"
         menu:
           - text: "CIVE461/861"
-            href: teaching/CIVE461/CIVE461.qmd
+            href: teaching/CIVE461/index.qmd
           - text: "CIVE864"
-            href: teaching/CIVE864/CIVE864.qmd 
+            href: teaching/CIVE864/index.qmd 
     background: "#d00000"
     
   sidebar:
@@ -52,8 +52,6 @@ website:
               text: Overview
             - href: teaching/CIVE461/course-syllabus.qmd
               text: Syllabus
-            - href: teaching/CIVE461/course-support.qmd
-              text: Support
             - href: teaching/CIVE461/team.qmd
               text: "Teaching team"
             - href: teaching/CIVE461/index.qmd
@@ -62,26 +60,24 @@ website:
               text: Useful links
             - href: teaching/CIVE461/course-faq.qmd
               text: FAQ
-
+        - section: "Computing"
+          contents:
+            - href: teaching/CIVE461/computing/computing-access.qmd
+              text: "Access"
+            - href: teaching/CIVE461/computing/computing-troubleshooting.qmd
+              text: "Troubleshooting"
         - section: "Weekly Materials"
           contents:
             - href: teaching/CIVE461/weeks/week-1.qmd
               text: "Week 1"
             - href: teaching/CIVE461/weeks/week-2.qmd
               text: "Week 2"
-
-        - section: "Supplemental Notes"
+        - section: "Project"
           contents:
-            - href: teaching/CIVE461/supplemental/slr-derivations.qmd
-              text: SLR derivations
-            - href: teaching/CIVE461/supplemental/model-diagnostics-matrix.qmd
-              text: Model diagnostics
-            - href: teaching/CIVE461/supplemental/mlr-matrix.qmd
-              text: MLR matrix notation
-            - href: teaching/CIVE461/supplemental/log-transformations.qmd
-              text: Log transformations
-            - href: teaching/CIVE461/supplemental/model-selection-criteria.qmd
-              text: Model selection criteria
+            - href: teaching/CIVE461/project/project-description.qmd
+              text: "Description"
+            - href: teaching/CIVE461/project/project-tips-resources.qmd
+              text: "Tips + resources"
 
     - id: CIVE864
       title: "CIVE 864"

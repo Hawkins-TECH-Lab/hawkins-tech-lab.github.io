@@ -1,0 +1,253 @@
+---
+title: "Lecture 2 - Statistical Modeling"
+subtitle: "CIVE 461/861: Urban Transportation Planning - Fall 2023"
+footer:  "[CIVE461 Home](/teaching/CIVE461/)"
+logo: "../images/logo.png"
+editor: visual
+format: 
+  revealjs: 
+    theme: simple
+    transition: fade
+    chalkboard: true
+    slide-number: true
+execute:
+  freeze: auto
+---
+
+## **Outline**
+::: incremental
+1.  What is statistics
+2.  What are key statistical measures to do transportation planning analysis
+3.  How to do regression models
+4.  Why statistics is really hard
+:::
+
+# Statistics Fundamentals
+
+## **What is Statistics?**
+> Study of methods and techniques to **summarize** & **interpret** data
+
+
+## **Descriptive Statistics**
+::: incremental
+  -   Relative standing
+  -   Central tendency
+  -   Variability
+  -   Association
+:::
+
+## **Measures of Relative Standing** {.smaller}
+- **Quartiles** are percentage points that separate data into quarters
+  - E.g., 25th percentile means 25% of data lie below this value (often referred to as *first quartile*)
+- **Interquartile range** is difference between first quartile (25th percentile) and third quartile (75th percentile)
+- 50th percentile often referred to as *median*
+
+## **Measures of Central Tendency** {.smaller}
+- **Median** often more useful than arithmetic **mean** (average) because mean **biased** by outliers
+- Interquartile range similarly resident to outliers relative to **range**, which include minimum & maximum values
+
+## **Measures of Variability** {.smaller}
+::: incremental
+- **Variance** & **standard deviation** more useful than **range** because use information from all observations
+- Sample variance given by
+$$ s^2 = \frac{\sum_i(x_i-\bar{x})^2}{n-1}$$
+- **Why n-1?** By using sample mean, lose one degree of freedom - i.e., $n-1$ independent observations
+- For small samples, tendency to underestimate standard deviation
+  - $n-1$ approaches n as sample size grows
+:::
+
+## **Measures of Association** {.smaller}
+- **Covariance** & **correlation** are measures of association between two variables
+- Correlation a normalization of covariance to lie within interval [-1, 1]
+- **Note**: possible for two variables with zero correlation to be nonlinearly related
+
+::: columns
+::: {.column width="50%"}
+![](../images/lecture2/rho_gt_0.png){fig-align="center"}
+:::
+::: {.column width="50%"}
+![](../images/lecture2/rho_gt_0.png){fig-align="center"}
+:::
+:::
+
+## **Measures of Association** {.smaller}
+$$COV_p(X,Y) = \frac{\sum_i (x_i-\mu_X)(y_i-\mu_Y)}{N}$$
+$$COV_s(X,Y) = \frac{\sum_i (x_i-\bar{x})(y_i-\bar{y})}{n-1}$$
+Pearson product-moment correlation parameter
+$$\rho = \frac{COV_p(X,Y)}{\sigma_X \sigma_Y}$$
+$$r = \frac{COV_s(X,Y)}{s_X s_Y}$$
+
+## **Properties of Estimators** {.smaller}
+
+. . .
+
+**Unbiasedness** means the expected value (mean) of estimator equals the associated population value
+
+![](../images/lecture2/unbiased.png){fig-align="center"}
+
+. . .
+
+**Efficiency** is a relative measure of variance. An estimator with a smaller variance is said to be more *efficient*
+
+![](../images/lecture2/efficiency.png){fig-align="center"}
+
+
+## **Properties of Estimators** {.smaller}
+. . .
+
+**Consistency** exists if the probability of being close to the true parameter value increases with increasing sample size
+
+![](../images/lecture2/consistency.png){fig-align="center"}
+
+## **Confidence Intervals**
+::: incremental
+- Interval estimates are based on *frequentist statistical theory*
+- They say nothing about the location of the *true* parameter value
+- They are a measure of how **likely** it is for **samples** taken from the **same population** to have their parameter values lie in that interval
+- E.g., a 95% confidence interval of [1.15,2.34] means that 95 out of 100 samples will have the parameter value of interest in the range 1.15 to 2.34
+:::
+
+## **Hypothesis Testing** {.smaller}
+::: incremental
+- Used to measure whether a difference in parameter values is likely to have arisen **by chance** or whether **some other factor** is responsible for the difference
+- Statistical distributions used in hypothesis testing to estimate probabilities of observing the sample data, given an assumption about what *should have* occurred
+- If observed results are extremely unlikely to have occurred by chance given assumed conditions, then assumed conditions are considered **unlikely**
+- P(data│true null hypothesis) = Probability of observing the sample data conditional upon a true null hypothesis – **NOT** probability of null hypothesis being true
+- Often test parameter value equal to zero
+  - **Problem:** often expect an effect and more interested in **variation in effect**
+:::
+. . .
+
+$$Z^* = \frac{(\bar{X_1}-\bar{X_2}-(\mu_1-\mu_2)}{\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}}$$
+
+## **Data Display Methods** {.smaller}
+. . .
+
+**Histogram** useful when data naturally grouped
+
+![](../images/lecture2/histogram.png){fig-align="center"}
+
+. . .
+
+**Box plot** (or box and whisker plot)
+
+![](../images/lecture2/box_plot.png){fig-align="center"}
+
+# Basic Regression 
+## **Regression Model Uses** {.smaller}
+::: incremental
+- **Prediction** - Modeling existing observations or forecasting new data
+  - Outcome variable(s) can be 
+    - **Continuous** like vote share in an election or future product sales
+    - **Discrete** like individual voting decisions or victory in a sporting event
+- **Explore Association** - Summarizing how well one variable, or set of variables, predicts outcomes
+  - E.g., identifying risk factors for a disease or attitudes that predict voting
+:::
+
+## **Poll**
+<div style='position: relative; padding-bottom: 56.25%; padding-top: 35px; height: 0; overflow: hidden;'><iframe sandbox='allow-scripts allow-same-origin allow-presentation' allowfullscreen='true' allowtransparency='true' frameborder='0' height='315' src='https://www.mentimeter.com/app/presentation/alf9arqzebexh9jdrkry69dwkgd8nydp/embed' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' width='420'></iframe></div>
+
+## **Regression Model Uses** {.smaller}
+::: incremental
+- **Extrapolation** - Adjusting for known differences between sample and population of interest
+  - E.g., sample data from self-selecting schools to make conclusions about all schools in state
+- **Causal inference** - Estimating treatment effects
+  - E.g., exposure to a pollutant and health outcomes
+:::
+
+## **Linear Regression** {.smaller}
+Consider experiment where we have values of a certain variable $Y={Y_𝑖}$ that takes different values based on the values of another variable $X$. If the process is **not deterministic**, we will observe different $Y_i$ for the same $X_i$
+
+Let’s call $f_i(Y|X)$ the **probability distribution** for $Y_i$ for a given $X_i$; this means we could have a different function $f_i$ for each $X$ 
+
+![](../images/lecture2/linear_regression_1.png){fig-align="center"}
+
+## **Linear Regression** {.smaller}
+However, such a general case is **intractable**; to make it more manageable, certain hypotheses about population regularity assumed:
+- Probability distribution $f_i(Y|X)$ has **same variance** $\sigma^2$ for all values of $X$
+- Mean $\mu_i = E(Y_i)$ forms a straight line known as the **true regression line** & given by
+$$𝐸(𝑌)=a+bX_i$$ 
+where $a$ and $b$ define the line & are estimated from sample data
+- Random variables $Y_i$ are statistically independent; i.e., a large value of $Y_1$ doesn’t necessarily make $Y_2$ large
+
+![](../images/lecture2/linear_regression_2.png){fig-align="center"}
+
+## **Linear Regression** {.smaller}
+Model is often written as $Y_i = a + bX_i + e_i$ where $e_i$ measures error/disturbance in data and includes both **measurement** & **specification** error
+
+![](../images/lecture2/linear_regression_3.png){fig-align="center"}
+
+## **Fundamental Graph of Linear Regression**
+![](../images/lecture2/fundamental_graph.png){fig-align="center"}
+
+## **Important Considerations for Linear Regression** {.smaller}
+::: incremental
+- Important to distinguish between errors $e_i$, which are **unknown** & associated with true regression line and differences $\epsilon_i$ between observed $Y_i$ & fitted $\hat{Y}$
+- **Least squares estimation (LSE)** - most common line-fitting method, results from the minimization of $\sqrt{\epsilon_i}$
+- A **change of variables** can help to understand properties of the linear regression model
+$$x_i = X_i - \bar{X}$$
+where $\bar{X}$ is the mean of $\mathbf{X}$
+:::
+
+## **Important Considerations for Linear Regression** {.smaller}
+::: incremental
+- Previous regression lines keep their slopes ($b$ and $\hat{b}$) but change their intercepts ($a$ and $\hat{a}$)
+- Change is useful because new variable $x$ has property that $\sum_i x_i = 0$
+- Under this transformation, LSE are given by $\hat{a} = \hat{Y}$ so fitted line goes through the center of gravity ($\bar{X}, \bar{Y}$) of the sample and
+$$\hat{b} = \sum_i \frac{x_i Y_i}{x_i^2}$$
+:::
+
+## **Important Considerations for Linear Regression** {.smaller}
+Estimator properties given by
+\begin{array}
+
+EE(\hat{a}) = a & Var(\bar{a}) = \frac{\sigma^2}{n} \\
+E(\hat{b}) = b & Var(\bar{b}) = \frac{\sigma^2}{\sum_i x_i^2} \\
+
+\end{array}
+
+## **Interesting Experimental Design Point from Previous** {.smaller}
+- Considering $Var(\hat{a}) = \frac{\sigma^2}{n}$ & $Var(\hat{b}) = \frac{\sigma^2}{\sum_i x_i^2}$
+  - Variance of both estimators **decreases** with sample size
+  - Variance of $\hat{b}$ tends to grow with closer together $x_i$ & $\hat{b}$ becomes **unreliable estimator**
+  - Increased data spread (sampling points from across expected range) tends to decrease $Var(\hat{b})$
+
+![](../images/lecture2/experimental_design.png){fig-align="center" width=50%}
+
+## **Properties of Regression Estimators** {.smaller}
+::: incremental
+- If $E(e|\mathbf{X}) = 0$, LSE have some desirable properties
+  - Estimators are **unbiased** (i.e., expected values are equal to true values for $a$ and $b$)
+  - Estimators are **consistent** (i.e., approach the true values with increasing sample size)
+  - Assumption easily violated if relevant variable omitted from model correlated with observed $\mathbf{X}$
+  - E.g., trip generation 
+    - Depends on household income and number of vehicles, which are **positively correlated** variables since household more likely to own a vehicle as income grows
+    - If number of vehicles omitted, LSE of income will include both income and number of vehicles effects; therefore parameter value will be larger than true value
+:::
+
+## **Properties of Regression Estimators**
+If prior conditions hold, LSE are not only **consistent** & **unbiased**, but also **best** (most efficient/smallest variance) among possible linear unbiased estimators (BLUE) – known as **Gauss-Markov theorem**
+
+## **Hypothesis Testing** {.smaller}
+Need to know distribution of 𝑏 ̂, which requires strong assumption that variables Y are distributed Normal
+In case of LSE, is BLUE and also BUE (best unbiased estimators) among all linear and non-linear estimators
+Strong assumption but as sample size grows it will begin to hold true no matter the true distribution due to Law of Large Numbers
+Since 𝑏 ̂ are linear combinations of Y, it follows they are distributed N=(b, 𝜎^2/(∑_𝑖▒𝑥_𝑖^2 ))
+Can use the normal standardization to obtain a test statistic distributed standard normal N(0, 1)
+𝑧=(𝑏 ̂−𝑏)/(𝜎∕√(∑_𝑖▒𝑥_𝑖^2 ))
+We don’t know 𝜎^2. We can use the residual variance s2
+
+## **Hypothesis Testing** {.smaller}
+Substitution of s for 𝜎 means the standardized 𝑏 ̂ is now distributed Student t with (n-2) degrees of freedom
+𝑡=(𝑏 ̂−𝑏)/(𝑠/√(∑_𝑖▒𝑥_𝑖^2 ))
+Denominator of above is usually called the standard error. A typical null hypothesis is that 𝑏=0
+The standard error is given by
+𝑠^2=(∑_𝑖▒(𝑌_𝑖−𝑌 ̂_𝑖 ) )/(𝑛−𝑘) 
+Where k is the number of parameters in the model. If n >> k, the t-statistics approximates a z-statistic
+
+## **Hypothesis Testing Interpretation
+
+
+## **Coefficient of Determination**
+
+## **Multiple Regression**

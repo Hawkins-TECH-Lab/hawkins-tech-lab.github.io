@@ -21,7 +21,7 @@ Dr. Jason Hawkins \
 PKI 206C (Omaha) & NH 165 (Lincoln) \
 402-472-0529 | civil.unl.edu | Email me through the course Canvas messenger system
 
-### Teaching Assistant:
+### Teaching assistant:
 Omid Armantalab \
 Office hours: NH 165 (Lincoln) \
 Email TA through the course Canvas messenger system
@@ -40,13 +40,13 @@ To introduce senior undergraduate and graduate civil engineering students to the
 
 While there is no official textbook for the course, I will be assigning readings from the following resources.
 
--   [Modelling Transport](https://github.com/UNL-Hawkins-Lab/CIVE_461/blob/189ee96039de988b55f2f99633efed32db6c3187/resources/Ortuzar_Willumsen_Modelling_Transport_4ed.pdf) by Juan de Dios Ortúzar and Luis G. Willumsen
+-   [Modelling Transport](https://github.com/UNL-Hawkins-Lab/CIVE_461/blob/6ae2e8ca1576a517b809c1d6ffb832f84695dbf1/Resources/Ortuzar_Willumsen_Modelling_Transport_4ed.pdf) by Juan de Dios Ortúzar and Luis G. Willumsen
 
--   [Travel Demand Forecasting: Parameters and Techniques](https://www.trb.org/Publications/Blurbs/167055.aspx) by Mine Çetinkaya-Rundel and Johanna Hardin
+-   [Travel Demand Forecasting: Parameters and Techniques](https://github.com/UNL-Hawkins-Lab/CIVE_461/blob/6ae2e8ca1576a517b809c1d6ffb832f84695dbf1/Resources/CS_Et_Al_TDM_Parameter_Estimation_NCHRP716.pdf) by National Academies of Sciences, Engineering, and Medicine
 
--   [Statistical and Econometric Methods for Transportation Data Analysis](https://github.com/UNL-Hawkins-Lab/CIVE_461/blob/189ee96039de988b55f2f99633efed32db6c3187/resources/Washington_Et_Al_Statistical__Econometric_Methods_Transportation_Data_Analysis_2ed.pdf) by Max Kuhn and Julia Silge
+-   [Statistical and Econometric Methods for Transportation Data Analysis](https://github.com/UNL-Hawkins-Lab/CIVE_461/blob/6ae2e8ca1576a517b809c1d6ffb832f84695dbf1/Resources/Washington_Et_Al_Statistical__Econometric_Methods_Transportation_Data_Analysis_2ed.pdf) by Simon Washington, Matthew Karlaftis, and Fred Mannering
 
--   [Regression and Other Stories](https://bookdown.org/roback/bookdown-BeyondMLR/) by Paul Roback and Julie Legler
+-   [Regression and Other Stories](https://github.com/UNL-Hawkins-Lab/CIVE_461/blob/6ae2e8ca1576a517b809c1d6ffb832f84695dbf1/Resources/Gelman_Et_Al_ROS_1ed.pdf) by Andrew Gelman, Jennifer Hiller, and Aki Vehtari
 
 ## Lectures
 
@@ -72,7 +72,7 @@ Failure to adequately contribute to an assignment will result in a penalty to yo
 
 Assessment for the course is comprised of six components: application exercises, homework assignments, an exam, a project, and teamwork.
 
-### Application Exercises
+### Application exercises
 
 Parts of some lectures will be dedicated to working on Application Exercises (AEs).
 These exercises which give you an opportunity to practice applying the transportation planning concepts and code introduced in the readings and lectures.
@@ -100,7 +100,7 @@ More detail about the exams will be given during the semester.
 
 ### Project
 
-The purpose of the [project](/project-description/) is to apply what you've learned throughout the semester to a real-world dataset.
+The purpose of the [project](/project-description.html) is to apply what you've learned throughout the semester to a real-world dataset.
 The project will be completed with your teams, and each team will present their work in writing via deliverables due throughout the semester.
 More information about the project will be provided during the semester.
 
@@ -155,17 +155,18 @@ Your suggestions are encouraged and appreciated.
 
 ## Course Policies
 **TL;DR: Don't cheat!**
-### Academic Honesty Policy
+
+### Academic honesty policy
 Academic integrity is of the utmost importance at Nebraska.  Be sure you understand expectations of you and your academic work.  View the complete list of academic dishonesty violations in the Student Code of Conduct, specifically Article III: Proscribed Conduct, Section B. Conduct – Rules and Regulations, 1. Acts of Academic Dishonesty.  For more information, please visit https://studentconduct.unl.edu/.  If you are unsure what counts as academic dishonesty in this course, please visit me during office hours. The first instance of academic dishonesty will result in a score of zero for the assignment or exam.  The second incidence of academic dishonesty will result in a failing grade for the course.
 
-### Accommodations for Students with Disabilities Policy
+### Accommodations for students with disabilities policy
 It is my goal that this class be an accessible and welcoming experience for all students.  Reasonable accommodations are provided for students who are registered with the Accessibility Services Center and make their requests sufficiently in advance. For more information, contact:
 Lincoln campus:  [Services for Students with Disabilities] (https://www.unl.edu/ssd/)
 Omaha campus:  [Accessibility Services Center] (https://www.unomaha.edu/student-life/inclusion/disability-services/students/index.php)
 
 ### Communication
 
-All lecture notes, assignment instructions, an up-to-date schedule, and other course materials may be found on the course website at [sta210-s22.github.io/website](https://sta210-s22.github.io/website).
+All lecture notes, assignment instructions, an up-to-date schedule, and other course materials may be found on the [course website] (https://unl-hawkins-lab.github.io/Hawkinslab/teaching/CIVE461/CIVE461.html).
 
 I will regularly send course announcements via email and Canvas - make sure to check one or the other of these regularly.
 If an announcement is sent Monday through Thursday, I will assume that you have read the announcement by the next day.
@@ -175,10 +176,8 @@ If an announcement is sent on a Friday or over the weekend, I will assume that y
 
 -   If you have a question during lecture, feel free to ask it! There are likely other students with the same question, so by asking you will create a learning opportunity for everyone.
 -   The teaching team is here to help you be successful in the course. You are encouraged to attend office hours to ask questions about the course content and assignments. Many questions are most effectively answered as you discuss them with others, so office hours are a valuable resource. Please use them!
--   Outside of class and office hours, any general questions about course content or assignments should be posted on the course forum [Conversations](https://sakai.duke.edu/portal/site/779c3ebe-3b88-4bcc-bd01-1813e8396a23/tool/13b6446a-a6c6-4222-8cfb-c36d1f70802b). There is a chance another student has already asked a similar question, so please check the other posts in Conversations before adding a new question. If you know the answer to a question posted in the discussion forum, I encourage you to respond!
+-   Outside of class and office hours, any general questions about course content or assignments should be posted on the course forum [Canvas Discussions](https://sakai.duke.edu/portal/site/779c3ebe-3b88-4bcc-bd01-1813e8396a23/tool/13b6446a-a6c6-4222-8cfb-c36d1f70802b). There is a chance another student has already asked a similar question, so please check the other posts in Conversations before adding a new question. If you know the answer to a question posted in the discussion forum, I encourage you to respond!
 -   Emails should be reserved for questions not appropriate for the public forum. **If you email me, please include "CIVE 461" in the subject line.** Barring extenuating circumstances, I will respond to CIVE 461 emails within 48 hours Monday - Friday. Response time may be slower for emails sent Friday evening - Sunday.
-
-Check out the [Support](/course-support.html) page for more resources.
 
 ### Collaboration policy
 
@@ -234,6 +233,10 @@ Overall these policies are put in place to ensure communication between team mem
 
 In the event of inclement weather or other connectivity-related events that prohibit class attendance, I will notify you how we will make up missed course content and work.
 This might entail holding the class on Zoom synchronously or watching a recording of the class.
+
+### Cell phone use and professional behavior
+When you come to class, your cell phone must be turned off or silenced and put away where it is not a distraction to you or anyone else.  The instructor’s expectations for classroom behavior are based on the norms of the engineering profession.  Questions and discussion related to class material are welcome and encouraged but respect for the instructor and fellow classmates is required at all times.  No cell phone usage will be allowed during any exams.
+
 
 ## Important dates
 

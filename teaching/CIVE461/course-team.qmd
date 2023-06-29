@@ -1,0 +1,25 @@
+---
+title: "Teaching team"
+---
+
+## Instructor
+
+![](images/team/jason.jpg){style="float:right;padding: 0 0 0 10px;" fig-alt="Headshot of Dr. Jason Hawkins" width="200"}
+
+[**Dr. Jason Hawkins**](https://engineering.unl.edu/cee/faculty/jason-hawkins/) (he/him) is Assistant Professor of Civil and Environmental Engineering at the University of Nebraska - Lincoln.
+Jason's work focuses on innovation in transportation planning and engineering policy analysis, with an emphasis on choice models, spatial statistics, and equity.
+
+| Office hours                  | Location                                                                                                                  |
+|-------------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| Mondays 10:30 am - 11:30 am   | PKI 206C                                                                                                            |
+| Wednesdays 10:30 am - 11:30 am | NH 165                                                                                                              |
+
+If these times don't work for you or you'd like to schedule a one-on-one meeting, you can do so by messaging me on Canvas.
+
+## Teaching assistant
+
++-------------------------------------------+-----------------------------------+-------------------------+-----------------------------------------------------+
+|                                           | Name                              | Office hours            | Location                                            |
++:=========================================:+===================================+=========================+=====================================================+
+| ![](images/team/blank_avatar.jpg){width=25%}| Omid Armantalab                 |     Thursday 7 - 9 pm   |      WHIT 999|
++-------------------------------------------+-----------------------------------+-------------------------+-----------------------------------------------------+

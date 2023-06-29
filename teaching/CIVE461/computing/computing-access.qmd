@@ -1,0 +1,13 @@
+---
+title: "Computing access"
+---
+
+To access computing resources for CIVE 461/861:
+
+1.  Create a [Github account](https://github.com/).
+
+2.  Request access to the [CIVE461/861 Github repo](https://github.com/UNL-Hawkins-Lab/CIVE_461)
+
+3.  Create a VS codespace instance by clicking the green Code button on the CIVE_461 repo.
+
+Additional instructions are provided in a README on the repo page.
