@@ -10,7 +10,7 @@ format:
     transition: fade
     chalkboard: true
     slide-number: true
-    multiplex: true
+    # multiplex: true
 execute:
   freeze: auto
 ---
