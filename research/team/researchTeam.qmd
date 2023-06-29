@@ -16,20 +16,20 @@ css: ../../assets/css/index.css
  ---|:---:|---
 | ![](../../assets/images/team/hania.jpg){style="float:right; padding: 0 0 0 0; object-fit: cover; object-position: top;" fig-align="center" width="166" height="200"}           | Hania Afzal | Hania is a Ph.D. student in engineering policy at the University of Nebraska-Lincoln. She received her M.Sc. in Economics from IBA Karachi and her B.Sc. in Economics from Quaid-I-Azam University. Prior to joining UNL, Hania was a researcher at Pakistan Institute of Development Economics (PIDE). She is currently working on electric vehicle adoption in the United States. |
 | ![](../../assets/images/team/nick.jpg){style="float:right; padding: 0 0 0 0; object-fit: cover; object-position: top;" fig-align="center" width="166" height="200"}           | Nick Aldridge | Nick is an M.Sc. student in transportation engineering at the University of Nebraska-Lincoln. He received his B.Sc. in Civil & Environmental Engineering from UNL. His research focuses on developing pedestrian & bicycle crash exposure metrics for the City of Lincoln.|
-| ![](../../assets/images/team/blank_avatar.jpg){style="float:right; padding: 0 0 0 0; object-fit: cover; object-position: top;" fig-align="center" width="166" height="200"}           | Omid Armantalab | Omid is a Ph.D. student in transportation engineering at the University of Nebraska-Lincoln. He received his M.Sc. in Civil Engineering from Amirkabir University of Technology and his B.Sc. in Civil Engineering from Kharazmi University. He is currently working on Bayesian statistical representations of transportation accessibility for equity and Justice40 applications.|
+| ![](../../assets/images/team/omid.jpg){style="float:right; padding: 0 0 0 0; object-fit: cover; object-position: top;" fig-align="center" width="166" height="200"}           | Omid Armantalab | Omid is a Ph.D. student in transportation engineering at the University of Nebraska-Lincoln. He received his M.Sc. in Civil Engineering from Amirkabir University of Technology and his B.Sc. in Civil Engineering from Kharazmi University. He is currently working on Bayesian statistical representations of transportation accessibility for equity and Justice40 applications.|
 | ![](../../assets/images/team/mohammad.jpg){style="float:right; padding: 0 0 0 0; object-fit: cover; object-position: top;" fig-align="center" width="166" height="200"}           | Mohammad Elayan | Mohammad is a Ph.D. student in transportation engineering at the University of Nebraska-Lincoln. He received both his M.Sc. and B.Sc. in Civil Engineering from Jordan University of Science and Technology. Mohammad spent a decade working in the transportation industry in the UAE. |
 | ![](../../assets/images/team/donya.jpg){style="float:right; padding: 0 0 0 0; object-fit: cover; object-position: top;" fig-align="center" width="166" height="200"}           | Donya Negahbani| Donya is an M.Sc. student in transportation engineering at the University of Nebraska-Lincoln. She received her B.Sc. in Civil Engineering from the University of Tehran. |
 
 
 
 ## Undergraduate Research Assistant
-Undergraduate students at UNL and UNO are encouraged to reach out to Dr. Hawkins about research opportunities. Current opportunities are available via [UCare](https://ucare.unl.edu/opportunities).
+Undergraduate students at UNL and UNO are encouraged to reach out to Dr. Hawkins about research opportunities. Current opportunities are available via [UCare](https://ucare.unl.edu/).
 
 : {tbl-colwidths="[20,25,60]"}
 
 | | Name | About
  ---|:---:|---
-| ![](../../assets/images/team/sagun.jpg){style="float:right; padding: 0 0 0 0; object-fit: cover; object-position: top;" fig-align="center" width="166" height="200"}         | Sagun Karki | Sagun is a freshman computer science student at the University of Nebraska-Lincoln. He is from Kathmandu, Nepal. Sagun is working on network science analysis and provides coding assistance to the research group. |
+| ![](../../assets/images/team/sagun.jpg){style="float:right; padding: 0 0 0 0; object-fit: cover; object-position: top;" fig-align="center" width="166" height="200"}        | Sagun Karki | Sagun is a freshman computer science student at the University of Nebraska-Lincoln. He is from Kathmandu, Nepal. Sagun is working on network science analysis and provides coding assistance to the research group. |
 
 
 
