@@ -14,7 +14,7 @@ execute:
   freeze: auto
 ---
 
-## **Three Route Example**
+## Three Route Example
 
 ```{mermaid}
 flowchart LR
@@ -26,7 +26,7 @@ $$f_1(v_1) = 10(1+0.15(v_1/200)^4)$$
 $$f_2(v_2) = 20(1+0.15(v_1/400)^4)$$
 $$f_3(v_3) = 25(1+0.15(v_1/300)^4)$$
 
-## **Three Route Example - Solution** {.smaller}
+## Three Route Example - Solution {.smaller}
 We'll start by creating a Pandas dataframe to store the iteration variables
 ```{.python code-line-numbers="5-15"}
 import pandas as pd
@@ -46,7 +46,7 @@ df = pd.DataFrame({"f1": pd.Series(dtype='float'),
                   "lambda": pd.Series(dtype='float')})
 ```
 
-## **Three Route Example - Solution** {.smaller}
+ ## Three Route Example - Solution {.smaller}
 We can then define the inputs to the traffic assignment algorithm.
 ```{.python}
 # Specify the freeflow travel times/capacities
@@ -78,7 +78,7 @@ row = [ff_tt_1, ff_tt_2, ff_tt_3, V1, V2, V3, F1, F2, F3, F, l]
 df.loc[len(df),:] = row # add initial values to df
 ```
 
-## **Three Route Example - Solution** {.smaller}
+ ## Three Route Example - Solution {.smaller}
 Next we define the Frank-Wolfe algorithm and solve for $\lambda$ using ```scipy optimize minimize_scalar```. The first step is to define a loop that repeatedly calls the minimization on a new set of volumes. We define the Frank-Wolfe algorithm and solve for $\lambda$ using ```scipy optimize minimize_scalar```. The next step is to define the optimization problem. We'll define the optimization in two functions: ```get_optimal_vals``` calculates the various values we need in each iteration and ```FW_Alg``` defines the function to be minized by ```scipy optimize minimize_scalar```.
 
 ```{.python code-line-numbers="26-38|2-4|7-22"}
@@ -122,7 +122,7 @@ while F_diff > tol:
   F_diff = F_diff - F
 ```
 
-## **Three Route Example - Solution** {.smaller}
+ ## Three Route Example - Solution {.smaller}
 Putting everything together, we can print a table summarizing the variable values at each iteration.
 
 ```{python}

@@ -1,0 +1,235 @@
+---
+title: "Lecture 3 - Transportation Planning Process"
+subtitle: "CIVE 461/861: Urban Transportation Planning - Fall 2023"
+footer:  "[CIVE461 Home](/teaching/CIVE461/)"
+logo: "../images/logo.png"
+editor: visual
+format:
+  revealjs: 
+    theme: simple
+    transition: fade
+    chalkboard: true
+    slide-number: true
+    multiplex: true
+    mermaid-format: png
+execute:
+  freeze: auto
+---
+
+## Outline
+::: incremental
+1.  Decision-making models
+2.  Planning and decision-making process
+3.  Measures of effectiveness
+:::
+
+## 10,000 Foot View on Decision-Making Process 
+
+:::{style="font-size: 0.5em;"}
+
+|     Substantive Rationality                                                                          |     Issue             |     Indirect Approach                                                                                                                          |
+|------------------------------------------------------------------------------------------------------|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
+|     Interactions with others are limited   and their response depend on our actions alone            |     Interactions      |     The outcome of interactions with others   depend on context and their interpretation of our intentions                                     |
+|     The relationships between objectives,   states, goals and actions are understandable             |     Complexity        |     Our understanding of the relationships   between objectives, states, goals and actions is imperfect but can be   improved by experience    |
+|     The problem and context can be   described by a well specified and estimated analytical model    |     Abstraction       |     Appropriate simplification of complex   problems must rely on judgement and understanding of context                                       |
+|     What happens is what we intended to   happen                                                     |     Intentionality    |     What happens is the result of complex   processes whose totality nobody fully understands                                                  |
+|     Decisions are made on the basis of the fullest possible information                              |     Information       |     Decisions are recommended and made   acknowledging that only limited knowledge is or can be available                                      |
+|     The best outcome is achieved through a   conscious process of maximization                       |     Adaptation        |     Good results are obtained through   continual adaptation to constantly changing conditions                                                 |
+|     Rules and guidelines can be defined   that allow people to find the correct solutions            |     Expertise         |     Experts can do things that others   cannot – and can only learn with difficulty                                                            |
+:::
+
+## Institutional Framework & Transportation Planning
+::: incremental
+- Multiple actors/organizations = complicated decision-making
+- Effects of institutional frameworks:
+  - Organizational structure influences planning & decision-making process
+  - Effective for long-established strategies
+  - Challenging for new proposals / innovations
+:::
+
+## Institutional Framework & Transportation Planning
+
+```{mermaid}
+flowchart TD
+  A[Institutional Barriers]:::C1-->B[Organizational Barriers]:::C1
+  A-->C[Interjurisdictional Barriers]:::C1
+  A-->D[Resource Barriers]:::C1
+  B-->E["- Federal, state, & local authorities 
+  - Federal & state laws limit flexibility"]:::C2
+  C-->F["- Reluctance to share power & authority
+  - Reluctance to form partnerships
+  - Poor integration of transportation
+  and land use policy"]:::C2
+  D-->G["- Funding shortfalls
+  - Lack of evidence/data
+  on multimodal benefits
+  - Lack of comprehensive tools
+  to compare mobility projects"]:::C2
+
+  classDef C1 fill:#C0C0C0,stroke:#000000
+  classDef C2 fill:#FFFFFF,stroke-width:0px;
+```
+
+## Strategies (for Planers) to Overcome Institutional Barriers
+::: incremental
+1. Inclusive set of partners
+2. Expand opportunity for public involvement
+3. Clear identification of project financing
+4. Advocate strengths of quantitative analysis: evidenced-based planning
+5. Increase focus on system performance optimization
+6. Formal power-sharing among transportation agencies 
+:::
+
+# Decision-Making Models
+
+## Theoretical Models
+1. Rational actor
+2. Satisficing
+3. Incremental
+4. Organizational process
+5. Political bargaining
+
+## Rational Actor Model
+::: columns
+::: {.column width="75%"}
+- Rational, objective decision-making intended to maximize explicit set of goals & objectives
+- Completely informed decisions
+- Reflected in planning process that evolved in 1950s/60s
+- Still used for most major transportation analysis efforts
+:::
+::: {.column width="25%"}
+```{mermaid}
+flowchart TD
+	A["Define Goals 
+  & Objectives"]:::C1-->B[Identify Problems]:::C1
+  B-->C[Generate Alternatives]:::C1
+  C-->D[Evaluate Alternatives]:::C1
+  D-->E[Develop Plan]:::C1
+
+  classDef C1 fill:#C0C0C0,stroke:#000000
+```
+:::
+:::
+
+## Problems with Rational Actor Model
+Normative model of what decision-making should be rather than how it actually is done
+
+::: incremental
+- Whose goals/objectives?
+- Who defines problems?
+- Can all relevant alternatives be examined?
+- Can all relevant information by obtained and used?
+- How to handle uncertainty?
+- Ignores political pressures & non-technical actors
+- Emphasizes the “one best way” to solve problems
+:::
+
+## Satisficing Model {.smaller}
+::: columns
+::: {.column width="75%"}
+- Retains *rational actors* but loosens assumption that *solution space* can by exhaustively explored and optimal solution found
+- Iterative search for sufficiently good solution
+
+:::
+::: {.column width="25%"}
+```{mermaid}
+flowchart TD
+	A["Define Goals & Objectives"]:::C1-->B["Develop Standards & Criteria"]:::C1
+  B-->C[Generate Alternative]:::C1
+  C-->D[Evaluate Alternative]:::C1
+  D-->E[Develop Plan]:::C1
+  E-->F["Does Alternative Satisfy All Criteria?"]:::C1
+  F-->|No|C
+  F-->|Yes| G[Accept Alternative]:::C1
+
+  classDef C1 fill:#C0C0C0,stroke:#000000
+```
+:::
+:::
+
+## Incremental Decision-Making Model {.smaller}
+- Also known as *Science of Muddling Through*
+- Premise it that people:
+  - Never can agree on explicit goals & objectives
+  - Cannot deal with large alternative set
+  - Are problem-simplifiers
+  - Focus on policies tat differ incrementally from existing ones
+  - Continually redefine problems & solutions
+
+## Incremental Decision-Making Model {.smaller}
+- Shifts emphasis from determining goals & objectives to dealing directly with issues & solutions
+- Dynamic & on-going process
+- Extension of satisficing approach – recognizes limitations in information & assessment capacity
+- Addresses alternative generation issue – where do alternatives originate?
+  - Typically, recycling old ideas
+
+## Incremental Decision-Making Model {.smaller}
+::: columns
+::: {.column width="75%"}
+![](../images/lecture2/incremental_model.png){fig-align="center"}
+:::
+::: {.column width="25%"}
+Problems:
+
+- Reactive -> miss opportunities
+- Myopic
+- May increment *to death*
+- Non-incremental decisions become hard to make
+:::
+:::
+
+## Scraps
+```{mermaid}
+flowchart TD
+    subgraph B1
+        direction RL
+        A[Policies]
+        B[Problems]
+    end
+    subgraph B2
+      direction TB
+      C[Assess Consequences]-->D[Adjust Policy?]:::C1
+      
+      D-->|No|E[Redefine Problem?]:::C1
+      E-->|No|F[Monitor System]:::C1
+      F-->|Yes|C
+      %% E-->|Yes|B
+    end
+  A --> B2
+  B --> B2
+  %% D-->|Yes|A
+  %% B1 --> B2
+```
+```{mermaid}
+graph TB
+
+%% subgraph Main Section
+A[Policies]:::C1
+B[Problems]:::C1
+C["Assess Consequences"]:::C1
+D["Adjust Policy?"]:::C1
+E["Redefine Problem?"]:::C1
+F["Monitor System"]:::C1
+%% end
+
+%% subgraph Top Section
+
+%% end
+
+A-->C
+B-->C
+C-->D
+D-->|Yes|A
+D-->|No|E
+E-->|No|F
+F-->|Yes|C
+E-->|Yes|B
+
+classDef C1 fill:#C0C0C0,stroke:#000000
+
+subgraph Top Section
+A
+B
+end
+
+```

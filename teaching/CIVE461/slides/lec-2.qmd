@@ -10,11 +10,12 @@ format:
     transition: fade
     chalkboard: true
     slide-number: true
+    multiplex: true
 execute:
   freeze: auto
 ---
 
-## **Outline**
+## Outline
 ::: incremental
 1.  What is statistics
 2.  What are key statistical measures to do transportation planning analysis
@@ -24,11 +25,11 @@ execute:
 
 # Statistics Fundamentals
 
-## **What is Statistics?**
+## What is Statistics?
 > Study of methods and techniques to **summarize** & **interpret** data
 
 
-## **Descriptive Statistics**
+## Descriptive Statistics
 ::: incremental
   -   Relative standing
   -   Central tendency
@@ -36,17 +37,17 @@ execute:
   -   Association
 :::
 
-## **Measures of Relative Standing** {.smaller}
+## Measures of Relative Standing {.smaller}
 - **Quartiles** are percentage points that separate data into quarters
   - E.g., 25th percentile means 25% of data lie below this value (often referred to as *first quartile*)
 - **Interquartile range** is difference between first quartile (25th percentile) and third quartile (75th percentile)
 - 50th percentile often referred to as *median*
 
-## **Measures of Central Tendency** {.smaller}
+## Measures of Central Tendency {.smaller}
 - **Median** often more useful than arithmetic **mean** (average) because mean **biased** by outliers
 - Interquartile range similarly resident to outliers relative to **range**, which include minimum & maximum values
 
-## **Measures of Variability** {.smaller}
+## Measures of Variability {.smaller}
 ::: incremental
 - **Variance** & **standard deviation** more useful than **range** because use information from all observations
 - Sample variance given by
@@ -56,7 +57,7 @@ $$ s^2 = \frac{\sum_i(x_i-\bar{x})^2}{n-1}$$
   - $n-1$ approaches n as sample size grows
 :::
 
-## **Measures of Association** {.smaller}
+## Measures of Association {.smaller}
 - **Covariance** & **correlation** are measures of association between two variables
 - Correlation a normalization of covariance to lie within interval [-1, 1]
 - **Note**: possible for two variables with zero correlation to be nonlinearly related
@@ -70,14 +71,14 @@ $$ s^2 = \frac{\sum_i(x_i-\bar{x})^2}{n-1}$$
 :::
 :::
 
-## **Measures of Association** {.smaller}
+## Measures of Association {.smaller}
 $$COV_p(X,Y) = \frac{\sum_i (x_i-\mu_X)(y_i-\mu_Y)}{N}$$
 $$COV_s(X,Y) = \frac{\sum_i (x_i-\bar{x})(y_i-\bar{y})}{n-1}$$
 Pearson product-moment correlation parameter
 $$\rho = \frac{COV_p(X,Y)}{\sigma_X \sigma_Y}$$
 $$r = \frac{COV_s(X,Y)}{s_X s_Y}$$
 
-## **Properties of Estimators** {.smaller}
+## Properties of Estimators {.smaller}
 
 . . .
 
@@ -92,14 +93,14 @@ $$r = \frac{COV_s(X,Y)}{s_X s_Y}$$
 ![](../images/lecture2/efficiency.png){fig-align="center"}
 
 
-## **Properties of Estimators** {.smaller}
+## Properties of Estimators {.smaller}
 . . .
 
 **Consistency** exists if the probability of being close to the true parameter value increases with increasing sample size
 
 ![](../images/lecture2/consistency.png){fig-align="center"}
 
-## **Confidence Intervals**
+## Confidence Intervals
 ::: incremental
 - Interval estimates are based on *frequentist statistical theory*
 - They say nothing about the location of the *true* parameter value
@@ -107,7 +108,7 @@ $$r = \frac{COV_s(X,Y)}{s_X s_Y}$$
 - E.g., a 95% confidence interval of [1.15,2.34] means that 95 out of 100 samples will have the parameter value of interest in the range 1.15 to 2.34
 :::
 
-## **Hypothesis Testing** {.smaller}
+## Hypothesis Testing {.smaller}
 ::: incremental
 - Used to measure whether a difference in parameter values is likely to have arisen **by chance** or whether **some other factor** is responsible for the difference
 - Statistical distributions used in hypothesis testing to estimate probabilities of observing the sample data, given an assumption about what *should have* occurred
@@ -120,7 +121,7 @@ $$r = \frac{COV_s(X,Y)}{s_X s_Y}$$
 
 $$Z^* = \frac{(\bar{X_1}-\bar{X_2}-(\mu_1-\mu_2)}{\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}}$$
 
-## **Data Display Methods** {.smaller}
+## Data Display Methods {.smaller}
 . . .
 
 **Histogram** useful when data naturally grouped
@@ -134,7 +135,7 @@ $$Z^* = \frac{(\bar{X_1}-\bar{X_2}-(\mu_1-\mu_2)}{\sqrt{\frac{s_1^2}{n_1}+\frac{
 ![](../images/lecture2/box_plot.png){fig-align="center"}
 
 # Basic Regression 
-## **Regression Model Uses** {.smaller}
+## Regression Model Uses {.smaller}
 ::: incremental
 - **Prediction** - Modeling existing observations or forecasting new data
   - Outcome variable(s) can be 
@@ -144,10 +145,10 @@ $$Z^* = \frac{(\bar{X_1}-\bar{X_2}-(\mu_1-\mu_2)}{\sqrt{\frac{s_1^2}{n_1}+\frac{
   - E.g., identifying risk factors for a disease or attitudes that predict voting
 :::
 
-## **Poll**
+## Poll
 <div style='position: relative; padding-bottom: 56.25%; padding-top: 35px; height: 0; overflow: hidden;'><iframe sandbox='allow-scripts allow-same-origin allow-presentation' allowfullscreen='true' allowtransparency='true' frameborder='0' height='315' src='https://www.mentimeter.com/app/presentation/alf9arqzebexh9jdrkry69dwkgd8nydp/embed' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' width='420'></iframe></div>
 
-## **Regression Model Uses** {.smaller}
+## Regression Model Uses {.smaller}
 ::: incremental
 - **Extrapolation** - Adjusting for known differences between sample and population of interest
   - E.g., sample data from self-selecting schools to make conclusions about all schools in state
@@ -155,14 +156,14 @@ $$Z^* = \frac{(\bar{X_1}-\bar{X_2}-(\mu_1-\mu_2)}{\sqrt{\frac{s_1^2}{n_1}+\frac{
   - E.g., exposure to a pollutant and health outcomes
 :::
 
-## **Linear Regression** {.smaller}
+## Linear Regression {.smaller}
 Consider experiment where we have values of a certain variable $Y={Y_𝑖}$ that takes different values based on the values of another variable $X$. If the process is **not deterministic**, we will observe different $Y_i$ for the same $X_i$
 
 Let’s call $f_i(Y|X)$ the **probability distribution** for $Y_i$ for a given $X_i$; this means we could have a different function $f_i$ for each $X$ 
 
 ![](../images/lecture2/linear_regression_1.png){fig-align="center"}
 
-## **Linear Regression** {.smaller}
+## Linear Regression {.smaller}
 However, such a general case is **intractable**; to make it more manageable, certain hypotheses about population regularity assumed:
 - Probability distribution $f_i(Y|X)$ has **same variance** $\sigma^2$ for all values of $X$
 - Mean $\mu_i = E(Y_i)$ forms a straight line known as the **true regression line** & given by
@@ -172,15 +173,15 @@ where $a$ and $b$ define the line & are estimated from sample data
 
 ![](../images/lecture2/linear_regression_2.png){fig-align="center"}
 
-## **Linear Regression** {.smaller}
+## Linear Regression {.smaller}
 Model is often written as $Y_i = a + bX_i + e_i$ where $e_i$ measures error/disturbance in data and includes both **measurement** & **specification** error
 
 ![](../images/lecture2/linear_regression_3.png){fig-align="center"}
 
-## **Fundamental Graph of Linear Regression**
+## Fundamental Graph of Linear Regression
 ![](../images/lecture2/fundamental_graph.png){fig-align="center"}
 
-## **Important Considerations for Linear Regression** {.smaller}
+## Important Considerations for Linear Regression {.smaller}
 ::: incremental
 - Important to distinguish between errors $e_i$, which are **unknown** & associated with true regression line and differences $\epsilon_i$ between observed $Y_i$ & fitted $\hat{Y}$
 - **Least squares estimation (LSE)** - most common line-fitting method, results from the minimization of $\sqrt{\epsilon_i}$
@@ -189,7 +190,7 @@ $$x_i = X_i - \bar{X}$$
 where $\bar{X}$ is the mean of $\mathbf{X}$
 :::
 
-## **Important Considerations for Linear Regression** {.smaller}
+## Important Considerations for Linear Regression {.smaller}
 ::: incremental
 - Previous regression lines keep their slopes ($b$ and $\hat{b}$) but change their intercepts ($a$ and $\hat{a}$)
 - Change is useful because new variable $x$ has property that $\sum_i x_i = 0$
@@ -197,7 +198,7 @@ where $\bar{X}$ is the mean of $\mathbf{X}$
 $$\hat{b} = \sum_i \frac{x_i Y_i}{x_i^2}$$
 :::
 
-## **Important Considerations for Linear Regression** {.smaller}
+## Important Considerations for Linear Regression {.smaller}
 Estimator properties given by
 \begin{array}
 
@@ -206,7 +207,7 @@ E(\hat{b}) = b & Var(\bar{b}) = \frac{\sigma^2}{\sum_i x_i^2} \\
 
 \end{array}
 
-## **Interesting Experimental Design Point from Previous** {.smaller}
+## Interesting Experimental Design Point from Previous {.smaller}
 - Considering $Var(\hat{a}) = \frac{\sigma^2}{n}$ & $Var(\hat{b}) = \frac{\sigma^2}{\sum_i x_i^2}$
   - Variance of both estimators **decreases** with sample size
   - Variance of $\hat{b}$ tends to grow with closer together $x_i$ & $\hat{b}$ becomes **unreliable estimator**
@@ -214,7 +215,7 @@ E(\hat{b}) = b & Var(\bar{b}) = \frac{\sigma^2}{\sum_i x_i^2} \\
 
 ![](../images/lecture2/experimental_design.png){fig-align="center" width=50%}
 
-## **Properties of Regression Estimators** {.smaller}
+## Properties of Regression Estimators {.smaller}
 ::: incremental
 - If $E(e|\mathbf{X}) = 0$, LSE have some desirable properties
   - Estimators are **unbiased** (i.e., expected values are equal to true values for $a$ and $b$)
@@ -225,29 +226,231 @@ E(\hat{b}) = b & Var(\bar{b}) = \frac{\sigma^2}{\sum_i x_i^2} \\
     - If number of vehicles omitted, LSE of income will include both income and number of vehicles effects; therefore parameter value will be larger than true value
 :::
 
-## **Properties of Regression Estimators**
+## Properties of Regression Estimators
 If prior conditions hold, LSE are not only **consistent** & **unbiased**, but also **best** (most efficient/smallest variance) among possible linear unbiased estimators (BLUE) – known as **Gauss-Markov theorem**
 
-## **Hypothesis Testing** {.smaller}
-Need to know distribution of 𝑏 ̂, which requires strong assumption that variables Y are distributed Normal
-In case of LSE, is BLUE and also BUE (best unbiased estimators) among all linear and non-linear estimators
-Strong assumption but as sample size grows it will begin to hold true no matter the true distribution due to Law of Large Numbers
-Since 𝑏 ̂ are linear combinations of Y, it follows they are distributed N=(b, 𝜎^2/(∑_𝑖▒𝑥_𝑖^2 ))
-Can use the normal standardization to obtain a test statistic distributed standard normal N(0, 1)
-𝑧=(𝑏 ̂−𝑏)/(𝜎∕√(∑_𝑖▒𝑥_𝑖^2 ))
-We don’t know 𝜎^2. We can use the residual variance s2
+## Hypothesis Testing {.smaller}
+- Need to know distribution of $\hat{b}$, which requires strong assumption that variables $Y$ are distributed normal
+- For LSE, is BLUE and also BUE (best unbiased estimators) among all linear and non-linear estimators
+  - Strong assumption but as sample size grows holds true no matter the true distribution due to **Law of Large Numbers**
+  - Since $\hat{b}$ are linear combinations of $Y$, they are distributed $N=(b,\frac{\sigma^2}{\sum_i x_i^2}$
+  - Can use the normal standardization to obtain a test statistic distributed standard normal N(0, 1)
+$$z=\frac{\hat{b}-b}{\sigma/\sqrt{\sum_i x_i^2}}$$
+- Do not know $\sigma^2$ but can use the residual variance $s^2$
 
-## **Hypothesis Testing** {.smaller}
-Substitution of s for 𝜎 means the standardized 𝑏 ̂ is now distributed Student t with (n-2) degrees of freedom
-𝑡=(𝑏 ̂−𝑏)/(𝑠/√(∑_𝑖▒𝑥_𝑖^2 ))
-Denominator of above is usually called the standard error. A typical null hypothesis is that 𝑏=0
-The standard error is given by
-𝑠^2=(∑_𝑖▒(𝑌_𝑖−𝑌 ̂_𝑖 ) )/(𝑛−𝑘) 
-Where k is the number of parameters in the model. If n >> k, the t-statistics approximates a z-statistic
+## Hypothesis Testing {.smaller}
+- Substitution of $s$ for $\sigma$ means standardized $\hat{b}$ is distributed Student t with (n-2) degrees of freedom
+$$t=\frac{\hat{b}-b}{s/\sqrt{\sum_i x_i^2}}$$
+- Denominator of above is usually called **standard error**. Typical null hypothesis is that $b=0$
+- standard error given by
+$$s^2= \frac{\sum_i (Y_i - \hat{Y}_i)^2}{n-k}$$
+- Where $k$ is the number of parameters in the model. If n >> k, t-statistics approximates a z-statistic
 
-## **Hypothesis Testing Interpretation
+<!-- Lower variance for larger sample size with fixed individual observation random variable assumption because individual variance is dominated by description of inter-observation variance described by model. -->
 
+## Hypothesis Testing Interpretation
+Rejection region for $\alpha = 5%$ for variable with assumed (known) sign – e.g., income effect on vehicle ownership
 
-## **Coefficient of Determination**
+![](../images/lecture2/hypothesis_testing.png){fig-align="center" width=50%}
 
-## **Multiple Regression**
+## Coefficient of Determination
+Measures the percent of total variation from the mean explained by the model
+
+$$R^2=\frac{\sum_i (\hat{Y}_i-\bar{Y})^2}{\sum_i (Y_i-\bar{Y})^2}$$
+
+## Multiple Regression {.smaller}
+- Often interested in cases where we have more than one explanatory variable
+- Some additional complications with multiple regression
+  - **Multicollinearity** occurs when linear relationship exists between explanatory variables
+  - How many regressors to include in model?
+    - Are there **strong theoretical reasons** to include a variable, or is it important for **policy analysis**?
+    - Is the estimated **sign** of the parameter consistent with theory or intuition & is the parameter **statistically significant** (i.e., $H_0$ rejected in the t-test)
+    - **Simple models** are preferred to **complex models**. If removing a variable has minimal effect on fit, can (and probably should) by removed from model
+
+## Multiple Regression {.smaller}
+- **Coefficient of determination:** Including additional variables always increases fit, so should use adjusted $R^2$
+$$R_{adj}^2 = (R^2 - \frac{k}{n-1}\frac{n-1}{n-k-1}$$
+- Where $n$ is sample size & $k$ is number of variables in model
+- If interested in differences between models with restrictions on included variables, can use F-test
+$$\hat{F} = \frac{(SSR_R - SSR_U)(n-k)}{r SSR_U} ~ F_{r,n-k}$$
+- Follows F-distribution with r & n-k degrees of freedom
+- **Intuition:** if restrictions are valid, $$SSR_R$ should be similar to $SS_U$ & statistic will be near zero
+
+## Building, Interpreting, & Checking Regression Models
+```{dot}
+digraph model_flow {
+	layout = neato
+	N1 [fontsize=6, shape=circle, fontcolor = white, color=red, margin="0.01,0.01", style=filled, label = "Build linear \n regression model \n y = a + bx + error"];
+  N2 [fontsize=6, shape=circle, fontcolor = white, color=green, margin="0.01,0.01", style=filled, label = "Expand model \n with additional \n predictors, \n interactions, & \n transformations"];
+  N3 [fontsize=6, shape=circle, fontcolor = white, color=purple, margin="0.01,0.01", style=filled, label = "Model fitting – \n programming \n & algorithms"];
+  N4 [fontsize=6, shape=circle, fontcolor = white, color=blue, margin="0.01,0.01", style=filled, label = "Model \n understanding – \n graphics, more \n programming, & \n investigation"];
+  N5 [fontsize=6, shape=circle, color=orange, margin="0.01,0.01", style=filled, label = "Criticism – Flaws, \n assumptions, & \n improvements"];
+
+  N1 -> N2 [color=red];
+  N2 -> N3 [color=green];
+  N3 -> N4 [color=purple];
+  N4 -> N5 [color=blue];
+  N5 -> N1 [color=orange];
+}
+```
+
+<!-- 
+```{mermaid}
+graph LR
+	A(("Build linear 
+  regression model
+  y = a + bx + error")) -- B(("Expand model 
+  with additional 
+  predictors, interactions, 
+  & transformations"))
+  B(("Expand model 
+  with additional 
+  predictors, interactions, 
+  & transformations"))--
+  C(("Model fitting –
+  programming
+  & algorithms"))
+  C(("Model fitting –
+  programming
+  & algorithms"))--
+  D(("Model
+  understanding –
+  graphics, more
+  programming, &
+  investigation"))
+  D(("Model fitting –
+  programming
+  & algorithms"))--
+  E(("Criticism – Flaws,
+  assumptions, &
+  improvements"))
+  E--A
+  style A fill:#C0504D,stroke:#333,stroke-width:4px,color:#fff
+  style B fill:#9BBB59,stroke:#333,stroke-width:4px,color:#fff
+  style C fill:#8064A2,stroke:#333,stroke-width:4px,color:#fff
+  style D fill:#4BACC6,stroke:#333,stroke-width:4px,color:#fff
+  style E fill:#F79646,stroke:#333,stroke-width:4px,color:#fff
+``` -->
+
+## Power Law & Exponential Growth/Decline {.smaller}
+- Line $y = a + bx$ can be used to represent a more general class of relationships by allowing logarithmic transformations
+- $ln(y) = a + bx$ is exponential growth (if $b > 0$) and decline (if $b < 0$) -> $y = A e^{bx}$
+
+**Power law:**
+
+Let y be the area of a square and x be its perimeter. Then $y = (x/4)^2$, and we can take the ln of both sides to get $ln(y) = 2(ln(x) – ln(4)) = -2.8 + 2 ln(x)$
+
+## Power Law & Exponential Growth/Decline {.smaller}
+
+**Exponential growth:**
+
+Suppose the world population starts at 1.5 billion in the year 1900 and increases exponentially, doubling every 50 years. We can write this as $y = A \times 2^{(x-1900)/50}$, where $A = 1.5 \times 10^9$
+
+Equivalently, $y = A \times e^{0.014(x-1900)}$ meaning that y increases by 1.014 per year, or 1.15 per 10 years, or 4.0 per hundred years ($e^{1.4} = 4.0 = 400\%$ increase)
+
+$ln(y) = a + b ln(x)$ represents power law growth (if $b > 0$) or decline (if $b < 0$) -> $y = A x^b$
+
+## Problems with p-values {.smaller}
+<span style="color:#C00000">**Type 1 error:**</span> probability of falsely rejecting a true null hypothesis (false positive)
+
+<span style="color:#4F81BD">**Type 1 error:**</span> probability of not rejecting a false null hypothesis (false negative)
+
+![](../images/lecture2/p_value.png)
+
+![](../images/lecture2/null_hypothesis.png){.absolute bottom="400" left="150" width=25% .fragment .fade-in}
+
+![](../images/lecture2/alt_hypothesis.png){.absolute bottom="400" left="450" width=25% .fragment .fade-in}
+
+![](../images/lecture2/red_wedge.png){.absolute bottom="120" left="250" width=20% .fragment .fade-in}
+
+![](../images/lecture2/blue_wedge.png){.absolute bottom="120" left="460" width=10% .fragment .fade-in}
+
+![](../images/lecture2/sample_size.png){.absolute bottom="300" left="300" width=20% .fragment .fade-in}
+
+![](../images/lecture2/red_arrow.png){.absolute bottom="250" left="300" width=20% .fragment .fade-in}
+
+## Poll
+<div style='position: relative; padding-bottom: 56.25%; padding-top: 35px; height: 0; overflow: hidden;'><iframe sandbox='allow-scripts allow-same-origin allow-presentation' allowfullscreen='true' allowtransparency='true' frameborder='0' height='315' src='https://www.mentimeter.com/app/presentation/alf9arqzebexh9jdrkry69dwkgd8nydp/embed' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' width='420'></iframe></div>
+
+## Problems with p-values {.smaller}
+Answer: Depends but general safe answer...NO!
+
+- E.g., A change in the gas price will produce some  changes in travel behavior. How do these changes vary across people and contexts?
+- A medical intervention will work differently for different people
+- A political advertisement will change the opinion of some people but not others
+- In many cases, there is no interest in a null effect
+- When a hypothesis is rejected (i.e., a study is a success), researchers and practitioners make decisions based on point estimates of the magnitude and sign
+  - We are interested in the magnitude (M) and sign (S) conditional on an effect being statistically significant
+
+## Statistically Significance $\neq$ Practical Importance {.smaller}
+::: incremental
+- An effect can be non-random (i.e., statistically significant) but not practically impactful
+- E.g., say we find that for every 10-cent increase in the price per gallon for gasoline there is a 0.001% decrease in vehicle miles traveled. Do we care?
+  -  Approximate actual elasticity values: -0.0216 (short-run) and -0.1066 (long-run)
+  -  Meaning a 1% increase in the price of gas produces a 0.026% decrease in VMT
+  - If gas price rises from $3.00 per gallon to $3.10 per gallon
+    - 3.3% increase in price -> 0.09% short-run decrease in VMT
+    - If we double the price -> 2.2% short-run decrease in VMT OR 10.7% in long-run
+:::
+
+## Not Significant Does Not Mean Zero Effect {.smaller}
+::: incremental
+- E.g., A study of the effectiveness of heart stents for heart patients
+- Treated group outperformed control group, but not statistically significantly so
+- Observed average difference in treadmill time (treatment effect) was 16.6 seconds with standard error of 9.8 – 95% confidence interval includes zero
+- Net effect may be positive or negative – it is unclear!
+:::
+
+## Differences B/W *Significant* & *Not Significant* NOT Statistically Significant {.smaller}
+::: incremental
+- Moving from 0.051 p-value to 0.049 p-value is not hard
+- More important:
+  - Large differences in significance level may not mean large differences in underlying variable
+  - E.g., Two independent studies with effect estimates and standard errors of 25 ± 10 and 10 ± 10
+    - First study is significant at 0.01 level (25/10 = 2.5)
+    - Second study is not significant (10/10 = 1.0)
+    - Is there a large difference between the two effect estimates?
+    - Difference is 15 with a standard error of $\sqrt{(10^2+10^2)}=14$ meaning 15/14 = 1.07!
+:::
+
+## Garden of Forking Paths {.smaller}
+- When many ways to select, exclude, & analyze data, not difficult to attain a low p-value (even in absence of true effect)
+- More than “file drawer effect” – not publishing non-significant results
+- “Degrees of freedom” available to analyst when coding & analyzing data
+- Even if only one analysis done, there are many others that could be done that would result in non-significant results
+
+![](../images/lecture2/forking_fish.jpg){fig-align="center"}
+
+<!-- Neuroscientist Craig Bennett purchased a whole Atlantic salmon, took it to a lab at Dartmouth, and put it into an fMRI machine used to study the brain. The beautiful fish was to be the lab's test object as they worked out some new methods.
+
+So, as the fish sat in the scanner, they showed it "a series of photographs depicting human individuals in social situations." To maintain the rigor of the protocol (and perhaps because it was hilarious), the salmon, just like a human test subject, "was asked to determine what emotion the individual in the photo must have been experiencing.“
+
+The salmon, as Bennett's poster on the test dryly notes, "was not alive at the time of scanning."
+
+analyzing the voxel (think: 3-D or "volumetric" pixel) data, the voxels representing the area where the salmon's tiny brain sat showed evidence of activity. In the fMRI scan, it looked like the dead salmon was actually thinking about the pictures it had been shown.
+
+"By complete, random chance, we found some voxels that were significant that just happened to be in the fish's brain," Bennett said. "And if I were a ridiculous researcher, I'd say, 'A dead salmon perceiving humans can tell their emotional state.'" -->
+
+## Example: Sports Viewing & Political Attitudes {.smaller}
+Consider the below article excerpt (based on an article in a leading psychology journal):
+
+Many people watch UNL Cornhusker football games. Whereas research finds that Cornhuskers viewing influences Nebraskans’ mating preferences, we propose that it might also change their political and religious views. Building on theory suggesting that political and religious orientation are linked to viewing preference, we test how football season influenced Nebraskans’ politics, religiosity, and voting in the 2012 U.S. presidential election. In two studies with large and diverse samples, whether it was football season had drastically different effects on single versus married Nebraskans. Football season led single Nebraskans to become more liberal, less religious, and more likely to vote for Barack Obama. In contrast, football led married Nebraskans to become more conservative, more religious, and more likely to vote for Mitt Romney. In addition, football-induced changes in political orientation mediated Nebraskans’ voting behavior. Overall, the football season not only influences Nebraskans’ politics, but appears to do so differently for single versus married Nebraskans.
+
+## Example: Sports Viewing & Political Attitudes
+::: incremental
+- Find **40%** of Nebraskans who watch football supported Romney in football season vs. **23%** in non-football season (Type-M error)
+
+- Implausible! Research finds **minimal changes** in vote preferences over election cycle
+
+- What is the dividing line between **single** and **married**?
+
+- **Differential response rate?** Maybe liberal or conservative Nebraskans are more or less likely to participate in a survey depending on if it is football season
+:::
+
+## How to Move Beyond Hypothesis Testing
+::: incremental
+1. **Analyze all data** - Better to anticipate critism than hide data
+2. **Present all comparisons** - Rather than statistically significant comparisons only
+3. **Make data public** - If a topic is worth studying, you should want others to be able to quickly progress without repeating your work
+4. **Accept uncertainty & embrace variation** - No answer is perfect
+:::
