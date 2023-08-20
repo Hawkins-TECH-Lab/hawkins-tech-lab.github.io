@@ -19,7 +19,7 @@ execute:
 ## Outline
 ::: incremental
 1.  Decision-making models
-2.  Planning and decision-making process
+2.  Planning and decision process
 3.  Measures of effectiveness
 :::
 
@@ -166,10 +166,10 @@ flowchart TD
 ## Incremental Decision-Making Model {.smaller}
 ::: columns
 ::: {.column width="75%"}
-![](../images/lecture2/incremental_model.png){fig-align="center"}
+![](../images/lecture2/incremental_model.png){fig-align="center"  width=60%}
 :::
 ::: {.column width="25%"}
-Problems:
+**Problems:**
 
 - Reactive -> miss opportunities
 - Myopic
@@ -178,58 +178,343 @@ Problems:
 :::
 :::
 
-## Scraps
+## Organizational Process Model {.smaller}
+- Most decisions made within organizations (DOT, city, etc.)
+- Decisions are influenced by:
+  - Formal & informal organizational structures
+  - Channels of communication
+  - Standard operating procedure
+  - Organization’s mandate
+  - Politics of bureaucracy
+    - Divisions & limitations of power
+    - Communications & coordination “overhead” 
+    - Protection of “turf”
+
+## Political Bargaining Model {.smaller}
+- We live in a pluralistic society
+  - Diverse goals
+  - Conflicts among competing groups
+  - Bargaining required to achieve compromise
+- Decision-making inherently political
+  - Outcomes seldom optimal
+  - Solutions acceptable
+  - Controversial aspects often ignored or deferred
+- Process tied to election cycles, political agendas, opinion polls, etc.
+
+# Planning and Decision process
+
+## Decision-Making Elements {.smaller}
+::: incremental
+- **Pluralistic** – conflicting values & fragmented decision-making
+- **Resource-allocative** – limited resources lead to necessary tradeoffs
+- **Consensus-seeking** – education, citizen involvement, mobilizing business leadership
+- **Problem simplifying** – urban systems are complex
+- **Uncertainty-avoiding** – dramatic changes in policy, untried solutions, & long-term solutions are rare
+:::
+
+## Role of Planning {.smaller}
+- Planning informs decision-making process
+- Provide information needed/wanted by decision-makers:
+  - Available alternatives
+  - Tradeoffs
+  - Consequences
+- Provided information must be:
+  - Credible
+  - Understandable
+  - Timely
+
+## Decision-Making Stages
+Planning relates to four major stages of decision-making:
+
+1. Problem identification & definition
+2. Debate & choice
+3. Implementation
+4. Evaluation & feedback
+
+## Planning & Decision-Making
 ```{mermaid}
-flowchart TD
-    subgraph B1
-        direction RL
-        A[Policies]
-        B[Problems]
-    end
-    subgraph B2
-      direction TB
-      C[Assess Consequences]-->D[Adjust Policy?]:::C1
-      
-      D-->|No|E[Redefine Problem?]:::C1
-      E-->|No|F[Monitor System]:::C1
-      F-->|Yes|C
-      %% E-->|Yes|B
-    end
-  A --> B2
-  B --> B2
-  %% D-->|Yes|A
-  %% B1 --> B2
+flowchart RL
+  subgraph id1 ["Problem Identification & Definition"]
+    D("Goals & 
+    Objectives")
+    A[Prosperity]
+    B["Social equity/
+    Quality of life"]
+    C["Environmental 
+    quality"]
+  end
+
+  subgraph id4 ["Implementation"]
+    direction LR
+    M("Implementation
+    of strategies")
+    N(TIP)
+    O(Plan)
+  end
+
+  subgraph id2 ["Evaluation & Feedback"]
+
+    E("System
+    operations")
+    F("Performance
+    measures")
+  end
+
+  subgraph id3 ["Debate & Choice"]
+    G(Data)
+    I("Alternative
+    improvement
+    strategies")
+    J("Analaysis
+    methods")
+    K(Evaluation)
+    L["Policies
+    Operations strategies
+    Infrastructure projects
+    Studies
+    Regulations
+    Education & awareness
+    Financing strategies
+    Partnerships
+    Collaborative undertakings"]
+  end
+
+  H("Other sources
+    for project
+    ideas")
+
+  
+  A<-->B
+  B<-->C
+  C<-->A
+  C-->D
+
+  id4-->id1
+  E-->D
+  id4-->D
+
+  E-->F
+  F-->G
+  H-->I
+  G-->J
+  J-->I
+  I<-->K
+  K-->L
+  L-->id4
+
+  O-->N
+  N-->M
+  M-->E
+  F-->J
+
 ```
+
+## Transportation Planning Process
+::: columns
+::: {.column width="25%"}
+Adaptive or mixed-mode decision-making styles seem more flexible and appropriate to the characteristics of transport problems
+:::
+::: {.column width="75%"}
 ```{mermaid}
-graph TB
+flowchart RL
 
-%% subgraph Main Section
-A[Policies]:::C1
-B[Problems]:::C1
-C["Assess Consequences"]:::C1
-D["Adjust Policy?"]:::C1
-E["Redefine Problem?"]:::C1
-F["Monitor System"]:::C1
-%% end
+subgraph id1 [" "]
+  A["Problem formulation"]
+  B["Data collection"]
+  C["Construct analytical model & calibrate"]
+  D["Generate solutions for testing"]
+  E["Forecast planning variables"]
+  F["Test model & solutions"]
+  G["Evaluate solutions & recommend best one"]
+  H["Implement solution"]
+end
+I["Monitor"]
 
-%% subgraph Top Section
 
-%% end
-
-A-->C
+A-->B
 B-->C
 C-->D
-D-->|Yes|A
-D-->|No|E
-E-->|No|F
-F-->|Yes|C
-E-->|Yes|B
-
-classDef C1 fill:#C0C0C0,stroke:#000000
-
-subgraph Top Section
-A
-B
-end
+C-->E
+D-->F
+E-->F
+F-->G
+G-->H
+I-->id1
 
 ```
+:::
+:::
+
+## Monitoring {.smaller}
+- Monitoring approach enables a **continuous planning process**
+- Contrast with conventional approach of spending **considerable resources** over a period of one or two years to undertake a large-scale transport study
+  - Burst of activity may be followed by a much longer period of limited effort in planning and updating plans
+  - Reports and master plans become **obsolete or simply forgotten**, and nobody capable of running the models again is left in the planning unit
+- New data sources allow us to better **monitor** and **respond** to system state
+
+## Transportation Planning Paradigms
+
+**Conventional**
+
+- Foster convergence in solutions
+- Focus on short-term impacts
+- Pay attention to physical–material capital. 
+- Competition, consumerism, and individualism 
+- Faith that technology will provide solutions
+- Analyses based on reductionism and assumptions of linearity 
+
+## Transportation Planning Paradigms
+**Emerging**
+
+- Diverse & creative solutions
+- Focus on long-term payoffs
+- Social capital more important than physical capital
+- Emphasis on cooperation, quality of life, and community
+- Ecology over technology
+- Analyses based on emergence and complexity
+
+## Evaluation: Values/Visions, Goals, & Objectives {.smaller}
+- Before we can  meaningfully evaluate alternative policies, we must define our values and why we have them
+- **Values/Visions:** Basic social drivers that govern human behavior
+- **Goals:** Generalized statements that broadly relate physical environment to values – no clear quantification
+- **Objectives:** Specific & measurable statements related to attainment of goals
+- **Measures of Effectiveness:** Measure of degree of attainment of particular objectives
+
+## Evaluation: Values/Visions, Goals, & Objectives
+![](../images/lecture2/values_visions_goals.png){fig-align="center"}
+
+## Transportation Paradigms - Goals
+**Conventional**
+
+- System expansion & safety
+- Efficiency improvements
+- Traffic management
+- Demand management
+- Intelligent transportation systems (ITS)
+
+## Transportation Paradigms - Goals
+**Emerging**
+
+- System maintenance & safety
+- Traffic calming & urban design
+- Emphasis on connections & relationships among modes – multimodality & intermodality
+- Transportation & land use interaction and integration
+- Demand management for reducing motorized transport
+- Demand & increase in nonmotorized travel
+- Education & public involvement
+
+## Transportation Paradigms - Strategies
+**Conventional**
+
+- Subsidies to transportation users
+- True total costs to society not reflected in price to travel
+- Technology used to promote individual mobility, meet government-mandated performance thresholds, & improve system performance
+
+## Transportation Paradigms - Strategies
+**Emerging**
+
+- Pricing includes environmental costs
+- Internalizing external costs
+- Technology used as a travel substitute
+
+## Criteria for Goals & Objectives
+::: incremental
+- Must be clear, concise, & unambiguous
+- Objectives must follow logically from goals
+- Must reflect views & aspirations of community
+- Each objective must be **measurable** by at least one MOE
+- MOE measurement must require only a **reasonable effort**
+- Goals & objectives should be **independent** of specific plans & modes
+:::
+
+## Criteria for MOE
+::: incremental
+- Relevant to objectives
+- Measurable
+- Sensitive
+  - To policy of interest
+  - Differentiate impacts by interest group
+- Unbiased
+- Manageable
+- Understandable
+:::
+
+## Accessibility MOE {.smaller}
+- Average travel time from origin to destination
+- Average trip length
+- Accessibility index
+- Mode split by region, facility, or route
+- Percentage of employment/activity centers within X miles of major highways/transit station
+- Number of bridges with vertical clearance less than X feet
+- Percent of population within X minutes of Y percent of employment sites
+- Percent of region’s mobility impaired population who reach specific activity by public transit
+
+## Mobility MOE
+:::{style="font-size: 0.75em;"}
+::: columns
+::: {.column width="50%"}
+- Origin to destination travel times
+- Average speed or travel time
+- Vehicle-miles traveled by congestion level
+- Lost time or delay due to congestion
+- Level-of-service/volume-delay ratio
+- Vehicle-hrs traveled per capita
+- Vehicle-mi traveled per capita
+:::
+::: {.column width="50%"}
+- Percent transit on-time performance
+- Transit service frequency
+- Modal split
+- Transfer time between modes
+- User’s travel time perception
+- Delay per goods ton-mi
+- Percent of transit or non-motorized trips by trip purpose
+:::
+:::
+:::
+
+## Economic Development MOE
+- Economic cost of road collisions
+- Economic cost of lost time in travel
+- Percent of wholesale/retail/commercial centers with unrestricted vehicle weight roads
+- Jobs directly created/supported
+- Percent of region’s unemployed or low-income people who consider transportation a principle barrier to employment
+
+## Quality of Life MOE
+- Lost time for congestion
+- Crashes per vehicle-mi or person-mi
+- Tons of generated pollution
+- User safety and urban quality perception
+- Average hours spent traveling per day
+- Percent of population exposed to noise
+
+## Environmental & Resource Consumption MOE
+- Overall mode split by facility or route
+- Tons of pollution
+- Number of days in air quality non-compliance
+- Level of sprawl: difference between changes in urban and sub-urban housing density
+- Number of collisions involving hazardous materials
+
+## Safety MOE
+- Number of collisions per vehicle-mi per year/trip/ton-mi/capita
+- Number of high collision locations
+- Response time to collision incidents
+- Accident risk index
+- Construction-related fatalities/injuries
+- Collisions at major inter-modal (e.g., railroad) crossings
+- Pedestrian/bicycle collisions
+
+## Operating Efficiency MOE {.smaller}
+- Transportation system service costs
+- Cost/benefit measures
+- Average cost per lane-mi construction
+- Origin to destination travel time
+- Average speed
+- Percent of projects rated as good to excellent quality
+- Volume/capacity ratio
+- Cost per goods ton-mi
+- Mode split
+- Customer/user satisfaction 
+
+## Some Transportation Policy Building Blocks
+![](../images/lecture2/transport_policy_blocks.png){fig-align="center"}
