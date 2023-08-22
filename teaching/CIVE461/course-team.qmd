@@ -18,8 +18,21 @@ If these times don't work for you or you'd like to schedule a one-on-one meeting
 
 ## Teaching assistant
 
-+---------------------------------------+-----------------------------------+-------------------------+-------------------------------------------------------+
-|                                           | Name          | Office hours            | Location                                                              |
-+:=====================================:+===================================+=========================+=======================================================+
-| ![](images/team/omid.jpg){width=25%}               | Omid Armantalab                    | Thursday 7 - 9 pm       | WHIT                                    |
-+-------------------------------------------+-----------------------------------+-------------------------+------------------------------------------------+
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: center;"></th>
+<th>Name</th>
+<th>Office hours</th>
+<th>Location</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><img src="images/team/omid.jpg" class="img-fluid"></td>
+<td>Omid Armantalab</td>
+<td>Thursday 7 - 9 pm</td>
+<td><a href="https://sakai.duke.edu/portal/site/779c3ebe-3b88-4bcc-bd01-1813e8396a23/page/d5eef508-07a4-4c6d-b7bd-4614a9631562">Zoom</a></td>
+</tr>
+</tbody>
+</table>
