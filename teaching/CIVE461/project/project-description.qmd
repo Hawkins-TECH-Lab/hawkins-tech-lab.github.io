@@ -4,7 +4,7 @@ title: "Project description"
 
 ## Timeline
 
-[Report 1](#report-1) due Wed, Sept 25
+[Report 1](#report-1) due Wed, Sept 27
 
 [Report 2](#report-2) due Wed, Oct 25
 
@@ -14,7 +14,7 @@ title: "Project description"
 
 ## Introduction
 
-**TL;DR**: *Build a 4-step travel model for a US metrpolitan region. That is your term project.*
+**TL;DR**: *Build a 4-step travel model for a US metropolitan region. That is your term project.*
 
 The final project task is for you to use aggregate and disaggregate transportation planning methods to develop a 4-step travel demand model for a US metropolitan area of your choice.
 The goal of this project is for you to demonstrate proficiency in the techniques we have covered in this class (and beyond, if you like!) and apply them to a real-world dataset to analyze it in a meaningful way.

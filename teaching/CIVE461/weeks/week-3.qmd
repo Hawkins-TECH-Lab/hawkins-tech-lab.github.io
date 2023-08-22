@@ -1,0 +1,24 @@
+---
+title: "Week 3"
+subtitle: "Transportation Planning Process"
+editor: visual
+---
+
+
+## Prepare
+
+📖 Find a resource for the *transportation planning experience*. The transportation planning experience is an opportunity to engage with transportation planning and analysis outside of the classroom through podcasts, news stories, books, seminars, and other activities. 
+
+## Participate
+
+🖥️ [Lecture 3 - Transportation Planning Process](/teaching/CIVE461/slides/lec-3.html)
+
+## Practice
+
+📋 [AE 1 - Transportation Planning Experience](/teaching/CIVE461/ae/ae-1-transportation-planning-experience.html)
+
+<br><br>
+
+::: {style="font-size: 0.875em;"}
+Back to [course schedule](/teaching/CIVE461/ "Course schedule") ⏎
+:::

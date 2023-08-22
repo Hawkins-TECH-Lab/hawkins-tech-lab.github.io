@@ -11,7 +11,7 @@ editor: visual
 
 ## Participate
 
-🖥️ [Lecture 1 - Introduction to transportation planning](/slides/lec-1.html)
+🖥️ [Lecture 1 - Introduction to transportation planning](/teaching/CIVE461/slides/lec-1.html)
 
 ## Practice
 
@@ -20,5 +20,5 @@ editor: visual
 <br><br>
 
 ::: {style="font-size: 0.875em;"}
-Back to [course schedule](/ "Course schedule") ⏎
+Back to [course schedule](/teaching/CIVE461/ "Course schedule") ⏎
 :::

@@ -1,0 +1,20 @@
+---
+title: "Week 1"
+subtitle: "Welcome to CIVE 461/861"
+editor: visual
+---
+
+
+## Prepare
+
+📖 Follow the instructions on the [computing access page](/teaching/CIVE461/computing/computing-access.html) prior to lecture.
+
+## Practice
+
+📋 Submit Jupyter notebooks from in-class tutorials as pdf files.
+
+<br><br>
+
+::: {style="font-size: 0.875em;"}
+Back to [course schedule](/teaching/CIVE461/ "Course schedule") ⏎
+:::

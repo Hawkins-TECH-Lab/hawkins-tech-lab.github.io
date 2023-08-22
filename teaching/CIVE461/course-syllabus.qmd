@@ -40,7 +40,7 @@ To introduce senior undergraduate and graduate civil engineering students to the
 
 While there is no official textbook for the course, I will be assigning readings from the following resources.
 
--   [Modelling Transport](https://github.com/UNL-Hawkins-Lab/CIVE_461/blob/6ae2e8ca1576a517b809c1d6ffb832f84695dbf1/Resources/Ortuzar_Willumsen_Modelling_Transport_4ed.pdf) by Juan de Dios Ortúzar and Luis G. Willumsen
+-   [Modelling Transport](https://github.com/UNL-Hawkins-Lab/CIVE_461/blob/bfeaac6464a3b13f9263b8144c80fd630054ffd8/Resources/Ortuzar_Willumsen_Modelling_Transport_4ed.pdf) by Juan de Dios Ortúzar and Luis G. Willumsen
 
 -   [Travel Demand Forecasting: Parameters and Techniques](https://github.com/UNL-Hawkins-Lab/CIVE_461/blob/6ae2e8ca1576a517b809c1d6ffb832f84695dbf1/Resources/CS_Et_Al_TDM_Parameter_Estimation_NCHRP716.pdf) by National Academies of Sciences, Engineering, and Medicine
 
@@ -76,8 +76,8 @@ Assessment for the course is comprised of six components: application exercises,
 
 Parts of some lectures will be dedicated to working on Application Exercises (AEs).
 These exercises which give you an opportunity to practice applying the transportation planning concepts and code introduced in the readings and lectures.
-These AEs are due within three days of the corresponding lecture period.
-Specifically, AEs from Monday lectures are due Thursday by 11:59 pm CT, and AEs from Wednesday lectures are due Saturday by 11:59 pm CT.
+These AEs are due within two days of the corresponding lecture period.
+Specifically, AEs from Monday lectures are due Wednesday by 11:59 pm CT, and AEs from Wednesday lectures are due Friday by 11:59 pm CT.
 
 Because these AEs are for practice, they will be graded based on completion, i.e., a good-faith effort has been made in attempting all parts.
 Successful on-time completion of at least 80% of AEs will result in full credit for AEs in the final course grade.
@@ -86,10 +86,6 @@ Successful on-time completion of at least 80% of AEs will result in full credit 
 
 In homework, you will apply what you've learned during lecture to complete non-coding assignments.
 You may discuss homework assignments with other students; however, homework should be completed and submitted individually.
-
-One homework assignment will be dedicated to a *transportation planning experience*.
-The transportation planning experience is an opportunity to engage with transportation planning and analysis outside of the classroom through podcasts, news stories, books, seminars, and other activities.
-As you complete these experiences, the goal is to consider how the material you're learning in the course connects with society more broadly.
 
 ### Exams
 
@@ -135,7 +131,7 @@ The final letter grade will be determined based on the following thresholds:
 
 ## Five tips for success
 
-Your success on this course depends very much on you and the effort you put into it.
+Your success in this course depends very much on you and the effort you put into it.
 The course has been organized so that the burden of learning is on you.
 Your TA and I will help you be providing you with materials and answering questions and setting a pace, but for this to work you must do the following:
 
