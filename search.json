@@ -1,5 +1,61 @@
 [
   {
+    "objectID": "docs/teaching/CIVE461/weeks/week-2.html",
+    "href": "docs/teaching/CIVE461/weeks/week-2.html",
+    "title": "Week 1",
+    "section": "",
+    "text": "📖 Read the syllabus"
+  },
+  {
+    "objectID": "docs/teaching/CIVE461/weeks/week-2.html#prepare",
+    "href": "docs/teaching/CIVE461/weeks/week-2.html#prepare",
+    "title": "Week 1",
+    "section": "",
+    "text": "📖 Read the syllabus"
+  },
+  {
+    "objectID": "docs/teaching/CIVE461/weeks/week-2.html#participate",
+    "href": "docs/teaching/CIVE461/weeks/week-2.html#participate",
+    "title": "Week 1",
+    "section": "Participate",
+    "text": "Participate\n🖥️ Lecture 1 - Introduction to transportation planning"
+  },
+  {
+    "objectID": "docs/teaching/CIVE461/weeks/week-2.html#practice",
+    "href": "docs/teaching/CIVE461/weeks/week-2.html#practice",
+    "title": "Week 1",
+    "section": "Practice",
+    "text": "Practice\n📋 AE 0 - Travel Diary\n\n\nBack to course schedule ⏎"
+  },
+  {
+    "objectID": "docs/teaching/CIVE461/weeks/week-3.html",
+    "href": "docs/teaching/CIVE461/weeks/week-3.html",
+    "title": "Week 3",
+    "section": "",
+    "text": "📖 Complete a transportation planning experience. The transportation planning experience is an opportunity to engage with transportation planning and analysis outside of the classroom through podcasts, news stories, books, seminars, and other activities."
+  },
+  {
+    "objectID": "docs/teaching/CIVE461/weeks/week-3.html#prepare",
+    "href": "docs/teaching/CIVE461/weeks/week-3.html#prepare",
+    "title": "Week 3",
+    "section": "",
+    "text": "📖 Complete a transportation planning experience. The transportation planning experience is an opportunity to engage with transportation planning and analysis outside of the classroom through podcasts, news stories, books, seminars, and other activities."
+  },
+  {
+    "objectID": "docs/teaching/CIVE461/weeks/week-3.html#participate",
+    "href": "docs/teaching/CIVE461/weeks/week-3.html#participate",
+    "title": "Week 3",
+    "section": "Participate",
+    "text": "Participate\n🖥️ Lecture 1 - Introduction to transportation planning"
+  },
+  {
+    "objectID": "docs/teaching/CIVE461/weeks/week-3.html#practice",
+    "href": "docs/teaching/CIVE461/weeks/week-3.html#practice",
+    "title": "Week 3",
+    "section": "Practice",
+    "text": "Practice\n📋 AE 0 - Travel Diary\n\n\nBack to course schedule ⏎"
+  },
+  {
     "objectID": "research/projects/data/county_shp/county_L48_only.html",
     "href": "research/projects/data/county_shp/county_L48_only.html",
     "title": "Hawkinslab",
@@ -54,6 +110,13 @@
     "title": "Travel Diary",
     "section": "",
     "text": "Important\n\n\n\nThis application exercise should be submitted via Canvas following the Aug. 23 lecture (by end of day).\n\n\nWe will look at the relationship between several different decisions implicit in personal travel.\n\nDraw your travel for the day. You should indicate the approximate departure and travel times, mode, and destinations.\nWhich of these trips are mandatory? Which are discretionary?\nCould these trips be made by a different mode (car, taxi, ridehail, transit, scooter, bike, walk) If not, why?\nCould you move your home to change the travel time or mode for a trip? Could you perform an activity at home rather than making the trip?"
+  },
+  {
+    "objectID": "teaching/CIVE461/ae/ae-1-transportation-planning-experience.html",
+    "href": "teaching/CIVE461/ae/ae-1-transportation-planning-experience.html",
+    "title": "Transportation Planning Experience",
+    "section": "",
+    "text": "Important\n\n\n\nThis application exercise should be submitted via Canvas by Sept. 08 (by end of day).\n\n\nThe transportation planning experience is an opportunity to engage with transportation planning and analysis outside of the classroom through podcasts, news stories, books, seminars, and other activities. You should provide a short reflection (no more than 1 page) on the item. Keep in mind the following (non-exhaustive) questions:\n\nHow does the item relate to transportation planning?\nHow do you think the tools you will learn in this course might be relevant?\nDo you have any thoughts/opinions on the topic?\n\nTransportation planning experience ideas:\n\nListen to a war on cars podcast episode.\nWatch a transportation themed movie or television program, such as “Planes, Trains, and Automobiles”, “Race Across The World” (not “The Amazing Race”), or “The Human Scale”.\nRead a news article from Streetsblog or CityLab.\nRead a news article about a local transportation project/issue\nAttend a public meeting for Vision Zero Omaha, or a similar initiative."
   },
   {
     "objectID": "teaching/CIVE461/computing/computing-access.html",
@@ -151,7 +214,7 @@
     "href": "teaching/CIVE461/course-syllabus.html#assessment",
     "title": "Syllabus",
     "section": "Assessment",
-    "text": "Assessment\nAssessment for the course is comprised of six components: application exercises, homework assignments, an exam, a project, and teamwork.\n\nApplication exercises\nParts of some lectures will be dedicated to working on Application Exercises (AEs). These exercises which give you an opportunity to practice applying the transportation planning concepts and code introduced in the readings and lectures. These AEs are due within three days of the corresponding lecture period. Specifically, AEs from Monday lectures are due Thursday by 11:59 pm CT, and AEs from Wednesday lectures are due Saturday by 11:59 pm CT.\nBecause these AEs are for practice, they will be graded based on completion, i.e., a good-faith effort has been made in attempting all parts. Successful on-time completion of at least 80% of AEs will result in full credit for AEs in the final course grade.\n\n\nHomework\nIn homework, you will apply what you’ve learned during lecture to complete non-coding assignments. You may discuss homework assignments with other students; however, homework should be completed and submitted individually.\nOne homework assignment will be dedicated to a transportation planning experience. The transportation planning experience is an opportunity to engage with transportation planning and analysis outside of the classroom through podcasts, news stories, books, seminars, and other activities. As you complete these experiences, the goal is to consider how the material you’re learning in the course connects with society more broadly.\n\n\nExams\nThere will be one final exam. Through this exam you have the opportunity to demonstrate what you’ve learned in the course. The exam will focus on the conceptual understanding of the content and it may also include small analysis tasks. More detail about the exams will be given during the semester.\n\n\nProject\nThe purpose of the project is to apply what you’ve learned throughout the semester to a real-world dataset. The project will be completed with your teams, and each team will present their work in writing via deliverables due throughout the semester. More information about the project will be provided during the semester."
+    "text": "Assessment\nAssessment for the course is comprised of six components: application exercises, homework assignments, an exam, a project, and teamwork.\n\nApplication exercises\nParts of some lectures will be dedicated to working on Application Exercises (AEs). These exercises which give you an opportunity to practice applying the transportation planning concepts and code introduced in the readings and lectures. These AEs are due within two days of the corresponding lecture period. Specifically, AEs from Monday lectures are due Wednesday by 11:59 pm CT, and AEs from Wednesday lectures are due Friday by 11:59 pm CT.\nBecause these AEs are for practice, they will be graded based on completion, i.e., a good-faith effort has been made in attempting all parts. Successful on-time completion of at least 80% of AEs will result in full credit for AEs in the final course grade.\n\n\nHomework\nIn homework, you will apply what you’ve learned during lecture to complete non-coding assignments. You may discuss homework assignments with other students; however, homework should be completed and submitted individually.\n\n\nExams\nThere will be one final exam. Through this exam you have the opportunity to demonstrate what you’ve learned in the course. The exam will focus on the conceptual understanding of the content and it may also include small analysis tasks. More detail about the exams will be given during the semester.\n\n\nProject\nThe purpose of the project is to apply what you’ve learned throughout the semester to a real-world dataset. The project will be completed with your teams, and each team will present their work in writing via deliverables due throughout the semester. More information about the project will be provided during the semester."
   },
   {
     "objectID": "teaching/CIVE461/course-syllabus.html#grading",
@@ -165,7 +228,7 @@
     "href": "teaching/CIVE461/course-syllabus.html#five-tips-for-success",
     "title": "Syllabus",
     "section": "Five tips for success",
-    "text": "Five tips for success\nYour success on this course depends very much on you and the effort you put into it. The course has been organized so that the burden of learning is on you. Your TA and I will help you be providing you with materials and answering questions and setting a pace, but for this to work you must do the following:\n\nComplete all the preparation work before class.\nAsk questions. As often as you can. In class, out of class. Ask me, ask the TA, ask your friends, ask the person sitting next to you. This will help you more than anything else. If you get a question wrong on an assessment, ask us why. If you’re not sure about the homework, ask. If you hear something on the news that sounds related to what we discussed, ask. If the reading is confusing, ask.\nDo the readings.\nDo the homework and contribute to the team project.The earlier you start, the better. It’s not enough to just mechanically plow through the exercises. You should ask yourself how these exercises relate to earlier material, and imagine how they might be changed (to make questions for an exam, for example.)\nDon’t procrastinate. If something is confusing to you in Week 2, Week 3 will become more confusing, Week 4 even worse, and eventually you won’t know where to begin asking questions. Don’t let the week end with unanswered questions. But if you find yourself falling behind and not knowing where to begin asking, come to office hours, and let me help you identify a good (re)starting point."
+    "text": "Five tips for success\nYour success in this course depends very much on you and the effort you put into it. The course has been organized so that the burden of learning is on you. Your TA and I will help you be providing you with materials and answering questions and setting a pace, but for this to work you must do the following:\n\nComplete all the preparation work before class.\nAsk questions. As often as you can. In class, out of class. Ask me, ask the TA, ask your friends, ask the person sitting next to you. This will help you more than anything else. If you get a question wrong on an assessment, ask us why. If you’re not sure about the homework, ask. If you hear something on the news that sounds related to what we discussed, ask. If the reading is confusing, ask.\nDo the readings.\nDo the homework and contribute to the team project.The earlier you start, the better. It’s not enough to just mechanically plow through the exercises. You should ask yourself how these exercises relate to earlier material, and imagine how they might be changed (to make questions for an exam, for example.)\nDon’t procrastinate. If something is confusing to you in Week 2, Week 3 will become more confusing, Week 4 even worse, and eventually you won’t know where to begin asking questions. Don’t let the week end with unanswered questions. But if you find yourself falling behind and not knowing where to begin asking, come to office hours, and let me help you identify a good (re)starting point."
   },
   {
     "objectID": "teaching/CIVE461/course-syllabus.html#diversity-and-inclusion",
@@ -207,35 +270,35 @@
     "href": "teaching/CIVE461/course-team.html#teaching-assistant",
     "title": "Teaching team",
     "section": "Teaching assistant",
-    "text": "Teaching assistant\n\n\n\n\n\n\n\n\n\n                                      | Name          | Office hours            | Location"
+    "text": "Teaching assistant\n\n\n\n\n\n\n\nName\n\n\nOffice hours\n\n\nLocation\n\n\n\n\n\n\n\n\n\nOmid Armantalab\n\n\nThursday 7 - 9 pm\n\n\nZoom"
   },
   {
     "objectID": "teaching/CIVE461/index.html",
     "href": "teaching/CIVE461/index.html",
     "title": "CIVE461",
     "section": "",
-    "text": "This page contains an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses, with all changes documented here.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nDate\nTopic\nPrepare\nSlides\nAE\nHW\nExam\n\n\n\n\n\n\n1\nMon, Aug 21\nWelcome to CIVE 461!\n📖\n\n\n\n\n\n\n\n\n\nWed, Aug 23\nIntroduction to transportation planning\n\n🖥️\n📋\n\n\n\n\n\n\n2\nMon, Aug 28\nStatistics\n📖\n🖥️\n\n\n\n\n\n\n\n\nWed, Aug 30\nStatistical modeling\n\n\n\n\n\n\n\n\n\n3\nMon, Sep 04\nLabor Day\n📖\n\n\n\n\n\n\n\n\n\nWed, Sep 06\nTransportation planning process\n\n🖥️\n\n\n\n\n\n\n\n4\nMon, Sep 11\nProgramming in Python\n📖\n🖥️\n\n\n\n\n\n\n\n\nWed, Sep 13\nTrip generation\n\n🖥️\n\n\n\n\n\n\n\n5\nMon, Sep 18\nTrip generation\n📖\n\n\n\n\n\n\n\n\n\nWed, Sep 20\nTrip generation\n\n\n\n\n\n\n\n\n\n6\nMon, Sep 25\nTransportation regulation\n📖\n🖥️\n\n\n\n\n\n\n\n\nWed Sep 27\nTransportation data\n\n🖥️\n\n\n\n\n\n\n\n7\nMon, Oct 02\nTrip distribution\n📖\n🖥️\n\n\n\n\n\n\n\n\nWed, Oct 04\nTrip distribution\n\n\n\n\n\n\n\n\n\n8\nMon, Oct 09\nTrip distribution\n📖\n\n\n\n\n\n\n\n\n\nWed, Oct 11\nTransportation equity\n\n🖥️\n\n\n\n\n\n\n\n9\nMon, Oct 16\n*Fall break**\n📖\n\n\n\n\n\n\n\n\n\nWed Oct 18\nChoice models\n\n🖥️\n\n\n\n\n\n\n\n10\nMon, Oct 23\nProgramming choice models\n📖\n🖥️\n\n\n\n\n\n\n\n\nWed, Oct 25\nMode and destination choice\n\n🖥️\n\n\n\n\n\n\n\n11\nMon, Oct 30\nMode and destination choice\n📖\n\n\n\n\n\n\n\n\n\nWed, Nov 01\nTrip assignment\n\n🖥️\n\n\n\n\n\n\n\n12\nMon, Nov 06\nTrip assignment\n📖\n\n\n\n\n\n\n\n\n\nWed, Nov 08\nTrip assignment\n\n\n\n\n\n\n\n\n\n13\nMon, Nov 13\nFreight modeling\n📖\n🖥️\n\n\n\n\n\n\n\n\nWed, Nov 15\nFreight modeling\n\n\n\n\n\n\n\n\n\n14\nMon, Nov 20\nLand use planning\n📖\n🖥️\n\n\n\n\n\n\n\n\nWed Nov 22\nThanksgiving break\n\n\n\n\n\n\n\n\n\n15\nMon, Nov 27\nLand use planning\n📖\n\n\n\n\n\n\n\n\n\nWed, Nov 28\nTransportation economics\n\n🖥️\n\n\n\n\n\n\n\n16\nMon, Dec 04\nTransportation economics\n📖\n\n\n\n\n\n\n\n\n\nWed, Dec 06\nTBD"
+    "text": "This page contains an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses, with all changes documented here.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nDate\nTopic\nPrepare\nSlides\nAE\nHW\nExam\n\n\n\n\n\n\n1\nMon, Aug 21\nWelcome to CIVE 461!\n📖\n\n\n\n\n\n\n\n\n\nWed, Aug 23\nIntroduction to transportation planning\n\n🖥️\n📋\n\n\n\n\n\n\n2\nMon, Aug 28\nStatistics\n📖\n🖥️\n\n\n\n\n\n\n\n\nWed, Aug 30\nStatistical modeling\n\n\n\n\n\n\n\n\n\n3\nMon, Sep 04\nLabor Day\n📖\n\n\n\n\n\n\n\n\n\nWed, Sep 06\nTransportation planning process\n\n🖥️\n📋\n\n\n\n\n\n\n4\nMon, Sep 11\nProgramming in Python\n📖\n\n\n\n\n\n\n\n\n\nWed, Sep 13\nTrip generation\n\n\n\n\n\n\n\n\n\n\nMon, Sep 18\nTrip generation\n\n\n\n\n\n\n\n\n\n\nWed, Sep 20\nTrip generation\n\n\n\n\n\n\n\n\n\n\nMon, Sep 25\nTransportation regulation\n\n\n\n\n\n\n\n\n\n\nWed Sep 27\nTransportation data\n\n\n\n\n\n\n\n\n\n\nMon, Oct 02\nTrip distribution\n\n\n\n\n\n\n\n\n\n\nWed, Oct 04\nTrip distribution\n\n\n\n\n\n\n\n\n\n\nMon, Oct 09\nTrip distribution\n\n\n\n\n\n\n\n\n\n\nWed, Oct 11\nTransportation equity\n\n\n\n\n\n\n\n\n\n\nMon, Oct 16\n*Fall break**\n\n\n\n\n\n\n\n\n\n\nWed Oct 18\nChoice models\n\n\n\n\n\n\n\n\n\n\nMon, Oct 23\nProgramming choice models\n\n\n\n\n\n\n\n\n\n\nWed, Oct 25\nMode and destination choice\n\n\n\n\n\n\n\n\n\n\nMon, Oct 30\nMode and destination choice\n\n\n\n\n\n\n\n\n\n\nWed, Nov 01\nTrip assignment\n\n\n\n\n\n\n\n\n\n\nMon, Nov 06\nTrip assignment\n\n\n\n\n\n\n\n\n\n\nWed, Nov 08\nTrip assignment\n\n\n\n\n\n\n\n\n\n\nMon, Nov 13\nFreight modeling\n\n\n\n\n\n\n\n\n\n\nWed, Nov 15\nFreight modeling\n\n\n\n\n\n\n\n\n\n\nMon, Nov 20\nLand use planning\n\n\n\n\n\n\n\n\n\n\nWed Nov 22\nThanksgiving break\n\n\n\n\n\n\n\n\n\n\nMon, Nov 27\nLand use planning\n\n\n\n\n\n\n\n\n\n\nWed, Nov 28\nTransportation economics\n\n\n\n\n\n\n\n\n\n\nMon, Dec 04\nTransportation economics\n\n\n\n\n\n\n\n\n\n\nWed, Dec 06\nTBD"
   },
   {
     "objectID": "teaching/CIVE461/project/project-description.html",
     "href": "teaching/CIVE461/project/project-description.html",
     "title": "Project description",
     "section": "",
-    "text": "Report 1 due Wed, Sept 25\nReport 2 due Wed, Oct 25\nReport 3 due Wed, Nov 08\nFinal report due Wed, Dec 06"
+    "text": "Report 1 due Wed, Sept 27\nReport 2 due Wed, Oct 25\nReport 3 due Wed, Nov 08\nFinal report due Wed, Dec 06"
   },
   {
     "objectID": "teaching/CIVE461/project/project-description.html#timeline",
     "href": "teaching/CIVE461/project/project-description.html#timeline",
     "title": "Project description",
     "section": "",
-    "text": "Report 1 due Wed, Sept 25\nReport 2 due Wed, Oct 25\nReport 3 due Wed, Nov 08\nFinal report due Wed, Dec 06"
+    "text": "Report 1 due Wed, Sept 27\nReport 2 due Wed, Oct 25\nReport 3 due Wed, Nov 08\nFinal report due Wed, Dec 06"
   },
   {
     "objectID": "teaching/CIVE461/project/project-description.html#introduction",
     "href": "teaching/CIVE461/project/project-description.html#introduction",
     "title": "Project description",
     "section": "Introduction",
-    "text": "Introduction\nTL;DR: Build a 4-step travel model for a US metrpolitan region. That is your term project.\nThe final project task is for you to use aggregate and disaggregate transportation planning methods to develop a 4-step travel demand model for a US metropolitan area of your choice. The goal of this project is for you to demonstrate proficiency in the techniques we have covered in this class (and beyond, if you like!) and apply them to a real-world dataset to analyze it in a meaningful way.\nAll analyses must be done in Python or R, and all components of the project must be reproducible.\n\nLogistics\nThis assignment will be performed in groups of 3-4 students. Groups will be chosen by the instructor to include a mix of programming skill levels and to match other metrics.\nThe primary deliverable for the final project is a written, reproducible report detailing your analysis."
+    "text": "Introduction\nTL;DR: Build a 4-step travel model for a US metropolitan region. That is your term project.\nThe final project task is for you to use aggregate and disaggregate transportation planning methods to develop a 4-step travel demand model for a US metropolitan area of your choice. The goal of this project is for you to demonstrate proficiency in the techniques we have covered in this class (and beyond, if you like!) and apply them to a real-world dataset to analyze it in a meaningful way.\nAll analyses must be done in Python or R, and all components of the project must be reproducible.\n\nLogistics\nThis assignment will be performed in groups of 3-4 students. Groups will be chosen by the instructor to include a mix of programming skill levels and to match other metrics.\nThe primary deliverable for the final project is a written, reproducible report detailing your analysis."
   },
   {
     "objectID": "teaching/CIVE461/project/project-description.html#group-project-reports",
@@ -1202,6 +1265,76 @@
     "title": "Week 1",
     "section": "Practice",
     "text": "Practice\n📋 AE 0 - Travel Diary\n\n\nBack to course schedule ⏎"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-2.html",
+    "href": "teaching/CIVE461/weeks/week-2.html",
+    "title": "Week 2",
+    "section": "",
+    "text": "📖 Review Ch. 1 of Regression and Other Stories ROS"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-2.html#prepare",
+    "href": "teaching/CIVE461/weeks/week-2.html#prepare",
+    "title": "Week 2",
+    "section": "",
+    "text": "📖 Review Ch. 1 of Regression and Other Stories ROS"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-2.html#participate",
+    "href": "teaching/CIVE461/weeks/week-2.html#participate",
+    "title": "Week 2",
+    "section": "Participate",
+    "text": "Participate\n🖥️ Lecture 2 - Statistical Modeling\n\n\nBack to course schedule ⏎"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-3.html",
+    "href": "teaching/CIVE461/weeks/week-3.html",
+    "title": "Week 3",
+    "section": "",
+    "text": "📖 Find a resource for the transportation planning experience. The transportation planning experience is an opportunity to engage with transportation planning and analysis outside of the classroom through podcasts, news stories, books, seminars, and other activities."
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-3.html#prepare",
+    "href": "teaching/CIVE461/weeks/week-3.html#prepare",
+    "title": "Week 3",
+    "section": "",
+    "text": "📖 Find a resource for the transportation planning experience. The transportation planning experience is an opportunity to engage with transportation planning and analysis outside of the classroom through podcasts, news stories, books, seminars, and other activities."
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-3.html#participate",
+    "href": "teaching/CIVE461/weeks/week-3.html#participate",
+    "title": "Week 3",
+    "section": "Participate",
+    "text": "Participate\n🖥️ Lecture 3 - Transportation Planning Process"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-3.html#practice",
+    "href": "teaching/CIVE461/weeks/week-3.html#practice",
+    "title": "Week 3",
+    "section": "Practice",
+    "text": "Practice\n📋 AE 1 - Transportation Planning Experience\n\n\nBack to course schedule ⏎"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-4.html",
+    "href": "teaching/CIVE461/weeks/week-4.html",
+    "title": "Week 1",
+    "section": "",
+    "text": "📖 Follow the instructions on the computing access page prior to lecture."
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-4.html#prepare",
+    "href": "teaching/CIVE461/weeks/week-4.html#prepare",
+    "title": "Week 1",
+    "section": "",
+    "text": "📖 Follow the instructions on the computing access page prior to lecture."
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-4.html#practice",
+    "href": "teaching/CIVE461/weeks/week-4.html#practice",
+    "title": "Week 1",
+    "section": "Practice",
+    "text": "Practice\n📋 Submit Jupyter notebooks from in-class tutorials as pdf files.\n\n\nBack to course schedule ⏎"
   },
   {
     "objectID": "teaching/CIVE864/CIVE864.html",
