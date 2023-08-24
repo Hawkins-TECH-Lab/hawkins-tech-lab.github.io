@@ -11,8 +11,8 @@ Jason's work focuses on innovation in transportation planning and engineering po
 
 | Office hours                  | Location                                                                                                                  |
 |-------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| Mondays 10:30 am - 11:30 am   | PKI 206C                                                                                                            |
-| Wednesdays 10:30 am - 11:30 am | NH 165                                                                                                              |
+| Mondays 11:00 am - 12:00 pm   | PKI 206C & [Zoom](https://unl.zoom.us/my/jason.hawkins.unl)                                                                                                           |
+| Wednesdays 9:00 am - 10:00 am | NH 165 & [Zoom](https://unl.zoom.us/my/jason.hawkins.unl)                                                                                                             |
 
 If these times don't work for you or you'd like to schedule a one-on-one meeting, you can do so by messaging me on Canvas.
 
@@ -31,8 +31,8 @@ If these times don't work for you or you'd like to schedule a one-on-one meeting
 <tr class="odd">
 <td style="text-align: center;"><img src="images/team/omid.jpg" class="img-fluid"></td>
 <td>Omid Armantalab</td>
-<td>Thursday 7 - 9 pm</td>
-<td><a href="https://sakai.duke.edu/portal/site/779c3ebe-3b88-4bcc-bd01-1813e8396a23/page/d5eef508-07a4-4c6d-b7bd-4614a9631562">Zoom</a></td>
+<td>Mondays 3:00 pm - 5:00 pm</td>
+<td>NH 165 & [Zoom](TBD)</td>
 </tr>
 </tbody>
 </table>
