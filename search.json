@@ -256,21 +256,21 @@
     "href": "teaching/CIVE461/course-team.html",
     "title": "Teaching team",
     "section": "",
-    "text": "Dr. Jason Hawkins (he/him) is Assistant Professor of Civil and Environmental Engineering at the University of Nebraska - Lincoln. Jason’s work focuses on innovation in transportation planning and engineering policy analysis, with an emphasis on choice models, spatial statistics, and equity.\n\n\n\n\n\n\n\nOffice hours\nLocation\n\n\n\n\nMondays 10:30 am - 11:30 am\nPKI 206C\n\n\nWednesdays 10:30 am - 11:30 am\nNH 165\n\n\n\nIf these times don’t work for you or you’d like to schedule a one-on-one meeting, you can do so by messaging me on Canvas."
+    "text": "Dr. Jason Hawkins (he/him) is Assistant Professor of Civil and Environmental Engineering at the University of Nebraska - Lincoln. Jason’s work focuses on innovation in transportation planning and engineering policy analysis, with an emphasis on choice models, spatial statistics, and equity.\n\n\n\nOffice hours\nLocation\n\n\n\n\nMondays 11:00 am - 12:00 pm\nPKI 206C & Zoom\n\n\nWednesdays 9:00 am - 10:00 am\nNH 165 & Zoom\n\n\n\nIf these times don’t work for you or you’d like to schedule a one-on-one meeting, you can do so by messaging me on Canvas."
   },
   {
     "objectID": "teaching/CIVE461/course-team.html#instructor",
     "href": "teaching/CIVE461/course-team.html#instructor",
     "title": "Teaching team",
     "section": "",
-    "text": "Dr. Jason Hawkins (he/him) is Assistant Professor of Civil and Environmental Engineering at the University of Nebraska - Lincoln. Jason’s work focuses on innovation in transportation planning and engineering policy analysis, with an emphasis on choice models, spatial statistics, and equity.\n\n\n\n\n\n\n\nOffice hours\nLocation\n\n\n\n\nMondays 10:30 am - 11:30 am\nPKI 206C\n\n\nWednesdays 10:30 am - 11:30 am\nNH 165\n\n\n\nIf these times don’t work for you or you’d like to schedule a one-on-one meeting, you can do so by messaging me on Canvas."
+    "text": "Dr. Jason Hawkins (he/him) is Assistant Professor of Civil and Environmental Engineering at the University of Nebraska - Lincoln. Jason’s work focuses on innovation in transportation planning and engineering policy analysis, with an emphasis on choice models, spatial statistics, and equity.\n\n\n\nOffice hours\nLocation\n\n\n\n\nMondays 11:00 am - 12:00 pm\nPKI 206C & Zoom\n\n\nWednesdays 9:00 am - 10:00 am\nNH 165 & Zoom\n\n\n\nIf these times don’t work for you or you’d like to schedule a one-on-one meeting, you can do so by messaging me on Canvas."
   },
   {
     "objectID": "teaching/CIVE461/course-team.html#teaching-assistant",
     "href": "teaching/CIVE461/course-team.html#teaching-assistant",
     "title": "Teaching team",
     "section": "Teaching assistant",
-    "text": "Teaching assistant\n\n\n\n\n\n\n\nName\n\n\nOffice hours\n\n\nLocation\n\n\n\n\n\n\n\n\n\nOmid Armantalab\n\n\nThursday 7 - 9 pm\n\n\nZoom"
+    "text": "Teaching assistant\n\n\n\n\n\n\n\nName\n\n\nOffice hours\n\n\nLocation\n\n\n\n\n\n\n\n\n\nOmid Armantalab\n\n\nMondays 3:00 pm - 5:00 pm\n\n\nNH 165 & Zoom"
   },
   {
     "objectID": "teaching/CIVE461/index.html",
@@ -571,21 +571,14 @@
     "href": "teaching/CIVE461/slides/lec-1.html#primer-on-logic",
     "title": "Lecture 1 - Introduction",
     "section": "Primer On Logic",
-    "text": "Primer On Logic\n\nTwo classical approaches to theory development\n\nDeductive builds a theoretical model & tests its prediction against observation (common in pure & social sciences)\nInductive collects data & searches for general laws (common in engineering & computer science)\n\n\n\n\n\n\nDeductive Reasoning\n\n\n\n\n\n\n\n\n\nG\n\n  \n\nTheory\n\n Theory   \n\nHypothesis\n\n Hypothesis   \n\nTheory-&gt;Hypothesis\n\n    \n\nData\n\n Data   \n\nHypothesis-&gt;Data\n\n    \n\nHypothesis Test\n\n Hypothesis Test   \n\nData-&gt;Hypothesis Test\n\n   \n\n\n\n\n\n\n\n\n\nInductive Reasoning\n\n\n\n\n\n\n\n\n\nG\n\n  \n\nObservation\n\n Observation   \n\nPattern\n\n Pattern   \n\nObservation-&gt;Pattern\n\n    \n\nTheory\n\n Theory   \n\nPattern-&gt;Theory"
+    "text": "Primer On Logic\n\nTwo classical approaches to theory development\n\nDeductive builds a theoretical model & tests its prediction against observation (common in pure & social sciences)\nInductive collects data & searches for general laws (common in engineering & computer science)"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-1.html#primer-on-logic-1",
     "href": "teaching/CIVE461/slides/lec-1.html#primer-on-logic-1",
     "title": "Lecture 1 - Introduction",
     "section": "Primer On Logic",
-    "text": "Primer On Logic\n\n\n\n\nDeductive Reasoning\n\n\n\n\n\n\n\n\n\nG\n\n  \n\nBus alwaysdelays\n\n Bus always have delays   \n\nH: If a personby bus,will be late\n\n H: If a person travels by bus, they will be late   \n\nBus alwaysdelays-&gt;H: If a personby bus,will be late\n\n    \n\nBus in cityon-time 59% of time\n\n Bus in city are on-time 59% of time   \n\nH: If a personby bus,will be late-&gt;Bus in cityon-time 59% of time\n\n    \n\nReject\n\n Reject hypothesis   \n\nBus in cityon-time 59% of time-&gt;Reject\n\n   \n\n\n\n\n\n\n\n\n\n\n\nDeductive reasoning begins from a premise that is proven through observation\n\nConclusions reliable provided premises are true\nArgument “All bald men are grandfathers. Harold is bald. Therefore, Harold is a grandfather” logically valid but untrue if original premise is false"
-  },
-  {
-    "objectID": "teaching/CIVE461/slides/lec-1.html#primer-on-logic-2",
-    "href": "teaching/CIVE461/slides/lec-1.html#primer-on-logic-2",
-    "title": "Lecture 1 - Introduction",
-    "section": "Primer On Logic",
-    "text": "Primer On Logic\n\n\n\n\nDeductive Reasoning\n\n\n\n\n\n\n\n\n\nG\n\n  \n\nBus alwaysdelays\n\n Bus always have delays   \n\nH: If a personby bus,will be late\n\n H: If a person travels by bus, they will be late   \n\nBus alwaysdelays-&gt;H: If a personby bus,will be late\n\n    \n\nBus in cityon-time 59% of time\n\n Bus in city are on-time 59% of time   \n\nH: If a personby bus,will be late-&gt;Bus in cityon-time 59% of time\n\n    \n\nReject\n\n Reject hypothesis   \n\nBus in cityon-time 59% of time-&gt;Reject\n\n   \n\n\n\n\n\n\n\n\n\nInductive Reasoning\n\n\n\n\n\n\n\n\n\nG\n\n  \n\nA bus is delayed\n\n A bus is delayed   \n\nAnother 20 bus are delayed\n\n Another 20 bus are delayed   \n\nA bus is delayed-&gt;Another 20 bus are delayed\n\n    \n\nBus always have delays\n\n Bus always have delays   \n\nAnother 20 bus are delayed-&gt;Bus always have delays\n\n   \n\n\n\n\n\n\n\n\n\n\n\nInductive reasoning extracts a likely (but not certain) premise from specific & limited observations\n\nYou pull three coins from a bag & each coin is a penny\nInductive reasoning might suggest all coins in bag are pennies\nEven if initial observations are correct, inductive reasoning does not guarantee conclusion is true"
+    "text": "Primer On Logic\n\n\nDeductive reasoning begins from a premise that is proven through observation\n\nConclusions reliable provided premises are true\nArgument “All bald men are grandfathers. Harold is bald. Therefore, Harold is a grandfather” logically valid but untrue if original premise is false\n\nInductive reasoning extracts a likely (but not certain) premise from specific & limited observations\n\nYou pull three coins from a bag & each coin is a penny\nInductive reasoning might suggest all coins in bag are pennies\nEven if initial observations are correct, inductive reasoning does not guarantee conclusion is true"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-1.html#role-of-data-theory",
