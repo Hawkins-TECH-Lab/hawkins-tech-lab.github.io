@@ -67,7 +67,7 @@ $$ s^2 = \frac{\sum_i(x_i-\bar{x})^2}{n-1}$$
 ![](../images/lecture2/rho_gt_0.png){fig-align="center"}
 :::
 ::: {.column width="50%"}
-![](../images/lecture2/rho_gt_0.png){fig-align="center"}
+![](../images/lecture2/rho_lt_0.png){fig-align="center"}
 :::
 :::
 
