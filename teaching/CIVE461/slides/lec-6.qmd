@@ -1,6 +1,6 @@
 ---
 title: "Lecture 8 - Trip Distribution"
-subtitle: "CIVE 461/861: Urban Transportation Planning - Fall 2023"
+subtitle: "CIVE 461/861: Urban Transportation Planning"
 footer:  "[CIVE461 Home](/teaching/CIVE461/)"
 logo: "../images/logo.png"
 editor: visual

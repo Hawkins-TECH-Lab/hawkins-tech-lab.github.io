@@ -1,0 +1,18 @@
+---
+title: "Lecture 4 - Transportation Regulations"
+subtitle: "CIVE 461/861: Urban Transportation Planning"
+footer:  "[CIVE461 Home](/teaching/CIVE461/)"
+logo: "../images/logo.png"
+editor: visual
+format:
+  revealjs: 
+    theme: simple
+    transition: fade
+    chalkboard: true
+    slide-number: true
+    multiplex: true
+    mermaid-format: png
+execute:
+  freeze: auto
+---
+
