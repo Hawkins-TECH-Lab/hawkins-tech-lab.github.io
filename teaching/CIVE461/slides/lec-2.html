@@ -481,7 +481,7 @@
 </ul>
 </div>
 <div class="fragment">
-<p><span class="math display">\[Z^* = \frac{(\bar{X_1}-\bar{X_2}-(\mu_1-\mu_2)}{\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}}\]</span></p>
+<p><span class="math display">\[Z^* = \frac{(\bar{X_1}-\bar{X_2})-(\mu_1-\mu_2)}{\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}}\]</span></p>
 </div>
 </section>
 <section id="data-display-methods" class="slide level2 smaller">
@@ -573,7 +573,7 @@
 <h2>Important Considerations for Linear Regression</h2>
 <div>
 <ul>
-<li class="fragment">Important to distinguish between errors <span class="math inline">\(e_i\)</span>, which are <strong>unknown</strong> &amp; associated with true regression line and differences <span class="math inline">\(\epsilon_i\)</span> between observed <span class="math inline">\(Y_i\)</span> &amp; fitted <span class="math inline">\(\hat{Y}\)</span></li>
+<li class="fragment">Important to distinguish between <strong>errors</strong> <span class="math inline">\(e_i\)</span>, which are unknown &amp; associated with true regression line and <strong>differences</strong> <span class="math inline">\(\epsilon_i\)</span> between observed <span class="math inline">\(Y_i\)</span> &amp; fitted <span class="math inline">\(\hat{Y}\)</span></li>
 <li class="fragment"><strong>Least squares estimation (LSE)</strong> - most common line-fitting method, results from the minimization of <span class="math inline">\(\sqrt{\epsilon_i}\)</span></li>
 <li class="fragment">A <strong>change of variables</strong> can help to understand properties of the linear regression model <span class="math display">\[x_i = X_i - \bar{X}\]</span> where <span class="math inline">\(\bar{X}\)</span> is the mean of <span class="math inline">\(\mathbf{X}\)</span></li>
 </ul>
@@ -685,11 +685,11 @@ E(\hat{b}) = b &amp; Var(\bar{b}) = \frac{\sigma^2}{\sum_i x_i^2} \\
 <section id="multiple-regression-1" class="slide level2 smaller">
 <h2>Multiple Regression</h2>
 <ul>
-<li><strong>Coefficient of determination:</strong> Including additional variables always increases fit, so should use adjusted <span class="math inline">\(R^2\)</span> <span class="math display">\[R_{adj}^2 = (R^2 - \frac{k}{n-1}\frac{n-1}{n-k-1}\]</span></li>
+<li><strong>Coefficient of determination:</strong> Including additional variables always increases fit, so should use adjusted <span class="math inline">\(R^2\)</span> <span class="math display">\[R_{adj}^2 = R^2 - \frac{k}{n-1}\frac{n-1}{n-k-1}\]</span></li>
 <li>Where <span class="math inline">\(n\)</span> is sample size &amp; <span class="math inline">\(k\)</span> is number of variables in model</li>
 <li>If interested in differences between models with restrictions on included variables, can use F-test <span class="math display">\[\hat{F} = \frac{(SSR_R - SSR_U)(n-k)}{r SSR_U} ~ F_{r,n-k}\]</span></li>
 <li>Follows F-distribution with r &amp; n-k degrees of freedom</li>
-<li><strong>Intuition:</strong> if restrictions are valid, $<span class="math inline">\(SSR_R\)</span> should be similar to <span class="math inline">\(SS_U\)</span> &amp; statistic will be near zero</li>
+<li><strong>Intuition:</strong> if restrictions are valid, <span class="math inline">\(SSR_R\)</span> should be similar to <span class="math inline">\(SSR_U\)</span> &amp; statistic will be near zero</li>
 </ul>
 </section>
 <section id="building-interpreting-checking-regression-models" class="slide level2">
@@ -806,7 +806,7 @@ graph LR
 <section id="problems-with-p-values" class="slide level2 smaller">
 <h2>Problems with p-values</h2>
 <p><span style="color:#C00000"><strong>Type 1 error:</strong></span> probability of falsely rejecting a true null hypothesis (false positive)</p>
-<p><span style="color:#4F81BD"><strong>Type 1 error:</strong></span> probability of not rejecting a false null hypothesis (false negative)</p>
+<p><span style="color:#4F81BD"><strong>Type 2 error:</strong></span> probability of not rejecting a false null hypothesis (false negative)</p>
 <p><img data-src="../images/lecture2/p_value.png"></p>
 <p><img data-src="../images/lecture2/null_hypothesis.png" class="absolute fragment fade-in" style="left: 150px; bottom: 400px; width: 25%; "></p>
 <p><img data-src="../images/lecture2/alt_hypothesis.png" class="absolute fragment fade-in" style="left: 450px; bottom: 400px; width: 25%; "></p>

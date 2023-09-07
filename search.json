@@ -718,7 +718,7 @@
     "href": "teaching/CIVE461/slides/lec-2.html#hypothesis-testing",
     "title": "Lecture 2 - Statistical Modeling",
     "section": "Hypothesis Testing",
-    "text": "Hypothesis Testing\n\n\nUsed to measure whether a difference in parameter values is likely to have arisen by chance or whether some other factor is responsible for the difference\nStatistical distributions used in hypothesis testing to estimate probabilities of observing the sample data, given an assumption about what should have occurred\nIf observed results are extremely unlikely to have occurred by chance given assumed conditions, then assumed conditions are considered unlikely\nP(data│true null hypothesis) = Probability of observing the sample data conditional upon a true null hypothesis – NOT probability of null hypothesis being true\nOften test parameter value equal to zero\n\nProblem: often expect an effect and more interested in variation in effect\n\n\n\n\n\\[Z^* = \\frac{(\\bar{X_1}-\\bar{X_2}-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{s_1^2}{n_1}+\\frac{s_2^2}{n_2}}}\\]"
+    "text": "Hypothesis Testing\n\n\nUsed to measure whether a difference in parameter values is likely to have arisen by chance or whether some other factor is responsible for the difference\nStatistical distributions used in hypothesis testing to estimate probabilities of observing the sample data, given an assumption about what should have occurred\nIf observed results are extremely unlikely to have occurred by chance given assumed conditions, then assumed conditions are considered unlikely\nP(data│true null hypothesis) = Probability of observing the sample data conditional upon a true null hypothesis – NOT probability of null hypothesis being true\nOften test parameter value equal to zero\n\nProblem: often expect an effect and more interested in variation in effect\n\n\n\n\n\\[Z^* = \\frac{(\\bar{X_1}-\\bar{X_2})-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{s_1^2}{n_1}+\\frac{s_2^2}{n_2}}}\\]"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-2.html#data-display-methods",
@@ -858,7 +858,7 @@
     "href": "teaching/CIVE461/slides/lec-2.html#multiple-regression-1",
     "title": "Lecture 2 - Statistical Modeling",
     "section": "Multiple Regression",
-    "text": "Multiple Regression\n\nCoefficient of determination: Including additional variables always increases fit, so should use adjusted \\(R^2\\) \\[R_{adj}^2 = (R^2 - \\frac{k}{n-1}\\frac{n-1}{n-k-1}\\]\nWhere \\(n\\) is sample size & \\(k\\) is number of variables in model\nIf interested in differences between models with restrictions on included variables, can use F-test \\[\\hat{F} = \\frac{(SSR_R - SSR_U)(n-k)}{r SSR_U} ~ F_{r,n-k}\\]\nFollows F-distribution with r & n-k degrees of freedom\nIntuition: if restrictions are valid, $\\(SSR_R\\) should be similar to \\(SS_U\\) & statistic will be near zero"
+    "text": "Multiple Regression\n\nCoefficient of determination: Including additional variables always increases fit, so should use adjusted \\(R^2\\) \\[R_{adj}^2 = R^2 - \\frac{k}{n-1}\\frac{n-1}{n-k-1}\\]\nWhere \\(n\\) is sample size & \\(k\\) is number of variables in model\nIf interested in differences between models with restrictions on included variables, can use F-test \\[\\hat{F} = \\frac{(SSR_R - SSR_U)(n-k)}{r SSR_U} ~ F_{r,n-k}\\]\nFollows F-distribution with r & n-k degrees of freedom\nIntuition: if restrictions are valid, \\(SSR_R\\) should be similar to \\(SSR_U\\) & statistic will be near zero"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-2.html#building-interpreting-checking-regression-models",
@@ -886,7 +886,7 @@
     "href": "teaching/CIVE461/slides/lec-2.html#problems-with-p-values",
     "title": "Lecture 2 - Statistical Modeling",
     "section": "Problems with p-values",
-    "text": "Problems with p-values\nType 1 error: probability of falsely rejecting a true null hypothesis (false positive)\nType 1 error: probability of not rejecting a false null hypothesis (false negative)"
+    "text": "Problems with p-values\nType 1 error: probability of falsely rejecting a true null hypothesis (false positive)\nType 2 error: probability of not rejecting a false null hypothesis (false negative)"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-2.html#poll-1",
