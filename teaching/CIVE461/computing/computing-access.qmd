@@ -8,10 +8,10 @@ To access computing resources for CIVE 461/861:
 
 2. Install Google Colaboratory as an additional app (if not already available). It can be downloaded by clicking the **New** button, **More**, **Connect more apps**, and searching for **Colaboratory**.
 
-2a.  Download the **CIVE461.zip** file from the CIVE461 Canvas page under the **Assignments** module.
+3. (a)  Download the **CIVE461.zip** file from the CIVE461 Canvas page under the **Assignments** module.
 
-2b. Alternatively, use a shared Google Colaboratory folder from another team member. You must be **given access** to that folder and **create a shortcut** to the folder on your Google Drive for this option to work.
+3. (b) Alternatively, use a shared Google Colaboratory folder from another team member. You must be **given access** to that folder and **create a shortcut** to the folder on your Google Drive for this option to work.
 
-3.  Upload the **unzipped folder** to your Google Drive.
+4.  Upload the **unzipped folder** to your Google Drive.
 
-4. If you have any issues, please consult a friend before contacting the instructor or GTA.
+5. If you have any issues, please consult a friend before contacting the instructor or GTA.
