@@ -123,7 +123,7 @@
     "href": "teaching/CIVE461/computing/computing-access.html",
     "title": "Computing access",
     "section": "",
-    "text": "To access computing resources for CIVE 461/861:\n\nCreate a Google account.\nInstall Google Colaboratory as an additional app (if not already available). It can be downloaded by clicking the New button, More, Connect more apps, and searching for Colaboratory.\n\n2a. Download the CIVE461.zip file from the CIVE461 Canvas page under the Assignments module.\n2b. Alternatively, use a shared Google Colaboratory folder from another team member. You must be given access to that folder and create a shortcut to the folder on your Google Drive for this option to work.\n\nUpload the unzipped folder to your Google Drive.\nIf you have any issues, please consult a friend before contacting the instructor or GTA."
+    "text": "To access computing resources for CIVE 461/861:\n\nCreate a Google account.\nInstall Google Colaboratory as an additional app (if not already available). It can be downloaded by clicking the New button, More, Connect more apps, and searching for Colaboratory.\n\nDownload the CIVE461.zip file from the CIVE461 Canvas page under the Assignments module.\n\n\nAlternatively, use a shared Google Colaboratory folder from another team member. You must be given access to that folder and create a shortcut to the folder on your Google Drive for this option to work.\n\nUpload the unzipped folder to your Google Drive.\nIf you have any issues, please consult a friend before contacting the instructor or GTA."
   },
   {
     "objectID": "teaching/CIVE461/computing/computing-troubleshooting.html",
