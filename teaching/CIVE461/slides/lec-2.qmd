@@ -361,9 +361,9 @@ $ln(y) = a + b ln(x)$ represents power law growth (if $b > 0$) or decline (if $b
 
 ![](../images/lecture2/alt_hypothesis.png){.absolute bottom="400" left="450" width=25% .fragment .fade-in}
 
-![](../images/lecture2/red_wedge.png){.absolute bottom="120" left="250" width=20% .fragment .fade-in}
-
 ![](../images/lecture2/blue_wedge.png){.absolute bottom="120" left="460" width=10% .fragment .fade-in}
+
+![](../images/lecture2/red_wedge.png){.absolute bottom="120" left="250" width=20% .fragment .fade-in}
 
 ![](../images/lecture2/sample_size.png){.absolute bottom="300" left="300" width=20% .fragment .fade-in}
 
