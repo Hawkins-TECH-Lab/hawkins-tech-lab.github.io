@@ -351,9 +351,9 @@ Equivalently, $y = A \times e^{0.014(x-1900)}$ meaning that y increases by 1.014
 $ln(y) = a + b ln(x)$ represents power law growth (if $b > 0$) or decline (if $b < 0$) -> $y = A x^b$
 
 ## Problems with p-values {.smaller}
-<span style="color:#C00000">**Type 1 error:**</span> probability of falsely rejecting a true null hypothesis (false positive)
+<span style="color:#4F81BD">**Type 1 error:**</span> probability of falsely rejecting a true null hypothesis (false positive)
 
-<span style="color:#4F81BD">**Type 2 error:**</span> probability of not rejecting a false null hypothesis (false negative)
+<span style="color:#C00000">**Type 2 error:**</span> probability of not rejecting a false null hypothesis (false negative)
 
 ![](../images/lecture2/p_value.png)
 
