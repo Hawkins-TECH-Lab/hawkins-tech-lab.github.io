@@ -15,3 +15,4 @@ To access computing resources for CIVE 461/861:
 4.  Upload the **unzipped folder** to your Google Drive.
 
 5. If you have any issues, please consult a friend before contacting the instructor or GTA.
+
