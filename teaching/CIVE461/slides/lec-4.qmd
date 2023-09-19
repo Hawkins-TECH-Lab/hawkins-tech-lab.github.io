@@ -52,7 +52,7 @@ execute:
   - **Mode** used to get to the destination
   - **Departure time** to avoid the most congested part of the peak
   - **Trip destination** to a less congested area
-  - **Trip frequency** by undertaking the trip at another day, perhaps combining it with other activities
+  - **Trip frequency** by undertaking the trip on another day, perhaps combining it with other activities
 
 ## Trip Definitions {.smaller}
 ::: incremental
@@ -391,9 +391,9 @@ $$f=T/\sum_j D_j$$
 ## Growth Factor Modeling {.smaller}
 - Growth factor method given by
 $$T_{i+t}=F_tT_i$$
-- Where $T_i$ is total trips at time $i$, $T_{i+t} is total trips at time $i+t$, & $F_i$ is a growth factor. Determining total current trips is a simple process but forecasting future trips (i.e., $F_t$) is a **big challenge**
+- Where $T_i$ is total trips at time $i$, $T_{i+t}$ is total trips at time $i+t$, & $F_i$ is a growth factor. Determining total current trips is a simple process but forecasting future trips (i.e., $F_t$) is a **big challenge**
 - $F_t$ is related to variables such as population ($P$), income ($I$), & car ownership ($C$)
-$$F_t = \frac{f(P_t,I_t,c_t}{f(P_i,I_i,c_i}$$ 
+$$F_t = \frac{f(P_t,I_t,c_t)}{f(P_i,I_i,c_i)}$$ 
 
 ## Growth Factor Example {.smaller}
 Consider a zone with 250 households with vehicles and 250 households without vehicles. Assuming we know the average trip generation rates of each group:
@@ -472,7 +472,7 @@ $$T_i = 6 \times 500 = 3000 \text{ trips/day}$$
 
 ## Trip Generation & Accessibility {.smaller}
 - Attempts made to incorporate an **accessibility measure** into trip generation by replacing $O_i = f(H_i)$ by $f(H_i,A_i$ where $H_i$ are household characteristics & $A_i$ is an accessibility measure
-- Accessibility generally defined by $A_i = \sum_j f(E_j, C_{ij}$ 𝐴_𝑖=∑_𝑗▒𝑓(𝐸_𝑗,𝐶_{𝑖𝑗}) where $E_j$ is an attraction measure for zone $j$ &  $C_{ij}$ is a **generalized cost of travel** between zones $i$ & $j$.
+- Accessibility generally defined by $A_i = \sum_j f(E_j, C_{ij})$ where $E_j$ is an attraction measure for zone $j$ &  $C_{ij}$ is a **generalized cost of travel** between zones $i$ & $j$.
   - Often give wrong sign or non-significant results due to unresolved model dynamics &  problems from using cross-sectional rather than longitudinal data
   - Leads to **activity-based models** &  trip frequency/scheduling choice models (discussed in **CIVE864**)
 
