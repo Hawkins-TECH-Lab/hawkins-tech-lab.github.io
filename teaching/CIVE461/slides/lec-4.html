@@ -381,7 +381,7 @@
 <li><strong>Mode</strong> used to get to the destination</li>
 <li><strong>Departure time</strong> to avoid the most congested part of the peak</li>
 <li><strong>Trip destination</strong> to a less congested area</li>
-<li><strong>Trip frequency</strong> by undertaking the trip at another day, perhaps combining it with other activities</li>
+<li><strong>Trip frequency</strong> by undertaking the trip on another day, perhaps combining it with other activities</li>
 </ul></li>
 </ul>
 </section>
@@ -844,8 +844,8 @@ A1 ×Population in Downtown Area <br> + A2×Population in Inner Suburbs <br> + A
 <h2>Growth Factor Modeling</h2>
 <ul>
 <li>Growth factor method given by <span class="math display">\[T_{i+t}=F_tT_i\]</span></li>
-<li>Where <span class="math inline">\(T_i\)</span> is total trips at time <span class="math inline">\(i\)</span>, $T_{i+t} is total trips at time <span class="math inline">\(i+t\)</span>, &amp; <span class="math inline">\(F_i\)</span> is a growth factor. Determining total current trips is a simple process but forecasting future trips (i.e., <span class="math inline">\(F_t\)</span>) is a <strong>big challenge</strong></li>
-<li><span class="math inline">\(F_t\)</span> is related to variables such as population (<span class="math inline">\(P\)</span>), income (<span class="math inline">\(I\)</span>), &amp; car ownership (<span class="math inline">\(C\)</span>) <span class="math display">\[F_t = \frac{f(P_t,I_t,c_t}{f(P_i,I_i,c_i}\]</span></li>
+<li>Where <span class="math inline">\(T_i\)</span> is total trips at time <span class="math inline">\(i\)</span>, <span class="math inline">\(T_{i+t}\)</span> is total trips at time <span class="math inline">\(i+t\)</span>, &amp; <span class="math inline">\(F_i\)</span> is a growth factor. Determining total current trips is a simple process but forecasting future trips (i.e., <span class="math inline">\(F_t\)</span>) is a <strong>big challenge</strong></li>
+<li><span class="math inline">\(F_t\)</span> is related to variables such as population (<span class="math inline">\(P\)</span>), income (<span class="math inline">\(I\)</span>), &amp; car ownership (<span class="math inline">\(C\)</span>) <span class="math display">\[F_t = \frac{f(P_t,I_t,c_t)}{f(P_i,I_i,c_i)}\]</span></li>
 </ul>
 </section>
 <section id="growth-factor-example" class="slide level2 smaller">
@@ -965,7 +965,7 @@ A1 ×Population in Downtown Area <br> + A2×Population in Inner Suburbs <br> + A
 <h2>Trip Generation &amp; Accessibility</h2>
 <ul>
 <li>Attempts made to incorporate an <strong>accessibility measure</strong> into trip generation by replacing <span class="math inline">\(O_i = f(H_i)\)</span> by <span class="math inline">\(f(H_i,A_i\)</span> where <span class="math inline">\(H_i\)</span> are household characteristics &amp; <span class="math inline">\(A_i\)</span> is an accessibility measure</li>
-<li>Accessibility generally defined by <span class="math inline">\(A_i = \sum_j f(E_j, C_{ij}\)</span> 𝐴_𝑖=∑<em>𝑗▒𝑓(𝐸_𝑗,𝐶</em>{𝑖𝑗}) where <span class="math inline">\(E_j\)</span> is an attraction measure for zone <span class="math inline">\(j\)</span> &amp; <span class="math inline">\(C_{ij}\)</span> is a <strong>generalized cost of travel</strong> between zones <span class="math inline">\(i\)</span> &amp; <span class="math inline">\(j\)</span>.
+<li>Accessibility generally defined by <span class="math inline">\(A_i = \sum_j f(E_j, C_{ij})\)</span> where <span class="math inline">\(E_j\)</span> is an attraction measure for zone <span class="math inline">\(j\)</span> &amp; <span class="math inline">\(C_{ij}\)</span> is a <strong>generalized cost of travel</strong> between zones <span class="math inline">\(i\)</span> &amp; <span class="math inline">\(j\)</span>.
 <ul>
 <li>Often give wrong sign or non-significant results due to unresolved model dynamics &amp; problems from using cross-sectional rather than longitudinal data</li>
 <li>Leads to <strong>activity-based models</strong> &amp; trip frequency/scheduling choice models (discussed in <strong>CIVE864</strong>)</li>
