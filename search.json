@@ -70,6 +70,27 @@
     "text": "State all assumptions, show all calculations.\n\nThe below figure shows data corresponding to the fitted line y = 0.065x + 2.38 with residual standard deviation 1.42. The residual standard deviation is a measure of remaining variation not captured by the regression model. The range of income is roughly between $29,000 and $195,000.\n\n\nSketch hypothetical data (in pen or pencil) with the same range of x (income) but corresponding to the line y = 0.065x + 1.25 with residual standard deviation 1.42.\nSketch hypothetical data (in a different color than in part a) with the same range of x (income) but corresponding to the line y = 0.065x + 1.25 with residual standard deviation 5.0. Note: negative VMT values are fine for this exercise.\n\n\n\n\nFigure 1. Annual VMT by income ($1000)\n\n\n\nGive examples of applied statistics problems of interest to you in which the goals are:\n\n\nForecasting/classification\nExploring associations\nExtrapolation\nCausal inference\n\n\nA survey is conducted in a certain state regarding support for increasing the gas tax to fund transportation investments. In this survey, a higher tax is supported by 50% of respondents aged 18-29, 60% of respondents aged 30-44, 25% of respondents aged 45-64, and 10% of respondents aged 65 and up. Use the weighted average formula (available in many places online) to compute the proportion of respondents in the sample who support a higher tax. Assume there is no nonresponse.\n\n\nFor the sample: Suppose the sample includes 50 respondents aged 18-29, 300 aged 30-44, 275 aged 45-64, and 375 aged 65+.\nFor the Nebraska population: Assume the state where the survey was performed is Nebraska. How would you adjust your weighted average to represent the population? Assume the following population distribution for the state.\n\n\nTable 1. Population Distribution for Nebraska\n\n\nAge group\nNE population\n\n\n\n\n18-29\n265260\n\n\n30-44\n368768\n\n\n45-64\n458101\n\n\n65+\n312458\n\n\n\n\nAn analyst is interested in the relationship between demographic features and electric vehicle (EV) adoption. They develop a procedure to determine variables that might affect adoption (see figure below). Their procedure starts with 242 features (variables), which they narrow to 82 features using t-test statistics. In the below figure, the term “features to be engineered” simply refers to combining and transforming variables to reduce the number of features and/or their correlation. As a hint, this study was chosen as an example of low-quality analysis. There may be no clear interpretation to a figure, and it is acceptable to state this conclusion.\n\n\nPlease comment on the validity of this procedure. Note: There is no single solution to this problem. The goal is to start thinking about data analysis.\n\n\n\n\nFigure 2. Analysis workflow\n\n\n\nThe analyst generates the following figure. What information is provided by this figure? Is its implication evident from the available information? What additional information would help to clarify its interpretation?\n\n\n\n\nFigure 3. Histogram plot showing population with more than one vehicle, illustrating the highly non-normal distribution of a typical demographic feature"
   },
   {
+    "objectID": "teaching/CIVE461/ae/ae-3-transport-plans.html",
+    "href": "teaching/CIVE461/ae/ae-3-transport-plans.html",
+    "title": "Urban Transportation Plans",
+    "section": "",
+    "text": "We discussed several transportation and urban develop plans for the Nebraska cities of Lincoln and Omaha in lecture. Please provide a brief (3-5 sentence) summary of your thoughts on the class discussion via Canvas. The document is provided below\n\n\n\nThis browser does not support PDFs. Please download the PDF to view it: Download PDF."
+  },
+  {
+    "objectID": "teaching/CIVE461/ae/ae-4-trip-distribution.html",
+    "href": "teaching/CIVE461/ae/ae-4-trip-distribution.html",
+    "title": "Urban Transportation Plans",
+    "section": "",
+    "text": "We worked through several trip distribution questions in class. Please submit your work via Canvas. The document is provided below\n\n\n\nThis browser does not support PDFs. Please download the PDF to view it: Download PDF."
+  },
+  {
+    "objectID": "teaching/CIVE461/ae/ae-5-equity.html",
+    "href": "teaching/CIVE461/ae/ae-5-equity.html",
+    "title": "Transportation Equity",
+    "section": "",
+    "text": "We discussed several transportation and urban develop equity issues in lecture. Please provide a brief (3-5 sentence) summary of your thoughts on the class discussion via Canvas."
+  },
+  {
     "objectID": "teaching/CIVE461/computing/computing-access.html",
     "href": "teaching/CIVE461/computing/computing-access.html",
     "title": "Computing access",
@@ -228,21 +249,21 @@
     "href": "teaching/CIVE461/index.html",
     "title": "CIVE461",
     "section": "",
-    "text": "This page contains an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses, with all changes documented here.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nDate\nTopic\nPrepare\nSlides\nAE\nHW\nExam\n\n\n\n\n\n\n1\nMon, Aug 21\nWelcome to CIVE 461!\n📖\n\n\n\n\n\n\n\n\n\nWed, Aug 23\nIntroduction to transportation planning\n\n🖥️\n📋\n\n\n\n\n\n\n2\nMon, Aug 28\nStatistics\n📖\n🖥️\n\n\n\n\n\n\n\n\nWed, Aug 30\nStatistical modeling\n\n\n\n\n\n\n\n\n\n3\nMon, Sep 04\nLabor Day\n📖\n\n\n\n\n\n\n\n\n\nWed, Sep 06\nTransportation planning process\n\n🖥️\n📋\n\n\n\n\n\n\n4\nMon, Sep 11\nProgramming in Python\n📖\n\n\n\n\n\n\n\n\n\nWed, Sep 13\nTrip generation\n\n🖥️\n📋\n\n\n\n\n\n\n\nMon, Sep 18\nTrip generation\n\n\n\n\n\n\n\n\n\n\nWed, Sep 20\nTrip generation\n\n\n\n\n\n\n\n\n\n\nMon, Sep 25\nTransportation regulation\n\n\n\n\n\n\n\n\n\n\nWed Sep 27\nTransportation data\n\n\n\n\n\n\n\n\n\n\nMon, Oct 02\nTrip distribution\n\n\n\n\n\n\n\n\n\n\nWed, Oct 04\nTrip distribution\n\n\n\n\n\n\n\n\n\n\nMon, Oct 09\nTrip distribution\n\n\n\n\n\n\n\n\n\n\nWed, Oct 11\nTransportation equity\n\n\n\n\n\n\n\n\n\n\nMon, Oct 16\n*Fall break**\n\n\n\n\n\n\n\n\n\n\nWed Oct 18\nChoice models\n\n\n\n\n\n\n\n\n\n\nMon, Oct 23\nProgramming choice models\n\n\n\n\n\n\n\n\n\n\nWed, Oct 25\nMode and destination choice\n\n\n\n\n\n\n\n\n\n\nMon, Oct 30\nMode and destination choice\n\n\n\n\n\n\n\n\n\n\nWed, Nov 01\nTrip assignment\n\n\n\n\n\n\n\n\n\n\nMon, Nov 06\nTrip assignment\n\n\n\n\n\n\n\n\n\n\nWed, Nov 08\nTrip assignment\n\n\n\n\n\n\n\n\n\n\nMon, Nov 13\nFreight modeling\n\n\n\n\n\n\n\n\n\n\nWed, Nov 15\nFreight modeling\n\n\n\n\n\n\n\n\n\n\nMon, Nov 20\nLand use planning\n\n\n\n\n\n\n\n\n\n\nWed Nov 22\nThanksgiving break\n\n\n\n\n\n\n\n\n\n\nMon, Nov 27\nLand use planning\n\n\n\n\n\n\n\n\n\n\nWed, Nov 28\nTransportation economics\n\n\n\n\n\n\n\n\n\n\nMon, Dec 04\nTransportation economics\n\n\n\n\n\n\n\n\n\n\nWed, Dec 06\nTBD"
+    "text": "This page contains an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses, with all changes documented here.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nDate\nTopic\nPrepare\nSlides\nAE\nHW\nExam\n\n\n\n\n\n\n1\nMon, Aug 21\nWelcome to CIVE 461!\n📖\n\n\n\n\n\n\n\n\n\nWed, Aug 23\nIntroduction to transportation planning\n\n🖥️\n📋\n\n\n\n\n\n\n2\nMon, Aug 28\nStatistics\n📖\n🖥️\n\n\n\n\n\n\n\n\nWed, Aug 30\nStatistical modeling\n\n\n\n\n\n\n\n\n\n3\nMon, Sep 04\nLabor Day\n📖\n\n\n\n\n\n\n\n\n\nWed, Sep 06\nStatistical modeling\n\n\n📋\n\n\n\n\n\n\n4\nMon, Sep 11\nProgramming in Python\n📖\n\n\n\n\n\n\n\n\n\nWed, Sep 13\nTrip generation\n\n🖥️\n📋\n\n\n\n\n\n\n5\nMon, Sep 18\nTrip generation\n\n\n\n\n\n\n\n\n\n\nWed, Sep 20\nTrip generation\n\n\n\n\n\n\n\n\n\n6\nMon, Sep 25\nTrip generation\n\n\n\n\n\n\n\n\n\n\nWed Sep 27\nTransportation planning process, regulation, and data\n\n🖥️\n\n✍️\n\n\n\n\n\n7\nMon, Oct 02\nTransportation planning process, regulation, and data\n\n\n\n\n\n\n\n\n\n\nWed, Oct 04\nTrip distribution\n\n\n\n\n\n\n\n\n\n8\nMon, Oct 09\nTrip distribution\n\n\n\n\n\n\n\n\n\n\nWed, Oct 11\nTransportation equity\n\n\n\n\n\n\n\n\n\n9\nMon, Oct 16\n*Fall break**\n\n\n\n\n\n\n\n\n\n\nWed Oct 18\nGuest lecture\n\n\n\n✍️\n\n\n\n\n\n\nMon, Oct 23\nChoice models\n\n\n\n\n\n\n\n\n\n\nWed, Oct 25\nProgramming choice models\n\n\n\n\n\n\n\n\n\n\nMon, Oct 30\nMode and destination choice\n\n\n\n\n\n\n\n\n\n\nWed, Nov 01\nMode and destination choice\n\n\n\n\n\n\n\n\n\n\nMon, Nov 06\nTrip assignment\n\n\n\n✍️\n\n\n\n\n\n\nWed, Nov 08\nTrip assignment\n\n\n\n✍️\n\n\n\n\n\n\nMon, Nov 13\nTrip assignment\n\n\n\n\n\n\n\n\n\n\nWed, Nov 15\nFreight modeling\n\n\n\n\n\n\n\n\n\n\nMon, Nov 20\nFreight modeling\n\n\n\n✍️\n\n\n\n\n\n\nWed Nov 22\nThanksgiving break\n\n\n\n\n\n\n\n\n\n\nMon, Nov 27\nLand use planning\n\n\n\n\n\n\n\n\n\n\nWed, Nov 28\nTransportation economics\n\n\n\n✍️\n\n\n\n\n\n\nMon, Dec 04\nTransportation economics\n\n\n\n\n\n\n\n\n\n\nWed, Dec 06\nTBD"
   },
   {
     "objectID": "teaching/CIVE461/project/project-description.html",
     "href": "teaching/CIVE461/project/project-description.html",
     "title": "Project description",
     "section": "",
-    "text": "Report 1 due Wed, Sept 27\nReport 2 due Wed, Oct 25\nReport 3 due Wed, Nov 08\nFinal report due Wed, Dec 06"
+    "text": "Report 1 due Wed, Sept 27\nReport 2 due Wed, Oct 18\nReport 3 due Wed, Nov 08\nFinal report due Wed, Nov 28"
   },
   {
     "objectID": "teaching/CIVE461/project/project-description.html#timeline",
     "href": "teaching/CIVE461/project/project-description.html#timeline",
     "title": "Project description",
     "section": "",
-    "text": "Report 1 due Wed, Sept 27\nReport 2 due Wed, Oct 25\nReport 3 due Wed, Nov 08\nFinal report due Wed, Dec 06"
+    "text": "Report 1 due Wed, Sept 27\nReport 2 due Wed, Oct 18\nReport 3 due Wed, Nov 08\nFinal report due Wed, Nov 28"
   },
   {
     "objectID": "teaching/CIVE461/project/project-description.html#introduction",
@@ -903,690 +924,690 @@
     "text": "How to Move Beyond Hypothesis Testing\n\n\nAnalyze all data - Better to anticipate critism than hide data\nPresent all comparisons - Rather than statistically significant comparisons only\nMake data public - If a topic is worth studying, you should want others to be able to quickly progress without repeating your work\nAccept uncertainty & embrace variation - No answer is perfect\n\n\n\n\n\nCIVE461 Home"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-3.html#outline",
-    "href": "teaching/CIVE461/slides/lec-3.html#outline",
-    "title": "Lecture 3 - Transportation Planning Process",
-    "section": "Outline",
-    "text": "Outline\n\n\nDecision-making models\nPlanning and decision process\nMeasures of effectiveness"
-  },
-  {
-    "objectID": "teaching/CIVE461/slides/lec-3.html#foot-view-on-decision-making-process",
-    "href": "teaching/CIVE461/slides/lec-3.html#foot-view-on-decision-making-process",
-    "title": "Lecture 3 - Transportation Planning Process",
-    "section": "10,000 Foot View on Decision-Making Process",
-    "text": "10,000 Foot View on Decision-Making Process\n\n\n\n\n\n\n\n\n\nSubstantive Rationality\nIssue\nIndirect Approach\n\n\n\n\nInteractions with others are limited and their response depend on our actions alone\nInteractions\nThe outcome of interactions with others depend on context and their interpretation of our intentions\n\n\nThe relationships between objectives, states, goals and actions are understandable\nComplexity\nOur understanding of the relationships between objectives, states, goals and actions is imperfect but can be improved by experience\n\n\nThe problem and context can be described by a well specified and estimated analytical model\nAbstraction\nAppropriate simplification of complex problems must rely on judgement and understanding of context\n\n\nWhat happens is what we intended to happen\nIntentionality\nWhat happens is the result of complex processes whose totality nobody fully understands\n\n\nDecisions are made on the basis of the fullest possible information\nInformation\nDecisions are recommended and made acknowledging that only limited knowledge is or can be available\n\n\nThe best outcome is achieved through a conscious process of maximization\nAdaptation\nGood results are obtained through continual adaptation to constantly changing conditions\n\n\nRules and guidelines can be defined that allow people to find the correct solutions\nExpertise\nExperts can do things that others cannot – and can only learn with difficulty"
-  },
-  {
-    "objectID": "teaching/CIVE461/slides/lec-3.html#institutional-framework-transportation-planning",
-    "href": "teaching/CIVE461/slides/lec-3.html#institutional-framework-transportation-planning",
-    "title": "Lecture 3 - Transportation Planning Process",
-    "section": "Institutional Framework & Transportation Planning",
-    "text": "Institutional Framework & Transportation Planning\n\n\nMultiple actors/organizations = complicated decision-making\nEffects of institutional frameworks:\n\nOrganizational structure influences planning & decision-making process\nEffective for long-established strategies\nChallenging for new proposals / innovations"
-  },
-  {
-    "objectID": "teaching/CIVE461/slides/lec-3.html#institutional-framework-transportation-planning-1",
-    "href": "teaching/CIVE461/slides/lec-3.html#institutional-framework-transportation-planning-1",
-    "title": "Lecture 3 - Transportation Planning Process",
-    "section": "Institutional Framework & Transportation Planning",
-    "text": "Institutional Framework & Transportation Planning"
-  },
-  {
-    "objectID": "teaching/CIVE461/slides/lec-3.html#strategies-for-planers-to-overcome-institutional-barriers",
-    "href": "teaching/CIVE461/slides/lec-3.html#strategies-for-planers-to-overcome-institutional-barriers",
-    "title": "Lecture 3 - Transportation Planning Process",
-    "section": "Strategies (for Planers) to Overcome Institutional Barriers",
-    "text": "Strategies (for Planers) to Overcome Institutional Barriers\n\n\nInclusive set of partners\nExpand opportunity for public involvement\nClear identification of project financing\nAdvocate strengths of quantitative analysis: evidenced-based planning\nIncrease focus on system performance optimization\nFormal power-sharing among transportation agencies"
-  },
-  {
-    "objectID": "teaching/CIVE461/slides/lec-3.html#theoretical-models",
-    "href": "teaching/CIVE461/slides/lec-3.html#theoretical-models",
-    "title": "Lecture 3 - Transportation Planning Process",
-    "section": "Theoretical Models",
-    "text": "Theoretical Models\n\nRational actor\nSatisficing\nIncremental\nOrganizational process\nPolitical bargaining"
-  },
-  {
-    "objectID": "teaching/CIVE461/slides/lec-3.html#rational-actor-model",
-    "href": "teaching/CIVE461/slides/lec-3.html#rational-actor-model",
-    "title": "Lecture 3 - Transportation Planning Process",
-    "section": "Rational Actor Model",
-    "text": "Rational Actor Model\n\n\n\nRational, objective decision-making intended to maximize explicit set of goals & objectives\nCompletely informed decisions\nReflected in planning process that evolved in 1950s/60s\nStill used for most major transportation analysis efforts"
-  },
-  {
-    "objectID": "teaching/CIVE461/slides/lec-3.html#problems-with-rational-actor-model",
-    "href": "teaching/CIVE461/slides/lec-3.html#problems-with-rational-actor-model",
-    "title": "Lecture 3 - Transportation Planning Process",
-    "section": "Problems with Rational Actor Model",
-    "text": "Problems with Rational Actor Model\nNormative model of what decision-making should be rather than how it actually is done\n\n\nWhose goals/objectives?\nWho defines problems?\nCan all relevant alternatives be examined?\nCan all relevant information by obtained and used?\nHow to handle uncertainty?\nIgnores political pressures & non-technical actors\nEmphasizes the “one best way” to solve problems"
-  },
-  {
-    "objectID": "teaching/CIVE461/slides/lec-3.html#satisficing-model",
-    "href": "teaching/CIVE461/slides/lec-3.html#satisficing-model",
-    "title": "Lecture 3 - Transportation Planning Process",
-    "section": "Satisficing Model",
-    "text": "Satisficing Model\n\n\n\nRetains rational actors but loosens assumption that solution space can by exhaustively explored and optimal solution found\nIterative search for sufficiently good solution"
-  },
-  {
-    "objectID": "teaching/CIVE461/slides/lec-3.html#incremental-decision-making-model",
-    "href": "teaching/CIVE461/slides/lec-3.html#incremental-decision-making-model",
-    "title": "Lecture 3 - Transportation Planning Process",
-    "section": "Incremental Decision-Making Model",
-    "text": "Incremental Decision-Making Model\n\nAlso known as Science of Muddling Through\nPremise it that people:\n\nNever can agree on explicit goals & objectives\nCannot deal with large alternative set\nAre problem-simplifiers\nFocus on policies tat differ incrementally from existing ones\nContinually redefine problems & solutions"
-  },
-  {
-    "objectID": "teaching/CIVE461/slides/lec-3.html#incremental-decision-making-model-1",
-    "href": "teaching/CIVE461/slides/lec-3.html#incremental-decision-making-model-1",
-    "title": "Lecture 3 - Transportation Planning Process",
-    "section": "Incremental Decision-Making Model",
-    "text": "Incremental Decision-Making Model\n\nShifts emphasis from determining goals & objectives to dealing directly with issues & solutions\nDynamic & on-going process\nExtension of satisficing approach – recognizes limitations in information & assessment capacity\nAddresses alternative generation issue – where do alternatives originate?\n\nTypically, recycling old ideas"
-  },
-  {
-    "objectID": "teaching/CIVE461/slides/lec-3.html#incremental-decision-making-model-2",
-    "href": "teaching/CIVE461/slides/lec-3.html#incremental-decision-making-model-2",
-    "title": "Lecture 3 - Transportation Planning Process",
-    "section": "Incremental Decision-Making Model",
-    "text": "Incremental Decision-Making Model\n\n\n\n\n\n\n\n\nProblems:\n\nReactive -&gt; miss opportunities\nMyopic\nMay increment to death\nNon-incremental decisions become hard to make"
-  },
-  {
-    "objectID": "teaching/CIVE461/slides/lec-3.html#organizational-process-model",
-    "href": "teaching/CIVE461/slides/lec-3.html#organizational-process-model",
-    "title": "Lecture 3 - Transportation Planning Process",
-    "section": "Organizational Process Model",
-    "text": "Organizational Process Model\n\nMost decisions made within organizations (DOT, city, etc.)\nDecisions are influenced by:\n\nFormal & informal organizational structures\nChannels of communication\nStandard operating procedure\nOrganization’s mandate\nPolitics of bureaucracy\n\nDivisions & limitations of power\nCommunications & coordination “overhead”\nProtection of “turf”"
-  },
-  {
-    "objectID": "teaching/CIVE461/slides/lec-3.html#political-bargaining-model",
-    "href": "teaching/CIVE461/slides/lec-3.html#political-bargaining-model",
-    "title": "Lecture 3 - Transportation Planning Process",
-    "section": "Political Bargaining Model",
-    "text": "Political Bargaining Model\n\nWe live in a pluralistic society\n\nDiverse goals\nConflicts among competing groups\nBargaining required to achieve compromise\n\nDecision-making inherently political\n\nOutcomes seldom optimal\nSolutions acceptable\nControversial aspects often ignored or deferred\n\nProcess tied to election cycles, political agendas, opinion polls, etc."
-  },
-  {
-    "objectID": "teaching/CIVE461/slides/lec-3.html#decision-making-elements",
-    "href": "teaching/CIVE461/slides/lec-3.html#decision-making-elements",
-    "title": "Lecture 3 - Transportation Planning Process",
-    "section": "Decision-Making Elements",
-    "text": "Decision-Making Elements\n\n\nPluralistic – conflicting values & fragmented decision-making\nResource-allocative – limited resources lead to necessary tradeoffs\nConsensus-seeking – education, citizen involvement, mobilizing business leadership\nProblem simplifying – urban systems are complex\nUncertainty-avoiding – dramatic changes in policy, untried solutions, & long-term solutions are rare"
-  },
-  {
-    "objectID": "teaching/CIVE461/slides/lec-3.html#role-of-planning",
-    "href": "teaching/CIVE461/slides/lec-3.html#role-of-planning",
-    "title": "Lecture 3 - Transportation Planning Process",
-    "section": "Role of Planning",
-    "text": "Role of Planning\n\nPlanning informs decision-making process\nProvide information needed/wanted by decision-makers:\n\nAvailable alternatives\nTradeoffs\nConsequences\n\nProvided information must be:\n\nCredible\nUnderstandable\nTimely"
-  },
-  {
-    "objectID": "teaching/CIVE461/slides/lec-3.html#decision-making-stages",
-    "href": "teaching/CIVE461/slides/lec-3.html#decision-making-stages",
-    "title": "Lecture 3 - Transportation Planning Process",
-    "section": "Decision-Making Stages",
-    "text": "Decision-Making Stages\nPlanning relates to four major stages of decision-making:\n\nProblem identification & definition\nDebate & choice\nImplementation\nEvaluation & feedback"
-  },
-  {
-    "objectID": "teaching/CIVE461/slides/lec-3.html#planning-decision-making",
-    "href": "teaching/CIVE461/slides/lec-3.html#planning-decision-making",
-    "title": "Lecture 3 - Transportation Planning Process",
-    "section": "Planning & Decision-Making",
-    "text": "Planning & Decision-Making"
-  },
-  {
-    "objectID": "teaching/CIVE461/slides/lec-3.html#transportation-planning-process",
-    "href": "teaching/CIVE461/slides/lec-3.html#transportation-planning-process",
-    "title": "Lecture 3 - Transportation Planning Process",
-    "section": "Transportation Planning Process",
-    "text": "Transportation Planning Process\n\n\nAdaptive or mixed-mode decision-making styles seem more flexible and appropriate to the characteristics of transport problems"
-  },
-  {
-    "objectID": "teaching/CIVE461/slides/lec-3.html#monitoring",
-    "href": "teaching/CIVE461/slides/lec-3.html#monitoring",
-    "title": "Lecture 3 - Transportation Planning Process",
-    "section": "Monitoring",
-    "text": "Monitoring\n\nMonitoring approach enables a continuous planning process\nContrast with conventional approach of spending considerable resources over a period of one or two years to undertake a large-scale transport study\n\nBurst of activity may be followed by a much longer period of limited effort in planning and updating plans\nReports and master plans become obsolete or simply forgotten, and nobody capable of running the models again is left in the planning unit\n\nNew data sources allow us to better monitor and respond to system state"
-  },
-  {
-    "objectID": "teaching/CIVE461/slides/lec-3.html#transportation-planning-paradigms",
-    "href": "teaching/CIVE461/slides/lec-3.html#transportation-planning-paradigms",
-    "title": "Lecture 3 - Transportation Planning Process",
-    "section": "Transportation Planning Paradigms",
-    "text": "Transportation Planning Paradigms\nConventional\n\nFoster convergence in solutions\nFocus on short-term impacts\nPay attention to physical–material capital.\nCompetition, consumerism, and individualism\nFaith that technology will provide solutions\nAnalyses based on reductionism and assumptions of linearity"
-  },
-  {
-    "objectID": "teaching/CIVE461/slides/lec-3.html#transportation-planning-paradigms-1",
-    "href": "teaching/CIVE461/slides/lec-3.html#transportation-planning-paradigms-1",
-    "title": "Lecture 3 - Transportation Planning Process",
-    "section": "Transportation Planning Paradigms",
-    "text": "Transportation Planning Paradigms\nEmerging\n\nDiverse & creative solutions\nFocus on long-term payoffs\nSocial capital more important than physical capital\nEmphasis on cooperation, quality of life, and community\nEcology over technology\nAnalyses based on emergence and complexity"
-  },
-  {
-    "objectID": "teaching/CIVE461/slides/lec-3.html#evaluation-valuesvisions-goals-objectives",
-    "href": "teaching/CIVE461/slides/lec-3.html#evaluation-valuesvisions-goals-objectives",
-    "title": "Lecture 3 - Transportation Planning Process",
-    "section": "Evaluation: Values/Visions, Goals, & Objectives",
-    "text": "Evaluation: Values/Visions, Goals, & Objectives\n\nBefore we can meaningfully evaluate alternative policies, we must define our values and why we have them\nValues/Visions: Basic social drivers that govern human behavior\nGoals: Generalized statements that broadly relate physical environment to values – no clear quantification\nObjectives: Specific & measurable statements related to attainment of goals\nMeasures of Effectiveness: Measure of degree of attainment of particular objectives"
-  },
-  {
-    "objectID": "teaching/CIVE461/slides/lec-3.html#evaluation-valuesvisions-goals-objectives-1",
-    "href": "teaching/CIVE461/slides/lec-3.html#evaluation-valuesvisions-goals-objectives-1",
-    "title": "Lecture 3 - Transportation Planning Process",
-    "section": "Evaluation: Values/Visions, Goals, & Objectives",
-    "text": "Evaluation: Values/Visions, Goals, & Objectives"
-  },
-  {
-    "objectID": "teaching/CIVE461/slides/lec-3.html#transportation-paradigms---goals",
-    "href": "teaching/CIVE461/slides/lec-3.html#transportation-paradigms---goals",
-    "title": "Lecture 3 - Transportation Planning Process",
-    "section": "Transportation Paradigms - Goals",
-    "text": "Transportation Paradigms - Goals\nConventional\n\nSystem expansion & safety\nEfficiency improvements\nTraffic management\nDemand management\nIntelligent transportation systems (ITS)"
-  },
-  {
-    "objectID": "teaching/CIVE461/slides/lec-3.html#transportation-paradigms---goals-1",
-    "href": "teaching/CIVE461/slides/lec-3.html#transportation-paradigms---goals-1",
-    "title": "Lecture 3 - Transportation Planning Process",
-    "section": "Transportation Paradigms - Goals",
-    "text": "Transportation Paradigms - Goals\nEmerging\n\nSystem maintenance & safety\nTraffic calming & urban design\nEmphasis on connections & relationships among modes – multimodality & intermodality\nTransportation & land use interaction and integration\nDemand management for reducing motorized transport\nDemand & increase in nonmotorized travel\nEducation & public involvement"
-  },
-  {
-    "objectID": "teaching/CIVE461/slides/lec-3.html#transportation-paradigms---strategies",
-    "href": "teaching/CIVE461/slides/lec-3.html#transportation-paradigms---strategies",
-    "title": "Lecture 3 - Transportation Planning Process",
-    "section": "Transportation Paradigms - Strategies",
-    "text": "Transportation Paradigms - Strategies\nConventional\n\nSubsidies to transportation users\nTrue total costs to society not reflected in price to travel\nTechnology used to promote individual mobility, meet government-mandated performance thresholds, & improve system performance"
-  },
-  {
-    "objectID": "teaching/CIVE461/slides/lec-3.html#transportation-paradigms---strategies-1",
-    "href": "teaching/CIVE461/slides/lec-3.html#transportation-paradigms---strategies-1",
-    "title": "Lecture 3 - Transportation Planning Process",
-    "section": "Transportation Paradigms - Strategies",
-    "text": "Transportation Paradigms - Strategies\nEmerging\n\nPricing includes environmental costs\nInternalizing external costs\nTechnology used as a travel substitute"
-  },
-  {
-    "objectID": "teaching/CIVE461/slides/lec-3.html#criteria-for-goals-objectives",
-    "href": "teaching/CIVE461/slides/lec-3.html#criteria-for-goals-objectives",
-    "title": "Lecture 3 - Transportation Planning Process",
-    "section": "Criteria for Goals & Objectives",
-    "text": "Criteria for Goals & Objectives\n\n\nMust be clear, concise, & unambiguous\nObjectives must follow logically from goals\nMust reflect views & aspirations of community\nEach objective must be measurable by at least one MOE\nMOE measurement must require only a reasonable effort\nGoals & objectives should be independent of specific plans & modes"
-  },
-  {
-    "objectID": "teaching/CIVE461/slides/lec-3.html#criteria-for-moe",
-    "href": "teaching/CIVE461/slides/lec-3.html#criteria-for-moe",
-    "title": "Lecture 3 - Transportation Planning Process",
-    "section": "Criteria for MOE",
-    "text": "Criteria for MOE\n\n\nRelevant to objectives\nMeasurable\nSensitive\n\nTo policy of interest\nDifferentiate impacts by interest group\n\nUnbiased\nManageable\nUnderstandable"
-  },
-  {
-    "objectID": "teaching/CIVE461/slides/lec-3.html#accessibility-moe",
-    "href": "teaching/CIVE461/slides/lec-3.html#accessibility-moe",
-    "title": "Lecture 3 - Transportation Planning Process",
-    "section": "Accessibility MOE",
-    "text": "Accessibility MOE\n\nAverage travel time from origin to destination\nAverage trip length\nAccessibility index\nMode split by region, facility, or route\nPercentage of employment/activity centers within X miles of major highways/transit station\nNumber of bridges with vertical clearance less than X feet\nPercent of population within X minutes of Y percent of employment sites\nPercent of region’s mobility impaired population who reach specific activity by public transit"
-  },
-  {
-    "objectID": "teaching/CIVE461/slides/lec-3.html#mobility-moe",
-    "href": "teaching/CIVE461/slides/lec-3.html#mobility-moe",
-    "title": "Lecture 3 - Transportation Planning Process",
-    "section": "Mobility MOE",
-    "text": "Mobility MOE\n\n\n\n\nOrigin to destination travel times\nAverage speed or travel time\nVehicle-miles traveled by congestion level\nLost time or delay due to congestion\nLevel-of-service/volume-delay ratio\nVehicle-hrs traveled per capita\nVehicle-mi traveled per capita\n\n\n\nPercent transit on-time performance\nTransit service frequency\nModal split\nTransfer time between modes\nUser’s travel time perception\nDelay per goods ton-mi\nPercent of transit or non-motorized trips by trip purpose"
-  },
-  {
-    "objectID": "teaching/CIVE461/slides/lec-3.html#economic-development-moe",
-    "href": "teaching/CIVE461/slides/lec-3.html#economic-development-moe",
-    "title": "Lecture 3 - Transportation Planning Process",
-    "section": "Economic Development MOE",
-    "text": "Economic Development MOE\n\nEconomic cost of road collisions\nEconomic cost of lost time in travel\nPercent of wholesale/retail/commercial centers with unrestricted vehicle weight roads\nJobs directly created/supported\nPercent of region’s unemployed or low-income people who consider transportation a principle barrier to employment"
-  },
-  {
-    "objectID": "teaching/CIVE461/slides/lec-3.html#quality-of-life-moe",
-    "href": "teaching/CIVE461/slides/lec-3.html#quality-of-life-moe",
-    "title": "Lecture 3 - Transportation Planning Process",
-    "section": "Quality of Life MOE",
-    "text": "Quality of Life MOE\n\nLost time for congestion\nCrashes per vehicle-mi or person-mi\nTons of generated pollution\nUser safety and urban quality perception\nAverage hours spent traveling per day\nPercent of population exposed to noise"
-  },
-  {
-    "objectID": "teaching/CIVE461/slides/lec-3.html#environmental-resource-consumption-moe",
-    "href": "teaching/CIVE461/slides/lec-3.html#environmental-resource-consumption-moe",
-    "title": "Lecture 3 - Transportation Planning Process",
-    "section": "Environmental & Resource Consumption MOE",
-    "text": "Environmental & Resource Consumption MOE\n\nOverall mode split by facility or route\nTons of pollution\nNumber of days in air quality non-compliance\nLevel of sprawl: difference between changes in urban and sub-urban housing density\nNumber of collisions involving hazardous materials"
-  },
-  {
-    "objectID": "teaching/CIVE461/slides/lec-3.html#safety-moe",
-    "href": "teaching/CIVE461/slides/lec-3.html#safety-moe",
-    "title": "Lecture 3 - Transportation Planning Process",
-    "section": "Safety MOE",
-    "text": "Safety MOE\n\nNumber of collisions per vehicle-mi per year/trip/ton-mi/capita\nNumber of high collision locations\nResponse time to collision incidents\nAccident risk index\nConstruction-related fatalities/injuries\nCollisions at major inter-modal (e.g., railroad) crossings\nPedestrian/bicycle collisions"
-  },
-  {
-    "objectID": "teaching/CIVE461/slides/lec-3.html#operating-efficiency-moe",
-    "href": "teaching/CIVE461/slides/lec-3.html#operating-efficiency-moe",
-    "title": "Lecture 3 - Transportation Planning Process",
-    "section": "Operating Efficiency MOE",
-    "text": "Operating Efficiency MOE\n\nTransportation system service costs\nCost/benefit measures\nAverage cost per lane-mi construction\nOrigin to destination travel time\nAverage speed\nPercent of projects rated as good to excellent quality\nVolume/capacity ratio\nCost per goods ton-mi\nMode split\nCustomer/user satisfaction"
-  },
-  {
-    "objectID": "teaching/CIVE461/slides/lec-3.html#some-transportation-policy-building-blocks",
-    "href": "teaching/CIVE461/slides/lec-3.html#some-transportation-policy-building-blocks",
-    "title": "Lecture 3 - Transportation Planning Process",
-    "section": "Some Transportation Policy Building Blocks",
-    "text": "Some Transportation Policy Building Blocks\n\n\n\n\n\n\n\n\nCIVE461 Home"
-  },
-  {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#we-can-examine-trip-generation-in-several-ways",
-    "href": "teaching/CIVE461/slides/lec-4.html#we-can-examine-trip-generation-in-several-ways",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#we-can-examine-trip-generation-in-several-ways",
+    "href": "teaching/CIVE461/slides/lec-3.html#we-can-examine-trip-generation-in-several-ways",
+    "title": "Lecture 3 - Trip Generation",
     "section": "We can examine trip generation in several ways…",
     "text": "We can examine trip generation in several ways…\n\n\nTotal number of trips generated in a TAZ based on zone properties: population, employment, number of cars, etc. (method: regression)  \nTrip frequency choice by households (method: discrete choice)"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#academic-vs.-practitioner-considerations",
-    "href": "teaching/CIVE461/slides/lec-4.html#academic-vs.-practitioner-considerations",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#academic-vs.-practitioner-considerations",
+    "href": "teaching/CIVE461/slides/lec-3.html#academic-vs.-practitioner-considerations",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Academic Vs. Practitioner Considerations",
     "text": "Academic Vs. Practitioner Considerations\n\n\nPractitioner struggle deciding between a theoretically sound but difficult to implement set of models & a more pragmatic modelling approach reflecting the limitations of the data, time, & resources available for a study\nModels are too complex\nImplies that heuristic approaches, rules of thumb, & ad hoc procedures are easier to understand & therefore preferable"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#planning-monitoring-with-the-help-of-models",
-    "href": "teaching/CIVE461/slides/lec-4.html#planning-monitoring-with-the-help-of-models",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#planning-monitoring-with-the-help-of-models",
+    "href": "teaching/CIVE461/slides/lec-3.html#planning-monitoring-with-the-help-of-models",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Planning & Monitoring with the Help of Models",
     "text": "Planning & Monitoring with the Help of Models"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#classic-4-step-travel-model",
-    "href": "teaching/CIVE461/slides/lec-4.html#classic-4-step-travel-model",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#classic-4-step-travel-model",
+    "href": "teaching/CIVE461/slides/lec-3.html#classic-4-step-travel-model",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Classic 4-Step Travel Model",
     "text": "Classic 4-Step Travel Model"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#classic-4-step-travel-model-1",
-    "href": "teaching/CIVE461/slides/lec-4.html#classic-4-step-travel-model-1",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#classic-4-step-travel-model-1",
+    "href": "teaching/CIVE461/slides/lec-3.html#classic-4-step-travel-model-1",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Classic 4-Step Travel Model",
     "text": "Classic 4-Step Travel Model\n\n\nTrip generation, 2) Trip distribution, 3) Modal split, & 4) Traffic assignment\n\nGenerally recognized that travel decisions are not actually taken in this type of sequence\nModel sequencing depends on the form of the utility function assumed to govern all these travel choices\nFour-stage model is seen as concentrating attention on only a limited range of travellers’ responses"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#classic-4-step-travel-model-2",
-    "href": "teaching/CIVE461/slides/lec-4.html#classic-4-step-travel-model-2",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#classic-4-step-travel-model-2",
+    "href": "teaching/CIVE461/slides/lec-3.html#classic-4-step-travel-model-2",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Classic 4-Step Travel Model",
     "text": "Classic 4-Step Travel Model\n\nCurrent thinking requires analysis of a wider range of responses to transport problems & schemes\nFor example, when faced with increased congestion a trip maker can respond with a range of simple changes to:\n\nRoute followed to avoid congestion or take advantage of new links - choice of parking place or combination of services in the case of public transport\nMode used to get to the destination\nDeparture time to avoid the most congested part of the peak\nTrip destination to a less congested area\nTrip frequency by undertaking the trip on another day, perhaps combining it with other activities"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#trip-definitions",
-    "href": "teaching/CIVE461/slides/lec-4.html#trip-definitions",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#trip-definitions",
+    "href": "teaching/CIVE461/slides/lec-3.html#trip-definitions",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Trip Definitions",
     "text": "Trip Definitions\n\n\nHome-Based (HB) Trip: A trip which either starts or ends at the home\n\nHome-based work\nHome-based grade school\nHome-based university\nHome-based shopping\nHome-based other\n\nNon-Home-Based (NHB) Trip: A trip which neither starts nor ends at the home\nTrip production: The home end of a HB trip or origin of a NHB trip\nTrip attraction: The non-home end of a HB trip or the destination of a NHB trip"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#trip-production-attraction",
-    "href": "teaching/CIVE461/slides/lec-4.html#trip-production-attraction",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#trip-production-attraction",
+    "href": "teaching/CIVE461/slides/lec-3.html#trip-production-attraction",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Trip Production & Attraction",
     "text": "Trip Production & Attraction"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#trip-production-attraction-1",
-    "href": "teaching/CIVE461/slides/lec-4.html#trip-production-attraction-1",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#trip-production-attraction-1",
+    "href": "teaching/CIVE461/slides/lec-3.html#trip-production-attraction-1",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Trip Production & Attraction",
     "text": "Trip Production & Attraction"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#origindestination-vs.-productionattraction",
-    "href": "teaching/CIVE461/slides/lec-4.html#origindestination-vs.-productionattraction",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#origindestination-vs.-productionattraction",
+    "href": "teaching/CIVE461/slides/lec-3.html#origindestination-vs.-productionattraction",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Origin/Destination Vs. Production/Attraction",
     "text": "Origin/Destination Vs. Production/Attraction\n\nProduction & attraction approach works fine when dealing with 24-hour work trips\nLose directionality when dealing with peak-period flows\nTypically use origin/destination approach"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#trip-purpose",
-    "href": "teaching/CIVE461/slides/lec-4.html#trip-purpose",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#trip-purpose",
+    "href": "teaching/CIVE461/slides/lec-3.html#trip-purpose",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Trip Purpose",
     "text": "Trip Purpose\n\n\nFor HB trips:\n\nTravel to work\nTravel to school or college (education trips)\nShopping trips\nSocial & recreational trips\nEscort trips (to accompany or collect someone else)\nOther trips (healthcare & personal business)\n\nFirst two are usually considered compulsory (mandatory) trips & we build skeleton schedules around them\nOther usually considered discretionary (optional) trips"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#factors-affecting-trip-generation",
-    "href": "teaching/CIVE461/slides/lec-4.html#factors-affecting-trip-generation",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#factors-affecting-trip-generation",
+    "href": "teaching/CIVE461/slides/lec-3.html#factors-affecting-trip-generation",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Factors Affecting Trip Generation",
     "text": "Factors Affecting Trip Generation\n\nSince trip generation performed before distribution & mode split, usually do not use travel times, costs, etc.\n\nPersonal trip productions\n\n\n\nIncome\nCar ownership\nFamily size\nHousehold structure\n\n\n\nValue of land\nResidential density\nAccessibility\n\n\n\n\nFirst 4 considered in most household trip generation models\nValue of land & residential density often considered in zonal studies\nAccessibility rarely included in models but makes trip generation elastic (responsive) to changes in transport system"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#factors-affecting-trip-generation-1",
-    "href": "teaching/CIVE461/slides/lec-4.html#factors-affecting-trip-generation-1",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#factors-affecting-trip-generation-1",
+    "href": "teaching/CIVE461/slides/lec-3.html#factors-affecting-trip-generation-1",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Factors Affecting Trip Generation",
     "text": "Factors Affecting Trip Generation\nPersonal trip attractions\n\nFloorspace available for industrial, commercial, & other services\nZonal employment\n\nFreight trip production & attraction\n\nNumber of employees\nNumber of sales\nRoofed area of firm\nTotal area of firm\nWhat about type of firm? Accessibility? Curiously, few applications in freight models despite it seeming logical that different products have different transport requirements"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#trip-generation-aggregation",
-    "href": "teaching/CIVE461/slides/lec-4.html#trip-generation-aggregation",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#trip-generation-aggregation",
+    "href": "teaching/CIVE461/slides/lec-3.html#trip-generation-aggregation",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Trip Generation Aggregation",
     "text": "Trip Generation Aggregation\n\nTemporal aggregation: hourly, peak/off-peak, daily, weekly\nSpatial aggregation:\n\nPersons: by income, driver’s license, vehicle ownership, occupation type, household size, etc.\nHouseholds: by income, vehicle ownership, household size, number of workers, with/without children\nZones: by location (e.g., downtown, suburb), major trip generator (e.g., hospital, stadium)\n\nMost operational models use either zones or households. Why?"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#trip-generation-approaches",
-    "href": "teaching/CIVE461/slides/lec-4.html#trip-generation-approaches",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#trip-generation-approaches",
+    "href": "teaching/CIVE461/slides/lec-3.html#trip-generation-approaches",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Trip Generation Approaches",
     "text": "Trip Generation Approaches\nThree major operational approaches\n\nTrip rate models\nCross-classification models\nRegression models"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#trip-rate-models",
-    "href": "teaching/CIVE461/slides/lec-4.html#trip-rate-models",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#trip-rate-models",
+    "href": "teaching/CIVE461/slides/lec-3.html#trip-rate-models",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Trip Rate Models",
     "text": "Trip Rate Models\n\nComputed from observed data by simply dividing number of trips by selected explanatory variable or population\n\nHome-to-work trips for retail employees = Total observed trips by retail employees / Total retail employment\nTrip rates can be geographically stratified (i.e., different rates used for different areas of the city) & may combine multiple factors\n\nTotal shopping trips=\n\n\nA1 ×Population in Downtown Area  + A2×Population in Inner Suburbs  + A3×Population in Outer Suburbs"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#trip-rate-models-1",
-    "href": "teaching/CIVE461/slides/lec-4.html#trip-rate-models-1",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#trip-rate-models-1",
+    "href": "teaching/CIVE461/slides/lec-3.html#trip-rate-models-1",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Trip Rate Models",
     "text": "Trip Rate Models\n\nConstant trip generation rate is estimated from observed data\nForecasts can be done\n\nAssuming trip generation rate by category is fixed\n\nTrips attracted to a shopping mall = \\(A_s \\times {MallFloorArea}\\)\nTrips generated by a zone = \\(\\sum_k A_k \\times HH With Cars \\text{ where k} = 0, 1, 2, 3, etc.\\)\n\nAssuming overall trip generation rate is fixed\n\nTrips generated in a zone = \\(t_i\\)\nTrips generated in the future \\(T_i = t_i \\times PopulationGrowthRate\\)"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#cross-classification-models",
-    "href": "teaching/CIVE461/slides/lec-4.html#cross-classification-models",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#cross-classification-models",
+    "href": "teaching/CIVE461/slides/lec-3.html#cross-classification-models",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Cross-Classification Models",
     "text": "Cross-Classification Models\n\nClassify households (or persons) by one or more variables - often household size & number of vehicles\nAssume trip rates are relatively constant within each group\nCompute average trip rate for each group\nZonal trips = sum of trips generated by all groups found in the zone\nNote: trip rate model is a cross-classification model by trip type not trip maker"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#cross-classification-models-1",
-    "href": "teaching/CIVE461/slides/lec-4.html#cross-classification-models-1",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#cross-classification-models-1",
+    "href": "teaching/CIVE461/slides/lec-3.html#cross-classification-models-1",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Cross-Classification Models",
     "text": "Cross-Classification Models"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#linear-regression-models",
-    "href": "teaching/CIVE461/slides/lec-4.html#linear-regression-models",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#linear-regression-models",
+    "href": "teaching/CIVE461/slides/lec-3.html#linear-regression-models",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Linear Regression Models",
     "text": "Linear Regression Models\n\nUse regression to estimate “best fit” linear regression between # of trips & one or more explanatory variables \\[T=1.229+1.379V\\]\nWhere \\(T\\) is daily trip productions per household for all purposes & \\(V\\) is the # of vehicles per household \\[A=61.4+0.93E\\]\nWhere \\(A\\) is daily work trip attractions for a given zone & \\(E\\) is total zonal employment"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#parameter-signs-theoretical-expectations",
-    "href": "teaching/CIVE461/slides/lec-4.html#parameter-signs-theoretical-expectations",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#parameter-signs-theoretical-expectations",
+    "href": "teaching/CIVE461/slides/lec-3.html#parameter-signs-theoretical-expectations",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Parameter Signs & Theoretical Expectations",
     "text": "Parameter Signs & Theoretical Expectations\n\nModel specification should “make sense” from behavioral & theoretical perspectives\nVariables included should have a causal influence on the dependent variable\nParameters should have expected signs (+ or -)\nParameters should have reasonable magnitudes"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#parameter-signs-theoretical-expecations",
-    "href": "teaching/CIVE461/slides/lec-4.html#parameter-signs-theoretical-expecations",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#parameter-signs-theoretical-expecations",
+    "href": "teaching/CIVE461/slides/lec-3.html#parameter-signs-theoretical-expecations",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Parameter Signs & Theoretical Expecations",
     "text": "Parameter Signs & Theoretical Expecations\n\n\nDo these parameter signs make sense? \\[Daily HH Trips= 3 Persons In HH − 0.5 HH Vehicles\\]\nNo: We expect trip making to increase with # of vehicles\nDoes this parameter magnitude make sense? \\[Daily HH Work Trips=0.2 HH Workers\\]\nNo: We expect each worker to make approx. 2 trips per day\nDoes it make sense to include No. of HH workers in the model? \\[Daily HH School Trips=1+0.2 HH Workers\\]\nNo: There’s no logical/causal relationship between no. of workers & school trips"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#or-could-the-school-model-make-sense",
-    "href": "teaching/CIVE461/slides/lec-4.html#or-could-the-school-model-make-sense",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#or-could-the-school-model-make-sense",
+    "href": "teaching/CIVE461/slides/lec-3.html#or-could-the-school-model-make-sense",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Or Could The School Model Make Sense?…",
     "text": "Or Could The School Model Make Sense?…\nInternational Institute for Applied Systems Analysis in Austria:\n\nWomen with no schooling - 4.5 children\nWomen with 2-3 years of primary school – 3 children\nWomen who complete one or two years of secondary school - 1.9 children (replacement rate is 2.1 children)\nWith one or two years of college, the average childbearing rate falls even further, to 1.7\nWhen women enter the workforce, start businesses, inherit assets, & otherwise interact with men on an equal footing, children per household fades even more dramatically"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#zonal-based-multiple-regression",
-    "href": "teaching/CIVE461/slides/lec-4.html#zonal-based-multiple-regression",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#zonal-based-multiple-regression",
+    "href": "teaching/CIVE461/slides/lec-3.html#zonal-based-multiple-regression",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Zonal-Based Multiple Regression",
     "text": "Zonal-Based Multiple Regression\nSome important considerations\n\nZonal models can explain variation between zones\n\nFor this reason, only successful if inter-zonal variations reflect real reasons for trip variation\nNecessary that zones are homogeneous in socioeconomic composition & represent a wide range of conditions\nMajor problem is that main variation in person trips is intra-zonal\n\nRole of intercept: One would expect estimated regression line to pass through zero but large intercepts are common. Why?\nNull zones: No information about certain dependent variables (e.g., no. HB trips in a non-residential zone). These zones must be excluded from analysis"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#zonal-based-multiple-regression-1",
-    "href": "teaching/CIVE461/slides/lec-4.html#zonal-based-multiple-regression-1",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#zonal-based-multiple-regression-1",
+    "href": "teaching/CIVE461/slides/lec-3.html#zonal-based-multiple-regression-1",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Zonal-Based Multiple Regression",
     "text": "Zonal-Based Multiple Regression\nSome important considerations cont…\n\nZonal totals vs. zonal means: when formulating model, analyst has choice between aggregate or total variables, such as trips per zone or cars per zone vs. rates, such as trips per household or cars per household in the zone\nImportant difference: \\[Y_i=\\beta_0+\\beta_1 X_{1i}+\\beta_2 X_{2i}+…+\\beta_k X_{𝑘𝑖}+E_𝑖 \\text{ (total trip model)}\\] \\[𝑦_i=\\beta_0+\\beta_1 x_1i+\\beta_2 x_2i+…+\\beta_k x_{𝑘𝑖}+e_i \\text{ (trip rate model)}\\]\nWhere \\(y_i=Y_i/H_i\\), \\(x_i=X_i/H_i\\), & \\(e_𝑖=E_i/H_i\\)"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#zonal-based-multiple-regression-2",
-    "href": "teaching/CIVE461/slides/lec-4.html#zonal-based-multiple-regression-2",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#zonal-based-multiple-regression-2",
+    "href": "teaching/CIVE461/slides/lec-3.html#zonal-based-multiple-regression-2",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Zonal-Based Multiple Regression",
     "text": "Zonal-Based Multiple Regression\nEven more important considerations…\n\nSimilar equations & parameters have a similar interpretation\nHowever, unless \\(H_i\\) is constant across zones, constant variance condition cannot hold for error terms in total trips model\nAggregate variables reflect size of zone, thus magnitude of error depends on size of zone - heteroskedasticity (variability in variance)\nUsing a \\(1/H_i\\) multiplier normalizes the model & reduces heteroskedasticity because model becomes independent of zone size\nAggregate variable models often yield higher \\(R^2\\) but spurious effect from zone size helping to explain total trips\nDO NOT mix rate & aggregate variables in same model"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#zonal-based-multiple-regression-3",
-    "href": "teaching/CIVE461/slides/lec-4.html#zonal-based-multiple-regression-3",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#zonal-based-multiple-regression-3",
+    "href": "teaching/CIVE461/slides/lec-3.html#zonal-based-multiple-regression-3",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Zonal-Based Multiple Regression",
     "text": "Zonal-Based Multiple Regression\n\nEven when rates used, zonal regression is conditioned by nature & size of zones (spatial aggregation problem)\nInterzonal variance diminishes with larger zone size"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#household-based-regression",
-    "href": "teaching/CIVE461/slides/lec-4.html#household-based-regression",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#household-based-regression",
+    "href": "teaching/CIVE461/slides/lec-3.html#household-based-regression",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Household-Based Regression",
     "text": "Household-Based Regression\n\nIntra-zonal variation may be reduced by decreasing zone size but there are two problems\n\nMore expensive models in terms of data collection, calibration, & operation\nLarger sampling errors (regression to mean with larger samples, so small zone means not capturing average person), which is assumed non-existent by multiple linear regression model\n\nHousehold used rather than person because we have a hard time incorporating intra-household dynamics (e.g., vehicle availability) - Some advances but still not great\nCan decide on variables in step-wise process but must be careful - May exclude a variable with slightly lower prediction that is easier to forecast\nOpposite approach of including all variables & removing variables can be a better approach"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#validity-of-linear-regression-assumption",
-    "href": "teaching/CIVE461/slides/lec-4.html#validity-of-linear-regression-assumption",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#validity-of-linear-regression-assumption",
+    "href": "teaching/CIVE461/slides/lec-3.html#validity-of-linear-regression-assumption",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Validity of Linear Regression Assumption",
     "text": "Validity of Linear Regression Assumption\n\nRegression models are easy to construct & use\nHowever, underlying assumptions may be wrong\n\nLinearity\nNo correlations between explanatory variables\n\nResiduals are estimates of error in model obtained from subtracting predicted from observed dependent variable values\n\nResidual \\(e_i = y_{i,observed} – y_{i,predicted}\\)\nResiduals should be normally distributed with constant variance – can plot a histogram to check\nResiduals should be uncorrelated with any explanatory variable – can plot residuals vs. explanatory variables"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#histogram-of-residuals",
-    "href": "teaching/CIVE461/slides/lec-4.html#histogram-of-residuals",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#histogram-of-residuals",
+    "href": "teaching/CIVE461/slides/lec-3.html#histogram-of-residuals",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Histogram of Residuals",
     "text": "Histogram of Residuals"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#residuals-vs.-explanatory-variables",
-    "href": "teaching/CIVE461/slides/lec-4.html#residuals-vs.-explanatory-variables",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#residuals-vs.-explanatory-variables",
+    "href": "teaching/CIVE461/slides/lec-3.html#residuals-vs.-explanatory-variables",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Residuals Vs. Explanatory Variables",
     "text": "Residuals Vs. Explanatory Variables"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#example",
-    "href": "teaching/CIVE461/slides/lec-4.html#example",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#example",
+    "href": "teaching/CIVE461/slides/lec-3.html#example",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Example",
     "text": "Example\n\n\n\n\n\n\n\n\n\nThree variables are defined \\(X\\), \\(Y\\), & \\(Z\\) where \\(X\\) & \\(Z\\) are explanatory variables & \\(Y\\) is the dependent variable"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#first-model-y-ax-b",
-    "href": "teaching/CIVE461/slides/lec-4.html#first-model-y-ax-b",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#first-model-y-ax-b",
+    "href": "teaching/CIVE461/slides/lec-3.html#first-model-y-ax-b",
+    "title": "Lecture 3 - Trip Generation",
     "section": "First Model \\(y = aX + b\\)",
     "text": "First Model \\(y = aX + b\\)\n\n\\(R^2 = 0.506\\) means that we are explaining 50.6% of the variance in y with the explanatory variables in the model"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#analysis-of-residuals-vs.-x",
-    "href": "teaching/CIVE461/slides/lec-4.html#analysis-of-residuals-vs.-x",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#analysis-of-residuals-vs.-x",
+    "href": "teaching/CIVE461/slides/lec-3.html#analysis-of-residuals-vs.-x",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Analysis of Residuals Vs. X",
     "text": "Analysis of Residuals Vs. X\n\nLooks like a constant variance across values of \\(X\\)…"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#analysis-of-residuals-vs.-z",
-    "href": "teaching/CIVE461/slides/lec-4.html#analysis-of-residuals-vs.-z",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#analysis-of-residuals-vs.-z",
+    "href": "teaching/CIVE461/slides/lec-3.html#analysis-of-residuals-vs.-z",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Analysis of Residuals Vs. Z",
     "text": "Analysis of Residuals Vs. Z\n\nResiduals not constant over different values of \\(Z\\) (so we should try to include \\(Z\\) as another explanatory variable)"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#second-model-y-ax-bz-c",
-    "href": "teaching/CIVE461/slides/lec-4.html#second-model-y-ax-bz-c",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#second-model-y-ax-bz-c",
+    "href": "teaching/CIVE461/slides/lec-3.html#second-model-y-ax-bz-c",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Second Model \\(y = aX bZ + c\\)",
     "text": "Second Model \\(y = aX bZ + c\\)\n\n\\(R^2 = 0.761\\) means that we are explaining 76.1% of the variance in \\(y\\) with the explanatory variables in the model"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#analysis-of-residuals-vs.-x-z",
-    "href": "teaching/CIVE461/slides/lec-4.html#analysis-of-residuals-vs.-x-z",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#analysis-of-residuals-vs.-x-z",
+    "href": "teaching/CIVE461/slides/lec-3.html#analysis-of-residuals-vs.-x-z",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Analysis of Residuals Vs. X & Z$",
     "text": "Analysis of Residuals Vs. X & Z$\n\nNow residuals don’t change over different values of X or Z!"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#dealing-with-non-linear-relationships",
-    "href": "teaching/CIVE461/slides/lec-4.html#dealing-with-non-linear-relationships",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#dealing-with-non-linear-relationships",
+    "href": "teaching/CIVE461/slides/lec-3.html#dealing-with-non-linear-relationships",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Dealing With Non-Linear Relationships",
     "text": "Dealing With Non-Linear Relationships"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#transform-the-explanatory-variable-add-x2-term",
-    "href": "teaching/CIVE461/slides/lec-4.html#transform-the-explanatory-variable-add-x2-term",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#transform-the-explanatory-variable-add-x2-term",
+    "href": "teaching/CIVE461/slides/lec-3.html#transform-the-explanatory-variable-add-x2-term",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Transform the Explanatory Variable (add \\(x^2\\) term)",
     "text": "Transform the Explanatory Variable (add \\(x^2\\) term)"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#other-transformations",
-    "href": "teaching/CIVE461/slides/lec-4.html#other-transformations",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#other-transformations",
+    "href": "teaching/CIVE461/slides/lec-3.html#other-transformations",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Other Transformations",
     "text": "Other Transformations\n\nLog transformation, \\(x’ = ln(x)\\) if effects starts strong at low x but reaches limiting return with further increases in \\(x\\) (often used for income variables)\nDummy variables:\n\n\\(X_1\\) = 0 if vehicle ownership = 0 & 1 if vehicle ownership &gt; 0\n\\(X_2\\) = 1 if married & 0 otherwise\n\nVariable interactions\n\n\\(X_1\\) = age in years \\(\\times\\) income less than $30k\n\\(X_2\\) = age in years \\(\\times\\) income $30k-$60k\n\\(X_3\\) = age in years \\(\\times\\) income over $60k\n\\(X_4\\) = gender (male) \\(\\times\\) have fulltime job\n\\(X_5\\) = gender (male) \\(\\times\\) have parttime job"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#non-linearity-in-trip-generation-variables",
-    "href": "teaching/CIVE461/slides/lec-4.html#non-linearity-in-trip-generation-variables",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#non-linearity-in-trip-generation-variables",
+    "href": "teaching/CIVE461/slides/lec-3.html#non-linearity-in-trip-generation-variables",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Non-Linearity in Trip Generation Variables",
     "text": "Non-Linearity in Trip Generation Variables\n\nLinear regression assumes each independent variable exerts a linear influence on the dependent variable\nNot easy to detect non-linearity because relationship can appear linear until other variables enter into the model (i.e., it is representing the effect of multiple variables with a linear overall effect)\nMultivariate graphs can be helpful to identify non-linearity"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#example-1",
-    "href": "teaching/CIVE461/slides/lec-4.html#example-1",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#example-1",
+    "href": "teaching/CIVE461/slides/lec-3.html#example-1",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Example",
     "text": "Example\n\nConsider the variables trips per household (\\(Y\\)), number of workers (\\(𝑋_1\\)), and number of vehicles (\\(𝑋_2\\)). Successive steps were performed of a stepwise model estimation. Values (in parenthesis) are t-ratios. In the step 4 model, \\(Z_1\\) takes the value 1 for households with one car and 0 otherwise and \\(Z_2\\) takes the value 1 for households with two or more cars and 0 otherwise. We can see that zero car households will have the value 0 for both \\(Z_1\\) and \\(Z_2\\). Even without the higher \\(R^2\\), the step 4 model would be preferred because it clearly demonstrates there is a non-linear effect that’s ignored by \\(𝑋_2\\)."
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#variable-selection-model-building",
-    "href": "teaching/CIVE461/slides/lec-4.html#variable-selection-model-building",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#variable-selection-model-building",
+    "href": "teaching/CIVE461/slides/lec-3.html#variable-selection-model-building",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Variable Selection & Model Building",
     "text": "Variable Selection & Model Building\n\nProblem: Choose the set of appropriate explanatory variables from a set of candidate variables - variable selection\nPossible approaches\n\nExploring all possible variables - many combinations\nStepwise regression -&gt; construct a sequence of regression models by adding or removing variables at each step\n\nForward selection: add variables to the model one at a time until there are no remaining candidate variables that improve fit\nBackward elimination: begin with all possible variables & remove the least significant variables\n\n\nAre there problems with these approaches?"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#variable-specification-forecasting",
-    "href": "teaching/CIVE461/slides/lec-4.html#variable-specification-forecasting",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#variable-specification-forecasting",
+    "href": "teaching/CIVE461/slides/lec-3.html#variable-specification-forecasting",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Variable Specification & Forecasting",
     "text": "Variable Specification & Forecasting\n\nConsider variables important for explaining differences in trip-making decisions\nFrequency & data plotting gives idea of variability with respect to different variables\nSpecify variables as per relationship\n\nContinuous\nOrdered\nDiscrete\n\nVariable choice depends on availability of observed information & capacity to forecast\nStatistical significance tests\nModel goodness of fit can be used to identify impact of specific variables"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#model-validation",
-    "href": "teaching/CIVE461/slides/lec-4.html#model-validation",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#model-validation",
+    "href": "teaching/CIVE461/slides/lec-3.html#model-validation",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Model Validation",
     "text": "Model Validation\n\nA good way to validate a model is to compare observed vs. modeled values for some groupings of the data\nBetter than comparing totals because biases may cancel in that case (high prediction cancels with low prediction)\nErrors are reasonably low (i.e., less than 30%)\nLarge bias could be addressed by adjusting model parameters, but it’s not easy because there are no clear rules"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#model-validation---learning-from-machine-learning",
-    "href": "teaching/CIVE461/slides/lec-4.html#model-validation---learning-from-machine-learning",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#model-validation---learning-from-machine-learning",
+    "href": "teaching/CIVE461/slides/lec-3.html#model-validation---learning-from-machine-learning",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Model Validation - Learning From Machine Learning",
     "text": "Model Validation - Learning From Machine Learning\n\nTransportation planning field starting to adopt methods from machine learning field, including for validation\n\nLeave-one-out (LOO) & k-folds cross-validation to get mean & std. dev.\nScore (R2 for linear regression)\nMean absolute error (MAE)"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#obtaining-zonal-totals",
-    "href": "teaching/CIVE461/slides/lec-4.html#obtaining-zonal-totals",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#obtaining-zonal-totals",
+    "href": "teaching/CIVE461/slides/lec-3.html#obtaining-zonal-totals",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Obtaining Zonal Totals",
     "text": "Obtaining Zonal Totals\n\nSimple process for zone-based models because already modeling total trips\nRequires extra step for household-based models – multiplying by number of households\n\n\\(T_i=H_i(0.91+1.44\\bar{X}_{1i}+1.07\\bar{X}_{2i}\\) where \\(T_i\\) is the total number of HB trips in zone \\(i\\)\nWith dummy variables, we need to know the number of households in each group\n\\(T_i=H_i(0.84+1.41X)+0.75H_{1i}+3.14H_{2i}\\) where \\(H_{1i}\\) is the number of one vehicle households & \\(H_{2i}\\) is the number of two vehicle households in zone \\(i\\)"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#matching-generations-attractions",
-    "href": "teaching/CIVE461/slides/lec-4.html#matching-generations-attractions",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#matching-generations-attractions",
+    "href": "teaching/CIVE461/slides/lec-3.html#matching-generations-attractions",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Matching Generations & Attractions",
     "text": "Matching Generations & Attractions\n\nModels do not guarantee, by default, that total trips originating in a zone (the origins O_𝑖) at all zones will equal the total trips attracted (the destinations 𝐷_𝑗)\nFollowing expression may not hold \\[\\sum_i O_i=\\sum_j D_j\\]\nGenerally assumed that trip generation models are better than trip attraction models\nTotal trips are then \\(T=\\sum_i O_i\\) & a factor applied to trip attraction \\[f=T/\\sum_j D_j\\]\nThis equality is necessary for the next model step: trip distribution"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#growth-factor-modeling",
-    "href": "teaching/CIVE461/slides/lec-4.html#growth-factor-modeling",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#growth-factor-modeling",
+    "href": "teaching/CIVE461/slides/lec-3.html#growth-factor-modeling",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Growth Factor Modeling",
     "text": "Growth Factor Modeling\n\nGrowth factor method given by \\[T_{i+t}=F_tT_i\\]\nWhere \\(T_i\\) is total trips at time \\(i\\), \\(T_{i+t}\\) is total trips at time \\(i+t\\), & \\(F_i\\) is a growth factor. Determining total current trips is a simple process but forecasting future trips (i.e., \\(F_t\\)) is a big challenge\n\\(F_t\\) is related to variables such as population (\\(P\\)), income (\\(I\\)), & car ownership (\\(C\\)) \\[F_t = \\frac{f(P_t,I_t,c_t)}{f(P_i,I_i,c_i)}\\]"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#growth-factor-example",
-    "href": "teaching/CIVE461/slides/lec-4.html#growth-factor-example",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#growth-factor-example",
+    "href": "teaching/CIVE461/slides/lec-3.html#growth-factor-example",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Growth Factor Example",
     "text": "Growth Factor Example\nConsider a zone with 250 households with vehicles and 250 households without vehicles. Assuming we know the average trip generation rates of each group:\n\nVehicle-owning households produce 6.0 trips/day\nNon-vehicle-owning households produce 2.5 trips/day\n\nWe can determine the current number of trips as \\[T_i = 250 \\times 2.5 + 250 \\times 6.0 = 2125 \\text{ trips/day}\\]"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#growth-factor-example-1",
-    "href": "teaching/CIVE461/slides/lec-4.html#growth-factor-example-1",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#growth-factor-example-1",
+    "href": "teaching/CIVE461/slides/lec-3.html#growth-factor-example-1",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Growth Factor Example",
     "text": "Growth Factor Example\n\nLet’s assume that all households in the future have a vehicle. We can then estimate a simple multiplicative growth factor as \\[F_t = 1/0.5 = 2.0\\] \\[T_{i+t} = 2 \\times 2125 = 4250 \\text{ trips/day}\\]\nGrowth factor methods are crude & generally used in practice for external trips where additional information is not available"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#growth-factor-example-2",
-    "href": "teaching/CIVE461/slides/lec-4.html#growth-factor-example-2",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#growth-factor-example-2",
+    "href": "teaching/CIVE461/slides/lec-3.html#growth-factor-example-2",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Growth Factor Example",
     "text": "Growth Factor Example\n\nLet us also assume that in the future all households will have a vehicle, but income & population remain unchanged\n\n\\[T_i = 6 \\times 500 = 3000 \\text{ trips/day}\\]\n\nBut do we expect non-vehicle households to make this many more trips if income is not changing?"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#stability-updating-trip-generation-model",
-    "href": "teaching/CIVE461/slides/lec-4.html#stability-updating-trip-generation-model",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#stability-updating-trip-generation-model",
+    "href": "teaching/CIVE461/slides/lec-3.html#stability-updating-trip-generation-model",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Stability & Updating Trip Generation Model",
     "text": "Stability & Updating Trip Generation Model\n\nTemporal stability: Population/socio-economic structure changes over time & affects trip rates\nGeographic stability: Trip-making patterns vary from place to place\nUpdating trip generation models\n\nIf models were developed using old data, it is necessary to update the model for present situation\nBest way to re-estimate trip generation model using present data\nIf sufficient data is not available, we can update previously estimated model using small present data sample"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#forecasting-variables-in-trip-generation-analysis",
-    "href": "teaching/CIVE461/slides/lec-4.html#forecasting-variables-in-trip-generation-analysis",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#forecasting-variables-in-trip-generation-analysis",
+    "href": "teaching/CIVE461/slides/lec-3.html#forecasting-variables-in-trip-generation-analysis",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Forecasting Variables In Trip Generation Analysis",
     "text": "Forecasting Variables In Trip Generation Analysis\n\nStandard variables are household totals, household size (and structure), number of vehicles owned, & household income\nHowever, there are many other factors that can be explored regarding household structure\n\nSocial circumstances likely affect travel\nPersonal living alone will have a different set of tradeoffs & coordination patterns than person living in with others\nMulti-person household dynamics will vary depending on structure – several students living together may not coordinate trips in same way as a family\nElderly people living with younger people may be more engaged outside the home than those living alone or with similarly aged persons"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#forecasting-variables-in-trip-generation-analysis-1",
-    "href": "teaching/CIVE461/slides/lec-4.html#forecasting-variables-in-trip-generation-analysis-1",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#forecasting-variables-in-trip-generation-analysis-1",
+    "href": "teaching/CIVE461/slides/lec-3.html#forecasting-variables-in-trip-generation-analysis-1",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Forecasting Variables In Trip Generation Analysis",
     "text": "Forecasting Variables In Trip Generation Analysis\n\nHow do life course events affect trips?\n\nAppearance of a pre-school children\nTime when youngest child reaches school age\nTime when youth leaves home & lives alone, with other young adults, or marries\nTime when all children of a couple have left home but couple has not retired yet\nTime when all members of a household reach retirement age\n\nImportant factors for identifying/classifying households as being in similar life stage & potentially having more homogeneous travel patterns\nWhat about overall aging of population? Age tends to be associated with decline in mobility in change in lifestyle"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#trip-generation-inelastic-in-most-models",
-    "href": "teaching/CIVE461/slides/lec-4.html#trip-generation-inelastic-in-most-models",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#trip-generation-inelastic-in-most-models",
+    "href": "teaching/CIVE461/slides/lec-3.html#trip-generation-inelastic-in-most-models",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Trip Generation Inelastic In Most Models",
     "text": "Trip Generation Inelastic In Most Models\n\nIndependent of the level of service provided in the transport system\nProbably unrealistic but only recently techniques have been developed which can take systematic account of these (induced demand) effects"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#what-is-the-fundamental-event-of-interest",
-    "href": "teaching/CIVE461/slides/lec-4.html#what-is-the-fundamental-event-of-interest",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#what-is-the-fundamental-event-of-interest",
+    "href": "teaching/CIVE461/slides/lec-3.html#what-is-the-fundamental-event-of-interest",
+    "title": "Lecture 3 - Trip Generation",
     "section": "What is the fundamental event of interest?",
     "text": "What is the fundamental event of interest?\n\nTrip or journey: one-way movement from an origin point to a destination point\n\nHome-based (HB) trip: trip with the home (or hotel for a nonresident) being either the trip origin or destination\nNon-home-based (NHB) trip: trip where neither end of the trip is the home\nTrip production: defined as the home end of an HB trip or as the origin of an NHB\nTrip attraction: defined as the non-home end of an HB trip or the destination of an NHB\nTrip generation: total number of trips generated by households in a zone, both HB & NHB"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#what-is-the-fundamental-event-of-interest-1",
-    "href": "teaching/CIVE461/slides/lec-4.html#what-is-the-fundamental-event-of-interest-1",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#what-is-the-fundamental-event-of-interest-1",
+    "href": "teaching/CIVE461/slides/lec-3.html#what-is-the-fundamental-event-of-interest-1",
+    "title": "Lecture 3 - Trip Generation",
     "section": "What is the fundamental event of interest?",
     "text": "What is the fundamental event of interest?\n\nActivity: short stay at a particular location\n\nUsually has a purpose associated to it: work, study, shopping, leisure, etc.\n\nTour or trip chain: a sequence of linked trips\nTours & activities correspond more closely with the idea of travel as a derived demand than do the first concepts\n\nContemporary models are generally interested in tours rather than trips. Why?"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#trip-generation-accessibility",
-    "href": "teaching/CIVE461/slides/lec-4.html#trip-generation-accessibility",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#trip-generation-accessibility",
+    "href": "teaching/CIVE461/slides/lec-3.html#trip-generation-accessibility",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Trip Generation & Accessibility",
     "text": "Trip Generation & Accessibility\n\nClassical transport planning (4-step) model can incorporate an iterative process between distribution & assignment, leaving trip generation unaltered\nTrue even in most contemporary models, which attempt to appropriately solve supply-demand equilibrium problem\nDisadvantage: changes to network assumed to have no effect on trip productions & attractions\n\nE.g., Extension of a subway line would not generate more trips between that zone & other zones\nMay hold for compulsory trips but unlikely to hold for discretionary trips"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-4.html#trip-generation-accessibility-1",
-    "href": "teaching/CIVE461/slides/lec-4.html#trip-generation-accessibility-1",
-    "title": "Lecture 4 - Trip Generation",
+    "objectID": "teaching/CIVE461/slides/lec-3.html#trip-generation-accessibility-1",
+    "href": "teaching/CIVE461/slides/lec-3.html#trip-generation-accessibility-1",
+    "title": "Lecture 3 - Trip Generation",
     "section": "Trip Generation & Accessibility",
     "text": "Trip Generation & Accessibility\n\nAttempts made to incorporate an accessibility measure into trip generation by replacing \\(O_i = f(H_i)\\) by \\(f(H_i,A_i\\) where \\(H_i\\) are household characteristics & \\(A_i\\) is an accessibility measure\nAccessibility generally defined by \\(A_i = \\sum_j f(E_j, C_{ij})\\) where \\(E_j\\) is an attraction measure for zone \\(j\\) & \\(C_{ij}\\) is a generalized cost of travel between zones \\(i\\) & \\(j\\).\n\nOften give wrong sign or non-significant results due to unresolved model dynamics & problems from using cross-sectional rather than longitudinal data\nLeads to activity-based models & trip frequency/scheduling choice models (discussed in CIVE864)\n\n\n\n\n\nCIVE461 Home"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-4.html#outline",
+    "href": "teaching/CIVE461/slides/lec-4.html#outline",
+    "title": "Lecture 4 - Transportation Planning Process",
+    "section": "Outline",
+    "text": "Outline\n\n\nDecision-making models\nPlanning and decision process\nMeasures of effectiveness"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-4.html#foot-view-on-decision-making-process",
+    "href": "teaching/CIVE461/slides/lec-4.html#foot-view-on-decision-making-process",
+    "title": "Lecture 4 - Transportation Planning Process",
+    "section": "10,000 Foot View on Decision-Making Process",
+    "text": "10,000 Foot View on Decision-Making Process\n\n\n\n\n\n\n\n\n\nSubstantive Rationality\nIssue\nIndirect Approach\n\n\n\n\nInteractions with others are limited and their response depend on our actions alone\nInteractions\nThe outcome of interactions with others depend on context and their interpretation of our intentions\n\n\nThe relationships between objectives, states, goals and actions are understandable\nComplexity\nOur understanding of the relationships between objectives, states, goals and actions is imperfect but can be improved by experience\n\n\nThe problem and context can be described by a well specified and estimated analytical model\nAbstraction\nAppropriate simplification of complex problems must rely on judgement and understanding of context\n\n\nWhat happens is what we intended to happen\nIntentionality\nWhat happens is the result of complex processes whose totality nobody fully understands\n\n\nDecisions are made on the basis of the fullest possible information\nInformation\nDecisions are recommended and made acknowledging that only limited knowledge is or can be available\n\n\nThe best outcome is achieved through a conscious process of maximization\nAdaptation\nGood results are obtained through continual adaptation to constantly changing conditions\n\n\nRules and guidelines can be defined that allow people to find the correct solutions\nExpertise\nExperts can do things that others cannot – and can only learn with difficulty"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-4.html#institutional-framework-transportation-planning",
+    "href": "teaching/CIVE461/slides/lec-4.html#institutional-framework-transportation-planning",
+    "title": "Lecture 4 - Transportation Planning Process",
+    "section": "Institutional Framework & Transportation Planning",
+    "text": "Institutional Framework & Transportation Planning\n\n\nMultiple actors/organizations = complicated decision-making\nEffects of institutional frameworks:\n\nOrganizational structure influences planning & decision-making process\nEffective for long-established strategies\nChallenging for new proposals / innovations"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-4.html#institutional-framework-transportation-planning-1",
+    "href": "teaching/CIVE461/slides/lec-4.html#institutional-framework-transportation-planning-1",
+    "title": "Lecture 4 - Transportation Planning Process",
+    "section": "Institutional Framework & Transportation Planning",
+    "text": "Institutional Framework & Transportation Planning"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-4.html#strategies-for-planers-to-overcome-institutional-barriers",
+    "href": "teaching/CIVE461/slides/lec-4.html#strategies-for-planers-to-overcome-institutional-barriers",
+    "title": "Lecture 4 - Transportation Planning Process",
+    "section": "Strategies (for Planers) to Overcome Institutional Barriers",
+    "text": "Strategies (for Planers) to Overcome Institutional Barriers\n\n\nInclusive set of partners\nExpand opportunity for public involvement\nClear identification of project financing\nAdvocate strengths of quantitative analysis: evidenced-based planning\nIncrease focus on system performance optimization\nFormal power-sharing among transportation agencies"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-4.html#theoretical-models",
+    "href": "teaching/CIVE461/slides/lec-4.html#theoretical-models",
+    "title": "Lecture 4 - Transportation Planning Process",
+    "section": "Theoretical Models",
+    "text": "Theoretical Models\n\nRational actor\nSatisficing\nIncremental\nOrganizational process\nPolitical bargaining"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-4.html#rational-actor-model",
+    "href": "teaching/CIVE461/slides/lec-4.html#rational-actor-model",
+    "title": "Lecture 4 - Transportation Planning Process",
+    "section": "Rational Actor Model",
+    "text": "Rational Actor Model\n\n\n\nRational, objective decision-making intended to maximize explicit set of goals & objectives\nCompletely informed decisions\nReflected in planning process that evolved in 1950s/60s\nStill used for most major transportation analysis efforts"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-4.html#problems-with-rational-actor-model",
+    "href": "teaching/CIVE461/slides/lec-4.html#problems-with-rational-actor-model",
+    "title": "Lecture 4 - Transportation Planning Process",
+    "section": "Problems with Rational Actor Model",
+    "text": "Problems with Rational Actor Model\nNormative model of what decision-making should be rather than how it actually is done\n\n\nWhose goals/objectives?\nWho defines problems?\nCan all relevant alternatives be examined?\nCan all relevant information by obtained and used?\nHow to handle uncertainty?\nIgnores political pressures & non-technical actors\nEmphasizes the “one best way” to solve problems"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-4.html#satisficing-model",
+    "href": "teaching/CIVE461/slides/lec-4.html#satisficing-model",
+    "title": "Lecture 4 - Transportation Planning Process",
+    "section": "Satisficing Model",
+    "text": "Satisficing Model\n\n\n\nRetains rational actors but loosens assumption that solution space can by exhaustively explored and optimal solution found\nIterative search for sufficiently good solution"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-4.html#incremental-decision-making-model",
+    "href": "teaching/CIVE461/slides/lec-4.html#incremental-decision-making-model",
+    "title": "Lecture 4 - Transportation Planning Process",
+    "section": "Incremental Decision-Making Model",
+    "text": "Incremental Decision-Making Model\n\nAlso known as Science of Muddling Through\nPremise it that people:\n\nNever can agree on explicit goals & objectives\nCannot deal with large alternative set\nAre problem-simplifiers\nFocus on policies tat differ incrementally from existing ones\nContinually redefine problems & solutions"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-4.html#incremental-decision-making-model-1",
+    "href": "teaching/CIVE461/slides/lec-4.html#incremental-decision-making-model-1",
+    "title": "Lecture 4 - Transportation Planning Process",
+    "section": "Incremental Decision-Making Model",
+    "text": "Incremental Decision-Making Model\n\nShifts emphasis from determining goals & objectives to dealing directly with issues & solutions\nDynamic & on-going process\nExtension of satisficing approach – recognizes limitations in information & assessment capacity\nAddresses alternative generation issue – where do alternatives originate?\n\nTypically, recycling old ideas"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-4.html#incremental-decision-making-model-2",
+    "href": "teaching/CIVE461/slides/lec-4.html#incremental-decision-making-model-2",
+    "title": "Lecture 4 - Transportation Planning Process",
+    "section": "Incremental Decision-Making Model",
+    "text": "Incremental Decision-Making Model\n\n\n\n\n\n\n\n\nProblems:\n\nReactive -&gt; miss opportunities\nMyopic\nMay increment to death\nNon-incremental decisions become hard to make"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-4.html#organizational-process-model",
+    "href": "teaching/CIVE461/slides/lec-4.html#organizational-process-model",
+    "title": "Lecture 4 - Transportation Planning Process",
+    "section": "Organizational Process Model",
+    "text": "Organizational Process Model\n\nMost decisions made within organizations (DOT, city, etc.)\nDecisions are influenced by:\n\nFormal & informal organizational structures\nChannels of communication\nStandard operating procedure\nOrganization’s mandate\nPolitics of bureaucracy\n\nDivisions & limitations of power\nCommunications & coordination “overhead”\nProtection of “turf”"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-4.html#political-bargaining-model",
+    "href": "teaching/CIVE461/slides/lec-4.html#political-bargaining-model",
+    "title": "Lecture 4 - Transportation Planning Process",
+    "section": "Political Bargaining Model",
+    "text": "Political Bargaining Model\n\nWe live in a pluralistic society\n\nDiverse goals\nConflicts among competing groups\nBargaining required to achieve compromise\n\nDecision-making inherently political\n\nOutcomes seldom optimal\nSolutions acceptable\nControversial aspects often ignored or deferred\n\nProcess tied to election cycles, political agendas, opinion polls, etc."
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-4.html#decision-making-elements",
+    "href": "teaching/CIVE461/slides/lec-4.html#decision-making-elements",
+    "title": "Lecture 4 - Transportation Planning Process",
+    "section": "Decision-Making Elements",
+    "text": "Decision-Making Elements\n\n\nPluralistic – conflicting values & fragmented decision-making\nResource-allocative – limited resources lead to necessary tradeoffs\nConsensus-seeking – education, citizen involvement, mobilizing business leadership\nProblem simplifying – urban systems are complex\nUncertainty-avoiding – dramatic changes in policy, untried solutions, & long-term solutions are rare"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-4.html#role-of-planning",
+    "href": "teaching/CIVE461/slides/lec-4.html#role-of-planning",
+    "title": "Lecture 4 - Transportation Planning Process",
+    "section": "Role of Planning",
+    "text": "Role of Planning\n\nPlanning informs decision-making process\nProvide information needed/wanted by decision-makers:\n\nAvailable alternatives\nTradeoffs\nConsequences\n\nProvided information must be:\n\nCredible\nUnderstandable\nTimely"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-4.html#decision-making-stages",
+    "href": "teaching/CIVE461/slides/lec-4.html#decision-making-stages",
+    "title": "Lecture 4 - Transportation Planning Process",
+    "section": "Decision-Making Stages",
+    "text": "Decision-Making Stages\nPlanning relates to four major stages of decision-making:\n\nProblem identification & definition\nDebate & choice\nImplementation\nEvaluation & feedback"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-4.html#planning-decision-making",
+    "href": "teaching/CIVE461/slides/lec-4.html#planning-decision-making",
+    "title": "Lecture 4 - Transportation Planning Process",
+    "section": "Planning & Decision-Making",
+    "text": "Planning & Decision-Making"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-4.html#transportation-planning-process",
+    "href": "teaching/CIVE461/slides/lec-4.html#transportation-planning-process",
+    "title": "Lecture 4 - Transportation Planning Process",
+    "section": "Transportation Planning Process",
+    "text": "Transportation Planning Process\n\n\nAdaptive or mixed-mode decision-making styles seem more flexible and appropriate to the characteristics of transport problems"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-4.html#monitoring",
+    "href": "teaching/CIVE461/slides/lec-4.html#monitoring",
+    "title": "Lecture 4 - Transportation Planning Process",
+    "section": "Monitoring",
+    "text": "Monitoring\n\nMonitoring approach enables a continuous planning process\nContrast with conventional approach of spending considerable resources over a period of one or two years to undertake a large-scale transport study\n\nBurst of activity may be followed by a much longer period of limited effort in planning and updating plans\nReports and master plans become obsolete or simply forgotten, and nobody capable of running the models again is left in the planning unit\n\nNew data sources allow us to better monitor and respond to system state"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-4.html#transportation-planning-paradigms",
+    "href": "teaching/CIVE461/slides/lec-4.html#transportation-planning-paradigms",
+    "title": "Lecture 4 - Transportation Planning Process",
+    "section": "Transportation Planning Paradigms",
+    "text": "Transportation Planning Paradigms\nConventional\n\nFoster convergence in solutions\nFocus on short-term impacts\nPay attention to physical–material capital.\nCompetition, consumerism, and individualism\nFaith that technology will provide solutions\nAnalyses based on reductionism and assumptions of linearity"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-4.html#transportation-planning-paradigms-1",
+    "href": "teaching/CIVE461/slides/lec-4.html#transportation-planning-paradigms-1",
+    "title": "Lecture 4 - Transportation Planning Process",
+    "section": "Transportation Planning Paradigms",
+    "text": "Transportation Planning Paradigms\nEmerging\n\nDiverse & creative solutions\nFocus on long-term payoffs\nSocial capital more important than physical capital\nEmphasis on cooperation, quality of life, and community\nEcology over technology\nAnalyses based on emergence and complexity"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-4.html#evaluation-valuesvisions-goals-objectives",
+    "href": "teaching/CIVE461/slides/lec-4.html#evaluation-valuesvisions-goals-objectives",
+    "title": "Lecture 4 - Transportation Planning Process",
+    "section": "Evaluation: Values/Visions, Goals, & Objectives",
+    "text": "Evaluation: Values/Visions, Goals, & Objectives\n\nBefore we can meaningfully evaluate alternative policies, we must define our values and why we have them\nValues/Visions: Basic social drivers that govern human behavior\nGoals: Generalized statements that broadly relate physical environment to values – no clear quantification\nObjectives: Specific & measurable statements related to attainment of goals\nMeasures of Effectiveness: Measure of degree of attainment of particular objectives"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-4.html#evaluation-valuesvisions-goals-objectives-1",
+    "href": "teaching/CIVE461/slides/lec-4.html#evaluation-valuesvisions-goals-objectives-1",
+    "title": "Lecture 4 - Transportation Planning Process",
+    "section": "Evaluation: Values/Visions, Goals, & Objectives",
+    "text": "Evaluation: Values/Visions, Goals, & Objectives"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-4.html#transportation-paradigms---goals",
+    "href": "teaching/CIVE461/slides/lec-4.html#transportation-paradigms---goals",
+    "title": "Lecture 4 - Transportation Planning Process",
+    "section": "Transportation Paradigms - Goals",
+    "text": "Transportation Paradigms - Goals\nConventional\n\nSystem expansion & safety\nEfficiency improvements\nTraffic management\nDemand management\nIntelligent transportation systems (ITS)"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-4.html#transportation-paradigms---goals-1",
+    "href": "teaching/CIVE461/slides/lec-4.html#transportation-paradigms---goals-1",
+    "title": "Lecture 4 - Transportation Planning Process",
+    "section": "Transportation Paradigms - Goals",
+    "text": "Transportation Paradigms - Goals\nEmerging\n\nSystem maintenance & safety\nTraffic calming & urban design\nEmphasis on connections & relationships among modes – multimodality & intermodality\nTransportation & land use interaction and integration\nDemand management for reducing motorized transport\nDemand & increase in nonmotorized travel\nEducation & public involvement"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-4.html#transportation-paradigms---strategies",
+    "href": "teaching/CIVE461/slides/lec-4.html#transportation-paradigms---strategies",
+    "title": "Lecture 4 - Transportation Planning Process",
+    "section": "Transportation Paradigms - Strategies",
+    "text": "Transportation Paradigms - Strategies\nConventional\n\nSubsidies to transportation users\nTrue total costs to society not reflected in price to travel\nTechnology used to promote individual mobility, meet government-mandated performance thresholds, & improve system performance"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-4.html#transportation-paradigms---strategies-1",
+    "href": "teaching/CIVE461/slides/lec-4.html#transportation-paradigms---strategies-1",
+    "title": "Lecture 4 - Transportation Planning Process",
+    "section": "Transportation Paradigms - Strategies",
+    "text": "Transportation Paradigms - Strategies\nEmerging\n\nPricing includes environmental costs\nInternalizing external costs\nTechnology used as a travel substitute"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-4.html#criteria-for-goals-objectives",
+    "href": "teaching/CIVE461/slides/lec-4.html#criteria-for-goals-objectives",
+    "title": "Lecture 4 - Transportation Planning Process",
+    "section": "Criteria for Goals & Objectives",
+    "text": "Criteria for Goals & Objectives\n\n\nMust be clear, concise, & unambiguous\nObjectives must follow logically from goals\nMust reflect views & aspirations of community\nEach objective must be measurable by at least one MOE\nMOE measurement must require only a reasonable effort\nGoals & objectives should be independent of specific plans & modes"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-4.html#criteria-for-moe",
+    "href": "teaching/CIVE461/slides/lec-4.html#criteria-for-moe",
+    "title": "Lecture 4 - Transportation Planning Process",
+    "section": "Criteria for MOE",
+    "text": "Criteria for MOE\n\n\nRelevant to objectives\nMeasurable\nSensitive\n\nTo policy of interest\nDifferentiate impacts by interest group\n\nUnbiased\nManageable\nUnderstandable"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-4.html#accessibility-moe",
+    "href": "teaching/CIVE461/slides/lec-4.html#accessibility-moe",
+    "title": "Lecture 4 - Transportation Planning Process",
+    "section": "Accessibility MOE",
+    "text": "Accessibility MOE\n\nAverage travel time from origin to destination\nAverage trip length\nAccessibility index\nMode split by region, facility, or route\nPercentage of employment/activity centers within X miles of major highways/transit station\nNumber of bridges with vertical clearance less than X feet\nPercent of population within X minutes of Y percent of employment sites\nPercent of region’s mobility impaired population who reach specific activity by public transit"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-4.html#mobility-moe",
+    "href": "teaching/CIVE461/slides/lec-4.html#mobility-moe",
+    "title": "Lecture 4 - Transportation Planning Process",
+    "section": "Mobility MOE",
+    "text": "Mobility MOE\n\n\n\n\nOrigin to destination travel times\nAverage speed or travel time\nVehicle-miles traveled by congestion level\nLost time or delay due to congestion\nLevel-of-service/volume-delay ratio\nVehicle-hrs traveled per capita\nVehicle-mi traveled per capita\n\n\n\nPercent transit on-time performance\nTransit service frequency\nModal split\nTransfer time between modes\nUser’s travel time perception\nDelay per goods ton-mi\nPercent of transit or non-motorized trips by trip purpose"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-4.html#economic-development-moe",
+    "href": "teaching/CIVE461/slides/lec-4.html#economic-development-moe",
+    "title": "Lecture 4 - Transportation Planning Process",
+    "section": "Economic Development MOE",
+    "text": "Economic Development MOE\n\nEconomic cost of road collisions\nEconomic cost of lost time in travel\nPercent of wholesale/retail/commercial centers with unrestricted vehicle weight roads\nJobs directly created/supported\nPercent of region’s unemployed or low-income people who consider transportation a principle barrier to employment"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-4.html#quality-of-life-moe",
+    "href": "teaching/CIVE461/slides/lec-4.html#quality-of-life-moe",
+    "title": "Lecture 4 - Transportation Planning Process",
+    "section": "Quality of Life MOE",
+    "text": "Quality of Life MOE\n\nLost time for congestion\nCrashes per vehicle-mi or person-mi\nTons of generated pollution\nUser safety and urban quality perception\nAverage hours spent traveling per day\nPercent of population exposed to noise"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-4.html#environmental-resource-consumption-moe",
+    "href": "teaching/CIVE461/slides/lec-4.html#environmental-resource-consumption-moe",
+    "title": "Lecture 4 - Transportation Planning Process",
+    "section": "Environmental & Resource Consumption MOE",
+    "text": "Environmental & Resource Consumption MOE\n\nOverall mode split by facility or route\nTons of pollution\nNumber of days in air quality non-compliance\nLevel of sprawl: difference between changes in urban and sub-urban housing density\nNumber of collisions involving hazardous materials"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-4.html#safety-moe",
+    "href": "teaching/CIVE461/slides/lec-4.html#safety-moe",
+    "title": "Lecture 4 - Transportation Planning Process",
+    "section": "Safety MOE",
+    "text": "Safety MOE\n\nNumber of collisions per vehicle-mi per year/trip/ton-mi/capita\nNumber of high collision locations\nResponse time to collision incidents\nAccident risk index\nConstruction-related fatalities/injuries\nCollisions at major inter-modal (e.g., railroad) crossings\nPedestrian/bicycle collisions"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-4.html#operating-efficiency-moe",
+    "href": "teaching/CIVE461/slides/lec-4.html#operating-efficiency-moe",
+    "title": "Lecture 4 - Transportation Planning Process",
+    "section": "Operating Efficiency MOE",
+    "text": "Operating Efficiency MOE\n\nTransportation system service costs\nCost/benefit measures\nAverage cost per lane-mi construction\nOrigin to destination travel time\nAverage speed\nPercent of projects rated as good to excellent quality\nVolume/capacity ratio\nCost per goods ton-mi\nMode split\nCustomer/user satisfaction"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-4.html#some-transportation-policy-building-blocks",
+    "href": "teaching/CIVE461/slides/lec-4.html#some-transportation-policy-building-blocks",
+    "title": "Lecture 4 - Transportation Planning Process",
+    "section": "Some Transportation Policy Building Blocks",
+    "text": "Some Transportation Policy Building Blocks\n\n\n\n\n\n\n\n\nCIVE461 Home"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-6.html#three-route-example",
@@ -1601,6 +1622,34 @@
     "title": "Lecture 8 - Trip Distribution",
     "section": "Three Route Example - Solution",
     "text": "Three Route Example - Solution\nWe’ll start by creating a Pandas dataframe to store the iteration variables\nimport pandas as pd\nimport numpy as np\nfrom scipy.optimize import minimize_scalar\n\ndf = pd.DataFrame({\"f1\": pd.Series(dtype='float'),\n                  \"f2\": pd.Series(dtype='float'),\n                  \"f3\": pd.Series(dtype='float'),\n                  \"V1\": pd.Series(dtype='float'),\n                  \"V2\": pd.Series(dtype='float'),\n                  \"V3\": pd.Series(dtype='float'),\n                  \"F1\": pd.Series(dtype='float'),\n                  \"F2\": pd.Series(dtype='float'),\n                  \"F3\": pd.Series(dtype='float'),\n                  \"F\": pd.Series(dtype='float'),\n                  \"lambda\": pd.Series(dtype='float')})\n## Three Route Example - Solution {.smaller} We can then define the inputs to the traffic assignment algorithm.\n# Specify the freeflow travel times/capacities\nff_tt_1 = 10\nff_tt_2 = 20\nff_tt_3 = 25\nC1 = 200\nC2 = 400\nC3 = 300\n\nvolume = 1000 # veh/hr\nmin_tt = np.min([ff_tt_1, ff_tt_2, ff_tt_3]) # minimum travel time\n\n# Define the volumes on each link (1,2, and 3)\nV1 = volume if (ff_tt_1==min_tt) else 0\nV2 = volume if (ff_tt_2==min_tt) else 0\nV3 = volume if (ff_tt_3==min_tt) else 0\n\n# Define total costs as integrals of travel time costs over volume\nF1 = ff_tt_1*V1 + ff_tt_1*0.15/C1**4*V1**5/5 \nF2 = ff_tt_2*V2 + ff_tt_2*0.15/C2**4*V2**5/5\nF3 = ff_tt_3*V3 + ff_tt_3*0.15/C3**4*V3**5/5\nF = F1 + F2 + F3\n\nl = 1.0 # intialize lambda to 1.0\ntol = 10**-2 # tolerance on the difference in total cost between iterations\n\nrow = [ff_tt_1, ff_tt_2, ff_tt_3, V1, V2, V3, F1, F2, F3, F, l]\ndf.loc[len(df),:] = row # add initial values to df\n## Three Route Example - Solution {.smaller} Next we define the Frank-Wolfe algorithm and solve for \\(\\lambda\\) using scipy optimize minimize_scalar. The first step is to define a loop that repeatedly calls the minimization on a new set of volumes. We define the Frank-Wolfe algorithm and solve for \\(\\lambda\\) using scipy optimize minimize_scalar. The next step is to define the optimization problem. We’ll define the optimization in two functions: get_optimal_vals calculates the various values we need in each iteration and FW_Alg defines the function to be minized by scipy optimize minimize_scalar.\n# Apply the Frank-Wolfe algorithm on the example dataset\ndef FW_Alg(x, prev_iter):\n  f1, f2, f3, V1, V2, V3, F1, F2, F3 = get_optimal_vals(x, prev_iter)\n  return (F1 + F2 + F3)\n\n# Function computes the various traffic assignment algorithm values at optimality\ndef get_optimal_vals(x, prev_iter):\n  f1 = ff_tt_1*(1+0.15*(prev_iter[\"V1\"]/C1)**4)\n  f2 = ff_tt_2*(1+0.15*(prev_iter[\"V2\"]/C2)**4)\n  f3 = ff_tt_3*(1+0.15*(prev_iter[\"V3\"]/C3)**4)\n\n  min_tt = np.min([f1, f2, f3]) # minimum travel time\n\n  V1 = x*prev_iter[\"V1\"] + (1-x)*(volume if f1==min_tt else 0)\n  V2 = x*prev_iter[\"V2\"] + (1-x)*(volume if f2==min_tt else 0)\n  V3 = x*prev_iter[\"V3\"] + (1-x)*(volume if f3==min_tt else 0)\n\n  F1 = ff_tt_1*V1 + ff_tt_1*0.15/C1**4*V1**5/5\n  F2 = ff_tt_2*V2 + ff_tt_2*0.15/C2**4*V2**5/5\n  F3 = ff_tt_3*V3 + ff_tt_3*0.15/C3**4*V3**5/5\n\n  return f1, f2, f3, V1, V2, V3, F1, F2, F3\n\nF_diff = F \n\nwhile F_diff &gt; tol:\n  F_diff = F\n  prev_iter = df.iloc[-1] # Get the values from the last iteration\n\n  res = minimize_scalar(FW_Alg, args=(prev_iter), bounds=[0,1])\n  F = res.fun\n  l = res.x\n  f1, f2, f3, V1, V2, V3, F1, F2, F3 = get_optimal_vals(l, prev_iter)\n\n  row = [f1, f2, f3, V1, V2, V3, F1, F2, F3, F, l]\n  df.loc[len(df),:] = row\n\n  F_diff = F_diff - F\n## Three Route Example - Solution {.smaller} Putting everything together, we can print a table summarizing the variable values at each iteration.\n\n\n\n\n\n\n\n \nf1\nf2\nf3\nV1\nV2\nV3\nF1\nF2\nF3\nF\nlambda\n\n\n\n\n0\n10.00\n20.00\n25.00\n1000.00\n0.00\n0.00\n197500.00\n0.00\n0.00\n197500.00\n1.00\n\n\n1\n947.50\n20.00\n25.00\n403.46\n596.54\n0.00\n6039.00\n13701.45\n0.00\n19740.44\n0.40\n\n\n2\n34.84\n34.84\n25.00\n338.45\n500.42\n161.13\n4217.09\n10743.87\n4038.43\n18999.39\n0.84\n\n\n3\n22.30\n27.35\n25.31\n361.97\n482.63\n155.41\n4784.70\n10266.28\n3893.55\n18944.53\n0.96\n\n\n4\n26.09\n26.36\n25.27\n354.58\n472.78\n172.64\n4596.77\n10009.25\n4330.12\n18936.14\n0.98\n\n\n5\n24.82\n25.85\n25.41\n359.22\n469.38\n171.40\n4713.80\n9921.62\n4298.58\n18934.00\n0.99\n\n\n6\n25.61\n25.69\n25.40\n357.30\n466.87\n175.83\n4664.85\n9857.20\n4411.38\n18933.43\n0.99\n\n\n7\n25.28\n25.57\n25.44\n358.58\n465.93\n175.48\n4697.45\n9833.37\n4402.44\n18933.27\n1.00\n\n\n\n\n\n\n\n\nCIVE461 Home"
+  },
+  {
+    "objectID": "teaching/CIVE461/supplemental/transport-data.html",
+    "href": "teaching/CIVE461/supplemental/transport-data.html",
+    "title": "Transportation Data",
+    "section": "",
+    "text": "This browser does not support PDFs. Please download the PDF to view it: Download PDF."
+  },
+  {
+    "objectID": "teaching/CIVE461/supplemental/transport-equity.html",
+    "href": "teaching/CIVE461/supplemental/transport-equity.html",
+    "title": "Transportation Equity",
+    "section": "",
+    "text": "This browser does not support PDFs. Please download the PDF to view it: Download PDF."
+  },
+  {
+    "objectID": "teaching/CIVE461/supplemental/transport-reg.html",
+    "href": "teaching/CIVE461/supplemental/transport-reg.html",
+    "title": "Transportation Regulations",
+    "section": "",
+    "text": "This browser does not support PDFs. Please download the PDF to view it: Download PDF."
+  },
+  {
+    "objectID": "teaching/CIVE461/supplemental/trip-distribution.html",
+    "href": "teaching/CIVE461/supplemental/trip-distribution.html",
+    "title": "Trip Distribution",
+    "section": "",
+    "text": "This browser does not support PDFs. Please download the PDF to view it: Download PDF."
   },
   {
     "objectID": "teaching/CIVE461/weeks/week-1.html",
@@ -1670,7 +1719,7 @@
     "href": "teaching/CIVE461/weeks/week-3.html#participate",
     "title": "Week 3",
     "section": "Participate",
-    "text": "Participate\n🖥️ Lecture 3 - Transportation Planning Process"
+    "text": "Participate\n🖥️ Lecture 2 - Statistical Modeling"
   },
   {
     "objectID": "teaching/CIVE461/weeks/week-3.html#practice",
@@ -1694,11 +1743,158 @@
     "text": "📖 Follow the instructions on the computing access page prior to lecture."
   },
   {
+    "objectID": "teaching/CIVE461/weeks/week-4.html#participate",
+    "href": "teaching/CIVE461/weeks/week-4.html#participate",
+    "title": "Week 4",
+    "section": "Participate",
+    "text": "Participate\n🖥️ Lecture 3 - Trip Generation"
+  },
+  {
     "objectID": "teaching/CIVE461/weeks/week-4.html#practice",
     "href": "teaching/CIVE461/weeks/week-4.html#practice",
     "title": "Week 4",
     "section": "Practice",
-    "text": "Practice\n📋 Submit Jupyter notebooks from in-class tutorials as pdf files.\n\n\nBack to course schedule ⏎"
+    "text": "Practice\n📋 Complete Jupyter notebooks from in-class tutorials.\n\n\nBack to course schedule ⏎"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-5.html",
+    "href": "teaching/CIVE461/weeks/week-5.html",
+    "title": "Week 5",
+    "section": "",
+    "text": "Start work on Project Report 1 ✍️"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-5.html#prepare",
+    "href": "teaching/CIVE461/weeks/week-5.html#prepare",
+    "title": "Week 5",
+    "section": "",
+    "text": "Start work on Project Report 1 ✍️"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-5.html#participate",
+    "href": "teaching/CIVE461/weeks/week-5.html#participate",
+    "title": "Week 5",
+    "section": "Participate",
+    "text": "Participate\n🖥️ Lecture 3 - Trip Generation"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-5.html#practice",
+    "href": "teaching/CIVE461/weeks/week-5.html#practice",
+    "title": "Week 5",
+    "section": "Practice",
+    "text": "Practice\n📋 AE 2 - Transportation Statistics\n\n\nBack to course schedule ⏎"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-6.html",
+    "href": "teaching/CIVE461/weeks/week-6.html",
+    "title": "Week 6",
+    "section": "",
+    "text": "📖 Read notes on transportation regulation\n📖 Read notes on transportation data"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-6.html#prepare",
+    "href": "teaching/CIVE461/weeks/week-6.html#prepare",
+    "title": "Week 6",
+    "section": "",
+    "text": "📖 Read notes on transportation regulation\n📖 Read notes on transportation data"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-6.html#participate",
+    "href": "teaching/CIVE461/weeks/week-6.html#participate",
+    "title": "Week 6",
+    "section": "Participate",
+    "text": "Participate\n🖥️ Lecture 4 - Transportation Planning Process"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-6.html#practice",
+    "href": "teaching/CIVE461/weeks/week-6.html#practice",
+    "title": "Week 6",
+    "section": "Practice",
+    "text": "Practice\n📋 AE 3 - Urban Transportation Plans\n\n\nBack to course schedule ⏎"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-7.html",
+    "href": "teaching/CIVE461/weeks/week-7.html",
+    "title": "Week 7",
+    "section": "",
+    "text": "📖 Read notes on Trip Distribution"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-7.html#prepare",
+    "href": "teaching/CIVE461/weeks/week-7.html#prepare",
+    "title": "Week 7",
+    "section": "",
+    "text": "📖 Read notes on Trip Distribution"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-7.html#participate",
+    "href": "teaching/CIVE461/weeks/week-7.html#participate",
+    "title": "Week 7",
+    "section": "Participate",
+    "text": "Participate\nNone"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-7.html#practice",
+    "href": "teaching/CIVE461/weeks/week-7.html#practice",
+    "title": "Week 7",
+    "section": "Practice",
+    "text": "Practice\n📋 AE 4 - Trip Distribution\n\n\nBack to course schedule ⏎"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-8.html",
+    "href": "teaching/CIVE461/weeks/week-8.html",
+    "title": "Week 8",
+    "section": "",
+    "text": "📖 Read notes on transportation equity"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-8.html#prepare",
+    "href": "teaching/CIVE461/weeks/week-8.html#prepare",
+    "title": "Week 8",
+    "section": "",
+    "text": "📖 Read notes on transportation equity"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-8.html#participate",
+    "href": "teaching/CIVE461/weeks/week-8.html#participate",
+    "title": "Week 8",
+    "section": "Participate",
+    "text": "Participate\nNone"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-8.html#practice",
+    "href": "teaching/CIVE461/weeks/week-8.html#practice",
+    "title": "Week 8",
+    "section": "Practice",
+    "text": "Practice\n📋 AE 5 - Transportation Equity\n\n\nBack to course schedule ⏎"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-9.html",
+    "href": "teaching/CIVE461/weeks/week-9.html",
+    "title": "Week 9",
+    "section": "",
+    "text": "None"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-9.html#prepare",
+    "href": "teaching/CIVE461/weeks/week-9.html#prepare",
+    "title": "Week 9",
+    "section": "",
+    "text": "None"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-9.html#participate",
+    "href": "teaching/CIVE461/weeks/week-9.html#participate",
+    "title": "Week 9",
+    "section": "Participate",
+    "text": "Participate\nGuest lecture - Nick Aldridge: “Active Mode Transportation Safety Exposure Using LBS Data”"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-9.html#practice",
+    "href": "teaching/CIVE461/weeks/week-9.html#practice",
+    "title": "Week 9",
+    "section": "Practice",
+    "text": "Practice\nNone\n\n\nBack to course schedule ⏎"
   },
   {
     "objectID": "teaching/CIVE864/CIVE864.html",
