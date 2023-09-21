@@ -6,11 +6,11 @@ title: "Project description"
 
 [Report 1](#report-1) due Wed, Sept 27
 
-[Report 2](#report-2) due Wed, Oct 25
+[Report 2](#report-2) due Wed, Oct 18
 
 [Report 3](#report-3) due Wed, Nov 08
 
-[Final report](#final-report) due Wed, Dec 06
+[Final report](#final-report) due Wed, Nov 28
 
 ## Introduction
 

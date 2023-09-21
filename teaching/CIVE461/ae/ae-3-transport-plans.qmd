@@ -1,0 +1,12 @@
+---
+title: "Urban Transportation Plans"
+sidebar: CIVE461
+---
+
+We discussed several transportation and urban develop plans for the Nebraska cities of Lincoln and Omaha in lecture. Please provide a brief (3-5 sentence) summary of your thoughts on the class discussion via Canvas. The document is provided below
+
+<object data="../supplemental/CIVE461_Urban_Development_Plans.pdf" type="application/pdf" width="100%" height="700px">
+    <embed src="../supplemental/CIVE461_Urban_Development_Plans.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="../supplemental/CIVE461_Urban_Development_Plans.pdf">Download PDF</a>.</p>
+    </embed>
+</object>

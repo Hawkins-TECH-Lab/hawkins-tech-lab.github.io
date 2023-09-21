@@ -11,7 +11,7 @@ editor: visual
 
 ## Participate
 
-🖥️ [Lecture 3 - Transportation Planning Process](/teaching/CIVE461/slides/lec-3.html)
+🖥️ [Lecture 2 - Statistical Modeling](/teaching/CIVE461/slides/lec-2.html)
 
 ## Practice
 

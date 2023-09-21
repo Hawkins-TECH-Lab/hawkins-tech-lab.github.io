@@ -1,0 +1,24 @@
+---
+title: "Week 7"
+subtitle: "Trip Distribution"
+editor: visual
+---
+
+
+## Prepare
+
+📖 Read notes on [Trip Distribution](/teaching/CIVE461/supplemental/trip-distribution.html)
+
+## Participate
+
+None
+
+## Practice
+
+📋 [AE 4 - Trip Distribution](/teaching/CIVE461/ae/ae-4-trip-distribution.html) 
+
+<br><br>
+
+::: {style="font-size: 0.875em;"}
+Back to [course schedule](/teaching/CIVE461/ "Course schedule") ⏎
+:::

@@ -72,6 +72,18 @@ website:
               text: "Week 2"
             - href: teaching/CIVE461/weeks/week-3.qmd
               text: "Week 3"
+            - href: teaching/CIVE461/weeks/week-4.qmd
+              text: "Week 4"
+            - href: teaching/CIVE461/weeks/week-5.qmd
+              text: "Week 5"
+            - href: teaching/CIVE461/weeks/week-6.qmd
+              text: "Week 6"
+            - href: teaching/CIVE461/weeks/week-7.qmd
+              text: "Week 7"
+            - href: teaching/CIVE461/weeks/week-8.qmd
+              text: "Week 8"
+            - href: teaching/CIVE461/weeks/week-9.qmd
+              text: "Week 9"
         - section: "Project"
           contents:
             - href: teaching/CIVE461/project/project-description.qmd

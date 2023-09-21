@@ -9,9 +9,13 @@ editor: visual
 
 📖 Follow the instructions on the [computing access page](/teaching/CIVE461/computing/computing-access.html) prior to lecture.
 
+## Participate
+
+🖥️ [Lecture 3 - Trip Generation](/teaching/CIVE461/slides/lec-3.html)
+
 ## Practice
 
-📋 Submit Jupyter notebooks from in-class tutorials as pdf files.
+📋 Complete Jupyter notebooks from in-class tutorials.
 
 <br><br>
 
