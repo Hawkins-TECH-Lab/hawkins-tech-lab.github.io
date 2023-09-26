@@ -91,6 +91,20 @@
     "text": "We discussed several transportation and urban develop equity issues in lecture. Please provide a brief (3-5 sentence) summary of your thoughts on the class discussion via Canvas."
   },
   {
+    "objectID": "teaching/CIVE461/assignments/indiv_assignment1.html",
+    "href": "teaching/CIVE461/assignments/indiv_assignment1.html",
+    "title": "Individual Assignment 1: Choice Models",
+    "section": "",
+    "text": "Due Oct. 30 - Submit on Canvas\nPoints are assigned both on the correctness of the answer and the completeness of the solution – state all assumptions. Show all calculations and equations. Do not use Excel or other software packages.\nProblem 1. A greengrocer is selling apples, bananas, and oranges in Leeds, UK. They surveyed a random sample of their customers and estimated a multinomial logit model. The estimated parameters and attribute values are given below. Calculate the choice probability for each alternative assuming a multinomial logit error term.\n\n\n\n\n\n\n\n\n\n\n\n\n\nAlternative\nPrice\nPrice Parameter\nUnusual Shape (Y/N)\nUnusual Shape Parameter\nRipe (Y/N)\nRipeness Parameter\nAlternative Specific Constant\n\n\n\n\nApple\n0.84\n-0.25\nTRUE\n-0.1\nTRUE\n0.3\n0\n\n\nBanana\n0.17\n-0.25\nFALSE\n-0.1\nFALSE\n0.3\n0.7\n\n\nOrange\n0.25\n-0.25\nFALSE\n-0.1\nTRUE\n0.3\n-0.9\n\n\n\nProblem 2. There is a banana shortage and the price increases by 10%.\nWhat would happen to the selection probabilities for each alternative? Compare the results using a) direct and cross elasticity equations with the result when you b) change the price of bananas and re-calculate the choice probabilities. Why might the two results differ?"
+  },
+  {
+    "objectID": "teaching/CIVE461/assignments/indiv_assignment2.html",
+    "href": "teaching/CIVE461/assignments/indiv_assignment2.html",
+    "title": "Individual Assignment 2: Traffic Assignment",
+    "section": "",
+    "text": "Due Nov. 20 - Submit on Canvas\nPoints are assigned both on the correctness of the answer and the completeness of the solution – state all assumptions. Show all calculations and equations. Do not use Excel or other software packages.\nProblem 1. Consider the simple network in the below figure where there are 100 vehicles per hour travelling from A to X and 500 from B to X. The travel time versus flow relationships (volume-delay functions) are depicted in the figure in minutes and the flow v in vehicles per hour.\na. Express the objective function of the mathematical program corresponding to Wardrop’s user equilibrium in terms of the flows and travel time-flow relationships in the figure. Hint: refer to the Traffic Assignment lecture slides.\nb. Calculate the equilibrium flows on each link and the travel time for each group of travelers. Calculate the value of the objective function above under equilibrium conditions – i.e., the total expenditure in travel time on the network in veh-hr. You should start with an incremental assignment. You can assume the following loading: 50% A-&gt;X, 50% B-&gt;X, 50% B-&gt;X, 50% A-&gt;X. You should then use an all-or-nothing assignment as your second volume in the Frank-Wolfe (FW) algorithm. Perform only one FW iteration. You can use the same FW approximation as in the class example – i.e., evaluate \\(\\lambda\\) = 0, 1/3, 2/3, and 1.\n\n\n\n\n\nc. Local traffic engineers have decided to install speed restrictions on link C-&gt;D so that the new travel time versus flow function is: t=5.2+0.002v\nThe total expenditure in travel time (veh-hr) in the system is less than in (b) under these conditions. Why would this be the case? The following two tables show the final Frank-Wolfe flow results for the relationships in part (b) and (c), respectively. Please use these tables in your response.\n\n\n\n\n\n\n\n\n\n\n\nIndex\nArc\nFixed Cost\nVariable Cost\nFlow\n\n\n\n\n\n0\nA\nC\n1\n0.001\n100\n\n\n1\nB\nD\n1\n0.001\n500\n\n\n2\nC\nE\n2\n0.01\n569.23\n\n\n3\nD\nC\n3.4\n0.002\n469.23\n\n\n4\nD\nE\n12\n0.001\n30.77\n\n\n5\nE\nX\n0\n0\n600\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIndex\nArc\nFixed Cost\nVariable Cost\nFlow\n\n\n\n\n\n0\nA\nC\n1\n0.001\n100\n\n\n1\nB\nD\n1\n0.001\n500\n\n\n2\nC\nE\n2\n0.01\n430.77\n\n\n3\nD\nC\n5.2\n0.002\n330.77\n\n\n4\nD\nE\n12\n0.001\n169.23\n\n\n5\nE\nX\n0\n0\n600\n\n\n\nProblem 2. Problem 1 assumes that traffic assignment is deterministic. In reality, traffic assignment (route choice) varies across decision-making motorists on the road.\na. Comment on possible reasons for stochasticity in route choice.\nb. One way to handle stochastic traffic assignment is via discrete choice models. How might this face a computational challenge? You should support your response with a diagram. Examples and scenarios are also welcome additions."
+  },
+  {
     "objectID": "teaching/CIVE461/computing/computing-access.html",
     "href": "teaching/CIVE461/computing/computing-access.html",
     "title": "Computing access",
@@ -249,21 +263,21 @@
     "href": "teaching/CIVE461/index.html",
     "title": "CIVE461",
     "section": "",
-    "text": "This page contains an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses, with all changes documented here.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nDate\nTopic\nPrepare\nSlides\nAE\nHW\nExam\n\n\n\n\n\n\n1\nMon, Aug 21\nWelcome to CIVE 461!\n📖\n\n\n\n\n\n\n\n\n\nWed, Aug 23\nIntroduction to transportation planning\n\n🖥️\n📋\n\n\n\n\n\n\n2\nMon, Aug 28\nStatistics\n📖\n🖥️\n\n\n\n\n\n\n\n\nWed, Aug 30\nStatistical modeling\n\n\n\n\n\n\n\n\n\n3\nMon, Sep 04\nLabor Day\n📖\n\n\n\n\n\n\n\n\n\nWed, Sep 06\nStatistical modeling\n\n\n📋\n\n\n\n\n\n\n4\nMon, Sep 11\nProgramming in Python\n📖\n\n\n\n\n\n\n\n\n\nWed, Sep 13\nTrip generation\n\n🖥️\n📋\n\n\n\n\n\n\n5\nMon, Sep 18\nTrip generation\n\n\n\n\n\n\n\n\n\n\nWed, Sep 20\nTrip generation\n\n\n\n\n\n\n\n\n\n6\nMon, Sep 25\nTrip generation\n\n\n\n\n\n\n\n\n\n\nWed Sep 27\nTransportation planning process, regulation, and data\n\n🖥️\n\n✍️\n\n\n\n\n\n7\nMon, Oct 02\nTransportation planning process, regulation, and data\n\n\n\n\n\n\n\n\n\n\nWed, Oct 04\nTrip distribution\n\n\n\n\n\n\n\n\n\n8\nMon, Oct 09\nTrip distribution\n\n\n\n\n\n\n\n\n\n\nWed, Oct 11\nTransportation equity\n\n\n\n\n\n\n\n\n\n9\nMon, Oct 16\n*Fall break**\n\n\n\n\n\n\n\n\n\n\nWed Oct 18\nGuest lecture\n\n\n\n✍️\n\n\n\n\n\n\nMon, Oct 23\nChoice models\n\n\n\n\n\n\n\n\n\n\nWed, Oct 25\nProgramming choice models\n\n\n\n\n\n\n\n\n\n\nMon, Oct 30\nMode and destination choice\n\n\n\n\n\n\n\n\n\n\nWed, Nov 01\nMode and destination choice\n\n\n\n\n\n\n\n\n\n\nMon, Nov 06\nTrip assignment\n\n\n\n✍️\n\n\n\n\n\n\nWed, Nov 08\nTrip assignment\n\n\n\n✍️\n\n\n\n\n\n\nMon, Nov 13\nTrip assignment\n\n\n\n\n\n\n\n\n\n\nWed, Nov 15\nFreight modeling\n\n\n\n\n\n\n\n\n\n\nMon, Nov 20\nFreight modeling\n\n\n\n✍️\n\n\n\n\n\n\nWed Nov 22\nThanksgiving break\n\n\n\n\n\n\n\n\n\n\nMon, Nov 27\nLand use planning\n\n\n\n\n\n\n\n\n\n\nWed, Nov 28\nTransportation economics\n\n\n\n✍️\n\n\n\n\n\n\nMon, Dec 04\nTransportation economics\n\n\n\n\n\n\n\n\n\n\nWed, Dec 06\nTBD"
+    "text": "This page contains an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses, with all changes documented here.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nDate\nTopic\nPrepare\nSlides\nAE\nHW\nExam\n\n\n\n\n\n\n1\nMon, Aug 21\nWelcome to CIVE 461!\n📖\n\n\n\n\n\n\n\n\n\nWed, Aug 23\nIntroduction to transportation planning\n\n🖥️\n📋\n\n\n\n\n\n\n2\nMon, Aug 28\nStatistics\n📖\n🖥️\n\n\n\n\n\n\n\n\nWed, Aug 30\nStatistical modeling\n\n\n\n\n\n\n\n\n\n3\nMon, Sep 04\nLabor Day\n📖\n\n\n\n\n\n\n\n\n\nWed, Sep 06\nStatistical modeling\n\n\n📋\n\n\n\n\n\n\n4\nMon, Sep 11\nProgramming in Python\n📖\n\n\n\n\n\n\n\n\n\nWed, Sep 13\nTrip generation\n\n🖥️\n📋\n\n\n\n\n\n\n5\nMon, Sep 18\nTrip generation\n\n\n\n\n\n\n\n\n\n\nWed, Sep 20\nTrip generation\n\n\n\n\n\n\n\n\n\n6\nMon, Sep 25\nTrip generation\n\n\n\n\n\n\n\n\n\n\nWed Sep 27\nTransportation planning process, regulation, and data\n\n🖥️\n\n✍️\n\n\n\n\n\n7\nMon, Oct 02\nTransportation planning process, regulation, and data\n\n\n\n\n\n\n\n\n\n\nWed, Oct 04\nTrip distribution\n\n\n\n\n\n\n\n\n\n8\nMon, Oct 09\nTrip distribution\n\n\n\n\n\n\n\n\n\n\nWed, Oct 11\nTransportation equity\n\n\n\n\n\n\n\n\n\n9\nMon, Oct 16\n*Fall break**\n\n\n\n\n\n\n\n\n\n\nWed Oct 18\nGuest lecture\n\n\n\n✍️\n\n\n\n\n\n\nMon, Oct 23\nChoice models\n\n\n\n\n\n\n\n\n\n\nWed, Oct 25\nProgramming choice models\n\n\n\n\n\n\n\n\n\n\nMon, Oct 30\nMode and destination choice\n\n\n\n✍️\n\n\n\n\n\n\nWed, Nov 01\nMode and destination choice\n\n\n\n\n\n\n\n\n\n\nMon, Nov 06\nTrip assignment\n\n\n\n\n\n\n\n\n\n\nWed, Nov 08\nTrip assignment\n\n\n\n✍️\n\n\n\n\n\n\nMon, Nov 13\nTrip assignment\n\n\n\n\n\n\n\n\n\n\nWed, Nov 15\nFreight modeling\n\n\n\n\n\n\n\n\n\n\nMon, Nov 20\nFreight modeling\n\n\n\n✍️\n\n\n\n\n\n\nWed Nov 22\nThanksgiving break\n\n\n\n\n\n\n\n\n\n\nMon, Nov 27\nLand use planning\n\n\n\n\n\n\n\n\n\n\nWed, Nov 28\nTransportation economics\n\n\n\n✍️\n\n\n\n\n\n\nMon, Dec 04\nTransportation economics\n\n\n\n\n\n\n\n\n\n\nWed, Dec 06\nTBD"
   },
   {
     "objectID": "teaching/CIVE461/project/project-description.html",
     "href": "teaching/CIVE461/project/project-description.html",
     "title": "Project description",
     "section": "",
-    "text": "Report 1 due Wed, Sept 27\nReport 2 due Wed, Oct 18\nReport 3 due Wed, Nov 08\nFinal report due Wed, Nov 28"
+    "text": "Report 1 due Mon, Oct 02 - Submit on Canvas\nReport 2 due Wed, Oct 18 - Submit on Canvas\nReport 3 due Wed, Nov 08 - Submit on Canvas\nFinal report due Wed, Nov 28 - Submit on Canvas"
   },
   {
     "objectID": "teaching/CIVE461/project/project-description.html#timeline",
     "href": "teaching/CIVE461/project/project-description.html#timeline",
     "title": "Project description",
     "section": "",
-    "text": "Report 1 due Wed, Sept 27\nReport 2 due Wed, Oct 18\nReport 3 due Wed, Nov 08\nFinal report due Wed, Nov 28"
+    "text": "Report 1 due Mon, Oct 02 - Submit on Canvas\nReport 2 due Wed, Oct 18 - Submit on Canvas\nReport 3 due Wed, Nov 08 - Submit on Canvas\nFinal report due Wed, Nov 28 - Submit on Canvas"
   },
   {
     "objectID": "teaching/CIVE461/project/project-description.html#introduction",
@@ -1838,7 +1852,7 @@
     "href": "teaching/CIVE461/weeks/week-7.html#practice",
     "title": "Week 7",
     "section": "Practice",
-    "text": "Practice\n📋 AE 4 - Trip Distribution\n\n\nBack to course schedule ⏎"
+    "text": "Practice\n📋 AE 4 - Trip Distribution - Submit on Canvas\n✍️ GP 1 - Trip Generation - Submit on Canvas\n\n\nBack to course schedule ⏎"
   },
   {
     "objectID": "teaching/CIVE461/weeks/week-8.html",
@@ -1866,7 +1880,7 @@
     "href": "teaching/CIVE461/weeks/week-8.html#practice",
     "title": "Week 8",
     "section": "Practice",
-    "text": "Practice\n📋 AE 5 - Transportation Equity\n\n\nBack to course schedule ⏎"
+    "text": "Practice\n📋 AE 5 - Transportation Equity - Submit on Canvas\n\n\nBack to course schedule ⏎"
   },
   {
     "objectID": "teaching/CIVE461/weeks/week-9.html",
@@ -1894,7 +1908,7 @@
     "href": "teaching/CIVE461/weeks/week-9.html#practice",
     "title": "Week 9",
     "section": "Practice",
-    "text": "Practice\nNone\n\n\nBack to course schedule ⏎"
+    "text": "Practice\n✍️ GP 2 - Trip Distribution - Submit on Canvas\n\n\nBack to course schedule ⏎"
   },
   {
     "objectID": "teaching/CIVE864/CIVE864.html",
