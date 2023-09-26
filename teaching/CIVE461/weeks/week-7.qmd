@@ -15,7 +15,9 @@ None
 
 ## Practice
 
-📋 [AE 4 - Trip Distribution](/teaching/CIVE461/ae/ae-4-trip-distribution.html) 
+📋 [AE 4 - Trip Distribution](/teaching/CIVE461/ae/ae-4-trip-distribution.html) - Submit on Canvas
+
+✍️ [GP 1 - Trip Generation](/teaching/CIVE461/project/project-description.html#report-1) - Submit on Canvas
 
 <br><br>
 
