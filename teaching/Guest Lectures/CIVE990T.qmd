@@ -1,6 +1,6 @@
 ---
-title: "Introduction to Land Use Modeling"
-subtitle: "CIVE 990T - Fall 2023"
+title: "Introduction to Land Use & Urban Economic Modeling"
+subtitle: "CIVE 990T"
 editor: visual
 format: 
   revealjs: 
@@ -20,8 +20,8 @@ execute:
 ## Urban Structure
 - Bourne (1982) defines **urban structure** as combination of:
   - **Urban form** - spatial configuration of fixed elements such as buildings, transportation network, & other infrastructure
-  - **Urban interactions** - flows of goods/people/information/money
-  - **Organizing principles** - reltaionshihps between urban form & interactions such as travel cost, social status, segregation
+  - **Urban interactions** - flows of goods, people, information, & money
+  - **Organizing principles** - relationshihps between urban form & interactions such as travel cost, social status, & segregation
 
 # Spatial Firm Competition
 
@@ -84,7 +84,7 @@ For a store to remain in business: $S > S_{min} =$ sales threshold for good $g$
 
 ## Market Equilibrium Lattice Structure
 
-# Spatial Residential Competition {.smaller}
+## Spatial Residential Competition {.smaller}
 - Monocentric city model
 - Elements:
   - r = commuting distance & residential location on a line or radius
@@ -94,20 +94,30 @@ For a store to remain in business: $S > S_{min} =$ sales threshold for good $g$
   - s = amount of rented space
   - Y = income
 - Fundamental household problem
-$$max_{z,s}(U(z,s)\text{ such that} z+R(r)s = Y-T(r))$$
+$$max_{z,s}U(z,s)\text{ such that } z+R(r)s = Y-T(r))$$
 - All households have same utility at equilibrium (or would move)
 
 ## Bid-Rent Approach {.smaller}
 - Rather than solve system, use equal utility assumption to derive *bid-rent* function $\Psi(r,u)$ - maximum willingness-to-pay by household for unit of space at location $r$ given utility level $u$
 - Invert budget constraint
-$$\Psi
+$$\Psi(r,u)=max_s \frac{Y-T(r)-z}{s(r,u)} \text{ such that U(z,s) = u}$$
+- Equivalently
+$$\Psi(r,u)=max_s \frac{Y-T(r)-z(s(r,u),u)}{s(r,u)}$$
+
+## Bid-Rent Approach {.smaller}
+- By envelope theorem
+$$\frac{\partial\Psi(r,u)}{\partial r}=\frac{T'(r)}{s(r,u)}$$
+- Using implicit function theorem on $U(s,z)=u$
+$$\frac{\partial z(s,u)}{\partial s}=\frac{-U_s}{U_z}=-\Psi(r,u)$$
+- Stochastic bid rent, assuming Type I errors gives
+$$Pr(h|r,u)=\frac{exp(\Psi_h(r,u))}{\sum_h^H exp(\Psi_h(r,u))}$$
 
 # Operational Land Use Models
 
 ## Classic Models
 - Lowry model (1964)
 - DRAM/EMPAL (1967)
-- TRANUS & MEPLAN (South America & Europe)
+- TRANUS & MEPLAN (1970s)
 
 ## Modern Models
 - IRPUD (Germany)

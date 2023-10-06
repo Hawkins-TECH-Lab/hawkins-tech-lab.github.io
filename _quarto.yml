@@ -22,7 +22,9 @@ website:
           - text: "CIVE461/861"
             href: teaching/CIVE461/index.qmd
           - text: "CIVE864"
-            href: teaching/CIVE864/index.qmd 
+            href: teaching/CIVE864/index.qmd
+          - text: "CIVE990T"
+            href: teaching/Guest Lectures/CIVE990T.qmd 
     background: "#d00000"
     
   sidebar:
