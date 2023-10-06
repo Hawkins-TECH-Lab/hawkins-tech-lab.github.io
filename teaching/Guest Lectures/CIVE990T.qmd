@@ -1,0 +1,119 @@
+---
+title: "Introduction to Land Use Modeling"
+subtitle: "CIVE 990T - Fall 2023"
+editor: visual
+format: 
+  revealjs: 
+    theme: simple
+    transition: fade
+    chalkboard: true
+    slide-number: true
+execute:
+  freeze: auto
+---
+
+# Introduction
+## Transportation & Land Use
+
+![](./images/transport_activity_systems_land_use.png){fig-align="center"}
+
+## Urban Structure
+- Bourne (1982) defines **urban structure** as combination of:
+  - **Urban form** - spatial configuration of fixed elements such as buildings, transportation network, & other infrastructure
+  - **Urban interactions** - flows of goods/people/information/money
+  - **Organizing principles** - reltaionshihps between urban form & interactions such as travel cost, social status, segregation
+
+# Spatial Firm Competition
+
+## Firm Competition
+::: {.fragment .fade-in}
+- Price
+:::
+
+::: {.fragment .fade-in}
+- Service
+:::
+
+::: {.fragment .fade-in}
+- Quality
+:::
+
+::: {.fragment .fade-in}
+::: {.fragment .highlight-red}
+- Location
+:::
+:::
+
+## Von Th&uuml;nen's Isolated State
+
+## Central Place Theory (CPT) {.smaller}
+- Attributed to Christaller (1966) & L&ouml;sch (1954)
+- Elements:
+  - Single homogeneous good, $g$, is sold
+  - Good sold at fixed unit price, $p$
+  - Travel possible in any direction at uniform cost, $r$, $/mile
+  - Total cost to buyer is good price + transport cost
+  $$ C = p + rd$$
+  - Stores free to locate anywhere on flat, featureless plane
+  - Uniform population density over plane
+  - Free market entry/exit
+  - Constant production functions (costs) for all firms   
+
+## CPT Demand Function 
+![](./images/cpt.png){fig-align="center"}
+
+## Market Area {.smaller}
+Given uniform populationd density, $\rho$, and travel in all directions at constant unit cost, one can integrate distance-based demand function to compute total sales at a location.
+
+::: columns
+::: {.column width="75%"}
+  ![](./images/market_area.png){fig-align="center"}
+:::
+::: {.column width="25%"}
+$$S = \int_{\theta=0}^{2\pi} \int_{x=0}^{D}f(d) \rho dx d\theta$$
+
+For a store to remain in business: $S > S_{min} =$ sales threshold for good $g$
+:::
+:::
+
+## Multiple Firms & Market Equilibrium
+- Given free market entry, firms will continue to enter market as long as $S > S_{min}$
+- CPT assumes firms locate to maximize profit
+- Firms *pack together* into hexagonal lattice, each generating sales $S_{min}$
+- Market equilibrium distribution - also minimizes average travel distance for consumers
+
+## Market Equilibrium Lattice Structure
+
+# Spatial Residential Competition {.smaller}
+- Monocentric city model
+- Elements:
+  - r = commuting distance & residential location on a line or radius
+  - z = amount of composite consumption good
+  - T(r) = cost of commuting from r to 0 (and back)
+  - R(r) = land rental rate at location r
+  - s = amount of rented space
+  - Y = income
+- Fundamental household problem
+$$max_{z,s}(U(z,s)\text{ such that} z+R(r)s = Y-T(r))$$
+- All households have same utility at equilibrium (or would move)
+
+## Bid-Rent Approach {.smaller}
+- Rather than solve system, use equal utility assumption to derive *bid-rent* function $\Psi(r,u)$ - maximum willingness-to-pay by household for unit of space at location $r$ given utility level $u$
+- Invert budget constraint
+$$\Psi
+
+# Operational Land Use Models
+
+## Classic Models
+- Lowry model (1964)
+- DRAM/EMPAL (1967)
+- TRANUS & MEPLAN (South America & Europe)
+
+## Modern Models
+- IRPUD (Germany)
+- RELU-TRANS (USA)
+- MUSSA (South America)
+- UrbanSim (USA)
+- PECAS (Canada)
+- SILO (Germany)
+- ILUTE (Canada)
