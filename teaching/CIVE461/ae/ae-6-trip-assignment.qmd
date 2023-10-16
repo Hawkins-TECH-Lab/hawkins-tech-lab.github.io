@@ -1,0 +1,33 @@
+---
+title: "Trip Assignment"
+sidebar: CIVE461
+---
+
+Consider you have the following traffic network.
+
+![](../images/ae/ae6_figure1.png){fig-align="center"}
+
+The O-D traffic volumes are as follows:
+
+| O/D Traffic |     1    |     2      |     3      |     4      |
+|-------------|----------|------------|------------|------------|
+|     **1**       |     0    |     100    |     100    |     100    |
+|     **2**       |     0    |     0      |     50     |     50     |
+|     **3**       |     0    |     0      |     0      |     100    |
+|     **4**       |     0    |     0      |     0      |     0      |
+
+Link attributes are as follows:
+
+|     Link        |     1      |     2      |     3      |     4      |     5      |
+|-----------------|------------|------------|------------|------------|------------|
+|     **T0**          |     10     |     15     |     3      |     5      |     4      |
+|     **Capacity**    |     300    |     500    |     150    |     200    |     200    |
+
+The volume-delay function is as follows (where t_0 is the free-flow travel time and t is the adjusted travel time):
+$$t=\frac{t_0}{1-v/c}$$
+
+1. Calculate the all-or-nothing assignment results.
+
+2. Calculate the incremental assignment results. Assume link assignment ordering is  1-2, 1-4, 2-3, 3-4,2-4, 1-3.
+
+3. Calculate the DUE assignment results. Use lambda equal to 0, 1/3, 2/3, and 1 rather than Excel Solver. Use the minimum cost result in each iteration.

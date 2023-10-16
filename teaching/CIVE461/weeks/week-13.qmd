@@ -1,0 +1,24 @@
+---
+title: "Week 13"
+subtitle: "Trip Assignment"
+editor: visual
+---
+
+
+## Prepare
+
+📖 
+
+## Participate
+
+Trip Assignment Models (TBA)
+
+## Practice
+
+📋 [AE 6 - Trip Assignment](/teaching/CIVE461/ae/ae-6-trip-assignment.html) - Submit on Canvas
+
+<br><br>
+
+::: {style="font-size: 0.875em;"}
+Back to [course schedule](/teaching/CIVE461/ "Course schedule") ⏎
+:::

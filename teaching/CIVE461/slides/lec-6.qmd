@@ -1,218 +1,33 @@
 ---
-title: "Lecture 8 - Trip Distribution"
+title: "Lecture 6 - Mode & Destination Choice Models"
 subtitle: "CIVE 461/861: Urban Transportation Planning"
 footer:  "[CIVE461 Home](/teaching/CIVE461/)"
 logo: "../images/logo.png"
 editor: visual
-format: 
+format:
   revealjs: 
     theme: simple
     transition: fade
     chalkboard: true
     slide-number: true
+    multiplex: true
+    mermaid-format: png
 execute:
   freeze: auto
 ---
 
-## Three Route Example
-
-```{mermaid}
-flowchart LR
-  A[P] ---->|1| B(Q)
-  A[P] ---->|2| B(Q)
-  A[P] ---->|3| B(Q)
-```
-$$f_1(v_1) = 10(1+0.15(v_1/200)^4)$$
-$$f_2(v_2) = 20(1+0.15(v_1/400)^4)$$
-$$f_3(v_3) = 25(1+0.15(v_1/300)^4)$$
-
-## Three Route Example - Solution {.smaller}
-We'll start by creating a Pandas dataframe to store the iteration variables
-```{.python code-line-numbers="5-15"}
-import pandas as pd
-import numpy as np
-from scipy.optimize import minimize_scalar
-
-df = pd.DataFrame({"f1": pd.Series(dtype='float'),
-                  "f2": pd.Series(dtype='float'),
-                  "f3": pd.Series(dtype='float'),
-                  "V1": pd.Series(dtype='float'),
-                  "V2": pd.Series(dtype='float'),
-                  "V3": pd.Series(dtype='float'),
-                  "F1": pd.Series(dtype='float'),
-                  "F2": pd.Series(dtype='float'),
-                  "F3": pd.Series(dtype='float'),
-                  "F": pd.Series(dtype='float'),
-                  "lambda": pd.Series(dtype='float')})
-```
-
- ## Three Route Example - Solution {.smaller}
-We can then define the inputs to the traffic assignment algorithm.
-```{.python}
-# Specify the freeflow travel times/capacities
-ff_tt_1 = 10
-ff_tt_2 = 20
-ff_tt_3 = 25
-C1 = 200
-C2 = 400
-C3 = 300
-
-volume = 1000 # veh/hr
-min_tt = np.min([ff_tt_1, ff_tt_2, ff_tt_3]) # minimum travel time
-
-# Define the volumes on each link (1,2, and 3)
-V1 = volume if (ff_tt_1==min_tt) else 0
-V2 = volume if (ff_tt_2==min_tt) else 0
-V3 = volume if (ff_tt_3==min_tt) else 0
-
-# Define total costs as integrals of travel time costs over volume
-F1 = ff_tt_1*V1 + ff_tt_1*0.15/C1**4*V1**5/5 
-F2 = ff_tt_2*V2 + ff_tt_2*0.15/C2**4*V2**5/5
-F3 = ff_tt_3*V3 + ff_tt_3*0.15/C3**4*V3**5/5
-F = F1 + F2 + F3
-
-l = 1.0 # intialize lambda to 1.0
-tol = 10**-2 # tolerance on the difference in total cost between iterations
-
-row = [ff_tt_1, ff_tt_2, ff_tt_3, V1, V2, V3, F1, F2, F3, F, l]
-df.loc[len(df),:] = row # add initial values to df
-```
-
- ## Three Route Example - Solution {.smaller}
-Next we define the Frank-Wolfe algorithm and solve for $\lambda$ using ```scipy optimize minimize_scalar```. The first step is to define a loop that repeatedly calls the minimization on a new set of volumes. We define the Frank-Wolfe algorithm and solve for $\lambda$ using ```scipy optimize minimize_scalar```. The next step is to define the optimization problem. We'll define the optimization in two functions: ```get_optimal_vals``` calculates the various values we need in each iteration and ```FW_Alg``` defines the function to be minized by ```scipy optimize minimize_scalar```.
-
-```{.python code-line-numbers="26-38|2-4|7-22"}
-# Apply the Frank-Wolfe algorithm on the example dataset
-def FW_Alg(x, prev_iter):
-  f1, f2, f3, V1, V2, V3, F1, F2, F3 = get_optimal_vals(x, prev_iter)
-  return (F1 + F2 + F3)
-
-# Function computes the various traffic assignment algorithm values at optimality
-def get_optimal_vals(x, prev_iter):
-  f1 = ff_tt_1*(1+0.15*(prev_iter["V1"]/C1)**4)
-  f2 = ff_tt_2*(1+0.15*(prev_iter["V2"]/C2)**4)
-  f3 = ff_tt_3*(1+0.15*(prev_iter["V3"]/C3)**4)
-
-  min_tt = np.min([f1, f2, f3]) # minimum travel time
-
-  V1 = x*prev_iter["V1"] + (1-x)*(volume if f1==min_tt else 0)
-  V2 = x*prev_iter["V2"] + (1-x)*(volume if f2==min_tt else 0)
-  V3 = x*prev_iter["V3"] + (1-x)*(volume if f3==min_tt else 0)
-
-  F1 = ff_tt_1*V1 + ff_tt_1*0.15/C1**4*V1**5/5
-  F2 = ff_tt_2*V2 + ff_tt_2*0.15/C2**4*V2**5/5
-  F3 = ff_tt_3*V3 + ff_tt_3*0.15/C3**4*V3**5/5
-
-  return f1, f2, f3, V1, V2, V3, F1, F2, F3
-
-F_diff = F 
-
-while F_diff > tol:
-  F_diff = F
-  prev_iter = df.iloc[-1] # Get the values from the last iteration
-
-  res = minimize_scalar(FW_Alg, args=(prev_iter), bounds=[0,1])
-  F = res.fun
-  l = res.x
-  f1, f2, f3, V1, V2, V3, F1, F2, F3 = get_optimal_vals(l, prev_iter)
-
-  row = [f1, f2, f3, V1, V2, V3, F1, F2, F3, F, l]
-  df.loc[len(df),:] = row
-
-  F_diff = F_diff - F
-```
-
- ## Three Route Example - Solution {.smaller}
-Putting everything together, we can print a table summarizing the variable values at each iteration.
-
-```{python}
-import pandas as pd
-import numpy as np
-from scipy.optimize import minimize_scalar
-
-df = pd.DataFrame({"f1": pd.Series(dtype='float'),
-                  "f2": pd.Series(dtype='float'),
-                  "f3": pd.Series(dtype='float'),
-                  "V1": pd.Series(dtype='float'),
-                  "V2": pd.Series(dtype='float'),
-                  "V3": pd.Series(dtype='float'),
-                  "F1": pd.Series(dtype='float'),
-                  "F2": pd.Series(dtype='float'),
-                  "F3": pd.Series(dtype='float'),
-                  "F": pd.Series(dtype='float'),
-                  "lambda": pd.Series(dtype='float')})
-
-# Specify the freeflow travel times/capacities
-ff_tt_1 = 10
-ff_tt_2 = 20
-ff_tt_3 = 25
-C1 = 200
-C2 = 400
-C3 = 300
-
-volume = 1000 # veh/hr
-min_tt = np.min([ff_tt_1, ff_tt_2, ff_tt_3]) # minimum travel time
-
-V1 = volume if (ff_tt_1==min_tt) else 0
-V2 = volume if (ff_tt_2==min_tt) else 0
-V3 = volume if (ff_tt_3==min_tt) else 0
-
-F1 = ff_tt_1*V1 + ff_tt_1*0.15/C1**4*V1**5/5
-F2 = ff_tt_2*V2 + ff_tt_2*0.15/C2**4*V2**5/5
-F3 = ff_tt_3*V3 + ff_tt_3*0.15/C3**4*V3**5/5
-F = F1 + F2 + F3
-
-l = 1.0 # intialize lambda to 1.0
-tol = 10**-2
-
-row = [ff_tt_1, ff_tt_2, ff_tt_3, V1, V2, V3, F1, F2, F3, F, l]
-df.loc[len(df),:] = row
-
-# Apply the Frank-Wolfe algorithm on the example dataset
-def F_func(x, prev_iter):
-  f1, f2, f3, V1, V2, V3, F1, F2, F3 = get_optimal_vals(x, prev_iter)
-  return (F1 + F2 + F3)
-
-# Function computes the various traffic assignment algorithm values at optimality
-def get_optimal_vals(x, prev_iter):
-  f1 = ff_tt_1*(1+0.15*(prev_iter["V1"]/C1)**4)
-  f2 = ff_tt_2*(1+0.15*(prev_iter["V2"]/C2)**4)
-  f3 = ff_tt_3*(1+0.15*(prev_iter["V3"]/C3)**4)
-
-  min_tt = np.min([f1, f2, f3]) # minimum travel time
-
-  V1 = x*prev_iter["V1"] + (1-x)*(volume if f1==min_tt else 0)
-  V2 = x*prev_iter["V2"] + (1-x)*(volume if f2==min_tt else 0)
-  V3 = x*prev_iter["V3"] + (1-x)*(volume if f3==min_tt else 0)
-
-  F1 = ff_tt_1*V1 + ff_tt_1*0.15/C1**4*V1**5/5
-  F2 = ff_tt_2*V2 + ff_tt_2*0.15/C2**4*V2**5/5
-  F3 = ff_tt_3*V3 + ff_tt_3*0.15/C3**4*V3**5/5
-
-  return f1, f2, f3, V1, V2, V3, F1, F2, F3
-
-F_diff = F 
-
-while F_diff > tol:
-  F_diff = F
-  prev_iter = df.iloc[-1] # Get the values from the last iteration
-
-  res = minimize_scalar(F_func, args=(prev_iter), bounds=[0,1])
-  F = res.fun
-  l = res.x
-  f1, f2, f3, V1, V2, V3, F1, F2, F3 = get_optimal_vals(l, prev_iter)
-
-  row = [f1, f2, f3, V1, V2, V3, F1, F2, F3, F, l]
-  df.loc[len(df),:] = row
-
-  F_diff = F_diff - F
-
-out = df.iloc[0:8]
-
-out = out.style.set_properties(**{
-    'font-size': '20pt'
-})\
-  .format(precision=2)\
-
-out
-```
+## Outline
+::: columns
+::: {.column width="60%"}
+::: incremental
+1. Utility function variables
+2. Direct and cross-elasticity
+3. Forecasting and aggregation
+4. Limitations
+5. Extension to other choices
+:::
+:::
+::: {.column width="40%"}
+![](../images/lecture6/outline.png){fig-align="center"}
+:::
+:::

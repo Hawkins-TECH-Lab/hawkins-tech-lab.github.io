@@ -19,11 +19,11 @@ execute:
 ## We can examine trip generation in several ways... {.smaller}
 :::incremental
 1. Total number of trips generated in a TAZ based on zone properties: population, employment, number of cars, etc. (method: **regression**)
-![](../images/lecture4/omaha_taz.png){.absolute top="225" right="0" width=25%}
+![](../images/lecture3/omaha_taz.png){.absolute top="225" right="0" width=25%}
 </br></br></br></br>
 
 2. Trip frequency choice by households (method: **discrete choice**)
-![](../images/lecture4/van.png){.absolute bottom="0" left="500" width=25%}
+![](../images/lecture3/van.png){.absolute bottom="0" left="500" width=25%}
 :::
 
 ## Academic Vs. Practitioner Considerations
@@ -34,10 +34,10 @@ execute:
 :::
 
 ## Planning & Monitoring with the Help of Models
-![](../images/lecture4/model_process.png){fig-align="center"}
+![](../images/lecture3/model_process.png){fig-align="center"}
 
 ## Classic 4-Step Travel Model
-![](../images/lecture4/4_step_model.png){fig-align="center"}
+![](../images/lecture3/4_step_model.png){fig-align="center"}
 
 ## Classic 4-Step Travel Model {.smaller}
 - 1) Trip generation, 2) Trip distribution, 3) Modal split, & 4) Traffic assignment
@@ -68,11 +68,11 @@ execute:
 :::
 
 ## Trip Production & Attraction
-![](../images/lecture4/trip_production_attraction.png){fig-align="center"}
+![](../images/lecture3/trip_production_attraction.png){fig-align="center"}
 
 ## Trip Production & Attraction
-![](../images/lecture4/trip_production_1.png){fig-align="left" width=45%}
-![](../images/lecture4/trip_production_2.png){fig-align="right" width=45%}
+![](../images/lecture3/trip_production_1.png){fig-align="left" width=45%}
+![](../images/lecture3/trip_production_2.png){fig-align="right" width=45%}
 
 ## Origin/Destination Vs. Production/Attraction
 - **Production** & **attraction** approach works fine when dealing with 24-hour work trips
@@ -83,7 +83,7 @@ execute:
 If we remove a trip, Zone 1 produces a trip to zone 2 but in what direction?
 -->
 
-![](../images/lecture4/trip_production_3.png){.absolute bottom="0" left="300" width=30%}
+![](../images/lecture3/trip_production_3.png){.absolute bottom="0" left="300" width=30%}
 
 ## Trip Purpose {.smaller}
 ::: incremental
@@ -161,7 +161,7 @@ A1 ×Population in Downtown Area <br>
 + A3×Population in Outer Suburbs
 </p>
 
-![](../images/lecture4/ite_trip_generation.png){.absolute bottom="0" right="0" width=25%}
+![](../images/lecture3/ite_trip_generation.png){.absolute bottom="0" right="0" width=25%}
 
 ## Trip Rate Models {.smaller}
 - **Constant trip generation rate** is estimated from observed data
@@ -181,7 +181,7 @@ A1 ×Population in Downtown Area <br>
 - **Note:** trip rate model is a cross-classification model by **trip type** not **trip maker**
 
 ## Cross-Classification Models
-![](../images/lecture4/cross_classification.png){fig-align="center"}
+![](../images/lecture3/cross_classification.png){fig-align="center"}
 
 ## Linear Regression Models
 - Use regression to estimate “best fit” linear regression between **# of trips** &  one or more **explanatory variables**
@@ -247,7 +247,7 @@ $$𝑦_i=\beta_0+\beta_1 x_1i+\beta_2 x_2i+…+\beta_k x_{𝑘𝑖}+e_i \text{ (
 - Even when rates used, zonal regression is conditioned by nature &  size of zones (**spatial aggregation problem**)
 - Interzonal variance diminishes with larger zone size
 
-![](../images/lecture4/zone_regression_table.png){fig-align="center"}
+![](../images/lecture3/zone_regression_table.png){fig-align="center"}
 
 ## Household-Based Regression {.smaller}
 - Intra-zonal variation may be reduced by decreasing zone size but there are **two problems**
@@ -268,15 +268,15 @@ $$𝑦_i=\beta_0+\beta_1 x_1i+\beta_2 x_2i+…+\beta_k x_{𝑘𝑖}+e_i \text{ (
   - Residuals should be uncorrelated with any explanatory variable – can plot residuals vs. explanatory variables
 
 ## Histogram of Residuals
-![](../images/lecture4/histogram_residuals.png){fig-align="center"}
+![](../images/lecture3/histogram_residuals.png){fig-align="center"}
 
 ## Residuals Vs. Explanatory Variables
-![](../images/lecture4/residuals_variance.png){fig-align="center"}
+![](../images/lecture3/residuals_variance.png){fig-align="center"}
 
 ## Example {.smaller}
 ::: columns
 ::: {.column width="25%"}
-![](../images/lecture4/residuals_example.png){fig-align="center"}
+![](../images/lecture3/residuals_example.png){fig-align="center"}
 :::
 ::: {.column }
 - Three variables are defined $X$, $Y$, &  $Z$ where $X$ & $Z$ are **explanatory variables** & $Y$ is the **dependent variable**
@@ -285,33 +285,33 @@ $$𝑦_i=\beta_0+\beta_1 x_1i+\beta_2 x_2i+…+\beta_k x_{𝑘𝑖}+e_i \text{ (
 
 ## First Model $y = aX + b$ {.smaller}
 - $R^2 = 0.506$ means that we are explaining **50.6%** of the variance in y with the explanatory variables in the model
-![](../images/lecture4/residuals_results_1.png){.absolute bottom="0" left="0"}
-![](../images/lecture4/residuals_plot.png){.absolute top="200" right="0" width=45%}
+![](../images/lecture3/residuals_results_1.png){.absolute bottom="0" left="0"}
+![](../images/lecture3/residuals_plot.png){.absolute top="200" right="0" width=45%}
 
 ## Analysis of Residuals Vs. X {.smaller}
 - Looks like a constant variance across values of $X$...
-![](../images/lecture4/residuals_x_plot.png){fig-align="center"}
+![](../images/lecture3/residuals_x_plot.png){fig-align="center"}
 
 ## Analysis of Residuals Vs. Z {.smaller}
 - Residuals **not constant** over different values of $Z$ (so we should try to include $Z$ as another explanatory variable)
-![](../images/lecture4/residuals_z_plot.png){fig-align="center"}
+![](../images/lecture3/residuals_z_plot.png){fig-align="center"}
 
 ## Second Model $y = aX bZ + c$ {.smaller}
 - $R^2 = 0.761$ means that we are explaining **76.1%** of the variance in $y$ with the explanatory variables in the model
-![](../images/lecture4/residuals_results_2.png){.absolute bottom="0" left="0"}
+![](../images/lecture3/residuals_results_2.png){.absolute bottom="0" left="0"}
 
 ## Analysis of Residuals Vs. X & Z$ {.smaller}
 - Now residuals don’t change over different values of X or Z!
-![](../images/lecture4/residuals_x_z_1.png){fig-align="center" width=50%}
-![](../images/lecture4/residuals_x_z_2.png){fig-align="center" width=40%}
+![](../images/lecture3/residuals_x_z_1.png){fig-align="center" width=50%}
+![](../images/lecture3/residuals_x_z_2.png){fig-align="center" width=40%}
 
 ## Dealing With Non-Linear Relationships
-![](../images/lecture4/non_linear_plot_1.png){.absolute bottom="150" left="0" width=60%}
-![](../images/lecture4/non_linear_table_1.png){.absolute bottom="0" right="0" width=25%}
+![](../images/lecture3/non_linear_plot_1.png){.absolute bottom="150" left="0" width=60%}
+![](../images/lecture3/non_linear_table_1.png){.absolute bottom="0" right="0" width=25%}
 
 ## Transform the Explanatory Variable (add $x^2$ term)
-![](../images/lecture4/non_linear_plot_2.png){.absolute bottom="100" left="0" width=60%}
-![](../images/lecture4/non_linear_table_2.png){.absolute bottom="50" right="0" width=25%}
+![](../images/lecture3/non_linear_plot_2.png){.absolute bottom="100" left="0" width=60%}
+![](../images/lecture3/non_linear_table_2.png){.absolute bottom="50" right="0" width=25%}
 
 ## Other Transformations {.smaller}
 - Log transformation, $x’ = ln(x)$ if effects starts strong at low x but reaches limiting return with further increases in $x$ (often used for income variables)
@@ -335,7 +335,7 @@ $$𝑦_i=\beta_0+\beta_1 x_1i+\beta_2 x_2i+…+\beta_k x_{𝑘𝑖}+e_i \text{ (
 Consider the variables **trips per household** ($Y$), **number of workers** ($𝑋_1$), and **number of vehicles** ($𝑋_2$). Successive steps were performed of a stepwise model estimation. Values (in parenthesis) are t-ratios. In the step 4 model, $Z_1$ takes the value 1 for households with one car and 0 otherwise and $Z_2$ takes the value 1 for households with two or more cars and 0 otherwise. We can see that zero car households will have the value 0 for both $Z_1$ and $Z_2$. Even without the higher $R^2$, the step 4 model would be preferred because it clearly demonstrates there is a **non-linear effect** that’s ignored by $𝑋_2$.
 :::
 
-![](../images/lecture4/non_linear_table_3.png){fig-align="right"}
+![](../images/lecture3/non_linear_table_3.png){fig-align="right"}
 
 ## Variable Selection & Model Building {.smaller}
 - **Problem**: Choose the set of appropriate explanatory variables from a set of candidate variables - **variable selection**
@@ -363,7 +363,7 @@ Consider the variables **trips per household** ($Y$), **number of workers** ($�
 - Errors are reasonably low (i.e., less than 30%)
 - Large bias could be addressed by adjusting model parameters, but it’s not easy because there are no clear rules
 
-![](../images/lecture4/validation_table.png){fig-align="center" width=40%}
+![](../images/lecture3/validation_table.png){fig-align="center" width=40%}
 
 ## Model Validation - Learning From Machine Learning
 - Transportation planning field starting to adopt methods from **machine learning** field, including for validation

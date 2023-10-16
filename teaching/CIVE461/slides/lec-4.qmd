@@ -166,7 +166,7 @@ flowchart TD
 ## Incremental Decision-Making Model {.smaller}
 ::: columns
 ::: {.column width="75%"}
-![](../images/lecture2/incremental_model.png){fig-align="center"  width=60%}
+![](../images/lecture4/incremental_model.png){fig-align="center"  width=60%}
 :::
 ::: {.column width="25%"}
 **Problems:**
@@ -517,4 +517,4 @@ I-->id1
 - Customer/user satisfaction 
 
 ## Some Transportation Policy Building Blocks
-![](../images/lecture2/transport_policy_blocks.png){fig-align="center"}
+![](../images/lecture4/transport_policy_blocks.png){fig-align="center"}

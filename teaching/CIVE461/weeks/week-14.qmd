@@ -1,0 +1,24 @@
+---
+title: "Week 14"
+subtitle: "Freight Modeling"
+editor: visual
+---
+
+
+## Prepare
+
+📖 
+
+## Participate
+
+🖥️ Freight Models (TBA)
+
+## Practice
+
+None
+
+<br><br>
+
+::: {style="font-size: 0.875em;"}
+Back to [course schedule](/teaching/CIVE461/ "Course schedule") ⏎
+:::

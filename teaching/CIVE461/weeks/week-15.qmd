@@ -1,0 +1,22 @@
+---
+title: "Week 13"
+subtitle: "Freight Modeling & Land Use Planning"
+editor: visual
+---
+
+
+## Prepare
+
+📖 
+
+## Participate
+
+🖥️ Freight Models (TBA)
+
+## Practice
+
+<br><br>
+
+::: {style="font-size: 0.875em;"}
+Back to [course schedule](/teaching/CIVE461/ "Course schedule") ⏎
+:::

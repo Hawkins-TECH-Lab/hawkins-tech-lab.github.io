@@ -1,0 +1,24 @@
+---
+title: "Week 10"
+subtitle: "Choice Models"
+editor: visual
+---
+
+
+## Prepare
+
+📖 Read [individual assignment 1](/teaching/CIVE461/assignments/indiv_assignment1.html)
+
+## Participate
+
+🖥️ [Lecture 5 - Choice Models](/teaching/CIVE461/slides/lec-5.html)
+
+## Practice
+
+✍️ [GP 2 - Trip Distribution](/teaching/CIVE461/project/project-description.html#report-2) - Submit on Canvas
+
+<br><br>
+
+::: {style="font-size: 0.875em;"}
+Back to [course schedule](/teaching/CIVE461/ "Course schedule") ⏎
+:::

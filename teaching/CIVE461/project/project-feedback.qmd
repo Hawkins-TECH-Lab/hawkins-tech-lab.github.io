@@ -1,0 +1,124 @@
+---
+title: "Project feedback"
+---
+
+## Project Report 1
+Some general feedback on project report 1:
+
+1. When interpreting models always think about the following questions:
+    - Do the parameter signs make sense? E.g., more people in a household should make more trips.
+    - Do the parameter magnitudes make sense? E.g., more people in a household should make more trips, but it is unlikely an additional person will triple trips.
+    - Does it make sense to include a variable in the model? E.g., do you expect proximity to playgrounds will affect work trips?
+2. We talked about comparing model goodness-of-fit based on the $R^2$ in class. The adjusted $R^2$ provides a slightly better measure because it accounts for the number of parameters.
+3. Some groups did not adjust the cross-classification model to remove zero cells.
+4. You should not treat a p-value as a binary include/exclude criteria. However, you should also avoid (or at least note) highly insignificant parameters. Statistical significance is more important in prediction tasks (e.g., trip generation forecasting) than policy analysis tasks (e.g., impacts of different variables on trip generation).
+5. While I ask that you submit a Jupyter notebook, you should still cleanup your notebook so it is clear and professional. This means using proper headings, full sentences, and removing analysis that does not contribute to the report narrative.
+6. Categorical variables use numerical codes, but these codes have no meaning. E.g., if race 1 is White and race 2 is Asian, how are we meant to interpret a change from race = 1 to race = 2? The correct treatment of categorical variables is to translate them into dummy/binary variables (0/1). We can define categories minus one such variables because parameters are always interpreted with respect to a *reference*. Eg., if we set race1 as the *reference* then a negative parameter for race2 means a person with that race is less likely to make a trip than a person of race1 type.
+
+The following is a rough summary of the applicability of NHTS variables in a household-based trip generation model. Many variables are included in the table that may not be relevant but provide an illustration of the questions to ask yourself when reviewing variables for inclusion in a trip generation model. **Note:** some person variables are included in the dataset, but their values are simple averages and have minimal use in a household-based trip generation model. 
+
+| Level     | Name       | Notes                                  |
+|-----------|------------|----------------------------------------|
+| Household | BIKE       | Ordered after filtering out < 0        |
+| Household | BIKE2SAVE  | Ordered after filtering out < 0        |
+| Household | BUS        | Ordered after filtering out < 0        |
+| Household | CAR        | Ordered after filtering out < 0        |
+| Household | CDIVMSAR   | Regional fixed effect                  |
+| Household | CENSUS_D   | Regional fixed effect                  |
+| Household | CENSUS_R   | Regional fixed effect                  |
+| Household | DRVRCNT    |                                        |
+| Household | HBHTNRNT   | Ordered after filtering out < 0        |
+| Household | HBHUR      | Regional fixed effect                  |
+| Household | HBPPOPDN   | Ordered after filtering out < 0        |
+| Household | HBRESDN    | Ordered after filtering out < 0        |
+| Household | HH_CBSA    | Regional fixed effect                  |
+| Household | HHFAMINC   | Ordered after filtering out < 0        |
+| Household | HHRELATD   |                                        |
+| Household | HHSIZE     |                                        |
+| Household | HHSTATE    | Regional fixed effect                  |
+| Household | HHSTFIPS   | Regional fixed effect                  |
+| Household | HHVEHCNT   |                                        |
+| Household | HOMEOWN    | Binary                                 |
+| Household | HTEEMPDN   | Ordered after filtering out < 0        |
+| Household | HTHTNRNT   | Ordered after filtering out < 0        |
+| Household | HTPPOPDN   | Ordered after filtering out < 0        |
+| Household | HTRESDN    | Ordered after filtering out < 0        |
+| Household | LIF_CYC    | Categorical. Order has no meaning.     |
+| Household | MSACAT     | Categorical. Order has no meaning.     |
+| Household | MSASIZE    | Ordered after filtering out < 0        |
+| Household | NUMADLT    | Ordered after filtering out < 0        |
+| Household | PARA       | Ordered after filtering out < 0        |
+| Household | PC         | Ordered after filtering out < 0        |
+| Household | PLACE      | Ordered after filtering out < 0        |
+| Household | PRICE      | Ordered after filtering out < 0        |
+| Household | PTRANS     | Ordered after filtering out < 0        |
+| Household | RAIL       | Binary                                 |
+| Household | SPHONE     | How to predict in model forecast?      |
+| Household | TAB        | How to predict in model forecast?      |
+| Household | TAXI       | How to predict in model forecast?      |
+| Household | TDAYDATE   |                                        |
+| Household | TRAIN      | How to predict in model forecast?      |
+| Household | TRAVDAY    |                                        |
+| Household | URBAN      | Ordered after filtering out < 0        |
+| Household | URBANSIZE  | Ordered after filtering out < 0 and >5 |
+| Household | URBRUR     | Binary                                 |
+| Household | WALK       | Ordered after filtering out < 0        |
+| Household | WALK2SAVE  | Ordered after filtering out < 0        |
+| Household | WEBUSE17   | Ordered after filtering out < 0        |
+| Household | WRKCOUNT   |                                        |
+| Household | YOUNGCHILD |                                        |
+| Trip      | DBHTNRNT   | Ordered after filtering out < 0        |
+| Trip      | DBHUR      | Regional fixed effect                  |
+| Trip      | DBPPOPDN   | Ordered after filtering out < 0        |
+| Trip      | DBRESDN    | Ordered after filtering out < 0        |
+| Trip      | DROP_PRK   | How to know without trip generation?   |
+| Trip      | DTEEMPDN   | Ordered after filtering out < 0        |
+| Trip      | DTHTNRNT   | Ordered after filtering out < 0        |
+| Trip      | DTPPOPDN   | Ordered after filtering out < 0        |
+| Trip      | DTRESDN    | Ordered after filtering out < 0        |
+| Trip      | DWELTIME   | How to know without trip generation?   |
+| Trip      | ENDTIME    | How to know without trip generation?   |
+| Trip      | GASPRICE   |                                        |
+| Trip      | HH_ONTD    |                                        |
+| Trip      | NONHHCNT   |                                        |
+| Trip      | NUMONTRP   |                                        |
+| Trip      | NUMTRANS   | How to know without trip generation?   |
+| Trip      | OBHTNRNT   | Ordered after filtering out < 0        |
+| Trip      | OBHUR      | Categorical. Order has no meaning.     |
+| Trip      | OBPPOPDN   | Ordered after filtering out < 0        |
+| Trip      | OBRESDN    | Ordered after filtering out < 0        |
+| Trip      | OTEEMPDN   | Ordered after filtering out < 0        |
+| Trip      | OTHTNRNT   | Ordered after filtering out < 0        |
+| Trip      | OTPPOPDN   | Ordered after filtering out < 0        |
+| Trip      | OTRESDN    | Ordered after filtering out < 0        |
+| Trip      | PRMACT     | How to predict in model forecast?      |
+| Trip      | PUBTRANS   | How to know without trip generation?   |
+| Trip      | STRTTIME   | How to know without trip generation?   |
+| Trip      | TDWKND     |                                        |
+| Trip      | TRACC_BUS  | How to know without trip generation?   |
+| Trip      | TRACC_CRL  | How to know without trip generation?   |
+| Trip      | TRACC_OTH  | How to know without trip generation?   |
+| Trip      | TRACC_POV  | How to know without trip generation?   |
+| Trip      | TRACC_SUB  | How to know without trip generation?   |
+| Trip      | TRACC_WLK  | How to know without trip generation?   |
+| Trip      | TRACCTM    | How to know without trip generation?   |
+| Trip      | TREGR_BUS  | How to know without trip generation?   |
+| Trip      | TREGR_CRL  | How to know without trip generation?   |
+| Trip      | TREGR_OTH  | How to know without trip generation?   |
+| Trip      | TREGR_POV  | How to know without trip generation?   |
+| Trip      | TREGR_SUB  | How to know without trip generation?   |
+| Trip      | TREGR_WLK  | How to know without trip generation?   |
+| Trip      | TREGRTM    | How to know without trip generation?   |
+| Trip      | TRPACCMP   | Ordered after filtering out < 0        |
+| Trip      | TRPHHACC   | Ordered after filtering out < 0        |
+| Trip      | TRPHHVEH   | Binary                                 |
+| Trip      | TRPMILAD   | How to know without trip generation?   |
+| Trip      | TRPMILES   | How to know without trip generation?   |
+| Trip      | TRPTRANS   | How to know without trip generation?   |
+| Trip      | TRVLCMIN   | How to know without trip generation?   |
+| Trip      | TRWAITTM   | How to know without trip generation?   |
+| Trip      | VEHTYPE    | Categorical. Order has no meaning.     |
+| Trip      | VMT_MILE   | How to know without trip generation?   |
+| Trip      | WORKER     | Binary                                 |
+
+

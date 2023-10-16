@@ -15,9 +15,11 @@ editor: visual
 
 🖥️ [Lecture 4 - Transportation Planning Process](/teaching/CIVE461/slides/lec-4.html)
 
+📋 [AE 3 - Urban Transportation Plans](/teaching/CIVE461/ae/ae-3-transport-plans.html) 
+
 ## Practice
 
-📋 [AE 3 - Urban Transportation Plans](/teaching/CIVE461/ae/ae-3-transport-plans.html) 
+None
 
 <br><br>
 

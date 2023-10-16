@@ -7,15 +7,15 @@ editor: visual
 
 ## Prepare
 
-📖 Read notes on [transportation equity](/teaching/CIVE461/supplemental/transport-equity.html)
+📖 Read notes on [Trip Distribution](/teaching/CIVE461/supplemental/trip-distribution.html)
 
 ## Participate
 
-None
+📋 [AE 4 - Trip Distribution](/teaching/CIVE461/ae/ae-4-trip-distribution.html) - Submit on Canvas
 
 ## Practice
 
-📋 [AE 5 - Transportation Equity](/teaching/CIVE461/ae/ae-5-equity.html) - Submit on Canvas
+None
 
 <br><br>
 

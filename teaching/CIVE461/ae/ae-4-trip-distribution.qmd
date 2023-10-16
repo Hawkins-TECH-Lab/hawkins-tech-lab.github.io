@@ -1,5 +1,5 @@
 ---
-title: "Urban Transportation Plans"
+title: "Trip Distribution"
 sidebar: CIVE461
 ---
 
