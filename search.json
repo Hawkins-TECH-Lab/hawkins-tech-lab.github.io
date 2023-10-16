@@ -79,7 +79,7 @@
   {
     "objectID": "teaching/CIVE461/ae/ae-4-trip-distribution.html",
     "href": "teaching/CIVE461/ae/ae-4-trip-distribution.html",
-    "title": "Urban Transportation Plans",
+    "title": "Trip Distribution",
     "section": "",
     "text": "We worked through several trip distribution questions in class. Please submit your work via Canvas. The document is provided below\n\n\n\nThis browser does not support PDFs. Please download the PDF to view it: Download PDF."
   },
@@ -87,6 +87,20 @@
     "objectID": "teaching/CIVE461/ae/ae-5-equity.html",
     "href": "teaching/CIVE461/ae/ae-5-equity.html",
     "title": "Transportation Equity",
+    "section": "",
+    "text": "We discussed several transportation and urban develop equity issues in lecture. Please provide a brief (3-5 sentence) summary of your thoughts on the class discussion via Canvas."
+  },
+  {
+    "objectID": "teaching/CIVE461/ae/ae-6-trip-assignment.html",
+    "href": "teaching/CIVE461/ae/ae-6-trip-assignment.html",
+    "title": "Trip Assignment",
+    "section": "",
+    "text": "Consider you have the following traffic network.\n\n\n\n\n\nThe O-D traffic volumes are as follows:\n\n\n\nO/D Traffic\n1\n2\n3\n4\n\n\n\n\n1\n0\n100\n100\n100\n\n\n2\n0\n0\n50\n50\n\n\n3\n0\n0\n0\n100\n\n\n4\n0\n0\n0\n0\n\n\n\nLink attributes are as follows:\n\n\n\n\n\n\n\n\n\n\n\nLink\n1\n2\n3\n4\n5\n\n\n\n\nT0\n10\n15\n3\n5\n4\n\n\nCapacity\n300\n500\n150\n200\n200\n\n\n\nThe volume-delay function is as follows (where t_0 is the free-flow travel time and t is the adjusted travel time): \\[t=\\frac{t_0}{1-v/c}\\]\n\nCalculate the all-or-nothing assignment results.\nCalculate the incremental assignment results. Assume link assignment ordering is 1-2, 1-4, 2-3, 3-4,2-4, 1-3.\nCalculate the DUE assignment results. Use lambda equal to 0, 1/3, 2/3, and 1 rather than Excel Solver. Use the minimum cost result in each iteration."
+  },
+  {
+    "objectID": "teaching/CIVE461/ae/ae-7-review.html",
+    "href": "teaching/CIVE461/ae/ae-7-review.html",
+    "title": "Review",
     "section": "",
     "text": "We discussed several transportation and urban develop equity issues in lecture. Please provide a brief (3-5 sentence) summary of your thoughts on the class discussion via Canvas."
   },
@@ -263,21 +277,21 @@
     "href": "teaching/CIVE461/index.html",
     "title": "CIVE461",
     "section": "",
-    "text": "This page contains an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses, with all changes documented here.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nDate\nTopic\nPrepare\nSlides\nAE\nHW\nExam\n\n\n\n\n\n\n1\nMon, Aug 21\nWelcome to CIVE 461!\n📖\n\n\n\n\n\n\n\n\n\nWed, Aug 23\nIntroduction to transportation planning\n\n🖥️\n📋\n\n\n\n\n\n\n2\nMon, Aug 28\nStatistics\n📖\n🖥️\n\n\n\n\n\n\n\n\nWed, Aug 30\nStatistical modeling\n\n\n\n\n\n\n\n\n\n3\nMon, Sep 04\nLabor Day\n📖\n\n\n\n\n\n\n\n\n\nWed, Sep 06\nStatistical modeling\n\n\n📋\n\n\n\n\n\n\n4\nMon, Sep 11\nProgramming in Python\n📖\n\n\n\n\n\n\n\n\n\nWed, Sep 13\nTrip generation\n\n🖥️\n📋\n\n\n\n\n\n\n5\nMon, Sep 18\nTrip generation\n\n\n\n\n\n\n\n\n\n\nWed, Sep 20\nTrip generation\n\n\n\n\n\n\n\n\n\n6\nMon, Sep 25\nTrip generation\n\n\n\n\n\n\n\n\n\n\nWed Sep 27\nTransportation planning process, regulation, and data\n\n🖥️\n\n✍️\n\n\n\n\n\n7\nMon, Oct 02\nTransportation planning process, regulation, and data\n\n\n\n\n\n\n\n\n\n\nWed, Oct 04\nTrip distribution\n\n\n\n\n\n\n\n\n\n8\nMon, Oct 09\nTrip distribution\n\n\n\n\n\n\n\n\n\n\nWed, Oct 11\nTransportation equity\n\n\n\n\n\n\n\n\n\n9\nMon, Oct 16\n*Fall break**\n\n\n\n\n\n\n\n\n\n\nWed Oct 18\nGuest lecture\n\n\n\n✍️\n\n\n\n\n\n\nMon, Oct 23\nChoice models\n\n\n\n\n\n\n\n\n\n\nWed, Oct 25\nProgramming choice models\n\n\n\n\n\n\n\n\n\n\nMon, Oct 30\nMode and destination choice\n\n\n\n✍️\n\n\n\n\n\n\nWed, Nov 01\nMode and destination choice\n\n\n\n\n\n\n\n\n\n\nMon, Nov 06\nTrip assignment\n\n\n\n\n\n\n\n\n\n\nWed, Nov 08\nTrip assignment\n\n\n\n✍️\n\n\n\n\n\n\nMon, Nov 13\nTrip assignment\n\n\n\n\n\n\n\n\n\n\nWed, Nov 15\nFreight modeling\n\n\n\n\n\n\n\n\n\n\nMon, Nov 20\nFreight modeling\n\n\n\n✍️\n\n\n\n\n\n\nWed Nov 22\nThanksgiving break\n\n\n\n\n\n\n\n\n\n\nMon, Nov 27\nLand use planning\n\n\n\n\n\n\n\n\n\n\nWed, Nov 28\nTransportation economics\n\n\n\n✍️\n\n\n\n\n\n\nMon, Dec 04\nTransportation economics\n\n\n\n\n\n\n\n\n\n\nWed, Dec 06\nTBD"
+    "text": "This page contains an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses, with all changes documented here.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nDate\nTopic\nPrepare\nSlides\nAE\nHW\nExam\n\n\n\n\n\n\n1\nMon, Aug 21\nWelcome to CIVE 461!\n📖\n\n\n\n\n\n\n\n\n\nWed, Aug 23\nIntroduction to transportation planning\n\n🖥️\n📋\n\n\n\n\n\n\n2\nMon, Aug 28\nStatistics\n📖\n🖥️\n\n\n\n\n\n\n\n\nWed, Aug 30\nStatistical modeling\n\n\n\n\n\n\n\n\n\n3\nMon, Sep 04\nLabor Day\n📖\n\n\n\n\n\n\n\n\n\nWed, Sep 06\nStatistical modeling\n\n\n📋\n\n\n\n\n\n\n4\nMon, Sep 11\nProgramming in Python\n📖\n\n\n\n\n\n\n\n\n\nWed, Sep 13\nTrip generation\n\n🖥️\n📋\n\n\n\n\n\n\n5\nMon, Sep 18\nTrip generation\n📖\n\n\n\n\n\n\n\n\n\nWed, Sep 20\nTrip generation\n\n\n\n\n\n\n\n\n\n6\nMon, Sep 25\nTrip generation\n📖\n\n\n\n\n\n\n\n\n\nWed Sep 27\nTransportation planning process, regulation, and data\n\n🖥️\n📋\n✍️\n\n\n\n\n\n7\nMon, Oct 02\nTransportation planning process, regulation, and data\n📖\n\n\n\n\n\n\n\n\n\nWed, Oct 04\nTrip distribution\n\n🖥️\n📋\n\n\n\n\n\n\n8\nMon, Oct 09\nTrip distribution\n📖\n\n\n\n\n\n\n\n\n\nWed, Oct 11\nTrip distribution\n\n\n\n\n\n\n\n\n\n9\nMon, Oct 16\n*Fall break**\n📖\n\n\n\n\n\n\n\n\n\nWed Oct 18\nGuest lecture\n\n\n\n\n\n\n\n\n\n10\nMon, Oct 23\nChoice models\n📖\n🖥️\n\n✍️\n\n\n\n\n\n\nWed, Oct 25\nProgramming choice models\n\n\n\n\n\n\n\n\n\n11\nMon, Oct 30\nMode and destination choice\n📖\n🖥️\n\n✍️\n\n\n\n\n\n\nWed, Nov 01\nMode and destination choice\n\n\n\n\n\n\n\n\n\n12\nMon, Nov 06\nTransportation equity\n📖\n\n\n\n\n\n\n\n\n\nWed, Nov 08\nTrip assignment\n\n🖥️\n\n✍️\n\n\n\n\n\n13\nMon, Nov 13\nTrip assignment\n📖\n\n\n\n\n\n\n\n\n\nWed, Nov 15\nTrip assignment\n\n\n\n\n\n\n\n\n\n14\nMon, Nov 20\nFreight modeling\n📖\n\n\n✍️\n\n\n\n\n\n\nWed Nov 22\nThanksgiving break\n\n\n\n\n\n\n\n\n\n15\nMon, Nov 27\nFreight modeling\n📖\n\n\n\n\n\n\n\n\n\nWed, Nov 28\nLand use planning\n\n\n\n✍️\n\n\n\n\n\n16\nMon, Dec 04\nReview\n📖\n\n\n\n\n\n\n\n\n\nWed, Dec 06\nReview"
   },
   {
     "objectID": "teaching/CIVE461/project/project-description.html",
     "href": "teaching/CIVE461/project/project-description.html",
     "title": "Project description",
     "section": "",
-    "text": "Report 1 due Mon, Oct 02 - Submit on Canvas\nReport 2 due Wed, Oct 18 - Submit on Canvas\nReport 3 due Wed, Nov 08 - Submit on Canvas\nFinal report due Wed, Nov 28 - Submit on Canvas"
+    "text": "Report 1 due Mon, Oct 02 - Submit on Canvas\nReport 2 due Mon, Oct 23 - Submit on Canvas\nReport 3 due Wed, Nov 08 - Submit on Canvas\nFinal report due Wed, Nov 28 - Submit on Canvas"
   },
   {
     "objectID": "teaching/CIVE461/project/project-description.html#timeline",
     "href": "teaching/CIVE461/project/project-description.html#timeline",
     "title": "Project description",
     "section": "",
-    "text": "Report 1 due Mon, Oct 02 - Submit on Canvas\nReport 2 due Wed, Oct 18 - Submit on Canvas\nReport 3 due Wed, Nov 08 - Submit on Canvas\nFinal report due Wed, Nov 28 - Submit on Canvas"
+    "text": "Report 1 due Mon, Oct 02 - Submit on Canvas\nReport 2 due Mon, Oct 23 - Submit on Canvas\nReport 3 due Wed, Nov 08 - Submit on Canvas\nFinal report due Wed, Nov 28 - Submit on Canvas"
   },
   {
     "objectID": "teaching/CIVE461/project/project-description.html#introduction",
@@ -334,6 +348,20 @@
     "title": "Project description",
     "section": "Overall grading",
     "text": "Overall grading\nThe grade breakdown is as follows:\n\n\n\nTotal\n35 %\n\n\n\n\nReport 1: Trip Generation\n10 %\n\n\nReport 2: Trip Distribution\n10 %\n\n\nReport 3: Mode Choice\n10 %\n\n\nFinal report\n5 %\n\n\n\nNote: No late project reports are accepted.\n\nGrading summary\nGrading of the project will take into account the following:\n\nContent - What is the quality of the analysis?\nCorrectness - Are statistical procedures carried out and explained correctly?\nWriting and Presentation - What is the quality of the statistical presentation, writing, and explanations?\nCreativity and Critical Thought - Is the project carefully thought out? Does it appear that time and effort went into the coordination and implementation of the project?\n\nA general breakdown of scoring is as follows:\n\n90%-100%: Outstanding effort. Students understand how to apply all statistical concepts, can put the results into a cogent argument, can identify weaknesses in the argument, and can clearly communicate the results to others.\n80%-89%: Good effort. Students understand most of the concepts, put together an adequate argument and communicate most results clearly to others.\n70%-79%: Passing effort. Students have misunderstanding of concepts in several areas, have some trouble putting results together in a cogent argument, and communication of results is sometimes unclear.\n60%-69%: Struggling effort. Students are making some effort, but have misunderstanding of many concepts and are unable to put together a cogent argument. Communication of results is unclear.\nBelow 60%: Students are not making a sufficient effort.\n\n\n\nLate work policy\nThere is no late work accepted on this project. Be sure to turn in your work early to avoid any technological mishaps."
+  },
+  {
+    "objectID": "teaching/CIVE461/project/project-feedback.html",
+    "href": "teaching/CIVE461/project/project-feedback.html",
+    "title": "Project feedback",
+    "section": "",
+    "text": "Some general feedback on project report 1:\n\nWhen interpreting models always think about the following questions:\n\nDo the parameter signs make sense? E.g., more people in a household should make more trips.\nDo the parameter magnitudes make sense? E.g., more people in a household should make more trips, but it is unlikely an additional person will triple trips.\nDoes it make sense to include a variable in the model? E.g., do you expect proximity to playgrounds will affect work trips?\n\nWe talked about comparing model goodness-of-fit based on the \\(R^2\\) in class. The adjusted \\(R^2\\) provides a slightly better measure because it accounts for the number of parameters.\nSome groups did not adjust the cross-classification model to remove zero cells.\nYou should not treat a p-value as a binary include/exclude criteria. However, you should also avoid (or at least note) highly insignificant parameters. Statistical significance is more important in prediction tasks (e.g., trip generation forecasting) than policy analysis tasks (e.g., impacts of different variables on trip generation).\nWhile I ask that you submit a Jupyter notebook, you should still cleanup your notebook so it is clear and professional. This means using proper headings, full sentences, and removing analysis that does not contribute to the report narrative.\nCategorical variables use numerical codes, but these codes have no meaning. E.g., if race 1 is White and race 2 is Asian, how are we meant to interpret a change from race = 1 to race = 2? The correct treatment of categorical variables is to translate them into dummy/binary variables (0/1). We can define categories minus one such variables because parameters are always interpreted with respect to a reference. Eg., if we set race1 as the reference then a negative parameter for race2 means a person with that race is less likely to make a trip than a person of race1 type.\n\nThe following is a rough summary of the applicability of NHTS variables in a household-based trip generation model. Many variables are included in the table that may not be relevant but provide an illustration of the questions to ask yourself when reviewing variables for inclusion in a trip generation model. Note: some person variables are included in the dataset, but their values are simple averages and have minimal use in a household-based trip generation model.\n\n\n\nLevel\nName\nNotes\n\n\n\n\nHousehold\nBIKE\nOrdered after filtering out &lt; 0\n\n\nHousehold\nBIKE2SAVE\nOrdered after filtering out &lt; 0\n\n\nHousehold\nBUS\nOrdered after filtering out &lt; 0\n\n\nHousehold\nCAR\nOrdered after filtering out &lt; 0\n\n\nHousehold\nCDIVMSAR\nRegional fixed effect\n\n\nHousehold\nCENSUS_D\nRegional fixed effect\n\n\nHousehold\nCENSUS_R\nRegional fixed effect\n\n\nHousehold\nDRVRCNT\n\n\n\nHousehold\nHBHTNRNT\nOrdered after filtering out &lt; 0\n\n\nHousehold\nHBHUR\nRegional fixed effect\n\n\nHousehold\nHBPPOPDN\nOrdered after filtering out &lt; 0\n\n\nHousehold\nHBRESDN\nOrdered after filtering out &lt; 0\n\n\nHousehold\nHH_CBSA\nRegional fixed effect\n\n\nHousehold\nHHFAMINC\nOrdered after filtering out &lt; 0\n\n\nHousehold\nHHRELATD\n\n\n\nHousehold\nHHSIZE\n\n\n\nHousehold\nHHSTATE\nRegional fixed effect\n\n\nHousehold\nHHSTFIPS\nRegional fixed effect\n\n\nHousehold\nHHVEHCNT\n\n\n\nHousehold\nHOMEOWN\nBinary\n\n\nHousehold\nHTEEMPDN\nOrdered after filtering out &lt; 0\n\n\nHousehold\nHTHTNRNT\nOrdered after filtering out &lt; 0\n\n\nHousehold\nHTPPOPDN\nOrdered after filtering out &lt; 0\n\n\nHousehold\nHTRESDN\nOrdered after filtering out &lt; 0\n\n\nHousehold\nLIF_CYC\nCategorical. Order has no meaning.\n\n\nHousehold\nMSACAT\nCategorical. Order has no meaning.\n\n\nHousehold\nMSASIZE\nOrdered after filtering out &lt; 0\n\n\nHousehold\nNUMADLT\nOrdered after filtering out &lt; 0\n\n\nHousehold\nPARA\nOrdered after filtering out &lt; 0\n\n\nHousehold\nPC\nOrdered after filtering out &lt; 0\n\n\nHousehold\nPLACE\nOrdered after filtering out &lt; 0\n\n\nHousehold\nPRICE\nOrdered after filtering out &lt; 0\n\n\nHousehold\nPTRANS\nOrdered after filtering out &lt; 0\n\n\nHousehold\nRAIL\nBinary\n\n\nHousehold\nSPHONE\nHow to predict in model forecast?\n\n\nHousehold\nTAB\nHow to predict in model forecast?\n\n\nHousehold\nTAXI\nHow to predict in model forecast?\n\n\nHousehold\nTDAYDATE\n\n\n\nHousehold\nTRAIN\nHow to predict in model forecast?\n\n\nHousehold\nTRAVDAY\n\n\n\nHousehold\nURBAN\nOrdered after filtering out &lt; 0\n\n\nHousehold\nURBANSIZE\nOrdered after filtering out &lt; 0 and &gt;5\n\n\nHousehold\nURBRUR\nBinary\n\n\nHousehold\nWALK\nOrdered after filtering out &lt; 0\n\n\nHousehold\nWALK2SAVE\nOrdered after filtering out &lt; 0\n\n\nHousehold\nWEBUSE17\nOrdered after filtering out &lt; 0\n\n\nHousehold\nWRKCOUNT\n\n\n\nHousehold\nYOUNGCHILD\n\n\n\nTrip\nDBHTNRNT\nOrdered after filtering out &lt; 0\n\n\nTrip\nDBHUR\nRegional fixed effect\n\n\nTrip\nDBPPOPDN\nOrdered after filtering out &lt; 0\n\n\nTrip\nDBRESDN\nOrdered after filtering out &lt; 0\n\n\nTrip\nDROP_PRK\nHow to know without trip generation?\n\n\nTrip\nDTEEMPDN\nOrdered after filtering out &lt; 0\n\n\nTrip\nDTHTNRNT\nOrdered after filtering out &lt; 0\n\n\nTrip\nDTPPOPDN\nOrdered after filtering out &lt; 0\n\n\nTrip\nDTRESDN\nOrdered after filtering out &lt; 0\n\n\nTrip\nDWELTIME\nHow to know without trip generation?\n\n\nTrip\nENDTIME\nHow to know without trip generation?\n\n\nTrip\nGASPRICE\n\n\n\nTrip\nHH_ONTD\n\n\n\nTrip\nNONHHCNT\n\n\n\nTrip\nNUMONTRP\n\n\n\nTrip\nNUMTRANS\nHow to know without trip generation?\n\n\nTrip\nOBHTNRNT\nOrdered after filtering out &lt; 0\n\n\nTrip\nOBHUR\nCategorical. Order has no meaning.\n\n\nTrip\nOBPPOPDN\nOrdered after filtering out &lt; 0\n\n\nTrip\nOBRESDN\nOrdered after filtering out &lt; 0\n\n\nTrip\nOTEEMPDN\nOrdered after filtering out &lt; 0\n\n\nTrip\nOTHTNRNT\nOrdered after filtering out &lt; 0\n\n\nTrip\nOTPPOPDN\nOrdered after filtering out &lt; 0\n\n\nTrip\nOTRESDN\nOrdered after filtering out &lt; 0\n\n\nTrip\nPRMACT\nHow to predict in model forecast?\n\n\nTrip\nPUBTRANS\nHow to know without trip generation?\n\n\nTrip\nSTRTTIME\nHow to know without trip generation?\n\n\nTrip\nTDWKND\n\n\n\nTrip\nTRACC_BUS\nHow to know without trip generation?\n\n\nTrip\nTRACC_CRL\nHow to know without trip generation?\n\n\nTrip\nTRACC_OTH\nHow to know without trip generation?\n\n\nTrip\nTRACC_POV\nHow to know without trip generation?\n\n\nTrip\nTRACC_SUB\nHow to know without trip generation?\n\n\nTrip\nTRACC_WLK\nHow to know without trip generation?\n\n\nTrip\nTRACCTM\nHow to know without trip generation?\n\n\nTrip\nTREGR_BUS\nHow to know without trip generation?\n\n\nTrip\nTREGR_CRL\nHow to know without trip generation?\n\n\nTrip\nTREGR_OTH\nHow to know without trip generation?\n\n\nTrip\nTREGR_POV\nHow to know without trip generation?\n\n\nTrip\nTREGR_SUB\nHow to know without trip generation?\n\n\nTrip\nTREGR_WLK\nHow to know without trip generation?\n\n\nTrip\nTREGRTM\nHow to know without trip generation?\n\n\nTrip\nTRPACCMP\nOrdered after filtering out &lt; 0\n\n\nTrip\nTRPHHACC\nOrdered after filtering out &lt; 0\n\n\nTrip\nTRPHHVEH\nBinary\n\n\nTrip\nTRPMILAD\nHow to know without trip generation?\n\n\nTrip\nTRPMILES\nHow to know without trip generation?\n\n\nTrip\nTRPTRANS\nHow to know without trip generation?\n\n\nTrip\nTRVLCMIN\nHow to know without trip generation?\n\n\nTrip\nTRWAITTM\nHow to know without trip generation?\n\n\nTrip\nVEHTYPE\nCategorical. Order has no meaning.\n\n\nTrip\nVMT_MILE\nHow to know without trip generation?\n\n\nTrip\nWORKER\nBinary"
+  },
+  {
+    "objectID": "teaching/CIVE461/project/project-feedback.html#project-report-1",
+    "href": "teaching/CIVE461/project/project-feedback.html#project-report-1",
+    "title": "Project feedback",
+    "section": "",
+    "text": "Some general feedback on project report 1:\n\nWhen interpreting models always think about the following questions:\n\nDo the parameter signs make sense? E.g., more people in a household should make more trips.\nDo the parameter magnitudes make sense? E.g., more people in a household should make more trips, but it is unlikely an additional person will triple trips.\nDoes it make sense to include a variable in the model? E.g., do you expect proximity to playgrounds will affect work trips?\n\nWe talked about comparing model goodness-of-fit based on the \\(R^2\\) in class. The adjusted \\(R^2\\) provides a slightly better measure because it accounts for the number of parameters.\nSome groups did not adjust the cross-classification model to remove zero cells.\nYou should not treat a p-value as a binary include/exclude criteria. However, you should also avoid (or at least note) highly insignificant parameters. Statistical significance is more important in prediction tasks (e.g., trip generation forecasting) than policy analysis tasks (e.g., impacts of different variables on trip generation).\nWhile I ask that you submit a Jupyter notebook, you should still cleanup your notebook so it is clear and professional. This means using proper headings, full sentences, and removing analysis that does not contribute to the report narrative.\nCategorical variables use numerical codes, but these codes have no meaning. E.g., if race 1 is White and race 2 is Asian, how are we meant to interpret a change from race = 1 to race = 2? The correct treatment of categorical variables is to translate them into dummy/binary variables (0/1). We can define categories minus one such variables because parameters are always interpreted with respect to a reference. Eg., if we set race1 as the reference then a negative parameter for race2 means a person with that race is less likely to make a trip than a person of race1 type.\n\nThe following is a rough summary of the applicability of NHTS variables in a household-based trip generation model. Many variables are included in the table that may not be relevant but provide an illustration of the questions to ask yourself when reviewing variables for inclusion in a trip generation model. Note: some person variables are included in the dataset, but their values are simple averages and have minimal use in a household-based trip generation model.\n\n\n\nLevel\nName\nNotes\n\n\n\n\nHousehold\nBIKE\nOrdered after filtering out &lt; 0\n\n\nHousehold\nBIKE2SAVE\nOrdered after filtering out &lt; 0\n\n\nHousehold\nBUS\nOrdered after filtering out &lt; 0\n\n\nHousehold\nCAR\nOrdered after filtering out &lt; 0\n\n\nHousehold\nCDIVMSAR\nRegional fixed effect\n\n\nHousehold\nCENSUS_D\nRegional fixed effect\n\n\nHousehold\nCENSUS_R\nRegional fixed effect\n\n\nHousehold\nDRVRCNT\n\n\n\nHousehold\nHBHTNRNT\nOrdered after filtering out &lt; 0\n\n\nHousehold\nHBHUR\nRegional fixed effect\n\n\nHousehold\nHBPPOPDN\nOrdered after filtering out &lt; 0\n\n\nHousehold\nHBRESDN\nOrdered after filtering out &lt; 0\n\n\nHousehold\nHH_CBSA\nRegional fixed effect\n\n\nHousehold\nHHFAMINC\nOrdered after filtering out &lt; 0\n\n\nHousehold\nHHRELATD\n\n\n\nHousehold\nHHSIZE\n\n\n\nHousehold\nHHSTATE\nRegional fixed effect\n\n\nHousehold\nHHSTFIPS\nRegional fixed effect\n\n\nHousehold\nHHVEHCNT\n\n\n\nHousehold\nHOMEOWN\nBinary\n\n\nHousehold\nHTEEMPDN\nOrdered after filtering out &lt; 0\n\n\nHousehold\nHTHTNRNT\nOrdered after filtering out &lt; 0\n\n\nHousehold\nHTPPOPDN\nOrdered after filtering out &lt; 0\n\n\nHousehold\nHTRESDN\nOrdered after filtering out &lt; 0\n\n\nHousehold\nLIF_CYC\nCategorical. Order has no meaning.\n\n\nHousehold\nMSACAT\nCategorical. Order has no meaning.\n\n\nHousehold\nMSASIZE\nOrdered after filtering out &lt; 0\n\n\nHousehold\nNUMADLT\nOrdered after filtering out &lt; 0\n\n\nHousehold\nPARA\nOrdered after filtering out &lt; 0\n\n\nHousehold\nPC\nOrdered after filtering out &lt; 0\n\n\nHousehold\nPLACE\nOrdered after filtering out &lt; 0\n\n\nHousehold\nPRICE\nOrdered after filtering out &lt; 0\n\n\nHousehold\nPTRANS\nOrdered after filtering out &lt; 0\n\n\nHousehold\nRAIL\nBinary\n\n\nHousehold\nSPHONE\nHow to predict in model forecast?\n\n\nHousehold\nTAB\nHow to predict in model forecast?\n\n\nHousehold\nTAXI\nHow to predict in model forecast?\n\n\nHousehold\nTDAYDATE\n\n\n\nHousehold\nTRAIN\nHow to predict in model forecast?\n\n\nHousehold\nTRAVDAY\n\n\n\nHousehold\nURBAN\nOrdered after filtering out &lt; 0\n\n\nHousehold\nURBANSIZE\nOrdered after filtering out &lt; 0 and &gt;5\n\n\nHousehold\nURBRUR\nBinary\n\n\nHousehold\nWALK\nOrdered after filtering out &lt; 0\n\n\nHousehold\nWALK2SAVE\nOrdered after filtering out &lt; 0\n\n\nHousehold\nWEBUSE17\nOrdered after filtering out &lt; 0\n\n\nHousehold\nWRKCOUNT\n\n\n\nHousehold\nYOUNGCHILD\n\n\n\nTrip\nDBHTNRNT\nOrdered after filtering out &lt; 0\n\n\nTrip\nDBHUR\nRegional fixed effect\n\n\nTrip\nDBPPOPDN\nOrdered after filtering out &lt; 0\n\n\nTrip\nDBRESDN\nOrdered after filtering out &lt; 0\n\n\nTrip\nDROP_PRK\nHow to know without trip generation?\n\n\nTrip\nDTEEMPDN\nOrdered after filtering out &lt; 0\n\n\nTrip\nDTHTNRNT\nOrdered after filtering out &lt; 0\n\n\nTrip\nDTPPOPDN\nOrdered after filtering out &lt; 0\n\n\nTrip\nDTRESDN\nOrdered after filtering out &lt; 0\n\n\nTrip\nDWELTIME\nHow to know without trip generation?\n\n\nTrip\nENDTIME\nHow to know without trip generation?\n\n\nTrip\nGASPRICE\n\n\n\nTrip\nHH_ONTD\n\n\n\nTrip\nNONHHCNT\n\n\n\nTrip\nNUMONTRP\n\n\n\nTrip\nNUMTRANS\nHow to know without trip generation?\n\n\nTrip\nOBHTNRNT\nOrdered after filtering out &lt; 0\n\n\nTrip\nOBHUR\nCategorical. Order has no meaning.\n\n\nTrip\nOBPPOPDN\nOrdered after filtering out &lt; 0\n\n\nTrip\nOBRESDN\nOrdered after filtering out &lt; 0\n\n\nTrip\nOTEEMPDN\nOrdered after filtering out &lt; 0\n\n\nTrip\nOTHTNRNT\nOrdered after filtering out &lt; 0\n\n\nTrip\nOTPPOPDN\nOrdered after filtering out &lt; 0\n\n\nTrip\nOTRESDN\nOrdered after filtering out &lt; 0\n\n\nTrip\nPRMACT\nHow to predict in model forecast?\n\n\nTrip\nPUBTRANS\nHow to know without trip generation?\n\n\nTrip\nSTRTTIME\nHow to know without trip generation?\n\n\nTrip\nTDWKND\n\n\n\nTrip\nTRACC_BUS\nHow to know without trip generation?\n\n\nTrip\nTRACC_CRL\nHow to know without trip generation?\n\n\nTrip\nTRACC_OTH\nHow to know without trip generation?\n\n\nTrip\nTRACC_POV\nHow to know without trip generation?\n\n\nTrip\nTRACC_SUB\nHow to know without trip generation?\n\n\nTrip\nTRACC_WLK\nHow to know without trip generation?\n\n\nTrip\nTRACCTM\nHow to know without trip generation?\n\n\nTrip\nTREGR_BUS\nHow to know without trip generation?\n\n\nTrip\nTREGR_CRL\nHow to know without trip generation?\n\n\nTrip\nTREGR_OTH\nHow to know without trip generation?\n\n\nTrip\nTREGR_POV\nHow to know without trip generation?\n\n\nTrip\nTREGR_SUB\nHow to know without trip generation?\n\n\nTrip\nTREGR_WLK\nHow to know without trip generation?\n\n\nTrip\nTREGRTM\nHow to know without trip generation?\n\n\nTrip\nTRPACCMP\nOrdered after filtering out &lt; 0\n\n\nTrip\nTRPHHACC\nOrdered after filtering out &lt; 0\n\n\nTrip\nTRPHHVEH\nBinary\n\n\nTrip\nTRPMILAD\nHow to know without trip generation?\n\n\nTrip\nTRPMILES\nHow to know without trip generation?\n\n\nTrip\nTRPTRANS\nHow to know without trip generation?\n\n\nTrip\nTRVLCMIN\nHow to know without trip generation?\n\n\nTrip\nTRWAITTM\nHow to know without trip generation?\n\n\nTrip\nVEHTYPE\nCategorical. Order has no meaning.\n\n\nTrip\nVMT_MILE\nHow to know without trip generation?\n\n\nTrip\nWORKER\nBinary"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-1.html#outline",
@@ -1624,18 +1652,172 @@
     "text": "Some Transportation Policy Building Blocks\n\n\n\n\n\n\n\n\nCIVE461 Home"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-6.html#three-route-example",
-    "href": "teaching/CIVE461/slides/lec-6.html#three-route-example",
-    "title": "Lecture 8 - Trip Distribution",
+    "objectID": "teaching/CIVE461/slides/lec-5.html#outline",
+    "href": "teaching/CIVE461/slides/lec-5.html#outline",
+    "title": "Lecture 5 - Choice Models",
+    "section": "Outline",
+    "text": "Outline\n\n\nBasis for choice modeling\nTheory\nLogit choice model"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-5.html#basis-for-choice-modeling",
+    "href": "teaching/CIVE461/slides/lec-5.html#basis-for-choice-modeling",
+    "title": "Lecture 5 - Choice Models",
+    "section": "Basis for Choice Modeling",
+    "text": "Basis for Choice Modeling\n\nAggregate demand models (such as those we have been discussing) based on observations for groups of travelers or average relations for zones\nDiscrete choice: probability an individual chooses a given option a function of their socioeconomic characteristics & relative attractiveness of the option\nCannot estimate via least squares because probability is unobserved – only observe choice\nModels are probabilistic & do not give an outcome value such as trips – must use probability concepts to generate discrete outcomes (summation over all observations to give expected number choosing option or use sample enumeration to allocate discrete outcomes)"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-5.html#basis-for-choice-modeling-1",
+    "href": "teaching/CIVE461/slides/lec-5.html#basis-for-choice-modeling-1",
+    "title": "Lecture 5 - Choice Models",
+    "section": "Basis for Choice Modeling",
+    "text": "Basis for Choice Modeling\n\nIndividuals derive utility from the use of alternatives defined by a utility function often denoted by V \\[Vpeanut butter = 0.25 – 1.0 ALLERGY - 0.5 PRICE + 0.25 ORGANIC\\]\nNeed probability value between 0 & 1. Various forms, generally with an s-shaped plot. Main ones are \\[𝐿𝑜𝑔𝑖𝑡:𝑃_1=exp⁡(𝑉_1 )/(exp⁡(𝑉1)+exp⁡(𝑉2))\\] \\[𝑃𝑟𝑜𝑏𝑖𝑡:𝑃_1=\\int_{-\\infty}^{\\infty}⁡\\int_{-\\infty}^{V_1-V_2+x_1}\\frac{⁡exp⁡(\\frac{−1}{2(1−\\rho^2)} (\\frac{𝑥_1}{\\sigma_1})^2−\\frac{2\\rho 𝑥_1 𝑥_2}{\\sigma_1 \\sigma_2}+(\\frac{𝑥_2}{\\sigma_2})^2}{2\\pi\\sigma_1 \\sigma_2 \\sqrt{1−\\rho^2 }} 𝑑𝑥_2 𝑑𝑥_1\\]"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-5.html#properties-of-discrete-choice-dc",
+    "href": "teaching/CIVE461/slides/lec-5.html#properties-of-discrete-choice-dc",
+    "title": "Lecture 5 - Choice Models",
+    "section": "Properties of Discrete Choice (DC)",
+    "text": "Properties of Discrete Choice (DC)\n\nBased on theories of individual behavior & do not constitute physical analogies – therefore stable over time & space\nCan be more statistically efficient than aggregate models because each observation is an outcome rather than using aggregations of potentially hundreds of observations\nDM less likely to suffer from bias due to correlation between aggregate units – i.e., ecological correlation (fallacy)"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-5.html#ecological-fallacy",
+    "href": "teaching/CIVE461/slides/lec-5.html#ecological-fallacy",
+    "title": "Lecture 5 - Choice Models",
+    "section": "Ecological Fallacy",
+    "text": "Ecological Fallacy"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-5.html#theoretical-framework",
+    "href": "teaching/CIVE461/slides/lec-5.html#theoretical-framework",
+    "title": "Lecture 5 - Choice Models",
+    "section": "Theoretical Framework",
+    "text": "Theoretical Framework\n\nIndividuals belong to a homogeneous population \\(I\\), act rationally, & possess perfect information – i.e., they always select the option that maximizes their net personal utility subject to legal, social, physical, &/or budgetary (both time & money) constraints\nThere is a certain set \\(𝐴 = \\{𝐴_1, …𝐴_𝑗,…𝐴_J\\}\\) of available alternatives & a set X of vectors of measured attributes of individuals & their alternatives\nAn individual \\(i\\) is endowed with a set of attributes \\(𝑥 \\in 𝑋\\) & faces a choice set \\(𝐴(i) \\in 𝐴\\)\nWe will assume choice set is predetermined for individuals"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-5.html#theoretical-framework-1",
+    "href": "teaching/CIVE461/slides/lec-5.html#theoretical-framework-1",
+    "title": "Lecture 5 - Choice Models",
+    "section": "Theoretical Framework",
+    "text": "Theoretical Framework\n\nModeler, an observer, does not posses complete information about all elements considered by the individual making choice\nModeler assumes \\(𝑈_{ij}\\) can be represented by two components:\n\nA measurable, systematic, or representative part \\(𝑉_{ij}\\), which is a function of the measured attributes \\(x\\)\nA random part \\(\\epsilon_{ij}\\), which reflects indiosyncratic & taste variation, together with measurement or observational errors made by the modeler"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-5.html#theoretical-framework-2",
+    "href": "teaching/CIVE461/slides/lec-5.html#theoretical-framework-2",
+    "title": "Lecture 5 - Choice Models",
+    "section": "Theoretical Framework",
+    "text": "Theoretical Framework\n\nModeler sets utility \\(𝑈_{ij}}=𝑉_{ij}+\\epsilon_{ij}}\\) to address two apparent irrationalities\n\nThat two individuals faced with the same situation & having the same personal attributes make different choices\nThat an individual may not select the alternative that appears to be the best one\n\nOften assumed \\(V_{ij}\\) given by \\(\\sum_k^K \\beta_{jk} x_{ijk}\\) here \\(\\beta_{jk}\\) are assumed constant for all individuals \\(I\\) in the homogeneous set but may vary across alternatives \\(J\\)"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-5.html#theoretical-framework-3",
+    "href": "teaching/CIVE461/slides/lec-5.html#theoretical-framework-3",
+    "title": "Lecture 5 - Choice Models",
+    "section": "Theoretical Framework",
+    "text": "Theoretical Framework\n\nIndividual chooses an alternative based on \\(𝑈_{ij}≥ 𝑈_{qj} \\forall A_q \\in A(i)\\)\nOr: \\(𝑉_{ij} – 𝑉_{iq}≥\\epsilon_{iq} − \\epsilon_{ij}\\) (notice swapping of 𝒋 & q)\n\nNot possible to know with certainty if the inequality holds, so use \\[𝑃_{ij}  = 𝑃(\\epsilon{ij} \\leq \\epsilon_{iq} + (V_{ij} - V_{iq})) \\forall A_q \\in A(i)\\] - Do not know distribution of joint residuals, so cannot derive analytical expression for model - Can denote \\(f(\\epsilon) = f(\\epsilon_1, \\epsilon_2, ... \\epsilon_J\\) & know they are random variables with a certain distribution"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-5.html#theoretical-framework-4",
+    "href": "teaching/CIVE461/slides/lec-5.html#theoretical-framework-4",
+    "title": "Lecture 5 - Choice Models",
+    "section": "Theoretical Framework",
+    "text": "Theoretical Framework\n\nCan note that distribution for \\(f(U)\\) is the same but with mean \\(V\\) rather than 0 \\[P_{ij} = \\int_{R_J} f(\\epsilon) d\\epsilon\\] \\[\\text{where } R_J = \\begin{cases}\n\\epsilon_{iq} \\leq \\epsilon_{ij} + (V_{ij} - V_{iq}), & \\forall A_q \\in A(i) \\\\\nV_{ij}) + \\epsilon_{ij} \\ge 0 \\\\\n\\end{cases}\\]\nAssuming independent & identically distributed (IID) residuals, \\[f(\\epsilon_1,...\\epsilon_J) = \\prod_j^J g(\\epsilon_j)\\]\nAnd (drop \\(i\\) for simplicity) \\[P_j = \\int_{-\\infty}^\\infty g(\\epsilon_j) d\\epsilon_j \\prod_{q \\neq j} \\int_{-\\infty}^{V_j-V_q+\\epsilon_j} g(\\epsilon_q) d\\epsilon_q\\]"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-5.html#generating-the-logit-model",
+    "href": "teaching/CIVE461/slides/lec-5.html#generating-the-logit-model",
+    "title": "Lecture 5 - Choice Models",
+    "section": "Generating the Logit Model",
+    "text": "Generating the Logit Model\n\nAssuming IID Gumbel (Extreme Value Type I) residuals, or equivalently that residual differences are logistically distributed, gives the standard multinomial logit specification\nTermed softmax function in machine learning field \\[P_{ij} = \\frac{exp(\\mu V_{ij})}{\\sum_{A_q \\in A(i)} exp(\\mu V_{iq})}\\]\nWhere \\(\\mu\\) is a scale parameter assumed equal to 1.0 for identification"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-5.html#logit-model-parameter-estimation",
+    "href": "teaching/CIVE461/slides/lec-5.html#logit-model-parameter-estimation",
+    "title": "Lecture 5 - Choice Models",
+    "section": "Logit Model Parameter Estimation",
+    "text": "Logit Model Parameter Estimation\n\nCommercial (& opensource) software exists to estimate model parameters using the method of maximum likelihood estimation\n\nApollo (R & free)\nBiogeme (Python & free)\nSTATA (commercial)\nLIMDEP (commercial)\nGAUSS (commercial)\n\nParameter interpretation similar to regression (t-statistics, GoF, etc.)"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-5.html#direct-cross-elasticity",
+    "href": "teaching/CIVE461/slides/lec-5.html#direct-cross-elasticity",
+    "title": "Lecture 5 - Choice Models",
+    "section": "Direct & Cross Elasticity",
+    "text": "Direct & Cross Elasticity\n\nDirect elasticity: direct effect of changing a variable value related to a good on demand for the same good\n\nE.g., elasticity of transit demand wrt transit fare, transit travel time, or transit headway\n\nCross elasticity: effect of changing a variable value related to a good on demand for a different good\n\nE.g., elasticity of transit demand wrt auto travel time"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-5.html#logit---direct-elasticity",
+    "href": "teaching/CIVE461/slides/lec-5.html#logit---direct-elasticity",
+    "title": "Lecture 5 - Choice Models",
+    "section": "Logit - Direct Elasticity",
+    "text": "Logit - Direct Elasticity\nDirect elasticity of the probability of an individual \\(i\\) choosing alternative \\(j\\) wrt a change in an attribute/independent variable \\(X_{jk}\\) with coefficient \\(\\beta_k\\) (ignoring \\(i\\) subscripts for simplicity)\n\\[e_{direct} = \\frac{\\partial P_j}{\\partial X_{jk}} \\frac{X_{jk}}{P_j}=(1-P_j)X_{jk}\\beta_k\\]"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-5.html#logit---cross-elasticity",
+    "href": "teaching/CIVE461/slides/lec-5.html#logit---cross-elasticity",
+    "title": "Lecture 5 - Choice Models",
+    "section": "Logit - Cross Elasticity",
+    "text": "Logit - Cross Elasticity\n\nCross elasticity of the probability of an individual \\(i\\) choosing alternative \\(j\\) wrt a change in an attribute/independent variable \\(X_{lk}\\) with coefficient \\(\\beta_k\\) for a different alternative\n\n\\[e_{cross} = -P_jX_{jk}\\beta_k\\]\n\nAbove is same regardless of alternative \\(l\\). I.e., all alternatives \\(J\\) have the same cross-elasticity wrt an attribute \\(k\\) of alternative \\(j\\)\nAbove results from independence of irrelevant alternatives (IIA) property of basic logit model"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-5.html#independence-of-irrelevant-alternatives-iia-property",
+    "href": "teaching/CIVE461/slides/lec-5.html#independence-of-irrelevant-alternatives-iia-property",
+    "title": "Lecture 5 - Choice Models",
+    "section": "Independence of Irrelevant Alternatives (IIA) Property",
+    "text": "Independence of Irrelevant Alternatives (IIA) Property\nConsider we have two modes: auto (a) & bus (b)\n\\[\\frac{P_a}{P_b} = \\frac{exp(V_a)}{exp(V_b)} = exp(V_a - V_b)\\] I.e., the relative probability of choosing auto vs. bus depends only on the utilities of the two alternatives\n\nNow what if our buses are red (rb) & we paint half blue (bb)?"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-5.html#iia-cont",
+    "href": "teaching/CIVE461/slides/lec-5.html#iia-cont",
+    "title": "Lecture 5 - Choice Models",
+    "section": "IIA Cont…",
+    "text": "IIA Cont…\n\nIf the IIA assumption does not hold, we can make other error distribution assumptions\n\nNested logit (can handle complex decision structures)\nProbit (normal error terms, very general model, but can be difficult to work with it)\n\n\n\n\n\nCIVE461 Home"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-6.html#outline",
+    "href": "teaching/CIVE461/slides/lec-6.html#outline",
+    "title": "Lecture 6 - Mode & Destination Choice Models",
+    "section": "Outline",
+    "text": "Outline\n\n\n\n\nUtility function variables\nDirect and cross-elasticity\nForecasting and aggregation\nLimitations\nExtension to other choices\n\n\n\n\n\n\n\n\n\n\n\n\n\nCIVE461 Home"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#outline",
+    "href": "teaching/CIVE461/slides/lec-7.html#outline",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Outline",
+    "text": "Outline\n\n\n\n\nProblem definition & assumptions\nShortest path algorithms\nRepresenting congestion\nTreatment of time\nRandom effects\nWardrop’s rules: System optimal & User equilibrium\nAssignment procedures: All-or-nothing, Capacity restraint, & Deterministic user equilibrium"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#three-route-example",
+    "href": "teaching/CIVE461/slides/lec-7.html#three-route-example",
+    "title": "Lecture 7 - Trip Assignment",
     "section": "Three Route Example",
     "text": "Three Route Example\n\n\n\n\nflowchart LR\n  A[P] ----&gt;|1| B(Q)\n  A[P] ----&gt;|2| B(Q)\n  A[P] ----&gt;|3| B(Q)\n\n\n\n\n\n\\[f_1(v_1) = 10(1+0.15(v_1/200)^4)\\] \\[f_2(v_2) = 20(1+0.15(v_1/400)^4)\\] \\[f_3(v_3) = 25(1+0.15(v_1/300)^4)\\]"
   },
   {
-    "objectID": "teaching/CIVE461/slides/lec-6.html#three-route-example---solution",
-    "href": "teaching/CIVE461/slides/lec-6.html#three-route-example---solution",
-    "title": "Lecture 8 - Trip Distribution",
+    "objectID": "teaching/CIVE461/slides/lec-7.html#three-route-example---solution",
+    "href": "teaching/CIVE461/slides/lec-7.html#three-route-example---solution",
+    "title": "Lecture 7 - Trip Assignment",
     "section": "Three Route Example - Solution",
-    "text": "Three Route Example - Solution\nWe’ll start by creating a Pandas dataframe to store the iteration variables\nimport pandas as pd\nimport numpy as np\nfrom scipy.optimize import minimize_scalar\n\ndf = pd.DataFrame({\"f1\": pd.Series(dtype='float'),\n                  \"f2\": pd.Series(dtype='float'),\n                  \"f3\": pd.Series(dtype='float'),\n                  \"V1\": pd.Series(dtype='float'),\n                  \"V2\": pd.Series(dtype='float'),\n                  \"V3\": pd.Series(dtype='float'),\n                  \"F1\": pd.Series(dtype='float'),\n                  \"F2\": pd.Series(dtype='float'),\n                  \"F3\": pd.Series(dtype='float'),\n                  \"F\": pd.Series(dtype='float'),\n                  \"lambda\": pd.Series(dtype='float')})\n## Three Route Example - Solution {.smaller} We can then define the inputs to the traffic assignment algorithm.\n# Specify the freeflow travel times/capacities\nff_tt_1 = 10\nff_tt_2 = 20\nff_tt_3 = 25\nC1 = 200\nC2 = 400\nC3 = 300\n\nvolume = 1000 # veh/hr\nmin_tt = np.min([ff_tt_1, ff_tt_2, ff_tt_3]) # minimum travel time\n\n# Define the volumes on each link (1,2, and 3)\nV1 = volume if (ff_tt_1==min_tt) else 0\nV2 = volume if (ff_tt_2==min_tt) else 0\nV3 = volume if (ff_tt_3==min_tt) else 0\n\n# Define total costs as integrals of travel time costs over volume\nF1 = ff_tt_1*V1 + ff_tt_1*0.15/C1**4*V1**5/5 \nF2 = ff_tt_2*V2 + ff_tt_2*0.15/C2**4*V2**5/5\nF3 = ff_tt_3*V3 + ff_tt_3*0.15/C3**4*V3**5/5\nF = F1 + F2 + F3\n\nl = 1.0 # intialize lambda to 1.0\ntol = 10**-2 # tolerance on the difference in total cost between iterations\n\nrow = [ff_tt_1, ff_tt_2, ff_tt_3, V1, V2, V3, F1, F2, F3, F, l]\ndf.loc[len(df),:] = row # add initial values to df\n## Three Route Example - Solution {.smaller} Next we define the Frank-Wolfe algorithm and solve for \\(\\lambda\\) using scipy optimize minimize_scalar. The first step is to define a loop that repeatedly calls the minimization on a new set of volumes. We define the Frank-Wolfe algorithm and solve for \\(\\lambda\\) using scipy optimize minimize_scalar. The next step is to define the optimization problem. We’ll define the optimization in two functions: get_optimal_vals calculates the various values we need in each iteration and FW_Alg defines the function to be minized by scipy optimize minimize_scalar.\n# Apply the Frank-Wolfe algorithm on the example dataset\ndef FW_Alg(x, prev_iter):\n  f1, f2, f3, V1, V2, V3, F1, F2, F3 = get_optimal_vals(x, prev_iter)\n  return (F1 + F2 + F3)\n\n# Function computes the various traffic assignment algorithm values at optimality\ndef get_optimal_vals(x, prev_iter):\n  f1 = ff_tt_1*(1+0.15*(prev_iter[\"V1\"]/C1)**4)\n  f2 = ff_tt_2*(1+0.15*(prev_iter[\"V2\"]/C2)**4)\n  f3 = ff_tt_3*(1+0.15*(prev_iter[\"V3\"]/C3)**4)\n\n  min_tt = np.min([f1, f2, f3]) # minimum travel time\n\n  V1 = x*prev_iter[\"V1\"] + (1-x)*(volume if f1==min_tt else 0)\n  V2 = x*prev_iter[\"V2\"] + (1-x)*(volume if f2==min_tt else 0)\n  V3 = x*prev_iter[\"V3\"] + (1-x)*(volume if f3==min_tt else 0)\n\n  F1 = ff_tt_1*V1 + ff_tt_1*0.15/C1**4*V1**5/5\n  F2 = ff_tt_2*V2 + ff_tt_2*0.15/C2**4*V2**5/5\n  F3 = ff_tt_3*V3 + ff_tt_3*0.15/C3**4*V3**5/5\n\n  return f1, f2, f3, V1, V2, V3, F1, F2, F3\n\nF_diff = F \n\nwhile F_diff &gt; tol:\n  F_diff = F\n  prev_iter = df.iloc[-1] # Get the values from the last iteration\n\n  res = minimize_scalar(FW_Alg, args=(prev_iter), bounds=[0,1])\n  F = res.fun\n  l = res.x\n  f1, f2, f3, V1, V2, V3, F1, F2, F3 = get_optimal_vals(l, prev_iter)\n\n  row = [f1, f2, f3, V1, V2, V3, F1, F2, F3, F, l]\n  df.loc[len(df),:] = row\n\n  F_diff = F_diff - F\n## Three Route Example - Solution {.smaller} Putting everything together, we can print a table summarizing the variable values at each iteration.\n\n\n\n\n\n\n\n \nf1\nf2\nf3\nV1\nV2\nV3\nF1\nF2\nF3\nF\nlambda\n\n\n\n\n0\n10.00\n20.00\n25.00\n1000.00\n0.00\n0.00\n197500.00\n0.00\n0.00\n197500.00\n1.00\n\n\n1\n947.50\n20.00\n25.00\n403.46\n596.54\n0.00\n6039.00\n13701.45\n0.00\n19740.44\n0.40\n\n\n2\n34.84\n34.84\n25.00\n338.45\n500.42\n161.13\n4217.09\n10743.87\n4038.43\n18999.39\n0.84\n\n\n3\n22.30\n27.35\n25.31\n361.97\n482.63\n155.41\n4784.70\n10266.28\n3893.55\n18944.53\n0.96\n\n\n4\n26.09\n26.36\n25.27\n354.58\n472.78\n172.64\n4596.77\n10009.25\n4330.12\n18936.14\n0.98\n\n\n5\n24.82\n25.85\n25.41\n359.22\n469.38\n171.40\n4713.80\n9921.62\n4298.58\n18934.00\n0.99\n\n\n6\n25.61\n25.69\n25.40\n357.30\n466.87\n175.83\n4664.85\n9857.20\n4411.38\n18933.43\n0.99\n\n\n7\n25.28\n25.57\n25.44\n358.58\n465.93\n175.48\n4697.45\n9833.37\n4402.44\n18933.27\n1.00\n\n\n\n\n\n\n\n\nCIVE461 Home"
+    "text": "Three Route Example - Solution\nWe’ll start by creating a Pandas dataframe to store the iteration variables\nimport pandas as pd\nimport numpy as np\nfrom scipy.optimize import minimize_scalar\n\ndf = pd.DataFrame({\"f1\": pd.Series(dtype='float'),\n                  \"f2\": pd.Series(dtype='float'),\n                  \"f3\": pd.Series(dtype='float'),\n                  \"V1\": pd.Series(dtype='float'),\n                  \"V2\": pd.Series(dtype='float'),\n                  \"V3\": pd.Series(dtype='float'),\n                  \"F1\": pd.Series(dtype='float'),\n                  \"F2\": pd.Series(dtype='float'),\n                  \"F3\": pd.Series(dtype='float'),\n                  \"F\": pd.Series(dtype='float'),\n                  \"lambda\": pd.Series(dtype='float')})"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#three-route-example---solution-1",
+    "href": "teaching/CIVE461/slides/lec-7.html#three-route-example---solution-1",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Three Route Example - Solution",
+    "text": "Three Route Example - Solution\nWe can then define the inputs to the traffic assignment algorithm.\n# Specify the freeflow travel times/capacities\nff_tt_1 = 10\nff_tt_2 = 20\nff_tt_3 = 25\nC1 = 200\nC2 = 400\nC3 = 300\n\nvolume = 1000 # veh/hr\nmin_tt = np.min([ff_tt_1, ff_tt_2, ff_tt_3]) # minimum travel time\n\n# Define the volumes on each link (1,2, and 3)\nV1 = volume if (ff_tt_1==min_tt) else 0\nV2 = volume if (ff_tt_2==min_tt) else 0\nV3 = volume if (ff_tt_3==min_tt) else 0\n\n# Define total costs as integrals of travel time costs over volume\nF1 = ff_tt_1*V1 + ff_tt_1*0.15/C1**4*V1**5/5 \nF2 = ff_tt_2*V2 + ff_tt_2*0.15/C2**4*V2**5/5\nF3 = ff_tt_3*V3 + ff_tt_3*0.15/C3**4*V3**5/5\nF = F1 + F2 + F3\n\nl = 1.0 # intialize lambda to 1.0\ntol = 10**-2 # tolerance on the difference in total cost between iterations\n\nrow = [ff_tt_1, ff_tt_2, ff_tt_3, V1, V2, V3, F1, F2, F3, F, l]\ndf.loc[len(df),:] = row # add initial values to df"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#three-route-example---solution-2",
+    "href": "teaching/CIVE461/slides/lec-7.html#three-route-example---solution-2",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Three Route Example - Solution",
+    "text": "Three Route Example - Solution\nNext we define the Frank-Wolfe algorithm and solve for \\(\\lambda\\) using scipy optimize minimize_scalar. The first step is to define a loop that repeatedly calls the minimization on a new set of volumes. We define the Frank-Wolfe algorithm and solve for \\(\\lambda\\) using scipy optimize minimize_scalar. The next step is to define the optimization problem. We’ll define the optimization in two functions: get_optimal_vals calculates the various values we need in each iteration and FW_Alg defines the function to be minized by scipy optimize minimize_scalar.\n# Apply the Frank-Wolfe algorithm on the example dataset\ndef FW_Alg(x, prev_iter):\n  f1, f2, f3, V1, V2, V3, F1, F2, F3 = get_optimal_vals(x, prev_iter)\n  return (F1 + F2 + F3)\n\n# Function computes the various traffic assignment algorithm values at optimality\ndef get_optimal_vals(x, prev_iter):\n  f1 = ff_tt_1*(1+0.15*(prev_iter[\"V1\"]/C1)**4)\n  f2 = ff_tt_2*(1+0.15*(prev_iter[\"V2\"]/C2)**4)\n  f3 = ff_tt_3*(1+0.15*(prev_iter[\"V3\"]/C3)**4)\n\n  min_tt = np.min([f1, f2, f3]) # minimum travel time\n\n  V1 = x*prev_iter[\"V1\"] + (1-x)*(volume if f1==min_tt else 0)\n  V2 = x*prev_iter[\"V2\"] + (1-x)*(volume if f2==min_tt else 0)\n  V3 = x*prev_iter[\"V3\"] + (1-x)*(volume if f3==min_tt else 0)\n\n  F1 = ff_tt_1*V1 + ff_tt_1*0.15/C1**4*V1**5/5\n  F2 = ff_tt_2*V2 + ff_tt_2*0.15/C2**4*V2**5/5\n  F3 = ff_tt_3*V3 + ff_tt_3*0.15/C3**4*V3**5/5\n\n  return f1, f2, f3, V1, V2, V3, F1, F2, F3\n\nF_diff = F \n\nwhile F_diff &gt; tol:\n  F_diff = F\n  prev_iter = df.iloc[-1] # Get the values from the last iteration\n\n  res = minimize_scalar(FW_Alg, args=(prev_iter), bounds=[0,1])\n  F = res.fun\n  l = res.x\n  f1, f2, f3, V1, V2, V3, F1, F2, F3 = get_optimal_vals(l, prev_iter)\n\n  row = [f1, f2, f3, V1, V2, V3, F1, F2, F3, F, l]\n  df.loc[len(df),:] = row\n\n  F_diff = F_diff - F"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#three-route-example---solution-3",
+    "href": "teaching/CIVE461/slides/lec-7.html#three-route-example---solution-3",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Three Route Example - Solution",
+    "text": "Three Route Example - Solution\nPutting everything together, we can print a table summarizing the variable values at each iteration.\n\n\n\n\n\n\n\n \nf1\nf2\nf3\nV1\nV2\nV3\nF1\nF2\nF3\nF\nlambda\n\n\n\n\n0\n10.00\n20.00\n25.00\n1000.00\n0.00\n0.00\n197500.00\n0.00\n0.00\n197500.00\n1.00\n\n\n1\n947.50\n20.00\n25.00\n403.46\n596.54\n0.00\n6039.00\n13701.45\n0.00\n19740.44\n0.40\n\n\n2\n34.84\n34.84\n25.00\n338.45\n500.42\n161.13\n4217.09\n10743.87\n4038.43\n18999.39\n0.84\n\n\n3\n22.30\n27.35\n25.31\n361.97\n482.63\n155.41\n4784.70\n10266.28\n3893.55\n18944.53\n0.96\n\n\n4\n26.09\n26.36\n25.27\n354.58\n472.78\n172.64\n4596.77\n10009.25\n4330.12\n18936.14\n0.98\n\n\n5\n24.82\n25.85\n25.41\n359.22\n469.38\n171.40\n4713.80\n9921.62\n4298.58\n18934.00\n0.99\n\n\n6\n25.61\n25.69\n25.40\n357.30\n466.87\n175.83\n4664.85\n9857.20\n4411.38\n18933.43\n0.99\n\n\n7\n25.28\n25.57\n25.44\n358.58\n465.93\n175.48\n4697.45\n9833.37\n4402.44\n18933.27\n1.00\n\n\n\n\n\n\n\n\nCIVE461 Home"
   },
   {
     "objectID": "teaching/CIVE461/supplemental/transport-data.html",
@@ -1692,6 +1874,202 @@
     "title": "Week 1",
     "section": "Practice",
     "text": "Practice\n📋 AE 0 - Travel Diary\n\n\nBack to course schedule ⏎"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-10.html",
+    "href": "teaching/CIVE461/weeks/week-10.html",
+    "title": "Week 10",
+    "section": "",
+    "text": "📖 Read individual assignment 1"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-10.html#prepare",
+    "href": "teaching/CIVE461/weeks/week-10.html#prepare",
+    "title": "Week 10",
+    "section": "",
+    "text": "📖 Read individual assignment 1"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-10.html#participate",
+    "href": "teaching/CIVE461/weeks/week-10.html#participate",
+    "title": "Week 10",
+    "section": "Participate",
+    "text": "Participate\n🖥️ Lecture 5 - Choice Models"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-10.html#practice",
+    "href": "teaching/CIVE461/weeks/week-10.html#practice",
+    "title": "Week 10",
+    "section": "Practice",
+    "text": "Practice\n✍️ GP 2 - Trip Distribution - Submit on Canvas\n\n\nBack to course schedule ⏎"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-11.html",
+    "href": "teaching/CIVE461/weeks/week-11.html",
+    "title": "Week 11",
+    "section": "",
+    "text": "None"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-11.html#prepare",
+    "href": "teaching/CIVE461/weeks/week-11.html#prepare",
+    "title": "Week 11",
+    "section": "",
+    "text": "None"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-11.html#participate",
+    "href": "teaching/CIVE461/weeks/week-11.html#participate",
+    "title": "Week 11",
+    "section": "Participate",
+    "text": "Participate\n🖥️ Lecture 6 - Mode & Destination Choice"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-11.html#practice",
+    "href": "teaching/CIVE461/weeks/week-11.html#practice",
+    "title": "Week 11",
+    "section": "Practice",
+    "text": "Practice\n✍️ IA 1 - Choice Modeling - Submit on Canvas\n\n\nBack to course schedule ⏎"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-12.html",
+    "href": "teaching/CIVE461/weeks/week-12.html",
+    "title": "Week 12",
+    "section": "",
+    "text": "📖 Read notes on transportation equity"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-12.html#prepare",
+    "href": "teaching/CIVE461/weeks/week-12.html#prepare",
+    "title": "Week 12",
+    "section": "",
+    "text": "📖 Read notes on transportation equity"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-12.html#participate",
+    "href": "teaching/CIVE461/weeks/week-12.html#participate",
+    "title": "Week 12",
+    "section": "Participate",
+    "text": "Participate\nClass discussion on transportation equity\n🖥️ Trip Assignment Models (TBA)"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-12.html#practice",
+    "href": "teaching/CIVE461/weeks/week-12.html#practice",
+    "title": "Week 12",
+    "section": "Practice",
+    "text": "Practice\n📋 AE 5 - Transportation Equity - Submit on Canvas\n✍️ GP 3 - Mode Choice - Submit on Canvas\n\n\nBack to course schedule ⏎"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-13.html",
+    "href": "teaching/CIVE461/weeks/week-13.html",
+    "title": "Week 13",
+    "section": "",
+    "text": "📖"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-13.html#prepare",
+    "href": "teaching/CIVE461/weeks/week-13.html#prepare",
+    "title": "Week 13",
+    "section": "",
+    "text": "📖"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-13.html#participate",
+    "href": "teaching/CIVE461/weeks/week-13.html#participate",
+    "title": "Week 13",
+    "section": "Participate",
+    "text": "Participate\nTrip Assignment Models (TBA)"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-13.html#practice",
+    "href": "teaching/CIVE461/weeks/week-13.html#practice",
+    "title": "Week 13",
+    "section": "Practice",
+    "text": "Practice\n📋 AE 6 - Trip Assignment - Submit on Canvas\n\n\nBack to course schedule ⏎"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-14.html",
+    "href": "teaching/CIVE461/weeks/week-14.html",
+    "title": "Week 14",
+    "section": "",
+    "text": "📖"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-14.html#prepare",
+    "href": "teaching/CIVE461/weeks/week-14.html#prepare",
+    "title": "Week 14",
+    "section": "",
+    "text": "📖"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-14.html#participate",
+    "href": "teaching/CIVE461/weeks/week-14.html#participate",
+    "title": "Week 14",
+    "section": "Participate",
+    "text": "Participate\n🖥️ Freight Models (TBA)"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-14.html#practice",
+    "href": "teaching/CIVE461/weeks/week-14.html#practice",
+    "title": "Week 14",
+    "section": "Practice",
+    "text": "Practice\nNone\n\n\nBack to course schedule ⏎"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-15.html",
+    "href": "teaching/CIVE461/weeks/week-15.html",
+    "title": "Week 13",
+    "section": "",
+    "text": "📖"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-15.html#prepare",
+    "href": "teaching/CIVE461/weeks/week-15.html#prepare",
+    "title": "Week 13",
+    "section": "",
+    "text": "📖"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-15.html#participate",
+    "href": "teaching/CIVE461/weeks/week-15.html#participate",
+    "title": "Week 13",
+    "section": "Participate",
+    "text": "Participate\n🖥️ Freight Models (TBA)"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-15.html#practice",
+    "href": "teaching/CIVE461/weeks/week-15.html#practice",
+    "title": "Week 13",
+    "section": "Practice",
+    "text": "Practice\n\n\nBack to course schedule ⏎"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-16.html",
+    "href": "teaching/CIVE461/weeks/week-16.html",
+    "title": "Week 16",
+    "section": "",
+    "text": "📖 Read notes on [transportation planning review]"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-16.html#prepare",
+    "href": "teaching/CIVE461/weeks/week-16.html#prepare",
+    "title": "Week 16",
+    "section": "",
+    "text": "📖 Read notes on [transportation planning review]"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-16.html#participate",
+    "href": "teaching/CIVE461/weeks/week-16.html#participate",
+    "title": "Week 16",
+    "section": "Participate",
+    "text": "Participate\nNone"
+  },
+  {
+    "objectID": "teaching/CIVE461/weeks/week-16.html#practice",
+    "href": "teaching/CIVE461/weeks/week-16.html#practice",
+    "title": "Week 16",
+    "section": "Practice",
+    "text": "Practice\n📋 AE 7 - Review - Submit on Canvas\n\n\nBack to course schedule ⏎"
   },
   {
     "objectID": "teaching/CIVE461/weeks/week-2.html",
@@ -1817,14 +2195,14 @@
     "href": "teaching/CIVE461/weeks/week-6.html#participate",
     "title": "Week 6",
     "section": "Participate",
-    "text": "Participate\n🖥️ Lecture 4 - Transportation Planning Process"
+    "text": "Participate\n🖥️ Lecture 4 - Transportation Planning Process\n📋 AE 3 - Urban Transportation Plans"
   },
   {
     "objectID": "teaching/CIVE461/weeks/week-6.html#practice",
     "href": "teaching/CIVE461/weeks/week-6.html#practice",
     "title": "Week 6",
     "section": "Practice",
-    "text": "Practice\n📋 AE 3 - Urban Transportation Plans\n\n\nBack to course schedule ⏎"
+    "text": "Practice\nNone\n\n\nBack to course schedule ⏎"
   },
   {
     "objectID": "teaching/CIVE461/weeks/week-7.html",
@@ -1852,35 +2230,35 @@
     "href": "teaching/CIVE461/weeks/week-7.html#practice",
     "title": "Week 7",
     "section": "Practice",
-    "text": "Practice\n📋 AE 4 - Trip Distribution - Submit on Canvas\n✍️ GP 1 - Trip Generation - Submit on Canvas\n\n\nBack to course schedule ⏎"
+    "text": "Practice\n✍️ GP 1 - Trip Generation - Submit on Canvas\n\n\nBack to course schedule ⏎"
   },
   {
     "objectID": "teaching/CIVE461/weeks/week-8.html",
     "href": "teaching/CIVE461/weeks/week-8.html",
     "title": "Week 8",
     "section": "",
-    "text": "📖 Read notes on transportation equity"
+    "text": "📖 Read notes on Trip Distribution"
   },
   {
     "objectID": "teaching/CIVE461/weeks/week-8.html#prepare",
     "href": "teaching/CIVE461/weeks/week-8.html#prepare",
     "title": "Week 8",
     "section": "",
-    "text": "📖 Read notes on transportation equity"
+    "text": "📖 Read notes on Trip Distribution"
   },
   {
     "objectID": "teaching/CIVE461/weeks/week-8.html#participate",
     "href": "teaching/CIVE461/weeks/week-8.html#participate",
     "title": "Week 8",
     "section": "Participate",
-    "text": "Participate\nNone"
+    "text": "Participate\n📋 AE 4 - Trip Distribution - Submit on Canvas"
   },
   {
     "objectID": "teaching/CIVE461/weeks/week-8.html#practice",
     "href": "teaching/CIVE461/weeks/week-8.html#practice",
     "title": "Week 8",
     "section": "Practice",
-    "text": "Practice\n📋 AE 5 - Transportation Equity - Submit on Canvas\n\n\nBack to course schedule ⏎"
+    "text": "Practice\nNone\n\n\nBack to course schedule ⏎"
   },
   {
     "objectID": "teaching/CIVE461/weeks/week-9.html",
@@ -1908,7 +2286,7 @@
     "href": "teaching/CIVE461/weeks/week-9.html#practice",
     "title": "Week 9",
     "section": "Practice",
-    "text": "Practice\n✍️ GP 2 - Trip Distribution - Submit on Canvas\n\n\nBack to course schedule ⏎"
+    "text": "Practice\n📋 AE 4 - Trip Distribution - Submit on Canvas\n\n\nBack to course schedule ⏎"
   },
   {
     "objectID": "teaching/CIVE864/CIVE864.html",
