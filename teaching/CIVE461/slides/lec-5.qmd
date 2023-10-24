@@ -46,48 +46,48 @@ $$𝑃𝑟𝑜𝑏𝑖𝑡:𝑃_1=\int_{-\infty}^{\infty}⁡\int_{-\infty}^{V_1-
 ![](../images/lecture5/eco_fallacy.png){fig-align="center"}
 
 ## Theoretical Framework {.smaller}
-- Individuals belong to a **homogeneous population** $I$, act rationally, & **possess perfect information** – i.e., they always select the option that maximizes their net personal utility subject to legal, social, physical, &/or budgetary (both time & money) constraints
-- There is a certain set $𝐴 = \{𝐴_1, …𝐴_𝑗,…𝐴_J\}$ of available alternatives & a set X of vectors of measured attributes of individuals & their alternatives
-- An individual $i$ is endowed with a set of attributes $𝑥 \in 𝑋$ & faces a choice set $𝐴(i) \in 𝐴$
+- Individuals belong to a **homogeneous population** $N$, act rationally, & **possess perfect information** – i.e., they always select the option that maximizes their net personal utility subject to legal, social, physical, &/or budgetary (both time & money) constraints
+- There is a certain set $𝐴 = \{𝐴_1, …𝐴_i,…𝐴_I\}$ of available alternatives & a set X of vectors of measured attributes of individuals & their alternatives
+- An individual $n$ is endowed with a set of attributes $𝑥 \in 𝑋$ & faces a choice set $𝐴(n) \in 𝐴$
 - We will assume choice set is predetermined for individuals
 
 ## Theoretical Framework
 - Modeler, an observer, does not **posses complete information** about all elements considered by the individual making choice
-- Modeler assumes $𝑈_{ij}$  can be represented by two components:
-  - A **measurable**, **systematic**, or **representative** part $𝑉_{ij}$,  which is a function of the measured attributes $x$
-  - A random part $\epsilon_{ij}$,  which reflects **indiosyncratic** & **taste variation**, together with measurement or observational errors made by the modeler
+- Modeler assumes $𝑈_{ni}$  can be represented by two components:
+  - A **measurable**, **systematic**, or **representative** part $𝑉_{ni}$,  which is a function of the measured attributes $x$
+  - A random part $\epsilon_{ni}$,  which reflects **indiosyncratic** & **taste variation**, together with measurement or observational errors made by the modeler
 
 ## Theoretical Framework
-- Modeler sets utility $𝑈_{ij}}=𝑉_{ij}+\epsilon_{ij}}$ to address two apparent irrationalities
+- Modeler sets utility $𝑈_{ni}}=𝑉_{ni}+\epsilon_{ni}}$ to address two apparent irrationalities
   1. That two individuals faced with the **same situation** & having the **same personal attributes** make different choices
   2. That an individual may not select the alternative that **appears** to be the *best one*
-- Often assumed $V_{ij}$ given by $\sum_k^K \beta_{jk} x_{ijk}$ here $\beta_{jk}$ are assumed **constant** for all individuals $I$ in the homogeneous set but **may vary across alternatives** $J$
+- Often assumed $V_{ni}$ given by $\sum_k^K \beta_{ik} x_{nik}$ here $\beta_{ik}$ are assumed **constant** for all individuals $N$ in the homogeneous set but **may vary across alternatives** $I$
 
 ## Theoretical Framework {.smaller}
-- Individual chooses an alternative based on $𝑈_{ij}≥ 𝑈_{qj} \forall A_q \in A(i)$
-- Or: $𝑉_{ij}  – 𝑉_{iq}≥\epsilon_{iq}  − \epsilon_{ij}$ (notice swapping of 𝒋 & q)
+- Individual chooses an alternative based on $𝑈_{ni}≥ 𝑈_{jn} \forall A_j \in A(n)$
+- Or: $𝑉_{ni}  – 𝑉_{nj}≥\epsilon_{nj}  − \epsilon_{ni}$ (notice swapping of $i$ & $j$)
 
 Not possible to know with certainty if the inequality holds, so use 
-$$𝑃_{ij}  = 𝑃(\epsilon{ij} \leq \epsilon_{iq} + (V_{ij} - V_{iq})) \forall A_q \in A(i)$$ 
+$$𝑃_{ni}  = 𝑃(\epsilon_{nj} \leq \epsilon_{ni} + (V_{ni} - V_{nj})) \forall A_j \in A(n)$$ 
 - Do not know distribution of joint residuals, so cannot derive analytical expression for model
-- Can denote $f(\epsilon) = f(\epsilon_1, \epsilon_2, ... \epsilon_J$ & know they are **random variables** with a certain distribution
+- Can denote $f(\epsilon) = f(\epsilon_1, \epsilon_2, ... \epsilon_I$ & know they are **random variables** with a certain distribution
 
 ## Theoretical Framework {.smaller}
 - Can note that distribution for $f(U)$ is the same but with mean $V$ rather than 0
-$$P_{ij} = \int_{R_J} f(\epsilon) d\epsilon$$
-$$\text{where } R_J = \begin{cases}
-\epsilon_{iq} \leq \epsilon_{ij} + (V_{ij} - V_{iq}), & \forall A_q \in A(i) \\
-V_{ij}) + \epsilon_{ij} \ge 0 \\
+$$P_{ni} = \int_{R_I} f(\epsilon) d\epsilon$$
+$$\text{where } R_I = \begin{cases}
+\epsilon_{nj} \leq \epsilon_{ni} + (V_{ni} - V_{nj}), & \forall A_j \in A(n) \\
+V_{ni}) + \epsilon_{ni} \ge 0 \\
 \end{cases}$$
 - Assuming independent & identically distributed (**IID**) residuals,
-$$f(\epsilon_1,...\epsilon_J) = \prod_j^J g(\epsilon_j)$$
-- And (drop $i$ for simplicity)
-$$P_j = \int_{-\infty}^\infty g(\epsilon_j) d\epsilon_j \prod_{q \neq j} \int_{-\infty}^{V_j-V_q+\epsilon_j} g(\epsilon_q) d\epsilon_q$$
+$$f(\epsilon_1,...\epsilon_I) = \prod_i^I g(\epsilon_i)$$
+- And (drop $n$ for simplicity)
+$$P_i = \int_{-\infty}^\infty g(\epsilon_i) d\epsilon_i \prod_{j \neq i} \int_{-\infty}^{V_i-V_j+\epsilon_i} g(\epsilon_j) d\epsilon_j$$
 
 ## Generating the Logit Model {.smaller}
 - Assuming IID Gumbel (**Extreme Value Type I**) residuals, or equivalently that residual differences are **logistically distributed**, gives the standard multinomial logit specification
 - Termed *softmax function* in machine learning field
-$$P_{ij} = \frac{exp(\mu V_{ij})}{\sum_{A_q \in A(i)} exp(\mu V_{iq})}$$
+$$P_{ni} = \frac{exp(\mu V_{ni})}{\sum_{A_j \in A(n)} exp(\mu V_{nj})}$$
 - Where $\mu$ is a **scale parameter** assumed equal to 1.0 for identification
 
 ![](../images/lecture5/logit_curve.png){.absolute bottom="0" right="0" width=35%}
@@ -109,17 +109,16 @@ $$P_{ij} = \frac{exp(\mu V_{ij})}{\sum_{A_q \in A(i)} exp(\mu V_{iq})}$$
   - E.g., elasticity of transit demand wrt auto travel time
 
 ## Logit -  Direct Elasticity
-Direct elasticity of the probability of an individual $i$ choosing alternative $j$ wrt a change in an attribute/independent variable $X_{jk}$ with coefficient $\beta_k$ (ignoring $i$ subscripts for simplicity)
+Direct elasticity of the probability of an individual $n$ choosing alternative $i$ wrt a change in an attribute/independent variable $X_{ik}$ with coefficient $\beta_k$ (ignoring $n$ subscripts for simplicity)
 
-$$e_{direct} = \frac{\partial P_j}{\partial X_{jk}} \frac{X_{jk}}{P_j}=(1-P_j)X_{jk}\beta_k$$
-
+$$e_{direct} = \frac{\partial P_i}{\partial X_{ik}} \frac{X_{ik}}{P_i}=(1-P_i)X_{ik}\beta_k$$
 
 ## Logit -  Cross Elasticity {.smaller}
-- Cross elasticity of the probability of an individual $i$ choosing alternative $j$ wrt a change in an attribute/independent variable $X_{lk}$ with coefficient $\beta_k$ for a different alternative
+- Cross elasticity of the probability of an individual $n$ choosing alternative $i$ wrt a change in an attribute/independent variable $X_{jk}$ with coefficient $\beta_k$ for a different alternative
 
-$$e_{cross} = -P_jX_{jk}\beta_k$$
+$$e_{cross} = -P_j X_{jk}\beta_k$$
 
-- Above is same regardless of alternative $l$. I.e., **all alternatives** $J$ have the same cross-elasticity wrt an attribute $k$ of alternative $j$
+- Above is same regardless of alternative $i$. I.e., **all alternatives** have the same cross-elasticity wrt an attribute $k$ of alternative $j$
 - Above results from independence of irrelevant alternatives (**IIA**) property of basic logit model
 
 ## Independence of Irrelevant Alternatives (IIA) Property
