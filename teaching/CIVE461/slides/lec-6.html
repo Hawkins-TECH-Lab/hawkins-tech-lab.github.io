@@ -354,9 +354,336 @@
 </div>
 </div>
 </div>
+</section>
+<section id="mode-choice-in-4-step-model-framework" class="slide level2">
+<h2>Mode Choice in 4-Step Model Framework</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<div>
+<p><img data-src="lec-6_files\figure-revealjs\mermaid-figure-1.png" style="width:1.53in;height:2.64in"></p>
+</div>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<div>
+<p><img data-src="lec-6_files\figure-revealjs\mermaid-figure-2.png" style="width:1.88in;height:2.64in"></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="trip-end-models" class="slide level2">
+<h2>Trip-End Models</h2>
+<ul>
+<li>Trip end mode split (<strong>choice</strong>) models apply before trip distribution and split <em>trip ends</em> estimated in trip generation among ends (<strong>destinations</strong>)</li>
+<li>Basically <strong>mode-specific trip generation models</strong> (e.g., regression or cross-classification)</li>
+<li>Trip-end mode split is a function of socio-economic variables such as income &amp; auto ownership</li>
+<li><strong>Cannot include modal level-of-service attributes</strong> (travel time, cost, etc.) since do not yet have O-D flows</li>
+<li>Works better for <strong>short-term</strong> and when there is <strong>no modal competition</strong> &amp; traffic congestion – small urban &amp; rural areas where transit is a <em>social service</em></li>
+</ul>
+</section>
+<section id="trip-end-model-example" class="slide level2">
+<h2>Trip End Model Example</h2>
 
-<p><img src="../images/logo.png" class="slide-logo"></p>
-<div class="footer footer-default">
+<img data-src="../images/lecture6/trip-end-model.png" class="r-stretch quarto-figure-center"></section>
+<section id="trip-interchange-model" class="slide level2">
+<h2>Trip Interchange Model</h2>
+<ul>
+<li>Trip interchange mode split (<strong>choice</strong>) models apply after trip distribution and split <em>trip interchanges</em> estimated in trip distribution</li>
+<li>Since O-D flows are known, <strong>can compute travel times, costs, etc.</strong> for competing modes</li>
+<li>Trip interchange models generally applied in medium to large urban areas where alternative modes are competitive and traffic congestion is a factor</li>
+<li>Can assess <strong>broad range of policies</strong>:
+<ul>
+<li>Improved transit service (e.g., headways, coverage, travel time)</li>
+<li>Road pricing, gasoline taxes, etc.</li>
+<li>Transit fare policy</li>
+<li>Parking supply &amp; cost</li>
+<li>HOV policies</li>
+</ul></li>
+</ul>
+</section>
+<section id="explanatory-variables-in-mode-choice-models" class="slide level2">
+<h2>Explanatory Variables in Mode Choice Models</h2>
+<p>Alternative Specific Variables - Travel time - In-vehicle - Out-of-vehicle - Walk (access &amp; egress) - Wait (initial &amp; transfer) - Out-of-pocket travel costs - Transit fare or “in-vehicle” auto cost - Parking cost - Other factors? Reliability, safety, comfort, convenience, etc.</p>
+</section>
+<section id="explanatory-variables-in-mode-choice-models-1" class="slide level2">
+<h2>Explanatory Variables in Mode Choice Models</h2>
+<p>Tripmaker Specific Variables - Income - Vehicle availability - No.&nbsp;of vehicles in household - Driver’s license? (0/1) - Age - Gender - Occupation - Household composition</p>
+</section>
+<section id="modeled-alternatives-the-choice-set" class="slide level2">
+<h2>Modeled Alternatives: The Choice Set</h2>
+<p>The number &amp; definition of modeled modes depends on - Problem application - Available data - Network modeling capabilities - <strong>At a minimum</strong>, requires some representation of competition between auto and transit</p>
+</section>
+<section id="auto-mode-representation" class="slide level2">
+<h2>Auto Mode Representation</h2>
+<ul>
+<li>Common to distinguish between drivers and passengers:
+<ul>
+<li><strong>Auto driver mode:</strong> trip-maker drives a vehicle from origin to destination</li>
+<li><strong>Auto passenger mode:</strong> trip-maker is a passenger in car from origin to destination</li>
+</ul></li>
+<li>Alternatively, we can distinguish between drive alone and shared trips
+<ul>
+<li><strong>Drive alone mode:</strong> trip-maker is sole occupant of vehicle from origin to destination (single occupancy vehicle (SOV) trip)</li>
+<li><strong>Shared-ride mode:</strong> trip-maker is one of several vehicle occupants from origin to destination
+<ul>
+<li><strong>Car driver</strong> for shared ride</li>
+<li><strong>Car passenger</strong> for shared ride with household member</li>
+<li><strong>Car pooling:</strong> driver or passenger in vehicle with non-household members</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="transit-mode-representation" class="slide level2">
+<h2>Transit Mode Representation</h2>
+<ul>
+<li>Possible ways to categorize transit include
+<ul>
+<li>Local (e.g., StarTran or Metro Transit) vs.&nbsp;regional (e.g., OMALiNK or N-E Ride)</li>
+<li>Surface shared right-of-way (bus, streetcar) vs.&nbsp;dedicated ROW (subway, LRT, busway)</li>
+<li>Bus vs.&nbsp;rail</li>
+<li>Regular service vs.&nbsp;express vs.&nbsp;other premium service</li>
+</ul></li>
+</ul>
+</section>
+<section id="mixed-modes" class="slide level2">
+<h2>Mixed Modes</h2>
+<ul>
+<li>Combined auto-transit modes exist, in which auto is used to access transit system
+<ul>
+<li><strong>Park &amp; Ride:</strong> trip-maker drives to a transit station &amp; parks their vehicle at station</li>
+<li><strong>Kiss &amp; Ride:</strong> trip-maker is driven as a passenger to a transit station and is dropped off there</li>
+</ul></li>
+<li>Auto access greatly expands <strong>catchment area</strong> of transit services</li>
+</ul>
+</section>
+<section id="other-modes" class="slide level2">
+<h2>Other Modes</h2>
+<p>There has been an explosion of modes in the last decade - Transportation network companies (TNCs): Uber, Lyft - Single ride - Pooled rides &amp; van pools - Regular taxis - Motorcycles - Jitneys - Ferries, water taxis - Non-motorized modes - Walking - Bicycling - E-bikes - E-Scooters</p>
+</section>
+<section id="decision-structure" class="slide level2">
+<h2>Decision Structure</h2>
+<ul>
+<li>Mode choice can be represented as <strong>decision tree</strong></li>
+<li>Each node of tree represents an alternative &amp; relationships among choices indicated via hierarchical tree structure (often called <strong>nesting structure</strong>)</li>
+</ul>
+<p><img data-src="../images/lecture6/decision-structure.png" class="absolute" style="bottom: 0px; right: 300px; width: 75%; "></p>
+</section>
+<section id="alternative-decision-structures" class="slide level2">
+<h2>Alternative Decision Structures</h2>
+
+<img data-src="../images/lecture6/alt-decision-structure.png" class="r-stretch quarto-figure-center"></section>
+<section id="example-work-trip-mode-choice-model" class="slide level2">
+<h2>Example: Work Trip Mode Choice Model</h2>
+<p>A regional morning peak-period work trip mode choice model is a three-mode logit model as follows</p>
+<p>d = auto-drive p = auto passenger t = transit</p>
+</section>
+<section id="example-work-trip-mode-choice-model-1" class="slide level2">
+<h2>Example: Work Trip Mode Choice Model</h2>
+<p>Vm = utility for mode m COSTm = out-of-pocket travel cost ($) for mode m IVTTm = in-vehicle travel time (min.) for mode m OVTTm = out-of-vehicle travel time (min.) for mode m NVEH = avg. no. of vehicles per household in home zone TWY = 1 if employment zone is located within the catchment aera of a transitway station outside the CBD = 0 otherwise REGION = 1 if home zone is located in a specific area = 0 otherwise</p>
+</section>
+<section id="example-work-trip-mode-choice-model-2" class="slide level2">
+<h2>Example: Work Trip Mode Choice Model</h2>
+<p>Systematic utility functions</p>
+<p><span class="math display">\[𝑉_𝑑=−0.55−0.57×𝐶𝑂𝑆𝑇_𝑑−0.20×𝐼𝑉𝑇𝑇_𝑑+0.75×𝑁𝑉𝐸𝐻\]</span></p>
+<p><span class="math display">\[𝑉_𝑝=−2.28−0.57×𝐶𝑂𝑆𝑇_𝑝−0.20×𝐼𝑉𝑇𝑇_𝑝−0.30×𝑂𝑉𝑇𝑇_𝑡+0.45×𝑁𝑉𝐸𝐻\]</span></p>
+<p><span class="math display">\[𝑉_𝑡=−0.57×𝐶𝑂𝑆𝑇_𝑡−0.20×𝐼𝑉𝑇𝑇_𝑡−0.30×𝑂𝑉𝑇𝑇_𝑡+1.07×𝑇𝑊𝑌
+−0.98×𝑅𝐸𝐺𝐼𝑂𝑁\]</span></p>
+</section>
+<section id="example-work-trip-mode-choice-model-3" class="slide level2">
+<h2>Example: Work Trip Mode Choice Model</h2>
+
+<img data-src="../images/lecture6/mode-ex.png" class="r-stretch quarto-figure-center"></section>
+<section id="important-notes-on-mode-choice-example" class="slide level2">
+<h2>Important Notes on Mode Choice Example</h2>
+<ul>
+<li>Cost, IVTT, &amp; OVTT are <strong>generic variables</strong>
+<ul>
+<li>Enter all utility with same parameter values (no OVTT for driver)</li>
+</ul></li>
+<li>NVEH is an <strong>alternative specific variable</strong>
+<ul>
+<li>Enters two utility functions with <strong>different parameter values</strong></li>
+</ul></li>
+<li>There are <strong>alternative specific constants</strong> for drive and passenger modes but not transit
+<ul>
+<li>If there are M alternatives, we can statically identify M-1 alternative specific constants (ASC)</li>
+<li>ASC account for unobserved but non-random variation – ASC will match <strong>market share</strong> for multinomial logit model</li>
+</ul></li>
+</ul>
+</section>
+<section id="important-notes-on-mode-choice-example-1" class="slide level2">
+<h2>Important Notes on Mode Choice Example</h2>
+<ul>
+<li>Socio-economic variables <strong>do not vary</strong> between alternatives
+<ul>
+<li>If included in model, must enter as alternative specific variables</li>
+<li>If included in model as generic variables, would add same utility to all alternatives and have no impact on choice probability</li>
+<li>Can interact socio-economic variables with level of service (LOS) variables
+<ul>
+<li>E.g., travel cost / household income</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="calculating-value-of-travel-time-vtt-from-utility-function" class="slide level2">
+<h2>Calculating Value of Travel Time (VTT) from Utility Function</h2>
+<ul>
+<li>We can calculate an implied VTT from model coefficients</li>
+<li>From our previous example</li>
+</ul>
+<p><span class="math display">\[−0.57×𝐶𝑂𝑆𝑇($)=−0.20×𝐼𝑉𝑇𝑇(𝑚𝑖𝑛)\]</span></p>
+<ul>
+<li>How many $ would one pay to reduce their travel time by one hour?</li>
+</ul>
+<p><span class="math display">\[𝑉𝑇𝑇=𝛽_𝑡𝑖𝑚𝑒/𝛽_𝑐𝑜𝑠𝑡 =−(−0.20)/(−0.57)=$21/ℎ𝑜𝑢𝑟\]</span></p>
+<ul>
+<li>Similarly, VTT for OVTT = $31.6/hour</li>
+<li><strong>Question:</strong> How do you think WTP for IVTT compares for auto vs.&nbsp;transit modes?</li>
+</ul>
+</section>
+<section id="direct-cross-elasticity" class="slide level2">
+<h2>Direct &amp; Cross Elasticity</h2>
+<ul>
+<li><strong>Direct elasticity:</strong> direct effect of changing a variable value related to a good on demand for the <strong>same good</strong>
+<ul>
+<li>E.g., elasticity of transit demand wrt transit fare, transit travel time, or transit headway</li>
+</ul></li>
+<li><strong>Cross elasticity:</strong> effect of changing a variable value related to a good on demand for a <strong>different good</strong></li>
+<li>E.g., elasticity of transit demand wrt auto travel time</li>
+</ul>
+</section>
+<section id="logit---direct-elasticity" class="slide level2">
+<h2>Logit - Direct Elasticity</h2>
+<ul>
+<li>Direct elasticity of the probability of an individual <span class="math inline">\(n\)</span> choosing alternative <span class="math inline">\(i\)</span> wrt a change in an attribute/independent variable <span class="math inline">\(X_{ik}\)</span> with coefficient <span class="math inline">\(\beta_k\)</span> (ignoring <span class="math inline">\(n\)</span> subscripts for simplicity)</li>
+</ul>
+<p><span class="math display">\[e_{direct} = \frac{\partial P_i}{\partial X_{ik}}\frac{X_{ik}}{P_i} = (1-P_i)X_{ik}\beta_k\]</span></p>
+</section>
+<section id="logit---cross-elasticity" class="slide level2">
+<h2>Logit - Cross Elasticity</h2>
+<ul>
+<li>Cross elasticity of the probability of an individual <span class="math inline">\(n\)</span> choosing alternative <span class="math inline">\(i\)</span> wrt a change in an attribute/independent variable <span class="math inline">\(X_{jk}\)</span> with coefficient <span class="math inline">\(\beta_k\)</span> for a <strong>different alternative</strong></li>
+</ul>
+<p><span class="math display">\[e_{cross}=-P_j X_{jk} \beta_k\]</span></p>
+<ul>
+<li>Above is same regardless of alternative <span class="math inline">\(i\)</span>. I.e., <strong>all</strong> modes have the same cross-elasticity wrt an attribute <span class="math inline">\(k\)</span> of mode alternative <span class="math inline">\(j\)</span>
+<ul>
+<li>Above results from independence of irrelevant alternatives (<strong>IIA</strong>) property of basis logit model</li>
+</ul></li>
+</ul>
+</section>
+<section id="forecasting-mode-choice-model-application" class="slide level2">
+<h2>Forecasting Mode Choice (Model Application)</h2>
+<p>Mode choice models generate choice probability predictions for individuals</p>
+<p>For planning purposes, we are interested in total number of people in a zone or study area likely to choose each mode</p>
+<p>Must aggregate individual choices Total enumeration/microsimulation Sample enumeration Naïve aggregation Classify with naïve aggregation</p>
+</section>
+<section id="total-enumeration" class="slide level2">
+<h2>Total Enumeration</h2>
+<p>Simplest method but often not practical Enumerate all individuals in study area Calculate mode choice probabilities Sum probabilities over all individuals</p>
+<p>Problem: extremely expensive to survey all individuals and difficult to simulate them</p>
+<p>Microsimulation models can be used to simulate individuals</p>
+</section>
+<section id="sample-enumeration" class="slide level2">
+<h2>Sample Enumeration</h2>
+<p>Second best to total enumeration</p>
+<p>Requires representative sample of population</p>
+<p>Calculate mode choice probabilities for sample</p>
+<p>Sample prediction of mode shares can be substituted for population prediction</p>
+<p>Problem: How to synthesize a sample for a future year?</p>
+</section>
+<section id="naive-aggregation" class="slide level2">
+<h2>Naive Aggregation</h2>
+<p>Treat individual choice model as an aggregate model</p>
+<p>Use zonal averages for variables as inputs to compute “average” zonal probability</p>
+<p>Problem: Choice probabilities are non-linear functions of variables so aggregation bias</p>
+<p>Avoid this method!</p>
+</section>
+<section id="classification-with-naive-aggregation" class="slide level2">
+<h2>Classification with Naive Aggregation</h2>
+<p>Classify population into relatively homogenous groups E.g., by vehicle ownership &amp; transit availability</p>
+<p>Determine variable averages for each classification group</p>
+<p>Use group averages to compute average mode shares</p>
+<p>Sum mode shares</p>
+<p>Most common method used in practice</p>
+</section>
+<section id="classification-with-naïve-aggregation-example" class="slide level2">
+<h2>Classification with Naïve Aggregation Example</h2>
+<p>A work trip mode split logit model includes the no. of hh. vehicles (NVEH) and whether a worker has a driver’s license (DLIC) as variables. The aggregation/forecasting procedure used is to: Divide workers into “n” NVEH and DLIC categories Estimate percentage of workers in each category by O-D pair Compute mode choice probabilities for each category Compute weighted average mode splits for each O-D pair</p>
+</section>
+<section id="aggregation-bias" class="slide level2">
+<h2>Aggregation Bias</h2>
+<p>Consider a zone in which people are identical except for their income, and that the probability of a person using transit depends only on the person’s income.</p>
+
+<img data-src="../images/lecture6/agg-bias-1.png" class="r-stretch quarto-figure-center"></section>
+<section id="aggregation-bias-1" class="slide level2">
+<h2>Aggregation Bias</h2>
+<p>Bias becomes worse for more heterogenous populations</p>
+
+<img data-src="../images/lecture6/agg-bias-2.png" class="r-stretch quarto-figure-center"></section>
+<section id="forecasting-example" class="slide level2">
+<h2>Forecasting Example</h2>
+<p><span class="math display">\[𝑉_𝑎=\beta_1+\beta_2 𝐼𝑉𝑇𝑇_a+\beta_4 𝑂𝑉𝑇𝑇_𝑎+\beta_5 ((𝑂𝑃𝑇𝐶_a)/𝐼𝑁𝐶)+\beta_6 𝐴𝑂\]</span> <span class="math display">\[𝑉_𝑡=\beta_3 𝐼𝑉𝑇𝑇_𝑡+\beta_4 𝑂𝑉𝑇𝑇_𝑡+\beta_5 ((𝑂𝑃𝑇𝐶_𝑡)/𝐼𝑁𝐶)\]</span> - IVTT = in-vehicle travel time - OVTT = out-of-vehicle travel time - OPTC = out-of-pocket travel cost - INC = household income - AO = auto ownership level</p>
+<p><img data-src="../images/lecture6/util-func.png" class="absolute" style="bottom: 0px; right: 300px; width: 75%; "></p>
+</section>
+<section id="forecasting-example---full-enumeration-naive-aggregation" class="slide level2">
+<h2>Forecasting Example - Full Enumeration &amp; Naive Aggregation</h2>
+<p>In this example, naive aggregation results in 3% <strong>overprediction</strong> of auto</p>
+<p><img data-src="../images/lecture6/tot-enum.png" class="absolute" style="left: 0px; bottom: 0px; width: 75%; "></p>
+<p><img data-src="../images/lecture6/naive-agg.png" class="absolute" style="bottom: 0px; right: 0px; width: 75%; "></p>
+</section>
+<section id="forecasting-example---full-enumeration-classification-with-naive-aggregation" class="slide level2">
+<h2>Forecasting Example - Full Enumeration &amp; Classification with Naive Aggregation</h2>
+<p>In this example, classification with naive aggregation results in &lt;1% <strong>overprediction</strong> of auto</p>
+<p><img data-src="../images/lecture6/tot-enum.png" class="absolute" style="left: 0px; bottom: 0px; width: 75%; "></p>
+<p><img data-src="../images/lecture6/class-enum.png" class="absolute" style="bottom: 0px; right: 0px; width: 75%; "></p>
+</section>
+<section id="destination-choice" class="slide level2">
+<h2>Destination Choice</h2>
+<ul>
+<li>Like mode choice, we can consider the <strong>trip distribution</strong> process using disaggregate choice models</li>
+<li><strong>Destination choice models</strong> attempt to represent the decision-process by individuals when deciding where to make a trip</li>
+</ul>
+<p><img data-src="../images/lecture6/dest-choice-1.png" class="absolute" style="bottom: 0px; right: 0px; width: 75%; "></p>
+</section>
+<section id="destination-choice-1" class="slide level2">
+<h2>Destination Choice</h2>
+<ul>
+<li>Unfortunately, destination choice is more complex than mode choice due to <strong>choice set explosion</strong></li>
+<li>We can address challenge by making use of logit properties to draw a <strong>random sample of alternatives</strong></li>
+</ul>
+<p><img data-src="../images/lecture6/dest-choice-2.png" class="absolute" style="bottom: 0px; right: 0px; width: 75%; "></p>
+</section>
+<section id="joint-mode-destination-choice" class="slide level2">
+<h2>Joint Mode-Destination Choice</h2>
+<p>Often mode-destination choice a joint process: choosing to walk will affect destination choice &amp; choosing a close destination will affect mode choice</p>
+<p><img data-src="../images/lecture6/mode-dest-choice.png" class="absolute" style="bottom: 0px; right: 0px; width: 75%; "></p>
+</section>
+<section id="other-choices" class="slide level2">
+<h2>Other Choices</h2>
+<ul>
+<li>Home location choice (<strong>multinomial logit</strong>) – similar to destination choice</li>
+<li>Vehicle ownership choice? 1, 2, 3, 4, etc. vehicles (<strong>ordered logit</strong>)</li>
+<li>Departure time choice? 8AM, 9AM, 10AM, etc. (<strong>ordered logit</strong>)</li>
+<li>Party size choice? 1, 2, 3, 4, 5, etc. persons (<strong>ordered logit</strong>)</li>
+<li>Choice set formation
+<ul>
+<li>What destinations do I consider? Do I consider only destinations within my neighborhood? Do I consider only destinations within a certain distance or travel time?</li>
+</ul></li>
+</ul>
+
+
+<img src="../images/logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
 <p><a href="../../../teaching/CIVE461/">CIVE461 Home</a></p>
 </div>
 </section>

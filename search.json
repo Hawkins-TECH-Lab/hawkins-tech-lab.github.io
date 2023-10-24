@@ -1691,42 +1691,42 @@
     "href": "teaching/CIVE461/slides/lec-5.html#theoretical-framework",
     "title": "Lecture 5 - Choice Models",
     "section": "Theoretical Framework",
-    "text": "Theoretical Framework\n\nIndividuals belong to a homogeneous population \\(I\\), act rationally, & possess perfect information – i.e., they always select the option that maximizes their net personal utility subject to legal, social, physical, &/or budgetary (both time & money) constraints\nThere is a certain set \\(𝐴 = \\{𝐴_1, …𝐴_𝑗,…𝐴_J\\}\\) of available alternatives & a set X of vectors of measured attributes of individuals & their alternatives\nAn individual \\(i\\) is endowed with a set of attributes \\(𝑥 \\in 𝑋\\) & faces a choice set \\(𝐴(i) \\in 𝐴\\)\nWe will assume choice set is predetermined for individuals"
+    "text": "Theoretical Framework\n\nIndividuals belong to a homogeneous population \\(N\\), act rationally, & possess perfect information – i.e., they always select the option that maximizes their net personal utility subject to legal, social, physical, &/or budgetary (both time & money) constraints\nThere is a certain set \\(𝐴 = \\{𝐴_1, …𝐴_i,…𝐴_I\\}\\) of available alternatives & a set X of vectors of measured attributes of individuals & their alternatives\nAn individual \\(n\\) is endowed with a set of attributes \\(𝑥 \\in 𝑋\\) & faces a choice set \\(𝐴(n) \\in 𝐴\\)\nWe will assume choice set is predetermined for individuals"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-5.html#theoretical-framework-1",
     "href": "teaching/CIVE461/slides/lec-5.html#theoretical-framework-1",
     "title": "Lecture 5 - Choice Models",
     "section": "Theoretical Framework",
-    "text": "Theoretical Framework\n\nModeler, an observer, does not posses complete information about all elements considered by the individual making choice\nModeler assumes \\(𝑈_{ij}\\) can be represented by two components:\n\nA measurable, systematic, or representative part \\(𝑉_{ij}\\), which is a function of the measured attributes \\(x\\)\nA random part \\(\\epsilon_{ij}\\), which reflects indiosyncratic & taste variation, together with measurement or observational errors made by the modeler"
+    "text": "Theoretical Framework\n\nModeler, an observer, does not posses complete information about all elements considered by the individual making choice\nModeler assumes \\(𝑈_{ni}\\) can be represented by two components:\n\nA measurable, systematic, or representative part \\(𝑉_{ni}\\), which is a function of the measured attributes \\(x\\)\nA random part \\(\\epsilon_{ni}\\), which reflects indiosyncratic & taste variation, together with measurement or observational errors made by the modeler"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-5.html#theoretical-framework-2",
     "href": "teaching/CIVE461/slides/lec-5.html#theoretical-framework-2",
     "title": "Lecture 5 - Choice Models",
     "section": "Theoretical Framework",
-    "text": "Theoretical Framework\n\nModeler sets utility \\(𝑈_{ij}}=𝑉_{ij}+\\epsilon_{ij}}\\) to address two apparent irrationalities\n\nThat two individuals faced with the same situation & having the same personal attributes make different choices\nThat an individual may not select the alternative that appears to be the best one\n\nOften assumed \\(V_{ij}\\) given by \\(\\sum_k^K \\beta_{jk} x_{ijk}\\) here \\(\\beta_{jk}\\) are assumed constant for all individuals \\(I\\) in the homogeneous set but may vary across alternatives \\(J\\)"
+    "text": "Theoretical Framework\n\nModeler sets utility \\(𝑈_{ni}}=𝑉_{ni}+\\epsilon_{ni}}\\) to address two apparent irrationalities\n\nThat two individuals faced with the same situation & having the same personal attributes make different choices\nThat an individual may not select the alternative that appears to be the best one\n\nOften assumed \\(V_{ni}\\) given by \\(\\sum_k^K \\beta_{ik} x_{nik}\\) here \\(\\beta_{ik}\\) are assumed constant for all individuals \\(N\\) in the homogeneous set but may vary across alternatives \\(I\\)"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-5.html#theoretical-framework-3",
     "href": "teaching/CIVE461/slides/lec-5.html#theoretical-framework-3",
     "title": "Lecture 5 - Choice Models",
     "section": "Theoretical Framework",
-    "text": "Theoretical Framework\n\nIndividual chooses an alternative based on \\(𝑈_{ij}≥ 𝑈_{qj} \\forall A_q \\in A(i)\\)\nOr: \\(𝑉_{ij} – 𝑉_{iq}≥\\epsilon_{iq} − \\epsilon_{ij}\\) (notice swapping of 𝒋 & q)\n\nNot possible to know with certainty if the inequality holds, so use \\[𝑃_{ij}  = 𝑃(\\epsilon{ij} \\leq \\epsilon_{iq} + (V_{ij} - V_{iq})) \\forall A_q \\in A(i)\\] - Do not know distribution of joint residuals, so cannot derive analytical expression for model - Can denote \\(f(\\epsilon) = f(\\epsilon_1, \\epsilon_2, ... \\epsilon_J\\) & know they are random variables with a certain distribution"
+    "text": "Theoretical Framework\n\nIndividual chooses an alternative based on \\(𝑈_{ni}≥ 𝑈_{jn} \\forall A_j \\in A(n)\\)\nOr: \\(𝑉_{ni} – 𝑉_{nj}≥\\epsilon_{nj} − \\epsilon_{ni}\\) (notice swapping of \\(i\\) & \\(j\\))\n\nNot possible to know with certainty if the inequality holds, so use \\[𝑃_{ni}  = 𝑃(\\epsilon_{nj} \\leq \\epsilon_{ni} + (V_{ni} - V_{nj})) \\forall A_j \\in A(n)\\] - Do not know distribution of joint residuals, so cannot derive analytical expression for model - Can denote \\(f(\\epsilon) = f(\\epsilon_1, \\epsilon_2, ... \\epsilon_I\\) & know they are random variables with a certain distribution"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-5.html#theoretical-framework-4",
     "href": "teaching/CIVE461/slides/lec-5.html#theoretical-framework-4",
     "title": "Lecture 5 - Choice Models",
     "section": "Theoretical Framework",
-    "text": "Theoretical Framework\n\nCan note that distribution for \\(f(U)\\) is the same but with mean \\(V\\) rather than 0 \\[P_{ij} = \\int_{R_J} f(\\epsilon) d\\epsilon\\] \\[\\text{where } R_J = \\begin{cases}\n\\epsilon_{iq} \\leq \\epsilon_{ij} + (V_{ij} - V_{iq}), & \\forall A_q \\in A(i) \\\\\nV_{ij}) + \\epsilon_{ij} \\ge 0 \\\\\n\\end{cases}\\]\nAssuming independent & identically distributed (IID) residuals, \\[f(\\epsilon_1,...\\epsilon_J) = \\prod_j^J g(\\epsilon_j)\\]\nAnd (drop \\(i\\) for simplicity) \\[P_j = \\int_{-\\infty}^\\infty g(\\epsilon_j) d\\epsilon_j \\prod_{q \\neq j} \\int_{-\\infty}^{V_j-V_q+\\epsilon_j} g(\\epsilon_q) d\\epsilon_q\\]"
+    "text": "Theoretical Framework\n\nCan note that distribution for \\(f(U)\\) is the same but with mean \\(V\\) rather than 0 \\[P_{ni} = \\int_{R_I} f(\\epsilon) d\\epsilon\\] \\[\\text{where } R_I = \\begin{cases}\n\\epsilon_{nj} \\leq \\epsilon_{ni} + (V_{ni} - V_{nj}), & \\forall A_j \\in A(n) \\\\\nV_{ni}) + \\epsilon_{ni} \\ge 0 \\\\\n\\end{cases}\\]\nAssuming independent & identically distributed (IID) residuals, \\[f(\\epsilon_1,...\\epsilon_I) = \\prod_i^I g(\\epsilon_i)\\]\nAnd (drop \\(n\\) for simplicity) \\[P_i = \\int_{-\\infty}^\\infty g(\\epsilon_i) d\\epsilon_i \\prod_{j \\neq i} \\int_{-\\infty}^{V_i-V_j+\\epsilon_i} g(\\epsilon_j) d\\epsilon_j\\]"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-5.html#generating-the-logit-model",
     "href": "teaching/CIVE461/slides/lec-5.html#generating-the-logit-model",
     "title": "Lecture 5 - Choice Models",
     "section": "Generating the Logit Model",
-    "text": "Generating the Logit Model\n\nAssuming IID Gumbel (Extreme Value Type I) residuals, or equivalently that residual differences are logistically distributed, gives the standard multinomial logit specification\nTermed softmax function in machine learning field \\[P_{ij} = \\frac{exp(\\mu V_{ij})}{\\sum_{A_q \\in A(i)} exp(\\mu V_{iq})}\\]\nWhere \\(\\mu\\) is a scale parameter assumed equal to 1.0 for identification"
+    "text": "Generating the Logit Model\n\nAssuming IID Gumbel (Extreme Value Type I) residuals, or equivalently that residual differences are logistically distributed, gives the standard multinomial logit specification\nTermed softmax function in machine learning field \\[P_{ni} = \\frac{exp(\\mu V_{ni})}{\\sum_{A_j \\in A(n)} exp(\\mu V_{nj})}\\]\nWhere \\(\\mu\\) is a scale parameter assumed equal to 1.0 for identification"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-5.html#logit-model-parameter-estimation",
@@ -1747,14 +1747,14 @@
     "href": "teaching/CIVE461/slides/lec-5.html#logit---direct-elasticity",
     "title": "Lecture 5 - Choice Models",
     "section": "Logit - Direct Elasticity",
-    "text": "Logit - Direct Elasticity\nDirect elasticity of the probability of an individual \\(i\\) choosing alternative \\(j\\) wrt a change in an attribute/independent variable \\(X_{jk}\\) with coefficient \\(\\beta_k\\) (ignoring \\(i\\) subscripts for simplicity)\n\\[e_{direct} = \\frac{\\partial P_j}{\\partial X_{jk}} \\frac{X_{jk}}{P_j}=(1-P_j)X_{jk}\\beta_k\\]"
+    "text": "Logit - Direct Elasticity\nDirect elasticity of the probability of an individual \\(n\\) choosing alternative \\(i\\) wrt a change in an attribute/independent variable \\(X_{ik}\\) with coefficient \\(\\beta_k\\) (ignoring \\(n\\) subscripts for simplicity)\n\\[e_{direct} = \\frac{\\partial P_i}{\\partial X_{ik}} \\frac{X_{ik}}{P_i}=(1-P_i)X_{ik}\\beta_k\\]"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-5.html#logit---cross-elasticity",
     "href": "teaching/CIVE461/slides/lec-5.html#logit---cross-elasticity",
     "title": "Lecture 5 - Choice Models",
     "section": "Logit - Cross Elasticity",
-    "text": "Logit - Cross Elasticity\n\nCross elasticity of the probability of an individual \\(i\\) choosing alternative \\(j\\) wrt a change in an attribute/independent variable \\(X_{lk}\\) with coefficient \\(\\beta_k\\) for a different alternative\n\n\\[e_{cross} = -P_jX_{jk}\\beta_k\\]\n\nAbove is same regardless of alternative \\(l\\). I.e., all alternatives \\(J\\) have the same cross-elasticity wrt an attribute \\(k\\) of alternative \\(j\\)\nAbove results from independence of irrelevant alternatives (IIA) property of basic logit model"
+    "text": "Logit - Cross Elasticity\n\nCross elasticity of the probability of an individual \\(n\\) choosing alternative \\(i\\) wrt a change in an attribute/independent variable \\(X_{jk}\\) with coefficient \\(\\beta_k\\) for a different alternative\n\n\\[e_{cross} = -P_j X_{jk}\\beta_k\\]\n\nAbove is same regardless of alternative \\(i\\). I.e., all alternatives have the same cross-elasticity wrt an attribute \\(k\\) of alternative \\(j\\)\nAbove results from independence of irrelevant alternatives (IIA) property of basic logit model"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-5.html#independence-of-irrelevant-alternatives-iia-property",
@@ -1775,7 +1775,273 @@
     "href": "teaching/CIVE461/slides/lec-6.html#outline",
     "title": "Lecture 6 - Mode & Destination Choice Models",
     "section": "Outline",
-    "text": "Outline\n\n\n\n\nUtility function variables\nDirect and cross-elasticity\nForecasting and aggregation\nLimitations\nExtension to other choices\n\n\n\n\n\n\n\n\n\n\n\n\n\nCIVE461 Home"
+    "text": "Outline\n\n\n\n\nUtility function variables\nDirect and cross-elasticity\nForecasting and aggregation\nLimitations\nExtension to other choices"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-6.html#mode-choice-in-4-step-model-framework",
+    "href": "teaching/CIVE461/slides/lec-6.html#mode-choice-in-4-step-model-framework",
+    "title": "Lecture 6 - Mode & Destination Choice Models",
+    "section": "Mode Choice in 4-Step Model Framework",
+    "text": "Mode Choice in 4-Step Model Framework"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-6.html#trip-end-models",
+    "href": "teaching/CIVE461/slides/lec-6.html#trip-end-models",
+    "title": "Lecture 6 - Mode & Destination Choice Models",
+    "section": "Trip-End Models",
+    "text": "Trip-End Models\n\nTrip end mode split (choice) models apply before trip distribution and split trip ends estimated in trip generation among ends (destinations)\nBasically mode-specific trip generation models (e.g., regression or cross-classification)\nTrip-end mode split is a function of socio-economic variables such as income & auto ownership\nCannot include modal level-of-service attributes (travel time, cost, etc.) since do not yet have O-D flows\nWorks better for short-term and when there is no modal competition & traffic congestion – small urban & rural areas where transit is a social service"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-6.html#trip-end-model-example",
+    "href": "teaching/CIVE461/slides/lec-6.html#trip-end-model-example",
+    "title": "Lecture 6 - Mode & Destination Choice Models",
+    "section": "Trip End Model Example",
+    "text": "Trip End Model Example"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-6.html#trip-interchange-model",
+    "href": "teaching/CIVE461/slides/lec-6.html#trip-interchange-model",
+    "title": "Lecture 6 - Mode & Destination Choice Models",
+    "section": "Trip Interchange Model",
+    "text": "Trip Interchange Model\n\nTrip interchange mode split (choice) models apply after trip distribution and split trip interchanges estimated in trip distribution\nSince O-D flows are known, can compute travel times, costs, etc. for competing modes\nTrip interchange models generally applied in medium to large urban areas where alternative modes are competitive and traffic congestion is a factor\nCan assess broad range of policies:\n\nImproved transit service (e.g., headways, coverage, travel time)\nRoad pricing, gasoline taxes, etc.\nTransit fare policy\nParking supply & cost\nHOV policies"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-6.html#explanatory-variables-in-mode-choice-models",
+    "href": "teaching/CIVE461/slides/lec-6.html#explanatory-variables-in-mode-choice-models",
+    "title": "Lecture 6 - Mode & Destination Choice Models",
+    "section": "Explanatory Variables in Mode Choice Models",
+    "text": "Explanatory Variables in Mode Choice Models\nAlternative Specific Variables - Travel time - In-vehicle - Out-of-vehicle - Walk (access & egress) - Wait (initial & transfer) - Out-of-pocket travel costs - Transit fare or “in-vehicle” auto cost - Parking cost - Other factors? Reliability, safety, comfort, convenience, etc."
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-6.html#explanatory-variables-in-mode-choice-models-1",
+    "href": "teaching/CIVE461/slides/lec-6.html#explanatory-variables-in-mode-choice-models-1",
+    "title": "Lecture 6 - Mode & Destination Choice Models",
+    "section": "Explanatory Variables in Mode Choice Models",
+    "text": "Explanatory Variables in Mode Choice Models\nTripmaker Specific Variables - Income - Vehicle availability - No. of vehicles in household - Driver’s license? (0/1) - Age - Gender - Occupation - Household composition"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-6.html#modeled-alternatives-the-choice-set",
+    "href": "teaching/CIVE461/slides/lec-6.html#modeled-alternatives-the-choice-set",
+    "title": "Lecture 6 - Mode & Destination Choice Models",
+    "section": "Modeled Alternatives: The Choice Set",
+    "text": "Modeled Alternatives: The Choice Set\nThe number & definition of modeled modes depends on - Problem application - Available data - Network modeling capabilities - At a minimum, requires some representation of competition between auto and transit"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-6.html#auto-mode-representation",
+    "href": "teaching/CIVE461/slides/lec-6.html#auto-mode-representation",
+    "title": "Lecture 6 - Mode & Destination Choice Models",
+    "section": "Auto Mode Representation",
+    "text": "Auto Mode Representation\n\nCommon to distinguish between drivers and passengers:\n\nAuto driver mode: trip-maker drives a vehicle from origin to destination\nAuto passenger mode: trip-maker is a passenger in car from origin to destination\n\nAlternatively, we can distinguish between drive alone and shared trips\n\nDrive alone mode: trip-maker is sole occupant of vehicle from origin to destination (single occupancy vehicle (SOV) trip)\nShared-ride mode: trip-maker is one of several vehicle occupants from origin to destination\n\nCar driver for shared ride\nCar passenger for shared ride with household member\nCar pooling: driver or passenger in vehicle with non-household members"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-6.html#transit-mode-representation",
+    "href": "teaching/CIVE461/slides/lec-6.html#transit-mode-representation",
+    "title": "Lecture 6 - Mode & Destination Choice Models",
+    "section": "Transit Mode Representation",
+    "text": "Transit Mode Representation\n\nPossible ways to categorize transit include\n\nLocal (e.g., StarTran or Metro Transit) vs. regional (e.g., OMALiNK or N-E Ride)\nSurface shared right-of-way (bus, streetcar) vs. dedicated ROW (subway, LRT, busway)\nBus vs. rail\nRegular service vs. express vs. other premium service"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-6.html#mixed-modes",
+    "href": "teaching/CIVE461/slides/lec-6.html#mixed-modes",
+    "title": "Lecture 6 - Mode & Destination Choice Models",
+    "section": "Mixed Modes",
+    "text": "Mixed Modes\n\nCombined auto-transit modes exist, in which auto is used to access transit system\n\nPark & Ride: trip-maker drives to a transit station & parks their vehicle at station\nKiss & Ride: trip-maker is driven as a passenger to a transit station and is dropped off there\n\nAuto access greatly expands catchment area of transit services"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-6.html#other-modes",
+    "href": "teaching/CIVE461/slides/lec-6.html#other-modes",
+    "title": "Lecture 6 - Mode & Destination Choice Models",
+    "section": "Other Modes",
+    "text": "Other Modes\nThere has been an explosion of modes in the last decade - Transportation network companies (TNCs): Uber, Lyft - Single ride - Pooled rides & van pools - Regular taxis - Motorcycles - Jitneys - Ferries, water taxis - Non-motorized modes - Walking - Bicycling - E-bikes - E-Scooters"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-6.html#decision-structure",
+    "href": "teaching/CIVE461/slides/lec-6.html#decision-structure",
+    "title": "Lecture 6 - Mode & Destination Choice Models",
+    "section": "Decision Structure",
+    "text": "Decision Structure\n\nMode choice can be represented as decision tree\nEach node of tree represents an alternative & relationships among choices indicated via hierarchical tree structure (often called nesting structure)"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-6.html#alternative-decision-structures",
+    "href": "teaching/CIVE461/slides/lec-6.html#alternative-decision-structures",
+    "title": "Lecture 6 - Mode & Destination Choice Models",
+    "section": "Alternative Decision Structures",
+    "text": "Alternative Decision Structures"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-6.html#example-work-trip-mode-choice-model",
+    "href": "teaching/CIVE461/slides/lec-6.html#example-work-trip-mode-choice-model",
+    "title": "Lecture 6 - Mode & Destination Choice Models",
+    "section": "Example: Work Trip Mode Choice Model",
+    "text": "Example: Work Trip Mode Choice Model\nA regional morning peak-period work trip mode choice model is a three-mode logit model as follows\nd = auto-drive p = auto passenger t = transit"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-6.html#example-work-trip-mode-choice-model-1",
+    "href": "teaching/CIVE461/slides/lec-6.html#example-work-trip-mode-choice-model-1",
+    "title": "Lecture 6 - Mode & Destination Choice Models",
+    "section": "Example: Work Trip Mode Choice Model",
+    "text": "Example: Work Trip Mode Choice Model\nVm = utility for mode m COSTm = out-of-pocket travel cost ($) for mode m IVTTm = in-vehicle travel time (min.) for mode m OVTTm = out-of-vehicle travel time (min.) for mode m NVEH = avg. no. of vehicles per household in home zone TWY = 1 if employment zone is located within the catchment aera of a transitway station outside the CBD = 0 otherwise REGION = 1 if home zone is located in a specific area = 0 otherwise"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-6.html#example-work-trip-mode-choice-model-2",
+    "href": "teaching/CIVE461/slides/lec-6.html#example-work-trip-mode-choice-model-2",
+    "title": "Lecture 6 - Mode & Destination Choice Models",
+    "section": "Example: Work Trip Mode Choice Model",
+    "text": "Example: Work Trip Mode Choice Model\nSystematic utility functions\n\\[𝑉_𝑑=−0.55−0.57×𝐶𝑂𝑆𝑇_𝑑−0.20×𝐼𝑉𝑇𝑇_𝑑+0.75×𝑁𝑉𝐸𝐻\\]\n\\[𝑉_𝑝=−2.28−0.57×𝐶𝑂𝑆𝑇_𝑝−0.20×𝐼𝑉𝑇𝑇_𝑝−0.30×𝑂𝑉𝑇𝑇_𝑡+0.45×𝑁𝑉𝐸𝐻\\]\n\\[𝑉_𝑡=−0.57×𝐶𝑂𝑆𝑇_𝑡−0.20×𝐼𝑉𝑇𝑇_𝑡−0.30×𝑂𝑉𝑇𝑇_𝑡+1.07×𝑇𝑊𝑌\n−0.98×𝑅𝐸𝐺𝐼𝑂𝑁\\]"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-6.html#example-work-trip-mode-choice-model-3",
+    "href": "teaching/CIVE461/slides/lec-6.html#example-work-trip-mode-choice-model-3",
+    "title": "Lecture 6 - Mode & Destination Choice Models",
+    "section": "Example: Work Trip Mode Choice Model",
+    "text": "Example: Work Trip Mode Choice Model"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-6.html#important-notes-on-mode-choice-example",
+    "href": "teaching/CIVE461/slides/lec-6.html#important-notes-on-mode-choice-example",
+    "title": "Lecture 6 - Mode & Destination Choice Models",
+    "section": "Important Notes on Mode Choice Example",
+    "text": "Important Notes on Mode Choice Example\n\nCost, IVTT, & OVTT are generic variables\n\nEnter all utility with same parameter values (no OVTT for driver)\n\nNVEH is an alternative specific variable\n\nEnters two utility functions with different parameter values\n\nThere are alternative specific constants for drive and passenger modes but not transit\n\nIf there are M alternatives, we can statically identify M-1 alternative specific constants (ASC)\nASC account for unobserved but non-random variation – ASC will match market share for multinomial logit model"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-6.html#important-notes-on-mode-choice-example-1",
+    "href": "teaching/CIVE461/slides/lec-6.html#important-notes-on-mode-choice-example-1",
+    "title": "Lecture 6 - Mode & Destination Choice Models",
+    "section": "Important Notes on Mode Choice Example",
+    "text": "Important Notes on Mode Choice Example\n\nSocio-economic variables do not vary between alternatives\n\nIf included in model, must enter as alternative specific variables\nIf included in model as generic variables, would add same utility to all alternatives and have no impact on choice probability\nCan interact socio-economic variables with level of service (LOS) variables\n\nE.g., travel cost / household income"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-6.html#calculating-value-of-travel-time-vtt-from-utility-function",
+    "href": "teaching/CIVE461/slides/lec-6.html#calculating-value-of-travel-time-vtt-from-utility-function",
+    "title": "Lecture 6 - Mode & Destination Choice Models",
+    "section": "Calculating Value of Travel Time (VTT) from Utility Function",
+    "text": "Calculating Value of Travel Time (VTT) from Utility Function\n\nWe can calculate an implied VTT from model coefficients\nFrom our previous example\n\n\\[−0.57×𝐶𝑂𝑆𝑇($)=−0.20×𝐼𝑉𝑇𝑇(𝑚𝑖𝑛)\\]\n\nHow many $ would one pay to reduce their travel time by one hour?\n\n\\[𝑉𝑇𝑇=𝛽_𝑡𝑖𝑚𝑒/𝛽_𝑐𝑜𝑠𝑡 =−(−0.20)/(−0.57)=$21/ℎ𝑜𝑢𝑟\\]\n\nSimilarly, VTT for OVTT = $31.6/hour\nQuestion: How do you think WTP for IVTT compares for auto vs. transit modes?"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-6.html#direct-cross-elasticity",
+    "href": "teaching/CIVE461/slides/lec-6.html#direct-cross-elasticity",
+    "title": "Lecture 6 - Mode & Destination Choice Models",
+    "section": "Direct & Cross Elasticity",
+    "text": "Direct & Cross Elasticity\n\nDirect elasticity: direct effect of changing a variable value related to a good on demand for the same good\n\nE.g., elasticity of transit demand wrt transit fare, transit travel time, or transit headway\n\nCross elasticity: effect of changing a variable value related to a good on demand for a different good\nE.g., elasticity of transit demand wrt auto travel time"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-6.html#logit---direct-elasticity",
+    "href": "teaching/CIVE461/slides/lec-6.html#logit---direct-elasticity",
+    "title": "Lecture 6 - Mode & Destination Choice Models",
+    "section": "Logit - Direct Elasticity",
+    "text": "Logit - Direct Elasticity\n\nDirect elasticity of the probability of an individual \\(n\\) choosing alternative \\(i\\) wrt a change in an attribute/independent variable \\(X_{ik}\\) with coefficient \\(\\beta_k\\) (ignoring \\(n\\) subscripts for simplicity)\n\n\\[e_{direct} = \\frac{\\partial P_i}{\\partial X_{ik}}\\frac{X_{ik}}{P_i} = (1-P_i)X_{ik}\\beta_k\\]"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-6.html#logit---cross-elasticity",
+    "href": "teaching/CIVE461/slides/lec-6.html#logit---cross-elasticity",
+    "title": "Lecture 6 - Mode & Destination Choice Models",
+    "section": "Logit - Cross Elasticity",
+    "text": "Logit - Cross Elasticity\n\nCross elasticity of the probability of an individual \\(n\\) choosing alternative \\(i\\) wrt a change in an attribute/independent variable \\(X_{jk}\\) with coefficient \\(\\beta_k\\) for a different alternative\n\n\\[e_{cross}=-P_j X_{jk} \\beta_k\\]\n\nAbove is same regardless of alternative \\(i\\). I.e., all modes have the same cross-elasticity wrt an attribute \\(k\\) of mode alternative \\(j\\)\n\nAbove results from independence of irrelevant alternatives (IIA) property of basis logit model"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-6.html#forecasting-mode-choice-model-application",
+    "href": "teaching/CIVE461/slides/lec-6.html#forecasting-mode-choice-model-application",
+    "title": "Lecture 6 - Mode & Destination Choice Models",
+    "section": "Forecasting Mode Choice (Model Application)",
+    "text": "Forecasting Mode Choice (Model Application)\nMode choice models generate choice probability predictions for individuals\nFor planning purposes, we are interested in total number of people in a zone or study area likely to choose each mode\nMust aggregate individual choices Total enumeration/microsimulation Sample enumeration Naïve aggregation Classify with naïve aggregation"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-6.html#total-enumeration",
+    "href": "teaching/CIVE461/slides/lec-6.html#total-enumeration",
+    "title": "Lecture 6 - Mode & Destination Choice Models",
+    "section": "Total Enumeration",
+    "text": "Total Enumeration\nSimplest method but often not practical Enumerate all individuals in study area Calculate mode choice probabilities Sum probabilities over all individuals\nProblem: extremely expensive to survey all individuals and difficult to simulate them\nMicrosimulation models can be used to simulate individuals"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-6.html#sample-enumeration",
+    "href": "teaching/CIVE461/slides/lec-6.html#sample-enumeration",
+    "title": "Lecture 6 - Mode & Destination Choice Models",
+    "section": "Sample Enumeration",
+    "text": "Sample Enumeration\nSecond best to total enumeration\nRequires representative sample of population\nCalculate mode choice probabilities for sample\nSample prediction of mode shares can be substituted for population prediction\nProblem: How to synthesize a sample for a future year?"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-6.html#naive-aggregation",
+    "href": "teaching/CIVE461/slides/lec-6.html#naive-aggregation",
+    "title": "Lecture 6 - Mode & Destination Choice Models",
+    "section": "Naive Aggregation",
+    "text": "Naive Aggregation\nTreat individual choice model as an aggregate model\nUse zonal averages for variables as inputs to compute “average” zonal probability\nProblem: Choice probabilities are non-linear functions of variables so aggregation bias\nAvoid this method!"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-6.html#classification-with-naive-aggregation",
+    "href": "teaching/CIVE461/slides/lec-6.html#classification-with-naive-aggregation",
+    "title": "Lecture 6 - Mode & Destination Choice Models",
+    "section": "Classification with Naive Aggregation",
+    "text": "Classification with Naive Aggregation\nClassify population into relatively homogenous groups E.g., by vehicle ownership & transit availability\nDetermine variable averages for each classification group\nUse group averages to compute average mode shares\nSum mode shares\nMost common method used in practice"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-6.html#classification-with-naïve-aggregation-example",
+    "href": "teaching/CIVE461/slides/lec-6.html#classification-with-naïve-aggregation-example",
+    "title": "Lecture 6 - Mode & Destination Choice Models",
+    "section": "Classification with Naïve Aggregation Example",
+    "text": "Classification with Naïve Aggregation Example\nA work trip mode split logit model includes the no. of hh. vehicles (NVEH) and whether a worker has a driver’s license (DLIC) as variables. The aggregation/forecasting procedure used is to: Divide workers into “n” NVEH and DLIC categories Estimate percentage of workers in each category by O-D pair Compute mode choice probabilities for each category Compute weighted average mode splits for each O-D pair"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-6.html#aggregation-bias",
+    "href": "teaching/CIVE461/slides/lec-6.html#aggregation-bias",
+    "title": "Lecture 6 - Mode & Destination Choice Models",
+    "section": "Aggregation Bias",
+    "text": "Aggregation Bias\nConsider a zone in which people are identical except for their income, and that the probability of a person using transit depends only on the person’s income."
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-6.html#aggregation-bias-1",
+    "href": "teaching/CIVE461/slides/lec-6.html#aggregation-bias-1",
+    "title": "Lecture 6 - Mode & Destination Choice Models",
+    "section": "Aggregation Bias",
+    "text": "Aggregation Bias\nBias becomes worse for more heterogenous populations"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-6.html#forecasting-example",
+    "href": "teaching/CIVE461/slides/lec-6.html#forecasting-example",
+    "title": "Lecture 6 - Mode & Destination Choice Models",
+    "section": "Forecasting Example",
+    "text": "Forecasting Example\n\\[𝑉_𝑎=\\beta_1+\\beta_2 𝐼𝑉𝑇𝑇_a+\\beta_4 𝑂𝑉𝑇𝑇_𝑎+\\beta_5 ((𝑂𝑃𝑇𝐶_a)/𝐼𝑁𝐶)+\\beta_6 𝐴𝑂\\] \\[𝑉_𝑡=\\beta_3 𝐼𝑉𝑇𝑇_𝑡+\\beta_4 𝑂𝑉𝑇𝑇_𝑡+\\beta_5 ((𝑂𝑃𝑇𝐶_𝑡)/𝐼𝑁𝐶)\\] - IVTT = in-vehicle travel time - OVTT = out-of-vehicle travel time - OPTC = out-of-pocket travel cost - INC = household income - AO = auto ownership level"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-6.html#forecasting-example---full-enumeration-naive-aggregation",
+    "href": "teaching/CIVE461/slides/lec-6.html#forecasting-example---full-enumeration-naive-aggregation",
+    "title": "Lecture 6 - Mode & Destination Choice Models",
+    "section": "Forecasting Example - Full Enumeration & Naive Aggregation",
+    "text": "Forecasting Example - Full Enumeration & Naive Aggregation\nIn this example, naive aggregation results in 3% overprediction of auto"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-6.html#forecasting-example---full-enumeration-classification-with-naive-aggregation",
+    "href": "teaching/CIVE461/slides/lec-6.html#forecasting-example---full-enumeration-classification-with-naive-aggregation",
+    "title": "Lecture 6 - Mode & Destination Choice Models",
+    "section": "Forecasting Example - Full Enumeration & Classification with Naive Aggregation",
+    "text": "Forecasting Example - Full Enumeration & Classification with Naive Aggregation\nIn this example, classification with naive aggregation results in &lt;1% overprediction of auto"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-6.html#destination-choice",
+    "href": "teaching/CIVE461/slides/lec-6.html#destination-choice",
+    "title": "Lecture 6 - Mode & Destination Choice Models",
+    "section": "Destination Choice",
+    "text": "Destination Choice\n\nLike mode choice, we can consider the trip distribution process using disaggregate choice models\nDestination choice models attempt to represent the decision-process by individuals when deciding where to make a trip"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-6.html#destination-choice-1",
+    "href": "teaching/CIVE461/slides/lec-6.html#destination-choice-1",
+    "title": "Lecture 6 - Mode & Destination Choice Models",
+    "section": "Destination Choice",
+    "text": "Destination Choice\n\nUnfortunately, destination choice is more complex than mode choice due to choice set explosion\nWe can address challenge by making use of logit properties to draw a random sample of alternatives"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-6.html#joint-mode-destination-choice",
+    "href": "teaching/CIVE461/slides/lec-6.html#joint-mode-destination-choice",
+    "title": "Lecture 6 - Mode & Destination Choice Models",
+    "section": "Joint Mode-Destination Choice",
+    "text": "Joint Mode-Destination Choice\nOften mode-destination choice a joint process: choosing to walk will affect destination choice & choosing a close destination will affect mode choice"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-6.html#other-choices",
+    "href": "teaching/CIVE461/slides/lec-6.html#other-choices",
+    "title": "Lecture 6 - Mode & Destination Choice Models",
+    "section": "Other Choices",
+    "text": "Other Choices\n\nHome location choice (multinomial logit) – similar to destination choice\nVehicle ownership choice? 1, 2, 3, 4, etc. vehicles (ordered logit)\nDeparture time choice? 8AM, 9AM, 10AM, etc. (ordered logit)\nParty size choice? 1, 2, 3, 4, 5, etc. persons (ordered logit)\nChoice set formation\n\nWhat destinations do I consider? Do I consider only destinations within my neighborhood? Do I consider only destinations within a certain distance or travel time?\n\n\n\n\n\nCIVE461 Home"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-7.html#outline",

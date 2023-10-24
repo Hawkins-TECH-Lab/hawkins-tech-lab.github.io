@@ -374,9 +374,9 @@
 <section id="theoretical-framework" class="slide level2 smaller">
 <h2>Theoretical Framework</h2>
 <ul>
-<li>Individuals belong to a <strong>homogeneous population</strong> <span class="math inline">\(I\)</span>, act rationally, &amp; <strong>possess perfect information</strong> – i.e., they always select the option that maximizes their net personal utility subject to legal, social, physical, &amp;/or budgetary (both time &amp; money) constraints</li>
-<li>There is a certain set <span class="math inline">\(𝐴 = \{𝐴_1, …𝐴_𝑗,…𝐴_J\}\)</span> of available alternatives &amp; a set X of vectors of measured attributes of individuals &amp; their alternatives</li>
-<li>An individual <span class="math inline">\(i\)</span> is endowed with a set of attributes <span class="math inline">\(𝑥 \in 𝑋\)</span> &amp; faces a choice set <span class="math inline">\(𝐴(i) \in 𝐴\)</span></li>
+<li>Individuals belong to a <strong>homogeneous population</strong> <span class="math inline">\(N\)</span>, act rationally, &amp; <strong>possess perfect information</strong> – i.e., they always select the option that maximizes their net personal utility subject to legal, social, physical, &amp;/or budgetary (both time &amp; money) constraints</li>
+<li>There is a certain set <span class="math inline">\(𝐴 = \{𝐴_1, …𝐴_i,…𝐴_I\}\)</span> of available alternatives &amp; a set X of vectors of measured attributes of individuals &amp; their alternatives</li>
+<li>An individual <span class="math inline">\(n\)</span> is endowed with a set of attributes <span class="math inline">\(𝑥 \in 𝑋\)</span> &amp; faces a choice set <span class="math inline">\(𝐴(n) \in 𝐴\)</span></li>
 <li>We will assume choice set is predetermined for individuals</li>
 </ul>
 </section>
@@ -384,48 +384,48 @@
 <h2>Theoretical Framework</h2>
 <ul>
 <li>Modeler, an observer, does not <strong>posses complete information</strong> about all elements considered by the individual making choice</li>
-<li>Modeler assumes <span class="math inline">\(𝑈_{ij}\)</span> can be represented by two components:
+<li>Modeler assumes <span class="math inline">\(𝑈_{ni}\)</span> can be represented by two components:
 <ul>
-<li>A <strong>measurable</strong>, <strong>systematic</strong>, or <strong>representative</strong> part <span class="math inline">\(𝑉_{ij}\)</span>, which is a function of the measured attributes <span class="math inline">\(x\)</span></li>
-<li>A random part <span class="math inline">\(\epsilon_{ij}\)</span>, which reflects <strong>indiosyncratic</strong> &amp; <strong>taste variation</strong>, together with measurement or observational errors made by the modeler</li>
+<li>A <strong>measurable</strong>, <strong>systematic</strong>, or <strong>representative</strong> part <span class="math inline">\(𝑉_{ni}\)</span>, which is a function of the measured attributes <span class="math inline">\(x\)</span></li>
+<li>A random part <span class="math inline">\(\epsilon_{ni}\)</span>, which reflects <strong>indiosyncratic</strong> &amp; <strong>taste variation</strong>, together with measurement or observational errors made by the modeler</li>
 </ul></li>
 </ul>
 </section>
 <section id="theoretical-framework-2" class="slide level2">
 <h2>Theoretical Framework</h2>
 <ul>
-<li>Modeler sets utility <span class="math inline">\(𝑈_{ij}}=𝑉_{ij}+\epsilon_{ij}}\)</span> to address two apparent irrationalities
+<li>Modeler sets utility <span class="math inline">\(𝑈_{ni}}=𝑉_{ni}+\epsilon_{ni}}\)</span> to address two apparent irrationalities
 <ol type="1">
 <li>That two individuals faced with the <strong>same situation</strong> &amp; having the <strong>same personal attributes</strong> make different choices</li>
 <li>That an individual may not select the alternative that <strong>appears</strong> to be the <em>best one</em></li>
 </ol></li>
-<li>Often assumed <span class="math inline">\(V_{ij}\)</span> given by <span class="math inline">\(\sum_k^K \beta_{jk} x_{ijk}\)</span> here <span class="math inline">\(\beta_{jk}\)</span> are assumed <strong>constant</strong> for all individuals <span class="math inline">\(I\)</span> in the homogeneous set but <strong>may vary across alternatives</strong> <span class="math inline">\(J\)</span></li>
+<li>Often assumed <span class="math inline">\(V_{ni}\)</span> given by <span class="math inline">\(\sum_k^K \beta_{ik} x_{nik}\)</span> here <span class="math inline">\(\beta_{ik}\)</span> are assumed <strong>constant</strong> for all individuals <span class="math inline">\(N\)</span> in the homogeneous set but <strong>may vary across alternatives</strong> <span class="math inline">\(I\)</span></li>
 </ul>
 </section>
 <section id="theoretical-framework-3" class="slide level2 smaller">
 <h2>Theoretical Framework</h2>
 <ul>
-<li>Individual chooses an alternative based on <span class="math inline">\(𝑈_{ij}≥ 𝑈_{qj} \forall A_q \in A(i)\)</span></li>
-<li>Or: <span class="math inline">\(𝑉_{ij} – 𝑉_{iq}≥\epsilon_{iq} − \epsilon_{ij}\)</span> (notice swapping of 𝒋 &amp; q)</li>
+<li>Individual chooses an alternative based on <span class="math inline">\(𝑈_{ni}≥ 𝑈_{jn} \forall A_j \in A(n)\)</span></li>
+<li>Or: <span class="math inline">\(𝑉_{ni} – 𝑉_{nj}≥\epsilon_{nj} − \epsilon_{ni}\)</span> (notice swapping of <span class="math inline">\(i\)</span> &amp; <span class="math inline">\(j\)</span>)</li>
 </ul>
-<p>Not possible to know with certainty if the inequality holds, so use <span class="math display">\[𝑃_{ij}  = 𝑃(\epsilon{ij} \leq \epsilon_{iq} + (V_{ij} - V_{iq})) \forall A_q \in A(i)\]</span> - Do not know distribution of joint residuals, so cannot derive analytical expression for model - Can denote <span class="math inline">\(f(\epsilon) = f(\epsilon_1, \epsilon_2, ... \epsilon_J\)</span> &amp; know they are <strong>random variables</strong> with a certain distribution</p>
+<p>Not possible to know with certainty if the inequality holds, so use <span class="math display">\[𝑃_{ni}  = 𝑃(\epsilon_{nj} \leq \epsilon_{ni} + (V_{ni} - V_{nj})) \forall A_j \in A(n)\]</span> - Do not know distribution of joint residuals, so cannot derive analytical expression for model - Can denote <span class="math inline">\(f(\epsilon) = f(\epsilon_1, \epsilon_2, ... \epsilon_I\)</span> &amp; know they are <strong>random variables</strong> with a certain distribution</p>
 </section>
 <section id="theoretical-framework-4" class="slide level2 smaller">
 <h2>Theoretical Framework</h2>
 <ul>
-<li>Can note that distribution for <span class="math inline">\(f(U)\)</span> is the same but with mean <span class="math inline">\(V\)</span> rather than 0 <span class="math display">\[P_{ij} = \int_{R_J} f(\epsilon) d\epsilon\]</span> <span class="math display">\[\text{where } R_J = \begin{cases}
-\epsilon_{iq} \leq \epsilon_{ij} + (V_{ij} - V_{iq}), &amp; \forall A_q \in A(i) \\
-V_{ij}) + \epsilon_{ij} \ge 0 \\
+<li>Can note that distribution for <span class="math inline">\(f(U)\)</span> is the same but with mean <span class="math inline">\(V\)</span> rather than 0 <span class="math display">\[P_{ni} = \int_{R_I} f(\epsilon) d\epsilon\]</span> <span class="math display">\[\text{where } R_I = \begin{cases}
+\epsilon_{nj} \leq \epsilon_{ni} + (V_{ni} - V_{nj}), &amp; \forall A_j \in A(n) \\
+V_{ni}) + \epsilon_{ni} \ge 0 \\
 \end{cases}\]</span></li>
-<li>Assuming independent &amp; identically distributed (<strong>IID</strong>) residuals, <span class="math display">\[f(\epsilon_1,...\epsilon_J) = \prod_j^J g(\epsilon_j)\]</span></li>
-<li>And (drop <span class="math inline">\(i\)</span> for simplicity) <span class="math display">\[P_j = \int_{-\infty}^\infty g(\epsilon_j) d\epsilon_j \prod_{q \neq j} \int_{-\infty}^{V_j-V_q+\epsilon_j} g(\epsilon_q) d\epsilon_q\]</span></li>
+<li>Assuming independent &amp; identically distributed (<strong>IID</strong>) residuals, <span class="math display">\[f(\epsilon_1,...\epsilon_I) = \prod_i^I g(\epsilon_i)\]</span></li>
+<li>And (drop <span class="math inline">\(n\)</span> for simplicity) <span class="math display">\[P_i = \int_{-\infty}^\infty g(\epsilon_i) d\epsilon_i \prod_{j \neq i} \int_{-\infty}^{V_i-V_j+\epsilon_i} g(\epsilon_j) d\epsilon_j\]</span></li>
 </ul>
 </section>
 <section id="generating-the-logit-model" class="slide level2 smaller">
 <h2>Generating the Logit Model</h2>
 <ul>
 <li>Assuming IID Gumbel (<strong>Extreme Value Type I</strong>) residuals, or equivalently that residual differences are <strong>logistically distributed</strong>, gives the standard multinomial logit specification</li>
-<li>Termed <em>softmax function</em> in machine learning field <span class="math display">\[P_{ij} = \frac{exp(\mu V_{ij})}{\sum_{A_q \in A(i)} exp(\mu V_{iq})}\]</span></li>
+<li>Termed <em>softmax function</em> in machine learning field <span class="math display">\[P_{ni} = \frac{exp(\mu V_{ni})}{\sum_{A_j \in A(n)} exp(\mu V_{nj})}\]</span></li>
 <li>Where <span class="math inline">\(\mu\)</span> is a <strong>scale parameter</strong> assumed equal to 1.0 for identification</li>
 </ul>
 <p><img data-src="../images/lecture5/logit_curve.png" class="absolute" style="bottom: 0px; right: 0px; width: 35%; "></p>
@@ -459,17 +459,17 @@ V_{ij}) + \epsilon_{ij} \ge 0 \\
 </section>
 <section id="logit---direct-elasticity" class="slide level2">
 <h2>Logit - Direct Elasticity</h2>
-<p>Direct elasticity of the probability of an individual <span class="math inline">\(i\)</span> choosing alternative <span class="math inline">\(j\)</span> wrt a change in an attribute/independent variable <span class="math inline">\(X_{jk}\)</span> with coefficient <span class="math inline">\(\beta_k\)</span> (ignoring <span class="math inline">\(i\)</span> subscripts for simplicity)</p>
-<p><span class="math display">\[e_{direct} = \frac{\partial P_j}{\partial X_{jk}} \frac{X_{jk}}{P_j}=(1-P_j)X_{jk}\beta_k\]</span></p>
+<p>Direct elasticity of the probability of an individual <span class="math inline">\(n\)</span> choosing alternative <span class="math inline">\(i\)</span> wrt a change in an attribute/independent variable <span class="math inline">\(X_{ik}\)</span> with coefficient <span class="math inline">\(\beta_k\)</span> (ignoring <span class="math inline">\(n\)</span> subscripts for simplicity)</p>
+<p><span class="math display">\[e_{direct} = \frac{\partial P_i}{\partial X_{ik}} \frac{X_{ik}}{P_i}=(1-P_i)X_{ik}\beta_k\]</span></p>
 </section>
 <section id="logit---cross-elasticity" class="slide level2 smaller">
 <h2>Logit - Cross Elasticity</h2>
 <ul>
-<li>Cross elasticity of the probability of an individual <span class="math inline">\(i\)</span> choosing alternative <span class="math inline">\(j\)</span> wrt a change in an attribute/independent variable <span class="math inline">\(X_{lk}\)</span> with coefficient <span class="math inline">\(\beta_k\)</span> for a different alternative</li>
+<li>Cross elasticity of the probability of an individual <span class="math inline">\(n\)</span> choosing alternative <span class="math inline">\(i\)</span> wrt a change in an attribute/independent variable <span class="math inline">\(X_{jk}\)</span> with coefficient <span class="math inline">\(\beta_k\)</span> for a different alternative</li>
 </ul>
-<p><span class="math display">\[e_{cross} = -P_jX_{jk}\beta_k\]</span></p>
+<p><span class="math display">\[e_{cross} = -P_j X_{jk}\beta_k\]</span></p>
 <ul>
-<li>Above is same regardless of alternative <span class="math inline">\(l\)</span>. I.e., <strong>all alternatives</strong> <span class="math inline">\(J\)</span> have the same cross-elasticity wrt an attribute <span class="math inline">\(k\)</span> of alternative <span class="math inline">\(j\)</span></li>
+<li>Above is same regardless of alternative <span class="math inline">\(i\)</span>. I.e., <strong>all alternatives</strong> have the same cross-elasticity wrt an attribute <span class="math inline">\(k\)</span> of alternative <span class="math inline">\(j\)</span></li>
 <li>Above results from independence of irrelevant alternatives (<strong>IIA</strong>) property of basic logit model</li>
 </ul>
 </section>
