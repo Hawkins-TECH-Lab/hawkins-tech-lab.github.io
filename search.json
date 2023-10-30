@@ -1810,21 +1810,21 @@
     "href": "teaching/CIVE461/slides/lec-6.html#explanatory-variables-in-mode-choice-models",
     "title": "Lecture 6 - Mode & Destination Choice Models",
     "section": "Explanatory Variables in Mode Choice Models",
-    "text": "Explanatory Variables in Mode Choice Models\nAlternative Specific Variables - Travel time - In-vehicle - Out-of-vehicle - Walk (access & egress) - Wait (initial & transfer) - Out-of-pocket travel costs - Transit fare or “in-vehicle” auto cost - Parking cost - Other factors? Reliability, safety, comfort, convenience, etc."
+    "text": "Explanatory Variables in Mode Choice Models\nAlternative Specific Variables\n\nTravel time\nIn-vehicle\nOut-of-vehicle\nWalk (access & egress)\nWait (initial & transfer)\nOut-of-pocket travel costs\nTransit fare or “in-vehicle” auto cost\nParking cost\nOther factors? Reliability, safety, comfort, convenience, etc."
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-6.html#explanatory-variables-in-mode-choice-models-1",
     "href": "teaching/CIVE461/slides/lec-6.html#explanatory-variables-in-mode-choice-models-1",
     "title": "Lecture 6 - Mode & Destination Choice Models",
     "section": "Explanatory Variables in Mode Choice Models",
-    "text": "Explanatory Variables in Mode Choice Models\nTripmaker Specific Variables - Income - Vehicle availability - No. of vehicles in household - Driver’s license? (0/1) - Age - Gender - Occupation - Household composition"
+    "text": "Explanatory Variables in Mode Choice Models\nTripmaker Specific Variables\n\nIncome\nVehicle availability\nNo. of vehicles in household\nDriver’s license? (0/1)\nAge\nGender\nOccupation\nHousehold composition"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-6.html#modeled-alternatives-the-choice-set",
     "href": "teaching/CIVE461/slides/lec-6.html#modeled-alternatives-the-choice-set",
     "title": "Lecture 6 - Mode & Destination Choice Models",
     "section": "Modeled Alternatives: The Choice Set",
-    "text": "Modeled Alternatives: The Choice Set\nThe number & definition of modeled modes depends on - Problem application - Available data - Network modeling capabilities - At a minimum, requires some representation of competition between auto and transit"
+    "text": "Modeled Alternatives: The Choice Set\nThe number & definition of modeled modes depends on\n\nProblem application\nAvailable data\nNetwork modeling capabilities\nAt a minimum, requires some representation of competition between auto and transit"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-6.html#auto-mode-representation",
@@ -1852,7 +1852,7 @@
     "href": "teaching/CIVE461/slides/lec-6.html#other-modes",
     "title": "Lecture 6 - Mode & Destination Choice Models",
     "section": "Other Modes",
-    "text": "Other Modes\nThere has been an explosion of modes in the last decade - Transportation network companies (TNCs): Uber, Lyft - Single ride - Pooled rides & van pools - Regular taxis - Motorcycles - Jitneys - Ferries, water taxis - Non-motorized modes - Walking - Bicycling - E-bikes - E-Scooters"
+    "text": "Other Modes\nThere has been an explosion of modes in the last decade\n\nTransportation network companies (TNCs): Uber, Lyft\n\nSingle ride\nPooled rides & van pools\n\nRegular taxis\nMotorcycles\nJitneys\nFerries, water taxis\nNon-motorized modes\n\nWalking\nBicycling\nE-bikes\nE-Scooters"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-6.html#decision-structure",
@@ -1873,21 +1873,21 @@
     "href": "teaching/CIVE461/slides/lec-6.html#example-work-trip-mode-choice-model",
     "title": "Lecture 6 - Mode & Destination Choice Models",
     "section": "Example: Work Trip Mode Choice Model",
-    "text": "Example: Work Trip Mode Choice Model\nA regional morning peak-period work trip mode choice model is a three-mode logit model as follows\nd = auto-drive p = auto passenger t = transit"
+    "text": "Example: Work Trip Mode Choice Model\nA regional morning peak-period work trip mode choice model is a three-mode logit model as follows\nd = auto-drive\np = auto passenger\nt = transit"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-6.html#example-work-trip-mode-choice-model-1",
     "href": "teaching/CIVE461/slides/lec-6.html#example-work-trip-mode-choice-model-1",
     "title": "Lecture 6 - Mode & Destination Choice Models",
     "section": "Example: Work Trip Mode Choice Model",
-    "text": "Example: Work Trip Mode Choice Model\nVm = utility for mode m COSTm = out-of-pocket travel cost ($) for mode m IVTTm = in-vehicle travel time (min.) for mode m OVTTm = out-of-vehicle travel time (min.) for mode m NVEH = avg. no. of vehicles per household in home zone TWY = 1 if employment zone is located within the catchment aera of a transitway station outside the CBD = 0 otherwise REGION = 1 if home zone is located in a specific area = 0 otherwise"
+    "text": "Example: Work Trip Mode Choice Model\nVm = utility for mode m\nCOSTm = out-of-pocket travel cost ($) for mode m\nIVTTm = in-vehicle travel time (min.) for mode m\nOVTTm = out-of-vehicle travel time (min.) for mode m\nNVEH = avg. no. of vehicles per household in home zone\nTWY = 1 if employment zone is located within the catchment area of a transitway station outside the CBD = 0 otherwise\nREGION = 1 if home zone is located in a specific area = 0 otherwise"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-6.html#example-work-trip-mode-choice-model-2",
     "href": "teaching/CIVE461/slides/lec-6.html#example-work-trip-mode-choice-model-2",
     "title": "Lecture 6 - Mode & Destination Choice Models",
     "section": "Example: Work Trip Mode Choice Model",
-    "text": "Example: Work Trip Mode Choice Model\nSystematic utility functions\n\\[𝑉_𝑑=−0.55−0.57×𝐶𝑂𝑆𝑇_𝑑−0.20×𝐼𝑉𝑇𝑇_𝑑+0.75×𝑁𝑉𝐸𝐻\\]\n\\[𝑉_𝑝=−2.28−0.57×𝐶𝑂𝑆𝑇_𝑝−0.20×𝐼𝑉𝑇𝑇_𝑝−0.30×𝑂𝑉𝑇𝑇_𝑡+0.45×𝑁𝑉𝐸𝐻\\]\n\\[𝑉_𝑡=−0.57×𝐶𝑂𝑆𝑇_𝑡−0.20×𝐼𝑉𝑇𝑇_𝑡−0.30×𝑂𝑉𝑇𝑇_𝑡+1.07×𝑇𝑊𝑌\n−0.98×𝑅𝐸𝐺𝐼𝑂𝑁\\]"
+    "text": "Example: Work Trip Mode Choice Model\nSystematic utility functions\n\\[𝑉_𝑑=−0.55−0.57×𝐶𝑂𝑆𝑇_𝑑−0.20×𝐼𝑉𝑇𝑇_𝑑+0.75×𝑁𝑉𝐸𝐻\\]\n\\[𝑉_𝑝=−2.28−0.57×𝐶𝑂𝑆𝑇_𝑝−0.20×𝐼𝑉𝑇𝑇_𝑝−0.30×𝑂𝑉𝑇𝑇_𝑡\n+0.45×𝑁𝑉𝐸𝐻\\]\n\\[𝑉_𝑡=−0.57×𝐶𝑂𝑆𝑇_𝑡−0.20×𝐼𝑉𝑇𝑇_𝑡−0.30×𝑂𝑉𝑇𝑇_𝑡+1.07×𝑇𝑊𝑌\n−0.98×𝑅𝐸𝐺𝐼𝑂𝑁\\]"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-6.html#example-work-trip-mode-choice-model-3",
@@ -1943,63 +1943,63 @@
     "href": "teaching/CIVE461/slides/lec-6.html#forecasting-mode-choice-model-application",
     "title": "Lecture 6 - Mode & Destination Choice Models",
     "section": "Forecasting Mode Choice (Model Application)",
-    "text": "Forecasting Mode Choice (Model Application)\nMode choice models generate choice probability predictions for individuals\nFor planning purposes, we are interested in total number of people in a zone or study area likely to choose each mode\nMust aggregate individual choices Total enumeration/microsimulation Sample enumeration Naïve aggregation Classify with naïve aggregation"
+    "text": "Forecasting Mode Choice (Model Application)\n\nMode choice models generate choice probability predictions for individuals\nFor planning purposes, we are interested in total number of people in a zone or study area likely to choose each mode\nMust aggregate individual choices\n\nTotal enumeration/microsimulation\nSample enumeration\nNaïve aggregation\nClassify with naïve aggregation"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-6.html#total-enumeration",
     "href": "teaching/CIVE461/slides/lec-6.html#total-enumeration",
     "title": "Lecture 6 - Mode & Destination Choice Models",
     "section": "Total Enumeration",
-    "text": "Total Enumeration\nSimplest method but often not practical Enumerate all individuals in study area Calculate mode choice probabilities Sum probabilities over all individuals\nProblem: extremely expensive to survey all individuals and difficult to simulate them\nMicrosimulation models can be used to simulate individuals"
+    "text": "Total Enumeration\n\nSimplest method but often not practical\nEnumerate all individuals in study area\nCalculate mode choice probabilities\nSum probabilities over all individuals\nProblem: extremely expensive to survey all individuals and difficult to simulate them\nMicrosimulation models can be used to simulate individuals"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-6.html#sample-enumeration",
     "href": "teaching/CIVE461/slides/lec-6.html#sample-enumeration",
     "title": "Lecture 6 - Mode & Destination Choice Models",
     "section": "Sample Enumeration",
-    "text": "Sample Enumeration\nSecond best to total enumeration\nRequires representative sample of population\nCalculate mode choice probabilities for sample\nSample prediction of mode shares can be substituted for population prediction\nProblem: How to synthesize a sample for a future year?"
+    "text": "Sample Enumeration\n\nSecond best to total enumeration\nRequires representative sample of population\nCalculate mode choice probabilities for sample\nSample prediction of mode shares can be substituted for population prediction\nProblem: How to synthesize a sample for a future year?"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-6.html#naive-aggregation",
     "href": "teaching/CIVE461/slides/lec-6.html#naive-aggregation",
     "title": "Lecture 6 - Mode & Destination Choice Models",
     "section": "Naive Aggregation",
-    "text": "Naive Aggregation\nTreat individual choice model as an aggregate model\nUse zonal averages for variables as inputs to compute “average” zonal probability\nProblem: Choice probabilities are non-linear functions of variables so aggregation bias\nAvoid this method!"
+    "text": "Naive Aggregation\n\nTreat individual choice model as an aggregate model\nUse zonal averages for variables as inputs to compute “average” zonal probability\nProblem: Choice probabilities are non-linear functions of variables so aggregation bias\nAvoid this method!"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-6.html#classification-with-naive-aggregation",
     "href": "teaching/CIVE461/slides/lec-6.html#classification-with-naive-aggregation",
     "title": "Lecture 6 - Mode & Destination Choice Models",
     "section": "Classification with Naive Aggregation",
-    "text": "Classification with Naive Aggregation\nClassify population into relatively homogenous groups E.g., by vehicle ownership & transit availability\nDetermine variable averages for each classification group\nUse group averages to compute average mode shares\nSum mode shares\nMost common method used in practice"
+    "text": "Classification with Naive Aggregation\n\nClassify population into relatively homogenous groups\nE.g., by vehicle ownership & transit availability\nDetermine variable averages for each classification group\nUse group averages to compute average mode shares\nSum mode shares\nMost common method used in practice"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-6.html#classification-with-naïve-aggregation-example",
     "href": "teaching/CIVE461/slides/lec-6.html#classification-with-naïve-aggregation-example",
     "title": "Lecture 6 - Mode & Destination Choice Models",
     "section": "Classification with Naïve Aggregation Example",
-    "text": "Classification with Naïve Aggregation Example\nA work trip mode split logit model includes the no. of hh. vehicles (NVEH) and whether a worker has a driver’s license (DLIC) as variables. The aggregation/forecasting procedure used is to: Divide workers into “n” NVEH and DLIC categories Estimate percentage of workers in each category by O-D pair Compute mode choice probabilities for each category Compute weighted average mode splits for each O-D pair"
+    "text": "Classification with Naïve Aggregation Example\nA work trip mode split logit model includes the no. of hh. vehicles (NVEH) and whether a worker has a driver’s license (DLIC) as variables. The aggregation/forecasting procedure used is to:\n\nDivide workers into “n” NVEH and DLIC categories\nEstimate percentage of workers in each category by O-D pair\nCompute mode choice probabilities for each category\nCompute weighted average mode splits for each O-D pair"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-6.html#aggregation-bias",
     "href": "teaching/CIVE461/slides/lec-6.html#aggregation-bias",
     "title": "Lecture 6 - Mode & Destination Choice Models",
     "section": "Aggregation Bias",
-    "text": "Aggregation Bias\nConsider a zone in which people are identical except for their income, and that the probability of a person using transit depends only on the person’s income."
+    "text": "Aggregation Bias\n\nConsider a zone in which people are identical except for their income, and that the probability of a person using transit depends only on the person’s income."
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-6.html#aggregation-bias-1",
     "href": "teaching/CIVE461/slides/lec-6.html#aggregation-bias-1",
     "title": "Lecture 6 - Mode & Destination Choice Models",
     "section": "Aggregation Bias",
-    "text": "Aggregation Bias\nBias becomes worse for more heterogenous populations"
+    "text": "Aggregation Bias\n\nBias becomes worse for more heterogenous populations"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-6.html#forecasting-example",
     "href": "teaching/CIVE461/slides/lec-6.html#forecasting-example",
     "title": "Lecture 6 - Mode & Destination Choice Models",
     "section": "Forecasting Example",
-    "text": "Forecasting Example\n\\[𝑉_𝑎=\\beta_1+\\beta_2 𝐼𝑉𝑇𝑇_a+\\beta_4 𝑂𝑉𝑇𝑇_𝑎+\\beta_5 ((𝑂𝑃𝑇𝐶_a)/𝐼𝑁𝐶)+\\beta_6 𝐴𝑂\\] \\[𝑉_𝑡=\\beta_3 𝐼𝑉𝑇𝑇_𝑡+\\beta_4 𝑂𝑉𝑇𝑇_𝑡+\\beta_5 ((𝑂𝑃𝑇𝐶_𝑡)/𝐼𝑁𝐶)\\] - IVTT = in-vehicle travel time - OVTT = out-of-vehicle travel time - OPTC = out-of-pocket travel cost - INC = household income - AO = auto ownership level"
+    "text": "Forecasting Example\n\\[𝑉_𝑎=\\beta_1+\\beta_2 𝐼𝑉𝑇𝑇_a+\\beta_4 𝑂𝑉𝑇𝑇_𝑎+\\beta_5 ((𝑂𝑃𝑇𝐶_a)/𝐼𝑁𝐶)+\\beta_6 𝐴𝑂\\]\n\\[𝑉_𝑡=\\beta_3 𝐼𝑉𝑇𝑇_𝑡+\\beta_4 𝑂𝑉𝑇𝑇_𝑡+\\beta_5 ((𝑂𝑃𝑇𝐶_𝑡)/𝐼𝑁𝐶)\\]\n\nIVTT = in-vehicle travel time\nOVTT = out-of-vehicle travel time\nOPTC = out-of-pocket travel cost\nINC = household income\nAO = auto ownership level"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-6.html#forecasting-example---full-enumeration-naive-aggregation",
