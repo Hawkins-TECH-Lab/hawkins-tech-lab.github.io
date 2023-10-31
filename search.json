@@ -1775,7 +1775,7 @@
     "href": "teaching/CIVE461/slides/lec-6.html#outline",
     "title": "Lecture 6 - Mode & Destination Choice Models",
     "section": "Outline",
-    "text": "Outline\n\n\n\n\nUtility function variables\nDirect and cross-elasticity\nForecasting and aggregation\nLimitations\nExtension to other choices"
+    "text": "Outline\n\n\n\n\nUtility function variables\nDirect & cross-elasticity\nForecasting & aggregation\nLimitations\nExtension to other choices"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-6.html#mode-choice-in-4-step-model-framework",
@@ -1789,7 +1789,7 @@
     "href": "teaching/CIVE461/slides/lec-6.html#trip-end-models",
     "title": "Lecture 6 - Mode & Destination Choice Models",
     "section": "Trip-End Models",
-    "text": "Trip-End Models\n\nTrip end mode split (choice) models apply before trip distribution and split trip ends estimated in trip generation among ends (destinations)\nBasically mode-specific trip generation models (e.g., regression or cross-classification)\nTrip-end mode split is a function of socio-economic variables such as income & auto ownership\nCannot include modal level-of-service attributes (travel time, cost, etc.) since do not yet have O-D flows\nWorks better for short-term and when there is no modal competition & traffic congestion – small urban & rural areas where transit is a social service"
+    "text": "Trip-End Models\n\nTrip end mode split (choice) models apply before trip distribution & split trip ends estimated in trip generation among ends (destinations)\nBasically mode-specific trip generation models (e.g., regression or cross-classification)\nTrip-end mode split is a function of socio-economic variables such as income & auto ownership\nCannot include modal level-of-service attributes (travel time, cost, etc.) since do not yet have O-D flows\nWorks better for short-term & when there is no modal competition & traffic congestion – small urban & rural areas where transit is a social service"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-6.html#trip-end-model-example",
@@ -1803,14 +1803,14 @@
     "href": "teaching/CIVE461/slides/lec-6.html#trip-interchange-model",
     "title": "Lecture 6 - Mode & Destination Choice Models",
     "section": "Trip Interchange Model",
-    "text": "Trip Interchange Model\n\nTrip interchange mode split (choice) models apply after trip distribution and split trip interchanges estimated in trip distribution\nSince O-D flows are known, can compute travel times, costs, etc. for competing modes\nTrip interchange models generally applied in medium to large urban areas where alternative modes are competitive and traffic congestion is a factor\nCan assess broad range of policies:\n\nImproved transit service (e.g., headways, coverage, travel time)\nRoad pricing, gasoline taxes, etc.\nTransit fare policy\nParking supply & cost\nHOV policies"
+    "text": "Trip Interchange Model\n\nTrip interchange mode split (choice) models apply after trip distribution & split trip interchanges estimated in trip distribution\nSince O-D flows are known, can compute travel times, costs, etc. for competing modes\nTrip interchange models generally applied in medium to large urban areas where alternative modes are competitive & traffic congestion is a factor\nCan assess broad range of policies:\n\nImproved transit service (e.g., headways, coverage, travel time)\nRoad pricing, gasoline taxes, etc.\nTransit fare policy\nParking supply & cost\nHOV policies"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-6.html#explanatory-variables-in-mode-choice-models",
     "href": "teaching/CIVE461/slides/lec-6.html#explanatory-variables-in-mode-choice-models",
     "title": "Lecture 6 - Mode & Destination Choice Models",
     "section": "Explanatory Variables in Mode Choice Models",
-    "text": "Explanatory Variables in Mode Choice Models\nAlternative Specific Variables\n\nTravel time\nIn-vehicle\nOut-of-vehicle\nWalk (access & egress)\nWait (initial & transfer)\nOut-of-pocket travel costs\nTransit fare or “in-vehicle” auto cost\nParking cost\nOther factors? Reliability, safety, comfort, convenience, etc."
+    "text": "Explanatory Variables in Mode Choice Models\nAlternative Specific Variables\n\nTravel time\n\nIn-vehicle\nOut-of-vehicle\nWalk (access & egress)\nWait (initial & transfer)\n\nOut-of-pocket travel costs\n\nTransit fare or “in-vehicle” auto cost\nParking cost\n\nOther factors? Reliability, safety, comfort, convenience, etc."
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-6.html#explanatory-variables-in-mode-choice-models-1",
@@ -1824,14 +1824,14 @@
     "href": "teaching/CIVE461/slides/lec-6.html#modeled-alternatives-the-choice-set",
     "title": "Lecture 6 - Mode & Destination Choice Models",
     "section": "Modeled Alternatives: The Choice Set",
-    "text": "Modeled Alternatives: The Choice Set\nThe number & definition of modeled modes depends on\n\nProblem application\nAvailable data\nNetwork modeling capabilities\nAt a minimum, requires some representation of competition between auto and transit"
+    "text": "Modeled Alternatives: The Choice Set\nThe number & definition of modeled modes depends on\n\nProblem application\nAvailable data\nNetwork modeling capabilities\nAt a minimum, requires some representation of competition between auto & transit"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-6.html#auto-mode-representation",
     "href": "teaching/CIVE461/slides/lec-6.html#auto-mode-representation",
     "title": "Lecture 6 - Mode & Destination Choice Models",
     "section": "Auto Mode Representation",
-    "text": "Auto Mode Representation\n\nCommon to distinguish between drivers and passengers:\n\nAuto driver mode: trip-maker drives a vehicle from origin to destination\nAuto passenger mode: trip-maker is a passenger in car from origin to destination\n\nAlternatively, we can distinguish between drive alone and shared trips\n\nDrive alone mode: trip-maker is sole occupant of vehicle from origin to destination (single occupancy vehicle (SOV) trip)\nShared-ride mode: trip-maker is one of several vehicle occupants from origin to destination\n\nCar driver for shared ride\nCar passenger for shared ride with household member\nCar pooling: driver or passenger in vehicle with non-household members"
+    "text": "Auto Mode Representation\n\nCommon to distinguish between drivers & passengers:\n\nAuto driver mode: trip-maker drives a vehicle from origin to destination\nAuto passenger mode: trip-maker is a passenger in car from origin to destination\n\nAlternatively, we can distinguish between drive alone & shared trips\n\nDrive alone mode: trip-maker is sole occupant of vehicle from origin to destination (single occupancy vehicle (SOV) trip)\nShared-ride mode: trip-maker is one of several vehicle occupants from origin to destination\n\nCar driver for shared ride\nCar passenger for shared ride with household member\nCar pooling: driver or passenger in vehicle with non-household members"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-6.html#transit-mode-representation",
@@ -1845,7 +1845,7 @@
     "href": "teaching/CIVE461/slides/lec-6.html#mixed-modes",
     "title": "Lecture 6 - Mode & Destination Choice Models",
     "section": "Mixed Modes",
-    "text": "Mixed Modes\n\nCombined auto-transit modes exist, in which auto is used to access transit system\n\nPark & Ride: trip-maker drives to a transit station & parks their vehicle at station\nKiss & Ride: trip-maker is driven as a passenger to a transit station and is dropped off there\n\nAuto access greatly expands catchment area of transit services"
+    "text": "Mixed Modes\n\nCombined auto-transit modes exist, in which auto is used to access transit system\n\nPark & Ride: trip-maker drives to a transit station & parks their vehicle at station\nKiss & Ride: trip-maker is driven as a passenger to a transit station & is dropped off there\n\nAuto access greatly expands catchment area of transit services"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-6.html#other-modes",
@@ -1880,7 +1880,7 @@
     "href": "teaching/CIVE461/slides/lec-6.html#example-work-trip-mode-choice-model-1",
     "title": "Lecture 6 - Mode & Destination Choice Models",
     "section": "Example: Work Trip Mode Choice Model",
-    "text": "Example: Work Trip Mode Choice Model\nVm = utility for mode m\nCOSTm = out-of-pocket travel cost ($) for mode m\nIVTTm = in-vehicle travel time (min.) for mode m\nOVTTm = out-of-vehicle travel time (min.) for mode m\nNVEH = avg. no. of vehicles per household in home zone\nTWY = 1 if employment zone is located within the catchment area of a transitway station outside the CBD = 0 otherwise\nREGION = 1 if home zone is located in a specific area = 0 otherwise"
+    "text": "Example: Work Trip Mode Choice Model\n\\(V_m\\) = utility for mode m\n\\(COST_m\\) = out-of-pocket travel cost ($) for mode m\n\\(IVTT_m\\) = in-vehicle travel time (min.) for mode m\n\\(OVTT_m\\) = out-of-vehicle travel time (min.) for mode m\nNVEH = avg. no. of vehicles per household in home zone\nTWY = 1 if employment zone is located within the catchment area of a transitway station outside the CBD = 0 otherwise\nREGION = 1 if home zone is located in a specific area = 0 otherwise"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-6.html#example-work-trip-mode-choice-model-2",
@@ -1901,21 +1901,21 @@
     "href": "teaching/CIVE461/slides/lec-6.html#important-notes-on-mode-choice-example",
     "title": "Lecture 6 - Mode & Destination Choice Models",
     "section": "Important Notes on Mode Choice Example",
-    "text": "Important Notes on Mode Choice Example\n\nCost, IVTT, & OVTT are generic variables\n\nEnter all utility with same parameter values (no OVTT for driver)\n\nNVEH is an alternative specific variable\n\nEnters two utility functions with different parameter values\n\nThere are alternative specific constants for drive and passenger modes but not transit\n\nIf there are M alternatives, we can statically identify M-1 alternative specific constants (ASC)\nASC account for unobserved but non-random variation – ASC will match market share for multinomial logit model"
+    "text": "Important Notes on Mode Choice Example\n\nCost, IVTT, & OVTT are generic variables\n\nEnter all utility with same parameter values (no OVTT for driver)\n\nNVEH is an alternative specific variable\n\nEnters two utility functions with different parameter values\n\nThere are alternative specific constants for drive & passenger modes but not transit\n\nIf there are M alternatives, we can statically identify M-1 alternative specific constants (ASC)\nASC account for unobserved but non-random variation – ASC will match market share for multinomial logit model"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-6.html#important-notes-on-mode-choice-example-1",
     "href": "teaching/CIVE461/slides/lec-6.html#important-notes-on-mode-choice-example-1",
     "title": "Lecture 6 - Mode & Destination Choice Models",
     "section": "Important Notes on Mode Choice Example",
-    "text": "Important Notes on Mode Choice Example\n\nSocio-economic variables do not vary between alternatives\n\nIf included in model, must enter as alternative specific variables\nIf included in model as generic variables, would add same utility to all alternatives and have no impact on choice probability\nCan interact socio-economic variables with level of service (LOS) variables\n\nE.g., travel cost / household income"
+    "text": "Important Notes on Mode Choice Example\n\nSocio-economic variables do not vary between alternatives\n\nIf included in model, must enter as alternative specific variables\nIf included in model as generic variables, would add same utility to all alternatives & have no impact on choice probability\nCan interact socio-economic variables with level of service (LOS) variables\n\nE.g., travel cost / household income"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-6.html#calculating-value-of-travel-time-vtt-from-utility-function",
     "href": "teaching/CIVE461/slides/lec-6.html#calculating-value-of-travel-time-vtt-from-utility-function",
     "title": "Lecture 6 - Mode & Destination Choice Models",
     "section": "Calculating Value of Travel Time (VTT) from Utility Function",
-    "text": "Calculating Value of Travel Time (VTT) from Utility Function\n\nWe can calculate an implied VTT from model coefficients\nFrom our previous example\n\n\\[−0.57×𝐶𝑂𝑆𝑇($)=−0.20×𝐼𝑉𝑇𝑇(𝑚𝑖𝑛)\\]\n\nHow many $ would one pay to reduce their travel time by one hour?\n\n\\[𝑉𝑇𝑇=𝛽_𝑡𝑖𝑚𝑒/𝛽_𝑐𝑜𝑠𝑡 =−(−0.20)/(−0.57)=$21/ℎ𝑜𝑢𝑟\\]\n\nSimilarly, VTT for OVTT = $31.6/hour\nQuestion: How do you think WTP for IVTT compares for auto vs. transit modes?"
+    "text": "Calculating Value of Travel Time (VTT) from Utility Function\n\nWe can calculate an implied VTT from model coefficients\nFrom our previous example\n\n\\[−0.57×𝐶𝑂𝑆𝑇($)=−0.20×𝐼𝑉𝑇𝑇(𝑚𝑖𝑛)\\]\n\nHow many $ would one pay to reduce their travel time by one hour?\n\n\\[𝑉𝑇𝑇=𝛽_{𝑡𝑖𝑚𝑒}/𝛽_{𝑐𝑜𝑠𝑡} =(−0.20)/(−0.57)=$21/ℎ𝑜𝑢𝑟\\]\n\nSimilarly, VTT for OVTT = $31.6/hour\nQuestion: How do you think VTT for IVTT compares for auto vs. transit modes?"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-6.html#direct-cross-elasticity",
@@ -1950,7 +1950,7 @@
     "href": "teaching/CIVE461/slides/lec-6.html#total-enumeration",
     "title": "Lecture 6 - Mode & Destination Choice Models",
     "section": "Total Enumeration",
-    "text": "Total Enumeration\n\nSimplest method but often not practical\nEnumerate all individuals in study area\nCalculate mode choice probabilities\nSum probabilities over all individuals\nProblem: extremely expensive to survey all individuals and difficult to simulate them\nMicrosimulation models can be used to simulate individuals"
+    "text": "Total Enumeration\n\nSimplest method but often not practical\nEnumerate all individuals in study area\nCalculate mode choice probabilities\nSum probabilities over all individuals\nProblem: extremely expensive to survey all individuals & difficult to simulate them\nMicrosimulation models can be used to simulate individuals"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-6.html#sample-enumeration",
@@ -1978,7 +1978,7 @@
     "href": "teaching/CIVE461/slides/lec-6.html#classification-with-naïve-aggregation-example",
     "title": "Lecture 6 - Mode & Destination Choice Models",
     "section": "Classification with Naïve Aggregation Example",
-    "text": "Classification with Naïve Aggregation Example\nA work trip mode split logit model includes the no. of hh. vehicles (NVEH) and whether a worker has a driver’s license (DLIC) as variables. The aggregation/forecasting procedure used is to:\n\nDivide workers into “n” NVEH and DLIC categories\nEstimate percentage of workers in each category by O-D pair\nCompute mode choice probabilities for each category\nCompute weighted average mode splits for each O-D pair"
+    "text": "Classification with Naïve Aggregation Example\nA work trip mode split logit model includes the no. of hh. vehicles (NVEH) and whether a worker has a driver’s license (DLIC) as variables. The aggregation/forecasting procedure used is to:\n\nDivide workers into “n” NVEH & DLIC categories\nEstimate percentage of workers in each category by O-D pair\nCompute mode choice probabilities for each category\nCompute weighted average mode splits for each O-D pair"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-6.html#aggregation-bias",

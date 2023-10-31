@@ -340,8 +340,8 @@
 <div>
 <ol type="1">
 <li class="fragment">Utility function variables</li>
-<li class="fragment">Direct and cross-elasticity</li>
-<li class="fragment">Forecasting and aggregation</li>
+<li class="fragment">Direct &amp; cross-elasticity</li>
+<li class="fragment">Forecasting &amp; aggregation</li>
 <li class="fragment">Limitations</li>
 <li class="fragment">Extension to other choices</li>
 </ol>
@@ -384,11 +384,11 @@
 <section id="trip-end-models" class="slide level2 smaller">
 <h2>Trip-End Models</h2>
 <ul>
-<li>Trip end mode split (<strong>choice</strong>) models apply before trip distribution and split <em>trip ends</em> estimated in trip generation among ends (<strong>destinations</strong>)</li>
+<li>Trip end mode split (<strong>choice</strong>) models apply before trip distribution &amp; split <em>trip ends</em> estimated in trip generation among ends (<strong>destinations</strong>)</li>
 <li>Basically <strong>mode-specific trip generation models</strong> (e.g., regression or cross-classification)</li>
 <li>Trip-end mode split is a function of socio-economic variables such as income &amp; auto ownership</li>
 <li><strong>Cannot include modal level-of-service attributes</strong> (travel time, cost, etc.) since do not yet have O-D flows</li>
-<li>Works better for <strong>short-term</strong> and when there is <strong>no modal competition</strong> &amp; traffic congestion – small urban &amp; rural areas where transit is a <em>social service</em></li>
+<li>Works better for <strong>short-term</strong> &amp; when there is <strong>no modal competition</strong> &amp; traffic congestion – small urban &amp; rural areas where transit is a <em>social service</em></li>
 </ul>
 </section>
 <section id="trip-end-model-example" class="slide level2">
@@ -398,9 +398,9 @@
 <section id="trip-interchange-model" class="slide level2 smaller">
 <h2>Trip Interchange Model</h2>
 <ul>
-<li>Trip interchange mode split (<strong>choice</strong>) models apply after trip distribution and split <em>trip interchanges</em> estimated in trip distribution</li>
+<li>Trip interchange mode split (<strong>choice</strong>) models apply after trip distribution &amp; split <em>trip interchanges</em> estimated in trip distribution</li>
 <li>Since O-D flows are known, <strong>can compute travel times, costs, etc.</strong> for competing modes</li>
-<li>Trip interchange models generally applied in medium to large urban areas where alternative modes are competitive and traffic congestion is a factor</li>
+<li>Trip interchange models generally applied in medium to large urban areas where alternative modes are competitive &amp; traffic congestion is a factor</li>
 <li>Can assess <strong>broad range of policies</strong>:
 <ul>
 <li>Improved transit service (e.g., headways, coverage, travel time)</li>
@@ -415,14 +415,18 @@
 <h2>Explanatory Variables in Mode Choice Models</h2>
 <p>Alternative Specific Variables</p>
 <ul>
-<li>Travel time</li>
+<li>Travel time
+<ul>
 <li>In-vehicle</li>
 <li>Out-of-vehicle</li>
 <li>Walk (access &amp; egress)</li>
 <li>Wait (initial &amp; transfer)</li>
-<li>Out-of-pocket travel costs</li>
+</ul></li>
+<li>Out-of-pocket travel costs
+<ul>
 <li>Transit fare or “in-vehicle” auto cost</li>
 <li>Parking cost</li>
+</ul></li>
 <li>Other factors? Reliability, safety, comfort, convenience, etc.</li>
 </ul>
 </section>
@@ -447,18 +451,18 @@
 <li>Problem application</li>
 <li>Available data</li>
 <li>Network modeling capabilities</li>
-<li><strong>At a minimum</strong>, requires some representation of competition between auto and transit</li>
+<li><strong>At a minimum</strong>, requires some representation of competition between auto &amp; transit</li>
 </ul>
 </section>
 <section id="auto-mode-representation" class="slide level2 smaller">
 <h2>Auto Mode Representation</h2>
 <ul>
-<li>Common to distinguish between drivers and passengers:
+<li>Common to distinguish between drivers &amp; passengers:
 <ul>
 <li><strong>Auto driver mode:</strong> trip-maker drives a vehicle from origin to destination</li>
 <li><strong>Auto passenger mode:</strong> trip-maker is a passenger in car from origin to destination</li>
 </ul></li>
-<li>Alternatively, we can distinguish between drive alone and shared trips
+<li>Alternatively, we can distinguish between drive alone &amp; shared trips
 <ul>
 <li><strong>Drive alone mode:</strong> trip-maker is sole occupant of vehicle from origin to destination (single occupancy vehicle (SOV) trip)</li>
 <li><strong>Shared-ride mode:</strong> trip-maker is one of several vehicle occupants from origin to destination
@@ -488,7 +492,7 @@
 <li>Combined auto-transit modes exist, in which auto is used to access transit system
 <ul>
 <li><strong>Park &amp; Ride:</strong> trip-maker drives to a transit station &amp; parks their vehicle at station</li>
-<li><strong>Kiss &amp; Ride:</strong> trip-maker is driven as a passenger to a transit station and is dropped off there</li>
+<li><strong>Kiss &amp; Ride:</strong> trip-maker is driven as a passenger to a transit station &amp; is dropped off there</li>
 </ul></li>
 <li>Auto access greatly expands <strong>catchment area</strong> of transit services</li>
 </ul>
@@ -536,10 +540,10 @@
 </section>
 <section id="example-work-trip-mode-choice-model-1" class="slide level2">
 <h2>Example: Work Trip Mode Choice Model</h2>
-<p>Vm = utility for mode m</p>
-<p>COSTm = out-of-pocket travel cost ($) for mode m</p>
-<p>IVTTm = in-vehicle travel time (min.) for mode m</p>
-<p>OVTTm = out-of-vehicle travel time (min.) for mode m</p>
+<p><span class="math inline">\(V_m\)</span> = utility for mode m</p>
+<p><span class="math inline">\(COST_m\)</span> = out-of-pocket travel cost ($) for mode m</p>
+<p><span class="math inline">\(IVTT_m\)</span> = in-vehicle travel time (min.) for mode m</p>
+<p><span class="math inline">\(OVTT_m\)</span> = out-of-vehicle travel time (min.) for mode m</p>
 <p>NVEH = avg. no. of vehicles per household in home zone</p>
 <p>TWY = 1 if employment zone is located within the catchment area of a transitway station outside the CBD = 0 otherwise</p>
 <p>REGION = 1 if home zone is located in a specific area = 0 otherwise</p>
@@ -568,20 +572,20 @@
 <ul>
 <li>Enters two utility functions with <strong>different parameter values</strong></li>
 </ul></li>
-<li>There are <strong>alternative specific constants</strong> for drive and passenger modes but not transit
+<li>There are <strong>alternative specific constants</strong> for drive &amp; passenger modes but not transit
 <ul>
 <li>If there are M alternatives, we can statically identify M-1 alternative specific constants (ASC)</li>
 <li>ASC account for unobserved but non-random variation – ASC will match <strong>market share</strong> for multinomial logit model</li>
 </ul></li>
 </ul>
 </section>
-<section id="important-notes-on-mode-choice-example-1" class="slide level2">
+<section id="important-notes-on-mode-choice-example-1" class="slide level2 smaller">
 <h2>Important Notes on Mode Choice Example</h2>
 <ul>
 <li>Socio-economic variables <strong>do not vary</strong> between alternatives
 <ul>
 <li>If included in model, must enter as alternative specific variables</li>
-<li>If included in model as generic variables, would add same utility to all alternatives and have no impact on choice probability</li>
+<li>If included in model as generic variables, would add same utility to all alternatives &amp; have no impact on choice probability</li>
 <li>Can interact socio-economic variables with level of service (LOS) variables
 <ul>
 <li>E.g., travel cost / household income</li>
@@ -599,10 +603,10 @@
 <ul>
 <li>How many $ would one pay to reduce their travel time by one hour?</li>
 </ul>
-<p><span class="math display">\[𝑉𝑇𝑇=𝛽_𝑡𝑖𝑚𝑒/𝛽_𝑐𝑜𝑠𝑡 =−(−0.20)/(−0.57)=$21/ℎ𝑜𝑢𝑟\]</span></p>
+<p><span class="math display">\[𝑉𝑇𝑇=𝛽_{𝑡𝑖𝑚𝑒}/𝛽_{𝑐𝑜𝑠𝑡} =(−0.20)/(−0.57)=$21/ℎ𝑜𝑢𝑟\]</span></p>
 <ul>
 <li>Similarly, VTT for OVTT = $31.6/hour</li>
-<li><strong>Question:</strong> How do you think WTP for IVTT compares for <strong>auto</strong> vs.&nbsp;<strong>transit</strong> modes?</li>
+<li><strong>Question:</strong> How do you think VTT for IVTT compares for <strong>auto</strong> vs.&nbsp;<strong>transit</strong> modes?</li>
 </ul>
 </section>
 <section id="direct-cross-elasticity" class="slide level2">
@@ -657,7 +661,7 @@
 <li>Enumerate all individuals in study area</li>
 <li>Calculate mode choice probabilities</li>
 <li>Sum probabilities over all individuals</li>
-<li><strong>Problem:</strong> extremely expensive to survey all individuals and difficult to simulate them</li>
+<li><strong>Problem:</strong> extremely expensive to survey all individuals &amp; difficult to simulate them</li>
 <li>Microsimulation models can be used to simulate individuals</li>
 </ul>
 </section>
@@ -695,7 +699,7 @@
 <h2>Classification with Naïve Aggregation Example</h2>
 <p>A work trip mode split logit model includes the no. of hh. vehicles (NVEH) and whether a worker has a driver’s license (DLIC) as variables. The aggregation/forecasting procedure used is to:</p>
 <ul>
-<li>Divide workers into “n” NVEH and DLIC categories</li>
+<li>Divide workers into “n” NVEH &amp; DLIC categories</li>
 <li>Estimate percentage of workers in each category by O-D pair</li>
 <li>Compute mode choice probabilities for each category</li>
 <li>Compute weighted average mode splits for each O-D pair</li>
