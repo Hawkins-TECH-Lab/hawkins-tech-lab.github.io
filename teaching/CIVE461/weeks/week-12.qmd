@@ -13,13 +13,11 @@ editor: visual
 
 Class discussion on transportation equity
 
-🖥️ Trip Assignment Models (TBA)
+🖥️ [Lecture 7 - Trip Assignment](/teaching/CIVE461/slides/lec-7.html)
 
 ## Practice
 
 📋 [AE 5 - Transportation Equity](/teaching/CIVE461/ae/ae-5-equity.html) - Submit on Canvas
-
-✍️ [GP 3 - Mode Choice](/teaching/CIVE461/project/project-description.html#report-3) - Submit on Canvas
 
 <br><br>
 
