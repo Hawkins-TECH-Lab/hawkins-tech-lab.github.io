@@ -32,6 +32,509 @@ execute:
 :::
 :::
 
+## Trip Assignment Problem {.smaller}
+![](../images/lecture7/trip_problem.png){.absolute bottom="0" right="200" width=60%}
+
+- Find the path (or paths) through the network *mostly likely* taken from node i to node j
+- Transport network is represented by links L
+  - Each link has a start & end node, as well as a cost C
+  - Links can also be mode-specific (e.g., bus-only, bus & vehicles)
+- Link cost is a function of attributes: distance, free-flow speed, capacity, & speed-flow relationship (volume-delay function)
+
+## Trip Assignment {.smaller}
+**Primary Purpose** - Aggregate network performance measures
+
+- Highway flows, transit revenues, etc.
+- Zone-to-zone travel cost/time matrices
+- Determine approximate link flows & identify heavily congested links
+
+**Secondary Purpose**
+
+- Determine routes between each O-D pair
+- Analyze O-D pairs that use route/link
+- Reasonable indication of turning movement at intersections
+
+## Trip Assignment - Basic Inputs 
+- Trip matrix expressing estimated demands: peak hour, 24-hour, etc.
+  - **Person-trips** need to be converted into **vehicle-trips** & vehicles may need to be converted into passenger car units (**PCUs**)
+- Network as links & their properties, including speed-flow curves
+- Principles or route selection rules that are relevant to problem under investigation -> **choosing best route is subjective**
+
+## Trip Assignment - Route Choice Issues {.smaller}
+- Differences in individual perceptions of what constitutes the best route: minimizing time, minimizing fuel consumption, or a combination of both?
+ 
+  **Solution:** Multiple user classes & generalized costs
+
+- Knowledge about alternatives varies -> apparently irrational route choices
+  
+  **Solution:** Stochastic specifications
+
+- Congestion effects affect shorter routes first & make generalized costs comparable to initially less attractive routes
+ 
+  **Solution:** Congested assignment & equilibrium
+
+## Trip Assignment - Basic Steps
+1. Identify set of routes (shortest paths) that might be considered attractive to drivers between each O-D pair using shortest path algorithms
+2. Assign suitable proportions of trip matrix to each route -> flows on links in network
+3. Search for **convergence**
+  - Many techniques follow an iterative pattern of successive approximations to an ideal solution – i.e., convergence criteria
+
+## Shortest Path Calculations
+- All assignment procedures depend on **efficient calculation of shortest paths** through large networks
+- Best algorithm depends on **network size** & **problem application** (e.g., different procedures often used for road vs. transit assignment)
+
+## Shortest Path - Dijkstra Algorithm {.smaller}
+- Find shortest path between nodes in a graph – e.g., road network
+- Conceived by computer scientist Edger W. Dijkstra in 1956
+- $N$ is the set of all nodes (combination of labelled & unlabeled nodes)
+- $\hat{𝑀}$ is the set of all labelled nodes
+- $M$ is the set of un-labeled nodes
+- $n_i$  is the ith node
+- $c(n_i, n_j)$ is the cost (travel time, distance, etc.) of traveling on the link from $n_i$ to $n_j$
+- $C(n_j)$ is the total cost between “initial” node & node $n_j$
+
+## Shortest Path - Dijkstra Algorithm 1 {.smaller}
+1. Assign to every node a tentative distance value: set it to **zero** for the initial node & to **infinity** for all other nodes.
+2. Set the initial node as the **current node** & mark all other nodes as **unvisited**.
+3. For the current node, consider all its **unvisited neighbors** & calculate their tentative costs.
+4. Compare the **newly calculated tentative cost** to the **current assigned cost** & **assign smaller of the two**.
+    - E.g., **if** current node A is marked with a cost of 6 & the link connecting it with a neighbor node B has cost 2, then the cost to B (through A) is 6 + 2 = 8.
+    - **If** B was previously marked with a distance > 8 then change it to 8. **Else**, keep the current value.
+
+## Shortest Path - Dijkstra Algorithm 1 {.smaller}
+5. **If** all neighbors of current node have been considered, then mark current node as visited & **remove from unvisited set**.
+6. **If** destination node has been marked visited (when planning route between two nodes) or if **smallest tentative cost** among nodes in unvisited set is infinity (when planning a complete traversal; occurs when there is no connection between initial node & remaining unvisited nodes) then stop. **Algorithm complete**.
+7. **Else** select unvisited node marked with **smallest tentative distance**, set as new current node, & **go to step 3**.
+
+## Shortest Path - Dijkstra Algorithm 2 {.smaller}
+1. Set $k = 1$. Choose a node as the **initial node**. Label this node [-,0] where the minus sign indicates there is **no predecessor node** & the zero indicates there is **zero cost** associated with reaching this node. Set M equal to {n1} where n1 is equal to the node number for the initial node.
+2. Set $k = 2$. Find an unlabeled node $n_2$ such that **$c(n_1, n_2)$** is a minimum. Assign $n_2$ the label $[n_1, c(n_1,  n_2)]$, meaning $n_1$ is the predecessor node to $n_2$. Add $n_2$ to the set of labeled nodes (i.e., $M$ now equals $\{n_1, n_2\}$)
+3. Set $k = k + 1$
+
+## Shortest Path - Dijkstra Algorithm 2 {.smaller}
+4. Find an unlabeled node $n_k$ such that $C(nk) = min {C(n_x) + min[(n_x, n_y)]}$ for $n_x \in M$ & $n_y \in M’ = C(n_1) + c(n_i, n_k)$ for some $n_i \in M$, $n_k \in M’$. Assign the label $[n_i, C(n_k)]$ & add $n_k$ to $M$. 
+    - The equation above searchers over the currently labeled nodes – all nodes connected to initial node with links to unlabeled nodes. Seeks new node to connect to initial node (i.e., add to labeled set), such that path to new node has **lowest travel cost** from initial node.
+5. **If** all nodes labeled. **Stop. Else, go to step 3.**
+
+Final product is **shortest path tree** rooted at node $n_1$
+
+## Shortest Path Example
+What is the shortest path from Node 6 to All Others?
+
+![](../images/lecture7/shortest_path_node6.png){fig-align="center"}
+
+## Shortest Path Example
+
+::: columns
+::: {.column width="50%"}
+**Step 1:** Cost Table
+
+|     Node pair    |       Cost      |
+|:----------------:|:---------------:|
+|        6,1       |     Infinity    |
+|        6,2       |     Infinity    |
+|        6,3       |     Infinity    |
+|        6,4       |     Infinity    |
+|        6,5       |     Infinity    |
+|         6        |         0       |
+
+:::
+::: {.column width="50%"}
+**Step 2:** Visitation Table
+
+|     Node    |     Visited?    |
+|:-----------:|:---------------:|
+|       1     |        No       |
+|       2     |        No       |
+|       3     |        No       |
+|       4     |        No       |
+|       5     |        No       |
+|       6     |      Current    |
+:::
+:::
+
+## Shortest Path Example {.smaller}
+
+::: columns
+::: {.column width="50%"}
+**Step 3:** Find neighbors of current node
+Node 6 neigbors: {1,4,5}
+
+**Step 4:** Update tentative costs
+
+|     Node pair    |     Cost (previous cost)    |
+|:----------------:|:---------------------------:|
+|        6,1       |        5   (infinity)       |
+|        6,4       |         3 (infinity)        |
+|        6,5       |         8 (infinity)        |
+
+Costs are less than previous, so **update table**
+
+:::
+::: {.column width="50%"}
+![](../images/lecture7/diag_node6.png){fig-align="center" width=100%}
+:::
+:::
+
+## Shortest Path Example
+![](../images/lecture7/shortest_path_tree_node_6.png){fig-align="center"}
+
+## Trip Assignment Assumptions
+1. Fixed costs (no congestion) vs. variable costs (congestion effects)
+2. Static vs. dynamic
+3. Deterministic vs. stochastic
+4. System optimization vs. user equilibrium
+
+## Fixed Cost Assumption
+- Reasonable to ignore congestion effects in certain cases:
+  - Most transit assignment
+  - Most intercity cases
+  - Rural areas
+  - Small urban areas
+  - Off-peak time periods if volumes are low
+
+## Congestion Effects {.smaller}
+![](../images/lecture7/congestion_effect.png){.absolute bottom="0" right="200" width=75%}
+
+- On most urban road networks, **congestion effects are significant** (especially during peak periods)
+- Generally, use **volume-delay curve** to predict link travel time (t) as function of link volume (v)
+- Volume-delay functions are simple approximations to true link performance
+
+## Volume-Delay Function: Supply Curve/Performance Function
+![](../images/lecture7/vdf_function.png){fig-align="center"}
+
+## Common VDFs
+- Need a continuous, differentiable function
+- Bureau of Public Roads (**BPR**) function is most common function worldwide
+- **Tangent function** another common method
+  - Converges more quickly
+  - More realistic results for oversaturated case
+
+## BPR Function {.smaller}
+$$t=(\frac{L}{S})(1+a(\frac{v}{c})^b$$
+$$t=t_0(1+a(\frac{v}{c})^b$$
+
+Where:
+
+$t$ = link travel time (min)
+
+$L$ = link length (mi)
+
+$S$ = link uncongested average speed (mi/min)
+
+$t_0$ = free-flow travel speed = L / S
+
+$v$ = link volume (veh/hr)
+
+$c$ = link capacity (veh/hr)
+
+$a$ = parameter = 1.0 if one-hr assignment or 0.15 if 24-hr assignment
+
+$b$ = parameter  = 4 for arterial roads or 6 for freeway
+
+## Tangent Function
+- Function identical for BPR values of v/c < 1.0 (**under-saturated case**)
+- For v/c > 1.0 (**oversaturated case**), use a straight line with slope = BPR slope at v/c = 1
+
+$$t = \begin{cases}
+t_0(1+a(\frac{v}{c})^b), \frac{v}{c} \leq 1 \\
+t_0((1+a-ab)+ab(\frac{v}{c})), \frac{v}{c} > 1
+\end{cases}$$
+
+For $a = 1$ & $b = 4$, gives $t=t_0(4(\frac{v}{c})-2)$
+
+## Example BPR Function
+![](../images/lecture7/bpr_function.png){fig-align="center"}
+
+## Static Vs. Dynamic Assignment
+- **Static assignment** procedures assign trips to all links on a chosen path simultaneously – i.e., time taken to travel from link to link is ignored
+- **Dynamic assignment** procedures assign trips to each link in the chosen path sequentially, taking into account the time taken to travel along each link
+- **Dynamic assignment** more realistic, but much more complex & computationally intensive
+
+## Deterministic Vs. Stochastic Assignment
+- **Deterministic assignment:** Assume that travel times are known with certainty by trip-makers & they make perfectly optimal route choices
+- **Stochastic assignment:** Travel times are not known with certainty by trip-makers &/or they are imperfect optimizers &/or include other factors in decision-making
+
+## Stochastic Assignment
+- **Stochastic assignment** used for some applications:
+  - Some transit assignment algorithms
+  - Moderately (but not heavily) congested networks
+  - Highly abstracted (i.e., aggregated) networks
+- **Discrete route choice models** (e.g., logit) exist
+  - Computationally burdensome
+  - Need to take care in defining choice et of feasible routes
+
+## Deterministic Assignment
+- Deterministic assignment used in **most urban applications**
+  - Simpler & easier to use
+  - Computationally more efficient
+  - Deterministic assumptions not bad in congested networks (i.e., where penalty choosing non-optimal route is high)
+
+## Deterministic Vs. Stochastic Assignment {.smaller}
+::: columns
+::: {.column width="50%"}
+![](../images/lecture7/deterministic_stochastic.png){fig-align="center"}
+
+:::
+::: {.column width="50%"}
+- **I:** in **fairly uncongested condition** as network is going towards saturation.
+Deterministic & stochastic assignment work in same way
+- **II:** **Congestion building up** & deterministic approach will under-estimate effect. 
+  - Stochastic assignment is better.
+- **III:** **Highly congested situation**, where small increase in volume causes larger increase in time.
+  - Penalty for wrong information would incur high delay. Assuming that users are fairly aware of situation, deterministic assignment would be more appropriate.
+
+:::
+:::
+
+## Wardrop’s Rule
+- Wardrop (1952) credited with first identifying two fundamental approaches to trip assignment
+ - **System optimization:** Assign O-D flows to paths to minimize total (average) system travel time
+ - **User equilibrium:** Assign O-D flows so no user in system can unilaterally change routes & improve his/her travel time
+
+## System Optimization
+- Assign O-D flows so they generate a set of link flows {Vl} that **minimizes total travel time in system**
+$$min \sum_l V_l f(V_l)$$
+- System optimization works for many freight applications or passenger travel in modes with dedicated ROW
+- **Does not** describe human route choice well
+
+## User Equilibrium
+- Each trip-maker chooses his/her route through network to **minimize his/her individual travel time**
+- Equilibrium is achieved when every trip-maker is using best route possible, given prevailing congestion levels
+- Equilibrium = no user can switch routes & improve his/her travel time, so no user will switch voluntarily
+
+## Trip Assignment Procedures for CIVE461
+1. **All-or-nothing:** Fixed cost, static, deterministic & non-equilibrium: 
+2. **Incremental assignment:** Variable cost, static, deterministic & non-equilibrium procedure
+3. **Deterministic user equilibrium (DUE):** Variable cost, static, deterministic, & equilibrium assignment 
+
+## All-Or-Nothing Assignment
+- If **no congestion effects**, then DUE implies there is a single best route for each trip-maker
+  - Simple
+  - Easy to understand
+  - Easy to compute
+  - Often used for transit assignment
+- Not applicable to congested road networks
+
+## All-Or-Nothing Algorithm
+```{dot}
+digraph mygraph{
+  node [shape=box];
+  "Compute link travel times" -> "Find shortest paths for all OD pairs"
+  "Find shortest paths for all OD pairs" -> "Assign all flows to minimum time paths"
+}
+```
+
+## All-Or-Nothing Assignment: Example {.smaller}
+OD trips to be assigned:
+
+A-C = 400
+
+A-D = 200
+
+B-C = 300
+
+B-D = 100
+
+1. Find shortest paths for A-D, A-C, B-C, & B-D
+2. Assign all trips to corresponding shortest paths
+
+![](../images/lecture7/aon_1.png){.absolute top="75" right="0" width=40%}
+![](../images/lecture7/aon_1.png){.absolute top="275" right="0" width=40%}
+![](../images/lecture7/aon_1.png){.absolute bottom="0" right="100" width=40%}
+
+## All-Or-Nothing Assignment: Example
+Sum all assigned trips to get complete assignment
+
+![](../images/lecture7/aon_4.png){fig-align="center"}
+
+## Incremental Assignment Methods
+- **Incorporating congestion** into user equilibrium calculations adds significant complexity to problem
+- Originally, planners used **ad hoc capacity constraint methods** to generate approximations to user equilibrium solution
+- However, these methods generally unsatisfactory
+
+## Incremental Assignment Methods
+![](../images/lecture7/incremental_assign.png){fig-align="center"}
+
+## Incremental Assignment: Example {style="font-size: 0.5em;"}
+::: columns
+::: {.column width="50%"}
+![](../images/lecture7/incremental_assign_ex_1.png){.absolute bottom="0" left="0" width=30%}
+
+
+$$t_1 = \frac{t_{01}}{1-v_1/c_1}$$
+where:
+
+$t_1$ = travel time on link 1
+
+$t_{01}$ = travel time on link 1 under zero flow condition
+
+$v_1$ = volume on link 1
+
+$c_1$ = capacity of link 1
+
+| Link         | 1   | 2   | 3   | 4   | 5   |
+|--------------|-----|-----|-----|-----|-----|
+| **$T_0$**    | 10  | 15  | 3   | 5   | 4   |
+| **Capacity** | 300 | 500 | 150 | 200 | 200 |
+
+:::
+::: {.column width="50%"}
+
+O-D trips to assign:
+
+| From/To | 1 | 2   | 3   | 4   |
+|---------|---|-----|-----|-----|
+| **1**   | 0 | 100 | 100 | 100 |
+| **2**   | 0 | 0   | 50  | 50  |
+| **3**   | 0 | 0   | 0   | 100 |
+| **4**   | 0 | 0   | 0   | 0   |
+
+Random assignment order:
+
+|          | To    |
+|----------|----|---|
+| O-D Pair | 1  | 2 |
+| (1,2)    | 1  | 3 |
+| (1,3)    | 6  | 6 |
+| (1,4)    | 2  | 4 |
+| (2,3)    | 3  | 2 |
+| (2,4)    | 5  | 5 |
+| (3,4     | 4  | 1 |
+
+:::
+:::
+
+## Incremental Assignment: Example {.smaller}
+Update travel times
+
+- 1st iteration: 50% assignment & given order
+- Start with FF travel time ($t_0$) & update after each assignment pair
+- Use updated times for next shortest path calculation
+
+::: {style="font-size: 0.3em;"}
+| **O-D pair (1,2) : V (1,2) = 50**   |     |          |     |          |          |
+|-------------------------------------|-----|----------|-----|----------|----------|
+| **Link**                            | 1   | 2        | 3   | 4        | 5        |
+| **V**                               | 50  | 0        | 0   | 0        | 0        |
+| **t**                               | 12  | 15       | 3   | 5        | 4        |
+|                                     |     |          |     |          |          |
+|                                     |     |          |     |          |          |
+| **O-D pair   (1,4) : V (1,4) = 50** |     |          |     |          |          |
+| **Link**                            | 1   | 2        | 3   | 4        | 5        |
+| **V**                               | 100 | 0        | 0   | 50       | 0        |
+| **t**                               | 15  | 15       | 3   | 6.666667 | 4        |
+|                                     |     |          |     |          |          |
+|                                     |     |          |     |          |          |
+| **O-D pair   (2,3) : V (2,3) = 25** |     |          |     |          |          |
+| **Link**                            | 1   | 2        | 3   | 4        | 5        |
+| **V**                               | 100 | 0        | 25  | 50       | 0        |
+| **t**                               | 15  | 15       | 3.6 | 6.666667 | 4        |
+|                                     |     |          |     |          |          |
+|                                     |     |          |     |          |          |
+| **O-D pair   (3,4) : V (3,4) = 50** |     |          |     |          |          |
+| **Link**                            | 1   | 2        | 3   | 4        | 5        |
+| **V**                               | 100 | 0        | 25  | 50       | 50       |
+| **t**                               | 15  | 15       | 3.6 | 6.666667 | 5.333333 |
+|                                     |     |          |     |          |          |
+|                                     |     |          |     |          |          |
+| **O-D pair   (2,4) : V (2,4) = 25** |     |          |     |          |          |
+| **Link**                            | 1   | 2        | 3   | 4        | 5        |
+| **V**                               | 100 | 0        | 25  | 75       | 50       |
+| **t**                               | 15  | 15       | 3.6 | 8        | 5.333333 |
+|                                     |     |          |     |          |          |
+|                                     |     |          |     |          |          |
+| **O-D pair   (1,3) : V (1,3) = 50** |     |          |     |          |          |
+| **Link**                            | 1   | 2        | 3   | 4        | 5        |
+| **V**                               | 100 | 50       | 25  | 75       | 50       |
+| **t**                               | 15  | 16.66667 | 3.6 | 8        | 5.333333 |
+:::
+
+## Incremental Assignment: Example {.smaller}
+Update travel times
+
+- 2nd iteration: 50% assignment & given order
+
+::: {style="font-size: 0.3em;"}
+| **O-D pair (3,4) : V (3,4) = 50**                       |     |          |     |     |     |
+|---------------------------------------------------------|-----|----------|-----|-----|-----|
+| **Link**                                                | 1   | 2        | 3   | 4   | 5   |
+| **V**                                                   | 100 | 50       | 25  | 75  | 100 |
+| **t**                                                   | 15  | 16.66667 | 3.6 | 8   | 8   |
+|                                                         |     |          |     |     |     |
+|                                                         |     |          |     |     |     |
+| **O-D pair   (2,3) : V (2,3) = 25**                     |     |          |     |     |     |
+| **Link**                                                | 1   | 2        | 3   | 4   | 5   |
+| **V**                                                   | 100 | 50       | 50  | 75  | 100 |
+| **t**                                                   | 15  | 16.66667 | 4.5 | 8   | 8   |
+|                                                         |     |          |     |     |     |
+|                                                         |     |          |     |     |     |
+| **O-D pair   (1,2) : V (1,2) = 50**                     |     |          |     |     |     |
+| **Link**                                                | 1   | 2        | 3   | 4   | 5   |
+| **V**                                                   | 150 | 50       | 50  | 75  | 100 |
+| **t**                                                   | 20  | 16.66667 | 4.5 | 8   | 8   |
+|                                                         |     |          |     |     |     |
+|                                                         |     |          |     |     |     |
+| **O-D pair   (1,4) : V (1,4) = 50**                     |     |          |     |     |     |
+| **Link**                                                | 1   | 2        | 3   | 4   | 5   |
+| **V**                                                   | 150 | 100      | 50  | 75  | 150 |
+| **t**                                                   | 20  | 18.75    | 4.5 | 8   | 16  |
+|                                                         |     |          |     |     |     |
+|                                                         |     |          |     |     |     |
+| **O-D pair   (2,4) : V (2,4) = 25**                     |     |          |     |     |     |
+| **Link**                                                | 1   | 2        | 3   | 4   | 5   |
+| **V**                                                   | 150 | 100      | 50  | 100 | 150 |
+| **t**                                                   | 20  | 18.75    | 4.5 | 10  | 16  |
+|                                                         |     |          |     |     |     |
+| **Final   Flow and Corresponding Travel Time on Links** |     |          |     |     |     |
+| **O-D pair   (1,3) : V (1,3) = 50**                     |     |          |     |     |     |
+| **Link**                                                | 1   | 2        | 3   | 4   | 5   |
+| **V**                                                   | 150 | 150      | 50  | 100 | 150 |
+| **t**                                                   | 20  | 21.42857 | 4.5 | 10  | 16  |
+:::
+
+## Capacity Constrained Deterministic User Equilibrium (DUE)
+- Note the two routes between same O-D pair will be used by trip-makers iff the travel times on the two routes are the same.
+- Consider a single O-D pair (origin A & destination B) with two links (routes) connection them (1 & 2)
+
+![](../images/lecture7/due.png){fig-align="center"}
+
+## DUE Assignment: Example
+Must determine link flows {V1, V2} such that
+$$𝑉_1+𝑉_2=𝑉_𝐴𝐵$$
+$$𝑡_1=𝑡_2=𝑡^∗$$
+Where $t^*$ is the equilibrium travel time between A & B
+
+## Volume-Delay Functions (VDF) for Links 1 & 2
+![](../images/lecture7/vdf_links.png){fig-align="center"}
+
+## Equilibrium Solution
+$$𝐹_1=\int_0^{𝑣_1^∗} f_1(v_1) dv_1
+$$
+$$𝐹_2=\int_0^{v_2^*}f_2(v_2) dv_2
+$$
+
+- At equilibrium, minimum $F = F1 + F2$
+- At any non-equilibrium point, **total area under both curves is not minimum**: there is extra shaded area
+
+## Equilibrium Solution
+- **Special case:** curves may not intersect
+- Here, optimum is area under $f_2(v_2)$
+![](../images/lecture7/eqn_soln_3.png){.absolute bottom="0" right="200" width=50%}
+
+## Frank-Wolfe Algorithm {.smaller}
+- Equilibrium link volumes are such that the sum of the areas under the volume-delay curves equals the minimum value achievable:
+- F(V) given by
+$$min \sum_l \int_0^{v_l}f_l(v) d(v)  \text{   (𝐸𝑄1)}$$
+- Above equation generalizes to any number of O-D pairs & any number of links per path
+
+![](../images/lecture7/frank_wolfe.png){.absolute bottom="0" right="250" width=45%}
+
+## Frank-Wolfe Algorithm
+![](../images/lecture7/frank_wolfe_fig_1.png){fig-align="center"}
+
+## Frank-Wolfe Algorithm
+![](../images/lecture7/frank_wolfe_fig_2.png){fig-align="center"}
 
 ## Three Route Example
 
@@ -235,3 +738,15 @@ out = out.style.set_properties(**{
 
 out
 ```
+
+## Transit Assignment
+- Transit assignment not usually a function of congestion
+- Procedures typically used:
+  - All-Or-Nothing
+  - Stochastic (multipath)
+- Must account for:
+  - Walk access/egress times
+  - Waiting times as f(headway)
+  - Transfers	
+    - Feasible transfer points
+    - Transfer times
