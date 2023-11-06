@@ -428,6 +428,1282 @@
 </div>
 </div>
 </section>
+<section id="trip-assignment-problem" class="slide level2 smaller">
+<h2>Trip Assignment Problem</h2>
+<p><img data-src="../images/lecture7/trip_problem.png" class="absolute" style="bottom: 0px; right: 200px; width: 60%; "></p>
+<ul>
+<li>Find the path (or paths) through the network <em>mostly likely</em> taken from node i to node j</li>
+<li>Transport network is represented by links L
+<ul>
+<li>Each link has a start &amp; end node, as well as a cost C</li>
+<li>Links can also be mode-specific (e.g., bus-only, bus &amp; vehicles)</li>
+</ul></li>
+<li>Link cost is a function of attributes: distance, free-flow speed, capacity, &amp; speed-flow relationship (volume-delay function)</li>
+</ul>
+</section>
+<section id="trip-assignment" class="slide level2 smaller">
+<h2>Trip Assignment</h2>
+<p><strong>Primary Purpose</strong> - Aggregate network performance measures</p>
+<ul>
+<li>Highway flows, transit revenues, etc.</li>
+<li>Zone-to-zone travel cost/time matrices</li>
+<li>Determine approximate link flows &amp; identify heavily congested links</li>
+</ul>
+<p><strong>Secondary Purpose</strong></p>
+<ul>
+<li>Determine routes between each O-D pair</li>
+<li>Analyze O-D pairs that use route/link</li>
+<li>Reasonable indication of turning movement at intersections</li>
+</ul>
+</section>
+<section id="trip-assignment---basic-inputs" class="slide level2">
+<h2>Trip Assignment - Basic Inputs</h2>
+<ul>
+<li>Trip matrix expressing estimated demands: peak hour, 24-hour, etc.
+<ul>
+<li><strong>Person-trips</strong> need to be converted into <strong>vehicle-trips</strong> &amp; vehicles may need to be converted into passenger car units (<strong>PCUs</strong>)</li>
+</ul></li>
+<li>Network as links &amp; their properties, including speed-flow curves</li>
+<li>Principles or route selection rules that are relevant to problem under investigation -&gt; <strong>choosing best route is subjective</strong></li>
+</ul>
+</section>
+<section id="trip-assignment---route-choice-issues" class="slide level2 smaller">
+<h2>Trip Assignment - Route Choice Issues</h2>
+<ul>
+<li><p>Differences in individual perceptions of what constitutes the best route: minimizing time, minimizing fuel consumption, or a combination of both?</p>
+<p><strong>Solution:</strong> Multiple user classes &amp; generalized costs</p></li>
+<li><p>Knowledge about alternatives varies -&gt; apparently irrational route choices</p>
+<p><strong>Solution:</strong> Stochastic specifications</p></li>
+<li><p>Congestion effects affect shorter routes first &amp; make generalized costs comparable to initially less attractive routes</p>
+<p><strong>Solution:</strong> Congested assignment &amp; equilibrium</p></li>
+</ul>
+</section>
+<section id="trip-assignment---basic-steps" class="slide level2">
+<h2>Trip Assignment - Basic Steps</h2>
+<ol type="1">
+<li>Identify set of routes (shortest paths) that might be considered attractive to drivers between each O-D pair using shortest path algorithms</li>
+<li>Assign suitable proportions of trip matrix to each route -&gt; flows on links in network</li>
+<li>Search for <strong>convergence</strong></li>
+</ol>
+<ul>
+<li>Many techniques follow an iterative pattern of successive approximations to an ideal solution – i.e., convergence criteria</li>
+</ul>
+</section>
+<section id="shortest-path-calculations" class="slide level2">
+<h2>Shortest Path Calculations</h2>
+<ul>
+<li>All assignment procedures depend on <strong>efficient calculation of shortest paths</strong> through large networks</li>
+<li>Best algorithm depends on <strong>network size</strong> &amp; <strong>problem application</strong> (e.g., different procedures often used for road vs.&nbsp;transit assignment)</li>
+</ul>
+</section>
+<section id="shortest-path---dijkstra-algorithm" class="slide level2 smaller">
+<h2>Shortest Path - Dijkstra Algorithm</h2>
+<ul>
+<li>Find shortest path between nodes in a graph – e.g., road network</li>
+<li>Conceived by computer scientist Edger W. Dijkstra in 1956</li>
+<li><span class="math inline">\(N\)</span> is the set of all nodes (combination of labelled &amp; unlabeled nodes)</li>
+<li><span class="math inline">\(\hat{𝑀}\)</span> is the set of all labelled nodes</li>
+<li><span class="math inline">\(M\)</span> is the set of un-labeled nodes</li>
+<li><span class="math inline">\(n_i\)</span> is the ith node</li>
+<li><span class="math inline">\(c(n_i, n_j)\)</span> is the cost (travel time, distance, etc.) of traveling on the link from <span class="math inline">\(n_i\)</span> to <span class="math inline">\(n_j\)</span></li>
+<li><span class="math inline">\(C(n_j)\)</span> is the total cost between “initial” node &amp; node <span class="math inline">\(n_j\)</span></li>
+</ul>
+</section>
+<section id="shortest-path---dijkstra-algorithm-1" class="slide level2 smaller">
+<h2>Shortest Path - Dijkstra Algorithm 1</h2>
+<ol type="1">
+<li>Assign to every node a tentative distance value: set it to <strong>zero</strong> for the initial node &amp; to <strong>infinity</strong> for all other nodes.</li>
+<li>Set the initial node as the <strong>current node</strong> &amp; mark all other nodes as <strong>unvisited</strong>.</li>
+<li>For the current node, consider all its <strong>unvisited neighbors</strong> &amp; calculate their tentative costs.</li>
+<li>Compare the <strong>newly calculated tentative cost</strong> to the <strong>current assigned cost</strong> &amp; <strong>assign smaller of the two</strong>.
+<ul>
+<li>E.g., <strong>if</strong> current node A is marked with a cost of 6 &amp; the link connecting it with a neighbor node B has cost 2, then the cost to B (through A) is 6 + 2 = 8.</li>
+<li><strong>If</strong> B was previously marked with a distance &gt; 8 then change it to 8. <strong>Else</strong>, keep the current value.</li>
+</ul></li>
+</ol>
+</section>
+<section id="shortest-path---dijkstra-algorithm-1-1" class="slide level2 smaller">
+<h2>Shortest Path - Dijkstra Algorithm 1</h2>
+<ol start="5" type="1">
+<li><strong>If</strong> all neighbors of current node have been considered, then mark current node as visited &amp; <strong>remove from unvisited set</strong>.</li>
+<li><strong>If</strong> destination node has been marked visited (when planning route between two nodes) or if <strong>smallest tentative cost</strong> among nodes in unvisited set is infinity (when planning a complete traversal; occurs when there is no connection between initial node &amp; remaining unvisited nodes) then stop. <strong>Algorithm complete</strong>.</li>
+<li><strong>Else</strong> select unvisited node marked with <strong>smallest tentative distance</strong>, set as new current node, &amp; <strong>go to step 3</strong>.</li>
+</ol>
+</section>
+<section id="shortest-path---dijkstra-algorithm-2" class="slide level2 smaller">
+<h2>Shortest Path - Dijkstra Algorithm 2</h2>
+<ol type="1">
+<li>Set <span class="math inline">\(k = 1\)</span>. Choose a node as the <strong>initial node</strong>. Label this node [-,0] where the minus sign indicates there is <strong>no predecessor node</strong> &amp; the zero indicates there is <strong>zero cost</strong> associated with reaching this node. Set M equal to {n1} where n1 is equal to the node number for the initial node.</li>
+<li>Set <span class="math inline">\(k = 2\)</span>. Find an unlabeled node <span class="math inline">\(n_2\)</span> such that <strong><span class="math inline">\(c(n_1, n_2)\)</span></strong> is a minimum. Assign <span class="math inline">\(n_2\)</span> the label <span class="math inline">\([n_1, c(n_1, n_2)]\)</span>, meaning <span class="math inline">\(n_1\)</span> is the predecessor node to <span class="math inline">\(n_2\)</span>. Add <span class="math inline">\(n_2\)</span> to the set of labeled nodes (i.e., <span class="math inline">\(M\)</span> now equals <span class="math inline">\(\{n_1, n_2\}\)</span>)</li>
+<li>Set <span class="math inline">\(k = k + 1\)</span></li>
+</ol>
+</section>
+<section id="shortest-path---dijkstra-algorithm-2-1" class="slide level2 smaller">
+<h2>Shortest Path - Dijkstra Algorithm 2</h2>
+<ol start="4" type="1">
+<li>Find an unlabeled node <span class="math inline">\(n_k\)</span> such that <span class="math inline">\(C(nk) = min {C(n_x) + min[(n_x, n_y)]}\)</span> for <span class="math inline">\(n_x \in M\)</span> &amp; <span class="math inline">\(n_y \in M’ = C(n_1) + c(n_i, n_k)\)</span> for some <span class="math inline">\(n_i \in M\)</span>, <span class="math inline">\(n_k \in M’\)</span>. Assign the label <span class="math inline">\([n_i, C(n_k)]\)</span> &amp; add <span class="math inline">\(n_k\)</span> to <span class="math inline">\(M\)</span>.
+<ul>
+<li>The equation above searchers over the currently labeled nodes – all nodes connected to initial node with links to unlabeled nodes. Seeks new node to connect to initial node (i.e., add to labeled set), such that path to new node has <strong>lowest travel cost</strong> from initial node.</li>
+</ul></li>
+<li><strong>If</strong> all nodes labeled. <strong>Stop. Else, go to step 3.</strong></li>
+</ol>
+<p>Final product is <strong>shortest path tree</strong> rooted at node <span class="math inline">\(n_1\)</span></p>
+</section>
+<section id="shortest-path-example" class="slide level2">
+<h2>Shortest Path Example</h2>
+<p>What is the shortest path from Node 6 to All Others?</p>
+
+<img data-src="../images/lecture7/shortest_path_node6.png" class="r-stretch quarto-figure-center"></section>
+<section id="shortest-path-example-1" class="slide level2">
+<h2>Shortest Path Example</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Step 1:</strong> Cost Table</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Node pair</th>
+<th style="text-align: center;">Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">6,1</td>
+<td style="text-align: center;">Infinity</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">6,2</td>
+<td style="text-align: center;">Infinity</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">6,3</td>
+<td style="text-align: center;">Infinity</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">6,4</td>
+<td style="text-align: center;">Infinity</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">6,5</td>
+<td style="text-align: center;">Infinity</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">0</td>
+</tr>
+</tbody>
+</table>
+</div><div class="column" style="width:50%;">
+<p><strong>Step 2:</strong> Visitation Table</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Node</th>
+<th style="text-align: center;">Visited?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">No</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">No</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">No</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">No</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">No</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">Current</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="shortest-path-example-2" class="slide level2 smaller">
+<h2>Shortest Path Example</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Step 3:</strong> Find neighbors of current node Node 6 neigbors: {1,4,5}</p>
+<p><strong>Step 4:</strong> Update tentative costs</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Node pair</th>
+<th style="text-align: center;">Cost (previous cost)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">6,1</td>
+<td style="text-align: center;">5 (infinity)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">6,4</td>
+<td style="text-align: center;">3 (infinity)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">6,5</td>
+<td style="text-align: center;">8 (infinity)</td>
+</tr>
+</tbody>
+</table>
+<p>Costs are less than previous, so <strong>update table</strong></p>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../images/lecture7/diag_node6.png" style="width:100.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="shortest-path-example-3" class="slide level2">
+<h2>Shortest Path Example</h2>
+
+<img data-src="../images/lecture7/shortest_path_tree_node_6.png" class="r-stretch quarto-figure-center"></section>
+<section id="trip-assignment-assumptions" class="slide level2">
+<h2>Trip Assignment Assumptions</h2>
+<ol type="1">
+<li>Fixed costs (no congestion) vs.&nbsp;variable costs (congestion effects)</li>
+<li>Static vs.&nbsp;dynamic</li>
+<li>Deterministic vs.&nbsp;stochastic</li>
+<li>System optimization vs.&nbsp;user equilibrium</li>
+</ol>
+</section>
+<section id="fixed-cost-assumption" class="slide level2">
+<h2>Fixed Cost Assumption</h2>
+<ul>
+<li>Reasonable to ignore congestion effects in certain cases:
+<ul>
+<li>Most transit assignment</li>
+<li>Most intercity cases</li>
+<li>Rural areas</li>
+<li>Small urban areas</li>
+<li>Off-peak time periods if volumes are low</li>
+</ul></li>
+</ul>
+</section>
+<section id="congestion-effects" class="slide level2 smaller">
+<h2>Congestion Effects</h2>
+<p><img data-src="../images/lecture7/congestion_effect.png" class="absolute" style="bottom: 0px; right: 200px; width: 75%; "></p>
+<ul>
+<li>On most urban road networks, <strong>congestion effects are significant</strong> (especially during peak periods)</li>
+<li>Generally, use <strong>volume-delay curve</strong> to predict link travel time (t) as function of link volume (v)</li>
+<li>Volume-delay functions are simple approximations to true link performance</li>
+</ul>
+</section>
+<section id="volume-delay-function-supply-curveperformance-function" class="slide level2">
+<h2>Volume-Delay Function: Supply Curve/Performance Function</h2>
+
+<img data-src="../images/lecture7/vdf_function.png" class="r-stretch quarto-figure-center"></section>
+<section id="common-vdfs" class="slide level2">
+<h2>Common VDFs</h2>
+<ul>
+<li>Need a continuous, differentiable function</li>
+<li>Bureau of Public Roads (<strong>BPR</strong>) function is most common function worldwide</li>
+<li><strong>Tangent function</strong> another common method
+<ul>
+<li>Converges more quickly</li>
+<li>More realistic results for oversaturated case</li>
+</ul></li>
+</ul>
+</section>
+<section id="bpr-function" class="slide level2 smaller">
+<h2>BPR Function</h2>
+<p><span class="math display">\[t=(\frac{L}{S})(1+a(\frac{v}{c})^b\]</span> <span class="math display">\[t=t_0(1+a(\frac{v}{c})^b\]</span></p>
+<p>Where:</p>
+<p><span class="math inline">\(t\)</span> = link travel time (min)</p>
+<p><span class="math inline">\(L\)</span> = link length (mi)</p>
+<p><span class="math inline">\(S\)</span> = link uncongested average speed (mi/min)</p>
+<p><span class="math inline">\(t_0\)</span> = free-flow travel speed = L / S</p>
+<p><span class="math inline">\(v\)</span> = link volume (veh/hr)</p>
+<p><span class="math inline">\(c\)</span> = link capacity (veh/hr)</p>
+<p><span class="math inline">\(a\)</span> = parameter = 1.0 if one-hr assignment or 0.15 if 24-hr assignment</p>
+<p><span class="math inline">\(b\)</span> = parameter = 4 for arterial roads or 6 for freeway</p>
+</section>
+<section id="tangent-function" class="slide level2">
+<h2>Tangent Function</h2>
+<ul>
+<li>Function identical for BPR values of v/c &lt; 1.0 (<strong>under-saturated case</strong>)</li>
+<li>For v/c &gt; 1.0 (<strong>oversaturated case</strong>), use a straight line with slope = BPR slope at v/c = 1</li>
+</ul>
+<p><span class="math display">\[t = \begin{cases}
+t_0(1+a(\frac{v}{c})^b), \frac{v}{c} \leq 1 \\
+t_0((1+a-ab)+ab(\frac{v}{c})), \frac{v}{c} &gt; 1
+\end{cases}\]</span></p>
+<p>For <span class="math inline">\(a = 1\)</span> &amp; <span class="math inline">\(b = 4\)</span>, gives <span class="math inline">\(t=t_0(4(\frac{v}{c})-2)\)</span></p>
+</section>
+<section id="example-bpr-function" class="slide level2">
+<h2>Example BPR Function</h2>
+
+<img data-src="../images/lecture7/bpr_function.png" class="r-stretch quarto-figure-center"></section>
+<section id="static-vs.-dynamic-assignment" class="slide level2">
+<h2>Static Vs. Dynamic Assignment</h2>
+<ul>
+<li><strong>Static assignment</strong> procedures assign trips to all links on a chosen path simultaneously – i.e., time taken to travel from link to link is ignored</li>
+<li><strong>Dynamic assignment</strong> procedures assign trips to each link in the chosen path sequentially, taking into account the time taken to travel along each link</li>
+<li><strong>Dynamic assignment</strong> more realistic, but much more complex &amp; computationally intensive</li>
+</ul>
+</section>
+<section id="deterministic-vs.-stochastic-assignment" class="slide level2">
+<h2>Deterministic Vs. Stochastic Assignment</h2>
+<ul>
+<li><strong>Deterministic assignment:</strong> Assume that travel times are known with certainty by trip-makers &amp; they make perfectly optimal route choices</li>
+<li><strong>Stochastic assignment:</strong> Travel times are not known with certainty by trip-makers &amp;/or they are imperfect optimizers &amp;/or include other factors in decision-making</li>
+</ul>
+</section>
+<section id="stochastic-assignment" class="slide level2">
+<h2>Stochastic Assignment</h2>
+<ul>
+<li><strong>Stochastic assignment</strong> used for some applications:
+<ul>
+<li>Some transit assignment algorithms</li>
+<li>Moderately (but not heavily) congested networks</li>
+<li>Highly abstracted (i.e., aggregated) networks</li>
+</ul></li>
+<li><strong>Discrete route choice models</strong> (e.g., logit) exist
+<ul>
+<li>Computationally burdensome</li>
+<li>Need to take care in defining choice et of feasible routes</li>
+</ul></li>
+</ul>
+</section>
+<section id="deterministic-assignment" class="slide level2">
+<h2>Deterministic Assignment</h2>
+<ul>
+<li>Deterministic assignment used in <strong>most urban applications</strong>
+<ul>
+<li>Simpler &amp; easier to use</li>
+<li>Computationally more efficient</li>
+<li>Deterministic assumptions not bad in congested networks (i.e., where penalty choosing non-optimal route is high)</li>
+</ul></li>
+</ul>
+</section>
+<section id="deterministic-vs.-stochastic-assignment-1" class="slide level2 smaller">
+<h2>Deterministic Vs. Stochastic Assignment</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../images/lecture7/deterministic_stochastic.png"></p>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<ul>
+<li><strong>I:</strong> in <strong>fairly uncongested condition</strong> as network is going towards saturation. Deterministic &amp; stochastic assignment work in same way</li>
+<li><strong>II:</strong> <strong>Congestion building up</strong> &amp; deterministic approach will under-estimate effect.
+<ul>
+<li>Stochastic assignment is better.</li>
+</ul></li>
+<li><strong>III:</strong> <strong>Highly congested situation</strong>, where small increase in volume causes larger increase in time.
+<ul>
+<li>Penalty for wrong information would incur high delay. Assuming that users are fairly aware of situation, deterministic assignment would be more appropriate.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="wardrops-rule" class="slide level2">
+<h2>Wardrop’s Rule</h2>
+<ul>
+<li>Wardrop (1952) credited with first identifying two fundamental approaches to trip assignment</li>
+<li><strong>System optimization:</strong> Assign O-D flows to paths to minimize total (average) system travel time</li>
+<li><strong>User equilibrium:</strong> Assign O-D flows so no user in system can unilaterally change routes &amp; improve his/her travel time</li>
+</ul>
+</section>
+<section id="system-optimization" class="slide level2">
+<h2>System Optimization</h2>
+<ul>
+<li>Assign O-D flows so they generate a set of link flows {Vl} that <strong>minimizes total travel time in system</strong> <span class="math display">\[min \sum_l V_l f(V_l)\]</span></li>
+<li>System optimization works for many freight applications or passenger travel in modes with dedicated ROW</li>
+<li><strong>Does not</strong> describe human route choice well</li>
+</ul>
+</section>
+<section id="user-equilibrium" class="slide level2">
+<h2>User Equilibrium</h2>
+<ul>
+<li>Each trip-maker chooses his/her route through network to <strong>minimize his/her individual travel time</strong></li>
+<li>Equilibrium is achieved when every trip-maker is using best route possible, given prevailing congestion levels</li>
+<li>Equilibrium = no user can switch routes &amp; improve his/her travel time, so no user will switch voluntarily</li>
+</ul>
+</section>
+<section id="trip-assignment-procedures-for-cive461" class="slide level2">
+<h2>Trip Assignment Procedures for CIVE461</h2>
+<ol type="1">
+<li><strong>All-or-nothing:</strong> Fixed cost, static, deterministic &amp; non-equilibrium:</li>
+<li><strong>Incremental assignment:</strong> Variable cost, static, deterministic &amp; non-equilibrium procedure</li>
+<li><strong>Deterministic user equilibrium (DUE):</strong> Variable cost, static, deterministic, &amp; equilibrium assignment</li>
+</ol>
+</section>
+<section id="all-or-nothing-assignment" class="slide level2">
+<h2>All-Or-Nothing Assignment</h2>
+<ul>
+<li>If <strong>no congestion effects</strong>, then DUE implies there is a single best route for each trip-maker
+<ul>
+<li>Simple</li>
+<li>Easy to understand</li>
+<li>Easy to compute</li>
+<li>Often used for transit assignment</li>
+</ul></li>
+<li>Not applicable to congested road networks</li>
+</ul>
+</section>
+<section id="all-or-nothing-algorithm" class="slide level2">
+<h2>All-Or-Nothing Algorithm</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<div>
+<svg width="960" height="480" viewbox="0.00 0.00 248.77 188.00" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none; display: block; margin: auto auto auto auto">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
+<title>
+mygraph
+</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-184 244.77,-184 244.77,4 -4,4"></polygon> <!-- Compute link travel times --> <g id="node1" class="node">
+<title>
+Compute link travel times
+</title>
+<polygon fill="none" stroke="black" points="201.2,-180 39.58,-180 39.58,-144 201.2,-144 201.2,-180"></polygon> <text text-anchor="middle" x="120.39" y="-157.8" font-family="Times,serif" font-size="14.00">Compute link travel times</text> </g> <!-- Find shortest paths for all OD pairs --> <g id="node2" class="node">
+<title>
+Find shortest paths for all OD pairs
+</title>
+<polygon fill="none" stroke="black" points="226.92,-108 13.85,-108 13.85,-72 226.92,-72 226.92,-108"></polygon> <text text-anchor="middle" x="120.39" y="-85.8" font-family="Times,serif" font-size="14.00">Find shortest paths for all OD pairs</text> </g> <!-- Compute link travel times&#45;&gt;Find shortest paths for all OD pairs --> <g id="edge1" class="edge">
+<title>
+Compute link travel times-&gt;Find shortest paths for all OD pairs
+</title>
+<path fill="none" stroke="black" d="M120.39,-143.7C120.39,-135.98 120.39,-126.71 120.39,-118.11"></path> <polygon fill="black" stroke="black" points="123.89,-118.1 120.39,-108.1 116.89,-118.1 123.89,-118.1"></polygon> </g> <!-- Assign all flows to minimum time paths --> <g id="node3" class="node">
+<title>
+Assign all flows to minimum time paths
+</title>
+<polygon fill="none" stroke="black" points="240.66,-36 0.11,-36 0.11,0 240.66,0 240.66,-36"></polygon> <text text-anchor="middle" x="120.39" y="-13.8" font-family="Times,serif" font-size="14.00">Assign all flows to minimum time paths</text> </g> <!-- Find shortest paths for all OD pairs&#45;&gt;Assign all flows to minimum time paths --> <g id="edge2" class="edge">
+<title>
+Find shortest paths for all OD pairs-&gt;Assign all flows to minimum time paths
+</title>
+<path fill="none" stroke="black" d="M120.39,-71.7C120.39,-63.98 120.39,-54.71 120.39,-46.11"></path> <polygon fill="black" stroke="black" points="123.89,-46.1 120.39,-36.1 116.89,-46.1 123.89,-46.1"></polygon> </g> </g>
+</svg>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="all-or-nothing-assignment-example" class="slide level2 smaller">
+<h2>All-Or-Nothing Assignment: Example</h2>
+<p>OD trips to be assigned:</p>
+<p>A-C = 400</p>
+<p>A-D = 200</p>
+<p>B-C = 300</p>
+<p>B-D = 100</p>
+<ol type="1">
+<li>Find shortest paths for A-D, A-C, B-C, &amp; B-D</li>
+<li>Assign all trips to corresponding shortest paths</li>
+</ol>
+<p><img data-src="../images/lecture7/aon_1.png" class="absolute" style="top: 75px; right: 0px; width: 40%; "> <img data-src="../images/lecture7/aon_1.png" class="absolute" style="top: 275px; right: 0px; width: 40%; "> <img data-src="../images/lecture7/aon_1.png" class="absolute" style="bottom: 0px; right: 100px; width: 40%; "></p>
+</section>
+<section id="all-or-nothing-assignment-example-1" class="slide level2">
+<h2>All-Or-Nothing Assignment: Example</h2>
+<p>Sum all assigned trips to get complete assignment</p>
+
+<img data-src="../images/lecture7/aon_4.png" class="r-stretch quarto-figure-center"></section>
+<section id="incremental-assignment-methods" class="slide level2">
+<h2>Incremental Assignment Methods</h2>
+<ul>
+<li><strong>Incorporating congestion</strong> into user equilibrium calculations adds significant complexity to problem</li>
+<li>Originally, planners used <strong>ad hoc capacity constraint methods</strong> to generate approximations to user equilibrium solution</li>
+<li>However, these methods generally unsatisfactory</li>
+</ul>
+</section>
+<section id="incremental-assignment-methods-1" class="slide level2">
+<h2>Incremental Assignment Methods</h2>
+
+<img data-src="../images/lecture7/incremental_assign.png" class="r-stretch quarto-figure-center"></section>
+<section id="incremental-assignment-example" class="slide level2" style="font-size: 0.5em;">
+<h2>Incremental Assignment: Example</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="../images/lecture7/incremental_assign_ex_1.png" class="absolute" style="left: 0px; bottom: 0px; width: 30%; "></p>
+<p><span class="math display">\[t_1 = \frac{t_{01}}{1-v_1/c_1}\]</span> where:</p>
+<p><span class="math inline">\(t_1\)</span> = travel time on link 1</p>
+<p><span class="math inline">\(t_{01}\)</span> = travel time on link 1 under zero flow condition</p>
+<p><span class="math inline">\(v_1\)</span> = volume on link 1</p>
+<p><span class="math inline">\(c_1\)</span> = capacity of link 1</p>
+<table>
+<thead>
+<tr class="header">
+<th>Link</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong><span class="math inline">\(T_0\)</span></strong></td>
+<td>10</td>
+<td>15</td>
+<td>3</td>
+<td>5</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td><strong>Capacity</strong></td>
+<td>300</td>
+<td>500</td>
+<td>150</td>
+<td>200</td>
+<td>200</td>
+</tr>
+</tbody>
+</table>
+</div><div class="column" style="width:50%;">
+<p>O-D trips to assign:</p>
+<table>
+<thead>
+<tr class="header">
+<th>From/To</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1</strong></td>
+<td>0</td>
+<td>100</td>
+<td>100</td>
+<td>100</td>
+</tr>
+<tr class="even">
+<td><strong>2</strong></td>
+<td>0</td>
+<td>0</td>
+<td>50</td>
+<td>50</td>
+</tr>
+<tr class="odd">
+<td><strong>3</strong></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100</td>
+</tr>
+<tr class="even">
+<td><strong>4</strong></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>Random assignment order:</p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th>To</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>O-D Pair</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>(1,2)</td>
+<td>1</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>(1,3)</td>
+<td>6</td>
+<td>6</td>
+</tr>
+<tr class="even">
+<td>(1,4)</td>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<td>(2,3)</td>
+<td>3</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>(2,4)</td>
+<td>5</td>
+<td>5</td>
+</tr>
+<tr class="odd">
+<td>(3,4</td>
+<td>4</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="incremental-assignment-example-1" class="slide level2 smaller">
+<h2>Incremental Assignment: Example</h2>
+<p>Update travel times</p>
+<ul>
+<li>1st iteration: 50% assignment &amp; given order</li>
+<li>Start with FF travel time (<span class="math inline">\(t_0\)</span>) &amp; update after each assignment pair</li>
+<li>Use updated times for next shortest path calculation</li>
+</ul>
+<div style="font-size: 0.3em;">
+<table>
+<colgroup>
+<col style="width: 48%">
+<col style="width: 6%">
+<col style="width: 12%">
+<col style="width: 6%">
+<col style="width: 12%">
+<col style="width: 12%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>O-D pair (1,2) : V (1,2) = 50</strong></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Link</strong></td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td><strong>V</strong></td>
+<td>50</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td><strong>t</strong></td>
+<td>12</td>
+<td>15</td>
+<td>3</td>
+<td>5</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>O-D pair (1,4) : V (1,4) = 50</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>Link</strong></td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td><strong>V</strong></td>
+<td>100</td>
+<td>0</td>
+<td>0</td>
+<td>50</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td><strong>t</strong></td>
+<td>15</td>
+<td>15</td>
+<td>3</td>
+<td>6.666667</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>O-D pair (2,3) : V (2,3) = 25</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>Link</strong></td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td><strong>V</strong></td>
+<td>100</td>
+<td>0</td>
+<td>25</td>
+<td>50</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td><strong>t</strong></td>
+<td>15</td>
+<td>15</td>
+<td>3.6</td>
+<td>6.666667</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>O-D pair (3,4) : V (3,4) = 50</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>Link</strong></td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td><strong>V</strong></td>
+<td>100</td>
+<td>0</td>
+<td>25</td>
+<td>50</td>
+<td>50</td>
+</tr>
+<tr class="odd">
+<td><strong>t</strong></td>
+<td>15</td>
+<td>15</td>
+<td>3.6</td>
+<td>6.666667</td>
+<td>5.333333</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>O-D pair (2,4) : V (2,4) = 25</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>Link</strong></td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td><strong>V</strong></td>
+<td>100</td>
+<td>0</td>
+<td>25</td>
+<td>75</td>
+<td>50</td>
+</tr>
+<tr class="odd">
+<td><strong>t</strong></td>
+<td>15</td>
+<td>15</td>
+<td>3.6</td>
+<td>8</td>
+<td>5.333333</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>O-D pair (1,3) : V (1,3) = 50</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>Link</strong></td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td><strong>V</strong></td>
+<td>100</td>
+<td>50</td>
+<td>25</td>
+<td>75</td>
+<td>50</td>
+</tr>
+<tr class="odd">
+<td><strong>t</strong></td>
+<td>15</td>
+<td>16.66667</td>
+<td>3.6</td>
+<td>8</td>
+<td>5.333333</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="incremental-assignment-example-2" class="slide level2 smaller">
+<h2>Incremental Assignment: Example</h2>
+<p>Update travel times</p>
+<ul>
+<li>2nd iteration: 50% assignment &amp; given order</li>
+</ul>
+<div style="font-size: 0.3em;">
+<table>
+<colgroup>
+<col style="width: 65%">
+<col style="width: 5%">
+<col style="width: 11%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 5%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>O-D pair (3,4) : V (3,4) = 50</strong></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Link</strong></td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td><strong>V</strong></td>
+<td>100</td>
+<td>50</td>
+<td>25</td>
+<td>75</td>
+<td>100</td>
+</tr>
+<tr class="odd">
+<td><strong>t</strong></td>
+<td>15</td>
+<td>16.66667</td>
+<td>3.6</td>
+<td>8</td>
+<td>8</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>O-D pair (2,3) : V (2,3) = 25</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>Link</strong></td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td><strong>V</strong></td>
+<td>100</td>
+<td>50</td>
+<td>50</td>
+<td>75</td>
+<td>100</td>
+</tr>
+<tr class="odd">
+<td><strong>t</strong></td>
+<td>15</td>
+<td>16.66667</td>
+<td>4.5</td>
+<td>8</td>
+<td>8</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>O-D pair (1,2) : V (1,2) = 50</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>Link</strong></td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td><strong>V</strong></td>
+<td>150</td>
+<td>50</td>
+<td>50</td>
+<td>75</td>
+<td>100</td>
+</tr>
+<tr class="odd">
+<td><strong>t</strong></td>
+<td>20</td>
+<td>16.66667</td>
+<td>4.5</td>
+<td>8</td>
+<td>8</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>O-D pair (1,4) : V (1,4) = 50</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>Link</strong></td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td><strong>V</strong></td>
+<td>150</td>
+<td>100</td>
+<td>50</td>
+<td>75</td>
+<td>150</td>
+</tr>
+<tr class="odd">
+<td><strong>t</strong></td>
+<td>20</td>
+<td>18.75</td>
+<td>4.5</td>
+<td>8</td>
+<td>16</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>O-D pair (2,4) : V (2,4) = 25</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>Link</strong></td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td><strong>V</strong></td>
+<td>150</td>
+<td>100</td>
+<td>50</td>
+<td>100</td>
+<td>150</td>
+</tr>
+<tr class="odd">
+<td><strong>t</strong></td>
+<td>20</td>
+<td>18.75</td>
+<td>4.5</td>
+<td>10</td>
+<td>16</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>Final Flow and Corresponding Travel Time on Links</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>O-D pair (1,3) : V (1,3) = 50</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>Link</strong></td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td><strong>V</strong></td>
+<td>150</td>
+<td>150</td>
+<td>50</td>
+<td>100</td>
+<td>150</td>
+</tr>
+<tr class="odd">
+<td><strong>t</strong></td>
+<td>20</td>
+<td>21.42857</td>
+<td>4.5</td>
+<td>10</td>
+<td>16</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="capacity-constrained-deterministic-user-equilibrium-due" class="slide level2">
+<h2>Capacity Constrained Deterministic User Equilibrium (DUE)</h2>
+<ul>
+<li>Note the two routes between same O-D pair will be used by trip-makers iff the travel times on the two routes are the same.</li>
+<li>Consider a single O-D pair (origin A &amp; destination B) with two links (routes) connection them (1 &amp; 2)</li>
+</ul>
+
+<img data-src="../images/lecture7/due.png" class="r-stretch quarto-figure-center"></section>
+<section id="due-assignment-example" class="slide level2">
+<h2>DUE Assignment: Example</h2>
+<p>Must determine link flows {V1, V2} such that <span class="math display">\[𝑉_1+𝑉_2=𝑉_𝐴𝐵\]</span> <span class="math display">\[𝑡_1=𝑡_2=𝑡^∗\]</span> Where <span class="math inline">\(t^*\)</span> is the equilibrium travel time between A &amp; B</p>
+</section>
+<section id="volume-delay-functions-vdf-for-links-1-2" class="slide level2">
+<h2>Volume-Delay Functions (VDF) for Links 1 &amp; 2</h2>
+
+<img data-src="../images/lecture7/vdf_links.png" class="r-stretch quarto-figure-center"></section>
+<section id="equilibrium-solution" class="slide level2">
+<h2>Equilibrium Solution</h2>
+<p><span class="math display">\[𝐹_1=\int_0^{𝑣_1^∗} f_1(v_1) dv_1
+\]</span> <span class="math display">\[𝐹_2=\int_0^{v_2^*}f_2(v_2) dv_2
+\]</span></p>
+<ul>
+<li>At equilibrium, minimum <span class="math inline">\(F = F1 + F2\)</span></li>
+<li>At any non-equilibrium point, <strong>total area under both curves is not minimum</strong>: there is extra shaded area</li>
+</ul>
+</section>
+<section id="equilibrium-solution-1" class="slide level2">
+<h2>Equilibrium Solution</h2>
+<ul>
+<li><strong>Special case:</strong> curves may not intersect</li>
+<li>Here, optimum is area under <span class="math inline">\(f_2(v_2)\)</span> <img data-src="../images/lecture7/eqn_soln_3.png" class="absolute" style="bottom: 0px; right: 200px; width: 50%; "></li>
+</ul>
+</section>
+<section id="frank-wolfe-algorithm" class="slide level2 smaller">
+<h2>Frank-Wolfe Algorithm</h2>
+<ul>
+<li>Equilibrium link volumes are such that the sum of the areas under the volume-delay curves equals the minimum value achievable:</li>
+<li>F(V) given by <span class="math display">\[min \sum_l \int_0^{v_l}f_l(v) d(v)  \text{   (𝐸𝑄1)}\]</span></li>
+<li>Above equation generalizes to any number of O-D pairs &amp; any number of links per path</li>
+</ul>
+<p><img data-src="../images/lecture7/frank_wolfe.png" class="absolute" style="bottom: 0px; right: 250px; width: 45%; "></p>
+</section>
+<section id="frank-wolfe-algorithm-1" class="slide level2">
+<h2>Frank-Wolfe Algorithm</h2>
+
+<img data-src="../images/lecture7/frank_wolfe_fig_1.png" class="r-stretch quarto-figure-center"></section>
+<section id="frank-wolfe-algorithm-2" class="slide level2">
+<h2>Frank-Wolfe Algorithm</h2>
+
+<img data-src="../images/lecture7/frank_wolfe_fig_2.png" class="r-stretch quarto-figure-center"></section>
 <section id="three-route-example" class="slide level2">
 <h2>Three Route Example</h2>
 <div class="cell" data-reveal="true">
@@ -541,147 +1817,168 @@
 <h2>Three Route Example - Solution</h2>
 <p>Putting everything together, we can print a table summarizing the variable values at each iteration.</p>
 <div class="cell" data-execution_count="1">
-<div class="cell-output cell-output-display" data-execution_count="1">
+<div class="cell-output cell-output-display" data-execution_count="81">
 <style type="text/css">
-#T_cc742_row0_col0, #T_cc742_row0_col1, #T_cc742_row0_col2, #T_cc742_row0_col3, #T_cc742_row0_col4, #T_cc742_row0_col5, #T_cc742_row0_col6, #T_cc742_row0_col7, #T_cc742_row0_col8, #T_cc742_row0_col9, #T_cc742_row0_col10, #T_cc742_row1_col0, #T_cc742_row1_col1, #T_cc742_row1_col2, #T_cc742_row1_col3, #T_cc742_row1_col4, #T_cc742_row1_col5, #T_cc742_row1_col6, #T_cc742_row1_col7, #T_cc742_row1_col8, #T_cc742_row1_col9, #T_cc742_row1_col10, #T_cc742_row2_col0, #T_cc742_row2_col1, #T_cc742_row2_col2, #T_cc742_row2_col3, #T_cc742_row2_col4, #T_cc742_row2_col5, #T_cc742_row2_col6, #T_cc742_row2_col7, #T_cc742_row2_col8, #T_cc742_row2_col9, #T_cc742_row2_col10, #T_cc742_row3_col0, #T_cc742_row3_col1, #T_cc742_row3_col2, #T_cc742_row3_col3, #T_cc742_row3_col4, #T_cc742_row3_col5, #T_cc742_row3_col6, #T_cc742_row3_col7, #T_cc742_row3_col8, #T_cc742_row3_col9, #T_cc742_row3_col10, #T_cc742_row4_col0, #T_cc742_row4_col1, #T_cc742_row4_col2, #T_cc742_row4_col3, #T_cc742_row4_col4, #T_cc742_row4_col5, #T_cc742_row4_col6, #T_cc742_row4_col7, #T_cc742_row4_col8, #T_cc742_row4_col9, #T_cc742_row4_col10, #T_cc742_row5_col0, #T_cc742_row5_col1, #T_cc742_row5_col2, #T_cc742_row5_col3, #T_cc742_row5_col4, #T_cc742_row5_col5, #T_cc742_row5_col6, #T_cc742_row5_col7, #T_cc742_row5_col8, #T_cc742_row5_col9, #T_cc742_row5_col10, #T_cc742_row6_col0, #T_cc742_row6_col1, #T_cc742_row6_col2, #T_cc742_row6_col3, #T_cc742_row6_col4, #T_cc742_row6_col5, #T_cc742_row6_col6, #T_cc742_row6_col7, #T_cc742_row6_col8, #T_cc742_row6_col9, #T_cc742_row6_col10, #T_cc742_row7_col0, #T_cc742_row7_col1, #T_cc742_row7_col2, #T_cc742_row7_col3, #T_cc742_row7_col4, #T_cc742_row7_col5, #T_cc742_row7_col6, #T_cc742_row7_col7, #T_cc742_row7_col8, #T_cc742_row7_col9, #T_cc742_row7_col10 {
+#T_7db2f_row0_col0, #T_7db2f_row0_col1, #T_7db2f_row0_col2, #T_7db2f_row0_col3, #T_7db2f_row0_col4, #T_7db2f_row0_col5, #T_7db2f_row0_col6, #T_7db2f_row0_col7, #T_7db2f_row0_col8, #T_7db2f_row0_col9, #T_7db2f_row0_col10, #T_7db2f_row1_col0, #T_7db2f_row1_col1, #T_7db2f_row1_col2, #T_7db2f_row1_col3, #T_7db2f_row1_col4, #T_7db2f_row1_col5, #T_7db2f_row1_col6, #T_7db2f_row1_col7, #T_7db2f_row1_col8, #T_7db2f_row1_col9, #T_7db2f_row1_col10, #T_7db2f_row2_col0, #T_7db2f_row2_col1, #T_7db2f_row2_col2, #T_7db2f_row2_col3, #T_7db2f_row2_col4, #T_7db2f_row2_col5, #T_7db2f_row2_col6, #T_7db2f_row2_col7, #T_7db2f_row2_col8, #T_7db2f_row2_col9, #T_7db2f_row2_col10, #T_7db2f_row3_col0, #T_7db2f_row3_col1, #T_7db2f_row3_col2, #T_7db2f_row3_col3, #T_7db2f_row3_col4, #T_7db2f_row3_col5, #T_7db2f_row3_col6, #T_7db2f_row3_col7, #T_7db2f_row3_col8, #T_7db2f_row3_col9, #T_7db2f_row3_col10, #T_7db2f_row4_col0, #T_7db2f_row4_col1, #T_7db2f_row4_col2, #T_7db2f_row4_col3, #T_7db2f_row4_col4, #T_7db2f_row4_col5, #T_7db2f_row4_col6, #T_7db2f_row4_col7, #T_7db2f_row4_col8, #T_7db2f_row4_col9, #T_7db2f_row4_col10, #T_7db2f_row5_col0, #T_7db2f_row5_col1, #T_7db2f_row5_col2, #T_7db2f_row5_col3, #T_7db2f_row5_col4, #T_7db2f_row5_col5, #T_7db2f_row5_col6, #T_7db2f_row5_col7, #T_7db2f_row5_col8, #T_7db2f_row5_col9, #T_7db2f_row5_col10, #T_7db2f_row6_col0, #T_7db2f_row6_col1, #T_7db2f_row6_col2, #T_7db2f_row6_col3, #T_7db2f_row6_col4, #T_7db2f_row6_col5, #T_7db2f_row6_col6, #T_7db2f_row6_col7, #T_7db2f_row6_col8, #T_7db2f_row6_col9, #T_7db2f_row6_col10, #T_7db2f_row7_col0, #T_7db2f_row7_col1, #T_7db2f_row7_col2, #T_7db2f_row7_col3, #T_7db2f_row7_col4, #T_7db2f_row7_col5, #T_7db2f_row7_col6, #T_7db2f_row7_col7, #T_7db2f_row7_col8, #T_7db2f_row7_col9, #T_7db2f_row7_col10 {
   font-size: 20pt;
 }
 </style>
 
-<table id="T_cc742" data-quarto-postprocess="true">
+<table id="T_7db2f" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
 <th class="blank level0" data-quarto-table-cell-role="th">&nbsp;</th>
-<th id="T_cc742_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">f1</th>
-<th id="T_cc742_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">f2</th>
-<th id="T_cc742_level0_col2" class="col_heading level0 col2" data-quarto-table-cell-role="th">f3</th>
-<th id="T_cc742_level0_col3" class="col_heading level0 col3" data-quarto-table-cell-role="th">V1</th>
-<th id="T_cc742_level0_col4" class="col_heading level0 col4" data-quarto-table-cell-role="th">V2</th>
-<th id="T_cc742_level0_col5" class="col_heading level0 col5" data-quarto-table-cell-role="th">V3</th>
-<th id="T_cc742_level0_col6" class="col_heading level0 col6" data-quarto-table-cell-role="th">F1</th>
-<th id="T_cc742_level0_col7" class="col_heading level0 col7" data-quarto-table-cell-role="th">F2</th>
-<th id="T_cc742_level0_col8" class="col_heading level0 col8" data-quarto-table-cell-role="th">F3</th>
-<th id="T_cc742_level0_col9" class="col_heading level0 col9" data-quarto-table-cell-role="th">F</th>
-<th id="T_cc742_level0_col10" class="col_heading level0 col10" data-quarto-table-cell-role="th">lambda</th>
+<th id="T_7db2f_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">f1</th>
+<th id="T_7db2f_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">f2</th>
+<th id="T_7db2f_level0_col2" class="col_heading level0 col2" data-quarto-table-cell-role="th">f3</th>
+<th id="T_7db2f_level0_col3" class="col_heading level0 col3" data-quarto-table-cell-role="th">V1</th>
+<th id="T_7db2f_level0_col4" class="col_heading level0 col4" data-quarto-table-cell-role="th">V2</th>
+<th id="T_7db2f_level0_col5" class="col_heading level0 col5" data-quarto-table-cell-role="th">V3</th>
+<th id="T_7db2f_level0_col6" class="col_heading level0 col6" data-quarto-table-cell-role="th">F1</th>
+<th id="T_7db2f_level0_col7" class="col_heading level0 col7" data-quarto-table-cell-role="th">F2</th>
+<th id="T_7db2f_level0_col8" class="col_heading level0 col8" data-quarto-table-cell-role="th">F3</th>
+<th id="T_7db2f_level0_col9" class="col_heading level0 col9" data-quarto-table-cell-role="th">F</th>
+<th id="T_7db2f_level0_col10" class="col_heading level0 col10" data-quarto-table-cell-role="th">lambda</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td id="T_cc742_level0_row0" class="row_heading level0 row0" data-quarto-table-cell-role="th">0</td>
-<td id="T_cc742_row0_col0" class="data row0 col0">10.00</td>
-<td id="T_cc742_row0_col1" class="data row0 col1">20.00</td>
-<td id="T_cc742_row0_col2" class="data row0 col2">25.00</td>
-<td id="T_cc742_row0_col3" class="data row0 col3">1000.00</td>
-<td id="T_cc742_row0_col4" class="data row0 col4">0.00</td>
-<td id="T_cc742_row0_col5" class="data row0 col5">0.00</td>
-<td id="T_cc742_row0_col6" class="data row0 col6">197500.00</td>
-<td id="T_cc742_row0_col7" class="data row0 col7">0.00</td>
-<td id="T_cc742_row0_col8" class="data row0 col8">0.00</td>
-<td id="T_cc742_row0_col9" class="data row0 col9">197500.00</td>
-<td id="T_cc742_row0_col10" class="data row0 col10">1.00</td>
+<td id="T_7db2f_level0_row0" class="row_heading level0 row0" data-quarto-table-cell-role="th">0</td>
+<td id="T_7db2f_row0_col0" class="data row0 col0">10.00</td>
+<td id="T_7db2f_row0_col1" class="data row0 col1">20.00</td>
+<td id="T_7db2f_row0_col2" class="data row0 col2">25.00</td>
+<td id="T_7db2f_row0_col3" class="data row0 col3">1000.00</td>
+<td id="T_7db2f_row0_col4" class="data row0 col4">0.00</td>
+<td id="T_7db2f_row0_col5" class="data row0 col5">0.00</td>
+<td id="T_7db2f_row0_col6" class="data row0 col6">197500.00</td>
+<td id="T_7db2f_row0_col7" class="data row0 col7">0.00</td>
+<td id="T_7db2f_row0_col8" class="data row0 col8">0.00</td>
+<td id="T_7db2f_row0_col9" class="data row0 col9">197500.00</td>
+<td id="T_7db2f_row0_col10" class="data row0 col10">1.00</td>
 </tr>
 <tr class="even">
-<td id="T_cc742_level0_row1" class="row_heading level0 row1" data-quarto-table-cell-role="th">1</td>
-<td id="T_cc742_row1_col0" class="data row1 col0">947.50</td>
-<td id="T_cc742_row1_col1" class="data row1 col1">20.00</td>
-<td id="T_cc742_row1_col2" class="data row1 col2">25.00</td>
-<td id="T_cc742_row1_col3" class="data row1 col3">403.46</td>
-<td id="T_cc742_row1_col4" class="data row1 col4">596.54</td>
-<td id="T_cc742_row1_col5" class="data row1 col5">0.00</td>
-<td id="T_cc742_row1_col6" class="data row1 col6">6039.00</td>
-<td id="T_cc742_row1_col7" class="data row1 col7">13701.45</td>
-<td id="T_cc742_row1_col8" class="data row1 col8">0.00</td>
-<td id="T_cc742_row1_col9" class="data row1 col9">19740.44</td>
-<td id="T_cc742_row1_col10" class="data row1 col10">0.40</td>
+<td id="T_7db2f_level0_row1" class="row_heading level0 row1" data-quarto-table-cell-role="th">1</td>
+<td id="T_7db2f_row1_col0" class="data row1 col0">947.50</td>
+<td id="T_7db2f_row1_col1" class="data row1 col1">20.00</td>
+<td id="T_7db2f_row1_col2" class="data row1 col2">25.00</td>
+<td id="T_7db2f_row1_col3" class="data row1 col3">403.46</td>
+<td id="T_7db2f_row1_col4" class="data row1 col4">596.54</td>
+<td id="T_7db2f_row1_col5" class="data row1 col5">0.00</td>
+<td id="T_7db2f_row1_col6" class="data row1 col6">6039.00</td>
+<td id="T_7db2f_row1_col7" class="data row1 col7">13701.45</td>
+<td id="T_7db2f_row1_col8" class="data row1 col8">0.00</td>
+<td id="T_7db2f_row1_col9" class="data row1 col9">19740.44</td>
+<td id="T_7db2f_row1_col10" class="data row1 col10">0.40</td>
 </tr>
 <tr class="odd">
-<td id="T_cc742_level0_row2" class="row_heading level0 row2" data-quarto-table-cell-role="th">2</td>
-<td id="T_cc742_row2_col0" class="data row2 col0">34.84</td>
-<td id="T_cc742_row2_col1" class="data row2 col1">34.84</td>
-<td id="T_cc742_row2_col2" class="data row2 col2">25.00</td>
-<td id="T_cc742_row2_col3" class="data row2 col3">338.45</td>
-<td id="T_cc742_row2_col4" class="data row2 col4">500.42</td>
-<td id="T_cc742_row2_col5" class="data row2 col5">161.13</td>
-<td id="T_cc742_row2_col6" class="data row2 col6">4217.09</td>
-<td id="T_cc742_row2_col7" class="data row2 col7">10743.87</td>
-<td id="T_cc742_row2_col8" class="data row2 col8">4038.43</td>
-<td id="T_cc742_row2_col9" class="data row2 col9">18999.39</td>
-<td id="T_cc742_row2_col10" class="data row2 col10">0.84</td>
+<td id="T_7db2f_level0_row2" class="row_heading level0 row2" data-quarto-table-cell-role="th">2</td>
+<td id="T_7db2f_row2_col0" class="data row2 col0">34.84</td>
+<td id="T_7db2f_row2_col1" class="data row2 col1">34.84</td>
+<td id="T_7db2f_row2_col2" class="data row2 col2">25.00</td>
+<td id="T_7db2f_row2_col3" class="data row2 col3">338.45</td>
+<td id="T_7db2f_row2_col4" class="data row2 col4">500.42</td>
+<td id="T_7db2f_row2_col5" class="data row2 col5">161.13</td>
+<td id="T_7db2f_row2_col6" class="data row2 col6">4217.09</td>
+<td id="T_7db2f_row2_col7" class="data row2 col7">10743.87</td>
+<td id="T_7db2f_row2_col8" class="data row2 col8">4038.43</td>
+<td id="T_7db2f_row2_col9" class="data row2 col9">18999.39</td>
+<td id="T_7db2f_row2_col10" class="data row2 col10">0.84</td>
 </tr>
 <tr class="even">
-<td id="T_cc742_level0_row3" class="row_heading level0 row3" data-quarto-table-cell-role="th">3</td>
-<td id="T_cc742_row3_col0" class="data row3 col0">22.30</td>
-<td id="T_cc742_row3_col1" class="data row3 col1">27.35</td>
-<td id="T_cc742_row3_col2" class="data row3 col2">25.31</td>
-<td id="T_cc742_row3_col3" class="data row3 col3">361.97</td>
-<td id="T_cc742_row3_col4" class="data row3 col4">482.63</td>
-<td id="T_cc742_row3_col5" class="data row3 col5">155.41</td>
-<td id="T_cc742_row3_col6" class="data row3 col6">4784.70</td>
-<td id="T_cc742_row3_col7" class="data row3 col7">10266.28</td>
-<td id="T_cc742_row3_col8" class="data row3 col8">3893.55</td>
-<td id="T_cc742_row3_col9" class="data row3 col9">18944.53</td>
-<td id="T_cc742_row3_col10" class="data row3 col10">0.96</td>
+<td id="T_7db2f_level0_row3" class="row_heading level0 row3" data-quarto-table-cell-role="th">3</td>
+<td id="T_7db2f_row3_col0" class="data row3 col0">22.30</td>
+<td id="T_7db2f_row3_col1" class="data row3 col1">27.35</td>
+<td id="T_7db2f_row3_col2" class="data row3 col2">25.31</td>
+<td id="T_7db2f_row3_col3" class="data row3 col3">361.97</td>
+<td id="T_7db2f_row3_col4" class="data row3 col4">482.63</td>
+<td id="T_7db2f_row3_col5" class="data row3 col5">155.41</td>
+<td id="T_7db2f_row3_col6" class="data row3 col6">4784.70</td>
+<td id="T_7db2f_row3_col7" class="data row3 col7">10266.28</td>
+<td id="T_7db2f_row3_col8" class="data row3 col8">3893.55</td>
+<td id="T_7db2f_row3_col9" class="data row3 col9">18944.53</td>
+<td id="T_7db2f_row3_col10" class="data row3 col10">0.96</td>
 </tr>
 <tr class="odd">
-<td id="T_cc742_level0_row4" class="row_heading level0 row4" data-quarto-table-cell-role="th">4</td>
-<td id="T_cc742_row4_col0" class="data row4 col0">26.09</td>
-<td id="T_cc742_row4_col1" class="data row4 col1">26.36</td>
-<td id="T_cc742_row4_col2" class="data row4 col2">25.27</td>
-<td id="T_cc742_row4_col3" class="data row4 col3">354.58</td>
-<td id="T_cc742_row4_col4" class="data row4 col4">472.78</td>
-<td id="T_cc742_row4_col5" class="data row4 col5">172.64</td>
-<td id="T_cc742_row4_col6" class="data row4 col6">4596.77</td>
-<td id="T_cc742_row4_col7" class="data row4 col7">10009.25</td>
-<td id="T_cc742_row4_col8" class="data row4 col8">4330.12</td>
-<td id="T_cc742_row4_col9" class="data row4 col9">18936.14</td>
-<td id="T_cc742_row4_col10" class="data row4 col10">0.98</td>
+<td id="T_7db2f_level0_row4" class="row_heading level0 row4" data-quarto-table-cell-role="th">4</td>
+<td id="T_7db2f_row4_col0" class="data row4 col0">26.09</td>
+<td id="T_7db2f_row4_col1" class="data row4 col1">26.36</td>
+<td id="T_7db2f_row4_col2" class="data row4 col2">25.27</td>
+<td id="T_7db2f_row4_col3" class="data row4 col3">354.58</td>
+<td id="T_7db2f_row4_col4" class="data row4 col4">472.78</td>
+<td id="T_7db2f_row4_col5" class="data row4 col5">172.64</td>
+<td id="T_7db2f_row4_col6" class="data row4 col6">4596.77</td>
+<td id="T_7db2f_row4_col7" class="data row4 col7">10009.25</td>
+<td id="T_7db2f_row4_col8" class="data row4 col8">4330.12</td>
+<td id="T_7db2f_row4_col9" class="data row4 col9">18936.14</td>
+<td id="T_7db2f_row4_col10" class="data row4 col10">0.98</td>
 </tr>
 <tr class="even">
-<td id="T_cc742_level0_row5" class="row_heading level0 row5" data-quarto-table-cell-role="th">5</td>
-<td id="T_cc742_row5_col0" class="data row5 col0">24.82</td>
-<td id="T_cc742_row5_col1" class="data row5 col1">25.85</td>
-<td id="T_cc742_row5_col2" class="data row5 col2">25.41</td>
-<td id="T_cc742_row5_col3" class="data row5 col3">359.22</td>
-<td id="T_cc742_row5_col4" class="data row5 col4">469.38</td>
-<td id="T_cc742_row5_col5" class="data row5 col5">171.40</td>
-<td id="T_cc742_row5_col6" class="data row5 col6">4713.80</td>
-<td id="T_cc742_row5_col7" class="data row5 col7">9921.62</td>
-<td id="T_cc742_row5_col8" class="data row5 col8">4298.58</td>
-<td id="T_cc742_row5_col9" class="data row5 col9">18934.00</td>
-<td id="T_cc742_row5_col10" class="data row5 col10">0.99</td>
+<td id="T_7db2f_level0_row5" class="row_heading level0 row5" data-quarto-table-cell-role="th">5</td>
+<td id="T_7db2f_row5_col0" class="data row5 col0">24.82</td>
+<td id="T_7db2f_row5_col1" class="data row5 col1">25.85</td>
+<td id="T_7db2f_row5_col2" class="data row5 col2">25.41</td>
+<td id="T_7db2f_row5_col3" class="data row5 col3">359.22</td>
+<td id="T_7db2f_row5_col4" class="data row5 col4">469.38</td>
+<td id="T_7db2f_row5_col5" class="data row5 col5">171.40</td>
+<td id="T_7db2f_row5_col6" class="data row5 col6">4713.80</td>
+<td id="T_7db2f_row5_col7" class="data row5 col7">9921.62</td>
+<td id="T_7db2f_row5_col8" class="data row5 col8">4298.58</td>
+<td id="T_7db2f_row5_col9" class="data row5 col9">18934.00</td>
+<td id="T_7db2f_row5_col10" class="data row5 col10">0.99</td>
 </tr>
 <tr class="odd">
-<td id="T_cc742_level0_row6" class="row_heading level0 row6" data-quarto-table-cell-role="th">6</td>
-<td id="T_cc742_row6_col0" class="data row6 col0">25.61</td>
-<td id="T_cc742_row6_col1" class="data row6 col1">25.69</td>
-<td id="T_cc742_row6_col2" class="data row6 col2">25.40</td>
-<td id="T_cc742_row6_col3" class="data row6 col3">357.30</td>
-<td id="T_cc742_row6_col4" class="data row6 col4">466.87</td>
-<td id="T_cc742_row6_col5" class="data row6 col5">175.83</td>
-<td id="T_cc742_row6_col6" class="data row6 col6">4664.85</td>
-<td id="T_cc742_row6_col7" class="data row6 col7">9857.20</td>
-<td id="T_cc742_row6_col8" class="data row6 col8">4411.38</td>
-<td id="T_cc742_row6_col9" class="data row6 col9">18933.43</td>
-<td id="T_cc742_row6_col10" class="data row6 col10">0.99</td>
+<td id="T_7db2f_level0_row6" class="row_heading level0 row6" data-quarto-table-cell-role="th">6</td>
+<td id="T_7db2f_row6_col0" class="data row6 col0">25.61</td>
+<td id="T_7db2f_row6_col1" class="data row6 col1">25.69</td>
+<td id="T_7db2f_row6_col2" class="data row6 col2">25.40</td>
+<td id="T_7db2f_row6_col3" class="data row6 col3">357.30</td>
+<td id="T_7db2f_row6_col4" class="data row6 col4">466.87</td>
+<td id="T_7db2f_row6_col5" class="data row6 col5">175.83</td>
+<td id="T_7db2f_row6_col6" class="data row6 col6">4664.85</td>
+<td id="T_7db2f_row6_col7" class="data row6 col7">9857.20</td>
+<td id="T_7db2f_row6_col8" class="data row6 col8">4411.38</td>
+<td id="T_7db2f_row6_col9" class="data row6 col9">18933.43</td>
+<td id="T_7db2f_row6_col10" class="data row6 col10">0.99</td>
 </tr>
 <tr class="even">
-<td id="T_cc742_level0_row7" class="row_heading level0 row7" data-quarto-table-cell-role="th">7</td>
-<td id="T_cc742_row7_col0" class="data row7 col0">25.28</td>
-<td id="T_cc742_row7_col1" class="data row7 col1">25.57</td>
-<td id="T_cc742_row7_col2" class="data row7 col2">25.44</td>
-<td id="T_cc742_row7_col3" class="data row7 col3">358.58</td>
-<td id="T_cc742_row7_col4" class="data row7 col4">465.93</td>
-<td id="T_cc742_row7_col5" class="data row7 col5">175.48</td>
-<td id="T_cc742_row7_col6" class="data row7 col6">4697.45</td>
-<td id="T_cc742_row7_col7" class="data row7 col7">9833.37</td>
-<td id="T_cc742_row7_col8" class="data row7 col8">4402.44</td>
-<td id="T_cc742_row7_col9" class="data row7 col9">18933.27</td>
-<td id="T_cc742_row7_col10" class="data row7 col10">1.00</td>
+<td id="T_7db2f_level0_row7" class="row_heading level0 row7" data-quarto-table-cell-role="th">7</td>
+<td id="T_7db2f_row7_col0" class="data row7 col0">25.28</td>
+<td id="T_7db2f_row7_col1" class="data row7 col1">25.57</td>
+<td id="T_7db2f_row7_col2" class="data row7 col2">25.44</td>
+<td id="T_7db2f_row7_col3" class="data row7 col3">358.58</td>
+<td id="T_7db2f_row7_col4" class="data row7 col4">465.93</td>
+<td id="T_7db2f_row7_col5" class="data row7 col5">175.48</td>
+<td id="T_7db2f_row7_col6" class="data row7 col6">4697.45</td>
+<td id="T_7db2f_row7_col7" class="data row7 col7">9833.37</td>
+<td id="T_7db2f_row7_col8" class="data row7 col8">4402.44</td>
+<td id="T_7db2f_row7_col9" class="data row7 col9">18933.27</td>
+<td id="T_7db2f_row7_col10" class="data row7 col10">1.00</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
+</section>
+<section id="transit-assignment" class="slide level2">
+<h2>Transit Assignment</h2>
+<ul>
+<li>Transit assignment not usually a function of congestion</li>
+<li>Procedures typically used:
+<ul>
+<li>All-Or-Nothing</li>
+<li>Stochastic (multipath)</li>
+</ul></li>
+<li>Must account for:
+<ul>
+<li>Walk access/egress times</li>
+<li>Waiting times as f(headway)</li>
+<li>Transfers
+<ul>
+<li>Feasible transfer points</li>
+<li>Transfer times</li>
+</ul></li>
+</ul></li>
+</ul>
 
 
 <img src="../images/logo.png" class="slide-logo r-stretch"><div class="footer footer-default">

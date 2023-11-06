@@ -2051,6 +2051,349 @@
     "text": "Outline\n\n\n\n\nProblem definition & assumptions\nShortest path algorithms\nRepresenting congestion\nTreatment of time\nRandom effects\nWardrop’s rules: System optimal & User equilibrium\nAssignment procedures: All-or-nothing, Capacity restraint, & Deterministic user equilibrium"
   },
   {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#trip-assignment-problem",
+    "href": "teaching/CIVE461/slides/lec-7.html#trip-assignment-problem",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Trip Assignment Problem",
+    "text": "Trip Assignment Problem\n\n\nFind the path (or paths) through the network mostly likely taken from node i to node j\nTransport network is represented by links L\n\nEach link has a start & end node, as well as a cost C\nLinks can also be mode-specific (e.g., bus-only, bus & vehicles)\n\nLink cost is a function of attributes: distance, free-flow speed, capacity, & speed-flow relationship (volume-delay function)"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#trip-assignment",
+    "href": "teaching/CIVE461/slides/lec-7.html#trip-assignment",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Trip Assignment",
+    "text": "Trip Assignment\nPrimary Purpose - Aggregate network performance measures\n\nHighway flows, transit revenues, etc.\nZone-to-zone travel cost/time matrices\nDetermine approximate link flows & identify heavily congested links\n\nSecondary Purpose\n\nDetermine routes between each O-D pair\nAnalyze O-D pairs that use route/link\nReasonable indication of turning movement at intersections"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#trip-assignment---basic-inputs",
+    "href": "teaching/CIVE461/slides/lec-7.html#trip-assignment---basic-inputs",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Trip Assignment - Basic Inputs",
+    "text": "Trip Assignment - Basic Inputs\n\nTrip matrix expressing estimated demands: peak hour, 24-hour, etc.\n\nPerson-trips need to be converted into vehicle-trips & vehicles may need to be converted into passenger car units (PCUs)\n\nNetwork as links & their properties, including speed-flow curves\nPrinciples or route selection rules that are relevant to problem under investigation -&gt; choosing best route is subjective"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#trip-assignment---route-choice-issues",
+    "href": "teaching/CIVE461/slides/lec-7.html#trip-assignment---route-choice-issues",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Trip Assignment - Route Choice Issues",
+    "text": "Trip Assignment - Route Choice Issues\n\nDifferences in individual perceptions of what constitutes the best route: minimizing time, minimizing fuel consumption, or a combination of both?\nSolution: Multiple user classes & generalized costs\nKnowledge about alternatives varies -&gt; apparently irrational route choices\nSolution: Stochastic specifications\nCongestion effects affect shorter routes first & make generalized costs comparable to initially less attractive routes\nSolution: Congested assignment & equilibrium"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#trip-assignment---basic-steps",
+    "href": "teaching/CIVE461/slides/lec-7.html#trip-assignment---basic-steps",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Trip Assignment - Basic Steps",
+    "text": "Trip Assignment - Basic Steps\n\nIdentify set of routes (shortest paths) that might be considered attractive to drivers between each O-D pair using shortest path algorithms\nAssign suitable proportions of trip matrix to each route -&gt; flows on links in network\nSearch for convergence\n\n\nMany techniques follow an iterative pattern of successive approximations to an ideal solution – i.e., convergence criteria"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#shortest-path-calculations",
+    "href": "teaching/CIVE461/slides/lec-7.html#shortest-path-calculations",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Shortest Path Calculations",
+    "text": "Shortest Path Calculations\n\nAll assignment procedures depend on efficient calculation of shortest paths through large networks\nBest algorithm depends on network size & problem application (e.g., different procedures often used for road vs. transit assignment)"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#shortest-path---dijkstra-algorithm",
+    "href": "teaching/CIVE461/slides/lec-7.html#shortest-path---dijkstra-algorithm",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Shortest Path - Dijkstra Algorithm",
+    "text": "Shortest Path - Dijkstra Algorithm\n\nFind shortest path between nodes in a graph – e.g., road network\nConceived by computer scientist Edger W. Dijkstra in 1956\n\\(N\\) is the set of all nodes (combination of labelled & unlabeled nodes)\n\\(\\hat{𝑀}\\) is the set of all labelled nodes\n\\(M\\) is the set of un-labeled nodes\n\\(n_i\\) is the ith node\n\\(c(n_i, n_j)\\) is the cost (travel time, distance, etc.) of traveling on the link from \\(n_i\\) to \\(n_j\\)\n\\(C(n_j)\\) is the total cost between “initial” node & node \\(n_j\\)"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#shortest-path---dijkstra-algorithm-1",
+    "href": "teaching/CIVE461/slides/lec-7.html#shortest-path---dijkstra-algorithm-1",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Shortest Path - Dijkstra Algorithm 1",
+    "text": "Shortest Path - Dijkstra Algorithm 1\n\nAssign to every node a tentative distance value: set it to zero for the initial node & to infinity for all other nodes.\nSet the initial node as the current node & mark all other nodes as unvisited.\nFor the current node, consider all its unvisited neighbors & calculate their tentative costs.\nCompare the newly calculated tentative cost to the current assigned cost & assign smaller of the two.\n\nE.g., if current node A is marked with a cost of 6 & the link connecting it with a neighbor node B has cost 2, then the cost to B (through A) is 6 + 2 = 8.\nIf B was previously marked with a distance &gt; 8 then change it to 8. Else, keep the current value."
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#shortest-path---dijkstra-algorithm-1-1",
+    "href": "teaching/CIVE461/slides/lec-7.html#shortest-path---dijkstra-algorithm-1-1",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Shortest Path - Dijkstra Algorithm 1",
+    "text": "Shortest Path - Dijkstra Algorithm 1\n\nIf all neighbors of current node have been considered, then mark current node as visited & remove from unvisited set.\nIf destination node has been marked visited (when planning route between two nodes) or if smallest tentative cost among nodes in unvisited set is infinity (when planning a complete traversal; occurs when there is no connection between initial node & remaining unvisited nodes) then stop. Algorithm complete.\nElse select unvisited node marked with smallest tentative distance, set as new current node, & go to step 3."
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#shortest-path---dijkstra-algorithm-2",
+    "href": "teaching/CIVE461/slides/lec-7.html#shortest-path---dijkstra-algorithm-2",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Shortest Path - Dijkstra Algorithm 2",
+    "text": "Shortest Path - Dijkstra Algorithm 2\n\nSet \\(k = 1\\). Choose a node as the initial node. Label this node [-,0] where the minus sign indicates there is no predecessor node & the zero indicates there is zero cost associated with reaching this node. Set M equal to {n1} where n1 is equal to the node number for the initial node.\nSet \\(k = 2\\). Find an unlabeled node \\(n_2\\) such that \\(c(n_1, n_2)\\) is a minimum. Assign \\(n_2\\) the label \\([n_1, c(n_1, n_2)]\\), meaning \\(n_1\\) is the predecessor node to \\(n_2\\). Add \\(n_2\\) to the set of labeled nodes (i.e., \\(M\\) now equals \\(\\{n_1, n_2\\}\\))\nSet \\(k = k + 1\\)"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#shortest-path---dijkstra-algorithm-2-1",
+    "href": "teaching/CIVE461/slides/lec-7.html#shortest-path---dijkstra-algorithm-2-1",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Shortest Path - Dijkstra Algorithm 2",
+    "text": "Shortest Path - Dijkstra Algorithm 2\n\nFind an unlabeled node \\(n_k\\) such that \\(C(nk) = min {C(n_x) + min[(n_x, n_y)]}\\) for \\(n_x \\in M\\) & \\(n_y \\in M’ = C(n_1) + c(n_i, n_k)\\) for some \\(n_i \\in M\\), \\(n_k \\in M’\\). Assign the label \\([n_i, C(n_k)]\\) & add \\(n_k\\) to \\(M\\).\n\nThe equation above searchers over the currently labeled nodes – all nodes connected to initial node with links to unlabeled nodes. Seeks new node to connect to initial node (i.e., add to labeled set), such that path to new node has lowest travel cost from initial node.\n\nIf all nodes labeled. Stop. Else, go to step 3.\n\nFinal product is shortest path tree rooted at node \\(n_1\\)"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#shortest-path-example",
+    "href": "teaching/CIVE461/slides/lec-7.html#shortest-path-example",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Shortest Path Example",
+    "text": "Shortest Path Example\nWhat is the shortest path from Node 6 to All Others?"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#shortest-path-example-1",
+    "href": "teaching/CIVE461/slides/lec-7.html#shortest-path-example-1",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Shortest Path Example",
+    "text": "Shortest Path Example\n\n\nStep 1: Cost Table\n\n\n\nNode pair\nCost\n\n\n\n\n6,1\nInfinity\n\n\n6,2\nInfinity\n\n\n6,3\nInfinity\n\n\n6,4\nInfinity\n\n\n6,5\nInfinity\n\n\n6\n0\n\n\n\n\nStep 2: Visitation Table\n\n\n\nNode\nVisited?\n\n\n\n\n1\nNo\n\n\n2\nNo\n\n\n3\nNo\n\n\n4\nNo\n\n\n5\nNo\n\n\n6\nCurrent"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#shortest-path-example-2",
+    "href": "teaching/CIVE461/slides/lec-7.html#shortest-path-example-2",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Shortest Path Example",
+    "text": "Shortest Path Example\n\n\nStep 3: Find neighbors of current node Node 6 neigbors: {1,4,5}\nStep 4: Update tentative costs\n\n\n\nNode pair\nCost (previous cost)\n\n\n\n\n6,1\n5 (infinity)\n\n\n6,4\n3 (infinity)\n\n\n6,5\n8 (infinity)\n\n\n\nCosts are less than previous, so update table"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#shortest-path-example-3",
+    "href": "teaching/CIVE461/slides/lec-7.html#shortest-path-example-3",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Shortest Path Example",
+    "text": "Shortest Path Example"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#trip-assignment-assumptions",
+    "href": "teaching/CIVE461/slides/lec-7.html#trip-assignment-assumptions",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Trip Assignment Assumptions",
+    "text": "Trip Assignment Assumptions\n\nFixed costs (no congestion) vs. variable costs (congestion effects)\nStatic vs. dynamic\nDeterministic vs. stochastic\nSystem optimization vs. user equilibrium"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#fixed-cost-assumption",
+    "href": "teaching/CIVE461/slides/lec-7.html#fixed-cost-assumption",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Fixed Cost Assumption",
+    "text": "Fixed Cost Assumption\n\nReasonable to ignore congestion effects in certain cases:\n\nMost transit assignment\nMost intercity cases\nRural areas\nSmall urban areas\nOff-peak time periods if volumes are low"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#congestion-effects",
+    "href": "teaching/CIVE461/slides/lec-7.html#congestion-effects",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Congestion Effects",
+    "text": "Congestion Effects\n\n\nOn most urban road networks, congestion effects are significant (especially during peak periods)\nGenerally, use volume-delay curve to predict link travel time (t) as function of link volume (v)\nVolume-delay functions are simple approximations to true link performance"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#volume-delay-function-supply-curveperformance-function",
+    "href": "teaching/CIVE461/slides/lec-7.html#volume-delay-function-supply-curveperformance-function",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Volume-Delay Function: Supply Curve/Performance Function",
+    "text": "Volume-Delay Function: Supply Curve/Performance Function"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#common-vdfs",
+    "href": "teaching/CIVE461/slides/lec-7.html#common-vdfs",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Common VDFs",
+    "text": "Common VDFs\n\nNeed a continuous, differentiable function\nBureau of Public Roads (BPR) function is most common function worldwide\nTangent function another common method\n\nConverges more quickly\nMore realistic results for oversaturated case"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#bpr-function",
+    "href": "teaching/CIVE461/slides/lec-7.html#bpr-function",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "BPR Function",
+    "text": "BPR Function\n\\[t=(\\frac{L}{S})(1+a(\\frac{v}{c})^b\\] \\[t=t_0(1+a(\\frac{v}{c})^b\\]\nWhere:\n\\(t\\) = link travel time (min)\n\\(L\\) = link length (mi)\n\\(S\\) = link uncongested average speed (mi/min)\n\\(t_0\\) = free-flow travel speed = L / S\n\\(v\\) = link volume (veh/hr)\n\\(c\\) = link capacity (veh/hr)\n\\(a\\) = parameter = 1.0 if one-hr assignment or 0.15 if 24-hr assignment\n\\(b\\) = parameter = 4 for arterial roads or 6 for freeway"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#tangent-function",
+    "href": "teaching/CIVE461/slides/lec-7.html#tangent-function",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Tangent Function",
+    "text": "Tangent Function\n\nFunction identical for BPR values of v/c &lt; 1.0 (under-saturated case)\nFor v/c &gt; 1.0 (oversaturated case), use a straight line with slope = BPR slope at v/c = 1\n\n\\[t = \\begin{cases}\nt_0(1+a(\\frac{v}{c})^b), \\frac{v}{c} \\leq 1 \\\\\nt_0((1+a-ab)+ab(\\frac{v}{c})), \\frac{v}{c} &gt; 1\n\\end{cases}\\]\nFor \\(a = 1\\) & \\(b = 4\\), gives \\(t=t_0(4(\\frac{v}{c})-2)\\)"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#example-bpr-function",
+    "href": "teaching/CIVE461/slides/lec-7.html#example-bpr-function",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Example BPR Function",
+    "text": "Example BPR Function"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#static-vs.-dynamic-assignment",
+    "href": "teaching/CIVE461/slides/lec-7.html#static-vs.-dynamic-assignment",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Static Vs. Dynamic Assignment",
+    "text": "Static Vs. Dynamic Assignment\n\nStatic assignment procedures assign trips to all links on a chosen path simultaneously – i.e., time taken to travel from link to link is ignored\nDynamic assignment procedures assign trips to each link in the chosen path sequentially, taking into account the time taken to travel along each link\nDynamic assignment more realistic, but much more complex & computationally intensive"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#deterministic-vs.-stochastic-assignment",
+    "href": "teaching/CIVE461/slides/lec-7.html#deterministic-vs.-stochastic-assignment",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Deterministic Vs. Stochastic Assignment",
+    "text": "Deterministic Vs. Stochastic Assignment\n\nDeterministic assignment: Assume that travel times are known with certainty by trip-makers & they make perfectly optimal route choices\nStochastic assignment: Travel times are not known with certainty by trip-makers &/or they are imperfect optimizers &/or include other factors in decision-making"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#stochastic-assignment",
+    "href": "teaching/CIVE461/slides/lec-7.html#stochastic-assignment",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Stochastic Assignment",
+    "text": "Stochastic Assignment\n\nStochastic assignment used for some applications:\n\nSome transit assignment algorithms\nModerately (but not heavily) congested networks\nHighly abstracted (i.e., aggregated) networks\n\nDiscrete route choice models (e.g., logit) exist\n\nComputationally burdensome\nNeed to take care in defining choice et of feasible routes"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#deterministic-assignment",
+    "href": "teaching/CIVE461/slides/lec-7.html#deterministic-assignment",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Deterministic Assignment",
+    "text": "Deterministic Assignment\n\nDeterministic assignment used in most urban applications\n\nSimpler & easier to use\nComputationally more efficient\nDeterministic assumptions not bad in congested networks (i.e., where penalty choosing non-optimal route is high)"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#deterministic-vs.-stochastic-assignment-1",
+    "href": "teaching/CIVE461/slides/lec-7.html#deterministic-vs.-stochastic-assignment-1",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Deterministic Vs. Stochastic Assignment",
+    "text": "Deterministic Vs. Stochastic Assignment\n\n\n\n\n\n\n\n\n\nI: in fairly uncongested condition as network is going towards saturation. Deterministic & stochastic assignment work in same way\nII: Congestion building up & deterministic approach will under-estimate effect.\n\nStochastic assignment is better.\n\nIII: Highly congested situation, where small increase in volume causes larger increase in time.\n\nPenalty for wrong information would incur high delay. Assuming that users are fairly aware of situation, deterministic assignment would be more appropriate."
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#wardrops-rule",
+    "href": "teaching/CIVE461/slides/lec-7.html#wardrops-rule",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Wardrop’s Rule",
+    "text": "Wardrop’s Rule\n\nWardrop (1952) credited with first identifying two fundamental approaches to trip assignment\nSystem optimization: Assign O-D flows to paths to minimize total (average) system travel time\nUser equilibrium: Assign O-D flows so no user in system can unilaterally change routes & improve his/her travel time"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#system-optimization",
+    "href": "teaching/CIVE461/slides/lec-7.html#system-optimization",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "System Optimization",
+    "text": "System Optimization\n\nAssign O-D flows so they generate a set of link flows {Vl} that minimizes total travel time in system \\[min \\sum_l V_l f(V_l)\\]\nSystem optimization works for many freight applications or passenger travel in modes with dedicated ROW\nDoes not describe human route choice well"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#user-equilibrium",
+    "href": "teaching/CIVE461/slides/lec-7.html#user-equilibrium",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "User Equilibrium",
+    "text": "User Equilibrium\n\nEach trip-maker chooses his/her route through network to minimize his/her individual travel time\nEquilibrium is achieved when every trip-maker is using best route possible, given prevailing congestion levels\nEquilibrium = no user can switch routes & improve his/her travel time, so no user will switch voluntarily"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#trip-assignment-procedures-for-cive461",
+    "href": "teaching/CIVE461/slides/lec-7.html#trip-assignment-procedures-for-cive461",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Trip Assignment Procedures for CIVE461",
+    "text": "Trip Assignment Procedures for CIVE461\n\nAll-or-nothing: Fixed cost, static, deterministic & non-equilibrium:\nIncremental assignment: Variable cost, static, deterministic & non-equilibrium procedure\nDeterministic user equilibrium (DUE): Variable cost, static, deterministic, & equilibrium assignment"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#all-or-nothing-assignment",
+    "href": "teaching/CIVE461/slides/lec-7.html#all-or-nothing-assignment",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "All-Or-Nothing Assignment",
+    "text": "All-Or-Nothing Assignment\n\nIf no congestion effects, then DUE implies there is a single best route for each trip-maker\n\nSimple\nEasy to understand\nEasy to compute\nOften used for transit assignment\n\nNot applicable to congested road networks"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#all-or-nothing-algorithm",
+    "href": "teaching/CIVE461/slides/lec-7.html#all-or-nothing-algorithm",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "All-Or-Nothing Algorithm",
+    "text": "All-Or-Nothing Algorithm\n\n\n\n\n\n\n\nmygraph\n\n  \n\nCompute link travel times\n\n Compute link travel times   \n\nFind shortest paths for all OD pairs\n\n Find shortest paths for all OD pairs   \n\nCompute link travel times-&gt;Find shortest paths for all OD pairs\n\n    \n\nAssign all flows to minimum time paths\n\n Assign all flows to minimum time paths   \n\nFind shortest paths for all OD pairs-&gt;Assign all flows to minimum time paths"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#all-or-nothing-assignment-example",
+    "href": "teaching/CIVE461/slides/lec-7.html#all-or-nothing-assignment-example",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "All-Or-Nothing Assignment: Example",
+    "text": "All-Or-Nothing Assignment: Example\nOD trips to be assigned:\nA-C = 400\nA-D = 200\nB-C = 300\nB-D = 100\n\nFind shortest paths for A-D, A-C, B-C, & B-D\nAssign all trips to corresponding shortest paths"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#all-or-nothing-assignment-example-1",
+    "href": "teaching/CIVE461/slides/lec-7.html#all-or-nothing-assignment-example-1",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "All-Or-Nothing Assignment: Example",
+    "text": "All-Or-Nothing Assignment: Example\nSum all assigned trips to get complete assignment"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#incremental-assignment-methods",
+    "href": "teaching/CIVE461/slides/lec-7.html#incremental-assignment-methods",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Incremental Assignment Methods",
+    "text": "Incremental Assignment Methods\n\nIncorporating congestion into user equilibrium calculations adds significant complexity to problem\nOriginally, planners used ad hoc capacity constraint methods to generate approximations to user equilibrium solution\nHowever, these methods generally unsatisfactory"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#incremental-assignment-methods-1",
+    "href": "teaching/CIVE461/slides/lec-7.html#incremental-assignment-methods-1",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Incremental Assignment Methods",
+    "text": "Incremental Assignment Methods"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#incremental-assignment-example",
+    "href": "teaching/CIVE461/slides/lec-7.html#incremental-assignment-example",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Incremental Assignment: Example",
+    "text": "Incremental Assignment: Example\n\n\n\n\\[t_1 = \\frac{t_{01}}{1-v_1/c_1}\\] where:\n\\(t_1\\) = travel time on link 1\n\\(t_{01}\\) = travel time on link 1 under zero flow condition\n\\(v_1\\) = volume on link 1\n\\(c_1\\) = capacity of link 1\n\n\n\nLink\n1\n2\n3\n4\n5\n\n\n\n\n\\(T_0\\)\n10\n15\n3\n5\n4\n\n\nCapacity\n300\n500\n150\n200\n200\n\n\n\n\nO-D trips to assign:\n\n\n\nFrom/To\n1\n2\n3\n4\n\n\n\n\n1\n0\n100\n100\n100\n\n\n2\n0\n0\n50\n50\n\n\n3\n0\n0\n0\n100\n\n\n4\n0\n0\n0\n0\n\n\n\nRandom assignment order:\n\n\n\n\nTo\n\n\n\n\n\nO-D Pair\n1\n2\n\n\n(1,2)\n1\n3\n\n\n(1,3)\n6\n6\n\n\n(1,4)\n2\n4\n\n\n(2,3)\n3\n2\n\n\n(2,4)\n5\n5\n\n\n(3,4\n4\n1"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#incremental-assignment-example-1",
+    "href": "teaching/CIVE461/slides/lec-7.html#incremental-assignment-example-1",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Incremental Assignment: Example",
+    "text": "Incremental Assignment: Example\nUpdate travel times\n\n1st iteration: 50% assignment & given order\nStart with FF travel time (\\(t_0\\)) & update after each assignment pair\nUse updated times for next shortest path calculation\n\n\n\n\n\n\n\n\n\n\n\n\n\nO-D pair (1,2) : V (1,2) = 50\n\n\n\n\n\n\n\n\n\nLink\n1\n2\n3\n4\n5\n\n\nV\n50\n0\n0\n0\n0\n\n\nt\n12\n15\n3\n5\n4\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nO-D pair (1,4) : V (1,4) = 50\n\n\n\n\n\n\n\nLink\n1\n2\n3\n4\n5\n\n\nV\n100\n0\n0\n50\n0\n\n\nt\n15\n15\n3\n6.666667\n4\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nO-D pair (2,3) : V (2,3) = 25\n\n\n\n\n\n\n\nLink\n1\n2\n3\n4\n5\n\n\nV\n100\n0\n25\n50\n0\n\n\nt\n15\n15\n3.6\n6.666667\n4\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nO-D pair (3,4) : V (3,4) = 50\n\n\n\n\n\n\n\nLink\n1\n2\n3\n4\n5\n\n\nV\n100\n0\n25\n50\n50\n\n\nt\n15\n15\n3.6\n6.666667\n5.333333\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nO-D pair (2,4) : V (2,4) = 25\n\n\n\n\n\n\n\nLink\n1\n2\n3\n4\n5\n\n\nV\n100\n0\n25\n75\n50\n\n\nt\n15\n15\n3.6\n8\n5.333333\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nO-D pair (1,3) : V (1,3) = 50\n\n\n\n\n\n\n\nLink\n1\n2\n3\n4\n5\n\n\nV\n100\n50\n25\n75\n50\n\n\nt\n15\n16.66667\n3.6\n8\n5.333333"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#incremental-assignment-example-2",
+    "href": "teaching/CIVE461/slides/lec-7.html#incremental-assignment-example-2",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Incremental Assignment: Example",
+    "text": "Incremental Assignment: Example\nUpdate travel times\n\n2nd iteration: 50% assignment & given order\n\n\n\n\n\n\n\n\n\n\n\n\n\nO-D pair (3,4) : V (3,4) = 50\n\n\n\n\n\n\n\n\n\nLink\n1\n2\n3\n4\n5\n\n\nV\n100\n50\n25\n75\n100\n\n\nt\n15\n16.66667\n3.6\n8\n8\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nO-D pair (2,3) : V (2,3) = 25\n\n\n\n\n\n\n\nLink\n1\n2\n3\n4\n5\n\n\nV\n100\n50\n50\n75\n100\n\n\nt\n15\n16.66667\n4.5\n8\n8\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nO-D pair (1,2) : V (1,2) = 50\n\n\n\n\n\n\n\nLink\n1\n2\n3\n4\n5\n\n\nV\n150\n50\n50\n75\n100\n\n\nt\n20\n16.66667\n4.5\n8\n8\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nO-D pair (1,4) : V (1,4) = 50\n\n\n\n\n\n\n\nLink\n1\n2\n3\n4\n5\n\n\nV\n150\n100\n50\n75\n150\n\n\nt\n20\n18.75\n4.5\n8\n16\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nO-D pair (2,4) : V (2,4) = 25\n\n\n\n\n\n\n\nLink\n1\n2\n3\n4\n5\n\n\nV\n150\n100\n50\n100\n150\n\n\nt\n20\n18.75\n4.5\n10\n16\n\n\n\n\n\n\n\n\n\n\nFinal Flow and Corresponding Travel Time on Links\n\n\n\n\n\n\n\nO-D pair (1,3) : V (1,3) = 50\n\n\n\n\n\n\n\nLink\n1\n2\n3\n4\n5\n\n\nV\n150\n150\n50\n100\n150\n\n\nt\n20\n21.42857\n4.5\n10\n16"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#capacity-constrained-deterministic-user-equilibrium-due",
+    "href": "teaching/CIVE461/slides/lec-7.html#capacity-constrained-deterministic-user-equilibrium-due",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Capacity Constrained Deterministic User Equilibrium (DUE)",
+    "text": "Capacity Constrained Deterministic User Equilibrium (DUE)\n\nNote the two routes between same O-D pair will be used by trip-makers iff the travel times on the two routes are the same.\nConsider a single O-D pair (origin A & destination B) with two links (routes) connection them (1 & 2)"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#due-assignment-example",
+    "href": "teaching/CIVE461/slides/lec-7.html#due-assignment-example",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "DUE Assignment: Example",
+    "text": "DUE Assignment: Example\nMust determine link flows {V1, V2} such that \\[𝑉_1+𝑉_2=𝑉_𝐴𝐵\\] \\[𝑡_1=𝑡_2=𝑡^∗\\] Where \\(t^*\\) is the equilibrium travel time between A & B"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#volume-delay-functions-vdf-for-links-1-2",
+    "href": "teaching/CIVE461/slides/lec-7.html#volume-delay-functions-vdf-for-links-1-2",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Volume-Delay Functions (VDF) for Links 1 & 2",
+    "text": "Volume-Delay Functions (VDF) for Links 1 & 2"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#equilibrium-solution",
+    "href": "teaching/CIVE461/slides/lec-7.html#equilibrium-solution",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Equilibrium Solution",
+    "text": "Equilibrium Solution\n\\[𝐹_1=\\int_0^{𝑣_1^∗} f_1(v_1) dv_1\n\\] \\[𝐹_2=\\int_0^{v_2^*}f_2(v_2) dv_2\n\\]\n\nAt equilibrium, minimum \\(F = F1 + F2\\)\nAt any non-equilibrium point, total area under both curves is not minimum: there is extra shaded area"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#equilibrium-solution-1",
+    "href": "teaching/CIVE461/slides/lec-7.html#equilibrium-solution-1",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Equilibrium Solution",
+    "text": "Equilibrium Solution\n\nSpecial case: curves may not intersect\nHere, optimum is area under \\(f_2(v_2)\\)"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#frank-wolfe-algorithm",
+    "href": "teaching/CIVE461/slides/lec-7.html#frank-wolfe-algorithm",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Frank-Wolfe Algorithm",
+    "text": "Frank-Wolfe Algorithm\n\nEquilibrium link volumes are such that the sum of the areas under the volume-delay curves equals the minimum value achievable:\nF(V) given by \\[min \\sum_l \\int_0^{v_l}f_l(v) d(v)  \\text{   (𝐸𝑄1)}\\]\nAbove equation generalizes to any number of O-D pairs & any number of links per path"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#frank-wolfe-algorithm-1",
+    "href": "teaching/CIVE461/slides/lec-7.html#frank-wolfe-algorithm-1",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Frank-Wolfe Algorithm",
+    "text": "Frank-Wolfe Algorithm"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#frank-wolfe-algorithm-2",
+    "href": "teaching/CIVE461/slides/lec-7.html#frank-wolfe-algorithm-2",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Frank-Wolfe Algorithm",
+    "text": "Frank-Wolfe Algorithm"
+  },
+  {
     "objectID": "teaching/CIVE461/slides/lec-7.html#three-route-example",
     "href": "teaching/CIVE461/slides/lec-7.html#three-route-example",
     "title": "Lecture 7 - Trip Assignment",
@@ -2083,7 +2426,14 @@
     "href": "teaching/CIVE461/slides/lec-7.html#three-route-example---solution-3",
     "title": "Lecture 7 - Trip Assignment",
     "section": "Three Route Example - Solution",
-    "text": "Three Route Example - Solution\nPutting everything together, we can print a table summarizing the variable values at each iteration.\n\n\n\n\n\n\n\n \nf1\nf2\nf3\nV1\nV2\nV3\nF1\nF2\nF3\nF\nlambda\n\n\n\n\n0\n10.00\n20.00\n25.00\n1000.00\n0.00\n0.00\n197500.00\n0.00\n0.00\n197500.00\n1.00\n\n\n1\n947.50\n20.00\n25.00\n403.46\n596.54\n0.00\n6039.00\n13701.45\n0.00\n19740.44\n0.40\n\n\n2\n34.84\n34.84\n25.00\n338.45\n500.42\n161.13\n4217.09\n10743.87\n4038.43\n18999.39\n0.84\n\n\n3\n22.30\n27.35\n25.31\n361.97\n482.63\n155.41\n4784.70\n10266.28\n3893.55\n18944.53\n0.96\n\n\n4\n26.09\n26.36\n25.27\n354.58\n472.78\n172.64\n4596.77\n10009.25\n4330.12\n18936.14\n0.98\n\n\n5\n24.82\n25.85\n25.41\n359.22\n469.38\n171.40\n4713.80\n9921.62\n4298.58\n18934.00\n0.99\n\n\n6\n25.61\n25.69\n25.40\n357.30\n466.87\n175.83\n4664.85\n9857.20\n4411.38\n18933.43\n0.99\n\n\n7\n25.28\n25.57\n25.44\n358.58\n465.93\n175.48\n4697.45\n9833.37\n4402.44\n18933.27\n1.00\n\n\n\n\n\n\n\n\nCIVE461 Home"
+    "text": "Three Route Example - Solution\nPutting everything together, we can print a table summarizing the variable values at each iteration.\n\n\n\n\n\n\n\n \nf1\nf2\nf3\nV1\nV2\nV3\nF1\nF2\nF3\nF\nlambda\n\n\n\n\n0\n10.00\n20.00\n25.00\n1000.00\n0.00\n0.00\n197500.00\n0.00\n0.00\n197500.00\n1.00\n\n\n1\n947.50\n20.00\n25.00\n403.46\n596.54\n0.00\n6039.00\n13701.45\n0.00\n19740.44\n0.40\n\n\n2\n34.84\n34.84\n25.00\n338.45\n500.42\n161.13\n4217.09\n10743.87\n4038.43\n18999.39\n0.84\n\n\n3\n22.30\n27.35\n25.31\n361.97\n482.63\n155.41\n4784.70\n10266.28\n3893.55\n18944.53\n0.96\n\n\n4\n26.09\n26.36\n25.27\n354.58\n472.78\n172.64\n4596.77\n10009.25\n4330.12\n18936.14\n0.98\n\n\n5\n24.82\n25.85\n25.41\n359.22\n469.38\n171.40\n4713.80\n9921.62\n4298.58\n18934.00\n0.99\n\n\n6\n25.61\n25.69\n25.40\n357.30\n466.87\n175.83\n4664.85\n9857.20\n4411.38\n18933.43\n0.99\n\n\n7\n25.28\n25.57\n25.44\n358.58\n465.93\n175.48\n4697.45\n9833.37\n4402.44\n18933.27\n1.00"
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-7.html#transit-assignment",
+    "href": "teaching/CIVE461/slides/lec-7.html#transit-assignment",
+    "title": "Lecture 7 - Trip Assignment",
+    "section": "Transit Assignment",
+    "text": "Transit Assignment\n\nTransit assignment not usually a function of congestion\nProcedures typically used:\n\nAll-Or-Nothing\nStochastic (multipath)\n\nMust account for:\n\nWalk access/egress times\nWaiting times as f(headway)\nTransfers\n\nFeasible transfer points\nTransfer times\n\n\n\n\n\n\nCIVE461 Home"
   },
   {
     "objectID": "teaching/CIVE461/supplemental/transport-data.html",
