@@ -11,7 +11,7 @@ editor: visual
 
 ## Participate
 
-Trip Assignment Models (TBA)
+🖥️ [Lecture 7 - Trip Assignment](/teaching/CIVE461/slides/lec-7.html)
 
 ## Practice
 

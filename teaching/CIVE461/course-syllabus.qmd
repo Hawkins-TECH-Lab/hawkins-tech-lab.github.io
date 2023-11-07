@@ -2,8 +2,6 @@
 title: "Syllabus"
 ---
 
-[**Click here**](/documents/sta210-s22-syllabus.pdf "PDF of syllabus") **to download a PDF copy of the syllabus.**
-
 ## Course Info
 
 |           | Day       | Time              | Location                       |
@@ -111,8 +109,8 @@ The final course grade will be calculated as follows:
 | Category              | Percentage      |
 |-----------------------|-----------------|
 | Application exercises | 10%              |
-| Homework              | 21% (7% x 3)    |
-| Project               | 34%             |
+| Homework              | 20% (10% x 2)    |
+| Project               | 35%             |
 | Final Exam            | 35%             |
 
 The final letter grade will be determined based on the following thresholds:

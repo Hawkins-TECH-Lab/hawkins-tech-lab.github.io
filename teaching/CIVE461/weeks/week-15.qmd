@@ -1,19 +1,23 @@
 ---
-title: "Week 13"
-subtitle: "Freight Modeling & Land Use Planning"
+title: "Week 15"
+subtitle: "Freight Modeling & Review"
 editor: visual
 ---
 
 
 ## Prepare
 
-📖 
+📖 Read notes on [freight transportation](/teaching/CIVE461/supplemental/freight-transportation.html) 
 
 ## Participate
 
-🖥️ Freight Models (TBA)
+🖥️ [Lecture 9 - Freight Modeling](/teaching/CIVE461/slides/lec-9.html)
+
+📋 [AE 7 - Review](/teaching/CIVE461/ae/ae-7-review.html) - Submit on Canvas
 
 ## Practice
+
+📋 [AE 7 - Review](/teaching/CIVE461/ae/ae-7-review.html) - Submit on Canvas
 
 <br><br>
 

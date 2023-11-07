@@ -1,21 +1,21 @@
 ---
 title: "Week 14"
-subtitle: "Freight Modeling"
+subtitle: "Wood Buffalo TDM"
 editor: visual
 ---
 
 
 ## Prepare
 
-📖 
+None 
 
 ## Participate
 
-🖥️ Freight Models (TBA)
+🖥️ [Lecture 8 - Wood Buffalo TDM](/teaching/CIVE461/slides/lec-8.html)
 
 ## Practice
 
-None
+✍️ [IA 2 - Trip Assignment](/teaching/CIVE461/assignments/indiv_assignment2.html) - Submit on Canvas
 
 <br><br>
 

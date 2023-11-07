@@ -106,6 +106,30 @@ website:
               text: "Description"
             - href: teaching/CIVE461/project/project-feedback.qmd
               text: "Feedback"
+        - section: "Assignments"
+          contents:
+            - href: teaching/CIVE461/assignments/indiv_assignment1.qmd
+              text: "Assignment 1"
+            - href: teaching/CIVE461/assignments/indiv_assignment2.qmd
+              text: "Assignment 2"
+        - section: "Application Exercises"
+          contents:
+            - href: teaching/CIVE461/ae/ae-0-travel-diary.qmd
+              text: "AE 0 - Travel Diary"
+            - href: teaching/CIVE461/ae/ae-1-transportation-planning-experience.qmd
+              text: "AE 1 - Planning Experience"
+            - href: teaching/CIVE461/ae/ae-2-statistics.qmd
+              text: "AE 2 - Statistics"
+            - href: teaching/CIVE461/ae/ae-3-transport-plans.qmd
+              text: "AE 3 - Regional Plans"
+            - href: teaching/CIVE461/ae/ae-4-trip-distribution.qmd
+              text: "AE 4 - Trip Distribution"
+            - href: teaching/CIVE461/ae/ae-5-equity.qmd
+              text: "AE 5 - Equity"
+            - href: teaching/CIVE461/ae/ae-6-trip-assignment.qmd
+              text: "AE 6 - Trip Assignment"
+            - href: teaching/CIVE461/ae/ae-7-review.qmd
+              text: "AE 7 - Review"
 
     - id: CIVE864
       title: "CIVE 864"

@@ -107,13 +107,13 @@ execute:
 7. **Else** select unvisited node marked with **smallest tentative distance**, set as new current node, & **go to step 3**.
 
 ## Shortest Path - Dijkstra Algorithm 2 {.smaller}
-1. Set $k = 1$. Choose a node as the **initial node**. Label this node [-,0] where the minus sign indicates there is **no predecessor node** & the zero indicates there is **zero cost** associated with reaching this node. Set M equal to {n1} where n1 is equal to the node number for the initial node.
+1. Set $k = 1$. Choose a node as the **initial node**. Label this node [-,0] where the minus sign indicates there is **no predecessor node** & the zero indicates there is **zero cost** associated with reaching this node. Set M equal to {$n_1$} where $n_1$ is equal to the node number for the initial node.
 2. Set $k = 2$. Find an unlabeled node $n_2$ such that **$c(n_1, n_2)$** is a minimum. Assign $n_2$ the label $[n_1, c(n_1,  n_2)]$, meaning $n_1$ is the predecessor node to $n_2$. Add $n_2$ to the set of labeled nodes (i.e., $M$ now equals $\{n_1, n_2\}$)
 3. Set $k = k + 1$
 
 ## Shortest Path - Dijkstra Algorithm 2 {.smaller}
-4. Find an unlabeled node $n_k$ such that $C(nk) = min {C(n_x) + min[(n_x, n_y)]}$ for $n_x \in M$ & $n_y \in M’ = C(n_1) + c(n_i, n_k)$ for some $n_i \in M$, $n_k \in M’$. Assign the label $[n_i, C(n_k)]$ & add $n_k$ to $M$. 
-    - The equation above searchers over the currently labeled nodes – all nodes connected to initial node with links to unlabeled nodes. Seeks new node to connect to initial node (i.e., add to labeled set), such that path to new node has **lowest travel cost** from initial node.
+4. Find an unlabeled node $n_k$ such that $C(n_k) = min \{C(n_x) + min[(n_x, n_y)]\}$ for $n_x \in M$ & $n_y \in M’ = C(n_1) + c(n_i, n_k)$ for some $n_i \in M$, $n_k \in M’$. Assign the label $[n_i, C(n_k)]$ & add $n_k$ to $M$. 
+    - The equation above searches over the currently labeled nodes – all nodes connected to initial node with links to unlabeled nodes. Seeks new node to connect to initial node (i.e., add to labeled set), such that path to new node has **lowest travel cost** from initial node.
 5. **If** all nodes labeled. **Stop. Else, go to step 3.**
 
 Final product is **shortest path tree** rooted at node $n_1$
