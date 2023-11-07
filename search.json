@@ -100,9 +100,30 @@
   {
     "objectID": "teaching/CIVE461/ae/ae-7-review.html",
     "href": "teaching/CIVE461/ae/ae-7-review.html",
-    "title": "Review",
+    "title": "Final Exam Preparation",
     "section": "",
-    "text": "We discussed several transportation and urban develop equity issues in lecture. Please provide a brief (3-5 sentence) summary of your thoughts on the class discussion via Canvas."
+    "text": "Problem 1. Explain why it is recommended to have an intercept in a linear regression model. (3 marks)\nProblem 2. Describe (preferably in precise statistical terms) the use of t-statistics for the evaluation of a trip generation model. (5 marks)\nProblem 3. What does it mean if a linear regression trip generation model has an \\(R^2\\) of 0.65? (5 marks)\nProblem 4. Explain the difference between model calibration and model validation. (5 marks)\nProblem 5. Consider that you are working as a transportation planner for the City of Lincoln and are in-charge of evaluating the impacts of the COVID-19 pandemic on future transit ridership in Lincoln. As part of this job, you are asked to design a data collection program. Please delineate your design in terms of what type of data you’d prefer to collect, along with your sampling strategy. Please be concise and justify any specific decision you make in this regard. (4 marks)\nProblem 6. Consider a transportation company that provides bus transit service to the elderly and people with disabilities in a small city in a contract with the local municipality. Develop a set of performance measures from the perspectives of the transportation company, the county government, and the service users. (4 marks)\nProblem 7. It is proposed to widen an existing arterial street to make way for an HOV facility. List appropriate performance measures from the point of view of (4 marks)\n\nthe owner (local highway agency)\nfacility users\nnonusers who are affected by the system."
+  },
+  {
+    "objectID": "teaching/CIVE461/ae/ae-7-review.html#short-answer-comprehension-answer-may-be-in-point-form.-the-number-of-points-should-be-roughly-based-on-the-number-of-marks-allocated-to-the-question.",
+    "href": "teaching/CIVE461/ae/ae-7-review.html#short-answer-comprehension-answer-may-be-in-point-form.-the-number-of-points-should-be-roughly-based-on-the-number-of-marks-allocated-to-the-question.",
+    "title": "Final Exam Preparation",
+    "section": "",
+    "text": "Problem 1. Explain why it is recommended to have an intercept in a linear regression model. (3 marks)\nProblem 2. Describe (preferably in precise statistical terms) the use of t-statistics for the evaluation of a trip generation model. (5 marks)\nProblem 3. What does it mean if a linear regression trip generation model has an \\(R^2\\) of 0.65? (5 marks)\nProblem 4. Explain the difference between model calibration and model validation. (5 marks)\nProblem 5. Consider that you are working as a transportation planner for the City of Lincoln and are in-charge of evaluating the impacts of the COVID-19 pandemic on future transit ridership in Lincoln. As part of this job, you are asked to design a data collection program. Please delineate your design in terms of what type of data you’d prefer to collect, along with your sampling strategy. Please be concise and justify any specific decision you make in this regard. (4 marks)\nProblem 6. Consider a transportation company that provides bus transit service to the elderly and people with disabilities in a small city in a contract with the local municipality. Develop a set of performance measures from the perspectives of the transportation company, the county government, and the service users. (4 marks)\nProblem 7. It is proposed to widen an existing arterial street to make way for an HOV facility. List appropriate performance measures from the point of view of (4 marks)\n\nthe owner (local highway agency)\nfacility users\nnonusers who are affected by the system."
+  },
+  {
+    "objectID": "teaching/CIVE461/ae/ae-7-review.html#short-answer-quantitative-comprehension-of-quantitative-concepts-in-the-course-and-the-ability-to-perform-simple-calculation-as-a-demonstration.",
+    "href": "teaching/CIVE461/ae/ae-7-review.html#short-answer-quantitative-comprehension-of-quantitative-concepts-in-the-course-and-the-ability-to-perform-simple-calculation-as-a-demonstration.",
+    "title": "Final Exam Preparation",
+    "section": "Short answer quantitative – Comprehension of quantitative concepts in the course and the ability to perform simple calculation as a demonstration.",
+    "text": "Short answer quantitative – Comprehension of quantitative concepts in the course and the ability to perform simple calculation as a demonstration.\nProblem 1. A w% increase in downtown parking costs resulted in an f% reduction in downtown auto trips and a g% increase in transit ridership for downtown routes. Derive expressions for the arc elasticities of auto and transit demand with respect to parking costs. (4 marks)\nProblem 2. The aggregate demand for a bus transit service serving a newly developed suburban area is represented by the equation: (4 marks) \\[V = 300 - 40p^2\\] where \\(V\\) is the number of trips made per month and \\(p\\) is the average price of a ticket for the trip. In a given month, the average price was $0.75.\nWhat is the point elasticity of demand for the bus transit service with respect to price?\nProblem 3. Consider the following two AM peak work trip generation models, estimated by household linear regression: (4 marks) \\[y=0.50(2.5) + 2.0(6.9) x_1 + 1.5(5.6) x_2 \\text{, }R^2=0.589\\] \\[y=0.01(0.9) + 2.3(4.6) x_1+1.1(1.9) z_1+4.1(3.4) z_2  \\text{, }R^2=0.601\\]\nNote: number within ( ) refers to the t-statistics of the coefficients above. where \\(y\\) are household trips to work in the morning peak, \\(x_1\\) is the number of workers in the household, \\(x_2\\) is the number of cars in the household, \\(z_1\\) is a dummy variable which takes the value of 1 if the household has one car, and \\(z_2\\) is a dummy which takes the value of 1 if the household has two or more cars. Choose one of the models clearly explaining the reasoning behind your decision."
+  },
+  {
+    "objectID": "teaching/CIVE461/ae/ae-7-review.html#long-form-quantitative-answer-a-longer-question-requiring-multiple-calculations.",
+    "href": "teaching/CIVE461/ae/ae-7-review.html#long-form-quantitative-answer-a-longer-question-requiring-multiple-calculations.",
+    "title": "Final Exam Preparation",
+    "section": "Long-form quantitative answer-A longer question requiring multiple calculations.",
+    "text": "Long-form quantitative answer-A longer question requiring multiple calculations.\nProblem 1. The number of automobile trips per hour (V) between two midwestern cities has the following function: (4 marks) \\[V=\\alpha T_a^{-2.0} T_t^{+0.5} C_a^{-0.5} C_t^{+0.6}\\]\nwhere \\(T_a\\) and \\(T_t\\) are the travel time for auto and transit, respectively; \\(C_a\\) and \\(C_t\\) are the out-of-pocket costs for auto and transit, respectively; and \\(\\alpha\\) is a constant that reflects the size and average income of the population.\n\nAt the current time, there are 50,000 automobile trips between the cities every day. If a new parking policy results in an increase of out-of-pocket auto costs from $5 to $6, what will be the change in demand?\nIn addition to part (a), if transit facility improvements lead to a reduction in transit time from 1 hour to 45 minutes, what would be the new demand for automobile travel between the two cities?\n\nProblem 2. The following table presents data collected in the last household O–D survey (made ten years ago) for three particular zones: (4 marks)\nTable 2.1. Zone Attributes\n\n\n\n\n\n\n\n\n\n\nZone\nMembers per Household\nWorkers per Household\nMean Income\nPopulation\n\n\n\n\nI\n2.0\n1.0\n50,000\n20,000\n\n\nII\n3.0\n2.0\n70,000\n60,000\n\n\nIII\n2.5\n2.0\n100,000\n100,000\n\n\n\nTen years ago two household-based trip generation models were estimated using this data. The first was a linear regression model given by: \\[y=0.2+0.5x_1+1.1z_1  \\text{, }R^2=0.78\\]\nwhere y household peak period trips. \\(x_1\\) is the number of workers in the household and \\(z_1\\) is a dummy variable that takes the value of 1 if household income is over 70,000 and 0otherwise. The second was cross-classification analysis model based on two income strata (high and low income) and two levels of family income (1 or less and 2 or more workers per households). The estimated trip rates are:\nTable 2.2. Trip Rates by Family Attributes\n\n\n\nFamily Structure\nIncome\n\n\n\n\n\n\nLow\nHigh\n\n\n1 or fewer\n0.8\n1.0\n\n\n2 or more\n1.2\n2.3\n\n\n\nIf the total number of trips generated today during the peak hour by the three zones are given by:\nTable 2.3. Peak Period Trips\n\n\n\nZone\nPeak Period Trips\n\n\n\n\nI\n8,200\n\n\nII\n24,300\n\n\nIII\n92,500\n\n\n\nand it is estimated that the zone characteristics (income, number of households and family structure) have remained stable, decide which model is best. Explain your answer.\nProblem 3. There is a demand of 600 trips from zone A to zone B. Two modes are available for travelling from zone A to zone B, transit and single occupant automobile. A binary logit model has been developed that predicts mode choice between those zones with the following utility functions:\n\\[V(transit)=-0.20-0.15IVTT(transit)-0.30TWALK(transit)\n              - 0.40 TWAIT(transit) - 0.20 COST(transit)\\]\n\\[V(auto)=-0.25 IVTT(auto)\\]\nwhere \\(IVTT\\), \\(TWALK\\), and \\(TWAIT\\) are in-vehicle travel time, walk time and wait time, measured in minutes and \\(COST\\) is in dollars.\nTable 3.1. Transit Route Characteristics\n\n\n\n\n\n\n\nLight Rail transit in dedicated right of way\n\n\n\nLine length (from A to B)\n10 km\n\n\nNumber of intermediate stops\n1 stop, located halfway along the route.\n\n\nDwell time per intermediate stop\n30 s\n\n\nCruise speed\n80 km/h\n\n\nAcceleration\n2.5 m/s2\n\n\nDeceleration\n2.5 m/s2\n\n\nHeadway\n5 min\n\n\nTransit Fare\n$5.00\n\n\n\nFor transit users, assume an average zonal walk time for all trips to/from the stations. Stations are at the centroids of zones A and B, which are 400m x 600m rectangular zones. Zones have randomly distributed origins-destinations and a Manhattan grid. Walking speed is 1.25m/s.\nAuto in vehicle travel time depends on a BPR formula as follows:\n\\[IVTT(auto) = (60L/S)*(1 + (v/c)^4)\\] Road length (L) = 10 km Free flow speed (S) = 65 km/hr Road capacity (c) = 550 veh/hr\nAssume that only vehicles travelling from A to B use the highway.\n\nDetermine the in-vehicle travel time by transit. (6 marks)\nDetermine the expected walk and wait time for transit. (4 marks)\nDetermine the mode shares that would be predicted by the model assuming free flow roadway travel times. (5 marks)\nDetermine the number of vehicles (to the nearest 50) on the road that would be predicted by the model assuming congested roadway travel times (Hint, you can use trial and error). (10 marks)\n\nProblem 4. Table 1 contains a list of daily household work trips and associated household attributes obtained from a travel survey. Choose appropriate data from this table to construct a (household-level) cross-classification daily work trip generation model. Do not use more than two classifying attributes in the model.\nTable 4.1: Travel Survey Data\n\n\n\n\n\n\n\n\n\n\n\nHousehold Number\nZone of Residence\nNumber of Adults\nNumber of Children\nDaily HH Work Trips\nNumber of Vehicles\n\n\n\n\n1\n235\n1\n0\n2\n1\n\n\n2\n500\n2\n1\n3\n3\n\n\n3\n500\n2\n1\n5\n2\n\n\n4\n500\n3\n2\n2\n3\n\n\n5\n43\n2\n0\n2\n2\n\n\n6\n235\n2\n0\n4\n1\n\n\n7\n500\n2\n3\n2\n2\n\n\n8\n25\n2\n2\n5\n2\n\n\n9\n235\n1\n0\n1\n0\n\n\n10\n25\n1\n2\n2\n2\n\n\n11\n500\n2\n2\n4\n1\n\n\n12\n235\n2\n2\n2\n1\n\n\n13\n235\n2\n2\n3\n0\n\n\n14\n235\n4\n2\n4\n1\n\n\n15\n43\n2\n0\n2\n2\n\n\n16\n25\n1\n0\n2\n2\n\n\n17\n500\n2\n0\n4\n1\n\n\n18\n25\n3\n2\n4\n3\n\n\n19\n25\n1\n0\n3\n0\n\n\n20\n235\n2\n1\n4\n2\n\n\n21\n25\n1\n0\n2\n1\n\n\n22\n25\n2\n2\n2\n0\n\n\n23\n500\n1\n1\n0\n0\n\n\n24\n43\n2\n0\n4\n4\n\n\n25\n235\n2\n2\n4\n2\n\n\n26\n43\n3\n0\n0\n0\n\n\n27\n43\n1\n0\n0\n1\n\n\n28\n43\n2\n1\n4\n2\n\n\n29\n25\n1\n1\n2\n1\n\n\n30\n25\n2\n0\n2\n1\n\n\n\nProblem 5. Consider the 2 zone system shown below, with a 4 link road network. 7000 vehicles are travelling from Zone 1 to Zone 2 in the am peak hour. The peak hour volume delay function for each link uses the BPR formula as follows: \\[f(V_l)=L/S(1+(v/c)^b)\\]\n\n\n\n\n\nLink attributes are shown in Table 5.1.\nTable 5.1 Link Attributes\n\n\n\nLink\nL (mi)\nS (mi/hr)\nc (veh/hr)\nb\n\n\n\n\n1\n0.55\n55\n2,000\n4\n\n\n2\n1.25\n100\n3,000\n4\n\n\n3\n0.7\n45\n1,000\n4\n\n\n4\n0.7\n45\n1,000\n4\n\n\n\n\nConduct one iteration of Frank-Wolfe algorithm of DUE traffic assignment, considering your starting volume for V1= 3500 vph, V2=3500vph, V3=1750vph, V4=1750vph. λ = 0.57 for the first iteration. (10 marks)\nWhat are the basic difference between deterministic and stochastic user equilibrium assumptions of traffic assignment? (2 marks)\nFor what type of traffic conditions, stochastic user equilibrium assignment would be appropriate (please show with a diagram)? (2 marks)\nExplain the concept of System Optimal traffic assignment approach? (3 marks)\nDo you think, with 60% vehicles on-road being connected and automated vehicles, it is possible to achieve a system optimal traffic distribution? Please explain. (3 marks)\n\nProblem 6. Consider two transit routes: a) A “mid-town” route with one end terminating at a sub-regional center. b) A route from a suburb to the city center.\nCharacteristics for the 2 routes are provided in Table 6.1. The transit mode share for each route in the morning peak is given by a (auto versus transit) logit mode choice model with the following systematic utility functions:\n\\[V(transit)=-0.20 - 0.05 IVTT(transit) - 0.12 TWALK(transit) - 0.11 TWAIT(transit)\\]\n\\[V(auto)=-0.05 IVTT(auto) - 0.20 COST(auto)\\]\nTable 6.1 Transit Route Characteristics\n\n\n\n\n\n\n\n\n\n\n\n\n\nRoute\nCurrent Frequency (buses/hr)\nTransit\n\n\nAuto\n\nTotal AM Peak Trips\n\n\n\n\n\n\nIVTT (min)\nTWALK (min)\nCOST ($)\nIVTT (min)\nCOST ($)\n\n\n\n1\n7\n30\n5\n2\n25\n5\n2,000\n\n\n2\n15\n45\n5\n2\n50\n10\n2,500\n\n\n\nIVTT = in-vehicle travel time COST = travel cost TWALK = transit walk time TWAIT = transit wait time the transit route corridor during the morning peak Total AM Peak trips = total trips (all modes) made in\nThe transit agency has 4 new buses that it can allocate to only one of these two routes. Assuming that auto travel times remain constant:\n\nHow many new passengers would be attracted to each route for such allocation of 4 new buses? (10 marks)\nFor time spent in vehicles, what is the dollar value-of-time implied by the model? (2 marks)\nIf traffic congestion causes an increase in Auto IVTT on Route 1 to 30 min and on Route 2 to 53 min, (considering bus IVTTs unchanged), what will be the new modal shares of the two routes? (8 marks)\n\nProblem 7. A neighborhood with Manhattan grid road network consists of six traffic analysis zones. The population for each zone is given in Table 3. Average walking speed of people living in the neighborhood is \\(1.5m/s^2\\). An LRT line connects the neighborhood to the central business district (CBD). The rail line has a frequency of 5 trains per hour and has two stations in the neighborhood, as shown below. The LRT vehicle has an acceleration rate of \\(1.3m/s^2\\) and a deceleration rate of \\(1.3m/s^2\\), and a maximum speed of 40 km/hr. Consider that the trip origins and destinations uniformly distributed throughout each zone.\n\nCalculate the average intrazonal walk travel time (average walk time between two random points) for each zone. (5 marks)\nCalculate the average walk travel time for each zone to the nearest light rail station. (5 marks)\nCalculate the average wait time. State any additional assumptions you have made. (5 marks)\nWhat are the components of transit out-of-vehicle travel times? (5 marks)\n\n\n\n\n\n\nTable 7.1: Zonal Population\n\n\n\nZone\nPopulation\n\n\n\n\n1\n175\n\n\n2\n100\n\n\n3\n200\n\n\n4\n300\n\n\n5\n250\n\n\n6\n100\n\n\n\nProblem 8. A gravity model has an impedance function \\(fij = exp(\\beta t_{ij})\\), where \\(t_{ij}\\) is the travel time between zones \\(i\\) and \\(j\\).\n\nWhat does \\(\\beta\\) represent? (2 marks)\nShould \\(\\beta\\) be positive or negative? (2 marks)\nWhat model would result if \\(\\beta\\) = 0 ? (2 marks)\n\nProblem 9. Two linear regression trip generation models are listed below. Briefly critique each model in terms of its choice of variables and correspondence to available theory concerning trip generation behaviour. (8 marks)\n\nHBW(h) = -0.1 NVEH(h) + 0.9 NWORK(h) + 0.1 NCHILD(h)\nHBW(h) = Number of daily home-based work trip origins generated by household h\nNVEH(h) = Number of vehicles in household h\nNWORK(h) = Number of workers in household h\nNCHILD(h) = Number of children under 16 years old in household h\nNHB(i) = -500 + 0.1 POP(i) – 0.01 NCHILD(i) + 0.05 EMP(i)\nNHB(i) = Number of daily non-home-based trips originating in zone i\nPOP(i) = Total population living in zone i\nNCHILD(i) = Number of children living in zone i\nEMP(i) = Total employment (jobs) in zone i"
   },
   {
     "objectID": "teaching/CIVE461/assignments/indiv_assignment1.html",
@@ -172,14 +193,14 @@
     "href": "teaching/CIVE461/course-syllabus.html",
     "title": "Syllabus",
     "section": "",
-    "text": "Click here to download a PDF copy of the syllabus."
+    "text": "Day\nTime\nLocation\n\n\n\n\nLectures\nMon\n1:30 pm - 2:45 pm\nPKI 164 (Omaha)\n\n\nLectures\nWed\n1:30 pm - 2:45 pm\nNH W 213 (Lincoln)\n\n\n\nNote: I am committed to lecturing from both Lincoln & Omaha each week. However, the days may vary depending upon other obligations. Unless otherwise indicated, I will lecture from Lincoln on Tuesdays and Omaha on Thursdays. When possible, I will announce one week in advance any lecture location changes.\nPrerequisites: CIVE361\nDescription: Development of urban transportation planning objectives and goals. Data collection procedures, land use and travel forecasting techniques, trip generation, trip distribution, modal choice analysis, and traffic assignment.\nCredit Hours: 3\n\n\nDr. Jason Hawkins\nPKI 206C (Omaha) & NH 113 (Lincoln)\n402-472-0529 | civil.unl.edu | Email me through the course Canvas messenger system\n\n\n\nOmid Armantalab\nOffice hours: NH 165 (Lincoln)\nEmail TA through the course Canvas messenger system"
   },
   {
     "objectID": "teaching/CIVE461/course-syllabus.html#course-info",
     "href": "teaching/CIVE461/course-syllabus.html#course-info",
     "title": "Syllabus",
-    "section": "Course Info",
-    "text": "Course Info\n\n\n\n\n\n\n\n\n\n\nDay\nTime\nLocation\n\n\n\n\nLectures\nMon\n1:30 pm - 2:45 pm\nPKI 164 (Omaha)\n\n\nLectures\nWed\n1:30 pm - 2:45 pm\nNH W 213 (Lincoln)\n\n\n\nNote: I am committed to lecturing from both Lincoln & Omaha each week. However, the days may vary depending upon other obligations. Unless otherwise indicated, I will lecture from Lincoln on Tuesdays and Omaha on Thursdays. When possible, I will announce one week in advance any lecture location changes.\nPrerequisites: CIVE361\nDescription: Development of urban transportation planning objectives and goals. Data collection procedures, land use and travel forecasting techniques, trip generation, trip distribution, modal choice analysis, and traffic assignment.\nCredit Hours: 3\n\nInstructor:\nDr. Jason Hawkins\nPKI 206C (Omaha) & NH 113 (Lincoln)\n402-472-0529 | civil.unl.edu | Email me through the course Canvas messenger system\n\n\nTeaching assistant:\nOmid Armantalab\nOffice hours: NH 165 (Lincoln)\nEmail TA through the course Canvas messenger system"
+    "section": "",
+    "text": "Day\nTime\nLocation\n\n\n\n\nLectures\nMon\n1:30 pm - 2:45 pm\nPKI 164 (Omaha)\n\n\nLectures\nWed\n1:30 pm - 2:45 pm\nNH W 213 (Lincoln)\n\n\n\nNote: I am committed to lecturing from both Lincoln & Omaha each week. However, the days may vary depending upon other obligations. Unless otherwise indicated, I will lecture from Lincoln on Tuesdays and Omaha on Thursdays. When possible, I will announce one week in advance any lecture location changes.\nPrerequisites: CIVE361\nDescription: Development of urban transportation planning objectives and goals. Data collection procedures, land use and travel forecasting techniques, trip generation, trip distribution, modal choice analysis, and traffic assignment.\nCredit Hours: 3\n\n\nDr. Jason Hawkins\nPKI 206C (Omaha) & NH 113 (Lincoln)\n402-472-0529 | civil.unl.edu | Email me through the course Canvas messenger system\n\n\n\nOmid Armantalab\nOffice hours: NH 165 (Lincoln)\nEmail TA through the course Canvas messenger system"
   },
   {
     "objectID": "teaching/CIVE461/course-syllabus.html#learning-objectives",
@@ -221,7 +242,7 @@
     "href": "teaching/CIVE461/course-syllabus.html#grading",
     "title": "Syllabus",
     "section": "Grading",
-    "text": "Grading\nThe final course grade will be calculated as follows:\n\n\n\nCategory\nPercentage\n\n\n\n\nApplication exercises\n10%\n\n\nHomework\n21% (7% x 3)\n\n\nProject\n34%\n\n\nFinal Exam\n35%\n\n\n\nThe final letter grade will be determined based on the following thresholds:\n\n\n\nLetter Grade\nFinal Course Grade\n\n\n\n\nA+\n&gt;= 97\n\n\nA\n93 - 96.99\n\n\nA-\n90 - 92.99\n\n\nB+\n87 - 89.99\n\n\nB\n83 - 86.99\n\n\nB-\n80 - 82.99\n\n\nC+\n77 - 79.99\n\n\nC\n73 - 76.99\n\n\nC-\n70 - 72.99\n\n\nD+\n67 - 69.99\n\n\nD\n63 - 66.99\n\n\nD-\n60 - 62.99\n\n\nF\n&lt; 60"
+    "text": "Grading\nThe final course grade will be calculated as follows:\n\n\n\nCategory\nPercentage\n\n\n\n\nApplication exercises\n10%\n\n\nHomework\n20% (10% x 2)\n\n\nProject\n35%\n\n\nFinal Exam\n35%\n\n\n\nThe final letter grade will be determined based on the following thresholds:\n\n\n\nLetter Grade\nFinal Course Grade\n\n\n\n\nA+\n&gt;= 97\n\n\nA\n93 - 96.99\n\n\nA-\n90 - 92.99\n\n\nB+\n87 - 89.99\n\n\nB\n83 - 86.99\n\n\nB-\n80 - 82.99\n\n\nC+\n77 - 79.99\n\n\nC\n73 - 76.99\n\n\nC-\n70 - 72.99\n\n\nD+\n67 - 69.99\n\n\nD\n63 - 66.99\n\n\nD-\n60 - 62.99\n\n\nF\n&lt; 60"
   },
   {
     "objectID": "teaching/CIVE461/course-syllabus.html#five-tips-for-success",
@@ -277,7 +298,7 @@
     "href": "teaching/CIVE461/index.html",
     "title": "CIVE461",
     "section": "",
-    "text": "This page contains an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses, with all changes documented here.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nDate\nTopic\nPrepare\nSlides\nAE\nHW\nExam\n\n\n\n\n\n\n1\nMon, Aug 21\nWelcome to CIVE 461!\n📖\n\n\n\n\n\n\n\n\n\nWed, Aug 23\nIntroduction to transportation planning\n\n🖥️\n📋\n\n\n\n\n\n\n2\nMon, Aug 28\nStatistics\n📖\n🖥️\n\n\n\n\n\n\n\n\nWed, Aug 30\nStatistical modeling\n\n\n\n\n\n\n\n\n\n3\nMon, Sep 04\nLabor Day\n📖\n\n\n\n\n\n\n\n\n\nWed, Sep 06\nStatistical modeling\n\n\n📋\n\n\n\n\n\n\n4\nMon, Sep 11\nProgramming in Python\n📖\n\n\n\n\n\n\n\n\n\nWed, Sep 13\nTrip generation\n\n🖥️\n📋\n\n\n\n\n\n\n5\nMon, Sep 18\nTrip generation\n📖\n\n\n\n\n\n\n\n\n\nWed, Sep 20\nTrip generation\n\n\n\n\n\n\n\n\n\n6\nMon, Sep 25\nTrip generation\n📖\n\n\n\n\n\n\n\n\n\nWed Sep 27\nTransportation planning process, regulation, and data\n\n🖥️\n📋\n✍️\n\n\n\n\n\n7\nMon, Oct 02\nTransportation planning process, regulation, and data\n📖\n\n\n\n\n\n\n\n\n\nWed, Oct 04\nTrip distribution\n\n🖥️\n📋\n\n\n\n\n\n\n8\nMon, Oct 09\nTrip distribution\n📖\n\n\n\n\n\n\n\n\n\nWed, Oct 11\nTrip distribution\n\n\n\n\n\n\n\n\n\n9\nMon, Oct 16\n*Fall break**\n📖\n\n\n\n\n\n\n\n\n\nWed Oct 18\nGuest lecture\n\n\n\n\n\n\n\n\n\n10\nMon, Oct 23\nChoice models\n📖\n🖥️\n\n✍️\n\n\n\n\n\n\nWed, Oct 25\nProgramming choice models\n\n\n\n\n\n\n\n\n\n11\nMon, Oct 30\nMode and destination choice\n📖\n🖥️\n\n✍️\n\n\n\n\n\n\nWed, Nov 01\nMode and destination choice\n\n\n\n\n\n\n\n\n\n12\nMon, Nov 06\nTransportation equity\n📖\n\n\n\n\n\n\n\n\n\nWed, Nov 08\nTrip assignment\n\n🖥️\n\n\n\n\n\n\n\n13\nMon, Nov 13\nTrip assignment\n📖\n\n\n✍️\n\n\n\n\n\n\nWed, Nov 15\nTrip assignment\n\n\n\n\n\n\n\n\n\n14\nMon, Nov 20\nFreight modeling\n📖\n\n\n✍️\n\n\n\n\n\n\nWed Nov 22\nThanksgiving break\n\n\n\n\n\n\n\n\n\n15\nMon, Nov 27\nFreight modeling\n📖\n\n\n\n\n\n\n\n\n\nWed, Nov 28\nLand use planning\n\n\n\n✍️\n\n\n\n\n\n16\nMon, Dec 04\nReview\n📖\n\n\n\n\n\n\n\n\n\nWed, Dec 06\nReview"
+    "text": "This page contains an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses, with all changes documented here.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nDate\nTopic\nPrepare\nSlides\nAE\nHW\nExam\n\n\n\n\n\n\n1\nMon, Aug 21\nWelcome to CIVE 461!\n📖\n\n\n\n\n\n\n\n\n\nWed, Aug 23\nIntroduction to transportation planning\n\n🖥️\n📋\n\n\n\n\n\n\n2\nMon, Aug 28\nStatistics\n📖\n🖥️\n\n\n\n\n\n\n\n\nWed, Aug 30\nStatistical modeling\n\n\n\n\n\n\n\n\n\n3\nMon, Sep 04\nLabor Day\n📖\n\n\n\n\n\n\n\n\n\nWed, Sep 06\nStatistical modeling\n\n\n📋\n\n\n\n\n\n\n4\nMon, Sep 11\nProgramming in Python\n📖\n\n\n\n\n\n\n\n\n\nWed, Sep 13\nTrip generation\n\n🖥️\n📋\n\n\n\n\n\n\n5\nMon, Sep 18\nTrip generation\n📖\n\n\n\n\n\n\n\n\n\nWed, Sep 20\nTrip generation\n\n\n\n\n\n\n\n\n\n6\nMon, Sep 25\nTrip generation\n📖\n\n\n\n\n\n\n\n\n\nWed Sep 27\nTransportation planning process, regulation, and data\n\n🖥️\n📋\n✍️\n\n\n\n\n\n7\nMon, Oct 02\nTransportation planning process, regulation, and data\n📖\n\n\n\n\n\n\n\n\n\nWed, Oct 04\nTrip distribution\n\n🖥️\n📋\n\n\n\n\n\n\n8\nMon, Oct 09\nTrip distribution\n📖\n\n\n\n\n\n\n\n\n\nWed, Oct 11\nTrip distribution\n\n\n\n\n\n\n\n\n\n9\nMon, Oct 16\n*Fall break**\n📖\n\n\n\n\n\n\n\n\n\nWed Oct 18\nGuest lecture\n\n\n\n\n\n\n\n\n\n10\nMon, Oct 23\nChoice models\n📖\n🖥️\n\n✍️\n\n\n\n\n\n\nWed, Oct 25\nProgramming choice models\n\n\n\n\n\n\n\n\n\n11\nMon, Oct 30\nMode and destination choice\n📖\n🖥️\n\n✍️\n\n\n\n\n\n\nWed, Nov 01\nMode and destination choice\n\n\n\n\n\n\n\n\n\n12\nMon, Nov 06\nTransportation equity\n📖\n\n📋\n\n\n\n\n\n\n\nWed, Nov 08\nTrip assignment\n\n🖥️\n\n\n\n\n\n\n\n13\nMon, Nov 13\nTrip assignment\n📖\n\n\n✍️\n\n\n\n\n\n\nWed, Nov 15\nTrip assignment\n\n\n📋\n\n\n\n\n\n\n14\nMon, Nov 20\nWood Buffalo TDM\n📖\n🖥️\n\n✍️\n\n\n\n\n\n\nWed Nov 22\nThanksgiving break\n\n\n\n\n\n\n\n\n\n15\nMon, Nov 27\nFreight transportation\n📖\n🖥️\n\n\n\n\n\n\n\n\nWed, Nov 28\nReview\n\n\n\n✍️\n\n\n\n\n\n16\nMon, Dec 04\nReview\n📖\n\n📋\n\n\n\n\n\n\n\nWed, Dec 06\nLand use"
   },
   {
     "objectID": "teaching/CIVE461/project/project-description.html",
@@ -2118,14 +2139,14 @@
     "href": "teaching/CIVE461/slides/lec-7.html#shortest-path---dijkstra-algorithm-2",
     "title": "Lecture 7 - Trip Assignment",
     "section": "Shortest Path - Dijkstra Algorithm 2",
-    "text": "Shortest Path - Dijkstra Algorithm 2\n\nSet \\(k = 1\\). Choose a node as the initial node. Label this node [-,0] where the minus sign indicates there is no predecessor node & the zero indicates there is zero cost associated with reaching this node. Set M equal to {n1} where n1 is equal to the node number for the initial node.\nSet \\(k = 2\\). Find an unlabeled node \\(n_2\\) such that \\(c(n_1, n_2)\\) is a minimum. Assign \\(n_2\\) the label \\([n_1, c(n_1, n_2)]\\), meaning \\(n_1\\) is the predecessor node to \\(n_2\\). Add \\(n_2\\) to the set of labeled nodes (i.e., \\(M\\) now equals \\(\\{n_1, n_2\\}\\))\nSet \\(k = k + 1\\)"
+    "text": "Shortest Path - Dijkstra Algorithm 2\n\nSet \\(k = 1\\). Choose a node as the initial node. Label this node [-,0] where the minus sign indicates there is no predecessor node & the zero indicates there is zero cost associated with reaching this node. Set M equal to {\\(n_1\\)} where \\(n_1\\) is equal to the node number for the initial node.\nSet \\(k = 2\\). Find an unlabeled node \\(n_2\\) such that \\(c(n_1, n_2)\\) is a minimum. Assign \\(n_2\\) the label \\([n_1, c(n_1, n_2)]\\), meaning \\(n_1\\) is the predecessor node to \\(n_2\\). Add \\(n_2\\) to the set of labeled nodes (i.e., \\(M\\) now equals \\(\\{n_1, n_2\\}\\))\nSet \\(k = k + 1\\)"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-7.html#shortest-path---dijkstra-algorithm-2-1",
     "href": "teaching/CIVE461/slides/lec-7.html#shortest-path---dijkstra-algorithm-2-1",
     "title": "Lecture 7 - Trip Assignment",
     "section": "Shortest Path - Dijkstra Algorithm 2",
-    "text": "Shortest Path - Dijkstra Algorithm 2\n\nFind an unlabeled node \\(n_k\\) such that \\(C(nk) = min {C(n_x) + min[(n_x, n_y)]}\\) for \\(n_x \\in M\\) & \\(n_y \\in M’ = C(n_1) + c(n_i, n_k)\\) for some \\(n_i \\in M\\), \\(n_k \\in M’\\). Assign the label \\([n_i, C(n_k)]\\) & add \\(n_k\\) to \\(M\\).\n\nThe equation above searchers over the currently labeled nodes – all nodes connected to initial node with links to unlabeled nodes. Seeks new node to connect to initial node (i.e., add to labeled set), such that path to new node has lowest travel cost from initial node.\n\nIf all nodes labeled. Stop. Else, go to step 3.\n\nFinal product is shortest path tree rooted at node \\(n_1\\)"
+    "text": "Shortest Path - Dijkstra Algorithm 2\n\nFind an unlabeled node \\(n_k\\) such that \\(C(n_k) = min \\{C(n_x) + min[(n_x, n_y)]\\}\\) for \\(n_x \\in M\\) & \\(n_y \\in M’ = C(n_1) + c(n_i, n_k)\\) for some \\(n_i \\in M\\), \\(n_k \\in M’\\). Assign the label \\([n_i, C(n_k)]\\) & add \\(n_k\\) to \\(M\\).\n\nThe equation above searches over the currently labeled nodes – all nodes connected to initial node with links to unlabeled nodes. Seeks new node to connect to initial node (i.e., add to labeled set), such that path to new node has lowest travel cost from initial node.\n\nIf all nodes labeled. Stop. Else, go to step 3.\n\nFinal product is shortest path tree rooted at node \\(n_1\\)"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-7.html#shortest-path-example",
@@ -2436,6 +2457,27 @@
     "text": "Transit Assignment\n\nTransit assignment not usually a function of congestion\nProcedures typically used:\n\nAll-Or-Nothing\nStochastic (multipath)\n\nMust account for:\n\nWalk access/egress times\nWaiting times as f(headway)\nTransfers\n\nFeasible transfer points\nTransfer times\n\n\n\n\n\n\nCIVE461 Home"
   },
   {
+    "objectID": "teaching/CIVE461/slides/lec-8.html",
+    "href": "teaching/CIVE461/slides/lec-8.html",
+    "title": "Wood Buffalo TDM",
+    "section": "",
+    "text": "This browser does not support PDFs. Please download the PDF to view it: Download PDF."
+  },
+  {
+    "objectID": "teaching/CIVE461/slides/lec-9.html",
+    "href": "teaching/CIVE461/slides/lec-9.html",
+    "title": "Freight Transportation",
+    "section": "",
+    "text": "This browser does not support PDFs. Please download the PDF to view it: Download PDF."
+  },
+  {
+    "objectID": "teaching/CIVE461/supplemental/freight-transportation.html",
+    "href": "teaching/CIVE461/supplemental/freight-transportation.html",
+    "title": "Freight Transportation",
+    "section": "",
+    "text": "This browser does not support PDFs. Please download the PDF to view it: Download PDF."
+  },
+  {
     "objectID": "teaching/CIVE461/supplemental/transport-data.html",
     "href": "teaching/CIVE461/supplemental/transport-data.html",
     "title": "Transportation Data",
@@ -2594,7 +2636,7 @@
     "href": "teaching/CIVE461/weeks/week-13.html#participate",
     "title": "Week 13",
     "section": "Participate",
-    "text": "Participate\nTrip Assignment Models (TBA)"
+    "text": "Participate\n🖥️ Lecture 7 - Trip Assignment"
   },
   {
     "objectID": "teaching/CIVE461/weeks/week-13.html#practice",
@@ -2608,77 +2650,77 @@
     "href": "teaching/CIVE461/weeks/week-14.html",
     "title": "Week 14",
     "section": "",
-    "text": "📖"
+    "text": "None"
   },
   {
     "objectID": "teaching/CIVE461/weeks/week-14.html#prepare",
     "href": "teaching/CIVE461/weeks/week-14.html#prepare",
     "title": "Week 14",
     "section": "",
-    "text": "📖"
+    "text": "None"
   },
   {
     "objectID": "teaching/CIVE461/weeks/week-14.html#participate",
     "href": "teaching/CIVE461/weeks/week-14.html#participate",
     "title": "Week 14",
     "section": "Participate",
-    "text": "Participate\n🖥️ Freight Models (TBA)"
+    "text": "Participate\n🖥️ Lecture 8 - Wood Buffalo TDM"
   },
   {
     "objectID": "teaching/CIVE461/weeks/week-14.html#practice",
     "href": "teaching/CIVE461/weeks/week-14.html#practice",
     "title": "Week 14",
     "section": "Practice",
-    "text": "Practice\nNone\n\n\nBack to course schedule ⏎"
+    "text": "Practice\n✍️ IA 2 - Trip Assignment - Submit on Canvas\n\n\nBack to course schedule ⏎"
   },
   {
     "objectID": "teaching/CIVE461/weeks/week-15.html",
     "href": "teaching/CIVE461/weeks/week-15.html",
-    "title": "Week 13",
+    "title": "Week 15",
     "section": "",
-    "text": "📖"
+    "text": "📖 Read notes on freight transportation"
   },
   {
     "objectID": "teaching/CIVE461/weeks/week-15.html#prepare",
     "href": "teaching/CIVE461/weeks/week-15.html#prepare",
-    "title": "Week 13",
+    "title": "Week 15",
     "section": "",
-    "text": "📖"
+    "text": "📖 Read notes on freight transportation"
   },
   {
     "objectID": "teaching/CIVE461/weeks/week-15.html#participate",
     "href": "teaching/CIVE461/weeks/week-15.html#participate",
-    "title": "Week 13",
+    "title": "Week 15",
     "section": "Participate",
-    "text": "Participate\n🖥️ Freight Models (TBA)"
+    "text": "Participate\n🖥️ Lecture 9 - Freight Modeling\n📋 AE 7 - Review - Submit on Canvas"
   },
   {
     "objectID": "teaching/CIVE461/weeks/week-15.html#practice",
     "href": "teaching/CIVE461/weeks/week-15.html#practice",
-    "title": "Week 13",
+    "title": "Week 15",
     "section": "Practice",
-    "text": "Practice\n\n\nBack to course schedule ⏎"
+    "text": "Practice\n📋 AE 7 - Review - Submit on Canvas\n\n\nBack to course schedule ⏎"
   },
   {
     "objectID": "teaching/CIVE461/weeks/week-16.html",
     "href": "teaching/CIVE461/weeks/week-16.html",
     "title": "Week 16",
     "section": "",
-    "text": "📖 Read notes on [transportation planning review]"
+    "text": "None"
   },
   {
     "objectID": "teaching/CIVE461/weeks/week-16.html#prepare",
     "href": "teaching/CIVE461/weeks/week-16.html#prepare",
     "title": "Week 16",
     "section": "",
-    "text": "📖 Read notes on [transportation planning review]"
+    "text": "None"
   },
   {
     "objectID": "teaching/CIVE461/weeks/week-16.html#participate",
     "href": "teaching/CIVE461/weeks/week-16.html#participate",
     "title": "Week 16",
     "section": "Participate",
-    "text": "Participate\nNone"
+    "text": "Participate\n🖥️ Lecture 10 - Land Use"
   },
   {
     "objectID": "teaching/CIVE461/weeks/week-16.html#practice",
