@@ -305,21 +305,21 @@
     "href": "teaching/CIVE461/project/project-description.html",
     "title": "Project description",
     "section": "",
-    "text": "Report 1 due Mon, Oct 02 - Submit on Canvas\nReport 2 due Mon, Oct 23 - Submit on Canvas\nReport 3 due Mon, Nov 13 - Submit on Canvas\nFinal report due Wed, Nov 28 - Submit on Canvas"
+    "text": "Report 1 due Mon, Oct 02 - Submit on Canvas\nReport 2 due Mon, Oct 23 - Submit on Canvas\nReport 3 due Mon, Nov 20 - Submit on Canvas\nFinal report due Wed, Dec 08 - Submit on Canvas"
   },
   {
     "objectID": "teaching/CIVE461/project/project-description.html#timeline",
     "href": "teaching/CIVE461/project/project-description.html#timeline",
     "title": "Project description",
     "section": "",
-    "text": "Report 1 due Mon, Oct 02 - Submit on Canvas\nReport 2 due Mon, Oct 23 - Submit on Canvas\nReport 3 due Mon, Nov 13 - Submit on Canvas\nFinal report due Wed, Nov 28 - Submit on Canvas"
+    "text": "Report 1 due Mon, Oct 02 - Submit on Canvas\nReport 2 due Mon, Oct 23 - Submit on Canvas\nReport 3 due Mon, Nov 20 - Submit on Canvas\nFinal report due Wed, Dec 08 - Submit on Canvas"
   },
   {
     "objectID": "teaching/CIVE461/project/project-description.html#introduction",
     "href": "teaching/CIVE461/project/project-description.html#introduction",
     "title": "Project description",
     "section": "Introduction",
-    "text": "Introduction\nTL;DR: Build a 4-step travel model for a US metropolitan region. That is your term project.\nThe final project task is for you to use aggregate and disaggregate transportation planning methods to develop a 4-step travel demand model for a US metropolitan area of your choice. The goal of this project is for you to demonstrate proficiency in the techniques we have covered in this class (and beyond, if you like!) and apply them to a real-world dataset to analyze it in a meaningful way.\nAll analyses must be done in Python or R, and all components of the project must be reproducible.\n\nLogistics\nThis assignment will be performed in groups of 3-4 students. Groups will be chosen by the instructor to include a mix of programming skill levels and to match other metrics.\nThe primary deliverable for the final project is a written, reproducible report detailing your analysis."
+    "text": "Introduction\nTL;DR: Build a 4-step travel model for a US metropolitan region. That is your term project.\nThe project task is for you to use aggregate and disaggregate transportation planning methods to develop a 4-step travel demand model for a US metropolitan area of your choice. The goal of this project is for you to demonstrate proficiency in the techniques we have covered in this class (and beyond, if you like!) and apply them to a real-world dataset to analyze it in a meaningful way.\nAll analyses must be done in Python or R, and all components of the project must be reproducible.\n\nLogistics\nThis assignment will be performed in groups of 3-4 students. Groups will be chosen by the instructor to include a mix of programming skill levels and to match other metrics.\nThe primary deliverables for the project are a series of written, reproducible reports detailing your analysis."
   },
   {
     "objectID": "teaching/CIVE461/project/project-description.html#group-project-reports",
@@ -354,7 +354,7 @@
     "href": "teaching/CIVE461/project/project-description.html#final-report",
     "title": "Project description",
     "section": "Final report",
-    "text": "Final report\nThe final report is a culmination of your work as a group this semester. This report should have a more formal report structure. It should summarize your work this semester in reports 1, 2, and 3. Further the final report should incorporate elements from other topics (e.g., land use and transit planning, equity, etc.) covered this semester.\n\nIntroduction\nThis section includes an introduction to the team’s CBSA, such as population, travel mode share, and other relevant details. It should also include some exploratory data analysis. All of the EDA won’t fit in the paper, so focus on the EDA for the response variable and a few other interesting variables and relationships.\n\n\nMethodology\nThis section includes a brief description of your modeling process. Explain the reasoning for the type of model you’re fitting, predictor variables considered for the model, including any interactions. Additionally, show how you arrived at the final model by describing the model selection process, any variable transformations (if needed), and any other relevant considerations that were part of the model fitting process.\n\n\nResults\nIn this section, you will output the final model and include a brief discussion of the model assumptions, diagnostics, and any relevant model fit statistics.\nThis section also includes initial interpretations and conclusions drawn from the model.\nYou will submit the PDF of your final report on Canvas.\nThe report, including visualizations, should be no more than 15 pages long. There is no minimum page requirement; however, you should comprehensively address all of the analysis in the report.\nBe selective in what you include in your final report. The goal is to write a cohesive narrative that demonstrates a thorough and comprehensive analysis rather than explain every step of the analysis.\nYou are welcome to include an appendix with additional work at the end of the written report document. The appendix should be neatly formatted and easy for the reader to navigate. It is not included in the 15-page limit."
+    "text": "Final report\nThe final report is a culmination of your work as a group this semester. This The final report should incorporate elements from other topics (e.g., land use and transit planning, equity, etc.) covered this semester. The report this semester will take the form of an informal discussion in class. Your group should talk about a few interesting transportation-relevant topics you learned about your chosen region. I will ask 1-2 follow up questions. The final report will be assessed as meets expectations or does not meet expectations."
   },
   {
     "objectID": "teaching/CIVE461/project/project-description.html#report-marking-criteria-report-marking-criteria",
@@ -2216,7 +2216,7 @@
     "href": "teaching/CIVE461/slides/lec-7.html#bpr-function",
     "title": "Lecture 7 - Trip Assignment",
     "section": "BPR Function",
-    "text": "BPR Function\n\\[t=(\\frac{L}{S})(1+a(\\frac{v}{c})^b\\] \\[t=t_0(1+a(\\frac{v}{c})^b\\]\nWhere:\n\\(t\\) = link travel time (min)\n\\(L\\) = link length (mi)\n\\(S\\) = link uncongested average speed (mi/min)\n\\(t_0\\) = free-flow travel speed = L / S\n\\(v\\) = link volume (veh/hr)\n\\(c\\) = link capacity (veh/hr)\n\\(a\\) = parameter = 1.0 if one-hr assignment or 0.15 if 24-hr assignment\n\\(b\\) = parameter = 4 for arterial roads or 6 for freeway"
+    "text": "BPR Function\n\\[t=(\\frac{L}{S})(1+a(\\frac{v}{c})^b)\\] \\[t=t_0(1+a(\\frac{v}{c})^b)\\]\nWhere:\n\\(t\\) = link travel time (min)\n\\(L\\) = link length (mi)\n\\(S\\) = link uncongested average speed (mi/min)\n\\(t_0\\) = free-flow travel speed = L / S\n\\(v\\) = link volume (veh/hr)\n\\(c\\) = link capacity (veh/hr)\n\\(a\\) = parameter = 1.0 if one-hr assignment or 0.15 if 24-hr assignment\n\\(b\\) = parameter = 4 for arterial roads or 6 for freeway"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-7.html#tangent-function",
@@ -2251,7 +2251,7 @@
     "href": "teaching/CIVE461/slides/lec-7.html#stochastic-assignment",
     "title": "Lecture 7 - Trip Assignment",
     "section": "Stochastic Assignment",
-    "text": "Stochastic Assignment\n\nStochastic assignment used for some applications:\n\nSome transit assignment algorithms\nModerately (but not heavily) congested networks\nHighly abstracted (i.e., aggregated) networks\n\nDiscrete route choice models (e.g., logit) exist\n\nComputationally burdensome\nNeed to take care in defining choice et of feasible routes"
+    "text": "Stochastic Assignment\n\nStochastic assignment used for some applications:\n\nSome transit assignment algorithms\nModerately (but not heavily) congested networks\nHighly abstracted (i.e., aggregated) networks\n\nDiscrete route choice models (e.g., logit) exist\n\nComputationally burdensome\nNeed to take care in defining choice set of feasible routes"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-7.html#deterministic-assignment",
@@ -2265,7 +2265,7 @@
     "href": "teaching/CIVE461/slides/lec-7.html#deterministic-vs.-stochastic-assignment-1",
     "title": "Lecture 7 - Trip Assignment",
     "section": "Deterministic Vs. Stochastic Assignment",
-    "text": "Deterministic Vs. Stochastic Assignment\n\n\n\n\n\n\n\n\n\nI: in fairly uncongested condition as network is going towards saturation. Deterministic & stochastic assignment work in same way\nII: Congestion building up & deterministic approach will under-estimate effect.\n\nStochastic assignment is better.\n\nIII: Highly congested situation, where small increase in volume causes larger increase in time.\n\nPenalty for wrong information would incur high delay. Assuming that users are fairly aware of situation, deterministic assignment would be more appropriate."
+    "text": "Deterministic Vs. Stochastic Assignment\n\n\n\n\n\n\n\n\n\nI: in fairly uncongested condition as network is going towards saturation. Deterministic & stochastic assignment work in same way\nII: Congestion building up & deterministic approach will under-estimate effect.\n\nStochastic assignment is better.\n\nIII: Highly congested situation, small increase in volume causes larger increase in time.\n\nPenalty for wrong information would incur high delay. Assuming users aware of situation, deterministic assignment more appropriate."
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-7.html#wardrops-rule",
