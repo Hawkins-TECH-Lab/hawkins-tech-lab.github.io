@@ -8,15 +8,15 @@ title: "Project description"
 
 [Report 2](#report-2) due Mon, Oct 23 - Submit on Canvas
 
-[Report 3](#report-3) due Mon, Nov 13 - Submit on Canvas
+[Report 3](#report-3) due Mon, Nov 20 - Submit on Canvas
 
-[Final report](#final-report) due Wed, Nov 28 - Submit on Canvas
+[Final report](#final-report) due Wed, Dec 08 - Submit on Canvas
 
 ## Introduction
 
 **TL;DR**: *Build a 4-step travel model for a US metropolitan region. That is your term project.*
 
-The final project task is for you to use aggregate and disaggregate transportation planning methods to develop a 4-step travel demand model for a US metropolitan area of your choice.
+The project task is for you to use aggregate and disaggregate transportation planning methods to develop a 4-step travel demand model for a US metropolitan area of your choice.
 The goal of this project is for you to demonstrate proficiency in the techniques we have covered in this class (and beyond, if you like!) and apply them to a real-world dataset to analyze it in a meaningful way.
 
 All analyses must be done in Python or R, and all components of the project **must be reproducible**.
@@ -25,7 +25,7 @@ All analyses must be done in Python or R, and all components of the project **mu
 
 This assignment will be performed in groups of 3-4 students. Groups will be chosen by the instructor to include a mix of programming skill levels and to match other metrics.
 
-The primary deliverable for the final project is a written, reproducible report detailing your analysis.
+The primary deliverables for the project are a series of written, reproducible reports detailing your analysis.
 
 ## Group Project Reports
 
@@ -82,36 +82,13 @@ This section also includes initial interpretations and conclusions drawn from th
 2.	Similarly develop an MNL mode choice model for **home-based work trips**. Compare your results with those obtained for the **home-based non-work trip** model with respect to explanatory variables used, parameter statistical significance, and model goodness-of-fit. Discuss likely reasons for these differences (if any). Your discussion should also include consideration of elasticity estimates.
 
 ## Final report {#final-report}
-The final report is a culmination of your work as a group this semester. This report should have a more formal report structure. It should summarize your work this semester in reports 1, 2, and 3. Further the final report should incorporate elements from other topics (e.g., land use and transit planning, equity, etc.) covered this semester.
+The final report is a culmination of your work as a group this semester. The final report should incorporate elements from other topics (e.g., land use and transit planning, equity, etc.) covered this semester. The report this semester will take the form of an informal discussion in class. Your group should talk about a few interesting transportation-relevant topics you learned about your chosen region. I will ask 1-2 follow up questions. The final report will be assessed as *meets expectations* or *does not meet expectations*.
 
-### Introduction
+Possible discussion points:
 
-This section includes an introduction to the team's CBSA, such as population, travel mode share, and other relevant details.
-It should also include some exploratory data analysis.
-All of the EDA won't fit in the paper, so focus on the EDA for the response variable and a few other interesting variables and relationships.
-
-### Methodology
-
-This section includes a brief description of your modeling process.
-Explain the reasoning for the type of model you're fitting, predictor variables considered for the model, including any interactions.
-Additionally, show how you arrived at the final model by describing the model selection process, any variable transformations (if needed), and any other relevant considerations that were part of the model fitting process.
-
-### Results
-
-In this section, you will output the final model and include a brief discussion of the model assumptions, diagnostics, and any relevant model fit statistics.
-
-This section also includes initial interpretations and conclusions drawn from the model.
-
-**You will submit the PDF of your final report on Canvas.**
-
-The report, including visualizations, should be **no more than 15 pages long.** There is no minimum page requirement; however, you should comprehensively address all of the analysis in the report.
-
-Be selective in what you include in your final report.
-The goal is to write a cohesive narrative that demonstrates a thorough and comprehensive analysis rather than explain every step of the analysis.
-
-You are welcome to include an appendix with additional work at the end of the written report document.
-The appendix should be neatly formatted and easy for the reader to navigate.
-It is not included in the 15-page limit.
+- What transportation projects are happening in the area?
+- What are the major transportation challenges faced in the area?
+- How are the problems in your study area similar/different from those in Lincoln/Omaha?
 
 ## Report marking criteria {report-marking-criteria}
 The written reports are each worth 40 points, broken down as follows

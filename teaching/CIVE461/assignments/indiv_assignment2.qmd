@@ -3,7 +3,7 @@ title: "Individual Assignment 2: Traffic Assignment"
 sidebar: CIVE461
 ---
 
-**Due Nov. 20 - Submit on Canvas**
+**Due Nov. 27 - Submit on Canvas**
 
 Points are assigned both on the correctness of the answer and the completeness of the solution – state all assumptions. Show all calculations and equations. **Do not** use Excel or other software packages.
 

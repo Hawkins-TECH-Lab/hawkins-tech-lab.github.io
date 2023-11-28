@@ -211,8 +211,8 @@ Costs are less than previous, so **update table**
   - More realistic results for oversaturated case
 
 ## BPR Function {.smaller}
-$$t=(\frac{L}{S})(1+a(\frac{v}{c})^b$$
-$$t=t_0(1+a(\frac{v}{c})^b$$
+$$t=(\frac{L}{S})(1+a(\frac{v}{c})^b)$$
+$$t=t_0(1+a(\frac{v}{c})^b)$$
 
 Where:
 
@@ -262,7 +262,7 @@ For $a = 1$ & $b = 4$, gives $t=t_0(4(\frac{v}{c})-2)$
   - Highly abstracted (i.e., aggregated) networks
 - **Discrete route choice models** (e.g., logit) exist
   - Computationally burdensome
-  - Need to take care in defining choice et of feasible routes
+  - Need to take care in defining choice set of feasible routes
 
 ## Deterministic Assignment
 - Deterministic assignment used in **most urban applications**
@@ -281,8 +281,8 @@ For $a = 1$ & $b = 4$, gives $t=t_0(4(\frac{v}{c})-2)$
 Deterministic & stochastic assignment work in same way
 - **II:** **Congestion building up** & deterministic approach will under-estimate effect. 
   - Stochastic assignment is better.
-- **III:** **Highly congested situation**, where small increase in volume causes larger increase in time.
-  - Penalty for wrong information would incur high delay. Assuming that users are fairly aware of situation, deterministic assignment would be more appropriate.
+- **III:** **Highly congested situation**, small increase in volume causes larger increase in time.
+  - Penalty for wrong information would incur high delay. Assuming users aware of situation, deterministic assignment more appropriate.
 
 :::
 :::
@@ -340,13 +340,13 @@ B-D = 100
 2. Assign all trips to corresponding shortest paths
 
 ![](../images/lecture7/aon_1.png){.absolute top="75" right="0" width=40%}
-![](../images/lecture7/aon_1.png){.absolute top="275" right="0" width=40%}
-![](../images/lecture7/aon_1.png){.absolute bottom="0" right="100" width=40%}
+![](../images/lecture7/aon_2.png){.absolute top="325" right="0" width=40%}
+![](../images/lecture7/aon_3.png){.absolute bottom="0" right="100" width=40%}
 
 ## All-Or-Nothing Assignment: Example
 Sum all assigned trips to get complete assignment
 
-![](../images/lecture7/aon_4.png){fig-align="center"}
+![](../images/lecture7/aon_4.png){fig-align="center" width=50%}
 
 ## Incremental Assignment Methods
 - **Incorporating congestion** into user equilibrium calculations adds significant complexity to problem
