@@ -11,7 +11,7 @@ None
 
 ## Participate
 
-🖥️ [Lecture 10 - Land Use](/teaching/CIVE461/slides/lec-10.html)
+[In-Class Discussion of Group Project Regions](/teaching/CIVE461/project/project-description.html#final-report)
 
 ## Practice
 📋 [AE 7 - Review](/teaching/CIVE461/ae/ae-7-review.html) - Submit on Canvas

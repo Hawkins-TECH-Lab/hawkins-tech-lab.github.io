@@ -1,0 +1,33 @@
+---
+pagetitle: "Books"
+section-divs: true
+---
+
+# Books
+
+## How Big Things Get Done - Bent Flyvbjerg & Dan Gardner
+
+
+: {tbl-colwidths="[20,80]"}
+
+| |
+|----|----|
+| ![](../assets/images/misc/big_things.jpg){style="float:right; padding: 0 0 0 0; object-fit: cover; border-radius: 20px; object-position: center;" fig-align="center" width="300" height="450"} | An overview of construction planning and management from one of the great thinkers in the space. Bent provides tools to deliver projects on time and on budget from home renovations to the largest megaprojects. Like any self-help book, it has a message focused on selling you a particular product (the expertise of the author). There are some great insights and case studies.|
+
+## The Death and Life of Great American Cities - Jane Jacobs
+
+
+: {tbl-colwidths="[20,80]"}
+
+| |
+|----|----|
+| ![](../assets/images/misc/death_life_cities.jpg){style="float:right; padding: 0 0 0 0; object-fit: cover; border-radius: 20px; object-position: center;" fig-align="center" width="300" height="450"} | The definitive work on city theory. Jane Jacobs was a writer and advocate, who prevented expressways through the heart of two global cities: New York and Toronto. If you want to understand how cities work, there is no greater source.|
+
+## The Power Broker - Robert A. Caro
+
+
+: {tbl-colwidths="[20,80]"}
+
+| |
+|----|----|
+| ![](../assets/images/misc/robert_moses_caro.jpg){style="float:right; padding: 0 0 0 0; object-fit: cover; border-radius: 20px; object-position: center;" fig-align="center" width="300" height="450"} | Robert Moses was among the great builders of the 20th century. Whether you agree with his approach or its outcomes, there is no denying is ability to get things done. Robert A. Caro is among the great biographers of the 20th century. An incredible writer and documenter of history, you will forget about how many pages this book comprises and get lost in the story.|

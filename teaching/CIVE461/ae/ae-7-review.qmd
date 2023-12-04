@@ -62,7 +62,7 @@ b) In addition to part (a), if transit facility improvements lead to a reduction
 Ten years ago two household-based trip generation models were estimated using this data. The first was a linear regression model given by:
 $$y=0.2+0.5x_1+1.1z_1  \text{, }R^2=0.78$$
 
-where y household peak period trips. $x_1$ is the number of workers in the household and $z_1$ is a dummy variable that takes the value of 1 if household income is over 70,000 and 0otherwise. The second was cross-classification analysis model based on two income strata (high and low income) and two levels of family income (1 or fewer and 2 or more workers per households). The estimated trip rates are:
+where y is household peak period trips, $x_1$ is the number of workers in the household, and $z_1$ is a dummy variable that takes the value of 1 if household income is over 70,000 and 0otherwise. The second was cross-classification analysis model based on two income strata (high and low income) and two levels of family income (1 or fewer and 2 or more workers per households). The estimated trip rates are:
 
 **Table 2.2. Trip Rates by Family Attributes**
 

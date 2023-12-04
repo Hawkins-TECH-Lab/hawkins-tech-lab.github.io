@@ -58,7 +58,7 @@ $$𝑃𝑟𝑜𝑏𝑖𝑡:𝑃_1=\int_{-\infty}^{\infty}⁡\int_{-\infty}^{V_1-
   - A random part $\epsilon_{ni}$,  which reflects **indiosyncratic** & **taste variation**, together with measurement or observational errors made by the modeler
 
 ## Theoretical Framework
-- Modeler sets utility $𝑈_{ni}}=𝑉_{ni}+\epsilon_{ni}}$ to address two apparent irrationalities
+- Modeler sets utility $𝑈_{ni}=𝑉_{ni}+\epsilon_{ni}$ to address two apparent irrationalities
   1. That two individuals faced with the **same situation** & having the **same personal attributes** make different choices
   2. That an individual may not select the alternative that **appears** to be the *best one*
 - Often assumed $V_{ni}$ given by $\sum_k^K \beta_{ik} x_{nik}$ here $\beta_{ik}$ are assumed **constant** for all individuals $N$ in the homogeneous set but **may vary across alternatives** $I$

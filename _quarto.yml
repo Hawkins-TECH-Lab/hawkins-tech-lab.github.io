@@ -24,7 +24,11 @@ website:
           - text: "CIVE864"
             href: teaching/CIVE864/index.qmd
           - text: "CIVE990T"
-            href: teaching/Guest Lectures/CIVE990T.qmd 
+            href: teaching/Guest Lectures/CIVE990T.qmd
+      - text: Misc
+        menu:
+          - text: "Books"
+            href:  misc/books.qmd
     background: "#d00000"
     
   sidebar:
@@ -179,6 +183,13 @@ website:
           contents:
             - href: research/projects/ev.qmd
               text: EV Adoption Graphs
+    - id: Books
+      style: "docked"
+      search: true
+      align: center
+      contents:
+        - href: misc/books.qmd
+          text: Books
 
     - id: Teaching
       style: "docked"

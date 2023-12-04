@@ -59,7 +59,7 @@ execute:
 ![](../images/lecture1/transport_equity.png){.absolute top="275" left="0" width=60%}
 ![](../images/lecture1/lincoln_road_equity.png){.absolute .fragment top="100" right="0" width=60%}
 
-## Food Desert Tracks
+## Food Desert Tracts
 ![](../images/lecture1/food_desert_omaha.png){fig-align="center"}
 
 ::: {style="font-size: 0.6em;"}

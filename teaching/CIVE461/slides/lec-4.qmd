@@ -70,7 +70,7 @@ flowchart TD
   classDef C2 fill:#FFFFFF,stroke-width:0px;
 ```
 
-## Strategies (for Planers) to Overcome Institutional Barriers
+## Strategies (for Planners) to Overcome Institutional Barriers
 ::: incremental
 1. Inclusive set of partners
 2. Expand opportunity for public involvement
