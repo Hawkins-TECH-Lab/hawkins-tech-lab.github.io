@@ -8,7 +8,7 @@
 <link href="../../../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.3.361">
+  <meta name="generator" content="quarto-1.4.551">
 
   <title>Hawkinslab - Lecture 2 - Statistical Modeling</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -157,7 +157,8 @@
   }
 
   .callout.callout-titled .callout-body > .callout-content > :last-child {
-    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
   }
 
   .callout.callout-titled .callout-icon::before {
@@ -409,13 +410,13 @@
 <div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="../images/lecture2/rho_gt_0.png"></p>
+<p><img data-src="../images/lecture2/rho_gt_0.png" class="quarto-figure quarto-figure-center"></p>
 </figure>
 </div>
 </div><div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="../images/lecture2/rho_lt_0.png"></p>
+<p><img data-src="../images/lecture2/rho_lt_0.png" class="quarto-figure quarto-figure-center"></p>
 </figure>
 </div>
 </div>
@@ -431,7 +432,7 @@
 <p><strong>Unbiasedness</strong> means the expected value (mean) of estimator equals the associated population value</p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="../images/lecture2/unbiased.png"></p>
+<p><img data-src="../images/lecture2/unbiased.png" class="quarto-figure quarto-figure-center"></p>
 </figure>
 </div>
 </div>
@@ -439,7 +440,7 @@
 <p><strong>Efficiency</strong> is a relative measure of variance. An estimator with a smaller variance is said to be more <em>efficient</em></p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="../images/lecture2/efficiency.png"></p>
+<p><img data-src="../images/lecture2/efficiency.png" class="quarto-figure quarto-figure-center"></p>
 </figure>
 </div>
 </div>
@@ -450,7 +451,7 @@
 <p><strong>Consistency</strong> exists if the probability of being close to the true parameter value increases with increasing sample size</p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="../images/lecture2/consistency.png"></p>
+<p><img data-src="../images/lecture2/consistency.png" class="quarto-figure quarto-figure-center"></p>
 </figure>
 </div>
 </div>
@@ -490,7 +491,7 @@
 <p><strong>Histogram</strong> useful when data naturally grouped</p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="../images/lecture2/histogram.png"></p>
+<p><img data-src="../images/lecture2/histogram.png" class="quarto-figure quarto-figure-center"></p>
 </figure>
 </div>
 </div>
@@ -498,7 +499,7 @@
 <p><strong>Box plot</strong> (or box and whisker plot)</p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="../images/lecture2/box_plot.png"></p>
+<p><img data-src="../images/lecture2/box_plot.png" class="quarto-figure quarto-figure-center"></p>
 </figure>
 </div>
 </div>
@@ -554,21 +555,21 @@
 <p>Consider experiment where we have values of a certain variable <span class="math inline">\(Y={Y_𝑖}\)</span> that takes different values based on the values of another variable <span class="math inline">\(X\)</span>. If the process is <strong>not deterministic</strong>, we will observe different <span class="math inline">\(Y_i\)</span> for the same <span class="math inline">\(X_i\)</span></p>
 <p>Let’s call <span class="math inline">\(f_i(Y|X)\)</span> the <strong>probability distribution</strong> for <span class="math inline">\(Y_i\)</span> for a given <span class="math inline">\(X_i\)</span>; this means we could have a different function <span class="math inline">\(f_i\)</span> for each <span class="math inline">\(X\)</span></p>
 
-<img data-src="../images/lecture2/linear_regression_1.png" class="r-stretch quarto-figure-center"></section>
+<img data-src="../images/lecture2/linear_regression_1.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="linear-regression-1" class="slide level2 smaller">
 <h2>Linear Regression</h2>
 <p>However, such a general case is <strong>intractable</strong>; to make it more manageable, certain hypotheses about population regularity assumed: - Probability distribution <span class="math inline">\(f_i(Y|X)\)</span> has <strong>same variance</strong> <span class="math inline">\(\sigma^2\)</span> for all values of <span class="math inline">\(X\)</span> - Mean <span class="math inline">\(\mu_i = E(Y_i)\)</span> forms a straight line known as the <strong>true regression line</strong> &amp; given by <span class="math display">\[𝐸(𝑌)=a+bX_i\]</span> where <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> define the line &amp; are estimated from sample data - Random variables <span class="math inline">\(Y_i\)</span> are statistically independent; i.e., a large value of <span class="math inline">\(Y_1\)</span> doesn’t necessarily make <span class="math inline">\(Y_2\)</span> large</p>
 
-<img data-src="../images/lecture2/linear_regression_2.png" class="r-stretch quarto-figure-center"></section>
+<img data-src="../images/lecture2/linear_regression_2.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="linear-regression-2" class="slide level2 smaller">
 <h2>Linear Regression</h2>
 <p>Model is often written as <span class="math inline">\(Y_i = a + bX_i + e_i\)</span> where <span class="math inline">\(e_i\)</span> measures error/disturbance in data and includes both <strong>measurement</strong> &amp; <strong>specification</strong> error</p>
 
-<img data-src="../images/lecture2/linear_regression_3.png" class="r-stretch quarto-figure-center"></section>
+<img data-src="../images/lecture2/linear_regression_3.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="fundamental-graph-of-linear-regression" class="slide level2">
 <h2>Fundamental Graph of Linear Regression</h2>
 
-<img data-src="../images/lecture2/fundamental_graph.png" class="r-stretch quarto-figure-center"></section>
+<img data-src="../images/lecture2/fundamental_graph.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="important-considerations-for-linear-regression" class="slide level2 smaller">
 <h2>Important Considerations for Linear Regression</h2>
 <div>
@@ -610,7 +611,7 @@ E(\hat{b}) = b &amp; Var(\bar{b}) = \frac{\sigma^2}{\sum_i x_i^2} \\
 </ul></li>
 </ul>
 
-<img data-src="../images/lecture2/experimental_design.png" style="width:50.0%" class="r-stretch quarto-figure-center"></section>
+<img data-src="../images/lecture2/experimental_design.png" class="quarto-figure quarto-figure-center r-stretch" style="width:50.0%"></section>
 <section id="properties-of-regression-estimators" class="slide level2 smaller">
 <h2>Properties of Regression Estimators</h2>
 <div>
@@ -660,7 +661,7 @@ E(\hat{b}) = b &amp; Var(\bar{b}) = \frac{\sigma^2}{\sum_i x_i^2} \\
 <h2>Hypothesis Testing Interpretation</h2>
 <p>Rejection region for <span class="math inline">\(\alpha = 5%\)</span> for variable with assumed (known) sign – e.g., income effect on vehicle ownership</p>
 
-<img data-src="../images/lecture2/hypothesis_testing.png" style="width:50.0%" class="r-stretch quarto-figure-center"></section>
+<img data-src="../images/lecture2/hypothesis_testing.png" class="quarto-figure quarto-figure-center r-stretch" style="width:50.0%"></section>
 <section id="coefficient-of-determination" class="slide level2">
 <h2>Coefficient of Determination</h2>
 <p>Measures the percent of total variation from the mean explained by the model</p>
@@ -694,58 +695,93 @@ E(\hat{b}) = b &amp; Var(\bar{b}) = \frac{\sigma^2}{\sum_i x_i^2} \\
 </section>
 <section id="building-interpreting-checking-regression-models" class="slide level2">
 <h2>Building, Interpreting, &amp; Checking Regression Models</h2>
-<div class="cell">
+<div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
+<p></p><figure class=""><p></p>
 <div>
 <svg width="960" height="480" viewbox="0.00 0.00 196.80 195.01" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none; display: block; margin: auto auto auto auto">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 191.01)">
-<title>
-model_flow
-</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-191.01 192.8,-191.01 192.8,4 -4,4"></polygon> <!-- N1 --> <g id="node1" class="node">
-<title>
-N1
-</title>
-<ellipse fill="red" stroke="red" cx="158.24" cy="-100.28" rx="30.62" ry="30.62"></ellipse> <text text-anchor="middle" x="158.24" y="-105.68" font-family="Times,serif" font-size="6.00" fill="white">Build linear </text> <text text-anchor="middle" x="158.24" y="-98.48" font-family="Times,serif" font-size="6.00" fill="white"> regression model </text> <text text-anchor="middle" x="158.24" y="-91.28" font-family="Times,serif" font-size="6.00" fill="white"> y = a + bx + error</text> </g> <!-- N2 --> <g id="node2" class="node">
-<title>
-N2
-</title>
-<ellipse fill="green" stroke="green" cx="124.59" cy="-29.11" rx="29.21" ry="29.21"></ellipse> <text text-anchor="middle" x="124.59" y="-41.71" font-family="Times,serif" font-size="6.00" fill="white">Expand model </text> <text text-anchor="middle" x="124.59" y="-34.51" font-family="Times,serif" font-size="6.00" fill="white"> with additional </text> <text text-anchor="middle" x="124.59" y="-27.31" font-family="Times,serif" font-size="6.00" fill="white"> predictors, </text> <text text-anchor="middle" x="124.59" y="-20.11" font-family="Times,serif" font-size="6.00" fill="white"> interactions, &amp; </text> <text text-anchor="middle" x="124.59" y="-12.91" font-family="Times,serif" font-size="6.00" fill="white"> transformations</text> </g> <!-- N1&#45;&gt;N2 --> <g id="edge1" class="edge">
-<title>
-N1-&gt;N2
-</title>
-<path fill="none" stroke="red" d="M145.14,-72.56C143.89,-69.92 142.62,-67.23 141.34,-64.53"></path> <polygon fill="red" stroke="red" points="144.5,-63.01 137.06,-55.47 138.17,-66.01 144.5,-63.01"></polygon> </g> <!-- N3 --> <g id="node3" class="node">
-<title>
-N3
-</title>
-<ellipse fill="purple" stroke="purple" cx="46.54" cy="-39.31" rx="27.23" ry="27.23"></ellipse> <text text-anchor="middle" x="46.54" y="-44.71" font-family="Times,serif" font-size="6.00" fill="white">Model fitting – </text> <text text-anchor="middle" x="46.54" y="-37.51" font-family="Times,serif" font-size="6.00" fill="white"> programming </text> <text text-anchor="middle" x="46.54" y="-30.31" font-family="Times,serif" font-size="6.00" fill="white"> &amp; algorithms</text> </g> <!-- N2&#45;&gt;N3 --> <g id="edge2" class="edge">
-<title>
-N2-&gt;N3
-</title>
-<path fill="none" stroke="green" d="M95.53,-32.91C91.75,-33.4 87.85,-33.91 83.96,-34.42"></path> <polygon fill="green" stroke="green" points="83.28,-30.98 73.82,-35.74 84.19,-37.92 83.28,-30.98"></polygon> </g> <!-- N4 --> <g id="node4" class="node">
-<title>
-N4
-</title>
-<ellipse fill="blue" stroke="blue" cx="32.05" cy="-116.7" rx="32.1" ry="32.1"></ellipse> <text text-anchor="middle" x="32.05" y="-129.3" font-family="Times,serif" font-size="6.00" fill="white">Model </text> <text text-anchor="middle" x="32.05" y="-122.1" font-family="Times,serif" font-size="6.00" fill="white"> understanding – </text> <text text-anchor="middle" x="32.05" y="-114.9" font-family="Times,serif" font-size="6.00" fill="white"> graphics, more </text> <text text-anchor="middle" x="32.05" y="-107.7" font-family="Times,serif" font-size="6.00" fill="white"> programming, &amp; </text> <text text-anchor="middle" x="32.05" y="-100.5" font-family="Times,serif" font-size="6.00" fill="white"> investigation</text> </g> <!-- N3&#45;&gt;N4 --> <g id="edge3" class="edge">
-<title>
-N3-&gt;N4
-</title>
-<path fill="none" stroke="purple" d="M41.47,-66.38C40.95,-69.2 40.4,-72.11 39.85,-75.04"></path> <polygon fill="purple" stroke="purple" points="36.39,-74.53 37.99,-85 43.27,-75.82 36.39,-74.53"></polygon> </g> <!-- N5 --> <g id="node5" class="node">
-<title>
-N5
-</title>
-<ellipse fill="orange" stroke="orange" cx="101.12" cy="-154.46" rx="32.61" ry="32.61"></ellipse> <text text-anchor="middle" x="101.12" y="-159.86" font-family="Times,serif" font-size="6.00">Criticism – Flaws, </text> <text text-anchor="middle" x="101.12" y="-152.66" font-family="Times,serif" font-size="6.00"> assumptions, &amp; </text> <text text-anchor="middle" x="101.12" y="-145.46" font-family="Times,serif" font-size="6.00"> improvements</text> </g> <!-- N4&#45;&gt;N5 --> <g id="edge4" class="edge">
-<title>
-N4-&gt;N5
-</title>
-<path fill="none" stroke="blue" d="M60.54,-132.27C61.51,-132.8 62.48,-133.33 63.46,-133.87"></path> <polygon fill="blue" stroke="blue" points="61.79,-136.95 72.25,-138.67 65.15,-130.81 61.79,-136.95"></polygon> </g> <!-- N5&#45;&gt;N1 --> <g id="edge5" class="edge">
-<title>
-N5-&gt;N1
-</title>
-<path fill="none" stroke="orange" d="M125.02,-131.79C126.12,-130.74 127.24,-129.68 128.36,-128.62"></path> <polygon fill="orange" stroke="orange" points="130.88,-131.06 135.72,-121.64 126.06,-125.98 130.88,-131.06"></polygon> </g> </g>
+<title>model_flow</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-191.01 192.8,-191.01 192.8,4 -4,4"></polygon>
+<!-- N1 -->
+<g id="node1" class="node">
+<title>N1</title>
+<ellipse fill="red" stroke="red" cx="158.24" cy="-100.28" rx="30.62" ry="30.62"></ellipse>
+<text text-anchor="middle" x="158.24" y="-105.68" font-family="Times,serif" font-size="6.00" fill="white">Build linear </text>
+<text text-anchor="middle" x="158.24" y="-98.48" font-family="Times,serif" font-size="6.00" fill="white"> regression model </text>
+<text text-anchor="middle" x="158.24" y="-91.28" font-family="Times,serif" font-size="6.00" fill="white"> y = a + bx + error</text>
+</g>
+<!-- N2 -->
+<g id="node2" class="node">
+<title>N2</title>
+<ellipse fill="green" stroke="green" cx="124.59" cy="-29.11" rx="29.21" ry="29.21"></ellipse>
+<text text-anchor="middle" x="124.59" y="-41.71" font-family="Times,serif" font-size="6.00" fill="white">Expand model </text>
+<text text-anchor="middle" x="124.59" y="-34.51" font-family="Times,serif" font-size="6.00" fill="white"> with additional </text>
+<text text-anchor="middle" x="124.59" y="-27.31" font-family="Times,serif" font-size="6.00" fill="white"> predictors, </text>
+<text text-anchor="middle" x="124.59" y="-20.11" font-family="Times,serif" font-size="6.00" fill="white"> interactions, &amp; </text>
+<text text-anchor="middle" x="124.59" y="-12.91" font-family="Times,serif" font-size="6.00" fill="white"> transformations</text>
+</g>
+<!-- N1&#45;&gt;N2 -->
+<g id="edge1" class="edge">
+<title>N1-&gt;N2</title>
+<path fill="none" stroke="red" d="M145.14,-72.56C143.89,-69.92 142.62,-67.23 141.34,-64.53"></path>
+<polygon fill="red" stroke="red" points="144.5,-63.01 137.06,-55.47 138.17,-66.01 144.5,-63.01"></polygon>
+</g>
+<!-- N3 -->
+<g id="node3" class="node">
+<title>N3</title>
+<ellipse fill="purple" stroke="purple" cx="46.54" cy="-39.31" rx="27.23" ry="27.23"></ellipse>
+<text text-anchor="middle" x="46.54" y="-44.71" font-family="Times,serif" font-size="6.00" fill="white">Model fitting – </text>
+<text text-anchor="middle" x="46.54" y="-37.51" font-family="Times,serif" font-size="6.00" fill="white"> programming </text>
+<text text-anchor="middle" x="46.54" y="-30.31" font-family="Times,serif" font-size="6.00" fill="white"> &amp; algorithms</text>
+</g>
+<!-- N2&#45;&gt;N3 -->
+<g id="edge2" class="edge">
+<title>N2-&gt;N3</title>
+<path fill="none" stroke="green" d="M95.53,-32.91C91.75,-33.4 87.85,-33.91 83.96,-34.42"></path>
+<polygon fill="green" stroke="green" points="83.28,-30.98 73.82,-35.74 84.19,-37.92 83.28,-30.98"></polygon>
+</g>
+<!-- N4 -->
+<g id="node4" class="node">
+<title>N4</title>
+<ellipse fill="blue" stroke="blue" cx="32.05" cy="-116.7" rx="32.1" ry="32.1"></ellipse>
+<text text-anchor="middle" x="32.05" y="-129.3" font-family="Times,serif" font-size="6.00" fill="white">Model </text>
+<text text-anchor="middle" x="32.05" y="-122.1" font-family="Times,serif" font-size="6.00" fill="white"> understanding – </text>
+<text text-anchor="middle" x="32.05" y="-114.9" font-family="Times,serif" font-size="6.00" fill="white"> graphics, more </text>
+<text text-anchor="middle" x="32.05" y="-107.7" font-family="Times,serif" font-size="6.00" fill="white"> programming, &amp; </text>
+<text text-anchor="middle" x="32.05" y="-100.5" font-family="Times,serif" font-size="6.00" fill="white"> investigation</text>
+</g>
+<!-- N3&#45;&gt;N4 -->
+<g id="edge3" class="edge">
+<title>N3-&gt;N4</title>
+<path fill="none" stroke="purple" d="M41.47,-66.38C40.95,-69.2 40.4,-72.11 39.85,-75.04"></path>
+<polygon fill="purple" stroke="purple" points="36.39,-74.53 37.99,-85 43.27,-75.82 36.39,-74.53"></polygon>
+</g>
+<!-- N5 -->
+<g id="node5" class="node">
+<title>N5</title>
+<ellipse fill="orange" stroke="orange" cx="101.12" cy="-154.46" rx="32.61" ry="32.61"></ellipse>
+<text text-anchor="middle" x="101.12" y="-159.86" font-family="Times,serif" font-size="6.00">Criticism – Flaws, </text>
+<text text-anchor="middle" x="101.12" y="-152.66" font-family="Times,serif" font-size="6.00"> assumptions, &amp; </text>
+<text text-anchor="middle" x="101.12" y="-145.46" font-family="Times,serif" font-size="6.00"> improvements</text>
+</g>
+<!-- N4&#45;&gt;N5 -->
+<g id="edge4" class="edge">
+<title>N4-&gt;N5</title>
+<path fill="none" stroke="blue" d="M60.54,-132.27C61.51,-132.8 62.48,-133.33 63.46,-133.87"></path>
+<polygon fill="blue" stroke="blue" points="61.79,-136.95 72.25,-138.67 65.15,-130.81 61.79,-136.95"></polygon>
+</g>
+<!-- N5&#45;&gt;N1 -->
+<g id="edge5" class="edge">
+<title>N5-&gt;N1</title>
+<path fill="none" stroke="orange" d="M125.02,-131.79C126.12,-130.74 127.24,-129.68 128.36,-128.62"></path>
+<polygon fill="orange" stroke="orange" points="130.88,-131.06 135.72,-121.64 126.06,-125.98 130.88,-131.06"></polygon>
+</g>
+</g>
 </svg>
 </div>
+<p></p></figure><p></p>
 </div>
 </div>
 </div>
@@ -902,7 +938,7 @@ The salmon, as Bennett's poster on the test dryly notes, "was not alive at the 
 analyzing the voxel (think: 3-D or "volumetric" pixel) data, the voxels representing the area where the salmon's tiny brain sat showed evidence of activity. In the fMRI scan, it looked like the dead salmon was actually thinking about the pictures it had been shown.
 
 "By complete, random chance, we found some voxels that were significant that just happened to be in the fish's brain," Bennett said. "And if I were a ridiculous researcher, I'd say, 'A dead salmon perceiving humans can tell their emotional state.'" -->
-<img data-src="../images/lecture2/forking_fish.jpg" class="r-stretch quarto-figure-center"></section>
+<img data-src="../images/lecture2/forking_fish.jpg" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="example-sports-viewing-political-attitudes" class="slide level2 smaller">
 <h2>Example: Sports Viewing &amp; Political Attitudes</h2>
 <p>Consider the below article excerpt (based on an article in a leading psychology journal):</p>
@@ -930,9 +966,11 @@ analyzing the voxel (think: 3-D or "volumetric" pixel) data, the voxels represen
 </ol>
 </div>
 
-
-<img src="../images/logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
+<div class="quarto-auto-generated-content">
+<p><img src="../images/logo.png" class="slide-logo"></p>
+<div class="footer footer-default">
 <p><a href="../../../teaching/CIVE461/">CIVE461 Home</a></p>
+</div>
 </div>
 </section></section>
     </div>
@@ -964,14 +1002,13 @@ analyzing the voxel (think: 3-D or "volumetric" pixel) data, the voxels represen
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': false,
-'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
 'chalkboard': {"buttons":true},
-'multiplex': {"secret":null,"id":"c21779874bc8b0cf","url":"https://reveal-multiplex.glitch.me/"},
+'multiplex': {"secret":null,"id":"133f7082a21a78ad","url":"https://reveal-multiplex.glitch.me/"},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -1227,10 +1264,27 @@ analyzing the voxel (think: 3-D or "volumetric" pixel) data, the voxels represen
         // clear code selection
         e.clearSelection();
       });
-      function tippyHover(el, contentFn) {
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp("https:\/\/UNL-Hawkins-Lab\.github\.io\/Hawkinslab\/");
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
-          content: contentFn,
           maxWidth: 500,
           delay: 100,
           arrow: false,
@@ -1240,8 +1294,17 @@ analyzing the voxel (think: 3-D or "volumetric" pixel) data, the voxels represen
           interactive: true,
           interactiveBorder: 10,
           theme: 'light-border',
-          placement: 'bottom-start'
+          placement: 'bottom-start',
         };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
           config['offset'] = [0,0];
           config['maxWidth'] = 700;
         window.tippy(el, config); 
@@ -1255,7 +1318,11 @@ analyzing the voxel (think: 3-D or "volumetric" pixel) data, the voxels represen
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
-          return note.innerHTML;
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
         });
       }
       const findCites = (el) => {

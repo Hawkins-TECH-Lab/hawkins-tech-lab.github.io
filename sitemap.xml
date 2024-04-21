@@ -1,355 +1,351 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/about.html</loc>
-    <lastmod>2023-12-04T15:38:12.331Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/classes/class1.html</loc>
-    <lastmod>2023-12-04T15:38:12.735Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/docs/teaching/CIVE461/project/project-feedback.html</loc>
-    <lastmod>2023-12-04T15:38:13.179Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/index.html</loc>
-    <lastmod>2023-12-04T15:38:13.610Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/misc/books.html</loc>
-    <lastmod>2023-12-04T15:38:14.085Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/research/projects/data/county_shp/county_L48_only.html</loc>
-    <lastmod>2023-12-04T15:38:14.525Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/research/projects/ev.html</loc>
-    <lastmod>2023-12-04T15:38:30.739Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/research/projects/projects.html</loc>
-    <lastmod>2023-12-04T15:38:31.318Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/research/publication/publication.html</loc>
-    <lastmod>2023-12-04T15:38:31.740Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/research/research.html</loc>
-    <lastmod>2023-12-04T15:38:32.164Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/research/team/researchTeam.html</loc>
-    <lastmod>2023-12-04T15:38:32.698Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/ae/ae-0-travel-diary.html</loc>
-    <lastmod>2023-12-04T15:38:33.171Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/ae/ae-1-transportation-planning-experience.html</loc>
-    <lastmod>2023-12-04T15:38:33.678Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/ae/ae-2-statistics.html</loc>
-    <lastmod>2023-12-04T15:38:34.277Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/ae/ae-3-transport-plans.html</loc>
-    <lastmod>2023-12-04T15:38:34.746Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/ae/ae-4-trip-distribution.html</loc>
-    <lastmod>2023-12-04T15:38:35.167Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/ae/ae-5-equity.html</loc>
-    <lastmod>2023-12-04T15:38:35.644Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/ae/ae-6-trip-assignment.html</loc>
-    <lastmod>2023-12-04T15:38:36.173Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/ae/ae-7-review.html</loc>
-    <lastmod>2023-12-04T15:38:37.453Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/assignments/indiv_assignment1.html</loc>
-    <lastmod>2023-12-04T15:38:37.989Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/assignments/indiv_assignment2.html</loc>
-    <lastmod>2023-12-04T15:38:38.620Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/computing/computing-access.html</loc>
-    <lastmod>2023-12-04T15:38:39.120Z</lastmod>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/computing-troubleshooting.html</loc>
+    <lastmod>2024-04-17T18:51:53.738Z</lastmod>
   </url>
   <url>
     <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/computing/computing-troubleshooting.html</loc>
-    <lastmod>2023-12-04T15:38:39.632Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/computing-troubleshooting.html</loc>
-    <lastmod>2023-12-04T15:38:40.062Z</lastmod>
+    <lastmod>2024-04-17T18:51:53.738Z</lastmod>
   </url>
   <url>
     <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/course-faq.html</loc>
-    <lastmod>2023-12-04T15:38:40.561Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/course-links.html</loc>
-    <lastmod>2023-12-04T15:38:40.964Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/course-overview.html</loc>
-    <lastmod>2023-12-04T15:38:41.392Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/course-syllabus.html</loc>
-    <lastmod>2023-12-04T15:38:42.372Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/course-team.html</loc>
-    <lastmod>2023-12-04T15:38:42.858Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/index.html</loc>
-    <lastmod>2023-12-04T15:38:43.591Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/project/project-description.html</loc>
-    <lastmod>2023-12-04T15:38:44.538Z</lastmod>
+    <lastmod>2024-04-17T18:51:53.739Z</lastmod>
   </url>
   <url>
     <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/project/project-feedback.html</loc>
-    <lastmod>2023-12-04T15:38:45.608Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/slides/lec-1.html</loc>
-    <lastmod>2023-12-04T15:38:47.494Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/slides/lec-2.html</loc>
-    <lastmod>2023-12-04T15:38:48.879Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/slides/lec-3.html</loc>
-    <lastmod>2023-12-04T15:38:50.334Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/slides/lec-4.html</loc>
-    <lastmod>2023-12-04T15:39:06.645Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/slides/lec-5.html</loc>
-    <lastmod>2023-12-04T15:39:07.311Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/slides/lec-6.html</loc>
-    <lastmod>2023-12-04T15:39:14.538Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/slides/lec-7.html</loc>
-    <lastmod>2023-12-04T15:39:17.533Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/slides/lec-8.html</loc>
-    <lastmod>2023-12-04T15:39:18.029Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/slides/lec-9.html</loc>
-    <lastmod>2023-12-04T15:39:18.553Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/supplemental/freight-transportation.html</loc>
-    <lastmod>2023-12-04T15:39:18.963Z</lastmod>
+    <lastmod>2024-04-17T18:51:53.861Z</lastmod>
   </url>
   <url>
     <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/supplemental/transport-data.html</loc>
-    <lastmod>2023-12-04T15:39:19.402Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/supplemental/transport-equity.html</loc>
-    <lastmod>2023-12-04T15:39:19.825Z</lastmod>
+    <lastmod>2024-04-17T18:51:53.936Z</lastmod>
   </url>
   <url>
     <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/supplemental/transport-reg.html</loc>
-    <lastmod>2023-12-04T15:39:20.277Z</lastmod>
+    <lastmod>2024-04-17T18:51:53.937Z</lastmod>
   </url>
   <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/supplemental/trip-distribution.html</loc>
-    <lastmod>2023-12-04T15:39:20.686Z</lastmod>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/slides/lec-2.html</loc>
+    <lastmod>2024-04-17T18:51:53.882Z</lastmod>
   </url>
   <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/weeks/week-1.html</loc>
-    <lastmod>2023-12-04T15:39:21.145Z</lastmod>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/slides/lec-1.html</loc>
+    <lastmod>2024-04-17T18:51:53.881Z</lastmod>
   </url>
   <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/weeks/week-10.html</loc>
-    <lastmod>2023-12-04T15:39:21.664Z</lastmod>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/slides/lec-5.html</loc>
+    <lastmod>2024-04-17T18:51:53.892Z</lastmod>
   </url>
   <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/weeks/week-11.html</loc>
-    <lastmod>2023-12-04T15:39:22.124Z</lastmod>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/slides/lec-6.html</loc>
+    <lastmod>2024-04-17T18:51:53.892Z</lastmod>
   </url>
   <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/weeks/week-12.html</loc>
-    <lastmod>2023-12-04T15:39:22.601Z</lastmod>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/slides/lec-9.html</loc>
+    <lastmod>2024-04-17T18:51:53.893Z</lastmod>
   </url>
   <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/weeks/week-13.html</loc>
-    <lastmod>2023-12-04T15:39:23.069Z</lastmod>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/index.html</loc>
+    <lastmod>2024-04-17T18:51:53.861Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/ae/ae-1-transportation-planning-experience.html</loc>
+    <lastmod>2024-04-17T18:51:53.738Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/ae/ae-0-travel-diary.html</loc>
+    <lastmod>2024-04-17T18:51:53.737Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/ae/ae-3-transport-plans.html</loc>
+    <lastmod>2024-04-17T18:51:53.738Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/ae/ae-4-trip-distribution.html</loc>
+    <lastmod>2024-04-17T18:51:53.738Z</lastmod>
   </url>
   <url>
     <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/weeks/week-14.html</loc>
-    <lastmod>2023-12-04T15:39:23.564Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/weeks/week-15.html</loc>
-    <lastmod>2023-12-04T15:39:24.018Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/weeks/week-16.html</loc>
-    <lastmod>2023-12-04T15:39:24.490Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/weeks/week-2.html</loc>
-    <lastmod>2023-12-04T15:39:24.967Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/weeks/week-3.html</loc>
-    <lastmod>2023-12-04T15:39:25.489Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/weeks/week-4.html</loc>
-    <lastmod>2023-12-04T15:39:25.971Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/weeks/week-5.html</loc>
-    <lastmod>2023-12-04T15:39:26.418Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/weeks/week-6.html</loc>
-    <lastmod>2023-12-04T15:39:26.885Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/weeks/week-7.html</loc>
-    <lastmod>2023-12-04T15:39:27.311Z</lastmod>
+    <lastmod>2024-04-17T18:51:53.937Z</lastmod>
   </url>
   <url>
     <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/weeks/week-8.html</loc>
-    <lastmod>2023-12-04T15:39:27.806Z</lastmod>
+    <lastmod>2024-04-17T18:51:53.938Z</lastmod>
   </url>
   <url>
     <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/weeks/week-9.html</loc>
-    <lastmod>2023-12-04T15:39:28.266Z</lastmod>
+    <lastmod>2024-04-17T18:51:53.938Z</lastmod>
   </url>
   <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE864/CIVE864.html</loc>
-    <lastmod>2023-12-04T15:39:29.252Z</lastmod>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/weeks/week-13.html</loc>
+    <lastmod>2024-04-17T18:51:53.937Z</lastmod>
   </url>
   <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE864/computing-troubleshooting.html</loc>
-    <lastmod>2023-12-04T15:39:29.718Z</lastmod>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/weeks/week-10.html</loc>
+    <lastmod>2024-04-17T18:51:53.937Z</lastmod>
   </url>
   <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE864/course-faq.html</loc>
-    <lastmod>2023-12-04T15:39:30.224Z</lastmod>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/weeks/week-3.html</loc>
+    <lastmod>2024-04-17T18:51:53.937Z</lastmod>
   </url>
   <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE864/course-links.html</loc>
-    <lastmod>2023-12-04T15:39:30.692Z</lastmod>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/weeks/week-4.html</loc>
+    <lastmod>2024-04-17T18:51:53.937Z</lastmod>
   </url>
   <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE864/course-overview.html</loc>
-    <lastmod>2023-12-04T15:39:31.119Z</lastmod>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/weeks/week-7.html</loc>
+    <lastmod>2024-04-17T18:51:53.938Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/assignments/indiv_assignment1.html</loc>
+    <lastmod>2024-04-17T18:51:53.738Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/course-links.html</loc>
+    <lastmod>2024-04-17T18:51:53.739Z</lastmod>
   </url>
   <url>
     <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE864/course-syllabus.html</loc>
-    <lastmod>2023-12-04T15:39:32.280Z</lastmod>
+    <lastmod>2024-04-17T18:51:53.941Z</lastmod>
   </url>
   <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE864/project-description.html</loc>
-    <lastmod>2023-12-04T15:39:33.282Z</lastmod>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE864/CIVE864.html</loc>
+    <lastmod>2024-04-17T18:51:53.940Z</lastmod>
   </url>
   <url>
     <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE864/slides/lec-1.html</loc>
-    <lastmod>2023-12-04T15:39:33.747Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE864/weeks/week-1 - Copy (10).html</loc>
-    <lastmod>2023-12-04T15:39:34.219Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE864/weeks/week-1 - Copy (11).html</loc>
-    <lastmod>2023-12-04T15:39:34.631Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE864/weeks/week-1 - Copy (12).html</loc>
-    <lastmod>2023-12-04T15:39:35.035Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE864/weeks/week-1 - Copy (13).html</loc>
-    <lastmod>2023-12-04T15:39:35.465Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE864/weeks/week-1 - Copy (14).html</loc>
-    <lastmod>2023-12-04T15:39:35.896Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE864/weeks/week-1 - Copy (15).html</loc>
-    <lastmod>2023-12-04T15:39:36.316Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE864/weeks/week-1 - Copy (2).html</loc>
-    <lastmod>2023-12-04T15:39:36.741Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE864/weeks/week-1 - Copy (3).html</loc>
-    <lastmod>2023-12-04T15:39:37.174Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE864/weeks/week-1 - Copy (4).html</loc>
-    <lastmod>2023-12-04T15:39:37.590Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE864/weeks/week-1 - Copy (5).html</loc>
-    <lastmod>2023-12-04T15:39:37.992Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE864/weeks/week-1 - Copy (6).html</loc>
-    <lastmod>2023-12-04T15:39:38.419Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE864/weeks/week-1 - Copy (7).html</loc>
-    <lastmod>2023-12-04T15:39:38.831Z</lastmod>
-  </url>
-  <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE864/weeks/week-1 - Copy (8).html</loc>
-    <lastmod>2023-12-04T15:39:39.254Z</lastmod>
+    <lastmod>2024-04-17T18:51:53.942Z</lastmod>
   </url>
   <url>
     <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE864/weeks/week-1 - Copy (9).html</loc>
-    <lastmod>2023-12-04T15:39:39.681Z</lastmod>
+    <lastmod>2024-04-17T18:51:53.943Z</lastmod>
   </url>
   <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE864/weeks/week-1 - Copy.html</loc>
-    <lastmod>2023-12-04T15:39:40.135Z</lastmod>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE864/weeks/week-1 - Copy (13).html</loc>
+    <lastmod>2024-04-17T18:51:53.942Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE864/weeks/week-1 - Copy (4).html</loc>
+    <lastmod>2024-04-17T18:51:53.942Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE864/weeks/week-1 - Copy (3).html</loc>
+    <lastmod>2024-04-17T18:51:53.942Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE864/weeks/week-1 - Copy (14).html</loc>
+    <lastmod>2024-04-17T18:51:53.942Z</lastmod>
   </url>
   <url>
     <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE864/weeks/week-1.html</loc>
-    <lastmod>2023-12-04T15:39:40.595Z</lastmod>
+    <lastmod>2024-04-17T18:51:53.943Z</lastmod>
   </url>
   <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/Guest Lectures/CIVE990T.html</loc>
-    <lastmod>2023-12-04T15:39:41.093Z</lastmod>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE864/weeks/week-1 - Copy (7).html</loc>
+    <lastmod>2024-04-17T18:51:53.943Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE864/weeks/week-1 - Copy (6).html</loc>
+    <lastmod>2024-04-17T18:51:53.943Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE864/course-links.html</loc>
+    <lastmod>2024-04-17T18:51:53.940Z</lastmod>
   </url>
   <url>
     <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/teaching.html</loc>
-    <lastmod>2023-12-04T15:39:41.481Z</lastmod>
+    <lastmod>2024-04-17T18:51:53.944Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/index.html</loc>
+    <lastmod>2024-04-17T18:51:53.734Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/research/team/researchTeam.html</loc>
+    <lastmod>2024-04-21T00:23:47.570Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/research/projects/data/county_shp/county_L48_only.html</loc>
+    <lastmod>2024-04-17T19:06:10.787Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/research/publication/publication.html</loc>
+    <lastmod>2024-04-17T18:51:53.735Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/research/research.html</loc>
+    <lastmod>2024-04-17T18:51:53.735Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/research/projects/projects.html</loc>
+    <lastmod>2024-04-17T18:51:53.735Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/research/projects/ev.html</loc>
+    <lastmod>2024-04-17T18:51:53.735Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/misc/books.html</loc>
+    <lastmod>2024-04-17T18:51:53.734Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/classes/class1.html</loc>
+    <lastmod>2024-04-17T18:51:53.729Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/about.html</loc>
+    <lastmod>2024-04-17T18:51:53.692Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/Guest Lectures/CIVE990T.html</loc>
+    <lastmod>2024-04-17T18:51:53.943Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE864/weeks/week-1 - Copy (10).html</loc>
+    <lastmod>2024-04-17T18:51:53.942Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE864/weeks/week-1 - Copy.html</loc>
+    <lastmod>2024-04-17T18:51:53.943Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE864/weeks/week-1 - Copy (11).html</loc>
+    <lastmod>2024-04-17T18:51:53.942Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE864/weeks/week-1 - Copy (2).html</loc>
+    <lastmod>2024-04-17T18:51:53.942Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE864/weeks/week-1 - Copy (15).html</loc>
+    <lastmod>2024-04-17T18:51:53.942Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE864/weeks/week-1 - Copy (8).html</loc>
+    <lastmod>2024-04-17T18:51:53.943Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE864/weeks/week-1 - Copy (12).html</loc>
+    <lastmod>2024-04-17T18:51:53.942Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE864/weeks/week-1 - Copy (5).html</loc>
+    <lastmod>2024-04-17T18:51:53.942Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE864/course-overview.html</loc>
+    <lastmod>2024-04-17T18:51:53.941Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE864/course-faq.html</loc>
+    <lastmod>2024-04-17T18:51:53.940Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE864/project-description.html</loc>
+    <lastmod>2024-04-17T18:51:53.942Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE864/computing-troubleshooting.html</loc>
+    <lastmod>2024-04-17T18:51:53.940Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/assignments/indiv_assignment2.html</loc>
+    <lastmod>2024-04-17T18:51:53.738Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/weeks/week-6.html</loc>
+    <lastmod>2024-04-17T18:51:53.938Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/weeks/week-5.html</loc>
+    <lastmod>2024-04-17T18:51:53.937Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/weeks/week-1.html</loc>
+    <lastmod>2024-04-17T18:51:53.937Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/weeks/week-2.html</loc>
+    <lastmod>2024-04-17T18:51:53.937Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/weeks/week-11.html</loc>
+    <lastmod>2024-04-17T18:51:53.937Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/weeks/week-12.html</loc>
+    <lastmod>2024-04-17T18:51:53.937Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/weeks/week-16.html</loc>
+    <lastmod>2024-04-17T18:51:53.937Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/weeks/week-15.html</loc>
+    <lastmod>2024-04-17T18:51:53.937Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/ae/ae-2-statistics.html</loc>
+    <lastmod>2024-04-17T18:51:53.738Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/ae/ae-7-review.html</loc>
+    <lastmod>2024-04-17T18:51:53.738Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/ae/ae-6-trip-assignment.html</loc>
+    <lastmod>2024-04-17T18:51:53.738Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/ae/ae-5-equity.html</loc>
+    <lastmod>2024-04-17T18:51:53.738Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/course-overview.html</loc>
+    <lastmod>2024-04-17T18:51:53.739Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/course-team.html</loc>
+    <lastmod>2024-04-17T18:51:53.739Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/slides/lec-8.html</loc>
+    <lastmod>2024-04-17T18:51:53.892Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/slides/lec-7.html</loc>
+    <lastmod>2024-04-17T18:51:53.892Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/slides/lec-4.html</loc>
+    <lastmod>2024-04-17T18:51:53.888Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/slides/lec-3.html</loc>
+    <lastmod>2024-04-17T18:51:53.882Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/supplemental/transport-equity.html</loc>
+    <lastmod>2024-04-17T18:51:53.936Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/supplemental/freight-transportation.html</loc>
+    <lastmod>2024-04-17T18:51:53.936Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/supplemental/trip-distribution.html</loc>
+    <lastmod>2024-04-17T18:51:53.937Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/project/project-description.html</loc>
+    <lastmod>2024-04-17T18:51:53.861Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/computing/computing-access.html</loc>
+    <lastmod>2024-04-17T18:51:53.738Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/course-syllabus.html</loc>
+    <lastmod>2024-04-17T18:51:53.739Z</lastmod>
   </url>
 </urlset>
