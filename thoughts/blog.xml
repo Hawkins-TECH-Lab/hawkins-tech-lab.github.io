@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Hawkinslab</title>
+<link>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/blog.html</link>
+<atom:link href="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/blog.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<generator>quarto-1.3.361</generator>
+<lastBuildDate>Fri, 26 Apr 2024 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>Jevons Paradox</title>
+  <dc:creator>Jason Hawkins</dc:creator>
+  <link>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/04-23-2024/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>William Stanley Jevons was a 19th century English economist and logician. He made extensive contributions to the field, yet is perhaps best known for his eponymous paradox. Jevons Paradox arises when technological progress increases the efficiency with which a resource is used (reducing unit consumption), but the falling marginal cost of use induces increases in demand such that aggregate resource use is increased, rather than reduced. Engineers are, in general terms, believers in the benefits of technology. Efficiency gains are professed to solve any number of social and environmental ills. E.g., autonomous vehicles will solve traffic congestion and improved safety through their elimination of fallible human drivers. Consider the narrative regarding the population theory of another late 18th century/early 19th century economist - Thomas Malthus. Malthus predicted population collapse in response to population growth outstripping agricultural productivity growth. Thus far, his prediction has not come to pass partially due to technological progressing, including the 20th century Green Revolution (led by Norman Borlaug and others), which relieved starvation concerns - yay! Techno-optimists reference this success as an exemplar of why technology will save us. Furthermore, the so-called Environmental Kuznets Curve (named for yet another economist, Simon Kuznets) anticipates GDP becoming decoupled from environmental impacts as a nation moves from an industrial to a post-industrial economy.</p>
+<p>Let us take a look at the Kuznets Curve in the context of Jevons Paradox. If we assume a steady state economy, then it may be the case that environmental impacts will decrease as a function of technological progress. By a steady state economy, we mean a constant stock of capital and fixed population.</p>
+<p><img src="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/04-23-2024/jevons_1.svg" class="img-fluid" style="width:50.0%"></p>
+<p>Of course, we do not exist in a steady state economy, global population continues to grow (rising from 6 billiong to 8 billion people in my own lifetime). While natural resources are a fixed stock (we will return to this topic on many occassions), our rate of resource consumption has not declined as a function of technological progress. Rather, we continue to consume increasing quantities of materials and energy, which represent the fundamental building blocks of human society. Another way to term a steady state economy is that its size is a non-stationary function of time. Stationarity will be a familiar term to those with a background in statistics or econometrics - refering to the lack of equilibrium about a fixed level of resource consumption in this case. With GDP encouraged to grow without limit, Jevons Paradox quickly comes to bear. Technological progress will get us only so far when faced with the tasks of overcoming a non-stationarity system.</p>
+<p>We can consider the problem from the perspective of aggregate environmental impact vs.&nbsp;marginal (unit) environmental impact. Jevons Paradox shows us that individuals will increase their environment impacts (vis-a-vis more consumption) in response to technological innovations that reduce the marginal cost, or material and energy requirements - i.e., increasing aggregate individual impacts. At the same time, additional individuals (i.e., population growth) compounds the impacts, even should these new individuals consume resources at a diminished rate.</p>
+<p><img src="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/04-23-2024/jevons_2.svg" class="img-fluid" style="width:50.0%"></p>
+<p>So what can be done? The first step is to recognize myopia in our collective perspective on resource consumption as engineers, economists, policy-makers, and inhabitants of this planet. Classical valuation methods cannot account for these impacts, at least as long as they exist within an epistemology founded in growth as a positive property of human society rather than as a normative value.</p>
+<p>I hope to continue to examine these topics in greater depth, not for professional promotion (unlikely absent a large grant to build ecological philosophy widgets with my graduate students) but rather for personal edification and sanity. I would like to reflect on value systems, morality, and social change. I am also interested in teasing out the seeming intangibles of the engineering perspective on policy evaluation from the conventional economics-based approach, and how engineering has been drawn into the economics perspective through a lack of appropriate application of relevant theory and knowledge - e.g., entropy, biophysical limits, and system dynamics.</p>
+
+
+
+ ]]></description>
+  <category>environmental economics</category>
+  <category>system dynamics</category>
+  <guid>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/04-23-2024/index.html</guid>
+  <pubDate>Fri, 26 Apr 2024 05:00:00 GMT</pubDate>
+  <media:content url="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/04-23-2024/banner.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>The Four Horsemen of the Production Apocalypse</title>
+  <dc:creator>Jason Hawkins</dc:creator>
+  <link>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/04-21-2024/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>Gary Becker begins his “A Theory of the Allocation of Time” <span class="citation" data-cites="Becker_1965">(Becker 1965)</span> with a discussion of time spent at work relative to other activities, highlighting the need for more robust analyses of uncompensated time use in economics. Little did he know that his theory and model structure would strongly influence travel behaviour and economic analysis over subsequent decades. In the 1970s, DeSerpa <span class="citation" data-cites="DeSerpa_1971">(1971)</span> and Evans <span class="citation" data-cites="Evans_1972">(1972)</span> provided among the first connections to transportation analysis. Building from DeSerpa and Evans, Jara-Díaz <span class="citation" data-cites="Jara-Díaz_2003">(2003)</span> completed fundamental work on the value of time in transportation economics. However, there is a wealth of other insights relevant to transportation analysis to be gained from Becker’s theory. I will focus on the topic of transportation service provision.</p>
+<p>Being a founder of the neoclassical “Chicago School of Economics”, Becker would certainly have strong opinions on the extension of his theory to include other non-market means of production. Nonetheless, one can consider four basic forms of production: market, home, government, and commons. Market production is the exchange of a good or service for money. Home production, as defined by Becker, is uncompensated production by the household (e.g., making dinner, cleaning the bathroom, etc.). The latter two forms of production were not discussed by Becker in his 1965 paper. In the first form, government produces a good or service for use by the public, financed by tax revenue or similar sources. For example, most healthcare services in the United States are privatized and subject to market forces, whereas many other nations provide healthcare as a public service. The final form of production is in the commons. Neoclassical economic theory suggests that common resources will be exploited if not managed by state intervention or market forces via monetization. However, both Mariana Mazzucato <span class="citation" data-cites="Mazzucato_2018">(2018)</span> and Elinor Ostrom <span class="citation" data-cites="Ostrom_1990">(1990)</span> provide compelling arguments for the efficient use of common production. As one example, Wikipedia is managed in the commons as most contributors provide their services at no cost.</p>
+<p>The reader may wonder: what does any of this have to do with travel behaviour? I argue that the above economic production framework can be mapped onto the transportation mode choice problem and provides valuable insights for behavioural theory and modelling methods. Home production of transportation takes the form of walking, cycling, or using one’s own vehicle. The vehicle and fuel must be purchased on the market, but the transportation service is provided by the household using personal time as the only input to production. In contrast, taxi or ridehail modes are purchased in the market from private firms (e.g., Uber, Lyft, Didi, etc.). Government provides transportation as a public service through transit. Transportation provided in the commons is less common (a nice little pun) but takes the form of carsharing and other systems wherein the service cost is shared among a pool of otherwise unaffiliated households. Each of the above transportation alternatives could manifest as the same physical mode – i.e., a small passenger vehicle. However, the behavioural and operational models differ. For example, a person may be unable to afford market production (ridehail). They may not use public production (transit) to avoid sharing a vehicle with strangers. They may be unwilling to participate in the commons (carshare) because they don’t want someone’s muddy boots in their car.</p>
+<p>Being trained as a civil engineer, I am always keen to find concrete (two puns in one article is the limit) applications for theory. The modelling of autonomous vehicles (AVs) provides an application of the above theory to transportation. Many scholars make the distinction between personal AVs, shared AVs (or SAVs) provided as a public service, and SAVs provided in the market. However, in my reading, there is minimal thought given to how these operating models would function from an economic production theory perspective. Let us first focus on the first alternative. It is unclear whether to classify a personal AV as home production or market consumption – Is sitting comfortably in a vehicle while it performs the driving task pure leisure? Are you purchasing driving services in the market as a software package? The latter two alternatives provide an interesting contrast. In both cases, SAVs are provided to the household as a service. However, if we consider transportation as a public service, another economic concept may be brought to bear, termed private provision of a public good by Bergstrom et al. <span class="citation" data-cites="Bergstrom_Blume_Varian_1986">(1986)</span> . Public transit provides a subsidized travel option for low-income households and those who choose not to own a personal vehicle. The widescale deployment of SAV fleets would therefore require ridehailing operators to take on this role. The risk is that each operator may rely on other operators to serve low-income households, with the result being a Nash equilibrium that does not maximize total social utility. Government intervention is necessary to ensure an equitable distribution of mobility through incentives or regulations <span class="citation" data-cites="Sieg_2020">(Sieg 2020)</span>. Existing simulations often ignore the profit-seeking motives of private operators, assuming they match trips to minimize detour time and are agnostic to traveller income and profit maximization motives on the part of operators.</p>
+<p>As a final thought on the historical distinction between private and public travel modes. The marginal private automobile trip tends to add travel time for existing travellers through congestion that slows travel speed and increases its variability. In contrast, the marginal transit trip tends to improve service for existing travellers through reduced vehicle headways and the use of higher-order transit (i.e., trains rather than buses). The latter outcome is termed as an anti-congestion effect <span class="citation" data-cites="Mohring_1972">(Mohring 1972)</span>. The trend in SAV research is toward small, automobile-style, vehicles that may be shared or used alone. This shift adds shades of gray to the public-private dichotomy. Will shared mobility exhibit the congestion effect of fthe private automobile or the anti-congestion effect of transit? Importantly, in which contexts do these new forms of mobility tend to exhibit each of these effects (i.e., there is likely a spectrum of possible impacts depending on the application of technology, local built form, and transportation infrastructure conditions)?</p>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-Becker_1965" class="csl-entry">
+Becker, Gary S. 1965. <span>“A Theory of the Allocation of Time.”</span> <em>The Economic Journal</em> 75 (299): 493. <a href="https://doi.org/10.2307/2228949">https://doi.org/10.2307/2228949</a>.
+</div>
+<div id="ref-Bergstrom_Blume_Varian_1986" class="csl-entry">
+Bergstrom, Theodore, Lawrence Blume, and Hal Varian. 1986. <span>“On the Private Provision of Public Goods.”</span> <em>Journal of Public Economics</em> 29: 2549.
+</div>
+<div id="ref-DeSerpa_1971" class="csl-entry">
+DeSerpa, A. C. 1971. <span>“A Theory of the Economics of Time.”</span> <em>The Economic Journal</em> 81 (324): 828–46. <a href="https://doi.org/10.2307/2230320">https://doi.org/10.2307/2230320</a>.
+</div>
+<div id="ref-Evans_1972" class="csl-entry">
+Evans, Alan W. 1972. <span>“On the Theory of the Valuation and Allocation of Time.”</span> <em>Scottish Journal of Political Economy</em> 19 (1): 1–17. <a href="https://doi.org/10.1111/j.1467-9485.1972.tb00504.x">https://doi.org/10.1111/j.1467-9485.1972.tb00504.x</a>.
+</div>
+<div id="ref-Jara-Díaz_2003" class="csl-entry">
+Jara-Díaz, Sergio R. 2003. <span>“On the Goods-Activities Technical Relations in the Time Allocation Theory.”</span> <em>Transportation</em> 30 (3): 245–60. <a href="https://doi.org/10.1023/A:1023936911351">https://doi.org/10.1023/A:1023936911351</a>.
+</div>
+<div id="ref-Mazzucato_2018" class="csl-entry">
+Mazzucato, Mariana. 2018. <em>The Value of Everything: Making and Taking in the Global Economy: Mazzucato, Mariana: 9781610396745: Amazon.com: Books</em>. PublicAffairs.
+</div>
+<div id="ref-Mohring_1972" class="csl-entry">
+Mohring, Herbert. 1972. <span>“Optimization and Scale Economies in Urban Bus Transportation.”</span> <em>The American Economic Review</em> 62 (4): 591–604. <a href="https://doi.org/10.2307/1806101">https://doi.org/10.2307/1806101</a>.
+</div>
+<div id="ref-Ostrom_1990" class="csl-entry">
+Ostrom, Elinor. 1990. <em>Governing the Commons : The Evolution of Institutions for Collective Action</em>. Cambridge University Press. <a href="http://archive.org/details/governingcommons0000ostr">http://archive.org/details/governingcommons0000ostr</a>.
+</div>
+<div id="ref-Sieg_2020" class="csl-entry">
+Sieg, Holger. 2020. <span>“Voluntary Provision of Local Public Goods and Services.”</span> In <em>Urban Economics and Fiscal Policy</em>, 90–105. Princeton University Press.
+</div>
+</div>
+
+
+</section>
+
+ ]]></description>
+  <category>transportation planning</category>
+  <category>production theory</category>
+  <guid>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/04-21-2024/index.html</guid>
+  <pubDate>Sun, 21 Apr 2024 05:00:00 GMT</pubDate>
+  <media:content url="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/04-21-2024/banner.jpg" medium="image" type="image/jpeg"/>
+</item>
+</channel>
+</rss>
