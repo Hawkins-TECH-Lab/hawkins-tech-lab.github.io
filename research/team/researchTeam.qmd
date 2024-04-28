@@ -39,3 +39,12 @@ Undergraduate students at UNL and UNO are encouraged to reach out to Dr. Hawkins
 | | Name | About
  ---|:---:|---
 | ![](../../assets/images/team/nick.jpg){style="float:right; padding: 0 0 0 0; object-fit: cover; object-position: top;" fig-align="center" width="166" height="200"}           | Nick Aldridge | Nick is an M.Sc. student in transportation engineering at the University of Nebraska-Lincoln. He received his B.Sc. in Civil & Environmental Engineering from UNL. His research focuses on developing pedestrian & bicycle crash exposure metrics for the City of Lincoln.|
+
+
+
+|Year | Name | About
+:---|:---|---
+2022-2023 | Abigail Metschke| B.S.
+2022-2023 | William Turman  | B.S.
+2022-2022 | Casey Nolte         | B.S.
+2022-2022 | Kumo Babe          | B.S.
