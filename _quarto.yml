@@ -183,6 +183,12 @@ website:
           contents:
             - href: research/projects/ev.qmd
               text: EV Adoption Graphs
+        - section: "Bikeshare"
+          contents:
+            - href: research/projects/bikeshare/Omaha.qmd
+              text: Omaha Bikeshare
+            - href: research/projects/bikeshare/Lincoln.qmd
+              text: Lincoln Bikeshare
     - id: Books
       style: "docked"
       search: true
