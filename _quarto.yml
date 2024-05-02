@@ -9,7 +9,7 @@ website:
       - href: index.qmd
         text: Home
 
-      - text: Research
+      - text: "Research"
         menu:
           - text: "Projects"
             href:  research/projects/projects.qmd
@@ -25,10 +25,12 @@ website:
             href: teaching/CIVE864/index.qmd
           - text: "CIVE990T"
             href: teaching/Guest Lectures/CIVE990T.qmd
-      - text: Misc
+      - text: Thoughts
         menu:
           - text: "Books"
-            href:  misc/books.qmd
+            href:  thoughts/books.qmd
+          - text: "Blog"
+            href:  thoughts/blog.qmd
     background: "#d00000"
     
   sidebar:

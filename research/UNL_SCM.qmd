@@ -1,0 +1,282 @@
+---
+title: "An Integrative Theory of Transportation and Location Decision-Making"
+author:
+  - Jason Hawkins, University of Nebraska Lincoln
+format: 
+  pptx
+  # revealjs:
+  #   slide-number: c/t
+  #   theme: "black"
+  #   incremental: false
+  #   title-slide-attributes:
+  #     data-background-image: ../assets/images/research/brickworks.jpg
+  #     data-background-size: cover  
+editor: visual
+---
+
+## What is a city?{background="#FFFFFF"}
+  - A large town
+  - A region of high population density
+  - *Civitas*: a community of citizens  
+  governed by a common set of laws ![](../assets/images/research/plato_bust.jpg){.absolute top="150" right="0"}
+  - *Polis*: the administrative center of a city-state
+
+## What is a city?
+::: columns
+::: {.column width="50%" .fragment}
+  ![](../assets/images/research/robert_moses.jpg)  
+  The city as a place of [production]{style="color:red;"}  
+  ![](../assets/images/research/toronto_union.jpg){width=60%}
+:::
+::: {.column width="50%" .fragment}
+  ![](../assets/images/research/jane_jacobs.jpg)  
+  The city as a place of [consumption]{style="color:red;"}  
+  ![](../assets/images/research/shuffle_demons.jpg)
+:::
+:::
+
+## Our Interactions with the Built Environment {.smaller}
+![](../assets/images/research/time_use_1.svg){width="25%"}
+
+Transportation Demand Models = Models of [Time Use]{style="color:red;"}
+
+![](../assets/images/research/time_use_2.svg){width="40%"}
+
+
+## Activity-Based Travel Model Integration
+::: columns
+::: {.column width="60%" .fragment}
+  ![](../assets/images/research/abm.png){}
+:::
+::: {.column width="40%" .fragment}
+  What is the underling [theory of integration]{style="color:red;"}?
+:::
+:::
+
+## Transportation-Land Use Model Integration
+::: columns
+::: {.column width="60%" .fragment}
+  ![](../assets/images/research/ilut.png)
+:::
+::: {.column width="40%" .fragment}
+  What is the underling [theory of integration]{style="color:red;"}?
+:::
+:::
+
+## Conceptual Systems Integration
+![](../assets/images/research/conceptual_framework.svg)
+![](../assets/images/research/clock.svg){.absolute top="150" left="375"}
+![](../assets/images/research/dollar.svg){.absolute bottom="200" left="200"}
+
+![](../assets/images/research/clock.svg){.absolute bottom="150" right="300"}
+![](../assets/images/research/dollar.svg){.absolute bottom="200" right="250"}
+
+## A Note on Theory of Integration{background="#FFFFFF"}
+- Individual decision models (comprising holons) as [complex emergent systems]{style="color:red;"} vs. joint decision models (structural, copula multivariate distributions, etc.) as [microeconomic systems]{style="color:red;"}
+- **No absolute answers:** Analogous to the [frequentist]{style="color:red;"} vs. [Bayesian]{style="color:red;"} debates in statistics  ![](../assets/images/research/debate.jpg){.absolute bottom="0" left="300" width=30%}
+
+## Home Production and Location Choice{background="#FFFFFF" .smaller}
+- “Eco-nomics” from Greek: Oikos (“household”) and Nemein (“management”)
+- Begin from model of Becker: households make tradeoffs between home production (time allocation) & market consumption (money allocation)
+- Forms a consistent theoretical basis for integrating transportation, land use, & macroeconomic models
+- Activity-based travel models have similar theoretical lineage (through value of travel time literature of DeSepera, Evans, & Jara-Diaz)
+- How much time do I spend on activities in the home vs. out of the home?
+- Do I want a large home with plenty of space for cooking or a small apartment close to a variety of restaurants?
+
+## Research Gaps in Home Production {background="#FFFFFF" .smaller}
+**Data Gaps**
+
+- Household travel surveys do not consider in-home activities
+- Expensive & challenging to collect survey data with both time use & expenditure responses (we tried it)
+- Data fusion methods used in home production literature are ad hoc & poorly developed
+
+**Model Gaps**
+
+- Only considers single-person households
+- Does not model non-working household members
+- Arbitrary definition of consumption technology: minimum time required to consume a good or service
+
+## Data Synthesis
+![](../assets/images/research/framework_overview.png)
+
+## Data Synthesis
+::: columns
+::: {.column width="50%"}
+  ![](../assets/images/research/joint_dist_infer.png){width=80%}
+:::
+::: {.column width="50%"}
+  ![](../assets/images/research/hh_gen.png){width=80%}
+:::
+:::
+
+## Data Synthesis
+::: columns
+::: {.column width="50%"}
+  ![](../assets/images/research/hh_gen.png){width=80%}
+:::
+::: {.column width="50%"}
+  ![](../assets/images/research/pop_synth.png){width=70%}
+:::
+:::
+
+## Data Synthesis Validation
+::: columns
+::: {.column width="50%"}
+  ![](../assets/images/research/run_improvements_13_ada.png)
+:::
+::: {.column width="50%"}
+  ![](../assets/images/research/prop_dwelling_13_cd.png)
+:::
+:::
+
+## Data Synthesis Validation
+::: columns
+::: {.column width="65%"}
+  ![](../assets/images/research/prop_time_13_ada.png)
+:::
+::: {.column width="35%"}
+  ![](../assets/images/research/synth_travel_time.png)
+:::
+:::
+
+## Conceptual Model Framework {background="#FFFFFF" .smaller}
+- Assume a multiple discrete-continuous extreme value (MDCEV) model with a generalized nested logit error structure
+- Conceptual model developed for joint location-time use-consumption decisions
+$$ F\left(\epsilon_1^*,\left(\epsilon_{12},…\epsilon_{1k} \right),\left(\epsilon_{l2},…\epsilon_{lK} \right),…\left(\epsilon_{L1},…\epsilon_{LK} \right)\right)= \\ \exp \left(-\exp \left(\frac{-\epsilon_1^*}{\sigma}\right)\right)\prod_{l=1}^L\left[\exp -\left(\sum_{k=1}^K \exp  \left(\frac{-\epsilon_{lk}}{\sigma\theta}\right)\right)^\theta \right]$$
+
+## Conceptual Model Framework {background="#FFFFFF" .smaller}
+- Maximize the objective function
+$$ max\left(U_q\left(x_{ql},t_{ql},t_{qlw}\right)\right)=\sum_{l=1}^{L}\sum_{k=1}^{K}u_k\left(x_{qlk}\right)+\sum_{l=1}^{L}\sum_{n=1}^{N}{\widetilde{u}}_n\left(t_{qln}\right)+\sum_{l=1}^{L}{\widetilde{u}}_w\left(t_{qlw}\right)$$
+- With the following baseline utility function
+$$\psi_{qkl}=exp\left(\beta_q^\prime z_{qlk}+\delta_q^\prime x_{ql}+\epsilon_{qlk}\right)$$
+$$\psi_{qnl}=\exp{\left({\widetilde{\beta}}_q^\prime{\widetilde{z}}_{qln}+{\widetilde{\delta}}_q^\prime{\widetilde{x}}_{ql}+{\widetilde{\epsilon}}_{qln}\right)}$$
+$$\psi_{qwl}=\exp{\left({\widetilde{\beta}}_q^\prime{\widetilde{z}}_{qlw}+{\widetilde{\delta}}_q^\prime{\widetilde{x}}_{ql}+{\widetilde{\epsilon}}_{qlw}\right)}$$
+
+## Location Choice Models {background="#FFFFFF"}
+- I do plenty of these models!
+- Residential location choice - bid-auction setup with multi-person utility
+- Firm location choice - considering firm structure and choiceset generation
+  - Semi-Compensatory Indepedent Availability Logit (SCIAL) with Aggregation of Alternatives
+
+## Empirical Model Framework {background="#FFFFFF"}
+- Simplify from general model structure by removing location choice $L$
+- Assume a multiple discrete-continuous extreme value (MDCEV) utility with a translated CES function (assuming $\alpha_k->0$ gives a variant of the LES function)
+$$U\left(x\right)=\sum_{n=1}^{N}\frac{\gamma_n}{\alpha_n}\psi_n\left[\left(\frac{x_n}{\gamma_n}+1\right)^{\alpha_n}-1\right]$$
+
+## Empirical Model Framework {background="#FFFFFF" .smaller}
+- Maximize the objective function
+$$ max\left(U_q\left(\mathbf{x}_q,\mathbf{t}_q,\mathbf{t}_{qw}\right)\right)=\sum_{k=1}^{K}u_k\left(x_{qk}\right)+\sum_{n=1}^{N}{\widetilde{u}}_n\left(t_{nq}\right)+{\widetilde{u}}_w\left(t_{wq}\right)$$
+- Subject to the constraints
+$$\sum_{k=1}^{K}p_{qk}x_{qk}=E_q+\omega_qt_{qw}$$
+$$\sum_{n=1}^{N}t_{qn}+t_{qw}=T_q$$
+
+## Empirical Model Framework {background="#FFFFFF" .smaller}
+- Assume all members of a household are subject to a common monetary budget constraint & independent temporal budget constraints
+- Introduce a parallel constraint (model called [PC-MDCEV]{style="color:red;"}) through a change in the specification of the GEV error structure to
+$$G\left(Y_{11},Y_{12},\ldots Y_{1k}\ldots Y_{H1}\ldots Y_{Hk}\right)=\prod_{h}^{H}\left(\sum_{k}^{K}Y_{hk}\right)^{\theta_h^q}$$
+- $𝜃_ℎ^𝑞$ represents the contribution of individual q (household member h) to consumption by household H
+- $𝜃_ℎ^𝑞$ can be parameterized based on member characteristics and is identified off inter-household variations
+
+## Empirical Model Framework {background="#FFFFFF" .smaller}
+- With some simplication, the joint likelihood function for individual $q$ is given by
+$$\begin{matrix}P_q=\left[c_{qw}\prod_{k=2}^{K}c_{qk}\sum_{k=1}^{M}\frac{1}{c_{qk}}\prod_{n=2}^{\widetilde{M}}c_{qn}\sum_{n=1}^{\widetilde{M}}\frac{1}{c_{qn}}\right]\left[\frac{{\widetilde{V}}_{qw}}{a-b} \exp \left({\widetilde{\beta}\prime}_{qw}{\widetilde{z}}_{qw}\right) \exp \left(-\frac{{\widetilde{V}}_{qw}}{a-b}\exp \left({\widetilde{\beta}\prime}_{qw}{\widetilde{z}}_{qw}\right)\right)\right]\\\prod_{k=1}^{M}\frac{exp\left({\theta_h^qW}_{qk}\right)}{\left(\sum_{k=1}^{K}exp\left({\theta_h^qW}_{qk}\right)\right)}\left(M-1\right)!\left[\frac{\prod_{\widetilde{M}=1}^{\widetilde{M}}\exp\left(W_{qn}\right)}{\sum_{n=1}^{N}\exp\left(W_{qn}\right)}\left(\widetilde{M}-1\right)!\right]\\\end{matrix}$$
+
+where
+$$a=\frac{\omega_q}{x_{q1}^*}$$
+$$b=\frac{1}{t_{q1}^*}$$
+
+## Standard Definition of Minimum Time {background="#FFFFFF"}
+- **Conceptually:** minimum time to consume a given good or service
+- Leisure activities defined as those to which a person devotes > minimum time (constraint is non-binding)
+- Challenging to determine the minimum time and define leisure vs. maintenance activities: based on if the time constraint is binding?
+- Jara-Diaz pioneered applications in transportation field
+  - Applied work uses an assumption about leisure activities or minimum reported time in dataset
+
+## Standard Definition of Minimum Time {background="#FFFFFF"}
+**Problems:**
+
+- How do we define a uniform set of leisure activities? Walking? Watching TV? What about if I think about a research project while riding my bike?
+- Travel time has a negative marginal utility & does not fit with positive marginal utility assumption of MDCEV
+
+## Proposed Definition of Minimum Time {background="#FFFFFF"}
+**My approach:**
+
+- Travel time removed from total travel budget
+- Time budget then becomes [endogenous]{style="color:red;"} as a function of the travel time necessary to move between activity locations (transportation model connection)
+- Similarly, monetary budget could be considered [conditional upon the home purchase]{style="color:red;"} (a daily vs. long-term expenditure connection)
+
+## Some Empirical Results {background="#FFFFFF"}
+::: {style="font-size: 0.35em;"}
+|                               |     Variable                                           |        (1)      |      (2)     |      (3)     |      (4)     |      (5)     |      (6)     |      (7)     |      (8)     |      (9)     |      (10)     |
+|-------------------------------|--------------------------------------------------------|:---------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:-------------:|
+|            Time Use           |              Baseline Marginal Utility (β)             |                 |              |              |              |              |              |              |              |              |               |
+|                               |     ASC                                                |         -       |      2.12    |     -4.26    |      1.40    |     -4.23    |     -0.44    |     -3.90    |      0.11    |       -      |      -8.36    |
+|                               |     Female                                             |       -0.76     |       -      |       -      |       -      |       -      |       -      |       -      |       -      |       -      |        -      |
+|                               |     Age   <25                                          |         -       |              |              |      0.36    |      0.43    |       -      |       -      |       -      |       -      |               |
+|                               |     Age   25 to 34                                     |         -       |     -0.59    |     -0.29    |      0.44    |      0.50    |       -      |       -      |       -      |       -      |      -0.65    |
+|                               |     Age   35 to 44                                     |         -       |     -0.25    |     -0.20    |      0.45    |      0.47    |       -      |     -0.10    |       -      |       -      |      -2.19    |
+|                               |     Age   45 to 54                                     |         -       |      0.29    |     -0.37    |      0.50    |      0.53    |      0.21    |              |     -0.12    |       -      |      -2.76    |
+|                               |     Age   55 to 64                                     |         -       |       -      |     -0.42    |      0.66    |      0.56    |      0.46    |     -0.49    |     -0.40    |       -      |        -      |
+|                               |     Age   65 to 74                                     |         -       |       -      |     -0.35    |      0.62    |      0.53    |      0.47    |     -0.19    |     -0.51    |       -      |        -      |
+|                               |     Work   balance (balanced)                          |       -1.11     |       -      |       -      |       -      |       -      |       -      |       -      |       -      |       -      |        -      |
+|                               |     HH   size                                          |       -1.85     |     -0.39    |       -      |       -      |       -      |       -      |       -      |       -      |       -      |        -      |
+|                               |     HH   type (family)                                 |       -2.34     |       -      |       -      |       -      |       -      |       -      |       -      |       -      |       -      |        -      |
+|                               |     HH   income (3rd quartile)                         |         -       |      0.19    |       -      |      0.42    |       -      |       -      |       -      |       -      |       -      |        -      |
+|                               |     Durham   region                                    |       -0.58     |       -      |       -      |      0.22    |      0.51    |       -      |       -      |       -      |       -      |        -      |
+|                               |     York   region                                      |       -1.21     |       -      |       -      |       -      |       -      |       -      |     -0.79    |       -      |       -      |        -      |
+|                               |     Peel   region                                      |         -       |       -      |     -0.53    |       -      |       -      |       -      |     -0.82    |       -      |       -      |        -      |
+|                               |     Halton   region                                    |       -1.43     |       -      |       -      |      0.50    |      0.36    |      0.22    |       -      |       -      |       -      |        -      |
+|                               |     Proportion   dwellings in ADA (detached)           |         -       |       -      |       -      |     -0.14    |       -      |     -0.14    |       -      |       -      |       -      |        -      |
+|                               |     Proportion   dwellings in ADA (apartment)          |         -       |       -      |      0.18    |       -      |      0.15    |       -      |       -      |       -      |       -      |        -      |
+|                               |     Proportion   of commuters in ADA (walk+bike)       |         -       |      0.41    |       -      |       -      |       -      |       -      |       -      |       -      |       -      |        -      |
+|                               |     Office   establishment density in ADA (per km2)    |         -       |       -      |       -      |       -      |      0.02    |       -      |       -      |       -      |       -      |        -      |
+|                               |                 Satiation parameter (γ) |       0.02      |      0.06    |      1.40    |      0.02    |      0.92    |      0.11    |      0.54    |      0.11    |       -      |     124.80    |              |              |              |              |              |              |              |              |               |
+|                               |
+:::
+
+## Some Empirical Results {background="#FFFFFF"}
+::: {style="font-size: 0.35em;"}
+|                               |     Variable                                           |        (1)      |      (2)     |      (3)     |      (4)     |      (5)     |      (6)     |      (7)     |      (8)     |      (9)     |      (10)     |
+|-------------------------------|--------------------------------------------------------|:---------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:-------------:|
+|           Expenditure         |              Baseline Marginal Utility (β)             |                 |              |              |              |              |              |              |              |              |               |
+|                               |     ASC                                                |         -       |     -0.94    |              |      3.63    |      0.65    |      3.75    |      1.67    |       -      |      6.64    |      -1.25    |
+|                               |     HH   size                                          |         -       |     -0.28    |              |     -0.33    |     -0.27    |     -0.26    |     -0.20    |       -      |     -0.32    |      -0.30    |
+|                               |     Townhouse/semi-detached   dwelling                 |         -       |       -      |              |      0.61    |      0.17    |      0.43    |      0.29    |       -      |      0.58    |      0.23     |
+|                               |     Apartment   dwelling                               |         -       |       -      |              |      0.94    |       -      |      0.58    |      0.30    |       -      |      1.02    |        -      |
+|                               |     Proportion   dwellings in ADA (detached)           |         -       |      1.66    |              |      0.48    |      0.53    |      0.34    |      0.68    |       -      |       -      |      0.25     |
+|                               |     Proportion   dwellings in ADA (apartment)          |         -       |       -      |              |       -      |       -      |       -      |       -      |       -      |       -      |      -0.39    |
+|                               |     Median   income in ADA                             |         -       |       -      |              |       -      |       -      |       -      |       -      |       -      |       -      |      0.03     |
+|                               |     Proportion   of commuters in ADA (walk+bike)       |         -       |       -      |              |       -      |       -      |       -      |       -      |       -      |       -      |      -1.08    |
+|                               |     Office   establishment density in ADA (per km2)    |         -       |       -      |              |       -      |       -      |       -      |       -      |       -      |     -0.03    |        -      |
+|                               |                 Satiation parameter (γ)| - | 0.01    |       -      |      0.01    |      0.02    |      0.00    |      0.02    |       -      |      0.00    |      0.04     |
+|     Budget      Allocation    |                    Individual Weights                  |                 |              |              |              |              |              |              |              |              |               |
+|                               |     Married   and female                               |       -0.18     |              |              |              |              |              |              |              |              |               |
+|                               |     Age   35 to 44 and female                          |       0.18      |              |              |              |              |              |              |              |              |               |
+|                               |     Age   65 to 74 and female                          |       -0.27     |              |              |              |              |              |              |              |              |               |
+|                               |     Age   35 to 44 and workaholic                      |       -0.21     |              |              |              |              |              |              |              |              |               |
+|                               |
+:::
+
+## Some Empirical Results {background="#FFFFFF" .smaller}
+- Members of [larger households]{style="color:red;"} tend to [spend less time on home production]{style="color:red;"}
+  - Represents an opportunity to apply the economics of the firm to an interpretation of household behavior!
+  - Larger households, like larger firms, benefit from [economies of scale]{style="color:red;"}
+- [Type & mix of dwellings]{style="color:red;"} (detached, townhouse, apartment, etc.) have significant influences on both time use and expenditure
+- Both in-home and out-of-home food consumption time tends to increase with age – younger individuals are in a rush to finish their meals?
+
+## Next Steps {background="#FFFFFF"}
+- Difficult to jointly model long-term location & medium-term transportation choice for variety of reasons 
+<!--(ask past Eric Pas winner Jonas Eliasson)
+-->
+- Conceptually, model structure is feasible....
+- However, how to determine counterfactual activity patterns given a different home location?
+
+## Next Steps
+- Machine Learning (Flexibility) + Econometrics (Interpretation)
+
+![](../assets/images/research/mdcev_nn.png)
+<!-- Sorry.... not travel behaviour   
+Constrained Ecological Economic Choice
+![](../assets/images/research/mdcev_constrained.png){.absolute top="150" left="100" width=50%} -->
+
+# Thank you!

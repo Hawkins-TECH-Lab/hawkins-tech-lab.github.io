@@ -1,0 +1,43 @@
+---
+title: "Environmental-Economic Systems"
+# author:
+#   - Dr. Jason Hawkins, University of Nebraska Lincoln
+format: 
+  revealjs:
+    slide-number: c/t
+    theme: "black"
+    incremental: true
+    title-slide-attributes:
+      data-background-image: ../assets/images/research/brickworks.jpg
+      data-background-size: cover  
+editor: visual
+---
+
+## Classical Economics
+
+![](../assets/images/research/adam_smith.jpg){.absolute top="100" left="50" width=25%}
+![](../assets/images/research/david_ricardo.jpg){.absolute top="100" right="50" width=25%}
+![](../assets/images/research/malthus.jpg){.absolute bottom="50" left="400" width=25%}
+
+## Alternative System Paradigms
+![](../assets/images/research/samuelson_model.jpg){.absolute top="200" left="0" width=40%}
+![](../assets/images/research/raworth_model.jpg){.absolute top="215" right="0" width=50%}
+
+## Ecological Economics
+![](../assets/images/research/symbiosis_figure.jpg){.absolute top="230" left="0" width=50%}
+![](../assets/images/research/dasgupta_limits_figure.jpg){.absolute top="200" right="0" width=40%}
+
+## Environmental-Economic System Constraints
+![](../assets/images/research/sustainable_doughnut.jpg){.absolute top="200" left="300" width=45%}
+
+## From Theory to Empirics 1 - Network Science
+![](../assets/images/research/network_flow.png){.absolute top="240" left="0" width=45%}
+![](../assets/images/research/compare_by_metric.png){.absolute top="200" right="0" width=45%}
+
+## From Theory to Empirics 2 - Microeconomic Choice
+![](../assets/images/research/mdcev_nn.png){.absolute top="150" left="0" width=100%}
+
+## From Theory to Empirics 2 - Microeconomic Choice
+![](../assets/images/research/mdcev_constrained.png){.absolute top="150" left="100" width=50%}
+
+# Thank you!
