@@ -1,0 +1,68 @@
+---
+title: "Bikeshare in Omaha"
+sidebar: Project
+section-divs: true
+echo: false
+
+---
+```{python}
+import pandas as pd
+import folium
+
+
+```
+
+
+## Map of Omaha showing all the bikeshare kiosks
+
+```{python}
+import json
+
+with open("data/omaha/kisoks_omaha.json", "r") as f:
+    coords = json.load(f)
+
+
+
+mymap = folium.Map(location=[41.256538, -95.934502], zoom_start=13)
+
+# Add markers for each coordinate
+for kiosk, coord in coords.items():
+    lat, lon = map(float, coord.split(','))
+    folium.Marker([lat, lon], popup=kiosk).add_to(mymap)
+
+
+mymap
+
+
+```
+
+## Most used kiosks graph
+
+```{python}
+import plotly.express as px
+
+df = pd.read_csv("data/omaha/OMA_Bike_Trips_wt_avg_time_bin.csv")
+
+# Sort the DataFrame by 'Total_Trips' column
+df_sorted = df.sort_values(by='Total_Trips', ascending=False)
+
+# Select the top 15 rows
+top_kiosks = df_sorted.head(20)
+
+# Plot using Plotly
+fig = px.bar(top_kiosks, x='Checkout_Kiosk_Coordinates', y='Total_Trips',)
+
+# rename the x-axis label
+fig.update_xaxes(title_text='Checkout Kiosk Address')
+
+# rename the y-axis label
+fig.update_yaxes(title_text='Total Trips')
+
+# change the angle of the x-axis labels
+fig.update_layout(xaxis_tickangle=-45)
+
+
+fig.show()
+
+
+```
