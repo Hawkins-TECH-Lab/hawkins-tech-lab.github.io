@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/blog.html</loc>
+    <lastmod>2024-05-02T18:52:47.243Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/04-26-2024/index.html</loc>
+    <lastmod>2024-05-02T18:52:47.244Z</lastmod>
+  </url>
+  <url>
     <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/computing-troubleshooting.html</loc>
     <lastmod>2024-04-17T18:51:53.738Z</lastmod>
   </url>
@@ -162,11 +170,11 @@
   </url>
   <url>
     <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/research/team/researchTeam.html</loc>
-    <lastmod>2024-04-28T21:32:53.617Z</lastmod>
+    <lastmod>2024-05-02T18:52:47.238Z</lastmod>
   </url>
   <url>
     <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/research/projects/bikeshare/Omaha.html</loc>
-    <lastmod>2024-04-28T21:28:53.731Z</lastmod>
+    <lastmod>2024-05-02T18:52:47.211Z</lastmod>
   </url>
   <url>
     <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/research/projects/ev.html</loc>
@@ -177,28 +185,28 @@
     <lastmod>2024-04-17T18:51:53.735Z</lastmod>
   </url>
   <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/research/research.html</loc>
-    <lastmod>2024-04-17T18:51:53.735Z</lastmod>
-  </url>
-  <url>
     <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/research/publication/publication.html</loc>
     <lastmod>2024-04-17T18:51:53.735Z</lastmod>
   </url>
   <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/research/research.html</loc>
+    <lastmod>2024-04-17T18:51:53.735Z</lastmod>
+  </url>
+  <url>
     <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/research/projects/data/county_shp/county_L48_only.html</loc>
-    <lastmod>2024-04-17T19:06:10.787Z</lastmod>
+    <lastmod>2024-05-02T18:52:47.215Z</lastmod>
   </url>
   <url>
     <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/research/projects/bikeshare/Lincoln.html</loc>
-    <lastmod>2024-04-28T21:28:26.516Z</lastmod>
+    <lastmod>2024-05-02T18:52:47.211Z</lastmod>
   </url>
   <url>
     <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/research/projects/bikeshare/test.html</loc>
-    <lastmod>2024-04-25T18:29:17.627Z</lastmod>
+    <lastmod>2024-05-02T18:52:47.212Z</lastmod>
   </url>
   <url>
-    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/misc/books.html</loc>
-    <lastmod>2024-04-17T18:51:53.734Z</lastmod>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/research/faculty_meeting_jan_2023.html</loc>
+    <lastmod>2024-05-02T18:52:47.211Z</lastmod>
   </url>
   <url>
     <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/classes/class1.html</loc>
@@ -359,5 +367,13 @@
   <url>
     <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/teaching/CIVE461/course-syllabus.html</loc>
     <lastmod>2024-04-17T18:51:53.739Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/books.html</loc>
+    <lastmod>2024-05-02T18:52:47.243Z</lastmod>
+  </url>
+  <url>
+    <loc>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/04-21-2024/index.html</loc>
+    <lastmod>2024-05-02T18:52:47.243Z</lastmod>
   </url>
 </urlset>

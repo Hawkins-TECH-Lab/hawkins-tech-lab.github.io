@@ -1,5 +1,19 @@
 [
   {
+    "objectID": "thoughts/blog.html",
+    "href": "thoughts/blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Jevons Paradox\n\n\n\n\n\n\nenvironmental economics\n\n\nsystem dynamics\n\n\n\nIn a non-stationary economy\n\n\n\n\n\nApr 26, 2024\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nThe Four Horsemen of the Production Apocalypse\n\n\n\n\n\n\ntransportation planning\n\n\nproduction theory\n\n\n\nOr why headlines are clickbait\n\n\n\n\n\nApr 21, 2024\n\n\nJason Hawkins\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "thoughts/posts/04-26-2024/index.html",
+    "href": "thoughts/posts/04-26-2024/index.html",
+    "title": "Jevons Paradox",
+    "section": "",
+    "text": "William Stanley Jevons was a 19th century English economist and logician. He made extensive contributions to the field, yet is perhaps best known for his eponymous paradox. Jevons Paradox arises when technological progress increases the efficiency with which a resource is used (reducing unit consumption), but the falling marginal cost of use induces increases in demand such that aggregate resource use is increased, rather than reduced. Engineers are, in general terms, believers in the benefits of technology. Efficiency gains are professed to solve any number of social and environmental ills. E.g., autonomous vehicles will solve traffic congestion and improved safety through their elimination of fallible human drivers. Consider the narrative regarding the population theory of another late 18th century/early 19th century economist - Thomas Malthus. Malthus predicted population collapse in response to population growth outstripping agricultural productivity growth. Thus far, his prediction has not come to pass partially due to technological progressing, including the 20th century Green Revolution (led by Norman Borlaug and others), which relieved starvation concerns - yay! Techno-optimists reference this success as an exemplar of why technology will save us. Furthermore, the so-called Environmental Kuznets Curve (named for yet another economist, Simon Kuznets) anticipates GDP becoming decoupled from environmental impacts as a nation moves from an industrial to a post-industrial economy.\nLet us take a look at the Kuznets Curve in the context of Jevons Paradox. If we assume a steady state economy, then it may be the case that environmental impacts will decrease as a function of technological progress. By a steady state economy, we mean a constant stock of capital and fixed population.\n\n\n\n\n\nOf course, we do not exist in a steady state economy, global population continues to grow (rising from 6 billiong to 8 billion people in my own lifetime). While natural resources are a fixed stock (we will return to this topic on many occassions), our rate of resource consumption has not declined as a function of technological progress. Rather, we continue to consume increasing quantities of materials and energy, which represent the fundamental building blocks of human society. Another way to term a steady state economy is that its size is a non-stationary function of time. Stationarity will be a familiar term to those with a background in statistics or econometrics - refering to the lack of equilibrium about a fixed level of resource consumption in this case. With GDP encouraged to grow without limit, Jevons Paradox quickly comes to bear. Technological progress will get us only so far when faced with the tasks of overcoming a non-stationarity system.\nWe can consider the problem from the perspective of aggregate environmental impact vs. marginal (unit) environmental impact. Jevons Paradox shows us that individuals will increase their environment impacts (vis-a-vis more consumption) in response to technological innovations that reduce the marginal cost, or material and energy requirements - i.e., increasing aggregate individual impacts. At the same time, additional individuals (i.e., population growth) compounds the impacts, even should these new individuals consume resources at a diminished rate.\n\n\n\n\n\nSo what can be done? The first step is to recognize myopia in our collective perspective on resource consumption as engineers, economists, policy-makers, and inhabitants of this planet. Classical valuation methods cannot account for these impacts, at least as long as they exist within an epistemology founded in growth as a positive property of human society rather than as a normative value.\nI hope to continue to examine these topics in greater depth, not for professional promotion (unlikely absent a large grant to build ecological philosophy widgets with my graduate students) but rather for personal edification and sanity. I would like to reflect on value systems, morality, and social change. I am also interested in teasing out the seeming intangibles of the engineering perspective on policy evaluation from the conventional economics-based approach, and how engineering has been drawn into the economics perspective through a lack of appropriate application of relevant theory and knowledge - e.g., entropy, biophysical limits, and system dynamics."
+  },
+  {
     "objectID": "teaching/CIVE461/computing-troubleshooting.html",
     "href": "teaching/CIVE461/computing-troubleshooting.html",
     "title": "Computing troubleshooting",
@@ -2143,44 +2157,53 @@
     "text": "import pandas as pd\nimport folium\n\n\nimport json\n\nwith open(\"data/omaha/coords.json\", \"r\") as f:\n    coords = json.load(f)\n\n\ntype(coords)\n\ndict\n\n\n\nmymap = folium.Map(location=[41.256538, -95.934502], zoom_start=13)\n\n# Add markers for each coordinate\nfor kiosk, coord in coords.items():\n    lat, lon = map(float, coord.split(','))\n    folium.Marker([lat, lon], popup=kiosk).add_to(mymap)\n\n\nmymap\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook\n\n\n\ndf = pd.read_csv(\"data/omaha/OMA_Bike_Trips_wt_avg_time_bin.csv\")\n\n\ndf.sort_values(by=['Total_Trips'], ascending=False, inplace=True)\n\n\nimport plotly.express as px\n\ndf = pd.read_csv(\"data/omaha/OMA_Bike_Trips_wt_avg_time_bin.csv\")\n\n# Sort the DataFrame by 'Total_Trips' column\ndf_sorted = df.sort_values(by='Total_Trips', ascending=False)\n\n# Select the top 15 rows\ntop_kiosks = df_sorted.head(20)\n\n# Plot using Plotly\nfig = px.bar(top_kiosks, x='Checkout_Kiosk_Coordinates', y='Total_Trips', title='Most used Kiosk Locations')\n\n# rename the x-axis label\nfig.update_xaxes(title_text='Checkout Kiosk Address')\n\n# rename the y-axis label\nfig.update_yaxes(title_text='Total Trips')\n\n# change the angle of the x-axis labels\nfig.update_layout(xaxis_tickangle=-45)\n\n\nfig.show()\n\nUnable to display output for mime type(s): application/vnd.plotly.v1+json"
   },
   {
-    "objectID": "misc/books.html",
-    "href": "misc/books.html",
-    "title": "Books",
-    "section": "",
-    "text": "An overview of construction planning and management from one of the great thinkers in the space. Bent provides tools to deliver projects on time and on budget from home renovations to the largest megaprojects. Like any self-help book, it has a message focused on selling you a particular product (the expertise of the author). There are some great insights and case studies.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe definitive work on city theory. Jane Jacobs was a writer and advocate, who prevented expressways through the heart of two global cities: New York and Toronto. If you want to understand how cities work, there is no greater source.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRobert Moses was among the great builders of the 20th century. Whether you agree with his approach or its outcomes, there is no denying is ability to get things done. Robert A. Caro is among the great biographers of the 20th century. An incredible writer and documenter of history, you will forget about how many pages this book comprises and get lost in the story.",
-    "crumbs": [
-      "Books"
-    ]
+    "objectID": "research/faculty_meeting_jan_2023.html#classical-economics",
+    "href": "research/faculty_meeting_jan_2023.html#classical-economics",
+    "title": "Environmental-Economic Systems",
+    "section": "Classical Economics",
+    "text": "Classical Economics"
   },
   {
-    "objectID": "misc/books.html#how-big-things-get-done---bent-flyvbjerg-dan-gardner",
-    "href": "misc/books.html#how-big-things-get-done---bent-flyvbjerg-dan-gardner",
-    "title": "Books",
-    "section": "",
-    "text": "An overview of construction planning and management from one of the great thinkers in the space. Bent provides tools to deliver projects on time and on budget from home renovations to the largest megaprojects. Like any self-help book, it has a message focused on selling you a particular product (the expertise of the author). There are some great insights and case studies.",
-    "crumbs": [
-      "Books"
-    ]
+    "objectID": "research/faculty_meeting_jan_2023.html#alternative-system-paradigms",
+    "href": "research/faculty_meeting_jan_2023.html#alternative-system-paradigms",
+    "title": "Environmental-Economic Systems",
+    "section": "Alternative System Paradigms",
+    "text": "Alternative System Paradigms"
   },
   {
-    "objectID": "misc/books.html#the-death-and-life-of-great-american-cities---jane-jacobs",
-    "href": "misc/books.html#the-death-and-life-of-great-american-cities---jane-jacobs",
-    "title": "Books",
-    "section": "",
-    "text": "The definitive work on city theory. Jane Jacobs was a writer and advocate, who prevented expressways through the heart of two global cities: New York and Toronto. If you want to understand how cities work, there is no greater source.",
-    "crumbs": [
-      "Books"
-    ]
+    "objectID": "research/faculty_meeting_jan_2023.html#ecological-economics",
+    "href": "research/faculty_meeting_jan_2023.html#ecological-economics",
+    "title": "Environmental-Economic Systems",
+    "section": "Ecological Economics",
+    "text": "Ecological Economics"
   },
   {
-    "objectID": "misc/books.html#the-power-broker---robert-a.-caro",
-    "href": "misc/books.html#the-power-broker---robert-a.-caro",
-    "title": "Books",
-    "section": "",
-    "text": "Robert Moses was among the great builders of the 20th century. Whether you agree with his approach or its outcomes, there is no denying is ability to get things done. Robert A. Caro is among the great biographers of the 20th century. An incredible writer and documenter of history, you will forget about how many pages this book comprises and get lost in the story.",
-    "crumbs": [
-      "Books"
-    ]
+    "objectID": "research/faculty_meeting_jan_2023.html#environmental-economic-system-constraints",
+    "href": "research/faculty_meeting_jan_2023.html#environmental-economic-system-constraints",
+    "title": "Environmental-Economic Systems",
+    "section": "Environmental-Economic System Constraints",
+    "text": "Environmental-Economic System Constraints"
+  },
+  {
+    "objectID": "research/faculty_meeting_jan_2023.html#from-theory-to-empirics-1---network-science",
+    "href": "research/faculty_meeting_jan_2023.html#from-theory-to-empirics-1---network-science",
+    "title": "Environmental-Economic Systems",
+    "section": "From Theory to Empirics 1 - Network Science",
+    "text": "From Theory to Empirics 1 - Network Science"
+  },
+  {
+    "objectID": "research/faculty_meeting_jan_2023.html#from-theory-to-empirics-2---microeconomic-choice",
+    "href": "research/faculty_meeting_jan_2023.html#from-theory-to-empirics-2---microeconomic-choice",
+    "title": "Environmental-Economic Systems",
+    "section": "From Theory to Empirics 2 - Microeconomic Choice",
+    "text": "From Theory to Empirics 2 - Microeconomic Choice"
+  },
+  {
+    "objectID": "research/faculty_meeting_jan_2023.html#from-theory-to-empirics-2---microeconomic-choice-1",
+    "href": "research/faculty_meeting_jan_2023.html#from-theory-to-empirics-2---microeconomic-choice-1",
+    "title": "Environmental-Economic Systems",
+    "section": "From Theory to Empirics 2 - Microeconomic Choice",
+    "text": "From Theory to Empirics 2 - Microeconomic Choice"
   },
   {
     "objectID": "teaching/Guest Lectures/CIVE990T.html#transportation-land-use",
@@ -4531,5 +4554,47 @@
       "Administration",
       "Syllabus"
     ]
+  },
+  {
+    "objectID": "thoughts/books.html",
+    "href": "thoughts/books.html",
+    "title": "Books",
+    "section": "",
+    "text": "An overview of construction planning and management from one of the great thinkers in the space. Bent provides tools to deliver projects on time and on budget from home renovations to the largest megaprojects. Like any self-help book, it has a message focused on selling you a particular product (the expertise of the author). There are some great insights and case studies.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe definitive work on city theory. Jane Jacobs was a writer and advocate, who prevented expressways through the heart of two global cities: New York and Toronto. If you want to understand how cities work, there is no greater source.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRobert Moses was among the great builders of the 20th century. Whether you agree with his approach or its outcomes, there is no denying is ability to get things done. Robert A. Caro is among the great biographers of the 20th century. An incredible writer and documenter of history, you will forget about how many pages this book comprises and get lost in the story."
+  },
+  {
+    "objectID": "thoughts/books.html#how-big-things-get-done---bent-flyvbjerg-dan-gardner",
+    "href": "thoughts/books.html#how-big-things-get-done---bent-flyvbjerg-dan-gardner",
+    "title": "Books",
+    "section": "",
+    "text": "An overview of construction planning and management from one of the great thinkers in the space. Bent provides tools to deliver projects on time and on budget from home renovations to the largest megaprojects. Like any self-help book, it has a message focused on selling you a particular product (the expertise of the author). There are some great insights and case studies."
+  },
+  {
+    "objectID": "thoughts/books.html#the-death-and-life-of-great-american-cities---jane-jacobs",
+    "href": "thoughts/books.html#the-death-and-life-of-great-american-cities---jane-jacobs",
+    "title": "Books",
+    "section": "",
+    "text": "The definitive work on city theory. Jane Jacobs was a writer and advocate, who prevented expressways through the heart of two global cities: New York and Toronto. If you want to understand how cities work, there is no greater source."
+  },
+  {
+    "objectID": "thoughts/books.html#the-power-broker---robert-a.-caro",
+    "href": "thoughts/books.html#the-power-broker---robert-a.-caro",
+    "title": "Books",
+    "section": "",
+    "text": "Robert Moses was among the great builders of the 20th century. Whether you agree with his approach or its outcomes, there is no denying is ability to get things done. Robert A. Caro is among the great biographers of the 20th century. An incredible writer and documenter of history, you will forget about how many pages this book comprises and get lost in the story."
+  },
+  {
+    "objectID": "thoughts/posts/04-21-2024/index.html",
+    "href": "thoughts/posts/04-21-2024/index.html",
+    "title": "The Four Horsemen of the Production Apocalypse",
+    "section": "",
+    "text": "Gary Becker begins his “A Theory of the Allocation of Time” (Becker 1965) with a discussion of time spent at work relative to other activities, highlighting the need for more robust analyses of uncompensated time use in economics. Little did he know that his theory and model structure would strongly influence travel behaviour and economic analysis over subsequent decades. In the 1970s, DeSerpa (1971) and Evans (1972) provided among the first connections to transportation analysis. Building from DeSerpa and Evans, Jara-Díaz (2003) completed fundamental work on the value of time in transportation economics. However, there is a wealth of other insights relevant to transportation analysis to be gained from Becker’s theory. I will focus on the topic of transportation service provision.\nBeing a founder of the neoclassical “Chicago School of Economics”, Becker would certainly have strong opinions on the extension of his theory to include other non-market means of production. Nonetheless, one can consider four basic forms of production: market, home, government, and commons. Market production is the exchange of a good or service for money. Home production, as defined by Becker, is uncompensated production by the household (e.g., making dinner, cleaning the bathroom, etc.). The latter two forms of production were not discussed by Becker in his 1965 paper. In the first form, government produces a good or service for use by the public, financed by tax revenue or similar sources. For example, most healthcare services in the United States are privatized and subject to market forces, whereas many other nations provide healthcare as a public service. The final form of production is in the commons. Neoclassical economic theory suggests that common resources will be exploited if not managed by state intervention or market forces via monetization. However, both Mariana Mazzucato (2018) and Elinor Ostrom (1990) provide compelling arguments for the efficient use of common production. As one example, Wikipedia is managed in the commons as most contributors provide their services at no cost.\nThe reader may wonder: what does any of this have to do with travel behaviour? I argue that the above economic production framework can be mapped onto the transportation mode choice problem and provides valuable insights for behavioural theory and modelling methods. Home production of transportation takes the form of walking, cycling, or using one’s own vehicle. The vehicle and fuel must be purchased on the market, but the transportation service is provided by the household using personal time as the only input to production. In contrast, taxi or ridehail modes are purchased in the market from private firms (e.g., Uber, Lyft, Didi, etc.). Government provides transportation as a public service through transit. Transportation provided in the commons is less common (a nice little pun) but takes the form of carsharing and other systems wherein the service cost is shared among a pool of otherwise unaffiliated households. Each of the above transportation alternatives could manifest as the same physical mode – i.e., a small passenger vehicle. However, the behavioural and operational models differ. For example, a person may be unable to afford market production (ridehail). They may not use public production (transit) to avoid sharing a vehicle with strangers. They may be unwilling to participate in the commons (carshare) because they don’t want someone’s muddy boots in their car.\nBeing trained as a civil engineer, I am always keen to find concrete (two puns in one article is the limit) applications for theory. The modelling of autonomous vehicles (AVs) provides an application of the above theory to transportation. Many scholars make the distinction between personal AVs, shared AVs (or SAVs) provided as a public service, and SAVs provided in the market. However, in my reading, there is minimal thought given to how these operating models would function from an economic production theory perspective. Let us first focus on the first alternative. It is unclear whether to classify a personal AV as home production or market consumption – Is sitting comfortably in a vehicle while it performs the driving task pure leisure? Are you purchasing driving services in the market as a software package? The latter two alternatives provide an interesting contrast. In both cases, SAVs are provided to the household as a service. However, if we consider transportation as a public service, another economic concept may be brought to bear, termed private provision of a public good by Bergstrom et al. (1986) . Public transit provides a subsidized travel option for low-income households and those who choose not to own a personal vehicle. The widescale deployment of SAV fleets would therefore require ridehailing operators to take on this role. The risk is that each operator may rely on other operators to serve low-income households, with the result being a Nash equilibrium that does not maximize total social utility. Government intervention is necessary to ensure an equitable distribution of mobility through incentives or regulations (Sieg 2020). Existing simulations often ignore the profit-seeking motives of private operators, assuming they match trips to minimize detour time and are agnostic to traveller income and profit maximization motives on the part of operators.\nAs a final thought on the historical distinction between private and public travel modes. The marginal private automobile trip tends to add travel time for existing travellers through congestion that slows travel speed and increases its variability. In contrast, the marginal transit trip tends to improve service for existing travellers through reduced vehicle headways and the use of higher-order transit (i.e., trains rather than buses). The latter outcome is termed as an anti-congestion effect (Mohring 1972). The trend in SAV research is toward small, automobile-style, vehicles that may be shared or used alone. This shift adds shades of gray to the public-private dichotomy. Will shared mobility exhibit the congestion effect of fthe private automobile or the anti-congestion effect of transit? Importantly, in which contexts do these new forms of mobility tend to exhibit each of these effects (i.e., there is likely a spectrum of possible impacts depending on the application of technology, local built form, and transportation infrastructure conditions)?"
+  },
+  {
+    "objectID": "thoughts/posts/04-21-2024/index.html#references",
+    "href": "thoughts/posts/04-21-2024/index.html#references",
+    "title": "The Four Horsemen of the Production Apocalypse",
+    "section": "References",
+    "text": "References\n\n\nBecker, Gary S. 1965. “A Theory of the Allocation of Time.” The Economic Journal 75 (299): 493. https://doi.org/10.2307/2228949.\n\n\nBergstrom, Theodore, Lawrence Blume, and Hal Varian. 1986. “On the Private Provision of Public Goods.” Journal of Public Economics 29: 2549.\n\n\nDeSerpa, A. C. 1971. “A Theory of the Economics of Time.” The Economic Journal 81 (324): 828–46. https://doi.org/10.2307/2230320.\n\n\nEvans, Alan W. 1972. “On the Theory of the Valuation and Allocation of Time.” Scottish Journal of Political Economy 19 (1): 1–17. https://doi.org/10.1111/j.1467-9485.1972.tb00504.x.\n\n\nJara-Díaz, Sergio R. 2003. “On the Goods-Activities Technical Relations in the Time Allocation Theory.” Transportation 30 (3): 245–60. https://doi.org/10.1023/A:1023936911351.\n\n\nMazzucato, Mariana. 2018. The Value of Everything: Making and Taking in the Global Economy: Mazzucato, Mariana: 9781610396745: Amazon.com: Books. PublicAffairs.\n\n\nMohring, Herbert. 1972. “Optimization and Scale Economies in Urban Bus Transportation.” The American Economic Review 62 (4): 591–604. https://doi.org/10.2307/1806101.\n\n\nOstrom, Elinor. 1990. Governing the Commons : The Evolution of Institutions for Collective Action. Cambridge University Press. http://archive.org/details/governingcommons0000ostr.\n\n\nSieg, Holger. 2020. “Voluntary Provision of Local Public Goods and Services.” In Urban Economics and Fiscal Policy, 90–105. Princeton University Press."
   }
 ]
