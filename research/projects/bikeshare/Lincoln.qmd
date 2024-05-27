@@ -13,7 +13,7 @@ import folium
 ```
 
 
-## Map of Lincoln showing all the bikeshare kiosks
+## Map of Lincoln showing all the bikeshare stations
 
 ```{python}
 import json
@@ -36,7 +36,7 @@ mymap
 
 ```
 
-## Most used kiosks graph
+## Most used stations graph
 
 ```{python}
 import plotly.express as px
@@ -66,3 +66,13 @@ fig.show()
 
 
 ```
+
+# Bikeshare Vs. Transit
+For both Lincoln and Omaha, we were interested in how long it would take to make bikeshare trips by transit. We used Google Directions API with the origin and destination station locations for trips (excluding those starting and ending at the same station). The results are enlightening and suggest bikeshare could provide a good complement for transit where trip lengths are short or trip density is low, such that running large buses would be inefficient. The results for Lincoln are summarized below. Note: these results do not fully capture wait time induced by high headway (i.e., low frequency) bus service on most routes in both cities. For example, the bus running near Dr. Hawkins' house runs once per hour, whereas a bike would (fingers crossed) be immediately available if there was a bikeshare station at this location.
+
+| Bikeshare:Transit Ratio (<1.0 = bikeshare faster than transit) |
+|-------------------------|------|
+| Minimum ratio           | 0.44 |
+| Maximum ratio           | 0.92 |
+| Mean ratio              | 0.61 |
+| Median ratio            | 0.57 |
