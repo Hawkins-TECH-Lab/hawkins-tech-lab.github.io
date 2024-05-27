@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.551">
+<meta name="generator" content="quarto-1.3.361">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -23,7 +23,7 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -45,13 +45,7 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
+  "limit": 20,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -60,14 +54,13 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
 }</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 <script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 <script type="text/javascript">
 window.PlotlyConfig = {MathJaxConfig: 'local'};
@@ -76,7 +69,7 @@ if (typeof require !== 'undefined') {
 require.undef("plotly");
 requirejs.config({
     paths: {
-        'plotly': ['https://cdn.plot.ly/plotly-2.31.1.min']
+        'plotly': ['https://cdn.plot.ly/plotly-2.20.0.min']
     }
 });
 require(['plotly'], function(Plotly) {
@@ -94,9 +87,9 @@ require(['plotly'], function(Plotly) {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
+      <div class="navbar-brand-container">
     <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Hawkinslab</span>
     </a>
@@ -108,76 +101,76 @@ require(['plotly'], function(Plotly) {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../index.html"> 
-<span class="menu-text">Home</span></a>
+    <a class="nav-link" href="../../../index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-research" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-research" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
  <span class="menu-text">Research</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-research">    
         <li>
-    <a class="dropdown-item" href="../../../research/projects/projects.html">
+    <a class="dropdown-item" href="../../../research/projects/projects.html" rel="" target="">
  <span class="dropdown-text">Projects</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../research/team/researchTeam.html">
+    <a class="dropdown-item" href="../../../research/team/researchTeam.html" rel="" target="">
  <span class="dropdown-text">Team</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../research/publication/publication.html">
+    <a class="dropdown-item" href="../../../research/publication/publication.html" rel="" target="">
  <span class="dropdown-text">Publications</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-teaching" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-teaching" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
  <span class="menu-text">Teaching</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-teaching">    
         <li>
-    <a class="dropdown-item" href="../../../teaching/CIVE461/index.html">
+    <a class="dropdown-item" href="../../../teaching/CIVE461/index.html" rel="" target="">
  <span class="dropdown-text">CIVE461/861</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../teaching/CIVE864/index.qmd">
+    <a class="dropdown-item" href="../../../teaching/CIVE864/index.qmd" rel="" target="">
  <span class="dropdown-text">CIVE864</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../teaching/Guest Lectures/CIVE990T.html">
+    <a class="dropdown-item" href="../../../teaching/Guest Lectures/CIVE990T.html" rel="" target="">
  <span class="dropdown-text">CIVE990T</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-thoughts" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-thoughts" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
  <span class="menu-text">Thoughts</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-thoughts">    
         <li>
-    <a class="dropdown-item" href="../../../thoughts/books.html">
+    <a class="dropdown-item" href="../../../thoughts/books.html" rel="" target="">
  <span class="dropdown-text">Books</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../thoughts/blog.html">
+    <a class="dropdown-item" href="../../../thoughts/blog.html" rel="" target="">
  <span class="dropdown-text">Blog</span></a>
   </li>  
     </ul>
   </li>
 </ul>
-          </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools ms-auto">
 </div>
+          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../research/projects/bikeshare/Omaha.html">Bikeshare</a></li><li class="breadcrumb-item"><a href="../../../research/projects/bikeshare/Lincoln.html">Lincoln Bikeshare</a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../research/projects/bikeshare/Omaha.html">Bikeshare</a></li><li class="breadcrumb-item"><a href="../../../research/projects/bikeshare/Lincoln.html">Lincoln Bikeshare</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
@@ -187,7 +180,7 @@ require(['plotly'], function(Plotly) {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
@@ -244,22 +237,23 @@ require(['plotly'], function(Plotly) {
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#map-of-lincoln-showing-all-the-bikeshare-kiosks" id="toc-map-of-lincoln-showing-all-the-bikeshare-kiosks" class="nav-link active" data-scroll-target="#map-of-lincoln-showing-all-the-bikeshare-kiosks">Map of Lincoln showing all the bikeshare kiosks</a></li>
-  <li><a href="#most-used-kiosks-graph" id="toc-most-used-kiosks-graph" class="nav-link" data-scroll-target="#most-used-kiosks-graph">Most used kiosks graph</a></li>
+  <li><a href="#map-of-lincoln-showing-all-the-bikeshare-stations" id="toc-map-of-lincoln-showing-all-the-bikeshare-stations" class="nav-link active" data-scroll-target="#map-of-lincoln-showing-all-the-bikeshare-stations">Map of Lincoln showing all the bikeshare stations</a></li>
+  <li><a href="#most-used-stations-graph" id="toc-most-used-stations-graph" class="nav-link" data-scroll-target="#most-used-stations-graph">Most used stations graph</a></li>
+  <li><a href="#bikeshare-vs.-transit" id="toc-bikeshare-vs.-transit" class="nav-link" data-scroll-target="#bikeshare-vs.-transit">Bikeshare Vs. Transit</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../research/projects/bikeshare/Omaha.html">Bikeshare</a></li><li class="breadcrumb-item"><a href="../../../research/projects/bikeshare/Lincoln.html">Lincoln Bikeshare</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Bikeshare in Lincoln</h1>
 </div>
@@ -274,13 +268,11 @@ require(['plotly'], function(Plotly) {
   </div>
   
 
-
 </header>
 
-
-<section id="map-of-lincoln-showing-all-the-bikeshare-kiosks" class="level2">
-<h2 class="anchored" data-anchor-id="map-of-lincoln-showing-all-the-bikeshare-kiosks">Map of Lincoln showing all the bikeshare kiosks</h2>
-<div id="d73c11d6" class="cell" data-execution_count="2">
+<section id="map-of-lincoln-showing-all-the-bikeshare-stations" class="level2">
+<h2 class="anchored" data-anchor-id="map-of-lincoln-showing-all-the-bikeshare-stations">Map of Lincoln showing all the bikeshare stations</h2>
+<div class="cell" data-execution_count="2">
 <div class="cell-output cell-output-display" data-execution_count="2">
 <div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -&gt; Trust Notebook</span><iframe srcdoc="<!DOCTYPE html>
 <html>
@@ -309,7 +301,7 @@ require(['plotly'], function(Plotly) {
             <meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; />
             <style>
-                #map_6918af01606fe8fb49ff9d2e6d6642bf {
+                #map_e59c461f455460bce9b8f790b7ea9b4b {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -323,14 +315,14 @@ require(['plotly'], function(Plotly) {
 <body>
     
     
-            <div class=&quot;folium-map&quot; id=&quot;map_6918af01606fe8fb49ff9d2e6d6642bf&quot; ></div>
+            <div class=&quot;folium-map&quot; id=&quot;map_e59c461f455460bce9b8f790b7ea9b4b&quot; ></div>
         
 </body>
 <script>
     
     
-            var map_6918af01606fe8fb49ff9d2e6d6642bf = L.map(
-                &quot;map_6918af01606fe8fb49ff9d2e6d6642bf&quot;,
+            var map_e59c461f455460bce9b8f790b7ea9b4b = L.map(
+                &quot;map_e59c461f455460bce9b8f790b7ea9b4b&quot;,
                 {
                     center: [40.81712, -96.70084],
                     crs: L.CRS.EPSG3857,
@@ -344,451 +336,451 @@ require(['plotly'], function(Plotly) {
 
         
     
-            var tile_layer_4330f807d2f64d11b555a1e37ac2ca1a = L.tileLayer(
+            var tile_layer_9b305a64e070fb167b086f71a7c9ce5d = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
             );
         
     
-            tile_layer_4330f807d2f64d11b555a1e37ac2ca1a.addTo(map_6918af01606fe8fb49ff9d2e6d6642bf);
+            tile_layer_9b305a64e070fb167b086f71a7c9ce5d.addTo(map_e59c461f455460bce9b8f790b7ea9b4b);
         
     
-            var marker_7856fc26e14cf8b4633ebc4333f16586 = L.marker(
+            var marker_7ecf184d3b8930461deaa582c2e0c83b = L.marker(
                 [40.80938, -96.70541],
                 {}
-            ).addTo(map_6918af01606fe8fb49ff9d2e6d6642bf);
+            ).addTo(map_e59c461f455460bce9b8f790b7ea9b4b);
         
     
-        var popup_598eaae51e316d5f17e5ca16801fdcdc = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_13e0271e38a0e3bca964d628c65cd7a0 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_233f6db3e10429051d1a19264d32240f = $(`<div id=&quot;html_233f6db3e10429051d1a19264d32240f&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>11th &amp; K St. </div>`)[0];
-                popup_598eaae51e316d5f17e5ca16801fdcdc.setContent(html_233f6db3e10429051d1a19264d32240f);
+                var html_0ab0bc15a657253540b8bbbe5d013955 = $(`<div id=&quot;html_0ab0bc15a657253540b8bbbe5d013955&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>11th &amp; K St. </div>`)[0];
+                popup_13e0271e38a0e3bca964d628c65cd7a0.setContent(html_0ab0bc15a657253540b8bbbe5d013955);
             
         
 
-        marker_7856fc26e14cf8b4633ebc4333f16586.bindPopup(popup_598eaae51e316d5f17e5ca16801fdcdc)
+        marker_7ecf184d3b8930461deaa582c2e0c83b.bindPopup(popup_13e0271e38a0e3bca964d628c65cd7a0)
         ;
 
         
     
     
-            var marker_8337c7fa408bd3c1048fcc9da11d07be = L.marker(
+            var marker_4b17dabb1db4c06d854f68f953d02d49 = L.marker(
                 [40.8123, -96.70567],
                 {}
-            ).addTo(map_6918af01606fe8fb49ff9d2e6d6642bf);
+            ).addTo(map_e59c461f455460bce9b8f790b7ea9b4b);
         
     
-        var popup_e120cfd51e7dad8b1711529e30f63a0e = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_49f8d5519ae385b75468f072b7095152 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_acea9a90a5811ee75c6ec891adc55d10 = $(`<div id=&quot;html_acea9a90a5811ee75c6ec891adc55d10&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>11th &amp; N St.</div>`)[0];
-                popup_e120cfd51e7dad8b1711529e30f63a0e.setContent(html_acea9a90a5811ee75c6ec891adc55d10);
+                var html_e477d1ba2a58d10e40dc7d2fafafc086 = $(`<div id=&quot;html_e477d1ba2a58d10e40dc7d2fafafc086&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>11th &amp; N St.</div>`)[0];
+                popup_49f8d5519ae385b75468f072b7095152.setContent(html_e477d1ba2a58d10e40dc7d2fafafc086);
             
         
 
-        marker_8337c7fa408bd3c1048fcc9da11d07be.bindPopup(popup_e120cfd51e7dad8b1711529e30f63a0e)
+        marker_4b17dabb1db4c06d854f68f953d02d49.bindPopup(popup_49f8d5519ae385b75468f072b7095152)
         ;
 
         
     
     
-            var marker_6d76030d7a269fadc0eebee54b21dc95 = L.marker(
+            var marker_56075e6be63489966284ca8646e39807 = L.marker(
                 [40.81487, -96.70576],
                 {}
-            ).addTo(map_6918af01606fe8fb49ff9d2e6d6642bf);
+            ).addTo(map_e59c461f455460bce9b8f790b7ea9b4b);
         
     
-        var popup_46398c0c5fbefbe3ed9b450b081115ea = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_092e054d2d7dea3afa19f02c158ee25e = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_6a0acadd40bca1ffa6ff3b9f66e3215c = $(`<div id=&quot;html_6a0acadd40bca1ffa6ff3b9f66e3215c&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>11th &amp; P St. </div>`)[0];
-                popup_46398c0c5fbefbe3ed9b450b081115ea.setContent(html_6a0acadd40bca1ffa6ff3b9f66e3215c);
+                var html_6ebf7c96e4abe1ec641569ac866950ed = $(`<div id=&quot;html_6ebf7c96e4abe1ec641569ac866950ed&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>11th &amp; P St. </div>`)[0];
+                popup_092e054d2d7dea3afa19f02c158ee25e.setContent(html_6ebf7c96e4abe1ec641569ac866950ed);
             
         
 
-        marker_6d76030d7a269fadc0eebee54b21dc95.bindPopup(popup_46398c0c5fbefbe3ed9b450b081115ea)
+        marker_56075e6be63489966284ca8646e39807.bindPopup(popup_092e054d2d7dea3afa19f02c158ee25e)
         ;
 
         
     
     
-            var marker_6c5e1d5cbe76d0b3f7bde1b6a79ce138 = L.marker(
+            var marker_a59f1c73db67c99e8943ed327bb6cdf0 = L.marker(
                 [40.81596, -96.70364],
                 {}
-            ).addTo(map_6918af01606fe8fb49ff9d2e6d6642bf);
+            ).addTo(map_e59c461f455460bce9b8f790b7ea9b4b);
         
     
-        var popup_48f9366f42f5b051e2a93a7bacdc05a7 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_925ec79db6c8e3b2d523504a11c2359c = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_05445ac4eea9abae8d6ad306fe096497 = $(`<div id=&quot;html_05445ac4eea9abae8d6ad306fe096497&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>12th &amp; Q St. </div>`)[0];
-                popup_48f9366f42f5b051e2a93a7bacdc05a7.setContent(html_05445ac4eea9abae8d6ad306fe096497);
+                var html_20a8283068cdec13aa82d351dfbb0e73 = $(`<div id=&quot;html_20a8283068cdec13aa82d351dfbb0e73&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>12th &amp; Q St. </div>`)[0];
+                popup_925ec79db6c8e3b2d523504a11c2359c.setContent(html_20a8283068cdec13aa82d351dfbb0e73);
             
         
 
-        marker_6c5e1d5cbe76d0b3f7bde1b6a79ce138.bindPopup(popup_48f9366f42f5b051e2a93a7bacdc05a7)
+        marker_a59f1c73db67c99e8943ed327bb6cdf0.bindPopup(popup_925ec79db6c8e3b2d523504a11c2359c)
         ;
 
         
     
     
-            var marker_ee8f5a9a5fe23bd474359dcb83676790 = L.marker(
+            var marker_7940dee8522ed4cf358fb48cd10e9d32 = L.marker(
                 [40.80466, -96.70293],
                 {}
-            ).addTo(map_6918af01606fe8fb49ff9d2e6d6642bf);
+            ).addTo(map_e59c461f455460bce9b8f790b7ea9b4b);
         
     
-        var popup_fb839a892afd944924391c9dd57d2ee6 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_c4f8976cdb5f0cfd00be6048173bab27 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_97efc3ee2f44cecff50b8c4892027374 = $(`<div id=&quot;html_97efc3ee2f44cecff50b8c4892027374&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>13th &amp; F St.</div>`)[0];
-                popup_fb839a892afd944924391c9dd57d2ee6.setContent(html_97efc3ee2f44cecff50b8c4892027374);
+                var html_eaedbf818ff386d8c410c9fdb98a0a9a = $(`<div id=&quot;html_eaedbf818ff386d8c410c9fdb98a0a9a&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>13th &amp; F St.</div>`)[0];
+                popup_c4f8976cdb5f0cfd00be6048173bab27.setContent(html_eaedbf818ff386d8c410c9fdb98a0a9a);
             
         
 
-        marker_ee8f5a9a5fe23bd474359dcb83676790.bindPopup(popup_fb839a892afd944924391c9dd57d2ee6)
+        marker_7940dee8522ed4cf358fb48cd10e9d32.bindPopup(popup_c4f8976cdb5f0cfd00be6048173bab27)
         ;
 
         
     
     
-            var marker_8e59d0c3761eb95b2edb10167af1ff63 = L.marker(
+            var marker_b0ddaf746c44c3d9247010e363da7792 = L.marker(
                 [40.81118, -96.70281],
                 {}
-            ).addTo(map_6918af01606fe8fb49ff9d2e6d6642bf);
+            ).addTo(map_e59c461f455460bce9b8f790b7ea9b4b);
         
     
-        var popup_dbc03bf98dcc320d88341b793674667b = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_4e0ef64454a825edcd2607cb59da06b0 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_f55dd5357399de48fb8c9f20dec75982 = $(`<div id=&quot;html_f55dd5357399de48fb8c9f20dec75982&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>13th &amp; M St.</div>`)[0];
-                popup_dbc03bf98dcc320d88341b793674667b.setContent(html_f55dd5357399de48fb8c9f20dec75982);
+                var html_adc32521b57e1793ef62318035fe0718 = $(`<div id=&quot;html_adc32521b57e1793ef62318035fe0718&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>13th &amp; M St.</div>`)[0];
+                popup_4e0ef64454a825edcd2607cb59da06b0.setContent(html_adc32521b57e1793ef62318035fe0718);
             
         
 
-        marker_8e59d0c3761eb95b2edb10167af1ff63.bindPopup(popup_dbc03bf98dcc320d88341b793674667b)
+        marker_b0ddaf746c44c3d9247010e363da7792.bindPopup(popup_4e0ef64454a825edcd2607cb59da06b0)
         ;
 
         
     
     
-            var marker_3ea5fb9560d4c6ee9e509ca3f9ef8336 = L.marker(
+            var marker_a37a9a98a811fd12bb51988c364c199d = L.marker(
                 [40.82413, -96.70149],
                 {}
-            ).addTo(map_6918af01606fe8fb49ff9d2e6d6642bf);
+            ).addTo(map_e59c461f455460bce9b8f790b7ea9b4b);
         
     
-        var popup_63ef141224ef6c8205bc1f216ca4eb89 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_f95faf7b9302a56b4cbe1ec17b0e3a68 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_f465ba24eefab0cdd42143b4b15209aa = $(`<div id=&quot;html_f465ba24eefab0cdd42143b4b15209aa&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>14th &amp; Avery Ave.</div>`)[0];
-                popup_63ef141224ef6c8205bc1f216ca4eb89.setContent(html_f465ba24eefab0cdd42143b4b15209aa);
+                var html_95852744e52f40c5e7e450b9eea8dda9 = $(`<div id=&quot;html_95852744e52f40c5e7e450b9eea8dda9&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>14th &amp; Avery Ave.</div>`)[0];
+                popup_f95faf7b9302a56b4cbe1ec17b0e3a68.setContent(html_95852744e52f40c5e7e450b9eea8dda9);
             
         
 
-        marker_3ea5fb9560d4c6ee9e509ca3f9ef8336.bindPopup(popup_63ef141224ef6c8205bc1f216ca4eb89)
+        marker_a37a9a98a811fd12bb51988c364c199d.bindPopup(popup_f95faf7b9302a56b4cbe1ec17b0e3a68)
         ;
 
         
     
     
-            var marker_da083eee69328fa3bbe9fecf44bdb0ec = L.marker(
+            var marker_c8928b0f94f8c358d65414e195a86deb = L.marker(
                 [40.81064, -96.70107],
                 {}
-            ).addTo(map_6918af01606fe8fb49ff9d2e6d6642bf);
+            ).addTo(map_e59c461f455460bce9b8f790b7ea9b4b);
         
     
-        var popup_a3a7d9532da9e3b79b0bb6f82cc7fb9b = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_4cb608b608e406ddb975e08556577a70 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_a03273f3da1ec8751d4bba5f7328f12c = $(`<div id=&quot;html_a03273f3da1ec8751d4bba5f7328f12c&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>14th &amp; L St. </div>`)[0];
-                popup_a3a7d9532da9e3b79b0bb6f82cc7fb9b.setContent(html_a03273f3da1ec8751d4bba5f7328f12c);
+                var html_8206db23bd69cc1279e0a0cae57c344b = $(`<div id=&quot;html_8206db23bd69cc1279e0a0cae57c344b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>14th &amp; L St. </div>`)[0];
+                popup_4cb608b608e406ddb975e08556577a70.setContent(html_8206db23bd69cc1279e0a0cae57c344b);
             
         
 
-        marker_da083eee69328fa3bbe9fecf44bdb0ec.bindPopup(popup_a3a7d9532da9e3b79b0bb6f82cc7fb9b)
+        marker_c8928b0f94f8c358d65414e195a86deb.bindPopup(popup_4cb608b608e406ddb975e08556577a70)
         ;
 
         
     
     
-            var marker_d9bc814f59c90c54cfab43998ff31b53 = L.marker(
+            var marker_a63364f3083737279bd6cbfd9c3ce507 = L.marker(
                 [40.81245, -96.70061],
                 {}
-            ).addTo(map_6918af01606fe8fb49ff9d2e6d6642bf);
+            ).addTo(map_e59c461f455460bce9b8f790b7ea9b4b);
         
     
-        var popup_ffff965200185fef66d48940c85ed17a = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_5028900a11d8f7c5f95d85de76060dfd = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_16da50b7a18c09dcd08fd49378c86d72 = $(`<div id=&quot;html_16da50b7a18c09dcd08fd49378c86d72&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>14th &amp; N St. </div>`)[0];
-                popup_ffff965200185fef66d48940c85ed17a.setContent(html_16da50b7a18c09dcd08fd49378c86d72);
+                var html_1f1d8854753050e03929f906bdc0f6c1 = $(`<div id=&quot;html_1f1d8854753050e03929f906bdc0f6c1&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>14th &amp; N St. </div>`)[0];
+                popup_5028900a11d8f7c5f95d85de76060dfd.setContent(html_1f1d8854753050e03929f906bdc0f6c1);
             
         
 
-        marker_d9bc814f59c90c54cfab43998ff31b53.bindPopup(popup_ffff965200185fef66d48940c85ed17a)
+        marker_a63364f3083737279bd6cbfd9c3ce507.bindPopup(popup_5028900a11d8f7c5f95d85de76060dfd)
         ;
 
         
     
     
-            var marker_178bf0da1cf4641f21318c6f65571489 = L.marker(
+            var marker_b4bdb15254773bebe9a04806b64f04b5 = L.marker(
                 [40.81415, -96.70128],
                 {}
-            ).addTo(map_6918af01606fe8fb49ff9d2e6d6642bf);
+            ).addTo(map_e59c461f455460bce9b8f790b7ea9b4b);
         
     
-        var popup_89f0bad0107b5131b29040ffafea972c = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_bbeb2dab57e60ff62562a9c0cfb0e047 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_0a7987a2618ef0d9e10c648196f143b9 = $(`<div id=&quot;html_0a7987a2618ef0d9e10c648196f143b9&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>14th &amp; P St. </div>`)[0];
-                popup_89f0bad0107b5131b29040ffafea972c.setContent(html_0a7987a2618ef0d9e10c648196f143b9);
+                var html_a96653eac7adafc4a765ea2e3d14d158 = $(`<div id=&quot;html_a96653eac7adafc4a765ea2e3d14d158&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>14th &amp; P St. </div>`)[0];
+                popup_bbeb2dab57e60ff62562a9c0cfb0e047.setContent(html_a96653eac7adafc4a765ea2e3d14d158);
             
         
 
-        marker_178bf0da1cf4641f21318c6f65571489.bindPopup(popup_89f0bad0107b5131b29040ffafea972c)
+        marker_b4bdb15254773bebe9a04806b64f04b5.bindPopup(popup_bbeb2dab57e60ff62562a9c0cfb0e047)
         ;
 
         
     
     
-            var marker_5b3030f459f7ea64ec98051f93b9f91d = L.marker(
+            var marker_42c7c622243c113cd7fddbf38f773e41 = L.marker(
                 [40.81712, -96.70084],
                 {}
-            ).addTo(map_6918af01606fe8fb49ff9d2e6d6642bf);
+            ).addTo(map_e59c461f455460bce9b8f790b7ea9b4b);
         
     
-        var popup_2de321bdb4fe952dcf51d9d6926241ab = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_9a45a253dc7e9130d0da7e3c3cc3ed71 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_5df936cc7528376c4515c302ba0aadbb = $(`<div id=&quot;html_5df936cc7528376c4515c302ba0aadbb&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>14th &amp; R St.</div>`)[0];
-                popup_2de321bdb4fe952dcf51d9d6926241ab.setContent(html_5df936cc7528376c4515c302ba0aadbb);
+                var html_7ec57200ae9700db3059bc0720e22560 = $(`<div id=&quot;html_7ec57200ae9700db3059bc0720e22560&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>14th &amp; R St.</div>`)[0];
+                popup_9a45a253dc7e9130d0da7e3c3cc3ed71.setContent(html_7ec57200ae9700db3059bc0720e22560);
             
         
 
-        marker_5b3030f459f7ea64ec98051f93b9f91d.bindPopup(popup_2de321bdb4fe952dcf51d9d6926241ab)
+        marker_42c7c622243c113cd7fddbf38f773e41.bindPopup(popup_9a45a253dc7e9130d0da7e3c3cc3ed71)
         ;
 
         
     
     
-            var marker_bb12482a48e6817e352c27feec504fe0 = L.marker(
+            var marker_a01504c0670353cf896d991b34015349 = L.marker(
                 [40.81232, -96.69521],
                 {}
-            ).addTo(map_6918af01606fe8fb49ff9d2e6d6642bf);
+            ).addTo(map_e59c461f455460bce9b8f790b7ea9b4b);
         
     
-        var popup_94ca1ad7449ea482d4a415c0ed51b421 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_f7148b30b7f5dbb509043341ab622846 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_e5d70513fc958b30d2be958b9e4dd0a6 = $(`<div id=&quot;html_e5d70513fc958b30d2be958b9e4dd0a6&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>18th &amp; N St. </div>`)[0];
-                popup_94ca1ad7449ea482d4a415c0ed51b421.setContent(html_e5d70513fc958b30d2be958b9e4dd0a6);
+                var html_7f3525bfcd5b9810f28c604ac02ff557 = $(`<div id=&quot;html_7f3525bfcd5b9810f28c604ac02ff557&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>18th &amp; N St. </div>`)[0];
+                popup_f7148b30b7f5dbb509043341ab622846.setContent(html_7f3525bfcd5b9810f28c604ac02ff557);
             
         
 
-        marker_bb12482a48e6817e352c27feec504fe0.bindPopup(popup_94ca1ad7449ea482d4a415c0ed51b421)
+        marker_a01504c0670353cf896d991b34015349.bindPopup(popup_f7148b30b7f5dbb509043341ab622846)
         ;
 
         
     
     
-            var marker_aa8085ce6414bb85177a665c22fd3485 = L.marker(
+            var marker_79599f5c29d076464c11b31f281eb8e9 = L.marker(
                 [40.8181, -96.69409],
                 {}
-            ).addTo(map_6918af01606fe8fb49ff9d2e6d6642bf);
+            ).addTo(map_e59c461f455460bce9b8f790b7ea9b4b);
         
     
-        var popup_784d284b69c0744e8dbaa02dd173ad0f = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_b3f84a780c97fc8e391194105e5246e8 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_3b5d3c089103d7ed5d6204c2c4261065 = $(`<div id=&quot;html_3b5d3c089103d7ed5d6204c2c4261065&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>19th &amp; S St.</div>`)[0];
-                popup_784d284b69c0744e8dbaa02dd173ad0f.setContent(html_3b5d3c089103d7ed5d6204c2c4261065);
+                var html_f652b49e33be1b8204a0b7ab79b423b5 = $(`<div id=&quot;html_f652b49e33be1b8204a0b7ab79b423b5&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>19th &amp; S St.</div>`)[0];
+                popup_b3f84a780c97fc8e391194105e5246e8.setContent(html_f652b49e33be1b8204a0b7ab79b423b5);
             
         
 
-        marker_aa8085ce6414bb85177a665c22fd3485.bindPopup(popup_784d284b69c0744e8dbaa02dd173ad0f)
+        marker_79599f5c29d076464c11b31f281eb8e9.bindPopup(popup_b3f84a780c97fc8e391194105e5246e8)
         ;
 
         
     
     
-            var marker_edb3bc9d4d91598e29707391eb3260bb = L.marker(
+            var marker_b1547644ed1aa3a524876027ec421800 = L.marker(
                 [40.81031, -96.69114],
                 {}
-            ).addTo(map_6918af01606fe8fb49ff9d2e6d6642bf);
+            ).addTo(map_e59c461f455460bce9b8f790b7ea9b4b);
         
     
-        var popup_c3d3d5edf1f778bd29e68d1c1a0a6f00 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_45cee87a02d6054874fd760a522a9e4f = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_0778d78518fb38003c740f9e95959452 = $(`<div id=&quot;html_0778d78518fb38003c740f9e95959452&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>21st &amp; L St.</div>`)[0];
-                popup_c3d3d5edf1f778bd29e68d1c1a0a6f00.setContent(html_0778d78518fb38003c740f9e95959452);
+                var html_35daa8d0070e96dc2792d89c2ccd9e3c = $(`<div id=&quot;html_35daa8d0070e96dc2792d89c2ccd9e3c&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>21st &amp; L St.</div>`)[0];
+                popup_45cee87a02d6054874fd760a522a9e4f.setContent(html_35daa8d0070e96dc2792d89c2ccd9e3c);
             
         
 
-        marker_edb3bc9d4d91598e29707391eb3260bb.bindPopup(popup_c3d3d5edf1f778bd29e68d1c1a0a6f00)
+        marker_b1547644ed1aa3a524876027ec421800.bindPopup(popup_45cee87a02d6054874fd760a522a9e4f)
         ;
 
         
     
     
-            var marker_d6453c7892f6e9b801cbbee5f766e1a2 = L.marker(
+            var marker_68049d8a35a054288d07b8fac1ffe7f3 = L.marker(
                 [40.8159, -96.69074],
                 {}
-            ).addTo(map_6918af01606fe8fb49ff9d2e6d6642bf);
+            ).addTo(map_e59c461f455460bce9b8f790b7ea9b4b);
         
     
-        var popup_e5f6b24c0fcd48430b49054b2f96a26e = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_74746f36e6de3a2055f8d8ab4d37867b = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_2eb1d17e9c7447d4c672002350b29bf6 = $(`<div id=&quot;html_2eb1d17e9c7447d4c672002350b29bf6&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>21st &amp; Q St.</div>`)[0];
-                popup_e5f6b24c0fcd48430b49054b2f96a26e.setContent(html_2eb1d17e9c7447d4c672002350b29bf6);
+                var html_43fcbe05e524cef158d07a0cb7843f37 = $(`<div id=&quot;html_43fcbe05e524cef158d07a0cb7843f37&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>21st &amp; Q St.</div>`)[0];
+                popup_74746f36e6de3a2055f8d8ab4d37867b.setContent(html_43fcbe05e524cef158d07a0cb7843f37);
             
         
 
-        marker_d6453c7892f6e9b801cbbee5f766e1a2.bindPopup(popup_e5f6b24c0fcd48430b49054b2f96a26e)
+        marker_68049d8a35a054288d07b8fac1ffe7f3.bindPopup(popup_74746f36e6de3a2055f8d8ab4d37867b)
         ;
 
         
     
     
-            var marker_8699bb0fd60c4c206362331b3ba8de4c = L.marker(
+            var marker_d8898f510b38247ef19c6144df48fcbf = L.marker(
                 [40.81709, -96.71083],
                 {}
-            ).addTo(map_6918af01606fe8fb49ff9d2e6d6642bf);
+            ).addTo(map_e59c461f455460bce9b8f790b7ea9b4b);
         
     
-        var popup_5f4556675fa6722d8a9357c2cbecadda = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_96510f9836a696ebe3a535256dfc01f7 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_d2b96aeb8993fe0a5912fe6b82ed6615 = $(`<div id=&quot;html_d2b96aeb8993fe0a5912fe6b82ed6615&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>7th &amp; R St.</div>`)[0];
-                popup_5f4556675fa6722d8a9357c2cbecadda.setContent(html_d2b96aeb8993fe0a5912fe6b82ed6615);
+                var html_91fcce6260771caaa98eed28d4d91e9f = $(`<div id=&quot;html_91fcce6260771caaa98eed28d4d91e9f&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>7th &amp; R St.</div>`)[0];
+                popup_96510f9836a696ebe3a535256dfc01f7.setContent(html_91fcce6260771caaa98eed28d4d91e9f);
             
         
 
-        marker_8699bb0fd60c4c206362331b3ba8de4c.bindPopup(popup_5f4556675fa6722d8a9357c2cbecadda)
+        marker_d8898f510b38247ef19c6144df48fcbf.bindPopup(popup_96510f9836a696ebe3a535256dfc01f7)
         ;
 
         
     
     
-            var marker_52bb401695b693f0d5bec4f13068b8fd = L.marker(
+            var marker_1d4e6d6b5dd323ef95c16ecdb9c9b231 = L.marker(
                 [40.8147, -96.70978],
                 {}
-            ).addTo(map_6918af01606fe8fb49ff9d2e6d6642bf);
+            ).addTo(map_e59c461f455460bce9b8f790b7ea9b4b);
         
     
-        var popup_ae0303f0420053fbd8f3ba2aea2ac578 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_53a22d390c6fada16a2da88e88c4596e = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_56a80d40286d792dcdd2b1c1b45ca32d = $(`<div id=&quot;html_56a80d40286d792dcdd2b1c1b45ca32d&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>8th &amp; P St. </div>`)[0];
-                popup_ae0303f0420053fbd8f3ba2aea2ac578.setContent(html_56a80d40286d792dcdd2b1c1b45ca32d);
+                var html_8cc81c532946160683d0b08f0de3d766 = $(`<div id=&quot;html_8cc81c532946160683d0b08f0de3d766&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>8th &amp; P St. </div>`)[0];
+                popup_53a22d390c6fada16a2da88e88c4596e.setContent(html_8cc81c532946160683d0b08f0de3d766);
             
         
 
-        marker_52bb401695b693f0d5bec4f13068b8fd.bindPopup(popup_ae0303f0420053fbd8f3ba2aea2ac578)
+        marker_1d4e6d6b5dd323ef95c16ecdb9c9b231.bindPopup(popup_53a22d390c6fada16a2da88e88c4596e)
         ;
 
         
     
     
-            var marker_d7b85942ff5ac33dcd59bca3e72f9ad2 = L.marker(
+            var marker_8148184b5564de5325d27cd3f488c6ef = L.marker(
                 [40.81483, -96.71211],
                 {}
-            ).addTo(map_6918af01606fe8fb49ff9d2e6d6642bf);
+            ).addTo(map_e59c461f455460bce9b8f790b7ea9b4b);
         
     
-        var popup_fc9dc320d4fe1e3d6235b54cb1d6520e = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_05670cea995ecaccdf22766be8b58574 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_638c20ac648bc4b830b7edbd23078959 = $(`<div id=&quot;html_638c20ac648bc4b830b7edbd23078959&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Canopy &amp; P St. </div>`)[0];
-                popup_fc9dc320d4fe1e3d6235b54cb1d6520e.setContent(html_638c20ac648bc4b830b7edbd23078959);
+                var html_3beff2fed8882d649a62ca04c3870bff = $(`<div id=&quot;html_3beff2fed8882d649a62ca04c3870bff&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Canopy &amp; P St. </div>`)[0];
+                popup_05670cea995ecaccdf22766be8b58574.setContent(html_3beff2fed8882d649a62ca04c3870bff);
             
         
 
-        marker_d7b85942ff5ac33dcd59bca3e72f9ad2.bindPopup(popup_fc9dc320d4fe1e3d6235b54cb1d6520e)
+        marker_8148184b5564de5325d27cd3f488c6ef.bindPopup(popup_05670cea995ecaccdf22766be8b58574)
         ;
 
         
     
     
-            var marker_e480de56173319b7d7b474847efee1a0 = L.marker(
+            var marker_cf27e865d0828a2669f57f8efb12f7c9 = L.marker(
                 [40.82864, -96.66705],
                 {}
-            ).addTo(map_6918af01606fe8fb49ff9d2e6d6642bf);
+            ).addTo(map_e59c461f455460bce9b8f790b7ea9b4b);
         
     
-        var popup_0e5b55c98a353b07e63d46cfc4a63934 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_0684772b1a4d5b3fbd75951e93d99ca6 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_e037eabab347e634c25ed4cfeef1f2af = $(`<div id=&quot;html_e037eabab347e634c25ed4cfeef1f2af&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Dairy Store Dr. &amp; E. Campus Loop</div>`)[0];
-                popup_0e5b55c98a353b07e63d46cfc4a63934.setContent(html_e037eabab347e634c25ed4cfeef1f2af);
+                var html_eba992326a4dda9a239258f42bdc736f = $(`<div id=&quot;html_eba992326a4dda9a239258f42bdc736f&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Dairy Store Dr. &amp; E. Campus Loop</div>`)[0];
+                popup_0684772b1a4d5b3fbd75951e93d99ca6.setContent(html_eba992326a4dda9a239258f42bdc736f);
             
         
 
-        marker_e480de56173319b7d7b474847efee1a0.bindPopup(popup_0e5b55c98a353b07e63d46cfc4a63934)
+        marker_cf27e865d0828a2669f57f8efb12f7c9.bindPopup(popup_0684772b1a4d5b3fbd75951e93d99ca6)
         ;
 
         
     
     
-            var marker_ceaaee34a4eee38281b65a2af5690c1c = L.marker(
+            var marker_abadc8e5ec53a34d399a5324e87d7555 = L.marker(
                 [40.83225, -96.69367],
                 {}
-            ).addTo(map_6918af01606fe8fb49ff9d2e6d6642bf);
+            ).addTo(map_e59c461f455460bce9b8f790b7ea9b4b);
         
     
-        var popup_fd6dc2168d192fb2cd4d4979130df102 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_1c324699670fc5218e3ebeea946fb526 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_f2d7195b55b889bbe12372a398ebf608 = $(`<div id=&quot;html_f2d7195b55b889bbe12372a398ebf608&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>N 19th &amp; Transformation Dr.</div>`)[0];
-                popup_fd6dc2168d192fb2cd4d4979130df102.setContent(html_f2d7195b55b889bbe12372a398ebf608);
+                var html_2b824f7d62702d3ed24251b7a44bedbf = $(`<div id=&quot;html_2b824f7d62702d3ed24251b7a44bedbf&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>N 19th &amp; Transformation Dr.</div>`)[0];
+                popup_1c324699670fc5218e3ebeea946fb526.setContent(html_2b824f7d62702d3ed24251b7a44bedbf);
             
         
 
-        marker_ceaaee34a4eee38281b65a2af5690c1c.bindPopup(popup_fd6dc2168d192fb2cd4d4979130df102)
+        marker_abadc8e5ec53a34d399a5324e87d7555.bindPopup(popup_1c324699670fc5218e3ebeea946fb526)
         ;
 
         
     
     
-            var marker_a9dcc42352dee0e713915c7d18148a90 = L.marker(
+            var marker_365338f7df8140c586994862202be28a = L.marker(
                 [40.83054, -96.67008],
                 {}
-            ).addTo(map_6918af01606fe8fb49ff9d2e6d6642bf);
+            ).addTo(map_e59c461f455460bce9b8f790b7ea9b4b);
         
     
-        var popup_f7ea40e7c6c0362f1a3ff8303a7fc68b = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_3cb3466164f942744ec8638f0abe4000 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_9ae2852c81b89c1c80345cafe2b0f9fd = $(`<div id=&quot;html_9ae2852c81b89c1c80345cafe2b0f9fd&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>N 35th &amp; Center St.</div>`)[0];
-                popup_f7ea40e7c6c0362f1a3ff8303a7fc68b.setContent(html_9ae2852c81b89c1c80345cafe2b0f9fd);
+                var html_62615fe2f40e625b49f070d29c9ac8c5 = $(`<div id=&quot;html_62615fe2f40e625b49f070d29c9ac8c5&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>N 35th &amp; Center St.</div>`)[0];
+                popup_3cb3466164f942744ec8638f0abe4000.setContent(html_62615fe2f40e625b49f070d29c9ac8c5);
             
         
 
-        marker_a9dcc42352dee0e713915c7d18148a90.bindPopup(popup_f7ea40e7c6c0362f1a3ff8303a7fc68b)
+        marker_365338f7df8140c586994862202be28a.bindPopup(popup_3cb3466164f942744ec8638f0abe4000)
         ;
 
         
@@ -798,13 +790,14 @@ require(['plotly'], function(Plotly) {
 </div>
 </div>
 </section>
-<section id="most-used-kiosks-graph" class="level2">
-<h2 class="anchored" data-anchor-id="most-used-kiosks-graph">Most used kiosks graph</h2>
-<div id="e8efadd4" class="cell" data-execution_count="3">
+<section id="most-used-stations-graph" class="level2">
+<h2 class="anchored" data-anchor-id="most-used-stations-graph">Most used stations graph</h2>
+<div class="cell" data-execution_count="3">
 <div class="cell-output cell-output-display">
-<div>                            <div id="b20a315f-3e01-46b0-88d2-0d06fea1eb5f" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("b20a315f-3e01-46b0-88d2-0d06fea1eb5f")) {                    Plotly.newPlot(                        "b20a315f-3e01-46b0-88d2-0d06fea1eb5f",                        [{"alignmentgroup":"True","hovertemplate":"Checkout_Kiosk_Coordinates=%{x}\u003cbr\u003eTotal_Trips=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"","marker":{"color":"#636efa","pattern":{"shape":""}},"name":"","offsetgroup":"","orientation":"v","showlegend":false,"textposition":"auto","x":["14th & R St.","11th & N St.","21st & Q St.","14th & Avery Ave.","12th & Q St. ","19th & S St.","13th & F St.","7th & R St.","18th & N St. ","8th & P St. ","14th & P St. ","11th & P St. ","Canopy & P St. ","N 19th & Transformation Dr.","11th & K St. ","21st & L St.","14th & L St. ","14th & N St. ","Dairy Store Dr. & E. Campus Loop","13th & M St."],"xaxis":"x","y":[24548.0,18319.0,11282.0,8916.0,8733.0,7734.0,4681.0,3887.0,3882.0,3118.0,3048.0,2885.0,2817.0,2740.0,2569.0,2109.0,1803.0,1648.0,1324.0,1277.0],"yaxis":"y","type":"bar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"},"margin":{"b":0,"l":0,"r":0,"t":30}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Checkout Kiosk Address"},"tickangle":-45},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Total Trips"}},"legend":{"tracegroupgap":0},"barmode":"relative"},                        {"responsive": true}                    ).then(function(){
+
+<div>                            <div id="6d9fd38c-d772-40f6-ba5b-fe254e1c472a" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("6d9fd38c-d772-40f6-ba5b-fe254e1c472a")) {                    Plotly.newPlot(                        "6d9fd38c-d772-40f6-ba5b-fe254e1c472a",                        [{"alignmentgroup":"True","hovertemplate":"Checkout_Kiosk_Coordinates=%{x}<br>Total_Trips=%{y}<extra></extra>","legendgroup":"","marker":{"color":"#636efa","pattern":{"shape":""}},"name":"","offsetgroup":"","orientation":"v","showlegend":false,"textposition":"auto","x":["14th & R St.","11th & N St.","21st & Q St.","14th & Avery Ave.","12th & Q St. ","19th & S St.","13th & F St.","7th & R St.","18th & N St. ","8th & P St. ","14th & P St. ","11th & P St. ","Canopy & P St. ","N 19th & Transformation Dr.","11th & K St. ","21st & L St.","14th & L St. ","14th & N St. ","Dairy Store Dr. & E. Campus Loop","13th & M St."],"xaxis":"x","y":[24548.0,18319.0,11282.0,8916.0,8733.0,7734.0,4681.0,3887.0,3882.0,3118.0,3048.0,2885.0,2817.0,2740.0,2569.0,2109.0,1803.0,1648.0,1324.0,1277.0],"yaxis":"y","type":"bar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Checkout Kiosk Address"},"tickangle":-45},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Total Trips"}},"legend":{"tracegroupgap":0},"margin":{"t":60},"barmode":"relative"},                        {"responsive": true}                    ).then(function(){
                             
-var gd = document.getElementById('b20a315f-3e01-46b0-88d2-0d06fea1eb5f');
+var gd = document.getElementById('6d9fd38c-d772-40f6-ba5b-fe254e1c472a');
 var x = new MutationObserver(function (mutations, observer) {{
         var display = window.getComputedStyle(gd).display;
         if (!display || display === 'none') {{
@@ -829,6 +822,36 @@ if (outputEl) {{
                         })                };                });            </script>        </div>
 </div>
 </div>
+</section>
+<section id="bikeshare-vs.-transit" class="level1">
+<h1>Bikeshare Vs. Transit</h1>
+<p>For both Lincoln and Omaha, we were interested in how long it would take to make bikeshare trips by transit. We used Google Directions API with the origin and destination station locations for trips (excluding those starting and ending at the same station). The results are enlightening and suggest bikeshare could provide a good complement for transit where trip lengths are short or trip density is low, such that running large buses would be inefficient. The results for Lincoln are summarized below. Note: these results do not fully capture wait time induced by high headway (i.e., low frequency) bus service on most routes in both cities. For example, the bus running near Dr.&nbsp;Hawkins’ house runs once per hour, whereas a bike would (fingers crossed) be immediately available if there was a bikeshare station at this location.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Bikeshare:Transit Ratio (&lt;1.0 = bikeshare faster than transit)</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Minimum ratio</td>
+<td>0.44</td>
+</tr>
+<tr class="even">
+<td>Maximum ratio</td>
+<td>0.92</td>
+</tr>
+<tr class="odd">
+<td>Mean ratio</td>
+<td>0.61</td>
+</tr>
+<tr class="even">
+<td>Median ratio</td>
+<td>0.57</td>
+</tr>
+</tbody>
+</table>
 
 
 </section>
@@ -913,27 +936,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/UNL-Hawkins-Lab\.github\.io\/Hawkinslab\/");
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
-      }
-    }
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+  function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,
+      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -943,17 +949,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start',
+      placement: 'bottom-start'
     };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -965,130 +962,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
-        }
-      }
-    }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
-          }
-        }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
-        }
-        return container.innerHTML
-      } else {
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(note);
-        }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      // TODO in 1.5, we should make sure this works without a callout special case
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
-      }
-    }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
-          }
-        } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
-            if (note !== null) {
-              const html = processXRef(id, note);
-              instance.setContent(html);
-            } 
-          }).finally(() => {
-            instance.enable();
-            instance.show();
-          });
-        }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
+      return note.innerHTML;
     });
   }
       let selectedAnnoteEl;
@@ -1132,7 +1006,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
-            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1158,32 +1031,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1246,15 +1093,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">
-<p>Developed by Hawkinslab</p>
-</div>   
+    <div class="nav-footer-left">Developed by Hawkinslab</div>   
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="../../../about.html">
-<p>About</p>
-</a>
+    <a class="nav-link" href="../../../about.html">About</a>
   </li>  
 </ul>
     </div>
@@ -1270,7 +1113,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-
 
 
 
