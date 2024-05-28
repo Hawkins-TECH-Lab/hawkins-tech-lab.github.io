@@ -1,0 +1,73 @@
+
+---
+title: "Schumacher On Prediction"
+description: ""
+author:
+  - name: Jason Hawkins
+date: "2024-05-28"
+categories: [prediction, estimation, semantics]
+image: banner.jpg
+format: 
+  html:
+    toc: true
+---
+
+Best known for his work on small-scale economics, in the same work (Small is Beautiful), E.F. Schumacher provides one of the best discussions on prediction that I have seen to date. It is also an excellent example of *semantics* applied in its true sense, rather than the typical pejorative meaning associated with the term in many discussions.
+
+Schumacher distinguishes prediction along three dimensions using a set of $2^3 = 8$ cases as follows:
+
+:::: {.columns}
+
+::: {.column width="50%"}
+1. Act
+Past
+Certain
+2. Act
+Future
+Certain
+3. Act
+Past
+Uncertain
+4. Act
+Future
+Uncertain
+:::
+
+::: {.column width="50%"}
+5. Event
+Past
+Certain
+6. Event
+Future
+Certain
+7. Event
+Past
+Uncertain
+8. Event
+Future
+Uncertain
+:::
+
+::::
+
+Let us first discuss *acts* and *events*. The first (acts) are active and "within the control of the planner", while the second (events) are passive and "outside the control of the planner". The planner may be able to forecast events and their influence on plans, but they cannot be part of the plans. *Plan* and *estimate*, while appearing to apply to the future only, are often applied to past events. For example, "I shall not visit Paris without a plan" can mean "I shall arm myself with a street plan for orientation"  - case 5 because the plan construction is a certain event that occured in the past outside your control. Alternatively, "I shall arm myself with a plan which outlines in advance where I am going to go and how I am going to spend my time and money" - case 2 or 4 depending on the certainty of said plans. Similarly, estimate may refer to either the past or the future. Past events often remain uncertain due to measurement error and other factors.
+
+Having spent the better part of the last decade studying human behaviour and forecasting it under alternative conditions, I found Schumacher's classification system encapsulated much of what I believe about the ability to forecast behaviour. I follow Schumacher's definitions with a short commentary.
+
+1. Full predictability (in principle) exists only in the absence of human freedom - i.e., in "sub-human" nature. The limitations of predictability are purely limitations of knowledge and technique. 
+
+That is, if we assume no human freedom and deterministic choice, 100\% accurate prediction is feasible provided we have all the available information and the correct model structure. I have the sense that many of my field are of the opinion that *Big Data* and *Artificial Intelligence* bring us daily closer to this reality. I am not so readily convinced of this fact.
+
+2. Relative predictability exists with regard to the behaviour pattern of large numbers of people doing "normal" things (routines).
+
+In transportation modeling, we would call this travel on a typical day and aggregate (4-step) demand modeling.
+
+3. Relatively full predictability exists with regard to human actions controlled by a plan which eliminates freedom, e.g., railway timetables.
+
+I like this example for obvious reasons.
+
+4. Individual decisions by individuals are in principle unpredictable.
+
+I agree with this statement. I see the shift towards disaggregate modeling as a means to increase prediction accuracy and nuance for large numbers of people (point 2 above) rather than a suggestion that we can accurately predict the individual decisions at which the model is set up.
+
+Schumacher then touches on a point that has recently seen great interest in the transportation demand modeling community - uncertainty. He states "all long-term forecasting is somewhat presumptuous and absurd, unless it is of so general a kind that it merely states the obvious". Schumacher emphasizes the need to focus on modeling as a tool for *exploratory calculations* rather than *forecasting*, per se. In forecasting, we are stating that a certain set of conditions will be the case in 20 years time or, in the slightly more nuanced form of the same, that differences from current conditions will have some absolute value. E.g., we forecast future traffic and make statements about the difference in traffic on particular roads given a change in infrastructure. An exploratory approach includes multiple potential futures and considers the "long-term effect of certain assumed tendencies". Schumacher uses a development example. He proposes a backcasting exercise to explore potential pathways for the uplift of underdeveloped nations. "What would be the required output of foodstuffs, fuels, metals, textile fibres, and so forth? What would be the stock of industrial capital?" Many new assumptions would be necessarily along the way and the outcome would be a set of feasibility studies to indicate the most feasible among alternative *patterns of development*. The discussion here is again (partially) one of semantics. We must recognize that long-term forecasts are infeasible, while long-term feasibility study can be a worthwhile exercise.
