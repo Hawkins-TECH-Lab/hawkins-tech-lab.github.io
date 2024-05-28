@@ -10,7 +10,64 @@
 <atom:link href="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/blog.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.3.361</generator>
-<lastBuildDate>Fri, 26 Apr 2024 05:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 28 May 2024 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>Schumacher On Prediction</title>
+  <dc:creator>Jason Hawkins</dc:creator>
+  <link>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/05-28-2024/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>Best known for his work on small-scale economics, in the same work (Small is Beautiful), E.F. Schumacher provides one of the best discussions on prediction that I have seen to date. It is also an excellent example of <em>semantics</em> applied in its true sense, rather than the typical pejorative meaning associated with the term in many discussions.</p>
+<p>Schumacher distinguishes prediction along three dimensions using a set of <img src="https://latex.codecogs.com/png.latex?2%5E3%20=%208"> cases as follows:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ol type="1">
+<li>Act Past Certain</li>
+<li>Act Future Certain</li>
+<li>Act Past Uncertain</li>
+<li>Act Future Uncertain</li>
+</ol>
+</div><div class="column" style="width:50%;">
+<ol start="5" type="1">
+<li>Event Past Certain</li>
+<li>Event Future Certain</li>
+<li>Event Past Uncertain</li>
+<li>Event Future Uncertain</li>
+</ol>
+</div>
+</div>
+<p>Let us first discuss <em>acts</em> and <em>events</em>. The first (acts) are active and “within the control of the planner”, while the second (events) are passive and “outside the control of the planner”. The planner may be able to forecast events and their influence on plans, but they cannot be part of the plans. <em>Plan</em> and <em>estimate</em>, while appearing to apply to the future only, are often applied to past events. For example, “I shall not visit Paris without a plan” can mean “I shall arm myself with a street plan for orientation” - case 5 because the plan construction is a certain event that occured in the past outside your control. Alternatively, “I shall arm myself with a plan which outlines in advance where I am going to go and how I am going to spend my time and money” - case 2 or 4 depending on the certainty of said plans. Similarly, estimate may refer to either the past or the future. Past events often remain uncertain due to measurement error and other factors.</p>
+<p>Having spent the better part of the last decade studying human behaviour and forecasting it under alternative conditions, I found Schumacher’s classification system encapsulated much of what I believe about the ability to forecast behaviour. I follow Schumacher’s definitions with a short commentary.</p>
+<ol type="1">
+<li>Full predictability (in principle) exists only in the absence of human freedom - i.e., in “sub-human” nature. The limitations of predictability are purely limitations of knowledge and technique.</li>
+</ol>
+<p>That is, if we assume no human freedom and deterministic choice, 100% accurate prediction is feasible provided we have all the available information and the correct model structure. I have the sense that many of my field are of the opinion that <em>Big Data</em> and <em>Artificial Intelligence</em> bring us daily closer to this reality. I am not so readily convinced of this fact.</p>
+<ol start="2" type="1">
+<li>Relative predictability exists with regard to the behaviour pattern of large numbers of people doing “normal” things (routines).</li>
+</ol>
+<p>In transportation modeling, we would call this travel on a typical day and aggregate (4-step) demand modeling.</p>
+<ol start="3" type="1">
+<li>Relatively full predictability exists with regard to human actions controlled by a plan which eliminates freedom, e.g., railway timetables.</li>
+</ol>
+<p>I like this example for obvious reasons.</p>
+<ol start="4" type="1">
+<li>Individual decisions by individuals are in principle unpredictable.</li>
+</ol>
+<p>I agree with this statement. I see the shift towards disaggregate modeling as a means to increase prediction accuracy and nuance for large numbers of people (point 2 above) rather than a suggestion that we can accurately predict the individual decisions at which the model is set up.</p>
+<p>Schumacher then touches on a point that has recently seen great interest in the transportation demand modeling community - uncertainty. He states “all long-term forecasting is somewhat presumptuous and absurd, unless it is of so general a kind that it merely states the obvious”. Schumacher emphasizes the need to focus on modeling as a tool for <em>exploratory calculations</em> rather than <em>forecasting</em>, per se. In forecasting, we are stating that a certain set of conditions will be the case in 20 years time or, in the slightly more nuanced form of the same, that differences from current conditions will have some absolute value. E.g., we forecast future traffic and make statements about the difference in traffic on particular roads given a change in infrastructure. An exploratory approach includes multiple potential futures and considers the “long-term effect of certain assumed tendencies”. Schumacher uses a development example. He proposes a backcasting exercise to explore potential pathways for the uplift of underdeveloped nations. “What would be the required output of foodstuffs, fuels, metals, textile fibres, and so forth? What would be the stock of industrial capital?” Many new assumptions would be necessarily along the way and the outcome would be a set of feasibility studies to indicate the most feasible among alternative <em>patterns of development</em>. The discussion here is again (partially) one of semantics. We must recognize that long-term forecasts are infeasible, while long-term feasibility study can be a worthwhile exercise.</p>
+
+
+
+ ]]></description>
+  <category>prediction</category>
+  <category>estimation</category>
+  <category>semantics</category>
+  <guid>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/05-28-2024/index.html</guid>
+  <pubDate>Tue, 28 May 2024 05:00:00 GMT</pubDate>
+  <media:content url="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/05-28-2024/banner.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Jevons Paradox</title>
   <dc:creator>Jason Hawkins</dc:creator>
