@@ -53,7 +53,7 @@ top_kiosks = df_sorted.head(20)
 fig = px.bar(top_kiosks, x='Checkout_Kiosk_Coordinates', y='Total_Trips',)
 
 # rename the x-axis label
-fig.update_xaxes(title_text='Checkout Kiosk Address')
+fig.update_xaxes(title_text='Checkout Station Address')
 
 # rename the y-axis label
 fig.update_yaxes(title_text='Total Trips')

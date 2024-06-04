@@ -1,0 +1,15 @@
+
+---
+title: "Schumacher On Scale"
+description: ""
+author:
+  - name: Jason Hawkins
+date: "2024-06-10"
+categories: [society, scale, buddhist economics]
+image: banner.jpg
+format: 
+  html:
+    toc: false
+---
+
+p. 13 of SIB

@@ -1,0 +1,15 @@
+
+---
+title: "Schumacher On Development"
+description: ""
+author:
+  - name: Jason Hawkins
+date: "2024-06-05"
+categories: [development, intermediate technology]
+image: banner.jpg
+format: 
+  html:
+    toc: false
+---
+
+p. 173 of SIB

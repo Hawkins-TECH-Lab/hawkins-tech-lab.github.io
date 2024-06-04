@@ -1,0 +1,16 @@
+
+---
+title: "Socialist Calculation Debate"
+description: "On value theory"
+author:
+  - name: Jason Hawkins
+date: "2024-06-05"
+categories: [socialist economics, value theory]
+image: banner.jpg
+format: 
+  html:
+    toc: false
+---
+
+https://en.wikipedia.org/wiki/Socialist_calculation_debate
+https://en.wikipedia.org/wiki/Value_theory
