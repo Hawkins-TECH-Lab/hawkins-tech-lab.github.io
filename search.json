@@ -49,6 +49,41 @@
     "text": "From Theory to Empirics 2 - Microeconomic Choice"
   },
   {
+    "objectID": "research/projects/bikeshare/Clustering.html",
+    "href": "research/projects/bikeshare/Clustering.html",
+    "title": "Bikeshare User Clustering",
+    "section": "",
+    "text": "We were interested in how user patterns might vary between Omaha and Lincoln. Omaha is a larger city (metro population of about one million people), whereas Lincoln is about a quarter of the size and a college town. To compare users, we first filtered out admin and other invalid trips. Most of the available data pertains to time, so we made maximum use of the timestamps. We considered if a person made a trip in the winter (defined as December, January, February, and March) as a measure of their being an all-season cyclist. We also considered if they biked at night. Nightfall is a bit of a tricky variable. Fortunately, the Python suntime package can give us the sunrise and sunset time on any day, adjusting for latitude and daylight saving time. We consider whether a trip is one-way, meaning it returns to the same station at which it started its trip. This variable provides an indication of if the trip was utilitarian or recreational. Finally, we consider the trip count and average duration of trips by user."
+  },
+  {
+    "objectID": "research/projects/bikeshare/Clustering.html#introduction",
+    "href": "research/projects/bikeshare/Clustering.html#introduction",
+    "title": "Bikeshare User Clustering",
+    "section": "",
+    "text": "We were interested in how user patterns might vary between Omaha and Lincoln. Omaha is a larger city (metro population of about one million people), whereas Lincoln is about a quarter of the size and a college town. To compare users, we first filtered out admin and other invalid trips. Most of the available data pertains to time, so we made maximum use of the timestamps. We considered if a person made a trip in the winter (defined as December, January, February, and March) as a measure of their being an all-season cyclist. We also considered if they biked at night. Nightfall is a bit of a tricky variable. Fortunately, the Python suntime package can give us the sunrise and sunset time on any day, adjusting for latitude and daylight saving time. We consider whether a trip is one-way, meaning it returns to the same station at which it started its trip. This variable provides an indication of if the trip was utilitarian or recreational. Finally, we consider the trip count and average duration of trips by user."
+  },
+  {
+    "objectID": "research/projects/bikeshare/Clustering.html#perform-siloutte-analysis-to-define-k-value-for-k-means-clustering",
+    "href": "research/projects/bikeshare/Clustering.html#perform-siloutte-analysis-to-define-k-value-for-k-means-clustering",
+    "title": "Bikeshare User Clustering",
+    "section": "Perform Siloutte Analysis To Define K Value for K-Means Clustering",
+    "text": "Perform Siloutte Analysis To Define K Value for K-Means Clustering\nWe use the k-means clustering to define user groups. This algorithm clusters observations (in our case users) in order to maximize the cross-cluster variation in the input features. Our features are defined by the variables described above. We use siloutte analysis to find the optimal number of clusters. The silhouette value is a measure of how similar an observation is to its own cluster (cohesion) compared to other clusters (separation). The silhouette ranges from −1 to +1, where a high value indicates that the object is well matched to its own cluster and poorly matched to neighboring clusters. Our results suggest the that four clusters are ideal here.\n\n\nFor n_clusters = 2 The average silhouette_score is : 0.4653705024493701\nFor n_clusters = 3 The average silhouette_score is : 0.48854051475775534\nFor n_clusters = 4 The average silhouette_score is : 0.5065985416901212\nFor n_clusters = 5 The average silhouette_score is : 0.449791411533983\nFor n_clusters = 6 The average silhouette_score is : 0.4615478858524143"
+  },
+  {
+    "objectID": "research/projects/bikeshare/Clustering.html#k-means-clustering-for-four-clusters",
+    "href": "research/projects/bikeshare/Clustering.html#k-means-clustering-for-four-clusters",
+    "title": "Bikeshare User Clustering",
+    "section": "K-Means Clustering for Four Clusters",
+    "text": "K-Means Clustering for Four Clusters"
+  },
+  {
+    "objectID": "research/projects/bikeshare/Clustering.html#potential-additional-dimensions-to-explore",
+    "href": "research/projects/bikeshare/Clustering.html#potential-additional-dimensions-to-explore",
+    "title": "Bikeshare User Clustering",
+    "section": "Potential Additional Dimensions to Explore:",
+    "text": "Potential Additional Dimensions to Explore:\n\nUse date to get weekday vs. weekend\nTravel speed (duration seems a bit inaccurate for some trips, so may be hard to have confidence, and we do not have route distance)"
+  },
+  {
     "objectID": "research/projects/bikeshare/Lincoln.html",
     "href": "research/projects/bikeshare/Lincoln.html",
     "title": "Bikeshare in Lincoln",
@@ -3959,7 +3994,7 @@
     "href": "thoughts/blog.html",
     "title": "Blog",
     "section": "",
-    "text": "Schumacher On Prediction\n\n\n\n\n\n\n\nprediction\n\n\nestimation\n\n\nsemantics\n\n\n\n\n\n\n\n\n\n\n\nMay 28, 2024\n\n\nJason Hawkins\n\n\n\n\n\n\n  \n\n\n\n\nJevons Paradox\n\n\n\n\n\n\n\nenvironmental economics\n\n\nsystem dynamics\n\n\n\n\nIn a non-stationary economy\n\n\n\n\n\n\nApr 26, 2024\n\n\nJason Hawkins\n\n\n\n\n\n\n  \n\n\n\n\nThe Four Horsemen of the Production Apocalypse\n\n\n\n\n\n\n\ntransportation planning\n\n\nproduction theory\n\n\n\n\nOr why headlines are clickbait\n\n\n\n\n\n\nApr 21, 2024\n\n\nJason Hawkins\n\n\n\n\n\n\n  \n\n\n\n\nWilliam Vickrey and Transportation Economics\n\n\n\n\n\n\n\neconomics\n\n\nCanadians\n\n\n\n\n\n\n\n\n\n\n\nMay 4, 2018\n\n\nJason Hawkins\n\n\n\n\n\n\n  \n\n\n\n\nOur Trip to Toronto Through the USA\n\n\n\n\n\n\n\ntravel\n\n\ninfrastructure\n\n\n\n\n\n\n\n\n\n\n\nSep 11, 2017\n\n\nJason Hawkins\n\n\n\n\n\n\n  \n\n\n\n\nAV Deployment, Urban DNA, and Equity\n\n\n\n\n\n\n\ntechnology\n\n\nautonomous vehicles\n\n\nequity\n\n\n\n\n\n\n\n\n\n\n\nJul 3, 2017\n\n\nJason Hawkins\n\n\n\n\n\n\nNo matching items"
+    "text": "Computing The Climate\n\n\n\n\n\n\n\nclimate modeling\n\n\n\n\n\n\n\n\n\n\n\nJun 30, 2024\n\n\nJason Hawkins\n\n\n\n\n\n\n  \n\n\n\n\nEmergy and States\n\n\n\n\n\n\n\nemergy\n\n\nstate-state economics\n\n\nconstraints on growth\n\n\n\n\neconomics for engineers or engineering for economists?\n\n\n\n\n\n\nJun 15, 2024\n\n\nJason Hawkins\n\n\n\n\n\n\n  \n\n\n\n\nSchumacher On Scale\n\n\n\n\n\n\n\nsociety\n\n\nscale\n\n\nbuddhist economics\n\n\n\n\n\n\n\n\n\n\n\nJun 10, 2024\n\n\nJason Hawkins\n\n\n\n\n\n\n  \n\n\n\n\nSchumacher On Development\n\n\n\n\n\n\n\ndevelopment\n\n\nintermediate technology\n\n\n\n\n\n\n\n\n\n\n\nJun 5, 2024\n\n\nJason Hawkins\n\n\n\n\n\n\n  \n\n\n\n\nSocialist Calculation Debate\n\n\n\n\n\n\n\nsocialist economics\n\n\nvalue theory\n\n\n\n\nOn value theory\n\n\n\n\n\n\nJun 5, 2024\n\n\nJason Hawkins\n\n\n\n\n\n\n  \n\n\n\n\nSchumacher On Prediction\n\n\n\n\n\n\n\nprediction\n\n\nestimation\n\n\nsemantics\n\n\n\n\n\n\n\n\n\n\n\nMay 28, 2024\n\n\nJason Hawkins\n\n\n\n\n\n\n  \n\n\n\n\nJevons Paradox\n\n\n\n\n\n\n\nenvironmental economics\n\n\nsystem dynamics\n\n\n\n\nIn a non-stationary economy\n\n\n\n\n\n\nApr 26, 2024\n\n\nJason Hawkins\n\n\n\n\n\n\n  \n\n\n\n\nThe Four Horsemen of the Production Apocalypse\n\n\n\n\n\n\n\ntransportation planning\n\n\nproduction theory\n\n\n\n\nOr why headlines are clickbait\n\n\n\n\n\n\nApr 21, 2024\n\n\nJason Hawkins\n\n\n\n\n\n\n  \n\n\n\n\nWilliam Vickrey and Transportation Economics\n\n\n\n\n\n\n\neconomics\n\n\nCanadians\n\n\n\n\n\n\n\n\n\n\n\nMay 4, 2018\n\n\nJason Hawkins\n\n\n\n\n\n\n  \n\n\n\n\nOur Trip to Toronto Through the USA\n\n\n\n\n\n\n\ntravel\n\n\ninfrastructure\n\n\n\n\n\n\n\n\n\n\n\nSep 11, 2017\n\n\nJason Hawkins\n\n\n\n\n\n\n  \n\n\n\n\nAV Deployment, Urban DNA, and Equity\n\n\n\n\n\n\n\ntechnology\n\n\nautonomous vehicles\n\n\nequity\n\n\n\n\n\n\n\n\n\n\n\nJul 3, 2017\n\n\nJason Hawkins\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "thoughts/books.html",
@@ -4037,6 +4072,34 @@
     "title": "Schumacher On Prediction",
     "section": "",
     "text": "Best known for his work on small-scale economics, in the same work (Small is Beautiful), E.F. Schumacher provides one of the best discussions on prediction that I have seen to date. It is also an excellent example of semantics applied in its true sense, rather than the typical pejorative meaning associated with the term in many discussions.\nSchumacher distinguishes prediction along three dimensions using a set of \\(2^3 = 8\\) cases as follows:\n\n\n\nAct Past Certain\nAct Future Certain\nAct Past Uncertain\nAct Future Uncertain\n\n\n\nEvent Past Certain\nEvent Future Certain\nEvent Past Uncertain\nEvent Future Uncertain\n\n\n\nLet us first discuss acts and events. The first (acts) are active and “within the control of the planner”, while the second (events) are passive and “outside the control of the planner”. The planner may be able to forecast events and their influence on plans, but they cannot be part of the plans. Plan and estimate, while appearing to apply to the future only, are often applied to past events. For example, “I shall not visit Paris without a plan” can mean “I shall arm myself with a street plan for orientation” - case 5 because the plan construction is a certain event that occured in the past outside your control. Alternatively, “I shall arm myself with a plan which outlines in advance where I am going to go and how I am going to spend my time and money” - case 2 or 4 depending on the certainty of said plans. Similarly, estimate may refer to either the past or the future. Past events often remain uncertain due to measurement error and other factors.\nHaving spent the better part of the last decade studying human behaviour and forecasting it under alternative conditions, I found Schumacher’s classification system encapsulated much of what I believe about the ability to forecast behaviour. I follow Schumacher’s definitions with a short commentary.\n\nFull predictability (in principle) exists only in the absence of human freedom - i.e., in “sub-human” nature. The limitations of predictability are purely limitations of knowledge and technique.\n\nThat is, if we assume no human freedom and deterministic choice, 100% accurate prediction is feasible provided we have all the available information and the correct model structure. I have the sense that many of my field are of the opinion that Big Data and Artificial Intelligence bring us daily closer to this reality. I am not so readily convinced of this fact.\n\nRelative predictability exists with regard to the behaviour pattern of large numbers of people doing “normal” things (routines).\n\nIn transportation modeling, we would call this travel on a typical day and aggregate (4-step) demand modeling.\n\nRelatively full predictability exists with regard to human actions controlled by a plan which eliminates freedom, e.g., railway timetables.\n\nI like this example for obvious reasons.\n\nIndividual decisions by individuals are in principle unpredictable.\n\nI agree with this statement. I see the shift towards disaggregate modeling as a means to increase prediction accuracy and nuance for large numbers of people (point 2 above) rather than a suggestion that we can accurately predict the individual decisions at which the model is set up.\nSchumacher then touches on a point that has recently seen great interest in the transportation demand modeling community - uncertainty. He states “all long-term forecasting is somewhat presumptuous and absurd, unless it is of so general a kind that it merely states the obvious”. Schumacher emphasizes the need to focus on modeling as a tool for exploratory calculations rather than forecasting, per se. In forecasting, we are stating that a certain set of conditions will be the case in 20 years time or, in the slightly more nuanced form of the same, that differences from current conditions will have some absolute value. E.g., we forecast future traffic and make statements about the difference in traffic on particular roads given a change in infrastructure. An exploratory approach includes multiple potential futures and considers the “long-term effect of certain assumed tendencies”. Schumacher uses a development example. He proposes a backcasting exercise to explore potential pathways for the uplift of underdeveloped nations. “What would be the required output of foodstuffs, fuels, metals, textile fibres, and so forth? What would be the stock of industrial capital?” Many new assumptions would be necessarily along the way and the outcome would be a set of feasibility studies to indicate the most feasible among alternative patterns of development. The discussion here is again (partially) one of semantics. We must recognize that long-term forecasts are infeasible, while long-term feasibility study can be a worthwhile exercise."
+  },
+  {
+    "objectID": "thoughts/posts/05-30-2024/index.html",
+    "href": "thoughts/posts/05-30-2024/index.html",
+    "title": "Schumacher On Development",
+    "section": "",
+    "text": "p. 173 of SIB"
+  },
+  {
+    "objectID": "thoughts/posts/06-05-2024/index.html",
+    "href": "thoughts/posts/06-05-2024/index.html",
+    "title": "Socialist Calculation Debate",
+    "section": "",
+    "text": "https://en.wikipedia.org/wiki/Socialist_calculation_debate https://en.wikipedia.org/wiki/Value_theory"
+  },
+  {
+    "objectID": "thoughts/posts/06-10-2024/index.html",
+    "href": "thoughts/posts/06-10-2024/index.html",
+    "title": "Schumacher On Scale",
+    "section": "",
+    "text": "p. 13 of SIB"
+  },
+  {
+    "objectID": "thoughts/posts/06-15-2024/index.html",
+    "href": "thoughts/posts/06-15-2024/index.html",
+    "title": "Emergy and States",
+    "section": "",
+    "text": "https://en.wikipedia.org/wiki/Emergy https://en.wikipedia.org/wiki/Steady-state_economy"
   },
   {
     "objectID": "thoughts/posts/07-03-2017/index.html",
