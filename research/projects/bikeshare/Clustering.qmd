@@ -14,6 +14,10 @@ import seaborn as sns
 from sklearn.metrics import silhouette_samples, silhouette_score
 import matplotlib.cm as cm
 import plotly.express as px
+
+user_df = pd.read_csv('data/user_data.csv')
+cluster_cols = ['trip_ct', 'is_winter', 'is_night','one_way', 'duration']
+X = user_df.loc[:, cluster_cols].fillna(-1).values
 ```
 
 ## Introduction
@@ -23,10 +27,6 @@ We were interested in how user patterns might vary between Omaha and Lincoln. Om
 We use the k-means clustering to define user groups. This algorithm clusters observations (in our case users) in order to maximize the cross-cluster variation in the input *features*. Our *features* are defined by the variables described above. We use siloutte analysis to find the optimal number of clusters. The silhouette value is a measure of how similar an observation is to its own cluster (cohesion) compared to other clusters (separation). The silhouette ranges from −1 to +1, where a high value indicates that the object is well matched to its own cluster and poorly matched to neighboring clusters. Our results suggest the that four clusters are ideal here.
 
 ```{python}
-user_df = pd.read_csv('data/user_data.csv')
-
-cluster_cols = ['trip_ct', 'is_winter', 'is_night','one_way', 'duration']
-X = user_df.loc[:, cluster_cols].fillna(-1).values
 
 range_n_clusters = [2, 3, 4, 5, 6]
 
@@ -178,16 +178,19 @@ Clsuter 3 (Frequent social): These are frequent users of the system. They are sl
 
 ```{python}
 def describe_by_group(grouped_df):
-  descriptions = []
-  for name, group in grouped_df:
-    descriptions.append(group.describe())
+#   descriptions = []
+#   for name, group in grouped_df:
+#     descriptions.append(group.describe())
+  descriptions = grouped_df.describe().stack().unstack('cluster').to_markdown()
   return descriptions
 
 grouped_df = user_df.groupby('cluster')
 descriptions = describe_by_group(grouped_df)
-descriptions
-
 ```
+
+| Cluster | Statistic | Value |
+|---|---|---|
+| {{ descriptions }} |
 
 ## Potential Additional Dimensions to Explore:
 - Use date to get weekday vs. weekend
