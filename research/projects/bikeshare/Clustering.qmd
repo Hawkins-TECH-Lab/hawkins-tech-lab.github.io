@@ -163,8 +163,6 @@ grp_df["cluster"] = grp_df["cluster"].astype(str)
 fig = px.bar(grp_df, x='city', y='proportion', color="cluster")
 fig.update_xaxes(title_text='City')
 fig.update_yaxes(title_text='% of users')
-# plt.title('Cluster Distribution')
-# plt.legend()
 fig.show()
 
 ```

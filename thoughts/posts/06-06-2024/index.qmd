@@ -1,0 +1,27 @@
+
+---
+title: "Socialist Calculation Debate"
+description: "On value theory"
+author:
+  - name: Jason Hawkins
+date: "2024-06-06"
+categories: [socialist economics, value theory]
+image: banner.jpg
+format: 
+  html:
+    toc: false
+---
+
+I once had a student call me a socialist for discussing equity in a transportation engineering course. While somewhat humourous and avoiding any tangential discussions on the topic of transportation equity (Cole's notes: engineers **definitely** need to consider it), they were not wrong that my beliefs on many topics tend towards Democratic Socialism. What I would like to discuss today is Socialist Calculation Debate.
+
+The Socialist Calculation Debate was a debate among economists, beginning in the 1920s, in response to the rise of socialism in Eastern Europe. Von Mises and Hayek argued that socialism was not feasible because it lacked an appropriate means of economic valuation - the law of value. While often framed as a debate between capitalist and socialist economic systems, the debate included internal differences among socialist economists as to the use of markets and money.
+
+This debate interests me in the context of my work on the valuation of ecosystem services. I do not go so far as to say that markets have no value. Within the traditional economic market, price signals are an effective structural mechanism. The issue comes when we extend a system of values developed within the market economy to the wider environment. For a start, we are more than cogs in an economic machine. Thus, our systems of valuation must be more than those employed by the economic market. How to measure value beyond money is certainly a germane question. So how should we do it? I do not have a clear answer. I do not believe this is by definition a statement that we should not pursue answers! In fact, as argued by Thomas Kuhn, it is not always through incremental progress that we achieve innovation. Rather, we must seek out new ways of thinking and analysis. I increasingly find my lack of formal training in economics an asset in that I am unimpeded by a linear training on the subject, to the great consternation of all my economic committee members as a student ("but those aren't the correct papers to reference!").
+
+Value theory is the ethical study of how, why, and to what degree we values things. Ecological econmics distinguishes two types of value: donor-type and receiver-type value. We can think of these value types in terms of physical flow accounting. Donor-type value parallels the attribution of physical flows to their point of production (i.e., resource extraction). Receiver-type value parallels the attribution of physical flows to their points of consumption (i.e., households). Odum uses the term *emergy* to described the embodied energy required for provision of a good or service. Emergy is typically measured in sun energy equivalents - i.e., the sun energy required to produce a fuel, good, or human service. It provides a measure of the *quality* of energy with respect to their ability to support receiver-type value. As an alternative to monetary value, emergy has many appeals features for the engineering trained in thermodynamics. It does not introduce any artificial distortions of value induced by market fluctuations or rent seeking behaviour.
+
+We can also distinguish between *instrumental* and *intrinsic* value, as described by Plato in the Republic. An instrumentally valuable good is one that has value for its provisioning of other valued goods or services - i.e., what a transportation might call a *derived demand* good. Intrinsically valuable goods have value in their use. The two are not mutually exclusive. In environmental ethics, we can consider the instrumental value of resources for humans, such as the value of forests for their provision of timber used in dwellings. However, forests also have an intrinsic value in their direct provision of beauty. Environmental economics would seek to weigh the tradeoffs between these values - i.e., is the loss of the *intrinsic* beauty of a forest by cutting down a tree balanced by its *instrumental* value as an input to economic production. The issue that arises here is that instrumental value is quite easy to quantify in an economic value system. We can simply measure the direct economic benefits. However, intrinsic value is a bit *squishier* to use the technical term. Does removing a single tree affect the ascetics? What about single stand of trees? Are there ecological impacts from discontinuity in habitats that will affect the intrinsic value of adjecent remaining forested areas? How much is nature beauty worth to us?
+
+At this time, I would like to thank my family for reading these ramblings. I assume no one else will see them aside from a few of my students with the misfortune to click on the wrong page on our research website.
+
+As an aside, the raised fist image has a long history as a social symbol. Extent examples include a painting by Honor\'e Daumier from the 1848 French Revolution. On a visit to the Smithsonian Museum of African American History and Culture, I was struck by a group of young African American students posed by a statue commemorating the 1968 Olympics Black Power salute. On the topic of value, it is interesting to observe the shifting patterns and values of a symbol change over time as they are adapted by different groups.
