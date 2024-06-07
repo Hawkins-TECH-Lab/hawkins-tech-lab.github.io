@@ -9,14 +9,13 @@
 <link>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/blog.html</link>
 <atom:link href="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/blog.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.4.554</generator>
+<generator>quarto-1.3.361</generator>
 <lastBuildDate>Sun, 30 Jun 2024 05:00:00 GMT</lastBuildDate>
 <item>
   <title>Computing The Climate</title>
   <dc:creator>Jason Hawkins</dc:creator>
-  <link>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/06-30-2024/</link>
+  <link>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/06-30-2024/index.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -25,16 +24,15 @@
 
  ]]></description>
   <category>climate modeling</category>
-  <guid>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/06-30-2024/</guid>
+  <guid>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/06-30-2024/index.html</guid>
   <pubDate>Sun, 30 Jun 2024 05:00:00 GMT</pubDate>
   <media:content url="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/06-30-2024/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Emergy and States</title>
   <dc:creator>Jason Hawkins</dc:creator>
-  <link>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/06-15-2024/</link>
+  <link>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/06-15-2024/index.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -46,16 +44,15 @@
   <category>emergy</category>
   <category>state-state economics</category>
   <category>constraints on growth</category>
-  <guid>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/06-15-2024/</guid>
+  <guid>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/06-15-2024/index.html</guid>
   <pubDate>Sat, 15 Jun 2024 05:00:00 GMT</pubDate>
   <media:content url="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/06-15-2024/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Schumacher On Scale</title>
   <dc:creator>Jason Hawkins</dc:creator>
-  <link>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/06-10-2024/</link>
+  <link>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/06-10-2024/index.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -67,16 +64,40 @@
   <category>society</category>
   <category>scale</category>
   <category>buddhist economics</category>
-  <guid>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/06-10-2024/</guid>
+  <guid>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/06-10-2024/index.html</guid>
   <pubDate>Mon, 10 Jun 2024 05:00:00 GMT</pubDate>
   <media:content url="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/06-10-2024/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
-  <title>Schumacher On Development</title>
+  <title>Socialist Calculation Debate</title>
   <dc:creator>Jason Hawkins</dc:creator>
-  <link>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/05-30-2024/</link>
+  <link>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/06-06-2024/index.html</link>
   <description><![CDATA[ 
 
+
+
+<p>I once had a student call me a socialist for discussing equity in a transportation engineering course. While somewhat humourous and avoiding any tangential discussions on the topic of transportation equity (Cole’s notes: engineers <strong>definitely</strong> need to consider it), they were not wrong that my beliefs on many topics tend towards Democratic Socialism. What I would like to discuss today is Socialist Calculation Debate.</p>
+<p>The Socialist Calculation Debate was a debate among economists, beginning in the 1920s, in response to the rise of socialism in Eastern Europe. Von Mises and Hayek argued that socialism was not feasible because it lacked an appropriate means of economic valuation - the law of value. While often framed as a debate between capitalist and socialist economic systems, the debate included internal differences among socialist economists as to the use of markets and money.</p>
+<p>This debate interests me in the context of my work on the valuation of ecosystem services. I do not go so far as to say that markets have no value. Within the traditional economic market, price signals are an effective structural mechanism. The issue comes when we extend a system of values developed within the market economy to the wider environment. For a start, we are more than cogs in an economic machine. Thus, our systems of valuation must be more than those employed by the economic market. How to measure value beyond money is certainly a germane question. So how should we do it? I do not have a clear answer. I do not believe this is by definition a statement that we should not pursue answers! In fact, as argued by Thomas Kuhn, it is not always through incremental progress that we achieve innovation. Rather, we must seek out new ways of thinking and analysis. I increasingly find my lack of formal training in economics an asset in that I am unimpeded by a linear training on the subject, to the great consternation of all my economic committee members as a student (“but those aren’t the correct papers to reference!”).</p>
+<p>Value theory is the ethical study of how, why, and to what degree we values things. Ecological econmics distinguishes two types of value: donor-type and receiver-type value. We can think of these value types in terms of physical flow accounting. Donor-type value parallels the attribution of physical flows to their point of production (i.e., resource extraction). Receiver-type value parallels the attribution of physical flows to their points of consumption (i.e., households). Odum uses the term <em>emergy</em> to described the embodied energy required for provision of a good or service. Emergy is typically measured in sun energy equivalents - i.e., the sun energy required to produce a fuel, good, or human service. It provides a measure of the <em>quality</em> of energy with respect to their ability to support receiver-type value. As an alternative to monetary value, emergy has many appeals features for the engineering trained in thermodynamics. It does not introduce any artificial distortions of value induced by market fluctuations or rent seeking behaviour.</p>
+<p>We can also distinguish between <em>instrumental</em> and <em>intrinsic</em> value, as described by Plato in the Republic. An instrumentally valuable good is one that has value for its provisioning of other valued goods or services - i.e., what a transportation might call a <em>derived demand</em> good. Intrinsically valuable goods have value in their use. The two are not mutually exclusive. In environmental ethics, we can consider the instrumental value of resources for humans, such as the value of forests for their provision of timber used in dwellings. However, forests also have an intrinsic value in their direct provision of beauty. Environmental economics would seek to weigh the tradeoffs between these values - i.e., is the loss of the <em>intrinsic</em> beauty of a forest by cutting down a tree balanced by its <em>instrumental</em> value as an input to economic production. The issue that arises here is that instrumental value is quite easy to quantify in an economic value system. We can simply measure the direct economic benefits. However, intrinsic value is a bit <em>squishier</em> to use the technical term. Does removing a single tree affect the ascetics? What about single stand of trees? Are there ecological impacts from discontinuity in habitats that will affect the intrinsic value of adjecent remaining forested areas? How much is nature beauty worth to us?</p>
+<p>At this time, I would like to thank my family for reading these ramblings. I assume no one else will see them aside from a few of my students with the misfortune to click on the wrong page on our research website.</p>
+<p>As an aside, the raised fist image has a long history as a social symbol. Extent examples include a painting by Honor'e Daumier from the 1848 French Revolution. On a visit to the Smithsonian Museum of African American History and Culture, I was struck by a group of young African American students posed by a statue commemorating the 1968 Olympics Black Power salute. On the topic of value, it is interesting to observe the shifting patterns and values of a symbol change over time as they are adapted by different groups.</p>
+
+
+
+ ]]></description>
+  <category>socialist economics</category>
+  <category>value theory</category>
+  <guid>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/06-06-2024/index.html</guid>
+  <pubDate>Thu, 06 Jun 2024 05:00:00 GMT</pubDate>
+  <media:content url="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/06-06-2024/banner.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Schumacher On Development</title>
+  <dc:creator>Jason Hawkins</dc:creator>
+  <link>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/05-30-2024/index.html</link>
+  <description><![CDATA[ 
 
 
 
@@ -87,36 +108,15 @@
  ]]></description>
   <category>development</category>
   <category>intermediate technology</category>
-  <guid>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/05-30-2024/</guid>
+  <guid>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/05-30-2024/index.html</guid>
   <pubDate>Wed, 05 Jun 2024 05:00:00 GMT</pubDate>
   <media:content url="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/05-30-2024/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
-  <title>Socialist Calculation Debate</title>
-  <dc:creator>Jason Hawkins</dc:creator>
-  <link>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/06-05-2024/</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>https://en.wikipedia.org/wiki/Socialist_calculation_debate https://en.wikipedia.org/wiki/Value_theory</p>
-
-
-
- ]]></description>
-  <category>socialist economics</category>
-  <category>value theory</category>
-  <guid>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/06-05-2024/</guid>
-  <pubDate>Wed, 05 Jun 2024 05:00:00 GMT</pubDate>
-  <media:content url="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/06-05-2024/banner.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
   <title>Schumacher On Prediction</title>
   <dc:creator>Jason Hawkins</dc:creator>
-  <link>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/05-28-2024/</link>
+  <link>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/05-28-2024/index.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -165,16 +165,15 @@
   <category>prediction</category>
   <category>estimation</category>
   <category>semantics</category>
-  <guid>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/05-28-2024/</guid>
+  <guid>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/05-28-2024/index.html</guid>
   <pubDate>Tue, 28 May 2024 05:00:00 GMT</pubDate>
   <media:content url="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/05-28-2024/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Jevons Paradox</title>
   <dc:creator>Jason Hawkins</dc:creator>
-  <link>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/04-26-2024/</link>
+  <link>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/04-26-2024/index.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -182,14 +181,14 @@
 <p>Let us take a look at the Kuznets Curve in the context of Jevons Paradox. If we assume a steady state economy, then it may be the case that environmental impacts will decrease as a function of technological progress. By a steady state economy, we mean a constant stock of capital and fixed population.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/04-26-2024/jevons_1.svg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
+<p><img src="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/04-26-2024/jevons_1.svg" class="img-fluid figure-img" style="width:50.0%"></p>
 </figure>
 </div>
 <p>Of course, we do not exist in a steady state economy, global population continues to grow (rising from 6 billiong to 8 billion people in my own lifetime). While natural resources are a fixed stock (we will return to this topic on many occassions), our rate of resource consumption has not declined as a function of technological progress. Rather, we continue to consume increasing quantities of materials and energy, which represent the fundamental building blocks of human society. Another way to term a steady state economy is that its size is a non-stationary function of time. Stationarity will be a familiar term to those with a background in statistics or econometrics - refering to the lack of equilibrium about a fixed level of resource consumption in this case. With GDP encouraged to grow without limit, Jevons Paradox quickly comes to bear. Technological progress will get us only so far when faced with the tasks of overcoming a non-stationarity system.</p>
 <p>We can consider the problem from the perspective of aggregate environmental impact vs.&nbsp;marginal (unit) environmental impact. Jevons Paradox shows us that individuals will increase their environment impacts (vis-a-vis more consumption) in response to technological innovations that reduce the marginal cost, or material and energy requirements - i.e., increasing aggregate individual impacts. At the same time, additional individuals (i.e., population growth) compounds the impacts, even should these new individuals consume resources at a diminished rate.</p>
-<div class="quarto-figure quarto-figure-&quot;center">
+<div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/04-26-2024/jevons_2.svg" class="img-fluid quarto-figure quarto-figure-&quot;center figure-img" style="width:50.0%"></p>
+<p><img src="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/04-26-2024/jevons_2.svg" class="img-fluid figure-img" style="width:50.0%"></p>
 </figure>
 </div>
 <p>So what can be done? The first step is to recognize myopia in our collective perspective on resource consumption as engineers, economists, policy-makers, and inhabitants of this planet. Classical valuation methods cannot account for these impacts, at least as long as they exist within an epistemology founded in growth as a positive property of human society rather than as a normative value.</p>
@@ -200,16 +199,15 @@
  ]]></description>
   <category>environmental economics</category>
   <category>system dynamics</category>
-  <guid>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/04-26-2024/</guid>
+  <guid>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/04-26-2024/index.html</guid>
   <pubDate>Fri, 26 Apr 2024 05:00:00 GMT</pubDate>
   <media:content url="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/04-26-2024/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>The Four Horsemen of the Production Apocalypse</title>
   <dc:creator>Jason Hawkins</dc:creator>
-  <link>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/04-21-2024/</link>
+  <link>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/04-21-2024/index.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -220,7 +218,7 @@
 <p>As a final thought on the historical distinction between private and public travel modes. The marginal private automobile trip tends to add travel time for existing travellers through congestion that slows travel speed and increases its variability. In contrast, the marginal transit trip tends to improve service for existing travellers through reduced vehicle headways and the use of higher-order transit (i.e., trains rather than buses). The latter outcome is termed as an anti-congestion effect <span class="citation" data-cites="Mohring_1972">(Mohring 1972)</span>. The trend in SAV research is toward small, automobile-style, vehicles that may be shared or used alone. This shift adds shades of gray to the public-private dichotomy. Will shared mobility exhibit the congestion effect of fthe private automobile or the anti-congestion effect of transit? Importantly, in which contexts do these new forms of mobility tend to exhibit each of these effects (i.e., there is likely a spectrum of possible impacts depending on the application of technology, local built form, and transportation infrastructure conditions)?</p>
 <section id="references" class="level2">
 <h2 class="anchored" data-anchor-id="references">References</h2>
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-Becker_1965" class="csl-entry">
 Becker, Gary S. 1965. <span>“A Theory of the Allocation of Time.”</span> <em>The Economic Journal</em> 75 (299): 493. <a href="https://doi.org/10.2307/2228949">https://doi.org/10.2307/2228949</a>.
 </div>
@@ -256,16 +254,15 @@ Sieg, Holger. 2020. <span>“Voluntary Provision of Local Public Goods and Servi
  ]]></description>
   <category>transportation planning</category>
   <category>production theory</category>
-  <guid>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/04-21-2024/</guid>
+  <guid>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/04-21-2024/index.html</guid>
   <pubDate>Sun, 21 Apr 2024 05:00:00 GMT</pubDate>
   <media:content url="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/04-21-2024/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>William Vickrey and Transportation Economics</title>
   <dc:creator>Jason Hawkins</dc:creator>
-  <link>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/05-04-2018/</link>
+  <link>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/05-04-2018/index.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -288,16 +285,15 @@ Sieg, Holger. 2020. <span>“Voluntary Provision of Local Public Goods and Servi
  ]]></description>
   <category>economics</category>
   <category>Canadians</category>
-  <guid>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/05-04-2018/</guid>
+  <guid>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/05-04-2018/index.html</guid>
   <pubDate>Fri, 04 May 2018 05:00:00 GMT</pubDate>
   <media:content url="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/05-04-2018/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Our Trip to Toronto Through the USA</title>
   <dc:creator>Jason Hawkins</dc:creator>
-  <link>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/09-11-2017/</link>
+  <link>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/09-11-2017/index.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -315,16 +311,15 @@ Sieg, Holger. 2020. <span>“Voluntary Provision of Local Public Goods and Servi
  ]]></description>
   <category>travel</category>
   <category>infrastructure</category>
-  <guid>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/09-11-2017/</guid>
+  <guid>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/09-11-2017/index.html</guid>
   <pubDate>Mon, 11 Sep 2017 05:00:00 GMT</pubDate>
   <media:content url="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/09-11-2017/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>AV Deployment, Urban DNA, and Equity</title>
   <dc:creator>Jason Hawkins</dc:creator>
-  <link>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/07-03-2017/</link>
+  <link>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/07-03-2017/index.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -352,7 +347,7 @@ Sieg, Holger. 2020. <span>“Voluntary Provision of Local Public Goods and Servi
   <category>technology</category>
   <category>autonomous vehicles</category>
   <category>equity</category>
-  <guid>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/07-03-2017/</guid>
+  <guid>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/07-03-2017/index.html</guid>
   <pubDate>Mon, 03 Jul 2017 05:00:00 GMT</pubDate>
   <media:content url="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/07-03-2017/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
