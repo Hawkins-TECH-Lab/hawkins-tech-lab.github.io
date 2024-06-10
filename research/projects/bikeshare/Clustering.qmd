@@ -233,30 +233,28 @@ Cluster 2 (Frequent): These are the most frequent users of the system. They make
 Clsuter 3 (Frequent social): These are frequent users of the system. They are slightly more likely to make one-way and night trips than Cluster 2 users.
 
 ```{python}
-# def describe_by_group(grouped_df):
-# #   descriptions = []
-# #   for name, group in grouped_df:
-# #     descriptions.append(group.describe())
-#   descriptions = grouped_df.describe().stack().unstack('cluster').to_markdown()
-#   return descriptions
 
-# grouped_df = user_df.groupby('cluster')
-# descriptions = describe_by_group(grouped_df)
-
-
-def describe_by_group(grouped_df): 
-    descriptions = []
-    for name, group in grouped_df:
-        descriptions.append(group.describe()) 
-    return descriptions
-
+cluster_desc = {
+    0: "Local infrequency",
+    1: "Tourist",
+    2: "Frequent",
+    3: "Frequent social"
+}
 grouped_df = user_df.groupby('cluster')
-descriptions = describe_by_group(grouped_df)
 
-from IPython.display import display, Markdown
-for i in descriptions:
-    display(Markdown(i.to_markdown()))
-print("\n")
+# Generate descriptive statistics for each group and display
+for cluster, group in grouped_df:
+    group_desc = group.describe().drop(columns=['user_id', 'cluster'])
+    
+    # line break after each table
+    display(Markdown(""))
+
+    #Print Cluster Description txt
+    display(Markdown(f"#### Statistics for Cluster {cluster} ({cluster_desc[cluster]})"))
+    
+    # print the cluster description details
+    display(Markdown(group_desc.to_markdown()))
+
 ```
 
 
