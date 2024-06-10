@@ -3,7 +3,6 @@ title: "Bikeshare in Omaha"
 sidebar: Project
 section-divs: true
 echo: false
-
 ---
 ```{python}
 import pandas as pd
