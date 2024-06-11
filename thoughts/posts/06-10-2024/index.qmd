@@ -9,7 +9,7 @@ categories: [society, scale, buddhist economics]
 image: banner.jpg
 format: 
   html:
-    toc: false
+    toc: true
 ---
 
 "In the current vocabulary of condemnation there are few words as final and conclusive as the word 'uneconomic'" (SIB, p. 44). Thus states Schumacher in his work "Small is Beautiful" (1973). I believe this pattern still holds true, as does Schumacher's question as to the "meaning" produced by the methods of economics. Economics does not, and cannot, produce any other meaning aside from adequate profit. While such an assessment would be deemed incorrect by nearly all practicing economists - i.e., other forms of value can be translated into monetary terms, thus obviating the need for ethics, religion, and other forms of value generation. Social, aesthetic, moral, or political reasons need not apply. Robert F. Kennedy demonstrated agreement with the sentiment of Schumacher when, in an address to the University of Kansas on March 18, 1968, he stated "too much and for too long, we seemed to have surrendered personal excellence and community values in the mere accumulation of material things". Of course, if pressed on the matter, Kennedy might have demurred towards such a philosophy being a nice idea but impractical in the context of a Presidential administration.

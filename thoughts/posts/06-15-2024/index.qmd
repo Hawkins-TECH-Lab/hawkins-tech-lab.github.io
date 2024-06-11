@@ -9,7 +9,7 @@ categories: [emergy, state-state economics, constraints on growth]
 image: banner.jpg
 format: 
   html:
-    toc: true
+    toc: false
 ---
 
 https://en.wikipedia.org/wiki/Emergy

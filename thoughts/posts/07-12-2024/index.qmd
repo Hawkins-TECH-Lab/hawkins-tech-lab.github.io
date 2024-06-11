@@ -9,6 +9,6 @@ categories: [climate modeling, ]
 image: banner.jpg
 format: 
   html:
-    toc: true
+    toc: false
 ---
 

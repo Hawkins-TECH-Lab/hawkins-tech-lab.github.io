@@ -191,6 +191,8 @@ website:
               text: Omaha Bikeshare
             - href: research/projects/bikeshare/Lincoln.qmd
               text: Lincoln Bikeshare
+            - href: research/projects/bikeshare/Clustering.qmd
+              text: Bikeshare Clustering
     - id: Books
       style: "docked"
       search: true

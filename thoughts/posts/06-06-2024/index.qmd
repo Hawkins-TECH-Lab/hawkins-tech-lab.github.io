@@ -9,7 +9,7 @@ categories: [socialist economics, value theory]
 image: banner.jpg
 format: 
   html:
-    toc: false
+    toc: true
 ---
 
 I once had a student call me a socialist for discussing equity in a transportation engineering course. While somewhat humourous and avoiding any tangential discussions on the topic of transportation equity (Cole's notes: engineers **definitely** need to consider it), they were not wrong that my beliefs on many topics tend towards Democratic Socialism. What I would like to discuss today is Socialist Calculation Debate.
