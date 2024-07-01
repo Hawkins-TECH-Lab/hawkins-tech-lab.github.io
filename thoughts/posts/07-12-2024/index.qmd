@@ -1,14 +1,14 @@
-
 ---
-title: "Computing The Climate"
+title: "Schumacher On Development"
 description: ""
 author:
   - name: Jason Hawkins
-date: "2024-06-30"
-categories: [climate modeling, ]
+date: "2024-07-12"
+categories: [development, intermediate technology]
 image: banner.jpg
 format: 
   html:
     toc: false
 ---
 
+p. 173 of SIB
