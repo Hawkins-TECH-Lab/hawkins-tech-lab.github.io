@@ -10,33 +10,63 @@
 <atom:link href="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/blog.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.3.361</generator>
-<lastBuildDate>Sun, 30 Jun 2024 05:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 12 Jul 2024 05:00:00 GMT</lastBuildDate>
 <item>
-  <title>Computing The Climate</title>
+  <title>Schumacher On Development</title>
   <dc:creator>Jason Hawkins</dc:creator>
   <link>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/07-12-2024/index.html</link>
   <description><![CDATA[ 
 
 
 
+<p>p.&nbsp;173 of SIB</p>
+
+
+
+ ]]></description>
+  <category>development</category>
+  <category>intermediate technology</category>
+  <guid>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/07-12-2024/index.html</guid>
+  <pubDate>Fri, 12 Jul 2024 05:00:00 GMT</pubDate>
+  <media:content url="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/07-12-2024/banner.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Computing The Climate</title>
+  <dc:creator>Jason Hawkins</dc:creator>
+  <link>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/07-01-2024/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>Happy Canada Day!</p>
+<p>As a member of the <a href="https://zephyrtransport.org/">Zephyr Foundation</a>, I spend a fair bit of time thinking about transportation analysis and how to make it more open and transparent. At the same time, I am an academic who conducts computational research and thinks about how to do a better job of sharing data, code, and papers. On the paper front, I do an okay job. On the data and code… it’s a work in progress. A few years ago (Joe Castiglione tells me it was maybe 2015), there was a session at the Transportation Research Board (TRB) annual meeting on hurrican forecasting and how they collaborate on model development. The implication is that we as transportation modelers could follow a similar path to more collaborative and transparent model practices. My perspective on this question comes from experience in local government, consulting, and academia. I think there are two difference between hurricane and transportation demand forecasting that are relevant to this discussion (likely many more, but let’s focus on two avoid a classic Hawkins multi-dimensional ramble).</p>
+<p>The first difference is the spatial scope. Transportation demand models tend to be developed at the metropolitan or state scale. The reason this matters is that it has led to a competitive market among consulting firms. While a hurricane forecast model is essentially a natural monopoly - i.e., there is a large region affected and competing commercial models would not be feasible as only one contract would be awarded by a federal agency. Granted, there are competing research models for hurricans, which we do not tend to see in transportation where competition occurs among firms but across metropolitan areas (minimal comparison of models within a single region). Consider the excellent <a href="https://mitpress.mit.edu/9780262048101/forecasting-travel-in-urban-america/">history of the transportation forecasting field in the United States</a> by Konstantinos Chatzis. While including many prominent academics, it is predominantly a history of consultancy and commercial contracts rather than academic grants to develop general model systems (with the except of TRANSIMS, POLARIS, and a few other example) - note: while I love the POLARIS developers, it is still a largely commercial package in that model applications rely on grant dollars for development within a specific region and the codebase is not wholely available open access.</p>
+<p>The second difference is the politics of transportation. I am not an expert on hurricanes and disaster management, but I think we can be fairly confident politics has less influence on the location of hurricanes (at the risk of a digression - politics certainly has some indirect effect on the frequency and severity of hurricanes through insufficient action on anthropogenic climate change). Transportation investments are an extremely politic process, particuarly at the scale assessed by transportation demand models. These politics lead to distorted incentives, legal battles, and other messiness.</p>
+<p>Related to hurricane forecasting, climate models seek to forecast climatic conditions in response to technology and policy decisions, as well as economic and health impacts depending upon the particular model focus. Steve Easterbrook at the University of Toronto provides an excellent overview of this field in <a href="https://www.environment.utoronto.ca/people/directories/all-faculty/steve-easterbrook">Computing The Climate</a>. I’ve yet to shell out for the full book, but the Chapter 1, 2, and 9 are available online. The book is highly readable, including a nice history and summary of interviews with modeling teams from around the world. As stated by Steve: &gt; The question they were called upon to answer wasn’t whether the planet would warm in response to rising carbon dioxide emissions – by the late 1970s, that was no longer in dispute in the scientific community. The question was: how certain can we be about the numbers?</p>
+<p>Hey, this sounds a lot like the uncertainty movement in transportation demand modeling! We’re just 50 years late to the game. One impetus for these efforts to understand climate uncertainty was a report from the JASON group (a group of top physicist advisors to the US president on nuclear security matters. They were named for Jason and the Argonauts - I wasn’t part of the team, being born many years after its inception). National Academy of Science (NAS) panels were established and many discussions had as to how best to model climate systems and quantify uncertainty. While NAS has empaneled many committees on transportation issues, to my understand they have not had the same collectivizing effect on our field.</p>
+<p>One reason I like Steve’s book is that he is not a climate scientist. He is a computer scientist interested in how large teams of scientists, largely untrained in production grade software development practices, develop complex computer programs and manage quality control. This topic is generalizable and very useful to understand! Something I found interesting from the start was the MetOffice approach in the UK. Their climate model is built on the same code base as the weather model. The weather model must be run daily to provide forecasts to the UK government and public. As such, its code is constantly reviewed, optimized, and validated against observations. This software setup means the climate model code also exhibits a high level of consistency. The parallel I could draw to transportation is that we produce daily road condition reports, short-term forecasts at intersections, Waze routing recommendations, etc. However, these models are decentralized and variable. They are not a national forecast produced by one centralized agency. Within a metropolitan area, I could see a structure similar to that of the MetOffice being feasible. We have loads of new data and model providers - StreetLight, INRIX, Replica, etc. - which could be ingested into a short-term forecasting and analysis software framework. That same forecasting framework could be extended to provide long-range forecasts at greater spatial aggregation and with additional modules for auto ownership and other long-term decisions. It’s not a perfectly fleshed out idea, but it is something.</p>
+<p><strong>Charney Sensitivity</strong> - You’ll have to read Steve’s book to get the full history, but Jules Charney was an early climate modeler - as in was tasked by John von Neumann in 1948 to build a weather forecasting program. The concept of Charney Sensitivity is simple. Double the <img src="https://latex.codecogs.com/png.latex?CO_2"> in the atmosphere and see what happens a few decades in the future. Do models agree? The first issue we would face in transportation modeling is that not all models follow an evolutionary, path dependent, simulation approach. Many models forecast population, land use, economics, and transportation with separate and loosely coupled model systems. Furthermore, many of these models simply provide forecasts for a subset of future years (say 10, 25, 40 years into the future). It could be difficult to compare these models. One “elephant in the room” referenced above is that most models are developed by consultants. Backcasting to check the accuracy of a model or comparing your model against the competitor models may not be good for business. However, we can take a different perspective, as was done by Charney and his team when tasked with the problem of uncertainty quantification by US President Jimmy Carter in the 1970s. While each model may provide a single output that will vary as a function of slight differences in model formulation and setup, the combination of results provides an uncertainty band on the climate (transportation) future.</p>
 
 
 
  ]]></description>
   <category>climate modeling</category>
-  <guid>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/07-12-2024/index.html</guid>
-  <pubDate>Sun, 30 Jun 2024 05:00:00 GMT</pubDate>
-  <media:content url="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/07-12-2024/banner.jpg" medium="image" type="image/jpeg"/>
+  <guid>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/07-01-2024/index.html</guid>
+  <pubDate>Mon, 01 Jul 2024 05:00:00 GMT</pubDate>
+  <media:content url="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/07-01-2024/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Emergy and States</title>
   <dc:creator>Jason Hawkins</dc:creator>
-  <link>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/06-15-2024/index.html</link>
+  <link>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/06-24-2024/index.html</link>
   <description><![CDATA[ 
 
 
 
-<p>https://en.wikipedia.org/wiki/Emergy https://en.wikipedia.org/wiki/Steady-state_economy</p>
+<p>Howard T. Odum was an American ecologist and systems theorist. He developed the principles of emergy beginning in the 1950s in response to an inadequate representation of the <em>quality</em> variation among various forms of energy. Emergy is defined as the amount of energy consumed in direct and indirect transformations for the production of a product or service. Its standard unit is the emjoule, measured in a consistent form of energy (typically solar energy). Emergy is then a measure of the amount of solar energy required to produce a particular energy source.</p>
+<p>I found the concept a bit opaque based on the Wikipedia page. The International Association for the Advacement of Emergy provides a nice example that helped me understand the idea. Consider a log. The available energy in the log is the heat it can provided through the process of its combustion. Its emergy is measured as the required input energy through sunlight and transpiration to grow the tree, harvest the tree, and process that tree into a log (and other contributions for it to reach your home). We can think of emergy as an input measurement equivalent to the energy output we typically consider in analysis. The objective inherent in emergy is to provide a consistent comparison between the usefulness of different products or services, as well as their energy efficiency. For example, the energy in a log measured in Joules is not readily comparable to that embodied in human metabolism because they do not produce comparable outputs (heating in the case of a log and heat, movement, and various other outputs in the case of human metabolism). Emergy lets us consider the inputs in a common unit based on the required solar energy.</p>
+<p>A nice metric we can derive from emergy is <em>transformity</em>, measured as the remaining energy in the product compared with its input energy - measured in se/J. From the second law of thermodynamics, we know that available energy decreases with each transformation. However, the emergy at the start of the process will remain fixed. As a result, the transformity (se/J) of the remaining available energy tends to increase with each transformation - more emergy is required per unit of energy. This makes sense to me if we consider progressive steps down the line. For example, the emergy required for a unit of human metabolism will be a function of the conversion rate of food energy into human energy; food production will require some energy from fertilizers, water, transportation, etc.; each of these products will require some amount of energy from electricity, sunlight, etc.; and so on. A given quantity of energy produced via human metabolism will require a greater input of solar energy (emergy) than a similar quantity of energy for fertilizer, as there are energy loses along the intermediate steps and inputs to human metabolism that are separate from its fertilizer requirements.</p>
+<p>Another concept I’d like to write about today is the steady state economy. The idea here is that an economy can be defined that is constant in its population and capital stocks. I was reminded of this concept while reviewing a chapter of the Nebraska Climate Plan today. They discussed the idea of “sustainable growth”. By including the term “growth”, the discussion is already framed in a context of non-steady state sustainability. If we consider the IPAT equation (Impact = Population x Affluence x Technology), “sustainable growth” requires that technology play an inordinate role to ensure stable, or preferably declining impacts, because neither population nor affluence are held at steady state conditions. The growth mindset is unfortunately baked into many analyses. We see it in IEA/EIA forecasts - not just growing population but growth of the “good things” (renewables, electric vehicles, energy efficiency, etc.) into the future. The only variation is by how much these various quantities are assumed to grow. Even the paragon of capitalist economics, Adam Smith, believed national economies would reach stationary conditions. Herman Daly, a prominent ecological economists, argued for a steady state economy, based on natural resource flows, that would impose hard limits on resource use. This view differs from the classical view beginning with Smith, which believed that conditions would evolve without government intervention. While Daly’s approach seems restrictive and infeasible in a democratic society, I also believe it naive to assume that stationarity will naturally evolve as a function of standard market evolution. In my work, I am starting to examining these views from a microeconomic perspective through econometric model estimation. While not a perfect solution to the forecasting problem inherent in the discussion, this approach does allow us to operationalize various steady state mechanisms as simulations based upon empirical data and structural behavioural assumptions.</p>
 
 
 
@@ -44,9 +74,9 @@
   <category>emergy</category>
   <category>state-state economics</category>
   <category>constraints on growth</category>
-  <guid>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/06-15-2024/index.html</guid>
-  <pubDate>Sat, 15 Jun 2024 05:00:00 GMT</pubDate>
-  <media:content url="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/06-15-2024/banner.jpg" medium="image" type="image/jpeg"/>
+  <guid>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/06-24-2024/index.html</guid>
+  <pubDate>Mon, 24 Jun 2024 05:00:00 GMT</pubDate>
+  <media:content url="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/06-24-2024/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Schumacher On Scale</title>
@@ -95,25 +125,6 @@
   <guid>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/06-06-2024/index.html</guid>
   <pubDate>Thu, 06 Jun 2024 05:00:00 GMT</pubDate>
   <media:content url="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/06-06-2024/banner.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>Schumacher On Development</title>
-  <dc:creator>Jason Hawkins</dc:creator>
-  <link>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/06-30-2024/index.html</link>
-  <description><![CDATA[ 
-
-
-
-<p>p.&nbsp;173 of SIB</p>
-
-
-
- ]]></description>
-  <category>development</category>
-  <category>intermediate technology</category>
-  <guid>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/06-30-2024/index.html</guid>
-  <pubDate>Wed, 05 Jun 2024 05:00:00 GMT</pubDate>
-  <media:content url="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/06-30-2024/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Schumacher On Prediction</title>
