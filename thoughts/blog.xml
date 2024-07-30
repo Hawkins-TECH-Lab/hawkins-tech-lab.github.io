@@ -6,15 +6,38 @@
       version="2.0">
 <channel>
 <title>Hawkinslab</title>
-<link>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/blog.html</link>
-<atom:link href="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/blog.xml" rel="self" type="application/rss+xml"/>
+<link>https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/blog.html</link>
+<atom:link href="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/blog.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.3.361</generator>
-<lastBuildDate>Fri, 12 Jul 2024 05:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 30 Jul 2024 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>Travel Behaviour as Scientific Art</title>
+  <dc:creator>Jason Hawkins</dc:creator>
+  <link>https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/07-30-2024/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>When I was a child, my parents would read poetry to me. Statistically speaking, I don’t know the percent of engineering professors with this particular life experience, but I would hazard to guess it is small. One of my favourite poems was Robert Frost’s “The Road Not Taken”. The message I got from it was to pursue the path not taken, which I’d like to think I have taken forward in my life. I recently read Thomas Kuhn’s “The Structure of Scientific Revolutions”, one of those books that people like to say they read to sound intellectual but only skim a few pages then read the Wikipedia page - I read about 80% before skimming.</p>
+<p>One of the key insights by Kuhn is that science differs from other fields in its linear treatment of innovation. That is, a scientific field reaches a divergence in the yellow wood and takes a single path. Kuhn characterizes the evolution of science in terms of general science and paradigm shifts. General science is the drudgery of research to make incremental advancements. Paradigm shifts are rare but move a field in a new direction. The key difference from other fields, at least according to Kuhn, is that the shift means a releasing of past ideas. After Einstein developed general relativity, Newtonian gravitation was deemed incomplete and a previous paradigm. While there may be a certain amount of competition among theories at a given time, there will ultimately be a winner.</p>
+<p>I think Kuhn is making an interesting insight, but I would also argue it’s largely a feature of fundamental physical sciences. To clarify his point, we can consider visual art. Cubism and Art Deco developed during the same period, but one did not subsume the other after vigorous discussion among artists. In art, multiple schools of thought can exist without raising questions of consistency. There are certainly debates about the merits of style and individuals are free to express their opinion about a particular piece of art, but revolution does not invalidate the continued pursuit of extent styles.</p>
+<p>In my own field of travel behaviour, we often talk about modeling human behaviour as a mix of science and art. I think this rings true in the Kuhnian sense that parallel theories or approaches can coexist without being incongruent. When two roads diverge in the woods of behaviour, there is merit to pursuing both paths in order to get a fuller picture of behaviour. To come full circle, I recently read “Cosmic Wonder” by the young Canadian astronomer (from Victoria, BC - yes, my parents got me a signed copy) Nathan Hellner-Mestelman. It brought me back to my high school days reading pop science cosmology by Brian Greene and others. While I think Kuhn made some deep insights, I think physical sciences can also overstate its knowledge of the universe. They should also feel the freedom to pursue diverse paths, even if it diverges from the conventional wisdom and never leads to a paradigm shift. Of course, questions of consistency and equilibrium of thought (i.e., you cannot build on a scattered foundation) are important. We just need to not take ourselves too seriously as scientists and recognize we are all really artists - even if our fourth grade teacher told us we were no good at art.</p>
+
+
+
+ ]]></description>
+  <category>philosophy of science</category>
+  <category>metascience</category>
+  <category>roads in woods</category>
+  <guid>https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/07-30-2024/index.html</guid>
+  <pubDate>Tue, 30 Jul 2024 05:00:00 GMT</pubDate>
+  <media:content url="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/07-30-2024/banner.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Schumacher On Development</title>
   <dc:creator>Jason Hawkins</dc:creator>
-  <link>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/07-12-2024/index.html</link>
+  <link>https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/07-12-2024/index.html</link>
   <description><![CDATA[ 
 
 
@@ -26,14 +49,14 @@
  ]]></description>
   <category>development</category>
   <category>intermediate technology</category>
-  <guid>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/07-12-2024/index.html</guid>
+  <guid>https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/07-12-2024/index.html</guid>
   <pubDate>Fri, 12 Jul 2024 05:00:00 GMT</pubDate>
-  <media:content url="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/07-12-2024/banner.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/07-12-2024/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Computing The Climate</title>
   <dc:creator>Jason Hawkins</dc:creator>
-  <link>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/07-01-2024/index.html</link>
+  <link>https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/07-01-2024/index.html</link>
   <description><![CDATA[ 
 
 
@@ -51,14 +74,14 @@
 
  ]]></description>
   <category>climate modeling</category>
-  <guid>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/07-01-2024/index.html</guid>
+  <guid>https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/07-01-2024/index.html</guid>
   <pubDate>Mon, 01 Jul 2024 05:00:00 GMT</pubDate>
-  <media:content url="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/07-01-2024/banner.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/07-01-2024/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Emergy and States</title>
   <dc:creator>Jason Hawkins</dc:creator>
-  <link>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/06-24-2024/index.html</link>
+  <link>https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/06-24-2024/index.html</link>
   <description><![CDATA[ 
 
 
@@ -74,14 +97,14 @@
   <category>emergy</category>
   <category>state-state economics</category>
   <category>constraints on growth</category>
-  <guid>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/06-24-2024/index.html</guid>
+  <guid>https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/06-24-2024/index.html</guid>
   <pubDate>Mon, 24 Jun 2024 05:00:00 GMT</pubDate>
-  <media:content url="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/06-24-2024/banner.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/06-24-2024/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Schumacher On Scale</title>
   <dc:creator>Jason Hawkins</dc:creator>
-  <link>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/06-10-2024/index.html</link>
+  <link>https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/06-10-2024/index.html</link>
   <description><![CDATA[ 
 
 
@@ -97,14 +120,14 @@
   <category>society</category>
   <category>scale</category>
   <category>buddhist economics</category>
-  <guid>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/06-10-2024/index.html</guid>
+  <guid>https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/06-10-2024/index.html</guid>
   <pubDate>Mon, 10 Jun 2024 05:00:00 GMT</pubDate>
-  <media:content url="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/06-10-2024/banner.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/06-10-2024/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Socialist Calculation Debate</title>
   <dc:creator>Jason Hawkins</dc:creator>
-  <link>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/06-06-2024/index.html</link>
+  <link>https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/06-06-2024/index.html</link>
   <description><![CDATA[ 
 
 
@@ -122,14 +145,14 @@
  ]]></description>
   <category>socialist economics</category>
   <category>value theory</category>
-  <guid>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/06-06-2024/index.html</guid>
+  <guid>https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/06-06-2024/index.html</guid>
   <pubDate>Thu, 06 Jun 2024 05:00:00 GMT</pubDate>
-  <media:content url="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/06-06-2024/banner.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/06-06-2024/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Schumacher On Prediction</title>
   <dc:creator>Jason Hawkins</dc:creator>
-  <link>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/05-28-2024/index.html</link>
+  <link>https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/05-28-2024/index.html</link>
   <description><![CDATA[ 
 
 
@@ -179,14 +202,14 @@
   <category>prediction</category>
   <category>estimation</category>
   <category>semantics</category>
-  <guid>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/05-28-2024/index.html</guid>
+  <guid>https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/05-28-2024/index.html</guid>
   <pubDate>Tue, 28 May 2024 05:00:00 GMT</pubDate>
-  <media:content url="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/05-28-2024/banner.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/05-28-2024/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Jevons Paradox</title>
   <dc:creator>Jason Hawkins</dc:creator>
-  <link>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/04-26-2024/index.html</link>
+  <link>https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/04-26-2024/index.html</link>
   <description><![CDATA[ 
 
 
@@ -195,14 +218,14 @@
 <p>Let us take a look at the Kuznets Curve in the context of Jevons Paradox. If we assume a steady state economy, then it may be the case that environmental impacts will decrease as a function of technological progress. By a steady state economy, we mean a constant stock of capital and fixed population.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/04-26-2024/jevons_1.svg" class="img-fluid figure-img" style="width:50.0%"></p>
+<p><img src="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/04-26-2024/jevons_1.svg" class="img-fluid figure-img" style="width:50.0%"></p>
 </figure>
 </div>
 <p>Of course, we do not exist in a steady state economy, global population continues to grow (rising from 6 billiong to 8 billion people in my own lifetime). While natural resources are a fixed stock (we will return to this topic on many occassions), our rate of resource consumption has not declined as a function of technological progress. Rather, we continue to consume increasing quantities of materials and energy, which represent the fundamental building blocks of human society. Another way to term a steady state economy is that its size is a non-stationary function of time. Stationarity will be a familiar term to those with a background in statistics or econometrics - refering to the lack of equilibrium about a fixed level of resource consumption in this case. With GDP encouraged to grow without limit, Jevons Paradox quickly comes to bear. Technological progress will get us only so far when faced with the tasks of overcoming a non-stationarity system.</p>
 <p>We can consider the problem from the perspective of aggregate environmental impact vs.&nbsp;marginal (unit) environmental impact. Jevons Paradox shows us that individuals will increase their environment impacts (vis-a-vis more consumption) in response to technological innovations that reduce the marginal cost, or material and energy requirements - i.e., increasing aggregate individual impacts. At the same time, additional individuals (i.e., population growth) compounds the impacts, even should these new individuals consume resources at a diminished rate.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/04-26-2024/jevons_2.svg" class="img-fluid figure-img" style="width:50.0%"></p>
+<p><img src="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/04-26-2024/jevons_2.svg" class="img-fluid figure-img" style="width:50.0%"></p>
 </figure>
 </div>
 <p>So what can be done? The first step is to recognize myopia in our collective perspective on resource consumption as engineers, economists, policy-makers, and inhabitants of this planet. Classical valuation methods cannot account for these impacts, at least as long as they exist within an epistemology founded in growth as a positive property of human society rather than as a normative value.</p>
@@ -213,14 +236,14 @@
  ]]></description>
   <category>environmental economics</category>
   <category>system dynamics</category>
-  <guid>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/04-26-2024/index.html</guid>
+  <guid>https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/04-26-2024/index.html</guid>
   <pubDate>Fri, 26 Apr 2024 05:00:00 GMT</pubDate>
-  <media:content url="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/04-26-2024/banner.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/04-26-2024/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>The Four Horsemen of the Production Apocalypse</title>
   <dc:creator>Jason Hawkins</dc:creator>
-  <link>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/04-21-2024/index.html</link>
+  <link>https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/04-21-2024/index.html</link>
   <description><![CDATA[ 
 
 
@@ -268,14 +291,14 @@ Sieg, Holger. 2020. <span>“Voluntary Provision of Local Public Goods and Servi
  ]]></description>
   <category>transportation planning</category>
   <category>production theory</category>
-  <guid>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/04-21-2024/index.html</guid>
+  <guid>https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/04-21-2024/index.html</guid>
   <pubDate>Sun, 21 Apr 2024 05:00:00 GMT</pubDate>
-  <media:content url="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/04-21-2024/banner.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/04-21-2024/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>William Vickrey and Transportation Economics</title>
   <dc:creator>Jason Hawkins</dc:creator>
-  <link>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/05-04-2018/index.html</link>
+  <link>https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/05-04-2018/index.html</link>
   <description><![CDATA[ 
 
 
@@ -299,14 +322,14 @@ Sieg, Holger. 2020. <span>“Voluntary Provision of Local Public Goods and Servi
  ]]></description>
   <category>economics</category>
   <category>Canadians</category>
-  <guid>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/05-04-2018/index.html</guid>
+  <guid>https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/05-04-2018/index.html</guid>
   <pubDate>Fri, 04 May 2018 05:00:00 GMT</pubDate>
-  <media:content url="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/05-04-2018/banner.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/05-04-2018/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Our Trip to Toronto Through the USA</title>
   <dc:creator>Jason Hawkins</dc:creator>
-  <link>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/09-11-2017/index.html</link>
+  <link>https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/09-11-2017/index.html</link>
   <description><![CDATA[ 
 
 
@@ -314,10 +337,10 @@ Sieg, Holger. 2020. <span>“Voluntary Provision of Local Public Goods and Servi
 <p>Written after we crossed the country for my Ph.D.&nbsp;in 2017. I haven’t returned to Duluth, MN yet…</p>
 <p>We just completed an exhausting 1 week tour of the northern states: North Dakota, Minnesota, Wisconsin, and Michigan. One of the major take aways for both Heather and myself was the various infrastructure we traversed in the course of our travels. I would like to discuss a bit of this, with some accomonying amateur photography.</p>
 <ol type="1">
-<li>This was the best case of a roller joint on a steel frame structure I have ever seen. It bring back mixed feelings about days in Structure Engineering courses during my undergraduage degree. <img src="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/09-11-2017/DSC_0891.JPG" class="img-fluid" alt="Grand Forks, ND Bridge"></li>
-<li>This was a mediocre brewery, but a great spot in Grand Forks, ND. It is situated adjacent to a major rail corridor and take full advantange. There are clear views of the trains rolling into town and by the brewery thanks to large windows looking out onto the street and alley. It was an excellent example of linking the present use of an older structure with its surrounding environment and historical industrial roots. <img src="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/09-11-2017/img/DSC_0897.JPG" class="img-fluid" alt="Grand Forks, ND Brewery"></li>
-<li>We drove into Duluth, MN with very little knowledge of its layout and no plans as to what to visit. This is I35 passing through downtown. We pulled off the highway at a downtown exit and planned to walk somewhere for lunch. This rapidly became more of a challenge than expected as it turned out the downtown is largely commercial and wayfinding signage proved less than helpful. The interstate acts to separate the downtown from the lakeshore. It is unclear from this side of the interstate whether there are additional services on the lakeshore side of the roadway and it is clearly prohibitive to pedestrians. We were able to find a pedestrian overpass to the lakeshore, which led to a quaint lakeside retail area. We were able to find an excellent brewery (sense a pattern) called Canal Park Brewing Company. I noticed a similar patttern of the commercial centre being separated from the tourist-focused lakeshore upon arrival in Toronto. This is a model reminiscent of the days of Robert Moses in New York, with his focus on placing large-scale transportation facilities along prime waterfront real estate. <img src="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/09-11-2017/DSC_0946.JPG" class="img-fluid" alt="Duluth Interstate"></li>
-<li>We were unable to ride the train, but it gives some incentive to return to the Duluth, MN area. It promises excellent views of the Lake Superior shore and ends at Two Harbors, MN. It feels like a disservice to my profession to miss out on an historical train ride. <img src="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/09-11-2017/DSC_0950.JPG" class="img-fluid" alt="Duluth Train"></li>
+<li>This was the best case of a roller joint on a steel frame structure I have ever seen. It bring back mixed feelings about days in Structure Engineering courses during my undergraduage degree. <img src="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/09-11-2017/DSC_0891.JPG" class="img-fluid" alt="Grand Forks, ND Bridge"></li>
+<li>This was a mediocre brewery, but a great spot in Grand Forks, ND. It is situated adjacent to a major rail corridor and take full advantange. There are clear views of the trains rolling into town and by the brewery thanks to large windows looking out onto the street and alley. It was an excellent example of linking the present use of an older structure with its surrounding environment and historical industrial roots. <img src="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/09-11-2017/img/DSC_0897.JPG" class="img-fluid" alt="Grand Forks, ND Brewery"></li>
+<li>We drove into Duluth, MN with very little knowledge of its layout and no plans as to what to visit. This is I35 passing through downtown. We pulled off the highway at a downtown exit and planned to walk somewhere for lunch. This rapidly became more of a challenge than expected as it turned out the downtown is largely commercial and wayfinding signage proved less than helpful. The interstate acts to separate the downtown from the lakeshore. It is unclear from this side of the interstate whether there are additional services on the lakeshore side of the roadway and it is clearly prohibitive to pedestrians. We were able to find a pedestrian overpass to the lakeshore, which led to a quaint lakeside retail area. We were able to find an excellent brewery (sense a pattern) called Canal Park Brewing Company. I noticed a similar patttern of the commercial centre being separated from the tourist-focused lakeshore upon arrival in Toronto. This is a model reminiscent of the days of Robert Moses in New York, with his focus on placing large-scale transportation facilities along prime waterfront real estate. <img src="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/09-11-2017/DSC_0946.JPG" class="img-fluid" alt="Duluth Interstate"></li>
+<li>We were unable to ride the train, but it gives some incentive to return to the Duluth, MN area. It promises excellent views of the Lake Superior shore and ends at Two Harbors, MN. It feels like a disservice to my profession to miss out on an historical train ride. <img src="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/09-11-2017/DSC_0950.JPG" class="img-fluid" alt="Duluth Train"></li>
 </ol>
 
 
@@ -325,14 +348,14 @@ Sieg, Holger. 2020. <span>“Voluntary Provision of Local Public Goods and Servi
  ]]></description>
   <category>travel</category>
   <category>infrastructure</category>
-  <guid>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/09-11-2017/index.html</guid>
+  <guid>https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/09-11-2017/index.html</guid>
   <pubDate>Mon, 11 Sep 2017 05:00:00 GMT</pubDate>
-  <media:content url="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/09-11-2017/banner.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/09-11-2017/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>AV Deployment, Urban DNA, and Equity</title>
   <dc:creator>Jason Hawkins</dc:creator>
-  <link>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/07-03-2017/index.html</link>
+  <link>https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/07-03-2017/index.html</link>
   <description><![CDATA[ 
 
 
@@ -361,9 +384,9 @@ Sieg, Holger. 2020. <span>“Voluntary Provision of Local Public Goods and Servi
   <category>technology</category>
   <category>autonomous vehicles</category>
   <category>equity</category>
-  <guid>https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/07-03-2017/index.html</guid>
+  <guid>https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/07-03-2017/index.html</guid>
   <pubDate>Mon, 03 Jul 2017 05:00:00 GMT</pubDate>
-  <media:content url="https://UNL-Hawkins-Lab.github.io/Hawkinslab/thoughts/posts/07-03-2017/banner.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/07-03-2017/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
