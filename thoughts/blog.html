@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.361">
+<meta name="generator" content="quarto-1.5.56">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Hawkinslab - Blog</title>
+<title>Blog – Hawkinslab</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -47,7 +47,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -56,6 +62,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -91,90 +98,117 @@ ul.task-list li input[type="checkbox"] {
   })
   </script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
 <link rel="stylesheet" href="../styles.css">
-<link rel="alternate" type="application/rss+xml" title="Hawkinslab" href="blog.xml"></head>
+<link rel="alternate" type="application/rss+xml" title="Hawkinslab" href="blog.xml" data-external="1"></head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Hawkinslab</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html" rel="" target="">
- <span class="menu-text">Home</span></a>
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-research" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-research" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Research</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-research">    
         <li>
-    <a class="dropdown-item" href="../research/projects/projects.html" rel="" target="">
+    <a class="dropdown-item" href="../research/projects/projects.html">
  <span class="dropdown-text">Projects</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../research/team/researchTeam.html" rel="" target="">
+    <a class="dropdown-item" href="../research/team/researchTeam.html">
  <span class="dropdown-text">Team</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../research/publication/publication.html" rel="" target="">
+    <a class="dropdown-item" href="../research/publication/publication.html">
  <span class="dropdown-text">Publications</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-teaching" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-teaching" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Teaching</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-teaching">    
         <li>
-    <a class="dropdown-item" href="../teaching/CIVE461/index.html" rel="" target="">
+    <a class="dropdown-item" href="../teaching/CIVE461/index.html">
  <span class="dropdown-text">CIVE461/861</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../teaching/CIVE864/index.qmd" rel="" target="">
+    <a class="dropdown-item" href="../teaching/CIVE864/index.qmd">
  <span class="dropdown-text">CIVE864</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../teaching/Guest Lectures/CIVE990T.html" rel="" target="">
+    <a class="dropdown-item" href="../teaching/Guest Lectures/CIVE990T.html">
  <span class="dropdown-text">CIVE990T</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-thoughts" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-thoughts" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Thoughts</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-thoughts">    
         <li>
-    <a class="dropdown-item" href="../thoughts/books.html" rel="" target="">
+    <a class="dropdown-item" href="../thoughts/books.html">
  <span class="dropdown-text">Books</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../thoughts/blog.html" rel="" target="">
+    <a class="dropdown-item" href="../thoughts/blog.html">
  <span class="dropdown-text">Blog</span></a>
   </li>  
     </ul>
   </li>
 </ul>
-            <div class="quarto-navbar-tools ms-auto">
-</div>
           </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -195,7 +229,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-body">
 
     
   
@@ -203,7 +237,9 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
+
 
 <div class="column-page">
 
@@ -214,19 +250,19 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="philosophy of science,metascience,roads in woods" data-listing-date-sort="1722315600000" data-listing-file-modified-sort="1722348437242" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="0" data-categories="philosophy of science,metascience,roads in woods" data-listing-date-sort="1722319200000" data-listing-file-modified-sort="1724965107369" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="548">
 <div class="thumbnail">
-<p><a href="../thoughts/posts/07-30-2024/index.html"> <img src="../thoughts/posts/07-30-2024/banner.jpg" class="thumbnail-image"> </a></p>
+<p><a href="../thoughts/posts/07-30-2024/index.html" class="no-external"></a></p><a href="../thoughts/posts/07-30-2024/index.html" class="no-external">
+<p><img loading="lazy" src="../thoughts/posts/07-30-2024/banner.jpg" class="thumbnail-image"></p>
+</a><p><a href="../thoughts/posts/07-30-2024/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../thoughts/posts/07-30-2024/index.html">
 <h3 class="no-anchor listing-title">
-Travel Behaviour as Scientific Art
+<a href="../thoughts/posts/07-30-2024/index.html" class="no-external">Travel Behaviour as Scientific Art</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../thoughts/posts/07-30-2024/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('philosophy of science'); return false;">
 philosophy of science
@@ -238,14 +274,12 @@ metascience
 roads in woods
 </div>
 </div>
-<a href="../thoughts/posts/07-30-2024/index.html">
 <div class="listing-description">
-<p>Reflections on Kuhn</p>
+<a href="../thoughts/posts/07-30-2024/index.html" class="no-external">Reflections on Kuhn</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../thoughts/posts/07-30-2024/index.html">
+<a href="../thoughts/posts/07-30-2024/index.html" class="no-external">
 <div class="listing-date">
 Jul 30, 2024
 </div>
@@ -255,19 +289,19 @@ Jason Hawkins
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="development,intermediate technology" data-listing-date-sort="1720760400000" data-listing-file-modified-sort="1719263564506" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="1" data-categories="development,intermediate technology" data-listing-date-sort="1720764000000" data-listing-file-modified-sort="1724965107369" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
 <div class="thumbnail">
-<p><a href="../thoughts/posts/07-12-2024/index.html"> <img src="../thoughts/posts/07-12-2024/banner.jpg" class="thumbnail-image"> </a></p>
+<p><a href="../thoughts/posts/07-12-2024/index.html" class="no-external"></a></p><a href="../thoughts/posts/07-12-2024/index.html" class="no-external">
+<p><img loading="lazy" src="../thoughts/posts/07-12-2024/banner.jpg" class="thumbnail-image"></p>
+</a><p><a href="../thoughts/posts/07-12-2024/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../thoughts/posts/07-12-2024/index.html">
 <h3 class="no-anchor listing-title">
-Schumacher On Development
+<a href="../thoughts/posts/07-12-2024/index.html" class="no-external">Schumacher On Development</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../thoughts/posts/07-12-2024/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('development'); return false;">
 development
@@ -276,14 +310,12 @@ development
 intermediate technology
 </div>
 </div>
-<a href="../thoughts/posts/07-12-2024/index.html">
 <div class="listing-description">
-p.&nbsp;173 of SIB
+<a href="../thoughts/posts/07-12-2024/index.html" class="no-external">p.&nbsp;173 of SIB</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../thoughts/posts/07-12-2024/index.html">
+<a href="../thoughts/posts/07-12-2024/index.html" class="no-external">
 <div class="listing-date">
 Jul 12, 2024
 </div>
@@ -293,32 +325,30 @@ Jason Hawkins
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="climate modeling" data-listing-date-sort="1719810000000" data-listing-file-modified-sort="1719861849317" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
+<div class="quarto-post image-right" data-index="2" data-categories="climate modeling" data-listing-date-sort="1719813600000" data-listing-file-modified-sort="1724965107369" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1193">
 <div class="thumbnail">
-<p><a href="../thoughts/posts/07-01-2024/index.html"> <img src="../thoughts/posts/07-01-2024/banner.jpg" class="thumbnail-image"> </a></p>
+<p><a href="../thoughts/posts/07-01-2024/index.html" class="no-external"></a></p><a href="../thoughts/posts/07-01-2024/index.html" class="no-external">
+<p><img loading="lazy" src="../thoughts/posts/07-01-2024/banner.jpg" class="thumbnail-image"></p>
+</a><p><a href="../thoughts/posts/07-01-2024/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../thoughts/posts/07-01-2024/index.html">
 <h3 class="no-anchor listing-title">
-Computing The Climate
+<a href="../thoughts/posts/07-01-2024/index.html" class="no-external">Computing The Climate</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../thoughts/posts/07-01-2024/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('climate modeling'); return false;">
 climate modeling
 </div>
 </div>
-<a href="../thoughts/posts/07-01-2024/index.html">
 <div class="listing-description">
-<p>and travel</p>
+<a href="../thoughts/posts/07-01-2024/index.html" class="no-external">and travel</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../thoughts/posts/07-01-2024/index.html">
+<a href="../thoughts/posts/07-01-2024/index.html" class="no-external">
 <div class="listing-date">
 Jul 1, 2024
 </div>
@@ -328,19 +358,19 @@ Jason Hawkins
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="emergy,state-state economics,constraints on growth" data-listing-date-sort="1719205200000" data-listing-file-modified-sort="1719266382194" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
+<div class="quarto-post image-right" data-index="3" data-categories="emergy,state-state economics,constraints on growth" data-listing-date-sort="1719208800000" data-listing-file-modified-sort="1724965107369" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="778">
 <div class="thumbnail">
-<p><a href="../thoughts/posts/06-24-2024/index.html"> <img src="../thoughts/posts/06-24-2024/banner.jpg" class="thumbnail-image"> </a></p>
+<p><a href="../thoughts/posts/06-24-2024/index.html" class="no-external"></a></p><a href="../thoughts/posts/06-24-2024/index.html" class="no-external">
+<p><img loading="lazy" src="../thoughts/posts/06-24-2024/banner.jpg" class="thumbnail-image"></p>
+</a><p><a href="../thoughts/posts/06-24-2024/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../thoughts/posts/06-24-2024/index.html">
 <h3 class="no-anchor listing-title">
-Emergy and States
+<a href="../thoughts/posts/06-24-2024/index.html" class="no-external">Emergy and States</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../thoughts/posts/06-24-2024/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('emergy'); return false;">
 emergy
@@ -352,14 +382,12 @@ state-state economics
 constraints on growth
 </div>
 </div>
-<a href="../thoughts/posts/06-24-2024/index.html">
 <div class="listing-description">
-<p>Energy, entropy, enthalpy, emergy, others?</p>
+<a href="../thoughts/posts/06-24-2024/index.html" class="no-external">Energy, entropy, enthalpy, emergy, others?</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../thoughts/posts/06-24-2024/index.html">
+<a href="../thoughts/posts/06-24-2024/index.html" class="no-external">
 <div class="listing-date">
 Jun 24, 2024
 </div>
@@ -369,19 +397,19 @@ Jason Hawkins
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="society,scale,buddhist economics" data-listing-date-sort="1717995600000" data-listing-file-modified-sort="1718114565575" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
+<div class="quarto-post image-right" data-index="4" data-categories="society,scale,buddhist economics" data-listing-date-sort="1717999200000" data-listing-file-modified-sort="1724965107369" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="838">
 <div class="thumbnail">
-<p><a href="../thoughts/posts/06-10-2024/index.html"> <img src="../thoughts/posts/06-10-2024/banner.jpg" class="thumbnail-image"> </a></p>
+<p><a href="../thoughts/posts/06-10-2024/index.html" class="no-external"></a></p><a href="../thoughts/posts/06-10-2024/index.html" class="no-external">
+<p><img loading="lazy" src="../thoughts/posts/06-10-2024/banner.jpg" class="thumbnail-image"></p>
+</a><p><a href="../thoughts/posts/06-10-2024/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../thoughts/posts/06-10-2024/index.html">
 <h3 class="no-anchor listing-title">
-Schumacher On Scale
+<a href="../thoughts/posts/06-10-2024/index.html" class="no-external">Schumacher On Scale</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../thoughts/posts/06-10-2024/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('society'); return false;">
 society
@@ -393,14 +421,12 @@ scale
 buddhist economics
 </div>
 </div>
-<a href="../thoughts/posts/06-10-2024/index.html">
 <div class="listing-description">
-“In the current vocabulary of condemnation there are few words as final and conclusive as the word ‘uneconomic’” (SIB, p.&nbsp;44). Thus states Schumacher in his work “Small is…
+<a href="../thoughts/posts/06-10-2024/index.html" class="no-external">“In the current vocabulary of condemnation there are few words as final and conclusive as the word ‘uneconomic’” (SIB, p.&nbsp;44). Thus states Schumacher in his work “Small is…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../thoughts/posts/06-10-2024/index.html">
+<a href="../thoughts/posts/06-10-2024/index.html" class="no-external">
 <div class="listing-date">
 Jun 10, 2024
 </div>
@@ -410,19 +436,19 @@ Jason Hawkins
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="socialist economics,value theory" data-listing-date-sort="1717650000000" data-listing-file-modified-sort="1718114573220" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
+<div class="quarto-post image-right" data-index="5" data-categories="socialist economics,value theory" data-listing-date-sort="1717653600000" data-listing-file-modified-sort="1724965107369" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="849">
 <div class="thumbnail">
-<p><a href="../thoughts/posts/06-06-2024/index.html"> <img src="../thoughts/posts/06-06-2024/banner.jpg" class="thumbnail-image"> </a></p>
+<p><a href="../thoughts/posts/06-06-2024/index.html" class="no-external"></a></p><a href="../thoughts/posts/06-06-2024/index.html" class="no-external">
+<p><img loading="lazy" src="../thoughts/posts/06-06-2024/banner.jpg" class="thumbnail-image"></p>
+</a><p><a href="../thoughts/posts/06-06-2024/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../thoughts/posts/06-06-2024/index.html">
 <h3 class="no-anchor listing-title">
-Socialist Calculation Debate
+<a href="../thoughts/posts/06-06-2024/index.html" class="no-external">Socialist Calculation Debate</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../thoughts/posts/06-06-2024/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('socialist economics'); return false;">
 socialist economics
@@ -431,14 +457,12 @@ socialist economics
 value theory
 </div>
 </div>
-<a href="../thoughts/posts/06-06-2024/index.html">
 <div class="listing-description">
-<p>On value theory</p>
+<a href="../thoughts/posts/06-06-2024/index.html" class="no-external">On value theory</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../thoughts/posts/06-06-2024/index.html">
+<a href="../thoughts/posts/06-06-2024/index.html" class="no-external">
 <div class="listing-date">
 Jun 6, 2024
 </div>
@@ -448,19 +472,19 @@ Jason Hawkins
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-categories="prediction,estimation,semantics" data-listing-date-sort="1716872400000" data-listing-file-modified-sort="1716920194573" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
+<div class="quarto-post image-right" data-index="6" data-categories="prediction,estimation,semantics" data-listing-date-sort="1716876000000" data-listing-file-modified-sort="1724965107369" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="743">
 <div class="thumbnail">
-<p><a href="../thoughts/posts/05-28-2024/index.html"> <img src="../thoughts/posts/05-28-2024/banner.jpg" class="thumbnail-image"> </a></p>
+<p><a href="../thoughts/posts/05-28-2024/index.html" class="no-external"></a></p><a href="../thoughts/posts/05-28-2024/index.html" class="no-external">
+<p><img loading="lazy" src="../thoughts/posts/05-28-2024/banner.jpg" class="thumbnail-image"></p>
+</a><p><a href="../thoughts/posts/05-28-2024/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../thoughts/posts/05-28-2024/index.html">
 <h3 class="no-anchor listing-title">
-Schumacher On Prediction
+<a href="../thoughts/posts/05-28-2024/index.html" class="no-external">Schumacher On Prediction</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../thoughts/posts/05-28-2024/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('prediction'); return false;">
 prediction
@@ -472,14 +496,12 @@ estimation
 semantics
 </div>
 </div>
-<a href="../thoughts/posts/05-28-2024/index.html">
 <div class="listing-description">
-Best known for his work on small-scale…<em></em>
+<a href="../thoughts/posts/05-28-2024/index.html" class="no-external">Best known for his work on small-scale economics, in the same work (Small is Beautiful), E.F. Schumacher provides one of the best discussions on prediction that I have seen…<em></em></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../thoughts/posts/05-28-2024/index.html">
+<a href="../thoughts/posts/05-28-2024/index.html" class="no-external">
 <div class="listing-date">
 May 28, 2024
 </div>
@@ -489,19 +511,19 @@ Jason Hawkins
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="7" data-categories="environmental economics,system dynamics" data-listing-date-sort="1714107600000" data-listing-file-modified-sort="1714180035357" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
+<div class="quarto-post image-right" data-index="7" data-categories="environmental economics,system dynamics" data-listing-date-sort="1714111200000" data-listing-file-modified-sort="1724965107365" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="662">
 <div class="thumbnail">
-<p><a href="../thoughts/posts/04-26-2024/index.html"> <img src="../thoughts/posts/04-26-2024/banner.jpg" class="thumbnail-image"> </a></p>
+<p><a href="../thoughts/posts/04-26-2024/index.html" class="no-external"></a></p><a href="../thoughts/posts/04-26-2024/index.html" class="no-external">
+<p><img loading="lazy" src="../thoughts/posts/04-26-2024/banner.jpg" class="thumbnail-image"></p>
+</a><p><a href="../thoughts/posts/04-26-2024/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../thoughts/posts/04-26-2024/index.html">
 <h3 class="no-anchor listing-title">
-Jevons Paradox
+<a href="../thoughts/posts/04-26-2024/index.html" class="no-external">Jevons Paradox</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../thoughts/posts/04-26-2024/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('environmental economics'); return false;">
 environmental economics
@@ -510,14 +532,12 @@ environmental economics
 system dynamics
 </div>
 </div>
-<a href="../thoughts/posts/04-26-2024/index.html">
 <div class="listing-description">
-<p>In a non-stationary economy</p>
+<a href="../thoughts/posts/04-26-2024/index.html" class="no-external">In a non-stationary economy</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../thoughts/posts/04-26-2024/index.html">
+<a href="../thoughts/posts/04-26-2024/index.html" class="no-external">
 <div class="listing-date">
 Apr 26, 2024
 </div>
@@ -527,19 +547,19 @@ Jason Hawkins
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="8" data-categories="transportation planning,production theory" data-listing-date-sort="1713675600000" data-listing-file-modified-sort="1713748029835" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
+<div class="quarto-post image-right" data-index="8" data-categories="transportation planning,production theory" data-listing-date-sort="1713679200000" data-listing-file-modified-sort="1724965107353" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="996">
 <div class="thumbnail">
-<p><a href="../thoughts/posts/04-21-2024/index.html"> <img src="../thoughts/posts/04-21-2024/banner.jpg" class="thumbnail-image"> </a></p>
+<p><a href="../thoughts/posts/04-21-2024/index.html" class="no-external"></a></p><a href="../thoughts/posts/04-21-2024/index.html" class="no-external">
+<p><img loading="lazy" src="../thoughts/posts/04-21-2024/banner.jpg" class="thumbnail-image"></p>
+</a><p><a href="../thoughts/posts/04-21-2024/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../thoughts/posts/04-21-2024/index.html">
 <h3 class="no-anchor listing-title">
-The Four Horsemen of the Production Apocalypse
+<a href="../thoughts/posts/04-21-2024/index.html" class="no-external">The Four Horsemen of the Production Apocalypse</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../thoughts/posts/04-21-2024/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('transportation planning'); return false;">
 transportation planning
@@ -548,14 +568,12 @@ transportation planning
 production theory
 </div>
 </div>
-<a href="../thoughts/posts/04-21-2024/index.html">
 <div class="listing-description">
-<p>Or why headlines are clickbait</p>
+<a href="../thoughts/posts/04-21-2024/index.html" class="no-external">Or why headlines are clickbait</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../thoughts/posts/04-21-2024/index.html">
+<a href="../thoughts/posts/04-21-2024/index.html" class="no-external">
 <div class="listing-date">
 Apr 21, 2024
 </div>
@@ -565,19 +583,19 @@ Jason Hawkins
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="9" data-categories="economics,Canadians" data-listing-date-sort="1525410000000" data-listing-file-modified-sort="1716822002406" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7">
+<div class="quarto-post image-right" data-index="9" data-categories="economics,Canadians" data-listing-date-sort="1525413600000" data-listing-file-modified-sort="1724965107369" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1382">
 <div class="thumbnail">
-<p><a href="../thoughts/posts/05-04-2018/index.html"> <img src="../thoughts/posts/05-04-2018/banner.jpg" class="thumbnail-image"> </a></p>
+<p><a href="../thoughts/posts/05-04-2018/index.html" class="no-external"></a></p><a href="../thoughts/posts/05-04-2018/index.html" class="no-external">
+<p><img loading="lazy" src="../thoughts/posts/05-04-2018/banner.jpg" class="thumbnail-image"></p>
+</a><p><a href="../thoughts/posts/05-04-2018/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../thoughts/posts/05-04-2018/index.html">
 <h3 class="no-anchor listing-title">
-William Vickrey and Transportation Economics
+<a href="../thoughts/posts/05-04-2018/index.html" class="no-external">William Vickrey and Transportation Economics</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../thoughts/posts/05-04-2018/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('economics'); return false;">
 economics
@@ -586,14 +604,12 @@ economics
 Canadians
 </div>
 </div>
-<a href="../thoughts/posts/05-04-2018/index.html">
 <div class="listing-description">
-William Vickrey made major contributions to a wide range of fields within the economics discipline and was recognized for his work with 1996 Nobel Prize in Economic Science.…
+<a href="../thoughts/posts/05-04-2018/index.html" class="no-external">William Vickrey made major contributions to a wide range of fields within the economics discipline and was recognized for his work with 1996 Nobel Prize in Economic Science.…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../thoughts/posts/05-04-2018/index.html">
+<a href="../thoughts/posts/05-04-2018/index.html" class="no-external">
 <div class="listing-date">
 May 4, 2018
 </div>
@@ -603,19 +619,19 @@ Jason Hawkins
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="10" data-categories="travel,infrastructure" data-listing-date-sort="1505106000000" data-listing-file-modified-sort="1716821784890" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="10" data-categories="travel,infrastructure" data-listing-date-sort="1505109600000" data-listing-file-modified-sort="1724965107447" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="399">
 <div class="thumbnail">
-<p><a href="../thoughts/posts/09-11-2017/index.html"> <img src="../thoughts/posts/09-11-2017/banner.jpg" class="thumbnail-image"> </a></p>
+<p><a href="../thoughts/posts/09-11-2017/index.html" class="no-external"></a></p><a href="../thoughts/posts/09-11-2017/index.html" class="no-external">
+<p><img loading="lazy" src="../thoughts/posts/09-11-2017/banner.jpg" class="thumbnail-image"></p>
+</a><p><a href="../thoughts/posts/09-11-2017/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../thoughts/posts/09-11-2017/index.html">
 <h3 class="no-anchor listing-title">
-Our Trip to Toronto Through the USA
+<a href="../thoughts/posts/09-11-2017/index.html" class="no-external">Our Trip to Toronto Through the USA</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../thoughts/posts/09-11-2017/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('travel'); return false;">
 travel
@@ -624,14 +640,12 @@ travel
 infrastructure
 </div>
 </div>
-<a href="../thoughts/posts/09-11-2017/index.html">
 <div class="listing-description">
-Written after we crossed the country for my Ph.D.&nbsp;in 2017. I haven’t returned to Duluth, MN yet…
+<a href="../thoughts/posts/09-11-2017/index.html" class="no-external">Written after we crossed the country for my Ph.D.&nbsp;in 2017. I haven’t returned to Duluth, MN yet…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../thoughts/posts/09-11-2017/index.html">
+<a href="../thoughts/posts/09-11-2017/index.html" class="no-external">
 <div class="listing-date">
 Sep 11, 2017
 </div>
@@ -641,19 +655,19 @@ Jason Hawkins
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="11" data-categories="technology,autonomous vehicles,equity" data-listing-date-sort="1499058000000" data-listing-file-modified-sort="1716821957094" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13">
+<div class="quarto-post image-right" data-index="11" data-categories="technology,autonomous vehicles,equity" data-listing-date-sort="1499061600000" data-listing-file-modified-sort="1724965107369" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2403">
 <div class="thumbnail">
-<p><a href="../thoughts/posts/07-03-2017/index.html"> <img src="../thoughts/posts/07-03-2017/banner.jpg" class="thumbnail-image"> </a></p>
+<p><a href="../thoughts/posts/07-03-2017/index.html" class="no-external"></a></p><a href="../thoughts/posts/07-03-2017/index.html" class="no-external">
+<p><img loading="lazy" src="../thoughts/posts/07-03-2017/banner.jpg" class="thumbnail-image"></p>
+</a><p><a href="../thoughts/posts/07-03-2017/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../thoughts/posts/07-03-2017/index.html">
 <h3 class="no-anchor listing-title">
-AV Deployment, Urban DNA, and Equity
+<a href="../thoughts/posts/07-03-2017/index.html" class="no-external">AV Deployment, Urban DNA, and Equity</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../thoughts/posts/07-03-2017/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('technology'); return false;">
 technology
@@ -665,14 +679,12 @@ autonomous vehicles
 equity
 </div>
 </div>
-<a href="../thoughts/posts/07-03-2017/index.html">
 <div class="listing-description">
-<em>Written before starting my Ph.D.&nbsp;in 2017 (July 03, 2017)…</em>
+<a href="../thoughts/posts/07-03-2017/index.html" class="no-external"><em>Written before starting my Ph.D.&nbsp;in 2017 (July 03, 2017)…</em></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../thoughts/posts/07-03-2017/index.html">
+<a href="../thoughts/posts/07-03-2017/index.html" class="no-external">
 <div class="listing-date">
 Jul 3, 2017
 </div>
@@ -722,18 +734,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -765,11 +766,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/Hawkins-TECH-Lab\.github\.io\/hawkins-tech-lab\.github\.io\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -779,8 +819,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -792,7 +841,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -836,6 +1008,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -861,6 +1034,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -923,11 +1122,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">Developed by Hawkinslab</div>   
+    <div class="nav-footer-left">
+<p>Developed by Hawkinslab</p>
+</div>   
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="../about.html">About</a>
+    <a class="nav-link" href="../about.html">
+<p>About</p>
+</a>
   </li>  
 </ul>
     </div>
@@ -943,6 +1146,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
+
 
 
 

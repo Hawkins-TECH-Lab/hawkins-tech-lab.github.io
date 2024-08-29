@@ -8,9 +8,9 @@
 <link href="../../../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.3.361">
+  <meta name="generator" content="quarto-1.5.56">
 
-  <title>Hawkinslab - Lecture 3 - Trip Generation</title>
+  <title>Hawkinslab – Lecture 3 - Trip Generation</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -157,7 +157,8 @@
   }
 
   .callout.callout-titled .callout-body > .callout-content > :last-child {
-    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
   }
 
   .callout.callout-titled .callout-icon::before {
@@ -355,11 +356,11 @@
 <section id="planning-monitoring-with-the-help-of-models" class="slide level2">
 <h2>Planning &amp; Monitoring with the Help of Models</h2>
 
-<img data-src="../images/lecture3/model_process.png" class="r-stretch quarto-figure-center"></section>
+<img data-src="../images/lecture3/model_process.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="classic-4-step-travel-model" class="slide level2">
 <h2>Classic 4-Step Travel Model</h2>
 
-<img data-src="../images/lecture3/4_step_model.png" class="r-stretch quarto-figure-center"></section>
+<img data-src="../images/lecture3/4_step_model.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="classic-4-step-travel-model-1" class="slide level2 smaller">
 <h2>Classic 4-Step Travel Model</h2>
 <ul>
@@ -406,10 +407,10 @@
 <section id="trip-production-attraction" class="slide level2">
 <h2>Trip Production &amp; Attraction</h2>
 
-<img data-src="../images/lecture3/trip_production_attraction.png" class="r-stretch quarto-figure-center"></section>
+<img data-src="../images/lecture3/trip_production_attraction.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="trip-production-attraction-1" class="slide level2">
 <h2>Trip Production &amp; Attraction</h2>
-<p><img data-src="../images/lecture3/trip_production_1.png" style="width:45.0%" data-fig-align="left"> <img data-src="../images/lecture3/trip_production_2.png" style="width:45.0%" data-fig-align="right"></p>
+<p><img data-src="../images/lecture3/trip_production_1.png" class="quarto-figure quarto-figure-left" style="width:45.0%"> <img data-src="../images/lecture3/trip_production_2.png" class="quarto-figure quarto-figure-right" style="width:45.0%"></p>
 </section>
 <section id="origindestination-vs.-productionattraction" class="slide level2">
 <h2>Origin/Destination Vs. Production/Attraction</h2>
@@ -461,8 +462,7 @@ If we remove a trip, Zone 1 produces a trip to zone 2 but in what direction?
 <li>Residential density</li>
 <li>Accessibility</li>
 </ul>
-</div>
-</div>
+</div></div>
 <ul>
 <li>First 4 considered in most <strong>household trip generation models</strong></li>
 <li>Value of land &amp; residential density often considered in <strong>zonal studies</strong></li>
@@ -554,7 +554,7 @@ A1 ×Population in Downtown Area <br> + A2×Population in Inner Suburbs <br> + A
 <section id="cross-classification-models-1" class="slide level2">
 <h2>Cross-Classification Models</h2>
 
-<img data-src="../images/lecture3/cross_classification.png" class="r-stretch quarto-figure-center"></section>
+<img data-src="../images/lecture3/cross_classification.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="linear-regression-models" class="slide level2">
 <h2>Linear Regression Models</h2>
 <ul>
@@ -638,7 +638,7 @@ A1 ×Population in Downtown Area <br> + A2×Population in Inner Suburbs <br> + A
 <li>Interzonal variance diminishes with larger zone size</li>
 </ul>
 
-<img data-src="../images/lecture3/zone_regression_table.png" class="r-stretch quarto-figure-center"></section>
+<img data-src="../images/lecture3/zone_regression_table.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="household-based-regression" class="slide level2 smaller">
 <h2>Household-Based Regression</h2>
 <ul>
@@ -672,26 +672,25 @@ A1 ×Population in Downtown Area <br> + A2×Population in Inner Suburbs <br> + A
 <section id="histogram-of-residuals" class="slide level2">
 <h2>Histogram of Residuals</h2>
 
-<img data-src="../images/lecture3/histogram_residuals.png" class="r-stretch quarto-figure-center"></section>
+<img data-src="../images/lecture3/histogram_residuals.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="residuals-vs.-explanatory-variables" class="slide level2">
 <h2>Residuals Vs. Explanatory Variables</h2>
 
-<img data-src="../images/lecture3/residuals_variance.png" class="r-stretch quarto-figure-center"></section>
+<img data-src="../images/lecture3/residuals_variance.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="example" class="slide level2 smaller">
 <h2>Example</h2>
 <div class="columns">
 <div class="column" style="width:25%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="../images/lecture3/residuals_example.png"></p>
+<p><img data-src="../images/lecture3/residuals_example.png" class="quarto-figure quarto-figure-center"></p>
 </figure>
 </div>
 </div><div class="column">
 <ul>
 <li>Three variables are defined <span class="math inline">\(X\)</span>, <span class="math inline">\(Y\)</span>, &amp; <span class="math inline">\(Z\)</span> where <span class="math inline">\(X\)</span> &amp; <span class="math inline">\(Z\)</span> are <strong>explanatory variables</strong> &amp; <span class="math inline">\(Y\)</span> is the <strong>dependent variable</strong></li>
 </ul>
-</div>
-</div>
+</div></div>
 </section>
 <section id="first-model-y-ax-b" class="slide level2 smaller">
 <h2>First Model <span class="math inline">\(y = aX + b\)</span></h2>
@@ -702,13 +701,13 @@ A1 ×Population in Downtown Area <br> + A2×Population in Inner Suburbs <br> + A
 <section id="analysis-of-residuals-vs.-x" class="slide level2 smaller">
 <h2>Analysis of Residuals Vs. X</h2>
 <ul>
-<li>Looks like a constant variance across values of <span class="math inline">\(X\)</span>… <img data-src="../images/lecture3/residuals_x_plot.png" data-fig-align="center"></li>
+<li>Looks like a constant variance across values of <span class="math inline">\(X\)</span>… <img data-src="../images/lecture3/residuals_x_plot.png" class="quarto-figure quarto-figure-center"></li>
 </ul>
 </section>
 <section id="analysis-of-residuals-vs.-z" class="slide level2 smaller">
 <h2>Analysis of Residuals Vs. Z</h2>
 <ul>
-<li>Residuals <strong>not constant</strong> over different values of <span class="math inline">\(Z\)</span> (so we should try to include <span class="math inline">\(Z\)</span> as another explanatory variable) <img data-src="../images/lecture3/residuals_z_plot.png" data-fig-align="center"></li>
+<li>Residuals <strong>not constant</strong> over different values of <span class="math inline">\(Z\)</span> (so we should try to include <span class="math inline">\(Z\)</span> as another explanatory variable) <img data-src="../images/lecture3/residuals_z_plot.png" class="quarto-figure quarto-figure-center"></li>
 </ul>
 </section>
 <section id="second-model-y-ax-bz-c" class="slide level2 smaller">
@@ -720,7 +719,7 @@ A1 ×Population in Downtown Area <br> + A2×Population in Inner Suburbs <br> + A
 <section id="analysis-of-residuals-vs.-x-z" class="slide level2 smaller">
 <h2>Analysis of Residuals Vs. X &amp; Z$</h2>
 <ul>
-<li>Now residuals don’t change over different values of X or Z! <img data-src="../images/lecture3/residuals_x_z_1.png" style="width:50.0%" data-fig-align="center"> <img data-src="../images/lecture3/residuals_x_z_2.png" style="width:40.0%" data-fig-align="center"></li>
+<li>Now residuals don’t change over different values of X or Z! <img data-src="../images/lecture3/residuals_x_z_1.png" class="quarto-figure quarto-figure-center" style="width:50.0%"> <img data-src="../images/lecture3/residuals_x_z_2.png" class="quarto-figure quarto-figure-center" style="width:40.0%"></li>
 </ul>
 </section>
 <section id="dealing-with-non-linear-relationships" class="slide level2">
@@ -764,7 +763,7 @@ A1 ×Population in Downtown Area <br> + A2×Population in Inner Suburbs <br> + A
 <p>Consider the variables <strong>trips per household</strong> (<span class="math inline">\(Y\)</span>), <strong>number of workers</strong> (<span class="math inline">\(𝑋_1\)</span>), and <strong>number of vehicles</strong> (<span class="math inline">\(𝑋_2\)</span>). Successive steps were performed of a stepwise model estimation. Values (in parenthesis) are t-ratios. In the step 4 model, <span class="math inline">\(Z_1\)</span> takes the value 1 for households with one car and 0 otherwise and <span class="math inline">\(Z_2\)</span> takes the value 1 for households with two or more cars and 0 otherwise. We can see that zero car households will have the value 0 for both <span class="math inline">\(Z_1\)</span> and <span class="math inline">\(Z_2\)</span>. Even without the higher <span class="math inline">\(R^2\)</span>, the step 4 model would be preferred because it clearly demonstrates there is a <strong>non-linear effect</strong> that’s ignored by <span class="math inline">\(𝑋_2\)</span>.</p>
 </div>
 
-<img data-src="../images/lecture3/non_linear_table_3.png" class="r-stretch quarto-figure-right"></section>
+<img data-src="../images/lecture3/non_linear_table_3.png" class="quarto-figure quarto-figure-right r-stretch"></section>
 <section id="variable-selection-model-building" class="slide level2 smaller">
 <h2>Variable Selection &amp; Model Building</h2>
 <ul>
@@ -806,7 +805,7 @@ A1 ×Population in Downtown Area <br> + A2×Population in Inner Suburbs <br> + A
 <li>Large bias could be addressed by adjusting model parameters, but it’s not easy because there are no clear rules</li>
 </ul>
 
-<img data-src="../images/lecture3/validation_table.png" style="width:40.0%" class="r-stretch quarto-figure-center"></section>
+<img data-src="../images/lecture3/validation_table.png" class="quarto-figure quarto-figure-center r-stretch" style="width:40.0%"></section>
 <section id="model-validation---learning-from-machine-learning" class="slide level2">
 <h2>Model Validation - Learning From Machine Learning</h2>
 <ul>
@@ -972,9 +971,11 @@ A1 ×Population in Downtown Area <br> + A2×Population in Inner Suburbs <br> + A
 </ul></li>
 </ul>
 
-
-<img src="../images/logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
-<p><a href="../../../teaching/CIVE461/">CIVE461 Home</a></p>
+<div class="quarto-auto-generated-content">
+<p><img src="../images/logo.png" class="slide-logo"></p>
+<div class="footer footer-default">
+<p><a href="../../..\teaching/CIVE461/">CIVE461 Home</a></p>
+</div>
 </div>
 </section>
     </div>
@@ -1006,14 +1007,13 @@ A1 ×Population in Downtown Area <br> + A2×Population in Inner Suburbs <br> + A
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': false,
-'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
 'chalkboard': {"buttons":true},
-'multiplex': {"secret":null,"id":"8c3604e0a7246e08","url":"https://reveal-multiplex.glitch.me/"},
+'multiplex': {"secret":null,"id":"76a885965f6d2e81","url":"https://reveal-multiplex.glitch.me/"},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -1225,18 +1225,7 @@ A1 ×Population in Downtown Area <br> + A2×Population in Inner Suburbs <br> + A
         }
         return false;
       }
-      const clipboard = new window.ClipboardJS('.code-copy-button', {
-        text: function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-        }
-      });
-      clipboard.on('success', function(e) {
+      const onCopySuccess = function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -1268,11 +1257,50 @@ A1 ×Population in Downtown Area <br> + A2×Population in Inner Suburbs <br> + A
         }, 1000);
         // clear code selection
         e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
       });
-      function tippyHover(el, contentFn) {
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp("https:\/\/Hawkins-TECH-Lab\.github\.io\/hawkins-tech-lab\.github\.io\/");
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
-          content: contentFn,
           maxWidth: 500,
           delay: 100,
           arrow: false,
@@ -1282,8 +1310,17 @@ A1 ×Population in Downtown Area <br> + A2×Population in Inner Suburbs <br> + A
           interactive: true,
           interactiveBorder: 10,
           theme: 'light-border',
-          placement: 'bottom-start'
+          placement: 'bottom-start',
         };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
           config['offset'] = [0,0];
           config['maxWidth'] = 700;
         window.tippy(el, config); 
@@ -1297,7 +1334,11 @@ A1 ×Population in Downtown Area <br> + A2×Population in Inner Suburbs <br> + A
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
-          return note.innerHTML;
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
         });
       }
       const findCites = (el) => {
