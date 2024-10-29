@@ -1,0 +1,15 @@
+---
+title: "Framework for Quantifying Benefits of Electric Vehicle Charging Infrastructure to Disadvantaged Communities"
+author: ["Donya Negahbani", "Li Zhao", "Jason Hawkins", "Nathan Huynh"]
+publication: "_under review_ (2024)"
+categories:
+  - "vehicle_adoption"
+  - "equity"
+url_source: 
+url_preprint: "http://dx.doi.org/10.13140/RG.2.2.30876.71040"
+journ: "under review"
+# issue: issue
+# page: page
+year: 2024
+pub_number: 6
+---

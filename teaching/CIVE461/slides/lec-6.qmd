@@ -32,22 +32,6 @@ execute:
 :::
 :::
 
-## Mode Choice in 4-Step Model Framework
-::: columns
-::: {.column width="50%"}
-```{mermaid}
-flowchart TB
-  A[Mode Choice] ---->|Trip End Model| B(Trip Distribution)
-```
-:::
-::: {.column width="50%"}
-```{mermaid}
-flowchart TB
-  A[Trip Distribution] ---->|Trip Interchange Model| B(Mode Choice)
-```
-:::
-:::
-
 ## Trip-End Models {.smaller}
 - Trip end mode split (**choice**) models apply before trip distribution & split *trip ends* estimated in trip generation among ends (**destinations**)
 - Basically **mode-specific trip generation models** (e.g., regression or cross-classification)

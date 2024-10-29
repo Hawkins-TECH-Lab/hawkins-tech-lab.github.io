@@ -1,0 +1,26 @@
+---
+title: Shared Mobility
+alias: &ALIAS shared_mobility
+image: featured.jpg
+sidebar: shared_mobility
+listing:
+  id: pubs
+  template: ../../_ejs/publications-people.ejs 
+  contents: ../../publications/**/*.qmd
+  sort: "pub_number desc"
+  # sort-ui: true
+  filter-ui: true
+  include:
+    categories: *ALIAS
+  fields: [publication, title, categories, image, date, author]
+
+---
+![](featured.jpg)
+
+We define shared mobility as any form of transportation with a shared ownership or use structure. The fair and efficient deployment of shared mobility can address objectives related to mobility, efficient inter-modal transportation, and minimized resource requirements. We focus on understanding the relationship between shared modes through the use of data science and data, both Big and small.
+
+## Related Publications
+
+
+:::{#pubs}
+:::

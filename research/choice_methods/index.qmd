@@ -1,0 +1,25 @@
+---
+title: Choice Modeling Methods
+alias: &ALIAS choice_methods
+image: featured.jpg
+listing:
+  id: pubs
+  template: ../../_ejs/publications-people.ejs 
+  contents: ../../publications/**/*.qmd
+  sort: "pub_number desc"
+  # sort-ui: true
+  filter-ui: true
+  include:
+    categories: *ALIAS
+  fields: [publication, title, categories, image, date, author]
+
+---
+![](featured.jpg)
+
+Choice modeling is a core method in our research. We develop discrete and discrete-continuous econometric demand models of choice driven by the needs of our empirical work. We focus on behaviour mechanisms through econometric and Bayesian statistical methods, with some dabbling in algorithmic methods through collaborations with excellent research partners. We are interested in the general areas of behavioural decision-rule heterogeneity and collective decision processes. This research stream includes work on stated preference techiques to better capture behavioural dynamics and address hypothetical biases.
+
+## Related Publications
+
+
+:::{#pubs}
+:::

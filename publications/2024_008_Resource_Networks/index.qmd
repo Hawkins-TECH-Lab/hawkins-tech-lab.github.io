@@ -1,0 +1,14 @@
+---
+title: "The US Economy as a Network: A Comparison across Economic and Environmental Metrics"
+author: ["Jason Hawkins", "Sagun Karki"]
+publication: "Sustainability, **16** _6418_ (2024)"
+categories:
+  - "ecological_economics"
+url_source: "https://www.mdpi.com/2071-1050/16/15/6418"
+url_preprint:
+journ: "Sustainability"
+issue: 16
+page: 6418
+year: 2024
+pub_number: 8
+---

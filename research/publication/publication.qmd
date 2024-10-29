@@ -1,7 +1,0 @@
----
-title: "Publication"
-# sidebar: Publication
-section-divs: true
-toc: false
-echo: false
----

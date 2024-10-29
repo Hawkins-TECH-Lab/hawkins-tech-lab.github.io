@@ -1,0 +1,14 @@
+---
+title: "Transportation Access Equity Analysis in Two U.S. Cities Using Bayesian Inference-Based Logsum Compensating Variation Metrics"
+author: ["Omid Armantalab", "Jason Hawkins", "Md Sami Hasnine"]
+publication: "_under review_ (2024)"
+categories:
+  - "equity"
+url_source: 
+url_preprint: "http://dx.doi.org/10.13140/RG.2.2.14532.64641/1"
+journ: "under review"
+# issue: issue
+# page: page
+year: 2024
+pub_number: 7
+---

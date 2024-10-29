@@ -1,0 +1,79 @@
+---
+title: "Bikeshare in Omaha"
+sidebar: Project
+section-divs: true
+echo: false
+execute:
+  freeze: auto  # re-render only when source changes
+---
+```{python}
+import pandas as pd
+import folium
+
+
+```
+
+
+## Map of Omaha showing all the bikeshare stations
+
+```{python}
+import json
+
+with open("data/omaha/kisoks_omaha.json", "r") as f:
+    coords = json.load(f)
+
+
+
+mymap = folium.Map(location=[41.256538, -95.934502], zoom_start=13)
+
+# Add markers for each coordinate
+for kiosk, coord in coords.items():
+    lat, lon = map(float, coord.split(','))
+    folium.Marker([lat, lon], popup=kiosk).add_to(mymap)
+
+
+mymap
+
+
+```
+
+## Most used stations graph
+
+```{python}
+import plotly.express as px
+
+df = pd.read_csv("data/omaha/OMA_Bike_Trips_wt_avg_time_bin.csv")
+
+# Sort the DataFrame by 'Total_Trips' column
+df_sorted = df.sort_values(by='Total_Trips', ascending=False)
+
+# Select the top 15 rows
+top_kiosks = df_sorted.head(20)
+
+# Plot using Plotly
+fig = px.bar(top_kiosks, x='Checkout_Kiosk_Coordinates', y='Total_Trips',)
+
+# rename the x-axis label
+fig.update_xaxes(title_text='Checkout Kiosk Address')
+
+# rename the y-axis label
+fig.update_yaxes(title_text='Total Trips')
+
+# change the angle of the x-axis labels
+fig.update_layout(xaxis_tickangle=-45)
+
+
+fig.show()
+
+
+```
+
+# Bikeshare Vs. Transit
+For both Lincoln and Omaha, we were interested in how long it would take to make bikeshare trips by transit. We used Google Directions API with the origin and destination station locations for trips (excluding those starting and ending at the same station). The results are enlightening and suggest bikeshare could provide a good complement for transit where trip lengths are short or trip density is low, such that running large buses would be inefficient. The results for Omaha are summarized below. Note: these results do not fully capture wait time induced by high headway (i.e., low frequency) bus service on most routes in both cities. For example, the bus running near Dr. Hawkins' house runs once per hour, whereas a bike would (fingers crossed) be immediately available if there was a bikeshare station at this location.
+
+| Bikeshare:Transit Ratio  (<1.0 = bikeshare faster than transit) |
+|-------------------------|------|
+| Minimum ratio           | 0.37 |
+| Maximum ratio           | 1.43 |
+| Mean ratio              | 0.70 |
+| Median ratio            | 0.67 |

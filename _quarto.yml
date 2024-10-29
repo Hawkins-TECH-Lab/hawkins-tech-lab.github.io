@@ -4,19 +4,19 @@ project:
 
 website:
   title: "Hawkinslab"
+  page-navigation: false
   navbar:
+    search: true
+    title: false
+    logo: assets/images/logo.drawio.png
+    logo-alt: "TECH Group"
     left:
-      - href: index.qmd
-        text: Home
-
       - text: "Research"
-        menu:
-          - text: "Projects"
-            href:  research/projects/projects.qmd
-          - text: "Team"
-            href: research/team/researchTeam.qmd
-          - text: "Publications"
-            href: research/publication/publication.qmd
+        href:  research/index.qmd
+      - text: "Team"
+        href: team/index.qmd
+      - text: "Publications"
+        href: publications/index.qmd
       - text: "Teaching"
         menu:
           - text: "CIVE461/861"
@@ -34,17 +34,6 @@ website:
     background: "#d00000"
     
   sidebar:
-    - id: default
-      title: "Default"
-      background: "#f5f1e7"  
-      style: "docked"
-      search: true
-      align: center
-      contents:
-        - section: "Home"
-          contents:
-            - href: index.qmd
-              text: Home
 
     - id: CIVE461
       title: "CIVE 461"
@@ -174,24 +163,29 @@ website:
             - href: teaching/CIVE864/supplemental/slr-derivations.qmd
               text: SLR derivations
 
-    - id: Project
+    - id: vehicle_adoption
       style: "docked"
       search: true
       align: center
       contents:
-        - href: research/projects/projects.qmd
+        - href: projects/ev_adoption/projects.qmd
           text: Research
         - section: "EV"
           contents:
-            - href: research/projects/ev.qmd
+            - href: projects/ev_adoption/ev.qmd
               text: EV Adoption Graphs
+    - id: shared_mobility
+      style: "docked"
+      search: true
+      align: center        
+      contents:
         - section: "Bikeshare"
           contents:
-            - href: research/projects/bikeshare/Omaha.qmd
+            - href: projects/bikeshare/Omaha.qmd
               text: Omaha Bikeshare
-            - href: research/projects/bikeshare/Lincoln.qmd
+            - href: projects/bikeshare/Lincoln.qmd
               text: Lincoln Bikeshare
-            - href: research/projects/bikeshare/Clustering.qmd
+            - href: projects/bikeshare/Clustering.qmd
               text: Bikeshare Clustering
     - id: Books
       style: "docked"
@@ -216,9 +210,9 @@ website:
   page-footer:
     left: |
       Developed by Hawkinslab
-    center:
-      - text: "About"
-        href: about.qmd
+    # center:
+    #   - text: "About"
+    #     href: about.qmd
       # - text: "FAQ"
       #   href: docs/faq/index.qmd
       # - text: "License"
@@ -234,11 +228,11 @@ website:
     
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme: 
+      - yeti
+      - styles/custom.scss
+    # css: styles.css
     toc: true
+    link-external-newwindow: true
     grid:
       margin-width: 500px
-
-
-
