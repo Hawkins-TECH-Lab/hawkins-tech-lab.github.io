@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.56">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Bikeshare in Lincoln – Hawkinslab</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+<script type="text/javascript">
+window.PlotlyConfig = {MathJaxConfig: 'local'};
+if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}
+if (typeof require !== 'undefined') {
+require.undef("plotly");
+requirejs.config({
+    paths: {
+        'plotly': ['https://cdn.plot.ly/plotly-2.35.0.min']
+    }
+});
+require(['plotly'], function(Plotly) {
+    window._Plotly = Plotly;
+});
+}
+</script>
+
+
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../assets/images/logo.drawio.png" alt="TECH Group" class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../research/index.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../team/index.html"> 
+<span class="menu-text">Team</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../publication/index.qmd"> 
+<span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-teaching" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Teaching</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-teaching">    
+        <li>
+    <a class="dropdown-item" href="../../../teaching/CIVE461/index.html">
+ <span class="dropdown-text">CIVE461/861</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../teaching/CIVE864/index.qmd">
+ <span class="dropdown-text">CIVE864</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../teaching/Guest Lectures/CIVE990T.html">
+ <span class="dropdown-text">CIVE990T</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-thoughts" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Thoughts</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-thoughts">    
+        <li>
+    <a class="dropdown-item" href="../../../thoughts/books.html">
+ <span class="dropdown-text">Books</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../thoughts/blog.html">
+ <span class="dropdown-text">Blog</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../research/shared_mobility/bikeshare/Omaha.html">Bikeshare</a></li><li class="breadcrumb-item"><a href="../../../research/shared_mobility/bikeshare/Lincoln.html">Lincoln Bikeshare</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="../../../index.html" class="sidebar-logo-link">
+      <img src="../../../assets/images/teaching/cive_461_logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Bikeshare</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../research/shared_mobility/bikeshare/Omaha.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Omaha Bikeshare</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../research/shared_mobility/bikeshare/Lincoln.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Lincoln Bikeshare</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../research/shared_mobility/bikeshare/Clustering.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bikeshare Clustering</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#map-of-lincoln-showing-all-the-bikeshare-stations" id="toc-map-of-lincoln-showing-all-the-bikeshare-stations" class="nav-link active" data-scroll-target="#map-of-lincoln-showing-all-the-bikeshare-stations">Map of Lincoln showing all the bikeshare stations</a></li>
+  <li><a href="#most-used-stations-graph" id="toc-most-used-stations-graph" class="nav-link" data-scroll-target="#most-used-stations-graph">Most used stations graph</a></li>
+  <li><a href="#bikeshare-vs.-transit" id="toc-bikeshare-vs.-transit" class="nav-link" data-scroll-target="#bikeshare-vs.-transit">Bikeshare Vs. Transit</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../research/shared_mobility/bikeshare/Omaha.html">Bikeshare</a></li><li class="breadcrumb-item"><a href="../../../research/shared_mobility/bikeshare/Lincoln.html">Lincoln Bikeshare</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Bikeshare in Lincoln</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="map-of-lincoln-showing-all-the-bikeshare-stations" class="level2">
+<h2 class="anchored" data-anchor-id="map-of-lincoln-showing-all-the-bikeshare-stations">Map of Lincoln showing all the bikeshare stations</h2>
+<div id="8d9361f3" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display" data-execution_count="2">
+<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -&gt; Trust Notebook</span><iframe srcdoc="<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js&quot;></script>
+    <script src=&quot;https://code.jquery.com/jquery-3.7.1.min.js&quot;></script>
+    <script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js&quot;></script>
+    <script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js&quot;></script>
+    <link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css&quot;/>
+    <link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css&quot;/>
+    <link rel=&quot;stylesheet&quot; href=&quot;https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css&quot;/>
+    <link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css&quot;/>
+    <link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css&quot;/>
+    <link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css&quot;/>
+    
+            <meta name=&quot;viewport&quot; content=&quot;width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; />
+            <style>
+                #map_67b64e31eec6c33fb15c27a9b18905bf {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class=&quot;folium-map&quot; id=&quot;map_67b64e31eec6c33fb15c27a9b18905bf&quot; ></div>
+        
+</body>
+<script>
+    
+    
+            var map_67b64e31eec6c33fb15c27a9b18905bf = L.map(
+                &quot;map_67b64e31eec6c33fb15c27a9b18905bf&quot;,
+                {
+                    center: [40.81712, -96.70084],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_088c553552bec0b2f8514662c6b8c98a = L.tileLayer(
+                &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
+                {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
+            );
+        
+    
+            tile_layer_088c553552bec0b2f8514662c6b8c98a.addTo(map_67b64e31eec6c33fb15c27a9b18905bf);
+        
+    
+            var marker_fc6caf0d58205ddc6dabf19a4a988ca4 = L.marker(
+                [40.80938, -96.70541],
+                {}
+            ).addTo(map_67b64e31eec6c33fb15c27a9b18905bf);
+        
+    
+        var popup_87b41cf6a992da680d52f102c00593fb = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_3eb0ab4f4c9a3be1d03ffb1e48b196e9 = $(`<div id=&quot;html_3eb0ab4f4c9a3be1d03ffb1e48b196e9&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>11th &amp; K St. </div>`)[0];
+                popup_87b41cf6a992da680d52f102c00593fb.setContent(html_3eb0ab4f4c9a3be1d03ffb1e48b196e9);
+            
+        
+
+        marker_fc6caf0d58205ddc6dabf19a4a988ca4.bindPopup(popup_87b41cf6a992da680d52f102c00593fb)
+        ;
+
+        
+    
+    
+            var marker_14f74893dc4a3b39845a0836c435d36c = L.marker(
+                [40.8123, -96.70567],
+                {}
+            ).addTo(map_67b64e31eec6c33fb15c27a9b18905bf);
+        
+    
+        var popup_affb975d1bd8cbbf757be94bc2d49eff = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_261f31a3fd43386194d055eb35b74407 = $(`<div id=&quot;html_261f31a3fd43386194d055eb35b74407&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>11th &amp; N St.</div>`)[0];
+                popup_affb975d1bd8cbbf757be94bc2d49eff.setContent(html_261f31a3fd43386194d055eb35b74407);
+            
+        
+
+        marker_14f74893dc4a3b39845a0836c435d36c.bindPopup(popup_affb975d1bd8cbbf757be94bc2d49eff)
+        ;
+
+        
+    
+    
+            var marker_7a9ec20b76da414542d69f60a071393a = L.marker(
+                [40.81487, -96.70576],
+                {}
+            ).addTo(map_67b64e31eec6c33fb15c27a9b18905bf);
+        
+    
+        var popup_951e65b6d315064d590bdb5c5426aa71 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_711945918917df0451f5c9dc4ba7c0c0 = $(`<div id=&quot;html_711945918917df0451f5c9dc4ba7c0c0&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>11th &amp; P St. </div>`)[0];
+                popup_951e65b6d315064d590bdb5c5426aa71.setContent(html_711945918917df0451f5c9dc4ba7c0c0);
+            
+        
+
+        marker_7a9ec20b76da414542d69f60a071393a.bindPopup(popup_951e65b6d315064d590bdb5c5426aa71)
+        ;
+
+        
+    
+    
+            var marker_c0d13171f420ce4b71bd2bd22b53b9ea = L.marker(
+                [40.81596, -96.70364],
+                {}
+            ).addTo(map_67b64e31eec6c33fb15c27a9b18905bf);
+        
+    
+        var popup_a766e83806c94f6639dade1c85b01b51 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_afab7ee6734f4828a0e71ac77f63c731 = $(`<div id=&quot;html_afab7ee6734f4828a0e71ac77f63c731&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>12th &amp; Q St. </div>`)[0];
+                popup_a766e83806c94f6639dade1c85b01b51.setContent(html_afab7ee6734f4828a0e71ac77f63c731);
+            
+        
+
+        marker_c0d13171f420ce4b71bd2bd22b53b9ea.bindPopup(popup_a766e83806c94f6639dade1c85b01b51)
+        ;
+
+        
+    
+    
+            var marker_b42d8bebf7d56390bb4dba0e719e1aa0 = L.marker(
+                [40.80466, -96.70293],
+                {}
+            ).addTo(map_67b64e31eec6c33fb15c27a9b18905bf);
+        
+    
+        var popup_c5be588dd57ecaa4938a663fac4f0027 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_d04329459c4fbc5ddc9357c772c57432 = $(`<div id=&quot;html_d04329459c4fbc5ddc9357c772c57432&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>13th &amp; F St.</div>`)[0];
+                popup_c5be588dd57ecaa4938a663fac4f0027.setContent(html_d04329459c4fbc5ddc9357c772c57432);
+            
+        
+
+        marker_b42d8bebf7d56390bb4dba0e719e1aa0.bindPopup(popup_c5be588dd57ecaa4938a663fac4f0027)
+        ;
+
+        
+    
+    
+            var marker_b6b34c9e0ee1f862b4160e8e7ae0b874 = L.marker(
+                [40.81118, -96.70281],
+                {}
+            ).addTo(map_67b64e31eec6c33fb15c27a9b18905bf);
+        
+    
+        var popup_e01f2939c1396b1bc4ce9c6e95368769 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_41ef5a552b2e3839ebe4633f0b058dc5 = $(`<div id=&quot;html_41ef5a552b2e3839ebe4633f0b058dc5&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>13th &amp; M St.</div>`)[0];
+                popup_e01f2939c1396b1bc4ce9c6e95368769.setContent(html_41ef5a552b2e3839ebe4633f0b058dc5);
+            
+        
+
+        marker_b6b34c9e0ee1f862b4160e8e7ae0b874.bindPopup(popup_e01f2939c1396b1bc4ce9c6e95368769)
+        ;
+
+        
+    
+    
+            var marker_28906aaeb084df90203190cb32ac6e0c = L.marker(
+                [40.82413, -96.70149],
+                {}
+            ).addTo(map_67b64e31eec6c33fb15c27a9b18905bf);
+        
+    
+        var popup_934227352bebed7a6d2c1dd2425e7a92 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_45935db3a1c5daba0260c53738979a58 = $(`<div id=&quot;html_45935db3a1c5daba0260c53738979a58&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>14th &amp; Avery Ave.</div>`)[0];
+                popup_934227352bebed7a6d2c1dd2425e7a92.setContent(html_45935db3a1c5daba0260c53738979a58);
+            
+        
+
+        marker_28906aaeb084df90203190cb32ac6e0c.bindPopup(popup_934227352bebed7a6d2c1dd2425e7a92)
+        ;
+
+        
+    
+    
+            var marker_8df74519412939674e9c582cf6c43ad2 = L.marker(
+                [40.81064, -96.70107],
+                {}
+            ).addTo(map_67b64e31eec6c33fb15c27a9b18905bf);
+        
+    
+        var popup_3fded62273bd2e9108fa3e323b0da263 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_3ad63af266c129b26c23e2673931fb3b = $(`<div id=&quot;html_3ad63af266c129b26c23e2673931fb3b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>14th &amp; L St. </div>`)[0];
+                popup_3fded62273bd2e9108fa3e323b0da263.setContent(html_3ad63af266c129b26c23e2673931fb3b);
+            
+        
+
+        marker_8df74519412939674e9c582cf6c43ad2.bindPopup(popup_3fded62273bd2e9108fa3e323b0da263)
+        ;
+
+        
+    
+    
+            var marker_585fbe63eba675d3b118be43db1125d1 = L.marker(
+                [40.81245, -96.70061],
+                {}
+            ).addTo(map_67b64e31eec6c33fb15c27a9b18905bf);
+        
+    
+        var popup_607f949db178456b937b3cc83b7327f5 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_c5428a250e0cd6027fad3a6f8c0e5033 = $(`<div id=&quot;html_c5428a250e0cd6027fad3a6f8c0e5033&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>14th &amp; N St. </div>`)[0];
+                popup_607f949db178456b937b3cc83b7327f5.setContent(html_c5428a250e0cd6027fad3a6f8c0e5033);
+            
+        
+
+        marker_585fbe63eba675d3b118be43db1125d1.bindPopup(popup_607f949db178456b937b3cc83b7327f5)
+        ;
+
+        
+    
+    
+            var marker_c4a485e182b3448d324102d40df77b14 = L.marker(
+                [40.81415, -96.70128],
+                {}
+            ).addTo(map_67b64e31eec6c33fb15c27a9b18905bf);
+        
+    
+        var popup_a18ec055e05d09bbe71dd38b9c9fe746 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_ef75e01302c8baa57d2a3ad467337e14 = $(`<div id=&quot;html_ef75e01302c8baa57d2a3ad467337e14&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>14th &amp; P St. </div>`)[0];
+                popup_a18ec055e05d09bbe71dd38b9c9fe746.setContent(html_ef75e01302c8baa57d2a3ad467337e14);
+            
+        
+
+        marker_c4a485e182b3448d324102d40df77b14.bindPopup(popup_a18ec055e05d09bbe71dd38b9c9fe746)
+        ;
+
+        
+    
+    
+            var marker_abe014ada400b79c5e832f573a911430 = L.marker(
+                [40.81712, -96.70084],
+                {}
+            ).addTo(map_67b64e31eec6c33fb15c27a9b18905bf);
+        
+    
+        var popup_d41a6f9f080145dc18e22f815ea14145 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_b3b169540e078b00bba3f17ec0786e4f = $(`<div id=&quot;html_b3b169540e078b00bba3f17ec0786e4f&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>14th &amp; R St.</div>`)[0];
+                popup_d41a6f9f080145dc18e22f815ea14145.setContent(html_b3b169540e078b00bba3f17ec0786e4f);
+            
+        
+
+        marker_abe014ada400b79c5e832f573a911430.bindPopup(popup_d41a6f9f080145dc18e22f815ea14145)
+        ;
+
+        
+    
+    
+            var marker_13c621162822d6ae0d844c61af2e4c81 = L.marker(
+                [40.81232, -96.69521],
+                {}
+            ).addTo(map_67b64e31eec6c33fb15c27a9b18905bf);
+        
+    
+        var popup_e93fdcb406c5e5646e90f42815224cea = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_6278faee48a01896c6cb7edae53f5778 = $(`<div id=&quot;html_6278faee48a01896c6cb7edae53f5778&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>18th &amp; N St. </div>`)[0];
+                popup_e93fdcb406c5e5646e90f42815224cea.setContent(html_6278faee48a01896c6cb7edae53f5778);
+            
+        
+
+        marker_13c621162822d6ae0d844c61af2e4c81.bindPopup(popup_e93fdcb406c5e5646e90f42815224cea)
+        ;
+
+        
+    
+    
+            var marker_47eca20b66f9689c66bc02fe0b674026 = L.marker(
+                [40.8181, -96.69409],
+                {}
+            ).addTo(map_67b64e31eec6c33fb15c27a9b18905bf);
+        
+    
+        var popup_0fc911faefdc203f13a483105f2d486a = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_aa64cdfb1e50c7b500dbfbd8e2360a60 = $(`<div id=&quot;html_aa64cdfb1e50c7b500dbfbd8e2360a60&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>19th &amp; S St.</div>`)[0];
+                popup_0fc911faefdc203f13a483105f2d486a.setContent(html_aa64cdfb1e50c7b500dbfbd8e2360a60);
+            
+        
+
+        marker_47eca20b66f9689c66bc02fe0b674026.bindPopup(popup_0fc911faefdc203f13a483105f2d486a)
+        ;
+
+        
+    
+    
+            var marker_f66a848491e7bea287eefd5910b01b35 = L.marker(
+                [40.81031, -96.69114],
+                {}
+            ).addTo(map_67b64e31eec6c33fb15c27a9b18905bf);
+        
+    
+        var popup_a953bebaadab1b6eabd15d2ca6dfbdf2 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_8b5a8ae80e7beca9366d0a91fe6e11ba = $(`<div id=&quot;html_8b5a8ae80e7beca9366d0a91fe6e11ba&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>21st &amp; L St.</div>`)[0];
+                popup_a953bebaadab1b6eabd15d2ca6dfbdf2.setContent(html_8b5a8ae80e7beca9366d0a91fe6e11ba);
+            
+        
+
+        marker_f66a848491e7bea287eefd5910b01b35.bindPopup(popup_a953bebaadab1b6eabd15d2ca6dfbdf2)
+        ;
+
+        
+    
+    
+            var marker_d050f5b124aea1655fa8768afe0dacd7 = L.marker(
+                [40.8159, -96.69074],
+                {}
+            ).addTo(map_67b64e31eec6c33fb15c27a9b18905bf);
+        
+    
+        var popup_d9f922ddc12ccae81f11fdd086341b95 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_73248a08535823337a0aa5d005c6c70a = $(`<div id=&quot;html_73248a08535823337a0aa5d005c6c70a&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>21st &amp; Q St.</div>`)[0];
+                popup_d9f922ddc12ccae81f11fdd086341b95.setContent(html_73248a08535823337a0aa5d005c6c70a);
+            
+        
+
+        marker_d050f5b124aea1655fa8768afe0dacd7.bindPopup(popup_d9f922ddc12ccae81f11fdd086341b95)
+        ;
+
+        
+    
+    
+            var marker_772f32857ad58a41478f6f591fa29766 = L.marker(
+                [40.81709, -96.71083],
+                {}
+            ).addTo(map_67b64e31eec6c33fb15c27a9b18905bf);
+        
+    
+        var popup_ef61b30720827ac8d2006bab6164dcd2 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_b82bf49777d4d494933bcc5ab7d43897 = $(`<div id=&quot;html_b82bf49777d4d494933bcc5ab7d43897&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>7th &amp; R St.</div>`)[0];
+                popup_ef61b30720827ac8d2006bab6164dcd2.setContent(html_b82bf49777d4d494933bcc5ab7d43897);
+            
+        
+
+        marker_772f32857ad58a41478f6f591fa29766.bindPopup(popup_ef61b30720827ac8d2006bab6164dcd2)
+        ;
+
+        
+    
+    
+            var marker_513c5084ab06e0e85012d75c43b118d1 = L.marker(
+                [40.8147, -96.70978],
+                {}
+            ).addTo(map_67b64e31eec6c33fb15c27a9b18905bf);
+        
+    
+        var popup_26be025577573293de699a640124fc7f = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_044a98f1ff9996b1c270a528e35d9269 = $(`<div id=&quot;html_044a98f1ff9996b1c270a528e35d9269&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>8th &amp; P St. </div>`)[0];
+                popup_26be025577573293de699a640124fc7f.setContent(html_044a98f1ff9996b1c270a528e35d9269);
+            
+        
+
+        marker_513c5084ab06e0e85012d75c43b118d1.bindPopup(popup_26be025577573293de699a640124fc7f)
+        ;
+
+        
+    
+    
+            var marker_374ae00cbe578772cbdeaadd77c97c5e = L.marker(
+                [40.81483, -96.71211],
+                {}
+            ).addTo(map_67b64e31eec6c33fb15c27a9b18905bf);
+        
+    
+        var popup_e82e9b29a1fe880f5ffeff027e36d422 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_e1a3375386830cbbbe128d961dbc9bf5 = $(`<div id=&quot;html_e1a3375386830cbbbe128d961dbc9bf5&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Canopy &amp; P St. </div>`)[0];
+                popup_e82e9b29a1fe880f5ffeff027e36d422.setContent(html_e1a3375386830cbbbe128d961dbc9bf5);
+            
+        
+
+        marker_374ae00cbe578772cbdeaadd77c97c5e.bindPopup(popup_e82e9b29a1fe880f5ffeff027e36d422)
+        ;
+
+        
+    
+    
+            var marker_f513c7a4d3097a8be65a78110feebb2a = L.marker(
+                [40.82864, -96.66705],
+                {}
+            ).addTo(map_67b64e31eec6c33fb15c27a9b18905bf);
+        
+    
+        var popup_68e9327c036ba91b3207bfa55b19b3dd = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_4b5cf87664def7aa7593bd9d40ae68bd = $(`<div id=&quot;html_4b5cf87664def7aa7593bd9d40ae68bd&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Dairy Store Dr. &amp; E. Campus Loop</div>`)[0];
+                popup_68e9327c036ba91b3207bfa55b19b3dd.setContent(html_4b5cf87664def7aa7593bd9d40ae68bd);
+            
+        
+
+        marker_f513c7a4d3097a8be65a78110feebb2a.bindPopup(popup_68e9327c036ba91b3207bfa55b19b3dd)
+        ;
+
+        
+    
+    
+            var marker_92a06db1d9c4f9ff1321203893ec4060 = L.marker(
+                [40.83225, -96.69367],
+                {}
+            ).addTo(map_67b64e31eec6c33fb15c27a9b18905bf);
+        
+    
+        var popup_eab2bc61cb81f1624de6dd50aba9d83f = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_7deb0c2e7638ea30d0236e06b8e1cc4c = $(`<div id=&quot;html_7deb0c2e7638ea30d0236e06b8e1cc4c&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>N 19th &amp; Transformation Dr.</div>`)[0];
+                popup_eab2bc61cb81f1624de6dd50aba9d83f.setContent(html_7deb0c2e7638ea30d0236e06b8e1cc4c);
+            
+        
+
+        marker_92a06db1d9c4f9ff1321203893ec4060.bindPopup(popup_eab2bc61cb81f1624de6dd50aba9d83f)
+        ;
+
+        
+    
+    
+            var marker_b9b6e2d6c150df3ae1879a9c7daa845f = L.marker(
+                [40.83054, -96.67008],
+                {}
+            ).addTo(map_67b64e31eec6c33fb15c27a9b18905bf);
+        
+    
+        var popup_99ae0ec742005a1026c041bbae937508 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_a470fdf9993b4132226f3a75f2d939ba = $(`<div id=&quot;html_a470fdf9993b4132226f3a75f2d939ba&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>N 35th &amp; Center St.</div>`)[0];
+                popup_99ae0ec742005a1026c041bbae937508.setContent(html_a470fdf9993b4132226f3a75f2d939ba);
+            
+        
+
+        marker_b9b6e2d6c150df3ae1879a9c7daa845f.bindPopup(popup_99ae0ec742005a1026c041bbae937508)
+        ;
+
+        
+    
+</script>
+</html>" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe></div></div>
+</div>
+</div>
+</section>
+<section id="most-used-stations-graph" class="level2">
+<h2 class="anchored" data-anchor-id="most-used-stations-graph">Most used stations graph</h2>
+<div id="84136b25" class="cell" data-execution_count="3">
+<div class="cell-output cell-output-display">
+<div>                            <div id="a066cd3b-0bdf-4408-b3b0-6ef2aee97a5e" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("a066cd3b-0bdf-4408-b3b0-6ef2aee97a5e")) {                    Plotly.newPlot(                        "a066cd3b-0bdf-4408-b3b0-6ef2aee97a5e",                        [{"alignmentgroup":"True","hovertemplate":"Checkout_Kiosk_Coordinates=%{x}\u003cbr\u003eTotal_Trips=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"","marker":{"color":"#636efa","pattern":{"shape":""}},"name":"","offsetgroup":"","orientation":"v","showlegend":false,"textposition":"auto","x":["14th & R St.","11th & N St.","21st & Q St.","14th & Avery Ave.","12th & Q St. ","19th & S St.","13th & F St.","7th & R St.","18th & N St. ","8th & P St. ","14th & P St. ","11th & P St. ","Canopy & P St. ","N 19th & Transformation Dr.","11th & K St. ","21st & L St.","14th & L St. ","14th & N St. ","Dairy Store Dr. & E. Campus Loop","13th & M St."],"xaxis":"x","y":[24548.0,18319.0,11282.0,8916.0,8733.0,7734.0,4681.0,3887.0,3882.0,3118.0,3048.0,2885.0,2817.0,2740.0,2569.0,2109.0,1803.0,1648.0,1324.0,1277.0],"yaxis":"y","type":"bar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"},"margin":{"b":0,"l":0,"r":0,"t":30}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Checkout Station Address"},"tickangle":-45},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Total Trips"}},"legend":{"tracegroupgap":0},"barmode":"relative"},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('a066cd3b-0bdf-4408-b3b0-6ef2aee97a5e');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };                });            </script>        </div>
+</div>
+</div>
+</section>
+<section id="bikeshare-vs.-transit" class="level1">
+<h1>Bikeshare Vs. Transit</h1>
+<p>For both Lincoln and Omaha, we were interested in how long it would take to make bikeshare trips by transit. We used Google Directions API with the origin and destination station locations for trips (excluding those starting and ending at the same station). The results are enlightening and suggest bikeshare could provide a good complement for transit where trip lengths are short or trip density is low, such that running large buses would be inefficient. The results for Lincoln are summarized below. Note: these results do not fully capture wait time induced by high headway (i.e., low frequency) bus service on most routes in both cities. For example, the bus running near Dr.&nbsp;Hawkins’ house runs once per hour, whereas a bike would (fingers crossed) be immediately available if there was a bikeshare station at this location.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Bikeshare:Transit Ratio (&lt;1.0 = bikeshare faster than transit)</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Minimum ratio</td>
+<td>0.44</td>
+</tr>
+<tr class="even">
+<td>Maximum ratio</td>
+<td>0.92</td>
+</tr>
+<tr class="odd">
+<td>Mean ratio</td>
+<td>0.61</td>
+</tr>
+<tr class="even">
+<td>Median ratio</td>
+<td>0.57</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Developed by Hawkinslab</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/UNL-Hawkins-Lab/Hawkinslab">
+      <i class="bi bi-github" role="img" aria-label="Quarto GitHub">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

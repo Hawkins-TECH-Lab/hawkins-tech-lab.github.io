@@ -68,7 +68,6 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="../assets/css/index.css">
 </head>
 
@@ -79,8 +78,8 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Hawkinslab</span>
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../assets/images/logo.drawio.png" alt="TECH Group" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -89,10 +88,6 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-research" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Research</span>
@@ -166,8 +161,11 @@ ul.task-list li input[type="checkbox"] {
 <div class="content-block">
 <section id="research" class="hero-text">
 <h1>Research</h1>
-<h2 id="research-topics">Research Topics</h2>
-<p>Our team examines the relationship between infrastructure systems, with a particular focus on transportation and land use. We use a variety of techniques including surveys, econometrics, simulation, and network science to assess the sustainability of infrastructure systems considering technical, economic, and social perspectives. The interdisciplinary nature of our work means we often work with engineers, economists, and political scientists - and welcome collaboration opportunities from any field of study with an interest in sustainable infrastructure systems.</p>
+<h2 id="research-philosophy">Research Philosophy</h2>
+<p>We take a broad view of land use to encompass the impacts of human activity on ecosystems, drawing on theory from ecological economics to develop microeconometric choice models that recognize the various constraints on consumption and time use.</p>
+<h2 id="transdisciplinary-scholarship">Transdisciplinary Scholarship</h2>
+<p>The TECH Group is a transdisciplinary research group that combines engineering and social science expertise to understanding the pressing issues facing cities and regions. With a core focus on transportation and land use interactions, the group develops methods and studies to provide sound policy and behavioural analysis to our partners.</p>
+<p>See the <a href="https://transdisciplinary.ucalgary.ca/">University of Calgary Transciplinary Research</a> website for more details.</p>
 <div class="hero-buttons">
 <p><a href="../research/projects/projects.html" id="btn-hero-primary" class="btn-action-primary btn-action btn btn-success btn-lg" role="button">Project</a> <a href="../research/team/researchTeam.html" id="btn-hero-secondary" class="btn-action btn btn-info btn-lg" role="button">Team</a></p>
 </div>
@@ -270,7 +268,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/Hawkins-TECH-Lab\.github\.io\/hawkins-tech-lab\.github\.io\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -605,13 +603,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <p>Developed by Hawkinslab</p>
 </div>   
     <div class="nav-footer-center">
-      <ul class="footer-items list-unstyled">
-    <li class="nav-item">
-    <a class="nav-link" href="../about.html">
-<p>About</p>
-</a>
-  </li>  
-</ul>
+      &nbsp;
     </div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">

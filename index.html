@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Home – Hawkinslab</title>
+<title>Hawkinslab</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -68,19 +68,18 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="assets/css/index.css">
 </head>
 
-<body class="nav-sidebar nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Hawkinslab</span>
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./assets/images/logo.drawio.png" alt="TECH Group" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -90,28 +89,17 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
-<span class="menu-text">Home</span></a>
+    <a class="nav-link" href="./research/index.html"> 
+<span class="menu-text">Research</span></a>
   </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-research" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Research</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-research">    
-        <li>
-    <a class="dropdown-item" href="./research/projects/projects.html">
- <span class="dropdown-text">Projects</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./team/index.html"> 
+<span class="menu-text">Team</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./research/team/researchTeam.html">
- <span class="dropdown-text">Team</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./publications/index.html"> 
+<span class="menu-text">Publications</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./research/publication/publication.html">
- <span class="dropdown-text">Publications</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-teaching" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Teaching</span>
@@ -154,35 +142,39 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-layout-custom page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
+    
 <!-- main -->
+<main class="content column-page" id="quarto-document-content">
 
 
 
 
-<div class="hero-banner">
-<div class="content-block">
-<section id="welcome-to-the-hawkins-research-group" class="hero-text">
-<h1>Welcome to the Hawkins Research Group</h1>
-<h3>
-Department of Civil Environmental Engineering
-</h3>
-<h3>
-University of Calgary
-</h3>
-<p>Our team examines the relationship between infrastructure systems, with a particular focus on transportation and land use. We use a variety of techniques including surveys, econometrics, simulation, and network science to assess the sustainability of infrastructure systems considering technical, economic, and social perspectives. The interdisciplinary nature of our work means we often work with engineers, economists, and political scientists - and welcome collaboration opportunities from any field of study with an interest in sustainable infrastructure systems.</p>
-<div class="hero-buttons">
-<p><a href="./research/research.html" id="btn-hero-primary" class="btn-action-primary btn-action btn btn-success btn-lg" role="button">Research</a> <a href="./teaching/teaching.html" id="btn-hero-secondary" class="btn-action btn btn-info btn-lg" role="button">Teaching</a></p>
+<div class="gradient-text">
+<div class="welcome-headline">
+<p>Welcome to the TECH Research Group<br></p>
 </div>
-</section>
+<div class="welcome-subheadline">
+<p>Transportation and Ecological Choice by Households</p>
 </div>
 </div>
+<div class="cmm-background">
+<div class="content-container">
+<div class="welcome">
+<div class="grid">
+<div class="g-col-12 g-col-lg-4 welcome-text sand-background" style="padding: 15px;">
+<p>Our team examines the relationship between infrastructure systems, with a particular focus on transportation and land use. We use a variety of techniques including surveys, econometrics, simulation, and network science to assess the sustainability of infrastructure systems considering technical, economic, and social perspectives. The transdisciplinary nature of our work means we often work with engineers, planners, economists, and political scientists - and welcome collaboration opportunities from any field of study with an interest in sustainable system planning and policy.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 
 
-
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -289,6 +281,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         if (link.dataset.originalHref !== undefined) {
           link.href = link.dataset.originalHref;
         }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
       }
     }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -610,13 +607,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <p>Developed by Hawkinslab</p>
 </div>   
     <div class="nav-footer-center">
-      <ul class="footer-items list-unstyled">
-    <li class="nav-item">
-    <a class="nav-link" href="./about.html">
-<p>About</p>
-</a>
-  </li>  
-</ul>
+      &nbsp;
     </div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
