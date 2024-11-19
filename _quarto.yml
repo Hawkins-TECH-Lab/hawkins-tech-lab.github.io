@@ -8,7 +8,7 @@ website:
   navbar:
     search: true
     title: false
-    logo: assets/images/logo_tech.tiff
+    logo: assets/images/logo_tech.png
     logo-alt: "TECH Group"
     left:
       - text: "Research"
