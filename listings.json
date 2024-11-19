@@ -36,10 +36,6 @@
     ]
   },
   {
-    "listing": "/docs/research/index.html",
-    "items": []
-  },
-  {
     "listing": "/publications/index.html",
     "items": [
       "/publications/2024_009_Mapping_Vehicle_Diffusion/index.html",
