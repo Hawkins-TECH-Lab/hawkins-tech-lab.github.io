@@ -8,7 +8,7 @@ website:
   navbar:
     search: true
     title: false
-    logo: assets/images/logo.drawio.png
+    logo: assets/images/logo_tech..tiff
     logo-alt: "TECH Group"
     left:
       - text: "Research"
@@ -21,8 +21,8 @@ website:
         menu:
           - text: "CIVE461/861"
             href: teaching/CIVE461/index.qmd
-          - text: "CIVE864"
-            href: teaching/CIVE864/index.qmd
+          - text: "ENCI707"
+            href: teaching/ENCI707/index.qmd
           - text: "CIVE990T"
             href: teaching/Guest Lectures/CIVE990T.qmd
       - text: Thoughts
