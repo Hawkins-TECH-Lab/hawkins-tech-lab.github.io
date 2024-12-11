@@ -1,0 +1,23 @@
+---
+title: "Week 4"
+subtitle: "Trip Generation"
+editor: visual
+---
+
+## Prepare
+
+📖 Watch the [videos](/teaching/ENCI707/prep/week4/week4-videos.html)
+
+## Participate
+
+🖥️ [Lecture 3 - Trip Generation](/teaching/CIVE461/slides/lec-3.html)
+
+## Practice
+
+📋 Complete Jupyter notebooks from in-class tutorials.
+
+<br><br>
+
+::: {style="font-size: 0.875em;"}
+Back to [course schedule](/teaching/CIVE461/ "Course schedule") ⏎
+:::

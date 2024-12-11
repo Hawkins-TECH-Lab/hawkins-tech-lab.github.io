@@ -1,0 +1,21 @@
+---
+title: "Lecture 2 - Surveys"
+subtitle: "ENCI707: Engineering Demand and Policy Analysis"
+footer:  "[ENCI707 Home](/teaching/ENCI707/)"
+logo: "../images/logo.png"
+format: 
+  revealjs: 
+    theme: simple
+    transition: fade
+    chalkboard: true
+    slide-number: true
+    multiplex: true
+execute:
+  freeze: auto
+---
+
+## Outline
+
+::: incremental
+1.  What is statistics
+:::

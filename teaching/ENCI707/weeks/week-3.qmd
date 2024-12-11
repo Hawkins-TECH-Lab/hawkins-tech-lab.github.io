@@ -1,0 +1,24 @@
+---
+title: "Week 3"
+subtitle: "Surveys"
+---
+
+## Prepare
+
+📖 Read Ch. 2 of National Household Travel Survey Documentation [NHTS](https://github.com/UNL-Hawkins-Lab/CIVE_461/blob/6ae2e8ca1576a517b809c1d6ffb832f84695dbf1/Resources/Gelman_Et_Al_ROS_1ed.pdf)
+
+📖 Read Chioce Experiments (2017) [CE2017](https://github.com/UNL-Hawkins-Lab/CIVE_461/blob/6ae2e8ca1576a517b809c1d6ffb832f84695dbf1/Resources/Gelman_Et_Al_ROS_1ed.pdf)
+
+## Participate
+
+🖥️ [Lecture 2 - Surveys](/teaching/ENCI707/slides/lec-2.html)
+
+## Practice
+
+📋 [Activity 3 - Stated Preference Experiment](/teaching/ENCI707/ae/ae-3.html)
+
+<br><br>
+
+::: {style="font-size: 0.875em;"}
+Back to [course schedule](/teaching/ENCI707/ "Course schedule") ⏎
+:::

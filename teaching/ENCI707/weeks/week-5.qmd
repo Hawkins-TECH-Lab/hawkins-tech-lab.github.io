@@ -1,0 +1,22 @@
+---
+title: "Week 5"
+subtitle: "Trip Generation"
+---
+
+## Prepare
+
+Start work on Project Report 1 [✍️](/teaching/CIVE461/project/project-description.html#report-1)
+
+## Participate
+
+🖥️ [Lecture 3 - Trip Generation](/teaching/CIVE461/slides/lec-3.html)
+
+## Practice
+
+📋 [AE 2 - Transportation Statistics](/teaching/CIVE461/ae/ae-2-statistics.html)
+
+<br><br>
+
+::: {style="font-size: 0.875em;"}
+Back to [course schedule](/teaching/ENCI707/ "Course schedule") ⏎
+:::

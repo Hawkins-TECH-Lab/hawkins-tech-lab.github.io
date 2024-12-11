@@ -1,0 +1,222 @@
+---
+title: "Project description"
+---
+
+## Timeline
+
+[Topic ideas](#topic-ideas) due Fri, Jan 17
+
+[Proposal](#project-proposal) due Fri, Jan 31
+
+[Literature review](#lit-review) due Fri, Feb 21
+
+[Draft data and experimental design plan](#draft-plan) due Fri, Mar 21
+
+[Final data and experimental design plan](#final-plan) due Fri, Apr 18
+
+## Introduction
+
+**TL;DR**: *Pick a data set and develop a demand and/or policy analysis for it. That is your term project.*
+
+The goal of the term project is for you to use aggregate and/or disaggregate demand analysis to analyze a data set of your own choosing.
+Choose the data based on your interests or work you all have done in other courses or research projects.
+The goal of this project is for you to demonstrate proficiency in the techniques we have covered in this class (and beyond, if you like!) and apply them to a data set to analyze it in a meaningful way.
+
+### Logistics
+
+You will work on the project as an individual.
+
+The final deliverables for the term project is a detailed proposal. If interested, I am happy to support the implementation of promising projects into a thesis chapter and/or publication.
+
+## Topic ideas {#topic-ideas}
+
+Identify 2-3 data sets you're interested in potentially using for the term project.
+If you're unsure where to find data, you can use the list of potential data sources in the [Tips + Resources](#tips--resources) section as a starting point.
+It may also help to think of topics you're interested in investigating and find data sets on those topics.
+
+The purpose of submitting project ideas is to give you time to find data for the project and to make sure there are datasets available that can help you be successful in the project.
+**Therefore, you must use one of the data sets submitted as a topic idea, unless otherwise notified to the course instructor.**
+
+The data sets should meet the following criteria:
+
+-   At least 500 observations
+
+-   At least 10 columns
+
+-   At least 6 of the columns must be useful and unique predictor variables.
+
+    -   If you have multiple columns with the same information (e.g. "state abbreviation" and "state name"), then they are not unique predictors.
+
+-   At least one variable that can be identified as a reasonable response variable.
+
+    -   The response variable can be quantitative or categorical.
+
+-   A mix of quantitative and categorical variables that can be used as predictors.
+
+-   You may not use data that has previously been used in any course materials, or any derivation of data that has been used in course materials.
+
+**Please ask the course instructor if you're unsure whether your data set meets the criteria.**
+
+For each data set, include the following:
+
+#### Introduction and data
+
+-   State the source of the data set
+-   Describe when and how it was originally collected (by the original data curator, not necessarily how you found the data)
+-   Describe the observations and the general characteristics being measured in the data
+
+#### Research question
+
+-   Describe a research question you're interested in answering using this data.
+
+## Project proposal {#project-proposal}
+
+The purpose of the project proposal is to help you think about your analysis strategy early and receive feedback. The more effort and detail you demonstrate in the proposal, the more complete feedback you will receive from me.
+
+Include the following in the proposal:
+
+### Section 1 - Introduction
+
+The introduction section includes:
+
+-   An introduction to the subject matter you're investigating
+-   The motivation for your research question (citing any relevant literature)
+-   The general research question you wish to explore
+-   Your hypotheses regarding the research question of interest
+
+### Section 2 - Data description
+
+In this section, you will describe the dataset you wish to explore.
+This includes:
+
+-   Description of the observations in the data set,
+-   Description of how the data was originally collected (not how you found the data but how the original curator of the data collected it).
+
+### Section 3 - Analysis approach
+
+In this section, you will provide a brief overview of your analysis approach.
+This includes:
+
+-   Description of the response variable
+-   Visualization and summary statistics for the response variable
+-   List of variables that will be considered as predictors
+-   Preliminary regression model technique(s) (e.g., multiple linear regression, logistic regression, mixed logit discrete choice)
+-   Study methodological focus (e.g., prediction, policy analysis, new econometric methods)
+
+### Proposal grading
+
+| Total                | 10 pts |
+|----------------------|--------|
+| **Introduction**     | 4 pts  |
+| **Data description** | 2 pts  |
+| **Analysis plan**    | 4 pts  |
+
+Each component will be graded as follows:
+
+-   **Meets expectations (full credit)**: All required elements are completed and are accurate.
+    The narrative is written clearly, all tables and visualizations are nicely formatted, and the work would be presentable in a professional setting.
+
+-   **Close to expectations (half credit)**: There are some elements missing and/or inaccurate.
+    There are some issues with formatting.
+
+-   **Does not meet expectations (no credit)**: Major elements missing.
+    Work is not neatly formatted and would not be presentable in a professional setting.
+
+## Literature review {#lit-review}
+
+The purpose of the literature review is to situate your work in the existing literature.
+
+Below is a brief description of the areas to focus on in the literature review:
+
+### Introduction
+
+This section includes an overview of your project and any changes to its scope. You should also briefly describe your approach to conducting the literature review. Did your review draw on specific academic databases? Did you review non-academic sources? Did you follow a *snowball approach* of reviewing papers cited in an initial set of sources?
+
+### Existing Research
+
+This section should focus on the main themes in your field of study. Has your research question been examined in prior work? If so, was it for a different geographic area? What were the findings of previous studies? The review of existing research should cover datasets, methods, and findings.
+
+### Contributions
+
+In this section, you will identify how your proposed research contributes to the existing literature. Do you propose a new method? Will you make use of a new dataset that facilates more detailed or new analysis?
+
+## Draft data and experimental design plan {#draft-plan}
+
+The draft data and experimental design plan submission is an opportunity to receive feedback on your work prior to final submission. While it is a **draft**, I expect high quality and thorough submissions at this stage. I will provide detailed feedback and schedule a time for a review discussion.
+
+
+**You will submit the PDF of your plan on D2L.**
+
+There is a 15-page limit for the plan document (excluding references). The draft plan will be marked out of 60, broken down as follows
+
+| Total                         | 50 pts |
+|-------------------------------|--------|
+| **Introduction**         | 6 pts  |
+| **Data**               | 10 pts |
+| **Research questions/hypotheses**   | 10 pts |
+| **Analysis Plan**                   | 24 pts |
+| **Next Steps**   | 6 pts  |
+| **Organization + formatting** | 4 pts  |
+
+### Introduction
+
+This section includes an introduction to the project motivation and objectives.
+
+#### Grading criteria
+
+1. The research motivation and objectives are clearly stated in the introduction, including citations for any external research.
+2. The research objectives have a logical structure centered on the research motivation. Objectives should be easily understood and limited to the key objectives - a suggested number of objectives is 3-5.
+
+### Research questions/hypotheses
+
+This section provides an elaboration of the research objectives, questions, and hypotheses. It should provide a clear connection to the data and analysis plan discussed in the subsequent sections. A research question may relate to the feasibility of a new econometric method; the effectiveness of a policy, incentive, or regulation; or the behavioural response of individuals, firms, or other entities to a change in an engineering system (e.g., travel time, cost of water, etc.).
+
+#### Grading criteria
+
+1. The research questions/hypotheses are clearly stated and flow logically from the motivations and objectives defined in the previous section.
+2. The research questions/hypotheses demonstrate extensive thought about the process under study and its mechanisms.
+
+### Data
+
+This section should detail the datasets used to accomplish the research objectives and answer the associated research questions/hypotheses. The data section should provide details on data formats and sources. You should discuss the reliability of each data source in terms of its sample size relative to the population, measurement accuracy, and other details discussed in lecture. You should also discuss the limitations of each dataset in terms of its spatial and temporal resolution, completeness, and other details discussed in lecture. This section should also include a discussion of data processing steps. It may include basic summary statistics and charts, depending upon the availability of data (e.g., a study proposing a new survey instrument would not require such details) and the complexity of the data processing task.
+
+#### Grading criteria
+1. The data are sufficient to address the research questions included in the research plan.
+2. Sufficient detail is provided for the reader to understand the merits and limitations of the proposed datasets.
+3. The research questions are firmly situated in the literature in terms of previous findings and how your work contributes to the relevant literature.
+
+### Analysis plan
+This section is the core of the plan. You should demonstrate how you will integrate data and methods to accomplish your researh objectives. While it is not required that you perform the analysis, it should be clear from the plan how you would execute the analysis. You should include a discussion of the proposed methods, as well as practical details. Methods might include econometric models, statistical tests, algorithms, or other analytics. Practical details are the specific software packages you propose to use in the work. If the research includes a survey, its details must be provided here including survey questions, sample frame, recruitment methods, and other details necessary to assess the ability of the survey instrument to answer the research question(s). An econometric methods plan must include initial derivations. A causal inference plan must include a plausible identification strategy that is specific to the research question.
+
+#### Grading criteria
+
+1. Sufficient detail is provided for the reader to execute the research plan with minimal assumptions.
+2. If an ecometric methods plan, there is sufficient sophistication in the proposed work based on the background of the student. If a survey plan, a detailed survey instrument is included in the document. If the survey includes a stated choice experiment, the attributes and their levels are supported by literature sources. If a causal inference plan, the identification strategy is supported by the literature and available data. If a policy analysis plan,...
+
+### Organization + formatting
+
+This is an assessment of the overall presentation and formatting of the written report.
+
+#### Grading criteria
+
+1. The report is neatly written and organized with clear section headers and appropriately sized figures with informative labels.
+2. Numerical results are displayed with a reasonable number of digits, and all visualizations are neatly formatted.
+3. All citations and links are properly formatted.
+4. The main body of the written report (not including the references) is no longer than 15 pages.
+
+### Grading summary
+
+Grading of the project will take into account the following:
+
+-   Content - What is the quality of research and/or policy question and relevancy of data to those questions?
+-   Correctness - Are statistical procedures explained correctly?
+-   Writing and Presentation - What is the quality of the statistical presentation, writing, and explanations?
+-   Creativity and Critical Thought - Is the project carefully thought out? Are the limitations carefully considered? Does it appear that time and effort went into the planning of the project?
+
+A general breakdown of scoring is as follows:
+
+-   *90%-100%*: Outstanding effort. Student understands how to apply all econometric and policy analysis concepts, can translate their learning into a cogent plan, can identify weaknesses in the plan, and can clearly communicate the plan to others.
+-   *80%-89%*: Good effort. Student understands most of the concepts, puts together an adequate plan, identifies some weaknesses of their plan, and communicates most plan elements clearly to others.
+-   *70%-79%*: Passing effort. Student has misunderstanding of concepts in several areas, has some trouble putting concepts together in a cogent plan, and communication of plans is sometimes unclear.
+-   *60%-69%*: Struggling effort. Student is making some effort, but has misunderstanding of many concepts and is unable to put together a cogent plan. Communication of results is unclear.
+-   *Below 60%*: Student is not making a sufficient effort.

@@ -1,0 +1,22 @@
+---
+title: "Week 8"
+subtitle: "Disaggregate Demand Theory"
+---
+
+## Prepare
+
+📖 Watch the [videos](/teaching/ENCI707/prep/week8/week8-videos.html)
+
+## Participate
+
+📋 [AE 4 - Trip Distribution](/teaching/CIVE461/ae/ae-4-trip-distribution.html) - Submit on Canvas
+
+## Practice
+
+None
+
+<br><br>
+
+::: {style="font-size: 0.875em;"}
+Back to [course schedule](/teaching/ENCI707/ "Course schedule") ⏎
+:::

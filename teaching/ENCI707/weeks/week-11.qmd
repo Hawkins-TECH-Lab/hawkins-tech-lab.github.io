@@ -1,0 +1,22 @@
+---
+title: "Week 11"
+subtitle: "Causal Inference"
+---
+
+## Prepare
+
+📖 Watch the [videos](/teaching/ENCI707/prep/week11/week11-videos.html)
+
+## Participate
+
+🖥️ [Lecture 6 - Mode & Destination Choice](/teaching/CIVE461/slides/lec-6.html)
+
+## Practice
+
+✍️ [IA 1 - Choice Modeling](/teaching/CIVE461/assignments/indiv_assignment1.html) - Submit on Canvas
+
+<br><br>
+
+::: {style="font-size: 0.875em;"}
+Back to [course schedule](/teaching/ENCI707/ "Course schedule") ⏎
+:::
