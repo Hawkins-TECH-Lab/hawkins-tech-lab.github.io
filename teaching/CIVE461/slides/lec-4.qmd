@@ -17,6 +17,7 @@ execute:
 ---
 
 ## Outline
+
 ::: incremental
 1.  Decision-making models
 2.  Planning and decision process

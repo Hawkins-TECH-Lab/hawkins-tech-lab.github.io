@@ -1,5 +1,5 @@
 ---
-# title: 'Welcome to the TECH Group: <span style="color:#757883">light-matter theory at the nanoscale</span>'
+# title: 'Welcome to the TECH Group
 # subtitle: "Transportation and Ecological Choice by Households"
 page-layout: full
 section-divs: false

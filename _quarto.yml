@@ -31,13 +31,13 @@ website:
             href:  thoughts/books.qmd
           - text: "Blog"
             href:  thoughts/blog.qmd
-    background: "#d00000"
+    background: "#595758"
     
   sidebar:
 
     - id: CIVE461
       title: "CIVE 461"
-      background: "#f5f1e7"
+      background: "#95B0B7"
       logo: "assets/images/teaching/cive_461_logo.png"
       style: "docked"
       search: true
@@ -126,42 +126,92 @@ website:
             - href: teaching/CIVE461/ae/ae-7-review.qmd
               text: "AE 7 - Review"
 
-    - id: CIVE864
-      title: "CIVE 864"
-      background: "#f5f1e7"
-      logo: "assets/images/teaching/cive864_logo.png"
+    - id: ENCI707
+      title: "ENCI 707"
+      background: "#95B0B7"
+      logo: "assets/images/teaching/ENCI707/logo.png"
       style: "docked"
       search: true
       align: center
       contents:
         - section: "Administration"
           contents:
-            - href: teaching/CIVE864/course-overview.qmd
+            - href: teaching/ENCI707/course-overview.qmd
               text: Overview
-            - href: teaching/CIVE864/course-syllabus.qmd
+            - href: teaching/ENCI707/course-syllabus.qmd
               text: Syllabus
-            - href: teaching/CIVE864/course-support.qmd
-              text: Support
-            - href: teaching/CIVE864/course-team.qmd
+            - href: teaching/ENCI707/course-team.qmd
               text: "Teaching team"
-            - href: teaching/CIVE864/index.qmd
+            - href: teaching/ENCI707/index.qmd
               text: Schedule
-            - href: teaching/CIVE864/course-links.qmd
-              text: Useful links
-            - href: teaching/CIVE864/course-faq.qmd
+            - href: teaching/ENCI707/course-faq.qmd
               text: FAQ
-
+        - section: "Computing"
+          contents:
+            - href: teaching/ENCI707/computing/computing-access.qmd
+              text: "Access"
+            - href: teaching/ENCI707/computing/computing-troubleshooting.qmd
+              text: "Troubleshooting"
         - section: "Weekly Materials"
           contents:
-            - href: teaching/CIVE864/weeks/week-1.qmd
+            - href: teaching/ENCI707/weeks/week-1.qmd
               text: "Week 1"
-            - href: teaching/CIVE864/weeks/week-2.qmd
+            - href: teaching/ENCI707/weeks/week-2.qmd
               text: "Week 2"
-
-        - section: "Supplemental Notes"
+            - href: teaching/ENCI707/weeks/week-3.qmd
+              text: "Week 3"
+            - href: teaching/ENCI707/weeks/week-4.qmd
+              text: "Week 4"
+            - href: teaching/ENCI707/weeks/week-5.qmd
+              text: "Week 5"
+            - href: teaching/ENCI707/weeks/week-6.qmd
+              text: "Week 6"
+            - href: teaching/ENCI707/weeks/week-7.qmd
+              text: "Week 7"
+            - href: teaching/ENCI707/weeks/week-8.qmd
+              text: "Week 8"
+            - href: teaching/ENCI707/weeks/week-9.qmd
+              text: "Week 9"
+            - href: teaching/ENCI707/weeks/week-10.qmd
+              text: "Week 10"
+            - href: teaching/ENCI707/weeks/week-11.qmd
+              text: "Week 11"
+            - href: teaching/ENCI707/weeks/week-12.qmd
+              text: "Week 12"
+            - href: teaching/ENCI707/weeks/week-13.qmd
+              text: "Week 13"
+            - href: teaching/ENCI707/weeks/week-14.qmd
+              text: "Week 14"
+        - section: "Project"
           contents:
-            - href: teaching/CIVE864/supplemental/slr-derivations.qmd
-              text: SLR derivations
+            - href: teaching/ENCI707/project/project-description.qmd
+              text: "Description"
+            - href: teaching/ENCI707/project/project-feedback.qmd
+              text: "Feedback"
+        - section: "Assignments"
+          contents:
+            - href: teaching/ENCI707/assignments/indiv_assignment1.qmd
+              text: "Assignment 1"
+            - href: teaching/ENCI707/assignments/indiv_assignment2.qmd
+              text: "Assignment 2"
+        - section: "Application Exercises"
+          contents:
+            - href: teaching/ENCI707/ae/ae-0-travel-diary.qmd
+              text: "AE 0 - Travel Diary"
+            - href: teaching/ENCI707/ae/ae-1-transportation-planning-experience.qmd
+              text: "AE 1 - Planning Experience"
+            - href: teaching/ENCI707/ae/ae-2-statistics.qmd
+              text: "AE 2 - Statistics"
+            - href: teaching/ENCI707/ae/ae-3-transport-plans.qmd
+              text: "AE 3 - Regional Plans"
+            - href: teaching/ENCI707/ae/ae-4-trip-distribution.qmd
+              text: "AE 4 - Trip Distribution"
+            - href: teaching/ENCI707/ae/ae-5-equity.qmd
+              text: "AE 5 - Equity"
+            - href: teaching/ENCI707/ae/ae-6-trip-assignment.qmd
+              text: "AE 6 - Trip Assignment"
+            - href: teaching/ENCI707/ae/ae-7-review.qmd
+              text: "AE 7 - Review"
 
     - id: vehicle_adoption
       style: "docked"
@@ -202,10 +252,10 @@ website:
       contents:
         - section: "Teaching"
           contents:
-            - href: teaching/CIVE461/CIVE461.qmd
+            - href: teaching/CIVE461/index.qmd
               text: CIVE461
-            - href: teaching/CIVE864/CIVE864.qmd
-              text: CIVE864
+            - href: teaching/ENCI707/index.qmd
+              text: ENCI707
 
   page-footer:
     left: |
@@ -224,7 +274,7 @@ website:
       - icon: github
         href: https://github.com/UNL-Hawkins-Lab/Hawkinslab
         aria-label: Quarto GitHub     
-    background: "#f5f1e7"
+    background: "#595758"
     
 format:
   html:
