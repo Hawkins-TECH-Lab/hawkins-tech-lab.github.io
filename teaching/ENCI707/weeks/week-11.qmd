@@ -7,13 +7,18 @@ subtitle: "Causal Inference"
 
 📖 Watch the [videos](/teaching/ENCI707/prep/week11/week11-videos.html)
 
+📖 Review Ch. 18-21 of Regression and Other Stories [ROS](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/dc0772ab0b84414af5737676f07761518ea46dcf/Resources/Gelman_Et_Al_ROS_1ed.pdf)
+
 ## Participate
 
-🖥️ [Lecture 6 - Mode & Destination Choice](/teaching/CIVE461/slides/lec-6.html)
+🖥️ [Lecture 7 - Causal Inference](/teaching/ENCI707/slides/lec-7.html)
 
 ## Practice
 
-✍️ [IA 1 - Choice Modeling](/teaching/CIVE461/assignments/indiv_assignment1.html) - Submit on Canvas
+🖥️ [Activity 11 - Causal Inference](/teaching/ENCI707/ae/ae-11.html)
+
+## Deliver
+None
 
 <br><br>
 

@@ -5,17 +5,17 @@ subtitle: "Summary Policy Application"
 
 ## Prepare
 
-📖
+📖 Read [news article]()
 
 ## Participate
 
-🖥️ [Lecture 7 - Trip Assignment](/teaching/CIVE461/slides/lec-7.html)
+🖥️ [Activity 14 - Policy Analysis](/teaching/ENCI707/ae/ae-14.html)
 
 ## Practice
+None
 
-📋 [AE 6 - Trip Assignment](/teaching/CIVE461/ae/ae-6-trip-assignment.html) - Submit on Canvas
-
-✍️ [GP 3 - Mode Choice](/teaching/CIVE461/project/project-description.html#report-3) - Submit on Canvas
+## Deliver
+None
 
 <br><br>
 

@@ -7,12 +7,19 @@ subtitle: "Disaggregate Demand Theory"
 
 📖 Watch the [videos](/teaching/ENCI707/prep/week8/week8-videos.html)
 
+📖 Review Discrete Choice Methods with Simulation Ch. 2 [DCMS2](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/6a17dbbd701554fca22c5c434eb4bf6e746f8518/Resources/Ch02_p9-33.pdf)
+
+📖 Review Discrete Choice Methods with Simulation Ch. 3 [DCMS3](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/6a17dbbd701554fca22c5c434eb4bf6e746f8518/Resources/Ch03_p34-75.pdf)
+
 ## Participate
 
-📋 [AE 4 - Trip Distribution](/teaching/CIVE461/ae/ae-4-trip-distribution.html) - Submit on Canvas
+📋 [Lecture 4 - Disaggregate Choice Theory](/teaching/ENCI707/slides/lec-4.html)
 
 ## Practice
 
+🖥️ [Activity 9 - Disaggregate Demand](/teaching/ENCI707/ae/ae-9.html)
+
+## Deliver
 None
 
 <br><br>

@@ -1,19 +1,23 @@
 ---
 title: "Week 5"
-subtitle: "Trip Generation"
+subtitle: "Policy Analysis"
 ---
 
 ## Prepare
 
-Start work on Project Report 1 [✍️](/teaching/CIVE461/project/project-description.html#report-1)
+📖 Read Basic Methods of Policy Analysis and Planning Ch 2 (section 5) and Ch. 12 (all) [BMPAP](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/6c18872fe3fd73e8ddb1edf6e1ba18fc7883387f/Resources/Basic_Methods_of_Policy_Analysis_and_Planing.pdf)
 
 ## Participate
+📋 [Lecture 3 - Aggregate Demand Models](/teaching/ENCI707/slides/lec-3.html)
 
-🖥️ [Lecture 3 - Trip Generation](/teaching/CIVE461/slides/lec-3.html)
+🖥️ [Activity 5 - Policy Analysis I](/teaching/ENCI707/ae/ae-5.html)
 
 ## Practice
 
-📋 [AE 2 - Transportation Statistics](/teaching/CIVE461/ae/ae-2-statistics.html)
+🖥️ [Activity 6 - Policy Analysis II](/teaching/ENCI707/ae/ae-6.html)
+
+## Deliver
+None
 
 <br><br>
 

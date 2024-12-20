@@ -1,24 +1,23 @@
 ---
 title: "Week 6"
-subtitle: "Transportation Planning Process"
-editor: visual
+subtitle: "Winter Break"
 ---
 
 ## Prepare
 
-📖 Read notes on [transportation regulation](/teaching/CIVE461/supplemental/transport-reg.html)
-
-📖 Read notes on [transportation data](/teaching/CIVE461/supplemental/transport-data.html)
+📖 Prepare GitHub repository for following week. Additional instructions [here](/teaching/ENCI707/computing-access.html)
 
 ## Participate
 
-🖥️ [Lecture 4 - Transportation Planning Process](/teaching/CIVE461/slides/lec-4.html)
-
-📋 [AE 3 - Urban Transportation Plans](/teaching/CIVE461/ae/ae-3-transport-plans.html)
+None
 
 ## Practice
 
 None
+
+## Deliver
+
+📝 Literature review due Feb. 21 by 11:59 PM on D2L.
 
 <br><br>
 

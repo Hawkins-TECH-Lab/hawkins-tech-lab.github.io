@@ -1,6 +1,10 @@
 ---
-title: "Active Exercise 11 - Spatial Exploration"
+title: "Active Exercise 11 - Causal Inference"
 sidebar: CIVE461
 ---
 
-We discussed several transportation and urban develop equity issues in lecture. Please provide a brief (3-5 sentence) summary of your thoughts on the class discussion via Canvas.
+::: callout-important
+This application exercise should be submitted via D2L by end of the day on which it was introduced in lecture.
+:::
+
+Some thinking through causal mechanisms

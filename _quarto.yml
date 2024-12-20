@@ -130,6 +130,7 @@ website:
       title: "ENCI 707"
       background: "#95B0B7"
       logo: "assets/images/teaching/ENCI707/logo.png"
+      logo-href: "/teaching/ENCI707/"
       style: "docked"
       search: true
       align: center
@@ -146,12 +147,8 @@ website:
               text: Schedule
             - href: teaching/ENCI707/course-faq.qmd
               text: FAQ
-        - section: "Computing"
-          contents:
-            - href: teaching/ENCI707/computing/computing-access.qmd
-              text: "Access"
-            - href: teaching/ENCI707/computing/computing-troubleshooting.qmd
-              text: "Troubleshooting"
+            - href: teaching/ENCI707/computing-access.qmd
+              text: "Computing Access"
         - section: "Weekly Materials"
           contents:
             - href: teaching/ENCI707/weeks/week-1.qmd
@@ -196,22 +193,24 @@ website:
               text: "Assignment 2"
         - section: "Application Exercises"
           contents:
-            - href: teaching/ENCI707/ae/ae-0-travel-diary.qmd
-              text: "AE 0 - Travel Diary"
-            - href: teaching/ENCI707/ae/ae-1-transportation-planning-experience.qmd
-              text: "AE 1 - Planning Experience"
-            - href: teaching/ENCI707/ae/ae-2-statistics.qmd
-              text: "AE 2 - Statistics"
-            - href: teaching/ENCI707/ae/ae-3-transport-plans.qmd
-              text: "AE 3 - Regional Plans"
-            - href: teaching/ENCI707/ae/ae-4-trip-distribution.qmd
-              text: "AE 4 - Trip Distribution"
-            - href: teaching/ENCI707/ae/ae-5-equity.qmd
-              text: "AE 5 - Equity"
-            - href: teaching/ENCI707/ae/ae-6-trip-assignment.qmd
-              text: "AE 6 - Trip Assignment"
-            - href: teaching/ENCI707/ae/ae-7-review.qmd
-              text: "AE 7 - Review"
+            - href: teaching/ENCI707/ae/ae-1.qmd
+              text: "AE 1 - Demand Analysis"
+            - href: teaching/ENCI707/ae/ae-2.qmd
+              text: "AE 2 - Ecological Economics"
+            - href: teaching/ENCI707/ae/ae-3.qmd
+              text: "AE 3 - Surveys"
+            - href: teaching/ENCI707/ae/ae-4.qmd
+              text: "AE 4 - Statistics Activity"
+            - href: teaching/ENCI707/ae/ae-5.qmd
+              text: "AE 5 - Policy Case Study I"
+            - href: teaching/ENCI707/ae/ae-6.qmd
+              text: "AE 6 - Policy Case Study II"
+            - href: teaching/ENCI707/ae/ae-7.qmd
+              text: "AE 7 - Computing Visuals"
+            - href: teaching/ENCI707/ae/ae-8.qmd
+              text: "AE 8 - Computing Models"
+            - href: teaching/ENCI707/ae/ae-9.qmd
+              text: "AE 8 - Disaggregate Demand"
 
     - id: vehicle_adoption
       style: "docked"

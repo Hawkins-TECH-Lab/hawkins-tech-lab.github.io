@@ -5,15 +5,20 @@ subtitle: "Multinomial Logit Model"
 
 ## Prepare
 
-None
+📖 Read Mokhtarian on IIA  [IIA](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/b68c92c3ae8939dea7c2b6719d62ac0ec41013ea/Resources/Mokhtarian_IIA_JC.pdf)
+
+📖 Read Mokhtarian on Rho-squared  [Rho](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/b68c92c3ae8939dea7c2b6719d62ac0ec41013ea/Resources/Mokhtarian_Rho_Squared_JC.pdf)
 
 ## Participate
 
-Guest lecture - Nick Aldridge: "Active Mode Transportation Safety Exposure Using LBS Data"
+📋 [Lecture 5 - Multinomial Logit Model](/teaching/ENCI707/slides/lec-5.html)
 
 ## Practice
 
-📋 [AE 4 - Trip Distribution](/teaching/CIVE461/ae/ae-4-trip-distribution.html) - Submit on Canvas
+🖥️ [Activity 10 - Choice Models](/teaching/ENCI707/ae/ae-10.html)
+
+## Deliver
+None
 
 <br><br>
 

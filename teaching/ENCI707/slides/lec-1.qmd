@@ -22,7 +22,7 @@ execute:
     c.  Demand function
     d.  Functional forms of demand function
 
-# Introduction
+# Microeconomic Theory of Demand
 
 ## Microeconomics {.smaller}
 
@@ -67,6 +67,7 @@ execute:
 ## Comparative Statics Example - SOLUTION
 ![](../../../assets/images/teaching/ENCI707/Lecture1/comparative_statics_solution.svg){fig-align="center" width="50%"}
 
+# Quantitative Analysis of Consumer Demand
 ## Concept of Utility​ {.smaller}
 - **Utility**: a measure of *benefit or attractiveness* of alternative courses of action​
   - Assumption that people choose action that **maximizes utility (profit)** and **minimizes disutility (cost)**​
@@ -487,7 +488,7 @@ Why is it impossible to derive a direct demand function?
 :::
 :::::
 
-## Modelling Travel Demands​ {.smaller}
+## Modelling Infrastructure Demands​ {.smaller}
 - **Data** (revealed/stated preferences): data **do not** provide answers themselves​
   - We need **models** and **visualizations** to give context and structure​
 - Identify underling **theory** to specify model of interest​

@@ -5,17 +5,20 @@ subtitle: "Geographic Data Science"
 
 ## Prepare
 
-📖 Read notes on [transportation equity](/teaching/CIVE461/supplemental/transport-equity.html)
+📖 Review Geographic Data Science Part I [GDS](https://geographicdata.science/book/intro_part_i.html)
+
+📖 Review Geographic Data Science Part III: Spatial Regression [GDS](https://geographicdata.science/book/notebooks/11_regression.html)
 
 ## Participate
 
-Class discussion on transportation equity
-
-🖥️ [Lecture 7 - Trip Assignment](/teaching/CIVE461/slides/lec-7.html)
+🖥️ [Activity 12 - Spatial Exploration](/teaching/ENCI707/ae/ae-12.html)
 
 ## Practice
 
-📋 [AE 5 - Transportation Equity](/teaching/CIVE461/ae/ae-5-equity.html) - Submit on Canvas
+🖥️ [Activity 13 - Spatial Regression](/teaching/ENCI707/ae/ae-13.html)
+
+## Deliver
+None
 
 <br><br>
 

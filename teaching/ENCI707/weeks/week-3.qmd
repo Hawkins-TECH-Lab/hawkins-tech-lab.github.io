@@ -5,17 +5,20 @@ subtitle: "Surveys"
 
 ## Prepare
 
-📖 Read Ch. 2 of National Household Travel Survey Documentation [NHTS](https://github.com/UNL-Hawkins-Lab/CIVE_461/blob/6ae2e8ca1576a517b809c1d6ffb832f84695dbf1/Resources/Gelman_Et_Al_ROS_1ed.pdf)
+📖 Read Ch. 2 of National Household Travel Survey Documentation [NHTS](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/dc0772ab0b84414af5737676f07761518ea46dcf/Resources/NHTS2017_UsersGuide_04232019_1.pdf)
 
-📖 Read Chioce Experiments (2017) [CE2017](https://github.com/UNL-Hawkins-Lab/CIVE_461/blob/6ae2e8ca1576a517b809c1d6ffb832f84695dbf1/Resources/Gelman_Et_Al_ROS_1ed.pdf)
+📖 Read Choice Experiments Book Chapter [CE2017](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/b33579620acb185975f362123ed1e1c2d3637bf7/Resources/2017_Choice_Experiments_Environmental_Economics.pdf)
 
 ## Participate
 
-🖥️ [Lecture 2 - Surveys](/teaching/ENCI707/slides/lec-2.html)
+📋 [Lecture 2 - Surveys](/teaching/ENCI707/slides/lec-2.html)
 
 ## Practice
 
-📋 [Activity 3 - Stated Preference Experiment](/teaching/ENCI707/ae/ae-3.html)
+🖥️ [Activity 3 - Stated Preference Experiment](/teaching/ENCI707/ae/ae-3.html)
+
+## Deliver
+📝 Project proposal due Jan. 31 by 11:59 PM on D2L.
 
 <br><br>
 

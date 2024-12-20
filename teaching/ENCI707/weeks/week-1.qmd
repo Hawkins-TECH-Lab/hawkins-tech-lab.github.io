@@ -11,11 +11,15 @@ subtitle: "Welcome to ENCI707"
 
 ## Participate
 
-🖥️ [Lecture 1 - Microeconomic Theory](/teaching/CIVE461/slides/lec-1.html)
+📋 [Lecture 1 - Microeconomic Theory](/teaching/ENCI707/slides/lec-1.html)
 
 ## Practice
 
-📋 [Activity 1 - Demand Analysis](/teaching/CIVE461/ae/ae-1.html)
+🖥️ [Activity 1 - Demand Analysis](/teaching/ENCI707/ae/ae-1.html)
+
+## Deliver
+
+None
 
 <br><br>
 

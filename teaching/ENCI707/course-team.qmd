@@ -1,0 +1,16 @@
+---
+title: "Teaching team"
+---
+
+## Instructor
+
+![](images/team/jason.jpg){style="float:right;padding: 0 0 0 10px;" fig-alt="Headshot of Dr. Jason Hawkins" width="200"}
+
+[**Dr. Jason Hawkins**](https://hawkins-tech-lab.github.io/) is Assistant Professor of Civil Engineering at the University of Calgary.
+Jason's work focuses on innovation in transportation planning and engineering policy analysis, with an emphasis on choice models, spatial statistics, and equity.
+
+| Office hours                  | Location                                                                                                                  |
+|-------------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| Mondays 2:00 pm - 4:00 pm     |     ENF284                                                                                                                |
+
+If this time does not work for you or you'd like to schedule a one-on-one meeting, you can do so by messaging me on D2L.

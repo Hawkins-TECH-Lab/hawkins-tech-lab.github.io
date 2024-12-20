@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="152.93716mm"
+   height="119.0695mm"
+   version="1.1"
+   viewBox="0 0 152.93716 119.0695"
+   id="svg15"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs15" />
+  <g
+     fill="none"
+     stroke="#000000"
+     id="g4"
+     transform="translate(-18.432824,-82.92051)">
+    <path
+       d="m 28.504,84.103 -0.3519,94.66"
+       stroke-width="0.26458px"
+       id="path1" />
+    <path
+       d="m 28.019,178.76 119.07,1.0552"
+       stroke-width="0.26458px"
+       id="path2" />
+    <path
+       d="M 39.764,166.62 125.978,93.25"
+       stroke-width="1.065"
+       id="path3" />
+    <path
+       d="m 39.419,92.847 86.905,74.181"
+       stroke-width="1.065"
+       id="path4" />
+  </g>
+  <g
+     fill="#000000"
+     font-size="3.175px"
+     stroke-width="1.065"
+     id="g11"
+     transform="translate(-18.432824,-82.92051)">
+    <text
+       x="130.37737"
+       y="92.441826"
+       xml:space="preserve"
+       id="text4"><tspan
+         x="130.37737"
+         y="92.441826"
+         stroke-width="1.065"
+         id="tspan4">Supply</tspan></text>
+    <text
+       x="131.43306"
+       y="166.97453"
+       xml:space="preserve"
+       id="text5"><tspan
+         x="131.43306"
+         y="166.97453"
+         stroke-width="1.065"
+         id="tspan5">Demand</tspan></text>
+    <text
+       x="148.14809"
+       y="185.44905"
+       xml:space="preserve"
+       id="text6"><tspan
+         x="148.14809"
+         y="185.44905"
+         stroke-width="1.065"
+         id="tspan6">Quantity</tspan></text>
+    <text
+       transform="translate(11.613,2.197)"
+       x="6.5100713"
+       y="83.047394"
+       style="white-space:pre;inline-size:29.2147"
+       xml:space="preserve"
+       id="text7"><tspan
+         x="6.5100713"
+         y="83.047394"
+         id="tspan1">Price</tspan></text>
+    <text
+       x="19.530212"
+       y="124.92299"
+       xml:space="preserve"
+       id="text9"><tspan
+         x="19.530212"
+         y="124.92299"
+         stroke-width="1.065"
+         id="tspan9">P<tspan
+   baseline-shift="sub"
+   font-size="65%"
+   id="tspan8">0</tspan></tspan></text>
+    <text
+       x="81.639809"
+       y="185.42154"
+       xml:space="preserve"
+       id="text11"><tspan
+         x="81.639809"
+         y="185.42154"
+         stroke-width="1.065"
+         id="tspan11">Q<tspan
+   baseline-shift="sub"
+   font-size="65%"
+   id="tspan10">0</tspan></tspan></text>
+  </g>
+  <g
+     id="g15"
+     transform="translate(-18.432824,-82.92051)">
+    <g
+       stroke-dasharray="0.264583, 0.264583"
+       stroke-width="1.065"
+       id="g13">
+      <path
+         d="m 82.871,129.94 0.69503,49.354"
+         id="path11" />
+      <path
+         d="M 83.566,201.99 83.21848,154.616"
+         id="path12" />
+      <path
+         d="m 131.74,125.59 c 39.63,5.8438 39.63,5.8438 39.63,5.8438"
+         id="path13" />
+    </g>
+    <path
+       d="m 82.871,129.94 0.69503,49.354"
+       stroke="#000000"
+       stroke-dasharray="0.265, 0.265"
+       stroke-width="0.265"
+       id="path14" />
+    <path
+       d="M 82.871,129.94 H 28.333"
+       stroke="#000000"
+       stroke-dasharray="0.264999, 0.264999"
+       stroke-width="0.265"
+       id="path15" />
+  </g>
+</svg>

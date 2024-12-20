@@ -9,11 +9,14 @@ None
 
 ## Participate
 
-🖥️ [Lecture 8 - Wood Buffalo TDM](/teaching/CIVE461/slides/lec-8.html)
+None
 
 ## Practice
 
-✍️ [IA 2 - Trip Assignment](/teaching/CIVE461/assignments/indiv_assignment2.html) - Submit on Canvas
+None
+
+## Deliver
+📝 Final data and experimental design due Apr. 18 by 11:59 PM on D2L.
 
 <br><br>
 
