@@ -1,0 +1,11 @@
+---
+title: "Freight Transportation"
+sidebar: CIVE461
+editor: visual
+---
+
+<object data="./CIVE461_Freight_Models.pdf" type="application/pdf" width="100%" height="700px">
+    <embed src="./CIVE461_Freight_Models.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="./CIVE461_Freight_Models.pdf">Download PDF</a>.</p>
+    </embed>
+</object>

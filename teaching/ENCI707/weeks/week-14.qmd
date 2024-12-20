@@ -1,0 +1,25 @@
+---
+title: "Week 14"
+subtitle: "Final Project Submission"
+---
+
+## Prepare
+
+None
+
+## Participate
+
+None
+
+## Practice
+
+None
+
+## Deliver
+📝 Final data and experimental design due Apr. 18 by 11:59 PM on D2L.
+
+<br><br>
+
+::: {style="font-size: 0.875em;"}
+Back to [course schedule](/teaching/ENCI707/ "Course schedule") ⏎
+:::

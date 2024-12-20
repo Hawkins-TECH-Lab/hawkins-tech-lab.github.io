@@ -1,0 +1,26 @@
+---
+title: "Week 12"
+subtitle: "Transportation Equity & Trip Assignment"
+editor: visual
+---
+
+
+## Prepare
+
+📖 Read notes on [transportation equity](/teaching/CIVE461/supplemental/transport-equity.html)
+
+## Participate
+
+Class discussion on transportation equity
+
+🖥️ [Lecture 7 - Trip Assignment](/teaching/CIVE461/slides/lec-7.html)
+
+## Practice
+
+📋 [AE 5 - Transportation Equity](/teaching/CIVE461/ae/ae-5-equity.html) - Submit on Canvas
+
+<br><br>
+
+::: {style="font-size: 0.875em;"}
+Back to [course schedule](/teaching/CIVE461/ "Course schedule") ⏎
+:::

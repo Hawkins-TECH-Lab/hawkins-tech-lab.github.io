@@ -1,0 +1,24 @@
+---
+title: "Week 13"
+subtitle: "Summary Policy Application"
+---
+
+## Prepare
+
+📖 Read [news article]()
+
+## Participate
+
+🖥️ [Activity 14 - Policy Analysis](/teaching/ENCI707/ae/ae-14.html)
+
+## Practice
+None
+
+## Deliver
+None
+
+<br><br>
+
+::: {style="font-size: 0.875em;"}
+Back to [course schedule](/teaching/ENCI707/ "Course schedule") ⏎
+:::

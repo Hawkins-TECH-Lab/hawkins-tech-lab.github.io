@@ -1,0 +1,402 @@
+---
+title: "Lecture 1 - Introduction"
+subtitle: "CIVE 461/861: Urban Transportation Planning"
+footer:  "[CIVE461 Home](/teaching/CIVE461/)"
+logo: "../images/logo.png"
+editor: visual
+format: 
+  revealjs: 
+    theme: simple
+    transition: fade
+    chalkboard: true
+    slide-number: true
+    multiplex: true
+execute:
+  freeze: auto
+---
+
+## Outline
+
+::: incremental
+1.  Urban transportation: challenges & opportunities
+2.  Defining urban transportation planning
+3.  History & context for urban transportation planning
+4.  Course overview
+:::
+
+# Urban Transportation: Challenges & Opportunities
+
+## Poll
+
+```{=html}
+<div style='position: relative; padding-bottom: 56.25%; padding-top: 35px; height: 0; overflow: hidden;'><iframe sandbox='allow-scripts allow-same-origin allow-presentation' allowfullscreen='true' allowtransparency='true' frameborder='0' height='315' src='https://www.mentimeter.com/app/presentation/alxnj1zbqv62hn7y7ma58wnuyki8kvn2/embed' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' width='420'></iframe></div>
+```
+
+## Congestion
+
+![](../images/lecture1/road_congestion.png){.absolute top="250" left="0" width="75%"}
+
+![](../images/lecture1/market_congestion.png){.absolute .fragment top="150" right="0" width="60%"}
+
+::: {style="text-align: center; margin-top: 1em"}
+[Average Travel Time to Work](https://public.tableau.com/views/AverageTravelTimeToWorkinUSbyMetroArea/AverageTravelTimetoWorkintheUnitedStates?:showVizHome=no){preview-link="true" style="text-align: center"}
+:::
+
+## Pollution
+
+![](../images/lecture1/pollution_shanghai.png){.absolute top="250" left="0" width="75%"}
+
+![](../images/lecture1/ctrain.png){.absolute .fragment top="150" right="0" width="75%"}
+
+## Traffic Safety
+
+![](../images/lecture1/lakeshore_drive.png){.absolute top="250" left="0" width="60%"}
+
+![](../images/lecture1/portland_street.png){.absolute .fragment top="150" right="0" width="60%"}
+
+## Economics
+
+![](../images/lecture1/detroit_demo.png){.absolute top="300" left="0" width="60%"}
+
+![](../images/lecture1/st_lawrence_market.png){.absolute .fragment top="100" right="0" width="60%"}
+
+## Equity & Diversity
+
+![](../images/lecture1/transport_equity.png){.absolute top="275" left="0" width="60%"} ![](../images/lecture1/lincoln_road_equity.png){.absolute .fragment top="100" right="0" width="60%"}
+
+## Food Desert Tracts
+
+![](../images/lecture1/food_desert_omaha.png){fig-align="center"}
+
+::: {style="font-size: 0.6em;"}
+> According to the USDA "a residence is considered in a food desert if it is more than one mile from a supermarket in an urban or suburban areas and more than 10 miles from a supermarket in a rural areas".
+:::
+
+## Transportation & Land Use
+
+![](../images/lecture1/lut_integration_model.png){.absolute top="275" left="0" width="60%"} ![](../images/lecture1/interchange_oregon.gif){.absolute .fragment top="100" right="0" width="60%"}
+
+## Global Trends & Urban Regions
+
+-   Globalization
+-   Cheap & high capacity telecommunications - reduced need to travel?
+-   Good transportation infrastructure enhances economic competitiveness
+-   Larger role of private sector in transport supply & operations ![](../images/lecture1/telework.png){.absolute bottom="-75" left="0" width="30%"} ![](../images/lecture1/ridehail.png){.absolute bottom="-50" right="0" width="40%"}
+
+# Urban Transportation: Defining The Field
+
+## Roads & Their Many Roles
+
+| [Economic]{style="font-weight:normal"} | [Social]{style="font-weight:normal"} | [Cultural]{style="font-weight:normal"} |
+|:----------------------:|:----------------------:|:----------------------:|
+| ![](../images/lecture1/economic_role.png) | ![](../images/lecture1/social_role.png) | ![](../images/lecture1/cultural_role.png) |
+| Recreational |  | Mobility |
+| ![](../images/lecture1/recreational_role.png) |  | ![](../images/lecture1/mobility_role.png) |
+
+## Transportation System Concepts {.smaller auto-animate="true"}
+
+> **Mobility**: The ability to travel from one location to another in a reasonable time for acceptable cost.
+
+> **Accessibility**: The ability to access an economic or social activity in a reasonable time for acceptable cost.
+
+![](../images/lecture1/access_image_1.png){.absolute bottom="0" right="0" width="55%"}
+
+![](../images/lecture1/train_mode.png){.absolute bottom="200" left="0" width="8%"}
+
+![](../images/lecture1/heli_mode.png){.absolute bottom="125" left="0" width="8%"}
+
+![](../images/lecture1/ferry_mode.png){.absolute bottom="75" left="0" width="4%"}
+
+![](../images/lecture1/bus_mode.png){.absolute bottom="215" left="125" width="12%"}
+
+![](../images/lecture1/car_mode.png){.absolute bottom="150" left="125" width="6%"}
+
+![](../images/lecture1/walk_mode.png){.absolute bottom="75" left="125" width="7%"}
+
+## Transportation System Concepts {.smaller auto-animate="true"}
+
+> **Mobility**: The ability to travel from one location to another in a reasonable time for acceptable cost.
+
+> **Accessibility**: The ability to access an economic or social activity in a reasonable time for acceptable cost.
+
+![](../images/lecture1/access_image_1.png){.absolute bottom="0" right="0" width="55%"}
+
+![](../images/lecture1/train_mode.png){.absolute bottom="200" left="575" width="8%"}
+
+![](../images/lecture1/heli_mode.png){.absolute bottom="125" left="580" width="8%"}
+
+![](../images/lecture1/ferry_mode.png){.absolute bottom="75" left="575" width="4%"}
+
+![](../images/lecture1/bus_mode.png){.absolute bottom="175" left="700" width="12%"}
+
+![](../images/lecture1/car_mode.png){.absolute bottom="150" left="850" width="6%"}
+
+![](../images/lecture1/walk_mode.png){.absolute bottom="75" left="875" width="7%"}
+
+## Transportation System Concepts
+
+![](../images/lecture1/access_function_1.png){fig-align="center" width="60%"}
+
+## Transportation System Concepts
+
+![](../images/lecture1/access_function_2.png){fig-align="center" width="65%"}
+
+## Road Vs. Street
+
+**Question**: What is the difference between these terms?
+
+**Road** is a high speed connection between two places.
+
+**Street** is a platform for building community wealth.
+
+**Stroad** is a street with road design features.
+
+## Road - But is it in the right place?
+
+![](../images/lecture1/lakeshore_drive.png){fig-align="center"}
+
+## Road - But is it in the right place?
+
+```{python}
+#| echo: false
+from ipyleaflet import Map, basemaps
+
+center = [41.8564756, -87.6098466]
+zoom = 14
+
+m = Map(basemap=basemaps.OpenStreetMap.Mapnik, center=center, zoom=zoom)
+m
+```
+
+## Street
+
+![](../images/lecture1/toronto_festival.png){fig-align="center"}
+
+## Stroad -\> Street
+
+![](../images/lecture1/toronto_stroad1.png){.fragment .absolute bottom="0" left="0" width="50%"} ![](../images/lecture1/toronto_stroad2.png){.fragment .absolute bottom="250" left="350" width="50%"} ![](../images/lecture1/toronto_stroad3.png){.fragment .absolute bottom="0" right="0" width="50%"}
+
+## Transportation as *Derived* Demand {.smaller}
+
+::: incremental
+-   Transport demand is *derived* meaning it is not an end in itself – except sight-seeing
+-   **Question**: What do you think this means?
+-   People travel to satisfy a need at spatially dispersed locations (work, leisure, health) by undertaking an **activity**
+-   Good transport **broadens opportunities** to satisfy these needs – heavily congested or poorly connected system restricts options and limits economic and social development
+-   Transport demand is **highly qualitative** and **differentiated**
+    -   By time of day, day of week, journey purpose, type of cargo, importance of speed and frequency
+:::
+
+## Transportation Supply {.smaller}
+
+-   Transportation supply a **service** - cannot stockpile it to use at different time of high demand
+    -   Service must be consumed when and where produced, otherwise benefit is lost
+-   Supply includes **fixed assets** (infrastructure) & **mobile assets** (vehicles) - in combination with rules of operation, make possible movement of goods & people
+-   Often infrastructure & vehicles not owned/operated by same group
+    -   Generates complex interactions b/w government (central & local), construction firms, developers, transport operators, travelers & shippers, & local residents
+
+## Transportation Equilibrium {.smaller}
+
+-   **Short-term equilibrium**: fixed activity system gives equilibrium points between supply and demand
+-   **Long-term equilibrium**: Levels of service changes over space and time - expect long-term equilibrium (or dynamic evolution)
+-   Plan for future that maximizes social welfare for all
+    -   **Question**: What is social welfare to you?
+
+![](../images/lecture1/transport_eqn.png){width="60%"}
+
+# Urban Transportation: History & Context
+
+## Car-Public Transit Feedback Cycle\*\*
+
+::: r-stack
+![](../images/lecture1/transit_cycle1.png){.fragment .fade-in-then-out fig-align="center"}
+
+![](../images/lecture1/transit_cycle2.png){.fragment .fade-in-then-out fig-align="center"}
+
+![](../images/lecture1/transit_cycle3.png){.fragment .fade-in-then-out fig-align="center"}
+
+![](../images/lecture1/transit_cycle4.png){.fragment .fade-in-then-out fig-align="center"}
+
+![](../images/lecture1/transit_cycle5.png){.fragment .fade-in-then-out fig-align="center"}
+
+![](../images/lecture1/transit_cycle6.png){.fragment .fade-in fig-align="center"}
+:::
+
+## Breaking The Cycle
+
+::: r-stack
+![](../images/lecture1/transit_cycle7.png){.fragment .fade-in-then-out fig-align="center"}
+
+![](../images/lecture1/transit_cycle8.png){.fragment .fade-in-then-out fig-align="center"}
+
+![](../images/lecture1/transit_cycle9.png){.fragment .fade-in fig-align="center"}
+:::
+
+# What is **public** transportation?
+
+## What is public transportation?
+
+```{=html}
+<div style='position: relative; padding-bottom: 56.25%; padding-top: 35px; height: 0; overflow: hidden;'><iframe sandbox='allow-scripts allow-same-origin allow-presentation' allowfullscreen='true' allowtransparency='true' frameborder='0' height='315' src='https://www.mentimeter.com/app/presentation/alxnj1zbqv62hn7y7ma58wnuyki8kvn2/embed' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' width='420'></iframe></div>
+```
+
+## Transport Costs & Subsidies (Left-Of-Center View)
+
+::::: columns
+::: {.column width="50%" style="font-size: 0.5em;"}
+-   In addition to gas tax (federal tax **18 cents per gallon** since 1980s!):
+    -   **\$597 per U.S. household per year** in general tax revenue dedicated to road construction & repair
+    -   **\$199 to \$675 per household per year** in additional tax subsidies for driving - e.g., sales tax exemption for gasoline purchases in many states & federal income tax exclusion for commuter parking benefits
+    -   **\$216 per household per year** in government expenditures made necessary by vehicle crashes, plus additional, uncompensated damages to victims and property
+    -   **\$93 to \$360 per household per year** in costs related to air pollution-induced health damage
+:::
+
+::: {.column width="50%"}
+![](../images/lecture1/user_hwy_funds.png){fig-align="center"}
+:::
+:::::
+
+## Transport Costs & Subsidies (Right-Of-Center View)
+
+:::::: columns
+::: {.column width="50%"}
+![](../images/lecture1/transport_costs.png){fig-align="center"}
+:::
+
+:::: {.column width="50%" style="font-size: 0.5em;"}
+::: incremental
+-   Does not include **parking subsidy**
+-   Does not include **crash costs**
+-   Transit subsidy per mile estimated at 76% by APTA – **50% equity-justified**
+-   Note farebox recovery ratios (user cost / total cost) can vary:
+    -   Hong Kong MTR = 172%
+    -   Amsterdam = 88%
+    -   Toronto TTC = 66%
+    -   New York MTA = 24%
+    -   Chicago CTA = 16%
+:::
+::::
+::::::
+
+## Development Trap
+
+-   Private vehicle owners choose their **work** & **home** location without considering transit availability
+-   **Urban sprawl** results: low density development more difficult to service by efficient transit
+-   Further **congestion** & higher proportion of time spent in slow moving vehicles
+
+## Emerging Economy Cities
+
+::::: columns
+::: {.column width="50%"}
+-   Population growth in many emerging economy cities will maintains demand for public transit
+-   **Question**: What about private vehicle ownership?
+:::
+
+::: {.column width="50%"}
+![](../images/lecture1/brt_columbia.png){fig-align="center"}
+:::
+:::::
+
+# Course Overview
+
+## Role Of Theory & Data {.smaller}
+
+-   Both **theory** & **data** required to understand complex interations in transportation system
+-   Sometimes possible to derive same function form from different theoretical foundations
+    -   **Gravity model** from classical mechanics
+    -   **Entropy maximization** from statistical mechanics
+    -   **Maximum utility** from economics
+-   If goal is **flow measure** on road links - any of above theories work
+-   If goal is **welfare evaluation** - only theory based on human behavior is helpful
+
+## Primer On Logic
+
+-   Two classical approaches to theory development
+    -   **Deductive** builds a theoretical model & tests its prediction against observation (common in pure & social sciences)
+    -   **Inductive** collects data & searches for general laws (common in engineering & computer science)
+
+## Primer On Logic {.smaller}
+
+::: incremental
+-   **Deductive reasoning** begins from a **premise** that is **proven** through observation
+    -   Conclusions reliable provided premises are true
+    -   Argument "All bald men are grandfathers. Harold is bald. Therefore, Harold is a grandfather" logically valid but untrue if original premise is false
+-   **Inductive reasoning** extracts a **likely** (but not certain) **premise** from **specific & limited observations**
+    -   You pull three coins from a bag & each coin is a penny
+    -   Inductive reasoning might suggest all coins in bag are pennies
+    -   Even if initial observations are correct, inductive reasoning does not guarantee conclusion is true
+:::
+
+## Role Of Data & Theory
+
+-   Data & aggregation
+    -   How many population strata do we need to understand problem?
+    -   How much detail do we need to measure certain variables to replicate phenonema?
+    -   **Space** is critical in transport: what level of detail to code trip **origins** & **destinations** to model trip-making behavior?
+
+## Models & Their Roles {.smaller}
+
+::::: columns
+::: {.column width="80%"}
+-   We will devote large portion of class towards developing models
+-   **Model** is simply representation of part of real-world system of interest
+-   Model may be **physical** or **abstract**
+    -   **Physical models** used in architecture & fluid mechanics
+    -   **Abstract models** are mental models used in daily interactions with world - formal & abstract (typically analytical) representations of theory about system of interest/how it works
+    -   **Mental models** important & enhance discussion, training, & experience but difficult to communicate
+:::
+
+::: {.column width="20%"}
+![](../images/lecture1/house.svg){fig-align="center"} ![](../images/lecture1/mental_model.svg){fig-align="center"}
+:::
+:::::
+
+## Models & Their Roles {.smaller}
+
+-   We will focus on a class of abstract models: mathematical models that replicate system behavior via mathematical equations based on theory
+-   Models provide common ground for discussing policy and outcomes with a level of objectivity
+-   Engineers/planners can learn much about a system from the formulation, calibration, and experimentation with a model (not even use)
+-   Mathematical models can help hone mental models and mean more intelligent management of transport system
+-   Models (mental) are inevitable but formal models are desirable
+
+## Models & Their Roles {.smaller}
+
+-   Computers can make error-free calculations BUT humans are error- and bias-prone ![](../images/lecture1/model_computer_mental.png){.absolute bottom="100" right="0" width="50%"} ![](../images/lecture1/ice_cream_murders_nyc.png){.absolute bottom="250" left="0"}
+
+## Transportation Planning (and CIVE461) Focus Shift {.smaller}
+
+-   Field is shifting towards methods that are more human-centered and realistic and away from the mechanistic methods adopted from physics analogy
+
+-   Focus on time, geographic space, social space, and institutional context
+
+-   We ignored complexity, non-linearity, and uncertainty in past approaches
+
+-   Traditional viewpoint of transport experts and policy makers is that transportation systems exist to provide for the safe and efficient movement of people and goods in an environmentally responsible manner
+
+## Transportation Planning (and CIVE461) Focus Shift {.smaller}
+
+-   Decisions historically reserved for technical experts with very little (if any) public input
+-   In the 1970s, mainly because of the oil crisis, attention was also paid to managing the transportation system as a system of interconnected components
+-   Realizing increased capacity is not sufficient to satisfy increasing demand for services, policy analysts and policy makers shifted their attention to a more efficient management of facilities (e.g., utilize the capacity of a highway by spreading its use over the day)
+-   New construction reserved for strategic interventions such as the provision of connectivity among existing roadways
+-   Shift of policies away from expanding capacity to managing demand and the introduction of a systems approach to transportation has been advocated since the late 1960s – yet not adopted by many engineering undergraduate programs…
+
+## Transportation Planning (and CIVE461) Focus Shift {.smaller}
+
+-   More recent perspective: integrated and systematic view
+-   Economic and social development role
+-   Private automobile can be examined in a more critical way and contrasted with many other mobility options that may yield the same benefits but at lower social costs
+-   At the core is provision of access to activities and services for all (equity principle)
+-   Unfortunately, priority in transport policies has been given to higher mobility (ability to move) instead of higher accessibility (ability to reach locations and opportunities)
+-   Since mobility is “purchased,” specific groups of the urban or rural population do not have adequate access to basic services
+-   Yet, they are burdened with the costs (e.g., health, taxation) of mobility
+-   I have re-focused CIVE461 to provide you with the tools and knowledge to compete in the current transportation workforce
+
+## Workforce Trends {.smaller}
+
+-   Multi-modal transportation planning
+-   Complete Streets – Nebraska DOT focused on it for small communities
+-   Larger datasets = Excel -\> R & Python
+-   Non-infrastructure solutions – ridesharing, autonomous vehicles, pricing, and land use reform
+
+![](../images/lecture1/inrix.png){.absolute top="0" right="75"} ![](../images/lecture1/lime.png){.absolute bottom="175" left="200"} ![](../images/lecture1/lyft.png){.absolute bottom="250" right="225"} ![](../images/lecture1/sidewalk_labs.png){.absolute bottom="175" left="0"} ![](../images/lecture1/uber.png){.absolute bottom="100" right="0"} ![](../images/lecture1/zephyr.png){.absolute bottom="250" left="325"} ![](../images/lecture1/wejo.png){.absolute bottom="100" right="200"} ![](../images/lecture1/populus.png){.absolute bottom="100" left="100"}

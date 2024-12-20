@@ -1,0 +1,26 @@
+---
+title: "Week 13"
+subtitle: "Trip Assignment"
+editor: visual
+---
+
+
+## Prepare
+
+📖 
+
+## Participate
+
+🖥️ [Lecture 7 - Trip Assignment](/teaching/CIVE461/slides/lec-7.html)
+
+## Practice
+
+📋 [AE 6 - Trip Assignment](/teaching/CIVE461/ae/ae-6-trip-assignment.html) - Submit on Canvas
+
+✍️ [GP 3 - Mode Choice](/teaching/CIVE461/project/project-description.html#report-3) - Submit on Canvas
+
+<br><br>
+
+::: {style="font-size: 0.875em;"}
+Back to [course schedule](/teaching/CIVE461/ "Course schedule") ⏎
+:::

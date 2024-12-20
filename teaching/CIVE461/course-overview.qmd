@@ -1,0 +1,6 @@
+---
+title: "CIVE 461/861: Urban Transportation Planning"
+---
+
+Development of urban transportation planning  objectives and  goals. 
+Data  collection  procedures,  land  use  and  travel  forecasting  techniques,  trip generation, trip distribution, modal choice analysis, and traffic assignment.

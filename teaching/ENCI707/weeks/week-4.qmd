@@ -1,0 +1,30 @@
+---
+title: "Week 4"
+subtitle: "Aggregate Demand"
+---
+
+## Prepare
+
+📖 Watch the [videos](/teaching/ENCI707/prep/week4/week4-videos.html)
+
+📖 Read Ch. 4 of Regression and Other Stories [ROS](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/dc0772ab0b84414af5737676f07761518ea46dcf/Resources/Gelman_Et_Al_ROS_1ed.pdf)
+
+📖 Read "The Map and the Territory" [MT](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/92b58cf7840d00ae6e664c7b00128ed63a78ed95/Resources/Science-and-Sanity-154-157.pdf)
+
+## Participate
+
+📋 [Lecture 3 - Aggregate Demand Models](/teaching/ENCI707/slides/lec-3.html)
+
+## Practice
+
+🖥️ [Activity 4 - Statistics Activity](/teaching/ENCI707/ae/ae-4.html)
+
+## Deliver
+📝 Survey group assignment due Feb. 07 by 11:59 PM on D2L.
+
+
+<br><br>
+
+::: {style="font-size: 0.875em;"}
+Back to [course schedule](/teaching/ENCI707/ "Course schedule") ⏎
+:::

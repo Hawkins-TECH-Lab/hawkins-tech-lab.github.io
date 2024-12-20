@@ -1,0 +1,38 @@
+---
+title: "Teaching team"
+---
+
+## Instructor
+
+![](images/team/jason.jpg){style="float:right;padding: 0 0 0 10px;" fig-alt="Headshot of Dr. Jason Hawkins" width="200"}
+
+[**Dr. Jason Hawkins**](https://engineering.unl.edu/cee/faculty/jason-hawkins/) is Assistant Professor of Civil and Environmental Engineering at the University of Nebraska - Lincoln.
+Jason's work focuses on innovation in transportation planning and engineering policy analysis, with an emphasis on choice models, spatial statistics, and equity.
+
+| Office hours                  | Location                                                                                                                  |
+|-------------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| Mondays 11:00 am - 12:00 pm   | PKI 206C & [Zoom](https://unl.zoom.us/my/jason.hawkins.unl)                                                                                                           |
+| Wednesdays 9:00 am - 10:00 am | NH 113 & [Zoom](https://unl.zoom.us/my/jason.hawkins.unl)                                                                                                             |
+
+If these times don't work for you or you'd like to schedule a one-on-one meeting, you can do so by messaging me on Canvas.
+
+## Teaching assistant
+
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: center;"></th>
+<th>Name</th>
+<th>Office hours</th>
+<th>Location</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><img src="images/team/omid.jpg" class="img-fluid"></td>
+<td>Omid Armantalab</td>
+<td>Mondays 3:00 pm - 5:00 pm</td>
+<td>NH 165 & [Zoom](https://unl.zoom.us/j/95520952981)</td>
+</tr>
+</tbody>
+</table>

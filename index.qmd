@@ -1,0 +1,35 @@
+---
+# title: 'Welcome to the TECH Group
+# subtitle: "Transportation and Ecological Choice by Households"
+page-layout: full
+section-divs: false
+toc: false
+css: assets/css/index.css
+---
+<div class="gradient-text">
+
+<div class="welcome-headline">
+Welcome to the TECH Research Group<br>
+</div>
+<div class="welcome-subheadline">
+Transportation and Ecological Choice by Households
+</div>
+</div>
+
+::::{.cmm-background}
+::: {.content-container}
+::: {.welcome }
+
+
+::: grid
+::: {.g-col-12 .g-col-lg-4 .welcome-text .sand-background style="padding: 15px;"}
+
+Our team examines the relationship between infrastructure systems, with a particular focus on transportation and land use. We use a variety of techniques including surveys, econometrics, simulation, and network science to assess the sustainability of infrastructure systems considering technical, economic, and social perspectives. The transdisciplinary nature of our work means we often work with engineers, planners, economists, and political scientists - and welcome collaboration opportunities from any field of study with an interest in sustainable system planning and policy.
+
+:::
+
+:::
+
+:::
+:::
+::::

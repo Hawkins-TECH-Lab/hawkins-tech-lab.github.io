@@ -1,0 +1,134 @@
+---
+title: "Lecture 6 - Advanced Choice Models"
+subtitle: "ENCI707: Engineering Demand and Policy Analysis"
+footer:  "[ENCI707 Home](/teaching/ENCI707/)"
+logo: "../images/logo.png"
+format: 
+  revealjs: 
+    theme: simple
+    transition: fade
+    chalkboard: true
+    slide-number: true
+execute:
+  freeze: auto
+---
+## Outline
+
+::: incremental
+1.  Basis for choice modeling
+2.  Theory
+3.  Logit choice model
+:::
+
+## Basis for Choice Modeling {.smaller}
+
+-   Aggregate demand models (such as those we have been discussing) based on observations for **groups of travelers** or **average relations** for zones
+-   **Discrete choice:** probability an individual chooses a given option a function of their socioeconomic characteristics & relative attractiveness of the option
+-   Cannot estimate via least squares because probability is unobserved – only observe choice
+-   Models are **probabilistic** & do not give an outcome value such as **trips** – must use probability concepts to generate discrete outcomes (summation over all observations to give expected number choosing option or use sample enumeration to allocate discrete outcomes)
+
+## Basis for Choice Modeling {.smaller}
+
+-   Individuals derive **utility** from the use of alternatives defined by a **utility function** often denoted by V $$Vpeanut butter = 0.25 – 1.0 ALLERGY - 0.5 PRICE + 0.25 ORGANIC$$
+-   Need probability value between 0 & 1. Various forms, generally with an s-shaped plot. Main ones are $$𝐿𝑜𝑔𝑖𝑡:𝑃_1=exp⁡(𝑉_1 )/(exp⁡(𝑉1)+exp⁡(𝑉2))$$ $$𝑃𝑟𝑜𝑏𝑖𝑡:𝑃_1=\int_{-\infty}^{\infty}⁡\int_{-\infty}^{V_1-V_2+x_1}\frac{⁡exp⁡(\frac{−1}{2(1−\rho^2)} (\frac{𝑥_1}{\sigma_1})^2−\frac{2\rho 𝑥_1 𝑥_2}{\sigma_1 \sigma_2}+(\frac{𝑥_2}{\sigma_2})^2}{2\pi\sigma_1 \sigma_2 \sqrt{1−\rho^2 }} 𝑑𝑥_2 𝑑𝑥_1$$
+
+## Properties of Discrete Choice (DC)
+
+-   Based on theories of **individual behavior** & do not constitute physical analogies – therefore stable over time & space
+-   Can be more **statistically efficient** than aggregate models because each observation is an outcome rather than using aggregations of potentially hundreds of observations
+-   DM less likely to suffer from bias due to correlation between aggregate units – i.e., **ecological correlation** (fallacy)
+
+## Ecological Fallacy
+
+![](../images/lecture5/eco_fallacy.png){fig-align="center"}
+
+## Theoretical Framework {.smaller}
+
+-   Individuals belong to a **homogeneous population** $N$, act rationally, & **possess perfect information** – i.e., they always select the option that maximizes their net personal utility subject to legal, social, physical, &/or budgetary (both time & money) constraints
+-   There is a certain set $𝐴 = \{𝐴_1, …𝐴_i,…𝐴_I\}$ of available alternatives & a set X of vectors of measured attributes of individuals & their alternatives
+-   An individual $n$ is endowed with a set of attributes $𝑥 \in 𝑋$ & faces a choice set $𝐴(n) \in 𝐴$
+-   We will assume choice set is predetermined for individuals
+
+## Theoretical Framework
+
+-   Modeler, an observer, does not **posses complete information** about all elements considered by the individual making choice
+-   Modeler assumes $𝑈_{ni}$ can be represented by two components:
+    -   A **measurable**, **systematic**, or **representative** part $𝑉_{ni}$, which is a function of the measured attributes $x$
+    -   A random part $\epsilon_{ni}$, which reflects **indiosyncratic** & **taste variation**, together with measurement or observational errors made by the modeler
+
+## Theoretical Framework
+
+-   Modeler sets utility $𝑈_{ni}=𝑉_{ni}+\epsilon_{ni}$ to address two apparent irrationalities
+    1.  That two individuals faced with the **same situation** & having the **same personal attributes** make different choices
+    2.  That an individual may not select the alternative that **appears** to be the *best one*
+-   Often assumed $V_{ni}$ given by $\sum_k^K \beta_{ik} x_{nik}$ here $\beta_{ik}$ are assumed **constant** for all individuals $N$ in the homogeneous set but **may vary across alternatives** $I$
+
+## Theoretical Framework {.smaller}
+
+-   Individual chooses an alternative based on $𝑈_{ni}≥ 𝑈_{jn} \forall A_j \in A(n)$
+-   Or: $𝑉_{ni}  – 𝑉_{nj}≥\epsilon_{nj}  − \epsilon_{ni}$ (notice swapping of $i$ & $j$)
+
+Not possible to know with certainty if the inequality holds, so use $$𝑃_{ni}  = 𝑃(\epsilon_{nj} \leq \epsilon_{ni} + (V_{ni} - V_{nj})) \forall A_j \in A(n)$$ - Do not know distribution of joint residuals, so cannot derive analytical expression for model - Can denote $f(\epsilon) = f(\epsilon_1, \epsilon_2, ... \epsilon_I$ & know they are **random variables** with a certain distribution
+
+## Theoretical Framework {.smaller}
+
+-   Can note that distribution for $f(U)$ is the same but with mean $V$ rather than 0 $$P_{ni} = \int_{R_I} f(\epsilon) d\epsilon$$ $$\text{where } R_I = \begin{cases}
+    \epsilon_{nj} \leq \epsilon_{ni} + (V_{ni} - V_{nj}), & \forall A_j \in A(n) \\
+    V_{ni}) + \epsilon_{ni} \ge 0 \\
+    \end{cases}$$
+-   Assuming independent & identically distributed (**IID**) residuals, $$f(\epsilon_1,...\epsilon_I) = \prod_i^I g(\epsilon_i)$$
+-   And (drop $n$ for simplicity) $$P_i = \int_{-\infty}^\infty g(\epsilon_i) d\epsilon_i \prod_{j \neq i} \int_{-\infty}^{V_i-V_j+\epsilon_i} g(\epsilon_j) d\epsilon_j$$
+
+## Generating the Logit Model {.smaller}
+
+-   Assuming IID Gumbel (**Extreme Value Type I**) residuals, or equivalently that residual differences are **logistically distributed**, gives the standard multinomial logit specification
+-   Termed *softmax function* in machine learning field $$P_{ni} = \frac{exp(\mu V_{ni})}{\sum_{A_j \in A(n)} exp(\mu V_{nj})}$$
+-   Where $\mu$ is a **scale parameter** assumed equal to 1.0 for identification
+
+![](../images/lecture5/logit_curve.png){.absolute bottom="0" right="0" width="35%"}
+
+## Logit Model Parameter Estimation
+
+-   Commercial (& opensource) software exists to estimate model parameters using the method of maximum likelihood estimation
+    -   Apollo (R & free)
+    -   Biogeme (Python & free)
+    -   STATA (commercial)
+    -   LIMDEP (commercial)
+    -   GAUSS (commercial)
+-   Parameter interpretation similar to regression (t-statistics, GoF, etc.)
+
+## Direct & Cross Elasticity
+
+-   **Direct elasticity:** direct effect of changing a variable value related to a good on demand for the same good
+    -   E.g., elasticity of transit demand wrt transit fare, transit travel time, or transit headway
+-   **Cross elasticity:** effect of changing a variable value related to a good on demand for a different good
+    -   E.g., elasticity of transit demand wrt auto travel time
+
+## Logit - Direct Elasticity
+
+Direct elasticity of the probability of an individual $n$ choosing alternative $i$ wrt a change in an attribute/independent variable $X_{ik}$ with coefficient $\beta_k$ (ignoring $n$ subscripts for simplicity)
+
+$$e_{direct} = \frac{\partial P_i}{\partial X_{ik}} \frac{X_{ik}}{P_i}=(1-P_i)X_{ik}\beta_k$$
+
+## Logit - Cross Elasticity {.smaller}
+
+-   Cross elasticity of the probability of an individual $n$ choosing alternative $i$ wrt a change in an attribute/independent variable $X_{jk}$ with coefficient $\beta_k$ for a different alternative
+
+$$e_{cross} = -P_j X_{jk}\beta_k$$
+
+-   Above is same regardless of alternative $i$. I.e., **all alternatives** have the same cross-elasticity wrt an attribute $k$ of alternative $j$
+-   Above results from independence of irrelevant alternatives (**IIA**) property of basic logit model
+
+## Independence of Irrelevant Alternatives (IIA) Property
+
+Consider we have two modes: auto (a) & bus (b)
+
+$$\frac{P_a}{P_b} = \frac{exp(V_a)}{exp(V_b)} = exp(V_a - V_b)$$ I.e., the relative probability of choosing auto vs. bus depends **only** on the utilities of the two alternatives
+
+-   Now what if our buses are **red (rb)** & we paint half **blue (bb)**?
+
+## IIA Cont…
+
+-   If the IIA assumption does not hold, we can make other error distribution assumptions
+    -   Nested logit (can handle complex decision structures)
+    -   Probit (normal error terms, very general model, but can be difficult to work with it)

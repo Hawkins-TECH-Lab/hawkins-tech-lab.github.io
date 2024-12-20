@@ -1,0 +1,23 @@
+---
+title: "Week 16"
+subtitle: "Review & Land Use"
+editor: visual
+---
+
+
+## Prepare
+
+None
+
+## Participate
+
+[In-Class Discussion of Group Project Regions](/teaching/CIVE461/project/project-description.html#final-report)
+
+## Practice
+📋 [AE 7 - Review](/teaching/CIVE461/ae/ae-7-review.html) - Submit on Canvas
+
+<br><br>
+
+::: {style="font-size: 0.875em;"}
+Back to [course schedule](/teaching/CIVE461/ "Course schedule") ⏎
+:::

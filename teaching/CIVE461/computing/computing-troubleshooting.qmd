@@ -1,0 +1,13 @@
+---
+title: "Computing troubleshooting"
+---
+
+If you have difficulty launching a VS codespace session or experience other technical difficulities, you should follow the below troubleshooting workflow.
+
+1.  Ask your class colleagues for assistance on the Canvas discussion page.
+
+2. Search for a solution online. Stackoverflow is a wellspring of help!
+
+3. Dr. Mike Lowry at the University of Idaho has put together a [nice website](https://www.webpages.uidaho.edu/~mlowry/Teaching/python/html/index.html#) on Python for Civil Engineers.
+
+4. If you still cannot solve the issue, please reach out to me or the TA. It is important to build self-sufficiency in engineering analysis, but we are here to help when you get stuck!

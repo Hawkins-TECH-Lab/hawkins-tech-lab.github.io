@@ -1,0 +1,29 @@
+---
+title: "Week 7"
+subtitle: "Software Tools"
+---
+
+## Prepare
+
+📖 Prepare GitHub repository for lecture. Additional instructions [here](/teaching/ENCI707/computing-access.html)
+
+📖 Read Ch. 8 of Regression and Other Stories [ROS](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/dc0772ab0b84414af5737676f07761518ea46dcf/Resources/Gelman_Et_Al_ROS_1ed.pdf)
+
+## Participate
+
+None
+
+## Practice
+
+🖥️ [Activity 7 - Policy Analysis II](/teaching/ENCI707/ae/ae-7.html)
+
+🖥️ [Activity 8 - Policy Analysis II](/teaching/ENCI707/ae/ae-8.html)
+
+## Deliver
+📝 Aggregate demand group assignment due Feb. 28 by 11:59 PM on D2L.
+
+<br><br>
+
+::: {style="font-size: 0.875em;"}
+Back to [course schedule](/teaching/ENCI707/ "Course schedule") ⏎
+:::

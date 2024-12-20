@@ -1,0 +1,31 @@
+library/
+local/
+cellar/
+lock/
+python/
+staging/
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+/.quarto/
+*.key
+*speaker.html
+.venv/
+.DS_Store
+__pycache__
+docs
+
+/env/
+Hawkinslab - CIVE461.pdf
+Hawkinslab - Publication.pdf
+Hawkinslab - Research team.pdf
+Hawkinslab – projects.pdf
+
+assets/.DS_Store
+
+/.luarc.json
+teaching/class_notes_websites.txt
+teaching/CIVE461/weeks/rough week 1.txt
+teaching/CIVE461/Introduction.txt

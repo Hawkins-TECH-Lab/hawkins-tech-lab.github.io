@@ -1,0 +1,26 @@
+---
+title: "Transportation Planning Experience"
+sidebar: CIVE461
+---
+
+::: callout-important
+This application exercise should be submitted via Canvas by Sept. 08 (by end of day).
+:::
+
+The transportation planning experience is an opportunity to engage with transportation planning and analysis outside of the classroom through podcasts, news stories, books, seminars, and other activities.
+You should provide a short reflection (no more than 1 page) on the item. Keep in mind the following (non-exhaustive) questions:
+
+1. How does the item relate to transportation planning?
+2. How do you think the tools you will learn in this course might be relevant?
+3. Do you have any thoughts/opinions on the topic?
+
+Transportation planning experience ideas:
+
+- Listen to a [war on cars](https://thewaroncars.org/) podcast episode.
+- Watch a transportation themed movie or television program, such as "Planes, Trains, and Automobiles", "Race Across The World" (not "The Amazing Race"), or "The Human Scale".
+- Read a news article from [Streetsblog](https://usa.streetsblog.org/) or [CityLab](https://www.bloomberg.com/citylab).
+- Read a news article about a local transportation project/issue
+- Attend a public meeting for Vision Zero Omaha, or a similar initiative.
+
+
+

@@ -1,0 +1,27 @@
+---
+title: "Week 3"
+subtitle: "Surveys"
+---
+
+## Prepare
+
+📖 Read Ch. 2 of National Household Travel Survey Documentation [NHTS](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/dc0772ab0b84414af5737676f07761518ea46dcf/Resources/NHTS2017_UsersGuide_04232019_1.pdf)
+
+📖 Read Choice Experiments Book Chapter [CE2017](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/b33579620acb185975f362123ed1e1c2d3637bf7/Resources/2017_Choice_Experiments_Environmental_Economics.pdf)
+
+## Participate
+
+📋 [Lecture 2 - Surveys](/teaching/ENCI707/slides/lec-2.html)
+
+## Practice
+
+🖥️ [Activity 3 - Stated Preference Experiment](/teaching/ENCI707/ae/ae-3.html)
+
+## Deliver
+📝 Project proposal due Jan. 31 by 11:59 PM on D2L.
+
+<br><br>
+
+::: {style="font-size: 0.875em;"}
+Back to [course schedule](/teaching/ENCI707/ "Course schedule") ⏎
+:::

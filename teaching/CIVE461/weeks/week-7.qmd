@@ -1,0 +1,24 @@
+---
+title: "Week 7"
+subtitle: "Trip Distribution"
+editor: visual
+---
+
+
+## Prepare
+
+📖 Read notes on [Trip Distribution](/teaching/CIVE461/supplemental/trip-distribution.html)
+
+## Participate
+
+None
+
+## Practice
+
+✍️ [GP 1 - Trip Generation](/teaching/CIVE461/project/project-description.html#report-1) - Submit on Canvas
+
+<br><br>
+
+::: {style="font-size: 0.875em;"}
+Back to [course schedule](/teaching/CIVE461/ "Course schedule") ⏎
+:::

@@ -1,0 +1,12 @@
+---
+title: "Active Exercise 7 - Computing Visuals"
+sidebar: CIVE461
+---
+
+::: callout-important
+This application exercise should be submitted via D2L by end of the day on which it was introduced in lecture.
+:::
+
+Please submit your Jupyter notebooks created during lecture. Your submission should be a html file displaying the outputs from running the code. The following notebooks should be included in this submission:
+    1) crashCoursePython.html
+    2) visualizationBasicMatplotlib.html

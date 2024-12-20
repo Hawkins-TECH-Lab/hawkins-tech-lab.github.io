@@ -1,0 +1,24 @@
+---
+title: "Week 4"
+subtitle: "Trip Generation"
+editor: visual
+---
+
+
+## Prepare
+
+📖 Follow the instructions on the [computing access page](/teaching/CIVE461/computing/computing-access.html) prior to lecture.
+
+## Participate
+
+🖥️ [Lecture 3 - Trip Generation](/teaching/CIVE461/slides/lec-3.html)
+
+## Practice
+
+📋 Complete Jupyter notebooks from in-class tutorials.
+
+<br><br>
+
+::: {style="font-size: 0.875em;"}
+Back to [course schedule](/teaching/CIVE461/ "Course schedule") ⏎
+:::

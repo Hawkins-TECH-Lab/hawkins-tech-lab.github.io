@@ -1,0 +1,27 @@
+---
+title: "Active Exercise 10 - Choice Models"
+sidebar: CIVE461
+---
+
+::: callout-important
+This application exercise should be submitted via D2L by end of the day on which it was introduced in lecture.
+:::
+
+---
+title: "Individual Assignment 1: Choice Models"
+sidebar: CIVE461
+---
+
+**Problem 1.**	A greengrocer is selling apples, bananas, and oranges in Leeds, UK. They surveyed a random sample of their customers and estimated a multinomial logit model. The estimated parameters and attribute values are given below. Calculate the choice probability for each alternative assuming a multinomial logit error term.
+
+|     Alternative    |     Price    |     Price     Parameter    |     Unusual     Shape (Y/N)    |     Unusual     Shape     Parameter    |     Ripe      (Y/N)    |     Ripeness     Parameter    |     Alternative     Specific     Constant    |
+|:------------------:|:------------:|:--------------------------:|:------------------------------:|:--------------------------------------:|:----------------------:|:-----------------------------:|:--------------------------------------------:|
+|        Apple       |      0.84    |            -0.25           |               TRUE             |                   -0.1                 |           TRUE         |               0.3             |                       0                      |
+|        Banana      |      0.17    |            -0.25           |              FALSE             |                   -0.1                 |          FALSE         |               0.3             |                      0.7                     |
+|        Orange      |      0.25    |            -0.25           |              FALSE             |                   -0.1                 |           TRUE         |               0.3             |                      -0.9                    |
+
+
+
+**Problem 2.**	There is a banana shortage and the price increases by 10%. 
+
+What would happen to the selection probabilities for each alternative? Compare the results using a) direct and cross elasticity equations with the result when you b) change the price of bananas and re-calculate the choice probabilities. Why *might* the two results differ?

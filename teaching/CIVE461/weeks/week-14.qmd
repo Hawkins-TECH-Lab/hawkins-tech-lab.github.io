@@ -1,0 +1,24 @@
+---
+title: "Week 14"
+subtitle: "Wood Buffalo TDM"
+editor: visual
+---
+
+
+## Prepare
+
+None 
+
+## Participate
+
+🖥️ [Lecture 8 - Wood Buffalo TDM](/teaching/CIVE461/slides/lec-8.html)
+
+## Practice
+
+✍️ [IA 2 - Trip Assignment](/teaching/CIVE461/assignments/indiv_assignment2.html) - Submit on Canvas
+
+<br><br>
+
+::: {style="font-size: 0.875em;"}
+Back to [course schedule](/teaching/CIVE461/ "Course schedule") ⏎
+:::

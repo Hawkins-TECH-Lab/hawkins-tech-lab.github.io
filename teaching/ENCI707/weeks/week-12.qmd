@@ -1,0 +1,27 @@
+---
+title: "Week 12"
+subtitle: "Geographic Data Science"
+---
+
+## Prepare
+
+📖 Review Geographic Data Science Part I [GDS](https://geographicdata.science/book/intro_part_i.html)
+
+📖 Review Geographic Data Science Part III: Spatial Regression [GDS](https://geographicdata.science/book/notebooks/11_regression.html)
+
+## Participate
+
+🖥️ [Activity 12 - Spatial Exploration](/teaching/ENCI707/ae/ae-12.html)
+
+## Practice
+
+🖥️ [Activity 13 - Spatial Regression](/teaching/ENCI707/ae/ae-13.html)
+
+## Deliver
+None
+
+<br><br>
+
+::: {style="font-size: 0.875em;"}
+Back to [course schedule](/teaching/ENCI707/ "Course schedule") ⏎
+:::

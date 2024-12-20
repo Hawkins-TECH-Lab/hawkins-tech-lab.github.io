@@ -1,0 +1,28 @@
+---
+title: "Week 1"
+subtitle: "Welcome to ENCI707"
+---
+
+## Prepare
+
+📖 Read the [syllabus](/teaching/ENCI707/course-syllabus.html)
+
+📖 Watch the [videos](/teaching/ENCI707/prep/week1/week1-videos.html)
+
+## Participate
+
+📋 [Lecture 1 - Microeconomic Theory](/teaching/ENCI707/slides/lec-1.html)
+
+## Practice
+
+🖥️ [Activity 1 - Demand Analysis](/teaching/ENCI707/ae/ae-1.html)
+
+## Deliver
+
+None
+
+<br><br>
+
+::: {style="font-size: 0.875em;"}
+Back to [course schedule](/teaching/ENCI707/ "Course schedule") ⏎
+:::

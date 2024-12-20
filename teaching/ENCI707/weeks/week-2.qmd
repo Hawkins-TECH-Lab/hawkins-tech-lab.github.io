@@ -1,0 +1,26 @@
+---
+title: "Week 2"
+subtitle: "Microeconomic Theory & Data"
+---
+
+## Prepare
+
+📖 Read Ch. 2 of Regression and Other Stories [ROS](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/dc0772ab0b84414af5737676f07761518ea46dcf/Resources/Gelman_Et_Al_ROS_1ed.pdf)
+
+## Participate
+
+📋 [Lecture 1 - Microeconomic Theory](/teaching/ENCI707/slides/lec-1.html)
+
+## Practice
+
+🖥️ [Activity 2 - Ecological Economics](/teaching/ENCI707/ae/ae-2.html)
+
+## Deliver
+
+None
+
+<br><br>
+
+::: {style="font-size: 0.875em;"}
+Back to [course schedule](/teaching/ENCI707/ "Course schedule") ⏎
+:::

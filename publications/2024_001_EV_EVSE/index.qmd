@@ -1,0 +1,14 @@
+---
+title: "Electric Vehicle and Supply Equipment Adoption Dynamics in the United States"
+author: ["Hania Afzal", "Jason Hawkins"]
+publication: "Energy Policy, **193** _114275_ (2024)"
+categories:
+  - "vehicle_adoption"
+url_source: "https://doi.org/10.1016/j.enpol.2024.114275"
+url_preprint:
+journ: "Energy Policy"
+issue: 193
+page: 114275
+year: 2024
+pub_number: 1
+---

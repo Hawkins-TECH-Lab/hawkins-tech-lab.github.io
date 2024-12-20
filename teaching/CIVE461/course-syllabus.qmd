@@ -1,0 +1,250 @@
+---
+title: "Syllabus"
+---
+
+## Course Info
+
+|           | Day       | Time              | Location                       |
+|-----------|-----------|-------------------|--------------------------------|
+| Lectures  | Mon | 1:30 pm - 2:45 pm | PKI 164 (Omaha)      |
+| Lectures  | Wed | 1:30 pm - 2:45 pm | NH W 213 (Lincoln)      |
+**Note:** I am committed to lecturing from both Lincoln & Omaha each week. However, the days may vary depending upon other obligations. Unless otherwise indicated, I will lecture from Lincoln on Tuesdays and Omaha on Thursdays. When possible, I will announce one week in advance any lecture location changes.
+
+**Prerequisites:** CIVE361 \
+**Description:** Development of urban transportation planning  objectives and  goals. Data  collection  procedures,  land  use  and  travel  forecasting  techniques,  trip generation, trip distribution, modal choice analysis, and traffic assignment. \
+Credit Hours: 3
+
+### Instructor:
+Dr. Jason Hawkins \
+PKI 206C (Omaha) & NH 113 (Lincoln) \
+402-472-0529 | civil.unl.edu | Email me through the course Canvas messenger system
+
+### Teaching assistant:
+Omid Armantalab \
+Office hours: NH 165 (Lincoln) \
+Email TA through the course Canvas messenger system
+
+## Learning objectives
+
+To introduce senior undergraduate and graduate civil engineering students to the principles of urban transportation planning and to create an awareness of society’s transportation problems and identifying the tools, methodologies, and professional perspectives required to contribute to the solution to these problems. By the end of the semester, you will be able to...
+
+-   Identify and assess the drivers of transportation demand
+-   Develop statistical models of transportation demand and mode choice
+-   Present technical results using Jupyter notebook format
+-   Discuss the economic, social, and environmental impacts of transportation decision-making
+-   Process and analyze common transportation datasets
+
+## Textbooks
+
+While there is no official textbook for the course, I will be assigning readings from the following resources.
+
+-   [Modelling Transport](https://github.com/UNL-Hawkins-Lab/CIVE_461/blob/bfeaac6464a3b13f9263b8144c80fd630054ffd8/Resources/Ortuzar_Willumsen_Modelling_Transport_4ed.pdf) by Juan de Dios Ortúzar and Luis G. Willumsen
+
+-   [Travel Demand Forecasting: Parameters and Techniques](https://github.com/UNL-Hawkins-Lab/CIVE_461/blob/6ae2e8ca1576a517b809c1d6ffb832f84695dbf1/Resources/CS_Et_Al_TDM_Parameter_Estimation_NCHRP716.pdf) by National Academies of Sciences, Engineering, and Medicine
+
+-   [Statistical and Econometric Methods for Transportation Data Analysis](https://github.com/UNL-Hawkins-Lab/CIVE_461/blob/6ae2e8ca1576a517b809c1d6ffb832f84695dbf1/Resources/Washington_Et_Al_Statistical__Econometric_Methods_Transportation_Data_Analysis_2ed.pdf) by Simon Washington, Matthew Karlaftis, and Fred Mannering
+
+-   [Regression and Other Stories](https://github.com/UNL-Hawkins-Lab/CIVE_461/blob/6ae2e8ca1576a517b809c1d6ffb832f84695dbf1/Resources/Gelman_Et_Al_ROS_1ed.pdf) by Andrew Gelman, Jennifer Hiller, and Aki Vehtari
+
+## Lectures
+
+The goal of lectures is for them to be as interactive as possible.
+My role as instructor is to introduce you to new theories, tools, and techniques, but it is up to you to take them and make use of them.
+Some of what you do in this course will involve writing code, and coding is a skill that is best learned by doing.
+Therefore, as much as possible, you will be working on a variety of tasks and activities during lecture.
+You are expected to attend all lecture sessions and meaningfully contribute to in-class exercises and discussions.
+Additionally, some lectures will feature [application exercises] that will be graded.
+
+You are expected to bring a laptop to each class so that you can take part in the in-class exercises.
+Please make sure your laptop is fully charged before you come to class as the number of outlets in the classroom will not be sufficient to accommodate everyone.
+More information on loaner laptops can be found [here](https://libraries.unl.edu/laptops) and [here](https://services.unl.edu/service/equipment-checkout-unl).
+
+## Teams
+
+You will be assigned to a team at the beginning of the semester.
+You are encouraged to sit with your teammates in lecture.
+All team members are expected to contribute equally to the completion of the term project and you will be asked to evaluate your team members throughout the semester.
+Failure to adequately contribute to an assignment will result in a penalty to your mark relative to the team's overall mark.
+
+## Assessment
+
+Assessment for the course is comprised of six components: application exercises, homework assignments, an exam, a project, and teamwork.
+
+### Application exercises
+
+Parts of some lectures will be dedicated to working on Application Exercises (AEs).
+These exercises which give you an opportunity to practice applying the transportation planning concepts and code introduced in the readings and lectures.
+These AEs are due within two days of the corresponding lecture period.
+Specifically, AEs from Monday lectures are due Wednesday by 11:59 pm CT, and AEs from Wednesday lectures are due Friday by 11:59 pm CT.
+
+Because these AEs are for practice, they will be graded based on completion, i.e., a good-faith effort has been made in attempting all parts.
+Successful on-time completion of at least 80% of AEs will result in full credit for AEs in the final course grade.
+
+### Homework
+
+In homework, you will apply what you've learned during lecture to complete non-coding assignments.
+You may discuss homework assignments with other students; however, homework should be completed and submitted individually.
+
+### Exams
+
+There will be one final exam.
+Through this exam you have the opportunity to demonstrate what you've learned in the course.
+The exam will focus on the conceptual understanding of the content and it may also include small analysis tasks.
+
+Final Exam Date & Time:
+Monday, Dec. 11
+1:00 to 3:00 p.m.
+PKI 164 & NH W 213
+
+### Project
+
+The purpose of the [project](/project-description.html) is to apply what you've learned throughout the semester to a real-world dataset.
+The project will be completed with your teams, and each team will present their work in writing via deliverables due throughout the semester.
+More information about the project will be provided during the semester.
+
+## Grading
+
+The final course grade will be calculated as follows:
+
+| Category              | Percentage      |
+|-----------------------|-----------------|
+| Application exercises | 10%              |
+| Homework              | 20% (10% x 2)    |
+| Project               | 35%             |
+| Final Exam            | 35%             |
+
+The final letter grade will be determined based on the following thresholds:
+
+| Letter Grade | Final Course Grade |
+|--------------|--------------------|
+| A+            | \>= 97            |
+| A            | 93 - 96.99         |
+| A-           | 90 - 92.99         |
+| B+           | 87 - 89.99         |
+| B            | 83 - 86.99         |
+| B-           | 80 - 82.99         |
+| C+           | 77 - 79.99         |
+| C            | 73 - 76.99         |
+| C-           | 70 - 72.99         |
+| D+           | 67 - 69.99         |
+| D            | 63 - 66.99         |
+| D-           | 60 - 62.99         |
+| F            | \< 60              |
+
+## Five tips for success
+
+Your success in this course depends very much on you and the effort you put into it.
+The course has been organized so that the burden of learning is on you.
+Your TA and I will help you be providing you with materials and answering questions and setting a pace, but for this to work you must do the following:
+
+1.  Complete all the preparation work before class.
+2.  Ask questions. As often as you can. In class, out of class. Ask me, ask the TA, ask your friends, ask the person sitting next to you. This will help you more than anything else. If you get a question wrong on an assessment, ask us why. If you're not sure about the homework, ask. If you hear something on the news that sounds related to what we discussed, ask. If the reading is confusing, ask.
+3.  Do the readings.
+4.  Do the homework and contribute to the team project.The earlier you start, the better. It's not enough to just mechanically plow through the exercises. You should ask yourself how these exercises relate to earlier material, and imagine how they might be changed (to make questions for an exam, for example.)
+5.  Don't procrastinate. If something is confusing to you in Week 2, Week 3 will become more confusing, Week 4 even worse, and eventually you won't know where to begin asking questions. Don't let the week end with unanswered questions. But if you find yourself falling behind and not knowing where to begin asking, come to office hours, and let me help you identify a good (re)starting point.
+
+## Diversity and Inclusion
+
+It is my intent that students from all diverse backgrounds and perspectives be well-served by this course, that students' learning needs be addressed both in and out of class, and that the diversity that students bring to this class be viewed as a resource, strength and benefit. I would like to create a learning environment for my students that supports thoughts, perspectives, and experiences, and honors your identities (including gender, sexuality, disability, age, socioeconomic status, ethnicity, race, nationality, religion, culture, etc.). To help accomplish this:
+-   If you have a name and/or set of pronouns that differ from those that appear in your official University of Nebraska records, please let me know!
+-   If you feel like your performance in the class is being impacted by your experiences outside of class, please don't hesitate to come and talk with me. I want to be a resource for you. Remember that you can also submit anonymous feedback (which will lead to me making a general announcement to the class, if necessary to address your concerns). If you prefer to speak with someone outside of the course, there are many resources available on-campus (e.g. CAPS).
+-   I (like many people) am still in the process of learning about diverse perspectives and identities. If something was said in class (by anyone) that made you feel uncomfortable, please talk to me about it. (Again, anonymous feedback is always an option).
+Your suggestions are encouraged and appreciated. 
+
+## Course Policies
+**TL;DR: Don't cheat!**
+
+### Academic honesty policy
+Academic integrity is of the utmost importance at Nebraska.  Be sure you understand expectations of you and your academic work.  View the complete list of academic dishonesty violations in the Student Code of Conduct, specifically Article III: Proscribed Conduct, Section B. Conduct – Rules and Regulations, 1. Acts of Academic Dishonesty.  For more information, please visit https://studentconduct.unl.edu/.  If you are unsure what counts as academic dishonesty in this course, please visit me during office hours. The first instance of academic dishonesty will result in a score of zero for the assignment or exam.  The second incidence of academic dishonesty will result in a failing grade for the course.
+
+### Accommodations for students with disabilities policy
+It is my goal that this class be an accessible and welcoming experience for all students.  Reasonable accommodations are provided for students who are registered with the Accessibility Services Center and make their requests sufficiently in advance. For more information, contact:
+Lincoln campus:  [Services for Students with Disabilities] (https://www.unl.edu/ssd/)
+Omaha campus:  [Accessibility Services Center] (https://www.unomaha.edu/student-life/inclusion/disability-services/students/index.php)
+
+### Communication
+
+All lecture notes, assignment instructions, an up-to-date schedule, and other course materials may be found on the [course website] (https://unl-hawkins-lab.github.io/Hawkinslab/teaching/CIVE461/CIVE461.html).
+
+I will regularly send course announcements via email and Canvas - make sure to check one or the other of these regularly.
+If an announcement is sent Monday through Thursday, I will assume that you have read the announcement by the next day.
+If an announcement is sent on a Friday or over the weekend, I will assume that you have read it by Monday.
+
+### Where to get help
+
+-   If you have a question during lecture, feel free to ask it! There are likely other students with the same question, so by asking you will create a learning opportunity for everyone.
+-   The teaching team is here to help you be successful in the course. You are encouraged to attend office hours to ask questions about the course content and assignments. Many questions are most effectively answered as you discuss them with others, so office hours are a valuable resource. Please use them!
+-   Outside of class and office hours, any general questions about course content or assignments should be posted on the course forum [Canvas Discussions](https://sakai.duke.edu/portal/site/779c3ebe-3b88-4bcc-bd01-1813e8396a23/tool/13b6446a-a6c6-4222-8cfb-c36d1f70802b). There is a chance another student has already asked a similar question, so please check the other posts in Conversations before adding a new question. If you know the answer to a question posted in the discussion forum, I encourage you to respond!
+-   Emails should be reserved for questions not appropriate for the public forum. **If you email me, please include "CIVE 461" in the subject line.** Barring extenuating circumstances, I will respond to CIVE 461 emails within 48 hours Monday - Friday. Response time may be slower for emails sent Friday evening - Sunday.
+
+### Collaboration policy
+
+Only work that is clearly assigned as team work should be completed collaboratively.
+
+-   The homework assignments must be completed individually and you are welcome to discuss the assignment with classmates at a high level (e.g., discuss what's the best way for approaching a problem, what functions are useful for accomplishing a particular task, etc.). However you may not directly share answers to homework questions with anyone other than myself and the teaching assistant.
+-   For the projects, collaboration within teams is not only allowed, but expected. Communication between teams at a high level is also allowed; however, you may not share code or components of the project across teams.
+
+### Policy on sharing and reusing code
+
+I am well aware that a huge volume of code is available on the web to solve any number of problems.
+Unless I explicitly tell you not to use something, the course's policy is that you may make use of any online resources (e.g. StackOverflow, ChatGPT) but you must explicitly cite where you obtained any code you directly use (or use as inspiration).
+Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism.
+
+### Late work policy
+
+The due dates for assignments are there to help you keep up with the course material and to ensure the teaching team can provide feedback within a timely manner.
+We understand that things come up periodically that could make it difficult to submit an assignment by the deadline.
+
+-   Homework and labs may be submitted up to 3 days late.
+    There will be a 5% deduction for each 24-hour period the assignment is late.
+
+-   There is no late work accepted for application exercises, since these are designed to help you prepare for homework.
+
+-   The late work policy for the project will be provided with the project instructions.
+
+### Waiver for extenuating circumstances
+
+If there are circumstances that prevent you from completing a homework assignment by the stated due date, you may email [Dr. Jason Hawkins](mailto:jason.hawkins@unl.edu) **and** our TA [Omid Armantalab](mailto:oarmantalab2@huskers.unl.edu) before the deadline to waive the late penalty.
+In your email, you only need to request the waiver; you do not need to provide explanation.
+This waiver may only be used once in the semester, so only use it for a truly extenuating circumstance.
+
+### Regrade request policy
+
+Regrade requests must be submitted by Canvas within a week of when an assignment is returned.
+Regrade requests will be considered if there was an error in the grade calculation or if you feel a correct answer was mistakenly marked as incorrect.
+Requests to dispute the number of points deducted for an incorrect response will not be considered.
+Note that by submitting a regrade request, the entire question will be graded which could potentially result in losing points.
+
+*No grades will be changed after the final project deadline.*
+
+### Attendance policy
+
+Responsibility for class attendance rests with individual students.
+Since regular and punctual class attendance is expected, students must accept the consequences of failure to attend.
+
+However, there may be many reasons why you cannot be in class on a given day.
+If you miss a lecture, make sure to communicate with your project team about how you can make up your contribution.
+Given the technologies we use in the course, this is straightforward to do asynchronously.
+Overall these policies are put in place to ensure communication between team members, respect for each others' time, and also to give you a safety net in the case of illness or other reasons that keep you away from attending class.
+
+### Inclement weather policy
+
+In the event of inclement weather or other connectivity-related events that prohibit class attendance, I will notify you how we will make up missed course content and work.
+This might entail holding the class on Zoom synchronously or watching a recording of the class.
+
+### Cell phone use and professional behavior
+When you come to class, your cell phone must be turned off or silenced and put away where it is not a distraction to you or anyone else.  The instructor’s expectations for classroom behavior are based on the norms of the engineering profession.  Questions and discussion related to class material are welcome and encouraged but respect for the instructor and fellow classmates is required at all times.  No cell phone usage will be allowed during any exams.
+
+
+## Important dates
+
+-   **August 21:** Classes begin.
+-   **August 28:** Last day for course registration.
+-   **September 01:** Last day to withdraw with W.
+-   **September 04**: Labor day. No class.
+-   **October 16-17**: Fall semester break. No class.
+-   **November 22-26 25-30**: Thanksgiving vacation. No class.
+-   **December 04-09**: Last week of classes.
+-   **December 11-15**: Final exam week.
+
+Click [here](https://registrar.unl.edu/academic-calendar/2023-2024/) for the full UNL academic calendar.

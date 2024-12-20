@@ -1,0 +1,10 @@
+---
+title: "Active Exercise 4 - Statistics Activity"
+sidebar: ENCI707
+---
+
+::: callout-important
+This application exercise should be submitted via D2L by end of the day on which it was introduced in lecture.
+:::
+
+From Gelman

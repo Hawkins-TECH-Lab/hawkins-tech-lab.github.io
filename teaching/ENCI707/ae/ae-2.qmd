@@ -1,0 +1,18 @@
+---
+title: "Active Exercise 2 - Ecological Economics"
+sidebar: ENCI707
+---
+
+::: callout-important
+This application exercise should be submitted via D2L by end of the day on which it was introduced in lecture.
+:::
+
+![](../../../assets/images/teaching/ENCI707/Lecture1/ecological_hourglass.png){fig-align="center"}
+
+Consider two hourglasses - neither can be turned over unlike a real hourglass!
+
+The hourglass on left is an isolated system; no sand enters, no exits. Also, within the hourglass there is neither creation nor destruction of sand; the amount in the hourglass is constant. This is the analogy of the First Law of Thermodynamics - conservation of matter and energy. There is a continual running down of sand in the top chamber and an accumulation of sand in the bottom chamber (i.e., earth). We can assume that the amount of solar energy in the top chamber is limitless but the flow rate is fixed from our perspective on earth.
+
+Consider the second hourglass representing earth. Sand in the top chamber has potential energy; it is low entropy, or available energy and matter. This is the analogy to the Second Law of Thermodynamics. We can consider the sand in the top chamber as the stock of low-entropy fossil fuels, which flows into the bottom chamber as high-entropy water matter. However, unlike the left-hand hourglass, we have some control over the flow. This is demand! The solar source of low entropy energy is stock-abundant but flow-limited. The terrestrial source is stock-limited but flow-abundant.
+
+How might the hourglass analogy apply to your infrastructure system of interest - e.g., transportation, water, electricity? Think about the supply and demand relationships for the system.

@@ -1,0 +1,24 @@
+---
+title: "Week 9"
+subtitle: "Guest Lecture"
+editor: visual
+---
+
+
+## Prepare
+
+None
+
+## Participate
+
+Guest lecture - Nick Aldridge: "Active Mode Transportation Safety Exposure Using LBS Data"
+
+## Practice
+
+📋 [AE 4 - Trip Distribution](/teaching/CIVE461/ae/ae-4-trip-distribution.html) - Submit on Canvas
+
+<br><br>
+
+::: {style="font-size: 0.875em;"}
+Back to [course schedule](/teaching/CIVE461/ "Course schedule") ⏎
+:::

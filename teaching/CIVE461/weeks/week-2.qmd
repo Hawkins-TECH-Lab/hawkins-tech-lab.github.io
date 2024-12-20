@@ -1,0 +1,21 @@
+---
+title: "Week 2"
+subtitle: "Statistics"
+editor: visual
+---
+
+
+## Prepare
+
+📖 Review Ch. 1 of Regression and Other Stories [ROS](https://github.com/UNL-Hawkins-Lab/CIVE_461/blob/6ae2e8ca1576a517b809c1d6ffb832f84695dbf1/Resources/Gelman_Et_Al_ROS_1ed.pdf)
+
+## Participate
+
+🖥️ [Lecture 2 - Statistical Modeling](/teaching/CIVE461/slides/lec-2.html)
+
+
+<br><br>
+
+::: {style="font-size: 0.875em;"}
+Back to [course schedule](/teaching/CIVE461/ "Course schedule") ⏎
+:::

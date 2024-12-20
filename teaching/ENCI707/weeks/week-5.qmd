@@ -1,0 +1,26 @@
+---
+title: "Week 5"
+subtitle: "Policy Analysis"
+---
+
+## Prepare
+
+📖 Read Basic Methods of Policy Analysis and Planning Ch 2 (section 5) and Ch. 12 (all) [BMPAP](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/6c18872fe3fd73e8ddb1edf6e1ba18fc7883387f/Resources/Basic_Methods_of_Policy_Analysis_and_Planing.pdf)
+
+## Participate
+📋 [Lecture 3 - Aggregate Demand Models](/teaching/ENCI707/slides/lec-3.html)
+
+🖥️ [Activity 5 - Policy Analysis I](/teaching/ENCI707/ae/ae-5.html)
+
+## Practice
+
+🖥️ [Activity 6 - Policy Analysis II](/teaching/ENCI707/ae/ae-6.html)
+
+## Deliver
+None
+
+<br><br>
+
+::: {style="font-size: 0.875em;"}
+Back to [course schedule](/teaching/ENCI707/ "Course schedule") ⏎
+:::

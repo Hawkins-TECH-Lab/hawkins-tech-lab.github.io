@@ -1,0 +1,14 @@
+---
+title: "Mapping Vehicle Diffusion Dynamics in the United States"
+author: ["Hania Afzal", "Omid Armantalab", "Jason Hawkins"]
+publication: "_under review_ (2024)"
+categories:
+  - "vehicle_adoption"
+url_source: 
+url_preprint: "http://dx.doi.org/10.13140/RG.2.2.34232.15367"
+journ: "under review"
+# issue: issue
+# page: page
+year: 2024
+pub_number: 9
+---

@@ -1,0 +1,19 @@
+---
+title: "Travel Diary"
+sidebar: CIVE461
+---
+
+::: callout-important
+This application exercise should be submitted via Canvas following the Aug. 23 lecture (by end of day).
+:::
+
+We will look at the relationship between several different decisions implicit in personal travel.
+
+
+1. Draw your travel for the day. You should indicate the approximate departure and travel times, mode, and destinations.
+
+2.	Which of these trips are mandatory? Which are discretionary?
+
+3.	Could these trips be made by a different mode (car, taxi, ridehail, transit, scooter, bike, walk) If not, why?
+
+4.	Could you move your home to change the travel time or mode for a trip? Could you perform an activity at home rather than making the trip?

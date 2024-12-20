@@ -1,0 +1,39 @@
+---
+title: "Survey Design Assignment"
+---
+
+## Introduction
+
+## Overall grading
+
+The grade breakdown is as follows:
+
+| Total                              | 100 pts |
+|------------------------------------|---------|
+| **Topic ideas**                    | 5 pts   |
+| **Project proposal**               | 10 pts  |
+| **Peer review**                    | 10 pts  |
+| **Written report**                 | 40 pts  |
+| **Slides + video presentation**    | 20 pts  |
+| **Reproducibility + organization** | 5 pts   |
+| **Video comments**                 | 5 pts   |
+| **Peer teamwork evaluation**       | 5 pts   |
+
+*Note: No late project reports are accepted.*
+
+### Grading summary
+
+Grading of the project will take into account the following:
+
+-   Content - What is the quality of research and/or policy question and relevancy of data to those questions?
+-   Correctness - Are statistical procedures carried out and explained correctly?
+-   Writing and Presentation - What is the quality of the statistical presentation, writing, and explanations?
+-   Creativity and Critical Thought - Is the project carefully thought out? Are the limitations carefully considered? Does it appear that time and effort went into the planning and implementation of the project?
+
+A general breakdown of scoring is as follows:
+
+-   *90%-100%*: Outstanding effort. Student understands how to apply all statistical concepts, can put the results into a cogent argument, can identify weaknesses in the argument, and can clearly communicate the results to others.
+-   *80%-89%*: Good effort. Student understands most of the concepts, puts together an adequate argument, identifies some weaknesses of their argument, and communicates most results clearly to others.
+-   *70%-79%*: Passing effort. Student has misunderstanding of concepts in several areas, has some trouble putting results together in a cogent argument, and communication of results is sometimes unclear.
+-   *60%-69%*: Struggling effort. Student is making some effort, but has misunderstanding of many concepts and is unable to put together a cogent argument. Communication of results is unclear.
+-   *Below 60%*: Student is not making a sufficient effort.

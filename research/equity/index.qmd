@@ -1,0 +1,25 @@
+---
+title: Equity
+alias: &ALIAS equity
+image: featured.jpg
+listing:
+  id: pubs
+  template: ../../_ejs/publications-people.ejs 
+  contents: ../../publications/**/*.qmd
+  sort: "pub_number desc"
+  # sort-ui: true
+  filter-ui: true
+  include:
+    categories: *ALIAS
+  fields: [publication, title, categories, image, date, author]
+
+---
+![](featured.jpg)
+
+Equity is an important aspect of any research that affects humans, or any other species, to ensure the fair distribution of benefits in a world with unequal power relationships. Our research in this area focuses on methods and tools to aid decision-makers in their efforts to ensure equity in policy and infratructure investments.
+
+## Related Publications
+
+
+:::{#pubs}
+:::

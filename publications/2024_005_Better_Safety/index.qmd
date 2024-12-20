@@ -1,0 +1,14 @@
+---
+title: "Better Safety Analyses through Smarter Data: Adding Open-Street-View and Traffic Calibrated-LBS Data to Pedestrian Crash Analysis in Lincoln, NE"
+author: ["Mohammad Elayan", "Jason Hawkins"]
+publication: "_under review_ (2024)"
+categories:
+  - "safety"
+url_source: 
+url_preprint: "http://dx.doi.org/10.13140/RG.2.2.25843.54564"
+journ: "under review"
+# issue: issue
+# page: page
+year: 2024
+pub_number: 5
+---

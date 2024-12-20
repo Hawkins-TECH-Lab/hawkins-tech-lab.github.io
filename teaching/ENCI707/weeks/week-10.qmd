@@ -1,0 +1,28 @@
+---
+title: "Week 10"
+subtitle: "Advanced Choice Models"
+---
+
+## Prepare
+
+📖 Review Discrete Choice Methods with Simulation Ch. 4  [DCMS](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/6a17dbbd701554fca22c5c434eb4bf6e746f8518/Resources/Ch04_p76-96.pdf)
+📖 Review Parady and Axhausen on Parameter Interpretation  [PI](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/28088286106811a96653d706b55c7da4c39dde0b/Resources/2023_Parady_Size_Matters.pdf)
+📖 Review Parady, Ory, and Walker on Goodness of Fit Interpretation  [GOF](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/28088286106811a96653d706b55c7da4c39dde0b/Resources/2021_Parady_GoF_Transportation.pdf)
+
+## Participate
+
+🖥️ [Lecture 6 - Advanced Choice Models](/teaching/ENCI707/slides/lec-5.html)
+
+## Practice
+
+None
+
+## Deliver
+📝 Logit model group assignment due Mar. 19 by 11:59 PM on D2L.
+📝 Draft data and experimental design due Mar. 21 by 11:59 PM on D2L.
+
+<br><br>
+
+::: {style="font-size: 0.875em;"}
+Back to [course schedule](/teaching/ENCI707/ "Course schedule") ⏎
+:::

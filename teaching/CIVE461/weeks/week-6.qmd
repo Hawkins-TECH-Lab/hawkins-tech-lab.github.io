@@ -1,0 +1,28 @@
+---
+title: "Week 6"
+subtitle: "Transportation Planning Process"
+editor: visual
+---
+
+
+## Prepare
+
+📖 Read notes on [transportation regulation](/teaching/CIVE461/supplemental/transport-reg.html) 
+
+📖 Read notes on [transportation data](/teaching/CIVE461/supplemental/transport-data.html)
+
+## Participate
+
+🖥️ [Lecture 4 - Transportation Planning Process](/teaching/CIVE461/slides/lec-4.html)
+
+📋 [AE 3 - Urban Transportation Plans](/teaching/CIVE461/ae/ae-3-transport-plans.html) 
+
+## Practice
+
+None
+
+<br><br>
+
+::: {style="font-size: 0.875em;"}
+Back to [course schedule](/teaching/CIVE461/ "Course schedule") ⏎
+:::

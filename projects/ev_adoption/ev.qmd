@@ -1,0 +1,144 @@
+---
+title: "EV Adoption in the US Midwest"
+sidebar: Project
+section-divs: true
+echo: false
+execute:
+  freeze: auto  # re-render only when source changes
+---
+
+```{python}
+import ev_adopt_graphs.graphs as gh
+
+```
+
+# Introduction
+
+Transportation is the largest greenhouse gas (GHG) emissions source in the United States (28%). As such, reducing emissions from this sector is an important step towards addressing climate change impacts. One strategy to address this impact is the electrification of personal vehicles. In this study, we focus on electric vehicle (EV) adoption factors. Past studies on this topic have framed the vehicle adoption question around small vehicles. However, most Americans (60-70%) drive larger vehicles (i.e., SUVs, minivans, and pickup trucks). Our goal in this study was to understand how attitudes about EV adoption vary across the population.
+
+The core of the research study was a consumer survey administered to residents of Midwest states (Iowa, Kansas, Missouri, Minnesota, Nebraska, North Dakota, and South Dakota).
+
+::: {fig-survey}
+![](../../assets/images/research/ev_adoption/survey_sections.png){fig-align="center" width=50%}
+:::
+
+# Survey Design
+The survey was administered in Qualtrics and distributed to 2,000  respondents in March, 2023 via an online panel company. Responses were screened for completion time and various other quality checks. After further post-completion quality controls, 1,954 complete responses were used in analysis. Respondent locations are shown below in an interactive map. Each respondent completed six stated preference experiments about their vehicle choice preferences. The available responses were "small car - gas", "small car - electric", "large car - gas", "large car - electric", "pickup truck - gas", and "pickup truck - electric" where *gas* is an internal combustion engine vehicle and *electric* is a plugin electric vehicle. Additional details on the stated preference experiment are provided below.
+
+```{python}
+fig = gh.get_fig_survey_locations()
+
+fig.show()
+```
+
+Stated preference experiments are a standard approach in consumer analysis to examine the preference for discrete options, where one or more options may not be presently available. Our the case of vehicle ownership, electric pickup trucks have only recently entered the market. We first presented respondents with the following images to illustrate our vehicle class definitions, attempting to keep images generic and free of brand logos that might influence preferences.
+
+::: {layout-nrow=2}
+![Small car 1](../../assets/images/research/ev_adoption/small_car_1.jpg){style="float:right; padding: 0 0 0 0; object-fit: fit; border-radius: 10px; object-position: center;" fig-align="center" width="350" height="200"}
+
+![Small car 2](../../assets/images/research/ev_adoption/small_car_2.jpg){style="float:right; padding: 0 0 0 0; object-fit: fit; border-radius: 10px; object-position: center;" fig-align="center" width="350" height="200"}
+
+![Large car 1](../../assets/images/research/ev_adoption/large_car_1.jpg){style="float:right; padding: 0 0 0 0; object-fit: fit; border-radius: 10px; object-position: center;" fig-align="center" width="350" height="200"}
+
+![Large car 2](../../assets/images/research/ev_adoption/large_car_2.jpg){style="float:right; padding: 0 0 0 0; object-fit: fit; border-radius: 10px; object-position: center;" fig-align="center" width="350" height="200"}
+
+![Pickup truck 1](../../assets/images/research/ev_adoption/pickup_1.jpg){style="float:right; padding: 0 0 0 0; object-fit: fit; border-radius: 10px; object-position: center;" fig-align="center" width="350" height="200"}
+
+![Pickup truck 2](../../assets/images/research/ev_adoption/pickup_2.jpg){style="float:right; padding: 0 0 0 0; object-fit: fit; border-radius: 10px; object-position: center;" fig-align="center" width="350" height="200"}
+
+:::
+
+
+We then presented respondents with a series of stated preference experiments. These experiments take the form of attribute tables. Respondents must select one option from among the six presented to them. Each option is described by its purchase price, fuel cost (per 100 miles), annual maintenance cost, tax rebeate, recharging time (at a station and at home), driving range (in miles), towing capacity (in lbs), and onboard generator capacity (in days of typical home demand). Most attributes were based on previous survey experiments. However, towing capacity and onboard generator capacity were added to the experiment as features relevant to pickup truck owners.
+
+::: {fig-survey}
+
+![](../../assets/images/research/ev_adoption/sp_example.png){fig-align="center"}
+
+:::
+
+# Preliminary Findings
+The survey provided a wealth of results to be explored by the research team. We present a few of these findings below, with additional analysis provided in forthcoming publications.
+
+First, looking at respondents' expected next vehicle purchase there is an intuitive trend towards more large vehicles among larger households. Pickup truck preference appears to be relatively constant across household sizes.
+
+```{python}
+
+fig = gh.get_fig_next_veh_by_hh_size_graph()
+
+fig.show()
+```
+
+One of the dimensions that was identified by the research team as missing in prior studies is driving frequency off public roads. It is widely known in the transportation planning community that active mode (walking and cycling) trips are underreported in traditional data sources (e.g., the National Household Travel Survey in the U.S.). When asked about daily trips, survey respondents frequently do not report recreational active mode trips, such as walking the dog around the block. We had the hypothesis that a similar under-reporting may occur among rural residents who use their personal vehicles on their property. This travel may be important for these residents when considering an EV, as it will deplete the vehicle battery (and therefore driving range). For example, a rancher may drive their pickup truck on their property to check on cows and then drive into town. Prior surveys likely missed this travel, resulting in an under-reporting of rural travel. The question was worded as follows: How often do you use your vehicle off public roads for work purposes (e.g., on your property or private roads)? after an initial screening question for whether the respondent makes such trips.
+
+As expected, we found that those working in the farming, fishing, and foresty sectors are the most likely to travel off public roads for work. Further, they are the most likely to make such trips at least once per week. We also found a high rates for government and construction workers. Government workers may be driving in parks or to perform inspections on farms or industrial sites. Management and professional works also report making off-road trips. These trips may include engineers and other professional employees visiting farm, forestry, and industrial work sites. However, our main finding is significant travel that we do not believe is reported on conventional travel surveys (e.g., the NHTS).
+
+```{python}
+
+fig = gh.get_fig_off_freq_by_occ()
+
+fig.show()
+```
+
+A second cross-tabulation with off-road driving frequency explored was next vehicle type. There interest in this case is whether pickup truck owners are more likely to make such trips. We find evidence for this hypothesis, but it is not as strong as we anticipated, with many car owners reporting that they make trips off public roads 1-3 times per month.
+```{python}
+
+fig = gh.get_fig_off_road_by_next_veh()
+
+
+fig.show()
+
+```
+
+We also asked about the timing for the next vehicle purchase. The below figure summarizes these results by vehicle powertrain choice. We find that many people in the Midwest anticipate their next vehicle will have an internal combustion engine (ICE) powertrain - i.e., be either gasoline or diesel. However, those who plan to purchase their next vehicle in greater than 4 years are more likely to buy a hybrid electric vehicle (HEV). Battery electric vehicle (BEV) purchase intention may grow to 20% but generally hovers around the current national average sales rate of 10%. This result indicates that current intention does not align with climate mitigation scenarios requiring widescale BEV adoption across the country.
+```{python}
+
+
+fig = gh.get_fig_time_fuel_type()
+
+
+fig.show()
+
+```
+
+Another factor explored in the survey was access to parking at home. Parking access is a commonly cited barrier to EV adoption in prior research. We find that a large portion of the Midwest population (44.3%) have access to a private enclosed garage. There is a mix of other levels of access to potential home charging facilities. However, 17% of the population lacks a dedicated parking space and a further 12% rely on shared parking that could not accomodate EV charging equipment.
+```{python}
+
+fig = gh.get_fig_parking()
+
+fig.show()
+
+
+```
+
+The following two figures are a special kind of diagram called a Sankey plot. Sankey plots are a great way to show shifts between two scenarios. The first Sankey plot shows current vehicle ownership (on the left) and stated vehicle choice in our stated preference experiment. The user can move the boxes around and use the slider below the plot to change the minimum flow (current -> stated choice) to appear in the plot. We can see that most current small vehicle owners also pick this option in our experiment. Few current pickup truck owners pick BEV options in the stated preference experiment. We see the largest shift towards BEV options among current small car owners.
+
+```{python}
+
+fig = gh.get_fig_sankey_curr_sp_veh()
+
+fig.show()
+
+```
+
+The second Sankey plot shows the relationship between current vehicle ownership and the expected next vehicle purchase. Interestingly, here we see a smaller share of people selecting BEV options than in our experiments. The largest shifts are between vehicle sizes for ICE powertrain vehicles.
+```{python}
+
+fig = gh.get_fig_sankey_curr_next()
+
+fig.show()
+
+```
+
+# Conclusions
+Our initial results suggest that rural travel may be under-reported in conventional statistics due to travel on personal property and private roads for work purposes. This under-reporting will affect the viability of EV adoption in these areas because residents will face driving range factors not properly incorporated into existing analyses. We designed a novel stated preference experiment focused on electric pickup truck adoption. Our initial analysis indicates that electrification in this vehicle market will be slower than among small car owners.
+
+Further work will involve more advanced modeling methods and scenario analysis. These results will be published to the website in August 2023.
+
+We welcome feedback and suggestions for further analysis using our survey. We provide the complete survey as a pdf below. Please feel free to use this survey as a basis for your own work!
+
+<object data="../../assets/images/research/ev_adoption/qualtrics_ev_survey.pdf" type="application/pdf" width="100%" height="700px">
+    <embed src="../../assets/images/research/ev_adoption/qualtrics_ev_survey.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="../../assets/images/research/ev_adoption/qualtrics_ev_survey.pdf">Download PDF</a>.</p>
+    </embed>
+</object>

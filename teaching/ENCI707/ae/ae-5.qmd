@@ -1,0 +1,41 @@
+---
+title: "Active Exercise 5 - Policy Case Study I"
+sidebar: CIVE707
+---
+
+::: callout-important
+This application exercise should be submitted via D2L by end of the day on which it was introduced in lecture.
+:::
+
+# Problem Statement: Hydrogen Fuel Vehicles
+From the Alberta government:
+
+> Alberta is preparing for a lower emission future. The Hydrogen Roadmap is a key part of that future and is our path to building a provincial hydrogen economy and accessing global markets. It outlines the steps we are taking to support the sector as technology and markets develop.
+
+> Alberta is the largest hydrogen producer in Canada. We have all the resources, expertise, and technology needed to quickly become a global supplier of clean, low-cost hydrogen. With a worldwide market estimated to be worth more than $2.5 trillion a year by 2050, hydrogen can be the next great energy export that fuels jobs, investment and economic opportunity across our province.
+
+Your task is to evaluate this policy based on the six step process as follows:
+    1) Verify, define, and detail the problem
+    2) Establish evaluation criteria
+    3) Identify alternative policies
+    4) Evaluate alternative policies
+    5) Display and distinguish among alternative policies
+    6) Monitor and evaluate the implemented policy
+
+Additional details from [roadmap website](https://www.alberta.ca/hydrogen-roadmap):
+
+There are five markets identified for clean hydrogen growth in Alberta: 
+    1) Residential and commercial gas utility systems
+    2) Power generation and energy storage
+    3) Transportation and mobility
+    4) Industrial processes
+    5) Export markets
+
+There are seven policy pillars:
+    1) Build new market demand
+    2) Enable carbon capture, utillization, and storage (CCUS)
+    3) De-risk investments
+    4) Activate technology and innovation
+    5) Ensure regulatory efficiency, codes, and standards
+    6) Lead the way and build alliances
+    7) Pursue hydrogen exports

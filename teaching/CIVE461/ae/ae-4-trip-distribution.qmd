@@ -1,0 +1,12 @@
+---
+title: "Trip Distribution"
+sidebar: CIVE461
+---
+
+We worked through several trip distribution questions in class. Please submit your work via Canvas. The document is provided below
+
+<object data="CIVE461_Trip_Distribution_In_Class.pdf" type="application/pdf" width="100%" height="700px">
+    <embed src="CIVE461_Trip_Distribution_In_Class.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="CIVE461_Trip_Distribution_In_Class.pdf">Download PDF</a>.</p>
+    </embed>
+</object>

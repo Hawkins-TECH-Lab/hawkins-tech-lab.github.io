@@ -1,0 +1,12 @@
+---
+title: "Computing access"
+---
+
+There are several options available to perform computing for ENCI707:
+
+1.  Create a GitHub account and use codespaces - details [here](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/dc0772ab0b84414af5737676f07761518ea46dcf/Resources/Github_Codespace_Setup.pdf).
+
+2. Download the files from [GitHub](https://github.com/Hawkins-TECH-Lab/ENCI707) and use a local version of Python.
+
+3. Download the files from [GitHub](https://github.com/Hawkins-TECH-Lab/ENCI707) and use Anaconda Cloud.
+

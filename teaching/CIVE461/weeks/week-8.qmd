@@ -1,0 +1,24 @@
+---
+title: "Week 8"
+subtitle: "Transportation Equity"
+editor: visual
+---
+
+
+## Prepare
+
+📖 Read notes on [Trip Distribution](/teaching/CIVE461/supplemental/trip-distribution.html)
+
+## Participate
+
+📋 [AE 4 - Trip Distribution](/teaching/CIVE461/ae/ae-4-trip-distribution.html) - Submit on Canvas
+
+## Practice
+
+None
+
+<br><br>
+
+::: {style="font-size: 0.875em;"}
+Back to [course schedule](/teaching/CIVE461/ "Course schedule") ⏎
+:::

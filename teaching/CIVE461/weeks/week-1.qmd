@@ -1,0 +1,23 @@
+---
+title: "Week 1"
+subtitle: "Welcome to CIVE 461/861"
+editor: visual
+---
+
+## Prepare
+
+📖 Read the [syllabus](/teaching/CIVE461/course-syllabus.html)
+
+## Participate
+
+🖥️ [Lecture 1 - Introduction to transportation planning](/teaching/CIVE461/slides/lec-1.html)
+
+## Practice
+
+📋 [AE 0 - Travel Diary](/teaching/CIVE461/ae/ae-0-travel-diary.html)
+
+<br><br>
+
+::: {style="font-size: 0.875em;"}
+Back to [course schedule](/teaching/CIVE461/ "Course schedule") ⏎
+:::
