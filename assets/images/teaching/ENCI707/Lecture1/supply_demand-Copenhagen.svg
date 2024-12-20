@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   version="1.1"
+   viewBox="0 0 210 297"
+   id="svg15"
+   sodipodi:docname="supply_demand.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   inkscape:export-filename="supply_demand.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs15" />
+  <sodipodi:namedview
+     id="namedview15"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.75811588"
+     inkscape:cx="398.35599"
+     inkscape:cy="393.07975"
+     inkscape:window-width="1150"
+     inkscape:window-height="1000"
+     inkscape:window-x="-7"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g11" />
+  <g
+     fill="none"
+     stroke="#000"
+     id="g4"
+     inkscape:export-filename="supply_demand.svg"
+     inkscape:export-xdpi="96"
+     inkscape:export-ydpi="96">
+    <path
+       d="m28.504 84.103-0.3519 94.66"
+       stroke-width=".26458px"
+       id="path1" />
+    <path
+       d="m28.019 178.76 119.07 1.0552"
+       stroke-width=".26458px"
+       id="path2" />
+    <path
+       d="m39.764 166.62 86.214-73.37"
+       stroke-width="1.065"
+       id="path3" />
+    <path
+       d="m39.419 92.847 86.905 74.181"
+       stroke-width="1.065"
+       id="path4" />
+  </g>
+  <g
+     fill="#000000"
+     font-size="3.175px"
+     stroke-width="1.065"
+     id="g11">
+    <text
+       x="130.37737"
+       y="92.441826"
+       xml:space="preserve"
+       id="text4"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"><tspan
+         x="130.37737"
+         y="92.441826"
+         stroke-width="1.065"
+         id="tspan4"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">Supply</tspan></text>
+    <text
+       x="128.64105"
+       y="170.46454"
+       xml:space="preserve"
+       id="text5"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"><tspan
+         x="128.64105"
+         y="170.46454"
+         stroke-width="1.065"
+         id="tspan5"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">Demand</tspan></text>
+    <text
+       x="148.14809"
+       y="185.44905"
+       xml:space="preserve"
+       id="text6"
+       style="-inkscape-font-specification:'sans-serif, Normal';font-family:sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:6.35px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"><tspan
+         x="148.14809"
+         y="185.44905"
+         stroke-width="1.065"
+         id="tspan6"
+         style="-inkscape-font-specification:'sans-serif, Normal';font-family:sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:6.35px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">Quantity</tspan></text>
+    <text
+       transform="translate(3.9349741,2.8950024)"
+       x="6.5100713"
+       y="83.047394"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;inline-size:29.2147;display:inline"
+       xml:space="preserve"
+       id="text7"><tspan
+         x="6.5100713"
+         y="83.047394"
+         id="tspan1">Price</tspan></text>
+    <text
+       x="17.087204"
+       y="130.158"
+       xml:space="preserve"
+       id="text9"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"><tspan
+         x="17.087204"
+         y="130.158"
+         stroke-width="1.065"
+         id="tspan9"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">P<tspan
+   baseline-shift="sub"
+   font-size="65%"
+   id="tspan8"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">0</tspan></tspan></text>
+    <text
+       x="79.894806"
+       y="187.51555"
+       xml:space="preserve"
+       id="text11"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;display:none"><tspan
+         x="79.894806"
+         y="187.51555"
+         stroke-width="1.065"
+         id="tspan11"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">Q<tspan
+   baseline-shift="sub"
+   font-size="65%"
+   id="tspan10"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">0</tspan></tspan></text>
+  </g>
+  <g
+     id="g15"
+     inkscape:export-filename="supply_demand.svg"
+     inkscape:export-xdpi="96"
+     inkscape:export-ydpi="96">
+    <g
+       stroke-dasharray="0.264583, 0.264583"
+       stroke-width="1.065"
+       id="g13">
+      <path
+         d="m82.871 129.94 0.69503 49.354"
+         id="path11" />
+      <path
+         d="m83.566 201.99-0.34752-47.374"
+         id="path12" />
+      <path
+         d="m131.74 125.59c39.63 5.8438 39.63 5.8438 39.63 5.8438"
+         id="path13" />
+    </g>
+    <path
+       d="m82.871 129.94 0.69503 49.354"
+       stroke="#000"
+       stroke-dasharray="0.265,0.265"
+       stroke-width=".265"
+       id="path14" />
+    <path
+       d="m82.871 129.94h-54.538"
+       stroke="#000"
+       stroke-dasharray="0.264999, 0.264999"
+       stroke-width=".265"
+       id="path15" />
+  </g>
+</svg>

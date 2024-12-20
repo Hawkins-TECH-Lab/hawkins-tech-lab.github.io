@@ -338,17 +338,693 @@
 <h2>Outline</h2>
 <div>
 <ol type="1">
-<li class="fragment">What is statistics</li>
+<li class="fragment">Survey terms</li>
+<li class="fragment">Survey design</li>
+<li class="fragment">Stated choice experiments</li>
 </ol>
 </div>
+</section>
+<section>
+<section id="survey-terms" class="title-slide slide level1 center">
+<h1>Survey Terms</h1>
+
+</section>
+<section id="infrastructure-demand-surveys" class="slide level2">
+<h2>Infrastructure Demand &amp; Surveys</h2>
+<ul>
+<li>Infrastructure demand is a function of individual decisions</li>
+<li>Analysis requires behavioral data: surveys!​</li>
+<li>As with other forms of engineering analysis, survey experiments require careful design &amp; execution</li>
+<li>A demand analyst must be an expert in both the subject area &amp; knowledgeable about survey methods</li>
+</ul>
+</section>
+<section id="survey-jargon" class="slide level2 smaller">
+<h2>Survey Jargon</h2>
+<ul>
+<li><strong>Observation unit</strong>: basic unit of measurement. In human populations, it is often individuals.​</li>
+<li><strong>Target population</strong>: The complete set of observations we want to study. E.g., university students, seniors, or adults with a driver’s license.​</li>
+<li><strong>Sample</strong>: A subset of the population.​</li>
+<li><strong>Sampled population</strong>: The collection of all possible observation units that might have been chosen in a sample. E.g., United States or Nebraska.​</li>
+<li><strong>Sampling unit</strong>: A unit that can be selected from a sample. Often, we are interested in individuals but sample households.​</li>
+<li><strong>Sampling frame</strong>: A list, map, or other specification of sampling units in the population from which the sample may be chosen. E.g., all residential telephone numbers in a city.​</li>
+</ul>
+</section>
+<section id="requirements-of-a-good-survey" class="slide level2 smaller">
+<h2>Requirements of a Good Survey</h2>
+<ul>
+<li><strong>Representative: does the sample represent the </strong>population of interest**?</li>
+<li><strong>Example</strong> Target vs.&nbsp;sample population for a telephone survey of likely voters
+<ul>
+<li>Not all households have telephones: as of 2021 93.9% of Canadian households had cellphones &amp; 47.4% had a landline</li>
+<li>Not all <strong>households with telephones</strong> are eligible to vote</li>
+<li>Some <strong>eligible respondents</strong> in the sample frame cannot be contacted, refuse to respond, or are ill</li>
+</ul></li>
+</ul>
+
+<img data-src="../../../assets/images/teaching/ENCI707/Lecture2/sample_frame.svg" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="applications-outside-home-subject-surveys" class="slide level2 smaller">
+<h2>Applications Outside Home-Subject Surveys</h2>
+<ul>
+<li>National Pesticide Survey, conducted by EPA, studied <strong>pesticides &amp; nitrates in drinking water wells US-wide​</strong>
+<ul>
+<li><strong>Target population</strong>: All community water systems &amp; rural domestic wells in the US​</li>
+<li><strong>Sampled population</strong>: All community water systems (as listed in Federal Reporting Data System) &amp; all identifiable domestic wells willing to participate in survey​</li>
+<li>How do we define <strong>identifiable</strong>?​</li>
+<li>Do we expect a different <strong>response rate</strong> between <strong>community systems</strong> &amp; <strong>domestic well owners</strong>?</li>
+</ul></li>
+</ul>
+</section>
+<section id="selection-bias" class="slide level2 smaller">
+<h2>Selection Bias</h2>
+<ul>
+<li>Occurs when some part of the target population is sampled at a <strong>different rate</strong> than its appearance in the population​
+<ul>
+<li><strong>Example</strong>: 60% of collected responses coming from men in a general population survey​</li>
+</ul></li>
+<li><strong>Convenience sample</strong>: When the most convenient respondents are disproportionately sampled
+<ul>
+<li><strong>Example</strong>: You sample your friends &amp; colleagues on social media for a survey​</li>
+</ul></li>
+<li><strong>Example</strong>: A study of how frequently adolescents discussed alcohol use with their parents &amp; teachers is likely <strong>biased</strong> by the fact those willing to talk to interviewers are also more likely to talk to their parents &amp; teachers (form of self-selection)​
+<ul>
+<li>Likely to <strong>overestimate</strong> amount of communication on the topic</li>
+</ul></li>
+</ul>
+</section>
+<section id="sample-bias-due-to-undercoverage" class="slide level2 smaller">
+<h2>Sample Bias Due to Undercoverage</h2>
+<ul>
+<li>Individuals in <strong>institutions</strong> (nursing homes or prisons) often excluded from surveys​</li>
+<li>Conducting a <strong>survey by telephone</strong> will undersample younger individuals who are less likely to own a landline phone​</li>
+<li>Conducting a <strong>survey by the internet</strong> will undersample rural &amp; senior individuals​</li>
+<li>Conducting a <strong>survey by in-person intercept</strong> will undersample introverts &amp; reclusive authors​</li>
+<li>If a household does not answer the door, an interviewer may select a neighbour - less likely to work outside the home?</li>
+</ul>
+</section>
+<section id="non-response-bias" class="slide level2 smaller">
+<h2>Non-Response Bias</h2>
+<ul>
+<li>Even a carefully designed survey will suffer from non-response bias​</li>
+<li>Differences between responding &amp; non-responding populations often unknown​</li>
+<li>Many public &amp; academic surveys have low response rates (&lt;10%) - How to generalize results when 90% of targeted sample did not respond?</li>
+</ul>
+<table class="caption-top">
+<colgroup>
+<col style="width: 65%">
+<col style="width: 34%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type of School District</th>
+<th>Participation Rate (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Urban</td>
+<td>100</td>
+</tr>
+<tr class="even">
+<td>Metropolitan suburban</td>
+<td>25</td>
+</tr>
+<tr class="odd">
+<td>Nonmetropolitan with more than 2000 students</td>
+<td>62</td>
+</tr>
+<tr class="even">
+<td>Nonmetropolitan with 1000-1999 students</td>
+<td>27</td>
+</tr>
+<tr class="odd">
+<td>Nonmetropolitan with 500-999 students</td>
+<td>61</td>
+</tr>
+<tr class="even">
+<td>Nonmetropolitan with fewer than 500 students</td>
+<td>53</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="measurement-error" class="slide level2">
+<h2>Measurement Error</h2>
+<ul>
+<li>Occurs when responses differ from the true (population) value in one direction​</li>
+<li>People sometimes do not tell the truth: E.g., income, exercise frequency, &amp; alcohol consumption​</li>
+<li>People do not always understand the question: E.g., questions using jargon​</li>
+<li>People forget: E.g., recall of all long-distance travel over the past year</li>
+</ul>
+</section>
+<section id="measurement-error-1" class="slide level2">
+<h2>Measurement Error</h2>
+<ul>
+<li>People say what they think the interviewer wants to hear or what they think will impress the interview: E.g., stating they plan to buy an EV​</li>
+<li>Certain words mean different things to different people: E.g., “Do you own a car?”​
+<ul>
+<li>“Does it count if I am making payments?​”</li>
+<li>“Is a pickup truck a car?​”</li>
+<li>“My parents own a car that I drive. Does that count?””</li>
+</ul></li>
+</ul>
+</section>
+<section id="sampling-nonsampling-error" class="slide level2">
+<h2>Sampling &amp; Nonsampling Error</h2>
+<ul>
+<li><strong>Selection bias</strong> &amp; <strong>measurement error</strong> are examples of <strong>nonsampling error</strong></li>
+<li><strong>Sampling error</strong> arises from the use of a sample rather than the population</li>
+<li><strong>Sampling error</strong> may be negligible compared with <strong>non-sampling error</strong>
+<ul>
+<li>A survey with a 30% response rate may proudly state a <strong>3% margin of error</strong>, while ignoring a significant selection bias</li>
+</ul></li>
+</ul>
+</section>
+<section id="margin-of-error" class="slide level2">
+<h2>Margin of Error</h2>
+
+<img data-src="../../../assets/images/teaching/ENCI707/Lecture2/margin_of_error.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="intuition-for-statistical-properties" class="slide level2">
+<h2>Intuition for Statistical Properties</h2>
+
+<img data-src="../../../assets/images/teaching/ENCI707/Lecture2/statistical_property_target.png" class="quarto-figure quarto-figure-center r-stretch"></section></section>
+<section>
+<section id="survey-design" class="title-slide slide level1 center">
+<h1>Survey Design</h1>
+
+</section>
+<section id="questionaire-design-1" class="slide level2 smaller">
+<h2>Questionaire Design 1</h2>
+<ol type="1">
+<li>Always write down the objective of your survey​</li>
+<li>Objectives should be <strong>specific</strong> rather than general​</li>
+</ol>
+<ul>
+<li>Bad: “I want to learn something about auto ownership”​</li>
+<li>Good: “What factors do people considering when deciding to own a seven-passenger over a five-passenger vehicle?​</li>
+</ul>
+<ol start="3" type="1">
+<li>Ask <strong>one concept</strong> per question​</li>
+</ol>
+<ul>
+<li>“Do you agree with the <em>Biden administration’s</em> <em>infrastructure spending package</em>?”. Confuses two opinions: the opinion of Joe Biden and the opinion of the infrastructure package. Also, “spending” can have a different connotation than “investment” or “improvement”</li>
+</ul>
+</section>
+<section id="questionaire-design-2" class="slide level2 smaller">
+<h2>Questionaire Design 2</h2>
+<ol start="4" type="1">
+<li>Keep questions <strong>simple</strong> &amp; <strong>clear</strong>​</li>
+</ol>
+<ul>
+<li>One study tested the question “What proportion of your evening viewing time do you spend watching news programs? on 53 people. Only 14 people correctly interpreted the word “proportion” as “percentage”, “part”, or “fraction”. Others interpreted it as “how long do you watch?” or “which news programs do you watch?”​</li>
+</ul>
+<ol start="5" type="1">
+<li>Use <strong>specific questions</strong> instead of <strong>general questions</strong>​</li>
+</ol>
+<ul>
+<li>Bad: “Does it make you nervous taking a ride-hailing (e.g., Uber or Lyft) trip?”​</li>
+<li>Better: “I have the following concerns when making a ride-hailing (e.g., Uber or Lyft) trip : (a) It will be slower than driving myself, (b) The driver will not drive safely, (c) I do not want to share a ride with others, (d) I have no concerns, (e) Other. Please specify: ______.”​</li>
+</ul>
+</section>
+<section id="questionaire-design-3" class="slide level2 smaller">
+<h2>Questionaire Design 3</h2>
+<ol start="6" type="1">
+<li>On the other hand, avoid questions that <strong>prompt respondents</strong> to give the answer you want to hear​</li>
+</ol>
+<ul>
+<li>“<em>Most traffic crashes involve private vehicles.</em> Would you take public transit to reduce the number of crashes on the road?”​</li>
+</ul>
+<ol start="7" type="1">
+<li>Avoid <strong>double negatives</strong>​</li>
+</ol>
+<ul>
+<li>“Do you favor or <em>oppose not</em> allowing drivers to use cell phones while driving?” might elicit either response from a person who thinks people should not use cell phones while driving​</li>
+</ul>
+</section>
+<section id="sampling-strategies" class="slide level2 smaller">
+<h2>Sampling Strategies</h2>
+<ul>
+<li><strong>Simple random sampling (SRS)</strong>: Randomly sample n individuals from a population of N</li>
+<li><strong>Cluster sampling</strong>: Observation units in the population are aggregated into larger sample units (clusters)
+<ul>
+<li><strong>Example</strong>: You would like to sample all Tesla owners in the United States but do not have access to a list of all owners. You do have a list of Tesla clubs. You can use SRS among the clubs and then survey all or a subsample of members in each club</li>
+</ul></li>
+<li><strong>Stratified random sampling</strong>: Population divided into subgroups called strata. SRS is applied within each strata. Strata are often subgroups of interest to the researcher
+<ul>
+<li><strong>Example</strong>: Regions of the country, sizes of cities, or other variables that are readily available without having to first interview the respondents</li>
+<li>Stratified random sampling is common in transportation field</li>
+</ul></li>
+<li><strong>Systematic sample</strong>: A starting point is chosen from a list of population members using a random number &amp; equally spaced individuals are chosen from the list</li>
+</ul>
+</section>
+<section id="sampling-strategies-1" class="slide level2">
+<h2>Sampling Strategies</h2>
+
+<img data-src="../../../assets/images/teaching/ENCI707/Lecture2/sampling_strategy.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="stratified-sampling" class="slide level2 smaller">
+<h2>Stratified Sampling</h2>
+<ul>
+<li>Often have supplementary information prior to conducting survey that is useful to our survey design
+<ul>
+<li>New York residents pay more for housing than residents of Lincoln</li>
+<li>Rural residents shop for groceries less frequently than urban residents</li>
+</ul></li>
+<li>If there is <strong>high heteroskedicity</strong> (variance takes on different values in different subpopulations) may be able to obtain more precise (i.e., lower variance) population quantities using stratified sampling
+<ul>
+<li><strong>Example</strong>: In a population of 1,000 male and 1,000 female students, it is theoretically possible for a random sample of 100 students to contain few male (or female) students. Can take a random sample of 50 male and 50 female students to ensure correct distribution</li>
+</ul></li>
+<li>Sampling design can be varied between strata
+<ul>
+<li><strong>Example</strong>: In a survey of businesses, an internet survey might be used for large firms while a mail or telephone survey is used for small firms</li>
+</ul></li>
+</ul>
+</section>
+<section id="types-of-stratified-sampling" class="slide level2 smaller">
+<h2>Types of Stratified Sampling</h2>
+<ul>
+<li><strong>Proportional allocation</strong>: Number of sampled units in each stratum is proportional to the size of the stratum</li>
+<li><strong>Optimal allocation</strong>: useful with heteroskedastic data. Often the case that variance is higher in larger (or higher valued) than smaller (or smaller valued) units.</li>
+<li><strong>Example</strong>: A study by the Chesapeake and Ohio (C&amp;O) Railroad Company to determine how much revenue they should get from interline freight shipments, since the total freight from a shipment that traveled along several railroads was divided among the different railroads. The C&amp;O took a stratified sample of waybills - the documents that detailed the goods, route, and charge for the shipments. The waybills were stratified by the total freight charges. All waybills with charges over $40 were sampled, whereas only 1% of those with charges less than $5 were sampled. There was little variation in the amount owed to C&amp;O among the smallest total freight charges, whereas the variability in the stratum with charges of over $40 was much higher.</li>
+</ul>
+</section>
+<section id="common-strata" class="slide level2 smaller">
+<h2>Common Strata</h2>
+<ul>
+<li><strong>Geography</strong>: region, division, state, or county</li>
+<li><strong>Sampling unit size</strong>: number of employees, number of establishments, or number of household members</li>
+<li><strong>Sampling unit composition</strong>: industry classification, racial composition, or similar variables</li>
+<li><strong>Note</strong>: Setting quotas is <strong>NOT</strong> stratified sampling if random sampling is not used to select individuals from each subpopulation. With quotas, we do not know the inclusion probability for a sampling unit.
+<ul>
+<li><strong>Sampling bias may exist.</strong> Interviewer will likely pick the most convenient units: persons who are easily reachable by telephone, households without menacing dogs, or areas of the forest close to the road (in case of ecological study)</li>
+</ul></li>
+</ul>
+</section>
+<section id="sample-size-determination" class="slide level2 smaller">
+<h2>Sample Size Determination</h2>
+<p><span class="math display">\[n = \frac{z_{\alpha/2}^2 S^2}{e^2+\frac{z_{\alpha/2}^2 S^2}{N}}\]</span> - where - <span class="math inline">\(𝑧\)</span> is a z-statistic - <span class="math inline">\(𝑆^2\)</span> is the sample variance (generally unknown) - <span class="math inline">\(𝑒\)</span> is the desired margin of error - <span class="math inline">\(𝑁\)</span> is the population - If <span class="math inline">\(𝑛_0=\left(\frac{𝑧_{\alpha∕2}^2 𝑆}{e}\right)^2&gt;𝑁\)</span> then simply take a census of <span class="math inline">\(n=N\)</span> or use <span class="math inline">\(𝑛=𝑛_0/(1+𝑛_𝑜/𝑁)\)</span> - For large populations (<span class="math inline">\(n \approx n_0\)</span>), need approximately same sample size regardless of if the population is 10 million or 1 billion - Approximation of 𝑆^2 1. Use sample quantities from pretesting of survey 2. Use previous studies or data available from literature 3. If all else fails… guess the variance based on some hypothesized distribution for the data! If you assume a normal distribution, could approximate variance as feasible range of values divided by 4 (within 2 SD of mean) or 6 (within 3 SD of mean).</p>
+</section>
+<section id="online-surveys" class="slide level2 smaller">
+<h2>Online Surveys</h2>
+<ul>
+<li>Increasingly common form of survey administration​</li>
+<li>Spectrum of convenience sample characteristics:​
+<ul>
+<li>Interviewing your friends and colleagues on social media (<strong>high bias potential</strong>)​</li>
+<li>Using an opt-in internet panel (<strong>medium bias potential</strong>)​</li>
+<li>Using an internet panel compiled using a variety of random sampling techniques: email, telephone, and mail-out invitations to a random sample of individuals (<strong>low bias potential</strong>)​</li>
+</ul></li>
+<li>Effect of <strong>offering incentives and rewards</strong> for completing surveys?</li>
+</ul>
+</section>
+<section id="online-surveys-1" class="slide level2 smaller">
+<h2>Online Surveys</h2>
+<ul>
+<li>As of 2024 ACS, 10% of US households <strong>did not</strong> have access to high-speed internet​</li>
+<li>Low response rate (often 10% or less) means significant selection bias risk​</li>
+<li>Standard online survey method is quota-based sampling with poststratification weights​</li>
+<li>Study in 2011 found sampling-based surveys consistently more accurate than non-probability-sample surveys, even after poststratification weighting of data​</li>
+<li>Study that recruited US adults from seven vendors found a 15-25% overlap in the sample pool</li>
+</ul>
+</section>
+<section id="poststratification-weighting" class="slide level2 smaller">
+<h2>Poststratification Weighting​</h2>
+<ul>
+<li>Method to adjust sample so it better matches population​</li>
+<li>Standard method is called raking or iterative proportional fitting (IPF)​
+<ul>
+<li>Like a trip distribution model, we want to match marginal control totals by adjusting a vector of weights until convergence​</li>
+</ul></li>
+<li>Typical poststratification weighting variables: ​</li>
+<li><strong>Person weights</strong>: age, educational attainment, &amp; employment status​</li>
+<li><strong>Household weights</strong>: size, income, &amp; geographic location​</li>
+<li>General process:​
+<ol type="1">
+<li>Aggregate observations along a given dimension (e.g., age by 10-year interval)​</li>
+<li>Generate ratios of population vs.&nbsp;sample along the given dimension​</li>
+<li>Apply ratios across individual weights (initially all 1s)​</li>
+<li>Repeat to convergence of weighting ratios</li>
+</ol></li>
+</ul>
+</section></section>
+<section>
+<section id="stated-preference-experiments" class="title-slide slide level1 center">
+<h1>Stated Preference Experiments</h1>
+
+</section>
+<section id="need-for-stated-preference-data" class="slide level2 smaller">
+<h2>Need for Stated Preference Data</h2>
+<ul>
+<li>It is rare to <strong>observe</strong> the decision-making process</li>
+<li>What if we want to know demand for a good or service that <strong>does not exist yet</strong> (at least not locally)?
+<ul>
+<li><strong>Example</strong>: Would you use a vertical takeoff and landing (VTOL) vehicle?</li>
+</ul></li>
+</ul>
+
+<img data-src="../../../assets/images/teaching/ENCI707/Lecture2/vtol.jpg" class="quarto-figure quarto-figure-center r-stretch" style="width:50.0%"></section>
+<section id="comparison-of-revealed-preference-rp-stated-preference-sp-observations" class="slide level2">
+<h2>Comparison of Revealed Preference (RP) &amp; Stated Preference (SP) Observations</h2>
+<div style="font-size: 0.35em;">
+<table class="caption-top">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 40%">
+<col style="width: 38%">
+<col style="width: 9%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Factor</th>
+<th>Revealed Preference</th>
+<th>Stated Preference</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Form of observed choice behaviour</td>
+<td>Actual ‘compromise’ choice with real-world constraints</td>
+<td>Potentially concerns ‘preferences’ rather than ‘compromise’ choice as hypothetical context can be used to remove real-world constraints</td>
+<td>Relates to purpose of survey</td>
+</tr>
+<tr class="even">
+<td>Establishing values for explantory variables</td>
+<td>Engineering values expensive to establish; stated values inexpensive but potentially distorted by faulty perceptions and ex-post justification</td>
+<td>Presented vlaues inexpensive and unambiguous</td>
+<td>Advantage with SP</td>
+</tr>
+<tr class="odd">
+<td>Correlation structure in estimation data</td>
+<td>Correlation structure uncontrolled; analyst must accept potentially high correlations among explanatory variables &amp; deal with impacts on correlations in estimation</td>
+<td>Correlation structure controllable; analyst can dictate correlations among explanatory variables &amp; avoid high correlations in estimation</td>
+<td>Why SP used</td>
+</tr>
+<tr class="even">
+<td>Expalanation of causal-behavoural connections</td>
+<td>Indirect reliance on correlations between observed behaviour &amp; engineering values</td>
+<td>Direct in that respondents are asked to react to indicated attribute values</td>
+<td>Not an issue in SP with careful design</td>
+</tr>
+<tr class="odd">
+<td>Flexibility</td>
+<td>Limited to real-world contexts</td>
+<td>Not limited to real-world contexts but validity increasingly questionable as context becomes less familiar; ability to consider non-existing alternatives</td>
+<td>Why SP used</td>
+</tr>
+<tr class="even">
+<td>Transferability</td>
+<td>More limited as real-world conditions &amp; context are tightly woven into observed behaviour</td>
+<td>Less limited as hypothetical context can be specified to be identical across implementations</td>
+<td>Advantage with SP</td>
+</tr>
+<tr class="odd">
+<td>Speed of implementation</td>
+<td>Can be slow depending on availability of engineering values for explanatory variables</td>
+<td>Relatively fast; opportunity to collect multiple responses from same respondent</td>
+<td>Advantage with SP</td>
+</tr>
+<tr class="even">
+<td>Validity</td>
+<td>Near certain</td>
+<td>Can be questionable; experimental design is key</td>
+<td>Why RP used</td>
+</tr>
+<tr class="odd">
+<td>Certainty about respondent comprehension</td>
+<td>Certain to extent that respondent made actual choice in real-world situation</td>
+<td>Uncertain to extent that respondent does not understand process but can be validated with supplemental questions</td>
+<td>Not often an issue</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="stated-preference-methods" class="slide level2 smaller">
+<h2>Stated Preference Methods</h2>
+<ul>
+<li><strong>Contigent Valuation</strong> - CV</li>
+<li>Explicit stated willingness-to-pay (WTP) information for policy or product</li>
+<li>Cannot be used to disentangle WTP fro individual attributes</li>
+<li><strong>Conjoint Analysis</strong></li>
+<li>Ranking/rating of alternatives</li>
+<li>Can assign WTP to individual attributes</li>
+<li>Ranking as dependent variable questionable because not interval scaled</li>
+<li>Do respondents rank/rate alternatives in real-world?</li>
+<li><strong>Stated choice (or preference)</strong> - SP</li>
+<li>Based on random utility theory</li>
+<li>Our preferred approach in this class</li>
+</ul>
+</section>
+<section id="stated-preference-sp-experiment-components" class="slide level2">
+<h2>Stated Preference (SP) Experiment Components</h2>
+<ul>
+<li><strong>Alternatives</strong>: person making choice between alternatives</li>
+<li><strong>Attributes</strong>: alternatives are defined by their attributes</li>
+<li><strong>Attribute levels</strong>: attributes are described by their levels</li>
+</ul>
+</section>
+<section id="sp-experimental-design-process" class="slide level2">
+<h2>SP Experimental Design Process</h2>
+
+<img data-src="../../../assets/images/teaching/ENCI707/Lecture2/experimental_design_process.png" class="quarto-figure quarto-figure-center r-stretch" style="width:50.0%"></section>
+<section id="example---mode-choice-in-toronto-experiment" class="slide level2">
+<h2>Example - Mode Choice in Toronto (Experiment)</h2>
+
+<img data-src="../../../assets/images/teaching/ENCI707/Lecture2/mode_choice_to.png" class="quarto-figure quarto-figure-center r-stretch" style="width:50.0%"></section>
+<section id="example---mode-choice-in-toronto-attributes" class="slide level2">
+<h2>Example - Mode Choice in Toronto (Attributes)</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../../../assets/images/teaching/ENCI707/Lecture2/mode_choice_to_levels1.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../../../assets/images/teaching/ENCI707/Lecture2/mode_choice_to_levels2.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="sp-considerations-1" class="slide level2">
+<h2>SP Considerations 1</h2>
+<ul>
+<li>Will the experiment be <strong>labelled</strong> (i.e., alternative names have meaning beyond their ordering) or unlabelled?</li>
+<li>Will a <strong>non-purchase or status quo</strong> alternative be presented?</li>
+<li>Will the outputs be used as inputs to another model – e.g., a network model does not allow for a comfort attribute so may not want to include it in experiment</li>
+</ul>
+</section>
+<section id="sp-considerations-2" class="slide level2">
+<h2>SP Considerations 2</h2>
+<ul>
+<li>Should not omit realistic alternatives a respondent might consider in practice – e.g., driver response to a new road pricing initiative</li>
+<li>May consider alternative modes, but more likely you will change departure time or destination choice to avoid more expensive road tolls on that day</li>
+<li>Do not want to place respondent in an unnecessarily unrealistic scenario</li>
+<li>Always do internal and external pilots!</li>
+</ul>
+</section>
+<section id="sp-experimental-design-1" class="slide level2 smaller">
+<h2>SP Experimental Design 1</h2>
+<ul>
+<li><strong>Attribute level balance</strong>: Each attribute level appears an equal number of times over design</li>
+<li>Desirable property although it may impact on <strong>statistical efficiency</strong></li>
+</ul>
+<p><strong>Example:</strong> Consider a design with four attributes, where two have two levels, one has three levels and the last has four levels. In the classical jargon in this field we would refer to this as a 22 31 41 factorial design; note that the product of levels to the power of attributes (48 in this case) represents the total number of choice tasks needed to recover all effects (i.e.&nbsp;main or linear effects and all interactions), i.e.&nbsp;a full factorial design (more about this below).Assuming each attribute will produce a unique parameter estimate (i.e.&nbsp;main effects only), the smallest design would require just four choice tasks based on the number of parameters criterion; however, to maintain attribute level balance, the smallest possible design would require 12 choice tasks (12 being divisible without remainder by 2, 3, and 4).</p>
+</section>
+<section id="sp-experimental-design-2" class="slide level2 smaller">
+<h2>SP Experimental Design 2</h2>
+<ul>
+<li><strong>Number of attribute levels</strong>: More levels requires more choice tasks due to additional parameters</li>
+<li><strong>Varying range</strong>: Use a wide range (e.g., $0-$30) is statistically preferable over a narrow range (e.g., $0-$10) because theoretically leads to smaller standard errors</li>
+<li>Wide range may also be problematic though due to <strong>dominated alternatives</strong></li>
+<li>Narrow range may result in alternatives for which respondents cannot distinguish differences</li>
+</ul>
+</section>
+<section id="sp-experimental-design-3" class="slide level2">
+<h2>SP Experimental Design 3</h2>
+<ul>
+<li>Which option would you pick?</li>
+</ul>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Attribute</th>
+<th style="text-align: center;">Bus</th>
+<th style="text-align: center;">Car</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Travel time</td>
+<td style="text-align: center;">11</td>
+<td style="text-align: center;">10</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Travel cost</td>
+<td style="text-align: center;">2.75</td>
+<td style="text-align: center;">3</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Why would someone pick bus in this case?</li>
+</ul>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Attribute</th>
+<th style="text-align: center;">Bus</th>
+<th style="text-align: center;">Car</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Travel time</td>
+<td style="text-align: center;">31</td>
+<td style="text-align: center;">10</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Travel cost</td>
+<td style="text-align: center;">2.75</td>
+<td style="text-align: center;">3</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sp-experimental-design-4" class="slide level2">
+<h2>SP Experimental Design 4</h2>
+<ul>
+<li><strong>Recommendation</strong>: Use the worst case utility specification to design the experiment</li>
+<li>Can always estimate simpler models but choosing a design with too few choice tasks may preclude estimating valid model specifications at a later state</li>
+</ul>
+</section>
+<section id="experiment-design-processes-1" class="slide level2">
+<h2>Experiment Design Processes 1</h2>
+<ul>
+<li><strong>Full factorial (FF) design</strong>: consider all possible attribute combinations</li>
+<li><strong>Fractional factorial design</strong>:
+<ul>
+<li>Randomly select from (FF) design</li>
+<li><strong>Orthogonal design</strong>: zero correlation between attributes (great for linear models)</li>
+</ul></li>
+<li><strong>Efficient design</strong>: Reduce parameter variance and covariance (D-efficient)</li>
+</ul>
+</section>
+<section id="experiment-design-processes-2" class="slide level2 smaller">
+<h2>Experiment Design Processes 2</h2>
+<ul>
+<li>Two competing schools of thought on how to define the covariance matrix (<span class="math inline">\(S^2\)</span> calculated as negative inverse of <strong>Fisher information/Hessian matrix</strong>)
+<ul>
+<li><strong>Null hypothesis school</strong>: Zero-valued parameter priors. Assumes designs are orthogonal within alternatives and maximize differences in attribute levels between alternatives
+<ul>
+<li>Can only be developed assuming a multinomial logit (MNL) model</li>
+</ul></li>
+<li><strong>Non-null hypothesis school</strong>: Non-zero-valued parameter priors</li>
+</ul></li>
+<li><strong>Bayesian (B)-efficient design</strong>:
+<ul>
+<li>Allow for a range of parameter priors (e.g., <span class="math inline">\(\theta~N(-0.8,2)\)</span>)</li>
+<li>Not limited to orthogonal coding</li>
+<li>Directly related to expected outcome of modeling process</li>
+<li>Can assume any model structure, not just MNL</li>
+</ul></li>
+</ul>
+</section>
+<section id="experiment-design-processes-3" class="slide level2">
+<h2>Experiment Design Processes 3</h2>
+<ul>
+<li><strong>D-efficient</strong> named for use of scaled (by 1/K to account for number parameters) matrix determinant</li>
+<li><strong>S-efficient</strong> named for use of sample size provide theoretically minimum sample size to obtain asymptotically significant parameter estimates</li>
+</ul>
+</section>
+<section id="experiment-design-processes-4" class="slide level2 smaller">
+<h2>Experiment Design Processes 4</h2>
+<ul>
+<li><strong>Fisher information matrix</strong> for N respondents given by <span class="math inline">\(\mathbf{𝑰}_𝑁(\theta)\)</span> <span class="math display">\[\mathbf{𝑰}_𝑁 (\theta)=N\mathbf{𝑰}_1 (\theta)\]</span> Then <span class="math display">\[\mathbf{𝑺}_𝑁^2=(\mathbf{𝑰}_𝑛 (𝜃))^{−1}=1/𝑁 \mathbf{𝑺}_1^2\]</span> And <span class="math display">\[𝑠𝑒_𝑁 (\theta)=\frac{𝑠𝑒_1 (\theta)}{\sqrt{N}}\]</span></li>
+<li>Standard errors exhibit diminishing marginal returns for increasing sample size</li>
+</ul>
+</section>
+<section id="design-blocking" class="slide level2 smaller">
+<h2>Design Blocking</h2>
+<ul>
+<li>Often the number of choice tasks generated by a design is too large for a single respondent to handle</li>
+<li><strong>Blocking</strong> is a method to group choice tasks
+<ul>
+<li>Uses modular algebra to decide one effect that will be confounded</li>
+<li>For orthogonal designs, need to define an additional blocking column to allocate subsets of generated tasks to respondents</li>
+<li>Use of orthogonal design avoids one respondent seeing only high price alternatives and another only low price alternatives</li>
+</ul></li>
+</ul>
+</section>
+<section id="non-purchase-option-npo" class="slide level2 smaller">
+<h2>Non-Purchase Option (NPO)</h2>
+<ul>
+<li>Not commonly applied in transportation literature</li>
+<li>Risk with exclusion is that respondent will be forced to pick a <strong>non-preferred option</strong></li>
+<li>Olsen and Swait (1998) find
+<ul>
+<li>If NPO is not present, attribute weights will differ from those observed when NPO is offered in design</li>
+<li>If NPO is included in design, analyst should be able to identify more non-linear preference structures</li>
+<li>Models based on data with no NPO may show low predictive capacity for choice situations including an NPO, whereas those with an NPO will show good predictive capacity in any situation</li>
+</ul></li>
+</ul>
+</section>
+<section id="challenge-of-interattribute-correlation" class="slide level2 smaller">
+<h2>Challenge of Interattribute Correlation</h2>
+<ul>
+<li>Despite the use of the word <strong>correlation</strong>, not a statistical concept</li>
+<li>Refers to <strong>cognitive perception</strong> that respondents associated to attributes we include in experiments</li>
+<li><strong>Price</strong> &amp; <strong>quality</strong> often associated with each other by respondents</li>
+<li>How will a person respond to a high price and low quality alternative?
+<ul>
+<li>Respondent may stop taking survey experiment seriously, biasing the results</li>
+</ul></li>
+</ul>
+</section>
+<section id="sp-pivoted-off-rp" class="slide level2 smaller">
+<h2>SP-Pivoted-Off-RP</h2>
+<ul>
+<li>One method for overcoming unrealistic choice experiments</li>
+<li>Ask the respondent a series of RP questions, then base (<strong>pivot</strong>) the SP experiment off their response</li>
+<li><strong>Example</strong>: What are your home and work locations?
+<ul>
+<li>Use <strong>Google Directions API</strong> to obtain typical driving, transit, cycling, and walking times for the given OD pair</li>
+<li>Specify SP travel times that are within ±15% of the Google values by mode</li>
+<li>Similarly, calculate travel costs based on supplemental per mile values</li>
+</ul></li>
+</ul>
+</section>
+<section id="other-design-recommendations-1" class="slide level2 smaller">
+<h2>Other Design Recommendations 1</h2>
+<ul>
+<li>Focusing on specific rather than general behaviour; for example, respondents should be asked how they would respond to an alternative on a given occasion, rather than in general; the more abstract the question the less reliable the response</li>
+<li>Using a realistic choice context, in particular one the respondents have had recent personal experience of (i.e.&nbsp;a pivot design).Retaining the constraints on choice required to make the context realistic; this usually means asking respondents to express preferences in respect of a very recent journey without relaxing any of its constraints: e.g.&nbsp;‘if today you would prefer to use the car to visit your dentist in the evening directly from work, then retain this restriction in your choices’. Easing these constraints will just produce unrealistically elastic responses</li>
+<li>Using existing (perceived) levels of attributes so that the options are built around existing experience</li>
+</ul>
+</section>
+<section id="other-design-recommendations-2" class="slide level2 smaller">
+<h2>Other Design Recommendations 2</h2>
+<ul>
+<li>Using respondents’ perceptions of what is possible to limit the attribute values in the exercise. For example, in considering improved rail services, do not offer options where the station is closer to home than feasible.</li>
+<li>Ensuring that all relevant attributes are included in the presentation; this is especially important if developing travel choice models and not just measuring the relative importance of different attributes.</li>
+<li>Keeping the choice experiments as simple as possible, without overloading the respondent. Remember we respond to very complex choices in practice but we do so over a long period of time, acquiring experience about alternatives at our own pace and selecting the best for us. In an SP exercise these choices are compressed on a very short period of time and must, therefore, be suitably simplified.</li>
+</ul>
+</section>
+<section id="other-design-recommendations-3" class="slide level2 smaller">
+<h2>Other Design Recommendations 3</h2>
+<ul>
+<li>Allowing respondents to opt for a response outside the set of experimental alternatives. For example, in a mode choice exercise if all options become too unattractive the respondent may decide to change destination, time of travel, or not to travel at all; allow her a ‘will do something else’ alternative. If a computer-based interview is used, it could be programmed to branch then to another exercise exploring precisely these other options.</li>
+<li>Making sure that all the options are clearly and unambiguously defined. This could be quite difficult when dealing with qualitative attributes like security or comfort; for example, do not express alternatives as ‘poor’ or ‘improved’ as this is too vague and prone to different interpretations by respondents. Describe instead what measures or facilities are involved in improving security or ride comfort (closed circuit TV in all stations/attendants present at all times, …, air-conditioning in all coaches as in InterCity trains).</li>
+</ul>
 
 <div class="quarto-auto-generated-content">
-<p><img src="../images/logo.png" class="slide-logo"></p>
+<p><img src="../../../assets/images/teaching/ENCI707/logo.png" class="slide-logo"></p>
 <div class="footer footer-default">
 <p><a href="../../..\teaching/ENCI707/">ENCI707 Home</a></p>
 </div>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 
@@ -360,8 +1036,6 @@
   <script src="../../../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
   <script src="../../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
   <script src="../../../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
-  <script src="../../../site_libs/revealjs/plugin/multiplex/socket.io.js"></script>
-  <script src="../../../site_libs/revealjs/plugin/multiplex/multiplex.js"></script>
   <script src="../../../site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
@@ -384,7 +1058,6 @@
 'autoAnimateUnmatched': true,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
 'chalkboard': {"buttons":true},
-'multiplex': {"secret":null,"id":"d4b82f2c1f1bc3fb","url":"https://reveal-multiplex.glitch.me/"},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -558,7 +1231,7 @@
         plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
 
           RevealMath,
-          
+          RevealNotes,
           RevealSearch,
           RevealZoom
         ]
