@@ -4836,7 +4836,7 @@
     "href": "teaching/ENCI707/course-syllabus.html#discrete-choice-modeling",
     "title": "Syllabus",
     "section": "Discrete choice modeling",
-    "text": "Discrete choice modeling\n\nDiscrete Choice Methods with Simulation by Train (pdf freely available at https://eml.berkeley.edu/books/choice2.html) provides a good coverage of discrete choice methods.\nDiscrete Choice Analysis by Ben-Akiva and Lerman provides a technical and in-depth treatment of fundamental discrete choice theory.\nA Self Instructing Course in Mode Choice Modeling: Multinomial and Nested Logit Models (pdf freely available at https://www.caee.utexas.edu/prof/bhat/COURSES/LM_Draft_060131Final-060630.pdf) by Koppelman and Bhat provides a good overview of discrete choice models for the practitioner.\nModelling Transport by Ortuzar and Willumsen covers discrete choice models in chapters 7-9. It also gives a good overview of activity-based models and other features of transportation planning.\nSome chapters of Statistical and Econometric Methods for Transportation Data Analysis by Washington, Karlaftis, Mannering, an Anastasopoulos.\nApplied Choice Analysis: A Primer by Hensher, Rose, and Greene.",
+    "text": "Discrete choice modeling\n\n“Discrete Choice Methods with Simulation” by Train (pdf freely available at https://eml.berkeley.edu/books/choice2.html) provides a good coverage of discrete choice methods.\n“Discrete Choice Analysis” by Ben-Akiva and Lerman provides a technical and in-depth treatment of fundamental discrete choice theory.\n“A Self Instructing Course in Mode Choice Modeling: Multinomial and Nested Logit Models” (pdf freely available at https://www.caee.utexas.edu/prof/bhat/COURSES/LM_Draft_060131Final-060630.pdf) by Koppelman and Bhat provides a good overview of discrete choice models for the practitioner.\n“Modelling Transport” by Ortuzar and Willumsen covers discrete choice models in chapters 7-9. It also gives a good overview of activity-based models and other features of transportation planning.\nSome chapters of “Statistical and Econometric Methods for Transportation Data Analysis” by Washington, Karlaftis, Mannering, an Anastasopoulos.\n“Applied Choice Analysis: A Primer” by Hensher, Rose, and Greene.",
     "crumbs": [
       "Administration",
       "Syllabus"
@@ -4847,7 +4847,7 @@
     "href": "teaching/ENCI707/course-syllabus.html#statistics",
     "title": "Syllabus",
     "section": "Statistics",
-    "text": "Statistics\n\nSome chapters of Statistical and Econometric Methods for Transportation Data Analysis by Washington, Karlaftis, Mannering, an Anastasopoulos.\nEconometric Analysis by Greene gives a technical treatment of statistics and econometrics.\nRegression and Other Stories by Gelman, Hill, and Vehtari covers statistics and causal inference.\nGeographic Data Science by Rey, Arribas-Bel, and Wolf covers geographic data science and spatial econometrics - https://geographicdata.science/book/intro.html",
+    "text": "Statistics\n\nSome chapters of “Statistical and Econometric Methods for Transportation Data Analysis” by Washington, Karlaftis, Mannering, an Anastasopoulos.\n“Econometric Analysis” by Greene gives a technical treatment of statistics and econometrics.\n“Regression and Other Stories” by Gelman, Hill, and Vehtari covers statistics and causal inference.\n“Geographic Data Science” by Rey, Arribas-Bel, and Wolf covers geographic data science and spatial econometrics - https://geographicdata.science/book/intro.html",
     "crumbs": [
       "Administration",
       "Syllabus"
@@ -4858,7 +4858,7 @@
     "href": "teaching/ENCI707/course-syllabus.html#survey-methods",
     "title": "Syllabus",
     "section": "Survey methods",
-    "text": "Survey methods\n\nSampling: Design and Analysis by Lohr is a classic textbook on this topic.",
+    "text": "Survey methods\n\n“Sampling: Design and Analysis” by Lohr is a classic textbook on this topic.",
     "crumbs": [
       "Administration",
       "Syllabus"
@@ -5021,14 +5021,14 @@
     "href": "teaching/ENCI707/slides/lec-1.html#properties-of-a-consumption-bundle",
     "title": "Lecture 1 - Microeconomics",
     "section": "Properties of a Consumption Bundle​",
-    "text": "Properties of a Consumption Bundle​\n\nCompleteness: \\(A \\succsim B \\vee A \\precsim B\\) (weak preference) - You have preferences\nReflexivity: \\(A ~ A\\) - You are indifferent between copies of the same product\nTransitivity: \\(A \\succsim B \\wedge B \\precsim C -&gt; A \\succsim C\\) - If you prefer A over B and B over C, then you must prefer A over callout\nContinuity: Preferences are continuous and can be represented by continuous utility functions\nConvex: For x, y, z \\(\\in\\) X where \\(y \\succsim x\\) and \\(z \\succsim x\\) \\(\\forall \\theta \\in [0,1]\\)\n\n\\(\\theta y + (1-\\theta)z \\succsim x\\) - For any two bundles that are each viewed as at least as good as a third bundle, a weighted average of the two bundles is viewed as being at least as good as the third bundle"
+    "text": "Properties of a Consumption Bundle​\n\nCompleteness: \\(A \\succsim B \\vee A \\precsim B\\) (weak preference) - You have preferences\nReflexivity: \\(A \\sim A\\) - You are indifferent between copies of the same product\nTransitivity: \\(A \\succsim B \\wedge B \\succsim C -&gt; A \\succsim C\\) - If you prefer A over B and B over C, then you must prefer A over callout\nContinuity: Preferences are continuous and can be represented by continuous utility functions\nConvex: For x, y, z \\(\\in\\) X where \\(y \\succsim x\\) and \\(z \\succsim x\\) \\(\\forall \\theta \\in [0,1]\\)\n\n\\(\\theta y + (1-\\theta)z \\succsim x\\) - For any two bundles that are each viewed as at least as good as a third bundle, a weighted average of the two bundles is viewed as being at least as good as the third bundle"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-1.html#utility-function-consumption-set",
     "href": "teaching/ENCI707/slides/lec-1.html#utility-function-consumption-set",
     "title": "Lecture 1 - Microeconomics",
     "section": "Utility Function & Consumption Set",
-    "text": "Utility Function & Consumption Set\n\nUtility Function: Summary of a cosumer’s behaviour by means of a mathemnatical function\n\nA continuous function\n\n\\[f(U(x)) \\ge f(U(y)) \\text{ iff } U(x) \\ge U(y)\\]\n\nUtility is better presented in ordinal sense than in cardinal numbers"
+    "text": "Utility Function & Consumption Set\n\nUtility Function: Summary of a consumer’s behaviour by means of a mathemnatical function\n\nA continuous function\n\n\\[f(U(x)) \\ge f(U(y)) \\text{ iff } U(x) \\ge U(y)\\]\n\nUtility is better presented in ordinal sense than in cardinal numbers"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-1.html#utility-function-diminishing-marginal-utility-of-consumption",
@@ -5042,21 +5042,35 @@
     "href": "teaching/ENCI707/slides/lec-1.html#consumption-demand",
     "title": "Lecture 1 - Microeconomics",
     "section": "Consumption Demand​",
-    "text": "Consumption Demand​\n\nConsumers are utility maximizers: Consumers maximize utility subject to budget/income constraints​\n\nFacing prices (p) of goods/services (consumption) and budget constraints (I=income)​\nConsumer allocates income across goods/services to maximize utility (U)​\n\nMarshallian (Uncompensated) Direct Demand: Demand for items that maximizes the utility of consumption subject to a constrained budget​\nHicksian (Compensated) Indirect Demand: Demand for items that minimizes expenditure to attain a certain (fixed) level of consumption utility"
+    "text": "Consumption Demand​\n\nConsumers are utility maximizers: Consumers maximize utility subject to budget/income constraints​\n\nFacing prices (p) of goods/services (consumption) and budget constraints (I=income)​\nConsumer allocates income across goods/services to maximize utility (U)​\n\nMarshallian (Uncompensated) Demand: Demand for items that maximizes the utility of consumption subject to a constrained budget​\nHicksian (Compensated) Demand: Demand for items that minimizes expenditure to attain a certain (fixed) level of consumption utility"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-1.html#demand-functions",
     "href": "teaching/ENCI707/slides/lec-1.html#demand-functions",
     "title": "Lecture 1 - Microeconomics",
     "section": "Demand Functions​",
-    "text": "Demand Functions​\n\nFunction explaining quantity demanded as function of price, income (or total available budget), utility, etc.​\n\nMarshallian Demand Function: Utility maximization subject to optimal allocation of budget to consumption of goods​\n\nUses direct utility function​\nConcept of production function (for firms)​\n\nHicksian Demand Function: Expenditure minimization subject to optimal level of utility of consumption bundle:​\n\nUses indirect utility function​\nConcept of expenditure function (for firms)"
+    "text": "Demand Functions​\n\nFunctions explaining quantity demanded as function of price, income (or total available budget), utility, etc.​\n\nMarshallian Demand Function: Utility maximization subject to optimal allocation of budget to consumption of goods​\n\nUses direct utility function​\nConcept of production function (for firms)​\n\nHicksian Demand Function: Expenditure minimization subject to optimal level of utility of consumption bundle:​\n\nUses indirect utility function​\nConcept of expenditure function (for firms)"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-1.html#indirect-utility-and-demand",
+    "href": "teaching/ENCI707/slides/lec-1.html#indirect-utility-and-demand",
+    "title": "Lecture 1 - Microeconomics",
+    "section": "Indirect Utility and Demand​",
+    "text": "Indirect Utility and Demand​\n\\[V(\\mathbf{p},I) = \\max U(\\mathbf{x}) \\text{ such that } \\mathbf{px} = I\\]\n\nIndirect Utility Function: The function \\(V(\\mathbf{p},I)\\) that gives the maximum utility achievable at a given price vector (\\(\\mathbf{p}\\)) and income \\(I\\) is called the indirect utility function\nConsumption Bundle: The value of \\(\\mathbf{x}\\) that solves the maximization problem is called the demanded bundle\nDemand Function: The function that connects \\(\\mathbf{p}\\) and \\(I\\) is called the demand function"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-1.html#indirect-utility-function",
+    "href": "teaching/ENCI707/slides/lec-1.html#indirect-utility-function",
+    "title": "Lecture 1 - Microeconomics",
+    "section": "Indirect Utility Function​",
+    "text": "Indirect Utility Function​\n\nOften useful to consider utility obtained by a consumer as an indirect measure - as a function of prices and income rather than actual consumed quantities\nAssume that \\(V(p_1,p_2,I)\\) is our indirect utility (value) function\n\n\\[\n\\begin{align*}\nV(p_1, p_2, I) &= U(x_1^*, x_2^*) \\\\\n                &= U(x_1(p_1, p_2, I), x_2(p_1, p_2, I))\n\\end{align*}\n\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-1.html#marshallian-demand-function",
     "href": "teaching/ENCI707/slides/lec-1.html#marshallian-demand-function",
     "title": "Lecture 1 - Microeconomics",
     "section": "Marshallian Demand Function​",
-    "text": "Marshallian Demand Function​\n\nWhen the indifference curves are strictly convex, the solution is unique\n\n\\[x_1^* = x_1(p_1, p_2, I)\\]\n\\[x_2^* = x_2(p_1, p_2, I)\\]\n\nIf quantity demanded is expressed as a function of prices and income (or total available budget), called Marshallian or direct demand function"
+    "text": "Marshallian Demand Function​\n\nWhen the indifference curves are strictly convex, the solution is unique\n\n\\[x_1^* = x_1(p_1, p_2, I)\\]\n\\[x_2^* = x_2(p_1, p_2, I)\\]\n\nIf quantity demanded is expressed as a function of prices and income (or total available budget), called Marshallian demand function"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-1.html#definition-of-goods",
@@ -5077,21 +5091,21 @@
     "href": "teaching/ENCI707/slides/lec-1.html#hicksian-demand-function",
     "title": "Lecture 1 - Microeconomics",
     "section": "Hicksian Demand Function ​",
-    "text": "Hicksian Demand Function ​\n\nWhen indifference curves are strictly convex, the solution is unique where\n\n\\[x_1^* = x_1(p_1,p_2,U) \\text{ and } x_2^* = x_2(p_1,p_2,U)\\]\n\nIf quantity demanded is expressed as a function of prices and utility, called Hicksian or indirect demand function\nHicksian demand tells us what consumption bundle achieves a target level of utility and minimizes total expenditure\n\nAs it is based on utility, Hicksian demand is not directly observable"
+    "text": "Hicksian Demand Function ​\n\nWhen indifference curves are strictly convex, the solution is unique where\n\n\\[x_1^* = x_1(p_1,p_2,U) \\text{ and } x_2^* = x_2(p_1,p_2,U)\\]\n\nIf quantity demanded is expressed as a function of prices and utility, called Hicksian demand function\nHicksian demand tells us what consumption bundle achieves a target level of utility and minimizes total expenditure\n\nAs it is based on indirect utility, Hicksian demand is not directly observable"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-1.html#marshallian-hicksian-demand",
     "href": "teaching/ENCI707/slides/lec-1.html#marshallian-hicksian-demand",
     "title": "Lecture 1 - Microeconomics",
     "section": "Marshallian & Hicksian Demand​",
-    "text": "Marshallian & Hicksian Demand​\n\n\n\n\n\n\n\n\nCan use Slutsky equation to obtain an analytic result\n\\[\\frac{\\partial x_1}{\\partial p_2} = \\underset{\\text{Substitution Effect}}{\\frac{\\partial h_1(p_1,p_2,u)}{\\partial p_2}} -  \\underset{\\text{Income Effect}}{\\frac{\\partial q_1}{\\partial I}x_2(p_1,p_2,I)}\\]\nwhere\n\n\\(h_1(p_1,p_2,u)\\) is the Hicksian demand for good 1\n\\(x_1(p_1,p_2,I)\\) is the Marshallian demand for good 1 (similar for good 2)"
+    "text": "Marshallian & Hicksian Demand​\n\n\n\n\n\n\n\n\nCan use Slutsky equation to obtain an analytic result\n\\[\\frac{\\partial x_1}{\\partial p_2} = \\underset{\\text{Substitution Effect}}{\\frac{\\partial h_1(p_1,p_2,u)}{\\partial p_2}} -  \\underset{\\text{Income Effect}}{\\frac{\\partial q_1}{\\partial I}x_2(p_1,p_2,I)}\\]\nwhere\n\n\\(h_1(p_1,p_2,U)\\) is the Hicksian demand for good 1\n\\(U = v(p_1,p_2,I)\\) is the desired indirect utility level\n\\(x_1(p_1,p_2,I)\\) is the Marshallian demand for good 1 (similar for good 2)"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-1.html#indifference-curves",
     "href": "teaching/ENCI707/slides/lec-1.html#indifference-curves",
     "title": "Lecture 1 - Microeconomics",
     "section": "Indifference Curves​",
-    "text": "Indifference Curves​\n\nLet \\(U(x_1,x_2,\\dots\\) be a twice differentiable utility function. If we increase the quantity of goods, how does the consumer respond?\n\nIndiference curve: shows combination of commodities for which total utility is constant\nChanges in total utility are zero for any change in the consumption bundle on the same indifference curve"
+    "text": "Indifference Curves​\n\nLet \\(U(x_1,x_2,\\dots)\\) be a twice differentiable utility function. If we increase the quantity of goods, how does the consumer respond?\n\nIndiference curve: shows combination of commodities for which total utility is constant\nChanges in total utility are zero for any change in the consumption bundle on the same indifference curve"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-1.html#marginal-rate-of-substitution-mrs",
@@ -5105,7 +5119,7 @@
     "href": "teaching/ENCI707/slides/lec-1.html#direct-utility-maximization",
     "title": "Lecture 1 - Microeconomics",
     "section": "Direct Utility Maximization​",
-    "text": "Direct Utility Maximization​\nA utility function that is a function of quantity consumed (i.e., indifference curves)\n\\[x^*(\\mathbf{p},I)=\\max U(x_1,x_2)\\]\n\\[\\text{Subject to } p_1x_1+p_2x_2 \\le I\\]\nUsing Lagrangian\n\\[L = U(x_1,x_2) + \\lambda(I - p_1x_1 - p_2x_2\\]\nFirst order conditions for optimum consumption\n\\[\\frac{\\partial L}{\\partial x_1} = 0 \\text{ and } \\frac{\\partial L}{\\partial x_2} = 0\\]\n\\[\\frac{\\partial U(x_1,x_2)}{\\partial q_1} = \\lambda p_1 \\text{ and } \\frac{\\partial U(x_1,x_2)}{\\partial x_2} = \\lambda p_2\\]"
+    "text": "Direct Utility Maximization​\nA utility function that is a function of quantity consumed (i.e., indifference curves)\n\\[x^*(\\mathbf{p},I)=\\max U(x_1,x_2)\\]\n\\[\\text{Subject to } p_1x_1+p_2x_2 \\le I\\]\nUsing Lagrangian\n\\[L = U(x_1,x_2) + \\lambda(I - p_1x_1 - p_2x_2)\\]\nFirst order conditions for optimum consumption\n\\[\\frac{\\partial L}{\\partial x_1} = 0 \\text{ and } \\frac{\\partial L}{\\partial x_2} = 0\\]\n\\[\\frac{\\partial U(x_1,x_2)}{\\partial q_1} = \\lambda p_1 \\text{ and } \\frac{\\partial U(x_1,x_2)}{\\partial x_2} = \\lambda p_2\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-1.html#direct-utility-maximization-1",
@@ -5129,25 +5143,11 @@
     "text": "Marginal Utility of Income (Application of Envelope Theorem)​\n\nIncome is an exogenous input from the perspective of optimization\n\n\\[\\frac{\\partial L(x_1^*,x_2^*)}{\\partial I} = \\frac{\\partial U(x_1^*,x_2^*)}{\\partial I} = \\lambda\\]\n\n\\(\\lambda\\) is the marginal utility of income"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-1.html#indirect-utility-and-demand",
-    "href": "teaching/ENCI707/slides/lec-1.html#indirect-utility-and-demand",
-    "title": "Lecture 1 - Microeconomics",
-    "section": "Indirect Utility and Demand​",
-    "text": "Indirect Utility and Demand​\n\\[V(\\mathbf{p},I) = \\max U(\\mathbf{x}) \\text{such that } \\mathbf{px} = I\\]\n\nIndirect Utility Function: The function \\(V(\\mathbf{p},I)\\) that gives the maximum utility achievable at a given price vector (\\(\\mathbf{p}\\)) and income \\(I\\) is called the indirect utility function\nConsumption Bundle: The value of \\(\\mathbf{x}\\) that solves the maximization problem is called the demanded bundle\nDemand Function: The function that connects \\(\\mathbf{p}\\) and \\(I\\) is called the demand function"
-  },
-  {
-    "objectID": "teaching/ENCI707/slides/lec-1.html#indirect-utility-function",
-    "href": "teaching/ENCI707/slides/lec-1.html#indirect-utility-function",
-    "title": "Lecture 1 - Microeconomics",
-    "section": "Indirect Utility Function​",
-    "text": "Indirect Utility Function​\n\nOften useful to consider utility obtained by a consumer as an indirect measure - as a function of prices and income rather than actual consumed quantities\nAssume that \\(V(p_1,p_2,I)\\) is our indirect utility (value) function\n\n\\[\n\\begin{align*}\nV(p_1, p_2, I) &= U(x_1^*, x_2^*) \\\\\n                &= U(x_1(p_1, p_2, I), x_2(p_1, p_2, I))\n\\end{align*}\n\\]"
-  },
-  {
     "objectID": "teaching/ENCI707/slides/lec-1.html#indirect-utility-function-1",
     "href": "teaching/ENCI707/slides/lec-1.html#indirect-utility-function-1",
     "title": "Lecture 1 - Microeconomics",
     "section": "Indirect Utility Function​",
-    "text": "Indirect Utility Function​\n\nIndirect utility optimization is the dual of primal direct utility optimization (expenditure function) \\[V(p_1,p_2,I) = \\min_{p_1,p_2} p_1x_1 + p_2x_2 - \\lambda (\\bar{U} - U(x_1,x_2))\\] \\[\\text{s.t. } U(x_1,x_2) \\ge \\bar{U}\\]\nEquivalently, by duality (indirect utility function) \\[V(p_1,p_2,I) = \\max_{p_1,p_2} U(x_1^*,x_2^*) + \\lambda (I - p_1x_1 + p_2x_2)\\] \\[\\text{s.t. } p_1x_1 + p_2x_2 \\le I\\]"
+    "text": "Indirect Utility Function​\n\nIndirect utility optimization is the dual of primal direct utility optimization (expenditure function) - minimize expenditure to maintain utility \\(\\bar{U}\\) \\[V(p_1,p_2,I) = \\min_{p_1,p_2} p_1x_1 + p_2x_2 - \\lambda (\\bar{U} - U(x_1,x_2))\\] \\[\\text{s.t. } U(x_1,x_2) \\ge \\bar{U}\\]\nEquivalently, by duality (indirect utility function) - maximize utility at prices \\(p_1,p_2\\) \\[V(p_1,p_2,I) = \\max_{p_1,p_2} U(x_1^*,x_2^*) + \\lambda (I - p_1x_1 + p_2x_2)\\] \\[\\text{s.t. } p_1x_1 + p_2x_2 \\le I\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-1.html#properties-of-indirect-utility-function",
@@ -5161,14 +5161,14 @@
     "href": "teaching/ENCI707/slides/lec-1.html#roys-identity-another-application-of-envelope-theorem",
     "title": "Lecture 1 - Microeconomics",
     "section": "Roy’s Identity (Another Application of Envelope Theorem)​",
-    "text": "Roy’s Identity (Another Application of Envelope Theorem)​\n\nConnects direct utility function and indirect utility function\nSimilarly, connects Marshallian (utility maximization) demand function and Hicksian (expenditure minimization) demand function"
+    "text": "Roy’s Identity (Another Application of Envelope Theorem)​\n\nConnects Marshallian demand function and indirect utility function\nSimilarly, Sheppard’s lemma connects Hicksian demand function and expenditure function"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-1.html#roys-identity-another-application-of-envelope-theorem-1",
     "href": "teaching/ENCI707/slides/lec-1.html#roys-identity-another-application-of-envelope-theorem-1",
     "title": "Lecture 1 - Microeconomics",
     "section": "Roy’s Identity (Another Application of Envelope Theorem)​",
-    "text": "Roy’s Identity (Another Application of Envelope Theorem)​\n\\[V(p_1,p_2,I) = U(x_1^*,x_2^* + \\lambda (I - p_1x_1 - p_2x_2\\] \\[\\frac{\\partial V(p_1,p_2,I)}{\\partial p_1} = - \\lambda x_1(p_1,p_2,I)\\] \\[\\frac{\\partial V(p_1,p_2,I)}{\\partial I} = \\lambda\\] \\[x_1(p_1,p_2,I) = - \\frac{\\frac{\\partial V(p_1,p_2,I)}{\\partial p_1}}{\\frac{\\partial V(p_1,p_2,I)}{\\partial I}} \\text{(direct utility from indirect utility)}\\]"
+    "text": "Roy’s Identity (Another Application of Envelope Theorem)​\n\\[V(p_1,p_2,I) = U(x_1^*,x_2^*) + \\lambda (I - p_1x_1 - p_2x_2)\\] \\[\\frac{\\partial V(p_1,p_2,I)}{\\partial p_1} = - \\lambda x_1(p_1,p_2,I)\\] \\[\\frac{\\partial V(p_1,p_2,I)}{\\partial I} = \\lambda\\] \\[x_1(p_1,p_2,I) = - \\frac{\\frac{\\partial V(p_1,p_2,I)}{\\partial p_1}}{\\frac{\\partial V(p_1,p_2,I)}{\\partial I}} \\text{(direct utility from indirect utility)}\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-1.html#functional-forms-for-demandproductionexpenditure",
