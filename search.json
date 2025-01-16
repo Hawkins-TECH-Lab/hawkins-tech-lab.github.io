@@ -1278,21 +1278,21 @@
   {
     "objectID": "teaching/ENCI707/ae/ae-9.html",
     "href": "teaching/ENCI707/ae/ae-9.html",
-    "title": "Active Exercise 9 - Disaggregate Demand",
+    "title": "Application Exercise 9 - Disaggregate Demand",
     "section": "",
     "text": "Important\n\n\n\nThis application exercise should be submitted via D2L by end of the day on which it was introduced in lecture.\n\n\nSome derivations"
   },
   {
     "objectID": "teaching/ENCI707/ae/ae-7.html",
     "href": "teaching/ENCI707/ae/ae-7.html",
-    "title": "Active Exercise 7 - Computing Visuals",
+    "title": "Application Exercise 7 - Computing Visuals",
     "section": "",
     "text": "Important\n\n\n\nThis application exercise should be submitted via D2L by end of the day on which it was introduced in lecture.\n\n\nPlease submit your Jupyter notebooks created during lecture. Your submission should be a html file displaying the outputs from running the code. The following notebooks should be included in this submission: 1) crashCoursePython.html 2) visualizationBasicMatplotlib.html"
   },
   {
     "objectID": "teaching/ENCI707/ae/ae-5.html",
     "href": "teaching/ENCI707/ae/ae-5.html",
-    "title": "Active Exercise 5 - Policy Case Study I",
+    "title": "Application Exercise 5 - Policy Case Study I",
     "section": "",
     "text": "Important\n\n\n\nThis application exercise should be submitted via D2L by end of the day on which it was introduced in lecture.\n\n\n\nProblem Statement: Hydrogen Fuel Vehicles\nFrom the Alberta government:\n\nAlberta is preparing for a lower emission future. The Hydrogen Roadmap is a key part of that future and is our path to building a provincial hydrogen economy and accessing global markets. It outlines the steps we are taking to support the sector as technology and markets develop.\n\n\nAlberta is the largest hydrogen producer in Canada. We have all the resources, expertise, and technology needed to quickly become a global supplier of clean, low-cost hydrogen. With a worldwide market estimated to be worth more than $2.5 trillion a year by 2050, hydrogen can be the next great energy export that fuels jobs, investment and economic opportunity across our province.\n\nYour task is to evaluate this policy based on the six step process as follows: 1) Verify, define, and detail the problem 2) Establish evaluation criteria 3) Identify alternative policies 4) Evaluate alternative policies 5) Display and distinguish among alternative policies 6) Monitor and evaluate the implemented policy\nAdditional details from roadmap website:\nThere are five markets identified for clean hydrogen growth in Alberta: 1) Residential and commercial gas utility systems 2) Power generation and energy storage 3) Transportation and mobility 4) Industrial processes 5) Export markets\nThere are seven policy pillars: 1) Build new market demand 2) Enable carbon capture, utillization, and storage (CCUS) 3) De-risk investments 4) Activate technology and innovation 5) Ensure regulatory efficiency, codes, and standards 6) Lead the way and build alliances 7) Pursue hydrogen exports",
     "crumbs": [
@@ -1303,7 +1303,7 @@
   {
     "objectID": "teaching/ENCI707/ae/ae-3.html",
     "href": "teaching/ENCI707/ae/ae-3.html",
-    "title": "Active Exercise 3 - Surveys",
+    "title": "Application Exercise 3 - Surveys",
     "section": "",
     "text": "Important\n\n\n\nThis application exercise should be submitted via D2L by end of the day on which it was introduced in lecture.\n\n\nYour task is to develop a stated preference experiment for a demand problem. The survey may focus on any problem, not limited to engineering. Your answer must contain the following information.\n1. What is the choice variable?\n2. What are the alternatives? How did you arrive at these alternatives?\n3. What are the attributes associated with each alternative? How did you arrive at these attributes?\n4. What are the attribute levels associated with each alternative? You do not need to conduct external research to arrive at the levels, but you should provide some intuition and justification for your choices.",
     "crumbs": [
@@ -1322,7 +1322,7 @@
   {
     "objectID": "teaching/ENCI707/ae/ae-12.html",
     "href": "teaching/ENCI707/ae/ae-12.html",
-    "title": "Active Exercise 12 - Spatial Exploration",
+    "title": "Application Exercise 12 - Spatial Exploration",
     "section": "",
     "text": "Important\n\n\n\nThis application exercise should be submitted via D2L by end of the day on which it was introduced in lecture."
   },
@@ -4696,7 +4696,7 @@
   {
     "objectID": "teaching/ENCI707/ae/ae-1.html",
     "href": "teaching/ENCI707/ae/ae-1.html",
-    "title": "Active Exercise 1 - Demand Analysis",
+    "title": "Application Exercise 1 - Demand Analysis",
     "section": "",
     "text": "Important\n\n\n\nThis application exercise should be submitted via D2L by end of the day on which it was introduced in lecture.\n\n\nBased on our discussion today, please provide a short (1-2 paragraph) description of a demand analysis topic in an area of interest to you. Your response should address the following questions: - What is the demanded good or service? - What factors affect the demand for your chosen good or service (e.g., price, quality, flavour, colour)? - Does your chosen good or service have an impact on the environment? If so, what are the impacts?",
     "crumbs": [
@@ -4708,21 +4708,21 @@
   {
     "objectID": "teaching/ENCI707/ae/ae-11.html",
     "href": "teaching/ENCI707/ae/ae-11.html",
-    "title": "Active Exercise 11 - Causal Inference",
+    "title": "Application Exercise 11 - Causal Inference",
     "section": "",
     "text": "Important\n\n\n\nThis application exercise should be submitted via D2L by end of the day on which it was introduced in lecture.\n\n\nSome thinking through causal mechanisms"
   },
   {
     "objectID": "teaching/ENCI707/ae/ae-13.html",
     "href": "teaching/ENCI707/ae/ae-13.html",
-    "title": "Active Exercise 13 - Spatial Regression",
+    "title": "Application Exercise 13 - Spatial Regression",
     "section": "",
     "text": "Important\n\n\n\nThis application exercise should be submitted via D2L by end of the day on which it was introduced in lecture."
   },
   {
     "objectID": "teaching/ENCI707/ae/ae-2.html",
     "href": "teaching/ENCI707/ae/ae-2.html",
-    "title": "Active Exercise 2 - Ecological Economics",
+    "title": "Application Exercise 2 - Ecological Economics",
     "section": "",
     "text": "Important\n\n\n\nThis application exercise should be submitted via D2L by end of the day on which it was introduced in lecture.\n\n\n\n\n\n\n\nConsider two hourglasses - neither can be turned over unlike a real hourglass!\nThe hourglass on left is an isolated system; no sand enters, no exits. Also, within the hourglass there is neither creation nor destruction of sand; the amount in the hourglass is constant. This is the analogy of the First Law of Thermodynamics - conservation of matter and energy. There is a continual running down of sand in the top chamber and an accumulation of sand in the bottom chamber (i.e., earth). We can assume that the amount of solar energy in the top chamber is limitless but the flow rate is fixed from our perspective on earth.\nConsider the second hourglass representing earth. Sand in the top chamber has potential energy; it is low entropy, or available energy and matter. This is the analogy to the Second Law of Thermodynamics. We can consider the sand in the top chamber as the stock of low-entropy fossil fuels, which flows into the bottom chamber as high-entropy water matter. However, unlike the left-hand hourglass, we have some control over the flow. This is demand! The solar source of low entropy energy is stock-abundant but flow-limited. The terrestrial source is stock-limited but flow-abundant.\nHow might the hourglass analogy apply to your infrastructure system of interest - e.g., transportation, water, electricity? Think about the supply and demand relationships for the system.",
     "crumbs": [
@@ -4734,7 +4734,7 @@
   {
     "objectID": "teaching/ENCI707/ae/ae-4.html",
     "href": "teaching/ENCI707/ae/ae-4.html",
-    "title": "Active Exercise 4 - Statistics Activity",
+    "title": "Application Exercise 4 - Statistics Activity",
     "section": "",
     "text": "Important\n\n\n\nThis application exercise should be submitted via D2L by end of the day on which it was introduced in lecture.\n\n\nFrom Gelman",
     "crumbs": [
@@ -4746,7 +4746,7 @@
   {
     "objectID": "teaching/ENCI707/ae/ae-6.html",
     "href": "teaching/ENCI707/ae/ae-6.html",
-    "title": "Active Exercise 6 - Policy Case Study II",
+    "title": "Application Exercise 6 - Policy Case Study II",
     "section": "",
     "text": "Important\n\n\n\nThis application exercise should be submitted via D2L by end of the day on which it was introduced in lecture.\n\n\nYour task is to find three policy stories in the news. The policies may be related to engineering infrastructure, but they may also be related to any other topic of interest to you. In one paragraph for each news story, please provide a summary of the problem. When formulating your summary statement, you should consider the following questions:\n1. Does the problem relate to individuals, businesses, some other group, or a combination of groups?\n2. Is the problem relevant to local, provincial/state, national, or trans-national governance?\n3. Is the problem technical, political, social, ethical, or some combination thereof?",
     "crumbs": [
@@ -4758,7 +4758,7 @@
   {
     "objectID": "teaching/ENCI707/ae/ae-8.html",
     "href": "teaching/ENCI707/ae/ae-8.html",
-    "title": "Active Exercise 8 - Computing Models",
+    "title": "Application Exercise 8 - Computing Models",
     "section": "",
     "text": "Important\n\n\n\nThis application exercise should be submitted via D2L by end of the day on which it was introduced in lecture.\n\n\nPlease submit your Jupyter notebooks created during lecture. Your submission should be a html file displaying the outputs from running the code. The following notebooks should be included in this submission: 1) regressionDataAnalysis.html 2) logitModelling-Biogeme.html"
   },
