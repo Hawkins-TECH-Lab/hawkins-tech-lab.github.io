@@ -5348,14 +5348,14 @@
     "href": "teaching/ENCI707/slides/lec-1.html#elasticity-of-substitution",
     "title": "Lecture 1 - Microeconomics",
     "section": "Elasticity of Substitution​",
-    "text": "Elasticity of Substitution​\n\nMRS: Measures the slope of the indifference (isoquant) curve\nElasticity of substitution (\\(\\sigma\\)): Measures the curvateure of the indifference (isoquant) curve \\[\\sigma = \\frac{\\Delta \\left(\\frac{x_2}{x_1} \\right)/\\frac{x_2}{x_1}}{\\Delta MRS/MRS} = \\frac{\\partial \\left(\\frac{x_2}{x_1} \\right)}{\\partial MRS}\\frac{MRS}{\\left(x_2/x_1\\right)}\\] \\[\\frac{\\partial ln\\left(\\frac{x_2}{x_1}\\right)}{\\partial ln (|MRS|)} \\text{(think dln(x)/dx = 1/x and re-arrange)}\\]\nAbsolute value of MRS to ensure logarithm of non-negative values"
+    "text": "Elasticity of Substitution​\n\nMRS: Measures the slope of the indifference (isoquant) curve\nElasticity of substitution (\\(\\sigma\\)): Measures the curvature of the indifference (isoquant) curve \\[\\sigma = \\frac{\\Delta \\left(\\frac{x_2}{x_1} \\right)/\\frac{x_2}{x_1}}{\\Delta MRS/MRS} = \\frac{\\partial \\left(\\frac{x_2}{x_1} \\right)}{\\partial MRS}\\frac{MRS}{\\left(x_2/x_1\\right)}\\] \\[\\frac{\\partial ln\\left(\\frac{x_2}{x_1}\\right)}{\\partial ln (|MRS|)} \\text{(think dln(x)/dx = 1/x and re-arrange)}\\]\nAbsolute value of MRS to ensure logarithm of non-negative values"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-1.html#cobb-douglas-utility-function",
     "href": "teaching/ENCI707/slides/lec-1.html#cobb-douglas-utility-function",
     "title": "Lecture 1 - Microeconomics",
     "section": "Cobb-Douglas Utility Function​",
-    "text": "Cobb-Douglas Utility Function​\n\nElasticity of substitution (\\(\\sigma\\)) \\[|MRS| = \\frac{x_2}{x_1}\\frac{\\alpha}{\\beta}\\] \\[\\frac{x_2}{x_1} = \\frac{\\beta}{\\alpha}|MRS|\\] \\[ln\\left(\\frac{x_2}{x_1}\\right) + ln\\left(\\frac{\\alpha}{\\beta}\\right) = ln(|MRS|) \\text(take derivatives wrt ln(MRS)\\] \\[\\sigma = dln\\left(\\frac{x_2}{x_1}\\right)/ln(|MRS|) = 1 \\]\nUnit elasticity of substitution: unit curvature of the indifference curve"
+    "text": "Cobb-Douglas Utility Function​\n\nElasticity of substitution (\\(\\sigma\\)) \\[|MRS| = \\frac{x_2}{x_1}\\frac{\\alpha}{\\beta}\\] \\[\\frac{x_2}{x_1} = \\frac{\\beta}{\\alpha}|MRS|\\] \\[ln\\left(\\frac{x_2}{x_1}\\right) + ln\\left(\\frac{\\alpha}{\\beta}\\right) = ln(|MRS|) \\text{take derivatives wrt ln(MRS)}\\] \\[\\sigma = dln\\left(\\frac{x_2}{x_1}\\right)/ln(|MRS|) = 1 \\]\nUnit elasticity of substitution: unit curvature of the indifference curve"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-1.html#cobb-douglas-utility-function-1",
