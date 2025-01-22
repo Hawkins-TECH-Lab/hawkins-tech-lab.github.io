@@ -10,7 +10,223 @@
 <atom:link href="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/blog.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.5.56</generator>
-<lastBuildDate>Tue, 29 Oct 2024 06:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 16 Jan 2025 07:00:00 GMT</lastBuildDate>
+<item>
+  <title>Our Grand Omaha to Calgary Trip</title>
+  <dc:creator>Jason Hawkins</dc:creator>
+  <link>https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="overview" class="level1">
+<h1>Overview</h1>
+<p>In 2024, I received an offer to return to Canada and join the faculty at the Univerity of Calgary. My partner and I both did our degrees at the University of Calgary and love western Canada, so we were excited to return. The University very generously covered the cost of our relocation, including both household goods and a good portion of our trip back with our vehicle.</p>
+<p>Would I recommend driving a Chevrolet Bolt 2,500 km with two small kids and a trunk full of suitcases and food? It depends on your kids and personal fortitude. My children are amazing roadtrip buddies. You also need to accept that you are not going to get anywhere fast. We spread our trip out over about a week. It also requires a lot of planning, particularly when you are driving through the US Midwest, which is not known for its extensive network of public charging stations. The 2023 Chevrolet Bolt also has a limit of 50kW on its charging rate - lots of fun getting to an ultra fast 350 kW station and maxing out at about 45 kW.</p>
+<p>Our route was partially determined by the location of charging stations and partially by landmarks along the way. We knew we wanted to see Mount Rushmore and stop at Waterton Lakes National Park when we crossed into Canada.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/trip-map.png" class="img-fluid figure-img"></p>
+<figcaption>Route map</figcaption>
+</figure>
+</div>
+<p>// Talk about different charging levels and other terms.</p>
+</section>
+<section id="day-1-omaha-ne-to-sioux-falls-sd" class="level1">
+<h1>Day 1: Omaha, NE to Sioux Falls, SD</h1>
+<p>Our first day was a hectic. The movers arrived in the morning and we needed to be in Sioux Falls, SD by that evening to be on track. Unfortunately, the movers were not the best planners. They ran out of boxes midday and we had to wait around for several hours for a resupply. With a plan to be out of town by 3PM at the latest, we left Omaha at 4PM after cleaning up their mess around the house.</p>
+<p>The drive from Omaha to Sioux Falls was fairly uneventful. We passed through Iowa and arrived after dark. We left Omaha with 90% charge and arrived at our hotel with 25% charge. The first night was a series of hard lessons though. Public charging stations remain a <em>wild west</em>. You need half a dozen different apps on your phone to be ready to charge at any station along your route. On the topic of charging, <strong>make sure your phone is charged!</strong> Navigating to a charging station in the dark and rain with minimal vehicle charge <strong>and</strong> a phone on its last bit of juice is not a good combination. I used a DCFC managed by EV Connect on the other side of town from our hotel. We went back and forth by text message, with me at the charging station and my partner at the hotel with the kids, trying to sort out how to start the session when she had the EV Connect app on her phone (we had to split the apps between our phones because neither of us had sufficient space to install all the apps on our phone and maintain space for photos along the route).</p>
+<p>Once we sorted out the charging logististics, it was a nice experience. I sat in an auto dealership parking lot and listened to the radio - again, no phone charge. It was the week of the Democratic National Convention and the Obamas were center stage that night. What a one-two punch of speeches! Unfortunately, as we now know in hindsight, my family was on the run from a spray tanned autocrat with golf balls where most people have brain cells. At the time, we fell peacefully fast asleep after a very long first day of travel home.</p>
+</section>
+<section id="day-2-sioux-falls-sd-to-rapid-city-sd" class="level1">
+<h1>Day 2: Sioux Falls, SD to Rapid City, SD</h1>
+<p>We stayed in Sioux Falls for a bit the next morning. After charging the previous night, we had an 81% charge and wanted to get a bit more range before leaving town for a full day of driving. We explored the riverfront and walked to the eponymous falls, while our car got a trickle charge (i.e., Level 1). They did not disappoint - we are Canadians who lived in southern Ontario, so Niagara Falls was a weekend trip for several years. That is to say, the falls are an impressive natural feature. They are a swirling and bubbling mass, with massive red-brown rocky outcroppings.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240821_080222366_HDR.jpg" class="img-fluid figure-img"></p>
+<figcaption>Charger</figcaption>
+</figure>
+</div>
+<p>As I said, they are impressive falls and well worth a visit if you are in the area.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240821_082710772_HDR.jpg" class="img-fluid figure-img"></p>
+<figcaption>Falls</figcaption>
+</figure>
+</div>
+<p>Walking through downtown afterwards, I gets the feeling that the city took advantage of its local resources as many buildings are built of the same stone. We got a slowish charge from a level-2 ChargePoint station.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240821_084540966_HDR.jpg" class="img-fluid figure-img"></p>
+<figcaption>Building</figcaption>
+</figure>
+</div>
+<p>A common thread in our drive across South Dakota was the many signs for Wall Drugs. The signs actually started the previous day on I-29 driving north through Iowa, but we didn’t start recording them until the second day. It was a classic midcontinental roadtrip experience. There isn’t much civilization or reason to stop, so businesses work very hard to draw you in. Wall Drugs is the best I have seen. It seemed every sign had a new attration available for your viewing pleasure - food, coffee, a splashpad, dinosaurs, and a petting zoo (I made the last one up because I couldn’t recall all the attractions. I had to confirm online there isn’t one because it would not surprise me to find out they have the second largest zoo in the region, after Omaha.). A small drug store, purchased in 1931 by Ted Hustead and expanded into a 76,000 square foot tourist attraction on the way to Mount Rushmore. We aren’t big fans of trinkets and tchotchke so didn’t stay long, but if that is your scene then all power to you and enjoy the wonders of Wall Drugs!</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240821_093857479_HDR.jpg" class="img-fluid figure-img"></p>
+<figcaption>Walls Drugs</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240821_094755704.jpg" class="img-fluid figure-img"></p>
+<figcaption>Walls Drugs</figcaption>
+</figure>
+</div>
+<p>We stopped to charge and I took a meeting.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240821_102839285_HDR.jpg" class="img-fluid figure-img"></p>
+<figcaption>Charger</figcaption>
+</figure>
+</div>
+<p>We stopped again to charge and went to Subway. Impressive hill.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240821_125804423_HDR.jpg" class="img-fluid figure-img"></p>
+<figcaption>Charger</figcaption>
+</figure>
+</div>
+<p>Wall drugs!!!</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240821_135709140.jpg" class="img-fluid figure-img"></p>
+<figcaption>Walls Drugs</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240821_141722421.jpg" class="img-fluid figure-img"></p>
+<figcaption>Walls Drugs</figcaption>
+</figure>
+</div>
+<p>Don’t just see wall drugs - go to the brewery in Rapid City</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240821_141746252.jpg" class="img-fluid figure-img"></p>
+<figcaption>Brewery</figcaption>
+</figure>
+</div>
+<p>We went back and forth with this truck all day.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240821_145635153_HDR.jpg" class="img-fluid figure-img"></p>
+<figcaption>Truck</figcaption>
+</figure>
+</div>
+<p>My partner and I had heard mixed reviews about Mount Rushmore. Some people say that it is not as big as you expect. We mostly knew it from Hitchcock’s North by Northwest. It is a nice drive through the Black Hills to the entrance road. The National Park Service has a smooth operation - parking attendance and a large concrete parkade rising out of the forest. First, thank you for the free charging stations at the monument. Second, Mount Rushmore is an impressive sight.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240821_174714502.jpg" class="img-fluid figure-img"></p>
+<figcaption>Rushmore</figcaption>
+</figure>
+</div>
+<p>We did not have a charging station at our hotel in Rapid City, but there was one at the office of the local utility (Black Hills electric) across the street - i.e., across the freeway. It was well maintained and available upon arrival.</p>
+</section>
+<section id="day-3-rapid-city-sd-to-billings-mt" class="level1">
+<h1>Day 3: Rapid City, SD to Billings, MT</h1>
+<p>The next day, we left for Montana via Wyoming with a 100% charge. Our route was slightly altered by the ubiqituous wildfires of summer.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240822_082335349_HDR.jpg" class="img-fluid figure-img"></p>
+<figcaption>Wyoming sign</figcaption>
+</figure>
+</div>
+<p>We stopped in XX to charge and get some groceries.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240822_102557399_HDR.jpg" class="img-fluid figure-img"></p>
+<figcaption>Charger</figcaption>
+</figure>
+</div>
+<p>I’ll pause to note the changing landscapes on a long-distance trip. We passed through prairie and badlands, mountains and dunes. While long distance drives inevitably have their moments of monotony, it is hard not to be struck by the beauty and diversity of this planet. As a civil engineer, I noticed another type of beauty - the many hews of pavement as local mineral compositions changed over our drive. Greys, changed to reds, then blacks as we traversed South Dakota and Wyoming. It is a reminder of how the uniformity and standards of engineering cannot overcome natural diversity.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240822_104312292_HDR.jpg" class="img-fluid figure-img"></p>
+<figcaption>Landscape</figcaption>
+</figure>
+</div>
+<p>Having made it safely past the wildfires, we were relieved to stop in Sheridan, WY for a charge and a surprisingly nice lunch from the local gas station.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240822_123905524_HDR.jpg" class="img-fluid figure-img"></p>
+<figcaption>Charger</figcaption>
+</figure>
+</div>
+<p>Unpictured: we stopped at the Target upon arriving in Billings, MT to charge for the night because our hotel did not have a nearby charging option. We also went for dinner and continued our charging session at a nearby parkade.</p>
+</section>
+<section id="day-4-billings-mt-to-grand-falls-mt" class="level1">
+<h1>Day 4: Billings, MT to Grand Falls, MT</h1>
+<p>From Billings, we drove north and stopped at a playground in XXX for some decompression and charging. There were no public charging stations through this section of our trip. Fortunately, a campground offered charging at their RV plugins (220V - Level2) for a $5 fee.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240823_130147196.jpg" class="img-fluid figure-img"></p>
+<figcaption>Charger</figcaption>
+</figure>
+</div>
+<p>Charger! And playground</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240823_160248399.jpg" class="img-fluid figure-img"></p>
+<figcaption>Charger</figcaption>
+</figure>
+</div>
+</section>
+<section id="day-5-grand-falls-mt-to-waterton-lakes-ab" class="level1">
+<h1>Day 5: Grand Falls, MT to Waterton Lakes, AB</h1>
+<p>Charger!!</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240824_122244992_HDR.jpg" class="img-fluid figure-img"></p>
+<figcaption>Charger</figcaption>
+</figure>
+</div>
+<p>Charger in Canada!! Nice to see the collaboration vs what you see at US stations.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240824_122254856.jpg" class="img-fluid figure-img"></p>
+<figcaption>Charger</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240824_145938456_HDR.jpg" class="img-fluid figure-img"></p>
+<figcaption>Charger</figcaption>
+</figure>
+</div>
+</section>
+<section id="day-6-waterton-lakes-ab" class="level1">
+<h1>Day 6: Waterton Lakes, AB</h1>
+<p>Great to be home in Canada!</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240825_102600747_HDR.jpg" class="img-fluid figure-img"></p>
+<figcaption>Landscape</figcaption>
+</figure>
+</div>
+</section>
+<section id="day-7-waterton-lakes-ab-to-calgary-ab" class="level1">
+<h1>Day 7: Waterton Lakes, AB to Calgary, AB</h1>
+<p>Buffett’s Nebraska Furniture Mart is a sight to behold if you are in Omaha, but socialist IKEA has EV charging stations and free daycare.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240826_155500948_HDR.jpg" class="img-fluid figure-img"></p>
+<figcaption>Charger</figcaption>
+</figure>
+</div>
+
+
+</section>
+
+ ]]></description>
+  <category>travel</category>
+  <category>infrastructure</category>
+  <guid>https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/</guid>
+  <pubDate>Thu, 16 Jan 2025 07:00:00 GMT</pubDate>
+  <media:content url="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/banner.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Technology and Development</title>
   <dc:creator>Jason Hawkins</dc:creator>

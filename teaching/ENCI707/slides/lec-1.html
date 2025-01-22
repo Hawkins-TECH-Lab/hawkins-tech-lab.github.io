@@ -571,7 +571,7 @@ V(p_1, p_2, I) &amp;= U(x_1^*, x_2^*) \\
 <p><span class="math inline">\(\eta = \frac{dx_1}{dI}\frac{I}{x_1}\)</span></p>
 <p><span class="math inline">\(\frac{dx_1(p_1,p_2,I)}{dI} &lt; 0\)</span> -&gt; Inferior Good <span class="math inline">\(\eta &lt; 0\)</span></p>
 <p><span class="math inline">\(\frac{dx_1(p_1,p_2,I)}{dI} &gt; 0\)</span> -&gt; Normal Good <span class="math inline">\(\eta &gt; 0\)</span></p>
-<p><span class="math inline">\(\frac{dx_1(p_1,p_2,I)}{dI} &gt; \frac{q_1}{I}\)</span> -&gt; Superior Good <span class="math inline">\(\eta &gt; 1\)</span></p>
+<p><span class="math inline">\(\frac{dx_1(p_1,p_2,I)}{dI} &gt; \frac{x_1}{I}\)</span> -&gt; Superior Good <span class="math inline">\(\eta &gt; 1\)</span></p>
 </section>
 <section id="hicksian-demand-function" class="slide level2 smaller">
 <h2>Hicksian Demand Function ​</h2>
@@ -598,7 +598,7 @@ V(p_1, p_2, I) &amp;= U(x_1^*, x_2^*) \\
 </div>
 </div><div class="column" style="width:50%;">
 <p>Can use <strong>Slutsky equation</strong> to obtain an analytic result</p>
-<p><span class="math display">\[\frac{\partial x_1}{\partial p_2} = \underset{\text{Substitution Effect}}{\frac{\partial h_1(p_1,p_2,u)}{\partial p_2}} -  \underset{\text{Income Effect}}{\frac{\partial q_1}{\partial I}x_2(p_1,p_2,I)}\]</span></p>
+<p><span class="math display">\[\frac{\partial x_1}{\partial p_2} = \underset{\text{Substitution Effect}}{\frac{\partial h_1(p_1,p_2,u)}{\partial p_2}} -  \underset{\text{Income Effect}}{\frac{\partial x_1}{\partial I}x_2(p_1,p_2,I)}\]</span></p>
 <p>where</p>
 <ul>
 <li><span class="math inline">\(h_1(p_1,p_2,U)\)</span> is the Hicksian demand for good 1</li>
@@ -630,7 +630,7 @@ V(p_1, p_2, I) &amp;= U(x_1^*, x_2^*) \\
 <p><span class="math display">\[L = U(x_1,x_2) + \lambda(I - p_1x_1 - p_2x_2)\]</span></p>
 <p>First order conditions for optimum consumption</p>
 <p><span class="math display">\[\frac{\partial L}{\partial x_1} = 0 \text{ and } \frac{\partial L}{\partial x_2} = 0\]</span></p>
-<p><span class="math display">\[\frac{\partial U(x_1,x_2)}{\partial q_1} = \lambda p_1 \text{ and } \frac{\partial U(x_1,x_2)}{\partial x_2} = \lambda p_2\]</span></p>
+<p><span class="math display">\[\frac{\partial U(x_1,x_2)}{\partial x_1} = \lambda p_1 \text{ and } \frac{\partial U(x_1,x_2)}{\partial x_2} = \lambda p_2\]</span></p>
 </section>
 <section id="direct-utility-maximization-1" class="slide level2 smaller">
 <h2>Direct Utility Maximization​</h2>
@@ -715,7 +715,7 @@ V(p_1, p_2, I) &amp;= U(x_1^*, x_2^*) \\
 <section id="cobb-douglas-direct-utility-function-1" class="slide level2">
 <h2>Cobb-Douglas Direct Utility Function​</h2>
 <ul>
-<li>Applying first order conditions (FOC) for optimal utility <span class="math display">\[\frac{\partial L}{\partial q_1} = 0 \text{-&gt;} \alpha x_1^{\alpha - 1}x_2^{\beta} = \lambda p_1\]</span> <span class="math display">\[\frac{\alpha U}{x_1} - \lambda p_1 = 0 \therefore U = \frac{\lambda p_1x_1}{\alpha}\]</span> Similarly, <span class="math display">\[U = \frac{\lambda p_2x_2}{\beta} \therefore x_1 = x_2\frac{\alpha p_2}{\beta p_1}\]</span></li>
+<li>Applying first order conditions (FOC) for optimal utility <span class="math display">\[\frac{\partial L}{\partial x_1} = 0 \text{-&gt;} \alpha x_1^{\alpha - 1}x_2^{\beta} = \lambda p_1\]</span> <span class="math display">\[\frac{\alpha U}{x_1} - \lambda p_1 = 0 \therefore U = \frac{\lambda p_1x_1}{\alpha}\]</span> Similarly, <span class="math display">\[U = \frac{\lambda p_2x_2}{\beta} \therefore x_1 = x_2\frac{\alpha p_2}{\beta p_1}\]</span></li>
 </ul>
 </section>
 <section id="cobb-douglas-direct-utility-function-2" class="slide level2">
@@ -756,7 +756,7 @@ V(p_1, p_2, I) &amp;= U(x_1^*, x_2^*) \\
 </section>
 <section id="roys-identity-cobb-douglas-function" class="slide level2 smaller">
 <h2>Roy’s Identity &amp; Cobb-Douglas Function​</h2>
-<p><span class="math display">\[U(p_1,p_2,I) = U_0I^{\alpha + \beta}p_1^{-\alpha}p_2^{-\beta}\]</span> - According to <strong>Roy’s Identity</strong> <span class="math display">\[x_1^*(p_1,p_2,I) = \left(\frac{\partial U(p_1,p2_,I)}{\partial p_1} \right)/\left(\frac{\partial U(p_1,p2_,I)}{\partial I} \right)\]</span> <span class="math display">\[\frac{\partial U(p_1,p_2,I)}{\partial p_1} = \alpha U_0I^{\alpha + \beta}p_1^{-\alpha-1}p_2^{-\beta}\]</span> <span class="math display">\[\frac{\partial U(p_1,p_2,I)}{\partial I} = (\alpha + \beta)U_0I^{\alpha + \beta - 1}p_1^{-\alpha}p_2^{-\beta}\]</span> <span class="math display">\[x_1^*(p_1,p_2,I) = \frac{\alpha I}{p_1 (\alpha + \beta)} \text{(similar result for )} q_2^*(p_1,p_2,I)\]</span> - If we refer to the previous derivations of <span class="math inline">\(x_1^*\)</span> and <span class="math inline">\(x_2^*\)</span>, Roy’s identity works!</p>
+<p><span class="math display">\[U(p_1,p_2,I) = U_0I^{\alpha + \beta}p_1^{-\alpha}p_2^{-\beta}\]</span> - According to <strong>Roy’s Identity</strong> <span class="math display">\[x_1^*(p_1,p_2,I) = \left(\frac{\partial U(p_1,p2_,I)}{\partial p_1} \right)/\left(\frac{\partial U(p_1,p2_,I)}{\partial I} \right)\]</span> <span class="math display">\[\frac{\partial U(p_1,p_2,I)}{\partial p_1} = \alpha U_0I^{\alpha + \beta}p_1^{-\alpha-1}p_2^{-\beta}\]</span> <span class="math display">\[\frac{\partial U(p_1,p_2,I)}{\partial I} = (\alpha + \beta)U_0I^{\alpha + \beta - 1}p_1^{-\alpha}p_2^{-\beta}\]</span> <span class="math display">\[x_1^*(p_1,p_2,I) = \frac{\alpha I}{p_1 (\alpha + \beta)} \text{(similar result for )} x_2^*(p_1,p_2,I)\]</span> - If we refer to the previous derivations of <span class="math inline">\(x_1^*\)</span> and <span class="math inline">\(x_2^*\)</span>, Roy’s identity works!</p>
 </section>
 <section id="constant-elasticity-of-substitution-ces-direct-utility-function" class="slide level2 smaller">
 <h2>Constant Elasticity of Substitution (CES) Direct Utility Function​</h2>
