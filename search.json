@@ -732,7 +732,7 @@
     "href": "teaching/ENCI707/slides/lec-6.html#iia-cont",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "IIA Cont…",
-    "text": "IIA Cont…\n\nIf the IIA assumption does not hold, we can make other error distribution assumptions\n\nNested logit (can handle complex decision structures)\nProbit (normal error terms, very general model, but can be difficult to work with it)"
+    "text": "IIA Cont…\n\nIf the IIA assumption does not hold, we can make other error distribution assumptions\n\nNested logit (can handle complex decision structures)\nProbit (normal error terms, very general model, but can be difficult to work with it)\n\n\n\n\n\n\nENCI707 Home"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-4.html#outline",
@@ -851,7 +851,7 @@
     "href": "teaching/ENCI707/slides/lec-4.html#iia-cont",
     "title": "Lecture 4 - Disaggregate Demand Models",
     "section": "IIA Cont…",
-    "text": "IIA Cont…\n\nIf the IIA assumption does not hold, we can make other error distribution assumptions\n\nNested logit (can handle complex decision structures)\nProbit (normal error terms, very general model, but can be difficult to work with it)"
+    "text": "IIA Cont…\n\nIf the IIA assumption does not hold, we can make other error distribution assumptions\n\nNested logit (can handle complex decision structures)\nProbit (normal error terms, very general model, but can be difficult to work with it)\n\n\n\n\n\n\nENCI707 Home"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-2.html#outline",
@@ -1194,7 +1194,7 @@
     "href": "teaching/ENCI707/slides/lec-2.html#other-design-recommendations-3",
     "title": "Lecture 2 - Surveys",
     "section": "Other Design Recommendations 3",
-    "text": "Other Design Recommendations 3\n\nAllowing respondents to opt for a response outside the set of experimental alternatives. For example, in a mode choice exercise if all options become too unattractive the respondent may decide to change destination, time of travel, or not to travel at all; allow her a ‘will do something else’ alternative. If a computer-based interview is used, it could be programmed to branch then to another exercise exploring precisely these other options.\nMaking sure that all the options are clearly and unambiguously defined. This could be quite difficult when dealing with qualitative attributes like security or comfort; for example, do not express alternatives as ‘poor’ or ‘improved’ as this is too vague and prone to different interpretations by respondents. Describe instead what measures or facilities are involved in improving security or ride comfort (closed circuit TV in all stations/attendants present at all times, …, air-conditioning in all coaches as in InterCity trains)."
+    "text": "Other Design Recommendations 3\n\nAllowing respondents to opt for a response outside the set of experimental alternatives. For example, in a mode choice exercise if all options become too unattractive the respondent may decide to change destination, time of travel, or not to travel at all; allow her a ‘will do something else’ alternative. If a computer-based interview is used, it could be programmed to branch then to another exercise exploring precisely these other options.\nMaking sure that all the options are clearly and unambiguously defined. This could be quite difficult when dealing with qualitative attributes like security or comfort; for example, do not express alternatives as ‘poor’ or ‘improved’ as this is too vague and prone to different interpretations by respondents. Describe instead what measures or facilities are involved in improving security or ride comfort (closed circuit TV in all stations/attendants present at all times, …, air-conditioning in all coaches as in InterCity trains).\n\n\n\n\n\nENCI707 Home"
   },
   {
     "objectID": "teaching/ENCI707/project/project-description.html",
@@ -2337,7 +2337,7 @@
     "href": "teaching/CIVE461/slides/lec-7.html#transit-assignment",
     "title": "Lecture 7 - Trip Assignment",
     "section": "Transit Assignment",
-    "text": "Transit Assignment\n\nTransit assignment not usually a function of congestion\nProcedures typically used:\n\nAll-Or-Nothing\nStochastic (multipath)\n\nMust account for:\n\nWalk access/egress times\nWaiting times as f(headway)\nTransfers\n\nFeasible transfer points\nTransfer times"
+    "text": "Transit Assignment\n\nTransit assignment not usually a function of congestion\nProcedures typically used:\n\nAll-Or-Nothing\nStochastic (multipath)\n\nMust account for:\n\nWalk access/egress times\nWaiting times as f(headway)\nTransfers\n\nFeasible transfer points\nTransfer times\n\n\n\n\n\n\n\nCIVE461 Home"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-5.html#outline",
@@ -2456,7 +2456,7 @@
     "href": "teaching/CIVE461/slides/lec-5.html#iia-cont",
     "title": "Lecture 5 - Choice Models",
     "section": "IIA Cont…",
-    "text": "IIA Cont…\n\nIf the IIA assumption does not hold, we can make other error distribution assumptions\n\nNested logit (can handle complex decision structures)\nProbit (normal error terms, very general model, but can be difficult to work with it)"
+    "text": "IIA Cont…\n\nIf the IIA assumption does not hold, we can make other error distribution assumptions\n\nNested logit (can handle complex decision structures)\nProbit (normal error terms, very general model, but can be difficult to work with it)\n\n\n\n\n\n\nCIVE461 Home"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-3.html#we-can-examine-trip-generation-in-several-ways",
@@ -2876,7 +2876,7 @@
     "href": "teaching/CIVE461/slides/lec-3.html#trip-generation-accessibility-1",
     "title": "Lecture 3 - Trip Generation",
     "section": "Trip Generation & Accessibility",
-    "text": "Trip Generation & Accessibility\n\nAttempts made to incorporate an accessibility measure into trip generation by replacing \\(O_i = f(H_i)\\) by \\(f(H_i,A_i\\) where \\(H_i\\) are household characteristics & \\(A_i\\) is an accessibility measure\nAccessibility generally defined by \\(A_i = \\sum_j f(E_j, C_{ij})\\) where \\(E_j\\) is an attraction measure for zone \\(j\\) & \\(C_{ij}\\) is a generalized cost of travel between zones \\(i\\) & \\(j\\).\n\nOften give wrong sign or non-significant results due to unresolved model dynamics & problems from using cross-sectional rather than longitudinal data\nLeads to activity-based models & trip frequency/scheduling choice models (discussed in CIVE864)"
+    "text": "Trip Generation & Accessibility\n\nAttempts made to incorporate an accessibility measure into trip generation by replacing \\(O_i = f(H_i)\\) by \\(f(H_i,A_i\\) where \\(H_i\\) are household characteristics & \\(A_i\\) is an accessibility measure\nAccessibility generally defined by \\(A_i = \\sum_j f(E_j, C_{ij})\\) where \\(E_j\\) is an attraction measure for zone \\(j\\) & \\(C_{ij}\\) is a generalized cost of travel between zones \\(i\\) & \\(j\\).\n\nOften give wrong sign or non-significant results due to unresolved model dynamics & problems from using cross-sectional rather than longitudinal data\nLeads to activity-based models & trip frequency/scheduling choice models (discussed in CIVE864)\n\n\n\n\n\n\nCIVE461 Home"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-1.html#outline",
@@ -3163,7 +3163,7 @@
     "href": "teaching/CIVE461/slides/lec-1.html#workforce-trends",
     "title": "Lecture 1 - Introduction",
     "section": "Workforce Trends",
-    "text": "Workforce Trends\n\nMulti-modal transportation planning\nComplete Streets – Nebraska DOT focused on it for small communities\nLarger datasets = Excel -&gt; R & Python\nNon-infrastructure solutions – ridesharing, autonomous vehicles, pricing, and land use reform"
+    "text": "Workforce Trends\n\nMulti-modal transportation planning\nComplete Streets – Nebraska DOT focused on it for small communities\nLarger datasets = Excel -&gt; R & Python\nNon-infrastructure solutions – ridesharing, autonomous vehicles, pricing, and land use reform\n\n       \n\n\n\n\nCIVE461 Home"
   },
   {
     "objectID": "teaching/CIVE461/project/project-description.html",
@@ -4290,14 +4290,14 @@
     "href": "teaching/CIVE461/slides/lec-2.html#how-to-move-beyond-hypothesis-testing",
     "title": "Lecture 2 - Statistical Modeling",
     "section": "How to Move Beyond Hypothesis Testing",
-    "text": "How to Move Beyond Hypothesis Testing\n\n\nAnalyze all data - Better to anticipate critism than hide data\nPresent all comparisons - Rather than statistically significant comparisons only\nMake data public - If a topic is worth studying, you should want others to be able to quickly progress without repeating your work\nAccept uncertainty & embrace variation - No answer is perfect"
+    "text": "How to Move Beyond Hypothesis Testing\n\n\nAnalyze all data - Better to anticipate critism than hide data\nPresent all comparisons - Rather than statistically significant comparisons only\nMake data public - If a topic is worth studying, you should want others to be able to quickly progress without repeating your work\nAccept uncertainty & embrace variation - No answer is perfect\n\n\n\n\n\n\nCIVE461 Home"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-4.html#outline",
     "href": "teaching/CIVE461/slides/lec-4.html#outline",
     "title": "Lecture 4 - Transportation Planning Process",
     "section": "Outline",
-    "text": "Outline\n\n\nDecision-making models\nPlanning and decision process\nMeasures of effectiveness"
+    "text": "Outline\n\n\nDecision-making models\nPlanning and decision process\nMeasures of effectiveness\n\n\n\n\n\n\nCIVE461 Home"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-6.html#outline",
@@ -4563,7 +4563,7 @@
     "href": "teaching/CIVE461/slides/lec-6.html#other-choices",
     "title": "Lecture 6 - Mode & Destination Choice Models",
     "section": "Other Choices",
-    "text": "Other Choices\n\nHome location choice (multinomial logit) – similar to destination choice\nVehicle ownership choice? 1, 2, 3, 4, etc. vehicles (ordered logit)\nDeparture time choice? 8AM, 9AM, 10AM, etc. (ordered logit)\nParty size choice? 1, 2, 3, 4, 5, etc. persons (ordered logit)\nChoice set formation\n\nWhat destinations do I consider? Do I consider only destinations within my neighborhood? Do I consider only destinations within a certain distance or travel time?"
+    "text": "Other Choices\n\nHome location choice (multinomial logit) – similar to destination choice\nVehicle ownership choice? 1, 2, 3, 4, etc. vehicles (ordered logit)\nDeparture time choice? 8AM, 9AM, 10AM, etc. (ordered logit)\nParty size choice? 1, 2, 3, 4, 5, etc. persons (ordered logit)\nChoice set formation\n\nWhat destinations do I consider? Do I consider only destinations within my neighborhood? Do I consider only destinations within a certain distance or travel time?\n\n\n\n\n\n\nCIVE461 Home"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-8.html",
@@ -5495,7 +5495,7 @@
     "href": "teaching/ENCI707/slides/lec-1.html#modelling-infrastructure-demands",
     "title": "Lecture 1 - Microeconomics",
     "section": "Modelling Infrastructure Demands​",
-    "text": "Modelling Infrastructure Demands​\n\nData (revealed/stated preferences): data do not provide answers themselves​\n\nWe need models and visualizations to give context and structure​\n\nIdentify underling theory to specify model of interest​\nTwo types of models:​\n\nAggregate demand models​\nDisaggregate demand/choice models​\n\nIn either case, application of econometric techniques is crucial to ensure evidence-based analysis​\nEstimation of appropriate model parameters is the critical roadblock!​"
+    "text": "Modelling Infrastructure Demands​\n\nData (revealed/stated preferences): data do not provide answers themselves​\n\nWe need models and visualizations to give context and structure​\n\nIdentify underling theory to specify model of interest​\nTwo types of models:​\n\nAggregate demand models​\nDisaggregate demand/choice models​\n\nIn either case, application of econometric techniques is crucial to ensure evidence-based analysis​\nEstimation of appropriate model parameters is the critical roadblock!​\n\n\n\n\n\n\nENCI707 Home"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-3.html#outline",
@@ -5614,7 +5614,7 @@
     "href": "teaching/ENCI707/slides/lec-3.html#iia-cont",
     "title": "Lecture 3 - Aggregate Demand Models",
     "section": "IIA Cont…",
-    "text": "IIA Cont…\n\nIf the IIA assumption does not hold, we can make other error distribution assumptions\n\nNested logit (can handle complex decision structures)\nProbit (normal error terms, very general model, but can be difficult to work with it)"
+    "text": "IIA Cont…\n\nIf the IIA assumption does not hold, we can make other error distribution assumptions\n\nNested logit (can handle complex decision structures)\nProbit (normal error terms, very general model, but can be difficult to work with it)\n\n\n\n\n\n\nENCI707 Home"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-5.html#outline",
@@ -5733,7 +5733,7 @@
     "href": "teaching/ENCI707/slides/lec-5.html#iia-cont",
     "title": "Lecture 5 - Multinomial Logit",
     "section": "IIA Cont…",
-    "text": "IIA Cont…\n\nIf the IIA assumption does not hold, we can make other error distribution assumptions\n\nNested logit (can handle complex decision structures)\nProbit (normal error terms, very general model, but can be difficult to work with it)"
+    "text": "IIA Cont…\n\nIf the IIA assumption does not hold, we can make other error distribution assumptions\n\nNested logit (can handle complex decision structures)\nProbit (normal error terms, very general model, but can be difficult to work with it)\n\n\n\n\n\n\nENCI707 Home"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-7.html#outline",
