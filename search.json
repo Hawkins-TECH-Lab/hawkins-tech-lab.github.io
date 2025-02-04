@@ -737,119 +737,119 @@
   {
     "objectID": "teaching/ENCI707/slides/lec-4.html#outline",
     "href": "teaching/ENCI707/slides/lec-4.html#outline",
-    "title": "Lecture 4 - Disaggregate Demand Models",
+    "title": "Lecture 3 - Aggregate Demand Models",
     "section": "Outline",
     "text": "Outline\n\n\nBasis for choice modeling\nTheory\nLogit choice model"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-4.html#basis-for-choice-modeling",
     "href": "teaching/ENCI707/slides/lec-4.html#basis-for-choice-modeling",
-    "title": "Lecture 4 - Disaggregate Demand Models",
+    "title": "Lecture 3 - Aggregate Demand Models",
     "section": "Basis for Choice Modeling",
     "text": "Basis for Choice Modeling\n\nAggregate demand models (such as those we have been discussing) based on observations for groups of travelers or average relations for zones\nDiscrete choice: probability an individual chooses a given option a function of their socioeconomic characteristics & relative attractiveness of the option\nCannot estimate via least squares because probability is unobserved – only observe choice\nModels are probabilistic & do not give an outcome value such as trips – must use probability concepts to generate discrete outcomes (summation over all observations to give expected number choosing option or use sample enumeration to allocate discrete outcomes)"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-4.html#basis-for-choice-modeling-1",
     "href": "teaching/ENCI707/slides/lec-4.html#basis-for-choice-modeling-1",
-    "title": "Lecture 4 - Disaggregate Demand Models",
+    "title": "Lecture 3 - Aggregate Demand Models",
     "section": "Basis for Choice Modeling",
     "text": "Basis for Choice Modeling\n\nIndividuals derive utility from the use of alternatives defined by a utility function often denoted by V \\[Vpeanut butter = 0.25 – 1.0 ALLERGY - 0.5 PRICE + 0.25 ORGANIC\\]\nNeed probability value between 0 & 1. Various forms, generally with an s-shaped plot. Main ones are \\[𝐿𝑜𝑔𝑖𝑡:𝑃_1=exp⁡(𝑉_1 )/(exp⁡(𝑉1)+exp⁡(𝑉2))\\] \\[𝑃𝑟𝑜𝑏𝑖𝑡:𝑃_1=\\int_{-\\infty}^{\\infty}⁡\\int_{-\\infty}^{V_1-V_2+x_1}\\frac{⁡exp⁡(\\frac{−1}{2(1−\\rho^2)} (\\frac{𝑥_1}{\\sigma_1})^2−\\frac{2\\rho 𝑥_1 𝑥_2}{\\sigma_1 \\sigma_2}+(\\frac{𝑥_2}{\\sigma_2})^2}{2\\pi\\sigma_1 \\sigma_2 \\sqrt{1−\\rho^2 }} 𝑑𝑥_2 𝑑𝑥_1\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-4.html#properties-of-discrete-choice-dc",
     "href": "teaching/ENCI707/slides/lec-4.html#properties-of-discrete-choice-dc",
-    "title": "Lecture 4 - Disaggregate Demand Models",
+    "title": "Lecture 3 - Aggregate Demand Models",
     "section": "Properties of Discrete Choice (DC)",
     "text": "Properties of Discrete Choice (DC)\n\nBased on theories of individual behavior & do not constitute physical analogies – therefore stable over time & space\nCan be more statistically efficient than aggregate models because each observation is an outcome rather than using aggregations of potentially hundreds of observations\nDM less likely to suffer from bias due to correlation between aggregate units – i.e., ecological correlation (fallacy)"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-4.html#ecological-fallacy",
     "href": "teaching/ENCI707/slides/lec-4.html#ecological-fallacy",
-    "title": "Lecture 4 - Disaggregate Demand Models",
+    "title": "Lecture 3 - Aggregate Demand Models",
     "section": "Ecological Fallacy",
     "text": "Ecological Fallacy"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-4.html#theoretical-framework",
     "href": "teaching/ENCI707/slides/lec-4.html#theoretical-framework",
-    "title": "Lecture 4 - Disaggregate Demand Models",
+    "title": "Lecture 3 - Aggregate Demand Models",
     "section": "Theoretical Framework",
     "text": "Theoretical Framework\n\nIndividuals belong to a homogeneous population \\(N\\), act rationally, & possess perfect information – i.e., they always select the option that maximizes their net personal utility subject to legal, social, physical, &/or budgetary (both time & money) constraints\nThere is a certain set \\(𝐴 = \\{𝐴_1, …𝐴_i,…𝐴_I\\}\\) of available alternatives & a set X of vectors of measured attributes of individuals & their alternatives\nAn individual \\(n\\) is endowed with a set of attributes \\(𝑥 \\in 𝑋\\) & faces a choice set \\(𝐴(n) \\in 𝐴\\)\nWe will assume choice set is predetermined for individuals"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-4.html#theoretical-framework-1",
     "href": "teaching/ENCI707/slides/lec-4.html#theoretical-framework-1",
-    "title": "Lecture 4 - Disaggregate Demand Models",
+    "title": "Lecture 3 - Aggregate Demand Models",
     "section": "Theoretical Framework",
     "text": "Theoretical Framework\n\nModeler, an observer, does not posses complete information about all elements considered by the individual making choice\nModeler assumes \\(𝑈_{ni}\\) can be represented by two components:\n\nA measurable, systematic, or representative part \\(𝑉_{ni}\\), which is a function of the measured attributes \\(x\\)\nA random part \\(\\epsilon_{ni}\\), which reflects indiosyncratic & taste variation, together with measurement or observational errors made by the modeler"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-4.html#theoretical-framework-2",
     "href": "teaching/ENCI707/slides/lec-4.html#theoretical-framework-2",
-    "title": "Lecture 4 - Disaggregate Demand Models",
+    "title": "Lecture 3 - Aggregate Demand Models",
     "section": "Theoretical Framework",
     "text": "Theoretical Framework\n\nModeler sets utility \\(𝑈_{ni}=𝑉_{ni}+\\epsilon_{ni}\\) to address two apparent irrationalities\n\nThat two individuals faced with the same situation & having the same personal attributes make different choices\nThat an individual may not select the alternative that appears to be the best one\n\nOften assumed \\(V_{ni}\\) given by \\(\\sum_k^K \\beta_{ik} x_{nik}\\) here \\(\\beta_{ik}\\) are assumed constant for all individuals \\(N\\) in the homogeneous set but may vary across alternatives \\(I\\)"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-4.html#theoretical-framework-3",
     "href": "teaching/ENCI707/slides/lec-4.html#theoretical-framework-3",
-    "title": "Lecture 4 - Disaggregate Demand Models",
+    "title": "Lecture 3 - Aggregate Demand Models",
     "section": "Theoretical Framework",
     "text": "Theoretical Framework\n\nIndividual chooses an alternative based on \\(𝑈_{ni}≥ 𝑈_{jn} \\forall A_j \\in A(n)\\)\nOr: \\(𝑉_{ni}  – 𝑉_{nj}≥\\epsilon_{nj}  − \\epsilon_{ni}\\) (notice swapping of \\(i\\) & \\(j\\))\n\nNot possible to know with certainty if the inequality holds, so use \\[𝑃_{ni}  = 𝑃(\\epsilon_{nj} \\leq \\epsilon_{ni} + (V_{ni} - V_{nj})) \\forall A_j \\in A(n)\\] - Do not know distribution of joint residuals, so cannot derive analytical expression for model - Can denote \\(f(\\epsilon) = f(\\epsilon_1, \\epsilon_2, ... \\epsilon_I\\) & know they are random variables with a certain distribution"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-4.html#theoretical-framework-4",
     "href": "teaching/ENCI707/slides/lec-4.html#theoretical-framework-4",
-    "title": "Lecture 4 - Disaggregate Demand Models",
+    "title": "Lecture 3 - Aggregate Demand Models",
     "section": "Theoretical Framework",
     "text": "Theoretical Framework\n\nCan note that distribution for \\(f(U)\\) is the same but with mean \\(V\\) rather than 0 \\[P_{ni} = \\int_{R_I} f(\\epsilon) d\\epsilon\\] \\[\\text{where } R_I = \\begin{cases}\n\\epsilon_{nj} \\leq \\epsilon_{ni} + (V_{ni} - V_{nj}), & \\forall A_j \\in A(n) \\\\\nV_{ni}) + \\epsilon_{ni} \\ge 0 \\\\\n\\end{cases}\\]\nAssuming independent & identically distributed (IID) residuals, \\[f(\\epsilon_1,...\\epsilon_I) = \\prod_i^I g(\\epsilon_i)\\]\nAnd (drop \\(n\\) for simplicity) \\[P_i = \\int_{-\\infty}^\\infty g(\\epsilon_i) d\\epsilon_i \\prod_{j \\neq i} \\int_{-\\infty}^{V_i-V_j+\\epsilon_i} g(\\epsilon_j) d\\epsilon_j\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-4.html#generating-the-logit-model",
     "href": "teaching/ENCI707/slides/lec-4.html#generating-the-logit-model",
-    "title": "Lecture 4 - Disaggregate Demand Models",
+    "title": "Lecture 3 - Aggregate Demand Models",
     "section": "Generating the Logit Model",
     "text": "Generating the Logit Model\n\nAssuming IID Gumbel (Extreme Value Type I) residuals, or equivalently that residual differences are logistically distributed, gives the standard multinomial logit specification\nTermed softmax function in machine learning field \\[P_{ni} = \\frac{exp(\\mu V_{ni})}{\\sum_{A_j \\in A(n)} exp(\\mu V_{nj})}\\]\nWhere \\(\\mu\\) is a scale parameter assumed equal to 1.0 for identification"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-4.html#logit-model-parameter-estimation",
     "href": "teaching/ENCI707/slides/lec-4.html#logit-model-parameter-estimation",
-    "title": "Lecture 4 - Disaggregate Demand Models",
+    "title": "Lecture 3 - Aggregate Demand Models",
     "section": "Logit Model Parameter Estimation",
     "text": "Logit Model Parameter Estimation\n\nCommercial (& opensource) software exists to estimate model parameters using the method of maximum likelihood estimation\n\nApollo (R & free)\nBiogeme (Python & free)\nSTATA (commercial)\nLIMDEP (commercial)\nGAUSS (commercial)\n\nParameter interpretation similar to regression (t-statistics, GoF, etc.)"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-4.html#direct-cross-elasticity",
     "href": "teaching/ENCI707/slides/lec-4.html#direct-cross-elasticity",
-    "title": "Lecture 4 - Disaggregate Demand Models",
+    "title": "Lecture 3 - Aggregate Demand Models",
     "section": "Direct & Cross Elasticity",
     "text": "Direct & Cross Elasticity\n\nDirect elasticity: direct effect of changing a variable value related to a good on demand for the same good\n\nE.g., elasticity of transit demand wrt transit fare, transit travel time, or transit headway\n\nCross elasticity: effect of changing a variable value related to a good on demand for a different good\n\nE.g., elasticity of transit demand wrt auto travel time"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-4.html#logit---direct-elasticity",
     "href": "teaching/ENCI707/slides/lec-4.html#logit---direct-elasticity",
-    "title": "Lecture 4 - Disaggregate Demand Models",
+    "title": "Lecture 3 - Aggregate Demand Models",
     "section": "Logit - Direct Elasticity",
     "text": "Logit - Direct Elasticity\nDirect elasticity of the probability of an individual \\(n\\) choosing alternative \\(i\\) wrt a change in an attribute/independent variable \\(X_{ik}\\) with coefficient \\(\\beta_k\\) (ignoring \\(n\\) subscripts for simplicity)\n\\[e_{direct} = \\frac{\\partial P_i}{\\partial X_{ik}} \\frac{X_{ik}}{P_i}=(1-P_i)X_{ik}\\beta_k\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-4.html#logit---cross-elasticity",
     "href": "teaching/ENCI707/slides/lec-4.html#logit---cross-elasticity",
-    "title": "Lecture 4 - Disaggregate Demand Models",
+    "title": "Lecture 3 - Aggregate Demand Models",
     "section": "Logit - Cross Elasticity",
     "text": "Logit - Cross Elasticity\n\nCross elasticity of the probability of an individual \\(n\\) choosing alternative \\(i\\) wrt a change in an attribute/independent variable \\(X_{jk}\\) with coefficient \\(\\beta_k\\) for a different alternative\n\n\\[e_{cross} = -P_j X_{jk}\\beta_k\\]\n\nAbove is same regardless of alternative \\(i\\). I.e., all alternatives have the same cross-elasticity wrt an attribute \\(k\\) of alternative \\(j\\)\nAbove results from independence of irrelevant alternatives (IIA) property of basic logit model"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-4.html#independence-of-irrelevant-alternatives-iia-property",
     "href": "teaching/ENCI707/slides/lec-4.html#independence-of-irrelevant-alternatives-iia-property",
-    "title": "Lecture 4 - Disaggregate Demand Models",
+    "title": "Lecture 3 - Aggregate Demand Models",
     "section": "Independence of Irrelevant Alternatives (IIA) Property",
     "text": "Independence of Irrelevant Alternatives (IIA) Property\nConsider we have two modes: auto (a) & bus (b)\n\\[\\frac{P_a}{P_b} = \\frac{exp(V_a)}{exp(V_b)} = exp(V_a - V_b)\\] I.e., the relative probability of choosing auto vs. bus depends only on the utilities of the two alternatives\n\nNow what if our buses are red (rb) & we paint half blue (bb)?"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-4.html#iia-cont",
     "href": "teaching/ENCI707/slides/lec-4.html#iia-cont",
-    "title": "Lecture 4 - Disaggregate Demand Models",
+    "title": "Lecture 3 - Aggregate Demand Models",
     "section": "IIA Cont…",
     "text": "IIA Cont…\n\nIf the IIA assumption does not hold, we can make other error distribution assumptions\n\nNested logit (can handle complex decision structures)\nProbit (normal error terms, very general model, but can be difficult to work with it)\n\n\n\n\n\n\nENCI707 Home"
   },
@@ -5495,119 +5495,273 @@
     "href": "teaching/ENCI707/slides/lec-3.html#outline",
     "title": "Lecture 3 - Aggregate Demand Models",
     "section": "Outline",
-    "text": "Outline\n\n\nBasis for choice modeling\nTheory\nLogit choice model"
+    "text": "Outline\n\n\nSome econometric tools used in demand modeling:\n\nNormal regression\nLognormal regression\nOrdered regression\nCount regression\n\nAggregrate transportation demand models"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-3.html#basis-for-choice-modeling",
-    "href": "teaching/ENCI707/slides/lec-3.html#basis-for-choice-modeling",
+    "objectID": "teaching/ENCI707/slides/lec-3.html#normal-regression",
+    "href": "teaching/ENCI707/slides/lec-3.html#normal-regression",
     "title": "Lecture 3 - Aggregate Demand Models",
-    "section": "Basis for Choice Modeling",
-    "text": "Basis for Choice Modeling\n\nAggregate demand models (such as those we have been discussing) based on observations for groups of travelers or average relations for zones\nDiscrete choice: probability an individual chooses a given option a function of their socioeconomic characteristics & relative attractiveness of the option\nCannot estimate via least squares because probability is unobserved – only observe choice\nModels are probabilistic & do not give an outcome value such as trips – must use probability concepts to generate discrete outcomes (summation over all observations to give expected number choosing option or use sample enumeration to allocate discrete outcomes)"
+    "section": "Normal Regression",
+    "text": "Normal Regression\n\\[y_i = \\beta_0 + \\sum_j \\beta_j x_j + \\epsilon_j; \\epsilon_j \\text{ is } \\sim N(0,\\sigma^2)\\]\n\nEquivalently \\(y_i\\) is \\(\\sim N(\\beta_0 + \\sum_j \\beta_j x_j, \\sigma^2)\\)\nEstimation\n\nLeast-squares: minimize squared residuals\nMaximum likelihood \\[L_i = \\frac{1}{\\sigma}\\Phi\\left(\\frac{y_i-\\beta_0-\\sum_j \\beta_j x_j}{\\sigma}\\right)\\]\n\nRegression to mean is deterministic for expected value of most regression model expressed as f(covariates)\nProbabilistic application through simulation"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-3.html#basis-for-choice-modeling-1",
-    "href": "teaching/ENCI707/slides/lec-3.html#basis-for-choice-modeling-1",
+    "objectID": "teaching/ENCI707/slides/lec-3.html#functions-of-random-variables",
+    "href": "teaching/ENCI707/slides/lec-3.html#functions-of-random-variables",
     "title": "Lecture 3 - Aggregate Demand Models",
-    "section": "Basis for Choice Modeling",
-    "text": "Basis for Choice Modeling\n\nIndividuals derive utility from the use of alternatives defined by a utility function often denoted by V \\[Vpeanut butter = 0.25 – 1.0 ALLERGY - 0.5 PRICE + 0.25 ORGANIC\\]\nNeed probability value between 0 & 1. Various forms, generally with an s-shaped plot. Main ones are \\[𝐿𝑜𝑔𝑖𝑡:𝑃_1=exp⁡(𝑉_1 )/(exp⁡(𝑉1)+exp⁡(𝑉2))\\] \\[𝑃𝑟𝑜𝑏𝑖𝑡:𝑃_1=\\int_{-\\infty}^{\\infty}⁡\\int_{-\\infty}^{V_1-V_2+x_1}\\frac{⁡exp⁡(\\frac{−1}{2(1−\\rho^2)} (\\frac{𝑥_1}{\\sigma_1})^2−\\frac{2\\rho 𝑥_1 𝑥_2}{\\sigma_1 \\sigma_2}+(\\frac{𝑥_2}{\\sigma_2})^2}{2\\pi\\sigma_1 \\sigma_2 \\sqrt{1−\\rho^2 }} 𝑑𝑥_2 𝑑𝑥_1\\]"
+    "section": "Functions of Random Variables",
+    "text": "Functions of Random Variables\n\nFrom probability theory courses …. transformation of random error term to random variable via Jacobian transformation"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-3.html#properties-of-discrete-choice-dc",
-    "href": "teaching/ENCI707/slides/lec-3.html#properties-of-discrete-choice-dc",
+    "objectID": "teaching/ENCI707/slides/lec-3.html#log-normal-regression",
+    "href": "teaching/ENCI707/slides/lec-3.html#log-normal-regression",
     "title": "Lecture 3 - Aggregate Demand Models",
-    "section": "Properties of Discrete Choice (DC)",
-    "text": "Properties of Discrete Choice (DC)\n\nBased on theories of individual behavior & do not constitute physical analogies – therefore stable over time & space\nCan be more statistically efficient than aggregate models because each observation is an outcome rather than using aggregations of potentially hundreds of observations\nDM less likely to suffer from bias due to correlation between aggregate units – i.e., ecological correlation (fallacy)"
+    "section": "Log-Normal Regression",
+    "text": "Log-Normal Regression\n\\[ln(y_i) = \\beta_0 + \\sum_j \\beta_j x_j + \\epsilon_j; ; \\epsilon_j \\text{ is } \\sim N(0,\\sigma^2)\\]\n\nEquivalently \\(ln(y_i)\\) is \\(\\sim N(\\beta_0 + \\sum_j \\beta_j x_j, \\sigma^2)\\)\nEstimation\n\nLeast-squares: minimize squared residuals\nMaximum likelihood \\[L_i = \\frac{1}{y_i \\sigma}\\Phi\\left(\\frac{ln(y_i)-\\beta_0-\\sum_j \\beta_j x_j}{\\sigma}\\right)\\]\n\\(y_i\\) must be positive (i.e., non-negative and non-zero)"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-3.html#ecological-fallacy",
-    "href": "teaching/ENCI707/slides/lec-3.html#ecological-fallacy",
+    "objectID": "teaching/ENCI707/slides/lec-3.html#probit-regression",
+    "href": "teaching/ENCI707/slides/lec-3.html#probit-regression",
     "title": "Lecture 3 - Aggregate Demand Models",
-    "section": "Ecological Fallacy",
-    "text": "Ecological Fallacy"
+    "section": "Probit Regression",
+    "text": "Probit Regression\n\\[y_i^* = \\beta_0 + \\sum_j \\beta_j x_j + \\epsilon_j; \\epsilon_j \\text{ is } \\sim N(0,\\sigma^2)\\]\n\nObserved value is binary (0/1) \\[Pr(y_i=1) = \\pi_i = \\Phi \\left((\\beta_0 + \\sum_j \\beta_j x_j)/\\sigma \\right)\\] \\[Pr(y_i=0) = 1 - \\pi_i = 1 - \\Phi \\left((\\beta_0 + \\sum_j \\beta_j x_j)/\\sigma \\right) = \\Phi \\left( - (\\beta_0 + \\sum_j \\beta_j x_j)/\\sigma \\right)\\]\nEstimation by Maximum likelihood \\[L_i = \\pi_i^{\\delta_i}(1-\\pi_i)^{1-\\delta_i} \\text{  }\\delta_i=1 \\text{, if }y_i=1, 0 \\text{ otherwise}\\]\n\nVariance normalized to 1 (homogeneous) or parameterized without a constant (heterogeneous)"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-3.html#theoretical-framework",
-    "href": "teaching/ENCI707/slides/lec-3.html#theoretical-framework",
+    "objectID": "teaching/ENCI707/slides/lec-3.html#logistic-regression",
+    "href": "teaching/ENCI707/slides/lec-3.html#logistic-regression",
     "title": "Lecture 3 - Aggregate Demand Models",
-    "section": "Theoretical Framework",
-    "text": "Theoretical Framework\n\nIndividuals belong to a homogeneous population \\(N\\), act rationally, & possess perfect information – i.e., they always select the option that maximizes their net personal utility subject to legal, social, physical, &/or budgetary (both time & money) constraints\nThere is a certain set \\(𝐴 = \\{𝐴_1, …𝐴_i,…𝐴_I\\}\\) of available alternatives & a set X of vectors of measured attributes of individuals & their alternatives\nAn individual \\(n\\) is endowed with a set of attributes \\(𝑥 \\in 𝑋\\) & faces a choice set \\(𝐴(n) \\in 𝐴\\)\nWe will assume choice set is predetermined for individuals"
+    "section": "Logistic Regression",
+    "text": "Logistic Regression\n\nObserved value is binary (0/1) with \\(\\epsilon_i\\) being logistically distributed this time \\[Pr(y_i=1) = \\pi_i = \\frac{\\exp (\\beta_0 + \\sum_j \\beta_j x_j)}{1 + \\exp(\\beta_0 + \\sum_j \\beta_j x_j)}\\] \\[Pr(y_i=0) = 1 - \\pi_i = 1 - \\pi_i = \\frac{1}{1 + \\exp(\\beta_0 + \\sum_j \\beta_j x_j)}\\]\nEstimation by Maximum likelihood \\[L_i = \\pi_i^{\\delta_i}(1-\\pi_i)^{1-\\delta_i} \\text{  }\\delta_i=1 \\text{, if }y_i=1, 0 \\text{ otherwise}\\]\n\nInterpretation (scale compounded parameters): \\[logit(\\pi_i) = \\text{log of odds ratio} = ln\\left(\\frac{\\pi_i}{1-\\pi_i}\\right)=\\beta_0 + \\sum_j \\beta_j x_j\\]"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-3.html#theoretical-framework-1",
-    "href": "teaching/ENCI707/slides/lec-3.html#theoretical-framework-1",
+    "objectID": "teaching/ENCI707/slides/lec-3.html#probitlogistic-regression",
+    "href": "teaching/ENCI707/slides/lec-3.html#probitlogistic-regression",
     "title": "Lecture 3 - Aggregate Demand Models",
-    "section": "Theoretical Framework",
-    "text": "Theoretical Framework\n\nModeler, an observer, does not posses complete information about all elements considered by the individual making choice\nModeler assumes \\(𝑈_{ni}\\) can be represented by two components:\n\nA measurable, systematic, or representative part \\(𝑉_{ni}\\), which is a function of the measured attributes \\(x\\)\nA random part \\(\\epsilon_{ni}\\), which reflects indiosyncratic & taste variation, together with measurement or observational errors made by the modeler"
+    "section": "Probit/Logistic Regression",
+    "text": "Probit/Logistic Regression\n\nBinary outcome model can be used to model market shares in aggregate demand models\nPseudo-likelihood function \\[L_i = \\pi_i^{y_i}(1-\\pi_i)^{1-y_i}\\]\n\\(i\\) is the aggregation unit (e.g., zones, groups, etc.)\n\\(y_i\\) is the share (proportion) of \\(y\\) in unit \\(i\\)"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-3.html#theoretical-framework-2",
-    "href": "teaching/ENCI707/slides/lec-3.html#theoretical-framework-2",
+    "objectID": "teaching/ENCI707/slides/lec-3.html#ordered-regression",
+    "href": "teaching/ENCI707/slides/lec-3.html#ordered-regression",
     "title": "Lecture 3 - Aggregate Demand Models",
-    "section": "Theoretical Framework",
-    "text": "Theoretical Framework\n\nModeler sets utility \\(𝑈_{ni}=𝑉_{ni}+\\epsilon_{ni}\\) to address two apparent irrationalities\n\nThat two individuals faced with the same situation & having the same personal attributes make different choices\nThat an individual may not select the alternative that appears to be the best one\n\nOften assumed \\(V_{ni}\\) given by \\(\\sum_k^K \\beta_{ik} x_{nik}\\) here \\(\\beta_{ik}\\) are assumed constant for all individuals \\(N\\) in the homogeneous set but may vary across alternatives \\(I\\)"
+    "section": "Ordered Regression",
+    "text": "Ordered Regression\n\nWe often have ordinal measures for which we cannot assume that the categories are equally spaced (if they were then we likely would use linear regression model)\n\nQuestionnaire items for opinions\nData that were originally measured at the interval/ratio level then grouped (lumped) into ordered categories (age, income)\nQualitative measures that are not truly continuous\n\nOrdered regression is a useful tool for above situations"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-3.html#theoretical-framework-3",
-    "href": "teaching/ENCI707/slides/lec-3.html#theoretical-framework-3",
+    "objectID": "teaching/ENCI707/slides/lec-3.html#ordered-regression-1",
+    "href": "teaching/ENCI707/slides/lec-3.html#ordered-regression-1",
     "title": "Lecture 3 - Aggregate Demand Models",
-    "section": "Theoretical Framework",
-    "text": "Theoretical Framework\n\nIndividual chooses an alternative based on \\(𝑈_{ni}≥ 𝑈_{jn} \\forall A_j \\in A(n)\\)\nOr: \\(𝑉_{ni}  – 𝑉_{nj}≥\\epsilon_{nj}  − \\epsilon_{ni}\\) (notice swapping of \\(i\\) & \\(j\\))\n\nNot possible to know with certainty if the inequality holds, so use \\[𝑃_{ni}  = 𝑃(\\epsilon_{nj} \\leq \\epsilon_{ni} + (V_{ni} - V_{nj})) \\forall A_j \\in A(n)\\] - Do not know distribution of joint residuals, so cannot derive analytical expression for model - Can denote \\(f(\\epsilon) = f(\\epsilon_1, \\epsilon_2, ... \\epsilon_I\\) & know they are random variables with a certain distribution"
+    "section": "Ordered Regression",
+    "text": "Ordered Regression\n\nAn important criteria for the ordered probability model is that the results remain consistent regardless of how the dependent variable is cut into categories\nThis means, if a new category is added to an existing variable, the variable’s coefficients should remain the same regardless of the number of categories in the dependent variable"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-3.html#theoretical-framework-4",
-    "href": "teaching/ENCI707/slides/lec-3.html#theoretical-framework-4",
+    "objectID": "teaching/ENCI707/slides/lec-3.html#ordered-regression-2",
+    "href": "teaching/ENCI707/slides/lec-3.html#ordered-regression-2",
     "title": "Lecture 3 - Aggregate Demand Models",
-    "section": "Theoretical Framework",
-    "text": "Theoretical Framework\n\nCan note that distribution for \\(f(U)\\) is the same but with mean \\(V\\) rather than 0 \\[P_{ni} = \\int_{R_I} f(\\epsilon) d\\epsilon\\] \\[\\text{where } R_I = \\begin{cases}\n\\epsilon_{nj} \\leq \\epsilon_{ni} + (V_{ni} - V_{nj}), & \\forall A_j \\in A(n) \\\\\nV_{ni}) + \\epsilon_{ni} \\ge 0 \\\\\n\\end{cases}\\]\nAssuming independent & identically distributed (IID) residuals, \\[f(\\epsilon_1,...\\epsilon_I) = \\prod_i^I g(\\epsilon_i)\\]\nAnd (drop \\(n\\) for simplicity) \\[P_i = \\int_{-\\infty}^\\infty g(\\epsilon_i) d\\epsilon_i \\prod_{j \\neq i} \\int_{-\\infty}^{V_i-V_j+\\epsilon_i} g(\\epsilon_j) d\\epsilon_j\\]"
+    "section": "Ordered Regression",
+    "text": "Ordered Regression\n\nConsider the latent variable model \\[y_i^* = \\beta x_i + \\epsilon_i\\] \\[y_i = j \\text{ if } \\tau_{j-1} \\leq y_i^* \\leq \\tau_j; j \\in \\{0,1,2\\dots J\\}\\]\nWe have \\(J\\) levels and \\((J-1)\\) cut points represented by \\(\\tau\\). End categories are 0 and \\(J\\) for which values of cut points will be \\(-\\infty\\) and \\(+\\infty\\), respectively.\nFor example, if \\(J=4\\) \\[y_i = 1 \\text{ if } -\\infty &lt; y_i^* &lt; \\tau_1\\] \\[y_i = 2 \\text{ if } \\tau_1 \\leq y_i^* &lt; \\tau_2\\] \\[y_i = 3 \\text{ if } \\tau_2 \\leq y_i^* &lt; \\tau_3\\] \\[y_i = 4 \\text{ if } \\tau_3 \\leq y_i^* &lt; +\\infty\\]"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-3.html#generating-the-logit-model",
-    "href": "teaching/ENCI707/slides/lec-3.html#generating-the-logit-model",
+    "objectID": "teaching/ENCI707/slides/lec-3.html#ordered-regression-3",
+    "href": "teaching/ENCI707/slides/lec-3.html#ordered-regression-3",
     "title": "Lecture 3 - Aggregate Demand Models",
-    "section": "Generating the Logit Model",
-    "text": "Generating the Logit Model\n\nAssuming IID Gumbel (Extreme Value Type I) residuals, or equivalently that residual differences are logistically distributed, gives the standard multinomial logit specification\nTermed softmax function in machine learning field \\[P_{ni} = \\frac{exp(\\mu V_{ni})}{\\sum_{A_j \\in A(n)} exp(\\mu V_{nj})}\\]\nWhere \\(\\mu\\) is a scale parameter assumed equal to 1.0 for identification"
+    "section": "Ordered Regression",
+    "text": "Ordered Regression\n\nNow, if we replace the latent variable by corresponding utility functions \\[Pr(y_i=j|x_i) = Pr(\\tau_{j-1} \\leq \\beta x_i + \\epsilon &lt; \\tau_j)\\] \\[Pr(y_i=j|x_i) = Pr(\\tau_{j-1} - \\beta x_i \\leq  \\epsilon &lt; \\tau_j - \\beta x_i)\\] \\[Pr(y_i=j|x_i) = \\int_{-\\infty}^{\\tau_j - \\beta x_i} f(\\epsilon_i) d\\epsilon_i - \\int_{-\\infty}^{\\tau_{j-1} - \\beta x_i} f(\\epsilon_i) d\\epsilon_i\\] \\[Pr(y_i=j|x_i) = F(\\tau_j - \\beta x_i) - F(\\tau_{j-1} - \\beta x_i)\\]"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-3.html#logit-model-parameter-estimation",
-    "href": "teaching/ENCI707/slides/lec-3.html#logit-model-parameter-estimation",
+    "objectID": "teaching/ENCI707/slides/lec-3.html#ordered-regression-4",
+    "href": "teaching/ENCI707/slides/lec-3.html#ordered-regression-4",
     "title": "Lecture 3 - Aggregate Demand Models",
-    "section": "Logit Model Parameter Estimation",
-    "text": "Logit Model Parameter Estimation\n\nCommercial (& opensource) software exists to estimate model parameters using the method of maximum likelihood estimation\n\nApollo (R & free)\nBiogeme (Python & free)\nSTATA (commercial)\nLIMDEP (commercial)\nGAUSS (commercial)\n\nParameter interpretation similar to regression (t-statistics, GoF, etc.)"
+    "section": "Ordered Regression",
+    "text": "Ordered Regression\n\nIf we assume \\(\\epsilon_i\\) follows a normal distribution with zero mean and \\(\\sigma^2\\) variance, then\n\nOrdered Probit Regression \\[Pr(y_i=j|_i = \\Phi((\\tau_j - \\beta x_i)/\\sigma) - \\Phi((\\tau_{j-1} - \\beta x_i)/\\sigma) \\]\nTypically, set \\(\\sigma=1\\)\n\nIf we assume \\(\\epsilon_i\\) follows a Type I Extreme Value distribution with scale \\(\\mu\\)\n\nOrdered Logit Regression \\[Pr(y_i=j|x_i) = \\frac{\\exp(\\mu(\\tau_j - \\beta x_i))}{1 + \\exp(\\mu(\\tau_j - \\beta x_i))} - \\frac{\\exp(\\mu(\\tau_{j-1} - \\beta x_i))}{1 + \\exp(\\mu(\\tau_{j-1} - \\beta x_i))}\\]\nTypically assume \\(\\mu=1\\)"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-3.html#direct-cross-elasticity",
-    "href": "teaching/ENCI707/slides/lec-3.html#direct-cross-elasticity",
+    "objectID": "teaching/ENCI707/slides/lec-3.html#ordered-regression-5",
+    "href": "teaching/ENCI707/slides/lec-3.html#ordered-regression-5",
     "title": "Lecture 3 - Aggregate Demand Models",
-    "section": "Direct & Cross Elasticity",
-    "text": "Direct & Cross Elasticity\n\nDirect elasticity: direct effect of changing a variable value related to a good on demand for the same good\n\nE.g., elasticity of transit demand wrt transit fare, transit travel time, or transit headway\n\nCross elasticity: effect of changing a variable value related to a good on demand for a different good\n\nE.g., elasticity of transit demand wrt auto travel time"
+    "section": "Ordered Regression",
+    "text": "Ordered Regression\n\nOrdered Probit model \\[Pr(y_i=1|x_i) = \\Phi(\\tau_1 - \\beta x_i) - 0\\] \\[Pr(y_i=2|x_i) = \\Phi(\\tau_2 - \\beta x_i) - \\Phi(\\tau_1 - \\beta x_i)\\] \\[Pr(y_i=3|x_i) = \\Phi(\\tau_3 - \\beta x_i) - \\Phi(\\tau_2 - \\beta x_i)\\] \\[Pr(y_i=4|x_i) = 1 - \\Phi(\\tau_3 - \\beta x_i)\\]\nOrdered Logit model \\[Pr(y_i=1|x_i) = \\exp(\\tau_1 - \\beta x_i)/(1 + \\exp(\\tau_1 - \\beta x_i)) - 0\\] \\[Pr(y_i=2|x_i) = \\exp(\\tau_2 - \\beta x_i)/(1 + \\exp(\\tau_2 - \\beta x_i)) - \\exp(\\tau_1 - \\beta x_i)/(1 + \\exp(\\tau_1 - \\beta x_i))\\] \\[Pr(y_i=3|x_i) = \\exp(\\tau_3 - \\beta x_i)/(1 + \\exp(\\tau_3 - \\beta x_i)) - \\exp(\\tau_2 - \\beta x_i)/(1 + \\exp(\\tau_2 - \\beta x_i))\\] \\[Pr(y_i=3|x_i) = 1 - \\exp(\\tau_3 - \\beta x_i)/(1 + \\exp(\\tau_3 - \\beta x_i))\\]"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-3.html#logit---direct-elasticity",
-    "href": "teaching/ENCI707/slides/lec-3.html#logit---direct-elasticity",
+    "objectID": "teaching/ENCI707/slides/lec-3.html#ordered-regression-6",
+    "href": "teaching/ENCI707/slides/lec-3.html#ordered-regression-6",
     "title": "Lecture 3 - Aggregate Demand Models",
-    "section": "Logit - Direct Elasticity",
-    "text": "Logit - Direct Elasticity\nDirect elasticity of the probability of an individual \\(n\\) choosing alternative \\(i\\) wrt a change in an attribute/independent variable \\(X_{ik}\\) with coefficient \\(\\beta_k\\) (ignoring \\(n\\) subscripts for simplicity)\n\\[e_{direct} = \\frac{\\partial P_i}{\\partial X_{ik}} \\frac{X_{ik}}{P_i}=(1-P_i)X_{ik}\\beta_k\\]"
+    "section": "Ordered Regression",
+    "text": "Ordered Regression\n\nOrdered Probit vs Ordered Logit model: Parameters of Probit and Logit are not comparable\n\nNormal error with unit variance in an Ordered Probit: variance of ordered regression, \\(\\sigma^1=1\\)\nType I Extreme Value has a variance, \\(\\sigma^2=\\pi^2/6\\mu^2\\). So, with a unit scale (\\(\\mu=1\\)) in an Ordered Logit, the variance \\(\\sigma^2=\\pi^2/6\\)"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-3.html#logit---cross-elasticity",
-    "href": "teaching/ENCI707/slides/lec-3.html#logit---cross-elasticity",
+    "objectID": "teaching/ENCI707/slides/lec-3.html#ordered-regression-7",
+    "href": "teaching/ENCI707/slides/lec-3.html#ordered-regression-7",
     "title": "Lecture 3 - Aggregate Demand Models",
-    "section": "Logit - Cross Elasticity",
-    "text": "Logit - Cross Elasticity\n\nCross elasticity of the probability of an individual \\(n\\) choosing alternative \\(i\\) wrt a change in an attribute/independent variable \\(X_{jk}\\) with coefficient \\(\\beta_k\\) for a different alternative\n\n\\[e_{cross} = -P_j X_{jk}\\beta_k\\]\n\nAbove is same regardless of alternative \\(i\\). I.e., all alternatives have the same cross-elasticity wrt an attribute \\(k\\) of alternative \\(j\\)\nAbove results from independence of irrelevant alternatives (IIA) property of basic logit model"
+    "section": "Ordered Regression",
+    "text": "Ordered Regression\n\nEstimation: likelihood function \\[L(y|x,\\beta,\\theta = \\prod_{i=1}^N\\prod_{j=1}^J \\left(F(\\tau_j - \\beta x_i) - F(\\tau_{j-1} - \\beta x_i) \\right)^{z_{ij}}\\] \\[z_{ij}=1 \\text{ if } y_i = j\\] \\[z_{ij}=0 \\text{ otherwise }\\]\nUseful to think of \\(\\tau_j\\) as intercepts\nStandard practice is to think of intercept as baseline probability when \\(x=0\\)"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-3.html#independence-of-irrelevant-alternatives-iia-property",
-    "href": "teaching/ENCI707/slides/lec-3.html#independence-of-irrelevant-alternatives-iia-property",
+    "objectID": "teaching/ENCI707/slides/lec-3.html#zero-inflated-ordered-regression",
+    "href": "teaching/ENCI707/slides/lec-3.html#zero-inflated-ordered-regression",
     "title": "Lecture 3 - Aggregate Demand Models",
-    "section": "Independence of Irrelevant Alternatives (IIA) Property",
-    "text": "Independence of Irrelevant Alternatives (IIA) Property\nConsider we have two modes: auto (a) & bus (b)\n\\[\\frac{P_a}{P_b} = \\frac{exp(V_a)}{exp(V_b)} = exp(V_a - V_b)\\] I.e., the relative probability of choosing auto vs. bus depends only on the utilities of the two alternatives\n\nNow what if our buses are red (rb) & we paint half blue (bb)?"
+    "section": "Zero-Inflated Ordered Regression",
+    "text": "Zero-Inflated Ordered Regression\n\nObserved data have overwhelming portion with zero values: zero-inflation \\[y_i = 0 \\text{, no further regression model}\\] \\[y_i &gt; 0 \\text{, } Pr(y_i=j|x)\\]\nEstimation: Maximum likelihood \\[y_i=0 -&gt; \\eta_i \\leq \\sum_k \\gamma z_k\\] \\[y_i &gt; 0, -&gt; \\eta_i &gt; \\sum_k \\gamma_k z_k \\text{ & } Pr(y_i=j|x)\\] \\[L_i = \\Phi(\\sum_k \\gamma_k z_k)^{y_i=0} \\times \\left(\\Phi(-\\sum_k \\gamma_k z_k)(F(\\tau_j - \\beta x_i) - F(\\tau_{j-1} - \\beta x_i))\\right)^{y_i=j}\\]\n2 models: model of binary zero/non-zero \\(y\\) & ordered regression model"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-3.html#iia-cont",
-    "href": "teaching/ENCI707/slides/lec-3.html#iia-cont",
+    "objectID": "teaching/ENCI707/slides/lec-3.html#count-variable-regression",
+    "href": "teaching/ENCI707/slides/lec-3.html#count-variable-regression",
     "title": "Lecture 3 - Aggregate Demand Models",
-    "section": "IIA Cont…",
-    "text": "IIA Cont…\n\nIf the IIA assumption does not hold, we can make other error distribution assumptions\n\nNested logit (can handle complex decision structures)\nProbit (normal error terms, very general model, but can be difficult to work with it)\n\n\n\n\n\n\nENCI707 Home"
+    "section": "Count Variable Regression",
+    "text": "Count Variable Regression\n\nCount (\\(y_i\\)) of events occuring randomly & uniformly in tmie with constant expected rate of occurence \\[Pr(y_i) = \\frac{\\lambda^{y_i}e^{-\\lambda}}{y_i!} \\text{, } E[y_i] = V[y_i] = \\lambda \\text{, } \\lambda = exp(\\sum_j \\beta_j x_j)\\]\nLikelihood function for estimation \\[L(y_i|x,\\beta) = Pr(y_i)\\]\nIssues with Poisson model\n\nHeterogeneity can violate constant expected rate assumption\nUpper limit of count data can exist - can cause violation of \\(E[y_i] = V[y_i]\\) assumption and cause over/under dispersion"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-3.html#poisson-regression-with-heterogeneity",
+    "href": "teaching/ENCI707/slides/lec-3.html#poisson-regression-with-heterogeneity",
+    "title": "Lecture 3 - Aggregate Demand Models",
+    "section": "Poisson Regression with Heterogeneity",
+    "text": "Poisson Regression with Heterogeneity\n\nExistence of over-dispersion requires correction\n\nAssume additional gamma heterogeneity \\[\\theta^* = exp(\\sum_j \\beta_j x_j + u) = exp(\\sum_j \\beta_j x_j) \\times exp(u)\\]\nConsider a positive distribution for \\(u\\), a Gamma distribution with mean 1 and variance \\(1/\\theta=\\alpha\\)\nResults in a Negative Binomial regression model \\[Pr(y_i) = \\frac{\\Gamma(\\theta + y_i)}{\\Gamma(y_i +1)\\Gamma(\\theta)}r_i^{y_i}(1-r_i)^{\\theta} \\text{, } r_i = \\frac{exp(\\sum_j \\beta_j x_j)}{exp(\\sum_j \\beta_j x_j) + \\theta}\\]\n\nLikelihood function for estimation: \\(L(y_i|x,\\beta,\\theta) = Pr(y_i)\\), \\(\\theta\\) is the dispersion parameter, which should be a positive value"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-3.html#zero-inflated-count-regression",
+    "href": "teaching/ENCI707/slides/lec-3.html#zero-inflated-count-regression",
+    "title": "Lecture 3 - Aggregate Demand Models",
+    "section": "Zero-Inflated Count Regression",
+    "text": "Zero-Inflated Count Regression\n\nObserved data have overwhelming portion with zero values: zero-inflation \\[y_i = 0 \\text{no further regression model}\\] \\[y_i &gt; 0 \\text{, } Pr(y_i=j|x) \\text{Poisson or Negative Binomial}\\]\nEstimation: Maximum likelihood \\[y_i=0 -&gt; \\eta_i \\leq \\sum_k \\gamma z_k\\] \\[y_i &gt; 0, -&gt; \\eta_i &gt; \\sum_k \\gamma_k z_k \\text{ & } Pr(y_i=j|x)\\] \\[L_i = \\Phi(\\sum_k \\gamma_k z_k)^{y_i=0} \\times \\left(\\Phi(-\\sum_k \\gamma_k z_k)Pr(y_i)\\right)^{y_i=j}\\]\n2 models: model of binary zero/non-zero \\(y\\) & count regression model"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-3.html#use-of-econometric-models",
+    "href": "teaching/ENCI707/slides/lec-3.html#use-of-econometric-models",
+    "title": "Lecture 3 - Aggregate Demand Models",
+    "section": "Use of Econometric Models",
+    "text": "Use of Econometric Models\n\nParameter of explanatory variable makes little sense unless put into context\nEconometric models should be used for:\n\nPrediction of the dependent variable and/or probability of different values of independent variables\nMeaningful interpretation of estimated model parameters\n\nMarginal effects (ME) \\[ME = \\frac{\\partial y_i}{\\partial x_j} \\text{, } ME=\\frac{\\partial Pr(y_i/U_i/V_i)}{\\partial x_j}\\]\nElasticity (E) \\[E = \\frac{\\partial y_i}{\\partial x_j}\\frac{x_j}{y_j} \\text{, } ME=\\frac{\\partial Pr(y_i/U_i/V_i)}{\\partial x_j}\\frac{x_j}{Pr(y_i/U_i/V_i)}\\]"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-3.html#practical-significance",
+    "href": "teaching/ENCI707/slides/lec-3.html#practical-significance",
+    "title": "Lecture 3 - Aggregate Demand Models",
+    "section": "Practical Significance",
+    "text": "Practical Significance\n\nMarginal effects and elasticities can be challenging to interpret\nPractical significance (PS) is an approach to provide a clear illustration of the significance of a variable – sometimes termed effect size\nMeasured as:\n\nContinuous variables: % change in \\(Pr⁡( 𝑉_𝑖)\\) for a 1 standard deviation (SD) change in \\(𝑥_𝑗\\)\n\nEx. % change in \\(Pr⁡( 𝑉_𝑖)\\) for a 1 SD change in income\n\nDiscrete variables: % change in \\(Pr⁡( 𝑉_𝑖)\\) for presence of variable\n\nEx. % change in \\(Pr⁡( 𝑉_𝑖)\\) given a person is male"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-3.html#decision-making",
+    "href": "teaching/ENCI707/slides/lec-3.html#decision-making",
+    "title": "Lecture 3 - Aggregate Demand Models",
+    "section": "Decision Making",
+    "text": "Decision Making\n\nIn transportation modeling, analysis deals both directly and indirectly with decision-making of people and firms\nDecisions can be expressed as elements related to demand and supply\nWe define decision as we (the modeler) observe it\nObserved decisions can be (or measured as):\n\nContinuous type – Example?\nDiscrete type – Example?\nOrdered type – Example?\nCount type – Example?"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-3.html#complexities-of-decision-making",
+    "href": "teaching/ENCI707/slides/lec-3.html#complexities-of-decision-making",
+    "title": "Lecture 3 - Aggregate Demand Models",
+    "section": "Complexities of Decision-Making",
+    "text": "Complexities of Decision-Making\n\nUnivariate decisions: Example?\nJoint decisions: Examples?\n\nCombination of same type of decision\nCombination of different types of decision\nIntra-household joint decision\nInter-household joint decision\n\nIssues related to joint decisions:\n\nCorrelations\nEndogeneity or self-selection"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-3.html#modeling-passenger-travel-demand",
+    "href": "teaching/ENCI707/slides/lec-3.html#modeling-passenger-travel-demand",
+    "title": "Lecture 3 - Aggregate Demand Models",
+    "section": "Modeling Passenger Travel Demand",
+    "text": "Modeling Passenger Travel Demand\n\nUrban travel demand:\n\nNumber of trips, types of trips, destination location of trips, mode of trips, routes of trips\n\nIntercity travel demand:\n\nCross-boundary trips\nIntercity trips by bus\nIntercity trips by rail\nIntercity trips by plane\n\nInternational travel: Air transportation, ferry, ship, etc.\nTourism Travel: Number of tourists, number of tourists by different modes"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-3.html#modelling-passenger-travel-demand",
+    "href": "teaching/ENCI707/slides/lec-3.html#modelling-passenger-travel-demand",
+    "title": "Lecture 3 - Aggregate Demand Models",
+    "section": "Modelling Passenger Travel Demand",
+    "text": "Modelling Passenger Travel Demand\n\nModelling multiple dimensions of demand: number of trips, time of trips, mode of trips, etc.\n\nUrban Transportation Modeling System (UTMS): trip-based model, activity-based models\n\nModeling specific dimension of trips: total trips, transit ridership, etc.\n\nIntended to investigate specific policy impacts: transit ridership, willingness to pay for better transit, willingness to pay for parking, air passenger demand, tourism demand"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-3.html#travel-demand-classifications",
+    "href": "teaching/ENCI707/slides/lec-3.html#travel-demand-classifications",
+    "title": "Lecture 3 - Aggregate Demand Models",
+    "section": "Travel Demand Classifications",
+    "text": "Travel Demand Classifications\n\nBased on the concept of utility:\n\nDirect Utility/ Direct Demand Model\nIndirect Utility/ Demand Model\n\nBased on uncertainty in predictions:\n\nDeterministic Model\nStochastic Model\n\nBased on maximization approach:\n\nRandom utility maximization\nUnconstrained model: Fitting demand function\n\nBased on level of aggregation:\n\nAggregate demand model\nDisaggregate demand model"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-3.html#travel-demand-classifications-1",
+    "href": "teaching/ENCI707/slides/lec-3.html#travel-demand-classifications-1",
+    "title": "Lecture 3 - Aggregate Demand Models",
+    "section": "Travel Demand Classifications",
+    "text": "Travel Demand Classifications\n\nAggregate versus disaggregate modeling:\n\nBased on different functional form and data needs for model estimation, purpose of study and time/money constraints of the project\nDisaggregate models are always better than corresponding aggregate ones, if and only if detailed data requirements and computational burdens are understood\nIn most cases aggregate model can complement disaggregate modeling approaches by making the trends better understood"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-3.html#aggregate-travel-demand-models",
+    "href": "teaching/ENCI707/slides/lec-3.html#aggregate-travel-demand-models",
+    "title": "Lecture 3 - Aggregate Demand Models",
+    "section": "Aggregate Travel Demand Models",
+    "text": "Aggregate Travel Demand Models"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-3.html#linear-demand-model",
+    "href": "teaching/ENCI707/slides/lec-3.html#linear-demand-model",
+    "title": "Lecture 3 - Aggregate Demand Models",
+    "section": "Linear Demand Model",
+    "text": "Linear Demand Model\n\nLinear Regression \\[\\text{Total Demand, D (e.g., number of trips)} = \\beta_0 + \\beta_n x_j + \\epsilon\\]\nElasticity of demand with respect to any variable \\[E = \\frac{\\partial D/D}{\\partial x_j/x_j} = \\frac{\\partial D}{\\partial x_j}\\times\\frac{x_j}{D}=\\frac{\\beta_j}{D}x_j\\]\nElasticity is a function of the value at a data point\nModel estimation: Least-Square\nLimitations: Linearity assumption & can result in negative demand"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-3.html#cobb-douglas-demand-model",
+    "href": "teaching/ENCI707/slides/lec-3.html#cobb-douglas-demand-model",
+    "title": "Lecture 3 - Aggregate Demand Models",
+    "section": "Cobb-Douglas Demand Model",
+    "text": "Cobb-Douglas Demand Model\n\nOptimum Deand in Cobb-Douglas \\[D_j^* = \\frac{I}{p_j}(\\frac{\\alpha}{\\alpha+\\beta}) = \\alpha' I^1p_j^{-1}\\]\nIn absense of budget constraints, the optimum demand function may look similar to Cobb-Douglas direct utility function $$D_j^* = e^{_o}I^{}_k x_k^{_k}_m e^{_m z_m}\n\\(x_k\\) includes price/cost variable & \\(z_m\\) includes categorical/dummy variables or any other variable that does not have to be log-transformed"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-3.html#cobb-douglas-demand-model-1",
+    "href": "teaching/ENCI707/slides/lec-3.html#cobb-douglas-demand-model-1",
+    "title": "Lecture 3 - Aggregate Demand Models",
+    "section": "Cobb-Douglas Demand Model",
+    "text": "Cobb-Douglas Demand Model\n\nStochastic econometric model adds random error (\\(\\epsilon_j\\))\n\n\\[D_j^* = e^{\\alpha_o}I^{\\gamma}\\prod_k x_k^{\\beta_k}\\prod_m e^{\\beta_m z_m}e^{\\epsilon_j}\\]\n\nLog-transformation results in a log-linear model \\[ln(D_j^*) = \\alpha_0 + \\sum_k \\beta_k ln(x_k) + \\sum_m \\beta_m z_m + \\epsilon_j\\]\nCan accomodate any type of explanatory variables (continuous/categorical)\nElasticity: corresponding parameter - constant elasticity! \\[E=\\frac{\\partial D}{\\partial x_k}\\frac{x_k}{D_j} = \\beta_j\\]"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-3.html#cobb-douglas-demand-model-example",
+    "href": "teaching/ENCI707/slides/lec-3.html#cobb-douglas-demand-model-example",
+    "title": "Lecture 3 - Aggregate Demand Models",
+    "section": "Cobb-Douglas Demand Model: Example",
+    "text": "Cobb-Douglas Demand Model: Example"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-3.html#translog-demand-model",
+    "href": "teaching/ENCI707/slides/lec-3.html#translog-demand-model",
+    "title": "Lecture 3 - Aggregate Demand Models",
+    "section": "Translog Demand Model",
+    "text": "Translog Demand Model\n\nIndirect utility (various other forms also possible) \\[ln(V) = \\alpha_0 + \\sum_i \\alpha_i ln(p_i) + \\sum_i \\sum_{j \\ne i} (1/2)\\beta_{ij}ln(p_i)ln(p_j) \\\\ + \\sum_i \\gamma_i ln(Y_e)ln(p_i) + \\gamma_y ln(Y_e)\\]\n\\(p_i\\) & \\(p_j\\) are generalized costs for \\(i\\) & \\(j\\)\n\\(Y_e\\) is the generalized time-money budget\nRoy’s Identity \\[D_i = \\frac{\\partial V / \\partial p_i}{\\partial V / \\partial Y_e} = - \\frac{\\partial ln(V) / \\partial ln(p_i)}{\\partial ln(V) / \\partial ln(Y_e)}\\]\nResulting optimum demand \\[D_i^* = - \\frac{(1/p_i)(\\sum_i \\alpha_i + \\sum_{j \\ne i} \\beta_{ij}ln(p_j) + \\gamma_i Y_e}{(1/Y_e)(\\sum_{j \\ne i}\\gamma_j ln(p_j) + \\gamma_y)}\\]"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-3.html#translog-demand-model-1",
+    "href": "teaching/ENCI707/slides/lec-3.html#translog-demand-model-1",
+    "title": "Lecture 3 - Aggregate Demand Models",
+    "section": "Translog Demand Model",
+    "text": "Translog Demand Model\n\nEmpirical model: observed demand (\\(x_i\\)) for alternative consumption \\(i\\) follows\n\nLognormal distribution\nCount variable distribution\nOther feasible distribution\n\nFollowing optimal demand \\(D_i\\) as the latent variable\n\\(x_i\\) follows a parametric distribution with mean value as \\(D_i\\)\n\n\\(x_i \\sim\\) Poisson(mean = \\(D_i\\))\n\\(x_i \\sim\\) Negative Binomial(mean = \\(D_i\\))\n\\(x_i \\sim\\) Lognormal(mean = \\(D_i\\))"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-3.html#translog-demand-model-example",
+    "href": "teaching/ENCI707/slides/lec-3.html#translog-demand-model-example",
+    "title": "Lecture 3 - Aggregate Demand Models",
+    "section": "Translog Demand Model: Example",
+    "text": "Translog Demand Model: Example\n\n\n \n\n\nUsed TransLog indirect utility and Roy’s identity to model trip generation\nObserved trip generation is considered to follow count variable regression\nDifferent measures of effective price of making trips and effective budget constraints are tested in two papers\nMicroeconomic rigour of the model allows one to perform welfare analysis using the trip generation model"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-3.html#translog-demand-model-example-1",
+    "href": "teaching/ENCI707/slides/lec-3.html#translog-demand-model-example-1",
+    "title": "Lecture 3 - Aggregate Demand Models",
+    "section": "Translog Demand Model: Example",
+    "text": "Translog Demand Model: Example"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-3.html#aggregate-logit-model",
+    "href": "teaching/ENCI707/slides/lec-3.html#aggregate-logit-model",
+    "title": "Lecture 3 - Aggregate Demand Models",
+    "section": "Aggregate Logit Model",
+    "text": "Aggregate Logit Model\n\nAggregate logit model: model of market shares \\[D_A = \\text{Total demand for alternative A}\\] \\[D_B = \\text{Total demand for alternative B}\\] \\[D_C = \\text{Total demand for alternative C}\\] \\[V_A = \\text{Ratio of total demand for A} = D_A/(D_A+D_B+D_C)\\] \\[V_B = \\text{Ratio of total demand for B} = D_B/(D_A+D_B+D_C)\\] \\[V_C = \\text{Ratio of total demand for C} = D_C/(D_A+D_B+D_C)\\]\nConsidering an alternative, \\(A\\), as the reference & using Cobb-Douglas log form \\[ln(V_B/V_A) = \\beta_{0BA} + \\sum_{i=1}^n \\beta_{iBA}ln(x_{iB}/x_{iA}) + \\sum_{j=1}^n \\gamma_{jB}y_j + \\epsilon_{BA} \\text{ or}\\] \\[ln(V_B/V_A) = \\beta_{0BA} + \\sum_{i=1}^n \\beta_{iBA}(x_{iB} - x_{iA}) + \\sum_{j=1}^n \\gamma_{jB}y_j + \\epsilon_{BA}\\]"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-3.html#agregate-logit-model",
+    "href": "teaching/ENCI707/slides/lec-3.html#agregate-logit-model",
+    "title": "Lecture 3 - Aggregate Demand Models",
+    "section": "Agregate Logit Model",
+    "text": "Agregate Logit Model\n\nSimilarly for alternative \\(C\\) \\[ln(V_C/V_A) = \\beta_{0CA} + \\sum_{i=1}^n \\beta_{iCA}ln(x_{iC}/x_{iA}) + \\sum_{j=1}^n \\gamma_{jB}y_j + \\epsilon_{BA} \\text{ or}\\] \\[ln(V_B/V_A) = \\beta_{0CA} + \\sum_{i=1}^n \\beta_{iBA}(x_{iC} - x_{iA}) + \\sum_{j=1}^n \\gamma_{jC}y_j + \\epsilon_{CA}\\]\nCan be estimated as linear regression model for a set of observed shares and corresponding variable values.\nIssues:\n\nNo underlying behavioural theory\nDifferent elasticity results from different functional forms (ratio or difference of price/cost variable)"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-3.html#lagged-effects-in-aggregate-models-example",
+    "href": "teaching/ENCI707/slides/lec-3.html#lagged-effects-in-aggregate-models-example",
+    "title": "Lecture 3 - Aggregate Demand Models",
+    "section": "Lagged Effects in Aggregate Models: Example",
+    "text": "Lagged Effects in Aggregate Models: Example\n \n\n\n\n\nENCI707 Home"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-5.html#outline",
