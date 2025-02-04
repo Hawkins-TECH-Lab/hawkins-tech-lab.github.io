@@ -1,0 +1,152 @@
+
+---
+title: "Our Grand Omaha to Calgary Trip"
+description: ""
+author:
+  - name: Jason Hawkins
+date: "2025-01-16"
+categories: [travel, infrastructure]
+image: banner.jpg
+format: 
+  html:
+    toc: true
+---
+
+# Overview
+In 2024, I received an offer to return to Canada and join the faculty at the Univerity of Calgary. My partner and I both did our degrees at the University of Calgary and love western Canada, so we were excited to return. The University very generously covered the cost of our relocation, including both household goods and a good portion of our trip back with our vehicle. 
+
+Would I recommend driving a Chevrolet Bolt 2,500 km with two small kids and a trunk full of suitcases and food? It depends on your kids and personal fortitude. My children are amazing roadtrip buddies. You also need to accept that you are not going to get anywhere fast. We spread our trip out over about a week. It also requires a lot of planning, particularly when you are driving through the US Midwest, which is not known for its extensive network of public charging stations. The 2023 Chevrolet Bolt also has a limit of 50kW on its charging rate - lots of fun getting to an ultra fast 350 kW station and maxing out at about 45 kW.
+
+## Route
+Our route was partially determined by the location of charging stations and partially by landmarks along the way. We knew we wanted to see Mount Rushmore and stop at Waterton Lakes National Park when we crossed into Canada.
+
+![Route map](trip-map.png)
+
+## Charging
+To understand long-distance travel by EV, one needs a basic knowledge of the charging technology. The Society of Automotive Engineers (SAE) defines three levels, but they vary widely in their power - i.e., speed. Power is simply a measure of how much energy a charger can deliver in a given time. It's usually measured in kW, or thousands of Joules of energy per second.
+
+**Level 1** is the lowest charging level. It's what you get with a typical 120V outlet. Basically, you are charging your car with the power of a hairdryer. A typical Level 1 charger will deliver about 1.2-2.4 kW, which translates to about 5 km of range per hour of charging. It is slow! We have a Level 1 charger at home, which works fine for our minimal driving needs.
+
+**Level 2** is the middle of the road charger that many people install in their homes. It operates at 240V. Keeping the air dryer analogy going, if a Level 1 charger is a hair dryer then Level 2 is a clothing dryer. It'll give you about 20-52 km of driving range per hour of charging. These are great overnight charging options if you drive a lot, but they are still a bit slow for long-distance trips. However, they're often cheap (or free) to use and widely available. Campgrounds are also starting to provide Level 2 service through their RV power supply units.
+
+**Level 3 or DCFC** is the quickest option. Depending on the station, these can provide 50-500 kW of power. Note that some vehicles (e.g., our Chevrolet Bolt with a limit of 50 kW) cannot make full use of DCFC. Most stations we saw on our drive were 250-350 kW units. DCFC stations will charge most vehicles from empty in about 30-45 minutes, though the time is decreasing and you probably don't want to arrive at a station with less than 20 percent charge.   
+
+# Day 1: Omaha, NE to Sioux Falls, SD
+Our first day was a hectic. The movers arrived in the morning and we needed to be in Sioux Falls, SD by that evening to be on track. Unfortunately, the movers were not the best planners. They ran out of boxes midday and we had to wait around for several hours for a resupply. With a plan to be out of town by 3PM at the latest, we left Omaha at 4PM after cleaning up the mess around the house.
+
+The drive from Omaha to Sioux Falls was fairly uneventful. We passed through Iowa and arrived after dark. We left Omaha with 90\% charge and arrived at our hotel with 25\% charge. The first night was a series of hard lessons though. Public charging stations remain a *wild west*. You need half a dozen different apps on your phone to be ready to charge at any station along your route. On the topic of charging, **make sure your phone is charged!** Navigating to a charging station in the dark and rain with minimal vehicle charge **and** a phone on its last bit of juice is not a good combination. I used a DCFC managed by EV Connect on the other side of town from our hotel. We went back and forth by text message, with me at the charging station and my partner at the hotel with the kids, trying to sort out how to start the session when she had the EV Connect app on her phone (we had to split the apps between our phones because neither of us had sufficient space to install all the apps on our phone and maintain space for photos along the route).
+
+Once we sorted out the charging logististics, it was a nice experience. I sat in an auto dealership parking lot and listened to the radio - again, no phone charge. It was the week of the Democratic National Convention and the Obamas were center stage that night. What a one-two punch of speeches! Unfortunately, as we now know in hindsight, my family was on the run from a spray tanned President who would throw Canada into tarriff threat-induced chaos. At the time, we fell peacefully fast asleep after a very long first day of travel home.
+
+# Day 2: Sioux Falls, SD to Rapid City, SD
+We stayed in Sioux Falls for a bit the next morning. After charging the previous night, we had an 81\% charge and wanted to get a bit more range before leaving town for a full day of driving. We explored the riverfront and walked to the eponymous falls, while our car got a slowish charge from a Level 2 ChargePoint station. The falls did not disappoint. For context, we lived in Toronto during my Ph.D., so Niagara Falls was a weekend trip. That is to say, the falls are an impressive sight even for Canadians accustomed to great natural wonders. They are a swirling and bubbling mass, with massive red-brown rocky outcroppings.
+
+![Charger](IMG_20240821_080222366_HDR.jpg)
+
+As I said, they are impressive falls and well worth a visit if you are in the area.
+
+![Falls](IMG_20240821_082710772_HDR.jpg)
+
+Walking through downtown afterwards, I got the feeling that the city took advantage of its local resources as many buildings are built of the same stone.
+
+![Sioux Falls Building](IMG_20240821_084540966_HDR.jpg)
+
+A common thread in our drive across South Dakota was the many signs for Wall Drugs. The signs actually started the previous day on I-29 driving north through Iowa, but we didn't start recording them until the second day. It was a classic midcontinental roadtrip experience. There isn't much civilization or reason to stop, so businesses work very hard to draw you in. Wall Drugs is the best I have seen. It seemed every sign had a new attration available for your viewing pleasure - food, coffee, a splashpad, dinosaurs, and a petting zoo (I made the last one up because I couldn't recall all the attractions. I had to confirm online there isn't one because it would not surprise me to find out they have the second largest zoo in the region, after Omaha.). A small drug store, purchased in 1931 by Ted Hustead and expanded into a 76,000 square foot tourist attraction on the way to Mount Rushmore. We aren't big fans of trinkets and tchotchke so didn't stay long, but if that is your scene then all power to you and enjoy the wonders of Wall Drugs!
+
+![Wall Drugs](IMG_20240821_093857479_HDR.jpg)
+
+![Wall Drugs](IMG_20240821_094755704.jpg)
+
+We stopped to charge in Mitchell, SD and I took a meeting by Zoom.
+
+![Charger](IMG_20240821_102839285_HDR.jpg)
+
+We stopped again in Chamberlain, SD to charge and went to Subway. We didn't get a good picture of it, but the hill to Missouri River is quite impressive. Don't believe the stories that there is no topography in the Midwest. It's there if you look for it.
+
+![Charger](IMG_20240821_125804423_HDR.jpg)
+
+Wall drugs!!!
+
+![Wall Drugs](IMG_20240821_135709140.jpg)
+
+Don't forget... stop at Wall Drugs for their many attractions.
+
+![Wall Drugs](IMG_20240821_141722421.jpg)
+
+Don't just see wall drugs - go to the Firehouse Brewery in Rapid City. Though their advertising campaign was slightly less extensive, the Firehouse Brewery also has quite a few fun signs along I-90.
+
+![Brewery](IMG_20240821_141746252.jpg)
+
+We went back and forth with this truck all day. It looked like they were transporting a wind turbine tower (or a section of a NASA rocket). 
+
+![Truck](IMG_20240821_145635153_HDR.jpg)
+
+My partner and I had heard mixed reviews about Mount Rushmore. Some people said that it is not as big as you expect. We mostly knew it from Hitchcock's North by Northwest. It is a nice drive through the Black Hills to the entrance road, though steep and winding so make sure you have plenty of charge. The National Park Service has a smooth operation - parking attendants and a large concrete parkade rising out of the forest. First, thank you for the free charging stations at the monument. Second, Mount Rushmore is an impressive sight. We spend some time at the monument and had dinner at the cafe - standard hot dogs and hamburgers.
+
+![Rushmore](IMG_20240821_174714502.jpg)
+
+We did not have a charging station at our hotel in Rapid City, but there was a Level 2 charger at the office of the local utility (Black Hills Electric) across the street - i.e., across the freeway. It was well maintained and available upon arrival.
+
+# Day 3: Rapid City, SD to Billings, MT
+The next day, we left for Montana via Wyoming with a 100\% charge. Our route was slightly altered by the ubiqituous wildfires of summer, so we were happy to have a full charge.
+
+![Wyoming sign](IMG_20240822_082335349_HDR.jpg)
+
+We stopped in Gillette, WY to charge and get some groceries. We also re-planned our route to bypass the wildfires on I-90 near Buffalo, WY.
+
+![Charger](IMG_20240822_102557399_HDR.jpg)
+
+I'll pause to note the changing landscapes on a long-distance trip. We passed through prairie and badlands, mountains and dunes. While long-distance drives inevitably have their moments of monotony, it is hard not to be struck by the beauty and diversity of this planet. As a civil engineer, I noticed another type of beauty - the many hues of pavement as local mineral compositions changed over our drive. Greys, changed to reds, then blacks as we traversed South Dakota and Wyoming. It is a reminder of how the uniformity and standards of engineering cannot overcome natural diversity.
+
+![Landscape](IMG_20240822_104312292_HDR.jpg)
+
+Having made it safely past the wildfires, we were relieved to stop in Sheridan, WY for a charge and a surprisingly nice lunch from the local gas station.
+
+![Charger](IMG_20240822_123905524_HDR.jpg)
+
+Crossing into Montana, we decided to stop at the site of the Battle of Little Bighorn. I had read the account of events in "Bury My Heart at Wounded Knee" a few months prior and was interested in visiting the site. We moved to the US during a period of change in Indigenous relations in Canada following the Truth and Reconciliation reporting. While Canada still has a long way to go on the path to reconciliation, we knew that the US was still behind in this process. However, we were unprepared for the extent of the gap in reconciliation. The below image is taken from the cemetary and memorial site managed by the federal National Park Service. In fairness, the language on the website for the site suggests the NPS is moving the right direction. With this concession, we were shocked by the language in the plaque. To frame the scene as American soldiers "clearing the land of hostile Indians" is problematic on multiple fronts, a full descrption of which would distract us from the goals of this summary of an otherwise uneventful roadtrip. Our conversation with a guide from the surrounding Crow Reservation provides the best response - "You can't fix stupid...I'm still here".
+
+![Plaque](cluster-last-stand.jpg)
+
+Unpictured: we stopped at the Target upon arrival in Billings, MT to charge for the night because our hotel did not have a nearby charging option. We also went for dinner and continued our charging session at a nearby parkade.
+
+# Day 4: Billings, MT to Grand Falls, MT
+
+From Billings, we drove north and stopped at a playground in Harlowton, MT for some decompression and charging. There were no public charging stations through this section of our trip. Fortunately, a campground offered charging at their RV plugins (220V - Level 2) for a \$5 fee.
+
+![Charger](IMG_20240823_130147196.jpg)
+
+We had a lovely drive through the rolling hills of Montana leading to our final US stop - Great Falls, MT. Our hotel had a Level 2 charger and we had a nice evening in the rain.
+
+![Charger](IMG_20240823_160248399.jpg)
+
+# Day 5: Great Falls, MT to Waterton Lakes, AB
+
+We were relieved to cross the Sweetwater, MT-Coutts, AB border crosing into Canada! The change was fairly immediate. We stopped at a flo station in Milk River, AB. It was a DCFC sponsored by ATCO Gas a consortium of regional and federal government agencies.
+
+![Charger](IMG_20240824_122244992_HDR.jpg)
+
+I decided to take a picture of the instructions and sponsor text. Note the clear charging instructions, wayfinding map, and "Kumbaya" collaboration of various groups to make a network happen. As the saying goes, "we are not in Kansas (Nebraska) anymore". I remain hopeful that Canada will not lose this culture of collaboration in the wilderness, but we will see how various events turn out over the coming months. 
+
+![Charger](IMG_20240824_122254856.jpg)
+
+We had a great view from this charger in Waterton Lakes, AB. Unfornately, I made the mistake of leaving our vehicle parked overnight and paying the parking charge after reaching 100\% charge. My partner and I have fond memories of visiting Waterton Lakes pre-children when we were dating and living together in Calgary. We took our kids around the park to re-create various memories because we are cheesy people.
+
+![Charger](IMG_20240824_145938456_HDR.jpg)
+
+
+# Day 6: Waterton Lakes, AB
+
+Did I mention how great it felt to be home in Canada! We spent a couple days at the park relaxing after our long drive north.
+
+![Landscape](IMG_20240825_102600747_HDR.jpg)
+
+
+# Day 7: Waterton Lakes, AB to Calgary, AB
+After some much needed relaxation, we continued our journey north to Calgary. What better way to return home than a trip to IKEA. Nebraska has no IKEA store, partially because Warren Buffett's Nebraska Furniture Mart is a local substitute. NFM is great, but we did miss our Swedish meatballs and lingonberry drink. The many charging stations (both free and paid), as well as free daycare, make IKEA a great destination for the EV-owning family. Disclaimer: I work for the University of Calgary and am not paid by IKEA. I just really like the place.
+
+
+![Charger](IMG_20240826_155500948_HDR.jpg)
+
+# Conclusion
+We could have flown from Omaha to Calgary (via Denver) in a single day. It would have been shorter and may have been lower stress than the anxiety of driving an EV through "middle America/Canada". I don't think regret for a minute taking advantage of the opportunity to spend a bit of dedicated family time and see a parts of America that I won't see on the academic conference circuit. I can now tell colleagues, from personal experience, that you can indeed have a successful roadtrip in an electric car. Mount Rushmore is worth a visit. People are basically good no matter where you go. However, there is no place like home.

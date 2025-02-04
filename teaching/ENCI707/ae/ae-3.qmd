@@ -1,5 +1,5 @@
 ---
-title: "Active Exercise 3 - Surveys"
+title: "Application Exercise 3 - Surveys"
 sidebar: ENCI707
 ---
 
@@ -9,7 +9,7 @@ This application exercise should be submitted via D2L by end of the day on which
 
 Your task is to develop a stated preference experiment for a demand problem. The survey may focus on any problem, not limited to engineering. Your answer must contain the following information.
 
-    1. What is the choice variable?
-    2. What are the alternatives? How did you arrive at these alternatives?
-    3. What are the attributes associated with each alternative? How did you arrive at these attributes?
-    4. What are the attribute levels associated with each alternative? You do not need to conduct external research to arrive at the levels, but you should provide some intuition and justification for your choices.
+1. What is the choice variable?
+2. What are the alternatives? How did you arrive at these alternatives?
+3. What are the attributes associated with each alternative? How did you arrive at these attributes?
+4. What are the attribute levels associated with each alternative? You do not need to conduct external research to arrive at the levels, but you should provide some intuition and justification for your choices.

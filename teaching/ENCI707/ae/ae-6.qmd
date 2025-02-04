@@ -1,5 +1,5 @@
 ---
-title: "Active Exercise 6 - Policy Case Study II"
+title: "Application Exercise 6 - Policy Case Study II"
 sidebar: ENCI707
 ---
 
@@ -10,7 +10,7 @@ This application exercise should be submitted via D2L by end of the day on which
 
 Your task is to find three policy stories in the news. The policies may be related to engineering infrastructure, but they may also be related to any other topic of interest to you. In one paragraph for each news story, please provide a summary of the problem. When formulating your summary statement, you should consider the following questions:
 
-    1. Does the problem relate to individuals, businesses, some other group, or a combination of groups?
-    2. Is the problem relevant to local, provincial/state, national, or trans-national governance?
-    3. Is the problem technical, political, social, ethical, or some combination thereof?
+1. Does the problem relate to individuals, businesses, some other group, or a combination of groups?
+2. Is the problem relevant to local, provincial/state, national, or trans-national governance?
+3. Is the problem technical, political, social, ethical, or some combination thereof?
 

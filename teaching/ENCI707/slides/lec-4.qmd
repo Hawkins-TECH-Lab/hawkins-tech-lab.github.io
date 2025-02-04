@@ -1,5 +1,5 @@
 ---
-title: "Lecture 4 - Disaggregate Demand Models"
+title: "Lecture 3 - Aggregate Demand Models"
 subtitle: "ENCI707: Engineering Demand and Policy Analysis"
 footer:  "[ENCI707 Home](/teaching/ENCI707/)"
 logo: "../images/logo.png"

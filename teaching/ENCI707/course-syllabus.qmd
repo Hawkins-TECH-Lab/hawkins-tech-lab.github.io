@@ -6,8 +6,8 @@ title: "Syllabus"
 
 |           | Day       | Time              | Location                       |
 |-----------|-----------|-------------------|--------------------------------|
-| Lectures  | Mon/Wed | 1:30 pm - 2:45 pm | PKI 164 (Omaha)      |
-| Office hours  | Wed | 1:30 pm - 2:45 pm | ENF284      |
+| Lectures  | Wed | 2:00 pm - 4:45 pm | ENF 304     |
+| Office hours  | Mon | 2:00 pm - 4:00 pm | ENF284      |
 
 **Prerequisites:** A basic knowledge of statistics and coding in either R or Python. \
 **Description:** ENCI 707 is graduate-level course covering the estimation and application of econometric models. This course deals with the quantitative analysis and modeling of demand for civil engineering planning and policy analysis. Students will gain an understanding of the theories and models of demand based on basic microeconomic concepts of consumer behaviour. The theory covered in this course is applicable to transportation demand, environmental resource valuation, and any other consumer behaviour context. An overview will be given of data challenges and methods of survey design. The course will focus on two main topic areas: (1) econometric model theory and estimation and (2) experimental design for policy analysis. \
@@ -16,7 +16,7 @@ Credit Hours: 3
 ### Instructor:
 Dr. Jason Hawkins \
 ENF284 \
-402-472-0529 | Email me through the course D2L messenger system
+Email me through the course D2L messenger system
 
 ## Learning objectives
 
@@ -34,19 +34,21 @@ No textbook is required for this course. Students will require access to a compu
 While there is no official textbook for the course, there are many excellent references (I have a physical or digital copy of most of these books and can loan them to students for the term). These sources provide different levels of detail and use various mathematical notation. I leave it up to each of you which resource best suits you.
 
 ## Discrete choice modeling
--	Discrete Choice Methods with Simulation by Train (pdf freely available at https://eml.berkeley.edu/books/choice2.html) provides a good coverage of discrete choice methods.
--	Discrete Choice Analysis by Ben-Akiva and Lerman provides a technical and in-depth treatment of fundamental discrete choice theory.
--	A Self Instructing Course in Mode Choice Modeling: Multinomial and Nested Logit Models (pdf freely available at https://www.caee.utexas.edu/prof/bhat/COURSES/LM_Draft_060131Final-060630.pdf) by Koppelman and Bhat provides a good overview of discrete choice models for the practitioner.
--	Modelling Transport by Ortuzar and Willumsen covers discrete choice models in chapters 7-9. It also gives a good overview of activity-based models and other features of transportation planning. 
--	Some chapters of Statistical and Econometric Methods for Transportation Data Analysis by Washington, Karlaftis, Mannering, an Anastasopoulos.
--	Applied Choice Analysis: A Primer by Hensher, Rose, and Greene.
+-	"Discrete Choice Methods with Simulation" by Train (pdf freely available at https://eml.berkeley.edu/books/choice2.html) provides a good coverage of discrete choice methods.
+-	"Discrete Choice Analysis" by Ben-Akiva and Lerman provides a technical and in-depth treatment of fundamental discrete choice theory.
+-	"A Self Instructing Course in Mode Choice Modeling: Multinomial and Nested Logit Models" (pdf freely available at https://www.caee.utexas.edu/prof/bhat/COURSES/LM_Draft_060131Final-060630.pdf) by Koppelman and Bhat provides a good overview of discrete choice models for the practitioner.
+-	"Modelling Transport" by Ortuzar and Willumsen covers discrete choice models in chapters 7-9. It also gives a good overview of activity-based models and other features of transportation planning. 
+-	Some chapters of "Statistical and Econometric Methods for Transportation Data Analysis" by Washington, Karlaftis, Mannering, an Anastasopoulos.
+-	"Applied Choice Analysis: A Primer" by Hensher, Rose, and Greene.
+
 ## Statistics
--	Some chapters of Statistical and Econometric Methods for Transportation Data Analysis by Washington, Karlaftis, Mannering, an Anastasopoulos.
--	Econometric Analysis by Greene gives a technical treatment of statistics and econometrics.
--	Regression and Other Stories by Gelman, Hill, and Vehtari covers statistics and causal inference.
--	Geographic Data Science by Rey, Arribas-Bel, and Wolf covers geographic data science and spatial econometrics - https://geographicdata.science/book/intro.html
-## Survey Methods
--	Sampling: Design and Analysis by Lohr is a classic textbook on this topic.
+-	Some chapters of "Statistical and Econometric Methods for Transportation Data Analysis" by Washington, Karlaftis, Mannering, an Anastasopoulos.
+-	"Econometric Analysis" by Greene gives a technical treatment of statistics and econometrics.
+-	"Regression and Other Stories" by Gelman, Hill, and Vehtari covers statistics and causal inference.
+-	"Geographic Data Science" by Rey, Arribas-Bel, and Wolf covers geographic data science and spatial econometrics - https://geographicdata.science/book/intro.html
+
+## Survey methods
+-	"Sampling: Design and Analysis" by Lohr is a classic textbook on this topic.
 
 # Course Website
 I find course management software inflexible and painful tools. As such, aside from announcements and assignment submissions, all course content will be made available on my research website: https://hawkins-tech-lab.github.io/teaching/ENCI707/
@@ -71,8 +73,7 @@ The final course grade will be calculated as follows:
 
 | Category              | Percentage      |
 |-----------------------|-----------------|
-| Pre-class quizzes     | 5%              |
-| Application exercises | 5%              |
+| Application exercises | 10%              |
 | Group assignments     | 15% (5% x 3)    |
 | Project proposal      | 15%             |
 | Project literature review  | 15%        |
@@ -103,11 +104,11 @@ You will be assigned to groups at the beginning of the semester to complete seve
 
 ### Application exercises
 
-Parts of some lectures will be dedicated to working on Application Exercises (AEs). These exercises which give you an opportunity to practice applying the transportation planning concepts and code introduced in the readings and lectures. These AEs are due within two days of the corresponding lecture period. Specifically, AEs from Monday lectures are due Wednesday by 11:59 pm CT, and AEs from Wednesday lectures are due Friday by 11:59 pm CT. These exercises are marked as complete/incomplete.
+Parts of some lectures will be dedicated to working on Application Exercises (AEs). These exercises which give you an opportunity to practice applying the transportation planning concepts and code introduced in the readings and lectures. These AEs are due by midnight on the day of the corresponding lecture period. These exercises are marked as complete/incomplete.
 
-### Pre-lecture quizzes
+### Pre-lecture content
 
-Prior to most lectures, you will be asked to complete a set of readings and/or videos. A quiz is associated with each of these pre-lecture activities. You must complete the quiz prior to lecture. These quiizes are marked as complete/incomplete, with the objective of ensuring you arrive at lecture prepared with questions.
+Prior to most lectures, you will be asked to complete a set of readings and/or videos. Reviewing these resources will help you come prepared to lecture.
 
 ### Exams
 

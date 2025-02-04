@@ -4,15 +4,15 @@ title: "Project description"
 
 ## Timeline
 
-[Topic ideas](#topic-ideas) due Fri, Jan 17
+[Topic ideas](#topic-ideas) due Wed, Jan 22
 
 [Proposal](#project-proposal) due Fri, Jan 31
 
 [Literature review](#lit-review) due Fri, Feb 21
 
-[Draft data and experimental design plan](#draft-plan) due Fri, Mar 21
+[Draft data and experimental design plan](#plan) due Fri, Mar 21
 
-[Final data and experimental design plan](#final-plan) due Fri, Apr 18
+[Final data and experimental design plan](#plan) due Fri, Apr 18
 
 ## Introduction
 
@@ -30,44 +30,9 @@ The final deliverables for the term project is a detailed proposal. If intereste
 
 ## Topic ideas {#topic-ideas}
 
-Identify 2-3 data sets you're interested in potentially using for the term project.
-If you're unsure where to find data, you can use the list of potential data sources in the [Tips + Resources](#tips--resources) section as a starting point.
-It may also help to think of topics you're interested in investigating and find data sets on those topics.
+Identify 2-3 data sets you're interested in potentially using for the term project. We will discuss some datasets in class if you are unsure where to start. It may also help to think of topics you're interested in investigating and find datasets on those topics.
 
 The purpose of submitting project ideas is to give you time to find data for the project and to make sure there are datasets available that can help you be successful in the project.
-**Therefore, you must use one of the data sets submitted as a topic idea, unless otherwise notified to the course instructor.**
-
-The data sets should meet the following criteria:
-
--   At least 500 observations
-
--   At least 10 columns
-
--   At least 6 of the columns must be useful and unique predictor variables.
-
-    -   If you have multiple columns with the same information (e.g. "state abbreviation" and "state name"), then they are not unique predictors.
-
--   At least one variable that can be identified as a reasonable response variable.
-
-    -   The response variable can be quantitative or categorical.
-
--   A mix of quantitative and categorical variables that can be used as predictors.
-
--   You may not use data that has previously been used in any course materials, or any derivation of data that has been used in course materials.
-
-**Please ask the course instructor if you're unsure whether your data set meets the criteria.**
-
-For each data set, include the following:
-
-#### Introduction and data
-
--   State the source of the data set
--   Describe when and how it was originally collected (by the original data curator, not necessarily how you found the data)
--   Describe the observations and the general characteristics being measured in the data
-
-#### Research question
-
--   Describe a research question you're interested in answering using this data.
 
 ## Project proposal {#project-proposal}
 
@@ -140,7 +105,7 @@ This section should focus on the main themes in your field of study. Has your re
 
 In this section, you will identify how your proposed research contributes to the existing literature. Do you propose a new method? Will you make use of a new dataset that facilates more detailed or new analysis?
 
-## Draft data and experimental design plan {#draft-plan}
+## Data and experimental design plan {#plan}
 
 The draft data and experimental design plan submission is an opportunity to receive feedback on your work prior to final submission. While it is a **draft**, I expect high quality and thorough submissions at this stage. I will provide detailed feedback and schedule a time for a review discussion.
 

@@ -1,5 +1,5 @@
 ---
-title: "Active Exercise 11 - Causal Inference"
+title: "Application Exercise 11 - Causal Inference"
 sidebar: CIVE461
 ---
 

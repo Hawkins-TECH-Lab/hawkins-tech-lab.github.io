@@ -1,5 +1,5 @@
 ---
-title: "Active Exercise 12 - Spatial Exploration"
+title: "Application Exercise 12 - Spatial Exploration"
 sidebar: CIVE461
 ---
 

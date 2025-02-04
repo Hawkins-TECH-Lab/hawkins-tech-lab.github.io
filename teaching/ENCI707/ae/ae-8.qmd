@@ -1,5 +1,5 @@
 ---
-title: "Active Exercise 8 - Computing Models"
+title: "Application Exercise 8 - Computing Models"
 sidebar: CIVE461
 ---
 
@@ -8,5 +8,6 @@ This application exercise should be submitted via D2L by end of the day on which
 :::
 
 Please submit your Jupyter notebooks created during lecture. Your submission should be a html file displaying the outputs from running the code. The following notebooks should be included in this submission:
-    1) regressionDataAnalysis.html
-    2) logitModelling-Biogeme.html
+
+1. regressionDataAnalysis.html
+2. logitModelling-Biogeme.html

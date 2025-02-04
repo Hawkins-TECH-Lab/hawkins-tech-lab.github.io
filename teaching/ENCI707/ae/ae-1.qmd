@@ -1,5 +1,5 @@
 ---
-title: "Active Exercise 1 - Demand Analysis"
+title: "Application Exercise 1 - Demand Analysis"
 sidebar: ENCI707
 ---
 

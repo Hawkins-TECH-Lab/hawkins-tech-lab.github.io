@@ -33,12 +33,12 @@ execute:
 - **Observation unit**: basic unit of measurement. In human populations, it is often individuals.​
 - **Target population**: The complete set of observations we want to study. E.g., university students, seniors, or adults with a driver’s license.​
 - **Sample**: A subset of the population.​
-- **Sampled population**: The collection of all possible observation units that might have been chosen in a sample. E.g., United States or Nebraska.​
+- **Sampled population**: The collection of all possible observation units that might have been chosen in a sample. E.g., Canada or Alberta.​
 - **Sampling unit**: A unit that can be selected from a sample. Often, we are interested in individuals but sample households.​
 - **Sampling frame**: A list, map, or other specification of sampling units in the population from which the sample may be chosen. E.g., all residential telephone numbers in a city.​
 
 ## Requirements of a Good Survey {.smaller}
-- **Representative: does the sample represent the **population of interest**?
+- **Representative:** does the sample represent the **population of interest**?
 - **Example** Target vs. sample population for a telephone survey of likely voters
   - Not all households have telephones: as of 2021 93.9% of Canadian households had cellphones & 47.4% had a landline
   - Not all **households with telephones** are eligible to vote
@@ -221,7 +221,7 @@ $$n = \frac{z_{\alpha/2}^2 S^2}{e^2+\frac{z_{\alpha/2}^2 S^2}{N}}$$
 | Form of observed choice behaviour             | Actual 'compromise' choice with real-world constraints                                                                                                              | Potentially concerns 'preferences' rather than 'compromise' choice as hypothetical context can be used to remove real-world constraints                   | Relates to purpose of survey           |
 | Establishing values for explantory variables  | Engineering values expensive to establish; stated values inexpensive but potentially distorted by faulty perceptions and ex-post justification                      | Presented vlaues inexpensive and unambiguous                                                                                                              | Advantage with SP                      |
 | Correlation structure in estimation data      | Correlation structure uncontrolled; analyst must accept potentially high correlations among explanatory variables & deal with impacts on correlations in estimation | Correlation structure controllable; analyst can dictate correlations among explanatory variables & avoid high correlations in estimation                  | Why SP used                            |
-| Expalanation of causal-behavoural connections | Indirect reliance on correlations between observed behaviour & engineering values                                                                                   | Direct in that respondents are asked to react to indicated attribute values                                                                               | Not an issue in SP with careful design |
+| Explanation of causal-behavoural connections | Indirect reliance on correlations between observed behaviour & engineering values                                                                                   | Direct in that respondents are asked to react to indicated attribute values                                                                               | Not an issue in SP with careful design |
 | Flexibility                                   | Limited to real-world contexts                                                                                                                                      | Not limited to real-world contexts but validity increasingly questionable as context becomes less familiar; ability to consider non-existing alternatives | Why SP used                            |
 | Transferability                               | More limited as real-world conditions & context are tightly woven into observed behaviour                                                                           | Less limited as hypothetical context can be specified to be identical across implementations                                                              | Advantage with SP                      |
 | Speed of implementation                       | Can be slow depending on availability of engineering values for explanatory variables                                                                               | Relatively fast; opportunity to collect multiple responses from same respondent                                                                           | Advantage with SP                      |
@@ -230,17 +230,17 @@ $$n = \frac{z_{\alpha/2}^2 S^2}{e^2+\frac{z_{\alpha/2}^2 S^2}{N}}$$
 :::
 
 ## Stated Preference Methods {.smaller}
-- **Contigent Valuation** - CV
- - Explicit stated willingness-to-pay (WTP) information for policy or product
- - Cannot be used to disentangle WTP fro individual attributes
+- **Contingent Valuation** - CV
+  - Explicit stated willingness-to-pay (WTP) information for policy or product
+  - Cannot be used to disentangle WTP for individual attributes
 - **Conjoint Analysis**
- - Ranking/rating of alternatives
- - Can assign WTP to individual attributes
- - Ranking as dependent variable questionable because not interval scaled
- - Do respondents rank/rate alternatives in real-world?
+  - Ranking/rating of alternatives
+  - Can assign WTP to individual attributes
+  - Ranking as dependent variable questionable because not interval scaled
+  - Do respondents rank/rate alternatives in real-world?
 - **Stated choice (or preference)** - SP
- - Based on random utility theory
- - Our preferred approach in this class
+  - Based on random utility theory
+  - Our preferred approach in this class
 
 ## Stated Preference (SP) Experiment Components
 - **Alternatives**: person making choice between alternatives
@@ -264,14 +264,14 @@ $$n = \frac{z_{\alpha/2}^2 S^2}{e^2+\frac{z_{\alpha/2}^2 S^2}{N}}$$
 :::::
 
 ## SP Considerations 1
-- Will the experiment be **labelled** (i.e., alternative names have meaning beyond their ordering) or unlabelled?
+- Will the experiment be **labelled** (i.e., alternative names have meaning beyond their ordering) or **unlabelled**?
 - Will a **non-purchase or status quo** alternative be presented?
 - Will the outputs be used as inputs to another model – e.g., a network model does not allow for a comfort attribute so may not want to include it in experiment
 
 ## SP Considerations 2
 - Should not omit realistic alternatives a respondent might consider in practice – e.g., driver response to a new road pricing initiative
- - May consider alternative modes, but more likely you will change departure time or destination choice to avoid more expensive road tolls on that day
- - Do not want to place respondent in an unnecessarily unrealistic scenario
+  - May consider alternative modes, but more likely you will change departure time or destination choice to avoid more expensive road tolls on that day
+- Do not want to place respondent in an unnecessarily unrealistic scenario
 - Always do internal and external pilots!
 
 ## SP Experimental Design 1 {.smaller}
@@ -325,7 +325,7 @@ Consider a design with four attributes, where two have two levels, one has three
   - Can assume any model structure, not just MNL
 
 ## Experiment Design Processes 3
-- **D-efficient** named for use of scaled (by 1/K to account for number parameters) matrix determinant
+- **D-efficient** named for use of scaled (by 1/K to account for number of parameters) matrix determinant
 - **S-efficient** named for use of sample size provide theoretically minimum sample size to obtain asymptotically significant parameter estimates
 
 ## Experiment Design Processes 4 {.smaller}
@@ -368,15 +368,14 @@ $$𝑠𝑒_𝑁 (\theta)=\frac{𝑠𝑒_1 (\theta)}{\sqrt{N}}$$
   - Similarly, calculate travel costs based on supplemental per mile values
 
 ## Other Design Recommendations 1 {.smaller}
-- Focusing on specific rather than general behaviour; for example, respondents should be asked how they would respond to an alternative on a given occasion, rather than in general; the more abstract the question the less reliable the response
-- Using a realistic choice context, in particular one the respondents have had recent personal experience of (i.e. a pivot design).Retaining the constraints on choice required to make the context realistic; this usually means asking respondents to express preferences in respect of a very recent journey without relaxing any of its constraints: e.g. ‘if today you would prefer to use the car to visit your dentist in the evening directly from work, then retain this restriction in your choices’. Easing these constraints will just produce unrealistically elastic responses
-- Using existing (perceived) levels of attributes so that the options are built around existing experience
+- Focus on specific rather than general behaviour - e.g., respondents should be asked how they would respond to an alternative on a given occasion, rather than in general
+- Use realistic choice context - e.g., recent personal experience of (pivot design) 
+  - Retaining the constraints on choice required to make the context realistic - e.g., ‘if today you would prefer to use the car to visit your dentist in the evening directly from work, then retain this restriction in your choices’
+- Use existing (perceived) levels of attributes so that the options are built around existing experience
 
 ## Other Design Recommendations 2 {.smaller}
-- Using respondents’ perceptions of what is possible to limit the attribute values in the exercise. For example, in considering improved rail services, do not offer options where the station is closer to home than feasible.
-- Ensuring that all relevant attributes are included in the presentation; this is especially important if developing travel choice models and not just measuring the relative importance of different attributes.
-- Keeping the choice experiments as simple as possible, without overloading the respondent. Remember we respond to very complex choices in practice but we do so over a long period of time, acquiring experience about alternatives at our own pace and selecting the best for us. In an SP exercise these choices are compressed on a very short period of time and must, therefore, be suitably simplified.
-
-## Other Design Recommendations 3 {.smaller}
-- Allowing respondents to opt for a response outside the set of experimental alternatives. For example, in a mode choice exercise if all options become too unattractive the respondent may decide to change destination, time of travel, or not to travel at all; allow her a ‘will do something else’ alternative. If a computer-based interview is used, it could be programmed to branch then to another exercise exploring precisely these other options.
-- Making sure that all the options are clearly and unambiguously defined. This could be quite difficult when dealing with qualitative attributes like security or comfort; for example, do not express alternatives as ‘poor’ or ‘improved’ as this is too vague and prone to different interpretations by respondents. Describe instead what measures or facilities are involved in improving security or ride comfort (closed circuit TV in all stations/attendants present at all times, …, air-conditioning in all coaches as in InterCity trains).
+- Keep choice experiments simple - we respond to very complex choices in practice but do so over a long period of time
+- Allow respondents to opt for response outside set of experimental alternatives - e.g., in mode choice exercise, if all options become too unattractive respondent may decide to change destination, time of travel, or not to travel at all
+- Allow ‘will do something else’ alternative - could be programmed to branch to another exercise exploring precisely these other options
+- Make sure alternatives are clearly and unambiguously defined (difficult when dealing with qualitative attributes like security or comfort)
+  - E.g., do not express alternatives as ‘poor’ or ‘improved’, which are vague and prone to different interpretations by respondents - what measures or facilities, etc.).

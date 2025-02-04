@@ -1,0 +1,12 @@
+---
+title: "Example Datasets and Sources"
+format: html
+---
+
+- [Google Data Search Engine](https://datasetsearch.research.google.com/)
+- [Government of Canada open data portal](https://search.open.canada.ca/opendata/)
+- [Government of Alberta open data portal](https://open.alberta.ca/opendata)
+- [Government of Calgary open data portal](https://data.calgary.ca/)
+- [Statistics Canada](https://www150.statcan.gc.ca/n1/en/type/data)
+- [US Freight Analysis Framework](https://ops.fhwa.dot.gov/freight/freight_analysis/faf/)
+- [US National Household Travel Survey](https://nhts.ornl.gov/)

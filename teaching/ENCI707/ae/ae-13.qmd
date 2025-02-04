@@ -1,5 +1,5 @@
 ---
-title: "Active Exercise 13 - Spatial Regression"
+title: "Application Exercise 13 - Spatial Regression"
 sidebar: CIVE461
 ---
 

@@ -2,38 +2,45 @@
 title: "Aggregate Demand Model Assignment"
 ---
 
-## Introduction
+## Assignment description
+The objective of this assignment is to familiarize you with the estimation and analysis of transportation demand models. The assignment is due Feb. 28 by 11:59 PM on D2L. The assignment should be completed in groups of 2-3 persons. You may choose your own group. Your group does not need to be the same as prior assignments.
+
+The assignment comprises two model estimation tasks:
+1. Trip Generation Model
+A dataset of total quarterly ridership of a transit service along an intercity corridor is [available in MS Excel format](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/b114be6a8092f4184f264b88f8cf946727db9e67/assignment-data/TransitRidershipData.xlsx). Develop a direct demand model for total ridership per quarter for each of the two transit services (economy class and 1st class) along this corridor. Please investigate the role of lag demand in the model.
+For estimation, you can use any software (MS Excel should be fine).
+
+2. Ordered Probability Model
+A dataset of bicycle users’ perceptions of the bike system/facilities for a city is [available in MS Excel format](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/b114be6a8092f4184f264b88f8cf946727db9e67/assignment-data/CyclingPerceptionData.xlsx). Please investigate their perception of overall quality of biking in the city through estimation of an ordered probability (either logit or probit) model.
+For estimation, you can use any software (functions are available in R, Python, Stata, etc.).
+
+You may separate the two model tasks within your group or conduct all analyses as a group. All group members must contribute to the writing of the summary report.
+
+The report should include at least the following sections:
+- Introduce the objective(s) and parts of the work.
+- Present the model formulation and justification of independent variables for each model task.
+- Selection of the best model specification (select one) for each model task.
+- Discuss the elasticities of independent variables of the final models.
+
+The assignment deliverable should have the form of a professional report and should not be more than 10 pages (singles-spaced).
 
 ## Overall grading
 
 The grade breakdown is as follows:
 
-| Total                              | 100 pts |
+| Total                              | 25 pts  |
 |------------------------------------|---------|
-| **Topic ideas**                    | 5 pts   |
-| **Project proposal**               | 10 pts  |
-| **Peer review**                    | 10 pts  |
-| **Written report**                 | 40 pts  |
-| **Slides + video presentation**    | 20 pts  |
-| **Reproducibility + organization** | 5 pts   |
-| **Video comments**                 | 5 pts   |
-| **Peer teamwork evaluation**       | 5 pts   |
-
-*Note: No late project reports are accepted.*
+| **Introduction**                   | 5 pts   |
+| **Correct model interpretation**   | 10 pts  |
+| **Includes all required elements** | 5 pts   |
+| **Formatting and report quality**  | 10 pts  |
 
 ### Grading summary
 
-Grading of the project will take into account the following:
-
--   Content - What is the quality of research and/or policy question and relevancy of data to those questions?
--   Correctness - Are statistical procedures carried out and explained correctly?
--   Writing and Presentation - What is the quality of the statistical presentation, writing, and explanations?
--   Creativity and Critical Thought - Is the project carefully thought out? Are the limitations carefully considered? Does it appear that time and effort went into the planning and implementation of the project?
-
 A general breakdown of scoring is as follows:
 
--   *90%-100%*: Outstanding effort. Student understands how to apply all statistical concepts, can put the results into a cogent argument, can identify weaknesses in the argument, and can clearly communicate the results to others.
--   *80%-89%*: Good effort. Student understands most of the concepts, puts together an adequate argument, identifies some weaknesses of their argument, and communicates most results clearly to others.
--   *70%-79%*: Passing effort. Student has misunderstanding of concepts in several areas, has some trouble putting results together in a cogent argument, and communication of results is sometimes unclear.
--   *60%-69%*: Struggling effort. Student is making some effort, but has misunderstanding of many concepts and is unable to put together a cogent argument. Communication of results is unclear.
--   *Below 60%*: Student is not making a sufficient effort.
+-   *90%-100%*: Outstanding effort. Students understand how to apply all statistical concepts, can put the results into a cogent argument, can identify weaknesses in the argument, and can clearly communicate the results to others.
+-   *80%-89%*: Good effort. Students understand most of the concepts, put together an adequate argument, identify some weaknesses of their argument, and communicate most results clearly to others.
+-   *70%-79%*: Passing effort. Students have misunderstanding of concepts in several areas, have some trouble putting results together in a cogent argument, and communication of results is sometimes unclear.
+-   *60%-69%*: Struggling effort. Students are making some effort, but have misunderstanding of many concepts and are unable to put together a cogent argument. Communication of results is unclear.
+-   *Below 60%*: Students are not making a sufficient effort.

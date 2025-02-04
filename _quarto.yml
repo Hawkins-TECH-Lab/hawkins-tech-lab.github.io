@@ -2,6 +2,9 @@ project:
   type: website
   output-dir: docs
 
+editor:
+  render-on-save: true
+  
 website:
   title: "Hawkinslab"
   page-navigation: false
@@ -183,14 +186,16 @@ website:
           contents:
             - href: teaching/ENCI707/project/project-description.qmd
               text: "Description"
-            - href: teaching/ENCI707/project/project-feedback.qmd
-              text: "Feedback"
+            - href: teaching/ENCI707/project/data-sets.qmd
+              text: "Data sources"
         - section: "Assignments"
           contents:
-            - href: teaching/ENCI707/assignments/indiv_assignment1.qmd
+            - href: teaching/ENCI707/assignments/assignment-1.qmd
               text: "Assignment 1"
-            - href: teaching/ENCI707/assignments/indiv_assignment2.qmd
+            - href: teaching/ENCI707/assignments/assignment-2.qmd
               text: "Assignment 2"
+            - href: teaching/ENCI707/assignments/assignment-3.qmd
+              text: "Assignment 3"
         - section: "Application Exercises"
           contents:
             - href: teaching/ENCI707/ae/ae-1.qmd

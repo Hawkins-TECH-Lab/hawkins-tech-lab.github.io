@@ -1,5 +1,5 @@
 ---
-title: "Active Exercise 9 - Disaggregate Demand"
+title: "Application Exercise 9 - Disaggregate Demand"
 sidebar: CIVE461
 ---
 

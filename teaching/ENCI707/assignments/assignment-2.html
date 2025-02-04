@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="quarto-1.5.56" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+
+
+<title>Aggregate Demand Model Assignment – Hawkinslab</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+<!-- htmldependencies:E3FAD763 -->
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="/index.html" class="navbar-brand navbar-brand-logo">
+    <img src="/assets/images/logo_tech.png" alt="TECH Group" class="navbar-logo" />
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+  aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation"
+  onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="/research/index.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="/team/index.html"> 
+<span class="menu-text">Team</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="/publications/index.html"> 
+<span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-teaching" role="link" data-bs-toggle="dropdown" aria-expanded="false" >
+ <span class="menu-text">Teaching</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-teaching">    
+        <li>
+    <a class="dropdown-item" href="/teaching/CIVE461/index.html">
+ <span class="dropdown-text">CIVE461/861</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="/teaching/ENCI707/index.html">
+ <span class="dropdown-text">ENCI707</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="/teaching/Guest Lectures/CIVE990T.html">
+ <span class="dropdown-text">CIVE990T</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-thoughts" role="link" data-bs-toggle="dropdown" aria-expanded="false" >
+ <span class="menu-text">Thoughts</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-thoughts">    
+        <li>
+    <a class="dropdown-item" href="/thoughts/books.html">
+ <span class="dropdown-text">Books</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="/thoughts/blog.html">
+ <span class="dropdown-text">Blog</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn"
+      data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" 
+      aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation"
+      onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <h1 class="quarto-secondary-nav-title no-breadcrumbs"></h1>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" role="link"
+        aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation"
+        onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header sidebar-header-stacked">
+      <a href="/teaching/ENCI707/" class="sidebar-logo-link">
+      <img src="/assets/images/teaching/ENCI707/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none"/>
+      </a>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1"  role="navigation" aria-expanded="true">
+ <span class="menu-text">Administration</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/teaching/ENCI707/course-overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/teaching/ENCI707/course-syllabus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Syllabus</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/teaching/ENCI707/course-team.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Teaching team</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/teaching/ENCI707/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Schedule</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/teaching/ENCI707/course-faq.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">FAQ</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/teaching/ENCI707/computing-access.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Computing Access</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2"  role="navigation" aria-expanded="true">
+ <span class="menu-text">Weekly Materials</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/teaching/ENCI707/weeks/week-1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/teaching/ENCI707/weeks/week-2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/teaching/ENCI707/weeks/week-3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 3</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/teaching/ENCI707/weeks/week-4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 4</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/teaching/ENCI707/weeks/week-5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 5</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/teaching/ENCI707/weeks/week-6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 6</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/teaching/ENCI707/weeks/week-7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 7</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/teaching/ENCI707/weeks/week-8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 8</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/teaching/ENCI707/weeks/week-9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 9</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/teaching/ENCI707/weeks/week-10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 10</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/teaching/ENCI707/weeks/week-11.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 11</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/teaching/ENCI707/weeks/week-12.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 12</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/teaching/ENCI707/weeks/week-13.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 13</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/teaching/ENCI707/weeks/week-14.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 14</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3"  role="navigation" aria-expanded="true">
+ <span class="menu-text">Project</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/teaching/ENCI707/project/project-description.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Description</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/teaching/ENCI707/project/data-sets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data sources</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4"  role="navigation" aria-expanded="true">
+ <span class="menu-text">Assignments</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/teaching/ENCI707/assignments/assignment-1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Assignment 1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/teaching/ENCI707/assignments/assignment-2.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Assignment 2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/teaching/ENCI707/assignments/assignment-3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Assignment 3</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5"  role="navigation" aria-expanded="true">
+ <span class="menu-text">Application Exercises</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/teaching/ENCI707/ae/ae-1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">AE 1 - Demand Analysis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/teaching/ENCI707/ae/ae-2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">AE 2 - Ecological Economics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/teaching/ENCI707/ae/ae-3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">AE 3 - Surveys</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/teaching/ENCI707/ae/ae-4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">AE 4 - Statistics Activity</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/teaching/ENCI707/ae/ae-5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">AE 5 - Policy Case Study I</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/teaching/ENCI707/ae/ae-6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">AE 6 - Policy Case Study II</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/teaching/ENCI707/ae/ae-7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">AE 7 - Computing Visuals</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/teaching/ENCI707/ae/ae-8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">AE 8 - Computing Models</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/teaching/ENCI707/ae/ae-9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">AE 8 - Disaggregate Demand</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" ></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <div id="quarto-toc-target"></div>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Aggregate Demand Model Assignment</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+<nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#assignment-description" id="toc-assignment-description">Assignment description</a></li>
+  <li><a href="#overall-grading" id="toc-overall-grading">Overall grading</a>
+  <ul>
+  <li><a href="#grading-summary" id="toc-grading-summary">Grading summary</a></li>
+  </ul></li>
+  </ul>
+</nav>
+<section id="assignment-description" class="level2">
+<h2>Assignment description</h2>
+<p>The objective of this assignment is to familiarize you with the estimation and analysis of transportation demand models. The assignment is due Feb. 28 by 11:59 PM on D2L. The assignment should be completed in groups of 2-3 persons. You may choose your own group. Your group does not need to be the same as prior assignments.</p>
+<p>The assignment comprises two model estimation tasks: 1. Trip Generation Model A dataset of total quarterly ridership of a transit service along an intercity corridor is <a href="https://github.com/Hawkins-TECH-Lab/ENCI707/blob/b114be6a8092f4184f264b88f8cf946727db9e67/assignment-data/TransitRidershipData.xlsx">available in MS Excel format</a>. Develop a direct demand model for total ridership per quarter for each of the two transit services (economy class and 1st class) along this corridor. Please investigate the role of lag demand in the model. For estimation, you can use any software (MS Excel should be fine).</p>
+<ol start="2" type="1">
+<li>Ordered Probability Model A dataset of bicycle users’ perceptions of the bike system/facilities for a city is <a href="https://github.com/Hawkins-TECH-Lab/ENCI707/blob/b114be6a8092f4184f264b88f8cf946727db9e67/assignment-data/CyclingPerceptionData.xlsx">available in MS Excel format</a>. Please investigate their perception of overall quality of biking in the city through estimation of an ordered probability (either logit or probit) model. For estimation, you can use any software (functions are available in R, Python, Stata, etc.).</li>
+</ol>
+<p>You may separate the two model tasks within your group or conduct all analyses as a group. All group members must contribute to the writing of the summary report.</p>
+<p>The report should include at least the following sections: - Introduce the objective(s) and parts of the work. - Present the model formulation and justification of independent variables for each model task. - Selection of the best model specification (select one) for each model task. - Discuss the elasticities of independent variables of the final models.</p>
+<p>The assignment deliverable should have the form of a professional report and should not be more than 10 pages (singles-spaced).</p>
+</section>
+<section id="overall-grading" class="level2">
+<h2>Overall grading</h2>
+<p>The grade breakdown is as follows:</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Total</th>
+<th>25 pts</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Introduction</strong></td>
+<td>5 pts</td>
+</tr>
+<tr class="even">
+<td><strong>Correct model interpretation</strong></td>
+<td>10 pts</td>
+</tr>
+<tr class="odd">
+<td><strong>Includes all required elements</strong></td>
+<td>5 pts</td>
+</tr>
+<tr class="even">
+<td><strong>Formatting and report quality</strong></td>
+<td>10 pts</td>
+</tr>
+</tbody>
+</table>
+<section id="grading-summary" class="level3">
+<h3>Grading summary</h3>
+<p>A general breakdown of scoring is as follows:</p>
+<ul>
+<li><em>90%-100%</em>: Outstanding effort. Students understand how to apply all statistical concepts, can put the results into a cogent argument, can identify weaknesses in the argument, and can clearly communicate the results to others.</li>
+<li><em>80%-89%</em>: Good effort. Students understand most of the concepts, put together an adequate argument, identify some weaknesses of their argument, and communicate most results clearly to others.</li>
+<li><em>70%-79%</em>: Passing effort. Students have misunderstanding of concepts in several areas, have some trouble putting results together in a cogent argument, and communication of results is sometimes unclear.</li>
+<li><em>60%-69%</em>: Struggling effort. Students are making some effort, but have misunderstanding of many concepts and are unable to put together a cogent argument. Communication of results is unclear.</li>
+<li><em>Below 60%</em>: Students are not making a sufficient effort.</li>
+</ul>
+<div id="quarto-navigation-envelope" class="hidden">
+<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar-title">ENCI 707</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-navbar-title">Hawkinslab</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-next">Assignment 3</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-prev">Assignment 1</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:quarto-sidebar-section-1">Administration</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:/teaching/ENCI707/course-overview.htmlOverview">Overview</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:/teaching/ENCI707/course-syllabus.htmlSyllabus">Syllabus</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:/teaching/ENCI707/course-team.htmlTeaching-team">Teaching team</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:/teaching/ENCI707/index.htmlSchedule">Schedule</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:/teaching/ENCI707/course-faq.htmlFAQ">FAQ</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:/teaching/ENCI707/computing-access.htmlComputing-Access">Computing Access</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:quarto-sidebar-section-2">Weekly Materials</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:/teaching/ENCI707/weeks/week-1.htmlWeek-1">Week 1</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:/teaching/ENCI707/weeks/week-2.htmlWeek-2">Week 2</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:/teaching/ENCI707/weeks/week-3.htmlWeek-3">Week 3</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:/teaching/ENCI707/weeks/week-4.htmlWeek-4">Week 4</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:/teaching/ENCI707/weeks/week-5.htmlWeek-5">Week 5</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:/teaching/ENCI707/weeks/week-6.htmlWeek-6">Week 6</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:/teaching/ENCI707/weeks/week-7.htmlWeek-7">Week 7</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:/teaching/ENCI707/weeks/week-8.htmlWeek-8">Week 8</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:/teaching/ENCI707/weeks/week-9.htmlWeek-9">Week 9</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:/teaching/ENCI707/weeks/week-10.htmlWeek-10">Week 10</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:/teaching/ENCI707/weeks/week-11.htmlWeek-11">Week 11</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:/teaching/ENCI707/weeks/week-12.htmlWeek-12">Week 12</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:/teaching/ENCI707/weeks/week-13.htmlWeek-13">Week 13</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:/teaching/ENCI707/weeks/week-14.htmlWeek-14">Week 14</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:quarto-sidebar-section-3">Project</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:/teaching/ENCI707/project/project-description.htmlDescription">Description</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:/teaching/ENCI707/project/data-sets.htmlData-sources">Data sources</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:quarto-sidebar-section-4">Assignments</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:/teaching/ENCI707/assignments/assignment-1.htmlAssignment-1">Assignment 1</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:/teaching/ENCI707/assignments/assignment-2.htmlAssignment-2">Assignment 2</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:/teaching/ENCI707/assignments/assignment-3.htmlAssignment-3">Assignment 3</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:quarto-sidebar-section-5">Application Exercises</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:/teaching/ENCI707/ae/ae-1.htmlAE-1---Demand-Analysis">AE 1 - Demand Analysis</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:/teaching/ENCI707/ae/ae-2.htmlAE-2---Ecological-Economics">AE 2 - Ecological Economics</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:/teaching/ENCI707/ae/ae-3.htmlAE-3---Surveys">AE 3 - Surveys</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:/teaching/ENCI707/ae/ae-4.htmlAE-4---Statistics-Activity">AE 4 - Statistics Activity</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:/teaching/ENCI707/ae/ae-5.htmlAE-5---Policy-Case-Study-I">AE 5 - Policy Case Study I</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:/teaching/ENCI707/ae/ae-6.htmlAE-6---Policy-Case-Study-II">AE 6 - Policy Case Study II</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:/teaching/ENCI707/ae/ae-7.htmlAE-7---Computing-Visuals">AE 7 - Computing Visuals</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:/teaching/ENCI707/ae/ae-8.htmlAE-8---Computing-Models">AE 8 - Computing Models</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:/teaching/ENCI707/ae/ae-9.htmlAE-8---Disaggregate-Demand">AE 8 - Disaggregate Demand</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-navbar:Research">Research</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-navbar:/research/index.html">/research/index.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-navbar:Team">Team</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-navbar:/team/index.html">/team/index.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-navbar:Publications">Publications</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-navbar:/publications/index.html">/publications/index.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-navbar:Teaching">Teaching</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-navbar:CIVE461/861">CIVE461/861</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-navbar:/teaching/CIVE461/index.html">/teaching/CIVE461/index.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-navbar:ENCI707">ENCI707</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-navbar:/teaching/ENCI707/index.html">/teaching/ENCI707/index.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-navbar:CIVE990T">CIVE990T</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-navbar:/teaching/Guest Lectures/CIVE990T.html">/teaching/Guest Lectures/CIVE990T.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-navbar:Thoughts">Thoughts</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-navbar:Books">Books</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-navbar:/thoughts/books.html">/thoughts/books.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-navbar:Blog">Blog</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-navbar:/thoughts/blog.html">/thoughts/blog.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-breadcrumbs-Assignments">Assignments</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-breadcrumbs-Assignment-2">Assignment 2</span></p>
+<div class="hidden quarto-markdown-envelope-contents" data-render-id="footer-left">
+<p>Developed by Hawkinslab</p>
+</div>
+</div>
+<div id="quarto-meta-markdown" class="hidden">
+<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-metatitle">Aggregate Demand Model Assignment – Hawkinslab</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-twittercardtitle">Aggregate Demand Model Assignment – Hawkinslab</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-ogcardtitle">Aggregate Demand Model Assignment – Hawkinslab</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-metasitename">Hawkinslab</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-twittercarddesc"></span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-ogcardddesc"></span></p>
+</div>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id = "quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+     

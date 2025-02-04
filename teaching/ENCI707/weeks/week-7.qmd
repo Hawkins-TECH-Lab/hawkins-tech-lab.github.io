@@ -15,9 +15,9 @@ None
 
 ## Practice
 
-🖥️ [Activity 7 - Policy Analysis II](/teaching/ENCI707/ae/ae-7.html)
+🖥️ [Activity 7 - Computing Visuals](/teaching/ENCI707/ae/ae-7.html)
 
-🖥️ [Activity 8 - Policy Analysis II](/teaching/ENCI707/ae/ae-8.html)
+🖥️ [Activity 8 - Computing Models](/teaching/ENCI707/ae/ae-8.html)
 
 ## Deliver
 📝 Aggregate demand group assignment due Feb. 28 by 11:59 PM on D2L.
