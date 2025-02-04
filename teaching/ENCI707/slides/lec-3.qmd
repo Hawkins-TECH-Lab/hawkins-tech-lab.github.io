@@ -350,7 +350,7 @@ $$V_C = \text{Ratio of total demand for C} = D_C/(D_A+D_B+D_C)$$
 $$ln(V_B/V_A) = \beta_{0BA} + \sum_{i=1}^n \beta_{iBA}ln(x_{iB}/x_{iA}) + \sum_{j=1}^n \gamma_{jB}y_j + \epsilon_{BA} \text{ or}$$
 $$ln(V_B/V_A) = \beta_{0BA} + \sum_{i=1}^n \beta_{iBA}(x_{iB} - x_{iA}) + \sum_{j=1}^n \gamma_{jB}y_j + \epsilon_{BA}$$
 
-## Aggregate Logit Model {style="font-size: 0.6em;"}
+## Agregate Logit Model {style="font-size: 0.6em;"}
 - Similarly for alternative $C$
 $$ln(V_C/V_A) = \beta_{0CA} + \sum_{i=1}^n \beta_{iCA}ln(x_{iC}/x_{iA}) + \sum_{j=1}^n \gamma_{jB}y_j + \epsilon_{BA} \text{ or}$$
 $$ln(V_B/V_A) = \beta_{0CA} + \sum_{i=1}^n \beta_{iBA}(x_{iC} - x_{iA}) + \sum_{j=1}^n \gamma_{jC}y_j + \epsilon_{CA}$$
