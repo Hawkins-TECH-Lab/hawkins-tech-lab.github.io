@@ -356,13 +356,13 @@
 </section>
 <section id="normal-regression" class="slide level2 smaller">
 <h2>Normal Regression</h2>
-<p><span class="math display">\[y_i = \beta_0 + \sum_j \beta_j x_j + \epsilon_j; \epsilon_j \text{ is } \sim N(0,\sigma^2)\]</span></p>
+<p><span class="math display">\[y_i = \beta_0 + \sum_j \beta_j x_j + \epsilon_j, \epsilon_j \text{ is } \sim N(0,\sigma^2)\]</span></p>
 <ul>
 <li>Equivalently <span class="math inline">\(y_i\)</span> is <span class="math inline">\(\sim N(\beta_0 + \sum_j \beta_j x_j, \sigma^2)\)</span></li>
 <li>Estimation
 <ul>
 <li>Least-squares: minimize squared residuals</li>
-<li>Maximum likelihood <span class="math display">\[L_i = \frac{1}{\sigma}\Phi\left(\frac{y_i-\beta_0-\sum_j \beta_j x_j}{\sigma}\right)\]</span></li>
+<li>Maximum likelihood by normal pdf <span class="math display">\[L_i = \frac{1}{\sigma}\phi\left(\frac{y_i-\beta_0-\sum_j \beta_j x_j}{\sigma}\right)\]</span></li>
 </ul></li>
 <li>Regression to mean is deterministic for expected value of most regression model expressed as f(covariates)</li>
 <li>Probabilistic application through simulation</li>
@@ -376,23 +376,23 @@
 </section>
 <section id="log-normal-regression" class="slide level2 smaller">
 <h2>Log-Normal Regression</h2>
-<p><span class="math display">\[ln(y_i) = \beta_0 + \sum_j \beta_j x_j + \epsilon_j; ; \epsilon_j \text{ is } \sim N(0,\sigma^2)\]</span></p>
+<p><span class="math display">\[ln(y_i) = \beta_0 + \sum_j \beta_j x_j + \epsilon_j, \epsilon_j \text{ is } \sim N(0,\sigma^2)\]</span></p>
 <ul>
 <li><p>Equivalently <span class="math inline">\(ln(y_i)\)</span> is <span class="math inline">\(\sim N(\beta_0 + \sum_j \beta_j x_j, \sigma^2)\)</span></p></li>
 <li><p>Estimation</p>
 <ul>
 <li>Least-squares: minimize squared residuals</li>
-<li>Maximum likelihood <span class="math display">\[L_i = \frac{1}{y_i \sigma}\Phi\left(\frac{ln(y_i)-\beta_0-\sum_j \beta_j x_j}{\sigma}\right)\]</span></li>
+<li>Maximum likelihood by normal pdf <span class="math display">\[L_i = \frac{1}{y_i \sigma}\phi\left(\frac{ln(y_i)-\beta_0-\sum_j \beta_j x_j}{\sigma}\right)\]</span></li>
 <li><span class="math inline">\(y_i\)</span> must be positive (i.e., non-negative and non-zero)</li>
 </ul></li>
 </ul>
 </section>
 <section id="probit-regression" class="slide level2" style="font-size: 0.6em;">
 <h2>Probit Regression</h2>
-<p><span class="math display">\[y_i^* = \beta_0 + \sum_j \beta_j x_j + \epsilon_j; \epsilon_j \text{ is } \sim N(0,\sigma^2)\]</span></p>
+<p><span class="math display">\[y_i^* = \beta_0 + \sum_j \beta_j x_j + \epsilon_j, \epsilon_j \text{ is } \sim N(0,\sigma^2)\]</span></p>
 <ul>
 <li><p>Observed value is <strong>binary</strong> (0/1) <span class="math display">\[Pr(y_i=1) = \pi_i = \Phi \left((\beta_0 + \sum_j \beta_j x_j)/\sigma \right)\]</span> <span class="math display">\[Pr(y_i=0) = 1 - \pi_i = 1 - \Phi \left((\beta_0 + \sum_j \beta_j x_j)/\sigma \right) = \Phi \left( - (\beta_0 + \sum_j \beta_j x_j)/\sigma \right)\]</span></p></li>
-<li><p>Estimation by Maximum likelihood <span class="math display">\[L_i = \pi_i^{\delta_i}(1-\pi_i)^{1-\delta_i} \text{  }\delta_i=1 \text{, if }y_i=1, 0 \text{ otherwise}\]</span></p>
+<li><p>Estimation by Maximum likelihood by normal cdf <span class="math display">\[L_i = \pi_i^{\delta_i}(1-\pi_i)^{1-\delta_i} \text{  }\delta_i=1 \text{, if }y_i=1, 0 \text{ otherwise}\]</span></p>
 <ul>
 <li>Variance normalized to 1 (<strong>homogeneous</strong>) or parameterized without a constant (<strong>heterogeneous</strong>)</li>
 </ul></li>
@@ -439,7 +439,7 @@
 <section id="ordered-regression-2" class="slide level2 smaller">
 <h2>Ordered Regression</h2>
 <ul>
-<li>Consider the latent variable model <span class="math display">\[y_i^* = \beta x_i + \epsilon_i\]</span> <span class="math display">\[y_i = j \text{ if } \tau_{j-1} \leq y_i^* \leq \tau_j; j \in \{0,1,2\dots J\}\]</span></li>
+<li>Consider the latent variable model <span class="math display">\[y_i^* = \beta x_i + \epsilon_i\]</span> <span class="math display">\[y_i = j \text{ if } \tau_{j-1} \leq y_i^* \leq \tau_j, j \in \{0,1,2\dots J\}\]</span></li>
 <li>We have <span class="math inline">\(J\)</span> levels and <span class="math inline">\((J-1)\)</span> cut points represented by <span class="math inline">\(\tau\)</span>. End categories are 0 and <span class="math inline">\(J\)</span> for which values of cut points will be <span class="math inline">\(-\infty\)</span> and <span class="math inline">\(+\infty\)</span>, respectively.</li>
 <li>For example, if <span class="math inline">\(J=4\)</span> <span class="math display">\[y_i = 1 \text{ if } -\infty &lt; y_i^* &lt; \tau_1\]</span> <span class="math display">\[y_i = 2 \text{ if } \tau_1 \leq y_i^* &lt; \tau_2\]</span> <span class="math display">\[y_i = 3 \text{ if } \tau_2 \leq y_i^* &lt; \tau_3\]</span> <span class="math display">\[y_i = 4 \text{ if } \tau_3 \leq y_i^* &lt; +\infty\]</span></li>
 </ul>
@@ -525,7 +525,7 @@
 <section id="zero-inflated-count-regression" class="slide level2" style="font-size: 0.6em;">
 <h2>Zero-Inflated Count Regression</h2>
 <ul>
-<li>Observed data have overwhelming portion with zero values: <strong>zero-inflation</strong> <span class="math display">\[y_i = 0 \text{no further regression model}\]</span> <span class="math display">\[y_i &gt; 0 \text{, } Pr(y_i=j|x) \text{Poisson or Negative Binomial}\]</span></li>
+<li>Observed data have overwhelming portion with zero values: <strong>zero-inflation</strong> <span class="math display">\[y_i = 0 \text{, no further regression model}\]</span> <span class="math display">\[y_i &gt; 0 \text{, } Pr(y_i=j|x) \text{Poisson or Negative Binomial}\]</span></li>
 <li>Estimation: Maximum likelihood <span class="math display">\[y_i=0 -&gt; \eta_i \leq \sum_k \gamma z_k\]</span> <span class="math display">\[y_i &gt; 0, -&gt; \eta_i &gt; \sum_k \gamma_k z_k \text{ &amp; } Pr(y_i=j|x)\]</span> <span class="math display">\[L_i = \Phi(\sum_k \gamma_k z_k)^{y_i=0} \times \left(\Phi(-\sum_k \gamma_k z_k)Pr(y_i)\right)^{y_i=j}\]</span></li>
 <li>2 models: model of <strong>binary</strong> zero/non-zero <span class="math inline">\(y\)</span> &amp; <strong>count</strong> regression model</li>
 </ul>
@@ -540,7 +540,7 @@
 <li><strong>Meaningful interpretation</strong> of estimated model parameters</li>
 </ul></li>
 <li>Marginal effects (ME) <span class="math display">\[ME = \frac{\partial y_i}{\partial x_j} \text{, } ME=\frac{\partial Pr(y_i/U_i/V_i)}{\partial x_j}\]</span></li>
-<li>Elasticity (E) <span class="math display">\[E = \frac{\partial y_i}{\partial x_j}\frac{x_j}{y_j} \text{, } ME=\frac{\partial Pr(y_i/U_i/V_i)}{\partial x_j}\frac{x_j}{Pr(y_i/U_i/V_i)}\]</span></li>
+<li>Elasticity (E) <span class="math display">\[E = \frac{\partial y_i}{\partial x_j}\frac{x_j}{y_j} \text{, } E=\frac{\partial Pr(y_i/U_i/V_i)}{\partial x_j}\frac{x_j}{Pr(y_i/U_i/V_i)}\]</span></li>
 </ul>
 </section>
 <section id="practical-significance" class="slide level2 smaller">

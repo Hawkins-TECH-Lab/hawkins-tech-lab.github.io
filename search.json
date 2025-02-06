@@ -5502,7 +5502,7 @@
     "href": "teaching/ENCI707/slides/lec-3.html#normal-regression",
     "title": "Lecture 3 - Aggregate Demand Models",
     "section": "Normal Regression",
-    "text": "Normal Regression\n\\[y_i = \\beta_0 + \\sum_j \\beta_j x_j + \\epsilon_j; \\epsilon_j \\text{ is } \\sim N(0,\\sigma^2)\\]\n\nEquivalently \\(y_i\\) is \\(\\sim N(\\beta_0 + \\sum_j \\beta_j x_j, \\sigma^2)\\)\nEstimation\n\nLeast-squares: minimize squared residuals\nMaximum likelihood \\[L_i = \\frac{1}{\\sigma}\\Phi\\left(\\frac{y_i-\\beta_0-\\sum_j \\beta_j x_j}{\\sigma}\\right)\\]\n\nRegression to mean is deterministic for expected value of most regression model expressed as f(covariates)\nProbabilistic application through simulation"
+    "text": "Normal Regression\n\\[y_i = \\beta_0 + \\sum_j \\beta_j x_j + \\epsilon_j, \\epsilon_j \\text{ is } \\sim N(0,\\sigma^2)\\]\n\nEquivalently \\(y_i\\) is \\(\\sim N(\\beta_0 + \\sum_j \\beta_j x_j, \\sigma^2)\\)\nEstimation\n\nLeast-squares: minimize squared residuals\nMaximum likelihood by normal pdf \\[L_i = \\frac{1}{\\sigma}\\phi\\left(\\frac{y_i-\\beta_0-\\sum_j \\beta_j x_j}{\\sigma}\\right)\\]\n\nRegression to mean is deterministic for expected value of most regression model expressed as f(covariates)\nProbabilistic application through simulation"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-3.html#functions-of-random-variables",
@@ -5516,14 +5516,14 @@
     "href": "teaching/ENCI707/slides/lec-3.html#log-normal-regression",
     "title": "Lecture 3 - Aggregate Demand Models",
     "section": "Log-Normal Regression",
-    "text": "Log-Normal Regression\n\\[ln(y_i) = \\beta_0 + \\sum_j \\beta_j x_j + \\epsilon_j; ; \\epsilon_j \\text{ is } \\sim N(0,\\sigma^2)\\]\n\nEquivalently \\(ln(y_i)\\) is \\(\\sim N(\\beta_0 + \\sum_j \\beta_j x_j, \\sigma^2)\\)\nEstimation\n\nLeast-squares: minimize squared residuals\nMaximum likelihood \\[L_i = \\frac{1}{y_i \\sigma}\\Phi\\left(\\frac{ln(y_i)-\\beta_0-\\sum_j \\beta_j x_j}{\\sigma}\\right)\\]\n\\(y_i\\) must be positive (i.e., non-negative and non-zero)"
+    "text": "Log-Normal Regression\n\\[ln(y_i) = \\beta_0 + \\sum_j \\beta_j x_j + \\epsilon_j, \\epsilon_j \\text{ is } \\sim N(0,\\sigma^2)\\]\n\nEquivalently \\(ln(y_i)\\) is \\(\\sim N(\\beta_0 + \\sum_j \\beta_j x_j, \\sigma^2)\\)\nEstimation\n\nLeast-squares: minimize squared residuals\nMaximum likelihood by normal pdf \\[L_i = \\frac{1}{y_i \\sigma}\\phi\\left(\\frac{ln(y_i)-\\beta_0-\\sum_j \\beta_j x_j}{\\sigma}\\right)\\]\n\\(y_i\\) must be positive (i.e., non-negative and non-zero)"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-3.html#probit-regression",
     "href": "teaching/ENCI707/slides/lec-3.html#probit-regression",
     "title": "Lecture 3 - Aggregate Demand Models",
     "section": "Probit Regression",
-    "text": "Probit Regression\n\\[y_i^* = \\beta_0 + \\sum_j \\beta_j x_j + \\epsilon_j; \\epsilon_j \\text{ is } \\sim N(0,\\sigma^2)\\]\n\nObserved value is binary (0/1) \\[Pr(y_i=1) = \\pi_i = \\Phi \\left((\\beta_0 + \\sum_j \\beta_j x_j)/\\sigma \\right)\\] \\[Pr(y_i=0) = 1 - \\pi_i = 1 - \\Phi \\left((\\beta_0 + \\sum_j \\beta_j x_j)/\\sigma \\right) = \\Phi \\left( - (\\beta_0 + \\sum_j \\beta_j x_j)/\\sigma \\right)\\]\nEstimation by Maximum likelihood \\[L_i = \\pi_i^{\\delta_i}(1-\\pi_i)^{1-\\delta_i} \\text{  }\\delta_i=1 \\text{, if }y_i=1, 0 \\text{ otherwise}\\]\n\nVariance normalized to 1 (homogeneous) or parameterized without a constant (heterogeneous)"
+    "text": "Probit Regression\n\\[y_i^* = \\beta_0 + \\sum_j \\beta_j x_j + \\epsilon_j, \\epsilon_j \\text{ is } \\sim N(0,\\sigma^2)\\]\n\nObserved value is binary (0/1) \\[Pr(y_i=1) = \\pi_i = \\Phi \\left((\\beta_0 + \\sum_j \\beta_j x_j)/\\sigma \\right)\\] \\[Pr(y_i=0) = 1 - \\pi_i = 1 - \\Phi \\left((\\beta_0 + \\sum_j \\beta_j x_j)/\\sigma \\right) = \\Phi \\left( - (\\beta_0 + \\sum_j \\beta_j x_j)/\\sigma \\right)\\]\nEstimation by Maximum likelihood by normal cdf \\[L_i = \\pi_i^{\\delta_i}(1-\\pi_i)^{1-\\delta_i} \\text{  }\\delta_i=1 \\text{, if }y_i=1, 0 \\text{ otherwise}\\]\n\nVariance normalized to 1 (homogeneous) or parameterized without a constant (heterogeneous)"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-3.html#logistic-regression",
@@ -5558,7 +5558,7 @@
     "href": "teaching/ENCI707/slides/lec-3.html#ordered-regression-2",
     "title": "Lecture 3 - Aggregate Demand Models",
     "section": "Ordered Regression",
-    "text": "Ordered Regression\n\nConsider the latent variable model \\[y_i^* = \\beta x_i + \\epsilon_i\\] \\[y_i = j \\text{ if } \\tau_{j-1} \\leq y_i^* \\leq \\tau_j; j \\in \\{0,1,2\\dots J\\}\\]\nWe have \\(J\\) levels and \\((J-1)\\) cut points represented by \\(\\tau\\). End categories are 0 and \\(J\\) for which values of cut points will be \\(-\\infty\\) and \\(+\\infty\\), respectively.\nFor example, if \\(J=4\\) \\[y_i = 1 \\text{ if } -\\infty &lt; y_i^* &lt; \\tau_1\\] \\[y_i = 2 \\text{ if } \\tau_1 \\leq y_i^* &lt; \\tau_2\\] \\[y_i = 3 \\text{ if } \\tau_2 \\leq y_i^* &lt; \\tau_3\\] \\[y_i = 4 \\text{ if } \\tau_3 \\leq y_i^* &lt; +\\infty\\]"
+    "text": "Ordered Regression\n\nConsider the latent variable model \\[y_i^* = \\beta x_i + \\epsilon_i\\] \\[y_i = j \\text{ if } \\tau_{j-1} \\leq y_i^* \\leq \\tau_j, j \\in \\{0,1,2\\dots J\\}\\]\nWe have \\(J\\) levels and \\((J-1)\\) cut points represented by \\(\\tau\\). End categories are 0 and \\(J\\) for which values of cut points will be \\(-\\infty\\) and \\(+\\infty\\), respectively.\nFor example, if \\(J=4\\) \\[y_i = 1 \\text{ if } -\\infty &lt; y_i^* &lt; \\tau_1\\] \\[y_i = 2 \\text{ if } \\tau_1 \\leq y_i^* &lt; \\tau_2\\] \\[y_i = 3 \\text{ if } \\tau_2 \\leq y_i^* &lt; \\tau_3\\] \\[y_i = 4 \\text{ if } \\tau_3 \\leq y_i^* &lt; +\\infty\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-3.html#ordered-regression-3",
@@ -5621,14 +5621,14 @@
     "href": "teaching/ENCI707/slides/lec-3.html#zero-inflated-count-regression",
     "title": "Lecture 3 - Aggregate Demand Models",
     "section": "Zero-Inflated Count Regression",
-    "text": "Zero-Inflated Count Regression\n\nObserved data have overwhelming portion with zero values: zero-inflation \\[y_i = 0 \\text{no further regression model}\\] \\[y_i &gt; 0 \\text{, } Pr(y_i=j|x) \\text{Poisson or Negative Binomial}\\]\nEstimation: Maximum likelihood \\[y_i=0 -&gt; \\eta_i \\leq \\sum_k \\gamma z_k\\] \\[y_i &gt; 0, -&gt; \\eta_i &gt; \\sum_k \\gamma_k z_k \\text{ & } Pr(y_i=j|x)\\] \\[L_i = \\Phi(\\sum_k \\gamma_k z_k)^{y_i=0} \\times \\left(\\Phi(-\\sum_k \\gamma_k z_k)Pr(y_i)\\right)^{y_i=j}\\]\n2 models: model of binary zero/non-zero \\(y\\) & count regression model"
+    "text": "Zero-Inflated Count Regression\n\nObserved data have overwhelming portion with zero values: zero-inflation \\[y_i = 0 \\text{, no further regression model}\\] \\[y_i &gt; 0 \\text{, } Pr(y_i=j|x) \\text{Poisson or Negative Binomial}\\]\nEstimation: Maximum likelihood \\[y_i=0 -&gt; \\eta_i \\leq \\sum_k \\gamma z_k\\] \\[y_i &gt; 0, -&gt; \\eta_i &gt; \\sum_k \\gamma_k z_k \\text{ & } Pr(y_i=j|x)\\] \\[L_i = \\Phi(\\sum_k \\gamma_k z_k)^{y_i=0} \\times \\left(\\Phi(-\\sum_k \\gamma_k z_k)Pr(y_i)\\right)^{y_i=j}\\]\n2 models: model of binary zero/non-zero \\(y\\) & count regression model"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-3.html#use-of-econometric-models",
     "href": "teaching/ENCI707/slides/lec-3.html#use-of-econometric-models",
     "title": "Lecture 3 - Aggregate Demand Models",
     "section": "Use of Econometric Models",
-    "text": "Use of Econometric Models\n\nParameter of explanatory variable makes little sense unless put into context\nEconometric models should be used for:\n\nPrediction of the dependent variable and/or probability of different values of independent variables\nMeaningful interpretation of estimated model parameters\n\nMarginal effects (ME) \\[ME = \\frac{\\partial y_i}{\\partial x_j} \\text{, } ME=\\frac{\\partial Pr(y_i/U_i/V_i)}{\\partial x_j}\\]\nElasticity (E) \\[E = \\frac{\\partial y_i}{\\partial x_j}\\frac{x_j}{y_j} \\text{, } ME=\\frac{\\partial Pr(y_i/U_i/V_i)}{\\partial x_j}\\frac{x_j}{Pr(y_i/U_i/V_i)}\\]"
+    "text": "Use of Econometric Models\n\nParameter of explanatory variable makes little sense unless put into context\nEconometric models should be used for:\n\nPrediction of the dependent variable and/or probability of different values of independent variables\nMeaningful interpretation of estimated model parameters\n\nMarginal effects (ME) \\[ME = \\frac{\\partial y_i}{\\partial x_j} \\text{, } ME=\\frac{\\partial Pr(y_i/U_i/V_i)}{\\partial x_j}\\]\nElasticity (E) \\[E = \\frac{\\partial y_i}{\\partial x_j}\\frac{x_j}{y_j} \\text{, } E=\\frac{\\partial Pr(y_i/U_i/V_i)}{\\partial x_j}\\frac{x_j}{Pr(y_i/U_i/V_i)}\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-3.html#practical-significance",
