@@ -28,13 +28,13 @@ execute:
 
 ## Normal Regression {.smaller}
 
-$$y_i = \beta_0 + \sum_j \beta_j x_j + \epsilon_j; \epsilon_j \text{ is } \sim N(0,\sigma^2)$$
+$$y_i = \beta_0 + \sum_j \beta_j x_j + \epsilon_j, \epsilon_j \text{ is } \sim N(0,\sigma^2)$$
 
 - Equivalently $y_i$ is $\sim N(\beta_0 + \sum_j \beta_j x_j, \sigma^2)$
 - Estimation
     - Least-squares: minimize squared residuals
-    - Maximum likelihood
-    $$L_i = \frac{1}{\sigma}\Phi\left(\frac{y_i-\beta_0-\sum_j \beta_j x_j}{\sigma}\right)$$
+    - Maximum likelihood by normal pdf
+    $$L_i = \frac{1}{\sigma}\phi\left(\frac{y_i-\beta_0-\sum_j \beta_j x_j}{\sigma}\right)$$
 - Regression to mean is deterministic for expected value of most regression model expressed as f(covariates)
 - Probabilistic application through simulation
 
@@ -42,24 +42,24 @@ $$y_i = \beta_0 + \sum_j \beta_j x_j + \epsilon_j; \epsilon_j \text{ is } \sim N
 - From probability theory courses .... transformation of random error term to random variable via Jacobian transformation
 
 ## Log-Normal Regression {.smaller}
-$$ln(y_i) = \beta_0 + \sum_j \beta_j x_j + \epsilon_j; ; \epsilon_j \text{ is } \sim N(0,\sigma^2)$$
+$$ln(y_i) = \beta_0 + \sum_j \beta_j x_j + \epsilon_j, \epsilon_j \text{ is } \sim N(0,\sigma^2)$$
 
 - Equivalently $ln(y_i)$ is $\sim N(\beta_0 + \sum_j \beta_j x_j, \sigma^2)$
 
 - Estimation
     - Least-squares: minimize squared residuals
-    - Maximum likelihood
-    $$L_i = \frac{1}{y_i \sigma}\Phi\left(\frac{ln(y_i)-\beta_0-\sum_j \beta_j x_j}{\sigma}\right)$$
+    - Maximum likelihood by normal pdf
+    $$L_i = \frac{1}{y_i \sigma}\phi\left(\frac{ln(y_i)-\beta_0-\sum_j \beta_j x_j}{\sigma}\right)$$
     - $y_i$ must be positive (i.e., non-negative and non-zero)
 
 ## Probit Regression {style="font-size: 0.6em;"}
-$$y_i^* = \beta_0 + \sum_j \beta_j x_j + \epsilon_j; \epsilon_j \text{ is } \sim N(0,\sigma^2)$$
+$$y_i^* = \beta_0 + \sum_j \beta_j x_j + \epsilon_j, \epsilon_j \text{ is } \sim N(0,\sigma^2)$$
 
 - Observed value is **binary** (0/1)
 $$Pr(y_i=1) = \pi_i = \Phi \left((\beta_0 + \sum_j \beta_j x_j)/\sigma \right)$$
 $$Pr(y_i=0) = 1 - \pi_i = 1 - \Phi \left((\beta_0 + \sum_j \beta_j x_j)/\sigma \right) = \Phi \left( - (\beta_0 + \sum_j \beta_j x_j)/\sigma \right)$$
 
-- Estimation by Maximum likelihood
+- Estimation by Maximum likelihood by normal cdf
     $$L_i = \pi_i^{\delta_i}(1-\pi_i)^{1-\delta_i} \text{  }\delta_i=1 \text{, if }y_i=1, 0 \text{ otherwise}$$
     - Variance normalized to 1 (**homogeneous**) or parameterized without a constant (**heterogeneous**)
 
@@ -93,7 +93,7 @@ $$L_i = \pi_i^{y_i}(1-\pi_i)^{1-y_i}$$
 ## Ordered Regression {.smaller}
 - Consider the latent variable model
 $$y_i^* = \beta x_i + \epsilon_i$$
-$$y_i = j \text{ if } \tau_{j-1} \leq y_i^* \leq \tau_j; j \in \{0,1,2\dots J\}$$
+$$y_i = j \text{ if } \tau_{j-1} \leq y_i^* \leq \tau_j, j \in \{0,1,2\dots J\}$$
 - We have $J$ levels and $(J-1)$ cut points represented by $\tau$. End categories are 0 and $J$ for which values of cut points will be $-\infty$ and $+\infty$, respectively.
 - For example, if $J=4$
 $$y_i = 1 \text{ if } -\infty < y_i^* < \tau_1$$
@@ -173,7 +173,7 @@ $$L(y_i|x,\beta) = Pr(y_i)$$
 
 ## Zero-Inflated Count Regression {style="font-size: 0.6em;"}
 - Observed data have overwhelming portion with zero values: **zero-inflation**
-$$y_i = 0 \text{no further regression model}$$
+$$y_i = 0 \text{, no further regression model}$$
 $$y_i > 0 \text{, } Pr(y_i=j|x) \text{Poisson or Negative Binomial}$$
 - Estimation: Maximum likelihood
 $$y_i=0 -> \eta_i \leq \sum_k \gamma z_k$$
@@ -189,7 +189,7 @@ $$L_i = \Phi(\sum_k \gamma_k z_k)^{y_i=0} \times \left(\Phi(-\sum_k \gamma_k z_k
 - Marginal effects (ME)
 $$ME = \frac{\partial y_i}{\partial x_j} \text{, } ME=\frac{\partial Pr(y_i/U_i/V_i)}{\partial x_j}$$
 - Elasticity (E)
-$$E = \frac{\partial y_i}{\partial x_j}\frac{x_j}{y_j} \text{, } ME=\frac{\partial Pr(y_i/U_i/V_i)}{\partial x_j}\frac{x_j}{Pr(y_i/U_i/V_i)}$$
+$$E = \frac{\partial y_i}{\partial x_j}\frac{x_j}{y_j} \text{, } E=\frac{\partial Pr(y_i/U_i/V_i)}{\partial x_j}\frac{x_j}{Pr(y_i/U_i/V_i)}$$
 
 ## Practical Significance {.smaller}
 - **Marginal effects** and **elasticities** can be challenging to interpret
@@ -279,7 +279,7 @@ $$E = \frac{\partial D/D}{\partial x_j/x_j} = \frac{\partial D}{\partial x_j}\ti
 $$D_j^* = \frac{I}{p_j}(\frac{\alpha}{\alpha+\beta}) = \alpha' I^1p_j^{-1}$$
 
 - In absense of budget constraints, the optimum demand function may look similar to Cobb-Douglas direct utility function
-$$D_j^* = e^{\alpha_o}I^{\gamma}\prod_k x_k^{\beta_k}\prod_m e^{\beta_m z_m} 
+$$D_j^* = e^{\alpha_o}I^{\gamma}\prod_k x_k^{\beta_k}\prod_m e^{\beta_m z_m}$$
 - $x_k$ includes price/cost variable & $z_m$ includes categorical/dummy variables or any other variable that does not have to be log-transformed
 
 ## Cobb-Douglas Demand Model {.smaller}
@@ -350,7 +350,7 @@ $$V_C = \text{Ratio of total demand for C} = D_C/(D_A+D_B+D_C)$$
 $$ln(V_B/V_A) = \beta_{0BA} + \sum_{i=1}^n \beta_{iBA}ln(x_{iB}/x_{iA}) + \sum_{j=1}^n \gamma_{jB}y_j + \epsilon_{BA} \text{ or}$$
 $$ln(V_B/V_A) = \beta_{0BA} + \sum_{i=1}^n \beta_{iBA}(x_{iB} - x_{iA}) + \sum_{j=1}^n \gamma_{jB}y_j + \epsilon_{BA}$$
 
-## Agregate Logit Model {style="font-size: 0.6em;"}
+## Aggregate Logit Model {style="font-size: 0.6em;"}
 - Similarly for alternative $C$
 $$ln(V_C/V_A) = \beta_{0CA} + \sum_{i=1}^n \beta_{iCA}ln(x_{iC}/x_{iA}) + \sum_{j=1}^n \gamma_{jB}y_j + \epsilon_{BA} \text{ or}$$
 $$ln(V_B/V_A) = \beta_{0CA} + \sum_{i=1}^n \beta_{iBA}(x_{iC} - x_{iA}) + \sum_{j=1}^n \gamma_{jC}y_j + \epsilon_{CA}$$

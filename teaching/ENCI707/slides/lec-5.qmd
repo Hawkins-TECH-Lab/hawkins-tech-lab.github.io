@@ -15,120 +15,570 @@ execute:
 ## Outline
 
 ::: incremental
-1.  Basis for choice modeling
-2.  Theory
-3.  Logit choice model
+Discrete multinomial choice - Type I EV Distribution
+Multinomial Logit (MNL) - Scale and Systematic Utility Function
+MNL Estimation & Specification
+Elasticity, Marginal Effect, & Substitution
+IIA & IIA violation test
+Policy Evaluation
+Forecasting & Prediction
+Confidence Intervals on Predictions
+Model transferability & Parameter Updating
 :::
 
-## Basis for Choice Modeling {.smaller}
+# Discrete Choice Multinomial Choice - Type I Extreme Value Distribution
 
--   Aggregate demand models (such as those we have been discussing) based on observations for **groups of travelers** or **average relations** for zones
--   **Discrete choice:** probability an individual chooses a given option a function of their socioeconomic characteristics & relative attractiveness of the option
--   Cannot estimate via least squares because probability is unobserved – only observe choice
--   Models are **probabilistic** & do not give an outcome value such as **trips** – must use probability concepts to generate discrete outcomes (summation over all observations to give expected number choosing option or use sample enumeration to allocate discrete outcomes)
+## Binary versus Multinomial Choice
+![](../../../assets/images/teaching/ENCI707/Lecture3/translog-paper3.png){fig-align="center"}
 
-## Basis for Choice Modeling {.smaller}
+## Binary versus Multinomial Choice
+![](../../../assets/images/teaching/ENCI707/Lecture3/translog-paper3.png){fig-align="center"}
 
--   Individuals derive **utility** from the use of alternatives defined by a **utility function** often denoted by V $$Vpeanut butter = 0.25 – 1.0 ALLERGY - 0.5 PRICE + 0.25 ORGANIC$$
--   Need probability value between 0 & 1. Various forms, generally with an s-shaped plot. Main ones are $$𝐿𝑜𝑔𝑖𝑡:𝑃_1=exp⁡(𝑉_1 )/(exp⁡(𝑉1)+exp⁡(𝑉2))$$ $$𝑃𝑟𝑜𝑏𝑖𝑡:𝑃_1=\int_{-\infty}^{\infty}⁡\int_{-\infty}^{V_1-V_2+x_1}\frac{⁡exp⁡(\frac{−1}{2(1−\rho^2)} (\frac{𝑥_1}{\sigma_1})^2−\frac{2\rho 𝑥_1 𝑥_2}{\sigma_1 \sigma_2}+(\frac{𝑥_2}{\sigma_2})^2}{2\pi\sigma_1 \sigma_2 \sqrt{1−\rho^2 }} 𝑑𝑥_2 𝑑𝑥_1$$
+## Discrete Multinomial Choice
+A multinomial choice reduced into an equivalent binary choice problem:
 
-## Properties of Discrete Choice (DC)
+![](../../../assets/images/teaching/ENCI707/Lecture3/translog-paper3.png){fig-align="center"}
 
--   Based on theories of **individual behavior** & do not constitute physical analogies – therefore stable over time & space
--   Can be more **statistically efficient** than aggregate models because each observation is an outcome rather than using aggregations of potentially hundreds of observations
--   DM less likely to suffer from bias due to correlation between aggregate units – i.e., **ecological correlation** (fallacy)
+$$𝑈_𝑗≥max┬█(&𝑗,𝑗^/∈𝐶_𝑖@&𝑗≠𝑗^/ ) (𝑈_(𝑗^/ ) )$$
 
-## Ecological Fallacy
+$$𝑈_𝑗≥𝑈_𝑘,𝑘≠𝑗𝑎𝑛𝑑𝑗,𝑘∈𝐶_𝑖$$
 
-![](../images/lecture5/eco_fallacy.png){fig-align="center"}
 
-## Theoretical Framework {.smaller}
+Probability of choosing alternative j:
+$$Pr⁡( 𝑗)=Pr⁡((𝑉_𝑗+𝜀_𝑗)≥(𝑉_𝑘+𝜀_𝑘 ))$$
 
--   Individuals belong to a **homogeneous population** $N$, act rationally, & **possess perfect information** – i.e., they always select the option that maximizes their net personal utility subject to legal, social, physical, &/or budgetary (both time & money) constraints
--   There is a certain set $𝐴 = \{𝐴_1, …𝐴_i,…𝐴_I\}$ of available alternatives & a set X of vectors of measured attributes of individuals & their alternatives
--   An individual $n$ is endowed with a set of attributes $𝑥 \in 𝑋$ & faces a choice set $𝐴(n) \in 𝐴$
--   We will assume choice set is predetermined for individuals
+$$Pr⁡( 𝑗)=Pr⁡(𝜀_𝑘≤(𝑉_𝑗−𝑉_𝑘+𝜀_𝑗 ))$$
 
-## Theoretical Framework
+## Discrete Multinomial Choice
+Choice probability in a multinomial choice context:
+$$Pr⁡( 𝑗)=Pr⁡(𝜀_𝑘≤(𝑉_𝑗−𝑉_𝑘+𝜀_𝑗 ))$$
 
--   Modeler, an observer, does not **posses complete information** about all elements considered by the individual making choice
--   Modeler assumes $𝑈_{ni}$ can be represented by two components:
-    -   A **measurable**, **systematic**, or **representative** part $𝑉_{ni}$, which is a function of the measured attributes $x$
-    -   A random part $\epsilon_{ni}$, which reflects **indiosyncratic** & **taste variation**, together with measurement or observational errors made by the modeler
+Probability distribution of random utility (ε) needs to be fully specified to get the unconditional probability:
+$$Pr⁡( 𝑗)=∫1_(𝜀_𝑗=−∞)^(+∞)▒∫1_(𝜀_𝑘=−∞)^((𝑉_𝑗−𝑉_𝑘+𝜀_𝑗 ))▒〖𝑓(𝜀_𝑗,𝜀_𝑘)𝑑𝜀_𝑗 𝑑𝜀_𝑘 〗$$
 
-## Theoretical Framework
+Specification of univariate distribution, f(εk) , and the joint distribution, f(εj,εk), are necessary.
 
--   Modeler sets utility $𝑈_{ni}=𝑉_{ni}+\epsilon_{ni}$ to address two apparent irrationalities
-    1.  That two individuals faced with the **same situation** & having the **same personal attributes** make different choices
-    2.  That an individual may not select the alternative that **appears** to be the *best one*
--   Often assumed $V_{ni}$ given by $\sum_k^K \beta_{ik} x_{nik}$ here $\beta_{ik}$ are assumed **constant** for all individuals $N$ in the homogeneous set but **may vary across alternatives** $I$
+Possible distributions: 
+Multivariate normal distribution.
+Type I Extreme Value distribution.
 
-## Theoretical Framework {.smaller}
+## Type I Extreme Value Distribution
 
--   Individual chooses an alternative based on $𝑈_{ni}≥ 𝑈_{jn} \forall A_j \in A(n)$
--   Or: $𝑉_{ni}  – 𝑉_{nj}≥\epsilon_{nj}  − \epsilon_{ni}$ (notice swapping of $i$ & $j$)
 
-Not possible to know with certainty if the inequality holds, so use $$𝑃_{ni}  = 𝑃(\epsilon_{nj} \leq \epsilon_{ni} + (V_{ni} - V_{nj})) \forall A_j \in A(n)$$ - Do not know distribution of joint residuals, so cannot derive analytical expression for model - Can denote $f(\epsilon) = f(\epsilon_1, \epsilon_2, ... \epsilon_I$ & know they are **random variables** with a certain distribution
+Type I (Gumbel) Distribution is the most convenient distribution to derive a closed form choice model
+If ε is Type I Extreme Value (Gumbel) distributed:
 
-## Theoretical Framework {.smaller}
+$$𝑓(𝜀)=𝜇𝑒^(−𝜇(𝜀−𝜂)) 𝑒^(−𝑒^(−𝜇(𝜀−𝜂)) )$$
 
--   Can note that distribution for $f(U)$ is the same but with mean $V$ rather than 0 $$P_{ni} = \int_{R_I} f(\epsilon) d\epsilon$$ $$\text{where } R_I = \begin{cases}
-    \epsilon_{nj} \leq \epsilon_{ni} + (V_{ni} - V_{nj}), & \forall A_j \in A(n) \\
-    V_{ni}) + \epsilon_{ni} \ge 0 \\
-    \end{cases}$$
--   Assuming independent & identically distributed (**IID**) residuals, $$f(\epsilon_1,...\epsilon_I) = \prod_i^I g(\epsilon_i)$$
--   And (drop $n$ for simplicity) $$P_i = \int_{-\infty}^\infty g(\epsilon_i) d\epsilon_i \prod_{j \neq i} \int_{-\infty}^{V_i-V_j+\epsilon_i} g(\epsilon_j) d\epsilon_j$$
+## ⥂⥂⥂𝐹=𝑒^(−𝑒^(−𝜇(𝜀−𝜂)) ),𝜇>0$$
 
-## Generating the Logit Model {.smaller}
+η is a location parameter and μ is a positive scale parameter. 
+Location parameter is mode of distribution.
+Scale parameter defines the dispersion of the PDF shape.
 
--   Assuming IID Gumbel (**Extreme Value Type I**) residuals, or equivalently that residual differences are **logistically distributed**, gives the standard multinomial logit specification
--   Termed *softmax function* in machine learning field $$P_{ni} = \frac{exp(\mu V_{ni})}{\sum_{A_j \in A(n)} exp(\mu V_{nj})}$$
--   Where $\mu$ is a **scale parameter** assumed equal to 1.0 for identification
+## Type I Extreme Value Distribution
+![](../../../assets/images/teaching/ENCI707/Lecture3/translog-paper3.png){fig-align="center"}
 
-![](../images/lecture5/logit_curve.png){.absolute bottom="0" right="0" width="35%"}
+## Type I Extreme Value Distribution
+![](../../../assets/images/teaching/ENCI707/Lecture3/translog-paper3.png){fig-align="center"}
 
-## Logit Model Parameter Estimation
+## Basic Properties of Gumbel distribution
+The mode of the distribution is η (the location of peak of the PDF on x axis from zero).
+The mean value is (η+γ/μ), where γ = Euler’s constant=0.577.
+The variance is π2/6μ2.
+If ε is Gumbel distributed with (η,μ), and if α is any positive scalar constant, then (αε+V) is also Gumbel distributed with parameters (αη+V) and μ/α.
+If ε1 and ε2 are independent Gumbel variables, then (ε1-ε2) is logistically distributed.
+If ε1 and ε2 are Identical and Independent Gumbel variables with parameters (η1,μ) and (η2,μ) respectively then max(ε1,ε2) is also Gumbel distributed with parameters:      
+$$(1/𝜇  ln⁡(𝑒^(𝜇𝜂_1 )+𝑒^(𝜇𝜂_2 ) ),𝜇)
+$$
 
--   Commercial (& opensource) software exists to estimate model parameters using the method of maximum likelihood estimation
-    -   Apollo (R & free)
-    -   Biogeme (Python & free)
-    -   STATA (commercial)
-    -   LIMDEP (commercial)
-    -   GAUSS (commercial)
--   Parameter interpretation similar to regression (t-statistics, GoF, etc.)
+## Basic Properties of Gumbel distribution
+If ( ε1,ε2,ε3,……. ,εn ) are n independent Gumbel distributed variables with parameters (η1,μ), (η2,μ),……. (ηn,μ) respectively then max(ε1,ε2,ε3,………,εn) is also Gumbel distributed with parameters (mean, scale): 
+$$(1/𝜇  ln⁡∑_(𝑗=1)^𝑛▒𝑒^(𝜇𝜂_𝑗 ) ,𝜇)$$
 
-## Direct & Cross Elasticity
+Notes:
+Homoskedasticity: Independent Gumbel distributed variables have a common scale parameter (μ). 
+Property 5 is used to derive binomial logit model probability equation.
+Property 7 can be used to derived closed form equation for multinomial logit (MNL) Model.
 
--   **Direct elasticity:** direct effect of changing a variable value related to a good on demand for the same good
-    -   E.g., elasticity of transit demand wrt transit fare, transit travel time, or transit headway
--   **Cross elasticity:** effect of changing a variable value related to a good on demand for a different good
-    -   E.g., elasticity of transit demand wrt auto travel time
+# Multinomial Logit Model - Scale & Systematic Utility Functions
 
-## Logit - Direct Elasticity
+## Multinomial Logit Model (MNL)
+In case of a multinomial choice situation: Assume random utility (ε) is Gumbel distributed with η = 0 location parameter and a common scale μ.
+Assume that the utility of the second-best alternative is U*, which is the maximum of all other alternatives except alternative j, the best one. 
+$$𝑈^∗=max┬█(&𝑘≠𝑗@&𝑘,𝑗∈𝐶_𝑖 ) (𝑉_𝑘+𝜀_𝑘 );$$
 
-Direct elasticity of the probability of an individual $n$ choosing alternative $i$ wrt a change in an attribute/independent variable $X_{ik}$ with coefficient $\beta_k$ (ignoring $n$ subscripts for simplicity)
+According to Property 7, U* is also Gumbel distributed with parameters (mean, scale)
 
-$$e_{direct} = \frac{\partial P_i}{\partial X_{ik}} \frac{X_{ik}}{P_i}=(1-P_i)X_{ik}\beta_k$$
+$$ (1/𝜇  ln⁡∑_█(&𝑘∈𝐶_𝑖@&𝑘≠𝑗)▒𝑒^(𝜇𝑉_𝑘 ) ,𝜇)$$
 
-## Logit - Cross Elasticity {.smaller}
+## Multinomial Logit Model (MNL)
+We can write that the second-best alternative is
+$$U^∗=" " "V" ^∗+𝜀^∗$$		     		
+$$" " "V" ^∗=1/𝜇  ln⁡∑_█(&𝑘∈𝐶_𝑖@&𝑘≠𝑗)▒𝑒^(𝜇𝑉_𝑘 ) 
+$$
+Now for the probability of choosing alternative j (equivalent binary logit form)
+$$Pr⁡( 𝑗)=Pr⁡[(𝑉_𝑗+𝜀_𝑗)≥max┬(𝑘=2,3,4,....𝑛) (𝑉_𝑘+𝜀_𝑘 )]$$
+$$=Pr⁡[(𝑉_𝑗+𝜀_𝑗)≥(𝑉^∗+𝜀^∗)]$$
+$$=Pr⁡[(𝑉^∗+𝜀^∗)−(𝑉_𝑗+𝜀_𝑗)≤0]=Pr⁡[(𝜀^∗−𝜀_𝑗)≤(𝑉_𝑗−𝑉^∗)]$$
 
--   Cross elasticity of the probability of an individual $n$ choosing alternative $i$ wrt a change in an attribute/independent variable $X_{jk}$ with coefficient $\beta_k$ for a different alternative
+According to Property 5, this is logistically distributed. So
+$$Pr⁡( 𝑗)=1/(1+𝑒^(𝜇(𝑉^∗−𝑉_𝑗)) )$$
 
-$$e_{cross} = -P_j X_{jk}\beta_k$$
+According to Property 5, this is logistically distributes. So,
+$$Pr⁡( 𝑗)=1/(1+𝑒^(𝜇(𝑉^∗−𝑉_𝑗)) )=𝑒^(𝜇𝑉_𝑗 )/(𝑒^(𝜇𝑉_𝑗 )+𝑒^(𝜇𝑉^∗ ) )
+$$
 
--   Above is same regardless of alternative $i$. I.e., **all alternatives** have the same cross-elasticity wrt an attribute $k$ of alternative $j$
--   Above results from independence of irrelevant alternatives (**IIA**) property of basic logit model
+$$=𝑒^(𝜇𝑉_𝑗 )/(𝑒^(𝜇𝑉_𝑗 )+exp⁡(ln⁡∑_█(&𝑘∈𝐶_𝑖@&𝑘≠𝑗)▒𝑒^(𝜇𝑉_𝑘 )  ) )=𝑒^(𝜇𝑉_𝑗 )/(𝑒^(𝜇𝑉_𝑗 )+∑_█(&𝑘∈𝐶_𝑖@&𝑘≠𝑗)▒𝑒^(𝜇𝑉_𝑘 ) )$$
 
-## Independence of Irrelevant Alternatives (IIA) Property
+$$=𝑒^(𝜇𝑉_𝑗 )/(∑_(𝑗^/∈𝐶_𝑖)▒𝑒^(𝜇𝑉_(𝑗^/ ) ) )$$
 
-Consider we have two modes: auto (a) & bus (b)
+This is well-known Multinomial Logit Model (MNL) - or softmax function in ML
 
-$$\frac{P_a}{P_b} = \frac{exp(V_a)}{exp(V_b)} = exp(V_a - V_b)$$ I.e., the relative probability of choosing auto vs. bus depends **only** on the utilities of the two alternatives
+## Scale of the MNL Model
+Scale (μ) is inversely related to the variance of random error term. Variance is π2/6μ2 for a IID Type I extreme value error.
+      As μ →Infinity, Variance → 0 
+All information are captured by the deterministic component (V).
+Choice becomes deterministic (the alternative with maximum V is chosen).
+As μ →0, Variance → infinity & exp(μV) = 1 
+Alternatives are equally likely.
+Choice model does not provide any information.
+Constant scale, μ is not identified in an MNL if only one dataset is used.
 
--   Now what if our buses are **red (rb)** & we paint half **blue (bb)**?
+Separate scale needs to be specified when fusing multiple datasets.
 
-## IIA Cont…
+## Systematic Utility Function
+Systematic utility function: Linear-in-parameter function
+$$𝑉_1=𝛽_1+𝛽_𝑡 𝑥_1𝑡+𝛽_1𝑎 𝑥_𝑎+𝛽_𝑏 𝑥_1𝑏^2+𝛽_1𝑎𝑐 𝑥_𝑎^3+𝛽_1𝑎𝑙  ln⁡( 𝑥_𝑎)+.........$$
+$$𝑉_2=𝛽_2+𝛽_𝑡 𝑥_2𝑡+𝛽_2𝑎 𝑥_𝑎+𝛽_𝑏 𝑥_2𝑏^2+𝛽_2𝑎𝑐 𝑥_𝑎^3+𝛽_2𝑎𝑙  ln⁡〖𝑥_𝑎 〗+.........
+$$
+$$𝑉_3=𝛽_3+𝛽_𝑡 𝑥_3𝑡+𝛽_3𝑎 𝑥_𝑎+𝛽_𝑏 𝑥_3𝑏^2+𝛽_3𝑎𝑐 𝑥_𝑎^3+𝛽_3𝑎𝑙  ln⁡〖𝑥_𝑎 〗+.........
+$$
+$$$$
+$$𝑉_𝐽=𝛽_𝐽+𝛽_𝑡 𝑥_𝐽𝑡+𝛽_𝐽𝑎 𝑥_𝑎+𝛽_𝑏 𝑥_𝐽𝑏^2+𝛽_𝐽𝑎𝑐 𝑥_𝑎^3+𝛽_𝐽𝑎𝑙  ln⁡〖𝑥_𝑎 〗+.........
+$$
 
--   If the IIA assumption does not hold, we can make other error distribution assumptions
-    -   Nested logit (can handle complex decision structures)
-    -   Probit (normal error terms, very general model, but can be difficult to work with it)
+Alternative Specific Constant. (J-1) are identified
+Permits Non-linear transformed variables.
+Can be generic if vary across the alternatives.
+Must be alternative-specific if constant across the alternatives (only j-1 are identified).
+
+## Systematic Utility Function
+Systematic utility function: Linear-in-parameter function
+$$𝑉_𝑗=𝛽_𝑗+𝛽_𝑡 𝑥_𝑗𝑡+𝛽_𝑘 𝑥_𝑗𝑘+.........$$
+$$𝑉_𝑗=𝛽_𝑗+(𝛽_𝑡/𝛽_𝑘)𝑥_𝑗𝑡+𝑥_𝑗𝑘+.........
+$$
+$$
+𝑉_𝑗=𝛽_𝑗+(𝛽_𝑡/𝛽_𝑐)𝑥_(𝑗−𝑡𝑖𝑚𝑒)+(𝛽_𝑟/𝛽_𝑐)𝑥_(𝑗−𝑟𝑒𝑙𝑖𝑎𝑏𝑖𝑙𝑖𝑡𝑦)+𝑥_(𝑗−𝐶𝑜𝑠𝑡)+.........
+$$
+$$𝑉_𝑗=𝛽_𝑗^/+(𝛽_𝑡𝑐)𝑥_(𝑗−𝑡𝑖𝑚𝑒)+(𝛽_𝑟𝑐)𝑥_(𝑗−𝑟𝑒𝑙𝑖𝑎𝑏𝑖𝑙𝑖𝑡𝑦)+𝑥_(𝑗−𝐶𝑜𝑠𝑡)+.........
+$$
+Willingness-to-pay for time savings
+
+Willingness-to-pay for improved reliability
+
+# MNL Estimation & MNL Specification
+
+## Estimation of MNL
+Maximum likelihood estimation:
+$$"Likelihood function: " 𝐿_𝑖=∏_(𝑗=1)^𝐽▒(Pr⁡( 𝑗)) ^(𝑦_𝑖 )
+$$
+$$"Log−likelihood function: " 𝐿_𝑖=∑_(𝑗∈𝐶_𝑖)▒〖𝑦_𝑗  ln⁡(Pr⁡( 𝑗)) 〗
+$$
+$$"Sample Log−likelihood: " 𝐿𝐿=∑_(𝑖=1)^𝑁▒(∑_(𝑗∈𝐶_𝑖)▒〖𝑦_𝑗  ln⁡(  Pr⁡( 𝑗))〗) 
+$$
+Use gradient search algorithms.
+Analytical gradient and Hessian functions allow faster estimation than numerical gradient and Hessian functions.
+
+## Goodness-of-Fit
+Model goodness-of-fit is measured by ρ2 value
+
+
+Adjusted ρ2 value 0.3 to 0.5 is considered reasonable (but REALLY DEPENDS)
+Alternative: Comparing predicted vs. observed shares.
+
+## Goodness-of-Fit
+Comparing predicted versus observed share of alternatives:
+Use holdout sample (20%-30% sample unused for estimation):
+Problematic for small sample size.
+Holding out may distort market sample share of the alternatives and thereby the alternative specific constants.
+Use bootstrap:
+Generate large number of samples bootstrapped from the same sample.
+Compare under/over predictions.
+
+## Validation by Bootstrapping
+Validation by Bootstrap Sample Simulation
+![](../../../assets/images/teaching/ENCI707/Lecture3/translog-paper3.png){fig-align="center"}
+
+## Validation by Bootstrapping
+
+Validation by Bootstrap Sample Simulation
+![](../../../assets/images/teaching/ENCI707/Lecture3/translog-paper3.png){fig-align="center"}
+
+Validation by 1000 Bootstrap Sample Simulation
+|           Mode         |     Sample   Share (%)    |     Mean   Prediction Error (%)    |     Max   Over-Prediction (%)    |     Max   Under-Prediction (%)    |
+|:----------------------:|:-------------------------:|:----------------------------------:|:--------------------------------:|:---------------------------------:|
+|     Car   Driver       |             26            |                0.033               |                3.26              |                -2.78              |
+|     Car   Passenger    |              1            |                0.015               |                0.91              |                -0.71              |
+|     Transit            |             59            |                -0.026              |                4.05              |                -3.36              |
+|     Bicycle            |              4            |                0.001               |                2.35              |                -1.72              |
+|     Walk               |             11            |                -0.022              |                2.25              |                -2.43              |
+
+## Specification Tests
+Expected signs of the coefficients
+Expected substitution patterns, e.g. value of time savings, etc.
+Likelihood ratio test:-2[LL(β)-LL(β/)] is χ2 distributed with k (= number of restricted parameters = the difference between number of parameters of two models) degrees of freedom
+Goodness-of-Fit measures: Rho-square, AIC, BIC
+
+## Specification of Logit Model
+Logit model works fine if there is no significant random variation of effects of any systematic variables:
+Unobserved (random) effects of any variable (varying across the alternatives and/or observations) violates the identical error term distribution assumption!
+Example:
+Effects of driving cost is influenced by income only: systematic effect and logit model will work fine with cost normalized by income.
+Effects of driving cost influenced by income and some unobserved factor, the logit model will be mis-specified.
+
+## Specification of Logit Model
+Logit model works fine if choice alternatives are perfectly IIA: proportional substitution exists.
+Imperfect competition or correlated variations among subsets of alternatives cause the violation of identical error term distribution assumption!
+Example:
+People who prefer private car, will prefer taxi more than they prefer transit. So, a logit model that considers all alternative modes are IIA will be mis-specified.
+
+## Collinearity of Independent Variables
+If some variables in the model are collinear then  the corresponding parameters can change arbitrarily.
+Unstable parameter estimation.
+Hessian matrix may not be definite.
+It is possible to have correlated variables in the discrete choice model unless they are highly collinear.
+For high collinearity, a small changes in model or data causes drastic changes in parameter estimates.
+Example: V=βt(Time)+ βc(Cost), if Cost= βb+ βd(Time), then V= (βt + βtβd)Time+ βc βb 
+Identification issue.
+Solution: Create composite variable using the correlated variables (e.g., cost/time).
+
+## Income/Budget Effects
+![](../../../assets/images/teaching/ENCI707/Lecture3/translog-paper3.png){fig-align="center"}
+
+Testing income effects:
+Use cost and cost2 as separate variables. 
+If cost2 has a statistically significant and reasonable parameter value, income effects need to be addressed.
+Addressing income effects:
+Income normalization as (Cost/income) or (Income-Cost)
+Classifying population into different income categories and develop separate models for each.
+Interact income category with other variables.
+
+## Aggregation/Market Segmentation
+![](../../../assets/images/teaching/ENCI707/Lecture3/translog-paper3.png){fig-align="center"}
+
+![](../../../assets/images/teaching/ENCI707/Lecture3/translog-paper3.png){fig-align="center"}
+
+## Aggregation/Market Segmentation
+![](../../../assets/images/teaching/ENCI707/Lecture3/translog-paper3.png){fig-align="center"}
+
+Here 60% of vehicle owners are higher income people.
+60% of low-income vehicle owners are in white-collar group.
+So, we should be careful in categorization at the stage of parameter estimation.
+
+
+## Aggregation/Market Segmentation
+Multicollinearity & correlation among independent (explanatory) variables may affect model predictions.
+Appropriate clustering method can be used to derive finite and exhaustive sets of market segments to develop separate models.
+Separate model for each market segment can sometimes help capturing heterogeneity in complicated markets.
+
+## Aside: Correlation, Collinearity, & Multicollinearity
+Correlation: when an independent variable exhibits a strong linear relationship with the dependent variable.
+Collinearity: when two (or more) independent variables exhibit a strong linear relationship. May exist between multiple variables. 
+Multicollinearity: Specific case of collinearity between more than two variables.
+Collinearity can occur without linear relationship between any two variables.
+
+# Elasticity, Marginal Effect, & Substitution in MNL
+
+## Marginal Effect/Elasticity:  Attributes of Alternatives
+Disaggregate Direct elasticity/marginal effect: with respect to an attribute of the same alternative.
+$$"Direct ME "=(𝛿 Pr⁡( 𝑗))/(𝛿𝑥_𝑗 )=Pr⁡( 𝑗)(1−Pr⁡( 𝑗)) 𝛽_(𝑥_𝑗 )$$
+$$"Direct E "=  (𝛿 Pr⁡( 𝑗))/(𝛿𝑥_𝑗 )  𝑥_𝑗/(Pr⁡( 𝑗))=𝑥_𝑗 (1−Pr⁡( 𝑗)) 𝛽_(𝑥_𝑗 )
+$$
+Disaggregate Cross elasticity/marginal effect: with respect to an attribute of different alternative.
+
+$$"Cross ME "=(𝛿 Pr⁡( 𝑗))/(𝛿𝑥_𝑘 )=−Pr⁡( 𝑗)Pr⁡( 𝑘)𝛽_(𝑥_𝑘 )"Cross E "=  (𝛿 Pr⁡( 𝑗))/(𝛿𝑥_𝑘 )  𝑥_𝑘/(Pr⁡( 𝑗))=−Pr⁡( 𝑘)𝛽_(𝑥_𝑘 ) 𝑥_𝑘$$
+
+Cross elasticity is the same for all other alternative than alternative k.
+This is proportional substitution: an improvement in one alternative, draws proportionately from all other alternatives!
+
+
+## Fact to check: Attributes of Alternatives
+Summation of all probabilities of a choice model = 1
+Summation of changes in probabilities (of all alternatives) with respect to a variable (derivative)  = 0.
+
+$$$$
+
+This is true for any discrete choice model and can be used to verify accuracy of elasticity calculation.
+
+## Aggregating Elasticity: Attributes of Alternatives
+Disaggregate discrete choice model gives disaggregate values of elasticity for each data point in the sample
+Approaches to meaningfully aggregate :
+Naïve approach: Consider sample average values of explanatory variables (x) to calculate sample average elasticity
+Estimate elasticity for each sample respondent and draw distribution of elasticity values.
+Probability weighted sample enumeration (PWSE):
+
+$$𝐸_(𝑥_𝑘)^𝑗=∑_(𝑖=1)^𝑛▒〖(Pr_𝑖⁡( 𝑗))/(∑_(𝑖=1)^𝑛▒〖Pr_𝑖⁡( 𝑗)〗) 𝐸_(𝑥_𝑘)^(Pr_𝑖⁡( 𝑗)) 〗
+$$
+i is the individual in the sample of size n
+j is the specific alternative
+x is the variable of elasticity
+j=k indicates direct elasticity
+j≠k indicates cross-elasticity 
+Same approach is application for marginal effect and for  any choice model
+
+## Relationship between elasticity of demand
+![](../../../assets/images/teaching/ENCI707/Lecture3/translog-paper3.png){fig-align="center"}
+
+## Marginal/Elasticity: Attributes of Choice Maker/Choice Context
+Such attributes have alternative-specific coefficients: For example, consider income of choice maker
+$$$$
+Corresponding sum of all alternatives, j ≠ k
+$$$$
+Rate of change of Pr(j) with respect to income of individual, i:
+$$$$
+
+## Marginal/Elasticity: Attributes of Choice Maker/Choice Context
+Rate of change of Pr(j) with respect to income:
+$$$$
+
+## Marginal/Elasticity: Attributes of Choice Maker/Choice Context
+$$$$
+
+## Aggregating Elasticity: Attributes of Choice Maker/Choice Context
+Use similar approach of aggregating market share from disaggregate choice model predictions:
+Microsimulation
+Sample enumeration
+Classification with naïve aggregation
+Naïve aggregation
+
+Same approach is application for marginal effect and for  any choice model
+
+
+## Marginal/Elasticity of Categorical Variables
+Choice elasticity with respect to categorical variable is tricky.
+“1% change in choice probability with respect to 1% change in a categorical variable, e.g. presence/absence of parking spot at destination” has little meaning!
+Arc-elasticity is the best way: Express the change in choice probability for the presence/absence of the categorical variable.
+
+$$$$
+
+Arc-elasticity can also be used for continuous variables.
+
+
+## Proportional Substitution
+Proportional substitution: an improvement in one alternative, draws proportionately from all other alternatives!
+
+![](../../../assets/images/teaching/ENCI707/Lecture3/translog-paper3.png){fig-align="center"}
+
+In reality: Small gasoline car share should be drawn more than that of Large gasoline car!
+Proportional substitution: This will draw shares from large and small gasoline car proportionately.
+
+
+## IIA: Independent and Irrelevant Alternatives
+$$$$
+
+This property is derived from assumption: the random utilities,ε are independent and identical in distribution.
+
+Random error are identically distributed, having same scale or variance.
+
+$$$$
+
+## IIA: Independent and Irrelevant Alternatives
+Example of blue bus/red bus: If real alternatives are not following IIA, then MNL would induce serious error.
+Previous: P(car)=1/2 and P(Blue bus)=1/2
+Now a new Red bus is introduced and under the IIA assumption that the ratio of choice probabilities between car and Blue bus must be constant, so P(car)=1/3, P(Blue bus)=1/3 and P(Red bus)=1/3, which is unrealistic.
+Actual will be P(car)=1/2, P(Blue bus)=1/4 and P(Red bus)=1/4; but now the ratio of car and Blue bus is not the same as was before introducing Red bus.
+
+## IIA: Independent and Irrelevant Alternatives
+Three alternatives with same utilities 1: car, 2: Blue bus and 3: Red bus and (V1=V2=V3=V) 
+Now probability of choosing 1: car would be compared against the second highest attractive alternative (U*)
+$$𝑈^∗=max⁡( 𝑈_2,𝑈_3)=𝑉^∗+𝜀^∗
+$$
+As per Gumbel distribution with 0 mean and unit scale
+$$𝑉^∗=ln⁡( 𝑒^(𝑉_2 )+𝑒^(𝑉_3 ))=ln⁡( 2𝑒^𝑉)=ln⁡( 2)+𝑉
+$$
+This step assumed that the random errors of alternative 2(Blue bus) and 3(Red bus) are independent and in such case, probability of choosing car:
+$$𝑃(𝑐𝑎𝑟)=1/(1+𝑒^(𝑉^∗−𝑉_1 ) )=1/(1+𝑒^(𝑉+ln⁡2−𝑉) )=1/(1+2)=1/3
+$$
+
+## IIA: Independent and Irrelevant Alternatives
+Actually, 2(Blue bus) and 3(Red bus) are perfectly correlated and in that case the maximum utility of 2 and 3 are simply (V+ε) that means V*=V
+$$𝑃(𝑐𝑎𝑟)=1/(1+𝑒^(𝑉^∗−𝑉_1 ) )=1/(1+𝑒^(𝑉−𝑉) )=1/(1+1)=1/2
+$$
+That means IID assumption makes V* too high by an amount of ln2. 
+IIA is attributed to disaggregate/individual choice situations, not the overall market share.
+
+## IIA Violation Test
+We can always test IIA by developing alternative nested logit models.
+It is also possible to test statistically whether IIA is violated or not without developing nested logit models.
+
+Steps for testing IIA:
+Estimate the base MNL  model for the full set of alternatives and refer to its parameters as βC.    
+Remove one or more alternatives with suspected IIA violation problem to make the constrained choice set C/.
+This will reduce the number of parameters in the new model and its parameter set is then βC/. 
+In each case, in addition to estimating the parameter sets we also produce variance covariance matrices , ∑, (Inverse of Hessian Matrix) of the estimated parameters sets.
+
+## IIA Violation Test
+ 	
+Let use refer to the corresponding matrices as ∑βC and ∑βC/ of the full model and the restricted model, respectively.
+If the alternatives in the choice set  satisfy IIA then the two variance-covariance matrices will have the same values for corresponding cells: ∑βC = ∑βC/    
+Let us consider the Null Hypothesis, H0: βC = βC/   
+Conduct tests:
+Hausman and McFadden Test
+Small and Haiso Test
+
+## IIA Violation Test
+Hausman and McFadden Test (Econometrica, 1984):
+(𝛽 ̂_(𝐶^/ )−𝛽 ̂_𝐶 )^𝑇 (Σ_(𝛽 ̂_(𝐶^/ ) )−Σ_(𝛽 ̂_𝐶 ) )^(−1) (𝛽 ̂_(𝐶^/ )−𝛽 ̂_𝐶 )
+This is χ2 distributed degrees of freedom equal to the number of alternatives removed in the restricted model.
+
+Small and Haiso Test (International Economic Review, 1985)
+Conduct likelihood ratio test between base model and the restricted model
+$$−2(𝐿𝐿_(𝛽 ̂_𝐶^/ )−𝐿𝐿_(𝛽 ̂_𝐶 ) )$$
+
+This likelihood ratio is χ2 distributed degrees of freedom equal to the number of alternatives removed in the restricted model. 
+
+# Policy Evaluation Using MNL
+
+## Policy Evaluations
+Elasticity:
+Direct elasticity
+Cross elasticity
+
+Consumer surplus & social welfare analysis
+Marginal rate of substitution between two variables (ratio of corresponding parameters) in the choice model:
+Value of Travel Time Savings (VOTTS) in mode choice.
+Willingness to pay for improved transit reliability in transit choice.
+Willingness to pay for transit accessibility in home location choice. 
+
+## Willingness-to-pay Analysis
+Systematic utility function needs to have cost as a variable (p) along with another variable of interest x.
+
+Assumption: Any changes in x is balanced by changes in p to maintain same level of utility: total utility does not change. 
+
+Using First order Taylor’s Expansion:
+
+After transposing (assuming overall utility change is zero):
+
+## Willingness-to-pay Analysis
+For linear-in-parameter utility function
+
+Willing-to-pay for any continuous variable change
+
+Value of Travel Time Savings (VOTS): additional amount of money to reduce 1 unit of time
+
+Value of Reliability (VOR) or Safety (VOS) : additional amount of money to increase 1 level of reliability(r), safety(s)
+
+## Consumer Surplus
+
+## Consumer Surplus
+For Changes in only one (independent) alternative (j):
+
+## Welfare Analysis
+Compensating variation analysis: normalized changes in expected maximum utility of a particular choice before/after any changes (policy/infrastructure):
+
+# Forecasting & Prediction Using Disaggregate Choice Models
+
+## Applying Disaggregate Model for Forecasting
+
+## Applying Disaggregate Choice Model for Forecasting
+We do aggregate forecasts, so why do we need disaggregate models?
+Aggregation suppresses information  misleading information after data aggregation (i.e., Simpson’s Paradox & Ecological Fallacy)
+Statistical inefficiency of aggregate approach
+Although we aggregate the forecast, we can explicitly capture information at individual level
+We can track many sensitive policy issues
+Aggregation of forecast is possible at any level we want, as the model is disaggregate
+Sometimes modelling at disaggregate level makes the model independent of artificial zonal structures and the model may be transferrable
+
+## Applying Disaggregate Choice Model for Forecasting
+We do aggregate forecasts, so why do we need disaggregate models?
+Aggregation suppresses information  misleading information after data aggregation (i.e., Simpson’s Paradox & Ecological Fallacy)
+Statistical inefficiency of aggregate approach
+Although we aggregate the forecast, we can explicitly capture information at individual level
+We can track many sensitive policy issues
+Aggregation of forecast is possible at any level we want, as the model is disaggregate
+Sometimes modelling at disaggregate level makes the model independent of artificial zonal structures and the model may be transferrable
+
+## 
+
+## Microsimulation
+
+## Sample Enumeration
+
+## Sample Enumeration
+
+## Naïve Aggregation
+
+## Classification with Naïve Aggregation
+
+# Confidence Interval on Predictions
+
+## Confidence Interval of Predictions: Elasticity, Market Share, & Revenue
+
+## Confidence Interval of Predictions: Elasticity, Market Share, Revenue
+
+## Confidence Interval of Predictions: Elasticity, Market Share, & Revenue
+
+## Confidence Interval of Predictions: Elasticity, Market Share, & Revenue
+
+# Sampling & Discrete Choice Models
+
+## Sampling
+Sampling of choice makers from population using RP or SP survey:
+Exogenous Sample: Sample share of alternatives are: 
+Identical to those of population shares if representative.
+Not-identical if not representative.
+Endogenous/Choice-based Sample: Respondents are sampled based on observed choices.
+Sample share of alternatives are different from those of population shares.
+Sampling of choice alternatives: irrespective of sampling of respondents:
+Choice alternatives are collectively exhaustive.
+When choice alternative space is large, then sample alternatives.
+
+## Sampling of Choice Makers
+Exogenous sampling of choice makers (Stratified Random Sampling) 
+Population size, N.
+Stratification of population into total G groups.
+Share (%) individual in a particular group, g in population, Wg.
+Sample size, n.
+Share (%) individual in the particular group, g in sample, wg.
+Probability of an individual being selected in the sample,   
+
+
+Sampling probability is not a function of parameter, β.
+
+## Sampling of Choice Makers
+Exogenous sampling of choice makers (Simple Random Sampling)
+Probability of an individual being selected in the sample,  
+
+Sampling probability is not a function of parameter, β.
+
+For representative exogenous sample (stratified/simple random sampling) no correction to choice model estimates is needed.
+For non-representative sample, parameters except the Alternative Specific Constants (ASC) do not require correction.
+ASC needs to corrected/updated to match actual market share.
+
+## Sampling of Choice Makers
+Endogenous/Choice-based sampling of choice makers (randomly select choice makers of specific choices).
+Selection of respondent of specific choice maker group (e.g. transit users, driver, bicyclists) still should be random in some way.
+Choice model with choice-based sample produces unbiased estimates of all parameters except the Alternative Specific Constants (ASC)
+ASCs need to corrected/updated to match actual market share.
+
+## Sampling of alternatives: Large Choice Set
+Large number of alternatives (e.g. destination location choice model), a random sample of alternatives can be used to estimate the model
+
+## Sampling of alternatives: Large Choice Set
+
+## Sampling of alternatives: Large Choice Set
+
+## Managing Large Choice Sets
+Reducing alternatives:
+Use various feasibility constraints to reduce number of alternatives.
+Random sampling from large choice set.
+Wrong choice set may generate distorted predictions.
+
+# Transferability and Updating Model Parameters: MNL
+
+## Model Transferability
+
+## Updating MNL Model Parameters
+
+## Updating MNL Model Parameters

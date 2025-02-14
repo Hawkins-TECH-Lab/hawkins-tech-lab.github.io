@@ -1,5 +1,5 @@
 ---
-title: "Lecture 3 - Aggregate Demand Models"
+title: "Lecture 4 - Disaggregate Econometric Choice Theory"
 subtitle: "ENCI707: Engineering Demand and Policy Analysis"
 footer:  "[ENCI707 Home](/teaching/ENCI707/)"
 logo: "../images/logo.png"
@@ -13,123 +13,222 @@ execute:
   freeze: auto
 ---
 
-## Outline
-
-::: incremental
-1.  Basis for choice modeling
-2.  Theory
-3.  Logit choice model
+## Demand Versus Choice
+::::: columns
+::: {.column width="50%"}
+Aggregate
+Homogenous people
+Identical behavior 
+Variables: Price (P) and quantity (Q)
+Demand function: Q = f(P)
+Demand = Bundle of choices
 :::
+::: {.column width="50%"}
+Disaggregate
+Heterogeneous people
+Random behavior
+Variables: Attributes of choice alternatives; attributes of choice maker; context of choices
+Non-linear choice function
+:::
+:::::
 
-## Basis for Choice Modeling {.smaller}
+## Transportation Choices
+Many travel demand related choices are:
+Discrete: activity type choice, mode choice, route choice, vehicle type choice, time of the day choice, location of trip destination choice etc.
+Continuous: activity duration, vehicle usage, housing duration, etc.
+Heterogeneous: Wide variations of choices across the population.
+Probabilistic/stochastic/random: We can’t defined deterministically. 
 
--   Aggregate demand models (such as those we have been discussing) based on observations for **groups of travelers** or **average relations** for zones
--   **Discrete choice:** probability an individual chooses a given option a function of their socioeconomic characteristics & relative attractiveness of the option
--   Cannot estimate via least squares because probability is unobserved – only observe choice
--   Models are **probabilistic** & do not give an outcome value such as **trips** – must use probability concepts to generate discrete outcomes (summation over all observations to give expected number choosing option or use sample enumeration to allocate discrete outcomes)
 
-## Basis for Choice Modeling {.smaller}
+## Choice as Consumption
+![](../../../assets/images/teaching/ENCI707/Lecture3/translog-paper3.png){fig-align="center"}
 
--   Individuals derive **utility** from the use of alternatives defined by a **utility function** often denoted by V $$Vpeanut butter = 0.25 – 1.0 ALLERGY - 0.5 PRICE + 0.25 ORGANIC$$
--   Need probability value between 0 & 1. Various forms, generally with an s-shaped plot. Main ones are $$𝐿𝑜𝑔𝑖𝑡:𝑃_1=exp⁡(𝑉_1 )/(exp⁡(𝑉1)+exp⁡(𝑉2))$$ $$𝑃𝑟𝑜𝑏𝑖𝑡:𝑃_1=\int_{-\infty}^{\infty}⁡\int_{-\infty}^{V_1-V_2+x_1}\frac{⁡exp⁡(\frac{−1}{2(1−\rho^2)} (\frac{𝑥_1}{\sigma_1})^2−\frac{2\rho 𝑥_1 𝑥_2}{\sigma_1 \sigma_2}+(\frac{𝑥_2}{\sigma_2})^2}{2\pi\sigma_1 \sigma_2 \sqrt{1−\rho^2 }} 𝑑𝑥_2 𝑑𝑥_1$$
+## Theory of Choice Behaviour
+Descriptive (or positive): how human beings behave, not how they should/ought to behave.
+Abstract: that can be formalized in general cases not specific to particular circumstances.
+Operational: can be applied to develop models with variables and parameters that can be observed and estimated. Models can be used for prediction and/or policy evaluation.
 
-## Properties of Discrete Choice (DC)
+## Framework of Choice Theory
+Choice as outcome of sequential decision-making:
+ Definition of the choice problem.
+ Generation of alternatives.
+ Evaluation of attributes of alternatives.
+ Choice making.
+ Executing the choice.
+Define:
+ Decision maker.
+ Characteristics of decision maker.
+ Alternatives.
+ Attributes of alternatives.
+ Decision rules to make choice.
 
--   Based on theories of **individual behavior** & do not constitute physical analogies – therefore stable over time & space
--   Can be more **statistically efficient** than aggregate models because each observation is an outcome rather than using aggregations of potentially hundreds of observations
--   DM less likely to suffer from bias due to correlation between aggregate units – i.e., **ecological correlation** (fallacy)
+## Decision Maker
+Disaggregate: Individual or group (household, family, firms, government agency, etc.).
+Heterogeneous choice makers: Wide variety in choice behavior across the population.
+Taste variations across the choice/decision makers: Idiosyncrasy.
+Different choice situations for different people.
+Characteristics of heterogeneous choice maker:
+Socio-economics: age, gender, income, education, household/firm size, etc.
+Choice situations/context: spatial, temporal, economic
 
-## Ecological Fallacy
+## Alternatives
+Choice means choosing an alternative out of a choice set (mutually exclusive and collectively exhaustive countable set of alternatives):
+Universal choice set: C.
+Feasible / Individual-specific, Ci.
+Consideration (awareness) set, Cci.
 
-![](../images/lecture5/eco_fallacy.png){fig-align="center"}
+Example:
+ C = { Private car, Uber, Taxi, Bus, Bicycle, Walk}
 
-## Theoretical Framework {.smaller}
+ No driver’s license, distance > 3 km
+Ci = { Uber, Taxi, Bus, Bicycle}
 
--   Individuals belong to a **homogeneous population** $N$, act rationally, & **possess perfect information** – i.e., they always select the option that maximizes their net personal utility subject to legal, social, physical, &/or budgetary (both time & money) constraints
--   There is a certain set $𝐴 = \{𝐴_1, …𝐴_i,…𝐴_I\}$ of available alternatives & a set X of vectors of measured attributes of individuals & their alternatives
--   An individual $n$ is endowed with a set of attributes $𝑥 \in 𝑋$ & faces a choice set $𝐴(n) \in 𝐴$
--   We will assume choice set is predetermined for individuals
+No driver’s license, distance > 3 km & not aware of Uber
+Cci = { Taxi, Bus, Bicycle}
 
-## Theoretical Framework
+## Alternatives - Attributes
+Decision maker evaluates alternatives in terms of attribute values: Attribute values can be measured on the scale of attractiveness:
+Categorical: Binary, ordinal (reliability, safety, convenience, etc.)
+Cardinal: absolute values (time, cost, etc.)
+Generic versus alternative-specific.
+Measured versus perceived.
 
--   Modeler, an observer, does not **posses complete information** about all elements considered by the individual making choice
--   Modeler assumes $𝑈_{ni}$ can be represented by two components:
-    -   A **measurable**, **systematic**, or **representative** part $𝑉_{ni}$, which is a function of the measured attributes $x$
-    -   A random part $\epsilon_{ni}$, which reflects **indiosyncratic** & **taste variation**, together with measurement or observational errors made by the modeler
 
-## Theoretical Framework
+## Decision Rules
+Rational behavior (homo economicus): self-interested economic actor who optimizes own choice outcomes.
+Bounded rationality: Use rules to simplify:
+Dominance: Rules used to remove inferior alternative.
+Satisfaction: Attributes of the alternatives need to satisfy the expectation level.
+Lexicographic: attributes are rank ordered by their level of importance.
+Utility maximizing: maximize a latent function of different attributes of alternatives in the choice set.
 
--   Modeler sets utility $𝑈_{ni}=𝑉_{ni}+\epsilon_{ni}$ to address two apparent irrationalities
-    1.  That two individuals faced with the **same situation** & having the **same personal attributes** make different choices
-    2.  That an individual may not select the alternative that **appears** to be the *best one*
--   Often assumed $V_{ni}$ given by $\sum_k^K \beta_{ik} x_{nik}$ here $\beta_{ik}$ are assumed **constant** for all individuals $N$ in the homogeneous set but **may vary across alternatives** $I$
+## Utility Maximization
+Utility function: 
+Captures relative attractiveness of alternative in the choice set.
+Measures the satisfaction that the decision maker wants to optimize.
+Assumptions:
+Decision maker has full knowledge about the attributes of the alternatives and is able to process information.
+Base on information processing, decision maker associates a utility to each alternative.
+Decision maker has transitive preference.
+Decision maker is rational and perfect optimizer.
+Decision maker is consistent.
 
-## Theoretical Framework {.smaller}
+## Probability in Utility Maximization
+::::: columns
+::: {.column width="50%"}
+Constant utility: 
+Utility is deterministic and cardinal in nature.
+Decision maker does not maximize utility. 
+However, human behavior is inherently random.
+:::
+::: {.column width="40%"}
+Random utility: 
+Decision maker is a rational optimizer.
+Modeller do not observe the exact measure of utility used by the decision maker.
+Utility becomes random and ordinal variable.
+Probabilistic choice model because of unobserved heterogeneity (randomness)
+:::
+:::::
 
--   Individual chooses an alternative based on $𝑈_{ni}≥ 𝑈_{jn} \forall A_j \in A(n)$
--   Or: $𝑉_{ni}  – 𝑉_{nj}≥\epsilon_{nj}  − \epsilon_{ni}$ (notice swapping of $i$ & $j$)
+## Discrete Choice
+Two alternatives: transit, car
+$$𝑈_𝑡𝑟𝑎𝑛𝑠𝑖𝑡=𝛽_𝑡 𝑇𝑖𝑚𝑒_𝑡𝑟𝑎𝑛𝑠𝑖𝑡+𝛽_𝑐$$ 𝐶𝑜𝑠𝑡_𝑡𝑟𝑎𝑛𝑠𝑖𝑡 (Typically, βt, βc <0)
 
-Not possible to know with certainty if the inequality holds, so use $$𝑃_{ni}  = 𝑃(\epsilon_{nj} \leq \epsilon_{ni} + (V_{ni} - V_{nj})) \forall A_j \in A(n)$$ - Do not know distribution of joint residuals, so cannot derive analytical expression for model - Can denote $f(\epsilon) = f(\epsilon_1, \epsilon_2, ... \epsilon_I$ & know they are **random variables** with a certain distribution
+$$𝑈_𝑐𝑎𝑟=𝛽_𝑡 𝑇𝑖𝑚𝑒_𝑐𝑎𝑟+𝛽_𝑐 𝐶𝑜𝑠𝑡_𝑐𝑎𝑟$$
 
-## Theoretical Framework {.smaller}
+Equivalent specification
+$$𝑈_𝑡𝑟𝑎𝑛𝑠𝑖𝑡=(𝛽_𝑡/𝛽_𝑐)𝑇𝑖𝑚𝑒_𝑡𝑟𝑎𝑛𝑠𝑖𝑡+𝐶𝑜𝑠𝑡_𝑡𝑟𝑎𝑛𝑠𝑖𝑡$$
 
--   Can note that distribution for $f(U)$ is the same but with mean $V$ rather than 0 $$P_{ni} = \int_{R_I} f(\epsilon) d\epsilon$$ $$\text{where } R_I = \begin{cases}
-    \epsilon_{nj} \leq \epsilon_{ni} + (V_{ni} - V_{nj}), & \forall A_j \in A(n) \\
-    V_{ni}) + \epsilon_{ni} \ge 0 \\
-    \end{cases}$$
--   Assuming independent & identically distributed (**IID**) residuals, $$f(\epsilon_1,...\epsilon_I) = \prod_i^I g(\epsilon_i)$$
--   And (drop $n$ for simplicity) $$P_i = \int_{-\infty}^\infty g(\epsilon_i) d\epsilon_i \prod_{j \neq i} \int_{-\infty}^{V_i-V_j+\epsilon_i} g(\epsilon_j) d\epsilon_j$$
+$$𝑈_𝑐𝑎𝑟=(𝛽_𝑡/𝛽_𝑐)𝑇𝑖𝑚𝑒_𝑐𝑎𝑟+𝐶𝑜𝑠𝑡_𝑐𝑎𝑟
+$$
 
-## Generating the Logit Model {.smaller}
+Choice: car, if
+$$𝛽_𝑡 𝑇𝑖𝑚𝑒_𝑐𝑎𝑟+𝛽_𝑐 𝐶𝑜𝑠𝑡_𝑐𝑎𝑟≥𝛽_𝑡 𝑇𝑖𝑚𝑒_𝑡𝑟𝑎𝑛𝑠𝑖𝑡+𝛽_𝑐 𝐶𝑜𝑠𝑡_𝑡𝑟𝑎𝑛𝑠𝑖𝑡
+$$
 
--   Assuming IID Gumbel (**Extreme Value Type I**) residuals, or equivalently that residual differences are **logistically distributed**, gives the standard multinomial logit specification
--   Termed *softmax function* in machine learning field $$P_{ni} = \frac{exp(\mu V_{ni})}{\sum_{A_j \in A(n)} exp(\mu V_{nj})}$$
--   Where $\mu$ is a **scale parameter** assumed equal to 1.0 for identification
+or
+$$(𝛽_𝑡/𝛽_𝑐)𝑇𝑖𝑚𝑒_𝑐𝑎𝑟+𝐶𝑜𝑠𝑡_𝑐𝑎𝑟≤(𝛽_𝑡/𝛽_𝑐)𝑇𝑖𝑚𝑒_𝑡𝑟𝑎𝑛𝑠𝑖𝑡+𝐶𝑜𝑠𝑡_𝑡𝑟𝑎𝑛𝑠𝑖𝑡
+$$
 
-![](../images/lecture5/logit_curve.png){.absolute bottom="0" right="0" width="35%"}
+## Discrete Choice
+Car is the dominant alternative, if
+$$𝑇𝑖𝑚𝑒_𝑐𝑎𝑟<𝑇𝑖𝑚𝑒_𝑡𝑟𝑎𝑛𝑠𝑖𝑡&𝐶𝑜𝑠𝑡_𝑐𝑎𝑟<𝐶𝑜𝑠𝑡_𝑡𝑟𝑎𝑛𝑠𝑖𝑡∴𝑈_𝑐𝑎𝑟>𝑈_𝑡𝑟𝑎𝑛𝑠𝑖𝑡$$
 
-## Logit Model Parameter Estimation
+Car and transit in competition, if
+$$𝑇𝑖𝑚𝑒_𝑐𝑎𝑟<𝑇𝑖𝑚𝑒_𝑡𝑟𝑎𝑛𝑠𝑖𝑡&𝐶𝑜𝑠𝑡_𝑐𝑎𝑟>𝐶𝑜𝑠𝑡_𝑡𝑟𝑎𝑛𝑠𝑖𝑡$$
 
--   Commercial (& opensource) software exists to estimate model parameters using the method of maximum likelihood estimation
-    -   Apollo (R & free)
-    -   Biogeme (Python & free)
-    -   STATA (commercial)
-    -   LIMDEP (commercial)
-    -   GAUSS (commercial)
--   Parameter interpretation similar to regression (t-statistics, GoF, etc.)
+Is the traveler willing to pay extra (Costcar-Costtransit) to save (Timetransit -Timecar)?
 
-## Direct & Cross Elasticity
+If yes (pick car):
+$$(𝛽_𝑡/𝛽_𝑐 )𝑇𝑖𝑚𝑒_𝑐𝑎𝑟+𝐶𝑜𝑠𝑡_𝑐𝑎𝑟≤(𝛽_𝑡/𝛽_𝑐 )𝑇𝑖𝑚𝑒_𝑡𝑟𝑎𝑛𝑠𝑖𝑡+𝐶𝑜𝑠𝑡_𝑡𝑟𝑎𝑛𝑠𝑖𝑡$$
 
--   **Direct elasticity:** direct effect of changing a variable value related to a good on demand for the same good
-    -   E.g., elasticity of transit demand wrt transit fare, transit travel time, or transit headway
--   **Cross elasticity:** effect of changing a variable value related to a good on demand for a different good
-    -   E.g., elasticity of transit demand wrt auto travel time
+Willingness-to-pay or Value of Travel Time Savings (VOTS):
+$$(𝛽_𝑡/𝛽_𝑐 )≥((𝐶𝑜𝑠𝑡_𝑐𝑎𝑟−𝐶𝑜𝑠𝑡_𝑡𝑟𝑎𝑛𝑠𝑖𝑡))/((𝑇𝑖𝑚𝑒_𝑡𝑟𝑎𝑛𝑠𝑖𝑡−𝑇𝑖𝑚𝑒_𝑐𝑎𝑟))$$
 
-## Logit - Direct Elasticity
+## Discrete Choice
+![](../../../assets/images/teaching/ENCI707/Lecture3/translog-paper3.png){fig-align="center"}
 
-Direct elasticity of the probability of an individual $n$ choosing alternative $i$ wrt a change in an attribute/independent variable $X_{ik}$ with coefficient $\beta_k$ (ignoring $n$ subscripts for simplicity)
+## Discrete Choice
+![](../../../assets/images/teaching/ENCI707/Lecture3/translog-paper3.png){fig-align="center"}
 
-$$e_{direct} = \frac{\partial P_i}{\partial X_{ik}} \frac{X_{ik}}{P_i}=(1-P_i)X_{ik}\beta_k$$
+## Stochastic Discrete Choice
+Choice Probability of an alternative j for an individual i with choice set Ci
+$$Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( 𝑈_𝑖𝑗≥𝑈_𝑖𝑘);𝑘≠𝑗&𝑘∈𝐶_𝑖$$
 
-## Logit - Cross Elasticity {.smaller}
+Random utility:
+$$𝑈_𝑖𝑗=𝑉_𝑖𝑗+𝜀_𝑖𝑗;𝑗∈𝐶_𝑖$$
 
--   Cross elasticity of the probability of an individual $n$ choosing alternative $i$ wrt a change in an attribute/independent variable $X_{jk}$ with coefficient $\beta_k$ for a different alternative
+Random Utility Maximizing (RUM) Choice Model:
+$$Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( 𝑉_𝑖𝑗+𝜀_𝑖𝑗≥𝑉_𝑖𝑘+𝜀_𝑖𝑘);𝑘≠𝑗&𝑘∈𝐶_𝑖$$
+Or
+$$Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( 𝜀_𝑖𝑘−𝜀_𝑖𝑗≤𝑉_𝑖𝑗−𝑉_𝑖𝑘);𝑘≠𝑗&𝑘∈𝐶_𝑖$$
 
-$$e_{cross} = -P_j X_{jk}\beta_k$$
+## RUM-Based Discrete Choice
+Fully specified choice set Ci.
+Attributes of alternatives are completely defined.
+Only differences in utility matters.
+Systematic utility function is specified as a function of attributes.
+An attribute may have the same (generic) weighting factors (coefficient) for all alternatives if it varies across the alternatives (e.g., travel time, travel cost, etc.).
+An attribute may have different weighting factors (coefficient) for different alternatives if it does not vary across the alternatives (age, gender, income, etc.).
+Assumption on distribution of random utility is necessary to derive choice probability: Stochastic Choice Model.
 
--   Above is same regardless of alternative $i$. I.e., **all alternatives** have the same cross-elasticity wrt an attribute $k$ of alternative $j$
--   Above results from independence of irrelevant alternatives (**IIA**) property of basic logit model
 
-## Independence of Irrelevant Alternatives (IIA) Property
+## Binary Discrete Choice
+Choice Probability of an alternative j for an individual i with choice set Ci of 2 alternatives: j, k
+$$Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( 𝑉_𝑖𝑗+𝜀_𝑖𝑗≥𝑉_𝑖𝑘+𝜀_𝑖𝑘)$$
 
-Consider we have two modes: auto (a) & bus (b)
+$$=Pr⁡( 𝜀_𝑘−𝜀_𝑗≤𝑉_𝑗−𝑉_𝑘)$$
 
-$$\frac{P_a}{P_b} = \frac{exp(V_a)}{exp(V_b)} = exp(V_a - V_b)$$ I.e., the relative probability of choosing auto vs. bus depends **only** on the utilities of the two alternatives
+Binary Probit:
+εj,εk are both normally distributed.
+So,(εk-εj) is also normally distributed.
+With fully specified alternative specific constants, (εk-εj) is N(0,σ2):
 
--   Now what if our buses are **red (rb)** & we paint half **blue (bb)**?
+Resulting Choice model:
+σ normalized to 1, giving probit model with unit variance.
 
-## IIA Cont…
+## Binary Discrete Choice
+Binary Logit:
+εj,εk are IID Type I EV distributed with scale μ and variance π2/6μ2
+With fully specified alternative specific constant (εk-εj) is logistically distributed with scale μ and variance π2/3μ2:
+ 
+Resulting Choice model:
 
--   If the IIA assumption does not hold, we can make other error distribution assumptions
-    -   Nested logit (can handle complex decision structures)
-    -   Probit (normal error terms, very general model, but can be difficult to work with it)
+
+μ normalized to 1, giving logit model with variance of π2/3
+
+## Binary Discrete Choice
+Binary Probit/Logit Identification
+Only one alternative specific constant.
+Scale of logit model is not identified as a constant.
+Reference alternative is irrelevant.
+$$𝑉_𝑗−𝑉_𝑘=𝑉=𝛽_0+∑▒〖𝛽(𝑥_𝑗−𝑥_𝑘)〗$$
+
+$$𝑉_𝑗=𝛽_0+𝛽(𝑥_𝑔𝑒𝑛𝑒𝑟𝑖𝑐 )_𝑗+𝛽_(𝑗−𝑠𝑝𝑒𝑐𝑖𝑓𝑖𝑐) (𝑥_(𝑗−𝑠𝑝𝑒𝑐𝑖𝑓𝑖𝑐))𝑉_𝑘=0+𝛽(𝑥_𝑔𝑒𝑛𝑒𝑟𝑖𝑐 )_𝑘+𝛽_(𝑘−𝑠𝑝𝑒𝑐𝑖𝑓𝑖𝑐) (𝑥_(𝑘−𝑠𝑝𝑒𝑐𝑖𝑓𝑖𝑐))
+$$
+
+$$𝑉_𝑐𝑎𝑟=𝛽_0+𝛽_𝑡 ("time" )_𝑐𝑎𝑟+𝛽_𝑐 ("cost" )_𝑐𝑎𝑟+𝛽_𝑜 ("Car ownership")𝑉_𝑡𝑟𝑎𝑛𝑠𝑖𝑡=0+𝛽_𝑡 ("time" )_𝑡𝑟𝑎𝑛𝑠𝑖𝑡+𝛽_𝑐 ("fare" )_𝑡𝑟𝑎𝑛𝑠𝑖𝑡+𝛽_𝑟 ("On"−"timeperformance")
+$$
+
+Allows non-linear transformation and normalizations.
+
