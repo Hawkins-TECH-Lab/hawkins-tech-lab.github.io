@@ -6,6 +6,7 @@ title: "Aggregate Demand Model Assignment"
 The objective of this assignment is to familiarize you with the estimation and analysis of transportation demand models. The assignment is due Feb. 28 by 11:59 PM on D2L. The assignment should be completed in groups of 2-3 persons. You may choose your own group. Your group does not need to be the same as prior assignments.
 
 The assignment comprises two model estimation tasks:
+
 1. Trip Generation Model
 A dataset of total quarterly ridership of a transit service along an intercity corridor is [available in MS Excel format](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/b114be6a8092f4184f264b88f8cf946727db9e67/assignment-data/TransitRidershipData.xlsx). Develop a direct demand model for total ridership per quarter for each of the two transit services (economy class and 1st class) along this corridor. Please investigate the role of lag demand in the model.
 For estimation, you can use any software (MS Excel should be fine).

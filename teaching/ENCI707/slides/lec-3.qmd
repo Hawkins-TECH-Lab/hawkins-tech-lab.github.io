@@ -42,14 +42,14 @@ $$y_i = \beta_0 + \sum_j \beta_j x_j + \epsilon_j, \epsilon_j \text{ is } \sim N
 - From probability theory courses .... transformation of random error term to random variable via Jacobian transformation
 
 ## Log-Normal Regression {.smaller}
-$$ln(y_i) = \beta_0 + \sum_j \beta_j x_j + \epsilon_j, \epsilon_j \text{ is } \sim N(0,\sigma^2)$$
+$$\ln(y_i) = \beta_0 + \sum_j \beta_j x_j + \epsilon_j, \epsilon_j \text{ is } \sim N(0,\sigma^2)$$
 
-- Equivalently $ln(y_i)$ is $\sim N(\beta_0 + \sum_j \beta_j x_j, \sigma^2)$
+- Equivalently $\ln(y_i)$ is $\sim N(\beta_0 + \sum_j \beta_j x_j, \sigma^2)$
 
 - Estimation
     - Least-squares: minimize squared residuals
     - Maximum likelihood by normal pdf
-    $$L_i = \frac{1}{y_i \sigma}\phi\left(\frac{ln(y_i)-\beta_0-\sum_j \beta_j x_j}{\sigma}\right)$$
+    $$L_i = \frac{1}{y_i \sigma}\phi\left(\frac{\ln(y_i)-\beta_0-\sum_j \beta_j x_j}{\sigma}\right)$$
     - $y_i$ must be positive (i.e., non-negative and non-zero)
 
 ## Probit Regression {style="font-size: 0.6em;"}
@@ -70,7 +70,7 @@ $$Pr(y_i=0) = 1 - \pi_i = 1 - \pi_i = \frac{1}{1 + \exp(\beta_0 + \sum_j \beta_j
 - Estimation by Maximum likelihood
     $$L_i = \pi_i^{\delta_i}(1-\pi_i)^{1-\delta_i} \text{  }\delta_i=1 \text{, if }y_i=1, 0 \text{ otherwise}$$
     - Interpretation (scale compounded parameters):
-    $$logit(\pi_i) = \text{log of odds ratio} = ln\left(\frac{\pi_i}{1-\pi_i}\right)=\beta_0 + \sum_j \beta_j x_j$$
+    $$logit(\pi_i) = \text{log of odds ratio} = \ln\left(\frac{\pi_i}{1-\pi_i}\right)=\beta_0 + \sum_j \beta_j x_j$$
 
 ## Probit/Logistic Regression
 - Binary outcome model can be used to model market shares in aggregate demand models
@@ -288,7 +288,7 @@ $$D_j^* = e^{\alpha_o}I^{\gamma}\prod_k x_k^{\beta_k}\prod_m e^{\beta_m z_m}$$
 $$D_j^* = e^{\alpha_o}I^{\gamma}\prod_k x_k^{\beta_k}\prod_m e^{\beta_m z_m}e^{\epsilon_j}$$ 
 
 - Log-transformation results in a log-linear model
-$$ln(D_j^*) = \alpha_0 + \sum_k \beta_k ln(x_k) + \sum_m \beta_m z_m + \epsilon_j$$
+$$\ln(D_j^*) = \alpha_0 + \sum_k \beta_k \ln(x_k) + \sum_m \beta_m z_m + \epsilon_j$$
 - Can accomodate any type of explanatory variables (continuous/categorical)
 - **Elasticity**: corresponding parameter - constant elasticity!
 $$E=\frac{\partial D}{\partial x_k}\frac{x_k}{D_j} = \beta_j$$
@@ -301,13 +301,13 @@ $$E=\frac{\partial D}{\partial x_k}\frac{x_k}{D_j} = \beta_j$$
 
 ## Translog Demand Model {style="font-size: 0.6em;"}
 - Indirect utility (various other forms also possible)
-$$ln(V) = \alpha_0 + \sum_i \alpha_i ln(p_i) + \sum_i \sum_{j \ne i} (1/2)\beta_{ij}ln(p_i)ln(p_j) \\ + \sum_i \gamma_i ln(Y_e)ln(p_i) + \gamma_y ln(Y_e)$$
+$$\ln(V) = \alpha_0 + \sum_i \alpha_i \ln(p_i) + \sum_i \sum_{j \ne i} (1/2)\beta_{ij}\ln(p_i)\ln(p_j) \\ + \sum_i \gamma_i \ln(Y_e)\ln(p_i) + \gamma_y \ln(Y_e)$$
 - $p_i$ & $p_j$ are generalized costs for $i$ & $j$
 - $Y_e$ is the generalized time-money budget
 - **Roy's Identity**
-$$D_i = \frac{\partial V / \partial p_i}{\partial V / \partial Y_e} = - \frac{\partial ln(V) / \partial ln(p_i)}{\partial ln(V) / \partial ln(Y_e)}$$
+$$D_i = \frac{\partial V / \partial p_i}{\partial V / \partial Y_e} = - \frac{\partial \ln(V) / \partial \ln(p_i)}{\partial \ln(V) / \partial \ln(Y_e)}$$
 - Resulting optimum demand
-$$D_i^* = - \frac{(1/p_i)(\sum_i \alpha_i + \sum_{j \ne i} \beta_{ij}ln(p_j) + \gamma_i Y_e}{(1/Y_e)(\sum_{j \ne i}\gamma_j ln(p_j) + \gamma_y)}$$
+$$D_i^* = - \frac{(1/p_i)(\sum_i \alpha_i + \sum_{j \ne i} \beta_{ij}\ln(p_j) + \gamma_i Y_e}{(1/Y_e)(\sum_{j \ne i}\gamma_j \ln(p_j) + \gamma_y)}$$
 
 ## Translog Demand Model {.smaller}
 - Empirical model: observed demand ($x_i$) for alternative consumption $i$ follows
@@ -347,13 +347,13 @@ $$V_B = \text{Ratio of total demand for B} = D_B/(D_A+D_B+D_C)$$
 $$V_C = \text{Ratio of total demand for C} = D_C/(D_A+D_B+D_C)$$
 
 - Considering an alternative, $A$, as the reference & using Cobb-Douglas log form
-$$ln(V_B/V_A) = \beta_{0BA} + \sum_{i=1}^n \beta_{iBA}ln(x_{iB}/x_{iA}) + \sum_{j=1}^n \gamma_{jB}y_j + \epsilon_{BA} \text{ or}$$
-$$ln(V_B/V_A) = \beta_{0BA} + \sum_{i=1}^n \beta_{iBA}(x_{iB} - x_{iA}) + \sum_{j=1}^n \gamma_{jB}y_j + \epsilon_{BA}$$
+$$\ln(V_B/V_A) = \beta_{0BA} + \sum_{i=1}^n \beta_{iBA}\ln(x_{iB}/x_{iA}) + \sum_{j=1}^n \gamma_{jB}y_j + \epsilon_{BA} \text{ or}$$
+$$\ln(V_B/V_A) = \beta_{0BA} + \sum_{i=1}^n \beta_{iBA}(x_{iB} - x_{iA}) + \sum_{j=1}^n \gamma_{jB}y_j + \epsilon_{BA}$$
 
 ## Aggregate Logit Model {style="font-size: 0.6em;"}
 - Similarly for alternative $C$
-$$ln(V_C/V_A) = \beta_{0CA} + \sum_{i=1}^n \beta_{iCA}ln(x_{iC}/x_{iA}) + \sum_{j=1}^n \gamma_{jB}y_j + \epsilon_{BA} \text{ or}$$
-$$ln(V_B/V_A) = \beta_{0CA} + \sum_{i=1}^n \beta_{iBA}(x_{iC} - x_{iA}) + \sum_{j=1}^n \gamma_{jC}y_j + \epsilon_{CA}$$
+$$\ln(V_C/V_A) = \beta_{0CA} + \sum_{i=1}^n \beta_{iCA}\ln(x_{iC}/x_{iA}) + \sum_{j=1}^n \gamma_{jB}y_j + \epsilon_{BA} \text{ or}$$
+$$\ln(V_B/V_A) = \beta_{0CA} + \sum_{i=1}^n \beta_{iBA}(x_{iC} - x_{iA}) + \sum_{j=1}^n \gamma_{jC}y_j + \epsilon_{CA}$$
 
 - Can be estimated as linear regression model for a set of observed shares and corresponding variable values.
 - **Issues**:

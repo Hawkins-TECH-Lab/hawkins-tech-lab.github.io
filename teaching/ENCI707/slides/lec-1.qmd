@@ -323,7 +323,7 @@ $$\frac{\frac{\partial U(x_1,x_2)}{\partial x_1}}{\frac{\partial U(x_1,x_2)}{\pa
 - **MRS**: Measures the slope of the indifference (isoquant) curve
 - **Elasticity of substitution ($\sigma$)**: Measures the curvature of the indifference (isoquant) curve
 $$\sigma = \frac{\Delta \left(\frac{x_2}{x_1} \right)/\frac{x_2}{x_1}}{\Delta MRS/MRS} = \frac{\partial \left(\frac{x_2}{x_1} \right)}{\partial MRS}\frac{MRS}{\left(x_2/x_1\right)}$$
-$$\frac{\partial ln\left(\frac{x_2}{x_1}\right)}{\partial ln (|MRS|)} \text{(think dln(x)/dx = 1/x and re-arrange)}$$
+$$\frac{\partial \ln\left(\frac{x_2}{x_1}\right)}{\partial ln (|MRS|)} \text{(think dln(x)/dx = 1/x and re-arrange)}$$
 
 - Absolute value of MRS to ensure logarithm of non-negative values
 
@@ -331,8 +331,8 @@ $$\frac{\partial ln\left(\frac{x_2}{x_1}\right)}{\partial ln (|MRS|)} \text{(thi
 - Elasticity of substitution ($\sigma$)
 $$|MRS| = \frac{x_2}{x_1}\frac{\alpha}{\beta}$$
 $$\frac{x_2}{x_1} = \frac{\beta}{\alpha}|MRS|$$
-$$ln\left(\frac{x_2}{x_1}\right) + ln\left(\frac{\alpha}{\beta}\right) = ln(|MRS|) \text{take derivatives wrt ln(MRS)}$$
-$$\sigma = dln\left(\frac{x_2}{x_1}\right)/ln(|MRS|) = 1 $$
+$$ln\left(\frac{x_2}{x_1}\right) + \ln\left(\frac{\alpha}{\beta}\right) = \ln(|MRS|) \text{take derivatives wrt ln(MRS)}$$
+$$\sigma = d\ln\left(\frac{x_2}{x_1}\right)/ln(|MRS|) = 1 $$
 - **Unit elasticity of substitution**: unit curvature of the indifference curve
 
 ## Cobb-Douglas Utility Function​ {.smaller}
@@ -362,9 +362,9 @@ $$x_1^*(p_1,p_2,I) = \frac{\alpha I}{p_1 (\alpha + \beta)} \text{(similar result
 ## CES Direct Utility Function​ {.smaller}
 $$MRS = - \frac{\alpha_1}{\alpha_2}\left(\frac{x_2}{x_1}\right)^{\rho-1}$$
 - Elasticity of subsitution
-$$ln(|MRS|) = ln\left(\frac{\alpha_1}{\alpha_2}\right) + (\rho-1)ln\left(\frac{x_2}{x_1}\right)$$
-$$ln\left(\frac{x_2}{x_1}\right) = \frac{1}{\rho-1}ln(|MRS|) + \frac{1}{\rho-1}ln\left(\frac{\alpha_2}{\alpha_1}\right)$$
-$$\sigma = \frac{d ln\left(\frac{x_2}{x_1}\right)}{d ln(|MRS|)} = \frac{1}{\rho-1}$$
+$$\ln(|MRS|) = \ln\left(\frac{\alpha_1}{\alpha_2}\right) + (\rho-1)\ln\left(\frac{x_2}{x_1}\right)$$
+$$\ln\left(\frac{x_2}{x_1}\right) = \frac{1}{\rho-1}\ln(|MRS|) + \frac{1}{\rho-1}\ln\left(\frac{\alpha_2}{\alpha_1}\right)$$
+$$\sigma = \frac{d \ln\left(\frac{x_2}{x_1}\right)}{d \ln(|MRS|)} = \frac{1}{\rho-1}$$
 
 ## CES Direct Utility Maximization​ {.smaller}
 - Consider a simple two alternative example
@@ -388,14 +388,14 @@ $$V = \left(\sum_k \alpha_k \left(\frac{I(\frac{p_k}{\alpha_k})^{\frac{1}{\rho-1
 - **Translog** is a quadratic, logarithmic specification of an indirect utility function written in terms of **expenditure-normalized prices**
   - Normalizing each price by dividing by total expenditure (income) imposes homogeneity
 - Logarithmic indirect utility (or cost) function is
-$$ln(V) = \alpha_0 + \sum_j \alpha_j ln\left(\frac{p_j}{I}\right) + \frac{1}{2}\sum_j\sum_k \beta_{jk} ln\left(\frac{p_j}{I}\right) ln\left(\frac{p_k}{I}\right)$$
+$$\ln(V) = \alpha_0 + \sum_j \alpha_j \ln\left(\frac{p_j}{I}\right) + \frac{1}{2}\sum_j\sum_k \beta_{jk} \ln\left(\frac{p_j}{I}\right) \ln\left(\frac{p_k}{I}\right)$$
 - Optimum quantity demands are derived using a logarthmic version of Roy's Identity
 
 ## Almost Ideal Demand System (AIDS)​ {.smaller}
 - **AIDS** is a combination of **Cobb-Douglas** and **translog** demand functions, describing an expenditure function necessary to attain a specific utility level at a given price
 - Typical form is
 
-$$ln(V) = \alpha_0 + \sum_j \alpha_j ln(p_j) + \frac{1}{2}\sum_j \alpha_j ln(p_j) + \frac{1}{2}\sum_j\sum_k \gamma_{jk} ln(p_j) ln(p_k) + \beta_o \prod_j p_k^{\beta_k}$$
+$$\ln(V) = \alpha_0 + \sum_j \alpha_j \ln(p_j) + \frac{1}{2}\sum_j \alpha_j \ln(p_j) + \frac{1}{2}\sum_j\sum_k \gamma_{jk} \ln(p_j) \ln(p_k) + \beta_o \prod_j p_k^{\beta_k}$$
 
 # Discrete Demand
 
