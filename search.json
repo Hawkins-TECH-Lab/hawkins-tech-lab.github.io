@@ -735,123 +735,151 @@
     "text": "IIA Cont…\n\nIf the IIA assumption does not hold, we can make other error distribution assumptions\n\nNested logit (can handle complex decision structures)\nProbit (normal error terms, very general model, but can be difficult to work with it)\n\n\n\n\n\n\nENCI707 Home"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-4.html#outline",
-    "href": "teaching/ENCI707/slides/lec-4.html#outline",
-    "title": "Lecture 3 - Aggregate Demand Models",
-    "section": "Outline",
-    "text": "Outline\n\n\nBasis for choice modeling\nTheory\nLogit choice model"
+    "objectID": "teaching/ENCI707/slides/lec-4.html#demand-versus-choice",
+    "href": "teaching/ENCI707/slides/lec-4.html#demand-versus-choice",
+    "title": "Lecture 4 - Disaggregate Econometric Choice Theory",
+    "section": "Demand Versus Choice",
+    "text": "Demand Versus Choice\n\n\nDemand\n\nAggregate\nHomogenous people\nIdentical behaviour\nVariables: Price (P) and quantity (Q)\nDemand function: Q = f(P)\nDemand = Bundle of choices\n\n\nChoice\n\nDisaggregate\nHeterogeneous people\nRandom behaviour\nVariables: Attributes of choice alternatives; attributes of choice maker; context of choices\nNon-linear choice function"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-4.html#basis-for-choice-modeling",
-    "href": "teaching/ENCI707/slides/lec-4.html#basis-for-choice-modeling",
-    "title": "Lecture 3 - Aggregate Demand Models",
-    "section": "Basis for Choice Modeling",
-    "text": "Basis for Choice Modeling\n\nAggregate demand models (such as those we have been discussing) based on observations for groups of travelers or average relations for zones\nDiscrete choice: probability an individual chooses a given option a function of their socioeconomic characteristics & relative attractiveness of the option\nCannot estimate via least squares because probability is unobserved – only observe choice\nModels are probabilistic & do not give an outcome value such as trips – must use probability concepts to generate discrete outcomes (summation over all observations to give expected number choosing option or use sample enumeration to allocate discrete outcomes)"
+    "objectID": "teaching/ENCI707/slides/lec-4.html#transportation-choices",
+    "href": "teaching/ENCI707/slides/lec-4.html#transportation-choices",
+    "title": "Lecture 4 - Disaggregate Econometric Choice Theory",
+    "section": "Transportation Choices",
+    "text": "Transportation Choices\nMany travel demand related choices are:\n\nDiscrete: activity type choice, mode choice, route choice, vehicle type choice, time of the day choice, location of trip destination choice etc.\nContinuous: activity duration, vehicle usage, housing duration, etc.\nHeterogeneous: Wide variations of choices across the population.\nProbabilistic/stochastic/random: We can’t defined deterministically."
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-4.html#basis-for-choice-modeling-1",
-    "href": "teaching/ENCI707/slides/lec-4.html#basis-for-choice-modeling-1",
-    "title": "Lecture 3 - Aggregate Demand Models",
-    "section": "Basis for Choice Modeling",
-    "text": "Basis for Choice Modeling\n\nIndividuals derive utility from the use of alternatives defined by a utility function often denoted by V \\[Vpeanut butter = 0.25 – 1.0 ALLERGY - 0.5 PRICE + 0.25 ORGANIC\\]\nNeed probability value between 0 & 1. Various forms, generally with an s-shaped plot. Main ones are \\[𝐿𝑜𝑔𝑖𝑡:𝑃_1=exp⁡(𝑉_1 )/(exp⁡(𝑉1)+exp⁡(𝑉2))\\] \\[𝑃𝑟𝑜𝑏𝑖𝑡:𝑃_1=\\int_{-\\infty}^{\\infty}⁡\\int_{-\\infty}^{V_1-V_2+x_1}\\frac{⁡exp⁡(\\frac{−1}{2(1−\\rho^2)} (\\frac{𝑥_1}{\\sigma_1})^2−\\frac{2\\rho 𝑥_1 𝑥_2}{\\sigma_1 \\sigma_2}+(\\frac{𝑥_2}{\\sigma_2})^2}{2\\pi\\sigma_1 \\sigma_2 \\sqrt{1−\\rho^2 }} 𝑑𝑥_2 𝑑𝑥_1\\]"
+    "objectID": "teaching/ENCI707/slides/lec-4.html#choice-as-consumption",
+    "href": "teaching/ENCI707/slides/lec-4.html#choice-as-consumption",
+    "title": "Lecture 4 - Disaggregate Econometric Choice Theory",
+    "section": "Choice as Consumption",
+    "text": "Choice as Consumption"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-4.html#properties-of-discrete-choice-dc",
-    "href": "teaching/ENCI707/slides/lec-4.html#properties-of-discrete-choice-dc",
-    "title": "Lecture 3 - Aggregate Demand Models",
-    "section": "Properties of Discrete Choice (DC)",
-    "text": "Properties of Discrete Choice (DC)\n\nBased on theories of individual behavior & do not constitute physical analogies – therefore stable over time & space\nCan be more statistically efficient than aggregate models because each observation is an outcome rather than using aggregations of potentially hundreds of observations\nDM less likely to suffer from bias due to correlation between aggregate units – i.e., ecological correlation (fallacy)"
+    "objectID": "teaching/ENCI707/slides/lec-4.html#choice-as-consumption-1",
+    "href": "teaching/ENCI707/slides/lec-4.html#choice-as-consumption-1",
+    "title": "Lecture 4 - Disaggregate Econometric Choice Theory",
+    "section": "Choice as Consumption",
+    "text": "Choice as Consumption\nDisaggregate to Aggregate\n\nChoice of private vehicle as mode -&gt; # of vehicle trips\nChoice of transit as mode -&gt; # of transit trips\nChoice of shared vehicle as mode -&gt; # of shared vehicle trips"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-4.html#ecological-fallacy",
-    "href": "teaching/ENCI707/slides/lec-4.html#ecological-fallacy",
-    "title": "Lecture 3 - Aggregate Demand Models",
-    "section": "Ecological Fallacy",
-    "text": "Ecological Fallacy"
+    "objectID": "teaching/ENCI707/slides/lec-4.html#theory-of-choice-behaviour",
+    "href": "teaching/ENCI707/slides/lec-4.html#theory-of-choice-behaviour",
+    "title": "Lecture 4 - Disaggregate Econometric Choice Theory",
+    "section": "Theory of Choice Behaviour",
+    "text": "Theory of Choice Behaviour\n\nDescriptive (or positive): how human beings behave, not how they should/ought to behave.\nAbstract: that can be formalized in general cases not specific to particular circumstances.\nOperational: can be applied to develop models with variables and parameters that can be observed and estimated. Models can be used for prediction and/or policy evaluation."
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-4.html#theoretical-framework",
-    "href": "teaching/ENCI707/slides/lec-4.html#theoretical-framework",
-    "title": "Lecture 3 - Aggregate Demand Models",
-    "section": "Theoretical Framework",
-    "text": "Theoretical Framework\n\nIndividuals belong to a homogeneous population \\(N\\), act rationally, & possess perfect information – i.e., they always select the option that maximizes their net personal utility subject to legal, social, physical, &/or budgetary (both time & money) constraints\nThere is a certain set \\(𝐴 = \\{𝐴_1, …𝐴_i,…𝐴_I\\}\\) of available alternatives & a set X of vectors of measured attributes of individuals & their alternatives\nAn individual \\(n\\) is endowed with a set of attributes \\(𝑥 \\in 𝑋\\) & faces a choice set \\(𝐴(n) \\in 𝐴\\)\nWe will assume choice set is predetermined for individuals"
+    "objectID": "teaching/ENCI707/slides/lec-4.html#framework-of-choice-theory",
+    "href": "teaching/ENCI707/slides/lec-4.html#framework-of-choice-theory",
+    "title": "Lecture 4 - Disaggregate Econometric Choice Theory",
+    "section": "Framework of Choice Theory",
+    "text": "Framework of Choice Theory\n\nChoice as outcome of sequential decision-making:\n\nDefinition of the choice problem\nGeneration of alternatives\nEvaluation of attributes of alternatives\nChoice making\nExecuting the choice\n\nDefine:\n\nDecision maker\nCharacteristics of decision maker\nAlternatives\nAttributes of alternatives\nDecision rules to make choice"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-4.html#theoretical-framework-1",
-    "href": "teaching/ENCI707/slides/lec-4.html#theoretical-framework-1",
-    "title": "Lecture 3 - Aggregate Demand Models",
-    "section": "Theoretical Framework",
-    "text": "Theoretical Framework\n\nModeler, an observer, does not posses complete information about all elements considered by the individual making choice\nModeler assumes \\(𝑈_{ni}\\) can be represented by two components:\n\nA measurable, systematic, or representative part \\(𝑉_{ni}\\), which is a function of the measured attributes \\(x\\)\nA random part \\(\\epsilon_{ni}\\), which reflects indiosyncratic & taste variation, together with measurement or observational errors made by the modeler"
+    "objectID": "teaching/ENCI707/slides/lec-4.html#decision-maker",
+    "href": "teaching/ENCI707/slides/lec-4.html#decision-maker",
+    "title": "Lecture 4 - Disaggregate Econometric Choice Theory",
+    "section": "Decision Maker",
+    "text": "Decision Maker\n\nDisaggregate: Individual or group (household, family, firms, government agency, etc.)\nHeterogeneous choice makers: Wide variety in choice behaviour across the population\n\nTaste variations across the choice/decision makers: Idiosyncrasy\nDifferent choice situations for different people\n\nCharacteristics of heterogeneous choice maker: age, gender, income, education, household/firm size, etc.\nChoice situations/context: spatial, temporal, economic"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-4.html#theoretical-framework-2",
-    "href": "teaching/ENCI707/slides/lec-4.html#theoretical-framework-2",
-    "title": "Lecture 3 - Aggregate Demand Models",
-    "section": "Theoretical Framework",
-    "text": "Theoretical Framework\n\nModeler sets utility \\(𝑈_{ni}=𝑉_{ni}+\\epsilon_{ni}\\) to address two apparent irrationalities\n\nThat two individuals faced with the same situation & having the same personal attributes make different choices\nThat an individual may not select the alternative that appears to be the best one\n\nOften assumed \\(V_{ni}\\) given by \\(\\sum_k^K \\beta_{ik} x_{nik}\\) here \\(\\beta_{ik}\\) are assumed constant for all individuals \\(N\\) in the homogeneous set but may vary across alternatives \\(I\\)"
+    "objectID": "teaching/ENCI707/slides/lec-4.html#alternatives",
+    "href": "teaching/ENCI707/slides/lec-4.html#alternatives",
+    "title": "Lecture 4 - Disaggregate Econometric Choice Theory",
+    "section": "Alternatives",
+    "text": "Alternatives\n\nChoice means choosing an alternative out of a choice set (mutually exclusive and collectively exhaustive countable set of alternatives):\nUniversal choice set: \\(C\\)\nFeasible / Individual-specific: \\(C_i\\)\nConsideration (awareness) set: \\(C_{ci}\\)\n\nExample:\n\\(C\\) = { Private car, Uber, Taxi, Bus, Bicycle, Walk}\n\nNo driver’s license, distance &gt; 3 km\n\n\\(C_i\\) = { Uber, Taxi, Bus, Bicycle}\n\nNo driver’s license, distance &gt; 3 km & not aware of Uber\n\n\\(C_{ci}\\) = { Taxi, Bus, Bicycle}"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-4.html#theoretical-framework-3",
-    "href": "teaching/ENCI707/slides/lec-4.html#theoretical-framework-3",
-    "title": "Lecture 3 - Aggregate Demand Models",
-    "section": "Theoretical Framework",
-    "text": "Theoretical Framework\n\nIndividual chooses an alternative based on \\(𝑈_{ni}≥ 𝑈_{jn} \\forall A_j \\in A(n)\\)\nOr: \\(𝑉_{ni}  – 𝑉_{nj}≥\\epsilon_{nj}  − \\epsilon_{ni}\\) (notice swapping of \\(i\\) & \\(j\\))\n\nNot possible to know with certainty if the inequality holds, so use \\[𝑃_{ni}  = 𝑃(\\epsilon_{nj} \\leq \\epsilon_{ni} + (V_{ni} - V_{nj})) \\forall A_j \\in A(n)\\] - Do not know distribution of joint residuals, so cannot derive analytical expression for model - Can denote \\(f(\\epsilon) = f(\\epsilon_1, \\epsilon_2, ... \\epsilon_I\\) & know they are random variables with a certain distribution"
+    "objectID": "teaching/ENCI707/slides/lec-4.html#alternatives---attributes",
+    "href": "teaching/ENCI707/slides/lec-4.html#alternatives---attributes",
+    "title": "Lecture 4 - Disaggregate Econometric Choice Theory",
+    "section": "Alternatives - Attributes",
+    "text": "Alternatives - Attributes\n\nDecision maker evaluates alternatives in terms of attribute values: Attribute values can be measured on the scale of attractiveness:\nCategorical: Binary, ordinal (reliability, safety, convenience, etc.)\nCardinal: absolute values (time, cost, etc.)\nGeneric versus alternative-specific\nMeasured versus perceived"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-4.html#theoretical-framework-4",
-    "href": "teaching/ENCI707/slides/lec-4.html#theoretical-framework-4",
-    "title": "Lecture 3 - Aggregate Demand Models",
-    "section": "Theoretical Framework",
-    "text": "Theoretical Framework\n\nCan note that distribution for \\(f(U)\\) is the same but with mean \\(V\\) rather than 0 \\[P_{ni} = \\int_{R_I} f(\\epsilon) d\\epsilon\\] \\[\\text{where } R_I = \\begin{cases}\n\\epsilon_{nj} \\leq \\epsilon_{ni} + (V_{ni} - V_{nj}), & \\forall A_j \\in A(n) \\\\\nV_{ni}) + \\epsilon_{ni} \\ge 0 \\\\\n\\end{cases}\\]\nAssuming independent & identically distributed (IID) residuals, \\[f(\\epsilon_1,...\\epsilon_I) = \\prod_i^I g(\\epsilon_i)\\]\nAnd (drop \\(n\\) for simplicity) \\[P_i = \\int_{-\\infty}^\\infty g(\\epsilon_i) d\\epsilon_i \\prod_{j \\neq i} \\int_{-\\infty}^{V_i-V_j+\\epsilon_i} g(\\epsilon_j) d\\epsilon_j\\]"
+    "objectID": "teaching/ENCI707/slides/lec-4.html#decision-rules",
+    "href": "teaching/ENCI707/slides/lec-4.html#decision-rules",
+    "title": "Lecture 4 - Disaggregate Econometric Choice Theory",
+    "section": "Decision Rules",
+    "text": "Decision Rules\n\nRational behaviour (homo economicus): self-interested economic actor who optimizes own choice outcomes\nBounded rationality: Use rules to simplify:\n\nDominance: Rules used to remove inferior alternative\nSatisfaction: Attributes of the alternatives need to satisfy the expectation level\nLexicographic: attributes are rank ordered by their level of importance\nUtility maximizing: maximize a latent function of different attributes of alternatives in the choice set"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-4.html#generating-the-logit-model",
-    "href": "teaching/ENCI707/slides/lec-4.html#generating-the-logit-model",
-    "title": "Lecture 3 - Aggregate Demand Models",
-    "section": "Generating the Logit Model",
-    "text": "Generating the Logit Model\n\nAssuming IID Gumbel (Extreme Value Type I) residuals, or equivalently that residual differences are logistically distributed, gives the standard multinomial logit specification\nTermed softmax function in machine learning field \\[P_{ni} = \\frac{exp(\\mu V_{ni})}{\\sum_{A_j \\in A(n)} exp(\\mu V_{nj})}\\]\nWhere \\(\\mu\\) is a scale parameter assumed equal to 1.0 for identification"
+    "objectID": "teaching/ENCI707/slides/lec-4.html#utility-maximization",
+    "href": "teaching/ENCI707/slides/lec-4.html#utility-maximization",
+    "title": "Lecture 4 - Disaggregate Econometric Choice Theory",
+    "section": "Utility Maximization",
+    "text": "Utility Maximization\nUtility function:\n\nCaptures relative attractiveness of alternative in the choice set\nMeasures the satisfaction that the decision maker wants to optimize\n\nAssumptions:\n\nDecision maker has full knowledge about the attributes of the alternatives and is able to process information\nBase on information processing, decision maker associates a utility to each alternative\nDecision maker has transitive preferences\nDecision maker is rational and perfect optimizer\nDecision maker is consistent"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-4.html#logit-model-parameter-estimation",
-    "href": "teaching/ENCI707/slides/lec-4.html#logit-model-parameter-estimation",
-    "title": "Lecture 3 - Aggregate Demand Models",
-    "section": "Logit Model Parameter Estimation",
-    "text": "Logit Model Parameter Estimation\n\nCommercial (& opensource) software exists to estimate model parameters using the method of maximum likelihood estimation\n\nApollo (R & free)\nBiogeme (Python & free)\nSTATA (commercial)\nLIMDEP (commercial)\nGAUSS (commercial)\n\nParameter interpretation similar to regression (t-statistics, GoF, etc.)"
+    "objectID": "teaching/ENCI707/slides/lec-4.html#probability-in-utility-maximization",
+    "href": "teaching/ENCI707/slides/lec-4.html#probability-in-utility-maximization",
+    "title": "Lecture 4 - Disaggregate Econometric Choice Theory",
+    "section": "Probability in Utility Maximization",
+    "text": "Probability in Utility Maximization\n\n\nConstant utility:\n\nUtility is deterministic and cardinal in nature\nDecision maker does not maximize utility\nHowever, human behaviour is inherently random\n\n\nRandom utility:\n\nDecision maker is a rational optimizer\nModeller does not observe the exact measure of utility used by the decision maker\nUtility becomes random and ordinal variable\nProbabilistic choice model because of unobserved heterogeneity (randomness)"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-4.html#direct-cross-elasticity",
-    "href": "teaching/ENCI707/slides/lec-4.html#direct-cross-elasticity",
-    "title": "Lecture 3 - Aggregate Demand Models",
-    "section": "Direct & Cross Elasticity",
-    "text": "Direct & Cross Elasticity\n\nDirect elasticity: direct effect of changing a variable value related to a good on demand for the same good\n\nE.g., elasticity of transit demand wrt transit fare, transit travel time, or transit headway\n\nCross elasticity: effect of changing a variable value related to a good on demand for a different good\n\nE.g., elasticity of transit demand wrt auto travel time"
+    "objectID": "teaching/ENCI707/slides/lec-4.html#discrete-choice",
+    "href": "teaching/ENCI707/slides/lec-4.html#discrete-choice",
+    "title": "Lecture 4 - Disaggregate Econometric Choice Theory",
+    "section": "Discrete Choice",
+    "text": "Discrete Choice\nTwo alternatives: transit, car \\[𝑈_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}=\\beta_𝑡 𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}+\\beta_𝑐 𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} \\text{ (Typically, }\\beta_t, \\beta_c &lt;0)\\]\n\\[𝑈_{𝑐𝑎𝑟}=\\beta_𝑡 𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟}+\\beta_𝑐 𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟}\\]\nEquivalent specification \\[𝑈_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}=(\\beta_𝑡/\\beta_𝑐)𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}+𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}\\]\n\\[𝑈_{𝑐𝑎𝑟}=(\\beta_𝑡/\\beta_𝑐)𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟}+𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟}\n\\]\nChoice: car, if \\[\\beta_𝑡 𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟}+\\beta_𝑐 𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} \\geq \\beta_𝑡 𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} + \\beta_𝑐 𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}\n\\]\nor \\[(\\beta_𝑡/\\beta_𝑐)𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟}+𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} \\leq (\\beta_𝑡/\\beta_𝑐)𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}+𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}\n\\]"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-4.html#logit---direct-elasticity",
-    "href": "teaching/ENCI707/slides/lec-4.html#logit---direct-elasticity",
-    "title": "Lecture 3 - Aggregate Demand Models",
-    "section": "Logit - Direct Elasticity",
-    "text": "Logit - Direct Elasticity\nDirect elasticity of the probability of an individual \\(n\\) choosing alternative \\(i\\) wrt a change in an attribute/independent variable \\(X_{ik}\\) with coefficient \\(\\beta_k\\) (ignoring \\(n\\) subscripts for simplicity)\n\\[e_{direct} = \\frac{\\partial P_i}{\\partial X_{ik}} \\frac{X_{ik}}{P_i}=(1-P_i)X_{ik}\\beta_k\\]"
+    "objectID": "teaching/ENCI707/slides/lec-4.html#discrete-choice-1",
+    "href": "teaching/ENCI707/slides/lec-4.html#discrete-choice-1",
+    "title": "Lecture 4 - Disaggregate Econometric Choice Theory",
+    "section": "Discrete Choice",
+    "text": "Discrete Choice\nCar is the dominant alternative, if \\[𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟} &lt; 𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} \\text{ & } 𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} &lt; 𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} \\therefore 𝑈_{𝑐𝑎𝑟} &gt; 𝑈_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}\\]\nCar and transit in competition, if \\[𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟} &lt; 𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} \\text{ & } 𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} &gt; 𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}\\]\nIs the traveler willing to pay extra (\\(Cost_{car}-Cost_{transit}\\)) to save (\\(Time_{transit} -Time_{car}\\))?\nIf yes (pick car): \\(\\left(\\frac{\\beta_𝑡}{\\beta_𝑐}\\right)𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟} + 𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} \\leq \\left(\\frac{\\beta_𝑡}{\\beta_𝑐}\\right)𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} + 𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}\\)\nWillingness-to-pay or Value of Travel Time Savings (VOTS): \\[\\left(\\frac{\\beta_𝑡}{\\beta_𝑐}\\right) \\geq \\frac{(𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟}−𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡})}{(𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}−𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟})}\\]"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-4.html#logit---cross-elasticity",
-    "href": "teaching/ENCI707/slides/lec-4.html#logit---cross-elasticity",
-    "title": "Lecture 3 - Aggregate Demand Models",
-    "section": "Logit - Cross Elasticity",
-    "text": "Logit - Cross Elasticity\n\nCross elasticity of the probability of an individual \\(n\\) choosing alternative \\(i\\) wrt a change in an attribute/independent variable \\(X_{jk}\\) with coefficient \\(\\beta_k\\) for a different alternative\n\n\\[e_{cross} = -P_j X_{jk}\\beta_k\\]\n\nAbove is same regardless of alternative \\(i\\). I.e., all alternatives have the same cross-elasticity wrt an attribute \\(k\\) of alternative \\(j\\)\nAbove results from independence of irrelevant alternatives (IIA) property of basic logit model"
+    "objectID": "teaching/ENCI707/slides/lec-4.html#discrete-choice-2",
+    "href": "teaching/ENCI707/slides/lec-4.html#discrete-choice-2",
+    "title": "Lecture 4 - Disaggregate Econometric Choice Theory",
+    "section": "Discrete Choice",
+    "text": "Discrete Choice"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-4.html#independence-of-irrelevant-alternatives-iia-property",
-    "href": "teaching/ENCI707/slides/lec-4.html#independence-of-irrelevant-alternatives-iia-property",
-    "title": "Lecture 3 - Aggregate Demand Models",
-    "section": "Independence of Irrelevant Alternatives (IIA) Property",
-    "text": "Independence of Irrelevant Alternatives (IIA) Property\nConsider we have two modes: auto (a) & bus (b)\n\\[\\frac{P_a}{P_b} = \\frac{exp(V_a)}{exp(V_b)} = exp(V_a - V_b)\\] I.e., the relative probability of choosing auto vs. bus depends only on the utilities of the two alternatives\n\nNow what if our buses are red (rb) & we paint half blue (bb)?"
+    "objectID": "teaching/ENCI707/slides/lec-4.html#discrete-choice-3",
+    "href": "teaching/ENCI707/slides/lec-4.html#discrete-choice-3",
+    "title": "Lecture 4 - Disaggregate Econometric Choice Theory",
+    "section": "Discrete Choice",
+    "text": "Discrete Choice"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-4.html#iia-cont",
-    "href": "teaching/ENCI707/slides/lec-4.html#iia-cont",
-    "title": "Lecture 3 - Aggregate Demand Models",
-    "section": "IIA Cont…",
-    "text": "IIA Cont…\n\nIf the IIA assumption does not hold, we can make other error distribution assumptions\n\nNested logit (can handle complex decision structures)\nProbit (normal error terms, very general model, but can be difficult to work with it)\n\n\n\n\n\n\nENCI707 Home"
+    "objectID": "teaching/ENCI707/slides/lec-4.html#stochastic-discrete-choice",
+    "href": "teaching/ENCI707/slides/lec-4.html#stochastic-discrete-choice",
+    "title": "Lecture 4 - Disaggregate Econometric Choice Theory",
+    "section": "Stochastic Discrete Choice",
+    "text": "Stochastic Discrete Choice\n\nChoice Probability of an alternative \\(j\\) for an individual \\(i\\) with choice set \\(C_i\\) \\[Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( 𝑈_{𝑖𝑗} \\geq 𝑈_{𝑖𝑘}) \\text{, } 𝑘 \\neq 𝑗 \\text{ & } 𝑘 \\in 𝐶_𝑖\\]\nRandom utility: \\[𝑈_{𝑖𝑗}=𝑉_{𝑖𝑗}+\\epsilon_{𝑖𝑗} \\text{, } 𝑗 \\in 𝐶_𝑖\\]\nRandom Utility Maximizing (RUM) Choice Model: \\[Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( 𝑉_{𝑖𝑗} + \\epsilon_{𝑖𝑗} \\ge 𝑉_{𝑖𝑘} + \\epsilon_{𝑖𝑘}) \\text{, } 𝑘 \\neq 𝑗 \\text{ & } 𝑘 \\in 𝐶_𝑖\\] Or \\[Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( \\epsilon_{ik} - \\epsilon_{ij} \\leq V_{ij} - V_{ik}) \\text{, } 𝑘 \\neq 𝑗 \\text{ & } 𝑘 \\in 𝐶_𝑖\\]"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-4.html#rum-based-discrete-choice",
+    "href": "teaching/ENCI707/slides/lec-4.html#rum-based-discrete-choice",
+    "title": "Lecture 4 - Disaggregate Econometric Choice Theory",
+    "section": "RUM-Based Discrete Choice",
+    "text": "RUM-Based Discrete Choice\n\nFully specified choice set \\(C_i\\)\nAttributes of alternatives are completely defined\nOnly differences in utility matters\nSystematic utility function is specified as a function of attributes\nAn attribute may have the same (generic) weighting factors (coefficient) for all alternatives if it varies across the alternatives (e.g., travel time, travel cost, etc.).\nAn attribute may have different weighting factors (coefficient) for different alternatives if it does not vary across the alternatives (age, gender, income, etc.).\nAssumption on distribution of random utility is necessary to derive choice probability: Stochastic Choice Model"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-4.html#binary-discrete-choice",
+    "href": "teaching/ENCI707/slides/lec-4.html#binary-discrete-choice",
+    "title": "Lecture 4 - Disaggregate Econometric Choice Theory",
+    "section": "Binary Discrete Choice",
+    "text": "Binary Discrete Choice\nChoice Probability of an alternative \\(j\\) for an individual \\(i\\) with choice set \\(C_i\\) of two alternatives: \\(j, k\\) (dropping \\(i\\) for sake of simplicity) \\[Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( 𝑉_𝑗+\\epsilon_𝑗 \\ge 𝑉_𝑘+\\epsilon_𝑘)\\] \\[Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( \\epsilon_𝑘−\\epsilon_𝑗≤𝑉_𝑗−𝑉_𝑘)\\] Binary Probit:\n\n\\(\\epsilon_j,\\epsilon_k\\) are both normally distributed\nSo,(\\(\\epsilon_k-\\epsilon_j\\)) is also normally distributed\nWith fully specified alternative specific constants, (\\(\\epsilon_k-\\epsilon_j\\)) is \\(N(0,\\sigma^2)\\): \\[V-j - V_k = \\beta_0 + \\sum \\beta(x_j - x_k)\\]\nResulting Choice model: \\(Pr(j) = \\Phi(V/\\sigma)\\)\n\\(\\sigma\\) normalized to 1, giving probit model with unit variance"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-4.html#binary-discrete-choice-1",
+    "href": "teaching/ENCI707/slides/lec-4.html#binary-discrete-choice-1",
+    "title": "Lecture 4 - Disaggregate Econometric Choice Theory",
+    "section": "Binary Discrete Choice",
+    "text": "Binary Discrete Choice\nBinary Logit:\n\n\\(\\epsilon_j,\\epsilon_k\\) are IID Type I EV distributed with scale \\(\\mu\\) and variance \\(\\pi^2/6\\mu^2\\)\nWith fully specified alternative specific constants, (\\(\\epsilon_k-\\epsilon_j\\)) is logistically distributed with scale \\(\\mu\\) and variance \\(\\pi^2/3\\mu^2\\): \\[V_j - V_k = V = \\beta_0 + \\sum \\beta (x_j - x_k)\\] Resulting Choice model: \\[Pr(j) = \\frac{1}{1+\\exp(-\\mu(V_j - V_k))} = \\frac{\\exp(\\mu V_j)}{\\exp(\\mu V_j)+\\exp(\\mu V_k)}\\]\n\\(\\mu\\) normalized to 1, giving logit model with variance of \\(\\pi^2/3\\)"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-4.html#binary-discrete-choice-2",
+    "href": "teaching/ENCI707/slides/lec-4.html#binary-discrete-choice-2",
+    "title": "Lecture 4 - Disaggregate Econometric Choice Theory",
+    "section": "Binary Discrete Choice",
+    "text": "Binary Discrete Choice\nBinary Probit/Logit Identification\n\nOnly one alternative specific constant\nScale of logit model is not identified as a constant\nReference alternative is irrelevant \\[𝑉_𝑗−𝑉_𝑘=𝑉=\\beta_0+\\sum \\beta(𝑥_𝑗−𝑥_𝑘)\\] \\[𝑉_𝑗=\\beta_0+\\beta(𝑥_{𝑔𝑒𝑛𝑒𝑟𝑖𝑐})_𝑗+\\beta_{(𝑗−𝑠𝑝𝑒𝑐𝑖𝑓𝑖𝑐)} 𝑥_{(𝑗−𝑠𝑝𝑒𝑐𝑖𝑓𝑖𝑐)}\\] \\[𝑉_𝑘=0+\\beta(𝑥_{𝑔𝑒𝑛𝑒𝑟𝑖𝑐})_𝑘 + \\beta_{(𝑘−𝑠𝑝𝑒𝑐𝑖𝑓𝑖𝑐)} 𝑥_{(𝑘−𝑠𝑝𝑒𝑐𝑖𝑓𝑖𝑐)}\\] \\[𝑉_{𝑐𝑎𝑟}=\\beta_0+\\beta_𝑡 time_{𝑐𝑎𝑟} + \\beta_𝑐 cost_{𝑐𝑎𝑟} +\\beta_𝑜 CarOwnership \\] \\[𝑉_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} = 0 + \\beta_𝑡 time_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} + \\beta_𝑐 fare_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} + \\beta_𝑟 On−TimePerformance\\]\nAllows non-linear transformation and normalizations\n\n\n\n\n\nENCI707 Home"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-2.html#outline",
@@ -5001,7 +5029,7 @@
     "href": "teaching/ENCI707/assignments/assignment-2.html",
     "title": "Aggregate Demand Model Assignment",
     "section": "",
-    "text": "The objective of this assignment is to familiarize you with the estimation and analysis of transportation demand models. The assignment is due Feb. 28 by 11:59 PM on D2L. The assignment should be completed in groups of 2-3 persons. You may choose your own group. Your group does not need to be the same as prior assignments.\nThe assignment comprises two model estimation tasks: 1. Trip Generation Model A dataset of total quarterly ridership of a transit service along an intercity corridor is available in MS Excel format. Develop a direct demand model for total ridership per quarter for each of the two transit services (economy class and 1st class) along this corridor. Please investigate the role of lag demand in the model. For estimation, you can use any software (MS Excel should be fine).\n\nOrdered Probability Model A dataset of bicycle users’ perceptions of the bike system/facilities for a city is available in MS Excel format. Please investigate their perception of overall quality of biking in the city through estimation of an ordered probability (either logit or probit) model. For estimation, you can use any software (functions are available in R, Python, Stata, etc.).\n\nYou may separate the two model tasks within your group or conduct all analyses as a group. All group members must contribute to the writing of the summary report.\nThe report should include at least the following sections: - Introduce the objective(s) and parts of the work. - Present the model formulation and justification of independent variables for each model task. - Selection of the best model specification (select one) for each model task. - Discuss the elasticities of independent variables of the final models.\nThe assignment deliverable should have the form of a professional report and should not be more than 10 pages (singles-spaced).",
+    "text": "The objective of this assignment is to familiarize you with the estimation and analysis of transportation demand models. The assignment is due Feb. 28 by 11:59 PM on D2L. The assignment should be completed in groups of 2-3 persons. You may choose your own group. Your group does not need to be the same as prior assignments.\nThe assignment comprises two model estimation tasks:\n\nTrip Generation Model A dataset of total quarterly ridership of a transit service along an intercity corridor is available in MS Excel format. Develop a direct demand model for total ridership per quarter for each of the two transit services (economy class and 1st class) along this corridor. Please investigate the role of lag demand in the model. For estimation, you can use any software (MS Excel should be fine).\nOrdered Probability Model A dataset of bicycle users’ perceptions of the bike system/facilities for a city is available in MS Excel format. Please investigate their perception of overall quality of biking in the city through estimation of an ordered probability (either logit or probit) model. For estimation, you can use any software (functions are available in R, Python, Stata, etc.).\n\nYou may separate the two model tasks within your group or conduct all analyses as a group. All group members must contribute to the writing of the summary report.\nThe report should include at least the following sections: - Introduce the objective(s) and parts of the work. - Present the model formulation and justification of independent variables for each model task. - Selection of the best model specification (select one) for each model task. - Discuss the elasticities of independent variables of the final models.\nThe assignment deliverable should have the form of a professional report and should not be more than 10 pages (singles-spaced).",
     "crumbs": [
       "Assignments",
       "Assignment 2"
@@ -5012,7 +5040,7 @@
     "href": "teaching/ENCI707/assignments/assignment-2.html#assignment-description",
     "title": "Aggregate Demand Model Assignment",
     "section": "",
-    "text": "The objective of this assignment is to familiarize you with the estimation and analysis of transportation demand models. The assignment is due Feb. 28 by 11:59 PM on D2L. The assignment should be completed in groups of 2-3 persons. You may choose your own group. Your group does not need to be the same as prior assignments.\nThe assignment comprises two model estimation tasks: 1. Trip Generation Model A dataset of total quarterly ridership of a transit service along an intercity corridor is available in MS Excel format. Develop a direct demand model for total ridership per quarter for each of the two transit services (economy class and 1st class) along this corridor. Please investigate the role of lag demand in the model. For estimation, you can use any software (MS Excel should be fine).\n\nOrdered Probability Model A dataset of bicycle users’ perceptions of the bike system/facilities for a city is available in MS Excel format. Please investigate their perception of overall quality of biking in the city through estimation of an ordered probability (either logit or probit) model. For estimation, you can use any software (functions are available in R, Python, Stata, etc.).\n\nYou may separate the two model tasks within your group or conduct all analyses as a group. All group members must contribute to the writing of the summary report.\nThe report should include at least the following sections: - Introduce the objective(s) and parts of the work. - Present the model formulation and justification of independent variables for each model task. - Selection of the best model specification (select one) for each model task. - Discuss the elasticities of independent variables of the final models.\nThe assignment deliverable should have the form of a professional report and should not be more than 10 pages (singles-spaced).",
+    "text": "The objective of this assignment is to familiarize you with the estimation and analysis of transportation demand models. The assignment is due Feb. 28 by 11:59 PM on D2L. The assignment should be completed in groups of 2-3 persons. You may choose your own group. Your group does not need to be the same as prior assignments.\nThe assignment comprises two model estimation tasks:\n\nTrip Generation Model A dataset of total quarterly ridership of a transit service along an intercity corridor is available in MS Excel format. Develop a direct demand model for total ridership per quarter for each of the two transit services (economy class and 1st class) along this corridor. Please investigate the role of lag demand in the model. For estimation, you can use any software (MS Excel should be fine).\nOrdered Probability Model A dataset of bicycle users’ perceptions of the bike system/facilities for a city is available in MS Excel format. Please investigate their perception of overall quality of biking in the city through estimation of an ordered probability (either logit or probit) model. For estimation, you can use any software (functions are available in R, Python, Stata, etc.).\n\nYou may separate the two model tasks within your group or conduct all analyses as a group. All group members must contribute to the writing of the summary report.\nThe report should include at least the following sections: - Introduce the objective(s) and parts of the work. - Present the model formulation and justification of independent variables for each model task. - Selection of the best model specification (select one) for each model task. - Discuss the elasticities of independent variables of the final models.\nThe assignment deliverable should have the form of a professional report and should not be more than 10 pages (singles-spaced).",
     "crumbs": [
       "Assignments",
       "Assignment 2"
@@ -5341,14 +5369,14 @@
     "href": "teaching/ENCI707/slides/lec-1.html#elasticity-of-substitution",
     "title": "Lecture 1 - Microeconomics",
     "section": "Elasticity of Substitution​",
-    "text": "Elasticity of Substitution​\n\nMRS: Measures the slope of the indifference (isoquant) curve\nElasticity of substitution (\\(\\sigma\\)): Measures the curvature of the indifference (isoquant) curve \\[\\sigma = \\frac{\\Delta \\left(\\frac{x_2}{x_1} \\right)/\\frac{x_2}{x_1}}{\\Delta MRS/MRS} = \\frac{\\partial \\left(\\frac{x_2}{x_1} \\right)}{\\partial MRS}\\frac{MRS}{\\left(x_2/x_1\\right)}\\] \\[\\frac{\\partial ln\\left(\\frac{x_2}{x_1}\\right)}{\\partial ln (|MRS|)} \\text{(think dln(x)/dx = 1/x and re-arrange)}\\]\nAbsolute value of MRS to ensure logarithm of non-negative values"
+    "text": "Elasticity of Substitution​\n\nMRS: Measures the slope of the indifference (isoquant) curve\nElasticity of substitution (\\(\\sigma\\)): Measures the curvature of the indifference (isoquant) curve \\[\\sigma = \\frac{\\Delta \\left(\\frac{x_2}{x_1} \\right)/\\frac{x_2}{x_1}}{\\Delta MRS/MRS} = \\frac{\\partial \\left(\\frac{x_2}{x_1} \\right)}{\\partial MRS}\\frac{MRS}{\\left(x_2/x_1\\right)}\\] \\[\\frac{\\partial \\ln\\left(\\frac{x_2}{x_1}\\right)}{\\partial ln (|MRS|)} \\text{(think dln(x)/dx = 1/x and re-arrange)}\\]\nAbsolute value of MRS to ensure logarithm of non-negative values"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-1.html#cobb-douglas-utility-function",
     "href": "teaching/ENCI707/slides/lec-1.html#cobb-douglas-utility-function",
     "title": "Lecture 1 - Microeconomics",
     "section": "Cobb-Douglas Utility Function​",
-    "text": "Cobb-Douglas Utility Function​\n\nElasticity of substitution (\\(\\sigma\\)) \\[|MRS| = \\frac{x_2}{x_1}\\frac{\\alpha}{\\beta}\\] \\[\\frac{x_2}{x_1} = \\frac{\\beta}{\\alpha}|MRS|\\] \\[ln\\left(\\frac{x_2}{x_1}\\right) + ln\\left(\\frac{\\alpha}{\\beta}\\right) = ln(|MRS|) \\text{take derivatives wrt ln(MRS)}\\] \\[\\sigma = dln\\left(\\frac{x_2}{x_1}\\right)/ln(|MRS|) = 1 \\]\nUnit elasticity of substitution: unit curvature of the indifference curve"
+    "text": "Cobb-Douglas Utility Function​\n\nElasticity of substitution (\\(\\sigma\\)) \\[|MRS| = \\frac{x_2}{x_1}\\frac{\\alpha}{\\beta}\\] \\[\\frac{x_2}{x_1} = \\frac{\\beta}{\\alpha}|MRS|\\] \\[ln\\left(\\frac{x_2}{x_1}\\right) + \\ln\\left(\\frac{\\alpha}{\\beta}\\right) = \\ln(|MRS|) \\text{take derivatives wrt ln(MRS)}\\] \\[\\sigma = d\\ln\\left(\\frac{x_2}{x_1}\\right)/ln(|MRS|) = 1 \\]\nUnit elasticity of substitution: unit curvature of the indifference curve"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-1.html#cobb-douglas-utility-function-1",
@@ -5376,7 +5404,7 @@
     "href": "teaching/ENCI707/slides/lec-1.html#ces-direct-utility-function",
     "title": "Lecture 1 - Microeconomics",
     "section": "CES Direct Utility Function​",
-    "text": "CES Direct Utility Function​\n\\[MRS = - \\frac{\\alpha_1}{\\alpha_2}\\left(\\frac{x_2}{x_1}\\right)^{\\rho-1}\\] - Elasticity of subsitution \\[ln(|MRS|) = ln\\left(\\frac{\\alpha_1}{\\alpha_2}\\right) + (\\rho-1)ln\\left(\\frac{x_2}{x_1}\\right)\\] \\[ln\\left(\\frac{x_2}{x_1}\\right) = \\frac{1}{\\rho-1}ln(|MRS|) + \\frac{1}{\\rho-1}ln\\left(\\frac{\\alpha_2}{\\alpha_1}\\right)\\] \\[\\sigma = \\frac{d ln\\left(\\frac{x_2}{x_1}\\right)}{d ln(|MRS|)} = \\frac{1}{\\rho-1}\\]"
+    "text": "CES Direct Utility Function​\n\\[MRS = - \\frac{\\alpha_1}{\\alpha_2}\\left(\\frac{x_2}{x_1}\\right)^{\\rho-1}\\] - Elasticity of subsitution \\[\\ln(|MRS|) = \\ln\\left(\\frac{\\alpha_1}{\\alpha_2}\\right) + (\\rho-1)\\ln\\left(\\frac{x_2}{x_1}\\right)\\] \\[\\ln\\left(\\frac{x_2}{x_1}\\right) = \\frac{1}{\\rho-1}\\ln(|MRS|) + \\frac{1}{\\rho-1}\\ln\\left(\\frac{\\alpha_2}{\\alpha_1}\\right)\\] \\[\\sigma = \\frac{d \\ln\\left(\\frac{x_2}{x_1}\\right)}{d \\ln(|MRS|)} = \\frac{1}{\\rho-1}\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-1.html#ces-direct-utility-maximization",
@@ -5397,14 +5425,14 @@
     "href": "teaching/ENCI707/slides/lec-1.html#translog-demandcost-function",
     "title": "Lecture 1 - Microeconomics",
     "section": "Translog Demand/Cost Function​",
-    "text": "Translog Demand/Cost Function​\n\nTranslog is a quadratic, logarithmic specification of an indirect utility function written in terms of expenditure-normalized prices\n\nNormalizing each price by dividing by total expenditure (income) imposes homogeneity\n\nLogarithmic indirect utility (or cost) function is \\[ln(V) = \\alpha_0 + \\sum_j \\alpha_j ln\\left(\\frac{p_j}{I}\\right) + \\frac{1}{2}\\sum_j\\sum_k \\beta_{jk} ln\\left(\\frac{p_j}{I}\\right) ln\\left(\\frac{p_k}{I}\\right)\\]\nOptimum quantity demands are derived using a logarthmic version of Roy’s Identity"
+    "text": "Translog Demand/Cost Function​\n\nTranslog is a quadratic, logarithmic specification of an indirect utility function written in terms of expenditure-normalized prices\n\nNormalizing each price by dividing by total expenditure (income) imposes homogeneity\n\nLogarithmic indirect utility (or cost) function is \\[\\ln(V) = \\alpha_0 + \\sum_j \\alpha_j \\ln\\left(\\frac{p_j}{I}\\right) + \\frac{1}{2}\\sum_j\\sum_k \\beta_{jk} \\ln\\left(\\frac{p_j}{I}\\right) \\ln\\left(\\frac{p_k}{I}\\right)\\]\nOptimum quantity demands are derived using a logarthmic version of Roy’s Identity"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-1.html#almost-ideal-demand-system-aids",
     "href": "teaching/ENCI707/slides/lec-1.html#almost-ideal-demand-system-aids",
     "title": "Lecture 1 - Microeconomics",
     "section": "Almost Ideal Demand System (AIDS)​",
-    "text": "Almost Ideal Demand System (AIDS)​\n\nAIDS is a combination of Cobb-Douglas and translog demand functions, describing an expenditure function necessary to attain a specific utility level at a given price\nTypical form is\n\n\\[ln(V) = \\alpha_0 + \\sum_j \\alpha_j ln(p_j) + \\frac{1}{2}\\sum_j \\alpha_j ln(p_j) + \\frac{1}{2}\\sum_j\\sum_k \\gamma_{jk} ln(p_j) ln(p_k) + \\beta_o \\prod_j p_k^{\\beta_k}\\]"
+    "text": "Almost Ideal Demand System (AIDS)​\n\nAIDS is a combination of Cobb-Douglas and translog demand functions, describing an expenditure function necessary to attain a specific utility level at a given price\nTypical form is\n\n\\[\\ln(V) = \\alpha_0 + \\sum_j \\alpha_j \\ln(p_j) + \\frac{1}{2}\\sum_j \\alpha_j \\ln(p_j) + \\frac{1}{2}\\sum_j\\sum_k \\gamma_{jk} \\ln(p_j) \\ln(p_k) + \\beta_o \\prod_j p_k^{\\beta_k}\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-1.html#microeconomic-theory-of-discrete-goods",
@@ -5516,7 +5544,7 @@
     "href": "teaching/ENCI707/slides/lec-3.html#log-normal-regression",
     "title": "Lecture 3 - Aggregate Demand Models",
     "section": "Log-Normal Regression",
-    "text": "Log-Normal Regression\n\\[ln(y_i) = \\beta_0 + \\sum_j \\beta_j x_j + \\epsilon_j, \\epsilon_j \\text{ is } \\sim N(0,\\sigma^2)\\]\n\nEquivalently \\(ln(y_i)\\) is \\(\\sim N(\\beta_0 + \\sum_j \\beta_j x_j, \\sigma^2)\\)\nEstimation\n\nLeast-squares: minimize squared residuals\nMaximum likelihood by normal pdf \\[L_i = \\frac{1}{y_i \\sigma}\\phi\\left(\\frac{ln(y_i)-\\beta_0-\\sum_j \\beta_j x_j}{\\sigma}\\right)\\]\n\\(y_i\\) must be positive (i.e., non-negative and non-zero)"
+    "text": "Log-Normal Regression\n\\[\\ln(y_i) = \\beta_0 + \\sum_j \\beta_j x_j + \\epsilon_j, \\epsilon_j \\text{ is } \\sim N(0,\\sigma^2)\\]\n\nEquivalently \\(\\ln(y_i)\\) is \\(\\sim N(\\beta_0 + \\sum_j \\beta_j x_j, \\sigma^2)\\)\nEstimation\n\nLeast-squares: minimize squared residuals\nMaximum likelihood by normal pdf \\[L_i = \\frac{1}{y_i \\sigma}\\phi\\left(\\frac{\\ln(y_i)-\\beta_0-\\sum_j \\beta_j x_j}{\\sigma}\\right)\\]\n\\(y_i\\) must be positive (i.e., non-negative and non-zero)"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-3.html#probit-regression",
@@ -5530,7 +5558,7 @@
     "href": "teaching/ENCI707/slides/lec-3.html#logistic-regression",
     "title": "Lecture 3 - Aggregate Demand Models",
     "section": "Logistic Regression",
-    "text": "Logistic Regression\n\nObserved value is binary (0/1) with \\(\\epsilon_i\\) being logistically distributed this time \\[Pr(y_i=1) = \\pi_i = \\frac{\\exp (\\beta_0 + \\sum_j \\beta_j x_j)}{1 + \\exp(\\beta_0 + \\sum_j \\beta_j x_j)}\\] \\[Pr(y_i=0) = 1 - \\pi_i = 1 - \\pi_i = \\frac{1}{1 + \\exp(\\beta_0 + \\sum_j \\beta_j x_j)}\\]\nEstimation by Maximum likelihood \\[L_i = \\pi_i^{\\delta_i}(1-\\pi_i)^{1-\\delta_i} \\text{  }\\delta_i=1 \\text{, if }y_i=1, 0 \\text{ otherwise}\\]\n\nInterpretation (scale compounded parameters): \\[logit(\\pi_i) = \\text{log of odds ratio} = ln\\left(\\frac{\\pi_i}{1-\\pi_i}\\right)=\\beta_0 + \\sum_j \\beta_j x_j\\]"
+    "text": "Logistic Regression\n\nObserved value is binary (0/1) with \\(\\epsilon_i\\) being logistically distributed this time \\[Pr(y_i=1) = \\pi_i = \\frac{\\exp (\\beta_0 + \\sum_j \\beta_j x_j)}{1 + \\exp(\\beta_0 + \\sum_j \\beta_j x_j)}\\] \\[Pr(y_i=0) = 1 - \\pi_i = 1 - \\pi_i = \\frac{1}{1 + \\exp(\\beta_0 + \\sum_j \\beta_j x_j)}\\]\nEstimation by Maximum likelihood \\[L_i = \\pi_i^{\\delta_i}(1-\\pi_i)^{1-\\delta_i} \\text{  }\\delta_i=1 \\text{, if }y_i=1, 0 \\text{ otherwise}\\]\n\nInterpretation (scale compounded parameters): \\[logit(\\pi_i) = \\text{log of odds ratio} = \\ln\\left(\\frac{\\pi_i}{1-\\pi_i}\\right)=\\beta_0 + \\sum_j \\beta_j x_j\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-3.html#probitlogistic-regression",
@@ -5705,7 +5733,7 @@
     "href": "teaching/ENCI707/slides/lec-3.html#cobb-douglas-demand-model-1",
     "title": "Lecture 3 - Aggregate Demand Models",
     "section": "Cobb-Douglas Demand Model",
-    "text": "Cobb-Douglas Demand Model\n\nStochastic econometric model adds random error (\\(\\epsilon_j\\))\n\n\\[D_j^* = e^{\\alpha_o}I^{\\gamma}\\prod_k x_k^{\\beta_k}\\prod_m e^{\\beta_m z_m}e^{\\epsilon_j}\\]\n\nLog-transformation results in a log-linear model \\[ln(D_j^*) = \\alpha_0 + \\sum_k \\beta_k ln(x_k) + \\sum_m \\beta_m z_m + \\epsilon_j\\]\nCan accomodate any type of explanatory variables (continuous/categorical)\nElasticity: corresponding parameter - constant elasticity! \\[E=\\frac{\\partial D}{\\partial x_k}\\frac{x_k}{D_j} = \\beta_j\\]"
+    "text": "Cobb-Douglas Demand Model\n\nStochastic econometric model adds random error (\\(\\epsilon_j\\))\n\n\\[D_j^* = e^{\\alpha_o}I^{\\gamma}\\prod_k x_k^{\\beta_k}\\prod_m e^{\\beta_m z_m}e^{\\epsilon_j}\\]\n\nLog-transformation results in a log-linear model \\[\\ln(D_j^*) = \\alpha_0 + \\sum_k \\beta_k \\ln(x_k) + \\sum_m \\beta_m z_m + \\epsilon_j\\]\nCan accomodate any type of explanatory variables (continuous/categorical)\nElasticity: corresponding parameter - constant elasticity! \\[E=\\frac{\\partial D}{\\partial x_k}\\frac{x_k}{D_j} = \\beta_j\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-3.html#cobb-douglas-demand-model-example",
@@ -5719,7 +5747,7 @@
     "href": "teaching/ENCI707/slides/lec-3.html#translog-demand-model",
     "title": "Lecture 3 - Aggregate Demand Models",
     "section": "Translog Demand Model",
-    "text": "Translog Demand Model\n\nIndirect utility (various other forms also possible) \\[ln(V) = \\alpha_0 + \\sum_i \\alpha_i ln(p_i) + \\sum_i \\sum_{j \\ne i} (1/2)\\beta_{ij}ln(p_i)ln(p_j) \\\\ + \\sum_i \\gamma_i ln(Y_e)ln(p_i) + \\gamma_y ln(Y_e)\\]\n\\(p_i\\) & \\(p_j\\) are generalized costs for \\(i\\) & \\(j\\)\n\\(Y_e\\) is the generalized time-money budget\nRoy’s Identity \\[D_i = \\frac{\\partial V / \\partial p_i}{\\partial V / \\partial Y_e} = - \\frac{\\partial ln(V) / \\partial ln(p_i)}{\\partial ln(V) / \\partial ln(Y_e)}\\]\nResulting optimum demand \\[D_i^* = - \\frac{(1/p_i)(\\sum_i \\alpha_i + \\sum_{j \\ne i} \\beta_{ij}ln(p_j) + \\gamma_i Y_e}{(1/Y_e)(\\sum_{j \\ne i}\\gamma_j ln(p_j) + \\gamma_y)}\\]"
+    "text": "Translog Demand Model\n\nIndirect utility (various other forms also possible) \\[\\ln(V) = \\alpha_0 + \\sum_i \\alpha_i \\ln(p_i) + \\sum_i \\sum_{j \\ne i} (1/2)\\beta_{ij}\\ln(p_i)\\ln(p_j) \\\\ + \\sum_i \\gamma_i \\ln(Y_e)\\ln(p_i) + \\gamma_y \\ln(Y_e)\\]\n\\(p_i\\) & \\(p_j\\) are generalized costs for \\(i\\) & \\(j\\)\n\\(Y_e\\) is the generalized time-money budget\nRoy’s Identity \\[D_i = \\frac{\\partial V / \\partial p_i}{\\partial V / \\partial Y_e} = - \\frac{\\partial \\ln(V) / \\partial \\ln(p_i)}{\\partial \\ln(V) / \\partial \\ln(Y_e)}\\]\nResulting optimum demand \\[D_i^* = - \\frac{(1/p_i)(\\sum_i \\alpha_i + \\sum_{j \\ne i} \\beta_{ij}\\ln(p_j) + \\gamma_i Y_e}{(1/Y_e)(\\sum_{j \\ne i}\\gamma_j \\ln(p_j) + \\gamma_y)}\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-3.html#translog-demand-model-1",
@@ -5747,14 +5775,14 @@
     "href": "teaching/ENCI707/slides/lec-3.html#aggregate-logit-model",
     "title": "Lecture 3 - Aggregate Demand Models",
     "section": "Aggregate Logit Model",
-    "text": "Aggregate Logit Model\n\nAggregate logit model: model of market shares \\[D_A = \\text{Total demand for alternative A}\\] \\[D_B = \\text{Total demand for alternative B}\\] \\[D_C = \\text{Total demand for alternative C}\\] \\[V_A = \\text{Ratio of total demand for A} = D_A/(D_A+D_B+D_C)\\] \\[V_B = \\text{Ratio of total demand for B} = D_B/(D_A+D_B+D_C)\\] \\[V_C = \\text{Ratio of total demand for C} = D_C/(D_A+D_B+D_C)\\]\nConsidering an alternative, \\(A\\), as the reference & using Cobb-Douglas log form \\[ln(V_B/V_A) = \\beta_{0BA} + \\sum_{i=1}^n \\beta_{iBA}ln(x_{iB}/x_{iA}) + \\sum_{j=1}^n \\gamma_{jB}y_j + \\epsilon_{BA} \\text{ or}\\] \\[ln(V_B/V_A) = \\beta_{0BA} + \\sum_{i=1}^n \\beta_{iBA}(x_{iB} - x_{iA}) + \\sum_{j=1}^n \\gamma_{jB}y_j + \\epsilon_{BA}\\]"
+    "text": "Aggregate Logit Model\n\nAggregate logit model: model of market shares \\[D_A = \\text{Total demand for alternative A}\\] \\[D_B = \\text{Total demand for alternative B}\\] \\[D_C = \\text{Total demand for alternative C}\\] \\[V_A = \\text{Ratio of total demand for A} = D_A/(D_A+D_B+D_C)\\] \\[V_B = \\text{Ratio of total demand for B} = D_B/(D_A+D_B+D_C)\\] \\[V_C = \\text{Ratio of total demand for C} = D_C/(D_A+D_B+D_C)\\]\nConsidering an alternative, \\(A\\), as the reference & using Cobb-Douglas log form \\[\\ln(V_B/V_A) = \\beta_{0BA} + \\sum_{i=1}^n \\beta_{iBA}\\ln(x_{iB}/x_{iA}) + \\sum_{j=1}^n \\gamma_{jB}y_j + \\epsilon_{BA} \\text{ or}\\] \\[\\ln(V_B/V_A) = \\beta_{0BA} + \\sum_{i=1}^n \\beta_{iBA}(x_{iB} - x_{iA}) + \\sum_{j=1}^n \\gamma_{jB}y_j + \\epsilon_{BA}\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-3.html#aggregate-logit-model-1",
     "href": "teaching/ENCI707/slides/lec-3.html#aggregate-logit-model-1",
     "title": "Lecture 3 - Aggregate Demand Models",
     "section": "Aggregate Logit Model",
-    "text": "Aggregate Logit Model\n\nSimilarly for alternative \\(C\\) \\[ln(V_C/V_A) = \\beta_{0CA} + \\sum_{i=1}^n \\beta_{iCA}ln(x_{iC}/x_{iA}) + \\sum_{j=1}^n \\gamma_{jB}y_j + \\epsilon_{BA} \\text{ or}\\] \\[ln(V_B/V_A) = \\beta_{0CA} + \\sum_{i=1}^n \\beta_{iBA}(x_{iC} - x_{iA}) + \\sum_{j=1}^n \\gamma_{jC}y_j + \\epsilon_{CA}\\]\nCan be estimated as linear regression model for a set of observed shares and corresponding variable values.\nIssues:\n\nNo underlying behavioural theory\nDifferent elasticity results from different functional forms (ratio or difference of price/cost variable)"
+    "text": "Aggregate Logit Model\n\nSimilarly for alternative \\(C\\) \\[\\ln(V_C/V_A) = \\beta_{0CA} + \\sum_{i=1}^n \\beta_{iCA}\\ln(x_{iC}/x_{iA}) + \\sum_{j=1}^n \\gamma_{jB}y_j + \\epsilon_{BA} \\text{ or}\\] \\[\\ln(V_B/V_A) = \\beta_{0CA} + \\sum_{i=1}^n \\beta_{iBA}(x_{iC} - x_{iA}) + \\sum_{j=1}^n \\gamma_{jC}y_j + \\epsilon_{CA}\\]\nCan be estimated as linear regression model for a set of observed shares and corresponding variable values.\nIssues:\n\nNo underlying behavioural theory\nDifferent elasticity results from different functional forms (ratio or difference of price/cost variable)"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-3.html#lagged-effects-in-aggregate-models-example",
@@ -5768,119 +5796,525 @@
     "href": "teaching/ENCI707/slides/lec-5.html#outline",
     "title": "Lecture 5 - Multinomial Logit",
     "section": "Outline",
-    "text": "Outline\n\n\nBasis for choice modeling\nTheory\nLogit choice model"
+    "text": "Outline\n\n\nDiscrete multinomial choice - Type I EV Distribution\nMultinomial Logit (MNL) - Scale and Systematic Utility Function\nMNL Estimation & Specification\nElasticity, Marginal Effect, & Substitution\nIIA & IIA violation tests\nPolicy Evaluation\nForecasting & Prediction\nConfidence Intervals on Predictions\nModel transferability & Parameter Updating"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-5.html#basis-for-choice-modeling",
-    "href": "teaching/ENCI707/slides/lec-5.html#basis-for-choice-modeling",
+    "objectID": "teaching/ENCI707/slides/lec-5.html#binary-versus-multinomial-choice",
+    "href": "teaching/ENCI707/slides/lec-5.html#binary-versus-multinomial-choice",
     "title": "Lecture 5 - Multinomial Logit",
-    "section": "Basis for Choice Modeling",
-    "text": "Basis for Choice Modeling\n\nAggregate demand models (such as those we have been discussing) based on observations for groups of travelers or average relations for zones\nDiscrete choice: probability an individual chooses a given option a function of their socioeconomic characteristics & relative attractiveness of the option\nCannot estimate via least squares because probability is unobserved – only observe choice\nModels are probabilistic & do not give an outcome value such as trips – must use probability concepts to generate discrete outcomes (summation over all observations to give expected number choosing option or use sample enumeration to allocate discrete outcomes)"
+    "section": "Binary versus Multinomial Choice",
+    "text": "Binary versus Multinomial Choice"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-5.html#basis-for-choice-modeling-1",
-    "href": "teaching/ENCI707/slides/lec-5.html#basis-for-choice-modeling-1",
+    "objectID": "teaching/ENCI707/slides/lec-5.html#binary-versus-multinomial-choice-1",
+    "href": "teaching/ENCI707/slides/lec-5.html#binary-versus-multinomial-choice-1",
     "title": "Lecture 5 - Multinomial Logit",
-    "section": "Basis for Choice Modeling",
-    "text": "Basis for Choice Modeling\n\nIndividuals derive utility from the use of alternatives defined by a utility function often denoted by V \\[Vpeanut butter = 0.25 – 1.0 ALLERGY - 0.5 PRICE + 0.25 ORGANIC\\]\nNeed probability value between 0 & 1. Various forms, generally with an s-shaped plot. Main ones are \\[𝐿𝑜𝑔𝑖𝑡:𝑃_1=exp⁡(𝑉_1 )/(exp⁡(𝑉1)+exp⁡(𝑉2))\\] \\[𝑃𝑟𝑜𝑏𝑖𝑡:𝑃_1=\\int_{-\\infty}^{\\infty}⁡\\int_{-\\infty}^{V_1-V_2+x_1}\\frac{⁡exp⁡(\\frac{−1}{2(1−\\rho^2)} (\\frac{𝑥_1}{\\sigma_1})^2−\\frac{2\\rho 𝑥_1 𝑥_2}{\\sigma_1 \\sigma_2}+(\\frac{𝑥_2}{\\sigma_2})^2}{2\\pi\\sigma_1 \\sigma_2 \\sqrt{1−\\rho^2 }} 𝑑𝑥_2 𝑑𝑥_1\\]"
+    "section": "Binary versus Multinomial Choice",
+    "text": "Binary versus Multinomial Choice"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-5.html#properties-of-discrete-choice-dc",
-    "href": "teaching/ENCI707/slides/lec-5.html#properties-of-discrete-choice-dc",
+    "objectID": "teaching/ENCI707/slides/lec-5.html#discrete-multinomial-choice",
+    "href": "teaching/ENCI707/slides/lec-5.html#discrete-multinomial-choice",
     "title": "Lecture 5 - Multinomial Logit",
-    "section": "Properties of Discrete Choice (DC)",
-    "text": "Properties of Discrete Choice (DC)\n\nBased on theories of individual behavior & do not constitute physical analogies – therefore stable over time & space\nCan be more statistically efficient than aggregate models because each observation is an outcome rather than using aggregations of potentially hundreds of observations\nDM less likely to suffer from bias due to correlation between aggregate units – i.e., ecological correlation (fallacy)"
+    "section": "Discrete Multinomial Choice",
+    "text": "Discrete Multinomial Choice\nA multinomial choice reduced into an equivalent binary choice problem:\n\n\\[𝑈_𝑗 \\ge \\max_{j,j' \\in C_i, j \\neq j'} U_{j'}\\] \\[𝑈_𝑗 \\ge 𝑈_𝑘 \\text{, } k \\neq j \\text{ & } 𝑗,𝑘 \\in 𝐶_𝑖\\]\n\nwhere \\(C_i\\) is the choice set of decision maker \\(i\\), \\(j\\) is the best alternative, and \\(k\\) is the second best alternative\nProbability of choosing alternative j:\n\n\\[Pr⁡(𝑗) = Pr⁡((𝑉_𝑗+\\epsilon_𝑗) \\ge (𝑉_𝑘+\\epsilon_𝑘 ))\\] \\[Pr⁡( 𝑗)=Pr⁡(\\epsilon_𝑘 \\leq (𝑉_𝑗−𝑉_𝑘+\\epsilon_𝑗 )) \\text{ (a CDF function)}\\]"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-5.html#ecological-fallacy",
-    "href": "teaching/ENCI707/slides/lec-5.html#ecological-fallacy",
+    "objectID": "teaching/ENCI707/slides/lec-5.html#discrete-multinomial-choice-1",
+    "href": "teaching/ENCI707/slides/lec-5.html#discrete-multinomial-choice-1",
     "title": "Lecture 5 - Multinomial Logit",
-    "section": "Ecological Fallacy",
-    "text": "Ecological Fallacy"
+    "section": "Discrete Multinomial Choice",
+    "text": "Discrete Multinomial Choice\nA multinomial choice reduced into an equivalen Choice probability in a multinomial choice context: \\[Pr⁡(𝑗)=Pr⁡(\\epsilon_𝑘 \\leq (𝑉_𝑗−𝑉_𝑘+\\epsilon_𝑗 ))\\]\nProbability distribution of random utility (\\(\\epsilon\\)) needs to be fully specified to get the unconditional probability: \\[Pr⁡(𝑗)=\\int_{\\epsilon_𝑗=−\\infty}^{+\\infty}\\int_{\\epsilon_𝑘=−\\infty}^{𝑉_𝑗−𝑉_𝑘+\\epsilon_𝑗} 𝑓(\\epsilon_𝑗,\\epsilon_𝑘)𝑑 \\epsilon_𝑗 𝑑 \\epsilon_𝑘\\]\n\nSpecification of univariate distribution, \\(f(\\epsilon_k)\\) , and the joint distribution, \\(f(\\epsilon_j,\\epsilon_k)\\), are necessary\nPossible distributions:\n\nMultivariate normal distribution\nType I Extreme Value distribution"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-5.html#theoretical-framework",
-    "href": "teaching/ENCI707/slides/lec-5.html#theoretical-framework",
+    "objectID": "teaching/ENCI707/slides/lec-5.html#type-i-extreme-value-distribution",
+    "href": "teaching/ENCI707/slides/lec-5.html#type-i-extreme-value-distribution",
     "title": "Lecture 5 - Multinomial Logit",
-    "section": "Theoretical Framework",
-    "text": "Theoretical Framework\n\nIndividuals belong to a homogeneous population \\(N\\), act rationally, & possess perfect information – i.e., they always select the option that maximizes their net personal utility subject to legal, social, physical, &/or budgetary (both time & money) constraints\nThere is a certain set \\(𝐴 = \\{𝐴_1, …𝐴_i,…𝐴_I\\}\\) of available alternatives & a set X of vectors of measured attributes of individuals & their alternatives\nAn individual \\(n\\) is endowed with a set of attributes \\(𝑥 \\in 𝑋\\) & faces a choice set \\(𝐴(n) \\in 𝐴\\)\nWe will assume choice set is predetermined for individuals"
+    "section": "Type I Extreme Value Distribution",
+    "text": "Type I Extreme Value Distribution\n\nType I (Gumbel) distribution is the most convenient distribution to derive a closed form choice model\n\nIf is Type I Extreme Value (Gumbel) distributed: \\[𝑓(\\epsilon)=\\mu 𝑒^{−\\mu(\\epsilon−\\eta)} 𝑒^{−𝑒^{−\\mu(\\epsilon−\\eta)}}\\] \\[F = e^{-e^{-\\mu(\\epsilon-\\eta)}} \\text{, } \\mu &gt; 0\\]\n\n\\(\\eta\\) is a location parameter and \\(\\mu\\) is a positive scale parameter\nLocation parameter is mode of distribution\nScale parameter defines the dispersion of the PDF shape"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-5.html#theoretical-framework-1",
-    "href": "teaching/ENCI707/slides/lec-5.html#theoretical-framework-1",
+    "objectID": "teaching/ENCI707/slides/lec-5.html#type-i-extreme-value-distribution-1",
+    "href": "teaching/ENCI707/slides/lec-5.html#type-i-extreme-value-distribution-1",
     "title": "Lecture 5 - Multinomial Logit",
-    "section": "Theoretical Framework",
-    "text": "Theoretical Framework\n\nModeler, an observer, does not posses complete information about all elements considered by the individual making choice\nModeler assumes \\(𝑈_{ni}\\) can be represented by two components:\n\nA measurable, systematic, or representative part \\(𝑉_{ni}\\), which is a function of the measured attributes \\(x\\)\nA random part \\(\\epsilon_{ni}\\), which reflects indiosyncratic & taste variation, together with measurement or observational errors made by the modeler"
+    "section": "Type I Extreme Value Distribution",
+    "text": "Type I Extreme Value Distribution"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-5.html#theoretical-framework-2",
-    "href": "teaching/ENCI707/slides/lec-5.html#theoretical-framework-2",
+    "objectID": "teaching/ENCI707/slides/lec-5.html#basic-properties-of-gumbel-distribution",
+    "href": "teaching/ENCI707/slides/lec-5.html#basic-properties-of-gumbel-distribution",
     "title": "Lecture 5 - Multinomial Logit",
-    "section": "Theoretical Framework",
-    "text": "Theoretical Framework\n\nModeler sets utility \\(𝑈_{ni}=𝑉_{ni}+\\epsilon_{ni}\\) to address two apparent irrationalities\n\nThat two individuals faced with the same situation & having the same personal attributes make different choices\nThat an individual may not select the alternative that appears to be the best one\n\nOften assumed \\(V_{ni}\\) given by \\(\\sum_k^K \\beta_{ik} x_{nik}\\) here \\(\\beta_{ik}\\) are assumed constant for all individuals \\(N\\) in the homogeneous set but may vary across alternatives \\(I\\)"
+    "section": "Basic Properties of Gumbel distribution",
+    "text": "Basic Properties of Gumbel distribution\n\nThe mode of the distribution is \\(\\eta\\) (the location of peak of the PDF on x axis from zero).\nThe mean is (\\(\\eta+\\gamma/\\mu\\)), where \\(\\gamma\\) = Euler’s constant=0.577.\nThe variance is \\(\\pi^2/6\\mu^2\\).\nIf \\(\\epsilon\\) is Gumbel distributed with (\\(\\eta, \\mu\\)), and if \\(\\alpha\\) is any positive scalar constant, then (\\(\\alpha \\epsilon + V\\)) is also Gumbel distributed with parameters (\\(\\alpha \\eta +V\\)) and \\(\\mu/\\alpha\\).\nIf \\(\\epsilon_1\\) and \\(\\epsilon_2\\) are independent Gumbel variables, then (\\(\\epsilon_1-\\epsilon_2\\)) is logistically distributed.\nIf \\(\\epsilon_1\\) and are Identical and Independent Gumbel variables with parameters (\\(\\eta_1,\\mu\\)) and (\\(\\eta_2,\\mu\\)) respectively then \\(\\max(\\epsilon_1,\\epsilon_2)\\) is also Gumbel distributed with parameters:\n\\[\\left(\\frac{1}{\\mu} \\ln⁡(𝑒^{\\mu\\eta_1}+𝑒^{\\mu\\eta_2 } ),\\mu \\right)\\]"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-5.html#theoretical-framework-3",
-    "href": "teaching/ENCI707/slides/lec-5.html#theoretical-framework-3",
+    "objectID": "teaching/ENCI707/slides/lec-5.html#basic-properties-of-gumbel-distribution-1",
+    "href": "teaching/ENCI707/slides/lec-5.html#basic-properties-of-gumbel-distribution-1",
     "title": "Lecture 5 - Multinomial Logit",
-    "section": "Theoretical Framework",
-    "text": "Theoretical Framework\n\nIndividual chooses an alternative based on \\(𝑈_{ni}≥ 𝑈_{jn} \\forall A_j \\in A(n)\\)\nOr: \\(𝑉_{ni}  – 𝑉_{nj}≥\\epsilon_{nj}  − \\epsilon_{ni}\\) (notice swapping of \\(i\\) & \\(j\\))\n\nNot possible to know with certainty if the inequality holds, so use \\[𝑃_{ni}  = 𝑃(\\epsilon_{nj} \\leq \\epsilon_{ni} + (V_{ni} - V_{nj})) \\forall A_j \\in A(n)\\] - Do not know distribution of joint residuals, so cannot derive analytical expression for model - Can denote \\(f(\\epsilon) = f(\\epsilon_1, \\epsilon_2, ... \\epsilon_I\\) & know they are random variables with a certain distribution"
+    "section": "Basic Properties of Gumbel distribution",
+    "text": "Basic Properties of Gumbel distribution\n\nIf \\(( \\epsilon_1,\\epsilon_2,\\epsilon_3,\\dots ,\\epsilon_n )\\) are \\(n\\) independent Gumbel distributed variables with parameters (\\(\\eta_1,\\mu), (\\eta_2,\\mu),\\dots (\\eta_n,\\mu)\\) respectively then \\(\\max(\\epsilon_1,\\epsilon_2,\\epsilon_3,\\dots,\\epsilon_n)\\) is also Gumbel distributed with parameters (mean, scale): \\[\\left(\\frac{1}{\\mu} \\ln⁡\\sum_{𝑗=1}^𝑛 𝑒^{\\mu \\eta_𝑗}, \\mu \\right)\\]\n\nNotes:\n\nHomoskedasticity: Independent Gumbel distributed variables have a common scale parameter, \\(\\mu\\).\nProperty 5 is used to derive binomial logit model probability equation.\nProperty 7 can be used to derived closed form equation for multinomial logit (MNL) Model."
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-5.html#theoretical-framework-4",
-    "href": "teaching/ENCI707/slides/lec-5.html#theoretical-framework-4",
+    "objectID": "teaching/ENCI707/slides/lec-5.html#multinomial-logit-model-mnl",
+    "href": "teaching/ENCI707/slides/lec-5.html#multinomial-logit-model-mnl",
     "title": "Lecture 5 - Multinomial Logit",
-    "section": "Theoretical Framework",
-    "text": "Theoretical Framework\n\nCan note that distribution for \\(f(U)\\) is the same but with mean \\(V\\) rather than 0 \\[P_{ni} = \\int_{R_I} f(\\epsilon) d\\epsilon\\] \\[\\text{where } R_I = \\begin{cases}\n\\epsilon_{nj} \\leq \\epsilon_{ni} + (V_{ni} - V_{nj}), & \\forall A_j \\in A(n) \\\\\nV_{ni}) + \\epsilon_{ni} \\ge 0 \\\\\n\\end{cases}\\]\nAssuming independent & identically distributed (IID) residuals, \\[f(\\epsilon_1,...\\epsilon_I) = \\prod_i^I g(\\epsilon_i)\\]\nAnd (drop \\(n\\) for simplicity) \\[P_i = \\int_{-\\infty}^\\infty g(\\epsilon_i) d\\epsilon_i \\prod_{j \\neq i} \\int_{-\\infty}^{V_i-V_j+\\epsilon_i} g(\\epsilon_j) d\\epsilon_j\\]"
+    "section": "Multinomial Logit Model (MNL)",
+    "text": "Multinomial Logit Model (MNL)\n\nIn case of a multinomial choice situation: Assume random utility (\\(\\epsilon\\)) is Gumbel distributed with \\(\\eta = 0\\) location parameter and a common scale, \\(\\mu\\).\nAssume that the utility of the second-best alternative is \\(U^*\\), which is the maximum of all other alternatives except alternative \\(j\\), the best one. \\[𝑈^∗=\\max_{k \\neq j \\text{ & } 𝑗,𝑘 \\in 𝐶_𝑖} (𝑉_𝑘+\\epsilon_𝑘 )\\]\nAccording to Property 7, \\(U^*\\) is also Gumbel distributed with parameters (mean, scale)\n\n\\[ \\left( \\frac{1}{\\mu} \\ln \\sum_{k \\neq j \\text{ & } 𝑗,𝑘 \\in 𝐶_𝑖} e^{\\mu V_k}, \\mu \\right)\\]"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-5.html#generating-the-logit-model",
-    "href": "teaching/ENCI707/slides/lec-5.html#generating-the-logit-model",
+    "objectID": "teaching/ENCI707/slides/lec-5.html#multinomial-logit-model-mnl-1",
+    "href": "teaching/ENCI707/slides/lec-5.html#multinomial-logit-model-mnl-1",
     "title": "Lecture 5 - Multinomial Logit",
-    "section": "Generating the Logit Model",
-    "text": "Generating the Logit Model\n\nAssuming IID Gumbel (Extreme Value Type I) residuals, or equivalently that residual differences are logistically distributed, gives the standard multinomial logit specification\nTermed softmax function in machine learning field \\[P_{ni} = \\frac{exp(\\mu V_{ni})}{\\sum_{A_j \\in A(n)} exp(\\mu V_{nj})}\\]\nWhere \\(\\mu\\) is a scale parameter assumed equal to 1.0 for identification"
+    "section": "Multinomial Logit Model (MNL)",
+    "text": "Multinomial Logit Model (MNL)\nWe can write that the second-best alternative is \\[U^∗= V^∗+\\epsilon^∗ \\text{, } V^* = \\frac{1}{\\mu} \\ln \\sum_{k \\neq j \\text{ & } 𝑗,𝑘 \\in 𝐶_𝑖} e^{\\mu V_k}\\]\nNow for the probability of choosing alternative \\(j\\) (equivalent binary logit form) \\[Pr⁡(𝑗)=Pr⁡\\left((𝑉_𝑗+\\epsilon_𝑗) \\ge \\max_{k \\neq j \\text{ & } 𝑗,𝑘 \\in 𝐶_𝑖} (V_k + \\epsilon_k)\\right)\\] \\[Pr⁡(𝑗)=Pr\\left((𝑉_𝑗+\\epsilon_𝑗) \\ge (𝑉^∗+\\epsilon^∗)\\right)\\] \\[Pr⁡(𝑗)=Pr⁡\\left((𝑉^∗+\\epsilon^∗)−(𝑉_𝑗+\\epsilon_𝑗) \\leq 0\\right)=Pr\\left((\\epsilon^∗−\\epsilon_𝑗) \\leq(𝑉_𝑗−𝑉^∗)\\right)\\]"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-5.html#logit-model-parameter-estimation",
-    "href": "teaching/ENCI707/slides/lec-5.html#logit-model-parameter-estimation",
+    "objectID": "teaching/ENCI707/slides/lec-5.html#multinomial-logit-model-mnl-2",
+    "href": "teaching/ENCI707/slides/lec-5.html#multinomial-logit-model-mnl-2",
     "title": "Lecture 5 - Multinomial Logit",
-    "section": "Logit Model Parameter Estimation",
-    "text": "Logit Model Parameter Estimation\n\nCommercial (& opensource) software exists to estimate model parameters using the method of maximum likelihood estimation\n\nApollo (R & free)\nBiogeme (Python & free)\nSTATA (commercial)\nLIMDEP (commercial)\nGAUSS (commercial)\n\nParameter interpretation similar to regression (t-statistics, GoF, etc.)"
+    "section": "Multinomial Logit Model (MNL)",
+    "text": "Multinomial Logit Model (MNL)\n\nAccording to Property 5, this function is logistically distributed. So\n\n\\[Pr⁡( 𝑗)=\\frac{1}{1+𝑒^{\\mu(𝑉^∗−𝑉_𝑗)}} = \\frac{e^{\\mu V_j}}{e^{\\mu V_j}+𝑒^{\\mu(𝑉^∗−𝑉_𝑗)}}\\] \\[Pr⁡( 𝑗)=\\frac{e^{\\mu V_j}}{e^{\\mu V_j}+e^{\\ln \\sum_{k \\neq j \\text{ & } 𝑗,𝑘 \\in 𝐶_𝑖} e^{\\mu V_k}}}= \\frac{e^{\\mu V_j}}{e^{\\mu V_j}+\\sum_{k \\neq j \\text{ & } 𝑗,𝑘 \\in 𝐶_𝑖} e^{\\mu V_k}}\\] \\[Pr⁡(𝑗)=\\frac{e^{\\mu V_j}}{\\sum_{𝑘 \\in 𝐶_𝑖} e^{\\mu V_k}}\\]\n\nThis is well-known Multinomial Logit Model (MNL) - or softmax function in ML!"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-5.html#direct-cross-elasticity",
-    "href": "teaching/ENCI707/slides/lec-5.html#direct-cross-elasticity",
+    "objectID": "teaching/ENCI707/slides/lec-5.html#scale-of-the-mnl-model",
+    "href": "teaching/ENCI707/slides/lec-5.html#scale-of-the-mnl-model",
     "title": "Lecture 5 - Multinomial Logit",
-    "section": "Direct & Cross Elasticity",
-    "text": "Direct & Cross Elasticity\n\nDirect elasticity: direct effect of changing a variable value related to a good on demand for the same good\n\nE.g., elasticity of transit demand wrt transit fare, transit travel time, or transit headway\n\nCross elasticity: effect of changing a variable value related to a good on demand for a different good\n\nE.g., elasticity of transit demand wrt auto travel time"
+    "section": "Scale of the MNL Model",
+    "text": "Scale of the MNL Model\n\nScale (\\(\\mu\\)) is inversely related to the variance of random error term\nVariance is \\(\\pi^2/6\\mu^2\\) for a IID Type I extreme value error\nAs \\(\\mu -&gt; \\infty\\), Variance \\(-&gt; 0\\)\n\nAll information are captured by the deterministic component (\\(V\\)\nChoice becomes deterministic (the alternative with maximum V is chosen)\n\nAs \\(\\mu -&gt; 0\\), Variance \\(-&gt; \\infty\\) & \\(\\exp(\\mu V) = 1\\)\n\nAlternatives are equally likely\nChoice model does not provide any information\n\nConstant scale, \\(\\mu\\), is not identified in an MNL using only one dataset\nSeparate scale needs to be specified when fusing multiple datasets"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-5.html#logit---direct-elasticity",
-    "href": "teaching/ENCI707/slides/lec-5.html#logit---direct-elasticity",
+    "objectID": "teaching/ENCI707/slides/lec-5.html#systematic-utility-function",
+    "href": "teaching/ENCI707/slides/lec-5.html#systematic-utility-function",
     "title": "Lecture 5 - Multinomial Logit",
-    "section": "Logit - Direct Elasticity",
-    "text": "Logit - Direct Elasticity\nDirect elasticity of the probability of an individual \\(n\\) choosing alternative \\(i\\) wrt a change in an attribute/independent variable \\(X_{ik}\\) with coefficient \\(\\beta_k\\) (ignoring \\(n\\) subscripts for simplicity)\n\\[e_{direct} = \\frac{\\partial P_i}{\\partial X_{ik}} \\frac{X_{ik}}{P_i}=(1-P_i)X_{ik}\\beta_k\\]"
+    "section": "Systematic Utility Function",
+    "text": "Systematic Utility Function\nSystematic utility function: Linear-in-parameter function \\[𝑉_1=\\beta_1+\\beta_𝑡 𝑥_{1𝑡}+\\beta_{1𝑎} 𝑥_𝑎+\\beta_𝑏 𝑥_{1𝑏}^2+\\beta_{1𝑎𝑐} 𝑥_𝑎^3+\\beta_{1𝑎𝑙}  \\ln⁡(𝑥_𝑎)+\\dots\\] \\[𝑉_2=\\beta_2+\\beta_𝑡 𝑥_{2𝑡}+\\beta_{2𝑎} 𝑥_𝑎+\\beta_𝑏 𝑥_{2𝑏}^2+\\beta_{2𝑎𝑐} 𝑥_𝑎^3+\\beta_{2𝑎𝑙} + \\ln⁡(x_a)+\\dots\\] \\[\\vdots\\] \\[𝑉_J=\\beta_J+\\beta_𝑡 𝑥_{J𝑡}+\\beta_{J𝑎} 𝑥_𝑎+\\beta_𝑏 𝑥_{J𝑏}^2+\\beta_{J𝑎𝑐} 𝑥_𝑎^3+\\beta_{J𝑎𝑙} + \\ln⁡(x_a)+\\dots\\]\n\nAlternative Specific Constant - (J-1) are identified\nPermits non-linear transformed variables\nCan be generic if vary across the alternatives.\nMust be alternative-specific if constant across the alternatives (only J-1 are identified)"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-5.html#logit---cross-elasticity",
-    "href": "teaching/ENCI707/slides/lec-5.html#logit---cross-elasticity",
+    "objectID": "teaching/ENCI707/slides/lec-5.html#systematic-utility-function-1",
+    "href": "teaching/ENCI707/slides/lec-5.html#systematic-utility-function-1",
     "title": "Lecture 5 - Multinomial Logit",
-    "section": "Logit - Cross Elasticity",
-    "text": "Logit - Cross Elasticity\n\nCross elasticity of the probability of an individual \\(n\\) choosing alternative \\(i\\) wrt a change in an attribute/independent variable \\(X_{jk}\\) with coefficient \\(\\beta_k\\) for a different alternative\n\n\\[e_{cross} = -P_j X_{jk}\\beta_k\\]\n\nAbove is same regardless of alternative \\(i\\). I.e., all alternatives have the same cross-elasticity wrt an attribute \\(k\\) of alternative \\(j\\)\nAbove results from independence of irrelevant alternatives (IIA) property of basic logit model"
+    "section": "Systematic Utility Function",
+    "text": "Systematic Utility Function\n\nSystematic utility function: Linear-in-parameter function \\[𝑉_𝑗=\\beta_𝑗+\\beta_𝑡 𝑥_{𝑗𝑡}+\\beta_𝑘 𝑥_{𝑗𝑘}+\\dots \\text{ (individual variable space)}\\] \\[𝑉_𝑗=\\beta_𝑗+(\\beta_𝑡/\\beta_𝑘)𝑥_{𝑗𝑡}+𝑥_{𝑗𝑘}+\\dots\n\\text{ (variable ratio space)}\\] \\[\n𝑉_𝑗=\\beta_𝑗+(\\beta_𝑡/\\beta_𝑐)𝑥_{𝑗−𝑡𝑖𝑚𝑒}+(\\beta_𝑟/\\beta_𝑐)𝑥_{𝑗−𝑟𝑒𝑙𝑖𝑎𝑏𝑖𝑙𝑖𝑡𝑦}+𝑥_{𝑗−𝐶𝑜𝑠𝑡}+\\dots\n\\] \\[𝑉_𝑗=\\beta_𝑗^{'}+\\underset{\\begin{array}{c} \\text{(Willingness-to-pay} \\\\ \\text{for time savings)} \\end{array}}{\\beta_{𝑡𝑐}}  𝑥_{𝑗−𝑡𝑖𝑚𝑒}+\\underset{\\begin{array}{c} \\text{(Willingness-to-pay} \\\\ \\text{for improved reliability)} \\end{array}}{\\beta_{𝑟𝑐}}  𝑥_{𝑗−𝑟𝑒𝑙𝑖𝑎𝑏𝑖𝑙𝑖𝑡𝑦}+𝑥_{𝑗−𝐶𝑜𝑠𝑡}+\\dots\n\\]"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-5.html#independence-of-irrelevant-alternatives-iia-property",
-    "href": "teaching/ENCI707/slides/lec-5.html#independence-of-irrelevant-alternatives-iia-property",
+    "objectID": "teaching/ENCI707/slides/lec-5.html#estimation-of-mnl",
+    "href": "teaching/ENCI707/slides/lec-5.html#estimation-of-mnl",
     "title": "Lecture 5 - Multinomial Logit",
-    "section": "Independence of Irrelevant Alternatives (IIA) Property",
-    "text": "Independence of Irrelevant Alternatives (IIA) Property\nConsider we have two modes: auto (a) & bus (b)\n\\[\\frac{P_a}{P_b} = \\frac{exp(V_a)}{exp(V_b)} = exp(V_a - V_b)\\] I.e., the relative probability of choosing auto vs. bus depends only on the utilities of the two alternatives\n\nNow what if our buses are red (rb) & we paint half blue (bb)?"
+    "section": "Estimation of MNL",
+    "text": "Estimation of MNL\n\nMaximum likelihood estimation: \\[\\text{Likelihood function: } 𝐿_𝑖=\\prod_{𝑗=1}^𝐽 (Pr⁡( 𝑗))^{𝑦_𝑖}\n\\] \\[\\text{Log-likelihood function: } LL_𝑖=\\sum_{𝑗 \\in C_i} y_j \\ln(Pr⁡( 𝑗))\n\\] \\[\\text{Sample log-likelihood function: } LL=\\sum_{i=1}^N \\sum_{𝑗 \\in C_i} y_j \\ln(Pr⁡( 𝑗))\n\\]\nUse gradient search algorithms\nAnalytical gradient and Hessian functions provide faster estimation than numerical gradient and Hessian functions"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-5.html#iia-cont",
-    "href": "teaching/ENCI707/slides/lec-5.html#iia-cont",
+    "objectID": "teaching/ENCI707/slides/lec-5.html#goodness-of-fit",
+    "href": "teaching/ENCI707/slides/lec-5.html#goodness-of-fit",
     "title": "Lecture 5 - Multinomial Logit",
-    "section": "IIA Cont…",
-    "text": "IIA Cont…\n\nIf the IIA assumption does not hold, we can make other error distribution assumptions\n\nNested logit (can handle complex decision structures)\nProbit (normal error terms, very general model, but can be difficult to work with it)\n\n\n\n\n\n\nENCI707 Home"
+    "section": "Goodness-of-Fit",
+    "text": "Goodness-of-Fit\nModel goodness-of-fit is measured by \\(\\rho^2\\) value\n  - \\(k\\) = difference in total number of parameters between two models \\[\\rho_0^2 = \\frac{LL(\\beta) - LL(0)}{LL(*) - LL(0)} = 1 - \\frac{LL(\\beta)}{LL(0)} \\text{, } adj-\\rho_0^2 = 1 - \\frac{LL(\\beta) - k}{LL(0)}\\]\n\\[\\rho_C^2 = \\frac{LL(\\beta) - LL(C)}{LL(*) - LL(C)} = 1 - \\frac{LL(\\beta)}{LL(C)} \\text{, } adj-\\rho_C^2 = 1 - \\frac{LL(\\beta) - k}{LL(C)}\\]\n\nAdjusted \\(\\rho^2\\) value 0.3 to 0.5 is considered reasonable (but depends on model)\nAlternative: Comparing predicted vs. observed shares"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#goodness-of-fit-1",
+    "href": "teaching/ENCI707/slides/lec-5.html#goodness-of-fit-1",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Goodness-of-Fit",
+    "text": "Goodness-of-Fit\n\nComparing predicted versus observed share of alternatives:\n\nUse holdout sample (20%-30% sample unused for estimation):\n\nProblematic for small sample size\nHolding out may distort market sample share of the alternatives and thereby the alternative specific constants\n\nUse bootstrap:\n\nGenerate large number of samples bootstrapped from the same sample\nCompare under/over predictions"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#validation-by-bootstrapping",
+    "href": "teaching/ENCI707/slides/lec-5.html#validation-by-bootstrapping",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Validation by Bootstrapping",
+    "text": "Validation by Bootstrapping"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#validation-by-bootstrapping-1",
+    "href": "teaching/ENCI707/slides/lec-5.html#validation-by-bootstrapping-1",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Validation by Bootstrapping",
+    "text": "Validation by Bootstrapping\nValidation by 1000 Bootstrap Sample Simulation\n\n\n\n\n\n\n\n\n\n\nMode\nSample Share (%)\nMean Prediction Error (%)\nMax Over-Prediction (%)\nMax Under-Prediction (%)\n\n\n\n\nCar Driver\n26\n0.033\n3.26\n-2.78\n\n\nCar Passenger\n1\n0.015\n0.91\n-0.71\n\n\nTransit\n59\n-0.026\n4.05\n-3.36\n\n\nBicycle\n4\n0.001\n2.35\n-1.72\n\n\nWalk\n11\n-0.022\n2.25\n-2.43"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#specification-tests",
+    "href": "teaching/ENCI707/slides/lec-5.html#specification-tests",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Specification Tests",
+    "text": "Specification Tests\nExpected signs of the coefficients Expected substitution patterns, e.g. value of time savings, etc. Likelihood ratio test:-2[LL(β)-LL(β/)] is χ2 distributed with k (= number of restricted parameters = the difference between number of parameters of two models) degrees of freedom Goodness-of-Fit measures: Rho-square, AIC, BIC"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#specification-of-logit-model",
+    "href": "teaching/ENCI707/slides/lec-5.html#specification-of-logit-model",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Specification of Logit Model",
+    "text": "Specification of Logit Model\nLogit model works fine if there is no significant random variation of effects of any systematic variables: Unobserved (random) effects of any variable (varying across the alternatives and/or observations) violates the identical error term distribution assumption! Example: Effects of driving cost is influenced by income only: systematic effect and logit model will work fine with cost normalized by income. Effects of driving cost influenced by income and some unobserved factor, the logit model will be mis-specified."
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#specification-of-logit-model-1",
+    "href": "teaching/ENCI707/slides/lec-5.html#specification-of-logit-model-1",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Specification of Logit Model",
+    "text": "Specification of Logit Model\nLogit model works fine if choice alternatives are perfectly IIA: proportional substitution exists. Imperfect competition or correlated variations among subsets of alternatives cause the violation of identical error term distribution assumption! Example: People who prefer private car, will prefer taxi more than they prefer transit. So, a logit model that considers all alternative modes are IIA will be mis-specified."
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#collinearity-of-independent-variables",
+    "href": "teaching/ENCI707/slides/lec-5.html#collinearity-of-independent-variables",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Collinearity of Independent Variables",
+    "text": "Collinearity of Independent Variables\nIf some variables in the model are collinear then the corresponding parameters can change arbitrarily. Unstable parameter estimation. Hessian matrix may not be definite. It is possible to have correlated variables in the discrete choice model unless they are highly collinear. For high collinearity, a small changes in model or data causes drastic changes in parameter estimates. Example: V=βt(Time)+ βc(Cost), if Cost= βb+ βd(Time), then V= (βt + βtβd)Time+ βc βb Identification issue. Solution: Create composite variable using the correlated variables (e.g., cost/time)."
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#incomebudget-effects",
+    "href": "teaching/ENCI707/slides/lec-5.html#incomebudget-effects",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Income/Budget Effects",
+    "text": "Income/Budget Effects\n\nTesting income effects: Use cost and cost2 as separate variables. If cost2 has a statistically significant and reasonable parameter value, income effects need to be addressed. Addressing income effects: Income normalization as (Cost/income) or (Income-Cost) Classifying population into different income categories and develop separate models for each. Interact income category with other variables."
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#aggregationmarket-segmentation",
+    "href": "teaching/ENCI707/slides/lec-5.html#aggregationmarket-segmentation",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Aggregation/Market Segmentation",
+    "text": "Aggregation/Market Segmentation"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#aggregationmarket-segmentation-1",
+    "href": "teaching/ENCI707/slides/lec-5.html#aggregationmarket-segmentation-1",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Aggregation/Market Segmentation",
+    "text": "Aggregation/Market Segmentation\n\nHere 60% of vehicle owners are higher income people. 60% of low-income vehicle owners are in white-collar group. So, we should be careful in categorization at the stage of parameter estimation."
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#aggregationmarket-segmentation-2",
+    "href": "teaching/ENCI707/slides/lec-5.html#aggregationmarket-segmentation-2",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Aggregation/Market Segmentation",
+    "text": "Aggregation/Market Segmentation\nMulticollinearity & correlation among independent (explanatory) variables may affect model predictions. Appropriate clustering method can be used to derive finite and exhaustive sets of market segments to develop separate models. Separate model for each market segment can sometimes help capturing heterogeneity in complicated markets."
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#aside-correlation-collinearity-multicollinearity",
+    "href": "teaching/ENCI707/slides/lec-5.html#aside-correlation-collinearity-multicollinearity",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Aside: Correlation, Collinearity, & Multicollinearity",
+    "text": "Aside: Correlation, Collinearity, & Multicollinearity\nCorrelation: when an independent variable exhibits a strong linear relationship with the dependent variable. Collinearity: when two (or more) independent variables exhibit a strong linear relationship. May exist between multiple variables. Multicollinearity: Specific case of collinearity between more than two variables. Collinearity can occur without linear relationship between any two variables."
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#marginal-effectelasticity-attributes-of-alternatives",
+    "href": "teaching/ENCI707/slides/lec-5.html#marginal-effectelasticity-attributes-of-alternatives",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Marginal Effect/Elasticity: Attributes of Alternatives",
+    "text": "Marginal Effect/Elasticity: Attributes of Alternatives\nDisaggregate Direct elasticity/marginal effect: with respect to an attribute of the same alternative. \\[\"Direct ME \"=(𝛿 Pr⁡( 𝑗))/(𝛿𝑥_𝑗 )=Pr⁡( 𝑗)(1−Pr⁡( 𝑗)) \\beta_(𝑥_𝑗 )\\] \\[\"Direct E \"=  (𝛿 Pr⁡( 𝑗))/(𝛿𝑥_𝑗 )  𝑥_𝑗/(Pr⁡( 𝑗))=𝑥_𝑗 (1−Pr⁡( 𝑗)) \\beta_(𝑥_𝑗 )\n\\] Disaggregate Cross elasticity/marginal effect: with respect to an attribute of different alternative.\n\\[\"Cross ME \"=(𝛿 Pr⁡( 𝑗))/(𝛿𝑥_𝑘 )=−Pr⁡( 𝑗)Pr⁡( 𝑘)\\beta_(𝑥_𝑘 )\u000b\"Cross E \"=  (𝛿 Pr⁡( 𝑗))/(𝛿𝑥_𝑘 )  𝑥_𝑘/(Pr⁡( 𝑗))=−Pr⁡( 𝑘)\\beta_(𝑥_𝑘 ) 𝑥_𝑘\\]\nCross elasticity is the same for all other alternative than alternative k. This is proportional substitution: an improvement in one alternative, draws proportionately from all other alternatives!"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#fact-to-check-attributes-of-alternatives",
+    "href": "teaching/ENCI707/slides/lec-5.html#fact-to-check-attributes-of-alternatives",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Fact to check: Attributes of Alternatives",
+    "text": "Fact to check: Attributes of Alternatives\nSummation of all probabilities of a choice model = 1 Summation of changes in probabilities (of all alternatives) with respect to a variable (derivative) = 0.\n$$$$\nThis is true for any discrete choice model and can be used to verify accuracy of elasticity calculation."
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#aggregating-elasticity-attributes-of-alternatives",
+    "href": "teaching/ENCI707/slides/lec-5.html#aggregating-elasticity-attributes-of-alternatives",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Aggregating Elasticity: Attributes of Alternatives",
+    "text": "Aggregating Elasticity: Attributes of Alternatives\nDisaggregate discrete choice model gives disaggregate values of elasticity for each data point in the sample Approaches to meaningfully aggregate : Naïve approach: Consider sample average values of explanatory variables (x) to calculate sample average elasticity Estimate elasticity for each sample respondent and draw distribution of elasticity values. Probability weighted sample enumeration (PWSE):\n\\[𝐸_(𝑥_𝑘)^𝑗=∑_(𝑖=1)^𝑛▒〖(Pr_𝑖⁡( 𝑗))/(∑_(𝑖=1)^𝑛▒〖Pr_𝑖⁡( 𝑗)〗) 𝐸_(𝑥_𝑘)^(Pr_𝑖⁡( 𝑗)) 〗\n\\] i is the individual in the sample of size n j is the specific alternative x is the variable of elasticity j=k indicates direct elasticity j≠k indicates cross-elasticity Same approach is application for marginal effect and for any choice model"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#relationship-between-elasticity-of-demand",
+    "href": "teaching/ENCI707/slides/lec-5.html#relationship-between-elasticity-of-demand",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Relationship between elasticity of demand",
+    "text": "Relationship between elasticity of demand"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#marginalelasticity-attributes-of-choice-makerchoice-context",
+    "href": "teaching/ENCI707/slides/lec-5.html#marginalelasticity-attributes-of-choice-makerchoice-context",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Marginal/Elasticity: Attributes of Choice Maker/Choice Context",
+    "text": "Marginal/Elasticity: Attributes of Choice Maker/Choice Context\nSuch attributes have alternative-specific coefficients: For example, consider income of choice maker $\\[$\nCorresponding sum of all alternatives, j ≠ k\n\\]\\[\nRate of change of Pr(j) with respect to income of individual, i:\n\\]$$"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#marginalelasticity-attributes-of-choice-makerchoice-context-1",
+    "href": "teaching/ENCI707/slides/lec-5.html#marginalelasticity-attributes-of-choice-makerchoice-context-1",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Marginal/Elasticity: Attributes of Choice Maker/Choice Context",
+    "text": "Marginal/Elasticity: Attributes of Choice Maker/Choice Context\nRate of change of Pr(j) with respect to income: $$$$"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#marginalelasticity-attributes-of-choice-makerchoice-context-2",
+    "href": "teaching/ENCI707/slides/lec-5.html#marginalelasticity-attributes-of-choice-makerchoice-context-2",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Marginal/Elasticity: Attributes of Choice Maker/Choice Context",
+    "text": "Marginal/Elasticity: Attributes of Choice Maker/Choice Context\n$$$$"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#aggregating-elasticity-attributes-of-choice-makerchoice-context",
+    "href": "teaching/ENCI707/slides/lec-5.html#aggregating-elasticity-attributes-of-choice-makerchoice-context",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Aggregating Elasticity: Attributes of Choice Maker/Choice Context",
+    "text": "Aggregating Elasticity: Attributes of Choice Maker/Choice Context\nUse similar approach of aggregating market share from disaggregate choice model predictions: Microsimulation Sample enumeration Classification with naïve aggregation Naïve aggregation\nSame approach is application for marginal effect and for any choice model"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#marginalelasticity-of-categorical-variables",
+    "href": "teaching/ENCI707/slides/lec-5.html#marginalelasticity-of-categorical-variables",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Marginal/Elasticity of Categorical Variables",
+    "text": "Marginal/Elasticity of Categorical Variables\nChoice elasticity with respect to categorical variable is tricky. “1% change in choice probability with respect to 1% change in a categorical variable, e.g. presence/absence of parking spot at destination” has little meaning! Arc-elasticity is the best way: Express the change in choice probability for the presence/absence of the categorical variable.\n$$$$\nArc-elasticity can also be used for continuous variables."
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#proportional-substitution",
+    "href": "teaching/ENCI707/slides/lec-5.html#proportional-substitution",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Proportional Substitution",
+    "text": "Proportional Substitution\nProportional substitution: an improvement in one alternative, draws proportionately from all other alternatives!\n\nIn reality: Small gasoline car share should be drawn more than that of Large gasoline car! Proportional substitution: This will draw shares from large and small gasoline car proportionately."
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#iia-independent-and-irrelevant-alternatives",
+    "href": "teaching/ENCI707/slides/lec-5.html#iia-independent-and-irrelevant-alternatives",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "IIA: Independent and Irrelevant Alternatives",
+    "text": "IIA: Independent and Irrelevant Alternatives\n$$$$\nThis property is derived from assumption: the random utilities,are independent and identical in distribution.\nRandom error are identically distributed, having same scale or variance.\n$$$$"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#iia-independent-and-irrelevant-alternatives-1",
+    "href": "teaching/ENCI707/slides/lec-5.html#iia-independent-and-irrelevant-alternatives-1",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "IIA: Independent and Irrelevant Alternatives",
+    "text": "IIA: Independent and Irrelevant Alternatives\nExample of blue bus/red bus: If real alternatives are not following IIA, then MNL would induce serious error. Previous: P(car)=1/2 and P(Blue bus)=1/2 Now a new Red bus is introduced and under the IIA assumption that the ratio of choice probabilities between car and Blue bus must be constant, so P(car)=1/3, P(Blue bus)=1/3 and P(Red bus)=1/3, which is unrealistic. Actual will be P(car)=1/2, P(Blue bus)=1/4 and P(Red bus)=1/4; but now the ratio of car and Blue bus is not the same as was before introducing Red bus."
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#iia-independent-and-irrelevant-alternatives-2",
+    "href": "teaching/ENCI707/slides/lec-5.html#iia-independent-and-irrelevant-alternatives-2",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "IIA: Independent and Irrelevant Alternatives",
+    "text": "IIA: Independent and Irrelevant Alternatives\nThree alternatives with same utilities 1: car, 2: Blue bus and 3: Red bus and (V1=V2=V3=V) Now probability of choosing 1: car would be compared against the second highest attractive alternative (U*) \\[𝑈^∗=\\max⁡( 𝑈_2,𝑈_3)=𝑉^∗+\\epsilon^∗\n\\] As per Gumbel distribution with 0 mean and unit scale \\[𝑉^∗=\\ln⁡( 𝑒^(𝑉_2 )+𝑒^(𝑉_3 ))=\\ln⁡( 2𝑒^𝑉)=\\ln⁡( 2)+𝑉\n\\] This step assumed that the random errors of alternative 2(Blue bus) and 3(Red bus) are independent and in such case, probability of choosing car: \\[𝑃(𝑐𝑎𝑟)=1/(1+𝑒^(𝑉^∗−𝑉_1 ) )=1/(1+𝑒^(𝑉+\\ln⁡2−𝑉) )=1/(1+2)=1/3\n\\]"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#iia-independent-and-irrelevant-alternatives-3",
+    "href": "teaching/ENCI707/slides/lec-5.html#iia-independent-and-irrelevant-alternatives-3",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "IIA: Independent and Irrelevant Alternatives",
+    "text": "IIA: Independent and Irrelevant Alternatives\nActually, 2(Blue bus) and 3(Red bus) are perfectly correlated and in that case the maximum utility of 2 and 3 are simply (V+) that means V=V \\[𝑃(𝑐𝑎𝑟)=1/(1+𝑒^(𝑉^∗−𝑉_1 ) )=1/(1+𝑒^(𝑉−𝑉) )=1/(1+1)=1/2\n\\] That means IID assumption makes V too high by an amount of . IIA is attributed to disaggregate/individual choice situations, not the overall market share."
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#iia-violation-test",
+    "href": "teaching/ENCI707/slides/lec-5.html#iia-violation-test",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "IIA Violation Test",
+    "text": "IIA Violation Test\nWe can always test IIA by developing alternative nested logit models. It is also possible to test statistically whether IIA is violated or not without developing nested logit models.\nSteps for testing IIA: Estimate the base MNL model for the full set of alternatives and refer to its parameters as βC.\nRemove one or more alternatives with suspected IIA violation problem to make the constrained choice set C/. This will reduce the number of parameters in the new model and its parameter set is then βC/. In each case, in addition to estimating the parameter sets we also produce variance covariance matrices , ∑, (Inverse of Hessian Matrix) of the estimated parameters sets."
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#iia-violation-test-1",
+    "href": "teaching/ENCI707/slides/lec-5.html#iia-violation-test-1",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "IIA Violation Test",
+    "text": "IIA Violation Test\nLet use refer to the corresponding matrices as ∑βC and ∑βC/ of the full model and the restricted model, respectively. If the alternatives in the choice set satisfy IIA then the two variance-covariance matrices will have the same values for corresponding cells: ∑βC = ∑βC/\nLet us consider the Null Hypothesis, H0: βC = βC/\nConduct tests: Hausman and McFadden Test Small and Haiso Test"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#iia-violation-test-2",
+    "href": "teaching/ENCI707/slides/lec-5.html#iia-violation-test-2",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "IIA Violation Test",
+    "text": "IIA Violation Test\nHausman and McFadden Test (Econometrica, 1984): ( ̂(𝐶^/ )− ̂𝐶 )^𝑇 (Σ( ̂(𝐶^/ ) )−Σ_( ̂𝐶 ) )^(−1) ( ̂(𝐶^/ )− ̂_𝐶 ) This is χ2 distributed degrees of freedom equal to the number of alternatives removed in the restricted model.\nSmall and Haiso Test (International Economic Review, 1985) Conduct likelihood ratio test between base model and the restricted model \\[−2(𝐿𝐿_(\\beta ̂_𝐶^/ )−𝐿𝐿_(\\beta ̂_𝐶 ) )\\]\nThis likelihood ratio is χ2 distributed degrees of freedom equal to the number of alternatives removed in the restricted model."
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#policy-evaluations",
+    "href": "teaching/ENCI707/slides/lec-5.html#policy-evaluations",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Policy Evaluations",
+    "text": "Policy Evaluations\nElasticity: Direct elasticity Cross elasticity\nConsumer surplus & social welfare analysis Marginal rate of substitution between two variables (ratio of corresponding parameters) in the choice model: Value of Travel Time Savings (VOTTS) in mode choice. Willingness to pay for improved transit reliability in transit choice. Willingness to pay for transit accessibility in home location choice."
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#willingness-to-pay-analysis",
+    "href": "teaching/ENCI707/slides/lec-5.html#willingness-to-pay-analysis",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Willingness-to-pay Analysis",
+    "text": "Willingness-to-pay Analysis\nSystematic utility function needs to have cost as a variable (p) along with another variable of interest x.\nAssumption: Any changes in x is balanced by changes in p to maintain same level of utility: total utility does not change.\nUsing First order Taylor’s Expansion:\nAfter transposing (assuming overall utility change is zero):"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#willingness-to-pay-analysis-1",
+    "href": "teaching/ENCI707/slides/lec-5.html#willingness-to-pay-analysis-1",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Willingness-to-pay Analysis",
+    "text": "Willingness-to-pay Analysis\nFor linear-in-parameter utility function\nWilling-to-pay for any continuous variable change\nValue of Travel Time Savings (VOTS): additional amount of money to reduce 1 unit of time\nValue of Reliability (VOR) or Safety (VOS) : additional amount of money to increase 1 level of reliability(r), safety(s)"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#consumer-surplus",
+    "href": "teaching/ENCI707/slides/lec-5.html#consumer-surplus",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Consumer Surplus",
+    "text": "Consumer Surplus"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#consumer-surplus-1",
+    "href": "teaching/ENCI707/slides/lec-5.html#consumer-surplus-1",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Consumer Surplus",
+    "text": "Consumer Surplus\nFor Changes in only one (independent) alternative (j):"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#welfare-analysis",
+    "href": "teaching/ENCI707/slides/lec-5.html#welfare-analysis",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Welfare Analysis",
+    "text": "Welfare Analysis\nCompensating variation analysis: normalized changes in expected maximum utility of a particular choice before/after any changes (policy/infrastructure):"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#applying-disaggregate-model-for-forecasting",
+    "href": "teaching/ENCI707/slides/lec-5.html#applying-disaggregate-model-for-forecasting",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Applying Disaggregate Model for Forecasting",
+    "text": "Applying Disaggregate Model for Forecasting"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#applying-disaggregate-choice-model-for-forecasting",
+    "href": "teaching/ENCI707/slides/lec-5.html#applying-disaggregate-choice-model-for-forecasting",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Applying Disaggregate Choice Model for Forecasting",
+    "text": "Applying Disaggregate Choice Model for Forecasting\nWe do aggregate forecasts, so why do we need disaggregate models? Aggregation suppresses information  misleading information after data aggregation (i.e., Simpson’s Paradox & Ecological Fallacy) Statistical inefficiency of aggregate approach Although we aggregate the forecast, we can explicitly capture information at individual level We can track many sensitive policy issues Aggregation of forecast is possible at any level we want, as the model is disaggregate Sometimes modelling at disaggregate level makes the model independent of artificial zonal structures and the model may be transferrable"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#applying-disaggregate-choice-model-for-forecasting-1",
+    "href": "teaching/ENCI707/slides/lec-5.html#applying-disaggregate-choice-model-for-forecasting-1",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Applying Disaggregate Choice Model for Forecasting",
+    "text": "Applying Disaggregate Choice Model for Forecasting\nWe do aggregate forecasts, so why do we need disaggregate models? Aggregation suppresses information  misleading information after data aggregation (i.e., Simpson’s Paradox & Ecological Fallacy) Statistical inefficiency of aggregate approach Although we aggregate the forecast, we can explicitly capture information at individual level We can track many sensitive policy issues Aggregation of forecast is possible at any level we want, as the model is disaggregate Sometimes modelling at disaggregate level makes the model independent of artificial zonal structures and the model may be transferrable"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#microsimulation",
+    "href": "teaching/ENCI707/slides/lec-5.html#microsimulation",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Microsimulation",
+    "text": "Microsimulation"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#sample-enumeration",
+    "href": "teaching/ENCI707/slides/lec-5.html#sample-enumeration",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Sample Enumeration",
+    "text": "Sample Enumeration"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#sample-enumeration-1",
+    "href": "teaching/ENCI707/slides/lec-5.html#sample-enumeration-1",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Sample Enumeration",
+    "text": "Sample Enumeration"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#naïve-aggregation",
+    "href": "teaching/ENCI707/slides/lec-5.html#naïve-aggregation",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Naïve Aggregation",
+    "text": "Naïve Aggregation"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#classification-with-naïve-aggregation",
+    "href": "teaching/ENCI707/slides/lec-5.html#classification-with-naïve-aggregation",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Classification with Naïve Aggregation",
+    "text": "Classification with Naïve Aggregation"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#confidence-interval-of-predictions-elasticity-market-share-revenue",
+    "href": "teaching/ENCI707/slides/lec-5.html#confidence-interval-of-predictions-elasticity-market-share-revenue",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Confidence Interval of Predictions: Elasticity, Market Share, & Revenue",
+    "text": "Confidence Interval of Predictions: Elasticity, Market Share, & Revenue"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#confidence-interval-of-predictions-elasticity-market-share-revenue-1",
+    "href": "teaching/ENCI707/slides/lec-5.html#confidence-interval-of-predictions-elasticity-market-share-revenue-1",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Confidence Interval of Predictions: Elasticity, Market Share, Revenue",
+    "text": "Confidence Interval of Predictions: Elasticity, Market Share, Revenue"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#confidence-interval-of-predictions-elasticity-market-share-revenue-2",
+    "href": "teaching/ENCI707/slides/lec-5.html#confidence-interval-of-predictions-elasticity-market-share-revenue-2",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Confidence Interval of Predictions: Elasticity, Market Share, & Revenue",
+    "text": "Confidence Interval of Predictions: Elasticity, Market Share, & Revenue"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#confidence-interval-of-predictions-elasticity-market-share-revenue-3",
+    "href": "teaching/ENCI707/slides/lec-5.html#confidence-interval-of-predictions-elasticity-market-share-revenue-3",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Confidence Interval of Predictions: Elasticity, Market Share, & Revenue",
+    "text": "Confidence Interval of Predictions: Elasticity, Market Share, & Revenue"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#sampling",
+    "href": "teaching/ENCI707/slides/lec-5.html#sampling",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Sampling",
+    "text": "Sampling\nSampling of choice makers from population using RP or SP survey: Exogenous Sample: Sample share of alternatives are: Identical to those of population shares if representative. Not-identical if not representative. Endogenous/Choice-based Sample: Respondents are sampled based on observed choices. Sample share of alternatives are different from those of population shares. Sampling of choice alternatives: irrespective of sampling of respondents: Choice alternatives are collectively exhaustive. When choice alternative space is large, then sample alternatives."
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#sampling-of-choice-makers",
+    "href": "teaching/ENCI707/slides/lec-5.html#sampling-of-choice-makers",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Sampling of Choice Makers",
+    "text": "Sampling of Choice Makers\nExogenous sampling of choice makers (Stratified Random Sampling) Population size, N. Stratification of population into total G groups. Share (%) individual in a particular group, g in population, Wg. Sample size, n. Share (%) individual in the particular group, g in sample, wg. Probability of an individual being selected in the sample,\nSampling probability is not a function of parameter, β."
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#sampling-of-choice-makers-1",
+    "href": "teaching/ENCI707/slides/lec-5.html#sampling-of-choice-makers-1",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Sampling of Choice Makers",
+    "text": "Sampling of Choice Makers\nExogenous sampling of choice makers (Simple Random Sampling) Probability of an individual being selected in the sample,\nSampling probability is not a function of parameter, β.\nFor representative exogenous sample (stratified/simple random sampling) no correction to choice model estimates is needed. For non-representative sample, parameters except the Alternative Specific Constants (ASC) do not require correction. ASC needs to corrected/updated to match actual market share."
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#sampling-of-choice-makers-2",
+    "href": "teaching/ENCI707/slides/lec-5.html#sampling-of-choice-makers-2",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Sampling of Choice Makers",
+    "text": "Sampling of Choice Makers\nEndogenous/Choice-based sampling of choice makers (randomly select choice makers of specific choices). Selection of respondent of specific choice maker group (e.g. transit users, driver, bicyclists) still should be random in some way. Choice model with choice-based sample produces unbiased estimates of all parameters except the Alternative Specific Constants (ASC) ASCs need to corrected/updated to match actual market share."
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#sampling-of-alternatives-large-choice-set",
+    "href": "teaching/ENCI707/slides/lec-5.html#sampling-of-alternatives-large-choice-set",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Sampling of alternatives: Large Choice Set",
+    "text": "Sampling of alternatives: Large Choice Set\nLarge number of alternatives (e.g. destination location choice model), a random sample of alternatives can be used to estimate the model"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#sampling-of-alternatives-large-choice-set-1",
+    "href": "teaching/ENCI707/slides/lec-5.html#sampling-of-alternatives-large-choice-set-1",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Sampling of alternatives: Large Choice Set",
+    "text": "Sampling of alternatives: Large Choice Set"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#sampling-of-alternatives-large-choice-set-2",
+    "href": "teaching/ENCI707/slides/lec-5.html#sampling-of-alternatives-large-choice-set-2",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Sampling of alternatives: Large Choice Set",
+    "text": "Sampling of alternatives: Large Choice Set"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#managing-large-choice-sets",
+    "href": "teaching/ENCI707/slides/lec-5.html#managing-large-choice-sets",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Managing Large Choice Sets",
+    "text": "Managing Large Choice Sets\nReducing alternatives: Use various feasibility constraints to reduce number of alternatives. Random sampling from large choice set. Wrong choice set may generate distorted predictions."
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#model-transferability",
+    "href": "teaching/ENCI707/slides/lec-5.html#model-transferability",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Model Transferability",
+    "text": "Model Transferability"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#updating-mnl-model-parameters",
+    "href": "teaching/ENCI707/slides/lec-5.html#updating-mnl-model-parameters",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Updating MNL Model Parameters",
+    "text": "Updating MNL Model Parameters"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#updating-mnl-model-parameters-1",
+    "href": "teaching/ENCI707/slides/lec-5.html#updating-mnl-model-parameters-1",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Updating MNL Model Parameters",
+    "text": "Updating MNL Model Parameters\n\n\n\n\nENCI707 Home"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-7.html#outline",

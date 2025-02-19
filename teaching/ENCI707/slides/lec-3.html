@@ -376,13 +376,13 @@
 </section>
 <section id="log-normal-regression" class="slide level2 smaller">
 <h2>Log-Normal Regression</h2>
-<p><span class="math display">\[ln(y_i) = \beta_0 + \sum_j \beta_j x_j + \epsilon_j, \epsilon_j \text{ is } \sim N(0,\sigma^2)\]</span></p>
+<p><span class="math display">\[\ln(y_i) = \beta_0 + \sum_j \beta_j x_j + \epsilon_j, \epsilon_j \text{ is } \sim N(0,\sigma^2)\]</span></p>
 <ul>
-<li><p>Equivalently <span class="math inline">\(ln(y_i)\)</span> is <span class="math inline">\(\sim N(\beta_0 + \sum_j \beta_j x_j, \sigma^2)\)</span></p></li>
+<li><p>Equivalently <span class="math inline">\(\ln(y_i)\)</span> is <span class="math inline">\(\sim N(\beta_0 + \sum_j \beta_j x_j, \sigma^2)\)</span></p></li>
 <li><p>Estimation</p>
 <ul>
 <li>Least-squares: minimize squared residuals</li>
-<li>Maximum likelihood by normal pdf <span class="math display">\[L_i = \frac{1}{y_i \sigma}\phi\left(\frac{ln(y_i)-\beta_0-\sum_j \beta_j x_j}{\sigma}\right)\]</span></li>
+<li>Maximum likelihood by normal pdf <span class="math display">\[L_i = \frac{1}{y_i \sigma}\phi\left(\frac{\ln(y_i)-\beta_0-\sum_j \beta_j x_j}{\sigma}\right)\]</span></li>
 <li><span class="math inline">\(y_i\)</span> must be positive (i.e., non-negative and non-zero)</li>
 </ul></li>
 </ul>
@@ -404,7 +404,7 @@
 <li>Observed value is <strong>binary</strong> (0/1) with <span class="math inline">\(\epsilon_i\)</span> being logistically distributed this time <span class="math display">\[Pr(y_i=1) = \pi_i = \frac{\exp (\beta_0 + \sum_j \beta_j x_j)}{1 + \exp(\beta_0 + \sum_j \beta_j x_j)}\]</span> <span class="math display">\[Pr(y_i=0) = 1 - \pi_i = 1 - \pi_i = \frac{1}{1 + \exp(\beta_0 + \sum_j \beta_j x_j)}\]</span></li>
 <li>Estimation by Maximum likelihood <span class="math display">\[L_i = \pi_i^{\delta_i}(1-\pi_i)^{1-\delta_i} \text{  }\delta_i=1 \text{, if }y_i=1, 0 \text{ otherwise}\]</span>
 <ul>
-<li>Interpretation (scale compounded parameters): <span class="math display">\[logit(\pi_i) = \text{log of odds ratio} = ln\left(\frac{\pi_i}{1-\pi_i}\right)=\beta_0 + \sum_j \beta_j x_j\]</span></li>
+<li>Interpretation (scale compounded parameters): <span class="math display">\[logit(\pi_i) = \text{log of odds ratio} = \ln\left(\frac{\pi_i}{1-\pi_i}\right)=\beta_0 + \sum_j \beta_j x_j\]</span></li>
 </ul></li>
 </ul>
 </section>
@@ -695,7 +695,7 @@
 </ul>
 <p><span class="math display">\[D_j^* = e^{\alpha_o}I^{\gamma}\prod_k x_k^{\beta_k}\prod_m e^{\beta_m z_m}e^{\epsilon_j}\]</span></p>
 <ul>
-<li>Log-transformation results in a log-linear model <span class="math display">\[ln(D_j^*) = \alpha_0 + \sum_k \beta_k ln(x_k) + \sum_m \beta_m z_m + \epsilon_j\]</span></li>
+<li>Log-transformation results in a log-linear model <span class="math display">\[\ln(D_j^*) = \alpha_0 + \sum_k \beta_k \ln(x_k) + \sum_m \beta_m z_m + \epsilon_j\]</span></li>
 <li>Can accomodate any type of explanatory variables (continuous/categorical)</li>
 <li><strong>Elasticity</strong>: corresponding parameter - constant elasticity! <span class="math display">\[E=\frac{\partial D}{\partial x_k}\frac{x_k}{D_j} = \beta_j\]</span></li>
 </ul>
@@ -707,11 +707,11 @@
 <section id="translog-demand-model" class="slide level2" style="font-size: 0.6em;">
 <h2>Translog Demand Model</h2>
 <ul>
-<li>Indirect utility (various other forms also possible) <span class="math display">\[ln(V) = \alpha_0 + \sum_i \alpha_i ln(p_i) + \sum_i \sum_{j \ne i} (1/2)\beta_{ij}ln(p_i)ln(p_j) \\ + \sum_i \gamma_i ln(Y_e)ln(p_i) + \gamma_y ln(Y_e)\]</span></li>
+<li>Indirect utility (various other forms also possible) <span class="math display">\[\ln(V) = \alpha_0 + \sum_i \alpha_i \ln(p_i) + \sum_i \sum_{j \ne i} (1/2)\beta_{ij}\ln(p_i)\ln(p_j) \\ + \sum_i \gamma_i \ln(Y_e)\ln(p_i) + \gamma_y \ln(Y_e)\]</span></li>
 <li><span class="math inline">\(p_i\)</span> &amp; <span class="math inline">\(p_j\)</span> are generalized costs for <span class="math inline">\(i\)</span> &amp; <span class="math inline">\(j\)</span></li>
 <li><span class="math inline">\(Y_e\)</span> is the generalized time-money budget</li>
-<li><strong>Roy’s Identity</strong> <span class="math display">\[D_i = \frac{\partial V / \partial p_i}{\partial V / \partial Y_e} = - \frac{\partial ln(V) / \partial ln(p_i)}{\partial ln(V) / \partial ln(Y_e)}\]</span></li>
-<li>Resulting optimum demand <span class="math display">\[D_i^* = - \frac{(1/p_i)(\sum_i \alpha_i + \sum_{j \ne i} \beta_{ij}ln(p_j) + \gamma_i Y_e}{(1/Y_e)(\sum_{j \ne i}\gamma_j ln(p_j) + \gamma_y)}\]</span></li>
+<li><strong>Roy’s Identity</strong> <span class="math display">\[D_i = \frac{\partial V / \partial p_i}{\partial V / \partial Y_e} = - \frac{\partial \ln(V) / \partial \ln(p_i)}{\partial \ln(V) / \partial \ln(Y_e)}\]</span></li>
+<li>Resulting optimum demand <span class="math display">\[D_i^* = - \frac{(1/p_i)(\sum_i \alpha_i + \sum_{j \ne i} \beta_{ij}\ln(p_j) + \gamma_i Y_e}{(1/Y_e)(\sum_{j \ne i}\gamma_j \ln(p_j) + \gamma_y)}\]</span></li>
 </ul>
 </section>
 <section id="translog-demand-model-1" class="slide level2 smaller">
@@ -754,13 +754,13 @@
 <h2>Aggregate Logit Model</h2>
 <ul>
 <li><p>Aggregate logit model: model of market shares <span class="math display">\[D_A = \text{Total demand for alternative A}\]</span> <span class="math display">\[D_B = \text{Total demand for alternative B}\]</span> <span class="math display">\[D_C = \text{Total demand for alternative C}\]</span> <span class="math display">\[V_A = \text{Ratio of total demand for A} = D_A/(D_A+D_B+D_C)\]</span> <span class="math display">\[V_B = \text{Ratio of total demand for B} = D_B/(D_A+D_B+D_C)\]</span> <span class="math display">\[V_C = \text{Ratio of total demand for C} = D_C/(D_A+D_B+D_C)\]</span></p></li>
-<li><p>Considering an alternative, <span class="math inline">\(A\)</span>, as the reference &amp; using Cobb-Douglas log form <span class="math display">\[ln(V_B/V_A) = \beta_{0BA} + \sum_{i=1}^n \beta_{iBA}ln(x_{iB}/x_{iA}) + \sum_{j=1}^n \gamma_{jB}y_j + \epsilon_{BA} \text{ or}\]</span> <span class="math display">\[ln(V_B/V_A) = \beta_{0BA} + \sum_{i=1}^n \beta_{iBA}(x_{iB} - x_{iA}) + \sum_{j=1}^n \gamma_{jB}y_j + \epsilon_{BA}\]</span></p></li>
+<li><p>Considering an alternative, <span class="math inline">\(A\)</span>, as the reference &amp; using Cobb-Douglas log form <span class="math display">\[\ln(V_B/V_A) = \beta_{0BA} + \sum_{i=1}^n \beta_{iBA}\ln(x_{iB}/x_{iA}) + \sum_{j=1}^n \gamma_{jB}y_j + \epsilon_{BA} \text{ or}\]</span> <span class="math display">\[\ln(V_B/V_A) = \beta_{0BA} + \sum_{i=1}^n \beta_{iBA}(x_{iB} - x_{iA}) + \sum_{j=1}^n \gamma_{jB}y_j + \epsilon_{BA}\]</span></p></li>
 </ul>
 </section>
 <section id="aggregate-logit-model-1" class="slide level2" style="font-size: 0.6em;">
 <h2>Aggregate Logit Model</h2>
 <ul>
-<li><p>Similarly for alternative <span class="math inline">\(C\)</span> <span class="math display">\[ln(V_C/V_A) = \beta_{0CA} + \sum_{i=1}^n \beta_{iCA}ln(x_{iC}/x_{iA}) + \sum_{j=1}^n \gamma_{jB}y_j + \epsilon_{BA} \text{ or}\]</span> <span class="math display">\[ln(V_B/V_A) = \beta_{0CA} + \sum_{i=1}^n \beta_{iBA}(x_{iC} - x_{iA}) + \sum_{j=1}^n \gamma_{jC}y_j + \epsilon_{CA}\]</span></p></li>
+<li><p>Similarly for alternative <span class="math inline">\(C\)</span> <span class="math display">\[\ln(V_C/V_A) = \beta_{0CA} + \sum_{i=1}^n \beta_{iCA}\ln(x_{iC}/x_{iA}) + \sum_{j=1}^n \gamma_{jB}y_j + \epsilon_{BA} \text{ or}\]</span> <span class="math display">\[\ln(V_B/V_A) = \beta_{0CA} + \sum_{i=1}^n \beta_{iBA}(x_{iC} - x_{iA}) + \sum_{j=1}^n \gamma_{jC}y_j + \epsilon_{CA}\]</span></p></li>
 <li><p>Can be estimated as linear regression model for a set of observed shares and corresponding variable values.</p></li>
 <li><p><strong>Issues</strong>:</p>
 <ul>

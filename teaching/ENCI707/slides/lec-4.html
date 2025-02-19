@@ -10,7 +10,7 @@
 <link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.56">
 
-  <title>Hawkinslab – Lecture 3 - Aggregate Demand Models</title>
+  <title>Hawkinslab – Lecture 4 - Disaggregate Econometric Choice Theory</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -327,169 +327,257 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Lecture 3 - Aggregate Demand Models</h1>
+  <h1 class="title">Lecture 4 - Disaggregate Econometric Choice Theory</h1>
   <p class="subtitle">ENCI707: Engineering Demand and Policy Analysis</p>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="outline" class="slide level2">
-<h2>Outline</h2>
-<div>
+<section id="demand-versus-choice" class="slide level2">
+<h2>Demand Versus Choice</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Demand</strong></p>
+<ul>
+<li>Aggregate</li>
+<li>Homogenous people</li>
+<li>Identical behaviour</li>
+<li><strong>Variables:</strong> Price (P) and quantity (Q)</li>
+<li><strong>Demand function:</strong> Q = f(P)</li>
+<li>Demand = Bundle of choices</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><strong>Choice</strong></p>
+<ul>
+<li>Disaggregate</li>
+<li>Heterogeneous people</li>
+<li>Random behaviour</li>
+<li><strong>Variables:</strong> Attributes of choice alternatives; attributes of choice maker; context of choices</li>
+<li>Non-linear choice function</li>
+</ul>
+</div></div>
+</section>
+<section id="transportation-choices" class="slide level2">
+<h2>Transportation Choices</h2>
+<p>Many travel demand related choices are:</p>
+<ul>
+<li><strong>Discrete:</strong> activity type choice, mode choice, route choice, vehicle type choice, time of the day choice, location of trip destination choice etc.</li>
+<li><strong>Continuous:</strong> activity duration, vehicle usage, housing duration, etc.</li>
+<li><strong>Heterogeneous:</strong> Wide variations of choices across the population.</li>
+<li><strong>Probabilistic/stochastic/random:</strong> We can’t defined deterministically.</li>
+</ul>
+</section>
+<section id="choice-as-consumption" class="slide level2">
+<h2>Choice as Consumption</h2>
+<p><img data-src="../../../assets/images/teaching/ENCI707/Lecture4/continuous_solutions.svg" class="absolute" style="top: 100px; left: 0px; "></p>
+<p><img data-src="../../../assets/images/teaching/ENCI707/Lecture4/discrete_solutions.svg" class="absolute" style="top: 100px; right: 0px; "></p>
+</section>
+<section id="choice-as-consumption-1" class="slide level2">
+<h2>Choice as Consumption</h2>
+<p><strong>Disaggregate to Aggregate</strong></p>
+<ul>
+<li>Choice of private vehicle as mode -&gt; # of vehicle trips</li>
+<li>Choice of transit as mode -&gt; # of transit trips</li>
+<li>Choice of shared vehicle as mode -&gt; # of shared vehicle trips</li>
+</ul>
+</section>
+<section id="theory-of-choice-behaviour" class="slide level2">
+<h2>Theory of Choice Behaviour</h2>
+<ul>
+<li><strong>Descriptive (or positive):</strong> how human beings behave, not how they should/ought to behave.</li>
+<li><strong>Abstract:</strong> that can be formalized in general cases not specific to particular circumstances.</li>
+<li><strong>Operational:</strong> can be applied to develop models with variables and parameters that can be observed and estimated. Models can be used for prediction and/or policy evaluation.</li>
+</ul>
+</section>
+<section id="framework-of-choice-theory" class="slide level2 smaller">
+<h2>Framework of Choice Theory</h2>
+<ul>
+<li>Choice as outcome of sequential decision-making:
 <ol type="1">
-<li class="fragment">Basis for choice modeling</li>
-<li class="fragment">Theory</li>
-<li class="fragment">Logit choice model</li>
-</ol>
-</div>
-</section>
-<section id="basis-for-choice-modeling" class="slide level2 smaller">
-<h2>Basis for Choice Modeling</h2>
-<ul>
-<li>Aggregate demand models (such as those we have been discussing) based on observations for <strong>groups of travelers</strong> or <strong>average relations</strong> for zones</li>
-<li><strong>Discrete choice:</strong> probability an individual chooses a given option a function of their socioeconomic characteristics &amp; relative attractiveness of the option</li>
-<li>Cannot estimate via least squares because probability is unobserved – only observe choice</li>
-<li>Models are <strong>probabilistic</strong> &amp; do not give an outcome value such as <strong>trips</strong> – must use probability concepts to generate discrete outcomes (summation over all observations to give expected number choosing option or use sample enumeration to allocate discrete outcomes)</li>
-</ul>
-</section>
-<section id="basis-for-choice-modeling-1" class="slide level2 smaller">
-<h2>Basis for Choice Modeling</h2>
-<ul>
-<li>Individuals derive <strong>utility</strong> from the use of alternatives defined by a <strong>utility function</strong> often denoted by V <span class="math display">\[Vpeanut butter = 0.25 – 1.0 ALLERGY - 0.5 PRICE + 0.25 ORGANIC\]</span></li>
-<li>Need probability value between 0 &amp; 1. Various forms, generally with an s-shaped plot. Main ones are <span class="math display">\[𝐿𝑜𝑔𝑖𝑡:𝑃_1=exp⁡(𝑉_1 )/(exp⁡(𝑉1)+exp⁡(𝑉2))\]</span> <span class="math display">\[𝑃𝑟𝑜𝑏𝑖𝑡:𝑃_1=\int_{-\infty}^{\infty}⁡\int_{-\infty}^{V_1-V_2+x_1}\frac{⁡exp⁡(\frac{−1}{2(1−\rho^2)} (\frac{𝑥_1}{\sigma_1})^2−\frac{2\rho 𝑥_1 𝑥_2}{\sigma_1 \sigma_2}+(\frac{𝑥_2}{\sigma_2})^2}{2\pi\sigma_1 \sigma_2 \sqrt{1−\rho^2 }} 𝑑𝑥_2 𝑑𝑥_1\]</span></li>
-</ul>
-</section>
-<section id="properties-of-discrete-choice-dc" class="slide level2">
-<h2>Properties of Discrete Choice (DC)</h2>
-<ul>
-<li>Based on theories of <strong>individual behavior</strong> &amp; do not constitute physical analogies – therefore stable over time &amp; space</li>
-<li>Can be more <strong>statistically efficient</strong> than aggregate models because each observation is an outcome rather than using aggregations of potentially hundreds of observations</li>
-<li>DM less likely to suffer from bias due to correlation between aggregate units – i.e., <strong>ecological correlation</strong> (fallacy)</li>
-</ul>
-</section>
-<section id="ecological-fallacy" class="slide level2">
-<h2>Ecological Fallacy</h2>
-
-<img data-src="../images/lecture5/eco_fallacy.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="theoretical-framework" class="slide level2 smaller">
-<h2>Theoretical Framework</h2>
-<ul>
-<li>Individuals belong to a <strong>homogeneous population</strong> <span class="math inline">\(N\)</span>, act rationally, &amp; <strong>possess perfect information</strong> – i.e., they always select the option that maximizes their net personal utility subject to legal, social, physical, &amp;/or budgetary (both time &amp; money) constraints</li>
-<li>There is a certain set <span class="math inline">\(𝐴 = \{𝐴_1, …𝐴_i,…𝐴_I\}\)</span> of available alternatives &amp; a set X of vectors of measured attributes of individuals &amp; their alternatives</li>
-<li>An individual <span class="math inline">\(n\)</span> is endowed with a set of attributes <span class="math inline">\(𝑥 \in 𝑋\)</span> &amp; faces a choice set <span class="math inline">\(𝐴(n) \in 𝐴\)</span></li>
-<li>We will assume choice set is predetermined for individuals</li>
-</ul>
-</section>
-<section id="theoretical-framework-1" class="slide level2">
-<h2>Theoretical Framework</h2>
-<ul>
-<li>Modeler, an observer, does not <strong>posses complete information</strong> about all elements considered by the individual making choice</li>
-<li>Modeler assumes <span class="math inline">\(𝑈_{ni}\)</span> can be represented by two components:
-<ul>
-<li>A <strong>measurable</strong>, <strong>systematic</strong>, or <strong>representative</strong> part <span class="math inline">\(𝑉_{ni}\)</span>, which is a function of the measured attributes <span class="math inline">\(x\)</span></li>
-<li>A random part <span class="math inline">\(\epsilon_{ni}\)</span>, which reflects <strong>indiosyncratic</strong> &amp; <strong>taste variation</strong>, together with measurement or observational errors made by the modeler</li>
-</ul></li>
-</ul>
-</section>
-<section id="theoretical-framework-2" class="slide level2">
-<h2>Theoretical Framework</h2>
-<ul>
-<li>Modeler sets utility <span class="math inline">\(𝑈_{ni}=𝑉_{ni}+\epsilon_{ni}\)</span> to address two apparent irrationalities
-<ol type="1">
-<li>That two individuals faced with the <strong>same situation</strong> &amp; having the <strong>same personal attributes</strong> make different choices</li>
-<li>That an individual may not select the alternative that <strong>appears</strong> to be the <em>best one</em></li>
+<li>Definition of the choice problem</li>
+<li>Generation of alternatives</li>
+<li>Evaluation of attributes of alternatives</li>
+<li>Choice making</li>
+<li>Executing the choice</li>
 </ol></li>
-<li>Often assumed <span class="math inline">\(V_{ni}\)</span> given by <span class="math inline">\(\sum_k^K \beta_{ik} x_{nik}\)</span> here <span class="math inline">\(\beta_{ik}\)</span> are assumed <strong>constant</strong> for all individuals <span class="math inline">\(N\)</span> in the homogeneous set but <strong>may vary across alternatives</strong> <span class="math inline">\(I\)</span></li>
-</ul>
-</section>
-<section id="theoretical-framework-3" class="slide level2 smaller">
-<h2>Theoretical Framework</h2>
+<li>Define:
 <ul>
-<li>Individual chooses an alternative based on <span class="math inline">\(𝑈_{ni}≥ 𝑈_{jn} \forall A_j \in A(n)\)</span></li>
-<li>Or: <span class="math inline">\(𝑉_{ni}  – 𝑉_{nj}≥\epsilon_{nj}  − \epsilon_{ni}\)</span> (notice swapping of <span class="math inline">\(i\)</span> &amp; <span class="math inline">\(j\)</span>)</li>
-</ul>
-<p>Not possible to know with certainty if the inequality holds, so use <span class="math display">\[𝑃_{ni}  = 𝑃(\epsilon_{nj} \leq \epsilon_{ni} + (V_{ni} - V_{nj})) \forall A_j \in A(n)\]</span> - Do not know distribution of joint residuals, so cannot derive analytical expression for model - Can denote <span class="math inline">\(f(\epsilon) = f(\epsilon_1, \epsilon_2, ... \epsilon_I\)</span> &amp; know they are <strong>random variables</strong> with a certain distribution</p>
-</section>
-<section id="theoretical-framework-4" class="slide level2 smaller">
-<h2>Theoretical Framework</h2>
-<ul>
-<li>Can note that distribution for <span class="math inline">\(f(U)\)</span> is the same but with mean <span class="math inline">\(V\)</span> rather than 0 <span class="math display">\[P_{ni} = \int_{R_I} f(\epsilon) d\epsilon\]</span> <span class="math display">\[\text{where } R_I = \begin{cases}
-\epsilon_{nj} \leq \epsilon_{ni} + (V_{ni} - V_{nj}), &amp; \forall A_j \in A(n) \\
-V_{ni}) + \epsilon_{ni} \ge 0 \\
-\end{cases}\]</span></li>
-<li>Assuming independent &amp; identically distributed (<strong>IID</strong>) residuals, <span class="math display">\[f(\epsilon_1,...\epsilon_I) = \prod_i^I g(\epsilon_i)\]</span></li>
-<li>And (drop <span class="math inline">\(n\)</span> for simplicity) <span class="math display">\[P_i = \int_{-\infty}^\infty g(\epsilon_i) d\epsilon_i \prod_{j \neq i} \int_{-\infty}^{V_i-V_j+\epsilon_i} g(\epsilon_j) d\epsilon_j\]</span></li>
-</ul>
-</section>
-<section id="generating-the-logit-model" class="slide level2 smaller">
-<h2>Generating the Logit Model</h2>
-<ul>
-<li>Assuming IID Gumbel (<strong>Extreme Value Type I</strong>) residuals, or equivalently that residual differences are <strong>logistically distributed</strong>, gives the standard multinomial logit specification</li>
-<li>Termed <em>softmax function</em> in machine learning field <span class="math display">\[P_{ni} = \frac{exp(\mu V_{ni})}{\sum_{A_j \in A(n)} exp(\mu V_{nj})}\]</span></li>
-<li>Where <span class="math inline">\(\mu\)</span> is a <strong>scale parameter</strong> assumed equal to 1.0 for identification</li>
-</ul>
-<p><img data-src="../images/lecture5/logit_curve.png" class="absolute" style="bottom: 0px; right: 0px; width: 35%; "></p>
-</section>
-<section id="logit-model-parameter-estimation" class="slide level2">
-<h2>Logit Model Parameter Estimation</h2>
-<ul>
-<li>Commercial (&amp; opensource) software exists to estimate model parameters using the method of maximum likelihood estimation
-<ul>
-<li>Apollo (R &amp; free)</li>
-<li>Biogeme (Python &amp; free)</li>
-<li>STATA (commercial)</li>
-<li>LIMDEP (commercial)</li>
-<li>GAUSS (commercial)</li>
-</ul></li>
-<li>Parameter interpretation similar to regression (t-statistics, GoF, etc.)</li>
-</ul>
-</section>
-<section id="direct-cross-elasticity" class="slide level2">
-<h2>Direct &amp; Cross Elasticity</h2>
-<ul>
-<li><strong>Direct elasticity:</strong> direct effect of changing a variable value related to a good on demand for the same good
-<ul>
-<li>E.g., elasticity of transit demand wrt transit fare, transit travel time, or transit headway</li>
-</ul></li>
-<li><strong>Cross elasticity:</strong> effect of changing a variable value related to a good on demand for a different good
-<ul>
-<li>E.g., elasticity of transit demand wrt auto travel time</li>
+<li>Decision maker</li>
+<li>Characteristics of decision maker</li>
+<li>Alternatives</li>
+<li>Attributes of alternatives</li>
+<li>Decision rules to make choice</li>
 </ul></li>
 </ul>
 </section>
-<section id="logit---direct-elasticity" class="slide level2">
-<h2>Logit - Direct Elasticity</h2>
-<p>Direct elasticity of the probability of an individual <span class="math inline">\(n\)</span> choosing alternative <span class="math inline">\(i\)</span> wrt a change in an attribute/independent variable <span class="math inline">\(X_{ik}\)</span> with coefficient <span class="math inline">\(\beta_k\)</span> (ignoring <span class="math inline">\(n\)</span> subscripts for simplicity)</p>
-<p><span class="math display">\[e_{direct} = \frac{\partial P_i}{\partial X_{ik}} \frac{X_{ik}}{P_i}=(1-P_i)X_{ik}\beta_k\]</span></p>
-</section>
-<section id="logit---cross-elasticity" class="slide level2 smaller">
-<h2>Logit - Cross Elasticity</h2>
+<section id="decision-maker" class="slide level2 smaller">
+<h2>Decision Maker</h2>
 <ul>
-<li>Cross elasticity of the probability of an individual <span class="math inline">\(n\)</span> choosing alternative <span class="math inline">\(i\)</span> wrt a change in an attribute/independent variable <span class="math inline">\(X_{jk}\)</span> with coefficient <span class="math inline">\(\beta_k\)</span> for a different alternative</li>
-</ul>
-<p><span class="math display">\[e_{cross} = -P_j X_{jk}\beta_k\]</span></p>
+<li><strong>Disaggregate:</strong> Individual or group (household, family, firms, government agency, etc.)</li>
+<li><strong>Heterogeneous choice makers:</strong> Wide variety in choice behaviour across the population
 <ul>
-<li>Above is same regardless of alternative <span class="math inline">\(i\)</span>. I.e., <strong>all alternatives</strong> have the same cross-elasticity wrt an attribute <span class="math inline">\(k\)</span> of alternative <span class="math inline">\(j\)</span></li>
-<li>Above results from independence of irrelevant alternatives (<strong>IIA</strong>) property of basic logit model</li>
-</ul>
-</section>
-<section id="independence-of-irrelevant-alternatives-iia-property" class="slide level2">
-<h2>Independence of Irrelevant Alternatives (IIA) Property</h2>
-<p>Consider we have two modes: auto (a) &amp; bus (b)</p>
-<p><span class="math display">\[\frac{P_a}{P_b} = \frac{exp(V_a)}{exp(V_b)} = exp(V_a - V_b)\]</span> I.e., the relative probability of choosing auto vs.&nbsp;bus depends <strong>only</strong> on the utilities of the two alternatives</p>
-<ul>
-<li>Now what if our buses are <strong>red (rb)</strong> &amp; we paint half <strong>blue (bb)</strong>?</li>
-</ul>
-</section>
-<section id="iia-cont" class="slide level2">
-<h2>IIA Cont…</h2>
-<ul>
-<li>If the IIA assumption does not hold, we can make other error distribution assumptions
-<ul>
-<li>Nested logit (can handle complex decision structures)</li>
-<li>Probit (normal error terms, very general model, but can be difficult to work with it)</li>
+<li>Taste variations across the choice/decision makers: <strong>Idiosyncrasy</strong></li>
+<li>Different choice situations for different people</li>
 </ul></li>
+<li><strong>Characteristics of heterogeneous choice maker:</strong> age, gender, income, education, household/firm size, etc.</li>
+<li><strong>Choice situations/context:</strong> spatial, temporal, economic</li>
+</ul>
+</section>
+<section id="alternatives" class="slide level2 smaller">
+<h2>Alternatives</h2>
+<ul>
+<li><strong>Choice</strong> means choosing an alternative out of a choice set (<em>mutually exclusive and collectively exhaustive countable set of alternatives</em>):</li>
+<li>Universal choice set: <span class="math inline">\(C\)</span></li>
+<li>Feasible / Individual-specific: <span class="math inline">\(C_i\)</span></li>
+<li>Consideration (awareness) set: <span class="math inline">\(C_{ci}\)</span></li>
+</ul>
+<p><strong>Example:</strong></p>
+<p><span class="math inline">\(C\)</span> = { Private car, Uber, Taxi, Bus, Bicycle, Walk}</p>
+<ul>
+<li>No driver’s license, distance &gt; 3 km</li>
+</ul>
+<p><span class="math inline">\(C_i\)</span> = { Uber, Taxi, Bus, Bicycle}</p>
+<ul>
+<li>No driver’s license, distance &gt; 3 km &amp; not aware of Uber</li>
+</ul>
+<p><span class="math inline">\(C_{ci}\)</span> = { Taxi, Bus, Bicycle}</p>
+</section>
+<section id="alternatives---attributes" class="slide level2">
+<h2>Alternatives - Attributes</h2>
+<ul>
+<li>Decision maker <strong>evaluates alternatives</strong> in terms of attribute values: Attribute values can be measured on the scale of attractiveness:</li>
+<li><strong>Categorical:</strong> Binary, ordinal (reliability, safety, convenience, etc.)</li>
+<li><strong>Cardinal:</strong> absolute values (time, cost, etc.)</li>
+<li><strong>Generic</strong> versus <strong>alternative-specific</strong></li>
+<li><strong>Measured</strong> versus <strong>perceived</strong></li>
+</ul>
+</section>
+<section id="decision-rules" class="slide level2">
+<h2>Decision Rules</h2>
+<ul>
+<li><strong>Rational behaviour (homo economicus):</strong> self-interested economic actor who optimizes own choice outcomes</li>
+<li><strong>Bounded rationality:</strong> Use rules to simplify:
+<ul>
+<li><strong>Dominance:</strong> Rules used to remove inferior alternative</li>
+<li><strong>Satisfaction:</strong> Attributes of the alternatives need to satisfy the expectation level</li>
+<li><strong>Lexicographic:</strong> attributes are rank ordered by their level of importance</li>
+<li><strong>Utility maximizing:</strong> maximize a latent function of different attributes of alternatives in the choice set</li>
+</ul></li>
+</ul>
+</section>
+<section id="utility-maximization" class="slide level2 smaller">
+<h2>Utility Maximization</h2>
+<p><strong>Utility function:</strong></p>
+<ul>
+<li>Captures <strong>relative attractiveness</strong> of alternative in the choice set</li>
+<li>Measures the satisfaction that the decision maker wants to optimize</li>
+</ul>
+<p><strong>Assumptions:</strong></p>
+<ul>
+<li>Decision maker has <strong>full knowledge</strong> about the attributes of the alternatives and is able to process information</li>
+<li>Base on information processing, decision maker <strong>associates a utility</strong> to each alternative</li>
+<li>Decision maker has <strong>transitive preferences</strong></li>
+<li>Decision maker is <strong>rational</strong> and <strong>perfect optimizer</strong></li>
+<li>Decision maker is <strong>consistent</strong></li>
+</ul>
+</section>
+<section id="probability-in-utility-maximization" class="slide level2 smaller">
+<h2>Probability in Utility Maximization</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Constant utility:</strong></p>
+<ul>
+<li>Utility is <strong>deterministic</strong> and <strong>cardinal</strong> in nature</li>
+<li>Decision maker <strong>does not</strong> maximize utility</li>
+<li>However, human behaviour is inherently random</li>
+</ul>
+</div><div class="column" style="width:40%;">
+<p><strong>Random utility:</strong></p>
+<ul>
+<li>Decision maker is a <strong>rational optimizer</strong></li>
+<li>Modeller <strong>does not</strong> observe the exact measure of utility used by the decision maker</li>
+<li>Utility becomes <strong>random</strong> and <strong>ordinal</strong> variable</li>
+<li>Probabilistic choice model because of <strong>unobserved heterogeneity</strong> (randomness)</li>
+</ul>
+</div></div>
+</section>
+<section id="discrete-choice" class="slide level2 smaller">
+<h2>Discrete Choice</h2>
+<p><strong>Two alternatives:</strong> transit, car <span class="math display">\[𝑈_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}=\beta_𝑡 𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}+\beta_𝑐 𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} \text{ (Typically, }\beta_t, \beta_c &lt;0)\]</span></p>
+<p><span class="math display">\[𝑈_{𝑐𝑎𝑟}=\beta_𝑡 𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟}+\beta_𝑐 𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟}\]</span></p>
+<p>Equivalent specification <span class="math display">\[𝑈_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}=(\beta_𝑡/\beta_𝑐)𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}+𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}\]</span></p>
+<p><span class="math display">\[𝑈_{𝑐𝑎𝑟}=(\beta_𝑡/\beta_𝑐)𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟}+𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟}
+\]</span></p>
+<p><strong>Choice:</strong> car, if <span class="math display">\[\beta_𝑡 𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟}+\beta_𝑐 𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} \geq \beta_𝑡 𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} + \beta_𝑐 𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}
+\]</span></p>
+<p>or <span class="math display">\[(\beta_𝑡/\beta_𝑐)𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟}+𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} \leq (\beta_𝑡/\beta_𝑐)𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}+𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}
+\]</span></p>
+</section>
+<section id="discrete-choice-1" class="slide level2 smaller">
+<h2>Discrete Choice</h2>
+<p>Car is the <strong>dominant alternative</strong>, if <span class="math display">\[𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟} &lt; 𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} \text{ &amp; } 𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} &lt; 𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} \therefore 𝑈_{𝑐𝑎𝑟} &gt; 𝑈_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}\]</span></p>
+<p>Car and transit in competition, if <span class="math display">\[𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟} &lt; 𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} \text{ &amp; } 𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} &gt; 𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}\]</span></p>
+<p>Is the traveler willing to pay extra (<span class="math inline">\(Cost_{car}-Cost_{transit}\)</span>) to save (<span class="math inline">\(Time_{transit} -Time_{car}\)</span>)?</p>
+<p>If yes (pick car): <span class="math inline">\(\left(\frac{\beta_𝑡}{\beta_𝑐}\right)𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟} + 𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} \leq \left(\frac{\beta_𝑡}{\beta_𝑐}\right)𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} + 𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}\)</span></p>
+<p>Willingness-to-pay or Value of Travel Time Savings (VOTS): <span class="math display">\[\left(\frac{\beta_𝑡}{\beta_𝑐}\right) \geq \frac{(𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟}−𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡})}{(𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}−𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟})}\]</span></p>
+</section>
+<section id="discrete-choice-2" class="slide level2">
+<h2>Discrete Choice</h2>
+
+<img data-src="../../../assets/images/teaching/ENCI707/Lecture4/transit_car_indifference.svg" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="discrete-choice-3" class="slide level2">
+<h2>Discrete Choice</h2>
+
+<img data-src="../../../assets/images/teaching/ENCI707/Lecture4/transit_car_choice.svg" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="stochastic-discrete-choice" class="slide level2 smaller">
+<h2>Stochastic Discrete Choice</h2>
+<ul>
+<li><p>Choice Probability of an alternative <span class="math inline">\(j\)</span> for an individual <span class="math inline">\(i\)</span> with choice set <span class="math inline">\(C_i\)</span> <span class="math display">\[Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( 𝑈_{𝑖𝑗} \geq 𝑈_{𝑖𝑘}) \text{, } 𝑘 \neq 𝑗 \text{ &amp; } 𝑘 \in 𝐶_𝑖\]</span></p></li>
+<li><p>Random utility: <span class="math display">\[𝑈_{𝑖𝑗}=𝑉_{𝑖𝑗}+\epsilon_{𝑖𝑗} \text{, } 𝑗 \in 𝐶_𝑖\]</span></p></li>
+<li><p>Random Utility Maximizing (RUM) Choice Model: <span class="math display">\[Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( 𝑉_{𝑖𝑗} + \epsilon_{𝑖𝑗} \ge 𝑉_{𝑖𝑘} + \epsilon_{𝑖𝑘}) \text{, } 𝑘 \neq 𝑗 \text{ &amp; } 𝑘 \in 𝐶_𝑖\]</span> Or <span class="math display">\[Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( \epsilon_{ik} - \epsilon_{ij} \leq V_{ij} - V_{ik}) \text{, } 𝑘 \neq 𝑗 \text{ &amp; } 𝑘 \in 𝐶_𝑖\]</span></p></li>
+</ul>
+</section>
+<section id="rum-based-discrete-choice" class="slide level2 smaller">
+<h2>RUM-Based Discrete Choice</h2>
+<ul>
+<li><strong>Fully specified</strong> choice set <span class="math inline">\(C_i\)</span></li>
+<li>Attributes of alternatives are <strong>completely defined</strong></li>
+<li>Only <strong>differences in utility</strong> matters</li>
+<li><strong>Systematic utility function</strong> is specified as a function of attributes</li>
+<li>An attribute may have the <strong>same</strong> (generic) weighting factors (coefficient) for all alternatives <strong>if it varies across the alternatives</strong> (e.g., travel time, travel cost, etc.).</li>
+<li>An attribute may have <strong>different</strong> weighting factors (coefficient) for different alternatives if it <strong>does not vary across the alternatives</strong> (age, gender, income, etc.).</li>
+<li>Assumption on distribution of random utility is necessary to derive choice probability: Stochastic Choice Model</li>
+</ul>
+</section>
+<section id="binary-discrete-choice" class="slide level2 smaller">
+<h2>Binary Discrete Choice</h2>
+<p>Choice Probability of an alternative <span class="math inline">\(j\)</span> for an individual <span class="math inline">\(i\)</span> with choice set <span class="math inline">\(C_i\)</span> of two alternatives: <span class="math inline">\(j, k\)</span> (dropping <span class="math inline">\(i\)</span> for sake of simplicity) <span class="math display">\[Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( 𝑉_𝑗+\epsilon_𝑗 \ge 𝑉_𝑘+\epsilon_𝑘)\]</span> <span class="math display">\[Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( \epsilon_𝑘−\epsilon_𝑗≤𝑉_𝑗−𝑉_𝑘)\]</span> <strong>Binary Probit:</strong></p>
+<ul>
+<li><span class="math inline">\(\epsilon_j,\epsilon_k\)</span> are both <strong>normally distributed</strong></li>
+<li>So,(<span class="math inline">\(\epsilon_k-\epsilon_j\)</span>) is also <strong>normally distributed</strong></li>
+<li>With fully specified alternative specific constants, (<span class="math inline">\(\epsilon_k-\epsilon_j\)</span>) is <span class="math inline">\(N(0,\sigma^2)\)</span>: <span class="math display">\[V-j - V_k = \beta_0 + \sum \beta(x_j - x_k)\]</span></li>
+<li><strong>Resulting Choice model:</strong> <span class="math inline">\(Pr(j) = \Phi(V/\sigma)\)</span></li>
+<li><span class="math inline">\(\sigma\)</span> normalized to 1, giving <strong>probit model</strong> with unit variance</li>
+</ul>
+</section>
+<section id="binary-discrete-choice-1" class="slide level2 smaller">
+<h2>Binary Discrete Choice</h2>
+<p><strong>Binary Logit:</strong></p>
+<ul>
+<li><p><span class="math inline">\(\epsilon_j,\epsilon_k\)</span> are <strong>IID Type I EV distributed</strong> with scale <span class="math inline">\(\mu\)</span> and variance <span class="math inline">\(\pi^2/6\mu^2\)</span></p></li>
+<li><p>With fully specified alternative specific constants, (<span class="math inline">\(\epsilon_k-\epsilon_j\)</span>) is <strong>logistically distributed</strong> with scale <span class="math inline">\(\mu\)</span> and variance <span class="math inline">\(\pi^2/3\mu^2\)</span>: <span class="math display">\[V_j - V_k = V = \beta_0 + \sum \beta (x_j - x_k)\]</span> Resulting Choice model: <span class="math display">\[Pr(j) = \frac{1}{1+\exp(-\mu(V_j - V_k))} = \frac{\exp(\mu V_j)}{\exp(\mu V_j)+\exp(\mu V_k)}\]</span></p></li>
+<li><p><span class="math inline">\(\mu\)</span> normalized to 1, giving <strong>logit model</strong> with variance of <span class="math inline">\(\pi^2/3\)</span></p></li>
+</ul>
+</section>
+<section id="binary-discrete-choice-2" class="slide level2 smaller">
+<h2>Binary Discrete Choice</h2>
+<p><strong>Binary Probit/Logit Identification</strong></p>
+<ul>
+<li>Only <strong>one</strong> alternative specific constant</li>
+<li>Scale of logit model is <strong>not identified</strong> as a constant</li>
+<li><strong>Reference alternative</strong> is irrelevant <span class="math display">\[𝑉_𝑗−𝑉_𝑘=𝑉=\beta_0+\sum \beta(𝑥_𝑗−𝑥_𝑘)\]</span> <span class="math display">\[𝑉_𝑗=\beta_0+\beta(𝑥_{𝑔𝑒𝑛𝑒𝑟𝑖𝑐})_𝑗+\beta_{(𝑗−𝑠𝑝𝑒𝑐𝑖𝑓𝑖𝑐)} 𝑥_{(𝑗−𝑠𝑝𝑒𝑐𝑖𝑓𝑖𝑐)}\]</span> <span class="math display">\[𝑉_𝑘=0+\beta(𝑥_{𝑔𝑒𝑛𝑒𝑟𝑖𝑐})_𝑘 + \beta_{(𝑘−𝑠𝑝𝑒𝑐𝑖𝑓𝑖𝑐)} 𝑥_{(𝑘−𝑠𝑝𝑒𝑐𝑖𝑓𝑖𝑐)}\]</span> <span class="math display">\[𝑉_{𝑐𝑎𝑟}=\beta_0+\beta_𝑡 time_{𝑐𝑎𝑟} + \beta_𝑐 cost_{𝑐𝑎𝑟} +\beta_𝑜 CarOwnership \]</span> <span class="math display">\[𝑉_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} = 0 + \beta_𝑡 time_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} + \beta_𝑐 fare_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} + \beta_𝑟 On−TimePerformance\]</span></li>
+<li>Allows <strong>non-linear transformation</strong> and <strong>normalizations</strong></li>
 </ul>
 
 <div class="quarto-auto-generated-content">
