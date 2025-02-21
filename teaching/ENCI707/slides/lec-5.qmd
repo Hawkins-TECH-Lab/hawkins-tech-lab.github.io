@@ -741,7 +741,9 @@ $$\overset{\sim}{W_i} = \sum_{g=1}^G \left(\frac{N_g}{N_T}\right) \frac{1}{N_{sg
   </tr>
 </table>
 
-# Confidence Interval on Predictions {.smaller}
+# Confidence Interval on Predictions 
+
+## Confidence Interval on Predictions {.smaller}
 - Estimated parameters are MVN distributed by central limit theorem
 - Same approach is applicable for any choice model
 ![](../../../assets/images/teaching/ENCI707/Lecture5/ci_simulation.svg){fig-align="center"}
