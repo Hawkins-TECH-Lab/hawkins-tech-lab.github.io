@@ -6212,6 +6212,13 @@
     "text": "Classification with Naïve Aggregation\n\nClassify population into a number of strata and consider population within a particular segment as homogenous (having same attributes)\nWhen sample enumeration infeasible, can use classification with naïve aggregation\nCategorization is based on attributes / market segmentation\n\n\n\n\nPopulation Strata\n\n\nChoice Alternatives\n\n\n\n\n\n\n1\n\n\n2\n\n\n…\n\n\nJ\n\n\nSum\n\n\n\n\n1\n\n\n\\(Pr(1|x_1,\\beta)\\)\n\n\n\\(Pr(2|x_1,\\beta)\\)\n\n\n.\n\n\n\\(Pr(J|x_1,\\beta)\\)\n\n\n1\n\n\n\n\n2\n\n\n\\(Pr(1|x_2,\\beta)\\)\n\n\n\\(Pr(2|x_2,\\beta)\\)\n\n\n.\n\n\n\\(Pr(J|x_2,\\beta)\\)\n\n\n1\n\n\n\n\n…\n\n\n.\n\n\n.\n\n\n.\n\n\n.\n\n\n.\n\n\n\n\nn\n\n\n\\(Pr(1|x_S,\\beta)\\)\n\n\n\\(Pr(2|x_S,\\beta)\\)\n\n\n.\n\n\n\\(Pr(J|x_S,\\beta)\\)\n\n\n1\n\n\n\n\nSum\n\n\nn(1)\n\n\nn(2)\n\n\n\n\nn(J)\n\n\nn\n\n\n\n\nMarket share\n\n\nn(1)/n\n\n\nn(2)/n\n\n\n\n\nn(J)/n\n\n\n1"
   },
   {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#confidence-interval-on-predictions-1",
+    "href": "teaching/ENCI707/slides/lec-5.html#confidence-interval-on-predictions-1",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Confidence Interval on Predictions",
+    "text": "Confidence Interval on Predictions\n\nEstimated parameters are MVN distributed by central limit theorem\nSame approach is applicable for any choice model"
+  },
+  {
     "objectID": "teaching/ENCI707/slides/lec-5.html#confidence-interval-of-predictions-elasticity-market-share-revenue",
     "href": "teaching/ENCI707/slides/lec-5.html#confidence-interval-of-predictions-elasticity-market-share-revenue",
     "title": "Lecture 5 - Multinomial Logit",
