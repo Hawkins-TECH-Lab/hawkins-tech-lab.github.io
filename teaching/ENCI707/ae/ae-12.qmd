@@ -1,6 +1,6 @@
 ---
 title: "Application Exercise 12 - Spatial Exploration"
-sidebar: CIVE461
+sidebar: ENCI707
 ---
 
 ::: callout-important

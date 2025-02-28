@@ -1,10 +1,10 @@
 ---
 title: "Application Exercise 9 - Disaggregate Demand"
-sidebar: CIVE461
+sidebar: ENCI707
 ---
 
 ::: callout-important
 This application exercise should be submitted via D2L by end of the day on which it was introduced in lecture.
 :::
 
-Some derivations
+Derivation of the binary logit model!

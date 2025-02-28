@@ -1,6 +1,6 @@
 ---
 title: "Application Exercise 11 - Causal Inference"
-sidebar: CIVE461
+sidebar: ENCI707
 ---
 
 ::: callout-important
