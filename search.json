@@ -732,7 +732,7 @@
     "href": "teaching/ENCI707/slides/lec-6.html#iia-cont",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "IIA Cont…",
-    "text": "IIA Cont…\n\nIf the IIA assumption does not hold, we can make other error distribution assumptions\n\nNested logit (can handle complex decision structures)\nProbit (normal error terms, very general model, but can be difficult to work with it)"
+    "text": "IIA Cont…\n\nIf the IIA assumption does not hold, we can make other error distribution assumptions\n\nNested logit (can handle complex decision structures)\nProbit (normal error terms, very general model, but can be difficult to work with it)\n\n\n\n\n\n\nENCI707 Home"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-4.html#demand-versus-choice",
@@ -879,7 +879,7 @@
     "href": "teaching/ENCI707/slides/lec-4.html#binary-discrete-choice-2",
     "title": "Lecture 4 - Disaggregate Econometric Choice Theory",
     "section": "Binary Discrete Choice",
-    "text": "Binary Discrete Choice\nBinary Probit/Logit Identification\n\nOnly one alternative specific constant\nScale of logit model is not identified as a constant\nReference alternative is irrelevant \\[𝑉_𝑗−𝑉_𝑘=𝑉=\\beta_0+\\sum \\beta(𝑥_𝑗−𝑥_𝑘)\\] \\[𝑉_𝑗=\\beta_0+\\beta(𝑥_{𝑔𝑒𝑛𝑒𝑟𝑖𝑐})_𝑗+\\beta_{(𝑗−𝑠𝑝𝑒𝑐𝑖𝑓𝑖𝑐)} 𝑥_{(𝑗−𝑠𝑝𝑒𝑐𝑖𝑓𝑖𝑐)}\\] \\[𝑉_𝑘=0+\\beta(𝑥_{𝑔𝑒𝑛𝑒𝑟𝑖𝑐})_𝑘 + \\beta_{(𝑘−𝑠𝑝𝑒𝑐𝑖𝑓𝑖𝑐)} 𝑥_{(𝑘−𝑠𝑝𝑒𝑐𝑖𝑓𝑖𝑐)}\\] \\[𝑉_{𝑐𝑎𝑟}=\\beta_0+\\beta_𝑡 time_{𝑐𝑎𝑟} + \\beta_𝑐 cost_{𝑐𝑎𝑟} +\\beta_𝑜 CarOwnership \\] \\[𝑉_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} = 0 + \\beta_𝑡 time_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} + \\beta_𝑐 fare_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} + \\beta_𝑟 On−TimePerformance\\]\nAllows non-linear transformation and normalizations"
+    "text": "Binary Discrete Choice\nBinary Probit/Logit Identification\n\nOnly one alternative specific constant\nScale of logit model is not identified as a constant\nReference alternative is irrelevant \\[𝑉_𝑗−𝑉_𝑘=𝑉=\\beta_0+\\sum \\beta(𝑥_𝑗−𝑥_𝑘)\\] \\[𝑉_𝑗=\\beta_0+\\beta(𝑥_{𝑔𝑒𝑛𝑒𝑟𝑖𝑐})_𝑗+\\beta_{(𝑗−𝑠𝑝𝑒𝑐𝑖𝑓𝑖𝑐)} 𝑥_{(𝑗−𝑠𝑝𝑒𝑐𝑖𝑓𝑖𝑐)}\\] \\[𝑉_𝑘=0+\\beta(𝑥_{𝑔𝑒𝑛𝑒𝑟𝑖𝑐})_𝑘 + \\beta_{(𝑘−𝑠𝑝𝑒𝑐𝑖𝑓𝑖𝑐)} 𝑥_{(𝑘−𝑠𝑝𝑒𝑐𝑖𝑓𝑖𝑐)}\\] \\[𝑉_{𝑐𝑎𝑟}=\\beta_0+\\beta_𝑡 time_{𝑐𝑎𝑟} + \\beta_𝑐 cost_{𝑐𝑎𝑟} +\\beta_𝑜 CarOwnership \\] \\[𝑉_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} = 0 + \\beta_𝑡 time_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} + \\beta_𝑐 fare_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} + \\beta_𝑟 On−TimePerformance\\]\nAllows non-linear transformation and normalizations\n\n\n\n\n\nENCI707 Home"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-2.html#outline",
@@ -1215,7 +1215,7 @@
     "href": "teaching/ENCI707/slides/lec-2.html#other-design-recommendations-2",
     "title": "Lecture 2 - Surveys",
     "section": "Other Design Recommendations 2",
-    "text": "Other Design Recommendations 2\n\nKeep choice experiments simple - we respond to very complex choices in practice but do so over a long period of time\nAllow respondents to opt for response outside set of experimental alternatives - e.g., in mode choice exercise, if all options become too unattractive respondent may decide to change destination, time of travel, or not to travel at all\nAllow ‘will do something else’ alternative - could be programmed to branch to another exercise exploring precisely these other options\nMake sure alternatives are clearly and unambiguously defined (difficult when dealing with qualitative attributes like security or comfort)\n\nE.g., do not express alternatives as ‘poor’ or ‘improved’, which are vague and prone to different interpretations by respondents - what measures or facilities, etc.)."
+    "text": "Other Design Recommendations 2\n\nKeep choice experiments simple - we respond to very complex choices in practice but do so over a long period of time\nAllow respondents to opt for response outside set of experimental alternatives - e.g., in mode choice exercise, if all options become too unattractive respondent may decide to change destination, time of travel, or not to travel at all\nAllow ‘will do something else’ alternative - could be programmed to branch to another exercise exploring precisely these other options\nMake sure alternatives are clearly and unambiguously defined (difficult when dealing with qualitative attributes like security or comfort)\n\nE.g., do not express alternatives as ‘poor’ or ‘improved’, which are vague and prone to different interpretations by respondents - what measures or facilities, etc.).\n\n\n\n\n\n\nENCI707 Home"
   },
   {
     "objectID": "teaching/ENCI707/project/project-description.html",
@@ -1542,7 +1542,12 @@
     "href": "teaching/ENCI707/ae/ae-8.html",
     "title": "Application Exercise 8 - Computing Models",
     "section": "",
-    "text": "Important\n\n\n\nThis application exercise should be submitted via D2L by end of the day on which it was introduced in lecture.\n\n\nPlease submit your Jupyter notebooks created during lecture. Your submission should be a html file displaying the outputs from running the code. The following notebooks should be included in this submission:\n\nregressionDataAnalysis.html\nlogitModelling-Biogeme.html"
+    "text": "Important\n\n\n\nThis application exercise should be submitted via D2L by end of the day on which it was introduced in lecture.\n\n\nPlease submit your Jupyter notebooks created during lecture. Your submission should be a html file displaying the outputs from running the code. The following notebooks should be included in this submission:\n\nregressionDataAnalysis.html\nlogitModelling-Biogeme.html",
+    "crumbs": [
+      "Research",
+      "Application Exercises",
+      "AE 8 - Computing Models"
+    ]
   },
   {
     "objectID": "teaching/ENCI707/ae/ae-6.html",
@@ -2358,7 +2363,7 @@
     "href": "teaching/CIVE461/slides/lec-7.html#transit-assignment",
     "title": "Lecture 7 - Trip Assignment",
     "section": "Transit Assignment",
-    "text": "Transit Assignment\n\nTransit assignment not usually a function of congestion\nProcedures typically used:\n\nAll-Or-Nothing\nStochastic (multipath)\n\nMust account for:\n\nWalk access/egress times\nWaiting times as f(headway)\nTransfers\n\nFeasible transfer points\nTransfer times"
+    "text": "Transit Assignment\n\nTransit assignment not usually a function of congestion\nProcedures typically used:\n\nAll-Or-Nothing\nStochastic (multipath)\n\nMust account for:\n\nWalk access/egress times\nWaiting times as f(headway)\nTransfers\n\nFeasible transfer points\nTransfer times\n\n\n\n\n\n\n\nCIVE461 Home"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-5.html#outline",
@@ -2477,7 +2482,7 @@
     "href": "teaching/CIVE461/slides/lec-5.html#iia-cont",
     "title": "Lecture 5 - Choice Models",
     "section": "IIA Cont…",
-    "text": "IIA Cont…\n\nIf the IIA assumption does not hold, we can make other error distribution assumptions\n\nNested logit (can handle complex decision structures)\nProbit (normal error terms, very general model, but can be difficult to work with it)"
+    "text": "IIA Cont…\n\nIf the IIA assumption does not hold, we can make other error distribution assumptions\n\nNested logit (can handle complex decision structures)\nProbit (normal error terms, very general model, but can be difficult to work with it)\n\n\n\n\n\n\nCIVE461 Home"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-3.html#we-can-examine-trip-generation-in-several-ways",
@@ -2897,7 +2902,7 @@
     "href": "teaching/CIVE461/slides/lec-3.html#trip-generation-accessibility-1",
     "title": "Lecture 3 - Trip Generation",
     "section": "Trip Generation & Accessibility",
-    "text": "Trip Generation & Accessibility\n\nAttempts made to incorporate an accessibility measure into trip generation by replacing \\(O_i = f(H_i)\\) by \\(f(H_i,A_i\\) where \\(H_i\\) are household characteristics & \\(A_i\\) is an accessibility measure\nAccessibility generally defined by \\(A_i = \\sum_j f(E_j, C_{ij})\\) where \\(E_j\\) is an attraction measure for zone \\(j\\) & \\(C_{ij}\\) is a generalized cost of travel between zones \\(i\\) & \\(j\\).\n\nOften give wrong sign or non-significant results due to unresolved model dynamics & problems from using cross-sectional rather than longitudinal data\nLeads to activity-based models & trip frequency/scheduling choice models (discussed in CIVE864)"
+    "text": "Trip Generation & Accessibility\n\nAttempts made to incorporate an accessibility measure into trip generation by replacing \\(O_i = f(H_i)\\) by \\(f(H_i,A_i\\) where \\(H_i\\) are household characteristics & \\(A_i\\) is an accessibility measure\nAccessibility generally defined by \\(A_i = \\sum_j f(E_j, C_{ij})\\) where \\(E_j\\) is an attraction measure for zone \\(j\\) & \\(C_{ij}\\) is a generalized cost of travel between zones \\(i\\) & \\(j\\).\n\nOften give wrong sign or non-significant results due to unresolved model dynamics & problems from using cross-sectional rather than longitudinal data\nLeads to activity-based models & trip frequency/scheduling choice models (discussed in CIVE864)\n\n\n\n\n\n\nCIVE461 Home"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-1.html#outline",
@@ -3184,7 +3189,7 @@
     "href": "teaching/CIVE461/slides/lec-1.html#workforce-trends",
     "title": "Lecture 1 - Introduction",
     "section": "Workforce Trends",
-    "text": "Workforce Trends\n\nMulti-modal transportation planning\nComplete Streets – Nebraska DOT focused on it for small communities\nLarger datasets = Excel -&gt; R & Python\nNon-infrastructure solutions – ridesharing, autonomous vehicles, pricing, and land use reform"
+    "text": "Workforce Trends\n\nMulti-modal transportation planning\nComplete Streets – Nebraska DOT focused on it for small communities\nLarger datasets = Excel -&gt; R & Python\nNon-infrastructure solutions – ridesharing, autonomous vehicles, pricing, and land use reform\n\n       \n\n\n\n\nCIVE461 Home"
   },
   {
     "objectID": "teaching/CIVE461/project/project-description.html",
@@ -4311,14 +4316,14 @@
     "href": "teaching/CIVE461/slides/lec-2.html#how-to-move-beyond-hypothesis-testing",
     "title": "Lecture 2 - Statistical Modeling",
     "section": "How to Move Beyond Hypothesis Testing",
-    "text": "How to Move Beyond Hypothesis Testing\n\n\nAnalyze all data - Better to anticipate critism than hide data\nPresent all comparisons - Rather than statistically significant comparisons only\nMake data public - If a topic is worth studying, you should want others to be able to quickly progress without repeating your work\nAccept uncertainty & embrace variation - No answer is perfect"
+    "text": "How to Move Beyond Hypothesis Testing\n\n\nAnalyze all data - Better to anticipate critism than hide data\nPresent all comparisons - Rather than statistically significant comparisons only\nMake data public - If a topic is worth studying, you should want others to be able to quickly progress without repeating your work\nAccept uncertainty & embrace variation - No answer is perfect\n\n\n\n\n\n\nCIVE461 Home"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-4.html#outline",
     "href": "teaching/CIVE461/slides/lec-4.html#outline",
     "title": "Lecture 4 - Transportation Planning Process",
     "section": "Outline",
-    "text": "Outline\n\n\nDecision-making models\nPlanning and decision process\nMeasures of effectiveness"
+    "text": "Outline\n\n\nDecision-making models\nPlanning and decision process\nMeasures of effectiveness\n\n\n\n\n\n\nCIVE461 Home"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-6.html#outline",
@@ -4584,7 +4589,7 @@
     "href": "teaching/CIVE461/slides/lec-6.html#other-choices",
     "title": "Lecture 6 - Mode & Destination Choice Models",
     "section": "Other Choices",
-    "text": "Other Choices\n\nHome location choice (multinomial logit) – similar to destination choice\nVehicle ownership choice? 1, 2, 3, 4, etc. vehicles (ordered logit)\nDeparture time choice? 8AM, 9AM, 10AM, etc. (ordered logit)\nParty size choice? 1, 2, 3, 4, 5, etc. persons (ordered logit)\nChoice set formation\n\nWhat destinations do I consider? Do I consider only destinations within my neighborhood? Do I consider only destinations within a certain distance or travel time?"
+    "text": "Other Choices\n\nHome location choice (multinomial logit) – similar to destination choice\nVehicle ownership choice? 1, 2, 3, 4, etc. vehicles (ordered logit)\nDeparture time choice? 8AM, 9AM, 10AM, etc. (ordered logit)\nParty size choice? 1, 2, 3, 4, 5, etc. persons (ordered logit)\nChoice set formation\n\nWhat destinations do I consider? Do I consider only destinations within my neighborhood? Do I consider only destinations within a certain distance or travel time?\n\n\n\n\n\n\nCIVE461 Home"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-8.html",
@@ -5015,14 +5020,24 @@
     "href": "teaching/ENCI707/ae/ae-7.html",
     "title": "Application Exercise 7 - Computing Visuals",
     "section": "",
-    "text": "Important\n\n\n\nThis application exercise should be submitted via D2L by end of the day on which it was introduced in lecture.\n\n\nPlease submit your Jupyter notebooks created during lecture. Your submission should be a html file displaying the outputs from running the code. The following notebooks should be included in this submission:\n\ncrashCoursePython.html\nvisualizationBasicMatplotlib.html"
+    "text": "Important\n\n\n\nThis application exercise should be submitted via D2L by end of the day on which it was introduced in lecture.\n\n\nPlease submit your Jupyter notebooks created during lecture. Your submission should be a html file displaying the outputs from running the code. The following notebooks should be included in this submission:\n\ncrashCoursePython.html\nvisualizationBasicMatplotlib.html",
+    "crumbs": [
+      "Research",
+      "Application Exercises",
+      "AE 7 - Computing Visuals"
+    ]
   },
   {
     "objectID": "teaching/ENCI707/ae/ae-9.html",
     "href": "teaching/ENCI707/ae/ae-9.html",
     "title": "Application Exercise 9 - Disaggregate Demand",
     "section": "",
-    "text": "Important\n\n\n\nThis application exercise should be submitted via D2L by end of the day on which it was introduced in lecture.\n\n\nSome derivations"
+    "text": "Important\n\n\n\nThis application exercise should be submitted via D2L by end of the day on which it was introduced in lecture.\n\n\nDerivation of the binary logit model!",
+    "crumbs": [
+      "Research",
+      "Application Exercises",
+      "AE 8 - Disaggregate Demand"
+    ]
   },
   {
     "objectID": "teaching/ENCI707/assignments/assignment-2.html",
@@ -5516,7 +5531,7 @@
     "href": "teaching/ENCI707/slides/lec-1.html#modelling-infrastructure-demands",
     "title": "Lecture 1 - Microeconomics",
     "section": "Modelling Infrastructure Demands​",
-    "text": "Modelling Infrastructure Demands​\n\nData (revealed/stated preferences): data do not provide answers themselves​\n\nWe need models and visualizations to give context and structure​\n\nIdentify underling theory to specify model of interest​\nTwo types of models:​\n\nAggregate demand models​\nDisaggregate demand/choice models​\n\nIn either case, application of econometric techniques is crucial to ensure evidence-based analysis​\nEstimation of appropriate model parameters is the critical roadblock!​"
+    "text": "Modelling Infrastructure Demands​\n\nData (revealed/stated preferences): data do not provide answers themselves​\n\nWe need models and visualizations to give context and structure​\n\nIdentify underling theory to specify model of interest​\nTwo types of models:​\n\nAggregate demand models​\nDisaggregate demand/choice models​\n\nIn either case, application of econometric techniques is crucial to ensure evidence-based analysis​\nEstimation of appropriate model parameters is the critical roadblock!​\n\n\n\n\n\n\nENCI707 Home"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-3.html#outline",
@@ -5789,7 +5804,7 @@
     "href": "teaching/ENCI707/slides/lec-3.html#lagged-effects-in-aggregate-models-example",
     "title": "Lecture 3 - Aggregate Demand Models",
     "section": "Lagged Effects in Aggregate Models: Example",
-    "text": "Lagged Effects in Aggregate Models: Example"
+    "text": "Lagged Effects in Aggregate Models: Example\n \n\n\n\n\nENCI707 Home"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-5.html#outline",
@@ -6212,13 +6227,6 @@
     "text": "Classification with Naïve Aggregation\n\nClassify population into a number of strata and consider population within a particular segment as homogenous (having same attributes)\nWhen sample enumeration infeasible, can use classification with naïve aggregation\nCategorization is based on attributes / market segmentation\n\n\n\n\nPopulation Strata\n\n\nChoice Alternatives\n\n\n\n\n\n\n1\n\n\n2\n\n\n…\n\n\nJ\n\n\nSum\n\n\n\n\n1\n\n\n\\(Pr(1|x_1,\\beta)\\)\n\n\n\\(Pr(2|x_1,\\beta)\\)\n\n\n.\n\n\n\\(Pr(J|x_1,\\beta)\\)\n\n\n1\n\n\n\n\n2\n\n\n\\(Pr(1|x_2,\\beta)\\)\n\n\n\\(Pr(2|x_2,\\beta)\\)\n\n\n.\n\n\n\\(Pr(J|x_2,\\beta)\\)\n\n\n1\n\n\n\n\n…\n\n\n.\n\n\n.\n\n\n.\n\n\n.\n\n\n.\n\n\n\n\nn\n\n\n\\(Pr(1|x_S,\\beta)\\)\n\n\n\\(Pr(2|x_S,\\beta)\\)\n\n\n.\n\n\n\\(Pr(J|x_S,\\beta)\\)\n\n\n1\n\n\n\n\nSum\n\n\nn(1)\n\n\nn(2)\n\n\n\n\nn(J)\n\n\nn\n\n\n\n\nMarket share\n\n\nn(1)/n\n\n\nn(2)/n\n\n\n\n\nn(J)/n\n\n\n1"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-5.html#confidence-interval-on-predictions-1",
-    "href": "teaching/ENCI707/slides/lec-5.html#confidence-interval-on-predictions-1",
-    "title": "Lecture 5 - Multinomial Logit",
-    "section": "Confidence Interval on Predictions",
-    "text": "Confidence Interval on Predictions\n\nEstimated parameters are MVN distributed by central limit theorem\nSame approach is applicable for any choice model"
-  },
-  {
     "objectID": "teaching/ENCI707/slides/lec-5.html#confidence-interval-of-predictions-elasticity-market-share-revenue",
     "href": "teaching/ENCI707/slides/lec-5.html#confidence-interval-of-predictions-elasticity-market-share-revenue",
     "title": "Lecture 5 - Multinomial Logit",
@@ -6321,7 +6329,7 @@
     "href": "teaching/ENCI707/slides/lec-5.html#further-topics-among-many-others",
     "title": "Lecture 5 - Multinomial Logit",
     "section": "Further topics (among many others)",
-    "text": "Further topics (among many others)\n\nLogit model with probabilistic choice set formation\nLogit model with multiple overlapping choice sets\nLogit model with myopic preferences regarding specific alternatives"
+    "text": "Further topics (among many others)\n\nLogit model with probabilistic choice set formation\nLogit model with multiple overlapping choice sets\nLogit model with myopic preferences regarding specific alternatives\n\n\n\n\n\nENCI707 Home"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-7.html#outline",
