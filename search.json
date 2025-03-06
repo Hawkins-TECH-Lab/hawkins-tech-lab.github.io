@@ -508,7 +508,7 @@
   {
     "objectID": "teaching/ENCI707/weeks/week-11.html",
     "href": "teaching/ENCI707/weeks/week-11.html",
-    "title": "Week 10",
+    "title": "Week 11",
     "section": "",
     "text": "📖 Review Discrete Choice Methods with Simulation Ch. 4 DCMS4",
     "crumbs": [
@@ -519,7 +519,7 @@
   {
     "objectID": "teaching/ENCI707/weeks/week-11.html#prepare",
     "href": "teaching/ENCI707/weeks/week-11.html#prepare",
-    "title": "Week 10",
+    "title": "Week 11",
     "section": "",
     "text": "📖 Review Discrete Choice Methods with Simulation Ch. 4 DCMS4",
     "crumbs": [
@@ -530,7 +530,7 @@
   {
     "objectID": "teaching/ENCI707/weeks/week-11.html#participate",
     "href": "teaching/ENCI707/weeks/week-11.html#participate",
-    "title": "Week 10",
+    "title": "Week 11",
     "section": "Participate",
     "text": "Participate\n📋 Lecture 6 - Advanced Logit Models",
     "crumbs": [
@@ -541,7 +541,7 @@
   {
     "objectID": "teaching/ENCI707/weeks/week-11.html#practice",
     "href": "teaching/ENCI707/weeks/week-11.html#practice",
-    "title": "Week 10",
+    "title": "Week 11",
     "section": "Practice",
     "text": "Practice\n📖 Review GEV supplemental notes\n📖 Review Mixed logit supplemental notes",
     "crumbs": [
@@ -552,7 +552,7 @@
   {
     "objectID": "teaching/ENCI707/weeks/week-11.html#deliver",
     "href": "teaching/ENCI707/weeks/week-11.html#deliver",
-    "title": "Week 10",
+    "title": "Week 11",
     "section": "Deliver",
     "text": "Deliver\n📝 Logit model group assignment due Mar. 19 by 11:59 PM on D2L.\n📝 Draft data and experimental design due Mar. 21 by 11:59 PM on D2L.\n\n\nBack to course schedule ⏎",
     "crumbs": [
@@ -5778,7 +5778,7 @@
     "href": "teaching/ENCI707/index.html",
     "title": "ENCI707",
     "section": "",
-    "text": "This page contains an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses, with all changes documented here.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nDate\nTopic\nPrepare\nSlides\nAE\nHW\nProject\n\n\n\n\n1\nWed, Jan 15\nMicroeconomic Theory\n📖\n📋\n🖥️\n\n\n\n\n2\nWed, Jan 22\nMicroeconomic Theory\n📖\n\n🖥️\n\n\n\n\n\n\nData Sources\n\n\n\n\n\n\n\n3\nWed, Jan 29\nSurveys\n📖\n📋\n🖥️\n\n📝\n\n\n4\nWed, Feb 05\nAggregate Demand Models\n📖\n📋\n🖥️\n📝\n\n\n\n5\nWed, Feb 12\nPolicy Analysis\n📖\n\n🖥️\n\n\n\n\n\n\nPolicy Analysis\n\n\n🖥️\n\n\n\n\n6\nWed, Feb 19\nWinter Break\n\n\n\n\n📝\n\n\n7\nWed, Feb 26\nComputational Model Estimation\n📖\n\n🖥️\n📝\n\n\n\n\n\nComputational Model Estimation\n\n\n🖥️\n\n\n\n\n8\nWed, Mar 05\nDisaggregate Demand Theory\n📖\n📋\n🖥️\n\n\n\n\n9\nWed, Mar 12\nDisaggregate Demand Models: Multinomial Logit\n📖\n📋\n\n\n\n\n\n10\nWed, Mar 19\nApplying Disaggrate Demand Models\n📖\n\n🖥️\n📝\n📝\n\n\n11\nWed, Mar 26\nAdvanced Choice Models\n📖\n📋\n\n\n\n\n\n12\nWed, Apr 02\nCausal Inference\n📖\n📋\n🖥️\n\n\n\n\n\n\nGeographic Data Science\n\n\n🖥️\n\n\n\n\n13\nWed, Apr 09\nSummary Applications\n📖\n\n🖥️\n\n\n\n\n14\nWed, Apr 16\nExams Week\n\n\n\n\n📝",
+    "text": "This page contains an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses, with all changes documented here.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nDate\nTopic\nPrepare\nSlides\nAE\nHW\nProject\n\n\n\n\n1\nWed, Jan 15\nMicroeconomic Theory\n📖\n📋\n🖥️\n\n\n\n\n2\nWed, Jan 22\nMicroeconomic Theory\n📖\n\n🖥️\n\n\n\n\n\n\nData Sources\n\n\n\n\n\n\n\n3\nWed, Jan 29\nSurveys\n📖\n📋\n🖥️\n\n📝\n\n\n4\nWed, Feb 05\nAggregate Demand Models\n📖\n📋\n🖥️\n📝\n\n\n\n5\nWed, Feb 12\nPolicy Analysis\n📖\n\n🖥️\n\n\n\n\n\n\nPolicy Analysis\n\n\n🖥️\n\n\n\n\n6\nWed, Feb 19\nWinter Break\n\n\n\n\n📝\n\n\n7\nWed, Feb 26\nComputational Model Estimation\n📖\n\n🖥️\n📝\n\n\n\n\n\nComputational Model Estimation\n\n\n🖥️\n\n\n\n\n8\nWed, Mar 05\nDisaggregate Demand Theory\n📖\n📋\n🖥️\n\n\n\n\n9\nWed, Mar 12\nDisaggregate Demand Models: Multinomial Logit\n📖\n📋\n\n\n\n\n\n10\nWed, Mar 19\nApplying Disaggrate Demand Models\n📖\n\n🖥️\n📝\n📝\n\n\n11\nWed, Mar 26\nAdvanced Choice Models\n📖\n📋\n\n\n\n\n\n12\nWed, Apr 02\nCausal Inference\n📖\n📋\n🖥️\n\n\n\n\n13\nWed, Apr 09\nSummary Applications\n📖\n\n🖥️\n\n\n\n\n14\nWed, Apr 16\nExams Week\n\n\n\n\n📝",
     "crumbs": [
       "Research",
       "Administration",
@@ -6753,7 +6753,7 @@
   {
     "objectID": "teaching/ENCI707/weeks/week-12.html",
     "href": "teaching/ENCI707/weeks/week-12.html",
-    "title": "Week 11",
+    "title": "Week 12",
     "section": "",
     "text": "📖 Watch the videos\n📖 Review Ch. 18-21 of Regression and Other Stories ROS",
     "crumbs": [
@@ -6764,7 +6764,7 @@
   {
     "objectID": "teaching/ENCI707/weeks/week-12.html#prepare",
     "href": "teaching/ENCI707/weeks/week-12.html#prepare",
-    "title": "Week 11",
+    "title": "Week 12",
     "section": "",
     "text": "📖 Watch the videos\n📖 Review Ch. 18-21 of Regression and Other Stories ROS",
     "crumbs": [
@@ -6775,7 +6775,7 @@
   {
     "objectID": "teaching/ENCI707/weeks/week-12.html#participate",
     "href": "teaching/ENCI707/weeks/week-12.html#participate",
-    "title": "Week 11",
+    "title": "Week 12",
     "section": "Participate",
     "text": "Participate\n🖥️ Lecture 7 - Causal Inference",
     "crumbs": [
@@ -6786,7 +6786,7 @@
   {
     "objectID": "teaching/ENCI707/weeks/week-12.html#practice",
     "href": "teaching/ENCI707/weeks/week-12.html#practice",
-    "title": "Week 11",
+    "title": "Week 12",
     "section": "Practice",
     "text": "Practice\n🖥️ Activity 11 - Causal Inference",
     "crumbs": [
@@ -6797,7 +6797,7 @@
   {
     "objectID": "teaching/ENCI707/weeks/week-12.html#deliver",
     "href": "teaching/ENCI707/weeks/week-12.html#deliver",
-    "title": "Week 11",
+    "title": "Week 12",
     "section": "Deliver",
     "text": "Deliver\nNone\n\n\nBack to course schedule ⏎",
     "crumbs": [
