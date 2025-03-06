@@ -1,11 +1,9 @@
 ---
 title: "Week 10"
-subtitle: "Advanced Choice Models"
+subtitle: "Multinomial Logit Model"
 ---
 
 ## Prepare
-
-📖 Review Discrete Choice Methods with Simulation Ch. 4  [DCMS](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/6a17dbbd701554fca22c5c434eb4bf6e746f8518/Resources/Ch04_p76-96.pdf)
 
 📖 Review Parady and Axhausen on Parameter Interpretation  [PI](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/28088286106811a96653d706b55c7da4c39dde0b/Resources/2023_Parady_Size_Matters.pdf)
 
@@ -13,7 +11,7 @@ subtitle: "Advanced Choice Models"
 
 ## Participate
 
-🖥️ [Lecture 6 - Advanced Choice Models](/teaching/ENCI707/slides/lec-5.html)
+📋 [Lecture 5 - Multinomial Logit Model](/teaching/ENCI707/slides/lec-5.html)
 
 ## Practice
 

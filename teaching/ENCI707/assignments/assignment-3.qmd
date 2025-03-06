@@ -9,7 +9,7 @@ The objective of this assignment is to familiarize you with the estimation and a
 2. Perform model validation. This validation could comprise bootstrap resampling, cross-valdiation, or any other similar method.
 3. Estimate direct elasticities of level-of-service variables.
 
-The assignment deliverable should have the form of a professional report and should not be more than 10 pages (singles-spaced).
+The assignment deliverable should have the form of a professional report and should not be more than 10 pages (single-spaced).
 
 ## Overall grading
 
@@ -20,7 +20,7 @@ The grade breakdown is as follows:
 | **Introduction**                   | 5 pts   |
 | **Correct model interpretation**   | 10 pts  |
 | **Includes all required elements** | 5 pts   |
-| **Formatting and report quality**  | 10 pts  |
+| **Formatting and report quality**  | 5 pts  |
 
 ### Grading summary
 

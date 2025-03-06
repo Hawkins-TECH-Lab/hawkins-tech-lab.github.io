@@ -19,6 +19,8 @@ subtitle: "Disaggregate Demand Theory"
 
 🖥️ [Activity 9 - Disaggregate Demand](/teaching/ENCI707/ae/ae-9.html)
 
+📖 Review [binary logit derivation notes](/teaching/ENCI707/supplemental/binary-logit.html)
+
 ## Deliver
 None
 
