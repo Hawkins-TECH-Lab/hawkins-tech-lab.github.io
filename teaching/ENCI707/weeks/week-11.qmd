@@ -1,24 +1,26 @@
 ---
-title: "Week 11"
-subtitle: "Causal Inference"
+title: "Week 10"
+subtitle: "Advanced Choice Models"
 ---
 
 ## Prepare
 
-📖 Watch the [videos](/teaching/ENCI707/prep/week11/week11-videos.html)
-
-📖 Review Ch. 18-21 of Regression and Other Stories [ROS](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/dc0772ab0b84414af5737676f07761518ea46dcf/Resources/Gelman_Et_Al_ROS_1ed.pdf)
+📖 Review Discrete Choice Methods with Simulation Ch. 4 [DCMS3](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/6a17dbbd701554fca22c5c434eb4bf6e746f8518/Resources/Ch04_p76-96.pdf)
 
 ## Participate
 
-🖥️ [Lecture 7 - Causal Inference](/teaching/ENCI707/slides/lec-7.html)
+📋 [Lecture 6 - Advanced Logit Models](/teaching/ENCI707/slides/lec-6.html)
 
 ## Practice
 
-🖥️ [Activity 11 - Causal Inference](/teaching/ENCI707/ae/ae-11.html)
+📖 Review [GEV supplemental notes](/teaching/ENCI707/supplemental/gev-models.html)
+
+📖 Review [Mixed logit supplemental notes](/teaching/ENCI707/supplemental/mixed-logit-models.html)
 
 ## Deliver
-None
+📝 Logit model group assignment due Mar. 19 by 11:59 PM on D2L.
+
+📝 Draft data and experimental design due Mar. 21 by 11:59 PM on D2L.
 
 <br><br>
 

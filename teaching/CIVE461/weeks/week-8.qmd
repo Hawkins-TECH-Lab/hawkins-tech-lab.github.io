@@ -4,7 +4,6 @@ subtitle: "Transportation Equity"
 editor: visual
 ---
 
-
 ## Prepare
 
 📖 Read notes on [Trip Distribution](/teaching/CIVE461/supplemental/trip-distribution.html)
@@ -15,7 +14,7 @@ editor: visual
 
 ## Practice
 
-None
+📖 Review [binary logit derivation notes](/teaching/CIVE707/supplemental/binary-logit.html)
 
 <br><br>
 

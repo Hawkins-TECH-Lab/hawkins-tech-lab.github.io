@@ -1,6 +1,6 @@
 ---
 title: "Active Exercise 13 - Policy Analysis"
-sidebar: CIVE461
+sidebar: ENCI707
 ---
 
 ::: callout-important

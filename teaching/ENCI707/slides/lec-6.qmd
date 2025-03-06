@@ -2,7 +2,7 @@
 title: "Lecture 6 - Advanced Choice Models"
 subtitle: "ENCI707: Engineering Demand and Policy Analysis"
 footer:  "[ENCI707 Home](/teaching/ENCI707/)"
-logo: "../images/logo.png"
+logo: "../../../assets/images/teaching/ENCI707/logo.png"
 format: 
   revealjs: 
     theme: simple
@@ -15,120 +15,339 @@ execute:
 ## Outline
 
 ::: incremental
-1.  Basis for choice modeling
-2.  Theory
-3.  Logit choice model
+1.  Choice bundle
+2.  Sequential logit model
+3.  Simultaneous logit model
+4.  Nested logit model
+    a. Estimation
+    b. Correlation
+    c. Elasticity
+    d. Application to address IIA
+5. Nested logit model with scale heterogeneity
+6. Nested logit examples
+7. Introduction to GEV
+8. MNL/NL as GEV models
+9. Introduction to mixed logit
 :::
 
-## Basis for Choice Modeling {.smaller}
+# Discrete Choice of Choice Bundles
 
--   Aggregate demand models (such as those we have been discussing) based on observations for **groups of travelers** or **average relations** for zones
--   **Discrete choice:** probability an individual chooses a given option a function of their socioeconomic characteristics & relative attractiveness of the option
--   Cannot estimate via least squares because probability is unobserved – only observe choice
--   Models are **probabilistic** & do not give an outcome value such as **trips** – must use probability concepts to generate discrete outcomes (summation over all observations to give expected number choosing option or use sample enumeration to allocate discrete outcomes)
+## Discrete Choice: Choice Bundle {.smaller}
+::::: columns
+::: {.column width="75%"}
+- **Choice bundle**, for example choice of making a shopping trip at a particular location:
+    - Choice of making a shopping trip compared with no trip or any other trips.
+    - Choosing a mode of travel to reach a destination.
+    - Choosing a particular location over other possible locations.
+- Different **substitution patterns** may exist in three components of shopping trip choice.
+- Overall, a **single discrete choice** but multiple components of choices. 
+    - Individual component have no meaning
+::: {.column width="25%"}
+![](../../../assets/images/teaching/ENCI707/Lecture6/choice_bundle1.svg){fig-align="center"}
+:::
+:::::
 
-## Basis for Choice Modeling {.smaller}
+## Discrete Choice: Choice Bundle {.smaller}
+::::: columns
+::: {.column width="75%"}
+- Choice of Park & Ride as a mode to make commuting trip:
+    - Choice of Park & Ride station location
+    - Choice of Park & Ride over all other possible modes, e.g., drive all way, car passenger, transit all way
+- Different **substitution patterns** may exist between choices of modes as well as between alternative Park & Ride station locations
+- Overall, a **single discrete choice** but **multiple components of choices**
+    - Individual component have no meaning
+::: {.column width="25%"}
+![](../../../assets/images/teaching/ENCI707/Lecture6/choice_bundle2.svg){fig-align="center"}
+:::
+:::::
 
--   Individuals derive **utility** from the use of alternatives defined by a **utility function** often denoted by V $$Vpeanut butter = 0.25 – 1.0 ALLERGY - 0.5 PRICE + 0.25 ORGANIC$$
--   Need probability value between 0 & 1. Various forms, generally with an s-shaped plot. Main ones are $$𝐿𝑜𝑔𝑖𝑡:𝑃_1=exp⁡(𝑉_1 )/(exp⁡(𝑉1)+exp⁡(𝑉2))$$ $$𝑃𝑟𝑜𝑏𝑖𝑡:𝑃_1=\int_{-\infty}^{\infty}⁡\int_{-\infty}^{V_1-V_2+x_1}\frac{⁡exp⁡(\frac{−1}{2(1−\rho^2)} (\frac{𝑥_1}{\sigma_1})^2−\frac{2\rho 𝑥_1 𝑥_2}{\sigma_1 \sigma_2}+(\frac{𝑥_2}{\sigma_2})^2}{2\pi\sigma_1 \sigma_2 \sqrt{1−\rho^2 }} 𝑑𝑥_2 𝑑𝑥_1$$
+## Modelling Choice Bundles {.smaller}
+- We can break the choice components to **capture substitution patterns** that exists at different component levels
+- Modelling the choice components
+    - **Sequentially** model individual choice components
+    - Specifying a **combinatorial space** of choice components and model **simultaneously** as a single discrete choice
+    - Modelling as **hierarchical choice** where choice components can be nested within another choice:
+        - **More correlated choices** are nested within **less correlated choices**:
+        - **Example:** if people are more likely to switch shopping location than travel mode to shopping, location choice is nested within mode choice
 
-## Properties of Discrete Choice (DC)
+## Modelling Choice Bundles {.smaller}
+- Breaking the choice components to capture substitution patterns that exist at different component level is a technical approach
+- Breaking a choice bundle **does not** define the sequence of choices:
+    - Shopping location choice nested within shopping trip mode choice **does not** mean location choice is chosen first then mode is chosen!
+    - Nesting is about correlation among choice alternatives
 
--   Based on theories of **individual behavior** & do not constitute physical analogies – therefore stable over time & space
--   Can be more **statistically efficient** than aggregate models because each observation is an outcome rather than using aggregations of potentially hundreds of observations
--   DM less likely to suffer from bias due to correlation between aggregate units – i.e., **ecological correlation** (fallacy)
+# Sequential Logit Model of Choice Bundle
 
-## Ecological Fallacy
+## Sequential Logit Model of Choice Bundle {.smaller}
+- **Examples:** Mode ($m$) and Destination Choice ($d$):
+    - Choose destination
+    - Then choose mode, given (**conditional upon**) the destination choice
+- Sequentially modelling the choices of alternatives step by step
+![](../../../assets/images/teaching/ENCI707/Lecture6/sequential_logit.svg){fig-align="center"}
 
-![](../images/lecture5/eco_fallacy.png){fig-align="center"}
+## Sequential Logit Model of Choice Bundle {.smaller}
+![](../../../assets/images/teaching/ENCI707/Lecture6/sequential_logit.svg){fig-align="center"}
 
-## Theoretical Framework {.smaller}
+$$Pr(d) = \frac{\exp(V_d)}{\sum_{d' \in D} \exp(V_d')} \text{, } Pr(m|d) = \frac{\exp(V_{m|d})}{\sum_{m' \in M} \exp(V_{m'|d})}$$
+- Joint probability of choice
+$$Pr(md) = \frac{\exp(V_d)}{\sum_{d' \in D} \exp(V_d') \sum_{m' \in M} \exp(V_{m'|d})}$$
+$$Pr(md) = \frac{\exp(V_d + V_{m|d})}{\sum_{d' \in D} \exp(V_{d'})} \frac{\exp(V_{m|d})}{\sum_{m' \in M} \exp(V_{m'|d'})}$$
 
--   Individuals belong to a **homogeneous population** $N$, act rationally, & **possess perfect information** – i.e., they always select the option that maximizes their net personal utility subject to legal, social, physical, &/or budgetary (both time & money) constraints
--   There is a certain set $𝐴 = \{𝐴_1, …𝐴_i,…𝐴_I\}$ of available alternatives & a set X of vectors of measured attributes of individuals & their alternatives
--   An individual $n$ is endowed with a set of attributes $𝑥 \in 𝑋$ & faces a choice set $𝐴(n) \in 𝐴$
--   We will assume choice set is predetermined for individuals
+## Sequential Logit Model of Choice Bundle {.smaller}
+- **Conditions are arbitrary:** the estimation process does not allow any verification of the validity of it
+- If the actual conditional relationship is opposite to what is assumed in the model, the model will give **wrong forecast**
+- Sequential estimation **does not** capture relative difference in substitution patterns between different choice component of  the bundle
+- Parameter estimation is **inefficient and biased**
 
-## Theoretical Framework
+## Estimation: Sequential Logit Model {.smaller}
+- Closed form, so classical estimation techniques are feasible: **Maximum Likelihood**
+- Likelihood of one observation i for mode choice:
+$$𝐿_𝑖=\prod_{𝑚=1}^𝑀(Pr⁡(𝑚_𝑖))^{\delta_𝑚} \text{, } \delta_m = 1 \text{ if the chosen mode is m; 0 otherwise}$$
+- Likelihood of one observation i for destination choice:
+$$𝐿_𝑖=\prod_{𝑑=1}^𝐷(Pr⁡(𝑑_𝑖))^{\delta_𝑑} \text{, } \delta_d = 1 \text{ if the chosen destination is d; 0 otherwise}$$
+- Specification test, statistical significance, goodness-of-fit, elasticity/marginal effect: as explained for MNL.
 
--   Modeler, an observer, does not **posses complete information** about all elements considered by the individual making choice
--   Modeler assumes $𝑈_{ni}$ can be represented by two components:
-    -   A **measurable**, **systematic**, or **representative** part $𝑉_{ni}$, which is a function of the measured attributes $x$
-    -   A random part $\epsilon_{ni}$, which reflects **indiosyncratic** & **taste variation**, together with measurement or observational errors made by the modeler
+# Simultaneous Logit Model of Choice Bundle
 
-## Theoretical Framework
 
--   Modeler sets utility $𝑈_{ni}=𝑉_{ni}+\epsilon_{ni}$ to address two apparent irrationalities
-    1.  That two individuals faced with the **same situation** & having the **same personal attributes** make different choices
-    2.  That an individual may not select the alternative that **appears** to be the *best one*
--   Often assumed $V_{ni}$ given by $\sum_k^K \beta_{ik} x_{nik}$ here $\beta_{ik}$ are assumed **constant** for all individuals $N$ in the homogeneous set but **may vary across alternatives** $I$
+## Simultaneous Logit Model of Choice Bundle {.smaller}
+- Restructure the **sequential decisions** into a finite number of alternative pairs
+- Alternative pairs are **mutually exclusive** and **collectively exhaustive:** single discrete choice case
+- The example of mode(m) and destination(d) choice:
+![](../../../assets/images/teaching/ENCI707/Lecture6/simultaneous_logit1.svg){fig-align="center"}
+$$Pr(md) = \frac{\exp(V_d + V_{m|d})}{\sum_{d' \in D}\sum_{m' \in M} \exp(V_{d'} + V_{m'|d'})}$$
 
-## Theoretical Framework {.smaller}
+## Simultaneous Logit Model of Choice Bundle {.smaller}
+$$Pr⁡(𝑚𝑑)= \frac{\exp(𝑉_𝑑+𝑉_{𝑚|𝑑})}{\sum_{𝑑'^/\in 𝐷}\sum_{𝑚'^/\in 𝑀} \exp⁡(𝑉_{𝑑'} +𝑉_{𝑚'|𝑑'})$$
+$$Pr⁡(𝑚𝑑)=\frac{\exp(𝑉_𝑑+𝑉_{𝑚|𝑑})}{\sum_{𝑑'^/\in 𝐷} \exp⁡(𝑉_{𝑑'}) \sum_{m'^/\in M}\exp(𝑉_{𝑚'|𝑑'})$$
+$$Pr⁡(𝑚𝑑)=\frac{\exp(𝑉_𝑑+𝑉_{𝑚|𝑑})}{\sum_{𝑑'^/\in 𝐷} \exp⁡(𝑉_{𝑑'} + \ln(\sum_{m'^/\in M}\exp(𝑉_{𝑚'|𝑑'}))$$
 
--   Individual chooses an alternative based on $𝑈_{ni}≥ 𝑈_{jn} \forall A_j \in A(n)$
--   Or: $𝑉_{ni}  – 𝑉_{nj}≥\epsilon_{nj}  − \epsilon_{ni}$ (notice swapping of $i$ & $j$)
+## Simultaneous Logit Model of Choice Bundle {.smaller}
+- Deriving marginal choice probability from simultaneous choice probabilities:
+$$Pr⁡(𝑑)= \sum_𝑚 Pr⁡(𝑚𝑑)_m = \frac{\sum_𝑚 \exp⁡(𝑉_𝑑+𝑉_{𝑚|𝑑})}{(\sum_{𝑑'^/\in 𝐷} \exp⁡(𝑉_{𝑑'}+\ln⁡(\sum_(𝑚' \in 𝑀) \exp⁡(𝑉_{𝑚'|𝑑'}))$$
+$$Pr⁡(𝑑)=\frac{\sum_𝑚 \exp⁡(𝑉_𝑑+\ln(\sum_{m \in M} \exp(V_{m|d})))}{(\sum_{𝑑'^/\in 𝐷} \exp⁡(𝑉_{𝑑'}+\ln⁡(\sum_(𝑚' \in 𝑀) \exp⁡(𝑉_{𝑚'|𝑑'}))$$
+$$Pr⁡(𝑚)=\sum_{d} Pr(md) = \frac{\sum_d \exp(V_d + V_{m|d})}{\sum_{d' \in D} \exp(V_d + \ln(\sum_{m' \in M} \exp(V_{m'|d'})))}$$
 
-Not possible to know with certainty if the inequality holds, so use $$𝑃_{ni}  = 𝑃(\epsilon_{nj} \leq \epsilon_{ni} + (V_{ni} - V_{nj})) \forall A_j \in A(n)$$ - Do not know distribution of joint residuals, so cannot derive analytical expression for model - Can denote $f(\epsilon) = f(\epsilon_1, \epsilon_2, ... \epsilon_I$ & know they are **random variables** with a certain distribution
+## Simultaneous Logit Model of Choice Bundle {.smaller}
+- Deriving sequential model from the joint model:
+$$Pr⁡(𝑚│𝑑)=\frac{Pr⁡(𝑚𝑑)|{(Pr⁡(𝑑)} = \frac{\exp(𝑉_𝑑+𝑉_{𝑚|𝑑})}{\exp(𝑉_{𝑑'})\sum_(𝑚'\in 𝑀) \exp(V_{m'|d'})}$$
+$$Pr⁡(𝑚│𝑑) = {\exp(𝑉_(𝑚|𝑑)}{(\sum_{𝑚' \in 𝑀} \exp⁡(𝑉_{𝑚'|𝑑'})}$$
+- The simultaneous model captures the influence of lower-level choice in the upper level by adding $\ln(\sum \exp(V_{m|d}))$, 
+    - Often called **Inclusive Value** (IV) or **Expected Maximum Utility** (EMU) of lower-level choice
+- However, it ignores the **scale difference** (differences in randomness) in two levels
 
-## Theoretical Framework {.smaller}
+## Simultaneous Logit Model of Choice Bundle {.smaller}
+- Unlike sequential model, simultaneous model incorporates expectations of conditional level utility at the conditioning levels:
+![](../../../assets/images/teaching/ENCI707/Lecture6/simultaneous_logit2.svg){fig-align="center"}
+- Systematic utility of destination choice:
+$$\tilde{V_d} = V_d + {Expected Maximum Utility of choice of mode}_d$$
+- Scale parameters are same (unity) in both levels.
 
--   Can note that distribution for $f(U)$ is the same but with mean $V$ rather than 0 $$P_{ni} = \int_{R_I} f(\epsilon) d\epsilon$$ $$\text{where } R_I = \begin{cases}
-    \epsilon_{nj} \leq \epsilon_{ni} + (V_{ni} - V_{nj}), & \forall A_j \in A(n) \\
-    V_{ni}) + \epsilon_{ni} \ge 0 \\
-    \end{cases}$$
--   Assuming independent & identically distributed (**IID**) residuals, $$f(\epsilon_1,...\epsilon_I) = \prod_i^I g(\epsilon_i)$$
--   And (drop $n$ for simplicity) $$P_i = \int_{-\infty}^\infty g(\epsilon_i) d\epsilon_i \prod_{j \neq i} \int_{-\infty}^{V_i-V_j+\epsilon_i} g(\epsilon_j) d\epsilon_j$$
+## Estimation: Simultaneous Logit Model {.smaller}
+- Closed form, so classical estimation techniques are feasible: Maximum Likelihood
+- Likelihood of one observation i:
+$$𝐿_𝑖=\prod_{𝑑𝑚=1}^{𝐷𝑀} (Pr⁡(𝑑_𝑖 𝑚_𝑖))^{\delta_{𝑑𝑚}} $$
+$$\delta_{𝑑𝑚}=1 \text{𝑖𝑓 𝑡ℎ𝑒 𝑐ℎ𝑜𝑠𝑒𝑛 𝑚𝑜𝑑𝑒 𝑚 𝑎𝑛𝑑 𝑑𝑒𝑠𝑡𝑖𝑛𝑎𝑡𝑖𝑜𝑛 𝑑 𝑝𝑎𝑖𝑟 𝑖𝑠 𝑐ℎ𝑜s𝑒𝑛, } 0 \text{𝑜𝑡ℎ𝑒𝑟𝑤𝑖𝑠𝑒}$$
+- Specification test, statistical significance, goodness-of-fit, elasticity/marginal effect: as explained for MNL.
 
-## Generating the Logit Model {.smaller}
+# Nested Logit Model of Choice Bundle
 
--   Assuming IID Gumbel (**Extreme Value Type I**) residuals, or equivalently that residual differences are **logistically distributed**, gives the standard multinomial logit specification
--   Termed *softmax function* in machine learning field $$P_{ni} = \frac{exp(\mu V_{ni})}{\sum_{A_j \in A(n)} exp(\mu V_{nj})}$$
--   Where $\mu$ is a **scale parameter** assumed equal to 1.0 for identification
+## Nested Logit Model {.smaller}
 
-![](../images/lecture5/logit_curve.png){.absolute bottom="0" right="0" width="35%"}
 
-## Logit Model Parameter Estimation
+## Nested Logit Model {.smaller}
+- Conditional choice of mode (m) for a give destination (d): an MNL model:
+- The expected maximum utility (EMU) of lower-level choice (m) for a particular upper-level choice alternative (d) is:               
+- We can derive the compounded systematic utility of upper-level choices as: 
+$$𝑉 ̃_𝑑=𝜇_𝑑 𝑉_𝑑+𝜇_𝑑/𝜇_𝑚  𝑙𝑛(\sum_(𝑚^/\in 𝑀)▒𝑒𝑥𝑝(𝜇_𝑚 𝑉_(𝑚^/ |𝑑) ) )$$
+We can define 𝜙=𝜇_𝑑∕𝜇_𝑚  where 𝜙 is known as the inclusive value or logsum parameter.
 
--   Commercial (& opensource) software exists to estimate model parameters using the method of maximum likelihood estimation
-    -   Apollo (R & free)
-    -   Biogeme (Python & free)
-    -   STATA (commercial)
-    -   LIMDEP (commercial)
-    -   GAUSS (commercial)
--   Parameter interpretation similar to regression (t-statistics, GoF, etc.)
+## Nested Logit Model {.smaller}
+- The unconditional probability of an upper-level choice alternative: an MNL
+$$$$
+$$$$
+- Scales should be non-negative: 
+- Scale approaching 0 indicates infinite variance, so fully random choice.
+- Scale approaching +∞ indicates zero-approaching variances, so deterministic choice.
 
-## Direct & Cross Elasticity
+## Nested Logit Model {.smaller}
+- To be a RUM choice model, the scale of the lower-level conditional choices should be higher than the scale of the upper-level choice (the opposite is true for variance)
+$$$$
+- Both scales are not identified individually, but, normalizing one of them make the other identified.
+- Typically, the upper-level scale is normalized to 1.
+- 
+$$$$
 
--   **Direct elasticity:** direct effect of changing a variable value related to a good on demand for the same good
-    -   E.g., elasticity of transit demand wrt transit fare, transit travel time, or transit headway
--   **Cross elasticity:** effect of changing a variable value related to a good on demand for a different good
-    -   E.g., elasticity of transit demand wrt auto travel time
+## Estimation: Nested Logit Model {.smaller}
+- Closed form, so classical estimation techniques are feasible: e.g., Maximum Likelihood.
+- Likelihood of one observation i:
+- Specification test, statistical significance, goodness-of-fit: as explained for MNL.
+- Testing significance of scale parameter: with 𝜇_𝑑 normalized to 1, 𝜇_𝑚 should be significantly greater than 1. 
 
-## Logit - Direct Elasticity
+## Nested Logit Model: Correlations {.smaller}
+- The nesting structure induces a correlations pattern:
+- Upper-level choices are IIA, so correlations among unobserved utilities are zero.
+- Conditional lower-level choices are IIA (within a nest), so, correlations among unobserved utilities are zero.
+- However, as they related to the upper-level choices, nested lower-level choices have a block correlation
+- In our case, the (approximate) correlations among the choices of ‘m’ for a particular choice of ‘d’ is:
+$$$$
 
-Direct elasticity of the probability of an individual $n$ choosing alternative $i$ wrt a change in an attribute/independent variable $X_{ik}$ with coefficient $\beta_k$ (ignoring $n$ subscripts for simplicity)
+## Nested Logit Model: Elasticities {.smaller}
 
-$$e_{direct} = \frac{\partial P_i}{\partial X_{ik}} \frac{X_{ik}}{P_i}=(1-P_i)X_{ik}\beta_k$$
 
-## Logit - Cross Elasticity {.smaller}
+## Nested Logit Model: Elasticities {.smaller}
 
--   Cross elasticity of the probability of an individual $n$ choosing alternative $i$ wrt a change in an attribute/independent variable $X_{jk}$ with coefficient $\beta_k$ for a different alternative
 
-$$e_{cross} = -P_j X_{jk}\beta_k$$
+## Nested Logit {.smaller}
+- Same procedures as MNL are applicable for NL:
+    - Goodness-of-fit
+    - Specification test
+    - Validation
+    - Collinearity, budget/income effect.
+    - Market segmentation.
+    - Aggregating elasticity/marginal effects.
+    - Elasticity of attribute of choice alternatives, attributes of choice makers, or categorical variables.
+    - Policy evaluations.
 
--   Above is same regardless of alternative $i$. I.e., **all alternatives** have the same cross-elasticity wrt an attribute $k$ of alternative $j$
--   Above results from independence of irrelevant alternatives (**IIA**) property of basic logit model
+## Interpretation of Nesting in NL Model {.smaller}
+- Scale is inverse of variance: higher scale means lower randomness (variance) and higher correlations
+- If choices of ‘m’ is nested within the choice of ‘d’, it means that choice maker is more likely to switch ‘m’ choices before switching ‘d’ choices
+- Block correlations of nested choices explain the strength/patterns of such differential switching between different levels of nested logit model 
 
-## Independence of Irrelevant Alternatives (IIA) Property
+##  IID and Nested Logit Model {.smaller}
+Consider a route choice problem: In network, multiple alternative routes having common link will have correlated properties.
+Example: 2 routes with no partial overlap. Under equilibrium, both have the same average travel time: $$
+- Consider: systematic utility of choosing a route: $$
+- Logit choice probability: 
+$$$$
 
-Consider we have two modes: auto (a) & bus (b)
+##  IID and Nested Logit Model {.smaller}
+- Add a 3rd route that has partial overlap with route 2.
+- Under equilibrium, all have the same average travel time:	
+- Consider: systematic utility of choosing a route:
+- Logit choice probability: 
+- Route 2 and 3 are very similar!
 
-$$\frac{P_a}{P_b} = \frac{exp(V_a)}{exp(V_b)} = exp(V_a - V_b)$$ I.e., the relative probability of choosing auto vs. bus depends **only** on the utilities of the two alternatives
+##  IID and Nested Logit Model {.smaller}
+- Let us change the utility structure
 
--   Now what if our buses are **red (rb)** & we paint half **blue (bb)**?
+- Commonalities between 2 and 3 by common w lead to correlation with respect to common ε.
+- Further assumption:
 
-## IIA Cont…
 
--   If the IIA assumption does not hold, we can make other error distribution assumptions
-    -   Nested logit (can handle complex decision structures)
-    -   Probit (normal error terms, very general model, but can be difficult to work with it)
+##  IID and Nested Logit Model {.smaller}
+$$$$
+$$$$
+- So, the inclusive value of lower-level choice:
+$$$$
+- Upper-level utility (considering vr =0):
+$$$$
+- Probability of choosing Route 1:
+$$$$
+
+## Nested Logit Model for Single Choice {.smaller}
+$$$$
+
+- Nested Logit (NL) model can capture various levels of correlated properties (substitution patterns) among alternatives of a single choice (as opposed to choice bundle) through the nesting structure:
+- Within a particular level, alternatives are IIA.
+- Between levels, various levels of substitution patterns are captured through nesting structures.
+
+## Nested Logit to Address IIA {.smaller}
+
+
+## Nested Logit to Address IIA {.smaller}
+
+
+## Nested Logit to Address IIA {.smaller}
+
+
+## Nested Logit to Address IIA {.smaller}
+
+
+## Nested Logit to Address IIA {.smaller}
+
+## Nested Logit & Heteroskedastic (systematic) Covariance {.smaller}
+
+# Application of Nested Logit Model: Examples {.smaller}
+
+##
+![](../../../assets/images/teaching/ENCI707/Lecture6/nested_logit_paper1.svg){fig-align="center"}
+
+##
+![](../../../assets/images/teaching/ENCI707/Lecture6/nested_logit_paper2.svg){fig-align="center"}
+
+##
+![](../../../assets/images/teaching/ENCI707/Lecture6/nested_logit_paper3.svg){fig-align="center"}
+
+# Introduction to GEV
+
+## Models {.smaller}
+- MNL: A Special Case of GEV
+- NL: A Special Case of GEV
+- Ordered GEV (OGEV) model
+- Paired Combinatorial Logit (PCL) model
+- Generalized Logit (GenL) model
+- Generalized Nested Logit/Cross-Nested Logit Model 
+
+##  RUM-Based Discrete Choice Model {.smaller}
+
+
+##  RUM-based Discrete Choice Model {.smaller}
+
+## Generating Function & GEV Model {.smaller}
+McFadden (1978). Modelling the Choice of Residential Location," in Spatial Interaction Theory and Planning Models, ed. by Anders Karlqvist, et al. Amsterdam: North-Holland Publishing Company, pp. 75-96
+
+- Generating function: A formal power series (polynomial function) that encodes an infinite sequence of 𝑥 (place holder rather than a number) by treating them as the coefficient of the power series: especially powerful for recurring relationships
+    - the function may not be a true function and the variables may be intermediate information units
+    - Instead of dealing with infinite sequence, generating function gives a single function that encodes the sequence
+    - A generating function expresses a sequence (the sequence of coefficients): the 𝑖𝑡ℎ term of the sequence is the coefficient of 𝑥𝑖 in the generating function 
+
+## GEV Generating Function, G(..) {.smaller}
+- Define a generating function G(…) for the multivariate joint distribution of random utilities (ε) as
+$$$$
+- Following properties are key for the G() function:
+    1. G(y)≥0 for any argument, 𝑦
+    2. G(y) is homogenous of degree D >0. This means 𝐺(𝛼𝑦_1,𝛼𝑦_2,…..,𝛼𝑦_𝐽 )=𝛼^𝐷 𝐺(𝑦_1,𝑦_2,….., 𝑦_𝐽 ) for 𝛼>0
+    3. 𝐿𝑖𝑚〗_(𝑦_𝑗→∞)   𝐺(𝑦_1,𝑦_2,….., 𝑦_𝐽 )=+∞ for j=1, 2, 3…..J
+    4. Cross partial derivatives exists and are continuous and their signs change in a particular way:  
+$$$$
+
+##  Generalized Extreme Value (GEV) Model {.smaller}
+
+##  Generalized Extreme Value (GEV) Model {.smaller}
+- Choice probability of a GEV model based on the GEV generating function (for G(..) of homogenous to degree 1)
+$$$$
+- The general formulation of Choice Probability of a GEV model based on the GEV generating function
+$$$$
+- Expected Maximum Utility of the GEV model generated by the G(..) function:
+$$$$
+
+## Generalized Extreme Value (GEV) Model {.smaller}
+$$$$
+- GEV mode is the most flexible closed-form model that can capture a wide variety of choice models:
+For different generating function, different choice model can arise.
+MNL and NL are special cases of the GEV model
+- Other GEV models: Network GEV, Cross-nested Logit, Paired-Combinatorial Logit etc. for the G(..) function with degree, 𝜇 
+
+## Estimation: GEV Model {.smaller}
+- GEV models are of Closed form and so can be estimated by using the classical estimation technique: Classical Maximum Likelihood 
+- However, the conditions on scale (similarity or dissimilarity) parameters needs to be met.
+
+Constrained Maximum Likelihood (CML) method for the GEV model estimation that maintains restrictions on parameter value range while estimating 
+- One can use mathematical expressions to ensure such conditions while using classical Maximum Likelihood approach
+- Classical Maximum Likelihood is less computationally intensive than the CML 
+
+# Multinomial Logit as a GEV Special Case
+
+##  Multinomial Logit Model {.smaller}
+$$$$
+
+# Nested Logit as a GEV Special Case {.smaller}
+
+## Nested Logit Model {.smaller}
+- Consider J alternatives nested in k non-overlapping nests:
+
+## Nested Logit Model {.smaller}
+$$$$
+
+# Introduction to Mixed Logit

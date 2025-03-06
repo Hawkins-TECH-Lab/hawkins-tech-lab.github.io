@@ -1,6 +1,6 @@
 ---
 title: "Application Exercise 8 - Computing Models"
-sidebar: CIVE461
+sidebar: ENCI707
 ---
 
 ::: callout-important

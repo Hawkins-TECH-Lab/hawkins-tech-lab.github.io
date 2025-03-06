@@ -23,7 +23,7 @@ The report should include at least the following sections:
 - Selection of the best model specification (select one) for each model task.
 - Discuss the elasticities of independent variables of the final models.
 
-The assignment deliverable should have the form of a professional report and should not be more than 10 pages (singles-spaced).
+The assignment deliverable should have the form of a professional report and should not be more than 10 pages (single-spaced).
 
 ## Overall grading
 
@@ -34,7 +34,7 @@ The grade breakdown is as follows:
 | **Introduction**                   | 5 pts   |
 | **Correct model interpretation**   | 10 pts  |
 | **Includes all required elements** | 5 pts   |
-| **Formatting and report quality**  | 10 pts  |
+| **Formatting and report quality**  | 5 pts  |
 
 ### Grading summary
 

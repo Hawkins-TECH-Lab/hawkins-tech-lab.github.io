@@ -2,7 +2,7 @@
 title: "Lecture 4 - Disaggregate Econometric Choice Theory"
 subtitle: "ENCI707: Engineering Demand and Policy Analysis"
 footer:  "[ENCI707 Home](/teaching/ENCI707/)"
-logo: "../images/logo.png"
+logo: "../../../assets/images/teaching/ENCI707/logo.png"
 format: 
   revealjs: 
     theme: simple
@@ -58,9 +58,9 @@ Many travel demand related choices are:
 - Choice of shared vehicle as mode -> # of shared vehicle trips
 
 ## Theory of Choice Behaviour
-- **Descriptive (or positive):** how human beings behave, not how they should/ought to behave.
-- **Abstract:** that can be formalized in general cases not specific to particular circumstances.
-- **Operational:** can be applied to develop models with variables and parameters that can be observed and estimated. Models can be used for prediction and/or policy evaluation.
+- **Descriptive (or positive):** how human beings behave, not how they should/ought to behave
+- **Abstract:** that can be formalized in general cases not specific to particular circumstances
+- **Operational:** can be applied to develop models with variables and parameters that can be observed and estimated. Models can be used for prediction and/or policy evaluation
 
 ## Framework of Choice Theory {.smaller}
 - Choice as outcome of sequential decision-making:
@@ -92,13 +92,13 @@ Many travel demand related choices are:
 
 **Example:**
 
-$C$ = { Private car, Uber, Taxi, Bus, Bicycle, Walk}
+$C$ = { Private car, Ridehail, Taxi, Bus, Bicycle, Walk}
 
 - No driver’s license, distance > 3 km
 
-$C_i$ = { Uber, Taxi, Bus, Bicycle}
+$C_i$ = { Ridehail, Taxi, Bus, Bicycle}
 
-- No driver’s license, distance > 3 km & not aware of Uber
+- No driver’s license, distance > 3 km & not aware of Ridehail
 
 $C_{ci}$ = { Taxi, Bus, Bicycle}
 
@@ -177,7 +177,7 @@ $$𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟} < 𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖�
 Car and transit in competition, if
 $$𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟} < 𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} \text{ & } 𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} > 𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}$$
 
-Is the traveler willing to pay extra ($Cost_{car}-Cost_{transit}$) to save ($Time_{transit} -Time_{car}$)?
+Is the traveler willing to pay extra $(Cost_{car}-Cost_{transit})$ to save $(Time_{transit} -Time_{car})$?
 
 If yes (pick car): $\left(\frac{\beta_𝑡}{\beta_𝑐}\right)𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟} + 𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} \leq \left(\frac{\beta_𝑡}{\beta_𝑐}\right)𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} + 𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}$
 
@@ -205,11 +205,11 @@ $$Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( \epsilon_{ik} - \epsilon_{ij} \leq V_{ij} - V_{i
 ## RUM-Based Discrete Choice {.smaller}
 - **Fully specified** choice set $C_i$
 - Attributes of alternatives are **completely defined**
-- Only **differences in utility** matters
+- Only **differences in utility** matter
 - **Systematic utility function** is specified as a function of attributes
 - An attribute may have the **same** (generic) weighting factors (coefficient) for all alternatives **if it varies across the alternatives** (e.g., travel time, travel cost, etc.).
 - An attribute may have **different** weighting factors (coefficient) for different alternatives if it **does not vary across the alternatives** (age, gender, income, etc.).
-- Assumption on distribution of random utility is necessary to derive choice probability: Stochastic Choice Model
+- Assumption on distribution of random utility is necessary to derive choice probability: **Stochastic Choice Model**
 
 
 ## Binary Discrete Choice {.smaller}
