@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.56">
+<meta name="generator" content="quarto-1.6.39">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,10 +35,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-370a8468b885aab1167a3ecb223a7384.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -569,7 +569,7 @@ ul.task-list li input[type="checkbox"] {
 <td><a href="../..\teaching/ENCI707/weeks/week-7.html">7</a></td>
 <td>Wed, Feb 26</td>
 <td>Computational Model Estimation</td>
-<td><a href="../..\teaching/ENCI707/weeks/week-7.html#prepare">📖</a></td>
+<td><a href="../..\teaching/ENCI707/weeks/week.html#prepare">📖</a></td>
 <td></td>
 <td><a href="../..\teaching/ENCI707/ae/ae-7.html" title="Computing Activity">🖥️</a></td>
 <td><a href="../..\teaching/ENCI707/assignments/assignment-2.html">📝</a></td>
@@ -606,42 +606,42 @@ ul.task-list li input[type="checkbox"] {
 <td></td>
 </tr>
 <tr class="odd">
-<td><a href="../..\teaching/ENCI707/weeks/week-9.html">10</a></td>
+<td><a href="../..\teaching/ENCI707/weeks/week-10.html">10</a></td>
 <td>Wed, Mar 19</td>
 <td>Applying Disaggrate Demand Models</td>
 <td><a href="../..\teaching/ENCI707/weeks/week-10.html#prepare">📖</a></td>
-<td><a href="../..\teaching/ENCI707/slides/lec-5.html" title="MNL Lecture">📋</a></td>
+<td></td>
 <td><a href="../..\teaching/ENCI707/ae/ae-10.html" title="MNL Activity">🖥️</a></td>
 <td><a href="../..\teaching/ENCI707/assignments/assignment-3.html">📝</a></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
 <td><a href="../..\teaching/ENCI707/project/project-description.html#draft-plan">📝</a></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><a href="../..\teaching/ENCI707/weeks/week-11.html">11</a></td>
 <td>Wed, Mar 26</td>
-<td>Dissaggrate Demand Models: Advanced Choice Models</td>
-<td><a href="../..\teaching/ENCI707/weeks/week.html#prepare">📖</a></td>
+<td>Advanced Choice Models</td>
+<td><a href="../..\teaching/ENCI707/weeks/week-11.html#prepare">📖</a></td>
 <td><a href="../..\teaching/ENCI707/slides/lec-6.html" title="Advanced Choice Lecture">📋</a></td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><a href="../..\teaching/ENCI707/weeks/week-12.html">12</a></td>
 <td>Wed, Apr 02</td>
 <td>Causal Inference</td>
-<td><a href="../..\teaching/ENCI707/weeks/week.html#prepare">📖</a></td>
+<td><a href="../..\teaching/ENCI707/weeks/week-12.html#prepare">📖</a></td>
 <td><a href="../..\teaching/ENCI707/slides/lec-7.html" title="Causal Inference Lecture">📋</a></td>
 <td><a href="../..\teaching/ENCI707/ae/ae-11.html" title="Causal Inference Activity">🖥️</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td>Geographic Data Science</td>
+<td></td>
+<td></td>
+<td><a href="../..\teaching/ENCI707/ae/ae-13.html" title="Spatial Regression Activity">🖥️</a></td>
 <td></td>
 <td></td>
 </tr>
@@ -755,8 +755,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -867,7 +865,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
