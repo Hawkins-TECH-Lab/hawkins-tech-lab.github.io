@@ -886,7 +886,7 @@
     "href": "teaching/ENCI707/slides/lec-5.html#specification-tests",
     "title": "Lecture 5 - Multinomial Logit",
     "section": "Specification Tests",
-    "text": "Specification Tests\n\nExpected signs of the coefficients\nExpected substitution patterns - e.g., value of time savings, etc.\nLikelihood ratio test (\\(\\times -2\\) by Wilks Theorem):\\(-2[LL(\\beta)-LL(\\beta^{'})]\\) is \\(\\chi^2\\) distributed with \\(k\\) (= number of restricted parameters = the difference between number of parameters of two models) degrees of freedom\nGoodness-of-Fit measures: Rho-square, AIC, BIC"
+    "text": "Specification Tests\n\nExpected signs of the coefficients\nExpected substitution patterns - e.g., value of time savings, etc.\nLikelihood ratio test (\\(\\times\\)-2 by Wilks Theorem):\\(-2[LL(\\beta)-LL(\\beta^{'})]\\) is \\(\\chi^2\\) distributed with \\(k\\) (= number of restricted parameters = the difference between number of parameters of two models) degrees of freedom\nGoodness-of-Fit measures: Rho-square, AIC, BIC"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-5.html#specification-of-logit-model",
