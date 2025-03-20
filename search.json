@@ -499,7 +499,7 @@
     "href": "teaching/ENCI707/weeks/week-13.html#deliver",
     "title": "Week 13",
     "section": "Deliver",
-    "text": "Deliver\n📝 Draft data and experimental design due Apr. 04 by 11:59 PM on D2L.\n\n\nBack to course schedule ⏎",
+    "text": "Deliver\nNone\n\n\nBack to course schedule ⏎",
     "crumbs": [
       "Weekly Materials",
       "Week 13"
@@ -508,9 +508,9 @@
   {
     "objectID": "teaching/ENCI707/weeks/week-11.html",
     "href": "teaching/ENCI707/weeks/week-11.html",
-    "title": "Week 10",
+    "title": "Week 11",
     "section": "",
-    "text": "📖 Review Discrete Choice Methods with Simulation Ch. 4 DCMS3",
+    "text": "📖 Review Discrete Choice Methods with Simulation Ch. 4 DCMS4",
     "crumbs": [
       "Weekly Materials",
       "Week 11"
@@ -519,9 +519,9 @@
   {
     "objectID": "teaching/ENCI707/weeks/week-11.html#prepare",
     "href": "teaching/ENCI707/weeks/week-11.html#prepare",
-    "title": "Week 10",
+    "title": "Week 11",
     "section": "",
-    "text": "📖 Review Discrete Choice Methods with Simulation Ch. 4 DCMS3",
+    "text": "📖 Review Discrete Choice Methods with Simulation Ch. 4 DCMS4",
     "crumbs": [
       "Weekly Materials",
       "Week 11"
@@ -530,7 +530,7 @@
   {
     "objectID": "teaching/ENCI707/weeks/week-11.html#participate",
     "href": "teaching/ENCI707/weeks/week-11.html#participate",
-    "title": "Week 10",
+    "title": "Week 11",
     "section": "Participate",
     "text": "Participate\n📋 Lecture 6 - Advanced Logit Models",
     "crumbs": [
@@ -541,7 +541,7 @@
   {
     "objectID": "teaching/ENCI707/weeks/week-11.html#practice",
     "href": "teaching/ENCI707/weeks/week-11.html#practice",
-    "title": "Week 10",
+    "title": "Week 11",
     "section": "Practice",
     "text": "Practice\n📖 Review GEV supplemental notes\n📖 Review Mixed logit supplemental notes",
     "crumbs": [
@@ -552,7 +552,7 @@
   {
     "objectID": "teaching/ENCI707/weeks/week-11.html#deliver",
     "href": "teaching/ENCI707/weeks/week-11.html#deliver",
-    "title": "Week 10",
+    "title": "Week 11",
     "section": "Deliver",
     "text": "Deliver\n📝 Logit model group assignment due Mar. 19 by 11:59 PM on D2L.\n📝 Draft data and experimental design due Mar. 21 by 11:59 PM on D2L.\n\n\nBack to course schedule ⏎",
     "crumbs": [
@@ -767,7 +767,7 @@
     "href": "teaching/ENCI707/slides/lec-5.html#discrete-multinomial-choice",
     "title": "Lecture 5 - Multinomial Logit",
     "section": "Discrete Multinomial Choice",
-    "text": "Discrete Multinomial Choice\nA multinomial choice reduced into an equivalent binary choice problem:\n\n\\[𝑈_𝑗 \\ge \\max_{j,j' \\in C_i, j \\neq j'} U_{j'}\\] \\[𝑈_𝑗 \\ge 𝑈_𝑘 \\text{, } k \\neq j \\text{ & } 𝑗,𝑘 \\in 𝐶_𝑖\\]\n\nwhere \\(C_i\\) is the choice set of decision maker \\(i\\), \\(j\\) is the best alternative, and \\(k\\) is the second best alternative\nProbability of choosing alternative j:\n\n\\[Pr⁡(𝑗) = Pr⁡((𝑉_𝑗+\\epsilon_𝑗) \\ge (𝑉_𝑘+\\epsilon_𝑘 ))\\] \\[Pr⁡( 𝑗)=Pr⁡(\\epsilon_𝑘 \\leq (𝑉_𝑗−𝑉_𝑘+\\epsilon_𝑗 )) \\text{ (a CDF function)}\\]"
+    "text": "Discrete Multinomial Choice\nA multinomial choice reduced into an equivalent binary choice problem:\n\n\\[𝑈_𝑗 \\ge \\max_{j,j' \\in C_i, j \\neq j'} U_{j'}\\] \\[𝑈_𝑗 \\ge 𝑈_𝑘 \\text{; } k \\neq j \\text{ & } j,k \\in C_i\\]\n\nwhere \\(C_i\\) is the choice set of decision maker \\(i\\), \\(j\\) is the best alternative, and \\(k\\) is the second best alternative\nProbability of choosing alternative j:\n\n\\[Pr⁡(𝑗) = Pr⁡((𝑉_𝑗+\\epsilon_𝑗) \\ge (𝑉_𝑘+\\epsilon_𝑘 ))\\] \\[Pr⁡( 𝑗)=Pr⁡(\\epsilon_𝑘 \\leq (𝑉_𝑗−𝑉_𝑘+\\epsilon_𝑗 )) \\text{ (a CDF function)}\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-5.html#discrete-multinomial-choice-1",
@@ -781,7 +781,7 @@
     "href": "teaching/ENCI707/slides/lec-5.html#type-i-extreme-value-distribution",
     "title": "Lecture 5 - Multinomial Logit",
     "section": "Type I Extreme Value Distribution",
-    "text": "Type I Extreme Value Distribution\n\nType I (Gumbel) distribution is the most convenient distribution to derive a closed form choice model\n\nIf \\(\\epsilon\\) is Type I Extreme Value (Gumbel) distributed: \\[𝑓(\\epsilon)=\\mu 𝑒^{−\\mu(\\epsilon−\\eta)} 𝑒^{−𝑒^{−\\mu(\\epsilon−\\eta)}}\\] \\[F = e^{-e^{-\\mu(\\epsilon-\\eta)}} \\text{, } \\mu &gt; 0\\]\n\n\\(\\eta\\) is a location parameter and \\(\\mu\\) is a positive scale parameter\nLocation parameter is mode of distribution\nScale parameter defines the dispersion of the PDF shape"
+    "text": "Type I Extreme Value Distribution\n\nType I (Gumbel) distribution is the most convenient distribution to derive a closed form choice model\n\nIf is Type I Extreme Value (Gumbel) distributed: \\[𝑓(\\epsilon)=\\mu 𝑒^{−\\mu(\\epsilon−\\eta)} 𝑒^{−𝑒^{−\\mu(\\epsilon−\\eta)}}\\] \\[F = e^{-e^{-\\mu(\\epsilon-\\eta)}} \\text{; } \\mu &gt; 0\\]\n\n\\(\\eta\\) is a location parameter and \\(\\mu\\) is a positive scale parameter\nLocation parameter is mode of distribution\nScale parameter defines the dispersion of the PDF shape"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-5.html#type-i-extreme-value-distribution-1",
@@ -795,7 +795,7 @@
     "href": "teaching/ENCI707/slides/lec-5.html#basic-properties-of-gumbel-distribution",
     "title": "Lecture 5 - Multinomial Logit",
     "section": "Basic Properties of Gumbel distribution",
-    "text": "Basic Properties of Gumbel distribution\n\nThe mode of the distribution is \\(\\eta\\) (the location of peak of the PDF on x axis from zero)\nThe mean is (\\(\\eta+\\gamma/\\mu\\)), where \\(\\gamma\\) = Euler’s constant=0.577\nThe variance is \\(\\pi^2/6\\mu^2\\)\nIf \\(\\epsilon\\) is Gumbel distributed with (\\(\\eta, \\mu\\)), and if \\(\\alpha\\) is any positive scalar constant, then (\\(\\alpha \\epsilon + V\\)) is also Gumbel distributed with parameters (\\(\\alpha \\eta +V\\)) and \\(\\mu/\\alpha\\)\nIf \\(\\epsilon_1\\) and \\(\\epsilon_2\\) are independent Gumbel variables, then \\ (\\(\\epsilon_1-\\epsilon_2\\)) is logistically distributed\nIf \\(\\epsilon_1\\) and are identical and independent Gumbel variables with parameters (\\(\\eta_1,\\mu\\)) and (\\(\\eta_2,\\mu\\)), respectively, then \\(\\max(\\epsilon_1,\\epsilon_2)\\) is also Gumbel distributed with parameters:\n\\[\\left(\\frac{1}{\\mu} \\ln⁡(𝑒^{\\mu\\eta_1}+𝑒^{\\mu\\eta_2 } ),\\mu \\right)\\]"
+    "text": "Basic Properties of Gumbel distribution\n\nThe mode of the distribution is \\(\\eta\\) (the location of peak of the PDF on x axis from zero).\nThe mean is (\\(\\eta+\\gamma/\\mu\\)), where \\(\\gamma\\) = Euler’s constant=0.577.\nThe variance is \\(\\pi^2/6\\mu^2\\).\nIf \\(\\epsilon\\) is Gumbel distributed with (\\(\\eta, \\mu\\)), and if \\(\\alpha\\) is any positive scalar constant, then (\\(\\alpha \\epsilon + V\\)) is also Gumbel distributed with parameters (\\(\\alpha \\eta +V\\)) and \\(\\mu/\\alpha\\).\nIf \\(\\epsilon_1\\) and \\(\\epsilon_2\\) are independent Gumbel variables, then (\\(\\epsilon_1-\\epsilon_2\\)) is logistically distributed.\nIf \\(\\epsilon_1\\) and are Identical and Independent Gumbel variables with parameters (\\(\\eta_1,\\mu\\)) and (\\(\\eta_2,\\mu\\)) respectively then \\(\\max(\\epsilon_1,\\epsilon_2)\\) is also Gumbel distributed with parameters:\n\\[\\left(\\frac{1}{\\mu} \\ln⁡(𝑒^{\\mu\\eta_1}+𝑒^{\\mu\\eta_2 } ),\\mu \\right)\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-5.html#basic-properties-of-gumbel-distribution-1",
@@ -830,14 +830,14 @@
     "href": "teaching/ENCI707/slides/lec-5.html#scale-of-the-mnl-model",
     "title": "Lecture 5 - Multinomial Logit",
     "section": "Scale of the MNL Model",
-    "text": "Scale of the MNL Model\n\nScale (\\(\\mu\\)) is inversely related to the variance of random error term\nVariance is \\(\\pi^2/6\\mu^2\\) for a IID Type I extreme value error\nAs \\(\\mu -&gt; \\infty\\), Variance \\(-&gt; 0\\)\n\nAll information are captured by the deterministic component (\\(V\\)\nChoice becomes deterministic (the alternative with maximum V is chosen)\n\nAs \\(\\mu -&gt; 0\\), Variance \\(-&gt; \\infty\\) & \\(\\exp(\\mu V) = 1\\)\n\nAlternatives are equally likely\nChoice model does not provide any information\n\nConstant scale, \\(\\mu\\), is not identified in an MNL using only one dataset\nSeparate scale needs to be specified when fusing multiple datasets"
+    "text": "Scale of the MNL Model\n\nScale (\\(\\mu\\)) is inversely related to the variance of random error term\nVariance is \\(\\pi^2/6\\mu^2\\) for a IID Type I EV error\nAs \\(\\mu -&gt; \\infty\\), Variance \\(-&gt; 0\\)\n\nAll information are captured by the deterministic component (\\(V\\)\nChoice becomes deterministic (the alternative with maximum V is chosen)\n\nAs \\(\\mu -&gt; 0\\), Variance \\(-&gt; \\infty\\) & \\(\\exp(\\mu V) = 1\\)\n\nAlternatives are equally likely\nChoice model does not provide any information\n\nConstant scale, \\(\\mu\\), is not identified in an MNL using only one dataset\nSeparate scale needs to be specified when fusing multiple datasets"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-5.html#systematic-utility-function",
     "href": "teaching/ENCI707/slides/lec-5.html#systematic-utility-function",
     "title": "Lecture 5 - Multinomial Logit",
     "section": "Systematic Utility Function",
-    "text": "Systematic Utility Function\nSystematic utility function: Linear-in-parameter function \\[𝑉_1=\\beta_1+\\beta_𝑡 𝑥_{1𝑡}+\\beta_{1𝑎} 𝑥_𝑎+\\beta_𝑏 𝑥_{1𝑏}^2+\\beta_{1𝑎𝑐} 𝑥_𝑎^3+\\beta_{1𝑎𝑙}  \\ln⁡(𝑥_𝑎)+\\dots\\] \\[𝑉_2=\\beta_2+\\beta_𝑡 𝑥_{2𝑡}+\\beta_{2𝑎} 𝑥_𝑎+\\beta_𝑏 𝑥_{2𝑏}^2+\\beta_{2𝑎𝑐} 𝑥_𝑎^3+\\beta_{2𝑎𝑙} + \\ln⁡(x_a)+\\dots\\] \\[\\vdots\\] \\[𝑉_J=\\beta_J+\\beta_𝑡 𝑥_{J𝑡}+\\beta_{J𝑎} 𝑥_𝑎+\\beta_𝑏 𝑥_{J𝑏}^2+\\beta_{J𝑎𝑐} 𝑥_𝑎^3+\\beta_{J𝑎𝑙} + \\ln⁡(x_a)+\\dots\\]\n\nAlternative Specific Constant - (J-1) are identified\nPermits non-linear transformed variables\nCan be generic if vary across the alternatives.\nMust be alternative-specific if constant across the alternatives (only J-1 are identified)"
+    "text": "Systematic Utility Function\nSystematic utility function: Linear-in-parameter function \\[𝑉_1=\\beta_1+\\beta_𝑡 𝑥_{1𝑡}+\\beta_{1𝑎} 𝑥_𝑎+\\beta_𝑏 𝑥_{1𝑏}^2+\\beta_{1𝑎𝑐} 𝑥_𝑎^3+\\beta_{1𝑎𝑙}  \\ln⁡(𝑥_𝑎)+\\dots\\] \\[𝑉_2=\\beta_2+\\beta_𝑡 𝑥_{2𝑡}+\\beta_{2𝑎} 𝑥_𝑎+\\beta_𝑏 𝑥_{2𝑏}^2+\\beta_{2𝑎𝑐} 𝑥_𝑎^3+\\beta_{2𝑎𝑙} + \\ln⁡(x_a)+\\dots\\] \\[\\vdots\\] \\[𝑉_J=\\beta_J+\\beta_𝑡 𝑥_{Jt}+\\beta_{J𝑎} 𝑥_𝑎+\\beta_𝑏 𝑥_{J𝑏}^2+\\beta_{J𝑎𝑐} 𝑥_𝑎^3+\\beta_{J𝑎𝑙} + \\ln⁡(x_a)+\\dots\\]\n\nAlternative Specific Constant - (J-1) are identified\nPermits non-linear transformed variables\nCan be generic if vary across alternatives\nMust be alternative-specific if constant across alternatives (only J-1 are identified)"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-5.html#systematic-utility-function-1",
@@ -858,7 +858,7 @@
     "href": "teaching/ENCI707/slides/lec-5.html#goodness-of-fit",
     "title": "Lecture 5 - Multinomial Logit",
     "section": "Goodness-of-Fit",
-    "text": "Goodness-of-Fit\nModel goodness-of-fit is measured by \\(\\rho^2\\) value\n  - \\(k\\) = difference in total number of parameters between two models \\[\\rho_0^2 = \\frac{LL(\\beta) - LL(0)}{LL(*) - LL(0)} = 1 - \\frac{LL(\\beta)}{LL(0)} \\text{, } adj-\\rho_0^2 = 1 - \\frac{LL(\\beta) - k}{LL(0)}\\]\n\\[\\rho_C^2 = \\frac{LL(\\beta) - LL(C)}{LL(*) - LL(C)} = 1 - \\frac{LL(\\beta)}{LL(C)} \\text{, } adj-\\rho_C^2 = 1 - \\frac{LL(\\beta) - k}{LL(C)}\\]\n\nAdjusted \\(\\rho^2\\) value 0.3 to 0.5 is considered reasonable (but depends on model)\nAlternative: Comparing predicted vs. observed shares"
+    "text": "Goodness-of-Fit\nModel goodness-of-fit is measured by \\(\\rho^2\\) value\n  - \\(k\\) = difference in total number of parameters between two models \\[\\rho_0^2 = \\frac{LL(\\beta) - LL(0)}{LL(*) - LL(0)} = 1 - \\frac{LL(\\beta)}{LL(0)} \\text{; } adj-\\rho_0^2 = 1 - \\frac{LL(\\beta) - k}{LL(0)}\\]\n\\[\\rho_C^2 = \\frac{LL(\\beta) - LL(C)}{LL(*) - LL(C)} = 1 - \\frac{LL(\\beta)}{LL(C)} \\text{; } adj-\\rho_C^2 = 1 - \\frac{LL(\\beta) - k}{LL(C)}\\]\n\nAdjusted \\(\\rho^2\\) value 0.3 to 0.5 is considered reasonable (but depends on model)\nAlternative: Comparing predicted vs. observed shares"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-5.html#goodness-of-fit-1",
@@ -886,21 +886,21 @@
     "href": "teaching/ENCI707/slides/lec-5.html#specification-tests",
     "title": "Lecture 5 - Multinomial Logit",
     "section": "Specification Tests",
-    "text": "Specification Tests\n\nExpected signs of the coefficients\nExpected substitution patterns - e.g., value of time savings, etc.\nLikelihood ratio test:\\(-2[LL(\\beta)-LL(\\beta^{'})]\\) is \\(\\chi^2\\) distributed with \\(k\\) (= number of restricted parameters = the difference between number of parameters of two models) degrees of freedom\nGoodness-of-Fit measures: Rho-square, AIC, BIC"
+    "text": "Specification Tests\n\nExpected signs of the coefficients\nExpected substitution patterns - e.g., value of time savings, etc.\nLikelihood ratio test (\\(\\times -2\\) by Wilks Theorem):\\(-2[LL(\\beta)-LL(\\beta^{'})]\\) is \\(\\chi^2\\) distributed with \\(k\\) (= number of restricted parameters = the difference between number of parameters of two models) degrees of freedom\nGoodness-of-Fit measures: Rho-square, AIC, BIC"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-5.html#specification-of-logit-model",
     "href": "teaching/ENCI707/slides/lec-5.html#specification-of-logit-model",
     "title": "Lecture 5 - Multinomial Logit",
     "section": "Specification of Logit Model",
-    "text": "Specification of Logit Model\n\nLogit model works fine if there is no significant random variation of effects of any systematic variables:\n\nUnobserved (random) effects of any variable (varying across the alternatives and/or observations) violates the identical error term distribution assumption!\n\nExample:\n\nEffects of driving cost is influenced by income only: systematic effect and logit model will work fine with cost normalized by income\nEffects of driving cost influenced by income and some unobserved factor, the logit model will be mis-specified"
+    "text": "Specification of Logit Model\n\nLogit model works fine if there is no significant random variation of effects of any systematic variables:\n\nUnobserved (random) effects of any variable (varying across the alternatives and/or observations) violates the identical error term distribution assumption!\n\nExample:\n\nEffects of driving cost is influenced by income only: systematic effect and logit model will work fine with cost normalized by income\nEffects of driving cost influenced by income and some unobserved factor: the logit model will be mis-specified"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-5.html#specification-of-logit-model-1",
     "href": "teaching/ENCI707/slides/lec-5.html#specification-of-logit-model-1",
     "title": "Lecture 5 - Multinomial Logit",
     "section": "Specification of Logit Model",
-    "text": "Specification of Logit Model\n\nLogit model works fine if choice alternatives are perfectly IIA: proportional substitution exists\n\nImperfect competition or correlated variations among subsets of alternatives cause the violation of identical error term distribution assumption!\n\nExample:\n\nPeople who prefer private car, will prefer taxi more than they prefer transit - logit model that considers all alternative modes are IIA will be mis-specified"
+    "text": "Specification of Logit Model\n\nLogit model works fine if choice alternatives are perfectly IIA (independent of irrelevant alternatives): proportional substitution exists\n\nImperfect competition or correlated variations among subsets of alternatives cause the violation of identical error term distribution assumption!\n\nExample:\n\nPeople who prefer private car, will prefer taxi more than they prefer transit - logit model that considers all alternative modes are IIA will be mis-specified"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-5.html#collinearity-of-independent-variables",
@@ -963,28 +963,28 @@
     "href": "teaching/ENCI707/slides/lec-5.html#fact-to-check-attributes-of-alternatives",
     "title": "Lecture 5 - Multinomial Logit",
     "section": "Fact to check: Attributes of Alternatives",
-    "text": "Fact to check: Attributes of Alternatives\n\nSummation of all probabilities of a choice model = 1\n\nSummation of changes in probabilities (of all alternatives) with respect to a variable (derivative) = 0. \\[\\sum_j \\frac{\\partial Pr(j)}{\\partial x_{jp}}=\\frac{\\partial Pr(j)}{\\partial x_{jp}} + \\sum_{k \\neq j} \\frac{\\partial Pr(k)}{\\partial x_{jp}} \\text{, (Considering generic coefficients)}\\] \\[\\sum_j \\frac{\\partial Pr(j)}{\\partial x_{jp}}=\\beta_p Pr(j) (1-Pr(j)) - \\beta_p Pr(j)\\sum_{k \\neq j}Pr(k)\\] \\[\\sum_j \\frac{\\partial Pr(j)}{\\partial x_{jp}}=\\beta_p Pr(j) (1-Pr(j)) - \\beta_p Pr(j) (1-Pr(j)) = 0\\]\n\nThis is true for any discrete choice model and can be used to verify accuracy of elasticity calculation"
+    "text": "Fact to check: Attributes of Alternatives\n\nSummation of all probabilities of a choice model = 1\n\nSummation of changes in probabilities (of all alternatives) with respect to a variable (derivative) = 0 \\[\\sum_j \\frac{\\partial Pr(j)}{\\partial x_{jp}}=\\frac{\\partial Pr(j)}{\\partial x_{jp}} + \\sum_{k \\neq j} \\frac{\\partial Pr(k)}{\\partial x_{jp}} \\text{; (Considering generic coefficients)}\\] \\[\\sum_j \\frac{\\partial Pr(j)}{\\partial x_{jp}}=\\beta_p Pr(j) (1-Pr(j)) - \\beta_p Pr(j)\\sum_{k \\neq j}Pr(k)\\] \\[\\sum_j \\frac{\\partial Pr(j)}{\\partial x_{jp}}=\\beta_p Pr(j) (1-Pr(j)) - \\beta_p Pr(j) (1-Pr(j)) = 0\\]\n\nThis is true for any discrete choice model and can be used to verify accuracy of elasticity calculation"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-5.html#aggregating-elasticity-attributes-of-alternatives",
     "href": "teaching/ENCI707/slides/lec-5.html#aggregating-elasticity-attributes-of-alternatives",
     "title": "Lecture 5 - Multinomial Logit",
     "section": "Aggregating Elasticity: Attributes of Alternatives",
-    "text": "Aggregating Elasticity: Attributes of Alternatives\n\nDisaggregate discrete choice model gives disaggregate values of elasticity for each data point in the sample\nApproaches to meaningfully aggregate :\n\nNaïve approach: Consider sample average values of explanatory variables (x) to calculate sample average elasticity\nEstimate elasticity for each sample respondent and draw distribution of elasticity values.\nProbability weighted sample enumeration (PWSE):\n\n\n\n\n\\[𝐸_{𝑥_𝑘}^𝑗=\\sum_{i=1}^n \\frac{Pr_i(j)}{\\sum_{i=1}^n Pr_i(j)}E_{x_k}^{Pr_i(j)}\\]\n\n\n\\(i\\) is the individual in the sample of size n\n\\(j\\) is the specific alternative\n\\(x\\) is the variable of elasticity\n\\(j=k\\) indicates direct elasticity\n\\(j \\neq k\\) indicates cross-elasticity\n\n\n\nSame approach is application for marginal effect and for any choice model"
+    "text": "Aggregating Elasticity: Attributes of Alternatives\n\nDisaggregate discrete choice model gives disaggregate values of elasticity for each data point in the sample\nApproaches to meaningfully aggregate:\n\nNaïve approach: Consider sample average values of explanatory variables (x) to calculate sample average elasticity\nEstimate elasticity for each sample respondent and draw distribution of elasticity values\nProbability weighted sample enumeration (PWSE):\n\n\n\n\n\\[𝐸_{𝑥_𝑘}^𝑗=\\sum_{i=1}^n \\frac{Pr_i(j)}{\\sum_{i=1}^n Pr_i(j)}E_{x_k}^{Pr_i(j)}\\]\n\n\n\\(i\\) is the individual in the sample of size n\n\\(j\\) is the specific alternative\n\\(x\\) is the variable of elasticity\n\\(j=k\\) indicates direct elasticity\n\\(j \\neq k\\) indicates cross-elasticity\n\n\n\nSame approach is application for marginal effect and for any choice model"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-5.html#marginalelasticity-attributes-of-choice-makerchoice-context",
     "href": "teaching/ENCI707/slides/lec-5.html#marginalelasticity-attributes-of-choice-makerchoice-context",
     "title": "Lecture 5 - Multinomial Logit",
     "section": "Marginal/Elasticity: Attributes of Choice Maker/Choice Context",
-    "text": "Marginal/Elasticity: Attributes of Choice Maker/Choice Context\n\nSuch attributes have alternative-specific coefficients: For example, consider income of choice maker \\[\\frac{\\partial Pr(j)}{\\partial Inc_{ij}} = (1-Pr(j))Pr(j)\\beta_{inc,ij} \\text{, }j,k\\in C_i\\] \\[\\frac{\\partial Pr(j)}{\\partial Inc_{ik}} = Pr(j)Pr(k)\\beta_{inc,ik}\\]\nCorresponding sum of all alternatives, \\(j \\neq k\\) \\[\\sum_{j \\neq k} \\frac{\\partial Pr(j)}{\\partial Inc_{ik}} = -Pr(j) \\sum_{k \\neq j} Pr(k) \\beta_{inc,ik}\\]\nRate of change of \\(Pr(j)\\) with respect to income of individual, i: \\[\\frac{\\partial Pr(j)}{\\partial Inc_i} = \\underset{\\text{Direct Elasticity}}{\\frac{\\partial Pr(j)}{\\partial Inc_{ij}}} + \\underset{\\text{Cross Elasticity}}{\\sum_{j \\neq k}\\frac{\\partial Pr(j)}{\\partial Inc_{ij}}}\\]"
+    "text": "Marginal/Elasticity: Attributes of Choice Maker/Choice Context\n\nSuch attributes have alternative-specific coefficients: For example, consider income of choice maker \\[\\frac{\\partial Pr(j)}{\\partial Inc_{ij}} = (1-Pr(j))Pr(j)\\beta_{inc,ij} \\text{; }j,k\\in C_i\\] \\[\\frac{\\partial Pr(j)}{\\partial Inc_{ik}} = Pr(j)Pr(k)\\beta_{inc,ik}\\]\nCorresponding sum of all alternatives, \\(j \\neq k\\) \\[\\sum_{j \\neq k} \\frac{\\partial Pr(j)}{\\partial Inc_{ik}} = -Pr(j) \\sum_{k \\neq j} Pr(k) \\beta_{inc,ik}\\]\nRate of change of \\(Pr(j)\\) with respect to income of individual, i: \\[\\frac{\\partial Pr(j)}{\\partial Inc_i} = \\underset{\\text{Direct Elasticity}}{\\frac{\\partial Pr(j)}{\\partial Inc_{ij}}} + \\underset{\\text{Cross Elasticity}}{\\sum_{j \\neq k}\\frac{\\partial Pr(j)}{\\partial Inc_{ij}}}\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-5.html#marginalelasticity-attributes-of-choice-makerchoice-context-1",
     "href": "teaching/ENCI707/slides/lec-5.html#marginalelasticity-attributes-of-choice-makerchoice-context-1",
     "title": "Lecture 5 - Multinomial Logit",
     "section": "Marginal/Elasticity: Attributes of Choice Maker/Choice Context",
-    "text": "Marginal/Elasticity: Attributes of Choice Maker/Choice Context\n\nRate of change of \\(Pr(j)\\) with respect to income: \\[\\frac{\\partial Pr(j)}{\\partial Inc_i} = \\frac{\\partial Pr(j)}{\\partial Inc_{ij}} + \\sum_{k \\neq j} \\frac{\\partial Pr(j)}{\\partial Inc_{ik}} = (1-Pr(j))Pr(j)\\beta_{inc,ij}-Pr(j)\\sum_{k \\neq j} Pr(k) \\beta_{inc,ik}\\] \\[\\frac{\\partial Pr(j)}{\\partial Inc_i} = Pr(j)\\beta_{inc,ij}-Pr(j)Pr(j)\\beta_{inc,ij}-Pr(j)\\sum_{k \\neq j}Pr(k)\\beta_{inc,ik}\\] \\[\\frac{\\partial Pr(j)}{\\partial Inc_i} = Pr(j)\\left( \\beta_{inc,ij} - \\overline{\\beta_{inc}} \\right)\\] \\[\\overline{\\beta_{inc,i}} = \\sum_{k \\in C_i} Pr(k)\\beta_{inc,k} \\begin{array}{c}\\text{, is the probability weighted average}\\\\ \\text{of alt specific income parameters}\\end{array}\\]"
+    "text": "Marginal/Elasticity: Attributes of Choice Maker/Choice Context\n\nRate of change of \\(Pr(j)\\) with respect to income: \\[\\frac{\\partial Pr(j)}{\\partial Inc_i} = \\frac{\\partial Pr(j)}{\\partial Inc_{ij}} + \\sum_{k \\neq j} \\frac{\\partial Pr(j)}{\\partial Inc_{ik}} = (1-Pr(j))Pr(j)\\beta_{inc,ij}-Pr(j)\\sum_{k \\neq j} Pr(k) \\beta_{inc,ik}\\] \\[\\frac{\\partial Pr(j)}{\\partial Inc_i} = Pr(j)\\beta_{inc,ij}-Pr(j)Pr(j)\\beta_{inc,ij}-Pr(j)\\sum_{k \\neq j}Pr(k)\\beta_{inc,ik}\\] \\[\\frac{\\partial Pr(j)}{\\partial Inc_i} = Pr(j)\\left( \\beta_{inc,ij} - \\overline{\\beta_{inc}} \\right)\\] \\[\\overline{\\beta_{inc,i}} = \\sum_{k \\in C_i} Pr(k)\\beta_{inc,k} \\begin{array}{c}\\text{; probability weighted average of}\\\\ \\text{alt specific income parameters}\\end{array}\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-5.html#marginalelasticity-attributes-of-choice-makerchoice-context-2",
@@ -998,7 +998,7 @@
     "href": "teaching/ENCI707/slides/lec-5.html#aggregating-elasticity-attributes-of-choice-makerchoice-context",
     "title": "Lecture 5 - Multinomial Logit",
     "section": "Aggregating Elasticity: Attributes of Choice Maker/Choice Context",
-    "text": "Aggregating Elasticity: Attributes of Choice Maker/Choice Context\n\nUse similar approach of aggregating market share from disaggregate choice model predictions:\n\nMicrosimulation\nSample enumeration\nClassification with naïve aggregation\nNaïve aggregation\n\nSame approach is application for marginal effect and for any choice model"
+    "text": "Aggregating Elasticity: Attributes of Choice Maker/Choice Context\n\nUse similar approach of aggregating market share from disaggregate choice model predictions (discussed in detail later):\n\nMicrosimulation\nSample enumeration\nClassification with naïve aggregation\nNaïve aggregation\n\nSame approach is application for marginal effect and for any choice model"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-5.html#marginalelasticity-of-categorical-variables",
@@ -1075,14 +1075,14 @@
     "href": "teaching/ENCI707/slides/lec-5.html#willingness-to-pay-analysis",
     "title": "Lecture 5 - Multinomial Logit",
     "section": "Willingness-to-pay Analysis",
-    "text": "Willingness-to-pay Analysis\n\nSystematic utility function needs to have cost as a variable \\(p\\) along with another variable of interest \\(x\\). \\[V_j = V_j(p_j,x_j, \\dots) -&gt; p\\text{ is a continuous variable & } V_j \\text{is differentiable in x and p}\\]\nAssumption: Any changes in x is balanced by changes in p to maintain same level of utility: total utility does not change \\[V_j = V_j(p_j,x_j, \\dots) = V_j((p_j+\\delta p_j),(x_j + \\delta x_j), \\dots)\\]\nUsing first-order Taylor series expansion, after transposing (assuming overall utility change is zero): \\[\\frac{\\partial p_j}{\\partial x_j} = - \\frac{V_j(p_j, x_j, \\dots)/\\partial x_j}{V_j(p_j, x_j, \\dots)/\\partial p_j} \\text{, additional price to compensate additional x}\\]"
+    "text": "Willingness-to-pay Analysis\n\nSystematic utility function needs to have cost as a variable \\(p\\) along with another variable of interest \\(x\\). \\[V_j = V_j(p_j,x_j, \\dots) -&gt; p\\text{ is a continuous variable & } V_j \\text{ is differentiable in x and p}\\]\nAssumption: Any changes in \\(x\\) is balanced by changes in \\(p\\) to maintain same level of utility: total utility does not change \\[V_j = V_j(p_j,x_j, \\dots) = V_j((p_j+\\delta p_j),(x_j + \\delta x_j), \\dots)\\]\nUsing first-order Taylor series expansion \\[V_j(p_j,x_j, \\dots) = V_j(p_j,x_j, \\dots) + \\delta p_j \\frac{\\partial V_j(p_j,x_j, \\dots)}{\\partial p_j} + \\delta x_j \\frac{\\partial V_j(p_j,x_j, \\dots)}{\\partial x_j}\\]\nAfter transposing (assuming overall utility change is zero) \\[\\frac{\\delta p_j}{\\delta x_j} = - \\frac{V_j(p_j, x_j, \\dots)/\\partial x_j}{V_j(p_j, x_j, \\dots)/\\partial p_j} \\text{; additional price to compensate additional x}\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-5.html#willingness-to-pay-analysis-1",
     "href": "teaching/ENCI707/slides/lec-5.html#willingness-to-pay-analysis-1",
     "title": "Lecture 5 - Multinomial Logit",
     "section": "Willingness-to-pay Analysis",
-    "text": "Willingness-to-pay Analysis\n\nFor linear-in-parameter utility function \\(V_j = \\beta_j + \\beta_p p_j + \\beta_x x_j + \\dots\\)\nWilling-to-pay for any continuous variable change \\(\\frac{\\partial p_j}{\\partial x_j} = - \\frac{\\beta_x}{\\beta_p}\\)\nValue of Travel Time Savings (VOTTS): additional amount of money to reduce 1 unit of time \\[VOTTS = \\frac{\\partial p_j}{- \\partial t_j} = \\frac{\\beta_t}{\\beta_p}\\]\nValue of Reliability (VOR) or Safety (VOS) : additional amount of money to increase 1 level of reliability(r), safety(s) \\[VOR = \\frac{\\partial p_j}{+ \\partial r_j} = \\frac{\\beta_r}{\\beta_p}\\text{, } VOS = \\frac{\\partial p_j}{+ \\partial s_j} = \\frac{\\beta_s}{\\beta_p}\\]"
+    "text": "Willingness-to-pay Analysis\n\nFor linear-in-parameter utility function \\(V_j = \\beta_j + \\beta_p p_j + \\beta_x x_j + \\dots\\)\nWilling-to-pay for any continuous variable change \\(\\frac{\\partial p_j}{\\partial x_j} = - \\frac{\\beta_x}{\\beta_p}\\)\nValue of Travel Time Savings (VOTTS): additional amount of money to reduce 1 unit of time \\[VOTTS = \\frac{\\partial p_j}{- \\partial t_j} = \\frac{\\beta_t}{\\beta_p}\\]\nValue of Reliability (VOR) or Safety (VOS) : additional amount of money to increase 1 level of reliability (r), safety (s) \\[VOR = \\frac{\\partial p_j}{+ \\partial r_j} = - \\frac{\\beta_r}{\\beta_p}\\text{; } VOS = - \\frac{\\partial p_j}{+ \\partial s_j} = \\frac{\\beta_s}{\\beta_p}\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-5.html#consumer-surplus",
@@ -1162,6 +1162,13 @@
     "text": "Classification with Naïve Aggregation\n\nClassify population into a number of strata and consider population within a particular segment as homogenous (having same attributes)\nWhen sample enumeration infeasible, can use classification with naïve aggregation\nCategorization is based on attributes / market segmentation\n\n\n\n\nPopulation Strata\n\n\nChoice Alternatives\n\n\n\n\n\n\n1\n\n\n2\n\n\n…\n\n\nJ\n\n\nSum\n\n\n\n\n1\n\n\n\\(Pr(1|x_1,\\beta)\\)\n\n\n\\(Pr(2|x_1,\\beta)\\)\n\n\n.\n\n\n\\(Pr(J|x_1,\\beta)\\)\n\n\n1\n\n\n\n\n2\n\n\n\\(Pr(1|x_2,\\beta)\\)\n\n\n\\(Pr(2|x_2,\\beta)\\)\n\n\n.\n\n\n\\(Pr(J|x_2,\\beta)\\)\n\n\n1\n\n\n\n\n…\n\n\n.\n\n\n.\n\n\n.\n\n\n.\n\n\n.\n\n\n\n\nn\n\n\n\\(Pr(1|x_S,\\beta)\\)\n\n\n\\(Pr(2|x_S,\\beta)\\)\n\n\n.\n\n\n\\(Pr(J|x_S,\\beta)\\)\n\n\n1\n\n\n\n\nSum\n\n\nn(1)\n\n\nn(2)\n\n\n\n\nn(J)\n\n\nn\n\n\n\n\nMarket share\n\n\nn(1)/n\n\n\nn(2)/n\n\n\n\n\nn(J)/n\n\n\n1"
   },
   {
+    "objectID": "teaching/ENCI707/slides/lec-5.html#confidence-interval-on-predictions-1",
+    "href": "teaching/ENCI707/slides/lec-5.html#confidence-interval-on-predictions-1",
+    "title": "Lecture 5 - Multinomial Logit",
+    "section": "Confidence Interval on Predictions",
+    "text": "Confidence Interval on Predictions\n\nEstimated parameters are MVN distributed by central limit theorem\nSame approach is applicable for any choice model"
+  },
+  {
     "objectID": "teaching/ENCI707/slides/lec-5.html#confidence-interval-of-predictions-elasticity-market-share-revenue",
     "href": "teaching/ENCI707/slides/lec-5.html#confidence-interval-of-predictions-elasticity-market-share-revenue",
     "title": "Lecture 5 - Multinomial Logit",
@@ -1215,21 +1222,21 @@
     "href": "teaching/ENCI707/slides/lec-5.html#sampling-of-alternatives-large-choice-set",
     "title": "Lecture 5 - Multinomial Logit",
     "section": "Sampling of alternatives: Large Choice Set",
-    "text": "Sampling of alternatives: Large Choice Set\n\nLarge number of alternatives (e.g., destination location choice model), a random sample of alternatives can be used to estimate the model - where \\(C = \\text{full choice set}\\) and \\(J = \\text{subset of alternatives drawn from C}\\)\nConditional probability of selecting a subset of alternatives \\[q(J|j) &gt; 0 \\text{, if J includes the chosen alt. j}\\] \\[q(J|j) = 0 \\text{, if J excludes the chosen alt. j}\\]\nJoint probability that \\(J\\) is drawn with non-zero probability and \\(j\\) is chosen by an individual \\(i\\) \\[Pr(J,j) = q(J|j)Pr(J) = Pr(j|J)Q(J) \\text{, (Bayes Theorem)}\\] \\[\\text{Marginal probability: } Q(J) = \\sum_{k \\in C} Pr(k)q(J|k) \\text{, (Sum over all possible subsets of j')}\\]"
+    "text": "Sampling of alternatives: Large Choice Set\n\nLarge number of alternatives (e.g., destination location choice model), a random sample of alternatives can be used to estimate the model - where \\(C = \\text{full choice set}\\) and \\(J = \\text{subset of alternatives drawn from C}\\)\nConditional probability of selecting a subset of alternatives \\[q(G|j) &gt; 0 \\text{; if G includes the chosen alt. j}\\] \\[q(G|j) = 0 \\text{; if G excludes the chosen alt. j}\\]\nJoint probability that \\(J\\) is drawn with non-zero probability and \\(j\\) is chosen by an individual \\(i\\) \\[Pr(G,j) = q(G|j)Pr(G) = Pr(j|G)Q(G) \\text{; (Bayes Theorem)}\\] \\[\\text{Marginal probability: } Q(G) = \\sum_{k \\in C} Pr(k)q(G|k) \\text{; (Sum over all possible subsets of j')}\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-5.html#sampling-of-alternatives-large-choice-set-1",
     "href": "teaching/ENCI707/slides/lec-5.html#sampling-of-alternatives-large-choice-set-1",
     "title": "Lecture 5 - Multinomial Logit",
     "section": "Sampling of alternatives: Large Choice Set",
-    "text": "Sampling of alternatives: Large Choice Set\n\nChoice probability of alternative \\(j\\) from subset: \\[Pr(j|J)Q(J) = q(J|j)Pr(j)\\] \\[Pr(j|J)Q(J) = \\frac{Pr(j)q(J|j)}{Q(J)} = \\frac{Pr(j)q(J|j)}{\\sum_{k \\in C} Pr(k)q(J|k)} = \\frac{\\exp(V_j)q(J|j)}{\\sum_{k \\in C} \\exp(V_k)q(J|k)}\\]\nFor any subset, \\(q\\), that does not include \\(k\\), \\(q(J|k)=0\\), so: \\[Pr(j|J) = \\frac{\\exp(V_j)q(J|j)}{\\sum_{k \\in J} \\exp(V_k)q(J|k)} \\text{, within C, any J without k drops out}\\] \\[Pr(j|J) = \\frac{\\exp(V_j)\\exp(\\ln(q(J|j)))}{\\sum_{k \\in J} \\exp(V_k)\\exp(\\ln(q(J|j)))} = \\frac{\\exp(V_j + \\ln(q(J|j)))}{\\sum_{k \\in J} \\exp(V_k + \\ln(q(J|j)))}\\]"
+    "text": "Sampling of alternatives: Large Choice Set\n\nChoice probability of alternative \\(j\\) from subset: \\[Pr(j|G)Q(G) = q(G|j)Pr(j)\\] \\[Pr(j|G)Q(G) = \\frac{Pr(j)q(G|j)}{Q(G)} = \\frac{Pr(j)q(G|j)}{\\sum_{k \\in C} Pr(k)q(G|k)} = \\frac{\\exp(V_j)q(G|j)}{\\sum_{k \\in C} \\exp(V_k)q(G|k)}\\]\nFor any subset, \\(q\\), that does not include \\(k\\), \\(q(G|k)=0\\), so: \\[Pr(j|G) = \\frac{\\exp(V_j)q(G|j)}{\\sum_{k \\in G} \\exp(V_k)q(G|k)} \\text{; within C, any G without k drops out}\\] \\[Pr(j|G) = \\frac{\\exp(V_j)\\exp(\\ln(q(G|j)))}{\\sum_{k \\in G} \\exp(V_k)\\exp(\\ln(q(G|j)))} = \\frac{\\exp(V_j + \\ln(q(G|j)))}{\\sum_{k \\in G} \\exp(V_k + \\ln(q(G|j)))}\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-5.html#sampling-of-alternatives-large-choice-set-2",
     "href": "teaching/ENCI707/slides/lec-5.html#sampling-of-alternatives-large-choice-set-2",
     "title": "Lecture 5 - Multinomial Logit",
     "section": "Sampling of alternatives: Large Choice Set",
-    "text": "Sampling of alternatives: Large Choice Set\n\nChoice model with sampling from the alternatives: \\[Pr(j|J) = \\frac{\\exp(V_j + ln(q(J|j)))}{\\sum_{k \\in J} \\exp(V_k + ln(q(J|k)))} \\text{, } q(J|j) = \\prod_{l=1}^{J-1}Pr(l)\\]\nwhere \\(Pr(l)\\) is the binary probability of drawing a choice\nUnder simple random sampling, samples are drawn uniformly with equal probability\nThis makes the additional \\(ln(q(J|j))\\) redundant (same for all alternative and so drops out: uniform conditional property) - MNL result becomes standard form\nNot true for other models such as nested logit, GEV, or mixed logit"
+    "text": "Sampling of alternatives: Large Choice Set\n\nChoice model with sampling from the alternatives: \\[Pr(j|G) = \\frac{\\exp(V_j + ln(q(G|j)))}{\\sum_{k \\in G} \\exp(V_k + ln(q(G|k)))} \\text{; } q(G|j) = \\prod_{l=1}^{G-1}Pr(l)\\]\nwhere \\(Pr(l)\\) is the binary probability of drawing a choice\nUnder simple random sampling, samples are drawn uniformly with equal probability\nThis makes the additional \\(ln(q(G|j))\\) redundant (same for all alternative and so drops out: uniform conditional property) - MNL result becomes standard form\nNot true for other models such as nested logit, GEV, or mixed logit"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-5.html#managing-large-choice-sets",
@@ -1264,7 +1271,7 @@
     "href": "teaching/ENCI707/slides/lec-5.html#further-topics-among-many-others",
     "title": "Lecture 5 - Multinomial Logit",
     "section": "Further topics (among many others)",
-    "text": "Further topics (among many others)\n\nLogit model with probabilistic choice set formation\nLogit model with multiple overlapping choice sets\nLogit model with myopic preferences regarding specific alternatives\n\n\n\n\n\nENCI707 Home"
+    "text": "Further topics (among many others)\n\nLogit model with probabilistic choice set formation\nLogit model with multiple overlapping choice sets\nLogit model with myopic preferences regarding specific alternatives"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-3.html#outline",
@@ -1537,7 +1544,7 @@
     "href": "teaching/ENCI707/slides/lec-3.html#lagged-effects-in-aggregate-models-example",
     "title": "Lecture 3 - Aggregate Demand Models",
     "section": "Lagged Effects in Aggregate Models: Example",
-    "text": "Lagged Effects in Aggregate Models: Example\n \n\n\n\n\nENCI707 Home"
+    "text": "Lagged Effects in Aggregate Models: Example"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-1.html#outline",
@@ -1943,7 +1950,7 @@
     "href": "teaching/ENCI707/slides/lec-1.html#modelling-infrastructure-demands",
     "title": "Lecture 1 - Microeconomics",
     "section": "Modelling Infrastructure Demands​",
-    "text": "Modelling Infrastructure Demands​\n\nData (revealed/stated preferences): data do not provide answers themselves​\n\nWe need models and visualizations to give context and structure​\n\nIdentify underling theory to specify model of interest​\nTwo types of models:​\n\nAggregate demand models​\nDisaggregate demand/choice models​\n\nIn either case, application of econometric techniques is crucial to ensure evidence-based analysis​\nEstimation of appropriate model parameters is the critical roadblock!​\n\n\n\n\n\n\nENCI707 Home"
+    "text": "Modelling Infrastructure Demands​\n\nData (revealed/stated preferences): data do not provide answers themselves​\n\nWe need models and visualizations to give context and structure​\n\nIdentify underling theory to specify model of interest​\nTwo types of models:​\n\nAggregate demand models​\nDisaggregate demand/choice models​\n\nIn either case, application of econometric techniques is crucial to ensure evidence-based analysis​\nEstimation of appropriate model parameters is the critical roadblock!​"
   },
   {
     "objectID": "teaching/ENCI707/project/data-sets.html",
@@ -2745,14 +2752,14 @@
     "href": "teaching/CIVE461/slides/lec-6.html#other-choices",
     "title": "Lecture 6 - Mode & Destination Choice Models",
     "section": "Other Choices",
-    "text": "Other Choices\n\nHome location choice (multinomial logit) – similar to destination choice\nVehicle ownership choice? 1, 2, 3, 4, etc. vehicles (ordered logit)\nDeparture time choice? 8AM, 9AM, 10AM, etc. (ordered logit)\nParty size choice? 1, 2, 3, 4, 5, etc. persons (ordered logit)\nChoice set formation\n\nWhat destinations do I consider? Do I consider only destinations within my neighborhood? Do I consider only destinations within a certain distance or travel time?\n\n\n\n\n\n\nCIVE461 Home"
+    "text": "Other Choices\n\nHome location choice (multinomial logit) – similar to destination choice\nVehicle ownership choice? 1, 2, 3, 4, etc. vehicles (ordered logit)\nDeparture time choice? 8AM, 9AM, 10AM, etc. (ordered logit)\nParty size choice? 1, 2, 3, 4, 5, etc. persons (ordered logit)\nChoice set formation\n\nWhat destinations do I consider? Do I consider only destinations within my neighborhood? Do I consider only destinations within a certain distance or travel time?"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-4.html#outline",
     "href": "teaching/CIVE461/slides/lec-4.html#outline",
     "title": "Lecture 4 - Transportation Planning Process",
     "section": "Outline",
-    "text": "Outline\n\n\nDecision-making models\nPlanning and decision process\nMeasures of effectiveness\n\n\n\n\n\n\nCIVE461 Home"
+    "text": "Outline\n\n\nDecision-making models\nPlanning and decision process\nMeasures of effectiveness"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-2.html#outline",
@@ -3067,7 +3074,7 @@
     "href": "teaching/CIVE461/slides/lec-2.html#how-to-move-beyond-hypothesis-testing",
     "title": "Lecture 2 - Statistical Modeling",
     "section": "How to Move Beyond Hypothesis Testing",
-    "text": "How to Move Beyond Hypothesis Testing\n\n\nAnalyze all data - Better to anticipate critism than hide data\nPresent all comparisons - Rather than statistically significant comparisons only\nMake data public - If a topic is worth studying, you should want others to be able to quickly progress without repeating your work\nAccept uncertainty & embrace variation - No answer is perfect\n\n\n\n\n\n\nCIVE461 Home"
+    "text": "How to Move Beyond Hypothesis Testing\n\n\nAnalyze all data - Better to anticipate critism than hide data\nPresent all comparisons - Rather than statistically significant comparisons only\nMake data public - If a topic is worth studying, you should want others to be able to quickly progress without repeating your work\nAccept uncertainty & embrace variation - No answer is perfect"
   },
   {
     "objectID": "teaching/CIVE461/project/project-feedback.html",
@@ -4166,7 +4173,7 @@
     "href": "teaching/CIVE461/slides/lec-1.html#workforce-trends",
     "title": "Lecture 1 - Introduction",
     "section": "Workforce Trends",
-    "text": "Workforce Trends\n\nMulti-modal transportation planning\nComplete Streets – Nebraska DOT focused on it for small communities\nLarger datasets = Excel -&gt; R & Python\nNon-infrastructure solutions – ridesharing, autonomous vehicles, pricing, and land use reform\n\n       \n\n\n\n\nCIVE461 Home"
+    "text": "Workforce Trends\n\nMulti-modal transportation planning\nComplete Streets – Nebraska DOT focused on it for small communities\nLarger datasets = Excel -&gt; R & Python\nNon-infrastructure solutions – ridesharing, autonomous vehicles, pricing, and land use reform"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-3.html#we-can-examine-trip-generation-in-several-ways",
@@ -4586,7 +4593,7 @@
     "href": "teaching/CIVE461/slides/lec-3.html#trip-generation-accessibility-1",
     "title": "Lecture 3 - Trip Generation",
     "section": "Trip Generation & Accessibility",
-    "text": "Trip Generation & Accessibility\n\nAttempts made to incorporate an accessibility measure into trip generation by replacing \\(O_i = f(H_i)\\) by \\(f(H_i,A_i\\) where \\(H_i\\) are household characteristics & \\(A_i\\) is an accessibility measure\nAccessibility generally defined by \\(A_i = \\sum_j f(E_j, C_{ij})\\) where \\(E_j\\) is an attraction measure for zone \\(j\\) & \\(C_{ij}\\) is a generalized cost of travel between zones \\(i\\) & \\(j\\).\n\nOften give wrong sign or non-significant results due to unresolved model dynamics & problems from using cross-sectional rather than longitudinal data\nLeads to activity-based models & trip frequency/scheduling choice models (discussed in CIVE864)\n\n\n\n\n\n\nCIVE461 Home"
+    "text": "Trip Generation & Accessibility\n\nAttempts made to incorporate an accessibility measure into trip generation by replacing \\(O_i = f(H_i)\\) by \\(f(H_i,A_i\\) where \\(H_i\\) are household characteristics & \\(A_i\\) is an accessibility measure\nAccessibility generally defined by \\(A_i = \\sum_j f(E_j, C_{ij})\\) where \\(E_j\\) is an attraction measure for zone \\(j\\) & \\(C_{ij}\\) is a generalized cost of travel between zones \\(i\\) & \\(j\\).\n\nOften give wrong sign or non-significant results due to unresolved model dynamics & problems from using cross-sectional rather than longitudinal data\nLeads to activity-based models & trip frequency/scheduling choice models (discussed in CIVE864)"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-5.html#outline",
@@ -4705,7 +4712,7 @@
     "href": "teaching/CIVE461/slides/lec-5.html#iia-cont",
     "title": "Lecture 5 - Choice Models",
     "section": "IIA Cont…",
-    "text": "IIA Cont…\n\nIf the IIA assumption does not hold, we can make other error distribution assumptions\n\nNested logit (can handle complex decision structures)\nProbit (normal error terms, very general model, but can be difficult to work with it)\n\n\n\n\n\n\nCIVE461 Home"
+    "text": "IIA Cont…\n\nIf the IIA assumption does not hold, we can make other error distribution assumptions\n\nNested logit (can handle complex decision structures)\nProbit (normal error terms, very general model, but can be difficult to work with it)"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-7.html#outline",
@@ -5097,7 +5104,7 @@
     "href": "teaching/CIVE461/slides/lec-7.html#transit-assignment",
     "title": "Lecture 7 - Trip Assignment",
     "section": "Transit Assignment",
-    "text": "Transit Assignment\n\nTransit assignment not usually a function of congestion\nProcedures typically used:\n\nAll-Or-Nothing\nStochastic (multipath)\n\nMust account for:\n\nWalk access/egress times\nWaiting times as f(headway)\nTransfers\n\nFeasible transfer points\nTransfer times\n\n\n\n\n\n\n\nCIVE461 Home"
+    "text": "Transit Assignment\n\nTransit assignment not usually a function of congestion\nProcedures typically used:\n\nAll-Or-Nothing\nStochastic (multipath)\n\nMust account for:\n\nWalk access/egress times\nWaiting times as f(headway)\nTransfers\n\nFeasible transfer points\nTransfer times"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-9.html",
@@ -5771,7 +5778,7 @@
     "href": "teaching/ENCI707/index.html",
     "title": "ENCI707",
     "section": "",
-    "text": "This page contains an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses, with all changes documented here.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nDate\nTopic\nPrepare\nSlides\nAE\nHW\nProject\n\n\n\n\n1\nWed, Jan 15\nMicroeconomic Theory\n📖\n📋\n🖥️\n\n\n\n\n2\nWed, Jan 22\nMicroeconomic Theory\n📖\n\n🖥️\n\n\n\n\n\n\nData Sources\n\n\n\n\n\n\n\n3\nWed, Jan 29\nSurveys\n📖\n📋\n🖥️\n\n📝\n\n\n4\nWed, Feb 05\nAggregate Demand Models\n📖\n📋\n🖥️\n📝\n\n\n\n5\nWed, Feb 12\nPolicy Analysis\n📖\n\n🖥️\n\n\n\n\n\n\nPolicy Analysis\n\n\n🖥️\n\n\n\n\n6\nWed, Feb 19\nWinter Break\n\n\n\n\n📝\n\n\n7\nWed, Feb 26\nComputational Model Estimation\n📖\n\n🖥️\n📝\n\n\n\n\n\nComputational Model Estimation\n\n\n🖥️\n\n\n\n\n8\nWed, Mar 05\nDisaggregate Demand Theory\n📖\n📋\n🖥️\n\n\n\n\n9\nWed, Mar 12\nDisaggregate Demand Models: Multinomial Logit\n📖\n📋\n\n\n\n\n\n10\nWed, Mar 19\nApplying Disaggrate Demand Models\n📖\n📋\n🖥️\n📝\n\n\n\n\n\n\n\n\n\n\n📝\n\n\n11\nWed, Mar 26\nDissaggrate Demand Models: Advanced Choice Models\n📖\n📋\n\n\n\n\n\n12\nWed, Apr 02\nCausal Inference\n📖\n📋\n🖥️\n\n\n\n\n13\nWed, Apr 09\nSummary Applications\n📖\n\n🖥️\n\n\n\n\n14\nWed, Apr 16\nExams Week\n\n\n\n\n📝",
+    "text": "This page contains an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses, with all changes documented here.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nDate\nTopic\nPrepare\nSlides\nAE\nHW\nProject\n\n\n\n\n1\nWed, Jan 15\nMicroeconomic Theory\n📖\n📋\n🖥️\n\n\n\n\n2\nWed, Jan 22\nMicroeconomic Theory\n📖\n\n🖥️\n\n\n\n\n\n\nData Sources\n\n\n\n\n\n\n\n3\nWed, Jan 29\nSurveys\n📖\n📋\n🖥️\n\n📝\n\n\n4\nWed, Feb 05\nAggregate Demand Models\n📖\n📋\n🖥️\n📝\n\n\n\n5\nWed, Feb 12\nPolicy Analysis\n📖\n\n🖥️\n\n\n\n\n\n\nPolicy Analysis\n\n\n🖥️\n\n\n\n\n6\nWed, Feb 19\nWinter Break\n\n\n\n\n📝\n\n\n7\nWed, Feb 26\nComputational Model Estimation\n📖\n\n🖥️\n📝\n\n\n\n\n\nComputational Model Estimation\n\n\n🖥️\n\n\n\n\n8\nWed, Mar 05\nDisaggregate Demand Theory\n📖\n📋\n🖥️\n\n\n\n\n9\nWed, Mar 12\nDisaggregate Demand Models: Multinomial Logit\n📖\n📋\n\n\n\n\n\n10\nWed, Mar 19\nApplying Disaggrate Demand Models\n📖\n\n🖥️\n📝\n📝\n\n\n11\nWed, Mar 26\nAdvanced Choice Models\n📖\n📋\n\n\n\n\n\n12\nWed, Apr 02\nCausal Inference\n📖\n📋\n🖥️\n\n\n\n\n13\nWed, Apr 09\nSummary Applications\n📖\n\n🖥️\n\n\n\n\n14\nWed, Apr 16\nExams Week\n\n\n\n\n📝",
     "crumbs": [
       "Research",
       "Administration",
@@ -5783,7 +5790,7 @@
     "href": "teaching/ENCI707/project/project-description.html",
     "title": "Project description",
     "section": "",
-    "text": "Topic ideas due Wed, Jan 22\nProposal due Fri, Jan 31\nLiterature review due Fri, Feb 21\nDraft data and experimental design plan due Fri, Apr 04\nFinal data and experimental design plan due Fri, Apr 18",
+    "text": "Topic ideas due Wed, Jan 22\nProposal due Fri, Jan 31\nLiterature review due Fri, Feb 21\nDraft data and experimental design plan due Fri, Mar 21\nFinal data and experimental design plan due Fri, Apr 18",
     "crumbs": [
       "Project",
       "Description"
@@ -5794,7 +5801,7 @@
     "href": "teaching/ENCI707/project/project-description.html#timeline",
     "title": "Project description",
     "section": "",
-    "text": "Topic ideas due Wed, Jan 22\nProposal due Fri, Jan 31\nLiterature review due Fri, Feb 21\nDraft data and experimental design plan due Fri, Apr 04\nFinal data and experimental design plan due Fri, Apr 18",
+    "text": "Topic ideas due Wed, Jan 22\nProposal due Fri, Jan 31\nLiterature review due Fri, Feb 21\nDraft data and experimental design plan due Fri, Mar 21\nFinal data and experimental design plan due Fri, Apr 18",
     "crumbs": [
       "Project",
       "Description"
@@ -6189,7 +6196,7 @@
     "href": "teaching/ENCI707/slides/lec-2.html#other-design-recommendations-2",
     "title": "Lecture 2 - Surveys",
     "section": "Other Design Recommendations 2",
-    "text": "Other Design Recommendations 2\n\nKeep choice experiments simple - we respond to very complex choices in practice but do so over a long period of time\nAllow respondents to opt for response outside set of experimental alternatives - e.g., in mode choice exercise, if all options become too unattractive respondent may decide to change destination, time of travel, or not to travel at all\nAllow ‘will do something else’ alternative - could be programmed to branch to another exercise exploring precisely these other options\nMake sure alternatives are clearly and unambiguously defined (difficult when dealing with qualitative attributes like security or comfort)\n\nE.g., do not express alternatives as ‘poor’ or ‘improved’, which are vague and prone to different interpretations by respondents - what measures or facilities, etc.).\n\n\n\n\n\n\nENCI707 Home"
+    "text": "Other Design Recommendations 2\n\nKeep choice experiments simple - we respond to very complex choices in practice but do so over a long period of time\nAllow respondents to opt for response outside set of experimental alternatives - e.g., in mode choice exercise, if all options become too unattractive respondent may decide to change destination, time of travel, or not to travel at all\nAllow ‘will do something else’ alternative - could be programmed to branch to another exercise exploring precisely these other options\nMake sure alternatives are clearly and unambiguously defined (difficult when dealing with qualitative attributes like security or comfort)\n\nE.g., do not express alternatives as ‘poor’ or ‘improved’, which are vague and prone to different interpretations by respondents - what measures or facilities, etc.)."
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-4.html#demand-versus-choice",
@@ -6336,7 +6343,7 @@
     "href": "teaching/ENCI707/slides/lec-4.html#binary-discrete-choice-2",
     "title": "Lecture 4 - Disaggregate Econometric Choice Theory",
     "section": "Binary Discrete Choice",
-    "text": "Binary Discrete Choice\nBinary Probit/Logit Identification\n\nOnly one alternative specific constant\nScale of logit model is not identified as a constant\nReference alternative is irrelevant \\[𝑉_𝑗−𝑉_𝑘=𝑉=\\beta_0+\\sum \\beta(𝑥_𝑗−𝑥_𝑘)\\] \\[𝑉_𝑗=\\beta_0+\\beta(𝑥_{𝑔𝑒𝑛𝑒𝑟𝑖𝑐})_𝑗+\\beta_{(𝑗−𝑠𝑝𝑒𝑐𝑖𝑓𝑖𝑐)} 𝑥_{(𝑗−𝑠𝑝𝑒𝑐𝑖𝑓𝑖𝑐)}\\] \\[𝑉_𝑘=0+\\beta(𝑥_{𝑔𝑒𝑛𝑒𝑟𝑖𝑐})_𝑘 + \\beta_{(𝑘−𝑠𝑝𝑒𝑐𝑖𝑓𝑖𝑐)} 𝑥_{(𝑘−𝑠𝑝𝑒𝑐𝑖𝑓𝑖𝑐)}\\] \\[𝑉_{𝑐𝑎𝑟}=\\beta_0+\\beta_𝑡 time_{𝑐𝑎𝑟} + \\beta_𝑐 cost_{𝑐𝑎𝑟} +\\beta_𝑜 CarOwnership \\] \\[𝑉_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} = 0 + \\beta_𝑡 time_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} + \\beta_𝑐 fare_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} + \\beta_𝑟 On−TimePerformance\\]\nAllows non-linear transformation and normalizations\n\n\n\n\n\nENCI707 Home"
+    "text": "Binary Discrete Choice\nBinary Probit/Logit Identification\n\nOnly one alternative specific constant\nScale of logit model is not identified as a constant\nReference alternative is irrelevant \\[𝑉_𝑗−𝑉_𝑘=𝑉=\\beta_0+\\sum \\beta(𝑥_𝑗−𝑥_𝑘)\\] \\[𝑉_𝑗=\\beta_0+\\beta(𝑥_{𝑔𝑒𝑛𝑒𝑟𝑖𝑐})_𝑗+\\beta_{(𝑗−𝑠𝑝𝑒𝑐𝑖𝑓𝑖𝑐)} 𝑥_{(𝑗−𝑠𝑝𝑒𝑐𝑖𝑓𝑖𝑐)}\\] \\[𝑉_𝑘=0+\\beta(𝑥_{𝑔𝑒𝑛𝑒𝑟𝑖𝑐})_𝑘 + \\beta_{(𝑘−𝑠𝑝𝑒𝑐𝑖𝑓𝑖𝑐)} 𝑥_{(𝑘−𝑠𝑝𝑒𝑐𝑖𝑓𝑖𝑐)}\\] \\[𝑉_{𝑐𝑎𝑟}=\\beta_0+\\beta_𝑡 time_{𝑐𝑎𝑟} + \\beta_𝑐 cost_{𝑐𝑎𝑟} +\\beta_𝑜 CarOwnership \\] \\[𝑉_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} = 0 + \\beta_𝑡 time_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} + \\beta_𝑐 fare_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} + \\beta_𝑟 On−TimePerformance\\]\nAllows non-linear transformation and normalizations"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#outline",
@@ -6350,21 +6357,21 @@
     "href": "teaching/ENCI707/slides/lec-6.html#discrete-choice-choice-bundle",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "Discrete Choice: Choice Bundle",
-    "text": "Discrete Choice: Choice Bundle\n\n\n\nChoice bundle, for example choice of making a shopping trip at a particular location:\n\nChoice of making a shopping trip compared with no trip or any other trips.\nChoosing a mode of travel to reach a destination.\nChoosing a particular location over other possible locations.\n\nDifferent substitution patterns may exist in three components of shopping trip choice.\nOverall, a single discrete choice but multiple components of choices.\n\nIndividual component have no meaning ::: {.column width=“25%”}"
+    "text": "Discrete Choice: Choice Bundle\n\n\n\nChoice bundle, for example choice of making a shopping trip at a particular location:\n\nChoice of making a shopping trip compared with no trip or any other trips.\nChoosing a mode of travel to reach a destination.\nChoosing a particular location over other possible locations.\n\nDifferent substitution patterns may exist in three components of shopping trip choice.\nOverall, a single discrete choice but multiple components of choices.\n\nIndividual component have no meaning"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#discrete-choice-choice-bundle-1",
     "href": "teaching/ENCI707/slides/lec-6.html#discrete-choice-choice-bundle-1",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "Discrete Choice: Choice Bundle",
-    "text": "Discrete Choice: Choice Bundle\n\n\n\nChoice of Park & Ride as a mode to make commuting trip:\n\nChoice of Park & Ride station location\nChoice of Park & Ride over all other possible modes, e.g., drive all way, car passenger, transit all way\n\nDifferent substitution patterns may exist between choices of modes as well as between alternative Park & Ride station locations\nOverall, a single discrete choice but multiple components of choices\n\nIndividual component have no meaning ::: {.column width=“25%”}"
+    "text": "Discrete Choice: Choice Bundle\n\n\n\nChoice of Park & Ride as a mode to make commuting trip:\n\nChoice of Park & Ride station location\nChoice of Park & Ride over all other possible modes, e.g., drive all way, car passenger, transit all way\n\nDifferent substitution patterns may exist between choices of modes as well as between alternative Park & Ride station locations\nOverall, a single discrete choice but multiple components of choices\n\nIndividual component have no meaning"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#modelling-choice-bundles",
     "href": "teaching/ENCI707/slides/lec-6.html#modelling-choice-bundles",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "Modelling Choice Bundles",
-    "text": "Modelling Choice Bundles\n\nWe can break the choice components to capture substitution patterns that exists at different component levels\nModelling the choice components\n\nSequentially model individual choice components\nSpecifying a combinatorial space of choice components and model simultaneously as a single discrete choice\nModelling as hierarchical choice where choice components can be nested within another choice:\n\nMore correlated choices are nested within less correlated choices:\nExample: if people are more likely to switch shopping location than travel mode to shopping, location choice is nested within mode choice"
+    "text": "Modelling Choice Bundles\n\nWe can break the choice components to capture substitution patterns that exist at different component levels\nModelling the choice components\n\nSequentially model individual choice components\nSpecifying a combinatorial space of choice components and model simultaneously as a single discrete choice\nModelling as hierarchical choice where choice components can be nested within another choice:\n\nMore correlated choices are nested within less correlated choices\nExample: if people are more likely to switch shopping location than travel mode to shopping, location choice is nested within mode choice"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#modelling-choice-bundles-1",
@@ -6385,7 +6392,7 @@
     "href": "teaching/ENCI707/slides/lec-6.html#sequential-logit-model-of-choice-bundle-2",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "Sequential Logit Model of Choice Bundle",
-    "text": "Sequential Logit Model of Choice Bundle\n\n\\[Pr(d) = \\frac{\\exp(V_d)}{\\sum_{d' \\in D} \\exp(V_d')} \\text{, } Pr(m|d) = \\frac{\\exp(V_{m|d})}{\\sum_{m' \\in M} \\exp(V_{m'|d})}\\] - Joint probability of choice \\[Pr(md) = \\frac{\\exp(V_d)}{\\sum_{d' \\in D} \\exp(V_d') \\sum_{m' \\in M} \\exp(V_{m'|d})}\\] \\[Pr(md) = \\frac{\\exp(V_d + V_{m|d})}{\\sum_{d' \\in D} \\exp(V_{d'})} \\frac{\\exp(V_{m|d})}{\\sum_{m' \\in M} \\exp(V_{m'|d'})}\\]"
+    "text": "Sequential Logit Model of Choice Bundle\n\n\\[Pr(d) = \\frac{\\exp(V_d)}{\\sum_{d' \\in D} \\exp(V_d')} \\text{, } Pr(m|d) = \\frac{\\exp(V_{m|d})}{\\sum_{m' \\in M} \\exp(V_{m'|d})}\\] - Joint probability of choice \\[Pr(md) = \\frac{\\exp(V_d)}{\\sum_{d' \\in D} \\exp(V_d') \\sum_{m' \\in M} \\exp(V_{m'|d})}\\] \\[Pr(md) = \\frac{\\exp(V_d + V_{m|d})}{\\sum_{d' \\in D} \\exp(V_{d'})} \\frac{\\exp(V_{m|d})}{\\sum_{m' \\in M} \\exp(V_{m'|d})}\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#sequential-logit-model-of-choice-bundle-3",
@@ -6406,84 +6413,84 @@
     "href": "teaching/ENCI707/slides/lec-6.html#simultaneous-logit-model-of-choice-bundle-1",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "Simultaneous Logit Model of Choice Bundle",
-    "text": "Simultaneous Logit Model of Choice Bundle\n\nRestructure the sequential decisions into a finite number of alternative pairs\nAlternative pairs are mutually exclusive and collectively exhaustive: single discrete choice case\nThe example of mode(m) and destination(d) choice:  \\[Pr(md) = \\frac{\\exp(V_d + V_{m|d})}{\\sum_{d' \\in D}\\sum_{m' \\in M} \\exp(V_{d'} + V_{m'|d'})}\\]"
+    "text": "Simultaneous Logit Model of Choice Bundle\n\nRestructure the sequential decisions into a finite number of alternative pairs\nAlternative pairs are mutually exclusive and collectively exhaustive: single discrete choice case\nThe example of mode(m) and destination(d) choice:  \\[Pr(md) = \\frac{\\exp(V_d + V_{m|d})}{\\sum_{d' \\in D}\\sum_{m' \\in M} \\exp(V_{d'} + V_{m'|d})}\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#simultaneous-logit-model-of-choice-bundle-2",
     "href": "teaching/ENCI707/slides/lec-6.html#simultaneous-logit-model-of-choice-bundle-2",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "Simultaneous Logit Model of Choice Bundle",
-    "text": "Simultaneous Logit Model of Choice Bundle\n\\[Pr⁡(𝑚𝑑)= \\frac{\\exp(𝑉_𝑑+𝑉_{𝑚|𝑑})}{\\sum_{𝑑'^/\\in 𝐷}\\sum_{𝑚'^/\\in 𝑀} \\exp⁡(𝑉_{𝑑'} +𝑉_{𝑚'|𝑑'})\\] \\[Pr⁡(𝑚𝑑)=\\frac{\\exp(𝑉_𝑑+𝑉_{𝑚|𝑑})}{\\sum_{𝑑'^/\\in 𝐷} \\exp⁡(𝑉_{𝑑'}) \\sum_{m'^/\\in M}\\exp(𝑉_{𝑚'|𝑑'})\\] \\[Pr⁡(𝑚𝑑)=\\frac{\\exp(𝑉_𝑑+𝑉_{𝑚|𝑑})}{\\sum_{𝑑'^/\\in 𝐷} \\exp⁡(𝑉_{𝑑'} + \\ln(\\sum_{m'^/\\in M}\\exp(𝑉_{𝑚'|𝑑'}))\\]"
+    "text": "Simultaneous Logit Model of Choice Bundle\n\\[Pr⁡_{𝑚𝑑} = \\frac{\\exp(𝑉_𝑑+𝑉_{𝑚|𝑑})}{\\sum_{𝑑'\\in 𝐷}\\sum_{𝑚'\\in 𝑀} \\exp⁡(𝑉_{𝑑'} +𝑉_{𝑚'|𝑑'})}\\] \\[Pr⁡_{𝑚𝑑}=\\frac{\\exp(𝑉_𝑑+𝑉_{𝑚|𝑑})}{\\sum_{𝑑'\\in 𝐷} \\exp⁡(𝑉_{𝑑'}) \\sum_{m'\\in M}\\exp(𝑉_{𝑚'|𝑑'})}\\] \\[Pr⁡_{𝑚𝑑}=\\frac{\\exp(𝑉_𝑑+𝑉_{𝑚|𝑑})}{\\sum_{𝑑'\\in 𝐷} \\exp⁡(𝑉_{𝑑'} + \\ln(\\sum_{m'\\in M}\\exp(𝑉_{𝑚'|𝑑'})}\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#simultaneous-logit-model-of-choice-bundle-3",
     "href": "teaching/ENCI707/slides/lec-6.html#simultaneous-logit-model-of-choice-bundle-3",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "Simultaneous Logit Model of Choice Bundle",
-    "text": "Simultaneous Logit Model of Choice Bundle\n\nDeriving marginal choice probability from simultaneous choice probabilities: \\[Pr⁡(𝑑)= \\sum_𝑚 Pr⁡(𝑚𝑑)_m = \\frac{\\sum_𝑚 \\exp⁡(𝑉_𝑑+𝑉_{𝑚|𝑑})}{(\\sum_{𝑑'^/\\in 𝐷} \\exp⁡(𝑉_{𝑑'}+\\ln⁡(\\sum_(𝑚' \\in 𝑀) \\exp⁡(𝑉_{𝑚'|𝑑'}))\\] \\[Pr⁡(𝑑)=\\frac{\\sum_𝑚 \\exp⁡(𝑉_𝑑+\\ln(\\sum_{m \\in M} \\exp(V_{m|d})))}{(\\sum_{𝑑'^/\\in 𝐷} \\exp⁡(𝑉_{𝑑'}+\\ln⁡(\\sum_(𝑚' \\in 𝑀) \\exp⁡(𝑉_{𝑚'|𝑑'}))\\] \\[Pr⁡(𝑚)=\\sum_{d} Pr(md) = \\frac{\\sum_d \\exp(V_d + V_{m|d})}{\\sum_{d' \\in D} \\exp(V_d + \\ln(\\sum_{m' \\in M} \\exp(V_{m'|d'})))}\\]"
+    "text": "Simultaneous Logit Model of Choice Bundle\n\nDeriving marginal choice probability from simultaneous choice probabilities: \\[Pr⁡(𝑑) = \\sum_𝑚 Pr⁡(𝑚𝑑) = \\frac{\\sum_𝑚 \\exp⁡(𝑉_𝑑+𝑉_{𝑚|𝑑})}{\\sum_{𝑑'\\in 𝐷} \\exp⁡(𝑉_{𝑑'}+\\ln⁡(\\sum_{𝑚' \\in 𝑀} \\exp⁡(𝑉_{𝑚'|𝑑'})}\\] \\[Pr⁡(𝑑)=\\frac{ \\exp⁡(𝑉_𝑑+\\ln(\\sum_{m \\in M} \\exp(V_{m|d})))}{\\sum_{𝑑'\\in 𝐷} \\exp⁡(𝑉_{𝑑'}+\\ln⁡(\\sum_(𝑚' \\in 𝑀) \\exp⁡(𝑉_{𝑚'|𝑑'})}\\] \\[Pr⁡(𝑚)=\\sum_{d} Pr(md) = \\frac{\\sum_d \\exp(V_d + V_{m|d})}{\\sum_{d' \\in D} \\exp(V_d + \\ln(\\sum_{m' \\in M} \\exp(V_{m'|d})))}\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#simultaneous-logit-model-of-choice-bundle-4",
     "href": "teaching/ENCI707/slides/lec-6.html#simultaneous-logit-model-of-choice-bundle-4",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "Simultaneous Logit Model of Choice Bundle",
-    "text": "Simultaneous Logit Model of Choice Bundle\n\nDeriving sequential model from the joint model: \\[Pr⁡(𝑚│𝑑)=\\frac{Pr⁡(𝑚𝑑)|{(Pr⁡(𝑑)} = \\frac{\\exp(𝑉_𝑑+𝑉_{𝑚|𝑑})}{\\exp(𝑉_{𝑑'})\\sum_(𝑚'\\in 𝑀) \\exp(V_{m'|d'})}\\] \\[Pr⁡(𝑚│𝑑) = {\\exp(𝑉_(𝑚|𝑑)}{(\\sum_{𝑚' \\in 𝑀} \\exp⁡(𝑉_{𝑚'|𝑑'})}\\]\nThe simultaneous model captures the influence of lower-level choice in the upper level by adding \\(\\ln(\\sum \\exp(V_{m|d}))\\),\n\nOften called Inclusive Value (IV) or Expected Maximum Utility (EMU) of lower-level choice\n\nHowever, it ignores the scale difference (differences in randomness) in two levels"
+    "text": "Simultaneous Logit Model of Choice Bundle\n\nDeriving sequential model from the joint model: \\[Pr⁡(𝑚│𝑑)=\\frac{Pr⁡(𝑚𝑑)}{Pr⁡(𝑑)} = \\frac{\\exp(𝑉_𝑑+𝑉_{𝑚|𝑑})}{\\exp(𝑉_{𝑑'})\\sum_{𝑚'\\in 𝑀} \\exp(V_{m'|d})}\\] \\[Pr⁡(𝑚│𝑑) = \\frac{\\exp(𝑉_{𝑚|𝑑})}{\\sum_{𝑚' \\in 𝑀} \\exp⁡(𝑉_{𝑚'|𝑑'})}\\]\nThe simultaneous model captures the influence of lower-level choice in the upper level by adding \\(\\ln(\\sum \\exp(V_{m|d}))\\),\n\nOften called Inclusive Value (IV) or Expected Maximum Utility (EMU) of lower-level choice\n\nHowever, it ignores the scale difference (differences in randomness) in two levels"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#simultaneous-logit-model-of-choice-bundle-5",
     "href": "teaching/ENCI707/slides/lec-6.html#simultaneous-logit-model-of-choice-bundle-5",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "Simultaneous Logit Model of Choice Bundle",
-    "text": "Simultaneous Logit Model of Choice Bundle\n\nUnlike sequential model, simultaneous model incorporates expectations of conditional level utility at the conditioning levels: \nSystematic utility of destination choice: \\[\\tilde{V_d} = V_d + {Expected Maximum Utility of choice of mode}_d\\]\nScale parameters are same (unity) in both levels."
+    "text": "Simultaneous Logit Model of Choice Bundle\n\nUnlike sequential model, simultaneous model incorporates expectations of conditional level utility at the conditioning levels: \nSystematic utility of destination choice: \\[\\widetilde{V_d} = V_d + \\text{{Expected Maximum Utility of choice of mode}}_d\\]\nScale parameters are same (unity) at both levels"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#estimation-simultaneous-logit-model",
     "href": "teaching/ENCI707/slides/lec-6.html#estimation-simultaneous-logit-model",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "Estimation: Simultaneous Logit Model",
-    "text": "Estimation: Simultaneous Logit Model\n\nClosed form, so classical estimation techniques are feasible: Maximum Likelihood\nLikelihood of one observation i: \\[𝐿_𝑖=\\prod_{𝑑𝑚=1}^{𝐷𝑀} (Pr⁡(𝑑_𝑖 𝑚_𝑖))^{\\delta_{𝑑𝑚}} \\] \\[\\delta_{𝑑𝑚}=1 \\text{𝑖𝑓 𝑡ℎ𝑒 𝑐ℎ𝑜𝑠𝑒𝑛 𝑚𝑜𝑑𝑒 𝑚 𝑎𝑛𝑑 𝑑𝑒𝑠𝑡𝑖𝑛𝑎𝑡𝑖𝑜𝑛 𝑑 𝑝𝑎𝑖𝑟 𝑖𝑠 𝑐ℎ𝑜s𝑒𝑛, } 0 \\text{𝑜𝑡ℎ𝑒𝑟𝑤𝑖𝑠𝑒}\\]\nSpecification test, statistical significance, goodness-of-fit, elasticity/marginal effect: as explained for MNL."
+    "text": "Estimation: Simultaneous Logit Model\n\nClosed form, so classical estimation techniques are feasible: Maximum Likelihood\nLikelihood of one observation \\(i\\): \\[𝐿_𝑖=\\prod_{𝑑𝑚=1}^{𝐷𝑀} (Pr⁡(𝑑_𝑖 𝑚_𝑖))^{\\delta_{𝑑𝑚}} \\] \\[\\delta_{𝑑𝑚}=1 \\text{ if the chosen mode m and destination d pair is chosen; 0 otherwise}\\]\nSpecification test, statistical significance, goodness-of-fit, elasticity/marginal effect: as explained for MNL."
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#nested-logit-model",
     "href": "teaching/ENCI707/slides/lec-6.html#nested-logit-model",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "Nested Logit Model",
-    "text": "Nested Logit Model"
+    "text": "Nested Logit Model\n \\[U_{m|d} = V_{m|d} + \\epsilon_{m|d} \\text{ (Lower-level conditional utility function)}\\] \\[\\begin{align}\nU_{d} = V_d + (V_{m|d} + \\epsilon_{m|d}) + \\epsilon_d = \\widetilde{V_d} + \\epsilon_d & \\text{ (Upper-level unconditional} \\\\\n& \\text{utility function for a pair of d-m)}\n\\end{align}\\] \\[\\begin{align}\n\\widetilde{V_d} = V_d + (V_{m|d} + \\epsilon_{m|d}) & \\text{ (Upper-level compounded} \\\\\n& \\text{systematic utility for a pair of d-m)}\n\\end{align}\\] \\[\\epsilon_d \\sim\\text{IID EV Type I with scale, }\\mu_1\\text{; }Var(\\epsilon_d)=\\pi^2/6\\mu^2_d\\] \\[\\epsilon_{m|d} \\sim\\text{IID EV Type I with scale, }\\mu_2\\text{; }Var(\\epsilon_{m|d})=\\pi^2/6\\mu^2_m\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#nested-logit-model-1",
     "href": "teaching/ENCI707/slides/lec-6.html#nested-logit-model-1",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "Nested Logit Model",
-    "text": "Nested Logit Model\n\nConditional choice of mode (m) for a give destination (d): an MNL model:\nThe expected maximum utility (EMU) of lower-level choice (m) for a particular upper-level choice alternative (d) is:\n\nWe can derive the compounded systematic utility of upper-level choices as: \\[𝑉 ̃_𝑑=𝜇_𝑑 𝑉_𝑑+𝜇_𝑑/𝜇_𝑚  𝑙𝑛(\\sum_(𝑚^/\\in 𝑀)▒𝑒𝑥𝑝(𝜇_𝑚 𝑉_(𝑚^/ |𝑑) ) )\\] We can define 𝜙=𝜇_𝑑∕𝜇_𝑚 where 𝜙 is known as the inclusive value or logsum parameter."
+    "text": "Nested Logit Model\n\nConditional choice of mode (\\(m\\)) for a give destination (\\(d\\)): an MNL model: \\[Pr(m|d) = \\frac{\\exp(\\mu_m V_{m|d})}{\\sum_{m'\\in M}\\exp(\\mu_m V_{m'|d})}\\]\nThe expected maximum utility (EMU) of lower-level choice (\\(m\\)) for a particular upper-level choice alternative (\\(d\\)) is: \\[EMU=\\frac{1}{\\mu_m} \\ln\\left(\\sum_{m'|M}\\exp(\\mu_m V_m'|d)\\right)\\]\nWe can derive the compounded systematic utility of upper-level choices as: \\[\\widetilde{𝑉_𝑑}=\\mu_𝑑 𝑉_𝑑+\\frac{\\mu_𝑑}{\\mu_𝑚}  \\ln\\left(\\sum_{m' \\in 𝑀} \\exp(\\mu_𝑚 𝑉_{𝑚'|𝑑})\\right)\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#nested-logit-model-2",
     "href": "teaching/ENCI707/slides/lec-6.html#nested-logit-model-2",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "Nested Logit Model",
-    "text": "Nested Logit Model\n\nThe unconditional probability of an upper-level choice alternative: an MNL $\\[$\n\\]$$\nScales should be non-negative:\nScale approaching 0 indicates infinite variance, so fully random choice.\nScale approaching +∞ indicates zero-approaching variances, so deterministic choice."
+    "text": "Nested Logit Model\n\nWe can define \\(\\phi=\\mu_𝑑∕\\mu_𝑚\\) where \\(\\phi\\) is known as the inclusive value or logsum parameter\nThe unconditional probability of an upper-level choice alternative: an MNL \\[Pr(d) = \\frac{\\exp(\\widetilde{V_d})}{\\sum_{d' \\in D}\\exp(\\widetilde{V_{d'}})}\\] \\[Pr(d) = \\frac{\\exp(\\mu_d V_d + \\phi \\ln(\\sum_{m' \\in M} \\exp(\\mu_m V_{m'|d})))}{\\sum_{d' \\in D}\\exp(\\mu_d V_{d'} + \\phi \\ln(\\sum_{m' \\in M} \\exp(\\mu_m V_{m'|d'})))}\\]\nScales should be non-negative\nScale approaching 0 indicates infinite variance, so fully random choice\nScale approaching \\(+\\infty\\) indicates zero-approaching variances, so deterministic choice"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#nested-logit-model-3",
     "href": "teaching/ENCI707/slides/lec-6.html#nested-logit-model-3",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "Nested Logit Model",
-    "text": "Nested Logit Model\n\nTo be a RUM choice model, the scale of the lower-level conditional choices should be higher than the scale of the upper-level choice (the opposite is true for variance) $$$$\nBoth scales are not identified individually, but, normalizing one of them make the other identified.\nTypically, the upper-level scale is normalized to 1.\n$$$$"
+    "text": "Nested Logit Model\n\nTo be a RUM choice model, the scale of the lower-level conditional choices should be higher than the scale of the upper-level choice (the opposite is true for variance) \\[0 \\leq (\\phi = \\frac{\\mu_d}{\\mu_m}) \\leq 1 \\text{; i.e., } \\mu_m \\geq \\mu_d\\]\nBoth scales are not identified individually, but, normalizing one of them make the other identified - normalize upper-level scale to 1\nConsidering \\(\\mu_d=1 \\therefore \\mu_m &gt; 1 \\text{ & } \\phi &lt; 1\\) \\[\\phi &gt; 1 \\text{ means nests should be reversed}\\] \\[\\phi =1 \\text{ means choice process is simultaneous}\\] \\[\\phi =0 \\text{ means choice process is sequential}\\] \\[\\phi &lt;0 \\text{ means no joint choice - i.e., Tversky's elimination by aspects model}\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#estimation-nested-logit-model",
     "href": "teaching/ENCI707/slides/lec-6.html#estimation-nested-logit-model",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "Estimation: Nested Logit Model",
-    "text": "Estimation: Nested Logit Model\n\nClosed form, so classical estimation techniques are feasible: e.g., Maximum Likelihood.\nLikelihood of one observation i:\nSpecification test, statistical significance, goodness-of-fit: as explained for MNL.\nTesting significance of scale parameter: with 𝜇_𝑑 normalized to 1, 𝜇_𝑚 should be significantly greater than 1."
+    "text": "Estimation: Nested Logit Model\n\nClosed form, so classical estimation techniques are feasible: e.g., Maximum Likelihood\nLikelihood of one observation i: \\[L_i = \\prod_{d=1}^D\\left(Pr(d_i)\\prod_{m=1}^M Pr(m_i)^{\\delta_m} \\right)^{\\delta_d}\\] \\[\\delta_m = 1 \\text{ if chosen mode is m; 0 otherwise & }\\delta_d = 1 \\text{ if chosen destination is d; 0 otherwise}\\]\nSpecification test, statistical significance, goodness-of-fit: as explained for MNL\nTesting significance of scale parameter: with \\(\\mu_𝑑\\) normalized to 1, \\(\\mu_𝑚\\) should be significantly greater than 1 \\[t-statistic = \\frac{\\mu_m - 1}{se(\\mu_m)} \\text{&gt; 1.64 supports nesting structure}\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#nested-logit-model-correlations",
     "href": "teaching/ENCI707/slides/lec-6.html#nested-logit-model-correlations",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "Nested Logit Model: Correlations",
-    "text": "Nested Logit Model: Correlations\n\nThe nesting structure induces a correlations pattern:\nUpper-level choices are IIA, so correlations among unobserved utilities are zero.\nConditional lower-level choices are IIA (within a nest), so, correlations among unobserved utilities are zero.\nHowever, as they related to the upper-level choices, nested lower-level choices have a block correlation\nIn our case, the (approximate) correlations among the choices of ‘m’ for a particular choice of ‘d’ is: $$$$"
+    "text": "Nested Logit Model: Correlations\n\nThe nesting structure induces a correlations pattern:\n\nUpper-level choices are IIA, so correlations among unobserved utilities are zero\nConditional lower-level choices are IIA (within a nest), so, correlations among unobserved utilities are zero\nHowever, as they related to the upper-level choices, nested lower-level choices have a block correlation\nIn our case, the (approximate) correlations among the choices of \\(m\\) for a particular choice of \\(d\\) is: \\[\\text{nest coefficient, } \\rho = 1 - \\left(\\frac{\\mu_d}{\\mu_m}\\right)^2\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#nested-logit-model-elasticities",
@@ -6504,35 +6511,35 @@
     "href": "teaching/ENCI707/slides/lec-6.html#nested-logit",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "Nested Logit",
-    "text": "Nested Logit\n\nSame procedures as MNL are applicable for NL:\n\nGoodness-of-fit\nSpecification test\nValidation\nCollinearity, budget/income effect.\nMarket segmentation.\nAggregating elasticity/marginal effects.\nElasticity of attribute of choice alternatives, attributes of choice makers, or categorical variables.\nPolicy evaluations."
+    "text": "Nested Logit\n\nSame procedures as MNL are applicable for NL:\n\nGoodness-of-fit\nSpecification test\nValidation\nCollinearity, budget/income effect\nMarket segmentation\nAggregating elasticity/marginal effects\nElasticity of attribute of choice alternatives, attributes of choice makers, or categorical variables\nPolicy evaluations"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#interpretation-of-nesting-in-nl-model",
     "href": "teaching/ENCI707/slides/lec-6.html#interpretation-of-nesting-in-nl-model",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "Interpretation of Nesting in NL Model",
-    "text": "Interpretation of Nesting in NL Model\n\nScale is inverse of variance: higher scale means lower randomness (variance) and higher correlations\nIf choices of ‘m’ is nested within the choice of ‘d’, it means that choice maker is more likely to switch ‘m’ choices before switching ‘d’ choices\nBlock correlations of nested choices explain the strength/patterns of such differential switching between different levels of nested logit model"
+    "text": "Interpretation of Nesting in NL Model\n\nScale is inverse of variance: higher scale means lower randomness (variance) and higher correlations\n\nIf choice of \\(m\\) is nested within the choice of \\(d\\), it means that choice maker is more likely to switch \\(m\\) choices before switching \\(d\\) choices\nBlock correlations of nested choices explain the strength/patterns of such differential switching between different levels of nested logit model"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#iid-and-nested-logit-model",
     "href": "teaching/ENCI707/slides/lec-6.html#iid-and-nested-logit-model",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "IID and Nested Logit Model",
-    "text": "IID and Nested Logit Model\nConsider a route choice problem: In network, multiple alternative routes having common link will have correlated properties. Example: 2 routes with no partial overlap. Under equilibrium, both have the same average travel time: \\[\n- Consider: systematic utility of choosing a route: \\] - Logit choice probability: $$$$"
+    "text": "IID and Nested Logit Model\n\nConsider a route choice problem: In network, multiple alternative routes having common link will have correlated properties.\nExample: 2 routes with no partial overlap. Under equilibrium, both have the same average travel time: \\(t_1=t_2=t\\)\nConsider: systematic utility of choosing a route: \\(V_r=V_1=V_2=-t\\)\nLogit choice probability: \\[Pr(route1) = Pr(route2) = \\frac{\\exp(V_1)}{\\exp(V_1)+\\exp(V_2)} = \\frac{\\exp(-t)}{\\exp(-t)+\\exp(-t)} = 0.5\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#iid-and-nested-logit-model-1",
     "href": "teaching/ENCI707/slides/lec-6.html#iid-and-nested-logit-model-1",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "IID and Nested Logit Model",
-    "text": "IID and Nested Logit Model\n\nAdd a 3rd route that has partial overlap with route 2.\nUnder equilibrium, all have the same average travel time:\nConsider: systematic utility of choosing a route:\nLogit choice probability:\nRoute 2 and 3 are very similar!"
+    "text": "IID and Nested Logit Model\n\nAdd a 3rd route that has partial overlap with route 2\nUnder equilibrium, all have the same average travel time: \\(t_1=t_2=t_3=t\\)\nConsider: systematic utility of choosing a route: \\(V_1=V_2=V_3=-t\\)\nLogit choice probability: \\[Pr(routeX) = \\frac{\\exp(V_X)}{\\exp(V_1)+\\exp(V_2)+\\exp(V_3)} = \\frac{\\exp(-t)}{\\exp(-t)+\\exp(-t)+\\exp(-t)} = 0.33\\] \nRoute 2 and 3 are very similar!"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#iid-and-nested-logit-model-2",
     "href": "teaching/ENCI707/slides/lec-6.html#iid-and-nested-logit-model-2",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "IID and Nested Logit Model",
-    "text": "IID and Nested Logit Model\n\nLet us change the utility structure\nCommonalities between 2 and 3 by common w lead to correlation with respect to common ε.\nFurther assumption:"
+    "text": "IID and Nested Logit Model\n\n\n\nLet us change the utility structure \\[U_1 = V_1 + \\epsilon_1\\] \\[U_2 = V_2 + w + \\epsilon_2\\] \\[U_3 = V_3 + w + \\epsilon_3\\]\nCommonalities between 2 and 3 by common \\(w\\) lead to correlation with respect to common \\(\\epsilon\\).\nFurther assumption:\n\\(\\epsilon\\) are IID Type I EV, with scale \\(\\mu_1\\)\n\\(w\\) are IID Type I EV, with scale \\(\\mu_2\\)\nNormalizing \\(\\mu_1 = 1\\) and defining \\(\\phi=1/\\mu_2\\)"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#iid-and-nested-logit-model-3",
@@ -6644,7 +6651,7 @@
     "href": "teaching/ENCI707/slides/lec-6.html#generalized-extreme-value-gev-model-2",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "Generalized Extreme Value (GEV) Model",
-    "text": "Generalized Extreme Value (GEV) Model\n$$$$ - GEV mode is the most flexible closed-form model that can capture a wide variety of choice models: For different generating function, different choice model can arise. MNL and NL are special cases of the GEV model - Other GEV models: Network GEV, Cross-nested Logit, Paired-Combinatorial Logit etc. for the G(..) function with degree, 𝜇"
+    "text": "Generalized Extreme Value (GEV) Model\n$$$$ - GEV mode is the most flexible closed-form model that can capture a wide variety of choice models: For different generating function, different choice model can arise. MNL and NL are special cases of the GEV model - Other GEV models: Network GEV, Cross-nested Logit, Paired-Combinatorial Logit etc. for the G(..) function with degree,"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#estimation-gev-model",
@@ -6746,7 +6753,7 @@
   {
     "objectID": "teaching/ENCI707/weeks/week-12.html",
     "href": "teaching/ENCI707/weeks/week-12.html",
-    "title": "Week 11",
+    "title": "Week 12",
     "section": "",
     "text": "📖 Watch the videos\n📖 Review Ch. 18-21 of Regression and Other Stories ROS",
     "crumbs": [
@@ -6757,7 +6764,7 @@
   {
     "objectID": "teaching/ENCI707/weeks/week-12.html#prepare",
     "href": "teaching/ENCI707/weeks/week-12.html#prepare",
-    "title": "Week 11",
+    "title": "Week 12",
     "section": "",
     "text": "📖 Watch the videos\n📖 Review Ch. 18-21 of Regression and Other Stories ROS",
     "crumbs": [
@@ -6768,7 +6775,7 @@
   {
     "objectID": "teaching/ENCI707/weeks/week-12.html#participate",
     "href": "teaching/ENCI707/weeks/week-12.html#participate",
-    "title": "Week 11",
+    "title": "Week 12",
     "section": "Participate",
     "text": "Participate\n🖥️ Lecture 7 - Causal Inference",
     "crumbs": [
@@ -6779,7 +6786,7 @@
   {
     "objectID": "teaching/ENCI707/weeks/week-12.html#practice",
     "href": "teaching/ENCI707/weeks/week-12.html#practice",
-    "title": "Week 11",
+    "title": "Week 12",
     "section": "Practice",
     "text": "Practice\n🖥️ Activity 11 - Causal Inference",
     "crumbs": [
@@ -6790,7 +6797,7 @@
   {
     "objectID": "teaching/ENCI707/weeks/week-12.html#deliver",
     "href": "teaching/ENCI707/weeks/week-12.html#deliver",
-    "title": "Week 11",
+    "title": "Week 12",
     "section": "Deliver",
     "text": "Deliver\nNone\n\n\nBack to course schedule ⏎",
     "crumbs": [
