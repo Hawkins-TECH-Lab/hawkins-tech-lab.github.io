@@ -1,5 +1,5 @@
 ---
-title: "Lecture 8 - Causal Inference"
+title: "Lecture 7 - Causal Inference"
 subtitle: "ENCI707: Engineering Demand and Policy Analysis"
 footer:  "[ENCI707 Home](/teaching/ENCI707/)"
 logo: "../../../assets/images/teaching/ENCI707/logo.png"
@@ -15,131 +15,240 @@ execute:
 ## Outline
 
 ::: incremental
-1.  Basis for choice modeling
-2.  Theory
-3.  Logit choice model
+1. Need for causal inference
+2. Methods of causal inference
+    - Propensity score matching
+    - Instrumental variables
+    - Regression discontinuity
+    - Difference-in-differences
+3. Causal Graph Theory
 :::
 
-## Basis for Choice Modeling {.smaller}
+## Causal Inference in Transportation Planning
+- Large-scale transportation models principally concerned with prediction
+- However, increasingly interested in policy interventions & treatments
 
--   Aggregate demand models (such as those we have been discussing) based on observations for **groups of travelers** or **average relations** for zones
--   **Discrete choice:** probability an individual chooses a given option a function of their socioeconomic characteristics & relative attractiveness of the option
--   Cannot estimate via least squares because probability is unobserved – only observe choice
--   Models are **probabilistic** & do not give an outcome value such as **trips** – must use probability concepts to generate discrete outcomes (summation over all observations to give expected number choosing option or use sample enumeration to allocate discrete outcomes)
+## Need for Causal Inference - Interpretation
+- People are told to run around in a dark room for 5 minutes
+- **Observation**: Men are found to have many more head injuries than women
+- Conclusion: 
+    - Women see better in the dark? 
+    - Men are more reckless runners?
 
-## Basis for Choice Modeling {.smaller}
+## Need for Causal Inference - Unobserved Heterogeneity
+- Women who smoke have babies that are 600 grams under weight on average
+- **Problem**: 
+    - Is it due to smoking or unobserved factors that are correlated with smoking?
 
--   Individuals derive **utility** from the use of alternatives defined by a **utility function** often denoted by V $$Vpeanut butter = 0.25 – 1.0 ALLERGY - 0.5 PRICE + 0.25 ORGANIC$$
--   Need probability value between 0 & 1. Various forms, generally with an s-shaped plot. Main ones are $$𝐿𝑜𝑔𝑖𝑡:𝑃_1=exp⁡(𝑉_1 )/(exp⁡(𝑉1)+exp⁡(𝑉2))$$ $$𝑃𝑟𝑜𝑏𝑖𝑡:𝑃_1=\int_{-\infty}^{\infty}⁡\int_{-\infty}^{V_1-V_2+x_1}\frac{⁡exp⁡(\frac{−1}{2(1−\rho^2)} (\frac{𝑥_1}{\sigma_1})^2−\frac{2\rho 𝑥_1 𝑥_2}{\sigma_1 \sigma_2}+(\frac{𝑥_2}{\sigma_2})^2}{2\pi\sigma_1 \sigma_2 \sqrt{1−\rho^2 }} 𝑑𝑥_2 𝑑𝑥_1$$
+## Need for Causal Inference – Endogeneity & Self-Selection
+- Cars with side impact airbags have lower injury severities when involved in crashes
+- **Problem**: 
+    - People owning side-impact airbags are not a **random sample** from the population (likely safer drivers)
+    - Safter drivers expected to have lower injury severities
 
-## Properties of Discrete Choice (DC)
+## Need for Causal Inference – Endogeneity & Self-Selection
+- People who take motorcycle safety courses have higher crash rates
+- **Problem**: 
+    - Are courses ineffective?
+    - People taking the course are not a random sample from the population (possibly less skilled)
 
--   Based on theories of **individual behavior** & do not constitute physical analogies – therefore stable over time & space
--   Can be more **statistically efficient** than aggregate models because each observation is an outcome rather than using aggregations of potentially hundreds of observations
--   DM less likely to suffer from bias due to correlation between aggregate units – i.e., **ecological correlation** (fallacy)
+## Causation = Potential Outcomes
+- A key concept in causal inference is **potential outcomes**
+- What happened vs. what could have happened (**counterfactual states**)
+- We will work with several examples to illustrate the principles…
 
-## Ecological Fallacy
+## Example: Omega-3 Fatty Acids {.smaller}
+**Problem**: Does consumption of omega-3 fish oil supplements promote a healthy blood pressure?
 
-![](../images/lecture5/eco_fallacy.png){fig-align="center"}
+**Experiment**: Eight friends agree to be part of an informal study on the relationship between fish oil supplements and systolic blood pressure. Four of the friends are placed in the “fish oil supplement” **treatment group**. Members of this group agree to consume 3 grams of fish oil supplements per day for one year while otherwise maintaining their current diets. The other four friends agreed to simply maintain their current diets free from fish oil supplements for the same year. At the end of the study period:
 
-## Theoretical Framework {.smaller}
+- Measure blood pressure
+- Assume 160 mmHg and above represents “high blood pressure”
 
--   Individuals belong to a **homogeneous population** $N$, act rationally, & **possess perfect information** – i.e., they always select the option that maximizes their net personal utility subject to legal, social, physical, &/or budgetary (both time & money) constraints
--   There is a certain set $𝐴 = \{𝐴_1, …𝐴_i,…𝐴_I\}$ of available alternatives & a set X of vectors of measured attributes of individuals & their alternatives
--   An individual $n$ is endowed with a set of attributes $𝑥 \in 𝑋$ & faces a choice set $𝐴(n) \in 𝐴$
--   We will assume choice set is predetermined for individuals
+## Formal Problem Statement {.smaller}
+$$𝑧 = 0 \text{; no fish oil supplement}$$
+$$𝑧 = 1 \text{; fish oil supplement}$$
 
-## Theoretical Framework
+- Need to consider two cases:
+    - Blood pressure given a person **did not** ingest any fish oil supplement $(y_i^0)$
+    - Blood pressure given a person **did** ingest fish oil supplement $(y_i^1)$
+- Only ever observe **one outcome per person** – no time machines!
 
--   Modeler, an observer, does not **posses complete information** about all elements considered by the individual making choice
--   Modeler assumes $𝑈_{ni}$ can be represented by two components:
-    -   A **measurable**, **systematic**, or **representative** part $𝑉_{ni}$, which is a function of the measured attributes $x$
-    -   A random part $\epsilon_{ni}$, which reflects **indiosyncratic** & **taste variation**, together with measurement or observational errors made by the modeler
+## Formal Problem Statement
+- Treatment given by $T_i = y_i^1 - y_i^0$
+- **Fundamental problem of causal inference**: cannot observe both $y_i^1$ and $y_i^0$
+- Can only estimate average causal effect across a sample (population)
 
-## Theoretical Framework
+## Close Substitutes
+- What about using pre-study blood pressure as $𝑦_𝑖^0$?
+    - Do not know if person made other changes over the year
+- What about using post-study blood pressure as $𝑦_𝑖^0$?
+    - Do not know if treatment has effect into year 2
 
--   Modeler sets utility $𝑈_{ni}=𝑉_{ni}+\epsilon_{ni}$ to address two apparent irrationalities
-    1.  That two individuals faced with the **same situation** & having the **same personal attributes** make different choices
-    2.  That an individual may not select the alternative that **appears** to be the *best one*
--   Often assumed $V_{ni}$ given by $\sum_k^K \beta_{ik} x_{nik}$ here $\beta_{ik}$ are assumed **constant** for all individuals $N$ in the homogeneous set but **may vary across alternatives** $I$
+## Average Treatment Effects {.smaller}
+- Start with treatment and control groups
+- Need sufficiently similar groups – balance
+- Beware self-selection bias
+![](../../../assets/images/teaching/ENCI707/Lecture7/ate_figure.png){fig-align="center"}
+- True average treatment effect = -7.5 mmHG
+- Average treatment effect|treatment = +12.5 mmHG
 
-## Theoretical Framework {.smaller}
+## Causal Experiment Design
+- **Randomized controlled trials** are “gold standard”
+- **Almost never available** for transportation/social science research questions
+- What to do?
 
--   Individual chooses an alternative based on $𝑈_{ni}≥ 𝑈_{jn} \forall A_j \in A(n)$
--   Or: $𝑉_{ni}  – 𝑉_{nj}≥\epsilon_{nj}  − \epsilon_{ni}$ (notice swapping of $i$ & $j$)
+## Adjustment for Pretreatment Variables
+- Differences between treatment & control variables can be captured by including **pretreatment variables** in the model
+- Addresses both random (**variance**) and systematic (**bias**) differences between treatment & control
+- **Do not** adjust for posttreatment variables unless performing more complex analysis – e.g., instrumental variables (**IV**)
 
-Not possible to know with certainty if the inequality holds, so use $$𝑃_{ni}  = 𝑃(\epsilon_{nj} \leq \epsilon_{ni} + (V_{ni} - V_{nj})) \forall A_j \in A(n)$$ - Do not know distribution of joint residuals, so cannot derive analytical expression for model - Can denote $f(\epsilon) = f(\epsilon_1, \epsilon_2, ... \epsilon_I$ & know they are **random variables** with a certain distribution
+## Ignorability Condition
+- **Ignorability in causal inference**: no imbalance between treatment & control, on average
+- **Assignment to treatment** does not imply anything about potential outcome
 
-## Theoretical Framework {.smaller}
+# Causal Inference in Observational Studies
 
--   Can note that distribution for $f(U)$ is the same but with mean $V$ rather than 0 $$P_{ni} = \int_{R_I} f(\epsilon) d\epsilon$$ $$\text{where } R_I = \begin{cases}
-    \epsilon_{nj} \leq \epsilon_{ni} + (V_{ni} - V_{nj}), & \forall A_j \in A(n) \\
-    V_{ni}) + \epsilon_{ni} \ge 0 \\
-    \end{cases}$$
--   Assuming independent & identically distributed (**IID**) residuals, $$f(\epsilon_1,...\epsilon_I) = \prod_i^I g(\epsilon_i)$$
--   And (drop $n$ for simplicity) $$P_i = \int_{-\infty}^\infty g(\epsilon_i) d\epsilon_i \prod_{j \neq i} \int_{-\infty}^{V_i-V_j+\epsilon_i} g(\epsilon_j) d\epsilon_j$$
+## Causal Inference in Observational Studies
+- We rarely have access to a random controlled trial
+- Observational causation is an exercise in logic & relative causal strength **NOT** causation
 
-## Generating the Logit Model {.smaller}
+## Health Status Example
+- Consider 100 patients receive a treatment and 1000 receive the control condition
+- **Causal truth**: treatment has zero effect on health outcomes
+- Suppose treatment and control groups **systematically differ**, with healthier patients receiving treatment
 
--   Assuming IID Gumbel (**Extreme Value Type I**) residuals, or equivalently that residual differences are **logistically distributed**, gives the standard multinomial logit specification
--   Termed *softmax function* in machine learning field $$P_{ni} = \frac{exp(\mu V_{ni})}{\sum_{A_j \in A(n)} exp(\mu V_{nj})}$$
--   Where $\mu$ is a **scale parameter** assumed equal to 1.0 for identification
+## Health Status Example
+![](../../../assets/images/teaching/ENCI707/Lecture7/health_status_ex.png){fig-align="center"}
 
-![](../images/lecture5/logit_curve.png){.absolute bottom="0" right="0" width="35%"}
+## Adding Predictors: Omitted Variables
+- Simple solution is to compare treated and control units **conditional on previous health status**
+- Health status is a **confounding variable** – affects both treatment & outcome
+- If all confounding variable observed, then consistent causal treatment is possible
 
-## Logit Model Parameter Estimation
+## Omitted Variable Bias {.smaller}
+- Correct specification:
+$$y_i = \beta_0 + \beta_1 𝑧_𝑖 + \beta_2 x_i + \epsilon_𝑖$$
+- where $𝑧_𝑖$ is the treatment and $𝑥_𝑖$ is the covariate for unit $i$
+- If $𝑥_𝑖$ is ignored then:
+$$𝑦_𝑖=\beta_0^∗+\beta_1^∗ 𝑧_𝑖+\epsilon_𝑖^∗$$
+- Using $𝑥_𝑖=\gamma_0+\gamma_1 𝑧_𝑖+𝜈_𝑖$:
+$$𝑦_𝑖=\beta_0+\beta_2 \gamma_1+(\beta_1+\beta_2 \gamma_1 ) 𝑧_𝑖+\epsilon_𝑖+\beta_2 𝜈_𝑖$$
+- Then:
+$$\beta_1^∗=\beta_1+\beta_2 \gamma_1 \text{; }\gamma_1=0 \text{ denotes a non-confounding variable}$$
 
--   Commercial (& opensource) software exists to estimate model parameters using the method of maximum likelihood estimation
-    -   Apollo (R & free)
-    -   Biogeme (Python & free)
-    -   STATA (commercial)
-    -   LIMDEP (commercial)
-    -   GAUSS (commercial)
--   Parameter interpretation similar to regression (t-statistics, GoF, etc.)
+## Ignorability in Observational Studies {.smaller}
+- **Strict ignorability** says distribution of potential outcomes same across treatment levels:
+$$𝑦^0,𝑦_1 \perp 𝑧$$
+- Conditional ignorability says the distribution of potential outcomes across treatment levels is the same, conditional on the covariates, $x$:
+$$𝑦^0,𝑦_1 \perp 𝑧|𝑥$$
+- Must make “leap of faith” that we have conditioned on all necessary confounding variables – **selection on observables** in econometrics literature
 
-## Direct & Cross Elasticity
+## Common Support or Overlap
+![](../../../assets/images/teaching/ENCI707/Lecture7/common_support.svg){fig-align="center"}
 
--   **Direct elasticity:** direct effect of changing a variable value related to a good on demand for the same good
-    -   E.g., elasticity of transit demand wrt transit fare, transit travel time, or transit headway
--   **Cross elasticity:** effect of changing a variable value related to a good on demand for a different good
-    -   E.g., elasticity of transit demand wrt auto travel time
+## Propensity Score Matching (PSM)
+- **Matching**: restructure data for statistical analysis
+- Goal is to create attribute balance between treatment & control samples
+- Five step procedure
 
-## Logit - Direct Elasticity
+## PSM: Step 1 - Define confounders & estimand
+- Based on relevant literature
+- Typically adjust control group to match treated to estimate **effect of the treatment on the treated**
+- **Careful!** Including additional covariates may increase bias away from the true estimate if not all confounding covariates are available – avoid potential **instrumental variables**
 
-Direct elasticity of the probability of an individual $n$ choosing alternative $i$ wrt a change in an attribute/independent variable $X_{ik}$ with coefficient $\beta_k$ (ignoring $n$ subscripts for simplicity)
+## PSM: Step 2 - Estimating propensity score
+- Model of Pr(receiving treatment)
+- Typically, a **logistic regression** for binary treatment, then use propensity score as covariate summary
+- Propensity score gives a distance metric
 
-$$e_{direct} = \frac{\partial P_i}{\partial X_{ik}} \frac{X_{ik}}{P_i}=(1-P_i)X_{ik}\beta_k$$
+## PSM: Step 3 - Matching to restructure data
+- Create matched pairs with control samples with closest propensity score – can be with/without replacement
+- Better matches with replacement but may overuse some sample units
 
-## Logit - Cross Elasticity {.smaller}
+## PSM: Step 4 - Diagnostics for balance & overlap
+- Several diagnostics exist based on difference of means, etc.
+- Evaluate and change model or method (if required)
 
--   Cross elasticity of the probability of an individual $n$ choosing alternative $i$ wrt a change in an attribute/independent variable $X_{jk}$ with coefficient $\beta_k$ for a different alternative
+## PSM: Step 5 - Estimate treatment effect using restructured data
+- Estimate regression model with propensity score and confounder variables
+- Incorporate data restructuring via **weights** – typically inverse probability weights
 
-$$e_{cross} = -P_j X_{jk}\beta_k$$
+## Instrumental Variable (IV)
+- When ignorability of treatment seems weak, IV can be a good approach
+- Instrument $z$ should predict the treatment $T$ but not the outcome $y$
+- Assumptions:
+    - Ignorability of instrument
+    - Monotonicity
+    - Nonzero association between treatment & instrument
+    - Exclusion restriction – no instrument effect on excluded variables
 
--   Above is same regardless of alternative $i$. I.e., **all alternatives** have the same cross-elasticity wrt an attribute $k$ of alternative $j$
--   Above results from independence of irrelevant alternatives (**IIA**) property of basic logit model
+## IV in Regression
+- General framework
+$$𝑦_𝑖=\beta_0+\beta_1 𝑇_𝑖+\epsilon_𝑖$$
+$$𝑇_𝑖=\gamma_0+\gamma_1 𝑧_𝑖+𝜈_𝑖$$
+- Where $𝑧_𝑖$ is uncorrelated with both $\epsilon_𝑖$ and $𝜈_𝑖$ (ignorability and exclusion restriction)
+- **Identifiability**: whether data contain sufficient information for unique estimation of parameter (or set of parameters)
 
-## Independence of Irrelevant Alternatives (IIA) Property
+## IV in Regression
+- With 
+$$𝑦=\beta_0+\beta_1 𝑇+\beta_2 𝑧+𝑒𝑟𝑟𝑜𝑟$$
+$$𝑇=\gamma_0+\gamma_1 𝑧+𝑒𝑟𝑟𝑜𝑟$$
+- Substituting T into y:
+$$𝑦=(\beta_0+\beta_1 \gamma_0 )+(\beta_1 \gamma_1+\beta_2 )𝑧+𝑒𝑟𝑟𝑜𝑟$$
+- where $\beta_1$ is our parameter of interest
+- Using $𝑦=\delta_0+\delta_1 𝑧+𝑒𝑟𝑟𝑜𝑟$ where $\delta_1=\beta_1 \gamma_1+\beta_2$
+we get
+$$\beta_1=(\delta_1−\beta_2)/\gamma_1$$
 
-Consider we have two modes: auto (a) & bus (b)
+## IV in Regression
+- Cannot estimate $\beta_2$ because error in $f(y)$ can be correlated with T – exclusion restriction means $\beta_2=0$ giving
+$\beta_1=\delta_1/\gamma_1$
+- Estimation is by two-stage least squares (2SLS)
+- Standard errors require adjustment in instrumental variable estimation – should be accounted for in any software package
 
-$$\frac{P_a}{P_b} = \frac{exp(V_a)}{exp(V_b)} = exp(V_a - V_b)$$ I.e., the relative probability of choosing auto vs. bus depends **only** on the utilities of the two alternatives
+## Exclusion Restriction Plausibility
+- One way to assess the plausibility of the exclusion restriction is to calculate an estimate within a sample that would not be expected to be affected by the instrument
+- Researchers estimated the effect of military service on earnings (and other outcomes) using, as an instrument, the lottery number for young men eligible for the draft during the Vietnam War
+    - Randomly assigned number and strongly affected the probability of military service
+    - Men with low lottery numbers may have altered their educational plans to avoid or postpone military service (would void exclusion restriction)
+- Ran IV model for a sample of men who were assigned numbers so late that the war ended before they ever had to serve
+    - No clear relation between lottery number and earnings, providing support for the exclusion restriction
 
--   Now what if our buses are **red (rb)** & we paint half **blue (bb)**?
+## Weak Instrument
+- Only assumption we can test – instrument has non-zero correlation with treatment variable
+- If low correlation, then a **weak instrument**
 
-## IIA Cont…
+## Regression Discontinuity
+- **Non-random assignment** but **mechanism** entirely known to researcher
+- Consider a policy that gives tutoring to students with test scores < 60
+- Consider all students with score in range of 60 – discontinuity at 60
+    - Works well when discontinuity relates to outcome – e.g., pre-test scores on post-test scores
+    - Does not work well if comparing across **geography** due to spatial heterogeneity
 
--   If the IIA assumption does not hold, we can make other error distribution assumptions
-    -   Nested logit (can handle complex decision structures)
-    -   Probit (normal error terms, very general model, but can be difficult to work with it)
----
+## Fixed Effect Models
+- Use repeated observations within groups – e.g., twin comparisons that holds confounding variables fixed
+- Simply a regression model with group-specific intercepts
+$$𝑦_𝑖𝑗=\beta_0+𝜏𝑧_𝑖𝑗+𝛼_𝑖+𝜖_𝑖𝑗$$
+- where j is an indicator of intra-group units
+- Requires treatment to vary within groups
 
-<object data="./CIVE461_Wood_Buffalo_TDM.pdf" type="application/pdf" width="100%" height="700px">
+## Difference-In-Differences
+- Comparison across units (typically) using time as an additional dimension of variation
+- E.g., effect of new school busing program on housing prices in school district
+    - Compare prices before/after between district with school busing program and those without it
+    - A measure of **differences in trajectory**
 
-<embed src="./CIVE461_Wood_Buffalo_TDM.pdf">
+# Quick Overview of Causal Graph Theory
 
-<p>This browser does not support PDFs. Please download the PDF to view it: <a href="./CIVE461_Wood_Buffalo_TDM.pdf">Download PDF</a>.</p>
+## Causal Graph Theory
+- Another perspective on causal inference from computer science – Judea Pearl et al.
+- Abstract causal inference to a visual/graphical depiction
+- Develop system of symbolic calculus
+- Nonparametrically solve identification problem
+- Concept of directed acyclic graphs (DAGs)
 
-</embed>
-
-</object>
+## Causal Graph Theory
+- **English**: Smoking (X), Cancer (Y), Tar (Z), Genotypes(U)
+- Directed acyclic graph (DAG)
+![](../../../assets/images/teaching/ENCI707/Lecture7/dag.svg){fig-align="center"}

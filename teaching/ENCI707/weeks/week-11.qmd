@@ -1,11 +1,11 @@
 ---
-title: "Week 10"
+title: "Week 11"
 subtitle: "Advanced Choice Models"
 ---
 
 ## Prepare
 
-📖 Review Discrete Choice Methods with Simulation Ch. 4 [DCMS3](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/6a17dbbd701554fca22c5c434eb4bf6e746f8518/Resources/Ch04_p76-96.pdf)
+📖 Review Discrete Choice Methods with Simulation Ch. 4 [DCMS4](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/6a17dbbd701554fca22c5c434eb4bf6e746f8518/Resources/Ch04_p76-96.pdf)
 
 ## Participate
 
@@ -18,9 +18,7 @@ subtitle: "Advanced Choice Models"
 📖 Review [Mixed logit supplemental notes](/teaching/ENCI707/supplemental/mixed-logit-models.html)
 
 ## Deliver
-📝 Logit model group assignment due Mar. 19 by 11:59 PM on D2L.
-
-📝 Draft data and experimental design due Mar. 21 by 11:59 PM on D2L.
+📝 Logit model group assignment due Mar. 23 by 11:59 PM on D2L.
 
 <br><br>
 

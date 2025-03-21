@@ -10,7 +10,7 @@ title: "Project description"
 
 [Literature review](#lit-review) due Fri, Feb 21
 
-[Draft data and experimental design plan](#plan) due Fri, Mar 21
+[Draft data and experimental design plan](#plan) due Fri, Apr 04
 
 [Final data and experimental design plan](#plan) due Fri, Apr 18
 

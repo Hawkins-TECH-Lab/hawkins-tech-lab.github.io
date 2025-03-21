@@ -1,5 +1,5 @@
 ---
-title: "Week 11"
+title: "Week 12"
 subtitle: "Causal Inference"
 ---
 
@@ -18,7 +18,7 @@ subtitle: "Causal Inference"
 🖥️ [Activity 11 - Causal Inference](/teaching/ENCI707/ae/ae-11.html)
 
 ## Deliver
-None
+📝 Draft data and experimental design due Apr. 04 by 11:59 PM on D2L.
 
 <br><br>
 

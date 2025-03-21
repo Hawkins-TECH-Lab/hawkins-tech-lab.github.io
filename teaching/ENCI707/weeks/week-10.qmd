@@ -18,9 +18,7 @@ subtitle: "Multinomial Logit Model"
 None
 
 ## Deliver
-📝 Logit model group assignment due Mar. 19 by 11:59 PM on D2L.
-
-📝 Draft data and experimental design due Mar. 21 by 11:59 PM on D2L.
+None
 
 <br><br>
 
