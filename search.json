@@ -625,121 +625,275 @@
   {
     "objectID": "teaching/ENCI707/slides/lec-7.html#outline",
     "href": "teaching/ENCI707/slides/lec-7.html#outline",
-    "title": "Lecture 8 - Causal Inference",
+    "title": "Lecture 7 - Causal Inference",
     "section": "Outline",
-    "text": "Outline\n\n\nBasis for choice modeling\nTheory\nLogit choice model"
+    "text": "Outline\n\n\nNeed for causal inference\nMethods of causal inference\n\nPropensity score matching\nInstrumental variables\nRegression discontinuity\nDifference-in-differences\n\nCausal Graph Theory"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-7.html#basis-for-choice-modeling",
-    "href": "teaching/ENCI707/slides/lec-7.html#basis-for-choice-modeling",
-    "title": "Lecture 8 - Causal Inference",
-    "section": "Basis for Choice Modeling",
-    "text": "Basis for Choice Modeling\n\nAggregate demand models (such as those we have been discussing) based on observations for groups of travelers or average relations for zones\nDiscrete choice: probability an individual chooses a given option a function of their socioeconomic characteristics & relative attractiveness of the option\nCannot estimate via least squares because probability is unobserved – only observe choice\nModels are probabilistic & do not give an outcome value such as trips – must use probability concepts to generate discrete outcomes (summation over all observations to give expected number choosing option or use sample enumeration to allocate discrete outcomes)"
+    "objectID": "teaching/ENCI707/slides/lec-7.html#causal-inference-in-transportation-planning",
+    "href": "teaching/ENCI707/slides/lec-7.html#causal-inference-in-transportation-planning",
+    "title": "Lecture 7 - Causal Inference",
+    "section": "Causal Inference in Transportation Planning",
+    "text": "Causal Inference in Transportation Planning\n\nLarge-scale transportation models principally concerned with prediction\nHowever, increasingly interested in policy interventions & treatments"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-7.html#basis-for-choice-modeling-1",
-    "href": "teaching/ENCI707/slides/lec-7.html#basis-for-choice-modeling-1",
-    "title": "Lecture 8 - Causal Inference",
-    "section": "Basis for Choice Modeling",
-    "text": "Basis for Choice Modeling\n\nIndividuals derive utility from the use of alternatives defined by a utility function often denoted by V \\[Vpeanut butter = 0.25 – 1.0 ALLERGY - 0.5 PRICE + 0.25 ORGANIC\\]\nNeed probability value between 0 & 1. Various forms, generally with an s-shaped plot. Main ones are \\[𝐿𝑜𝑔𝑖𝑡:𝑃_1=exp⁡(𝑉_1 )/(exp⁡(𝑉1)+exp⁡(𝑉2))\\] \\[𝑃𝑟𝑜𝑏𝑖𝑡:𝑃_1=\\int_{-\\infty}^{\\infty}⁡\\int_{-\\infty}^{V_1-V_2+x_1}\\frac{⁡exp⁡(\\frac{−1}{2(1−\\rho^2)} (\\frac{𝑥_1}{\\sigma_1})^2−\\frac{2\\rho 𝑥_1 𝑥_2}{\\sigma_1 \\sigma_2}+(\\frac{𝑥_2}{\\sigma_2})^2}{2\\pi\\sigma_1 \\sigma_2 \\sqrt{1−\\rho^2 }} 𝑑𝑥_2 𝑑𝑥_1\\]"
+    "objectID": "teaching/ENCI707/slides/lec-7.html#need-for-causal-inference---interpretation",
+    "href": "teaching/ENCI707/slides/lec-7.html#need-for-causal-inference---interpretation",
+    "title": "Lecture 7 - Causal Inference",
+    "section": "Need for Causal Inference - Interpretation",
+    "text": "Need for Causal Inference - Interpretation\n\nPeople are told to run around in a dark room for 5 minutes\nObservation: Men are found to have many more head injuries than women\nConclusion:\n\nWomen see better in the dark?\nMen are more reckless runners?"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-7.html#properties-of-discrete-choice-dc",
-    "href": "teaching/ENCI707/slides/lec-7.html#properties-of-discrete-choice-dc",
-    "title": "Lecture 8 - Causal Inference",
-    "section": "Properties of Discrete Choice (DC)",
-    "text": "Properties of Discrete Choice (DC)\n\nBased on theories of individual behavior & do not constitute physical analogies – therefore stable over time & space\nCan be more statistically efficient than aggregate models because each observation is an outcome rather than using aggregations of potentially hundreds of observations\nDM less likely to suffer from bias due to correlation between aggregate units – i.e., ecological correlation (fallacy)"
+    "objectID": "teaching/ENCI707/slides/lec-7.html#need-for-causal-inference---unobserved-heterogeneity",
+    "href": "teaching/ENCI707/slides/lec-7.html#need-for-causal-inference---unobserved-heterogeneity",
+    "title": "Lecture 7 - Causal Inference",
+    "section": "Need for Causal Inference - Unobserved Heterogeneity",
+    "text": "Need for Causal Inference - Unobserved Heterogeneity\n\nWomen who smoke have babies that are 600 grams under weight on average\nProblem:\n\nIs it due to smoking or unobserved factors that are correlated with smoking?"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-7.html#ecological-fallacy",
-    "href": "teaching/ENCI707/slides/lec-7.html#ecological-fallacy",
-    "title": "Lecture 8 - Causal Inference",
-    "section": "Ecological Fallacy",
-    "text": "Ecological Fallacy"
+    "objectID": "teaching/ENCI707/slides/lec-7.html#need-for-causal-inference-endogeneity-self-selection",
+    "href": "teaching/ENCI707/slides/lec-7.html#need-for-causal-inference-endogeneity-self-selection",
+    "title": "Lecture 7 - Causal Inference",
+    "section": "Need for Causal Inference – Endogeneity & Self-Selection",
+    "text": "Need for Causal Inference – Endogeneity & Self-Selection\n\nCars with side impact airbags have lower injury severities when involved in crashes\nProblem:\n\nPeople owning side-impact airbags are not a random sample from the population (likely safer drivers)\nSafter drivers expected to have lower injury severities"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-7.html#theoretical-framework",
-    "href": "teaching/ENCI707/slides/lec-7.html#theoretical-framework",
-    "title": "Lecture 8 - Causal Inference",
-    "section": "Theoretical Framework",
-    "text": "Theoretical Framework\n\nIndividuals belong to a homogeneous population \\(N\\), act rationally, & possess perfect information – i.e., they always select the option that maximizes their net personal utility subject to legal, social, physical, &/or budgetary (both time & money) constraints\nThere is a certain set \\(𝐴 = \\{𝐴_1, …𝐴_i,…𝐴_I\\}\\) of available alternatives & a set X of vectors of measured attributes of individuals & their alternatives\nAn individual \\(n\\) is endowed with a set of attributes \\(𝑥 \\in 𝑋\\) & faces a choice set \\(𝐴(n) \\in 𝐴\\)\nWe will assume choice set is predetermined for individuals"
+    "objectID": "teaching/ENCI707/slides/lec-7.html#need-for-causal-inference-endogeneity-self-selection-1",
+    "href": "teaching/ENCI707/slides/lec-7.html#need-for-causal-inference-endogeneity-self-selection-1",
+    "title": "Lecture 7 - Causal Inference",
+    "section": "Need for Causal Inference – Endogeneity & Self-Selection",
+    "text": "Need for Causal Inference – Endogeneity & Self-Selection\n\nPeople who take motorcycle safety courses have higher crash rates\nProblem:\n\nAre courses ineffective?\nPeople taking the course are not a random sample from the population (possibly less skilled)"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-7.html#theoretical-framework-1",
-    "href": "teaching/ENCI707/slides/lec-7.html#theoretical-framework-1",
-    "title": "Lecture 8 - Causal Inference",
-    "section": "Theoretical Framework",
-    "text": "Theoretical Framework\n\nModeler, an observer, does not posses complete information about all elements considered by the individual making choice\nModeler assumes \\(𝑈_{ni}\\) can be represented by two components:\n\nA measurable, systematic, or representative part \\(𝑉_{ni}\\), which is a function of the measured attributes \\(x\\)\nA random part \\(\\epsilon_{ni}\\), which reflects indiosyncratic & taste variation, together with measurement or observational errors made by the modeler"
+    "objectID": "teaching/ENCI707/slides/lec-7.html#causation-potential-outcomes",
+    "href": "teaching/ENCI707/slides/lec-7.html#causation-potential-outcomes",
+    "title": "Lecture 7 - Causal Inference",
+    "section": "Causation = Potential Outcomes",
+    "text": "Causation = Potential Outcomes\n\nA key concept in causal inference is potential outcomes\nWhat happened vs. what could have happened (counterfactual states)\nWe will work with several examples to illustrate the principles…"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-7.html#theoretical-framework-2",
-    "href": "teaching/ENCI707/slides/lec-7.html#theoretical-framework-2",
-    "title": "Lecture 8 - Causal Inference",
-    "section": "Theoretical Framework",
-    "text": "Theoretical Framework\n\nModeler sets utility \\(𝑈_{ni}=𝑉_{ni}+\\epsilon_{ni}\\) to address two apparent irrationalities\n\nThat two individuals faced with the same situation & having the same personal attributes make different choices\nThat an individual may not select the alternative that appears to be the best one\n\nOften assumed \\(V_{ni}\\) given by \\(\\sum_k^K \\beta_{ik} x_{nik}\\) here \\(\\beta_{ik}\\) are assumed constant for all individuals \\(N\\) in the homogeneous set but may vary across alternatives \\(I\\)"
+    "objectID": "teaching/ENCI707/slides/lec-7.html#example-omega-3-fatty-acids",
+    "href": "teaching/ENCI707/slides/lec-7.html#example-omega-3-fatty-acids",
+    "title": "Lecture 7 - Causal Inference",
+    "section": "Example: Omega-3 Fatty Acids",
+    "text": "Example: Omega-3 Fatty Acids\nProblem: Does consumption of omega-3 fish oil supplements promote a healthy blood pressure?\nExperiment: Eight friends agree to be part of an informal study on the relationship between fish oil supplements and systolic blood pressure. Four of the friends are placed in the “fish oil supplement” treatment group. Members of this group agree to consume 3 grams of fish oil supplements per day for one year while otherwise maintaining their current diets. The other four friends agreed to simply maintain their current diets free from fish oil supplements for the same year. At the end of the study period:\n\nMeasure blood pressure\nAssume 160 mmHg and above represents “high blood pressure”"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-7.html#theoretical-framework-3",
-    "href": "teaching/ENCI707/slides/lec-7.html#theoretical-framework-3",
-    "title": "Lecture 8 - Causal Inference",
-    "section": "Theoretical Framework",
-    "text": "Theoretical Framework\n\nIndividual chooses an alternative based on \\(𝑈_{ni}≥ 𝑈_{jn} \\forall A_j \\in A(n)\\)\nOr: \\(𝑉_{ni}  – 𝑉_{nj}≥\\epsilon_{nj}  − \\epsilon_{ni}\\) (notice swapping of \\(i\\) & \\(j\\))\n\nNot possible to know with certainty if the inequality holds, so use \\[𝑃_{ni}  = 𝑃(\\epsilon_{nj} \\leq \\epsilon_{ni} + (V_{ni} - V_{nj})) \\forall A_j \\in A(n)\\] - Do not know distribution of joint residuals, so cannot derive analytical expression for model - Can denote \\(f(\\epsilon) = f(\\epsilon_1, \\epsilon_2, ... \\epsilon_I\\) & know they are random variables with a certain distribution"
+    "objectID": "teaching/ENCI707/slides/lec-7.html#formal-problem-statement",
+    "href": "teaching/ENCI707/slides/lec-7.html#formal-problem-statement",
+    "title": "Lecture 7 - Causal Inference",
+    "section": "Formal Problem Statement",
+    "text": "Formal Problem Statement\n\\[𝑧 = 0 \\text{; no fish oil supplement}\\] \\[𝑧 = 1 \\text{; fish oil supplement}\\]\n\nNeed to consider two cases:\n\nBlood pressure given a person did not ingest any fish oil supplement \\((y_i^0)\\)\nBlood pressure given a person did ingest fish oil supplement \\((y_i^1)\\)\n\nOnly ever observe one outcome per person – no time machines!"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-7.html#theoretical-framework-4",
-    "href": "teaching/ENCI707/slides/lec-7.html#theoretical-framework-4",
-    "title": "Lecture 8 - Causal Inference",
-    "section": "Theoretical Framework",
-    "text": "Theoretical Framework\n\nCan note that distribution for \\(f(U)\\) is the same but with mean \\(V\\) rather than 0 \\[P_{ni} = \\int_{R_I} f(\\epsilon) d\\epsilon\\] \\[\\text{where } R_I = \\begin{cases}\n\\epsilon_{nj} \\leq \\epsilon_{ni} + (V_{ni} - V_{nj}), & \\forall A_j \\in A(n) \\\\\nV_{ni}) + \\epsilon_{ni} \\ge 0 \\\\\n\\end{cases}\\]\nAssuming independent & identically distributed (IID) residuals, \\[f(\\epsilon_1,...\\epsilon_I) = \\prod_i^I g(\\epsilon_i)\\]\nAnd (drop \\(n\\) for simplicity) \\[P_i = \\int_{-\\infty}^\\infty g(\\epsilon_i) d\\epsilon_i \\prod_{j \\neq i} \\int_{-\\infty}^{V_i-V_j+\\epsilon_i} g(\\epsilon_j) d\\epsilon_j\\]"
+    "objectID": "teaching/ENCI707/slides/lec-7.html#formal-problem-statement-1",
+    "href": "teaching/ENCI707/slides/lec-7.html#formal-problem-statement-1",
+    "title": "Lecture 7 - Causal Inference",
+    "section": "Formal Problem Statement",
+    "text": "Formal Problem Statement\n\nTreatment given by \\(T_i = y_i^1 - y_i^0\\)\nFundamental problem of causal inference: cannot observe both \\(y_i^1\\) and \\(y_i^0\\)\nCan only estimate average causal effect across a sample (population)"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-7.html#generating-the-logit-model",
-    "href": "teaching/ENCI707/slides/lec-7.html#generating-the-logit-model",
-    "title": "Lecture 8 - Causal Inference",
-    "section": "Generating the Logit Model",
-    "text": "Generating the Logit Model\n\nAssuming IID Gumbel (Extreme Value Type I) residuals, or equivalently that residual differences are logistically distributed, gives the standard multinomial logit specification\nTermed softmax function in machine learning field \\[P_{ni} = \\frac{exp(\\mu V_{ni})}{\\sum_{A_j \\in A(n)} exp(\\mu V_{nj})}\\]\nWhere \\(\\mu\\) is a scale parameter assumed equal to 1.0 for identification"
+    "objectID": "teaching/ENCI707/slides/lec-7.html#close-substitutes",
+    "href": "teaching/ENCI707/slides/lec-7.html#close-substitutes",
+    "title": "Lecture 7 - Causal Inference",
+    "section": "Close Substitutes",
+    "text": "Close Substitutes\n\nWhat about using pre-study blood pressure as \\(𝑦_𝑖^0\\)?\n\nDo not know if person made other changes over the year\n\nWhat about using post-study blood pressure as \\(𝑦_𝑖^0\\)?\n\nDo not know if treatment has effect into year 2"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-7.html#logit-model-parameter-estimation",
-    "href": "teaching/ENCI707/slides/lec-7.html#logit-model-parameter-estimation",
-    "title": "Lecture 8 - Causal Inference",
-    "section": "Logit Model Parameter Estimation",
-    "text": "Logit Model Parameter Estimation\n\nCommercial (& opensource) software exists to estimate model parameters using the method of maximum likelihood estimation\n\nApollo (R & free)\nBiogeme (Python & free)\nSTATA (commercial)\nLIMDEP (commercial)\nGAUSS (commercial)\n\nParameter interpretation similar to regression (t-statistics, GoF, etc.)"
+    "objectID": "teaching/ENCI707/slides/lec-7.html#average-treatment-effects",
+    "href": "teaching/ENCI707/slides/lec-7.html#average-treatment-effects",
+    "title": "Lecture 7 - Causal Inference",
+    "section": "Average Treatment Effects",
+    "text": "Average Treatment Effects\n\nStart with treatment and control groups\nNeed sufficiently similar groups – balance\nBeware self-selection bias \nTrue average treatment effect = -7.5 mmHG\nAverage treatment effect|treatment = +12.5 mmHG"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-7.html#direct-cross-elasticity",
-    "href": "teaching/ENCI707/slides/lec-7.html#direct-cross-elasticity",
-    "title": "Lecture 8 - Causal Inference",
-    "section": "Direct & Cross Elasticity",
-    "text": "Direct & Cross Elasticity\n\nDirect elasticity: direct effect of changing a variable value related to a good on demand for the same good\n\nE.g., elasticity of transit demand wrt transit fare, transit travel time, or transit headway\n\nCross elasticity: effect of changing a variable value related to a good on demand for a different good\n\nE.g., elasticity of transit demand wrt auto travel time"
+    "objectID": "teaching/ENCI707/slides/lec-7.html#causal-experiment-design",
+    "href": "teaching/ENCI707/slides/lec-7.html#causal-experiment-design",
+    "title": "Lecture 7 - Causal Inference",
+    "section": "Causal Experiment Design",
+    "text": "Causal Experiment Design\n\nRandomized controlled trials are “gold standard”\nAlmost never available for transportation/social science research questions\nWhat to do?"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-7.html#logit---direct-elasticity",
-    "href": "teaching/ENCI707/slides/lec-7.html#logit---direct-elasticity",
-    "title": "Lecture 8 - Causal Inference",
-    "section": "Logit - Direct Elasticity",
-    "text": "Logit - Direct Elasticity\nDirect elasticity of the probability of an individual \\(n\\) choosing alternative \\(i\\) wrt a change in an attribute/independent variable \\(X_{ik}\\) with coefficient \\(\\beta_k\\) (ignoring \\(n\\) subscripts for simplicity)\n\\[e_{direct} = \\frac{\\partial P_i}{\\partial X_{ik}} \\frac{X_{ik}}{P_i}=(1-P_i)X_{ik}\\beta_k\\]"
+    "objectID": "teaching/ENCI707/slides/lec-7.html#adjustment-for-pretreatment-variables",
+    "href": "teaching/ENCI707/slides/lec-7.html#adjustment-for-pretreatment-variables",
+    "title": "Lecture 7 - Causal Inference",
+    "section": "Adjustment for Pretreatment Variables",
+    "text": "Adjustment for Pretreatment Variables\n\nDifferences between treatment & control variables can be captured by including pretreatment variables in the model\nAddresses both random (variance) and systematic (bias) differences between treatment & control\nDo not adjust for posttreatment variables unless performing more complex analysis – e.g., instrumental variables (IV)"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-7.html#logit---cross-elasticity",
-    "href": "teaching/ENCI707/slides/lec-7.html#logit---cross-elasticity",
-    "title": "Lecture 8 - Causal Inference",
-    "section": "Logit - Cross Elasticity",
-    "text": "Logit - Cross Elasticity\n\nCross elasticity of the probability of an individual \\(n\\) choosing alternative \\(i\\) wrt a change in an attribute/independent variable \\(X_{jk}\\) with coefficient \\(\\beta_k\\) for a different alternative\n\n\\[e_{cross} = -P_j X_{jk}\\beta_k\\]\n\nAbove is same regardless of alternative \\(i\\). I.e., all alternatives have the same cross-elasticity wrt an attribute \\(k\\) of alternative \\(j\\)\nAbove results from independence of irrelevant alternatives (IIA) property of basic logit model"
+    "objectID": "teaching/ENCI707/slides/lec-7.html#ignorability-condition",
+    "href": "teaching/ENCI707/slides/lec-7.html#ignorability-condition",
+    "title": "Lecture 7 - Causal Inference",
+    "section": "Ignorability Condition",
+    "text": "Ignorability Condition\n\nIgnorability in causal inference: no imbalance between treatment & control, on average\nAssignment to treatment does not imply anything about potential outcome"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-7.html#independence-of-irrelevant-alternatives-iia-property",
-    "href": "teaching/ENCI707/slides/lec-7.html#independence-of-irrelevant-alternatives-iia-property",
-    "title": "Lecture 8 - Causal Inference",
-    "section": "Independence of Irrelevant Alternatives (IIA) Property",
-    "text": "Independence of Irrelevant Alternatives (IIA) Property\nConsider we have two modes: auto (a) & bus (b)\n\\[\\frac{P_a}{P_b} = \\frac{exp(V_a)}{exp(V_b)} = exp(V_a - V_b)\\] I.e., the relative probability of choosing auto vs. bus depends only on the utilities of the two alternatives\n\nNow what if our buses are red (rb) & we paint half blue (bb)?"
+    "objectID": "teaching/ENCI707/slides/lec-7.html#causal-inference-in-observational-studies-1",
+    "href": "teaching/ENCI707/slides/lec-7.html#causal-inference-in-observational-studies-1",
+    "title": "Lecture 7 - Causal Inference",
+    "section": "Causal Inference in Observational Studies",
+    "text": "Causal Inference in Observational Studies\n\nWe rarely have access to a random controlled trial\nObservational causation is an exercise in logic & relative causal strength NOT causation"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-7.html#iia-cont",
-    "href": "teaching/ENCI707/slides/lec-7.html#iia-cont",
-    "title": "Lecture 8 - Causal Inference",
-    "section": "IIA Cont…",
-    "text": "IIA Cont…\n\nIf the IIA assumption does not hold, we can make other error distribution assumptions\n\nNested logit (can handle complex decision structures)\nProbit (normal error terms, very general model, but can be difficult to work with it)"
+    "objectID": "teaching/ENCI707/slides/lec-7.html#health-status-example",
+    "href": "teaching/ENCI707/slides/lec-7.html#health-status-example",
+    "title": "Lecture 7 - Causal Inference",
+    "section": "Health Status Example",
+    "text": "Health Status Example\n\nConsider 100 patients receive a treatment and 1000 receive the control condition\nCausal truth: treatment has zero effect on health outcomes\nSuppose treatment and control groups systematically differ, with healthier patients receiving treatment"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-7.html#health-status-example-1",
+    "href": "teaching/ENCI707/slides/lec-7.html#health-status-example-1",
+    "title": "Lecture 7 - Causal Inference",
+    "section": "Health Status Example",
+    "text": "Health Status Example"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-7.html#adding-predictors-omitted-variables",
+    "href": "teaching/ENCI707/slides/lec-7.html#adding-predictors-omitted-variables",
+    "title": "Lecture 7 - Causal Inference",
+    "section": "Adding Predictors: Omitted Variables",
+    "text": "Adding Predictors: Omitted Variables\n\nSimple solution is to compare treated and control units conditional on previous health status\nHealth status is a confounding variable – affects both treatment & outcome\nIf all confounding variable observed, then consistent causal treatment is possible"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-7.html#omitted-variable-bias",
+    "href": "teaching/ENCI707/slides/lec-7.html#omitted-variable-bias",
+    "title": "Lecture 7 - Causal Inference",
+    "section": "Omitted Variable Bias",
+    "text": "Omitted Variable Bias\n\nCorrect specification: \\[y_i = \\beta_0 + \\beta_1 𝑧_𝑖 + \\beta_2 x_i + \\epsilon_𝑖\\]\nwhere \\(𝑧_𝑖\\) is the treatment and \\(𝑥_𝑖\\) is the covariate for unit \\(i\\)\nIf \\(𝑥_𝑖\\) is ignored then: \\[𝑦_𝑖=\\beta_0^∗+\\beta_1^∗ 𝑧_𝑖+\\epsilon_𝑖^∗\\]\nUsing \\(𝑥_𝑖=\\gamma_0+\\gamma_1 𝑧_𝑖+𝜈_𝑖\\): \\[𝑦_𝑖=\\beta_0+\\beta_2 \\gamma_1+(\\beta_1+\\beta_2 \\gamma_1 ) 𝑧_𝑖+\\epsilon_𝑖+\\beta_2 𝜈_𝑖\\]\nThen: \\[\\beta_1^∗=\\beta_1+\\beta_2 \\gamma_1 \\text{; }\\gamma_1=0 \\text{ denotes a non-confounding variable}\\]"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-7.html#ignorability-in-observational-studies",
+    "href": "teaching/ENCI707/slides/lec-7.html#ignorability-in-observational-studies",
+    "title": "Lecture 7 - Causal Inference",
+    "section": "Ignorability in Observational Studies",
+    "text": "Ignorability in Observational Studies\n\nStrict ignorability says distribution of potential outcomes same across treatment levels: \\[𝑦^0,𝑦_1 \\perp 𝑧\\]\nConditional ignorability says the distribution of potential outcomes across treatment levels is the same, conditional on the covariates, \\(x\\): \\[𝑦^0,𝑦_1 \\perp 𝑧|𝑥\\]\nMust make “leap of faith” that we have conditioned on all necessary confounding variables – selection on observables in econometrics literature"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-7.html#common-support-or-overlap",
+    "href": "teaching/ENCI707/slides/lec-7.html#common-support-or-overlap",
+    "title": "Lecture 7 - Causal Inference",
+    "section": "Common Support or Overlap",
+    "text": "Common Support or Overlap"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-7.html#propensity-score-matching-psm",
+    "href": "teaching/ENCI707/slides/lec-7.html#propensity-score-matching-psm",
+    "title": "Lecture 7 - Causal Inference",
+    "section": "Propensity Score Matching (PSM)",
+    "text": "Propensity Score Matching (PSM)\n\nMatching: restructure data for statistical analysis\nGoal is to create attribute balance between treatment & control samples\nFive step procedure"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-7.html#psm-step-1---define-confounders-estimand",
+    "href": "teaching/ENCI707/slides/lec-7.html#psm-step-1---define-confounders-estimand",
+    "title": "Lecture 7 - Causal Inference",
+    "section": "PSM: Step 1 - Define confounders & estimand",
+    "text": "PSM: Step 1 - Define confounders & estimand\n\nBased on relevant literature\nTypically adjust control group to match treated to estimate effect of the treatment on the treated\nCareful! Including additional covariates may increase bias away from the true estimate if not all confounding covariates are available – avoid potential instrumental variables"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-7.html#psm-step-2---estimating-propensity-score",
+    "href": "teaching/ENCI707/slides/lec-7.html#psm-step-2---estimating-propensity-score",
+    "title": "Lecture 7 - Causal Inference",
+    "section": "PSM: Step 2 - Estimating propensity score",
+    "text": "PSM: Step 2 - Estimating propensity score\n\nModel of Pr(receiving treatment)\nTypically, a logistic regression for binary treatment, then use propensity score as covariate summary\nPropensity score gives a distance metric"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-7.html#psm-step-3---matching-to-restructure-data",
+    "href": "teaching/ENCI707/slides/lec-7.html#psm-step-3---matching-to-restructure-data",
+    "title": "Lecture 7 - Causal Inference",
+    "section": "PSM: Step 3 - Matching to restructure data",
+    "text": "PSM: Step 3 - Matching to restructure data\n\nCreate matched pairs with control samples with closest propensity score – can be with/without replacement\nBetter matches with replacement but may overuse some sample units"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-7.html#psm-step-4---diagnostics-for-balance-overlap",
+    "href": "teaching/ENCI707/slides/lec-7.html#psm-step-4---diagnostics-for-balance-overlap",
+    "title": "Lecture 7 - Causal Inference",
+    "section": "PSM: Step 4 - Diagnostics for balance & overlap",
+    "text": "PSM: Step 4 - Diagnostics for balance & overlap\n\nSeveral diagnostics exist based on difference of means, etc.\nEvaluate and change model or method (if required)"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-7.html#psm-step-5---estimate-treatment-effect-using-restructured-data",
+    "href": "teaching/ENCI707/slides/lec-7.html#psm-step-5---estimate-treatment-effect-using-restructured-data",
+    "title": "Lecture 7 - Causal Inference",
+    "section": "PSM: Step 5 - Estimate treatment effect using restructured data",
+    "text": "PSM: Step 5 - Estimate treatment effect using restructured data\n\nEstimate regression model with propensity score and confounder variables\nIncorporate data restructuring via weights – typically inverse probability weights"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-7.html#instrumental-variable-iv",
+    "href": "teaching/ENCI707/slides/lec-7.html#instrumental-variable-iv",
+    "title": "Lecture 7 - Causal Inference",
+    "section": "Instrumental Variable (IV)",
+    "text": "Instrumental Variable (IV)\n\nWhen ignorability of treatment seems weak, IV can be a good approach\nInstrument \\(z\\) should predict the treatment \\(T\\) but not the outcome \\(y\\)\nAssumptions:\n\nIgnorability of instrument\nMonotonicity\nNonzero association between treatment & instrument\nExclusion restriction – no instrument effect on excluded variables"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-7.html#iv-in-regression",
+    "href": "teaching/ENCI707/slides/lec-7.html#iv-in-regression",
+    "title": "Lecture 7 - Causal Inference",
+    "section": "IV in Regression",
+    "text": "IV in Regression\n\nGeneral framework \\[𝑦_𝑖=\\beta_0+\\beta_1 𝑇_𝑖+\\epsilon_𝑖\\] \\[𝑇_𝑖=\\gamma_0+\\gamma_1 𝑧_𝑖+𝜈_𝑖\\]\nWhere \\(𝑧_𝑖\\) is uncorrelated with both \\(\\epsilon_𝑖\\) and \\(𝜈_𝑖\\) (ignorability and exclusion restriction)\nIdentifiability: whether data contain sufficient information for unique estimation of parameter (or set of parameters)"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-7.html#iv-in-regression-1",
+    "href": "teaching/ENCI707/slides/lec-7.html#iv-in-regression-1",
+    "title": "Lecture 7 - Causal Inference",
+    "section": "IV in Regression",
+    "text": "IV in Regression\n\nWith \\[𝑦=\\beta_0+\\beta_1 𝑇+\\beta_2 𝑧+𝑒𝑟𝑟𝑜𝑟\\] \\[𝑇=\\gamma_0+\\gamma_1 𝑧+𝑒𝑟𝑟𝑜𝑟\\]\nSubstituting T into y: \\[𝑦=(\\beta_0+\\beta_1 \\gamma_0 )+(\\beta_1 \\gamma_1+\\beta_2 )𝑧+𝑒𝑟𝑟𝑜𝑟\\]\nwhere \\(\\beta_1\\) is our parameter of interest\nUsing \\(𝑦=\\delta_0+\\delta_1 𝑧+𝑒𝑟𝑟𝑜𝑟\\) where \\(\\delta_1=\\beta_1 \\gamma_1+\\beta_2\\) we get \\[\\beta_1=(\\delta_1−\\beta_2)/\\gamma_1\\]"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-7.html#iv-in-regression-2",
+    "href": "teaching/ENCI707/slides/lec-7.html#iv-in-regression-2",
+    "title": "Lecture 7 - Causal Inference",
+    "section": "IV in Regression",
+    "text": "IV in Regression\n\nCannot estimate \\(\\beta_2\\) because error in \\(f(y)\\) can be correlated with T – exclusion restriction means \\(\\beta_2=0\\) giving \\(\\beta_1=\\delta_1/\\gamma_1\\)\nEstimation is by two-stage least squares (2SLS)\nStandard errors require adjustment in instrumental variable estimation – should be accounted for in any software package"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-7.html#exclusion-restriction-plausibility",
+    "href": "teaching/ENCI707/slides/lec-7.html#exclusion-restriction-plausibility",
+    "title": "Lecture 7 - Causal Inference",
+    "section": "Exclusion Restriction Plausibility",
+    "text": "Exclusion Restriction Plausibility\n\nOne way to assess the plausibility of the exclusion restriction is to calculate an estimate within a sample that would not be expected to be affected by the instrument\nResearchers estimated the effect of military service on earnings (and other outcomes) using, as an instrument, the lottery number for young men eligible for the draft during the Vietnam War\n\nRandomly assigned number and strongly affected the probability of military service\nMen with low lottery numbers may have altered their educational plans to avoid or postpone military service (would void exclusion restriction)\n\nRan IV model for a sample of men who were assigned numbers so late that the war ended before they ever had to serve\n\nNo clear relation between lottery number and earnings, providing support for the exclusion restriction"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-7.html#weak-instrument",
+    "href": "teaching/ENCI707/slides/lec-7.html#weak-instrument",
+    "title": "Lecture 7 - Causal Inference",
+    "section": "Weak Instrument",
+    "text": "Weak Instrument\n\nOnly assumption we can test – instrument has non-zero correlation with treatment variable\nIf low correlation, then a weak instrument"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-7.html#regression-discontinuity",
+    "href": "teaching/ENCI707/slides/lec-7.html#regression-discontinuity",
+    "title": "Lecture 7 - Causal Inference",
+    "section": "Regression Discontinuity",
+    "text": "Regression Discontinuity\n\nNon-random assignment but mechanism entirely known to researcher\nConsider a policy that gives tutoring to students with test scores &lt; 60\nConsider all students with score in range of 60 – discontinuity at 60\n\nWorks well when discontinuity relates to outcome – e.g., pre-test scores on post-test scores\nDoes not work well if comparing across geography due to spatial heterogeneity"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-7.html#fixed-effect-models",
+    "href": "teaching/ENCI707/slides/lec-7.html#fixed-effect-models",
+    "title": "Lecture 7 - Causal Inference",
+    "section": "Fixed Effect Models",
+    "text": "Fixed Effect Models\n\nUse repeated observations within groups – e.g., twin comparisons that holds confounding variables fixed\nSimply a regression model with group-specific intercepts \\[𝑦_𝑖𝑗=\\beta_0+𝜏𝑧_𝑖𝑗+𝛼_𝑖+𝜖_𝑖𝑗\\]\nwhere j is an indicator of intra-group units\nRequires treatment to vary within groups"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-7.html#difference-in-differences",
+    "href": "teaching/ENCI707/slides/lec-7.html#difference-in-differences",
+    "title": "Lecture 7 - Causal Inference",
+    "section": "Difference-In-Differences",
+    "text": "Difference-In-Differences\n\nComparison across units (typically) using time as an additional dimension of variation\nE.g., effect of new school busing program on housing prices in school district\n\nCompare prices before/after between district with school busing program and those without it\nA measure of differences in trajectory"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-7.html#causal-graph-theory",
+    "href": "teaching/ENCI707/slides/lec-7.html#causal-graph-theory",
+    "title": "Lecture 7 - Causal Inference",
+    "section": "Causal Graph Theory",
+    "text": "Causal Graph Theory\n\nAnother perspective on causal inference from computer science – Judea Pearl et al.\nAbstract causal inference to a visual/graphical depiction\nDevelop system of symbolic calculus\nNonparametrically solve identification problem\nConcept of directed acyclic graphs (DAGs)"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-7.html#causal-graph-theory-1",
+    "href": "teaching/ENCI707/slides/lec-7.html#causal-graph-theory-1",
+    "title": "Lecture 7 - Causal Inference",
+    "section": "Causal Graph Theory",
+    "text": "Causal Graph Theory\n\nEnglish: Smoking (X), Cancer (Y), Tar (Z), Genotypes(U)\nDirected acyclic graph (DAG)"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-5.html#outline",
@@ -6406,7 +6560,7 @@
     "href": "teaching/ENCI707/slides/lec-6.html#estimation-sequential-logit-model",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "Estimation: Sequential Logit Model",
-    "text": "Estimation: Sequential Logit Model\n\nClosed form, so classical estimation techniques are feasible: Maximum Likelihood\nLikelihood of one observation i for mode choice: \\[𝐿_𝑖=\\prod_{𝑚=1}^𝑀(Pr⁡(𝑚_𝑖))^{\\delta_𝑚} \\text{, } \\delta_m = 1 \\text{ if the chosen mode is m; 0 otherwise}\\]\nLikelihood of one observation i for destination choice: \\[𝐿_𝑖=\\prod_{𝑑=1}^𝐷(Pr⁡(𝑑_𝑖))^{\\delta_𝑑} \\text{, } \\delta_d = 1 \\text{ if the chosen destination is d; 0 otherwise}\\]\nSpecification test, statistical significance, goodness-of-fit, elasticity/marginal effect: as explained for MNL."
+    "text": "Estimation: Sequential Logit Model\n\nClosed form, so classical estimation techniques are feasible: Maximum Likelihood\nLikelihood of one observation i for mode choice: \\[𝐿_𝑖=\\prod_{𝑚=1}^𝑀(Pr⁡(𝑚_𝑖))^{\\delta_𝑚} \\text{, } \\delta_m = 1 \\text{ if the chosen mode is m; 0 otherwise}\\]\nLikelihood of one observation i for destination choice: \\[𝐿_𝑖=\\prod_{𝑑=1}^𝐷(Pr⁡(𝑑_𝑖))^{\\delta_𝑑} \\text{, } \\delta_d = 1 \\text{ if the chosen destination is d; 0 otherwise}\\]\nSpecification test, statistical significance, goodness-of-fit, elasticity/marginal effect: as explained for MNL"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#simultaneous-logit-model-of-choice-bundle-1",
@@ -6448,7 +6602,7 @@
     "href": "teaching/ENCI707/slides/lec-6.html#estimation-simultaneous-logit-model",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "Estimation: Simultaneous Logit Model",
-    "text": "Estimation: Simultaneous Logit Model\n\nClosed form, so classical estimation techniques are feasible: Maximum Likelihood\nLikelihood of one observation \\(i\\): \\[𝐿_𝑖=\\prod_{𝑑𝑚=1}^{𝐷𝑀} (Pr⁡(𝑑_𝑖 𝑚_𝑖))^{\\delta_{𝑑𝑚}} \\] \\[\\delta_{𝑑𝑚}=1 \\text{ if the chosen mode m and destination d pair is chosen; 0 otherwise}\\]\nSpecification test, statistical significance, goodness-of-fit, elasticity/marginal effect: as explained for MNL."
+    "text": "Estimation: Simultaneous Logit Model\n\nClosed form, so classical estimation techniques are feasible: Maximum Likelihood\nLikelihood of one observation \\(i\\): \\[𝐿_𝑖=\\prod_{𝑑𝑚=1}^{𝐷𝑀} (Pr⁡(𝑑_𝑖 𝑚_𝑖))^{\\delta_{𝑑𝑚}} \\] \\[\\delta_{𝑑𝑚}=1 \\text{ if the chosen mode m and destination d pair is chosen; 0 otherwise}\\]\nSpecification test, statistical significance, goodness-of-fit, elasticity/marginal effect: as explained for MNL"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#nested-logit-model",

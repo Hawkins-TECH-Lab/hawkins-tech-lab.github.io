@@ -9,7 +9,7 @@
 <link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.6.39">
 
-  <title>Hawkinslab – Lecture 8 - Causal Inference</title>
+  <title>Hawkinslab – Lecture 7 - Causal Inference</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -128,7 +128,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Lecture 8 - Causal Inference</h1>
+  <h1 class="title">Lecture 7 - Causal Inference</h1>
   <p class="subtitle">ENCI707: Engineering Demand and Policy Analysis</p>
 
 <div class="quarto-title-authors">
@@ -139,172 +139,368 @@
 <h2>Outline</h2>
 <div>
 <ol type="1">
-<li class="fragment">Basis for choice modeling</li>
-<li class="fragment">Theory</li>
-<li class="fragment">Logit choice model</li>
+<li class="fragment">Need for causal inference</li>
+<li class="fragment">Methods of causal inference
+<ul>
+<li class="fragment">Propensity score matching</li>
+<li class="fragment">Instrumental variables</li>
+<li class="fragment">Regression discontinuity</li>
+<li class="fragment">Difference-in-differences</li>
+</ul></li>
+<li class="fragment">Causal Graph Theory</li>
 </ol>
 </div>
 </section>
-<section id="basis-for-choice-modeling" class="slide level2 smaller">
-<h2>Basis for Choice Modeling</h2>
+<section id="causal-inference-in-transportation-planning" class="slide level2">
+<h2>Causal Inference in Transportation Planning</h2>
 <ul>
-<li>Aggregate demand models (such as those we have been discussing) based on observations for <strong>groups of travelers</strong> or <strong>average relations</strong> for zones</li>
-<li><strong>Discrete choice:</strong> probability an individual chooses a given option a function of their socioeconomic characteristics &amp; relative attractiveness of the option</li>
-<li>Cannot estimate via least squares because probability is unobserved – only observe choice</li>
-<li>Models are <strong>probabilistic</strong> &amp; do not give an outcome value such as <strong>trips</strong> – must use probability concepts to generate discrete outcomes (summation over all observations to give expected number choosing option or use sample enumeration to allocate discrete outcomes)</li>
+<li>Large-scale transportation models principally concerned with prediction</li>
+<li>However, increasingly interested in policy interventions &amp; treatments</li>
 </ul>
 </section>
-<section id="basis-for-choice-modeling-1" class="slide level2 smaller">
-<h2>Basis for Choice Modeling</h2>
+<section id="need-for-causal-inference---interpretation" class="slide level2">
+<h2>Need for Causal Inference - Interpretation</h2>
 <ul>
-<li>Individuals derive <strong>utility</strong> from the use of alternatives defined by a <strong>utility function</strong> often denoted by V <span class="math display">\[Vpeanut butter = 0.25 – 1.0 ALLERGY - 0.5 PRICE + 0.25 ORGANIC\]</span></li>
-<li>Need probability value between 0 &amp; 1. Various forms, generally with an s-shaped plot. Main ones are <span class="math display">\[𝐿𝑜𝑔𝑖𝑡:𝑃_1=exp⁡(𝑉_1 )/(exp⁡(𝑉1)+exp⁡(𝑉2))\]</span> <span class="math display">\[𝑃𝑟𝑜𝑏𝑖𝑡:𝑃_1=\int_{-\infty}^{\infty}⁡\int_{-\infty}^{V_1-V_2+x_1}\frac{⁡exp⁡(\frac{−1}{2(1−\rho^2)} (\frac{𝑥_1}{\sigma_1})^2−\frac{2\rho 𝑥_1 𝑥_2}{\sigma_1 \sigma_2}+(\frac{𝑥_2}{\sigma_2})^2}{2\pi\sigma_1 \sigma_2 \sqrt{1−\rho^2 }} 𝑑𝑥_2 𝑑𝑥_1\]</span></li>
-</ul>
-</section>
-<section id="properties-of-discrete-choice-dc" class="slide level2">
-<h2>Properties of Discrete Choice (DC)</h2>
+<li>People are told to run around in a dark room for 5 minutes</li>
+<li><strong>Observation</strong>: Men are found to have many more head injuries than women</li>
+<li>Conclusion:
 <ul>
-<li>Based on theories of <strong>individual behavior</strong> &amp; do not constitute physical analogies – therefore stable over time &amp; space</li>
-<li>Can be more <strong>statistically efficient</strong> than aggregate models because each observation is an outcome rather than using aggregations of potentially hundreds of observations</li>
-<li>DM less likely to suffer from bias due to correlation between aggregate units – i.e., <strong>ecological correlation</strong> (fallacy)</li>
-</ul>
-</section>
-<section id="ecological-fallacy" class="slide level2">
-<h2>Ecological Fallacy</h2>
-
-<img data-src="../images/lecture5/eco_fallacy.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="theoretical-framework" class="slide level2 smaller">
-<h2>Theoretical Framework</h2>
-<ul>
-<li>Individuals belong to a <strong>homogeneous population</strong> <span class="math inline">\(N\)</span>, act rationally, &amp; <strong>possess perfect information</strong> – i.e., they always select the option that maximizes their net personal utility subject to legal, social, physical, &amp;/or budgetary (both time &amp; money) constraints</li>
-<li>There is a certain set <span class="math inline">\(𝐴 = \{𝐴_1, …𝐴_i,…𝐴_I\}\)</span> of available alternatives &amp; a set X of vectors of measured attributes of individuals &amp; their alternatives</li>
-<li>An individual <span class="math inline">\(n\)</span> is endowed with a set of attributes <span class="math inline">\(𝑥 \in 𝑋\)</span> &amp; faces a choice set <span class="math inline">\(𝐴(n) \in 𝐴\)</span></li>
-<li>We will assume choice set is predetermined for individuals</li>
-</ul>
-</section>
-<section id="theoretical-framework-1" class="slide level2">
-<h2>Theoretical Framework</h2>
-<ul>
-<li>Modeler, an observer, does not <strong>posses complete information</strong> about all elements considered by the individual making choice</li>
-<li>Modeler assumes <span class="math inline">\(𝑈_{ni}\)</span> can be represented by two components:
-<ul>
-<li>A <strong>measurable</strong>, <strong>systematic</strong>, or <strong>representative</strong> part <span class="math inline">\(𝑉_{ni}\)</span>, which is a function of the measured attributes <span class="math inline">\(x\)</span></li>
-<li>A random part <span class="math inline">\(\epsilon_{ni}\)</span>, which reflects <strong>indiosyncratic</strong> &amp; <strong>taste variation</strong>, together with measurement or observational errors made by the modeler</li>
+<li>Women see better in the dark?</li>
+<li>Men are more reckless runners?</li>
 </ul></li>
 </ul>
 </section>
-<section id="theoretical-framework-2" class="slide level2">
-<h2>Theoretical Framework</h2>
+<section id="need-for-causal-inference---unobserved-heterogeneity" class="slide level2">
+<h2>Need for Causal Inference - Unobserved Heterogeneity</h2>
 <ul>
-<li>Modeler sets utility <span class="math inline">\(𝑈_{ni}=𝑉_{ni}+\epsilon_{ni}\)</span> to address two apparent irrationalities
-<ol type="1">
-<li>That two individuals faced with the <strong>same situation</strong> &amp; having the <strong>same personal attributes</strong> make different choices</li>
-<li>That an individual may not select the alternative that <strong>appears</strong> to be the <em>best one</em></li>
-</ol></li>
-<li>Often assumed <span class="math inline">\(V_{ni}\)</span> given by <span class="math inline">\(\sum_k^K \beta_{ik} x_{nik}\)</span> here <span class="math inline">\(\beta_{ik}\)</span> are assumed <strong>constant</strong> for all individuals <span class="math inline">\(N\)</span> in the homogeneous set but <strong>may vary across alternatives</strong> <span class="math inline">\(I\)</span></li>
-</ul>
-</section>
-<section id="theoretical-framework-3" class="slide level2 smaller">
-<h2>Theoretical Framework</h2>
+<li>Women who smoke have babies that are 600 grams under weight on average</li>
+<li><strong>Problem</strong>:
 <ul>
-<li>Individual chooses an alternative based on <span class="math inline">\(𝑈_{ni}≥ 𝑈_{jn} \forall A_j \in A(n)\)</span></li>
-<li>Or: <span class="math inline">\(𝑉_{ni}  – 𝑉_{nj}≥\epsilon_{nj}  − \epsilon_{ni}\)</span> (notice swapping of <span class="math inline">\(i\)</span> &amp; <span class="math inline">\(j\)</span>)</li>
-</ul>
-<p>Not possible to know with certainty if the inequality holds, so use <span class="math display">\[𝑃_{ni}  = 𝑃(\epsilon_{nj} \leq \epsilon_{ni} + (V_{ni} - V_{nj})) \forall A_j \in A(n)\]</span> - Do not know distribution of joint residuals, so cannot derive analytical expression for model - Can denote <span class="math inline">\(f(\epsilon) = f(\epsilon_1, \epsilon_2, ... \epsilon_I\)</span> &amp; know they are <strong>random variables</strong> with a certain distribution</p>
-</section>
-<section id="theoretical-framework-4" class="slide level2 smaller">
-<h2>Theoretical Framework</h2>
-<ul>
-<li>Can note that distribution for <span class="math inline">\(f(U)\)</span> is the same but with mean <span class="math inline">\(V\)</span> rather than 0 <span class="math display">\[P_{ni} = \int_{R_I} f(\epsilon) d\epsilon\]</span> <span class="math display">\[\text{where } R_I = \begin{cases}
-\epsilon_{nj} \leq \epsilon_{ni} + (V_{ni} - V_{nj}), &amp; \forall A_j \in A(n) \\
-V_{ni}) + \epsilon_{ni} \ge 0 \\
-\end{cases}\]</span></li>
-<li>Assuming independent &amp; identically distributed (<strong>IID</strong>) residuals, <span class="math display">\[f(\epsilon_1,...\epsilon_I) = \prod_i^I g(\epsilon_i)\]</span></li>
-<li>And (drop <span class="math inline">\(n\)</span> for simplicity) <span class="math display">\[P_i = \int_{-\infty}^\infty g(\epsilon_i) d\epsilon_i \prod_{j \neq i} \int_{-\infty}^{V_i-V_j+\epsilon_i} g(\epsilon_j) d\epsilon_j\]</span></li>
-</ul>
-</section>
-<section id="generating-the-logit-model" class="slide level2 smaller">
-<h2>Generating the Logit Model</h2>
-<ul>
-<li>Assuming IID Gumbel (<strong>Extreme Value Type I</strong>) residuals, or equivalently that residual differences are <strong>logistically distributed</strong>, gives the standard multinomial logit specification</li>
-<li>Termed <em>softmax function</em> in machine learning field <span class="math display">\[P_{ni} = \frac{exp(\mu V_{ni})}{\sum_{A_j \in A(n)} exp(\mu V_{nj})}\]</span></li>
-<li>Where <span class="math inline">\(\mu\)</span> is a <strong>scale parameter</strong> assumed equal to 1.0 for identification</li>
-</ul>
-<p><img data-src="../images/lecture5/logit_curve.png" class="absolute" style="bottom: 0px; right: 0px; width: 35%; "></p>
-</section>
-<section id="logit-model-parameter-estimation" class="slide level2">
-<h2>Logit Model Parameter Estimation</h2>
-<ul>
-<li>Commercial (&amp; opensource) software exists to estimate model parameters using the method of maximum likelihood estimation
-<ul>
-<li>Apollo (R &amp; free)</li>
-<li>Biogeme (Python &amp; free)</li>
-<li>STATA (commercial)</li>
-<li>LIMDEP (commercial)</li>
-<li>GAUSS (commercial)</li>
-</ul></li>
-<li>Parameter interpretation similar to regression (t-statistics, GoF, etc.)</li>
-</ul>
-</section>
-<section id="direct-cross-elasticity" class="slide level2">
-<h2>Direct &amp; Cross Elasticity</h2>
-<ul>
-<li><strong>Direct elasticity:</strong> direct effect of changing a variable value related to a good on demand for the same good
-<ul>
-<li>E.g., elasticity of transit demand wrt transit fare, transit travel time, or transit headway</li>
-</ul></li>
-<li><strong>Cross elasticity:</strong> effect of changing a variable value related to a good on demand for a different good
-<ul>
-<li>E.g., elasticity of transit demand wrt auto travel time</li>
+<li>Is it due to smoking or unobserved factors that are correlated with smoking?</li>
 </ul></li>
 </ul>
 </section>
-<section id="logit---direct-elasticity" class="slide level2">
-<h2>Logit - Direct Elasticity</h2>
-<p>Direct elasticity of the probability of an individual <span class="math inline">\(n\)</span> choosing alternative <span class="math inline">\(i\)</span> wrt a change in an attribute/independent variable <span class="math inline">\(X_{ik}\)</span> with coefficient <span class="math inline">\(\beta_k\)</span> (ignoring <span class="math inline">\(n\)</span> subscripts for simplicity)</p>
-<p><span class="math display">\[e_{direct} = \frac{\partial P_i}{\partial X_{ik}} \frac{X_{ik}}{P_i}=(1-P_i)X_{ik}\beta_k\]</span></p>
-</section>
-<section id="logit---cross-elasticity" class="slide level2 smaller">
-<h2>Logit - Cross Elasticity</h2>
+<section id="need-for-causal-inference-endogeneity-self-selection" class="slide level2">
+<h2>Need for Causal Inference – Endogeneity &amp; Self-Selection</h2>
 <ul>
-<li>Cross elasticity of the probability of an individual <span class="math inline">\(n\)</span> choosing alternative <span class="math inline">\(i\)</span> wrt a change in an attribute/independent variable <span class="math inline">\(X_{jk}\)</span> with coefficient <span class="math inline">\(\beta_k\)</span> for a different alternative</li>
-</ul>
-<p><span class="math display">\[e_{cross} = -P_j X_{jk}\beta_k\]</span></p>
+<li>Cars with side impact airbags have lower injury severities when involved in crashes</li>
+<li><strong>Problem</strong>:
 <ul>
-<li>Above is same regardless of alternative <span class="math inline">\(i\)</span>. I.e., <strong>all alternatives</strong> have the same cross-elasticity wrt an attribute <span class="math inline">\(k\)</span> of alternative <span class="math inline">\(j\)</span></li>
-<li>Above results from independence of irrelevant alternatives (<strong>IIA</strong>) property of basic logit model</li>
-</ul>
-</section>
-<section id="independence-of-irrelevant-alternatives-iia-property" class="slide level2">
-<h2>Independence of Irrelevant Alternatives (IIA) Property</h2>
-<p>Consider we have two modes: auto (a) &amp; bus (b)</p>
-<p><span class="math display">\[\frac{P_a}{P_b} = \frac{exp(V_a)}{exp(V_b)} = exp(V_a - V_b)\]</span> I.e., the relative probability of choosing auto vs.&nbsp;bus depends <strong>only</strong> on the utilities of the two alternatives</p>
-<ul>
-<li>Now what if our buses are <strong>red (rb)</strong> &amp; we paint half <strong>blue (bb)</strong>?</li>
-</ul>
-</section>
-<section id="iia-cont" class="slide level2">
-<h2>IIA Cont…</h2>
-<ul>
-<li>If the IIA assumption does not hold, we can make other error distribution assumptions
-<ul>
-<li>Nested logit (can handle complex decision structures)</li>
-<li>Probit (normal error terms, very general model, but can be difficult to work with it)</li>
+<li>People owning side-impact airbags are not a <strong>random sample</strong> from the population (likely safer drivers)</li>
+<li>Safter drivers expected to have lower injury severities</li>
 </ul></li>
 </ul>
 </section>
-<section class="slide level2">
-
-<object data="./CIVE461_Wood_Buffalo_TDM.pdf" type="application/pdf" width="100%" height="700px">
-<embed src="./CIVE461_Wood_Buffalo_TDM.pdf">
-<p>
-This browser does not support PDFs. Please download the PDF to view it: <a href="./CIVE461_Wood_Buffalo_TDM.pdf">Download PDF</a>.
-</p>
-
-</object>
-
+<section id="need-for-causal-inference-endogeneity-self-selection-1" class="slide level2">
+<h2>Need for Causal Inference – Endogeneity &amp; Self-Selection</h2>
+<ul>
+<li>People who take motorcycle safety courses have higher crash rates</li>
+<li><strong>Problem</strong>:
+<ul>
+<li>Are courses ineffective?</li>
+<li>People taking the course are not a random sample from the population (possibly less skilled)</li>
+</ul></li>
+</ul>
+</section>
+<section id="causation-potential-outcomes" class="slide level2">
+<h2>Causation = Potential Outcomes</h2>
+<ul>
+<li>A key concept in causal inference is <strong>potential outcomes</strong></li>
+<li>What happened vs.&nbsp;what could have happened (<strong>counterfactual states</strong>)</li>
+<li>We will work with several examples to illustrate the principles…</li>
+</ul>
+</section>
+<section id="example-omega-3-fatty-acids" class="slide level2 smaller">
+<h2>Example: Omega-3 Fatty Acids</h2>
+<p><strong>Problem</strong>: Does consumption of omega-3 fish oil supplements promote a healthy blood pressure?</p>
+<p><strong>Experiment</strong>: Eight friends agree to be part of an informal study on the relationship between fish oil supplements and systolic blood pressure. Four of the friends are placed in the “fish oil supplement” <strong>treatment group</strong>. Members of this group agree to consume 3 grams of fish oil supplements per day for one year while otherwise maintaining their current diets. The other four friends agreed to simply maintain their current diets free from fish oil supplements for the same year. At the end of the study period:</p>
+<ul>
+<li>Measure blood pressure</li>
+<li>Assume 160 mmHg and above represents “high blood pressure”</li>
+</ul>
+</section>
+<section id="formal-problem-statement" class="slide level2 smaller">
+<h2>Formal Problem Statement</h2>
+<p><span class="math display">\[𝑧 = 0 \text{; no fish oil supplement}\]</span> <span class="math display">\[𝑧 = 1 \text{; fish oil supplement}\]</span></p>
+<ul>
+<li>Need to consider two cases:
+<ul>
+<li>Blood pressure given a person <strong>did not</strong> ingest any fish oil supplement <span class="math inline">\((y_i^0)\)</span></li>
+<li>Blood pressure given a person <strong>did</strong> ingest fish oil supplement <span class="math inline">\((y_i^1)\)</span></li>
+</ul></li>
+<li>Only ever observe <strong>one outcome per person</strong> – no time machines!</li>
+</ul>
+</section>
+<section id="formal-problem-statement-1" class="slide level2">
+<h2>Formal Problem Statement</h2>
+<ul>
+<li>Treatment given by <span class="math inline">\(T_i = y_i^1 - y_i^0\)</span></li>
+<li><strong>Fundamental problem of causal inference</strong>: cannot observe both <span class="math inline">\(y_i^1\)</span> and <span class="math inline">\(y_i^0\)</span></li>
+<li>Can only estimate average causal effect across a sample (population)</li>
+</ul>
+</section>
+<section id="close-substitutes" class="slide level2">
+<h2>Close Substitutes</h2>
+<ul>
+<li>What about using pre-study blood pressure as <span class="math inline">\(𝑦_𝑖^0\)</span>?
+<ul>
+<li>Do not know if person made other changes over the year</li>
+</ul></li>
+<li>What about using post-study blood pressure as <span class="math inline">\(𝑦_𝑖^0\)</span>?
+<ul>
+<li>Do not know if treatment has effect into year 2</li>
+</ul></li>
+</ul>
+</section>
+<section id="average-treatment-effects" class="slide level2 smaller">
+<h2>Average Treatment Effects</h2>
+<ul>
+<li>Start with treatment and control groups</li>
+<li>Need sufficiently similar groups – balance</li>
+<li>Beware self-selection bias <img data-src="../../../assets/images/teaching/ENCI707/Lecture7/ate_figure.png" class="quarto-figure quarto-figure-center"></li>
+<li>True average treatment effect = -7.5 mmHG</li>
+<li>Average treatment effect|treatment = +12.5 mmHG</li>
+</ul>
+</section>
+<section id="causal-experiment-design" class="slide level2">
+<h2>Causal Experiment Design</h2>
+<ul>
+<li><strong>Randomized controlled trials</strong> are “gold standard”</li>
+<li><strong>Almost never available</strong> for transportation/social science research questions</li>
+<li>What to do?</li>
+</ul>
+</section>
+<section id="adjustment-for-pretreatment-variables" class="slide level2">
+<h2>Adjustment for Pretreatment Variables</h2>
+<ul>
+<li>Differences between treatment &amp; control variables can be captured by including <strong>pretreatment variables</strong> in the model</li>
+<li>Addresses both random (<strong>variance</strong>) and systematic (<strong>bias</strong>) differences between treatment &amp; control</li>
+<li><strong>Do not</strong> adjust for posttreatment variables unless performing more complex analysis – e.g., instrumental variables (<strong>IV</strong>)</li>
+</ul>
+</section>
+<section id="ignorability-condition" class="slide level2">
+<h2>Ignorability Condition</h2>
+<ul>
+<li><strong>Ignorability in causal inference</strong>: no imbalance between treatment &amp; control, on average</li>
+<li><strong>Assignment to treatment</strong> does not imply anything about potential outcome</li>
+</ul>
+</section>
+<section>
+<section id="causal-inference-in-observational-studies" class="title-slide slide level1 center">
+<h1>Causal Inference in Observational Studies</h1>
 
 </section>
+<section id="causal-inference-in-observational-studies-1" class="slide level2">
+<h2>Causal Inference in Observational Studies</h2>
+<ul>
+<li>We rarely have access to a random controlled trial</li>
+<li>Observational causation is an exercise in logic &amp; relative causal strength <strong>NOT</strong> causation</li>
+</ul>
+</section>
+<section id="health-status-example" class="slide level2">
+<h2>Health Status Example</h2>
+<ul>
+<li>Consider 100 patients receive a treatment and 1000 receive the control condition</li>
+<li><strong>Causal truth</strong>: treatment has zero effect on health outcomes</li>
+<li>Suppose treatment and control groups <strong>systematically differ</strong>, with healthier patients receiving treatment</li>
+</ul>
+</section>
+<section id="health-status-example-1" class="slide level2">
+<h2>Health Status Example</h2>
+
+<img data-src="../../../assets/images/teaching/ENCI707/Lecture7/health_status_ex.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="adding-predictors-omitted-variables" class="slide level2">
+<h2>Adding Predictors: Omitted Variables</h2>
+<ul>
+<li>Simple solution is to compare treated and control units <strong>conditional on previous health status</strong></li>
+<li>Health status is a <strong>confounding variable</strong> – affects both treatment &amp; outcome</li>
+<li>If all confounding variable observed, then consistent causal treatment is possible</li>
+</ul>
+</section>
+<section id="omitted-variable-bias" class="slide level2 smaller">
+<h2>Omitted Variable Bias</h2>
+<ul>
+<li>Correct specification: <span class="math display">\[y_i = \beta_0 + \beta_1 𝑧_𝑖 + \beta_2 x_i + \epsilon_𝑖\]</span></li>
+<li>where <span class="math inline">\(𝑧_𝑖\)</span> is the treatment and <span class="math inline">\(𝑥_𝑖\)</span> is the covariate for unit <span class="math inline">\(i\)</span></li>
+<li>If <span class="math inline">\(𝑥_𝑖\)</span> is ignored then: <span class="math display">\[𝑦_𝑖=\beta_0^∗+\beta_1^∗ 𝑧_𝑖+\epsilon_𝑖^∗\]</span></li>
+<li>Using <span class="math inline">\(𝑥_𝑖=\gamma_0+\gamma_1 𝑧_𝑖+𝜈_𝑖\)</span>: <span class="math display">\[𝑦_𝑖=\beta_0+\beta_2 \gamma_1+(\beta_1+\beta_2 \gamma_1 ) 𝑧_𝑖+\epsilon_𝑖+\beta_2 𝜈_𝑖\]</span></li>
+<li>Then: <span class="math display">\[\beta_1^∗=\beta_1+\beta_2 \gamma_1 \text{; }\gamma_1=0 \text{ denotes a non-confounding variable}\]</span></li>
+</ul>
+</section>
+<section id="ignorability-in-observational-studies" class="slide level2 smaller">
+<h2>Ignorability in Observational Studies</h2>
+<ul>
+<li><strong>Strict ignorability</strong> says distribution of potential outcomes same across treatment levels: <span class="math display">\[𝑦^0,𝑦_1 \perp 𝑧\]</span></li>
+<li>Conditional ignorability says the distribution of potential outcomes across treatment levels is the same, conditional on the covariates, <span class="math inline">\(x\)</span>: <span class="math display">\[𝑦^0,𝑦_1 \perp 𝑧|𝑥\]</span></li>
+<li>Must make “leap of faith” that we have conditioned on all necessary confounding variables – <strong>selection on observables</strong> in econometrics literature</li>
+</ul>
+</section>
+<section id="common-support-or-overlap" class="slide level2">
+<h2>Common Support or Overlap</h2>
+
+<img data-src="../../../assets/images/teaching/ENCI707/Lecture7/common_support.svg" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="propensity-score-matching-psm" class="slide level2">
+<h2>Propensity Score Matching (PSM)</h2>
+<ul>
+<li><strong>Matching</strong>: restructure data for statistical analysis</li>
+<li>Goal is to create attribute balance between treatment &amp; control samples</li>
+<li>Five step procedure</li>
+</ul>
+</section>
+<section id="psm-step-1---define-confounders-estimand" class="slide level2">
+<h2>PSM: Step 1 - Define confounders &amp; estimand</h2>
+<ul>
+<li>Based on relevant literature</li>
+<li>Typically adjust control group to match treated to estimate <strong>effect of the treatment on the treated</strong></li>
+<li><strong>Careful!</strong> Including additional covariates may increase bias away from the true estimate if not all confounding covariates are available – avoid potential <strong>instrumental variables</strong></li>
+</ul>
+</section>
+<section id="psm-step-2---estimating-propensity-score" class="slide level2">
+<h2>PSM: Step 2 - Estimating propensity score</h2>
+<ul>
+<li>Model of Pr(receiving treatment)</li>
+<li>Typically, a <strong>logistic regression</strong> for binary treatment, then use propensity score as covariate summary</li>
+<li>Propensity score gives a distance metric</li>
+</ul>
+</section>
+<section id="psm-step-3---matching-to-restructure-data" class="slide level2">
+<h2>PSM: Step 3 - Matching to restructure data</h2>
+<ul>
+<li>Create matched pairs with control samples with closest propensity score – can be with/without replacement</li>
+<li>Better matches with replacement but may overuse some sample units</li>
+</ul>
+</section>
+<section id="psm-step-4---diagnostics-for-balance-overlap" class="slide level2">
+<h2>PSM: Step 4 - Diagnostics for balance &amp; overlap</h2>
+<ul>
+<li>Several diagnostics exist based on difference of means, etc.</li>
+<li>Evaluate and change model or method (if required)</li>
+</ul>
+</section>
+<section id="psm-step-5---estimate-treatment-effect-using-restructured-data" class="slide level2">
+<h2>PSM: Step 5 - Estimate treatment effect using restructured data</h2>
+<ul>
+<li>Estimate regression model with propensity score and confounder variables</li>
+<li>Incorporate data restructuring via <strong>weights</strong> – typically inverse probability weights</li>
+</ul>
+</section>
+<section id="instrumental-variable-iv" class="slide level2">
+<h2>Instrumental Variable (IV)</h2>
+<ul>
+<li>When ignorability of treatment seems weak, IV can be a good approach</li>
+<li>Instrument <span class="math inline">\(z\)</span> should predict the treatment <span class="math inline">\(T\)</span> but not the outcome <span class="math inline">\(y\)</span></li>
+<li>Assumptions:
+<ul>
+<li>Ignorability of instrument</li>
+<li>Monotonicity</li>
+<li>Nonzero association between treatment &amp; instrument</li>
+<li>Exclusion restriction – no instrument effect on excluded variables</li>
+</ul></li>
+</ul>
+</section>
+<section id="iv-in-regression" class="slide level2">
+<h2>IV in Regression</h2>
+<ul>
+<li>General framework <span class="math display">\[𝑦_𝑖=\beta_0+\beta_1 𝑇_𝑖+\epsilon_𝑖\]</span> <span class="math display">\[𝑇_𝑖=\gamma_0+\gamma_1 𝑧_𝑖+𝜈_𝑖\]</span></li>
+<li>Where <span class="math inline">\(𝑧_𝑖\)</span> is uncorrelated with both <span class="math inline">\(\epsilon_𝑖\)</span> and <span class="math inline">\(𝜈_𝑖\)</span> (ignorability and exclusion restriction)</li>
+<li><strong>Identifiability</strong>: whether data contain sufficient information for unique estimation of parameter (or set of parameters)</li>
+</ul>
+</section>
+<section id="iv-in-regression-1" class="slide level2">
+<h2>IV in Regression</h2>
+<ul>
+<li>With <span class="math display">\[𝑦=\beta_0+\beta_1 𝑇+\beta_2 𝑧+𝑒𝑟𝑟𝑜𝑟\]</span> <span class="math display">\[𝑇=\gamma_0+\gamma_1 𝑧+𝑒𝑟𝑟𝑜𝑟\]</span></li>
+<li>Substituting T into y: <span class="math display">\[𝑦=(\beta_0+\beta_1 \gamma_0 )+(\beta_1 \gamma_1+\beta_2 )𝑧+𝑒𝑟𝑟𝑜𝑟\]</span></li>
+<li>where <span class="math inline">\(\beta_1\)</span> is our parameter of interest</li>
+<li>Using <span class="math inline">\(𝑦=\delta_0+\delta_1 𝑧+𝑒𝑟𝑟𝑜𝑟\)</span> where <span class="math inline">\(\delta_1=\beta_1 \gamma_1+\beta_2\)</span> we get <span class="math display">\[\beta_1=(\delta_1−\beta_2)/\gamma_1\]</span></li>
+</ul>
+</section>
+<section id="iv-in-regression-2" class="slide level2">
+<h2>IV in Regression</h2>
+<ul>
+<li>Cannot estimate <span class="math inline">\(\beta_2\)</span> because error in <span class="math inline">\(f(y)\)</span> can be correlated with T – exclusion restriction means <span class="math inline">\(\beta_2=0\)</span> giving <span class="math inline">\(\beta_1=\delta_1/\gamma_1\)</span></li>
+<li>Estimation is by two-stage least squares (2SLS)</li>
+<li>Standard errors require adjustment in instrumental variable estimation – should be accounted for in any software package</li>
+</ul>
+</section>
+<section id="exclusion-restriction-plausibility" class="slide level2">
+<h2>Exclusion Restriction Plausibility</h2>
+<ul>
+<li>One way to assess the plausibility of the exclusion restriction is to calculate an estimate within a sample that would not be expected to be affected by the instrument</li>
+<li>Researchers estimated the effect of military service on earnings (and other outcomes) using, as an instrument, the lottery number for young men eligible for the draft during the Vietnam War
+<ul>
+<li>Randomly assigned number and strongly affected the probability of military service</li>
+<li>Men with low lottery numbers may have altered their educational plans to avoid or postpone military service (would void exclusion restriction)</li>
+</ul></li>
+<li>Ran IV model for a sample of men who were assigned numbers so late that the war ended before they ever had to serve
+<ul>
+<li>No clear relation between lottery number and earnings, providing support for the exclusion restriction</li>
+</ul></li>
+</ul>
+</section>
+<section id="weak-instrument" class="slide level2">
+<h2>Weak Instrument</h2>
+<ul>
+<li>Only assumption we can test – instrument has non-zero correlation with treatment variable</li>
+<li>If low correlation, then a <strong>weak instrument</strong></li>
+</ul>
+</section>
+<section id="regression-discontinuity" class="slide level2">
+<h2>Regression Discontinuity</h2>
+<ul>
+<li><strong>Non-random assignment</strong> but <strong>mechanism</strong> entirely known to researcher</li>
+<li>Consider a policy that gives tutoring to students with test scores &lt; 60</li>
+<li>Consider all students with score in range of 60 – discontinuity at 60
+<ul>
+<li>Works well when discontinuity relates to outcome – e.g., pre-test scores on post-test scores</li>
+<li>Does not work well if comparing across <strong>geography</strong> due to spatial heterogeneity</li>
+</ul></li>
+</ul>
+</section>
+<section id="fixed-effect-models" class="slide level2">
+<h2>Fixed Effect Models</h2>
+<ul>
+<li>Use repeated observations within groups – e.g., twin comparisons that holds confounding variables fixed</li>
+<li>Simply a regression model with group-specific intercepts <span class="math display">\[𝑦_𝑖𝑗=\beta_0+𝜏𝑧_𝑖𝑗+𝛼_𝑖+𝜖_𝑖𝑗\]</span></li>
+<li>where j is an indicator of intra-group units</li>
+<li>Requires treatment to vary within groups</li>
+</ul>
+</section>
+<section id="difference-in-differences" class="slide level2">
+<h2>Difference-In-Differences</h2>
+<ul>
+<li>Comparison across units (typically) using time as an additional dimension of variation</li>
+<li>E.g., effect of new school busing program on housing prices in school district
+<ul>
+<li>Compare prices before/after between district with school busing program and those without it</li>
+<li>A measure of <strong>differences in trajectory</strong></li>
+</ul></li>
+</ul>
+</section></section>
+<section>
+<section id="quick-overview-of-causal-graph-theory" class="title-slide slide level1 center">
+<h1>Quick Overview of Causal Graph Theory</h1>
+
+</section>
+<section id="causal-graph-theory" class="slide level2">
+<h2>Causal Graph Theory</h2>
+<ul>
+<li>Another perspective on causal inference from computer science – Judea Pearl et al.</li>
+<li>Abstract causal inference to a visual/graphical depiction</li>
+<li>Develop system of symbolic calculus</li>
+<li>Nonparametrically solve identification problem</li>
+<li>Concept of directed acyclic graphs (DAGs)</li>
+</ul>
+</section>
+<section id="causal-graph-theory-1" class="slide level2">
+<h2>Causal Graph Theory</h2>
+<ul>
+<li><strong>English</strong>: Smoking (X), Cancer (Y), Tar (Z), Genotypes(U)</li>
+<li>Directed acyclic graph (DAG) <img data-src="../../../assets/images/teaching/ENCI707/Lecture7/dag.svg" class="quarto-figure quarto-figure-center"></li>
+</ul>
+
+
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="../../../assets/images/teaching/ENCI707/logo.png" class="slide-logo"></p>
