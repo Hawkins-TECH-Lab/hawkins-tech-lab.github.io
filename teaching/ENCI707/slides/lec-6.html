@@ -458,43 +458,118 @@ U_{d} = V_d + (V_{m|d} + \epsilon_{m|d}) + \epsilon_d = \widetilde{V_d} + \epsil
 <p><img data-src="../../../assets/images/teaching/ENCI707/Lecture6/route_choice2.svg" class="quarto-figure quarto-figure-center" style="width:90.0%"> <br><br><br><br><br><br> <img data-src="../../../assets/images/teaching/ENCI707/Lecture6/route_choice3.svg" class="quarto-figure quarto-figure-center" style="width:80.0%"></p>
 </div></div>
 </section>
-<section id="iid-and-nested-logit-model-3" class="slide level2 smaller">
+<section id="iid-and-nested-logit-model-3" class="slide level2" style="font-size: 0.65em;">
 <h2>IID and Nested Logit Model</h2>
-<p>$<span class="math display">\[$
-\]</span><span class="math display">\[
-- So, the inclusive value of lower-level choice:
-\]</span><span class="math display">\[
-- Upper-level utility (considering vr =0):
-\]</span><span class="math display">\[
-- Probability of choosing Route 1:
-\]</span>$$</p>
+<p><span class="math display">\[Pr(2|R) = \frac{\exp(V_{2|R}/\phi)}{\exp(V_{2|R}/\phi)+\exp(V_{3|R}/\phi)} \text{; }Pr(3|R) = \frac{\exp(V_{3|R}/\phi)}{\exp(V_{2|R}/\phi)+\exp(V_{3|R}/\phi)}\]</span> <span class="math display">\[V_{2|R}=V_{3|R}=-t \therefore Pr(2|R)=Pr(3|R)=0.5\]</span></p>
+<ul>
+<li><p>So, the inclusive value of lower-level choice: <span class="math display">\[I_R = \phi \ln(\exp(-\frac{t}{\phi})+\exp(-\frac{t}{\phi})) = -t + \phi ln(2)\]</span></p></li>
+<li><p>Upper-level utility (considering vr =0): <span class="math display">\[V_R = v_r + I_R = -t + \phi \ln(2)\]</span></p></li>
+<li><p>Probability of choosing Route 1: <span class="math display">\[Pr(1) = \frac{\exp(-t)}{\exp(-t) + \exp(-t + \phi \ln(2))} = \frac{1}{1 + 2^{\phi}}\]</span></p></li>
+</ul>
 </section>
 <section id="nested-logit-model-for-single-choice" class="slide level2 smaller">
 <h2>Nested Logit Model for Single Choice</h2>
-<p>$$$$</p>
+<div class="columns">
+<div class="column" style="width:75%;">
+<p><span class="math display">\[\text{For } \phi=0 \text{; }Pr(1)=\frac{1}{1+2^{\phi}} = 1/2\]</span> <span class="math display">\[\text{For } \phi=1 \text{; }Pr(1)=\frac{1}{1+2^{\phi}} = 1/3\]</span> <span class="math display">\[\text{For } 0&lt;\phi&lt;1 \text{; }Pr(1)=\frac{1}{1+2^{\phi}} &lt; 1/2\]</span></p>
+</div><div class="column" style="width:25%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../../../assets/images/teaching/ENCI707/Lecture6/route_choice3.svg" class="quarto-figure quarto-figure-center" style="width:85.0%"></p>
+</figure>
+</div>
+</div></div>
 <ul>
-<li>Nested Logit (NL) model can capture various levels of correlated properties (substitution patterns) among alternatives of a single choice (as opposed to choice bundle) through the nesting structure:</li>
-<li>Within a particular level, alternatives are IIA.</li>
-<li>Between levels, various levels of substitution patterns are captured through nesting structures.</li>
+<li>Nested Logit (NL) model can capture various levels of correlated properties (<strong>substitution patterns</strong>) among alternatives of a single choice (as opposed to choice bundle) through the nesting structure:
+<ul>
+<li><strong>Within a particular nest</strong>*, alternatives are IIA</li>
+<li><strong>Between nests</strong>, various levels of substitution patterns are captured through nesting structures</li>
+</ul></li>
 </ul>
 </section>
 <section id="nested-logit-to-address-iia" class="slide level2 smaller">
 <h2>Nested Logit to Address IIA</h2>
+
+<img data-src="../../../assets/images/teaching/ENCI707/Lecture6/nested_logit3.svg" class="quarto-figure quarto-figure-center r-stretch"><p>Variance-Covariance Matrix of Utility Functions (assuming unit scale) <span class="math display">\[\frac{\pi^2}{6}
+\begin{bmatrix}
+1 &amp; \cdots &amp; 0 \\
+\vdots &amp; \ddots &amp; \vdots \\
+0 &amp; \cdots &amp; 1
+\end{bmatrix}\text{; }Pr(j) = \frac{\exp(V_j)}{\sum_{k=1}^7 \exp(V_k)}\]</span></p>
 </section>
 <section id="nested-logit-to-address-iia-1" class="slide level2 smaller">
 <h2>Nested Logit to Address IIA</h2>
-</section>
+
+<img data-src="../../../assets/images/teaching/ENCI707/Lecture6/nested_logit4.svg" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="nested-logit-to-address-iia-2" class="slide level2 smaller">
 <h2>Nested Logit to Address IIA</h2>
+<span class="math display">\[\begin{bmatrix}
+\sigma^2 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; \sigma^2 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; \sigma^2 &amp; \rho_T \sigma^2 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; \rho_T \sigma^2 &amp; \sigma^2 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; \sigma^2 &amp; \rho_P \sigma^2 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; \rho_P \sigma^2 &amp; \sigma^2 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; \sigma^2 &amp; \rho_N \sigma^2\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; \rho_N \sigma^2 &amp; \sigma^2\\
+\end{bmatrix}\]</span>
+<p><span class="math display">\[\text{TWA nest: } \rho_T = 1 - (1/\mu_T)^2 \text{; P&amp;R nest: } \rho_P = 1 - (1/\mu_P)^2 \text{; NMT nest: } \rho_N = 1-(1/\mu_N)^2\]</span></p>
 </section>
 <section id="nested-logit-to-address-iia-3" class="slide level2 smaller">
 <h2>Nested Logit to Address IIA</h2>
-</section>
-<section id="nested-logit-to-address-iia-4" class="slide level2 smaller">
+
+<img data-src="../../../assets/images/teaching/ENCI707/Lecture6/nested_logit5.svg" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="nested-logit-to-address-iia-4" class="slide level2" style="font-size: 0.65em;">
 <h2>Nested Logit to Address IIA</h2>
+<p><span class="math display">\[\begin{align}
+\begin{array}{lcl}
+\text{Station location } &amp; Pr(s|41) = \frac{\exp(\mu_{SLT} V_S)}{\sum_{k=1}^S \exp(\mu_{SLT} V_k)} &amp; V_{1|4}=\frac{1}{\mu_{SLT}} \ln \left(\sum_{k=1}^S \exp(\mu_{SLT} V_k)\right)\\
+\text{choice for P&amp;R } &amp; Pr(s|42) = \frac{\exp(\mu_{SGP} V_S)}{\sum_{k=1}^S \exp(\mu_{SCT} V_k)} &amp; V_{1|4}=\frac{1}{\mu_{SCT}} \ln \left(\sum_{k=1}^S \exp(\mu_{SCT} V_k)\right)\\
+\text{Choice of LT } &amp; Pr(1|4) = \frac{\exp(\mu_{P} V_{1|4})}{\sum_{k=1}^2 \exp(\mu_{P} V_{k|4})} &amp; V_{4}=\frac{1}{\mu_{P}} \ln \left(\sum_{k=1}^2 \exp(\mu_{P} V_{k|4})\right)\\
+\text{/CTrain for P&amp;R } &amp; Pr(2|4) = \frac{\exp(\mu_{P} V_{2|4})}{\sum_{k=1}^2 \exp(\mu_{P} V_{k|4})} &amp; \\
+\text{Choice of LT } &amp; Pr(1|3) = \frac{\exp(\mu_{T} V_{1|3})}{\sum_{k=1}^2 \exp(\mu_{T} V_{k|3})} &amp; V_3=\frac{1}{\mu_{T}} \ln \left(\sum_{k=1}^2 \exp(\mu_{T} V_{k|3})\right)\\
+\text{/CTrain for walk access } &amp; Pr(2|3) = \frac{\exp(\mu_{T} V_{2|3})}{\sum_{k=1}^2 \exp(\mu_{T} V_{k|3})} &amp; \\
+\end{array}
+\end{align}\]</span></p>
+<p><span class="math display">\[\text{Main mode choice } Pr(j) = \frac{\exp(V_j)}{\sum_{k=1}^5 \exp(V_k)}\]</span></p>
 </section>
-<section id="nested-logit-heteroskedastic-systematic-covariance" class="slide level2 smaller">
+<section id="nested-logit-heteroskedastic-systematic-covariance" class="slide level2" style="font-size: 0.60em;">
 <h2>Nested Logit &amp; Heteroskedastic (systematic) Covariance</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<span class="math display">\[\begin{bmatrix}
+\sigma^2 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; \sigma^2 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; \sigma^2 &amp; \rho_T \sigma^2 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; \rho_T \sigma^2 &amp; \sigma^2 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; \omega_{LT} &amp; \rho_P \sigma^2 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; \rho_P \sigma^2 &amp; \omega_{CT} &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; \sigma^2 &amp; \rho_N \sigma^2\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; \rho_N \sigma^2 &amp; \sigma^2\\
+\end{bmatrix}\]</span>
+</div><div class="column" style="width:30%;">
+<p><span class="math display">\[\text{P&amp;R nest: } \rho_P = 1-(1/\mu_P)^2\]</span> Homoskedastic error variance <span class="math display">\[\sigma^2 = \pi^2/6\]</span> <span class="math display">\[\mu_T&gt;1 \text{; } \mu_{SLT} &gt; \mu_P\]</span> <span class="math display">\[\mu_{SCT} &gt; \mu_P \text{; } \mu_P &gt; 1\]</span></p>
+</div></div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="math display">\[\begin{align}
+\omega_{LT} = &amp;
+\begin{bmatrix}
+\sigma^2 &amp; \cdots &amp; \rho_{SLT}\omega^2 \\
+\vdots &amp; \ddots &amp; \vdots \\
+\rho_{SLT}\sigma^2 &amp; \cdots &amp; \sigma^2 \\
+\end{bmatrix} \\
+\end{align}\]</span> <span class="math display">\[\rho_{SLT} = 1-(\mu_P/\mu_{SLT})^2\]</span></p>
+</div><div class="column" style="width:50%;">
+<p><span class="math display">\[\begin{align}
+\omega_{CT} = &amp;
+\begin{bmatrix}
+\sigma^2 &amp; \cdots &amp; \rho_{SCT}\omega^2 \\
+\vdots &amp; \ddots &amp; \vdots \\
+\rho_{SCT}\sigma^2 &amp; \cdots &amp; \sigma^2 \\
+\end{bmatrix} \\
+\end{align}\]</span> <span class="math display">\[\rho_{SCT} = 1-(\mu_P/\mu_{SCT})^2\]</span></p>
+</div></div>
 </section></section>
 <section>
 <section id="application-of-nested-logit-model-examples" class="title-slide slide level1 smaller center">
@@ -504,15 +579,15 @@ U_{d} = V_d + (V_{m|d} + \epsilon_{m|d}) + \epsilon_d = \widetilde{V_d} + \epsil
 <section id="section" class="slide level2">
 <h2></h2>
 
-<img data-src="../../../assets/images/teaching/ENCI707/Lecture6/nested_logit_paper1.svg" class="quarto-figure quarto-figure-center r-stretch"></section>
+<img data-src="../../../assets/images/teaching/ENCI707/Lecture6/nested_logit_paper1.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="section-1" class="slide level2">
 <h2></h2>
 
-<img data-src="../../../assets/images/teaching/ENCI707/Lecture6/nested_logit_paper2.svg" class="quarto-figure quarto-figure-center r-stretch"></section>
+<img data-src="../../../assets/images/teaching/ENCI707/Lecture6/nested_logit_paper2.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="section-2" class="slide level2">
 <h2></h2>
 
-<img data-src="../../../assets/images/teaching/ENCI707/Lecture6/nested_logit_paper3.svg" class="quarto-figure quarto-figure-center r-stretch"></section></section>
+<img data-src="../../../assets/images/teaching/ENCI707/Lecture6/nested_logit_paper3.png" class="quarto-figure quarto-figure-center r-stretch"></section></section>
 <section>
 <section id="introduction-to-gev" class="title-slide slide level1 center">
 <h1>Introduction to GEV</h1>
@@ -531,15 +606,25 @@ U_{d} = V_d + (V_{m|d} + \epsilon_{m|d}) + \epsilon_d = \widetilde{V_d} + \epsil
 </section>
 <section id="rum-based-discrete-choice-model" class="slide level2 smaller">
 <h2>RUM-Based Discrete Choice Model</h2>
+<ul>
+<li>RUM-based discrete choice probability (2 alternatives): <span class="math display">\[Pr(j|C_i) = Pr((V_j+\epsilon_j) \ge (V_k+\epsilon_k)) \text{; }C_i \text{ is choice set}\]</span> <span class="math display">\[Pr(j|C_i) = Pr(\epsilon_k \le (V_j-V_k+\epsilon_j))\]</span> <span class="math display">\[Pr(j|C_i) = \int_{\epsilon_j=-\infty}^{+\infty}\left(\int_{\epsilon_k=-\infty}^{(V_j-V_k+\epsilon_j)} f(\epsilon_j,\epsilon_k)d \epsilon_k \right)d\epsilon_j \text{; }k\neq j \text{; }j,k\in C_i\]</span></li>
+<li>Multiple alternatives: <span class="math display">\[Pr(j|C_i) = \int_{\epsilon_j=-\infty}^{+\infty}\left(\int_{\epsilon_1=-\infty}^{(V_j-V_1+\epsilon_j)} \cdots \int_{\epsilon_k=-\infty}^{(V_j-V_k+\epsilon_j)} f(\epsilon_j,\epsilon_k)d \epsilon_1 \cdots d \epsilon_k \right)d\epsilon_j\]</span></li>
+</ul>
 </section>
 <section id="rum-based-discrete-choice-model-1" class="slide level2 smaller">
 <h2>RUM-based Discrete Choice Model</h2>
+<p><span class="math display">\[Pr(j|C_i) = \int_{\epsilon_j=-\infty}^{+\infty}\left(\int_{\epsilon_1=-\infty}^{(V_j-V_1+\epsilon_j)} \cdots \int_{\epsilon_k=-\infty}^{(V_j-V_k+\epsilon_j)} f(\epsilon_j,\epsilon_k)d \epsilon_1 \cdots d \epsilon_k \right)d\epsilon_j\]</span></p>
+<ul>
+<li><p>Equivalently <span class="math display">\[Pr(j|C_i) = \int_{\epsilon_j=-\infty}^{+\infty} F\left((V_j-V_1+\epsilon_j) \cdots \epsilon_j \cdots (V_j - V_k + \epsilon_j)  \right) d \epsilon_j\]</span></p></li>
+<li><p>Joint CDF of random utilities <span class="math inline">\(F(\epsilon_1 \cdots \epsilon_j \cdots \epsilon_k)\)</span></p></li>
+<li><p>Partial derivative of joint CDF, <span class="math inline">\(F(\cdots)\)</span> with respect to <span class="math inline">\(\epsilon_j\)</span> <span class="math display">\[F_j(\cdots) = \partial F(\cdots)/\partial \epsilon_j\]</span></p></li>
+</ul>
 </section>
 <section id="generating-function-gev-model" class="slide level2 smaller">
 <h2>Generating Function &amp; GEV Model</h2>
 <p>McFadden (1978). Modelling the Choice of Residential Location,” in Spatial Interaction Theory and Planning Models, ed.&nbsp;by Anders Karlqvist, et al.&nbsp;Amsterdam: North-Holland Publishing Company, pp.&nbsp;75-96</p>
 <ul>
-<li>Generating function: A formal power series (polynomial function) that encodes an infinite sequence of 𝑥 (place holder rather than a number) by treating them as the coefficient of the power series: especially powerful for recurring relationships
+<li><strong>Generating function:</strong> A formal power series (polynomial function) that encodes an infinite sequence of 𝑥 (place holder rather than a number) by treating them as the coefficient of the power series: especially powerful for recurring relationships
 <ul>
 <li>the function may not be a true function and the variables may be intermediate information units</li>
 <li>Instead of dealing with infinite sequence, generating function gives a single function that encodes the sequence</li>
@@ -547,42 +632,54 @@ U_{d} = V_d + (V_{m|d} + \epsilon_{m|d}) + \epsilon_d = \widetilde{V_d} + \epsil
 </ul></li>
 </ul>
 </section>
-<section id="gev-generating-function-g.." class="slide level2 smaller">
+<section id="gev-generating-function-g.." class="slide level2" style="font-size: 0.65em;">
 <h2>GEV Generating Function, G(..)</h2>
 <ul>
-<li>Define a generating function G(…) for the multivariate joint distribution of random utilities (ε) as $$$$</li>
-<li>Following properties are key for the G() function:
+<li>Define a generating function <span class="math inline">\(G(\cdots))\)</span> for the multivariate joint distribution of random utilities (<span class="math inline">\(\epsilon\)</span>) as <span class="math display">\[F(y_1,y_2,\cdots,y_j,\cdots,y_k) = \exp(-G(e^{-y_1},e^{-y_2},\cdots,e^{-y_J}))\]</span></li>
+<li>Following properties are key for the <span class="math inline">\(G()\)</span> function:
 <ol type="1">
-<li>G(y)≥0 for any argument, 𝑦</li>
-<li>G(y) is homogenous of degree D &gt;0. This means 𝐺(𝛼𝑦_1,𝛼𝑦_2,…..,𝛼𝑦_𝐽 )=𝛼^𝐷 𝐺(𝑦_1,𝑦_2,….., 𝑦_𝐽 ) for 𝛼&gt;0</li>
-<li>𝐿𝑖𝑚〗_(𝑦_𝑗→∞) 𝐺(𝑦_1,𝑦_2,….., 𝑦_𝐽 )=+∞ for j=1, 2, 3…..J</li>
-<li>Cross partial derivatives exists and are continuous and their signs change in a particular way:<br>
-$$$$</li>
+<li><span class="math inline">\(G(y)\ge 0\)</span> for any argument, <span class="math inline">\(𝑦\)</span></li>
+<li><span class="math inline">\(G(y)\)</span> is homogenous of degree <span class="math inline">\(D &gt;0\)</span>. This means <span class="math inline">\(G(\alpha y_1,\alpha y_2,\cdots,\alpha y_J) = \alpha^D G(y_1,y_2,\cdots,y_J)\)</span> for <span class="math inline">\(\alpha&gt;0\)</span></li>
+<li><span class="math inline">\(\lim_{y_j-&gt;\infty} G(y_1,y_2,\cdots,y_J)=+\infty\)</span> for <span class="math inline">\(j=1,2,\cdots,J\)</span></li>
+<li>Cross partial derivatives exists and are continuous. Signs change in a particular way:<br>
+<span class="math display">\[G_j(\cdots)=\frac{\partial G(\cdots)}{\partial y_j}&gt;0 \text{ for all }j\]</span> <span class="math display">\[G_{jk} = \frac{G_j(\cdots)}{\partial y_k} \le 0 \text{ for }j \neq k \text{; } G_{jkl}(\cdots) = \frac{\partial G_{jk}(\cdots)}{\partial y_l} \ge 0 \text{ for distinctive j,k,l}\]</span></li>
 </ol></li>
 </ul>
 </section>
 <section id="generalized-extreme-value-gev-model" class="slide level2 smaller">
 <h2>Generalized Extreme Value (GEV) Model</h2>
+<p><span class="math display">\[Pr(j|C_i) = \int_{\epsilon_j=-\infty}^{+\infty} F\left((V_j-V_1+\epsilon_j) \cdots \epsilon_j \cdots (V_j - V_k + \epsilon_j)  \right) d \epsilon_j\]</span> - Using GEV generating function <span class="math display">\[F(y_1, \cdots, y_j, \cdots, y_k) = \exp(-G(e^{-y_1},\cdots,e^{-y_j},\cdots, e^{-y_k}))\]</span> <span class="math display">\[F(y_1, \cdots, y_j, \cdots, y_k) = \partial F(\cdots)/\partial y_j\]</span> <span class="math display">\[F(y_1, \cdots, y_j, \cdots, y_k) = \exp \left(-G(e^{-y_1},\cdots, e^{-y_k})e^{-y_j}G_j(e^{-y_1},\cdots, e^{-y_k})\right)\]</span> - Applying Euler’s formula and homogeneity conditions in <span class="math inline">\(F_j(\cdots)\)</span> of the integral of <span class="math inline">\(Pr(j)\)</span>, results in a closed form function: <span class="math display">\[Pr(j|C_i) = \frac{e^{V_j}G_j(e^{V_1},\cdots,e^{V_j,\cdots e^{V_k}})}{G(e^{V_1},\cdots,e^{V_j,\cdots e^{V_k}})}\]</span></p>
 </section>
-<section id="generalized-extreme-value-gev-model-1" class="slide level2 smaller">
+<section id="generalized-extreme-value-gev-model-1" class="slide level2" style="font-size: 0.65em;">
 <h2>Generalized Extreme Value (GEV) Model</h2>
 <ul>
-<li>Choice probability of a GEV model based on the GEV generating function (for G(..) of homogenous to degree 1) $$$$</li>
-<li>The general formulation of Choice Probability of a GEV model based on the GEV generating function $$$$</li>
-<li>Expected Maximum Utility of the GEV model generated by the G(..) function: $$$$</li>
+<li>Choice probability of a GEV model based on the GEV generating function (for <span class="math inline">\(G(\cdots)\)</span> of homogenous to degree 1)</li>
+</ul>
+<p><span class="math display">\[Pr(j|C_i) = \frac{e^{V_j}G_j(e^{V_1},\cdots,e^{V_j,\cdots e^{V_k}})}{G(e^{V_1},\cdots,e^{V_j,\cdots e^{V_k}})}\]</span></p>
+<ul>
+<li><p>The general formulation of Choice Probability of a GEV model based on the GEV generating function <span class="math display">\[Pr(j) = \frac{y_j G_j(\cdots)}{DG(\cdots)} \text{; D is a degree of homogeneity &amp; }y_j \text{ is argument, }e^{V_j} \text{ above}\]</span></p></li>
+<li><p>Expected Maximum Utility of the GEV model generated by the <span class="math inline">\(G(\cdots)\)</span> function: <span class="math display">\[\overline{U} = \frac{1}{D} (\ln(G(\cdots)) + \gamma \text{; }\gamma \text{ is Euler's constant &amp; D is homogeneity degree defined by scale parameter} \]</span> <span class="math display">\[Pr(j) = \frac{\partial \overline{U}}{\partial y_j} = \frac{y_j \partial G(\cdots)/\partial y_j}{DG(\cdots)}\]</span></p></li>
 </ul>
 </section>
 <section id="generalized-extreme-value-gev-model-2" class="slide level2 smaller">
 <h2>Generalized Extreme Value (GEV) Model</h2>
-<p>$$$$ - GEV mode is the most flexible closed-form model that can capture a wide variety of choice models: For different generating function, different choice model can arise. MNL and NL are special cases of the GEV model - Other GEV models: Network GEV, Cross-nested Logit, Paired-Combinatorial Logit etc. for the G(..) function with degree, </p>
+<p><span class="math display">\[Pr(j|C_i) = \frac{y_j G_j(y_1,\cdots,y_k)}{D G(y_1,\cdots, y_k)}\]</span></p>
+<ul>
+<li>GEV mode is the most flexible closed-form model that can capture a wide variety of choice models: For different generating function, different choice model can arise. MNL and NL are special cases of the GEV model</li>
+<li>Other GEV models: Network GEV, Cross-nested Logit, Paired-Combinatorial Logit etc. for the <span class="math inline">\(G(\cdots)\)</span> function with degree, <span class="math inline">\(\mu\)</span></li>
+</ul>
 </section>
 <section id="estimation-gev-model" class="slide level2 smaller">
 <h2>Estimation: GEV Model</h2>
 <ul>
-<li>GEV models are of Closed form and so can be estimated by using the classical estimation technique: Classical Maximum Likelihood</li>
-<li>However, the conditions on scale (similarity or dissimilarity) parameters needs to be met.</li>
+<li>GEV models are of closed form and so can be estimated using classical estimation technique: Maximum likelihood</li>
+<li>However, the conditions on scale (similarity or dissimilarity) parameters needs to be met</li>
+<li>Constrained Maximum Likelihood (CML) method for the GEV model estimation that maintains restrictions on parameter value range while estimating
+<ul>
+<li>One can use mathematical expressions to ensure such conditions while using classical Maximum Likelihood approach</li>
+<li>Classical Maximum Likelihood is less computationally intensive than the CML</li>
+</ul></li>
 </ul>
-<p>Constrained Maximum Likelihood (CML) method for the GEV model estimation that maintains restrictions on parameter value range while estimating - One can use mathematical expressions to ensure such conditions while using classical Maximum Likelihood approach - Classical Maximum Likelihood is less computationally intensive than the CML</p>
 </section></section>
 <section>
 <section id="multinomial-logit-as-a-gev-special-case" class="title-slide slide level1 center">
@@ -591,22 +688,37 @@ $$$$</li>
 </section>
 <section id="multinomial-logit-model" class="slide level2 smaller">
 <h2>Multinomial Logit Model</h2>
-<p>$$$$</p>
+<p><span class="math display">\[Pr(j|C_i) = \frac{e^{V_j} G_j(e^{V_1},\cdots,e^{V_k})}{G(e^{V_1},\cdots,e^{V_k})} \text{; Homogeneous of degree, D=1}\]</span></p>
+<ul>
+<li>The case of MNL: Consider the following <span class="math inline">\(G(\cdots)\)</span> function as an additive function of the exponential of systematic utility functions</li>
+</ul>
+<p><span class="math display">\[𝐺(\cdots)=\sum_{𝑘=1}^𝐽(𝑒^{\mu V_k} )^{1/\mu} \text{; } k=1, 2,\cdots, J \in C_i \text{; an indirect CES structure}\]</span> <span class="math display">\[G_j(\cdots) = \frac{\partial \sum_{k=1}^J e^{V_k}}{\partial e^{V_j}} = 1 \text{; considering } \mu = 1\]</span> <span class="math display">\[\therefore Pr(j|C_i) = \frac{e^{V_j}}{\sum_k e^{V_k}}\]</span></p>
 </section></section>
 <section>
 <section id="nested-logit-as-a-gev-special-case" class="title-slide slide level1 smaller center">
 <h1>Nested Logit as a GEV Special Case</h1>
 
 </section>
-<section id="nested-logit-model-4" class="slide level2 smaller">
+<section id="nested-logit-model-4" class="slide level2" style="font-size: 0.65em;">
 <h2>Nested Logit Model</h2>
 <ul>
 <li>Consider J alternatives nested in k non-overlapping nests:</li>
 </ul>
-</section>
-<section id="nested-logit-model-5" class="slide level2 smaller">
-<h2>Nested Logit Model</h2>
-<p>$$$$</p>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><span class="math display">\[𝐺(\cdots)=\sum_{𝑙=1}^𝐾\left(\sum_{𝑗\in𝐵_𝑙}𝑒^{𝜇_𝑙 𝑉_𝑗}\right)^{1⁄\mu_l}\]</span></p>
+</div><div class="column" style="width:60%;">
+<ul>
+<li><span class="math inline">\(K\)</span> = total nests; <span class="math inline">\(B_l\)</span> is the alt set in nest <span class="math inline">\(l\)</span></li>
+<li><span class="math inline">\(\mu_l\)</span> is the nest <span class="math inline">\(l\)</span>-specific scale &amp; <span class="math inline">\(0 &lt; \mu_l &lt; 1\)</span></li>
+<li><span class="math inline">\(e^{\mu_l V_j}\)</span> is the argument</li>
+<li><span class="math inline">\(G(\cdots)\)</span> is homogeneous to degree <span class="math inline">\(1/\mu_l\)</span></li>
+<li>An indirect CES structure</li>
+</ul>
+</div></div>
+<ul>
+<li>Partial derivative <span class="math display">\[G_j(\cdots) = \frac{\partial}{\partial e^{V_j}} \sum_{l=1}^K \sum_{j \in B_l} (e^{\mu_l V_l})^{1/\mu_l} = \frac{\mu_l e^{\mu_l V_j}}{\mu_l}\left(\sum_{j \in B_l} e^{\mu_l V_j}\right)^{1/\mu_l - 1}\]</span> <span class="math display">\[\therefore Pr(j|C_i) = \frac{e^{V_j}G_j(\cdots)}{G(\cdots)} = \frac{e^{\mu_l V_j}\left(\sum_{j \in B_l} e^{\mu_l V_j}\right)^{1/\mu_l-1}}{\sum_{l=1}^K \left(\sum_{j \in B_l} e^{\mu_l V_j} \right)^{1/\mu_l}} = \frac{e^{\mu_l V_j}\left(\sum_{j \in B_l} e^{\mu_l V_j}\right)^{1/\mu_l}}{\sum_{j \in B_l} e^{\mu_l V_j} \sum_{l=1}^K \left(\sum_{j \in B_l} e^{\mu_l V_j} \right)^{1/\mu_l}}\]</span></li>
+</ul>
 </section></section>
 <section id="introduction-to-mixed-logit" class="title-slide slide level1 center">
 <h1>Introduction to Mixed Logit</h1>

@@ -455,7 +455,7 @@
     "href": "teaching/ENCI707/weeks/week-13.html",
     "title": "Week 13",
     "section": "",
-    "text": "📖 Read news article",
+    "text": "TBD",
     "crumbs": [
       "Weekly Materials",
       "Week 13"
@@ -466,7 +466,7 @@
     "href": "teaching/ENCI707/weeks/week-13.html#prepare",
     "title": "Week 13",
     "section": "",
-    "text": "📖 Read news article",
+    "text": "TBD",
     "crumbs": [
       "Weekly Materials",
       "Week 13"
@@ -477,7 +477,7 @@
     "href": "teaching/ENCI707/weeks/week-13.html#participate",
     "title": "Week 13",
     "section": "Participate",
-    "text": "Participate\n🖥️ Activity 14 - Policy Analysis",
+    "text": "Participate\nTBD",
     "crumbs": [
       "Weekly Materials",
       "Week 13"
@@ -554,7 +554,7 @@
     "href": "teaching/ENCI707/weeks/week-11.html#deliver",
     "title": "Week 11",
     "section": "Deliver",
-    "text": "Deliver\n📝 Logit model group assignment due Mar. 19 by 11:59 PM on D2L.\n📝 Draft data and experimental design due Mar. 21 by 11:59 PM on D2L.\n\n\nBack to course schedule ⏎",
+    "text": "Deliver\n📝 Logit model group assignment due Mar. 23 by 11:59 PM on D2L.\n\n\nBack to course schedule ⏎",
     "crumbs": [
       "Weekly Materials",
       "Week 11"
@@ -5790,7 +5790,7 @@
     "href": "teaching/ENCI707/project/project-description.html",
     "title": "Project description",
     "section": "",
-    "text": "Topic ideas due Wed, Jan 22\nProposal due Fri, Jan 31\nLiterature review due Fri, Feb 21\nDraft data and experimental design plan due Fri, Mar 21\nFinal data and experimental design plan due Fri, Apr 18",
+    "text": "Topic ideas due Wed, Jan 22\nProposal due Fri, Jan 31\nLiterature review due Fri, Feb 21\nDraft data and experimental design plan due Fri, Apr 04\nFinal data and experimental design plan due Fri, Apr 18",
     "crumbs": [
       "Project",
       "Description"
@@ -5801,7 +5801,7 @@
     "href": "teaching/ENCI707/project/project-description.html#timeline",
     "title": "Project description",
     "section": "",
-    "text": "Topic ideas due Wed, Jan 22\nProposal due Fri, Jan 31\nLiterature review due Fri, Feb 21\nDraft data and experimental design plan due Fri, Mar 21\nFinal data and experimental design plan due Fri, Apr 18",
+    "text": "Topic ideas due Wed, Jan 22\nProposal due Fri, Jan 31\nLiterature review due Fri, Feb 21\nDraft data and experimental design plan due Fri, Apr 04\nFinal data and experimental design plan due Fri, Apr 18",
     "crumbs": [
       "Project",
       "Description"
@@ -6546,21 +6546,21 @@
     "href": "teaching/ENCI707/slides/lec-6.html#iid-and-nested-logit-model-3",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "IID and Nested Logit Model",
-    "text": "IID and Nested Logit Model\n$\\[$\n\\]\\[\n- So, the inclusive value of lower-level choice:\n\\]\\[\n- Upper-level utility (considering vr =0):\n\\]\\[\n- Probability of choosing Route 1:\n\\]$$"
+    "text": "IID and Nested Logit Model\n\\[Pr(2|R) = \\frac{\\exp(V_{2|R}/\\phi)}{\\exp(V_{2|R}/\\phi)+\\exp(V_{3|R}/\\phi)} \\text{; }Pr(3|R) = \\frac{\\exp(V_{3|R}/\\phi)}{\\exp(V_{2|R}/\\phi)+\\exp(V_{3|R}/\\phi)}\\] \\[V_{2|R}=V_{3|R}=-t \\therefore Pr(2|R)=Pr(3|R)=0.5\\]\n\nSo, the inclusive value of lower-level choice: \\[I_R = \\phi \\ln(\\exp(-\\frac{t}{\\phi})+\\exp(-\\frac{t}{\\phi})) = -t + \\phi ln(2)\\]\nUpper-level utility (considering vr =0): \\[V_R = v_r + I_R = -t + \\phi \\ln(2)\\]\nProbability of choosing Route 1: \\[Pr(1) = \\frac{\\exp(-t)}{\\exp(-t) + \\exp(-t + \\phi \\ln(2))} = \\frac{1}{1 + 2^{\\phi}}\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#nested-logit-model-for-single-choice",
     "href": "teaching/ENCI707/slides/lec-6.html#nested-logit-model-for-single-choice",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "Nested Logit Model for Single Choice",
-    "text": "Nested Logit Model for Single Choice\n$$$$\n\nNested Logit (NL) model can capture various levels of correlated properties (substitution patterns) among alternatives of a single choice (as opposed to choice bundle) through the nesting structure:\nWithin a particular level, alternatives are IIA.\nBetween levels, various levels of substitution patterns are captured through nesting structures."
+    "text": "Nested Logit Model for Single Choice\n\n\n\\[\\text{For } \\phi=0 \\text{; }Pr(1)=\\frac{1}{1+2^{\\phi}} = 1/2\\] \\[\\text{For } \\phi=1 \\text{; }Pr(1)=\\frac{1}{1+2^{\\phi}} = 1/3\\] \\[\\text{For } 0&lt;\\phi&lt;1 \\text{; }Pr(1)=\\frac{1}{1+2^{\\phi}} &lt; 1/2\\]\n\n\n\n\n\n\n\n\nNested Logit (NL) model can capture various levels of correlated properties (substitution patterns) among alternatives of a single choice (as opposed to choice bundle) through the nesting structure:\n\nWithin a particular nest*, alternatives are IIA\nBetween nests, various levels of substitution patterns are captured through nesting structures"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#nested-logit-to-address-iia",
     "href": "teaching/ENCI707/slides/lec-6.html#nested-logit-to-address-iia",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "Nested Logit to Address IIA",
-    "text": "Nested Logit to Address IIA"
+    "text": "Nested Logit to Address IIA\n\nVariance-Covariance Matrix of Utility Functions (assuming unit scale) \\[\\frac{\\pi^2}{6}\n\\begin{bmatrix}\n1 & \\cdots & 0 \\\\\n\\vdots & \\ddots & \\vdots \\\\\n0 & \\cdots & 1\n\\end{bmatrix}\\text{; }Pr(j) = \\frac{\\exp(V_j)}{\\sum_{k=1}^7 \\exp(V_k)}\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#nested-logit-to-address-iia-1",
@@ -6574,7 +6574,7 @@
     "href": "teaching/ENCI707/slides/lec-6.html#nested-logit-to-address-iia-2",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "Nested Logit to Address IIA",
-    "text": "Nested Logit to Address IIA"
+    "text": "Nested Logit to Address IIA\n\\[\\begin{bmatrix}\n\\sigma^2 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\\\\n0 & \\sigma^2 & 0 & 0 & 0 & 0 & 0 & 0\\\\\n0 & 0 & \\sigma^2 & \\rho_T \\sigma^2 & 0 & 0 & 0 & 0\\\\\n0 & 0 & \\rho_T \\sigma^2 & \\sigma^2 & 0 & 0 & 0 & 0\\\\\n0 & 0 & 0 & 0 & \\sigma^2 & \\rho_P \\sigma^2 & 0 & 0\\\\\n0 & 0 & 0 & 0 & \\rho_P \\sigma^2 & \\sigma^2 & 0 & 0\\\\\n0 & 0 & 0 & 0 & 0 & 0 & \\sigma^2 & \\rho_N \\sigma^2\\\\\n0 & 0 & 0 & 0 & 0 & 0 & \\rho_N \\sigma^2 & \\sigma^2\\\\\n\\end{bmatrix}\\]\n\\[\\text{TWA nest: } \\rho_T = 1 - (1/\\mu_T)^2 \\text{; P&R nest: } \\rho_P = 1 - (1/\\mu_P)^2 \\text{; NMT nest: } \\rho_N = 1-(1/\\mu_N)^2\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#nested-logit-to-address-iia-3",
@@ -6588,14 +6588,14 @@
     "href": "teaching/ENCI707/slides/lec-6.html#nested-logit-to-address-iia-4",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "Nested Logit to Address IIA",
-    "text": "Nested Logit to Address IIA"
+    "text": "Nested Logit to Address IIA\n\\[\\begin{align}\n\\begin{array}{lcl}\n\\text{Station location } & Pr(s|41) = \\frac{\\exp(\\mu_{SLT} V_S)}{\\sum_{k=1}^S \\exp(\\mu_{SLT} V_k)} & V_{1|4}=\\frac{1}{\\mu_{SLT}} \\ln \\left(\\sum_{k=1}^S \\exp(\\mu_{SLT} V_k)\\right)\\\\\n\\text{choice for P&R } & Pr(s|42) = \\frac{\\exp(\\mu_{SGP} V_S)}{\\sum_{k=1}^S \\exp(\\mu_{SCT} V_k)} & V_{1|4}=\\frac{1}{\\mu_{SCT}} \\ln \\left(\\sum_{k=1}^S \\exp(\\mu_{SCT} V_k)\\right)\\\\\n\\text{Choice of LT } & Pr(1|4) = \\frac{\\exp(\\mu_{P} V_{1|4})}{\\sum_{k=1}^2 \\exp(\\mu_{P} V_{k|4})} & V_{4}=\\frac{1}{\\mu_{P}} \\ln \\left(\\sum_{k=1}^2 \\exp(\\mu_{P} V_{k|4})\\right)\\\\\n\\text{/CTrain for P&R } & Pr(2|4) = \\frac{\\exp(\\mu_{P} V_{2|4})}{\\sum_{k=1}^2 \\exp(\\mu_{P} V_{k|4})} & \\\\\n\\text{Choice of LT } & Pr(1|3) = \\frac{\\exp(\\mu_{T} V_{1|3})}{\\sum_{k=1}^2 \\exp(\\mu_{T} V_{k|3})} & V_3=\\frac{1}{\\mu_{T}} \\ln \\left(\\sum_{k=1}^2 \\exp(\\mu_{T} V_{k|3})\\right)\\\\\n\\text{/CTrain for walk access } & Pr(2|3) = \\frac{\\exp(\\mu_{T} V_{2|3})}{\\sum_{k=1}^2 \\exp(\\mu_{T} V_{k|3})} & \\\\\n\\end{array}\n\\end{align}\\]\n\\[\\text{Main mode choice } Pr(j) = \\frac{\\exp(V_j)}{\\sum_{k=1}^5 \\exp(V_k)}\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#nested-logit-heteroskedastic-systematic-covariance",
     "href": "teaching/ENCI707/slides/lec-6.html#nested-logit-heteroskedastic-systematic-covariance",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "Nested Logit & Heteroskedastic (systematic) Covariance",
-    "text": "Nested Logit & Heteroskedastic (systematic) Covariance"
+    "text": "Nested Logit & Heteroskedastic (systematic) Covariance\n\n\n\\[\\begin{bmatrix}\n\\sigma^2 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\\\\n0 & \\sigma^2 & 0 & 0 & 0 & 0 & 0 & 0\\\\\n0 & 0 & \\sigma^2 & \\rho_T \\sigma^2 & 0 & 0 & 0 & 0\\\\\n0 & 0 & \\rho_T \\sigma^2 & \\sigma^2 & 0 & 0 & 0 & 0\\\\\n0 & 0 & 0 & 0 & \\omega_{LT} & \\rho_P \\sigma^2 & 0 & 0\\\\\n0 & 0 & 0 & 0 & \\rho_P \\sigma^2 & \\omega_{CT} & 0 & 0\\\\\n0 & 0 & 0 & 0 & 0 & 0 & \\sigma^2 & \\rho_N \\sigma^2\\\\\n0 & 0 & 0 & 0 & 0 & 0 & \\rho_N \\sigma^2 & \\sigma^2\\\\\n\\end{bmatrix}\\]\n\n\\[\\text{P&R nest: } \\rho_P = 1-(1/\\mu_P)^2\\] Homoskedastic error variance \\[\\sigma^2 = \\pi^2/6\\] \\[\\mu_T&gt;1 \\text{; } \\mu_{SLT} &gt; \\mu_P\\] \\[\\mu_{SCT} &gt; \\mu_P \\text{; } \\mu_P &gt; 1\\]\n\n\n\n\\[\\begin{align}\n\\omega_{LT} = &\n\\begin{bmatrix}\n\\sigma^2 & \\cdots & \\rho_{SLT}\\omega^2 \\\\\n\\vdots & \\ddots & \\vdots \\\\\n\\rho_{SLT}\\sigma^2 & \\cdots & \\sigma^2 \\\\\n\\end{bmatrix} \\\\\n\\end{align}\\] \\[\\rho_{SLT} = 1-(\\mu_P/\\mu_{SLT})^2\\]\n\n\\[\\begin{align}\n\\omega_{CT} = &\n\\begin{bmatrix}\n\\sigma^2 & \\cdots & \\rho_{SCT}\\omega^2 \\\\\n\\vdots & \\ddots & \\vdots \\\\\n\\rho_{SCT}\\sigma^2 & \\cdots & \\sigma^2 \\\\\n\\end{bmatrix} \\\\\n\\end{align}\\] \\[\\rho_{SCT} = 1-(\\mu_P/\\mu_{SCT})^2\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#models",
@@ -6609,14 +6609,14 @@
     "href": "teaching/ENCI707/slides/lec-6.html#rum-based-discrete-choice-model",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "RUM-Based Discrete Choice Model",
-    "text": "RUM-Based Discrete Choice Model"
+    "text": "RUM-Based Discrete Choice Model\n\nRUM-based discrete choice probability (2 alternatives): \\[Pr(j|C_i) = Pr((V_j+\\epsilon_j) \\ge (V_k+\\epsilon_k)) \\text{; }C_i \\text{ is choice set}\\] \\[Pr(j|C_i) = Pr(\\epsilon_k \\le (V_j-V_k+\\epsilon_j))\\] \\[Pr(j|C_i) = \\int_{\\epsilon_j=-\\infty}^{+\\infty}\\left(\\int_{\\epsilon_k=-\\infty}^{(V_j-V_k+\\epsilon_j)} f(\\epsilon_j,\\epsilon_k)d \\epsilon_k \\right)d\\epsilon_j \\text{; }k\\neq j \\text{; }j,k\\in C_i\\]\nMultiple alternatives: \\[Pr(j|C_i) = \\int_{\\epsilon_j=-\\infty}^{+\\infty}\\left(\\int_{\\epsilon_1=-\\infty}^{(V_j-V_1+\\epsilon_j)} \\cdots \\int_{\\epsilon_k=-\\infty}^{(V_j-V_k+\\epsilon_j)} f(\\epsilon_j,\\epsilon_k)d \\epsilon_1 \\cdots d \\epsilon_k \\right)d\\epsilon_j\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#rum-based-discrete-choice-model-1",
     "href": "teaching/ENCI707/slides/lec-6.html#rum-based-discrete-choice-model-1",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "RUM-based Discrete Choice Model",
-    "text": "RUM-based Discrete Choice Model"
+    "text": "RUM-based Discrete Choice Model\n\\[Pr(j|C_i) = \\int_{\\epsilon_j=-\\infty}^{+\\infty}\\left(\\int_{\\epsilon_1=-\\infty}^{(V_j-V_1+\\epsilon_j)} \\cdots \\int_{\\epsilon_k=-\\infty}^{(V_j-V_k+\\epsilon_j)} f(\\epsilon_j,\\epsilon_k)d \\epsilon_1 \\cdots d \\epsilon_k \\right)d\\epsilon_j\\]\n\nEquivalently \\[Pr(j|C_i) = \\int_{\\epsilon_j=-\\infty}^{+\\infty} F\\left((V_j-V_1+\\epsilon_j) \\cdots \\epsilon_j \\cdots (V_j - V_k + \\epsilon_j)  \\right) d \\epsilon_j\\]\nJoint CDF of random utilities \\(F(\\epsilon_1 \\cdots \\epsilon_j \\cdots \\epsilon_k)\\)\nPartial derivative of joint CDF, \\(F(\\cdots)\\) with respect to \\(\\epsilon_j\\) \\[F_j(\\cdots) = \\partial F(\\cdots)/\\partial \\epsilon_j\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#generating-function-gev-model",
@@ -6630,56 +6630,49 @@
     "href": "teaching/ENCI707/slides/lec-6.html#gev-generating-function-g..",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "GEV Generating Function, G(..)",
-    "text": "GEV Generating Function, G(..)\n\nDefine a generating function G(…) for the multivariate joint distribution of random utilities (ε) as $$$$\nFollowing properties are key for the G() function:\n\nG(y)≥0 for any argument, 𝑦\nG(y) is homogenous of degree D &gt;0. This means 𝐺(𝛼𝑦_1,𝛼𝑦_2,…..,𝛼𝑦_𝐽 )=𝛼^𝐷 𝐺(𝑦_1,𝑦_2,….., 𝑦_𝐽 ) for 𝛼&gt;0\n𝐿𝑖𝑚〗_(𝑦_𝑗→∞) 𝐺(𝑦_1,𝑦_2,….., 𝑦_𝐽 )=+∞ for j=1, 2, 3…..J\nCross partial derivatives exists and are continuous and their signs change in a particular way:\n$$$$"
+    "text": "GEV Generating Function, G(..)\n\nDefine a generating function \\(G(\\cdots))\\) for the multivariate joint distribution of random utilities (\\(\\epsilon\\)) as \\[F(y_1,y_2,\\cdots,y_j,\\cdots,y_k) = \\exp(-G(e^{-y_1},e^{-y_2},\\cdots,e^{-y_J}))\\]\nFollowing properties are key for the \\(G()\\) function:\n\n\\(G(y)\\ge 0\\) for any argument, \\(𝑦\\)\n\\(G(y)\\) is homogenous of degree \\(D &gt;0\\). This means \\(G(\\alpha y_1,\\alpha y_2,\\cdots,\\alpha y_J) = \\alpha^D G(y_1,y_2,\\cdots,y_J)\\) for \\(\\alpha&gt;0\\)\n\\(\\lim_{y_j-&gt;\\infty} G(y_1,y_2,\\cdots,y_J)=+\\infty\\) for \\(j=1,2,\\cdots,J\\)\nCross partial derivatives exists and are continuous. Signs change in a particular way:\n\\[G_j(\\cdots)=\\frac{\\partial G(\\cdots)}{\\partial y_j}&gt;0 \\text{ for all }j\\] \\[G_{jk} = \\frac{G_j(\\cdots)}{\\partial y_k} \\le 0 \\text{ for }j \\neq k \\text{; } G_{jkl}(\\cdots) = \\frac{\\partial G_{jk}(\\cdots)}{\\partial y_l} \\ge 0 \\text{ for distinctive j,k,l}\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#generalized-extreme-value-gev-model",
     "href": "teaching/ENCI707/slides/lec-6.html#generalized-extreme-value-gev-model",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "Generalized Extreme Value (GEV) Model",
-    "text": "Generalized Extreme Value (GEV) Model"
+    "text": "Generalized Extreme Value (GEV) Model\n\\[Pr(j|C_i) = \\int_{\\epsilon_j=-\\infty}^{+\\infty} F\\left((V_j-V_1+\\epsilon_j) \\cdots \\epsilon_j \\cdots (V_j - V_k + \\epsilon_j)  \\right) d \\epsilon_j\\] - Using GEV generating function \\[F(y_1, \\cdots, y_j, \\cdots, y_k) = \\exp(-G(e^{-y_1},\\cdots,e^{-y_j},\\cdots, e^{-y_k}))\\] \\[F(y_1, \\cdots, y_j, \\cdots, y_k) = \\partial F(\\cdots)/\\partial y_j\\] \\[F(y_1, \\cdots, y_j, \\cdots, y_k) = \\exp \\left(-G(e^{-y_1},\\cdots, e^{-y_k})e^{-y_j}G_j(e^{-y_1},\\cdots, e^{-y_k})\\right)\\] - Applying Euler’s formula and homogeneity conditions in \\(F_j(\\cdots)\\) of the integral of \\(Pr(j)\\), results in a closed form function: \\[Pr(j|C_i) = \\frac{e^{V_j}G_j(e^{V_1},\\cdots,e^{V_j,\\cdots e^{V_k}})}{G(e^{V_1},\\cdots,e^{V_j,\\cdots e^{V_k}})}\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#generalized-extreme-value-gev-model-1",
     "href": "teaching/ENCI707/slides/lec-6.html#generalized-extreme-value-gev-model-1",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "Generalized Extreme Value (GEV) Model",
-    "text": "Generalized Extreme Value (GEV) Model\n\nChoice probability of a GEV model based on the GEV generating function (for G(..) of homogenous to degree 1) $$$$\nThe general formulation of Choice Probability of a GEV model based on the GEV generating function $$$$\nExpected Maximum Utility of the GEV model generated by the G(..) function: $$$$"
+    "text": "Generalized Extreme Value (GEV) Model\n\nChoice probability of a GEV model based on the GEV generating function (for \\(G(\\cdots)\\) of homogenous to degree 1)\n\n\\[Pr(j|C_i) = \\frac{e^{V_j}G_j(e^{V_1},\\cdots,e^{V_j,\\cdots e^{V_k}})}{G(e^{V_1},\\cdots,e^{V_j,\\cdots e^{V_k}})}\\]\n\nThe general formulation of Choice Probability of a GEV model based on the GEV generating function \\[Pr(j) = \\frac{y_j G_j(\\cdots)}{DG(\\cdots)} \\text{; D is a degree of homogeneity & }y_j \\text{ is argument, }e^{V_j} \\text{ above}\\]\nExpected Maximum Utility of the GEV model generated by the \\(G(\\cdots)\\) function: \\[\\overline{U} = \\frac{1}{D} (\\ln(G(\\cdots)) + \\gamma \\text{; }\\gamma \\text{ is Euler's constant & D is homogeneity degree defined by scale parameter} \\] \\[Pr(j) = \\frac{\\partial \\overline{U}}{\\partial y_j} = \\frac{y_j \\partial G(\\cdots)/\\partial y_j}{DG(\\cdots)}\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#generalized-extreme-value-gev-model-2",
     "href": "teaching/ENCI707/slides/lec-6.html#generalized-extreme-value-gev-model-2",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "Generalized Extreme Value (GEV) Model",
-    "text": "Generalized Extreme Value (GEV) Model\n$$$$ - GEV mode is the most flexible closed-form model that can capture a wide variety of choice models: For different generating function, different choice model can arise. MNL and NL are special cases of the GEV model - Other GEV models: Network GEV, Cross-nested Logit, Paired-Combinatorial Logit etc. for the G(..) function with degree,"
+    "text": "Generalized Extreme Value (GEV) Model\n\\[Pr(j|C_i) = \\frac{y_j G_j(y_1,\\cdots,y_k)}{D G(y_1,\\cdots, y_k)}\\]\n\nGEV mode is the most flexible closed-form model that can capture a wide variety of choice models: For different generating function, different choice model can arise. MNL and NL are special cases of the GEV model\nOther GEV models: Network GEV, Cross-nested Logit, Paired-Combinatorial Logit etc. for the \\(G(\\cdots)\\) function with degree, \\(\\mu\\)"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#estimation-gev-model",
     "href": "teaching/ENCI707/slides/lec-6.html#estimation-gev-model",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "Estimation: GEV Model",
-    "text": "Estimation: GEV Model\n\nGEV models are of Closed form and so can be estimated by using the classical estimation technique: Classical Maximum Likelihood\nHowever, the conditions on scale (similarity or dissimilarity) parameters needs to be met.\n\nConstrained Maximum Likelihood (CML) method for the GEV model estimation that maintains restrictions on parameter value range while estimating - One can use mathematical expressions to ensure such conditions while using classical Maximum Likelihood approach - Classical Maximum Likelihood is less computationally intensive than the CML"
+    "text": "Estimation: GEV Model\n\nGEV models are of closed form and so can be estimated using classical estimation technique: Maximum likelihood\nHowever, the conditions on scale (similarity or dissimilarity) parameters needs to be met\nConstrained Maximum Likelihood (CML) method for the GEV model estimation that maintains restrictions on parameter value range while estimating\n\nOne can use mathematical expressions to ensure such conditions while using classical Maximum Likelihood approach\nClassical Maximum Likelihood is less computationally intensive than the CML"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#multinomial-logit-model",
     "href": "teaching/ENCI707/slides/lec-6.html#multinomial-logit-model",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "Multinomial Logit Model",
-    "text": "Multinomial Logit Model\n$$$$"
+    "text": "Multinomial Logit Model\n\\[Pr(j|C_i) = \\frac{e^{V_j} G_j(e^{V_1},\\cdots,e^{V_k})}{G(e^{V_1},\\cdots,e^{V_k})} \\text{; Homogeneous of degree, D=1}\\]\n\nThe case of MNL: Consider the following \\(G(\\cdots)\\) function as an additive function of the exponential of systematic utility functions\n\n\\[𝐺(\\cdots)=\\sum_{𝑘=1}^𝐽(𝑒^{\\mu V_k} )^{1/\\mu} \\text{; } k=1, 2,\\cdots, J \\in C_i \\text{; an indirect CES structure}\\] \\[G_j(\\cdots) = \\frac{\\partial \\sum_{k=1}^J e^{V_k}}{\\partial e^{V_j}} = 1 \\text{; considering } \\mu = 1\\] \\[\\therefore Pr(j|C_i) = \\frac{e^{V_j}}{\\sum_k e^{V_k}}\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#nested-logit-model-4",
     "href": "teaching/ENCI707/slides/lec-6.html#nested-logit-model-4",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "Nested Logit Model",
-    "text": "Nested Logit Model\n\nConsider J alternatives nested in k non-overlapping nests:"
-  },
-  {
-    "objectID": "teaching/ENCI707/slides/lec-6.html#nested-logit-model-5",
-    "href": "teaching/ENCI707/slides/lec-6.html#nested-logit-model-5",
-    "title": "Lecture 6 - Advanced Choice Models",
-    "section": "Nested Logit Model",
-    "text": "Nested Logit Model\n$$$$"
+    "text": "Nested Logit Model\n\nConsider J alternatives nested in k non-overlapping nests:\n\n\n\n\\[𝐺(\\cdots)=\\sum_{𝑙=1}^𝐾\\left(\\sum_{𝑗\\in𝐵_𝑙}𝑒^{𝜇_𝑙 𝑉_𝑗}\\right)^{1⁄\\mu_l}\\]\n\n\n\\(K\\) = total nests; \\(B_l\\) is the alt set in nest \\(l\\)\n\\(\\mu_l\\) is the nest \\(l\\)-specific scale & \\(0 &lt; \\mu_l &lt; 1\\)\n\\(e^{\\mu_l V_j}\\) is the argument\n\\(G(\\cdots)\\) is homogeneous to degree \\(1/\\mu_l\\)\nAn indirect CES structure\n\n\n\nPartial derivative \\[G_j(\\cdots) = \\frac{\\partial}{\\partial e^{V_j}} \\sum_{l=1}^K \\sum_{j \\in B_l} (e^{\\mu_l V_l})^{1/\\mu_l} = \\frac{\\mu_l e^{\\mu_l V_j}}{\\mu_l}\\left(\\sum_{j \\in B_l} e^{\\mu_l V_j}\\right)^{1/\\mu_l - 1}\\] \\[\\therefore Pr(j|C_i) = \\frac{e^{V_j}G_j(\\cdots)}{G(\\cdots)} = \\frac{e^{\\mu_l V_j}\\left(\\sum_{j \\in B_l} e^{\\mu_l V_j}\\right)^{1/\\mu_l-1}}{\\sum_{l=1}^K \\left(\\sum_{j \\in B_l} e^{\\mu_l V_j} \\right)^{1/\\mu_l}} = \\frac{e^{\\mu_l V_j}\\left(\\sum_{j \\in B_l} e^{\\mu_l V_j}\\right)^{1/\\mu_l}}{\\sum_{j \\in B_l} e^{\\mu_l V_j} \\sum_{l=1}^K \\left(\\sum_{j \\in B_l} e^{\\mu_l V_j} \\right)^{1/\\mu_l}}\\]"
   },
   {
     "objectID": "teaching/ENCI707/supplemental/binary-logit.html",
@@ -6744,7 +6737,7 @@
     "href": "teaching/ENCI707/weeks/week-10.html#deliver",
     "title": "Week 10",
     "section": "Deliver",
-    "text": "Deliver\n📝 Logit model group assignment due Mar. 19 by 11:59 PM on D2L.\n📝 Draft data and experimental design due Mar. 21 by 11:59 PM on D2L.\n\n\nBack to course schedule ⏎",
+    "text": "Deliver\nNone\n\n\nBack to course schedule ⏎",
     "crumbs": [
       "Weekly Materials",
       "Week 10"
@@ -6799,7 +6792,7 @@
     "href": "teaching/ENCI707/weeks/week-12.html#deliver",
     "title": "Week 12",
     "section": "Deliver",
-    "text": "Deliver\nNone\n\n\nBack to course schedule ⏎",
+    "text": "Deliver\n📝 Draft data and experimental design due Apr. 04 by 11:59 PM on D2L.\n\n\nBack to course schedule ⏎",
     "crumbs": [
       "Weekly Materials",
       "Week 12"
