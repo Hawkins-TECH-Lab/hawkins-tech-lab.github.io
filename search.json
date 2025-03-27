@@ -6511,7 +6511,7 @@
     "href": "teaching/ENCI707/slides/lec-6.html#discrete-choice-choice-bundle",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "Discrete Choice: Choice Bundle",
-    "text": "Discrete Choice: Choice Bundle\n\n\n\nChoice bundle, for example choice of making a shopping trip at a particular location:\n\nChoice of making a shopping trip compared with no trip or any other trips.\nChoosing a mode of travel to reach a destination.\nChoosing a particular location over other possible locations.\n\nDifferent substitution patterns may exist in three components of shopping trip choice.\nOverall, a single discrete choice but multiple components of choices.\n\nIndividual component have no meaning"
+    "text": "Discrete Choice: Choice Bundle\n\n\n\nChoice bundle, for example choice of making a shopping trip at a particular location:\n\nChoice of making a shopping trip compared with no trip or any other trips\nChoosing a mode of travel to reach a destination\nChoosing a particular location over other possible locations\n\nDifferent substitution patterns may exist in three components of shopping trip choice\nOverall, a single discrete choice but multiple components of choices\n\nIndividual component have no meaning"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#discrete-choice-choice-bundle-1",
@@ -6532,7 +6532,7 @@
     "href": "teaching/ENCI707/slides/lec-6.html#modelling-choice-bundles-1",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "Modelling Choice Bundles",
-    "text": "Modelling Choice Bundles\n\nBreaking the choice components to capture substitution patterns that exist at different component level is a technical approach\nBreaking a choice bundle does not define the sequence of choices:\n\nShopping location choice nested within shopping trip mode choice does not mean location choice is chosen first then mode is chosen!\nNesting is about correlation among choice alternatives"
+    "text": "Modelling Choice Bundles\n\nBreaking the choice components to capture substitution patterns that exist at different component levels is a technical approach\nBreaking a choice bundle does not define the sequence of choices:\n\nShopping location choice nested within shopping trip mode choice does not mean location choice is chosen first then mode is chosen!\nNesting is about correlation among choice alternatives"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#sequential-logit-model-of-choice-bundle-1",
@@ -6546,14 +6546,14 @@
     "href": "teaching/ENCI707/slides/lec-6.html#sequential-logit-model-of-choice-bundle-2",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "Sequential Logit Model of Choice Bundle",
-    "text": "Sequential Logit Model of Choice Bundle\n\n\\[Pr(d) = \\frac{\\exp(V_d)}{\\sum_{d' \\in D} \\exp(V_d')} \\text{, } Pr(m|d) = \\frac{\\exp(V_{m|d})}{\\sum_{m' \\in M} \\exp(V_{m'|d})}\\] - Joint probability of choice \\[Pr(md) = \\frac{\\exp(V_d)}{\\sum_{d' \\in D} \\exp(V_d') \\sum_{m' \\in M} \\exp(V_{m'|d})}\\] \\[Pr(md) = \\frac{\\exp(V_d + V_{m|d})}{\\sum_{d' \\in D} \\exp(V_{d'})} \\frac{\\exp(V_{m|d})}{\\sum_{m' \\in M} \\exp(V_{m'|d})}\\]"
+    "text": "Sequential Logit Model of Choice Bundle\n\n\\[Pr(d) = \\frac{\\exp(V_d)}{\\sum_{d' \\in D} \\exp(V_d')} \\text{; } Pr(m|d) = \\frac{\\exp(V_{m|d})}{\\sum_{m' \\in M} \\exp(V_{m'|d})}\\] - Joint probability of choice \\[Pr(md) = \\frac{\\exp(V_d)}{\\sum_{d' \\in D} \\exp(V_d') \\sum_{m' \\in M} \\exp(V_{m'|d})}\\frac{\\exp(V_{m|d})}{\\sum_{m' \\in M} \\exp(V_{m'|d})}\\] \\[Pr(md) = \\frac{\\exp(V_d + V_{m|d})}{\\sum_{d' \\in D} \\exp(V_d') \\sum_{m' \\in M} \\exp(V_{m'|d})}\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#sequential-logit-model-of-choice-bundle-3",
     "href": "teaching/ENCI707/slides/lec-6.html#sequential-logit-model-of-choice-bundle-3",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "Sequential Logit Model of Choice Bundle",
-    "text": "Sequential Logit Model of Choice Bundle\n\nConditions are arbitrary: the estimation process does not allow any verification of the validity of it\nIf the actual conditional relationship is opposite to what is assumed in the model, the model will give wrong forecast\nSequential estimation does not capture relative difference in substitution patterns between different choice component of the bundle\nParameter estimation is inefficient and biased"
+    "text": "Sequential Logit Model of Choice Bundle\n\nConditions are arbitrary: the estimation process does not allow any verification of the validity of it\nIf the actual conditional relationship is opposite to what is assumed in the model, the model will give wrong forecast\nSequential estimation does not capture relative difference in substitution patterns between different choice components of the bundle\nParameter estimation is inefficient and biased"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#estimation-sequential-logit-model",
@@ -6707,7 +6707,7 @@
     "href": "teaching/ENCI707/slides/lec-6.html#nested-logit-model-for-single-choice",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "Nested Logit Model for Single Choice",
-    "text": "Nested Logit Model for Single Choice\n\n\n\\[\\text{For } \\phi=0 \\text{; }Pr(1)=\\frac{1}{1+2^{\\phi}} = 1/2\\] \\[\\text{For } \\phi=1 \\text{; }Pr(1)=\\frac{1}{1+2^{\\phi}} = 1/3\\] \\[\\text{For } 0&lt;\\phi&lt;1 \\text{; }Pr(1)=\\frac{1}{1+2^{\\phi}} &lt; 1/2\\]\n\n\n\n\n\n\n\n\nNested Logit (NL) model can capture various levels of correlated properties (substitution patterns) among alternatives of a single choice (as opposed to choice bundle) through the nesting structure:\n\nWithin a particular nest*, alternatives are IIA\nBetween nests, various levels of substitution patterns are captured through nesting structures"
+    "text": "Nested Logit Model for Single Choice\n\n\n\\[\\text{For } \\phi=0 \\text{; }Pr(1)=\\frac{1}{1+2^{\\phi}} = 1/2\\] \\[\\text{For } \\phi=1 \\text{; }Pr(1)=\\frac{1}{1+2^{\\phi}} = 1/3\\] \\[\\text{For } 0&lt;\\phi&lt;1 \\text{; }Pr(1)=\\frac{1}{1+2^{\\phi}} &lt; 1/2\\]\n\n\n\n\n\n\n\n\nNested Logit (NL) model can capture various levels of correlated properties (substitution patterns) among alternatives of a single choice (as opposed to choice bundle) through the nesting structure:\n\nWithin a particular nest, alternatives are IIA\nBetween nests, various levels of substitution patterns are captured through nesting structures"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#nested-logit-to-address-iia",
@@ -6777,7 +6777,7 @@
     "href": "teaching/ENCI707/slides/lec-6.html#generating-function-gev-model",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "Generating Function & GEV Model",
-    "text": "Generating Function & GEV Model\nMcFadden (1978). Modelling the Choice of Residential Location,” in Spatial Interaction Theory and Planning Models, ed. by Anders Karlqvist, et al. Amsterdam: North-Holland Publishing Company, pp. 75-96\n\nGenerating function: A formal power series (polynomial function) that encodes an infinite sequence of 𝑥 (place holder rather than a number) by treating them as the coefficient of the power series: especially powerful for recurring relationships\n\nthe function may not be a true function and the variables may be intermediate information units\nInstead of dealing with infinite sequence, generating function gives a single function that encodes the sequence\nA generating function expresses a sequence (the sequence of coefficients): the 𝑖𝑡ℎ term of the sequence is the coefficient of 𝑥𝑖 in the generating function"
+    "text": "Generating Function & GEV Model\nMcFadden (1978). Modelling the Choice of Residential Location,” in Spatial Interaction Theory and Planning Models, ed. by Anders Karlqvist, et al. Amsterdam: North-Holland Publishing Company, pp. 75-96\n\nGenerating function: A formal power series (polynomial function) that encodes an infinite sequence of 𝑥 (place holder rather than a number) by treating them as the coefficient of the power series: especially powerful for recurring relationships\n\nthe function may not be a true function and the variables may be intermediate information units\nInstead of dealing with infinite sequence, generating function gives a single function that encodes the sequence\nA generating function expresses a sequence (the sequence of coefficients): the \\(ith\\) term of the sequence is the coefficient of \\(x_i\\) in the generating function"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#gev-generating-function-g..",
@@ -6791,7 +6791,7 @@
     "href": "teaching/ENCI707/slides/lec-6.html#generalized-extreme-value-gev-model",
     "title": "Lecture 6 - Advanced Choice Models",
     "section": "Generalized Extreme Value (GEV) Model",
-    "text": "Generalized Extreme Value (GEV) Model\n\\[Pr(j|C_i) = \\int_{\\epsilon_j=-\\infty}^{+\\infty} F\\left((V_j-V_1+\\epsilon_j) \\cdots \\epsilon_j \\cdots (V_j - V_k + \\epsilon_j)  \\right) d \\epsilon_j\\] - Using GEV generating function \\[F(y_1, \\cdots, y_j, \\cdots, y_k) = \\exp(-G(e^{-y_1},\\cdots,e^{-y_j},\\cdots, e^{-y_k}))\\] \\[F(y_1, \\cdots, y_j, \\cdots, y_k) = \\partial F(\\cdots)/\\partial y_j\\] \\[F(y_1, \\cdots, y_j, \\cdots, y_k) = \\exp \\left(-G(e^{-y_1},\\cdots, e^{-y_k})e^{-y_j}G_j(e^{-y_1},\\cdots, e^{-y_k})\\right)\\] - Applying Euler’s formula and homogeneity conditions in \\(F_j(\\cdots)\\) of the integral of \\(Pr(j)\\), results in a closed form function: \\[Pr(j|C_i) = \\frac{e^{V_j}G_j(e^{V_1},\\cdots,e^{V_j,\\cdots e^{V_k}})}{G(e^{V_1},\\cdots,e^{V_j,\\cdots e^{V_k}})}\\]"
+    "text": "Generalized Extreme Value (GEV) Model\n\\[Pr(j|C_i) = \\int_{\\epsilon_j=-\\infty}^{+\\infty} F\\left((V_j-V_1+\\epsilon_j) \\cdots \\epsilon_j \\cdots (V_j - V_k + \\epsilon_j)  \\right) d \\epsilon_j\\] - Using GEV generating function \\[F(y_1, \\cdots, y_j, \\cdots, y_k) = \\exp(-G(e^{-y_1},\\cdots,e^{-y_j},\\cdots, e^{-y_k}))\\] \\[F(y_1, \\cdots, y_j, \\cdots, y_k) = \\partial F(\\cdots)/\\partial y_j\\] \\[F(y_1, \\cdots, y_j, \\cdots, y_k) = \\exp \\left(-G(e^{-y_1},\\cdots, e^{-y_k})e^{-y_j}G_j(e^{-y_1},\\cdots, e^{-y_k})\\right)\\] - Applying Euler’s formula and homogeneity conditions in \\(F_j(\\cdots)\\) of the integral of \\(Pr(j)\\), results in a closed form function: \\[Pr(j|C_i) = \\frac{e^{V_j}G_j(e^{V_1},\\cdots,e^{V_j,\\cdots e^{V_k}})}{G(e^{V_1},\\cdots,e^{V_j},\\cdots e^{V_k})}\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#generalized-extreme-value-gev-model-1",

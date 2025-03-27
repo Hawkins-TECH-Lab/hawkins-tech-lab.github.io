@@ -368,12 +368,12 @@
 <ul>
 <li><strong>Choice bundle</strong>, for example choice of making a shopping trip at a particular location:
 <ul>
-<li>Choice of making a shopping trip compared with no trip or any other trips.</li>
-<li>Choosing a mode of travel to reach a destination.</li>
-<li>Choosing a particular location over other possible locations.</li>
+<li>Choice of making a shopping trip compared with no trip or any other trips</li>
+<li>Choosing a mode of travel to reach a destination</li>
+<li>Choosing a particular location over other possible locations</li>
 </ul></li>
-<li>Different <strong>substitution patterns</strong> may exist in three components of shopping trip choice.</li>
-<li>Overall, a <strong>single discrete choice</strong> but multiple components of choices.
+<li>Different <strong>substitution patterns</strong> may exist in three components of shopping trip choice</li>
+<li>Overall, a <strong>single discrete choice</strong> but multiple components of choices
 <ul>
 <li>Individual component have no meaning</li>
 </ul></li>
@@ -429,7 +429,7 @@
 <section id="modelling-choice-bundles-1" class="slide level2 smaller">
 <h2>Modelling Choice Bundles</h2>
 <ul>
-<li>Breaking the choice components to capture substitution patterns that exist at different component level is a technical approach</li>
+<li>Breaking the choice components to capture substitution patterns that exist at different component levels is a technical approach</li>
 <li>Breaking a choice bundle <strong>does not</strong> define the sequence of choices:
 <ul>
 <li>Shopping location choice nested within shopping trip mode choice <strong>does not</strong> mean location choice is chosen first then mode is chosen!</li>
@@ -456,14 +456,14 @@
 <section id="sequential-logit-model-of-choice-bundle-2" class="slide level2 smaller">
 <h2>Sequential Logit Model of Choice Bundle</h2>
 
-<img data-src="../../../assets/images/teaching/ENCI707/Lecture6/sequential_logit.svg" class="quarto-figure quarto-figure-center r-stretch"><p><span class="math display">\[Pr(d) = \frac{\exp(V_d)}{\sum_{d' \in D} \exp(V_d')} \text{, } Pr(m|d) = \frac{\exp(V_{m|d})}{\sum_{m' \in M} \exp(V_{m'|d})}\]</span> - Joint probability of choice <span class="math display">\[Pr(md) = \frac{\exp(V_d)}{\sum_{d' \in D} \exp(V_d') \sum_{m' \in M} \exp(V_{m'|d})}\]</span> <span class="math display">\[Pr(md) = \frac{\exp(V_d + V_{m|d})}{\sum_{d' \in D} \exp(V_{d'})} \frac{\exp(V_{m|d})}{\sum_{m' \in M} \exp(V_{m'|d})}\]</span></p>
+<img data-src="../../../assets/images/teaching/ENCI707/Lecture6/sequential_logit.svg" class="quarto-figure quarto-figure-center r-stretch"><p><span class="math display">\[Pr(d) = \frac{\exp(V_d)}{\sum_{d' \in D} \exp(V_d')} \text{; } Pr(m|d) = \frac{\exp(V_{m|d})}{\sum_{m' \in M} \exp(V_{m'|d})}\]</span> - Joint probability of choice <span class="math display">\[Pr(md) = \frac{\exp(V_d)}{\sum_{d' \in D} \exp(V_d') \sum_{m' \in M} \exp(V_{m'|d})}\frac{\exp(V_{m|d})}{\sum_{m' \in M} \exp(V_{m'|d})}\]</span> <span class="math display">\[Pr(md) = \frac{\exp(V_d + V_{m|d})}{\sum_{d' \in D} \exp(V_d') \sum_{m' \in M} \exp(V_{m'|d})}\]</span></p>
 </section>
 <section id="sequential-logit-model-of-choice-bundle-3" class="slide level2 smaller">
 <h2>Sequential Logit Model of Choice Bundle</h2>
 <ul>
 <li><strong>Conditions are arbitrary:</strong> the estimation process does not allow any verification of the validity of it</li>
 <li>If the actual conditional relationship is opposite to what is assumed in the model, the model will give <strong>wrong forecast</strong></li>
-<li>Sequential estimation <strong>does not</strong> capture relative difference in substitution patterns between different choice component of the bundle</li>
+<li>Sequential estimation <strong>does not</strong> capture relative difference in substitution patterns between different choice components of the bundle</li>
 <li>Parameter estimation is <strong>inefficient and biased</strong></li>
 </ul>
 </section>
@@ -681,7 +681,7 @@ U_{d} = V_d + (V_{m|d} + \epsilon_{m|d}) + \epsilon_d = \widetilde{V_d} + \epsil
 <ul>
 <li>Nested Logit (NL) model can capture various levels of correlated properties (<strong>substitution patterns</strong>) among alternatives of a single choice (as opposed to choice bundle) through the nesting structure:
 <ul>
-<li><strong>Within a particular nest</strong>*, alternatives are IIA</li>
+<li><strong>Within a particular nest</strong>, alternatives are IIA</li>
 <li><strong>Between nests</strong>, various levels of substitution patterns are captured through nesting structures</li>
 </ul></li>
 </ul>
@@ -827,7 +827,7 @@ U_{d} = V_d + (V_{m|d} + \epsilon_{m|d}) + \epsilon_d = \widetilde{V_d} + \epsil
 <ul>
 <li>the function may not be a true function and the variables may be intermediate information units</li>
 <li>Instead of dealing with infinite sequence, generating function gives a single function that encodes the sequence</li>
-<li>A generating function expresses a sequence (the sequence of coefficients): the 𝑖𝑡ℎ term of the sequence is the coefficient of 𝑥𝑖 in the generating function</li>
+<li>A generating function expresses a sequence (the sequence of coefficients): the <span class="math inline">\(ith\)</span> term of the sequence is the coefficient of <span class="math inline">\(x_i\)</span> in the generating function</li>
 </ul></li>
 </ul>
 </section>
@@ -847,7 +847,7 @@ U_{d} = V_d + (V_{m|d} + \epsilon_{m|d}) + \epsilon_d = \widetilde{V_d} + \epsil
 </section>
 <section id="generalized-extreme-value-gev-model" class="slide level2 smaller">
 <h2>Generalized Extreme Value (GEV) Model</h2>
-<p><span class="math display">\[Pr(j|C_i) = \int_{\epsilon_j=-\infty}^{+\infty} F\left((V_j-V_1+\epsilon_j) \cdots \epsilon_j \cdots (V_j - V_k + \epsilon_j)  \right) d \epsilon_j\]</span> - Using GEV generating function <span class="math display">\[F(y_1, \cdots, y_j, \cdots, y_k) = \exp(-G(e^{-y_1},\cdots,e^{-y_j},\cdots, e^{-y_k}))\]</span> <span class="math display">\[F(y_1, \cdots, y_j, \cdots, y_k) = \partial F(\cdots)/\partial y_j\]</span> <span class="math display">\[F(y_1, \cdots, y_j, \cdots, y_k) = \exp \left(-G(e^{-y_1},\cdots, e^{-y_k})e^{-y_j}G_j(e^{-y_1},\cdots, e^{-y_k})\right)\]</span> - Applying Euler’s formula and homogeneity conditions in <span class="math inline">\(F_j(\cdots)\)</span> of the integral of <span class="math inline">\(Pr(j)\)</span>, results in a closed form function: <span class="math display">\[Pr(j|C_i) = \frac{e^{V_j}G_j(e^{V_1},\cdots,e^{V_j,\cdots e^{V_k}})}{G(e^{V_1},\cdots,e^{V_j,\cdots e^{V_k}})}\]</span></p>
+<p><span class="math display">\[Pr(j|C_i) = \int_{\epsilon_j=-\infty}^{+\infty} F\left((V_j-V_1+\epsilon_j) \cdots \epsilon_j \cdots (V_j - V_k + \epsilon_j)  \right) d \epsilon_j\]</span> - Using GEV generating function <span class="math display">\[F(y_1, \cdots, y_j, \cdots, y_k) = \exp(-G(e^{-y_1},\cdots,e^{-y_j},\cdots, e^{-y_k}))\]</span> <span class="math display">\[F(y_1, \cdots, y_j, \cdots, y_k) = \partial F(\cdots)/\partial y_j\]</span> <span class="math display">\[F(y_1, \cdots, y_j, \cdots, y_k) = \exp \left(-G(e^{-y_1},\cdots, e^{-y_k})e^{-y_j}G_j(e^{-y_1},\cdots, e^{-y_k})\right)\]</span> - Applying Euler’s formula and homogeneity conditions in <span class="math inline">\(F_j(\cdots)\)</span> of the integral of <span class="math inline">\(Pr(j)\)</span>, results in a closed form function: <span class="math display">\[Pr(j|C_i) = \frac{e^{V_j}G_j(e^{V_1},\cdots,e^{V_j,\cdots e^{V_k}})}{G(e^{V_1},\cdots,e^{V_j},\cdots e^{V_k})}\]</span></p>
 </section>
 <section id="generalized-extreme-value-gev-model-1" class="slide level2" style="font-size: 0.65em;">
 <h2>Generalized Extreme Value (GEV) Model</h2>
