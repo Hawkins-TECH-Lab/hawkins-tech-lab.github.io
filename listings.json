@@ -18,6 +18,17 @@
     ]
   },
   {
+    "listing": "/index.html",
+    "items": [
+      "/research/choice_methods/index.html",
+      "/research/ecological_economics/index.html",
+      "/research/equity/index.html",
+      "/research/infrastructure_finance/index.html",
+      "/research/shared_mobility/index.html",
+      "/research/vehicle_adoption/index.html"
+    ]
+  },
+  {
     "listing": "/publications/index.html",
     "items": [
       "/publications/2024_009_Mapping_Vehicle_Diffusion/index.html",
@@ -38,14 +49,8 @@
     ]
   },
   {
-    "listing": "/research/index.html",
-    "items": [
-      "/research/choice_methods/index.html",
-      "/research/ecological_economics/index.html",
-      "/research/equity/index.html",
-      "/research/shared_mobility/index.html",
-      "/research/vehicle_adoption/index.html"
-    ]
+    "listing": "/research/infrastructure_finance/index.html",
+    "items": []
   },
   {
     "listing": "/research/vehicle_adoption/index.html",

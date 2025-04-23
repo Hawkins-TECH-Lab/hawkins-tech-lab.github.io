@@ -6,10 +6,10 @@
       version="2.0">
 <channel>
 <title>Hawkinslab</title>
-<link>https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/blog.html#category=R</link>
-<atom:link href="https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/thoughts/blog-r.xml" rel="self" type="application/rss+xml"/>
-<description></description>
-<generator>quarto-1.5.56</generator>
-<lastBuildDate>Thu, 27 Mar 2025 01:05:12 GMT</lastBuildDate>
+<link>https://hawkins-tech-lab.github.io/thoughts/blog.html#category=R</link>
+<atom:link href="https://hawkins-tech-lab.github.io/thoughts/blog-r.xml" rel="self" type="application/rss+xml"/>
+<description>TECH lab website</description>
+<generator>quarto-1.6.39</generator>
+<lastBuildDate>Wed, 23 Apr 2025 21:51:38 GMT</lastBuildDate>
 </channel>
 </rss>

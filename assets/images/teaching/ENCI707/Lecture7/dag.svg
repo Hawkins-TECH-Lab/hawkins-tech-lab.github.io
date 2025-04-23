@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="29.200001in"
-   height="14.6in"
-   viewBox="0 0 29.200001 14.6"
+   width="1.2in"
+   height="0.60000002in"
+   viewBox="0 0 30.480003 15.240001"
    version="1.1"
    id="svg1"
    inkscape:version="1.4 (86a8ad7, 2024-10-11)"
@@ -26,13 +26,13 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="0.12708801"
-     inkscape:cx="2089.1034"
-     inkscape:cy="1026.8475"
+     inkscape:zoom="1.4378367"
+     inkscape:cx="163.78772"
+     inkscape:cy="120.66739"
      inkscape:window-width="1920"
-     inkscape:window-height="1009"
+     inkscape:window-height="1017"
      inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:window-y="-5"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
@@ -309,8 +309,10 @@
        inkscape:connector-curvature="0" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#marker8);marker-end:url(#marker7)"
-       d="M 1.9997982,8.4408129 C 9.9699421,-0.72408144 18.172629,-4.6475637 27.117824,8.1647912"
+       d="M 1.9997982,8.4408129 27.117824,8.1647912"
        id="path6"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
   </g>
 </svg>

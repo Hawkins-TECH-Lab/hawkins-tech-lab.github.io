@@ -3,8 +3,8 @@
 
 <svg
    width="5.1999998in"
-   height="1.3in"
-   viewBox="0 0 132.08 33.019997"
+   height="1.1in"
+   viewBox="0 0 132.08 27.940001"
    version="1.1"
    id="svg1"
    inkscape:version="1.4 (86a8ad7, 2024-10-11)"
@@ -27,12 +27,12 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="1.4378367"
-     inkscape:cx="341.83298"
+     inkscape:cx="341.48523"
      inkscape:cy="46.945526"
      inkscape:window-width="1920"
-     inkscape:window-height="1009"
+     inkscape:window-height="1017"
      inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:window-y="-5"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
@@ -198,96 +198,81 @@
        xml:space="preserve"
        style="font-size:6.35px;line-height:1;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style, Normal';font-variant-ligatures:none;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke-width:0.280001"
        x="18.217472"
-       y="5.0865517"
+       y="6.256506"
        id="text1"><tspan
          sodipodi:role="line"
          id="tspan1"
          style="stroke-width:0.28"
          x="18.217472"
-         y="5.0865517">No </tspan><tspan
-         sodipodi:role="line"
-         style="stroke-width:0.28"
-         x="18.217472"
-         y="11.436552"
-         id="tspan6">Overlap</tspan></text>
+         y="6.256506">No Overlap</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:6.35px;line-height:1;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style, Normal';font-variant-ligatures:none;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke-width:0.280001"
-       x="63.457039"
-       y="5.1981726"
+       x="59.752869"
+       y="6.256506"
        id="text4"><tspan
          sodipodi:role="line"
          id="tspan4"
          style="stroke-width:0.28"
-         x="63.457039"
-         y="5.1981726">Partial </tspan><tspan
-         sodipodi:role="line"
-         style="stroke-width:0.28"
-         x="63.457039"
-         y="11.548172"
-         id="tspan7">Overlap</tspan></text>
+         x="59.752869"
+         y="6.256506">Partial Overlap</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:6.35px;line-height:1;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style, Normal';font-variant-ligatures:none;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke-width:0.280001"
-       x="112.08305"
-       y="5.1981726"
+       x="106.79138"
+       y="6.256506"
        id="text5"><tspan
          sodipodi:role="line"
          id="tspan5"
          style="stroke-width:0.28"
-         x="112.08305"
-         y="5.1981726">Partial </tspan><tspan
-         sodipodi:role="line"
-         style="stroke-width:0.28"
-         x="112.08305"
-         y="11.548172"
-         id="tspan8">Overlap</tspan></text>
+         x="106.79138"
+         y="6.256506">Partial Overlap</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 1.9784077,30.584239 H 34.917071"
+       d="M 1.9784077,26.350903 H 34.917071"
        id="path5"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.245412px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 49.165269,30.584239 H 77.50356"
+       d="M 49.165269,26.350903 H 77.50356"
        id="path5-2"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 94.397473,30.584239 H 127.33611"
+       d="M 94.397473,26.350903 H 127.33611"
        id="path5-1"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.261993px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.04797, 0.261993;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 2.6212903,30.777979 c 0.865735,-2.135662 1.6501215,-4.05965 2.366612,-5.772316 C 11.52084,9.3896267 12.409086,11.342328 17.850228,30.597025"
+       d="m 2.6212903,26.544643 c 0.865735,-2.135662 1.6501215,-4.05965 2.366612,-5.772316 C 11.52084,5.1562931 12.409086,7.1089943 17.850228,26.363689"
        id="path6"
        sodipodi:nodetypes="csc" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 18.377078,30.659423 c 0.868253,-2.171788 1.654921,-4.128321 2.373496,-5.869958 6.55194,-15.8801939 7.44277,-13.894461 12.899738,5.685944"
+       d="m 18.377078,26.426087 c 0.868253,-2.171788 1.654921,-4.128321 2.373496,-5.869958 6.55194,-15.8801915 7.44277,-13.8944589 12.899738,5.685944"
        id="path6-5"
        sodipodi:nodetypes="csc" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.261993px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.04797, 0.261993;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 49.918081,30.46824 c 0.865735,-2.135662 1.650122,-4.05965 2.366612,-5.772316 6.532938,-15.616036 7.421184,-13.663334 12.862326,5.591362"
+       d="m 49.918081,26.234904 c 0.865735,-2.135662 1.650122,-4.05965 2.366612,-5.772316 6.532938,-15.6160336 7.421184,-13.6633316 12.862326,5.591362"
        id="path6-1"
        sodipodi:nodetypes="csc" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 60.382199,30.349684 c 0.868253,-2.171788 1.654921,-4.128321 2.373496,-5.869958 6.55194,-15.880193 7.44277,-13.894461 12.899738,5.685944"
+       d="m 60.382199,26.116348 c 0.868253,-2.171788 1.654921,-4.128321 2.373496,-5.869958 6.55194,-15.8801906 7.44277,-13.8944586 12.899738,5.685944"
        id="path6-5-4"
        sodipodi:nodetypes="csc" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.294664px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.17865, 0.294664;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 94.581003,30.561937 c 1.676491,-1.395053 3.195452,-2.651838 4.582923,-3.770582 12.650994,-10.20068 14.371084,-8.925139 24.907824,3.65238"
+       d="m 94.581003,26.328601 c 1.676491,-1.395053 3.195452,-2.651838 4.582923,-3.770582 12.650994,-10.20068 14.371084,-8.925139 24.907824,3.65238"
        id="path6-1-2"
        sodipodi:nodetypes="csc" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 112.04274,30.728156 c 0.86826,-2.171788 1.65492,-4.128321 2.3735,-5.869958 6.55194,-15.8801929 7.44276,-13.894461 12.89973,5.685944"
+       d="m 112.04274,26.49482 c 0.86826,-2.171788 1.65492,-4.128321 2.3735,-5.869958 6.55194,-15.8801905 7.44276,-13.8944587 12.89973,5.685944"
        id="path6-5-4-1"
        sodipodi:nodetypes="csc" />
   </g>

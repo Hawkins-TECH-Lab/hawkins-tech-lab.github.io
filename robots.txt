@@ -1,1 +1,1 @@
-Sitemap: https://Hawkins-TECH-Lab.github.io/hawkins-tech-lab.github.io/sitemap.xml
+Sitemap: https://hawkins-tech-lab.github.io/sitemap.xml
