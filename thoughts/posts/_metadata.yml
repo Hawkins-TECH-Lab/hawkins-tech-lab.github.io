@@ -1,3 +1,5 @@
 comments: 
-  utterances: 
-    repo:  UNL-Hawkins-Lab/blogComment
+  giscus:
+    repo: UNL-Hawkins-Lab/blogComment
+    category: Blog
+search: false

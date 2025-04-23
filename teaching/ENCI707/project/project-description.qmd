@@ -114,7 +114,7 @@ The draft data and experimental design plan submission is an opportunity to rece
 
 There is a 15-page limit for the plan document (excluding references). The draft plan will be marked out of 60, broken down as follows
 
-| Total                         | 50 pts |
+| Total                         | 60 pts |
 |-------------------------------|--------|
 | **Introduction**         | 6 pts  |
 | **Data**               | 10 pts |

@@ -8,14 +8,14 @@ editor:
 website:
   title: "Hawkinslab"
   page-navigation: false
+  site-url: https://hawkins-tech-lab.github.io/
+  description: "TECH lab website"
   navbar:
     search: true
     title: false
     logo: assets/images/logo_tech.png
     logo-alt: "TECH Group"
     left:
-      - text: "Research"
-        href:  research/index.qmd
       - text: "Team"
         href: team/index.qmd
       - text: "Publications"
@@ -34,6 +34,9 @@ website:
             href:  thoughts/books.qmd
           - text: "Blog"
             href:  thoughts/blog.qmd
+    right:
+      - icon: rss
+        href: index.xml
     background: "#595758"
     
   sidebar:
@@ -222,8 +225,6 @@ website:
       search: true
       align: center
       contents:
-        - href: projects/ev_adoption/projects.qmd
-          text: Research
         - section: "EV"
           contents:
             - href: projects/ev_adoption/ev.qmd
@@ -241,6 +242,15 @@ website:
               text: Lincoln Bikeshare
             - href: projects/bikeshare/Clustering.qmd
               text: Bikeshare Clustering
+    - id: infrastructure_finance
+      style: "docked"
+      search: true
+      align: center
+      contents:
+        - section: "Transportation in Canada"
+          contents:
+            - href: projects/transport_canada/carbon_pricing.html
+              text: Transportation in Canada
     - id: Books
       style: "docked"
       search: true
