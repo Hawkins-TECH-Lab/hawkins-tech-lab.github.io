@@ -1,0 +1,26 @@
+---
+title: Infrastructure Finance
+alias: &ALIAS infrastructure_finance
+image: featured.jpg
+sidebar: infrastructure_finance
+listing:
+  id: pubs
+  template: ../../_ejs/publications-people.ejs 
+  contents: ../../publications/**/*.qmd
+  sort: "pub_number desc"
+  # sort-ui: true
+  filter-ui: true
+  include:
+    categories: *ALIAS
+  fields: [publication, title, categories, image, date, author]
+
+---
+![](featured.jpg)
+
+Infrastructure finance is a constantly evolving landscape. As the goals and composition of projects change, robust forecasts of potential generation streams (magnitude and viability) is essential.
+
+## Related Publications
+
+
+:::{#pubs}
+:::

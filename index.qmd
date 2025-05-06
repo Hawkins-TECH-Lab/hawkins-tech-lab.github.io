@@ -5,6 +5,17 @@ page-layout: full
 section-divs: false
 toc: false
 css: assets/css/index.css
+listing:
+  id: research
+  type: grid
+  contents:
+    - research/choice_methods/index.qmd
+    - research/ecological_economics/index.qmd
+    - research/equity/index.qmd
+    - research/infrastructure_finance/index.qmd
+    - research/shared_mobility/index.qmd
+    - research/vehicle_adoption/index.qmd
+  grid-columns: 3
 ---
 <div class="gradient-text">
 
@@ -33,3 +44,13 @@ Our team examines the relationship between infrastructure systems, with a partic
 :::
 :::
 ::::
+
+## Research Philosophy
+We take a broad view of land use to encompass the impacts of human activity on ecosystems, drawing on theory from ecological economics to develop microeconometric choice models that recognize the various constraints on consumption and time use.
+
+## Transdisciplinary Scholarship
+The TECH Group is a transdisciplinary research group that combines engineering and social science expertise to understanding the pressing issues facing cities and regions. With a core focus on transportation and land use interactions, the group develops methods and studies to provide sound policy and behavioural analysis to our partners.
+
+See the [University of Calgary Transciplinary Research](https://transdisciplinary.ucalgary.ca/) website for more details.
+
+## Research Areas

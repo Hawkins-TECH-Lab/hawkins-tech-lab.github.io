@@ -7,9 +7,9 @@ listing:
   categories: true
   sort-ui: false
   filter-ui: false
-  feed:
-    categories: ["R"]
+  feed: true
 page-layout: full
+margin-header: signup.html
 title-block-banner: false
 ---
 ::: {.column-page}
