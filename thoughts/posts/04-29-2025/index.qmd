@@ -1,0 +1,19 @@
+
+---
+title: "Ecosystem Service Measurement"
+description: "On thermometers and thermostats"
+author:
+  - name: Jason Hawkins
+date: "2025-04-29"
+categories: [ecological economics]
+image: banner.jpg
+format: 
+  html:
+    toc: true
+---
+
+I recently listened to an episode of EconTalk with Russ Roberts in which Russ [interviews educational consultant Daisy Christodoulou](https://www.econtalk.org/how-better-feedback-can-revolutionize-education-with-daisy-christodoulou/). Daisy talked about student evaluation, which interested me as an educator, but she made an analogy that generates ideas for me along an entirely different line of thinking. Her analogy was that we should consider a grade on an exam like a thermometer; it gives an indication of the temperature (or correctness of a response) but does not suggest changes (actions for improvement). A thermastat is device that embeds a thermometer but can also take action by increasing or decreasing the temperature through engaging a furnace, air conditioner, or heat pump.
+
+Thinking on this analogy during my walk home, it struck me that a thermastat is a device that measures and takes action assuming a certain objective. Specifically, it is designed to measure and act upon temperature variations from a preferred value - i.e., "room temperature". Classical environmental economics works in a similar manner. Its goal is to measure environmental impacts using a system of measurement based on dollars (or similar units of monetary value), in the same way a thermastat measures room conditions based on celsius degrees (or similar). The insight raised for me was how this analogy extends further when applied to ecosystem valuation.
+
+Let us consider the example of a house with a leaking roof on a rainy day. A thermastat will register the leak as a change in temperature and activate the furnace. While the furnance will address the change in temperature associated with the leak, it cannot fill the hole, nor can it address the change in humidity. A thermastat is an imperfect measuring and management device for a leaky roof. In the same way, environmental economics provides an imperfect instrument for managing ecosystem service impacts from human civilization. We must devise multi-instrumental approaches with the capacity to measure and manage impacts via appropriate units. A thermastat directs indoor temperature and money directs finance not ecosystems!

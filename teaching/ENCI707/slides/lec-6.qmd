@@ -36,11 +36,11 @@ execute:
 ::::: columns
 ::: {.column width="60%"}
 - **Choice bundle**, for example choice of making a shopping trip at a particular location:
-    - Choice of making a shopping trip compared with no trip or any other trips.
-    - Choosing a mode of travel to reach a destination.
-    - Choosing a particular location over other possible locations.
-- Different **substitution patterns** may exist in three components of shopping trip choice.
-- Overall, a **single discrete choice** but multiple components of choices. 
+    - Choice of making a shopping trip compared with no trip or any other trips
+    - Choosing a mode of travel to reach a destination
+    - Choosing a particular location over other possible locations
+- Different **substitution patterns** may exist in three components of shopping trip choice
+- Overall, a **single discrete choice** but multiple components of choices 
     - Individual component have no meaning
 :::
 ::: {.column width="40%"}
@@ -73,7 +73,7 @@ execute:
         - **Example:** if people are more likely to switch shopping location than travel mode to shopping, location choice is nested within mode choice
 
 ## Modelling Choice Bundles {.smaller}
-- Breaking the choice components to capture substitution patterns that exist at different component level is a technical approach
+- Breaking the choice components to capture substitution patterns that exist at different component levels is a technical approach
 - Breaking a choice bundle **does not** define the sequence of choices:
     - Shopping location choice nested within shopping trip mode choice **does not** mean location choice is chosen first then mode is chosen!
     - Nesting is about correlation among choice alternatives
@@ -90,15 +90,15 @@ execute:
 ## Sequential Logit Model of Choice Bundle {.smaller}
 ![](../../../assets/images/teaching/ENCI707/Lecture6/sequential_logit.svg){fig-align="center"}
 
-$$Pr(d) = \frac{\exp(V_d)}{\sum_{d' \in D} \exp(V_d')} \text{, } Pr(m|d) = \frac{\exp(V_{m|d})}{\sum_{m' \in M} \exp(V_{m'|d})}$$
+$$Pr(d) = \frac{\exp(V_d)}{\sum_{d' \in D} \exp(V_d')} \text{; } Pr(m|d) = \frac{\exp(V_{m|d})}{\sum_{m' \in M} \exp(V_{m'|d})}$$
 - Joint probability of choice
-$$Pr(md) = \frac{\exp(V_d)}{\sum_{d' \in D} \exp(V_d') \sum_{m' \in M} \exp(V_{m'|d})}$$
-$$Pr(md) = \frac{\exp(V_d + V_{m|d})}{\sum_{d' \in D} \exp(V_{d'})} \frac{\exp(V_{m|d})}{\sum_{m' \in M} \exp(V_{m'|d})}$$
+$$Pr(md) = \frac{\exp(V_d)}{\sum_{d' \in D} \exp(V_d') \sum_{m' \in M} \exp(V_{m'|d})}\frac{\exp(V_{m|d})}{\sum_{m' \in M} \exp(V_{m'|d})}$$
+$$Pr(md) = \frac{\exp(V_d + V_{m|d})}{\sum_{d' \in D} \exp(V_d') \sum_{m' \in M} \exp(V_{m'|d})}$$
 
 ## Sequential Logit Model of Choice Bundle {.smaller}
 - **Conditions are arbitrary:** the estimation process does not allow any verification of the validity of it
 - If the actual conditional relationship is opposite to what is assumed in the model, the model will give **wrong forecast**
-- Sequential estimation **does not** capture relative difference in substitution patterns between different choice component of  the bundle
+- Sequential estimation **does not** capture relative difference in substitution patterns between different choice components of  the bundle
 - Parameter estimation is **inefficient and biased**
 
 ## Estimation: Sequential Logit Model {.smaller}
@@ -296,7 +296,7 @@ $$\text{For } 0<\phi<1 \text{; }Pr(1)=\frac{1}{1+2^{\phi}} < 1/2$$
 :::
 :::::
 - Nested Logit (NL) model can capture various levels of correlated properties (**substitution patterns**) among alternatives of a single choice (as opposed to choice bundle) through the nesting structure:
-    - **Within a particular nest***, alternatives are IIA
+    - **Within a particular nest**, alternatives are IIA
     - **Between nests**, various levels of substitution patterns are captured through nesting structures
 
 ## Nested Logit to Address IIA {.smaller}
@@ -437,7 +437,7 @@ McFadden (1978). Modelling the Choice of Residential Location," in Spatial Inter
 - **Generating function:** A formal power series (polynomial function) that encodes an infinite sequence of 𝑥 (place holder rather than a number) by treating them as the coefficient of the power series: especially powerful for recurring relationships
     - the function may not be a true function and the variables may be intermediate information units
     - Instead of dealing with infinite sequence, generating function gives a single function that encodes the sequence
-    - A generating function expresses a sequence (the sequence of coefficients): the 𝑖𝑡ℎ term of the sequence is the coefficient of 𝑥𝑖 in the generating function 
+    - A generating function expresses a sequence (the sequence of coefficients): the $ith$ term of the sequence is the coefficient of $x_i$ in the generating function 
 
 ## GEV Generating Function, G(..) {style="font-size: 0.65em;"}
 - Define a generating function $G(\cdots))$ for the multivariate joint distribution of random utilities ($\epsilon$) as
@@ -457,7 +457,7 @@ $$F(y_1, \cdots, y_j, \cdots, y_k) = \exp(-G(e^{-y_1},\cdots,e^{-y_j},\cdots, e^
 $$F(y_1, \cdots, y_j, \cdots, y_k) = \partial F(\cdots)/\partial y_j$$
 $$F(y_1, \cdots, y_j, \cdots, y_k) = \exp \left(-G(e^{-y_1},\cdots, e^{-y_k})e^{-y_j}G_j(e^{-y_1},\cdots, e^{-y_k})\right)$$
 - Applying Euler's formula and homogeneity conditions in $F_j(\cdots)$ of the integral of $Pr(j)$, results in a closed form function:
-$$Pr(j|C_i) = \frac{e^{V_j}G_j(e^{V_1},\cdots,e^{V_j,\cdots e^{V_k}})}{G(e^{V_1},\cdots,e^{V_j,\cdots e^{V_k}})}$$
+$$Pr(j|C_i) = \frac{e^{V_j}G_j(e^{V_1},\cdots,e^{V_j,\cdots e^{V_k}})}{G(e^{V_1},\cdots,e^{V_j},\cdots e^{V_k})}$$
 
 ##  Generalized Extreme Value (GEV) Model {style="font-size: 0.65em;"}
 - Choice probability of a GEV model based on the GEV generating function (for $G(\cdots)$ of homogenous to degree 1)

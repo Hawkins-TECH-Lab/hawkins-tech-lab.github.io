@@ -251,4 +251,5 @@ $$𝑦_𝑖𝑗=\beta_0+𝜏𝑧_𝑖𝑗+𝛼_𝑖+𝜖_𝑖𝑗$$
 ## Causal Graph Theory
 - **English**: Smoking (X), Cancer (Y), Tar (Z), Genotypes(U)
 - Directed acyclic graph (DAG)
-![](../../../assets/images/teaching/ENCI707/Lecture7/dag.svg){fig-align="center"}
+
+![](../../../assets/images/teaching/ENCI707/Lecture7/dag.svg){fig-align="center" width="40%"}
