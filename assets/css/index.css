@@ -411,15 +411,6 @@
       }
     }
     
-    /* Enable dropdowns to open on hover for desktop nav */
-    .navbar .dropdown:hover .dropdown-menu {
-      display: block;
-      margin-top: 0; /* optional: makes it tighter */
-    }
-
-    .navbar .dropdown-menu {
-      transition: all 0.3s ease;
-    }
     
     
     
