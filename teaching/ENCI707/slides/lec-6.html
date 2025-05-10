@@ -1230,7 +1230,7 @@ U_{d} = V_d + (V_{m|d} + \epsilon_{m|d}) + \epsilon_d = \widetilde{V_d} + \epsil
       }
         var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
         var mailtoRegex = new RegExp(/^mailto:/);
-          var filterRegex = new RegExp("https:\/\/Hawkins-TECH-Lab\.github\.io\/hawkins-tech-lab\.github\.io\/");
+          var filterRegex = new RegExp("https:\/\/hawkins-tech-lab\.github\.io\/");
         var isInternal = (href) => {
             return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
         }
