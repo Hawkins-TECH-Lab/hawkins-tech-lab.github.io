@@ -10,7 +10,50 @@
 <atom:link href="https://hawkins-tech-lab.github.io/thoughts/blog.xml" rel="self" type="application/rss+xml"/>
 <description>TECH lab website</description>
 <generator>quarto-1.5.56</generator>
-<lastBuildDate>Tue, 29 Apr 2025 06:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 14 May 2025 06:00:00 GMT</lastBuildDate>
+<item>
+  <title>Private Space. Private Land</title>
+  <dc:creator>Jason Hawkins</dc:creator>
+  <link>https://hawkins-tech-lab.github.io/thoughts/posts/05-14-2025/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Books, podcasts, movies, and other media are a rich source of insights in my life. However, often the insights gained are due to a tangential comment rather than the main thrust of the narrative. One recent example is the discussion on EconTalk between host Russ Roberts and his guest Tiffany Jenkins. Ostensibly, the episode topic was the role of various factors on the shaping of public and private life. A short discussion on private space in the home and architectural history peaked my interest. Jenkins talks about the the corridor (or hallway) as a relatively recent addition to the home. Previously, rooms were simply connected to one another with minimal barriers to provide privacy. As noted by the Victorian architectural critic Robert Kerr, the home needed a separation between the private spaces of its occupants and the common spaces of the public sphere. Corridors were introduced to the home to separate occupants from servants, the latter being required to request entry from the corridor.</p>
+<p>An interesting historical note but also paralleling my current work on zoning and land use. In the same way that the rooms of the home are a private space requiring a separation by design via corridors, zoning segregates land use between private residential space and shared retail and public space. Those passing through a residential community are relegated to the streets (i.e., corridors) of the neighbourhood. Entry to the social space of the residence (and increasingly many third spaces such as clubs and eateries) is restricted through zoning and access requires the permission of the private owner.</p>
+
+
+
+ ]]></description>
+  <category>architecture</category>
+  <category>land use planning</category>
+  <guid>https://hawkins-tech-lab.github.io/thoughts/posts/05-14-2025/</guid>
+  <pubDate>Wed, 14 May 2025 06:00:00 GMT</pubDate>
+  <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/05-14-2025/banner.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Nature as organism. Nature as machine.</title>
+  <dc:creator>Jason Hawkins</dc:creator>
+  <link>https://hawkins-tech-lab.github.io/thoughts/posts/05-13-2025/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Let us begin with a framing curtesy of the Deep Ecology philosopher Geoge Sessions, who argues that Western perspectives on nature have long been influenced by the Christian anthropocentric theology. Francis Bacon (in Novum Organon) claimed that science would allow humans to regain control over Nature, lost with the fall of Adam in the Garden of Eden. Descartes continued the argument through his mind-body dualism, the view that only humans had minds; all other animals were merely bodies (machines).</p>
+<p>The Scientific Revolution shifted the standard view of the natural world as a living organism towards a view of nature as a “mechanistic clockwork image of the world as a machine” (Sessions, Deep Ecology for the Twenty-First Century: Readings on the Philosophy and Practice of the New Environmentalism, p.&nbsp;161). Through the scientific method, humans could control and shape nature to our will. The modern era has seen an extension of this worldview to encompass technology-based innovation as a further means of control and domination.</p>
+<p>Ecocentralism has only come back as a mainstream view since the mid-20th century through the advocacy of David Bower and the Sierra Club, among others. However, it remains subordinate to an environmental movement focused on what Sessions terms an anthropocentric industrial “pollution conciousness” with a narrow focus on human survival. Stephen Fox argues that this environmental movement (led by Barry Commoner, Ralph Nader, and the Environmental Defense Fund) saw industrial pollution as the main problem to be solved. Commoner engaged in debates with the biologist Paul Ehrlich over whether overpopulation was a major factor (Ehrlich’s view). Critically, such pollution-framings are short-range and conducive to technological solutions - capture the emissions and all will be well. Long-range ecocentric concerns incluidng wild ecosystem preservation and species protection receive less attention.</p>
+<p>The short-range environmental perspective is prevalent among engineers; not surprising given its focus on nature as a machine. Like any machine, the solution is a technology that reinstates the component’s function. Well-meaning and environmentally-minded engineers offer carbon capture, electric vehicles, and heat pumps as the solutions to pollution damage. As an engineer, I am trained in the identification of problems according to this mechanistic paradigm and its solution via engineering design. However, as a systems scientist I understand the importance of humility regarding our incomplete understanding and myopic thinking about nature. As an organism, or more correctly ecosystem of interdependent organisms, nature encompasses all that we observed on Earth (and much more). Even as our hubris increasingly sees us question our own power relative to artificial intelligences created by humans, we remain woefully ignorant of the consequences of our actions. Let us hope that we can introduce a little more humanity and a little less machination in our thinking.</p>
+
+
+
+ ]]></description>
+  <category>environmental philosophy</category>
+  <guid>https://hawkins-tech-lab.github.io/thoughts/posts/05-13-2025/</guid>
+  <pubDate>Tue, 13 May 2025 06:00:00 GMT</pubDate>
+  <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/05-13-2025/banner.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Ecosystem Service Measurement</title>
   <dc:creator>Jason Hawkins</dc:creator>
