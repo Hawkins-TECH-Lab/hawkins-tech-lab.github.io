@@ -1,69 +1,8 @@
 [
   {
-    "listing": "/research/shared_mobility/index.html",
-    "items": []
-  },
-  {
-    "listing": "/research/equity/index.html",
-    "items": [
-      "/publications/2024_007_Access_Equity/index.html",
-      "/publications/2024_006_EVSE_Equity_NE/index.html",
-      "/publications/2024_002_EVSE_Equity/index.html"
-    ]
-  },
-  {
-    "listing": "/research/choice_methods/index.html",
-    "items": [
-      "/publications/2024_004_Transportation_MGP/index.html"
-    ]
-  },
-  {
-    "listing": "/index.html",
-    "items": [
-      "/research/choice_methods/index.html",
-      "/research/ecological_economics/index.html",
-      "/research/equity/index.html",
-      "/research/infrastructure_finance/index.html",
-      "/research/shared_mobility/index.html",
-      "/research/vehicle_adoption/index.html"
-    ]
-  },
-  {
-    "listing": "/publications/index.html",
-    "items": [
-      "/publications/2024_009_Mapping_Vehicle_Diffusion/index.html",
-      "/publications/2024_008_Resource_Networks/index.html",
-      "/publications/2024_007_Access_Equity/index.html",
-      "/publications/2024_006_EVSE_Equity_NE/index.html",
-      "/publications/2024_005_Better_Safety/index.html",
-      "/publications/2024_004_Transportation_MGP/index.html",
-      "/publications/2024_003_EV_ICLV/index.html",
-      "/publications/2024_002_EVSE_Equity/index.html",
-      "/publications/2024_001_EV_EVSE/index.html"
-    ]
-  },
-  {
-    "listing": "/research/ecological_economics/index.html",
-    "items": [
-      "/publications/2024_008_Resource_Networks/index.html"
-    ]
-  },
-  {
-    "listing": "/research/infrastructure_finance/index.html",
-    "items": []
-  },
-  {
-    "listing": "/research/vehicle_adoption/index.html",
-    "items": [
-      "/publications/2024_009_Mapping_Vehicle_Diffusion/index.html",
-      "/publications/2024_006_EVSE_Equity_NE/index.html",
-      "/publications/2024_003_EV_ICLV/index.html",
-      "/publications/2024_001_EV_EVSE/index.html"
-    ]
-  },
-  {
     "listing": "/thoughts/blog.html",
     "items": [
+      "/thoughts/posts/06-02-2025/index.html",
       "/thoughts/posts/05-28-2025/index.html",
       "/thoughts/posts/05-14-2025/index.html",
       "/thoughts/posts/05-13-2025/index.html",
@@ -83,5 +22,67 @@
       "/thoughts/posts/09-11-2017/index.html",
       "/thoughts/posts/07-03-2017/index.html"
     ]
+  },
+  {
+    "listing": "/research/vehicle_adoption/index.html",
+    "items": [
+      "/publications/2024_009_Mapping_Vehicle_Diffusion/index.html",
+      "/publications/2024_006_EVSE_Equity_NE/index.html",
+      "/publications/2024_003_EV_ICLV/index.html",
+      "/publications/2024_001_EV_EVSE/index.html"
+    ]
+  },
+  {
+    "listing": "/research/infrastructure_finance/index.html",
+    "items": []
+  },
+  {
+    "listing": "/research/ecological_economics/index.html",
+    "items": [
+      "/publications/2024_008_Resource_Networks/index.html"
+    ]
+  },
+  {
+    "listing": "/publications/index.html",
+    "items": [
+      "/publications/2024_009_Mapping_Vehicle_Diffusion/index.html",
+      "/publications/2024_008_Resource_Networks/index.html",
+      "/publications/2024_007_Access_Equity/index.html",
+      "/publications/2024_006_EVSE_Equity_NE/index.html",
+      "/publications/2024_005_Better_Safety/index.html",
+      "/publications/2024_004_Transportation_MGP/index.html",
+      "/publications/2024_003_EV_ICLV/index.html",
+      "/publications/2024_002_EVSE_Equity/index.html",
+      "/publications/2024_001_EV_EVSE/index.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/research/choice_methods/index.html",
+      "/research/ecological_economics/index.html",
+      "/research/equity/index.html",
+      "/research/infrastructure_finance/index.html",
+      "/research/shared_mobility/index.html",
+      "/research/vehicle_adoption/index.html"
+    ]
+  },
+  {
+    "listing": "/research/choice_methods/index.html",
+    "items": [
+      "/publications/2024_004_Transportation_MGP/index.html"
+    ]
+  },
+  {
+    "listing": "/research/equity/index.html",
+    "items": [
+      "/publications/2024_007_Access_Equity/index.html",
+      "/publications/2024_006_EVSE_Equity_NE/index.html",
+      "/publications/2024_002_EVSE_Equity/index.html"
+    ]
+  },
+  {
+    "listing": "/research/shared_mobility/index.html",
+    "items": []
   }
 ]
