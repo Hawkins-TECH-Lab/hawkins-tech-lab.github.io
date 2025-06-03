@@ -19,7 +19,9 @@ We are particularly interested in students with transdisciplinary research inter
 | | Name | About
  ---|:---:|---
 
- | ![](../assets/images/team/blank_avatar.jpg){style="float:right; padding: 0 0 0 0; object-fit: cover; object-position: top;" fig-align="center" width="166" height="200"}           | Sam Pollock | Sam is a Ph.D. student in transportation engineering at the University of Calgary - co-supervised with Dr. Lina Kattan. Sam is an NSERC PGS-S scholar. He received his M.Sc. in transportation engineering and B.Sc. in civil engineering from the University of Calgary. He is working on multi-use path design in Calgary using choice experiments and analytic models. |
+ | ![](../assets/images/team/blank_avatar.jpg){style="float:right; padding: 0 0 0 0; object-fit: cover; object-position: top;" fig-align="center" width="166" height="200"}           | Asiri Senasinghe | “The future belongs to those who see possibilities before they become obvious” ~ John Sculley.
+
+Asiri Senasinghe is a dedicated researcher with a PhD and MSc in Civil Engineering from the University of Calgary, where his doctoral work focused on enhancing public transit equity through simulation and mathematical modelling. He also holds an MSc in Applied Statistics, with an emphasis on highway safety improvements, along with an MSc in Applied Electronics and a BSc in Applied Sciences. His research interests centre on developing sustainable urban transportation systems to create resilient, equitable cities prepared for rapid future changes.|
 
 ## Graduate Students
 
@@ -27,7 +29,8 @@ We are particularly interested in students with transdisciplinary research inter
 
 | | Name | About
  ---|:---:|---
- | ![](../assets/images/team/blank_avatar.jpg){style="float:right; padding: 0 0 0 0; object-fit: cover; object-position: top;" fig-align="center" width="166" height="200"}           | Sam Pollock | Sam is a Ph.D. student in transportation engineering at the University of Calgary - co-supervised with Dr. Lina Kattan. Sam is an NSERC PGS-S scholar. He received his M.Sc. in transportation engineering and B.Sc. in civil engineering from the University of Calgary. He is working on multi-use path design in Calgary using choice experiments and analytic models. |
+  | ![](../assets/images/team/blank_avatar.jpg){style="float:right; padding: 0 0 0 0; object-fit: cover; object-position: top;" fig-align="center" width="166" height="200"}           | Mehrnoosh Zare | Mehrnoosh is an M.Sc. student in Transportation Engineering at the University of Calgary. She received her M.Sc. in Industrial Engineering with a specialization in Logistics and Supply Chain Management from K.N Toosi University of Technology and her B.Sc. in Industrial Engineering from Azad University. |
+ | ![](../assets/images/team/blank_avatar.jpg){style="float:right; padding: 0 0 0 0; object-fit: cover; object-position: top;" fig-align="center" width="166" height="200"}           | Sam Pollock | Sam Pollock is a PhD student whose research focuses on the safety, comfort, and design of multi-use pathways. He is passionate about using preference and behavioural modelling to understand transportation choices and encourage people to make healthy and sustainable transportation decisions. Sam previously completed his BSc and MSc in Civil Engineering at the University of Calgary. Outside academia, Sam's interests include coaching speed skating, climbing mountains, and baking banana bread. |
 | ![](../assets/images/team/blank_avatar.jpg){style="float:right; padding: 0 0 0 0; object-fit: cover; object-position: top;" fig-align="center" width="166" height="200"}           | Mohammed Abuhadrous | Mohammed is an M.Sc. student in transportation engineering at the University of Calgary - co-supervised with Dr. Lina Kattan. Mohammed received his B.Sc. in electrical engineering from XXX. He is working on EV charging station planning for multi-unit dwellings in Calgary considering travel patterns and grid constraints. |
 | ![](../assets/images/team/hania.jpg){style="float:right; padding: 0 0 0 0; object-fit: cover; object-position: top;" fig-align="center" width="166" height="200"}           | Hania Afzal | Hania is a Ph.D. student in engineering policy at the University of Nebraska-Lincoln. She received her M.Sc. in Economics from IBA Karachi and her B.Sc. in Economics from Quaid-I-Azam University. Prior to joining UNL, Hania was a researcher at Pakistan Institute of Development Economics (PIDE). She is currently working on electric vehicle adoption in the United States. |
 | ![](../assets/images/team/omid.jpg){style="float:right; padding: 0 0 0 0; object-fit: cover; object-position: top;" fig-align="center" width="166" height="200"}           | Omid Armantalab | Omid is a Ph.D. student in transportation engineering at the University of Nebraska-Lincoln. He received his M.Sc. in Civil Engineering from Amirkabir University of Technology and his B.Sc. in Civil Engineering from Kharazmi University. He is currently working on Bayesian statistical representations of transportation accessibility for equity and Justice40 applications.|
@@ -39,9 +42,8 @@ Undergraduate students at the University of Calgary are encouraged to reach out 
 
 : {tbl-colwidths="[20,25,60]"}
 
-| | Name | About
- ---|:---:|---
-| ![](../../assets/images/team/blank_avatar.jpg){style="float:right; padding: 0 0 0 0; object-fit: cover; object-position: top;" fig-align="center" width="166" height="200"}        | Yasmine Baccari | Yasmine is a sophomore computer science student at the University of Nebraska-Lincoln. He is from Kathmandu, Nepal. Sagun is working on network science analysis and provides coding assistance to the research group. |
+:---|:---|:---|:---
+2025 | Yasmine Baccari | B.S. Civil Engineering | University of Calgary
 
 ## Previous Students
 : {tbl-colwidths="[20,25,60]"}
@@ -52,11 +54,11 @@ Undergraduate students at the University of Calgary are encouraged to reach out 
 
 
 
-|Year | Name | Degree
-:---|:---|---
-2023-2024 | Kun-Yu Lee| B.S.
-2022-2024 | Sagun Karki| B.S.
-2022-2023 | Abigail Metschke| B.S.
-2022-2023 | William Turman  | B.S.
-2022-2022 | Casey Nolte         | B.S.
-2022-2022 | Kumo Babe          | B.S.
+|Year | Name | Degree| Institution
+:---|:---|:---|:---
+2023-2024 | Kun-Yu Lee| B.S. Computer Science | University of Nebraska
+2022-2024 | Sagun Karki| B.S. Computer Science | University of Nebraska
+2022-2023 | Abigail Metschke| B.S. Environmental Engineering | University of Nebraska
+2022-2023 | William Turman  | B.S. Civil Engineering | University of Nebraska
+2022-2022 | Casey Nolte         | B.S. Chemical Engineering | University of Nebraska
+2022-2022 | Kumo Babe          | B.S. Mechanical Engineering | University of Nebraska
