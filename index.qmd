@@ -15,6 +15,7 @@ listing:
     - research/infrastructure_finance/index.qmd
     - research/shared_mobility/index.qmd
     - research/vehicle_adoption/index.qmd
+    - research/general_transport/index.qmd
   grid-columns: 3
 ---
 <div class="gradient-text">

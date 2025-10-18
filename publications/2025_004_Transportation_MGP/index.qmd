@@ -1,14 +1,14 @@
 ---
 title: "Goal Pursuit and Its Applications to Transportation"
 author: ["Jason Hawkins", "Omid Armantalab"]
-publication: "_under review_ (2024)"
+publication: "_under review_ (2025)"
 categories:
   - "choice_methods"
 url_source: 
-url_preprint: "http://dx.doi.org/10.13140/RG.2.2.20810.38086"
+url_preprint: "http://dx.doi.org/10.2139/ssrn.5210957"
 journ: "under review"
 # issue: issue
 # page: page
-year: 2024
+year: 2025
 pub_number: 4
 ---

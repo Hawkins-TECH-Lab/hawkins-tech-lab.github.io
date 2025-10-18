@@ -1,0 +1,25 @@
+---
+title: General Transport
+alias: &ALIAS transport
+image: featured.jpg
+listing:
+  id: pubs
+  template: ../../_ejs/publications-people.ejs 
+  contents: ../../publications/**/*.qmd
+  sort: "pub_number desc"
+  # sort-ui: true
+  filter-ui: true
+  include:
+    categories: *ALIAS
+  fields: [publication, title, categories, image, date, author]
+
+---
+![](featured.jpg)
+
+Transportation engineering and planning is a core area of our research. We conduct research across a wide range of topics in this area.
+
+## Related Publications
+
+
+:::{#pubs}
+:::
