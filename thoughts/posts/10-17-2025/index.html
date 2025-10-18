@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Jason Hawkins">
+<meta name="dcterms.date" content="2025-10-17">
 
-<title>Equity – Hawkinslab</title>
+<title>Are we producers or are we consumers. – Hawkinslab</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,65 +68,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-pubs .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-publication','listing-title','listing-categories','listing-image','listing-date','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
-      
-      searchColumns: ["listing-project","listing-editor","listing-website","listing-format","listing-language","listing-title","listing-author","listing-publication","listing-categories","listing-url_source","listing-url_preprint","listing-journ","listing-year","listing-pub_number","listing-path","listing-outputHref","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-issue"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-pubs'] = new List('listing-pubs', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -137,8 +79,8 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../assets/images/logo_tech.png" alt="TECH Group" class="navbar-logo">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../assets/images/logo_tech.png" alt="TECH Group" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -148,11 +90,11 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../team/index.html"> 
+    <a class="nav-link" href="../../../team/index.html"> 
 <span class="menu-text">Team</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../publications/index.html"> 
+    <a class="nav-link" href="../../../publications/index.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -161,15 +103,15 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-teaching">    
         <li>
-    <a class="dropdown-item" href="../../teaching/CIVE461/index.html">
+    <a class="dropdown-item" href="../../../teaching/CIVE461/index.html">
  <span class="dropdown-text">CIVE461/861</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../teaching/ENCI707/index.html">
+    <a class="dropdown-item" href="../../../teaching/ENCI707/index.html">
  <span class="dropdown-text">ENCI707</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../teaching/Guest Lectures/CIVE990T.html">
+    <a class="dropdown-item" href="../../../teaching/Guest Lectures/CIVE990T.html">
  <span class="dropdown-text">CIVE990T</span></a>
   </li>  
     </ul>
@@ -180,11 +122,11 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-thoughts">    
         <li>
-    <a class="dropdown-item" href="../../thoughts/books.html">
+    <a class="dropdown-item" href="../../../thoughts/books.html">
  <span class="dropdown-text">Books</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../thoughts/blog.html">
+    <a class="dropdown-item" href="../../../thoughts/blog.html">
  <span class="dropdown-text">Blog</span></a>
   </li>  
     </ul>
@@ -192,7 +134,7 @@ window.Quarto = {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="../../index.xml"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../../../index.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -207,28 +149,39 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#related-publications" id="toc-related-publications" class="nav-link active" data-scroll-target="#related-publications">Related Publications</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Equity</h1>
-</div>
+<h1 class="title">Are we producers or are we consumers.</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Economics</div>
+    <div class="quarto-category">Production</div>
+    <div class="quarto-category">Consumption</div>
+  </div>
+  </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Jason Hawkins </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 17, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -238,214 +191,13 @@ window.Quarto = {
 </header>
 
 
-<p><img src="featured.jpg" class="img-fluid"></p>
-<p>Equity is an important aspect of any research that affects humans, or any other species, to ensure the fair distribution of benefits in a world with unequal power relationships. Our research in this area focuses on methods and tools to aid decision-makers in their efforts to ensure equity in policy and infratructure investments.</p>
-<section id="related-publications" class="level2">
-<h2 class="anchored" data-anchor-id="related-publications">Related Publications</h2>
-<div id="listing-pubs" class="quarto-listing quarto-listing-container-custom">
-<div class="listing-actions-group">
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<div class="list quarto-listing-default">
-    
-    
-    <div class="quarto-post image-right" data-index="0" data-categories="equity" data-listing-file-modified-sort="1759368681537" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-        <div class="thumbnail">
-            <!-- <a href="/publications\2024_007_Access_Equity\index.qmd"> -->
-
-                <p>
-                    
-
-                </p>
-      
-
-            <!-- </a> -->
-        </div>
-        <div class="body">
-            <!-- <a href="/publications\2024_007_Access_Equity\index.qmd"> -->
-            <div class="no-anchor listing-pub-title listing-title">Transportation Access Equity Analysis in Two U.S. Cities Using Bayesian Inference-Based Logsum Compensating Variation Metrics</div>
-            <!-- </a> -->
-            <!-- <a href="/publications\2024_007_Access_Equity\index.qmd"> -->
-                
-                <div class="listing-pub-author listing-author">
-                    Omid Armantalab, Jason Hawkins, Md Sami Hasnine<br> 
-                </div>
-                
-                <div class="metadata-value listing-pub-journal listing-publication">
-                    
-                        <i>Travel Behaviour and Society</i>, <b>41</b> (2025)<br>
-                        
-                        
-                        
-                        
-                        
-                        
-                </div>
-                    
-                    
-                    
-            <!-- </a> -->
- <!--               <div class="listing-categories">
-                
-                <div class="listing-category" onclick="window.quartoListingCategory('equity'); return false;">equity</div>
-                
-                </div>
-                -->
-        </div>
-        <div class="metadata">
-
-            
-            <div class="listing-pub-url">
-
-                    <a href="10.1016/j.tbs.2025.101073">
-                    <p style="color:#8250E6;">journal URL <i class="bi bi-box-arrow-up-right"></i></p>
-                    </a>
-                </div>
-                    
-  
-              
-
-        </div>
-    </div>
-    
-    
-    
-    <div class="quarto-post image-right" data-index="1" data-categories="vehicle_adoption,equity" data-listing-file-modified-sort="1738707330343" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-        <div class="thumbnail">
-            <!-- <a href="/publications\2024_006_EVSE_Equity_NE\index.qmd"> -->
-
-                <p>
-                    
-
-                </p>
-      
-
-            <!-- </a> -->
-        </div>
-        <div class="body">
-            <!-- <a href="/publications\2024_006_EVSE_Equity_NE\index.qmd"> -->
-            <div class="no-anchor listing-pub-title listing-title">Framework for Quantifying Benefits of Electric Vehicle Charging Infrastructure to Disadvantaged Communities</div>
-            <!-- </a> -->
-            <!-- <a href="/publications\2024_006_EVSE_Equity_NE\index.qmd"> -->
-                
-                <div class="listing-pub-author listing-author">
-                    Donya Negahbani, Li Zhao, Jason Hawkins, Nathan Huynh<br> 
-                </div>
-                
-                <div class="metadata-value listing-pub-journal listing-publication">
-                    
-                        <i>under review</i> (2024)<br>
-                        
-                        
-                        
-                        
-                        
-                        
-                </div>
-                    
-                    
-                    
-            <!-- </a> -->
- <!--               <div class="listing-categories">
-                
-                <div class="listing-category" onclick="window.quartoListingCategory('vehicle_adoption'); return false;">vehicle_adoption</div>
-                
-                <div class="listing-category" onclick="window.quartoListingCategory('equity'); return false;">equity</div>
-                
-                </div>
-                -->
-        </div>
-        <div class="metadata">
-
-            
-  
-              
-            <div class="listing-pub-url">
-
-                    <a href="http://dx.doi.org/10.13140/RG.2.2.30876.71040">
-                    <p style="color:#8250E6;">preprint URL <i class="bi bi-box-arrow-up-right"></i></p>
-                    </a>
-                </div>
-                    
-
-        </div>
-    </div>
-    
-    
-    
-    <div class="quarto-post image-right" data-index="2" data-categories="equity" data-listing-file-modified-sort="1738707330337" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-        <div class="thumbnail">
-            <!-- <a href="/publications\2024_002_EVSE_Equity\index.qmd"> -->
-
-                <p>
-                    
-
-                </p>
-      
-
-            <!-- </a> -->
-        </div>
-        <div class="body">
-            <!-- <a href="/publications\2024_002_EVSE_Equity\index.qmd"> -->
-            <div class="no-anchor listing-pub-title listing-title">An EVSE Equity Analysis Framework Considering Differential Job Access</div>
-            <!-- </a> -->
-            <!-- <a href="/publications\2024_002_EVSE_Equity\index.qmd"> -->
-                
-                <div class="listing-pub-author listing-author">
-                    Donya Negahbani, Ben Aaron, Jason Hawkins<br> 
-                </div>
-                
-                <div class="metadata-value listing-pub-journal listing-publication">
-                    
-                        <i>under review</i> (2024)<br>
-                        
-                        
-                        
-                        
-                        
-                        
-                </div>
-                    
-                    
-                    
-            <!-- </a> -->
- <!--               <div class="listing-categories">
-                
-                <div class="listing-category" onclick="window.quartoListingCategory('equity'); return false;">equity</div>
-                
-                </div>
-                -->
-        </div>
-        <div class="metadata">
-
-            
-            <div class="listing-pub-url">
-
-                    <a href="https://doi.org/10.13140/RG.2.2.15832.06407/1">
-                    <p style="color:#8250E6;">journal URL <i class="bi bi-box-arrow-up-right"></i></p>
-                    </a>
-                </div>
-                    
-  
-              
-
-        </div>
-    </div>
-    
-    
-    </div>
-
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
+<p>According to Schumacher, “economics operates legitimately and usefully within a given framework which lies altogether outside the economic calculus”. Economics is therefore a “derived” body of thought (from within meta-economics) which requires one to be constantly cognizant of its assumptions while engaging in analysis within the economic framing. Edward Copleston pointed to the danger of economics usurping the rest of science roughly 200 years ago, due to its relevance to certain strong drivers of human nature - envy and greed. Schumacher makes the distinction between ‘primary’ goods taken directly from nature and ‘secondary’ goods that are manufactured by humans out of primary goods. He reasons that increased production of manufacture(secondary) goods is predicated on the ability to extract additional primary resources from the earth. Critical to the present discussion, this framing of economics requires us to make clear distinctions between production and consumption, which are often less coherent on further inspection.</p>
+<p>According to the economic calculus, we engage in productive work so as to purchase certain amenities or comforts in the market as ‘consumers’. However, as Schumacher notes, everything depends on whether one considers man-as-producer or man-as-consumer. If a person uses a luxurious car or flies first-class for business, man-as-producer, it is considered a waste of money. The same person traveling for leisure, man-as-consumer, is considered to be exhibiting a high standard of life. Schumacher, like Marx, often goes back to land as a primary means of production around which to frame his argument. In an intriguing parallel to Harden’s ‘Tragedy Of the Commons’, Schumacher notes that the farmer who raises his productivity and lowers his costs (e.g., through the application of synthetic fertilizers and mechanization) does so at the expenese of man-as-consumer, who suffers from water contamination, climate change, and lost landscape aesthetics. In a tongue-in-cheek remark, Schumacher states “[t]here are large-scale farmers, horticulturists, food manufacturers and fruit growers today who would never think of consuming any of their own products. ’Luckily, they say, ’we have enough money to be able to afford to buy products which have been organically grown, without the use of poisons.” He then continues with the hypothetical of asking said farmer why they do not follow similar practices on their own farm, to which they respond that they could not afford it, offering through a stark dichotomy of man-as-producer and man-as-consumer a picture of our competing roles. In my own research on goal-based choice, I am looking at how we might reframe these tradeoffs - work that requires careful meta-economic thought.</p>
+<p>Turning to the moral implications of primary and secondary goods, Schumacher contrasts the use of a car with that of a calf. One could legitimately argue that the best management strategy for a car (a manufactured secondary good) is to neglect maintenance and simply run it to ruin. If economical, one cannot be faulted for acting upon this logic as there is nothing sacred about secondary goods. On the other hand, treating a calf in the same manner would raise raise questions regarding the morality of inflicting suffering on a living and sensitive creature for the sake of utility maximization. With the caveat that I am by no means a virtuous vegan (though I try to limit my meat consumption), one does not have to look far to find such suffering on display in our industrialized agriculture system.</p>
+<p>Some may argue that Schumacher is a fringe economic philosopher in the field of economics, though he was a protege of the venerated John Maynard Keynes. Let me then talk about another economists, Sir Richard Stone, who some consider the ‘father of national income accounting’. He too was leary of applying economic calculus outside the market. Sir Stone questioned the exclusion of household labour from the United Nations System of National Accounts (UN-SNA). 70+ years on, there remains little theory that explains why homemakers should not be included in GDP. SNA developers have devised a different defence because although equivalent to work done by servants “by convention… only the wages of the domestic staff are treated as the value of output”. We are brought back to the confounding of man-as-producer and man-as-consumer. There is an awkward logic to GDP rising if we look after each others children, essentially swapping home production for market production that adds no additional wellbeing to any of the individuals involved in the exchange (unless you are a child with much better neighbours than parents). Despite this apparent inability to value home production, the home itself is included in GDP accounts. In the United States, such ‘work’ amounts to 6 per cent of GDP even though none of this work exists. It is simply payment of rents from the home owners to themselves as a measure of capital gains. The argument made is that there would be a distortion in international and inter-temporal comparisons of production and consumption if housing services were ignored in the GDP accounts. The example would be Switzerland (high rent rate) having a higher GDP than the US (high ownership rate) due to the difference in these rates. Rent seeking is also an issue - increasing the rent increases the value produced by the real estate sector, but what if the quality of rental services does not see a corresponding improvement? Vancouver and Toronto tenants know too well the impact of rising real estate markets but no change in quality of life for them as tenants.</p>
+<p>The image for this post is inspired by my slow capitulating to the AI overlords.</p>
 
 
-
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -868,6 +620,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<script src="https://giscus.app/client.js" data-repo="UNL-Hawkins-Lab/blogComment" data-repo-id="" data-category="Blog" data-category-id="" data-mapping="title" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="en" crossorigin="anonymous" async="">
+</script>
+<input type="hidden" id="giscus-base-theme" value="light">
+<input type="hidden" id="giscus-alt-theme" value="dark">
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

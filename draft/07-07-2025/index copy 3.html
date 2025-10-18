@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Jason Hawkins">
+<meta name="dcterms.date" content="2025-07-07">
 
-<title>Equity – Hawkinslab</title>
+<title>The Roles of the University. – Hawkinslab</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +32,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -68,65 +68,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-pubs .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-publication','listing-title','listing-categories','listing-image','listing-date','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
-      
-      searchColumns: ["listing-project","listing-editor","listing-website","listing-format","listing-language","listing-title","listing-author","listing-publication","listing-categories","listing-url_source","listing-url_preprint","listing-journ","listing-year","listing-pub_number","listing-path","listing-outputHref","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-issue"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-pubs'] = new List('listing-pubs', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -207,28 +149,38 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#related-publications" id="toc-related-publications" class="nav-link active" data-scroll-target="#related-publications">Related Publications</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Equity</h1>
-</div>
+<h1 class="title">The Roles of the University.</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Education</div>
+    <div class="quarto-category">Funding</div>
+  </div>
+  </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Jason Hawkins </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">July 7, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -238,214 +190,15 @@ window.Quarto = {
 </header>
 
 
-<p><img src="featured.jpg" class="img-fluid"></p>
-<p>Equity is an important aspect of any research that affects humans, or any other species, to ensure the fair distribution of benefits in a world with unequal power relationships. Our research in this area focuses on methods and tools to aid decision-makers in their efforts to ensure equity in policy and infratructure investments.</p>
-<section id="related-publications" class="level2">
-<h2 class="anchored" data-anchor-id="related-publications">Related Publications</h2>
-<div id="listing-pubs" class="quarto-listing quarto-listing-container-custom">
-<div class="listing-actions-group">
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<div class="list quarto-listing-default">
-    
-    
-    <div class="quarto-post image-right" data-index="0" data-categories="equity" data-listing-file-modified-sort="1759368681537" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-        <div class="thumbnail">
-            <!-- <a href="/publications\2024_007_Access_Equity\index.qmd"> -->
-
-                <p>
-                    
-
-                </p>
-      
-
-            <!-- </a> -->
-        </div>
-        <div class="body">
-            <!-- <a href="/publications\2024_007_Access_Equity\index.qmd"> -->
-            <div class="no-anchor listing-pub-title listing-title">Transportation Access Equity Analysis in Two U.S. Cities Using Bayesian Inference-Based Logsum Compensating Variation Metrics</div>
-            <!-- </a> -->
-            <!-- <a href="/publications\2024_007_Access_Equity\index.qmd"> -->
-                
-                <div class="listing-pub-author listing-author">
-                    Omid Armantalab, Jason Hawkins, Md Sami Hasnine<br> 
-                </div>
-                
-                <div class="metadata-value listing-pub-journal listing-publication">
-                    
-                        <i>Travel Behaviour and Society</i>, <b>41</b> (2025)<br>
-                        
-                        
-                        
-                        
-                        
-                        
-                </div>
-                    
-                    
-                    
-            <!-- </a> -->
- <!--               <div class="listing-categories">
-                
-                <div class="listing-category" onclick="window.quartoListingCategory('equity'); return false;">equity</div>
-                
-                </div>
-                -->
-        </div>
-        <div class="metadata">
-
-            
-            <div class="listing-pub-url">
-
-                    <a href="10.1016/j.tbs.2025.101073">
-                    <p style="color:#8250E6;">journal URL <i class="bi bi-box-arrow-up-right"></i></p>
-                    </a>
-                </div>
-                    
-  
-              
-
-        </div>
-    </div>
-    
-    
-    
-    <div class="quarto-post image-right" data-index="1" data-categories="vehicle_adoption,equity" data-listing-file-modified-sort="1738707330343" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-        <div class="thumbnail">
-            <!-- <a href="/publications\2024_006_EVSE_Equity_NE\index.qmd"> -->
-
-                <p>
-                    
-
-                </p>
-      
-
-            <!-- </a> -->
-        </div>
-        <div class="body">
-            <!-- <a href="/publications\2024_006_EVSE_Equity_NE\index.qmd"> -->
-            <div class="no-anchor listing-pub-title listing-title">Framework for Quantifying Benefits of Electric Vehicle Charging Infrastructure to Disadvantaged Communities</div>
-            <!-- </a> -->
-            <!-- <a href="/publications\2024_006_EVSE_Equity_NE\index.qmd"> -->
-                
-                <div class="listing-pub-author listing-author">
-                    Donya Negahbani, Li Zhao, Jason Hawkins, Nathan Huynh<br> 
-                </div>
-                
-                <div class="metadata-value listing-pub-journal listing-publication">
-                    
-                        <i>under review</i> (2024)<br>
-                        
-                        
-                        
-                        
-                        
-                        
-                </div>
-                    
-                    
-                    
-            <!-- </a> -->
- <!--               <div class="listing-categories">
-                
-                <div class="listing-category" onclick="window.quartoListingCategory('vehicle_adoption'); return false;">vehicle_adoption</div>
-                
-                <div class="listing-category" onclick="window.quartoListingCategory('equity'); return false;">equity</div>
-                
-                </div>
-                -->
-        </div>
-        <div class="metadata">
-
-            
-  
-              
-            <div class="listing-pub-url">
-
-                    <a href="http://dx.doi.org/10.13140/RG.2.2.30876.71040">
-                    <p style="color:#8250E6;">preprint URL <i class="bi bi-box-arrow-up-right"></i></p>
-                    </a>
-                </div>
-                    
-
-        </div>
-    </div>
-    
-    
-    
-    <div class="quarto-post image-right" data-index="2" data-categories="equity" data-listing-file-modified-sort="1738707330337" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-        <div class="thumbnail">
-            <!-- <a href="/publications\2024_002_EVSE_Equity\index.qmd"> -->
-
-                <p>
-                    
-
-                </p>
-      
-
-            <!-- </a> -->
-        </div>
-        <div class="body">
-            <!-- <a href="/publications\2024_002_EVSE_Equity\index.qmd"> -->
-            <div class="no-anchor listing-pub-title listing-title">An EVSE Equity Analysis Framework Considering Differential Job Access</div>
-            <!-- </a> -->
-            <!-- <a href="/publications\2024_002_EVSE_Equity\index.qmd"> -->
-                
-                <div class="listing-pub-author listing-author">
-                    Donya Negahbani, Ben Aaron, Jason Hawkins<br> 
-                </div>
-                
-                <div class="metadata-value listing-pub-journal listing-publication">
-                    
-                        <i>under review</i> (2024)<br>
-                        
-                        
-                        
-                        
-                        
-                        
-                </div>
-                    
-                    
-                    
-            <!-- </a> -->
- <!--               <div class="listing-categories">
-                
-                <div class="listing-category" onclick="window.quartoListingCategory('equity'); return false;">equity</div>
-                
-                </div>
-                -->
-        </div>
-        <div class="metadata">
-
-            
-            <div class="listing-pub-url">
-
-                    <a href="https://doi.org/10.13140/RG.2.2.15832.06407/1">
-                    <p style="color:#8250E6;">journal URL <i class="bi bi-box-arrow-up-right"></i></p>
-                    </a>
-                </div>
-                    
-  
-              
-
-        </div>
-    </div>
-    
-    
-    </div>
-
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
+<p>John Ioannidis argues that public research funds should go towards exploratory research - work that is searching through the jungle, may run into pythons, and is likely to fail in many cases. Industry has the incentives to conduct research for which the answer is clear and the objective to develop a tool. I agree with his perspective for the most part, in that I think many in engineering have a mindset of conducting science with the aim of producing a clear output or tool. Some federal funding in Canada has this model, such as NSERC Alliance which requires the buy-in of an industry partner. One can structure the work in such a way that both basic and applied science can be completed - public dollars going towards basic science and industry match towards applied science. It’s hard though and requires strategic thinking to ensure both are being given their due.</p>
+<p>The Bouchard Report (2023) - a result of capitalist system. The academy has never been the place for commercialization through history. While it is true that the US system has recently moved in this direction, it still maintains a large portion of funding for fundamental research and there are certainly criticisms from within the academy of the incentive distortions that arise due to this structure. This is not to say that applied research and knowledge translation does not have a place in the university, simply that public funds allocated to exploratory research (in Canada NFRF, SSHRC Insight, NSERC DG, CIHR??) should be free from the constraints of producing “tangible outputs/tools for society”. I know I’ve been told to include tool development in my DG, as well as “Yes, discovery is in the name but don’t take too many risks until you’ve proven yourself - a version of Ioannidis’ ‘eminence’/‘evidence’ dialectic.</p>
+<p>Context: Building on the themes of the Naylor Report, the federal government later launched a new Advisory Panel on the Federal Research Support System, chaired by Frédéric Bouchard. Key recommendations: The panel’s report, often called the “Bouchard Report,” outlined 21 recommendations to modernize the federal research system. The goal was to better maximize the impact of investments and improve the agility and coordination of the system, particularly regarding talent development and commercialization. Impact on industry outputs: This report, more directly than the Naylor Report, addressed the system for research funding and commercialization to produce more tangible outputs for industry.</p>
+<p>From Buchard report that I like https://ised-isde.canada.ca/site/panel-federal-research-support/en/report-advisory-panel-federal-research-support-system#32:</p>
+<p>Reinvestment in Canadian research is needed to make up for recent declines in funding for the granting councils and CFI (measured in constant dollars), which have been exacerbated by the exceptionally high inflation experienced in 2022Footnote11. In particular, a widespread view across the community is that there is a growing imbalance between investigator-initiated and mission-driven research. Support for investigator-initiated research has plateaued while new funding has been earmarked for mission-driven or targeted research projects</p>
+<p>The panel was asked for advice to support the Minister of Innovation, Science and Industry and the Minister of Health in delivering on their mandate letter commitment to “modernize the federal research funding ecosystem to maximize the impact of investments in both research excellence and downstream innovation”. - yes, but also recognize that these mandates are coming from a Minister of Industry (Innovation, Science, and Industry) not a trained scientist!</p>
+<p>Recommendation 16: The government should recognize the role that research plays in the innovation continuum. The proposed CKSF and a future national science, research and innovation strategy should have clear linkages to the future work of the Canadian Innovation and Investment Agency and the government’s business-facing innovation and commercialization programming. The CKSF would include a mechanism to mobilize the research and business communities to support emerging research and innovation needs facing the Government of Canada like those experienced during the pandemic. - ok…. but not solely focused on this mission. Basic/fundamental science is critical. Frédéric Bouchard is a philosopher of science, so his work would not be funded under these strictures.</p>
 
 
-
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

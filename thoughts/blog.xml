@@ -10,7 +10,32 @@
 <atom:link href="https://hawkins-tech-lab.github.io/thoughts/blog.xml" rel="self" type="application/rss+xml"/>
 <description>TECH lab website</description>
 <generator>quarto-1.5.56</generator>
-<lastBuildDate>Mon, 23 Jun 2025 06:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 17 Oct 2025 06:00:00 GMT</lastBuildDate>
+<item>
+  <title>Are we producers or are we consumers.</title>
+  <dc:creator>Jason Hawkins</dc:creator>
+  <link>https://hawkins-tech-lab.github.io/thoughts/posts/10-17-2025/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>According to Schumacher, “economics operates legitimately and usefully within a given framework which lies altogether outside the economic calculus”. Economics is therefore a “derived” body of thought (from within meta-economics) which requires one to be constantly cognizant of its assumptions while engaging in analysis within the economic framing. Edward Copleston pointed to the danger of economics usurping the rest of science roughly 200 years ago, due to its relevance to certain strong drivers of human nature - envy and greed. Schumacher makes the distinction between ‘primary’ goods taken directly from nature and ‘secondary’ goods that are manufactured by humans out of primary goods. He reasons that increased production of manufacture(secondary) goods is predicated on the ability to extract additional primary resources from the earth. Critical to the present discussion, this framing of economics requires us to make clear distinctions between production and consumption, which are often less coherent on further inspection.</p>
+<p>According to the economic calculus, we engage in productive work so as to purchase certain amenities or comforts in the market as ‘consumers’. However, as Schumacher notes, everything depends on whether one considers man-as-producer or man-as-consumer. If a person uses a luxurious car or flies first-class for business, man-as-producer, it is considered a waste of money. The same person traveling for leisure, man-as-consumer, is considered to be exhibiting a high standard of life. Schumacher, like Marx, often goes back to land as a primary means of production around which to frame his argument. In an intriguing parallel to Harden’s ‘Tragedy Of the Commons’, Schumacher notes that the farmer who raises his productivity and lowers his costs (e.g., through the application of synthetic fertilizers and mechanization) does so at the expenese of man-as-consumer, who suffers from water contamination, climate change, and lost landscape aesthetics. In a tongue-in-cheek remark, Schumacher states “[t]here are large-scale farmers, horticulturists, food manufacturers and fruit growers today who would never think of consuming any of their own products. ’Luckily, they say, ’we have enough money to be able to afford to buy products which have been organically grown, without the use of poisons.” He then continues with the hypothetical of asking said farmer why they do not follow similar practices on their own farm, to which they respond that they could not afford it, offering through a stark dichotomy of man-as-producer and man-as-consumer a picture of our competing roles. In my own research on goal-based choice, I am looking at how we might reframe these tradeoffs - work that requires careful meta-economic thought.</p>
+<p>Turning to the moral implications of primary and secondary goods, Schumacher contrasts the use of a car with that of a calf. One could legitimately argue that the best management strategy for a car (a manufactured secondary good) is to neglect maintenance and simply run it to ruin. If economical, one cannot be faulted for acting upon this logic as there is nothing sacred about secondary goods. On the other hand, treating a calf in the same manner would raise raise questions regarding the morality of inflicting suffering on a living and sensitive creature for the sake of utility maximization. With the caveat that I am by no means a virtuous vegan (though I try to limit my meat consumption), one does not have to look far to find such suffering on display in our industrialized agriculture system.</p>
+<p>Some may argue that Schumacher is a fringe economic philosopher in the field of economics, though he was a protege of the venerated John Maynard Keynes. Let me then talk about another economists, Sir Richard Stone, who some consider the ‘father of national income accounting’. He too was leary of applying economic calculus outside the market. Sir Stone questioned the exclusion of household labour from the United Nations System of National Accounts (UN-SNA). 70+ years on, there remains little theory that explains why homemakers should not be included in GDP. SNA developers have devised a different defence because although equivalent to work done by servants “by convention… only the wages of the domestic staff are treated as the value of output”. We are brought back to the confounding of man-as-producer and man-as-consumer. There is an awkward logic to GDP rising if we look after each others children, essentially swapping home production for market production that adds no additional wellbeing to any of the individuals involved in the exchange (unless you are a child with much better neighbours than parents). Despite this apparent inability to value home production, the home itself is included in GDP accounts. In the United States, such ‘work’ amounts to 6 per cent of GDP even though none of this work exists. It is simply payment of rents from the home owners to themselves as a measure of capital gains. The argument made is that there would be a distortion in international and inter-temporal comparisons of production and consumption if housing services were ignored in the GDP accounts. The example would be Switzerland (high rent rate) having a higher GDP than the US (high ownership rate) due to the difference in these rates. Rent seeking is also an issue - increasing the rent increases the value produced by the real estate sector, but what if the quality of rental services does not see a corresponding improvement? Vancouver and Toronto tenants know too well the impact of rising real estate markets but no change in quality of life for them as tenants.</p>
+<p>The image for this post is inspired by my slow capitulating to the AI overlords.</p>
+
+
+
+ ]]></description>
+  <category>Economics</category>
+  <category>Production</category>
+  <category>Consumption</category>
+  <guid>https://hawkins-tech-lab.github.io/thoughts/posts/10-17-2025/</guid>
+  <pubDate>Fri, 17 Oct 2025 06:00:00 GMT</pubDate>
+  <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/10-17-2025/banner.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>On Education</title>
   <dc:creator>Jason Hawkins</dc:creator>
@@ -775,33 +800,6 @@ Sieg, Holger. 2020. <span>“Voluntary Provision of Local Public Goods and Servi
   <guid>https://hawkins-tech-lab.github.io/thoughts/posts/05-04-2018/</guid>
   <pubDate>Fri, 04 May 2018 06:00:00 GMT</pubDate>
   <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/05-04-2018/banner.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>Our Trip to Toronto Through the USA</title>
-  <dc:creator>Jason Hawkins</dc:creator>
-  <link>https://hawkins-tech-lab.github.io/thoughts/posts/09-11-2017/</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>Written after we crossed the country for my Ph.D.&nbsp;in 2017. I haven’t returned to Duluth, MN yet…</p>
-<p>We just completed an exhausting 1 week tour of the northern states: North Dakota, Minnesota, Wisconsin, and Michigan. One of the major take aways for both Heather and myself was the various infrastructure we traversed in the course of our travels. I would like to discuss a bit of this, with some accomonying amateur photography.</p>
-<ol type="1">
-<li>This was the best case of a roller joint on a steel frame structure I have ever seen. It bring back mixed feelings about days in Structure Engineering courses during my undergraduage degree. <img src="https://hawkins-tech-lab.github.io/thoughts/posts/09-11-2017/DSC_0891.JPG" class="img-fluid" alt="Grand Forks, ND Bridge"></li>
-<li>This was a mediocre brewery, but a great spot in Grand Forks, ND. It is situated adjacent to a major rail corridor and take full advantange. There are clear views of the trains rolling into town and by the brewery thanks to large windows looking out onto the street and alley. It was an excellent example of linking the present use of an older structure with its surrounding environment and historical industrial roots. <img src="https://hawkins-tech-lab.github.io/thoughts/posts/09-11-2017/img/DSC_0897.JPG" class="img-fluid" alt="Grand Forks, ND Brewery"></li>
-<li>We drove into Duluth, MN with very little knowledge of its layout and no plans as to what to visit. This is I35 passing through downtown. We pulled off the highway at a downtown exit and planned to walk somewhere for lunch. This rapidly became more of a challenge than expected as it turned out the downtown is largely commercial and wayfinding signage proved less than helpful. The interstate acts to separate the downtown from the lakeshore. It is unclear from this side of the interstate whether there are additional services on the lakeshore side of the roadway and it is clearly prohibitive to pedestrians. We were able to find a pedestrian overpass to the lakeshore, which led to a quaint lakeside retail area. We were able to find an excellent brewery (sense a pattern) called Canal Park Brewing Company. I noticed a similar patttern of the commercial centre being separated from the tourist-focused lakeshore upon arrival in Toronto. This is a model reminiscent of the days of Robert Moses in New York, with his focus on placing large-scale transportation facilities along prime waterfront real estate. <img src="https://hawkins-tech-lab.github.io/thoughts/posts/09-11-2017/DSC_0946.JPG" class="img-fluid" alt="Duluth Interstate"></li>
-<li>We were unable to ride the train, but it gives some incentive to return to the Duluth, MN area. It promises excellent views of the Lake Superior shore and ends at Two Harbors, MN. It feels like a disservice to my profession to miss out on an historical train ride. <img src="https://hawkins-tech-lab.github.io/thoughts/posts/09-11-2017/DSC_0950.JPG" class="img-fluid" alt="Duluth Train"></li>
-</ol>
-
-
-
- ]]></description>
-  <category>travel</category>
-  <category>infrastructure</category>
-  <guid>https://hawkins-tech-lab.github.io/thoughts/posts/09-11-2017/</guid>
-  <pubDate>Mon, 11 Sep 2017 06:00:00 GMT</pubDate>
-  <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/09-11-2017/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
