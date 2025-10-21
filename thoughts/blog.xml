@@ -10,9 +10,67 @@
 <atom:link href="https://hawkins-tech-lab.github.io/thoughts/blog.xml" rel="self" type="application/rss+xml"/>
 <description>TECH lab website</description>
 <generator>quarto-1.5.56</generator>
-<lastBuildDate>Sat, 18 Oct 2025 06:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 20 Oct 2025 06:00:00 GMT</lastBuildDate>
 <item>
-  <title>The Roles of the University.</title>
+  <title>Civilization Complexity and Collapse.</title>
+  <dc:creator>Jason Hawkins</dc:creator>
+  <link>https://hawkins-tech-lab.github.io/thoughts/posts/10-20-2025/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="defining-complex-civilization" class="level1">
+<h1>Defining Complex Civilization</h1>
+<p>Joseph Tainter defines collapse as “a rapid, significant loss of an established level of sociopolitical complexity”. This definition relies on a society maintaining a level of complexity over generations and the loss must be rapid (over a few decades). It is a complex process to define and identify in history. Consider the case of Rome, which declined over a period of a few decades but also saw a shift to the east (Rome to Constantinople). One could argue that Rome did not collapse; rather, it simply declined and shifted its center of gravity.</p>
+<p>Likewise, Tainter defines civilizational complexity based on its size, hierarchy, and complex. Luke Kemp in “Goliath’s Curse” and David Graeber/Wengrow in “The Dawn of Everything” make counter arguments that hierarchy is a function of dominance and is not necessary for complex civilization. My view is somewhere in the middle. Current civilization, as documnented by Thomas Piketty in “Capital in the 21st Century”, is too hierarchical and uneven. However, there is a need for hierarchy and heterogeneity in that individuals must necesessary hold different roles that lead to stratification and hierarchy - I advise graduate students and teach undergraduate students; the Prime Minister is the leader of Canada; and income should increase with experience and responsibility (though not as steeply as in many settings).</p>
+<p>Another dimension of complexity is attributed to Robert Boyd, as discussed in “A Different Kind of Animal”. Boyd describes the human ability to weigh imitation and environmental responses. Imitation is the copying of social patterns across generations, which Boyd frames around culture as an evolutionary force. Environmental response is the adaptation by individuals to current conditions. If individuals rely more heavily on imitation, the population will track environmental change less closely. In the face of climate change, I argue that there is a need to re-evaluate this balance, shifting it increasingly towards adaptation to environmental responses rather than imitation of the cultural norms we inherited from previous generations. Conversely, I agree with Boyd that the collective brainpower enabled by our propensity for imitation means that culture allows large populations of humans to acquire and pool local adaptations to invent solutions to global challenges. Paraphrasing the words of the ecologist E.O. Wilson, the problem we must solve is how to align our paleolithic emotions and imitation of millions of generations of ancestors with the speed of environmental change induced by our god-like technology, given the signals and structures provided by our medieval institutions.</p>
+</section>
+<section id="measuring-civilizational-progress" class="level1">
+<h1>Measuring Civilizational Progress</h1>
+<p>Ian Morris defines a measure of social progress based on energy capture, organizational capacity, information processing capability, and military power. The choice of metrics is strongly influenced by one’s worldview and definition of progress. We can reference the work of XXX on the limitations of ordered quantification…. Energy capture begins from a value statement that can be connected to Howard T. Odum’s definition of the maximimum power principle - that systems seek out the maximum power (i.e., input energy per unit time) and not necessary the maximum efficiency alternative. The unspoken assumption is that energy capture (and therefore consumption) is an objective good. Information processing capabability is measured based on written communcation. Of course, some civilizations (notably the Incan use of quipu, or knotted strings, for recording keeping) had no formal system of writing to represent abstract concepts.</p>
+<p>We respond to what we measure. While the Morris Score of Social Development is a useful framework for tracking change over time, it is firmly rooted in a Western value system. In the same way that Kate Raworth, in “Doughnut Economics”, critiques the reliance on GDP growth as a measure of progress or decline, civilizational metrics are prone to definitional bias. Collapse as measured by Morris’ social development or Kuznets’ GDP are simply one a slice of civilizational status that obfuscates all complexity. If we change our metrics, collapse may represent a reorientation in response to constraints imposed by environmental or social forces. I will expand on this theme in the following two sections.</p>
+</section>
+<section id="energy-capture-and-the-carbon-pulse" class="level1">
+<h1>Energy capture and the carbon pulse</h1>
+<p>Our current fossil fuel-based energy system is a marvel. As energy market analyst Andrew Nikiforuk terms them, we have access to an army of “energy slaves”. Depending upon the price of oil, we would require 7,000-26,000 humans (working 24/7) to replace the energy from a barrel of oil. Andreas Malm provides an excellent history of the shift from human and flow-based energy to stock-based energy. A stock is by its nature finite and depletable. He makes the argument that energy capture transitioned during the Industrial Revolution from flow-based (i.e., water and wind) to stock-based (i.e., fossil fuels) energy. Flow-based energy is constrained in its location by access to waterways, whereas stock-based energy may be moved and accumulated as a stock. This feature gives rise to the capitalist capture of the means of production (i.e, fossil fuels). Marx describes the process of divorcing the worker from the means of production in Theory of Surplus Value - energy can be concentrated under one roof and its ownership separated from labour. I’ll have more to say on this topic, as well as Malm’s discussion of concrete and abstract time, in future posts.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hawkins-tech-lab.github.io/thoughts/posts/10-20-2025/energy_slave.png" class="img-fluid figure-img"></p>
+<figcaption>Energy Slave Comparison</figcaption>
+</figure>
+</div>
+<p>Turning back to Morris’ social development score, its energy capture component parallels the recent argument (made by Nate Hagens and others) that we are currently living in a carbon pulse - a short-term period in which we are extracting fossil fuel energy stocks at unprecidented and unsustainable rates. Over the span of a 200 years, we have extracted millions of years of stored carbon-based fossil fuels. It presents a bleak outlook, but I argue this is only true if we employ a capitalist set of metrics. When viewed through the lens of GPD and consumption, we will see a massive shift. Viewing the carbon pulse through the lens of inclusive wealth and wellbeing can offer a more positive prospect. A “Great Simplification” (again using Hagens term), offers the opportunity for simplified lifestyles within planetary boundaries. If we must move from 250 sqm (2700 sqft) homes to 110 sqm (1190 sqft) homes, does it necessarily mean a reduction in quality of life? Or might it mean a more intimate family and community life of greater social cohesion and shared spaces? <img src="https://hawkins-tech-lab.github.io/thoughts/posts/10-20-2025/carbon_pulse.png" class="img-fluid" alt="Carbon Pulse"></p>
+</section>
+<section id="meta-crisis-and-carbon-tunnel-vision" class="level1">
+<h1>Meta Crisis and Carbon Tunnel Vision</h1>
+<p>When examining what leads to the rise and fall of civilizations, the conclusion we can draw is that the factors are numerous. No one factor describes the pattern across all civilizations. Nor will any one factor lead to the fall of our current global civilization. One conclusion that can be drawn is that our analyses should increasingly take a wide boundary perspective. Many in the environmental sphere, and in response those working in the energy sector, have become fixated on carbon emissions as a metric to track. In the same way that Morris’ social score is an oversimplification, we must also not become stuck in “carbon tunnel vision”.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hawkins-tech-lab.github.io/thoughts/posts/10-20-2025/carbon_tunnel.png" class="img-fluid figure-img"></p>
+<figcaption>Carbon Tunnel Vision</figcaption>
+</figure>
+</div>
+<p>Recognizing the complexity of the current global crises, Daniel Schmachtenberger has called the situation a “meta crisis”. This crisis includes environmental dimensions such as carbon emissions and climate change. It includes global geopolitics and war. It also includes popularism and technology. Yes, these are all important to consider and plan for a future characterized by greater constraints across each dimension. But we must also remember that these individual crises exist within an interconnected web of complexity. Given our inability to characterize the rise and fall of historical complex civilizations, how much more will we struggle to do the same for our increasingly complex and global civilization? We must move forward with humility, caution, collaboration, but also optimism that we can accomplish great things. History tells us we have done it countless times before!</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hawkins-tech-lab.github.io/thoughts/posts/10-20-2025/meta_crisis.png" class="img-fluid figure-img"></p>
+<figcaption>Meta Crisis</figcaption>
+</figure>
+</div>
+
+
+</section>
+
+ ]]></description>
+  <category>History</category>
+  <category>Complexity</category>
+  <guid>https://hawkins-tech-lab.github.io/thoughts/posts/10-20-2025/</guid>
+  <pubDate>Mon, 20 Oct 2025 06:00:00 GMT</pubDate>
+  <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/10-20-2025/banner.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>The Roles of the University</title>
   <dc:creator>Jason Hawkins</dc:creator>
   <link>https://hawkins-tech-lab.github.io/thoughts/posts/10-18-2025/</link>
   <description><![CDATA[ 
@@ -35,7 +93,7 @@
   <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/10-18-2025/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
-  <title>Are we producers or are we consumers.</title>
+  <title>Are we producers or are we consumers?</title>
   <dc:creator>Jason Hawkins</dc:creator>
   <link>https://hawkins-tech-lab.github.io/thoughts/posts/10-17-2025/</link>
   <description><![CDATA[ 
@@ -735,62 +793,6 @@
   <guid>https://hawkins-tech-lab.github.io/thoughts/posts/04-26-2024/</guid>
   <pubDate>Fri, 26 Apr 2024 06:00:00 GMT</pubDate>
   <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/04-26-2024/banner.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>The Four Horsemen of the Production Apocalypse</title>
-  <dc:creator>Jason Hawkins</dc:creator>
-  <link>https://hawkins-tech-lab.github.io/thoughts/posts/04-21-2024/</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>Gary Becker begins his “A Theory of the Allocation of Time” <span class="citation" data-cites="Becker_1965">(Becker 1965)</span> with a discussion of time spent at work relative to other activities, highlighting the need for more robust analyses of uncompensated time use in economics. Little did he know that his theory and model structure would strongly influence travel behaviour and economic analysis over subsequent decades. In the 1970s, DeSerpa <span class="citation" data-cites="DeSerpa_1971">(1971)</span> and Evans <span class="citation" data-cites="Evans_1972">(1972)</span> provided among the first connections to transportation analysis. Building from DeSerpa and Evans, Jara-Díaz <span class="citation" data-cites="Jara-Díaz_2003">(2003)</span> completed fundamental work on the value of time in transportation economics. However, there is a wealth of other insights relevant to transportation analysis to be gained from Becker’s theory. I will focus on the topic of transportation service provision.</p>
-<p>Being a founder of the neoclassical “Chicago School of Economics”, Becker would certainly have strong opinions on the extension of his theory to include other non-market means of production. Nonetheless, one can consider four basic forms of production: market, home, government, and commons. Market production is the exchange of a good or service for money. Home production, as defined by Becker, is uncompensated production by the household (e.g., making dinner, cleaning the bathroom, etc.). The latter two forms of production were not discussed by Becker in his 1965 paper. In the first form, government produces a good or service for use by the public, financed by tax revenue or similar sources. For example, most healthcare services in the United States are privatized and subject to market forces, whereas many other nations provide healthcare as a public service. The final form of production is in the commons. Neoclassical economic theory suggests that common resources will be exploited if not managed by state intervention or market forces via monetization. However, both Mariana Mazzucato <span class="citation" data-cites="Mazzucato_2018">(2018)</span> and Elinor Ostrom <span class="citation" data-cites="Ostrom_1990">(1990)</span> provide compelling arguments for the efficient use of common production. As one example, Wikipedia is managed in the commons as most contributors provide their services at no cost.</p>
-<p>The reader may wonder: what does any of this have to do with travel behaviour? I argue that the above economic production framework can be mapped onto the transportation mode choice problem and provides valuable insights for behavioural theory and modelling methods. Home production of transportation takes the form of walking, cycling, or using one’s own vehicle. The vehicle and fuel must be purchased on the market, but the transportation service is provided by the household using personal time as the only input to production. In contrast, taxi or ridehail modes are purchased in the market from private firms (e.g., Uber, Lyft, Didi, etc.). Government provides transportation as a public service through transit. Transportation provided in the commons is less common (a nice little pun) but takes the form of carsharing and other systems wherein the service cost is shared among a pool of otherwise unaffiliated households. Each of the above transportation alternatives could manifest as the same physical mode – i.e., a small passenger vehicle. However, the behavioural and operational models differ. For example, a person may be unable to afford market production (ridehail). They may not use public production (transit) to avoid sharing a vehicle with strangers. They may be unwilling to participate in the commons (carshare) because they don’t want someone’s muddy boots in their car.</p>
-<p>Being trained as a civil engineer, I am always keen to find concrete (two puns in one article is the limit) applications for theory. The modelling of autonomous vehicles (AVs) provides an application of the above theory to transportation. Many scholars make the distinction between personal AVs, shared AVs (or SAVs) provided as a public service, and SAVs provided in the market. However, in my reading, there is minimal thought given to how these operating models would function from an economic production theory perspective. Let us first focus on the first alternative. It is unclear whether to classify a personal AV as home production or market consumption – Is sitting comfortably in a vehicle while it performs the driving task pure leisure? Are you purchasing driving services in the market as a software package? The latter two alternatives provide an interesting contrast. In both cases, SAVs are provided to the household as a service. However, if we consider transportation as a public service, another economic concept may be brought to bear, termed private provision of a public good by Bergstrom et al. <span class="citation" data-cites="Bergstrom_Blume_Varian_1986">(1986)</span> . Public transit provides a subsidized travel option for low-income households and those who choose not to own a personal vehicle. The widescale deployment of SAV fleets would therefore require ridehailing operators to take on this role. The risk is that each operator may rely on other operators to serve low-income households, with the result being a Nash equilibrium that does not maximize total social utility. Government intervention is necessary to ensure an equitable distribution of mobility through incentives or regulations <span class="citation" data-cites="Sieg_2020">(Sieg 2020)</span>. Existing simulations often ignore the profit-seeking motives of private operators, assuming they match trips to minimize detour time and are agnostic to traveller income and profit maximization motives on the part of operators.</p>
-<p>As a final thought on the historical distinction between private and public travel modes. The marginal private automobile trip tends to add travel time for existing travellers through congestion that slows travel speed and increases its variability. In contrast, the marginal transit trip tends to improve service for existing travellers through reduced vehicle headways and the use of higher-order transit (i.e., trains rather than buses). The latter outcome is termed as an anti-congestion effect <span class="citation" data-cites="Mohring_1972">(Mohring 1972)</span>. The trend in SAV research is toward small, automobile-style, vehicles that may be shared or used alone. This shift adds shades of gray to the public-private dichotomy. Will shared mobility exhibit the congestion effect of fthe private automobile or the anti-congestion effect of transit? Importantly, in which contexts do these new forms of mobility tend to exhibit each of these effects (i.e., there is likely a spectrum of possible impacts depending on the application of technology, local built form, and transportation infrastructure conditions)?</p>
-<section id="references" class="level2">
-<h2 class="anchored" data-anchor-id="references">References</h2>
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
-<div id="ref-Becker_1965" class="csl-entry">
-Becker, Gary S. 1965. <span>“A Theory of the Allocation of Time.”</span> <em>The Economic Journal</em> 75 (299): 493. <a href="https://doi.org/10.2307/2228949">https://doi.org/10.2307/2228949</a>.
-</div>
-<div id="ref-Bergstrom_Blume_Varian_1986" class="csl-entry">
-Bergstrom, Theodore, Lawrence Blume, and Hal Varian. 1986. <span>“On the Private Provision of Public Goods.”</span> <em>Journal of Public Economics</em> 29: 2549.
-</div>
-<div id="ref-DeSerpa_1971" class="csl-entry">
-DeSerpa, A. C. 1971. <span>“A Theory of the Economics of Time.”</span> <em>The Economic Journal</em> 81 (324): 828–46. <a href="https://doi.org/10.2307/2230320">https://doi.org/10.2307/2230320</a>.
-</div>
-<div id="ref-Evans_1972" class="csl-entry">
-Evans, Alan W. 1972. <span>“On the Theory of the Valuation and Allocation of Time.”</span> <em>Scottish Journal of Political Economy</em> 19 (1): 1–17. <a href="https://doi.org/10.1111/j.1467-9485.1972.tb00504.x">https://doi.org/10.1111/j.1467-9485.1972.tb00504.x</a>.
-</div>
-<div id="ref-Jara-Díaz_2003" class="csl-entry">
-Jara-Díaz, Sergio R. 2003. <span>“On the Goods-Activities Technical Relations in the Time Allocation Theory.”</span> <em>Transportation</em> 30 (3): 245–60. <a href="https://doi.org/10.1023/A:1023936911351">https://doi.org/10.1023/A:1023936911351</a>.
-</div>
-<div id="ref-Mazzucato_2018" class="csl-entry">
-Mazzucato, Mariana. 2018. <em>The Value of Everything: Making and Taking in the Global Economy: Mazzucato, Mariana: 9781610396745: Amazon.com: Books</em>. PublicAffairs.
-</div>
-<div id="ref-Mohring_1972" class="csl-entry">
-Mohring, Herbert. 1972. <span>“Optimization and Scale Economies in Urban Bus Transportation.”</span> <em>The American Economic Review</em> 62 (4): 591–604. <a href="https://doi.org/10.2307/1806101">https://doi.org/10.2307/1806101</a>.
-</div>
-<div id="ref-Ostrom_1990" class="csl-entry">
-Ostrom, Elinor. 1990. <em>Governing the Commons : The Evolution of Institutions for Collective Action</em>. Cambridge University Press. <a href="http://archive.org/details/governingcommons0000ostr">http://archive.org/details/governingcommons0000ostr</a>.
-</div>
-<div id="ref-Sieg_2020" class="csl-entry">
-Sieg, Holger. 2020. <span>“Voluntary Provision of Local Public Goods and Services.”</span> In <em>Urban Economics and Fiscal Policy</em>, 90–105. Princeton University Press.
-</div>
-</div>
-
-
-</section>
-
- ]]></description>
-  <category>transportation planning</category>
-  <category>production theory</category>
-  <guid>https://hawkins-tech-lab.github.io/thoughts/posts/04-21-2024/</guid>
-  <pubDate>Sun, 21 Apr 2024 06:00:00 GMT</pubDate>
-  <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/04-21-2024/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
