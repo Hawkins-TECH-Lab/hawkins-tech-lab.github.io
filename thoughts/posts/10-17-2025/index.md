@@ -1,5 +1,5 @@
 ---
-title: "Are we producers or are we consumers."
+title: "Are we producers or are we consumers?"
 description: ""
 author:
   - name: Jason Hawkins
@@ -19,4 +19,4 @@ Turning to the moral implications of primary and secondary goods, Schumacher con
 
 Some may argue that Schumacher is a fringe economic philosopher in the field of economics, though he was a protege of the venerated John Maynard Keynes. Let me then talk about another economists, Sir Richard Stone, who some consider the 'father of national income accounting'. He too was leary of applying economic calculus outside the market. Sir Stone questioned the exclusion of household labour from the United Nations System of National Accounts (UN-SNA). 70+ years on, there remains little theory that explains why homemakers should not be included in GDP. SNA developers have devised a different defence because although equivalent to work done by servants "by convention... only the wages of the domestic staff are treated as the value of output". We are brought back to the confounding of man-as-producer and man-as-consumer. There is an awkward logic to GDP rising if we look after each others children, essentially swapping home production for market production that adds no additional wellbeing to any of the individuals involved in the exchange (unless you are a child with much better neighbours than parents). Despite this apparent inability to value home production, the home itself is included in GDP accounts. In the United States, such 'work' amounts to 6 per cent of GDP even though none of this work exists. It is simply payment of rents from the home owners to themselves as a measure of capital gains. The argument made is that there would be a distortion in international and inter-temporal comparisons of production and consumption if housing services were ignored in the GDP accounts. The example would be Switzerland (high rent rate) having a higher GDP than the US (high ownership rate) due to the difference in these rates. Rent seeking is also an issue - increasing the rent increases the value produced by the real estate sector, but what if the quality of rental services does not see a corresponding improvement? Vancouver and Toronto tenants know too well the impact of rising real estate markets but no change in quality of life for them as tenants.
 
-The image for this post is inspired by my slow capitulating to the AI overlords. 
+The image for this post is inspired by my slow capitulation to the AI overlords. 
