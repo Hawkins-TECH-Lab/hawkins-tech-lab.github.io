@@ -844,7 +844,7 @@
     "href": "teaching/ENCI707/slides/lec-7.html#causal-graph-theory-1",
     "title": "Lecture 7 - Causal Inference",
     "section": "Causal Graph Theory",
-    "text": "Causal Graph Theory\n\nEnglish: Smoking (X), Cancer (Y), Tar (Z), Genotypes(U)\nDirected acyclic graph (DAG)\n\n\n\n\n\n\n\n\n\n\nENCI707 Home"
+    "text": "Causal Graph Theory\n\nEnglish: Smoking (X), Cancer (Y), Tar (Z), Genotypes(U)\nDirected acyclic graph (DAG)"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-5.html#outline",
@@ -1376,7 +1376,7 @@
     "href": "teaching/ENCI707/slides/lec-5.html#further-topics-among-many-others",
     "title": "Lecture 5 - Multinomial Logit",
     "section": "Further topics (among many others)",
-    "text": "Further topics (among many others)\n\nLogit model with probabilistic choice set formation\nLogit model with multiple overlapping choice sets\nLogit model with myopic preferences regarding specific alternatives\n\n\n\n\n\nENCI707 Home"
+    "text": "Further topics (among many others)\n\nLogit model with probabilistic choice set formation\nLogit model with multiple overlapping choice sets\nLogit model with myopic preferences regarding specific alternatives"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-3.html#outline",
@@ -1649,7 +1649,7 @@
     "href": "teaching/ENCI707/slides/lec-3.html#lagged-effects-in-aggregate-models-example",
     "title": "Lecture 3 - Aggregate Demand Models",
     "section": "Lagged Effects in Aggregate Models: Example",
-    "text": "Lagged Effects in Aggregate Models: Example\n \n\n\n\n\nENCI707 Home"
+    "text": "Lagged Effects in Aggregate Models: Example"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-1.html#outline",
@@ -2055,7 +2055,7 @@
     "href": "teaching/ENCI707/slides/lec-1.html#modelling-infrastructure-demands",
     "title": "Lecture 1 - Microeconomics",
     "section": "Modelling Infrastructure Demands​",
-    "text": "Modelling Infrastructure Demands​\n\nData (revealed/stated preferences): data do not provide answers themselves​\n\nWe need models and visualizations to give context and structure​\n\nIdentify underling theory to specify model of interest​\nTwo types of models:​\n\nAggregate demand models​\nDisaggregate demand/choice models​\n\nIn either case, application of econometric techniques is crucial to ensure evidence-based analysis​\nEstimation of appropriate model parameters is the critical roadblock!​\n\n\n\n\n\n\nENCI707 Home"
+    "text": "Modelling Infrastructure Demands​\n\nData (revealed/stated preferences): data do not provide answers themselves​\n\nWe need models and visualizations to give context and structure​\n\nIdentify underling theory to specify model of interest​\nTwo types of models:​\n\nAggregate demand models​\nDisaggregate demand/choice models​\n\nIn either case, application of econometric techniques is crucial to ensure evidence-based analysis​\nEstimation of appropriate model parameters is the critical roadblock!​"
   },
   {
     "objectID": "teaching/ENCI707/project/data-sets.html",
@@ -2857,14 +2857,14 @@
     "href": "teaching/CIVE461/slides/lec-6.html#other-choices",
     "title": "Lecture 6 - Mode & Destination Choice Models",
     "section": "Other Choices",
-    "text": "Other Choices\n\nHome location choice (multinomial logit) – similar to destination choice\nVehicle ownership choice? 1, 2, 3, 4, etc. vehicles (ordered logit)\nDeparture time choice? 8AM, 9AM, 10AM, etc. (ordered logit)\nParty size choice? 1, 2, 3, 4, 5, etc. persons (ordered logit)\nChoice set formation\n\nWhat destinations do I consider? Do I consider only destinations within my neighborhood? Do I consider only destinations within a certain distance or travel time?\n\n\n\n\n\n\nCIVE461 Home"
+    "text": "Other Choices\n\nHome location choice (multinomial logit) – similar to destination choice\nVehicle ownership choice? 1, 2, 3, 4, etc. vehicles (ordered logit)\nDeparture time choice? 8AM, 9AM, 10AM, etc. (ordered logit)\nParty size choice? 1, 2, 3, 4, 5, etc. persons (ordered logit)\nChoice set formation\n\nWhat destinations do I consider? Do I consider only destinations within my neighborhood? Do I consider only destinations within a certain distance or travel time?"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-4.html#outline",
     "href": "teaching/CIVE461/slides/lec-4.html#outline",
     "title": "Lecture 4 - Transportation Planning Process",
     "section": "Outline",
-    "text": "Outline\n\n\nDecision-making models\nPlanning and decision process\nMeasures of effectiveness\n\n\n\n\n\n\nCIVE461 Home"
+    "text": "Outline\n\n\nDecision-making models\nPlanning and decision process\nMeasures of effectiveness"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-2.html#outline",
@@ -3179,7 +3179,7 @@
     "href": "teaching/CIVE461/slides/lec-2.html#how-to-move-beyond-hypothesis-testing",
     "title": "Lecture 2 - Statistical Modeling",
     "section": "How to Move Beyond Hypothesis Testing",
-    "text": "How to Move Beyond Hypothesis Testing\n\n\nAnalyze all data - Better to anticipate critism than hide data\nPresent all comparisons - Rather than statistically significant comparisons only\nMake data public - If a topic is worth studying, you should want others to be able to quickly progress without repeating your work\nAccept uncertainty & embrace variation - No answer is perfect\n\n\n\n\n\n\nCIVE461 Home"
+    "text": "How to Move Beyond Hypothesis Testing\n\n\nAnalyze all data - Better to anticipate critism than hide data\nPresent all comparisons - Rather than statistically significant comparisons only\nMake data public - If a topic is worth studying, you should want others to be able to quickly progress without repeating your work\nAccept uncertainty & embrace variation - No answer is perfect"
   },
   {
     "objectID": "teaching/CIVE461/project/project-feedback.html",
@@ -4286,7 +4286,7 @@
     "href": "teaching/CIVE461/slides/lec-1.html#workforce-trends",
     "title": "Lecture 1 - Introduction",
     "section": "Workforce Trends",
-    "text": "Workforce Trends\n\nMulti-modal transportation planning\nComplete Streets – Nebraska DOT focused on it for small communities\nLarger datasets = Excel -&gt; R & Python\nNon-infrastructure solutions – ridesharing, autonomous vehicles, pricing, and land use reform\n\n       \n\n\n\n\nCIVE461 Home"
+    "text": "Workforce Trends\n\nMulti-modal transportation planning\nComplete Streets – Nebraska DOT focused on it for small communities\nLarger datasets = Excel -&gt; R & Python\nNon-infrastructure solutions – ridesharing, autonomous vehicles, pricing, and land use reform"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-3.html#we-can-examine-trip-generation-in-several-ways",
@@ -4706,7 +4706,7 @@
     "href": "teaching/CIVE461/slides/lec-3.html#trip-generation-accessibility-1",
     "title": "Lecture 3 - Trip Generation",
     "section": "Trip Generation & Accessibility",
-    "text": "Trip Generation & Accessibility\n\nAttempts made to incorporate an accessibility measure into trip generation by replacing \\(O_i = f(H_i)\\) by \\(f(H_i,A_i\\) where \\(H_i\\) are household characteristics & \\(A_i\\) is an accessibility measure\nAccessibility generally defined by \\(A_i = \\sum_j f(E_j, C_{ij})\\) where \\(E_j\\) is an attraction measure for zone \\(j\\) & \\(C_{ij}\\) is a generalized cost of travel between zones \\(i\\) & \\(j\\).\n\nOften give wrong sign or non-significant results due to unresolved model dynamics & problems from using cross-sectional rather than longitudinal data\nLeads to activity-based models & trip frequency/scheduling choice models (discussed in CIVE864)\n\n\n\n\n\n\nCIVE461 Home"
+    "text": "Trip Generation & Accessibility\n\nAttempts made to incorporate an accessibility measure into trip generation by replacing \\(O_i = f(H_i)\\) by \\(f(H_i,A_i\\) where \\(H_i\\) are household characteristics & \\(A_i\\) is an accessibility measure\nAccessibility generally defined by \\(A_i = \\sum_j f(E_j, C_{ij})\\) where \\(E_j\\) is an attraction measure for zone \\(j\\) & \\(C_{ij}\\) is a generalized cost of travel between zones \\(i\\) & \\(j\\).\n\nOften give wrong sign or non-significant results due to unresolved model dynamics & problems from using cross-sectional rather than longitudinal data\nLeads to activity-based models & trip frequency/scheduling choice models (discussed in CIVE864)"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-5.html#outline",
@@ -4825,7 +4825,7 @@
     "href": "teaching/CIVE461/slides/lec-5.html#iia-cont",
     "title": "Lecture 5 - Choice Models",
     "section": "IIA Cont…",
-    "text": "IIA Cont…\n\nIf the IIA assumption does not hold, we can make other error distribution assumptions\n\nNested logit (can handle complex decision structures)\nProbit (normal error terms, very general model, but can be difficult to work with it)\n\n\n\n\n\n\nCIVE461 Home"
+    "text": "IIA Cont…\n\nIf the IIA assumption does not hold, we can make other error distribution assumptions\n\nNested logit (can handle complex decision structures)\nProbit (normal error terms, very general model, but can be difficult to work with it)"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-7.html#outline",
@@ -5217,7 +5217,7 @@
     "href": "teaching/CIVE461/slides/lec-7.html#transit-assignment",
     "title": "Lecture 7 - Trip Assignment",
     "section": "Transit Assignment",
-    "text": "Transit Assignment\n\nTransit assignment not usually a function of congestion\nProcedures typically used:\n\nAll-Or-Nothing\nStochastic (multipath)\n\nMust account for:\n\nWalk access/egress times\nWaiting times as f(headway)\nTransfers\n\nFeasible transfer points\nTransfer times\n\n\n\n\n\n\n\nCIVE461 Home"
+    "text": "Transit Assignment\n\nTransit assignment not usually a function of congestion\nProcedures typically used:\n\nAll-Or-Nothing\nStochastic (multipath)\n\nMust account for:\n\nWalk access/egress times\nWaiting times as f(headway)\nTransfers\n\nFeasible transfer points\nTransfer times"
   },
   {
     "objectID": "teaching/CIVE461/slides/lec-9.html",
@@ -6309,7 +6309,7 @@
     "href": "teaching/ENCI707/slides/lec-2.html#other-design-recommendations-2",
     "title": "Lecture 2 - Surveys",
     "section": "Other Design Recommendations 2",
-    "text": "Other Design Recommendations 2\n\nKeep choice experiments simple - we respond to very complex choices in practice but do so over a long period of time\nAllow respondents to opt for response outside set of experimental alternatives - e.g., in mode choice exercise, if all options become too unattractive respondent may decide to change destination, time of travel, or not to travel at all\nAllow ‘will do something else’ alternative - could be programmed to branch to another exercise exploring precisely these other options\nMake sure alternatives are clearly and unambiguously defined (difficult when dealing with qualitative attributes like security or comfort)\n\nE.g., do not express alternatives as ‘poor’ or ‘improved’, which are vague and prone to different interpretations by respondents - what measures or facilities, etc.).\n\n\n\n\n\n\nENCI707 Home"
+    "text": "Other Design Recommendations 2\n\nKeep choice experiments simple - we respond to very complex choices in practice but do so over a long period of time\nAllow respondents to opt for response outside set of experimental alternatives - e.g., in mode choice exercise, if all options become too unattractive respondent may decide to change destination, time of travel, or not to travel at all\nAllow ‘will do something else’ alternative - could be programmed to branch to another exercise exploring precisely these other options\nMake sure alternatives are clearly and unambiguously defined (difficult when dealing with qualitative attributes like security or comfort)\n\nE.g., do not express alternatives as ‘poor’ or ‘improved’, which are vague and prone to different interpretations by respondents - what measures or facilities, etc.)."
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-4.html#demand-versus-choice",
@@ -6456,7 +6456,7 @@
     "href": "teaching/ENCI707/slides/lec-4.html#binary-discrete-choice-2",
     "title": "Lecture 4 - Disaggregate Econometric Choice Theory",
     "section": "Binary Discrete Choice",
-    "text": "Binary Discrete Choice\nBinary Probit/Logit Identification\n\nOnly one alternative specific constant\nScale of logit model is not identified as a constant\nReference alternative is irrelevant \\[𝑉_𝑗−𝑉_𝑘=𝑉=\\beta_0+\\sum \\beta(𝑥_𝑗−𝑥_𝑘)\\] \\[𝑉_𝑗=\\beta_0+\\beta(𝑥_{𝑔𝑒𝑛𝑒𝑟𝑖𝑐})_𝑗+\\beta_{(𝑗−𝑠𝑝𝑒𝑐𝑖𝑓𝑖𝑐)} 𝑥_{(𝑗−𝑠𝑝𝑒𝑐𝑖𝑓𝑖𝑐)}\\] \\[𝑉_𝑘=0+\\beta(𝑥_{𝑔𝑒𝑛𝑒𝑟𝑖𝑐})_𝑘 + \\beta_{(𝑘−𝑠𝑝𝑒𝑐𝑖𝑓𝑖𝑐)} 𝑥_{(𝑘−𝑠𝑝𝑒𝑐𝑖𝑓𝑖𝑐)}\\] \\[𝑉_{𝑐𝑎𝑟}=\\beta_0+\\beta_𝑡 time_{𝑐𝑎𝑟} + \\beta_𝑐 cost_{𝑐𝑎𝑟} +\\beta_𝑜 CarOwnership \\] \\[𝑉_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} = 0 + \\beta_𝑡 time_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} + \\beta_𝑐 fare_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} + \\beta_𝑟 On−TimePerformance\\]\nAllows non-linear transformation and normalizations\n\n\n\n\n\nENCI707 Home"
+    "text": "Binary Discrete Choice\nBinary Probit/Logit Identification\n\nOnly one alternative specific constant\nScale of logit model is not identified as a constant\nReference alternative is irrelevant \\[𝑉_𝑗−𝑉_𝑘=𝑉=\\beta_0+\\sum \\beta(𝑥_𝑗−𝑥_𝑘)\\] \\[𝑉_𝑗=\\beta_0+\\beta(𝑥_{𝑔𝑒𝑛𝑒𝑟𝑖𝑐})_𝑗+\\beta_{(𝑗−𝑠𝑝𝑒𝑐𝑖𝑓𝑖𝑐)} 𝑥_{(𝑗−𝑠𝑝𝑒𝑐𝑖𝑓𝑖𝑐)}\\] \\[𝑉_𝑘=0+\\beta(𝑥_{𝑔𝑒𝑛𝑒𝑟𝑖𝑐})_𝑘 + \\beta_{(𝑘−𝑠𝑝𝑒𝑐𝑖𝑓𝑖𝑐)} 𝑥_{(𝑘−𝑠𝑝𝑒𝑐𝑖𝑓𝑖𝑐)}\\] \\[𝑉_{𝑐𝑎𝑟}=\\beta_0+\\beta_𝑡 time_{𝑐𝑎𝑟} + \\beta_𝑐 cost_{𝑐𝑎𝑟} +\\beta_𝑜 CarOwnership \\] \\[𝑉_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} = 0 + \\beta_𝑡 time_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} + \\beta_𝑐 fare_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} + \\beta_𝑟 On−TimePerformance\\]\nAllows non-linear transformation and normalizations"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#outline",
@@ -7191,6 +7191,6 @@
     "href": "thoughts/blog.html",
     "title": "Blog",
     "section": "",
-    "text": "Civilization Complexity and Collapse\n\n\n\n\n\n\nHistory\n\n\nComplexity\n\n\n\n\n\n\n\n\n\nOct 20, 2025\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nThe Roles of the University\n\n\n\n\n\n\nEducation\n\n\nFunding\n\n\n\n\n\n\n\n\n\nOct 18, 2025\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nAre we producers or are we consumers?\n\n\n\n\n\n\nEconomics\n\n\nProduction\n\n\nConsumption\n\n\n\n\n\n\n\n\n\nOct 17, 2025\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nOn Education\n\n\n\n\n\n\nPedagogy\n\n\nAI\n\n\n\n\n\n\n\n\n\nJun 23, 2025\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nValues and Axioms\n\n\n\n\n\n\nEconomics\n\n\nValue\n\n\nAxioms\n\n\n\n\n\n\n\n\n\nJun 17, 2025\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nSpatial Location Choice\n\n\n\n\n\n\nEconometrics\n\n\nChoice models\n\n\nLocation\n\n\n\n\n\n\n\n\n\nJun 11, 2025\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nDeep Ecology\n\n\n\n\n\n\nEcology\n\n\nPhilosophy\n\n\n\n\n\n\n\n\n\nJun 2, 2025\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nThe Metabolic Rift\n\n\n\n\n\n\nMarx\n\n\nCapitalism\n\n\n\n\n\n\n\n\n\nMay 28, 2025\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nPrivate Space. Private Land\n\n\n\n\n\n\narchitecture\n\n\nland use planning\n\n\n\n\n\n\n\n\n\nMay 14, 2025\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nNature as organism. Nature as machine.\n\n\n\n\n\n\nenvironmental philosophy\n\n\n\n\n\n\n\n\n\nMay 13, 2025\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nEcosystem Service Measurement\n\n\n\n\n\n\necological economics\n\n\n\nOn thermometers and thermostats\n\n\n\n\n\nApr 29, 2025\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nOur Grand Omaha to Calgary Trip\n\n\n\n\n\n\ntravel\n\n\ninfrastructure\n\n\n\n\n\n\n\n\n\nJan 16, 2025\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nTechnology and Development\n\n\n\n\n\n\ndevelopment economics\n\n\n\nOn intermediate technology\n\n\n\n\n\nOct 29, 2024\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nTravel Behaviour as Scientific Art\n\n\n\n\n\n\nphilosophy of science\n\n\nmetascience\n\n\nroads in woods\n\n\n\nReflections on Kuhn\n\n\n\n\n\nJul 30, 2024\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nComputing The Climate\n\n\n\n\n\n\nclimate modeling\n\n\n\nand travel\n\n\n\n\n\nJul 1, 2024\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nEmergy and States\n\n\n\n\n\n\nemergy\n\n\nstate-state economics\n\n\nconstraints on growth\n\n\n\nEnergy, entropy, enthalpy, emergy, others?\n\n\n\n\n\nJun 24, 2024\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nSchumacher On Scale\n\n\n\n\n\n\nsociety\n\n\nscale\n\n\nbuddhist economics\n\n\n\n\n\n\n\n\n\nJun 10, 2024\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nSocialist Calculation Debate\n\n\n\n\n\n\nsocialist economics\n\n\nvalue theory\n\n\n\nOn value theory\n\n\n\n\n\nJun 6, 2024\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nSchumacher On Prediction\n\n\n\n\n\n\nprediction\n\n\nestimation\n\n\nsemantics\n\n\n\n\n\n\n\n\n\nMay 28, 2024\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nJevons Paradox\n\n\n\n\n\n\nenvironmental economics\n\n\nsystem dynamics\n\n\n\nIn a non-stationary economy\n\n\n\n\n\nApr 26, 2024\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nThe Four Horsemen of the Production Apocalypse\n\n\n\n\n\n\ntransportation planning\n\n\nproduction theory\n\n\n\nOr why headlines are clickbait\n\n\n\n\n\nApr 21, 2024\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nWilliam Vickrey and Transportation Economics\n\n\n\n\n\n\neconomics\n\n\nCanadians\n\n\n\n\n\n\n\n\n\nMay 4, 2018\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nOur Trip to Toronto Through the USA\n\n\n\n\n\n\ntravel\n\n\ninfrastructure\n\n\n\n\n\n\n\n\n\nSep 11, 2017\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nAV Deployment, Urban DNA, and Equity\n\n\n\n\n\n\ntechnology\n\n\nautonomous vehicles\n\n\nequity\n\n\n\n\n\n\n\n\n\nJul 3, 2017\n\n\nJason Hawkins\n\n\n\n\n\n\nNo matching items"
+    "text": "Civilization Complexity and Collapse.\n\n\n\n\n\n\nHistory\n\n\nComplexity\n\n\n\n\n\n\n\n\n\nOct 20, 2025\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nThe Roles of the University\n\n\n\n\n\n\nEducation\n\n\nFunding\n\n\n\n\n\n\n\n\n\nOct 18, 2025\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nAre we producers or are we consumers?\n\n\n\n\n\n\nEconomics\n\n\nProduction\n\n\nConsumption\n\n\n\n\n\n\n\n\n\nOct 17, 2025\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nOn Education\n\n\n\n\n\n\nPedagogy\n\n\nAI\n\n\n\n\n\n\n\n\n\nJun 23, 2025\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nValues and Axioms\n\n\n\n\n\n\nEconomics\n\n\nValue\n\n\nAxioms\n\n\n\n\n\n\n\n\n\nJun 17, 2025\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nSpatial Location Choice\n\n\n\n\n\n\nEconometrics\n\n\nChoice models\n\n\nLocation\n\n\n\n\n\n\n\n\n\nJun 11, 2025\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nDeep Ecology\n\n\n\n\n\n\nEcology\n\n\nPhilosophy\n\n\n\n\n\n\n\n\n\nJun 2, 2025\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nThe Metabolic Rift\n\n\n\n\n\n\nMarx\n\n\nCapitalism\n\n\n\n\n\n\n\n\n\nMay 28, 2025\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nPrivate Space. Private Land\n\n\n\n\n\n\narchitecture\n\n\nland use planning\n\n\n\n\n\n\n\n\n\nMay 14, 2025\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nNature as organism. Nature as machine.\n\n\n\n\n\n\nenvironmental philosophy\n\n\n\n\n\n\n\n\n\nMay 13, 2025\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nEcosystem Service Measurement\n\n\n\n\n\n\necological economics\n\n\n\nOn thermometers and thermostats\n\n\n\n\n\nApr 29, 2025\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nOur Grand Omaha to Calgary Trip\n\n\n\n\n\n\ntravel\n\n\ninfrastructure\n\n\n\n\n\n\n\n\n\nJan 16, 2025\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nTechnology and Development\n\n\n\n\n\n\ndevelopment economics\n\n\n\nOn intermediate technology\n\n\n\n\n\nOct 29, 2024\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nTravel Behaviour as Scientific Art\n\n\n\n\n\n\nphilosophy of science\n\n\nmetascience\n\n\nroads in woods\n\n\n\nReflections on Kuhn\n\n\n\n\n\nJul 30, 2024\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nComputing The Climate\n\n\n\n\n\n\nclimate modeling\n\n\n\nand travel\n\n\n\n\n\nJul 1, 2024\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nEmergy and States\n\n\n\n\n\n\nemergy\n\n\nstate-state economics\n\n\nconstraints on growth\n\n\n\nEnergy, entropy, enthalpy, emergy, others?\n\n\n\n\n\nJun 24, 2024\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nSchumacher On Scale\n\n\n\n\n\n\nsociety\n\n\nscale\n\n\nbuddhist economics\n\n\n\n\n\n\n\n\n\nJun 10, 2024\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nSocialist Calculation Debate\n\n\n\n\n\n\nsocialist economics\n\n\nvalue theory\n\n\n\nOn value theory\n\n\n\n\n\nJun 6, 2024\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nSchumacher On Prediction\n\n\n\n\n\n\nprediction\n\n\nestimation\n\n\nsemantics\n\n\n\n\n\n\n\n\n\nMay 28, 2024\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nJevons Paradox\n\n\n\n\n\n\nenvironmental economics\n\n\nsystem dynamics\n\n\n\nIn a non-stationary economy\n\n\n\n\n\nApr 26, 2024\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nThe Four Horsemen of the Production Apocalypse\n\n\n\n\n\n\ntransportation planning\n\n\nproduction theory\n\n\n\nOr why headlines are clickbait\n\n\n\n\n\nApr 21, 2024\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nWilliam Vickrey and Transportation Economics\n\n\n\n\n\n\neconomics\n\n\nCanadians\n\n\n\n\n\n\n\n\n\nMay 4, 2018\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nOur Trip to Toronto Through the USA\n\n\n\n\n\n\ntravel\n\n\ninfrastructure\n\n\n\n\n\n\n\n\n\nSep 11, 2017\n\n\nJason Hawkins\n\n\n\n\n\n\n\n\n\n\n\n\nAV Deployment, Urban DNA, and Equity\n\n\n\n\n\n\ntechnology\n\n\nautonomous vehicles\n\n\nequity\n\n\n\n\n\n\n\n\n\nJul 3, 2017\n\n\nJason Hawkins\n\n\n\n\n\n\nNo matching items"
   }
 ]
