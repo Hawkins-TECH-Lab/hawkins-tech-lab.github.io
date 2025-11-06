@@ -29,3 +29,5 @@ assets/.DS_Store
 teaching/class_notes_websites.txt
 teaching/CIVE461/weeks/rough week 1.txt
 teaching/CIVE461/Introduction.txt
+
+**/*.quarto_ipynb

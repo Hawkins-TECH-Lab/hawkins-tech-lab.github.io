@@ -1,5 +1,5 @@
 ---
-title: "Civilization Complexity and Collapse."
+title: "Civilization Complexity and Collapse"
 description: ""
 author:
   - name: Jason Hawkins
