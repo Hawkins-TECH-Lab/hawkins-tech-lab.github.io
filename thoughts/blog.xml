@@ -10,7 +10,29 @@
 <atom:link href="https://hawkins-tech-lab.github.io/thoughts/blog.xml" rel="self" type="application/rss+xml"/>
 <description>TECH lab website</description>
 <generator>quarto-1.8.25</generator>
-<lastBuildDate>Mon, 20 Oct 2025 06:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sat, 15 Nov 2025 07:00:00 GMT</lastBuildDate>
+<item>
+  <title>Spirit of the City</title>
+  <dc:creator>Jason Hawkins</dc:creator>
+  <link>https://hawkins-tech-lab.github.io/thoughts/posts/11-15-2025/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>I attended a workshop this week on the spiritual and intangible aspects of the city. It was an interesting event that raised fundamental questions for me and some pretty interesting dichotomies of ontology. The keynote speaker was a world renowned architect who motivates his work by metaphor. The buildings were visually striking and demonstrated clear talent. Frankly, it was a bit much for my engineer brain - “The architecture of today is the archeology of the future”. Could we get any more pretentious??</p>
+<p>Following the presentation, we were asked to reflect on the “spirit of Calgary” - what makes the city unique? My table talked about the rivers and mountains, landscapes, and iconic buildings in the city. Many at the table lamented the restrictions imposed on design by city regulations. One person noted that he felt there was little difference between Calgary, Vancouver, Toronto, or other North American cities. Having lived in all three of these cities, as well as having lived in or visited many other cities, I disagreed with his assessment. While the housing may look similar in each of these cities, my notion of them is defined by their physical settings. Vancouver is a strikingly beautiful city of mountains, oceans, and bridges. It has a coastal spirit in stark contrast to the foothills of Calgary or lakeshore “city of neighbourhoods” of Toronto.</p>
+<p>A second point that struck me was the lack of discussion about the translation from individual buildings to the city. A wealthy couple can agree upon a metaphor and aesthetic for their home, not to mention pay for the cost of an architect. How do we define a single metaphor for a city? One could argue that each building could be designed according to the metaphor of its residents. Of course, that would lead to a city without any definable spirit, no better than the uniformity of “cookie cutter” designs we see in many communities today. The individualistic vision and lack of collective and organic character that to me defines “The City” was stark, bordering on troubling.</p>
+<p>A third reflection from this workshop was the final “Spirit of Calgary” that I came to in my mind. It is a city of immigrants and change, drawing metaphor from the flow of the Bow and Elbow Rivers. However, it is also a city that is rediscovering its pre-colonial history through the process of reconciliation. These forces of constant change and return to long ignored past are in tension. Calgary is not a city with large stocks of historical buildings, so it is not about preservation of physical form. Rather, it is a question of re-introduces historical forms by a city that increasingly houses residents unassociated with its colonial cultural genocide. It is a difficult situation to work through as a city. But, when combined with an emphasis on its setting in the foothills of the Rocky Mountains, one would be hard-pressed to miss the spirt of the place!</p>
+
+
+
+ ]]></description>
+  <category>ontology</category>
+  <guid>https://hawkins-tech-lab.github.io/thoughts/posts/11-15-2025/</guid>
+  <pubDate>Sat, 15 Nov 2025 07:00:00 GMT</pubDate>
+  <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/11-15-2025/banner.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Civilization Complexity and Collapse</title>
   <dc:creator>Jason Hawkins</dc:creator>
@@ -758,41 +780,6 @@
   <guid>https://hawkins-tech-lab.github.io/thoughts/posts/05-28-2024/</guid>
   <pubDate>Tue, 28 May 2024 06:00:00 GMT</pubDate>
   <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/05-28-2024/banner.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>Jevons Paradox</title>
-  <dc:creator>Jason Hawkins</dc:creator>
-  <link>https://hawkins-tech-lab.github.io/thoughts/posts/04-26-2024/</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>William Stanley Jevons was a 19th century English economist and logician. He made extensive contributions to the field, yet is perhaps best known for his eponymous paradox. Jevons Paradox arises when technological progress increases the efficiency with which a resource is used (reducing unit consumption), but the falling marginal cost of use induces increases in demand such that aggregate resource use is increased, rather than reduced. Engineers are, in general terms, believers in the benefits of technology. Efficiency gains are professed to solve any number of social and environmental ills. E.g., autonomous vehicles will solve traffic congestion and improved safety through their elimination of fallible human drivers. Consider the narrative regarding the population theory of another late 18th century/early 19th century economist - Thomas Malthus. Malthus predicted population collapse in response to population growth outstripping agricultural productivity growth. Thus far, his prediction has not come to pass partially due to technological progressing, including the 20th century Green Revolution (led by Norman Borlaug and others), which relieved starvation concerns - yay! Techno-optimists reference this success as an exemplar of why technology will save us. Furthermore, the so-called Environmental Kuznets Curve (named for yet another economist, Simon Kuznets) anticipates GDP becoming decoupled from environmental impacts as a nation moves from an industrial to a post-industrial economy.</p>
-<p>Let us take a look at the Kuznets Curve in the context of Jevons Paradox. If we assume a steady state economy, then it may be the case that environmental impacts will decrease as a function of technological progress. By a steady state economy, we mean a constant stock of capital and fixed population.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://hawkins-tech-lab.github.io/thoughts/posts/04-26-2024/jevons_1.svg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
-</figure>
-</div>
-<p>Of course, we do not exist in a steady state economy, global population continues to grow (rising from 6 billiong to 8 billion people in my own lifetime). While natural resources are a fixed stock (we will return to this topic on many occassions), our rate of resource consumption has not declined as a function of technological progress. Rather, we continue to consume increasing quantities of materials and energy, which represent the fundamental building blocks of human society. Another way to term a steady state economy is that its size is a non-stationary function of time. Stationarity will be a familiar term to those with a background in statistics or econometrics - refering to the lack of equilibrium about a fixed level of resource consumption in this case. With GDP encouraged to grow without limit, Jevons Paradox quickly comes to bear. Technological progress will get us only so far when faced with the tasks of overcoming a non-stationarity system.</p>
-<p>We can consider the problem from the perspective of aggregate environmental impact vs.&nbsp;marginal (unit) environmental impact. Jevons Paradox shows us that individuals will increase their environment impacts (vis-a-vis more consumption) in response to technological innovations that reduce the marginal cost, or material and energy requirements - i.e., increasing aggregate individual impacts. At the same time, additional individuals (i.e., population growth) compounds the impacts, even should these new individuals consume resources at a diminished rate.</p>
-<div class="quarto-figure quarto-figure-&quot;center">
-<figure class="figure">
-<p><img src="https://hawkins-tech-lab.github.io/thoughts/posts/04-26-2024/jevons_2.svg" class="img-fluid quarto-figure quarto-figure-&quot;center figure-img" style="width:50.0%"></p>
-</figure>
-</div>
-<p>So what can be done? The first step is to recognize myopia in our collective perspective on resource consumption as engineers, economists, policy-makers, and inhabitants of this planet. Classical valuation methods cannot account for these impacts, at least as long as they exist within an epistemology founded in growth as a positive property of human society rather than as a normative value.</p>
-<p>I hope to continue to examine these topics in greater depth, not for professional promotion (unlikely absent a large grant to build ecological philosophy widgets with my graduate students) but rather for personal edification and sanity. I would like to reflect on value systems, morality, and social change. I am also interested in teasing out the seeming intangibles of the engineering perspective on policy evaluation from the conventional economics-based approach, and how engineering has been drawn into the economics perspective through a lack of appropriate application of relevant theory and knowledge - e.g., entropy, biophysical limits, and system dynamics.</p>
-
-
-
- ]]></description>
-  <category>environmental economics</category>
-  <category>system dynamics</category>
-  <guid>https://hawkins-tech-lab.github.io/thoughts/posts/04-26-2024/</guid>
-  <pubDate>Fri, 26 Apr 2024 06:00:00 GMT</pubDate>
-  <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/04-26-2024/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
