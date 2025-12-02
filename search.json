@@ -3716,7 +3716,11 @@
     "href": "projects/transport_canada/transport_canada.html",
     "title": "Transportation Finance in Canada",
     "section": "",
-    "text": "This browser does not support PDFs. Please download the PDF to view it: Download PDF."
+    "text": "This browser does not support PDFs. Please download the PDF to view it: Download PDF.",
+    "crumbs": [
+      "Transportation in Canada",
+      "Carbon Pricing"
+    ]
   },
   {
     "objectID": "publications/index.html",
