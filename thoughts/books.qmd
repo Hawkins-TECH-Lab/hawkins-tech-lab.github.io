@@ -49,3 +49,20 @@ section-divs: true
 | |
 |----|----|
 | ![](../assets/images/misc/small_beautiful.jpg){style="float:right; padding: 0 0 0 0; object-fit: cover; border-radius: 20px; object-position: center;" fig-align="center" width="300" height="450"} | E.F. Schumacher was a 20th century economist who held various roles in industry. I purchased the book on the recommendation of its discussion of small-scale economics and critique of growth-oriented economics. I was pleasantly surprised by the discussion of development economics and forecasting. Scumacher's views on these topics are equally enlightening and challenging of conventional discourse. I provide a deeper discussion in several posts from May and June 2024.|
+
+## The Ecological Rift: Capitalism’s War on the Earth -  John Bellamy Foster, Richard York and Brett Clark
+
+
+: {tbl-colwidths="[20,80]"}
+
+| |
+|----|----|
+| ![](../assets/images/misc/ecological_rift.jpg){style="float:right; padding: 0 0 0 0; object-fit: cover; border-radius: 20px; object-position: center;" fig-align="center" width="300" height="450"} | This is a powerful critique of capitalist system through the lens of Marx's metabolic rift. The authors argue that the capitalist economic system divides human consumption from environmental sources in ways that expand individual wealth at the expense of public wealth (including the wealth of nature). I provide more details in the blog. |
+
+## Fossil Capital: The Rise of Steam Power and the Roots of Global Warming -  Andreas Malm
+
+: {tbl-colwidths="[20,80]"}
+
+| |
+|----|----|
+| ![](../assets/images/misc/fossil_capital.jpg){style="float:right; padding: 0 0 0 0; object-fit: cover; border-radius: 20px; object-position: center;" fig-align="center" width="300" height="450"} | Like The Ecological Rift, Fossil Capital is a Marxist historical materialism analysis of the rise of capitalism and its impacts on the environment. The first part of the book provides a lengthy history of the rise of steam power in the United Kingdom. Where I felt the work really came into its own was its discussion of flow and stock energy. Water energy, a flow, is restricted in its production to those locations located along running bodies of water. Stock energy from fossil fuels can be transported and stored. Malm argues this ability to store energy near cheap and exploitable labour was the reason for the transition away from flow-based energy sources. He makes a reasonably good argument that flow-based energy remained cheaper and more convenient, though I would be interested to see alternative energy analyses. Malm also notes that many energy firms have moved away from renewables, such as solar and wind, not because they are expensive (we know they have reached cost parity) but due to low profits.|

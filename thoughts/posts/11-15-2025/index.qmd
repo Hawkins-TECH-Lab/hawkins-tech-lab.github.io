@@ -1,0 +1,21 @@
+
+---
+title: "Spirit of the City"
+description: "On the ontologies of the city"
+author:
+  - name: Jason Hawkins
+date: "2025-11-15"
+categories: [ontology]
+image: banner.jpg
+format: 
+  html:
+    toc: true
+---
+
+I attended a workshop this week on the spiritual and intangible aspects of the city. It was an interesting event that raised fundamental questions for me and some pretty interesting dichotomies of ontology. The keynote speaker was a world renowned architect who motivates his work by metaphor. The buildings were visually striking and demonstrated clear talent. Frankly, it was a bit much for my engineer brain - "The architecture of today is the archeology of the future". Could we get any more pretentious??
+
+Following the presentation, we were asked to reflect on the "spirit of Calgary" - what makes the city unique? My table talked about the rivers and mountains, landscapes, and iconic buildings in the city. Many at the table lamented the restrictions imposed on design by city regulations. One person noted that he felt there was little difference between Calgary, Vancouver, Toronto, or other North American cities. Having lived in all three of these cities, as well as having lived in or visited many other cities, I disagreed with his assessment. While the housing may look similar in each of these cities, my notion of them is defined by their physical settings. Vancouver is a strikingly beautiful city of mountains, oceans, and bridges. It has a coastal spirit in stark contrast to the foothills of Calgary or lakeshore "city of neighbourhoods" of Toronto.
+
+A second point that struck me was the lack of discussion about the translation from individual buildings to the city. A wealthy couple can agree upon a metaphor and aesthetic for their home, not to mention pay for the cost of an architect. How do we define a single metaphor for a city? One could argue that each building could be designed according to the metaphor of its residents. Of course, that would lead to a city without any definable spirit, no better than the uniformity of "cookie cutter" designs we see in many communities today. The individualistic vision and lack of collective and organic character that to me defines "The City" was stark, bordering on troubling.
+
+A third reflection from this workshop was the final "Spirit of Calgary" that I came to in my mind. It is a city of immigrants and change, drawing metaphor from the flow of the Bow and Elbow Rivers. However, it is also a city that is rediscovering its pre-colonial history through the process of reconciliation. These forces of constant change and return to long ignored past are in tension. Calgary is not a city with large stocks of historical buildings, so it is not about preservation of physical form. Rather, it is a question of re-introduces historical forms by a city that increasingly houses residents unassociated with its colonial cultural  genocide. It is a difficult situation to work through as a city. But, when combined with an emphasis on its setting in the foothills of the Rocky Mountains, one would be hard-pressed to miss the spirt of the place!

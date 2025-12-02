@@ -220,6 +220,8 @@ exists in the
 stimuli along which subjects may
 order their preferences - "Can talk about certainty to uncertainty and axiom argument I discuss on blog"
 
+Samuelson 1948 Figure 1 somewhere here
+
 
 # Stated Preferences
 -	Manski work
