@@ -6,8 +6,8 @@
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.6.39">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.8.25">
 
   <title>Hawkinslab – Lecture 2 - Statistical Modeling</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -28,7 +28,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../../../site_libs/revealjs/dist/theme/quarto-423d414d36ce366a9d05f36d06304417.css">
+  <link rel="stylesheet" href="../../../site_libs/revealjs/dist/theme/quarto-0fde88a82f0356838740f155f1088782.css">
   <link href="../../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -137,14 +137,12 @@
 </section>
 <section id="outline" class="slide level2">
 <h2>Outline</h2>
-<div>
 <ol type="1">
 <li class="fragment">What is statistics</li>
 <li class="fragment">What are key statistical measures to do transportation planning analysis</li>
 <li class="fragment">How to do regression models</li>
 <li class="fragment">Why statistics is really hard</li>
 </ol>
-</div>
 </section>
 <section>
 <section id="statistics-fundamentals" class="title-slide slide level1 center">
@@ -159,14 +157,12 @@
 </section>
 <section id="descriptive-statistics" class="slide level2">
 <h2>Descriptive Statistics</h2>
-<div>
 <ul>
 <li class="fragment">Relative standing</li>
 <li class="fragment">Central tendency</li>
 <li class="fragment">Variability</li>
 <li class="fragment">Association</li>
 </ul>
-</div>
 </section>
 <section id="measures-of-relative-standing" class="slide level2 smaller">
 <h2>Measures of Relative Standing</h2>
@@ -188,7 +184,6 @@
 </section>
 <section id="measures-of-variability" class="slide level2 smaller">
 <h2>Measures of Variability</h2>
-<div>
 <ul>
 <li class="fragment"><strong>Variance</strong> &amp; <strong>standard deviation</strong> more useful than <strong>range</strong> because use information from all observations</li>
 <li class="fragment">Sample variance given by <span class="math display">\[ s^2 = \frac{\sum_i(x_i-\bar{x})^2}{n-1}\]</span></li>
@@ -198,7 +193,6 @@
 <li class="fragment"><span class="math inline">\(n-1\)</span> approaches n as sample size grows</li>
 </ul></li>
 </ul>
-</div>
 </section>
 <section id="measures-of-association" class="slide level2 smaller">
 <h2>Measures of Association</h2>
@@ -258,18 +252,15 @@
 </section>
 <section id="confidence-intervals" class="slide level2">
 <h2>Confidence Intervals</h2>
-<div>
 <ul>
 <li class="fragment">Interval estimates are based on <em>frequentist statistical theory</em></li>
 <li class="fragment">They say nothing about the location of the <em>true</em> parameter value</li>
 <li class="fragment">They are a measure of how <strong>likely</strong> it is for <strong>samples</strong> taken from the <strong>same population</strong> to have their parameter values lie in that interval</li>
 <li class="fragment">E.g., a 95% confidence interval of [1.15,2.34] means that 95 out of 100 samples will have the parameter value of interest in the range 1.15 to 2.34</li>
 </ul>
-</div>
 </section>
 <section id="hypothesis-testing" class="slide level2 smaller">
 <h2>Hypothesis Testing</h2>
-<div>
 <ul>
 <li class="fragment">Used to measure whether a difference in parameter values is likely to have arisen <strong>by chance</strong> or whether <strong>some other factor</strong> is responsible for the difference</li>
 <li class="fragment">Statistical distributions used in hypothesis testing to estimate probabilities of observing the sample data, given an assumption about what <em>should have</em> occurred</li>
@@ -280,7 +271,6 @@
 <li class="fragment"><strong>Problem:</strong> often expect an effect and more interested in <strong>variation in effect</strong></li>
 </ul></li>
 </ul>
-</div>
 <div class="fragment">
 <p><span class="math display">\[Z^* = \frac{(\bar{X_1}-\bar{X_2})-(\mu_1-\mu_2)}{\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}}\]</span></p>
 </div>
@@ -311,7 +301,6 @@
 </section>
 <section id="regression-model-uses" class="slide level2 smaller">
 <h2>Regression Model Uses</h2>
-<div>
 <ul>
 <li class="fragment"><strong>Prediction</strong> - Modeling existing observations or forecasting new data
 <ul>
@@ -326,7 +315,6 @@
 <li class="fragment">E.g., identifying risk factors for a disease or attitudes that predict voting</li>
 </ul></li>
 </ul>
-</div>
 </section>
 <section id="poll" class="slide level2">
 <h2>Poll</h2>
@@ -337,7 +325,6 @@
 </section>
 <section id="regression-model-uses-1" class="slide level2 smaller">
 <h2>Regression Model Uses</h2>
-<div>
 <ul>
 <li class="fragment"><strong>Extrapolation</strong> - Adjusting for known differences between sample and population of interest
 <ul>
@@ -348,7 +335,6 @@
 <li class="fragment">E.g., exposure to a pollutant and health outcomes</li>
 </ul></li>
 </ul>
-</div>
 </section>
 <section id="linear-regression" class="slide level2 smaller">
 <h2>Linear Regression</h2>
@@ -372,23 +358,19 @@
 <img data-src="../images/lecture2/fundamental_graph.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="important-considerations-for-linear-regression" class="slide level2 smaller">
 <h2>Important Considerations for Linear Regression</h2>
-<div>
 <ul>
 <li class="fragment">Important to distinguish between <strong>errors</strong> <span class="math inline">\(e_i\)</span>, which are unknown &amp; associated with true regression line and <strong>differences</strong> <span class="math inline">\(\epsilon_i\)</span> between observed <span class="math inline">\(Y_i\)</span> &amp; fitted <span class="math inline">\(\hat{Y}\)</span></li>
 <li class="fragment"><strong>Least squares estimation (LSE)</strong> - most common line-fitting method, results from the minimization of <span class="math inline">\(\sqrt{\epsilon_i}\)</span></li>
 <li class="fragment">A <strong>change of variables</strong> can help to understand properties of the linear regression model <span class="math display">\[x_i = X_i - \bar{X}\]</span> where <span class="math inline">\(\bar{X}\)</span> is the mean of <span class="math inline">\(\mathbf{X}\)</span></li>
 </ul>
-</div>
 </section>
 <section id="important-considerations-for-linear-regression-1" class="slide level2 smaller">
 <h2>Important Considerations for Linear Regression</h2>
-<div>
 <ul>
 <li class="fragment">Previous regression lines keep their slopes (<span class="math inline">\(b\)</span> and <span class="math inline">\(\hat{b}\)</span>) but change their intercepts (<span class="math inline">\(a\)</span> and <span class="math inline">\(\hat{a}\)</span>)</li>
 <li class="fragment">Change is useful because new variable <span class="math inline">\(x\)</span> has property that <span class="math inline">\(\sum_i x_i = 0\)</span></li>
 <li class="fragment">Under this transformation, LSE are given by <span class="math inline">\(\hat{a} = \hat{Y}\)</span> so fitted line goes through the center of gravity (<span class="math inline">\(\bar{X}, \bar{Y}\)</span>) of the sample and <span class="math display">\[\hat{b} = \sum_i \frac{x_i Y_i}{x_i^2}\]</span></li>
 </ul>
-</div>
 </section>
 <section id="important-considerations-for-linear-regression-2" class="slide level2 smaller">
 <h2>Important Considerations for Linear Regression</h2>
@@ -414,7 +396,6 @@ E(\hat{b}) = b &amp; Var(\bar{b}) = \frac{\sigma^2}{\sum_i x_i^2} \\
 <img data-src="../images/lecture2/experimental_design.png" class="quarto-figure quarto-figure-center r-stretch" style="width:50.0%"></section>
 <section id="properties-of-regression-estimators" class="slide level2 smaller">
 <h2>Properties of Regression Estimators</h2>
-<div>
 <ul>
 <li class="fragment">If <span class="math inline">\(E(e|\mathbf{X}) = 0\)</span>, LSE have some desirable properties
 <ul>
@@ -428,7 +409,6 @@ E(\hat{b}) = b &amp; Var(\bar{b}) = \frac{\sigma^2}{\sum_i x_i^2} \\
 </ul></li>
 </ul></li>
 </ul>
-</div>
 </section>
 <section id="properties-of-regression-estimators-1" class="slide level2">
 <h2>Properties of Regression Estimators</h2>
@@ -586,7 +566,7 @@ E(\hat{b}) = b &amp; Var(\bar{b}) = \frac{\sigma^2}{\sum_i x_i^2} \\
 </div>
 </div>
 <!-- 
-```obrvdkbku
+```hoguzzpsk
 graph LR
     A(("Build linear 
   regression model
@@ -674,7 +654,6 @@ graph LR
 </section>
 <section id="statistically-significance-neq-practical-importance" class="slide level2 smaller">
 <h2>Statistically Significance <span class="math inline">\(\neq\)</span> Practical Importance</h2>
-<div>
 <ul>
 <li class="fragment">An effect can be non-random (i.e., statistically significant) but not practically impactful</li>
 <li class="fragment">E.g., say we find that for every 10-cent increase in the price per gallon for gasoline there is a 0.001% decrease in vehicle miles traveled. Do we care?
@@ -688,22 +667,18 @@ graph LR
 </ul></li>
 </ul></li>
 </ul>
-</div>
 </section>
 <section id="not-significant-does-not-mean-zero-effect" class="slide level2 smaller">
 <h2>Not Significant Does Not Mean Zero Effect</h2>
-<div>
 <ul>
 <li class="fragment">E.g., A study of the effectiveness of heart stents for heart patients</li>
 <li class="fragment">Treated group outperformed control group, but not statistically significantly so</li>
 <li class="fragment">Observed average difference in treadmill time (treatment effect) was 16.6 seconds with standard error of 9.8 – 95% confidence interval includes zero</li>
 <li class="fragment">Net effect may be positive or negative – it is unclear!</li>
 </ul>
-</div>
 </section>
 <section id="differences-bw-significant-not-significant-not-statistically-significant" class="slide level2 smaller">
 <h2>Differences B/W <em>Significant</em> &amp; <em>Not Significant</em> NOT Statistically Significant</h2>
-<div>
 <ul>
 <li class="fragment">Moving from 0.051 p-value to 0.049 p-value is not hard</li>
 <li class="fragment">More important:
@@ -718,7 +693,6 @@ graph LR
 </ul></li>
 </ul></li>
 </ul>
-</div>
 </section>
 <section id="garden-of-forking-paths" class="slide level2 smaller">
 <h2>Garden of Forking Paths</h2>
@@ -746,25 +720,21 @@ analyzing the voxel (think: 3-D or "volumetric" pixel) data, the voxels represen
 </section>
 <section id="example-sports-viewing-political-attitudes-1" class="slide level2">
 <h2>Example: Sports Viewing &amp; Political Attitudes</h2>
-<div>
 <ul>
 <li class="fragment"><p>Find <strong>40%</strong> of Nebraskans who watch football supported Romney in football season vs.&nbsp;<strong>23%</strong> in non-football season (Type-M error)</p></li>
 <li class="fragment"><p>Implausible! Research finds <strong>minimal changes</strong> in vote preferences over election cycle</p></li>
 <li class="fragment"><p>What is the dividing line between <strong>single</strong> and <strong>married</strong>?</p></li>
 <li class="fragment"><p><strong>Differential response rate?</strong> Maybe liberal or conservative Nebraskans are more or less likely to participate in a survey depending on if it is football season</p></li>
 </ul>
-</div>
 </section>
 <section id="how-to-move-beyond-hypothesis-testing" class="slide level2">
 <h2>How to Move Beyond Hypothesis Testing</h2>
-<div>
 <ol type="1">
 <li class="fragment"><strong>Analyze all data</strong> - Better to anticipate critism than hide data</li>
 <li class="fragment"><strong>Present all comparisons</strong> - Rather than statistically significant comparisons only</li>
 <li class="fragment"><strong>Make data public</strong> - If a topic is worth studying, you should want others to be able to quickly progress without repeating your work</li>
 <li class="fragment"><strong>Accept uncertainty &amp; embrace variation</strong> - No answer is perfect</li>
 </ol>
-</div>
 
 
 </section></section>
@@ -809,7 +779,7 @@ analyzing the voxel (think: 3-D or "volumetric" pixel) data, the voxels represen
 'jumpToSlide': true,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
 'chalkboard': {"buttons":true},
-'multiplex': {"secret":null,"id":"9c3dbcb804668a72","url":"https://reveal-multiplex.glitch.me/"},
+'multiplex': {"secret":null,"id":"9efb0d1ac3d48228","url":"https://reveal-multiplex.glitch.me/"},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -963,7 +933,7 @@ analyzing the voxel (think: 3-D or "volumetric" pixel) data, the voxels represen
         margin: 0.1,
 
         math: {
-          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
@@ -990,190 +960,173 @@ analyzing the voxel (think: 3-D or "volumetric" pixel) data, the voxels represen
       });
     </script>
     <script id="quarto-html-after-body" type="application/javascript">
-    window.document.addEventListener("DOMContentLoaded", function (event) {
-      const toggleBodyColorMode = (bsSheetEl) => {
-        const mode = bsSheetEl.getAttribute("data-mode");
-        const bodyEl = window.document.querySelector("body");
-        if (mode === "dark") {
-          bodyEl.classList.add("quarto-dark");
-          bodyEl.classList.remove("quarto-light");
-        } else {
-          bodyEl.classList.add("quarto-light");
-          bodyEl.classList.remove("quarto-dark");
-        }
-      }
-      const toggleBodyColorPrimary = () => {
-        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-        if (bsSheetEl) {
-          toggleBodyColorMode(bsSheetEl);
-        }
-      }
-      toggleBodyColorPrimary();  
-      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
-      tabsets.forEach(function(tabset) {
-        const tabby = new Tabby('#' + tabset.id);
-      });
-      const isCodeAnnotation = (el) => {
-        for (const clz of el.classList) {
-          if (clz.startsWith('code-annotation-')) {                     
-            return true;
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
           }
+          return false;
         }
-        return false;
-      }
-      const onCopySuccess = function(e) {
-        // button target
-        const button = e.trigger;
-        // don't keep focus
-        button.blur();
-        // flash "checked"
-        button.classList.add('code-copy-button-checked');
-        var currentTitle = button.getAttribute("title");
-        button.setAttribute("title", "Copied!");
-        let tooltip;
-        if (window.bootstrap) {
-          button.setAttribute("data-bs-toggle", "tooltip");
-          button.setAttribute("data-bs-placement", "left");
-          button.setAttribute("data-bs-title", "Copied!");
-          tooltip = new bootstrap.Tooltip(button, 
-            { trigger: "manual", 
-              customClass: "code-copy-button-tooltip",
-              offset: [0, -8]});
-          tooltip.show();    
-        }
-        setTimeout(function() {
-          if (tooltip) {
-            tooltip.hide();
-            button.removeAttribute("data-bs-title");
-            button.removeAttribute("data-bs-toggle");
-            button.removeAttribute("data-bs-placement");
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
           }
-          button.setAttribute("title", currentTitle);
-          button.classList.remove('code-copy-button-checked');
-        }, 1000);
-        // clear code selection
-        e.clearSelection();
-      }
-      const getTextToCopy = function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
           for (const childEl of codeEl.children) {
             if (isCodeAnnotation(childEl)) {
               childEl.remove();
             }
           }
           return codeEl.innerText;
-      }
-      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-        text: getTextToCopy
-      });
-      clipboard.on('success', onCopySuccess);
-      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-          text: getTextToCopy,
-          container: window.document.getElementById('quarto-embedded-source-code-modal')
-        });
-        clipboardModal.on('success', onCopySuccess);
-      }
-        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-        var mailtoRegex = new RegExp(/^mailto:/);
-          var filterRegex = new RegExp("https:\/\/hawkins-tech-lab\.github\.io\/");
-        var isInternal = (href) => {
-            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
         }
-        // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-        for (var i=0; i<links.length; i++) {
-          const link = links[i];
-          if (!isInternal(link.href)) {
-            // undo the damage that might have been done by quarto-nav.js in the case of
-            // links that we want to consider external
-            if (link.dataset.originalHref !== undefined) {
-              link.href = link.dataset.originalHref;
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp("https:\/\/hawkins-tech-lab\.github\.io\/");
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
             }
           }
-        }
-      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-        const config = {
-          allowHTML: true,
-          maxWidth: 500,
-          delay: 100,
-          arrow: false,
-          appendTo: function(el) {
-              return el.closest('section.slide') || el.parentElement;
-          },
-          interactive: true,
-          interactiveBorder: 10,
-          theme: 'light-border',
-          placement: 'bottom-start',
-        };
-        if (contentFn) {
-          config.content = contentFn;
-        }
-        if (onTriggerFn) {
-          config.onTrigger = onTriggerFn;
-        }
-        if (onUntriggerFn) {
-          config.onUntrigger = onUntriggerFn;
-        }
-          config['offset'] = [0,0];
-          config['maxWidth'] = 700;
-        window.tippy(el, config); 
-      }
-      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-      for (var i=0; i<noterefs.length; i++) {
-        const ref = noterefs[i];
-        tippyHover(ref, function() {
-          // use id or data attribute instead here
-          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-          try { href = new URL(href).hash; } catch {}
-          const id = href.replace(/^#\/?/, "");
-          const note = window.document.getElementById(id);
-          if (note) {
-            return note.innerHTML;
-          } else {
-            return "";
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
           }
-        });
-      }
-      const findCites = (el) => {
-        const parentEl = el.parentElement;
-        if (parentEl) {
-          const cites = parentEl.dataset.cites;
-          if (cites) {
-            return {
-              el,
-              cites: cites.split(' ')
-            };
-          } else {
-            return findCites(el.parentElement)
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
           }
-        } else {
-          return undefined;
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
         }
-      };
-      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-      for (var i=0; i<bibliorefs.length; i++) {
-        const ref = bibliorefs[i];
-        const citeInfo = findCites(ref);
-        if (citeInfo) {
-          tippyHover(citeInfo.el, function() {
-            var popup = window.document.createElement('div');
-            citeInfo.cites.forEach(function(cite) {
-              var citeDiv = window.document.createElement('div');
-              citeDiv.classList.add('hanging-indent');
-              citeDiv.classList.add('csl-entry');
-              var biblioDiv = window.document.getElementById('ref-' + cite);
-              if (biblioDiv) {
-                citeDiv.innerHTML = biblioDiv.innerHTML;
-              }
-              popup.appendChild(citeDiv);
-            });
-            return popup.innerHTML;
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
           });
         }
-      }
-    });
-    </script>
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
     
 
 </body></html>
