@@ -247,10 +247,12 @@ website:
       search: true
       align: center
       contents:
-        - section: "Transportation in Canada"
+        - section: "Transportation Finance in Canada"
           contents:
+            - href: projects/transport_canada/transport_canada.qmd
+              text: Transportation Finance in Canada
             - href: projects/transport_canada/carbon_pricing.html
-              text: Transportation in Canada
+              text: Carbon Pricing
     - id: Books
       style: "docked"
       search: true
