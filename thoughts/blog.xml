@@ -10,7 +10,50 @@
 <atom:link href="https://hawkins-tech-lab.github.io/thoughts/blog.xml" rel="self" type="application/rss+xml"/>
 <description>TECH lab website</description>
 <generator>quarto-1.8.25</generator>
-<lastBuildDate>Sat, 15 Nov 2025 07:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 21 Dec 2025 07:00:00 GMT</lastBuildDate>
+<item>
+  <title>Stating the revealed preferences of choice.</title>
+  <dc:creator>Jason Hawkins</dc:creator>
+  <link>https://hawkins-tech-lab.github.io/thoughts/posts/12-21-2025/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="context" class="level1">
+<h1>Context</h1>
+<p>I am developing an article on the foundations of revealed preference (RP) and stated preference (SP) methods. This article is motivated by the common assumption in choice analysis that RP acts as a “Gold Standard” and SP is an ersatz option used only as a last resort when RP data are unavailable. From the outset, I recognize that the article is unlikely to be published in my field for a long list of reasons. A non-exhaustive list would include positivist epistemology bias (“where is the data?”), gate keeping (“but you aren’t X, Y, or Z”/“we didn’t ask for your opinion - i.e., you were not invited to submit an editorial article”), and ontological bias (“but this is the way the world works”). I am not a cynic; just pragmatic and have spent enough time in the field to anticipate the response. Thus, I will also post the full article online for posterity and my graduate students to review.</p>
+<p>Harvey (1969) and Gregory (1978) argue that if we start from different epistemologies, we will get different results. This is as good a starting point as any to situate this post. Epistemology concerns how we know things and the methods of validation our knowledge. RP theory is premised on observation of choice providing knowledge of “choice”. This is a good start point for a choice analysis, but does RP represent preferences? It depends on a number of factors, which we can consider through the lens of ontology, or our theory of the nature of reality. RP assumes a world in which individuals are free, unconstrained agents that make free and informed choices. Simon extended the rational choice framework to “bounded rationality”, in which individuals are free to make decisions but possess only imperfect information. Sheppard and Barnes state that “[t]heory and observation cannot be separated from one another, and the ontological priority of the one or the other is an interminable dispute in philosophy”.</p>
+</section>
+<section id="a-natural-analogy" class="level1">
+<h1>A Natural Analogy</h1>
+<p>I was struck by an analogy given by Nate Hagens on a recent episode of The Great Simplification podcast. Hagens was discussing sunk costs - a past expenditure of time, money, effort that cannot be recovered - which raised the thought for me that observed RP data is a sunk cost. These costs include the identity, status, and institutional structures encapsulated in our past choices. Hagens makes a nice analogy to an oak tree, which was badly pruned many decades ago. The tree grows out in an unbalanced way, with heavy limbs at odd angles. “Those branches of the tree are sunk costs in wood.” When a storm comes, the tree will be torn apart. A good arborist will study the structure of the tree, making careful cuts that “guide the new growth in stronger directions”. The tree may be smaller, but it have a healthier and more resilient structure.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hawkins-tech-lab.github.io/thoughts/posts/12-21-2025/hagens_tree_figure.jpg" class="img-fluid figure-img"></p>
+<figcaption>TGS Oak Tree</figcaption>
+</figure>
+</div>
+<p>Hagens is talking about the size and diversity of the economy and our patterns of consumption, but I believe we can also interpret his argument in terms of the RP-SP dialectic. Positivist research is based on an existing reality at a fixed point in time (or over a fixed period). RP theory follows Aristotelian logic: a hypothesis either true or false and stays that way. Positivist science works because it empirically tests hypotheses on the current system, therefore accurately describes existing structures. Dialetical materialism says that we must also consider the historical roots, to continue the nature analogy, that led to the current system of consumption and available options.</p>
+<p>I’ll bring things closer to home with a dwelling location choice example that builds off the analogy of Hagens from above. In many North American cities, the available dwelling options are some combination of detached houses of various sizes and colours. The neighbourhood is a mix of houses, small parks, and perhaps a gas station on the main road. RP theory would suggest that this pattern is the revealed preference of households. For a wide variety of reasons, this is a highly biased and (I would argue) problematic framing. The left-hand tree represents my attempt to map Hagens’ analogy onto the problem. The tree is dominated by detached houses, imbalanced, and unhealthy. The right-hand tree includes a more diverse mix of housing options and is much healthier. Of course, I am making a highly normative decision by making my preferred neighbourhood a healthy tree, but it is my prerogative as the blog author. The point I seek to make here is not that we should all live in high-rise apartments. Rather, we must provide households diverse options that recognized their diverse neighbourhood and dwelling preferences. This is an SP question - what do people say they prefer in their neighbourhoods?</p>
+<div class="columns">
+<p><img src="https://hawkins-tech-lab.github.io/thoughts/posts/12-21-2025/rp_tree.png" class="img-fluid" style="width:45.0%" alt="RP Tree"> <img src="https://hawkins-tech-lab.github.io/thoughts/posts/12-21-2025/sp_tree.png" class="img-fluid" style="width:45.0%" alt="SP Tree"></p>
+</div>
+</section>
+<section id="conclusions" class="level1">
+<h1>Conclusions</h1>
+<p>There is obviously much more to say on this topic. In the full article, I will provide the mathematical and theoretical details of RP, as formulated by Samuelson and McFadden from different perspectives; I would say Samuelson’s RP theory is more theoretical and mathematical while McFadden’s theory aligns with his more pragmatic econometric approach to economics. I am also using crude and unnuanced interpretations of RP and SP in this post. I will provide more nuanced interpretations and groundings in the literature in the full article. The main point to make in this post is that RP is not a “Gold Standard”. It has its merits but must be considered in its historical context. Our decisions as consumers are heavily influenced by the alternatives made available to us, budget and information constraints, and socio-political forces. In the same way, SP is not a perfect solution. Respondents can say what they like in a survey. Both RP and SP are necessary tools to formulate policy and plan for the future but neither is sufficient.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>Economics</category>
+  <category>Surveys</category>
+  <guid>https://hawkins-tech-lab.github.io/thoughts/posts/12-21-2025/</guid>
+  <pubDate>Sun, 21 Dec 2025 07:00:00 GMT</pubDate>
+  <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/12-21-2025/banner.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Spirit of the City</title>
   <dc:creator>Jason Hawkins</dc:creator>
@@ -722,64 +765,6 @@
   <guid>https://hawkins-tech-lab.github.io/thoughts/posts/06-06-2024/</guid>
   <pubDate>Thu, 06 Jun 2024 06:00:00 GMT</pubDate>
   <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/06-06-2024/banner.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>Schumacher On Prediction</title>
-  <dc:creator>Jason Hawkins</dc:creator>
-  <link>https://hawkins-tech-lab.github.io/thoughts/posts/05-28-2024/</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>Best known for his work on small-scale economics, in the same work (Small is Beautiful), E.F. Schumacher provides one of the best discussions on prediction that I have seen to date. It is also an excellent example of <em>semantics</em> applied in its true sense, rather than the typical pejorative meaning associated with the term in many discussions.</p>
-<p>Schumacher distinguishes prediction along three dimensions using a set of <img src="https://latex.codecogs.com/png.latex?2%5E3%20=%208"> cases as follows:</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ol type="1">
-<li>Act Past Certain</li>
-<li>Act Future Certain</li>
-<li>Act Past Uncertain</li>
-<li>Act Future Uncertain</li>
-</ol>
-</div><div class="column" style="width:50%;">
-<ol start="5" type="1">
-<li>Event Past Certain</li>
-<li>Event Future Certain</li>
-<li>Event Past Uncertain</li>
-<li>Event Future Uncertain</li>
-</ol>
-</div>
-</div>
-<p>Let us first discuss <em>acts</em> and <em>events</em>. The first (acts) are active and “within the control of the planner”, while the second (events) are passive and “outside the control of the planner”. The planner may be able to forecast events and their influence on plans, but they cannot be part of the plans. <em>Plan</em> and <em>estimate</em>, while appearing to apply to the future only, are often applied to past events. For example, “I shall not visit Paris without a plan” can mean “I shall arm myself with a street plan for orientation” - case 5 because the plan construction is a certain event that occured in the past outside your control. Alternatively, “I shall arm myself with a plan which outlines in advance where I am going to go and how I am going to spend my time and money” - case 2 or 4 depending on the certainty of said plans. Similarly, estimate may refer to either the past or the future. Past events often remain uncertain due to measurement error and other factors.</p>
-<p>Having spent the better part of the last decade studying human behaviour and forecasting it under alternative conditions, I found Schumacher’s classification system encapsulated much of what I believe about the ability to forecast behaviour. I follow Schumacher’s definitions with a short commentary.</p>
-<ol type="1">
-<li>Full predictability (in principle) exists only in the absence of human freedom - i.e., in “sub-human” nature. The limitations of predictability are purely limitations of knowledge and technique.</li>
-</ol>
-<p>That is, if we assume no human freedom and deterministic choice, 100% accurate prediction is feasible provided we have all the available information and the correct model structure. I have the sense that many of my field are of the opinion that <em>Big Data</em> and <em>Artificial Intelligence</em> bring us daily closer to this reality. I am not so readily convinced of this fact.</p>
-<ol start="2" type="1">
-<li>Relative predictability exists with regard to the behaviour pattern of large numbers of people doing “normal” things (routines).</li>
-</ol>
-<p>In transportation modeling, we would call this travel on a typical day and aggregate (4-step) demand modeling.</p>
-<ol start="3" type="1">
-<li>Relatively full predictability exists with regard to human actions controlled by a plan which eliminates freedom, e.g., railway timetables.</li>
-</ol>
-<p>I like this example for obvious reasons.</p>
-<ol start="4" type="1">
-<li>Individual decisions by individuals are in principle unpredictable.</li>
-</ol>
-<p>I agree with this statement. I see the shift towards disaggregate modeling as a means to increase prediction accuracy and nuance for large numbers of people (point 2 above) rather than a suggestion that we can accurately predict the individual decisions at which the model is set up.</p>
-<p>Schumacher then touches on a point that has recently seen great interest in the transportation demand modeling community - uncertainty. He states “all long-term forecasting is somewhat presumptuous and absurd, unless it is of so general a kind that it merely states the obvious”. Schumacher emphasizes the need to focus on modeling as a tool for <em>exploratory calculations</em> rather than <em>forecasting</em>, per se. In forecasting, we are stating that a certain set of conditions will be the case in 20 years time or, in the slightly more nuanced form of the same, that differences from current conditions will have some absolute value. E.g., we forecast future traffic and make statements about the difference in traffic on particular roads given a change in infrastructure. An exploratory approach includes multiple potential futures and considers the “long-term effect of certain assumed tendencies”. Schumacher uses a development example. He proposes a backcasting exercise to explore potential pathways for the uplift of underdeveloped nations. “What would be the required output of foodstuffs, fuels, metals, textile fibres, and so forth? What would be the stock of industrial capital?” Many new assumptions would be necessarily along the way and the outcome would be a set of feasibility studies to indicate the most feasible among alternative <em>patterns of development</em>. The discussion here is again (partially) one of semantics. We must recognize that long-term forecasts are infeasible, while long-term feasibility study can be a worthwhile exercise.</p>
-
-
-
- ]]></description>
-  <category>prediction</category>
-  <category>estimation</category>
-  <category>semantics</category>
-  <guid>https://hawkins-tech-lab.github.io/thoughts/posts/05-28-2024/</guid>
-  <pubDate>Tue, 28 May 2024 06:00:00 GMT</pubDate>
-  <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/05-28-2024/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
