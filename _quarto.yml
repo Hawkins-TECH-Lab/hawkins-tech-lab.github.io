@@ -227,7 +227,7 @@ website:
       contents:
         - section: "EV"
           contents:
-            - href: projects/ev_adoption/ev.qmd
+            - href: projects/ev_adoption/ev.html
               text: EV Adoption Graphs
     - id: shared_mobility
       style: "docked"
