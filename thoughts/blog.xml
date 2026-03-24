@@ -10,7 +10,143 @@
 <atom:link href="https://hawkins-tech-lab.github.io/thoughts/blog.xml" rel="self" type="application/rss+xml"/>
 <description>TECH lab website</description>
 <generator>quarto-1.8.25</generator>
-<lastBuildDate>Sun, 21 Dec 2025 07:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 23 Mar 2026 06:00:00 GMT</lastBuildDate>
+<item>
+  <title>Communicative Decision Making Under Uncertainty as Fault Trees</title>
+  <dc:creator>Jason Hawkins</dc:creator>
+  <link>https://hawkins-tech-lab.github.io/thoughts/posts/03-23-2026/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>The German philosophy Jürgen Habermas passed away on March 14, 2026. I was introduced to his work over the last year by my colleague Byron Miller. Byron and I have been working on a project that includes a review of diverse perspectives on rationality. I am by no means an expert on the work of Habermas. In fact, my colleagues who have read his work inform me it can be a challenging read.</p>
+<p>Habermas’ communicative rationality, unlike the instrumental rationality commmonly employed in microeconomic models, is dialogical; it is founded on principles of rationality through communication and democratic coordination. I will focus herein on this concept of communicative rationality, but I must also note that Habermas had many other profound insights that have impacted my thinking on research topics. As one such example, he drew distinctions between the lifeworld (i.e., background world of shared meanings and informal social relations) and system (i.e., money and government adminstration). Habermas had much to say on the impacts of AI and social media on the lifeworld, which I may revisit in a future post.</p>
+<p>For today, I will focus on a model architecture I am developing to measure barriers to communicative action in our social structure. Equal in importance to Habermas’ theory of communicative rationality was his work on these barriers, social hierarchies that lead to a diminishment of communicative rationlity in our society. My proposed model is inspired by fault trees, which I teach in my course on engineering uncertainty. A fault tree is a method developed in safety and reliability engineering to understand the failure paths for a complex system. A simple example for a system. The system is several ways based on the failure of components 1, 2, 3, and 4. Failure conditions take one of three forms. The OR operator denotes failure conditions for which one of two or more components may fail for system failure. The AND operator denotes failure conditions for which all components must fail for system fail. A third condition is the inhibit operator, which denotes failure conditions for which all components must fail and an exogenous condition must hold true. The MOCUS algorithm developed by the US Army Environmental Command (USAEC) may be used to solve the fault tree problem for any standard fault tree.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div id="fig-system-failure" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-system-failure-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-system-failure">flowchart TD
+
+    %% Top Event
+    TE([TOP EVENT&lt;br&gt;System Failure])
+
+    %% Gates
+    G1([G1])
+    G2([G2])
+    G3([G3])
+
+    %% Basic Events
+    G1_1([1])
+    G1_2([2])
+
+    G2_2([2])
+    G2_3([3])
+
+    G3_2([2])
+    G3_4([4])
+
+    %% Logic Gates
+    OR1{{OR}}
+    AND2{{AND}}
+    OR3{{OR}}
+
+    %% Structure
+    TE ==&gt; OR1
+    OR1 ==&gt; G1
+    OR1 ==&gt; G2
+    OR1 ==&gt; G3
+
+    G1 ==&gt; OR3
+    OR3 ==&gt; G1_1
+    OR3 ==&gt; G1_2
+
+    G2 ==&gt; AND2
+    AND2 ==&gt; G2_2
+    AND2 ==&gt; G2_3
+
+    G3 ==&gt; OR3b{{OR}}
+    OR3b ==&gt; G3_2
+    OR3b ==&gt; G3_4
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-system-failure-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: System Failure Fault Tree Analysis
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>The proposed model extends the above failure structure to social systems of group decision making. I will use the example of the Green Line LRT in Calgary to illustrate the model concept. Failure of the Green Line LRT represents the event that the Green Line is not funded. Succesful funding requires the approval of all three levels of government. It also requires the approval of a majority of households (technically an m-choose-n failure), and the support of developers. We could further subdivide households into communities and/or social strata, government into individual officials, and developers into residential and commercial sectors. Of course, the writing the illstration would test my patience with ASCI figures. Through the lens of communicative action, approval requires dialogue between these various agents to avoid the triggering of a fault (i.e., a decision sector not satisfying the fault tree condition). The twist is that this idealized structure may not represent reality due to structural inequities in the communicative power of agents. That is, a particular developer may hold sway such that the developer failure mode is not triggered despite dissent within the sector. Similarly, one community may control the failure of household consent despite a majority of the population supporting project funding.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div id="fig-social-failure" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-social-failure-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-social-failure">flowchart TD
+    %% Top Level
+    TE[TOP EVENT:&lt;br&gt;GREEN LINE LRT]
+    
+    %% Logic Gates
+    AND1{{AND}}
+    AND_G{{AND}}
+    OR_H{{OR}}
+    AND_D{{AND}}
+
+    %% Relationships
+    TE ==&gt; AND1
+    AND1 ==&gt; G[Government]
+    AND1 ==&gt; H[Households]
+    AND1 ==&gt; D[Developers]
+
+    %% Government Branch
+    G ==&gt; AND_G
+    AND_G ==&gt; GL[Local]
+    AND_G ==&gt; GP[Provincial]
+    AND_G ==&gt; GF[Federal]
+
+    %% Households Branch
+    H ==&gt; OR_H
+    OR_H ==&gt; H1[1]
+    OR_H ==&gt; H2[2]
+
+    %% Developers Branch
+    D ==&gt; AND_D
+    AND_D ==&gt; D1[1]
+    AND_D ==&gt; D2[2]
+
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-social-failure-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Green Line LRT Failure Fault Tree Analysis
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>I further extend the model structure by integrating the fault tree structure with my work on choice econometrics. If we consider each agent as a decision-maker described by a Luce-style choice architecture, the fault tree becomes probabilistic in the stochastic agent state (approve/decline). The fault tree structure provides the mechanism for extending individual choice econometrics to social consensus choice. Consensus models are not unknown in the group decision literature; however, they are limited in their representation of choice archicture and structural conditions across agent strata.</p>
+<p>The model structure would use Bayesian fault trees that replace Boolean gates (G1, G2, G3) in the fault tree model with probabilistic gates representing stochastic preferences and social influence mechanisms. This model structure would help us predict dissent, infer social structure, and identify influential or fragile subcomponents (or agents) in the network.</p>
+<p>The first limitation of this proposed model is that the data do not exist (to the best of my knowledge and searching online) to capture this decision structure. The most feasible path to implementation would be to run the model on synthetic data with known biases in social system structure. Thus, we could identify structural barriers to communicative action in group choice problems.</p>
+<p>Another core element of fault tree analysis that provides an interesting interpretation when applied to social structure is the minimum cut set. This is the smallest set of components for which component failure will cause system failure. In the social context, we can think of the cut set as the smallest set of agents whose dissent is sufficient to trigger widespread community disagreement and a failure to fund the project.</p>
+<p>Another avenue for exploring the influence of Habermas on my research came up during a lecture on decision making under deep uncertainty (DMDU). An online presentation by DMDU pioneer Robert Lempert referenced the work of Amartya Sen on relational reasoning. The idea in this case is that modelling tools should be designed so they are useful for consensus-forming among diverse actors in the transportation, water, energy, etc. system planning process. Sen’s relational reasoning work centers on justice and the effect of individual choices on other citizens. It focuses on how public reasoning helps compare and assess social states. My current understanding of the difference from communicative action is that Sen sees public reasoning as valuable even without consensus, while Habermas viewed consensus as the goal. I have much work ahead to better understand these thinkers’ perspectives and how their work may be incorporated into evidence-based urban planning processes. I look forward to continuing my explorations at the intersection of critical social theory and quantitative modelling research.</p>
+
+
+
+ ]]></description>
+  <category>decision making</category>
+  <category>communicative rationality</category>
+  <category>fault trees</category>
+  <category>deep uncertainty</category>
+  <guid>https://hawkins-tech-lab.github.io/thoughts/posts/03-23-2026/</guid>
+  <pubDate>Mon, 23 Mar 2026 06:00:00 GMT</pubDate>
+  <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/03-23-2026/banner.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Stating the revealed preferences of choice.</title>
   <dc:creator>Jason Hawkins</dc:creator>
@@ -739,32 +875,6 @@
   <guid>https://hawkins-tech-lab.github.io/thoughts/posts/06-10-2024/</guid>
   <pubDate>Mon, 10 Jun 2024 06:00:00 GMT</pubDate>
   <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/06-10-2024/banner.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>Socialist Calculation Debate</title>
-  <dc:creator>Jason Hawkins</dc:creator>
-  <link>https://hawkins-tech-lab.github.io/thoughts/posts/06-06-2024/</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>I once had a student call me a socialist for discussing equity in a transportation engineering course. While somewhat humourous and avoiding any tangential discussions on the topic of transportation equity (Cole’s notes: engineers <strong>definitely</strong> need to consider it), they were not wrong that my beliefs on many topics tend towards Democratic Socialism. What I would like to discuss today is Socialist Calculation Debate.</p>
-<p>The Socialist Calculation Debate was a debate among economists, beginning in the 1920s, in response to the rise of socialism in Eastern Europe. Von Mises and Hayek argued that socialism was not feasible because it lacked an appropriate means of economic valuation - the law of value. While often framed as a debate between capitalist and socialist economic systems, the debate included internal differences among socialist economists as to the use of markets and money.</p>
-<p>This debate interests me in the context of my work on the valuation of ecosystem services. I do not go so far as to say that markets have no value. Within the traditional economic market, price signals are an effective structural mechanism. The issue comes when we extend a system of values developed within the market economy to the wider environment. For a start, we are more than cogs in an economic machine. Thus, our systems of valuation must be more than those employed by the economic market. How to measure value beyond money is certainly a germane question. So how should we do it? I do not have a clear answer. I do not believe this is by definition a statement that we should not pursue answers! In fact, as argued by Thomas Kuhn, it is not always through incremental progress that we achieve innovation. Rather, we must seek out new ways of thinking and analysis. I increasingly find my lack of formal training in economics an asset in that I am unimpeded by a linear training on the subject, to the great consternation of all my economic committee members as a student (“but those aren’t the correct papers to reference!”).</p>
-<p>Value theory is the ethical study of how, why, and to what degree we values things. Ecological econmics distinguishes two types of value: donor-type and receiver-type value. We can think of these value types in terms of physical flow accounting. Donor-type value parallels the attribution of physical flows to their point of production (i.e., resource extraction). Receiver-type value parallels the attribution of physical flows to their points of consumption (i.e., households). Odum uses the term <em>emergy</em> to described the embodied energy required for provision of a good or service. Emergy is typically measured in sun energy equivalents - i.e., the sun energy required to produce a fuel, good, or human service. It provides a measure of the <em>quality</em> of energy with respect to their ability to support receiver-type value. As an alternative to monetary value, emergy has many appeals features for the engineering trained in thermodynamics. It does not introduce any artificial distortions of value induced by market fluctuations or rent seeking behaviour.</p>
-<p>We can also distinguish between <em>instrumental</em> and <em>intrinsic</em> value, as described by Plato in the Republic. An instrumentally valuable good is one that has value for its provisioning of other valued goods or services - i.e., what a transportation might call a <em>derived demand</em> good. Intrinsically valuable goods have value in their use. The two are not mutually exclusive. In environmental ethics, we can consider the instrumental value of resources for humans, such as the value of forests for their provision of timber used in dwellings. However, forests also have an intrinsic value in their direct provision of beauty. Environmental economics would seek to weigh the tradeoffs between these values - i.e., is the loss of the <em>intrinsic</em> beauty of a forest by cutting down a tree balanced by its <em>instrumental</em> value as an input to economic production. The issue that arises here is that instrumental value is quite easy to quantify in an economic value system. We can simply measure the direct economic benefits. However, intrinsic value is a bit <em>squishier</em> to use the technical term. Does removing a single tree affect the ascetics? What about single stand of trees? Are there ecological impacts from discontinuity in habitats that will affect the intrinsic value of adjecent remaining forested areas? How much is nature beauty worth to us?</p>
-<p>At this time, I would like to thank my family for reading these ramblings. I assume no one else will see them aside from a few of my students with the misfortune to click on the wrong page on our research website.</p>
-<p>As an aside, the raised fist image has a long history as a social symbol. Extent examples include a painting by Honor'e Daumier from the 1848 French Revolution. On a visit to the Smithsonian Museum of African American History and Culture, I was struck by a group of young African American students posed by a statue commemorating the 1968 Olympics Black Power salute. On the topic of value, it is interesting to observe the shifting patterns and values of a symbol change over time as they are adapted by different groups.</p>
-
-
-
- ]]></description>
-  <category>socialist economics</category>
-  <category>value theory</category>
-  <guid>https://hawkins-tech-lab.github.io/thoughts/posts/06-06-2024/</guid>
-  <pubDate>Thu, 06 Jun 2024 06:00:00 GMT</pubDate>
-  <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/06-06-2024/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
