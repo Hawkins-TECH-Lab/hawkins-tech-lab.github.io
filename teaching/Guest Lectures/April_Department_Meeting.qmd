@@ -1,0 +1,186 @@
+---
+title: "Stated Preference Elicitation"
+subtitle: "April 2026 Department Meeting"
+editor: visual
+format: 
+  revealjs: 
+    theme: simple
+    transition: fade
+    chalkboard: true
+    slide-number: true
+execute:
+  freeze: auto
+---
+
+## Other Broad Research Methods Themes
+- Consumer demand and welfare analysis
+- Spatial econometrics
+- Surrogate (meta)-models for complex simulation systems
+- Decision-making under uncertainty
+- System resilience
+
+## Revealed Preferences
+What we observe people doing with their time and money.
+
+![](./images/calgary_road_rp.png){fig-align="center" width=50%}
+
+## Stated preferences
+What people would like to be doing with their time and money.
+
+![](./images/oulu_bike_sp.png){fig-align="center" width=50%}
+
+## Stated Preference Experiments {.smaller}
+
+<div id="sp-container">
+  <div id="task-content"></div>
+</div>
+
+<script>
+// -----------------------------
+// 1. Attribute levels
+// -----------------------------
+const materials = ["Cross‑Laminated Timber (CLT)", "Steel Frame", "Reinforced Concrete"];
+const insulation = ["Mineral Wool", "Spray Foam", "Cellulose"];
+const carbon = ["Low", "Medium", "High"];
+const cost = ["Low", "Moderate", "High"];
+
+// -----------------------------
+// 2. Random profile generator
+// -----------------------------
+function generateProfile() {
+  return {
+    material: materials[Math.floor(Math.random()*materials.length)],
+    insulation: insulation[Math.floor(Math.random()*insulation.length)],
+    carbon: carbon[Math.floor(Math.random()*carbon.length)],
+    cost: cost[Math.floor(Math.random()*cost.length)]
+  };
+}
+
+// -----------------------------
+// 3. Render a choice task
+// -----------------------------
+let taskIndex = 0;
+const totalTasks = 4;
+let responses = [];
+
+function renderTask() {
+  const content = document.getElementById("task-content");
+
+  // After last task: do NOTHING (no DOM changes)
+  if (taskIndex >= totalTasks) {
+    return;
+  }
+
+  const alts = [generateProfile(), generateProfile(), generateProfile()];
+
+  content.innerHTML = `
+    <h4>Choice Task ${taskIndex+1} of ${totalTasks}</h4>
+    <p>Select the building option you prefer.</p>
+
+    <form id="choice-form">
+      <div class="choice-set">
+        ${alts.map((alt, i) => `
+          <label class="alt-card">
+            <input type="radio" name="choice" value="${i}">
+            <ul>
+              <li><strong>Material:</strong> ${alt.material}</li>
+              <li><strong>Insulation:</strong> ${alt.insulation}</li>
+              <li><strong>Embodied Carbon:</strong> ${alt.carbon}</li>
+              <li><strong>Cost:</strong> ${alt.cost}</li>
+            </ul>
+          </label>
+        `).join("")}
+      </div>
+
+      <label class="none-option">
+        <input type="radio" name="choice" value="none">
+        None of the options
+      </label>
+
+      <button type="submit" class="submit-btn">Submit Choice</button>
+    </form>
+  `;
+
+  const form = document.getElementById("choice-form");
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    e.stopPropagation();          // <-- CRITICAL FIX
+    e.stopImmediatePropagation(); // <-- EXTRA SAFETY
+
+    const selected = document.querySelector('input[name="choice"]:checked');
+    if (!selected) return;
+
+    const value = selected.value;
+    responses.push({
+      task: taskIndex+1,
+      choice: value === "none" ? "None" : Number(value)+1,
+      profile: value === "none" ? null : alts[value]
+    });
+
+    taskIndex++;
+
+    // Only re-render if more tasks remain
+    if (taskIndex < totalTasks) {
+      renderTask();
+    }
+  });
+}
+
+// -----------------------------
+// Initialize
+// -----------------------------
+renderTask();
+</script>
+
+<style>
+.choice-set {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.alt-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  width: 30%;
+  background: #fafafa;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.alt-card:hover {
+  background: #eef6ff;
+  border-color: #4a90e2;
+}
+
+.alt-card input[type="radio"] {
+  margin-bottom: 0.5rem;
+}
+
+.none-option {
+  display: block;
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+.submit-btn {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+</style>
+
+## Current Applications
+- Housing and neighbhourhood choice in Alberta
+- Housing location choice in Singapore -  with Prateek Bansal at National University of Singapore
+- Long-distance EV choice - with Sven Anders at University of Alberta
+- Causal inference in chronic wasting disease and hunting location choice - with Vic Adamowicz at University of Alberta
+- Child-parent treatment choice + surgeon choice - with Deborah Marshall at University of Calgary
+
+## Workshop on Measurement and Methods in Choice Behaviour {.smaller}
+- May 2-3: Workshop at Banff International Research Station (BIRS)
+    - Scholars from across Canada in transportation, environment, health, marketing, and industrial organization
+- May 1: Seminar on water economics with Weizhe Weng (University of Guelph)
+- May 4: Seminar on travel behaviour with Adam Weiss (Carleton University) and Khandker Nurul Habib (University of Toronto)

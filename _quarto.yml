@@ -288,7 +288,7 @@ website:
       
     right:
       - icon: github
-        href: https://github.com/UNL-Hawkins-Lab/Hawkinslab
+        href: https://github.com/hawkins-tech-lab/Hawkinslab
         aria-label: Quarto GitHub     
     background: "#595758"
     
@@ -302,3 +302,11 @@ format:
     link-external-newwindow: false
     grid:
       margin-width: 500px
+
+comments:
+    giscus:
+      repo: Hawkins-TECH-Lab/hawkins-tech-lab.github.io
+      repo-id: R_kgDOJlz51w
+      category: General
+      category-id: DIC_kwDOJlz5184C5I_J
+      mapping: pathname
