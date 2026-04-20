@@ -5,6 +5,7 @@ section-divs: true
 echo: false
 execute:
   freeze: auto  # re-render only when source changes
+  warning: false # graphs.py has some warnings about data format
 ---
 
 ```{python}

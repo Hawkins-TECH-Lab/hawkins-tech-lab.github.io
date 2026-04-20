@@ -1,9 +1,6 @@
 import pandas as pd
-import geopandas as gpd
-import pandas as pd
 import numpy as np
 import geopandas as gpd
-
 import plotly.graph_objects as go
 import plotly.express as px
 
@@ -20,8 +17,15 @@ def filter_edf(edf):
     for i in range(1,7):
         edf.loc[edf["veh_pt_{0}".format(i)]==5,"veh_pt_{0}".format(i)] = 1
         edf.loc[edf["veh_type_{0}".format(i)]==4,"veh_type_{0}".format(i)] = 2
-        edf = edf.merge(df, how="left", left_on=["veh_type_{0}".format(i),"veh_pt_{0}".format(i)], right_on=["veh_type","veh_pt"], suffixes=[None,"_{0}".format(i)])
-    edf.rename(columns={"rp_code": "rp_code_1"}, inplace=True)
+        
+        # Merge without suffixes, it will add rp_code, veh_type, and veh_pt from df
+        edf = edf.merge(df, how="left", left_on=["veh_type_{0}".format(i),"veh_pt_{0}".format(i)], right_on=["veh_type","veh_pt"])
+        
+        # Rename the new 'rp_code' column to be unique for this iteration
+        edf.rename(columns={"rp_code": "rp_code_{0}".format(i)}, inplace=True)
+        
+        # Drop the redundant columns added by the merge that aren't rp_code (the keys from df)
+        edf.drop(columns=['veh_type', 'veh_pt'], inplace=True)
 
     # Check condition that min SP response = max SP response - i.e., that all responses are the same
     colmin = edf.loc[:,edf.filter(regex="^sp\d+$").columns].min(axis=1)
