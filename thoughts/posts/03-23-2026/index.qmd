@@ -1,0 +1,113 @@
+---
+title: "Communicative Decision Making Under Uncertainty as Fault Trees"
+description: "In memory of Jürgen Habermas"
+author:
+  - name: Jason Hawkins
+date: "2026-03-23"
+categories: [decision making, communicative rationality, fault trees, deep uncertainty]
+image: banner.jpg
+format:
+  html
+---
+
+The German philosophy Jürgen Habermas passed away on March 14, 2026. I was introduced to his work over the last year by my colleague Byron Miller. Byron and I have been working on a project that includes a review of diverse perspectives on rationality. I am by no means an expert on the work of Habermas. In fact, my colleagues who have read his work inform me it can be a challenging read.
+
+Habermas' communicative rationality, unlike the instrumental rationality commmonly employed in microeconomic models, is dialogical; it is founded on principles of rationality through communication and democratic coordination. I will focus herein on this concept of communicative rationality, but I must also note that Habermas had many other profound insights that have impacted my thinking on research topics. As one such example, he drew distinctions between the lifeworld (i.e., background world of shared meanings and informal social relations) and system (i.e., money and government adminstration). Habermas had much to say on the impacts of AI and social media on the lifeworld, which I may revisit in a future post.
+
+For today, I will focus on a model architecture I am developing to measure barriers to communicative action in our social structure. Equal in importance to Habermas' theory of communicative rationality was his work on these barriers, social hierarchies that lead to a diminishment of communicative rationlity in our society. My proposed model is inspired by fault trees, which I teach in my course on engineering uncertainty. A fault tree is a method developed in safety and reliability engineering to understand the failure paths for a complex system. A simple example for a system. The system is several ways based on the failure of components 1, 2, 3, and 4. Failure conditions take one of three forms. The OR operator denotes failure conditions for which one of two or more components may fail for system failure. The AND operator denotes failure conditions for which all components must fail for system fail. A third condition is the inhibit operator, which denotes failure conditions for which all components must fail and an exogenous condition must hold true. The MOCUS algorithm developed by the US Army Environmental Command (USAEC) may be used to solve the fault tree problem for any standard fault tree.
+
+```{mermaid}
+%%| label: fig-system-failure
+%%| fig-cap: "System Failure Fault Tree Analysis"
+flowchart TD
+
+    %% Top Event
+    TE([TOP EVENT<br>System Failure])
+
+    %% Gates
+    G1([G1])
+    G2([G2])
+    G3([G3])
+
+    %% Basic Events
+    G1_1([1])
+    G1_2([2])
+
+    G2_2([2])
+    G2_3([3])
+
+    G3_2([2])
+    G3_4([4])
+
+    %% Logic Gates
+    OR1{{OR}}
+    AND2{{AND}}
+    OR3{{OR}}
+
+    %% Structure
+    TE ==> OR1
+    OR1 ==> G1
+    OR1 ==> G2
+    OR1 ==> G3
+
+    G1 ==> OR3
+    OR3 ==> G1_1
+    OR3 ==> G1_2
+
+    G2 ==> AND2
+    AND2 ==> G2_2
+    AND2 ==> G2_3
+
+    G3 ==> OR3b{{OR}}
+    OR3b ==> G3_2
+    OR3b ==> G3_4
+```
+
+The proposed model extends the above failure structure to social systems of group decision making. I will use the example of the Green Line LRT in Calgary to illustrate the model concept. Failure of the Green Line LRT represents the event that the Green Line is not funded. Succesful funding requires the approval of all three levels of government. It also requires the approval of a majority of households (technically an m-choose-n failure), and the support of developers. We could further subdivide households into communities and/or social strata, government into individual officials, and developers into residential and commercial sectors. Of course, the writing the illstration would test my patience with ASCI figures. Through the lens of communicative action, approval requires dialogue between these various agents to avoid the triggering of a fault (i.e., a decision sector not satisfying the fault tree condition). The twist is that this idealized structure may not represent reality due to structural inequities in the communicative power of agents. That is, a particular developer may hold sway such that the developer failure mode is not triggered despite dissent within the sector. Similarly, one community may control the failure of household consent despite a majority of the population supporting project funding.
+
+```{mermaid}
+%%| label: fig-social-failure
+%%| fig-cap: "Green Line LRT Failure Fault Tree Analysis"
+flowchart TD
+    %% Top Level
+    TE[TOP EVENT:<br>GREEN LINE LRT]
+    
+    %% Logic Gates
+    AND1{{AND}}
+    AND_G{{AND}}
+    OR_H{{OR}}
+    AND_D{{AND}}
+
+    %% Relationships
+    TE ==> AND1
+    AND1 ==> G[Government]
+    AND1 ==> H[Households]
+    AND1 ==> D[Developers]
+
+    %% Government Branch
+    G ==> AND_G
+    AND_G ==> GL[Local]
+    AND_G ==> GP[Provincial]
+    AND_G ==> GF[Federal]
+
+    %% Households Branch
+    H ==> OR_H
+    OR_H ==> H1[1]
+    OR_H ==> H2[2]
+
+    %% Developers Branch
+    D ==> AND_D
+    AND_D ==> D1[1]
+    AND_D ==> D2[2]
+
+```
+
+I further extend the model structure by integrating the fault tree structure with my work on choice econometrics. If we consider each agent as a decision-maker described by a Luce-style choice architecture, the fault tree becomes probabilistic in the stochastic agent state (approve/decline). The fault tree structure provides the mechanism for extending individual choice econometrics to social consensus choice. Consensus models are not unknown in the group decision literature; however, they are limited in their representation of choice archicture and structural conditions across agent strata.
+
+The model structure would use Bayesian fault trees that replace Boolean gates (G1, G2, G3) in the fault tree model with probabilistic gates representing stochastic preferences and social influence mechanisms. This model structure would help us predict dissent, infer social structure, and identify influential or fragile subcomponents (or agents) in the network.
+
+The first limitation of this proposed model is that the data do not exist (to the best of my knowledge and searching online) to capture this decision structure. The most feasible path to implementation would be to run the model on synthetic data with known biases in social system structure. Thus, we could identify structural barriers to communicative action in group choice problems.
+
+Another core element of fault tree analysis that provides an interesting interpretation when applied to social structure is the minimum cut set. This is the smallest set of components for which component failure will cause system failure. In the social context, we can think of the cut set as the smallest set of agents whose dissent is sufficient to trigger widespread community disagreement and a failure to fund the project.
+
+Another avenue for exploring the influence of Habermas on my research came up during a lecture on decision making under deep uncertainty (DMDU). An online presentation by DMDU pioneer Robert Lempert referenced the work of Amartya Sen on relational reasoning. The idea in this case is that modelling tools should be designed so they are useful for consensus-forming among diverse actors in the transportation, water, energy, etc. system planning process. Sen's relational reasoning work centers on justice and the effect of individual choices on other citizens. It focuses on how public reasoning helps compare and assess social states. My current understanding of the difference from communicative action is that Sen sees public reasoning as valuable even without consensus, while Habermas viewed consensus as the goal. I have much work ahead to better understand these thinkers' perspectives and how their work may be incorporated into evidence-based urban planning processes. I look forward to continuing my explorations at the intersection of critical social theory and quantitative modelling research.
