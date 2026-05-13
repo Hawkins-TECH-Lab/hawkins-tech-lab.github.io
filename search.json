@@ -7142,7 +7142,7 @@
     "href": "teaching/Guest Lectures/REES_May_2026.html#epistemology-how-we-model-the-city",
     "title": "A Home Production Approach to Housing Location Choice and Travel Behaviour",
     "section": "Epistemology: How we model the city?",
-    "text": "Epistemology: How we model the city?\n\nUrban Economics: “Did highways cause suburbanization?” Quarterly Journal of Economics (Baum Snow, 2007)\n\nResearch question typically set by researcher\nCareful causal identification on a single research question using reduced-form OLS\nBuilds on economic theory such as Alonso, Muth, Mills (AMM) monocentric city model\n\nTransportation Engineering: “The Integrated Land Use, Transportation, Environment (ILUTE) Microsimulation Modelling System” Travel Behaviour Research (Miller & Salvini, 2002)\n\nResearch question typically set by planning agency\nMicrosimulation system of models to answer multiple questions\nBuilds on diverse theory such as AMM (1960s-1970s), Lowry (1960s), and Hanson (1980s)"
+    "text": "Epistemology: How we model the city?\n\nUrban Economics: E.g., “Did highways cause suburbanization?” Quarterly Journal of Economics (Baum-Snow, 2007)\n\nResearch question typically set by researcher\nCareful causal identification on a single research question using reduced-form OLS\nBuilds on economic theory such as Alonso, Muth, Mills (AMM) monocentric city model\n\nTransportation Engineering: E.g., “The Integrated Land Use, Transportation, Environment (ILUTE) Microsimulation Modelling System” Travel Behaviour Research (Miller & Salvini, 2002)\n\nResearch question(s) typically set by planning agency\nMicrosimulation system of models to answer multiple questions\nBuilds on diverse theory such as AMM (1960s-1970s), Lowry (1960s), and Hanson (1980s)"
   },
   {
     "objectID": "teaching/Guest Lectures/REES_May_2026.html#ontology-the-simulated-city",
@@ -7303,7 +7303,7 @@
     "href": "teaching/Guest Lectures/REES_May_2026.html#current-work-1",
     "title": "A Home Production Approach to Housing Location Choice and Travel Behaviour",
     "section": "Current Work",
-    "text": "Current Work\n\n2-stage discrete choice experiment (DCE)\nStage 1: select a neighbourhood based on images - process as latent variables in model\nStage 2: select a dwelling conditional neighbourhood choice\nTrack search process between neighbourhood & dwelling level\nProvide revealed preference default option"
+    "text": "Current Work\n\n2-stage discrete choice experiment (DCE)\nStage 1: select a neighbourhood based on images - process as latent variables in model\nStage 2: select a dwelling conditional on neighbourhood choice\nTrack search process between neighbourhood & dwelling level\nProvide revealed preference default option"
   },
   {
     "objectID": "teaching/Guest Lectures/REES_May_2026.html#current-work-2",
