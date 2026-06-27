@@ -80,9 +80,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-description','listing-date','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      valueNames: ['listing-title','listing-description','listing-date','listing-categories','listing-author','listing-pub_number','listing-journ','listing-year','listing-url_preprint',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
       
-      searchColumns: ["listing-title","listing-description","listing-date","listing-categories"],
+      searchColumns: ["listing-title","listing-description","listing-date","listing-categories","listing-author","listing-pub_number","listing-journ","listing-year","listing-url_preprint"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -274,11 +274,14 @@ window.Quarto = {
             <!-- <a href="http://arxiv.org/abs/2510.00469v1"> -->
                 
                 <div class="listing-pub-author listing-author">
-                    <br> 
+                    Omid Armantalab, Jason Hawkins, Wissam Kontar<br> 
                 </div>
                 
                 <div class="metadata-value listing-pub-journal listing-publication">
                     
+                        <i>arXiv Preprint</i> (2025)<br>
+                        
+                        
                         
                         
                         
@@ -304,6 +307,13 @@ window.Quarto = {
             
   
               
+            <div class="listing-pub-url">
+
+                    <a href="http://arxiv.org/abs/2510.00469v1">
+                    <p style="color:#8250E6;">preprint URL <i class="bi bi-box-arrow-up-right"></i></p>
+                    </a>
+                </div>
+                    
 
         </div>
     </div>
