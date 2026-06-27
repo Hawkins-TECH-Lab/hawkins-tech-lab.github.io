@@ -1,0 +1,60 @@
+- title: Multi-Scale Land Use Impacts on Fossil Fuel-Related CO$_2$ Emissions in the
+    United States
+  description: Anthropogenic greenhouse gas (GHG) emissions exhibit spatial variation
+    owing to differences in development patterns, local climate, economic composition,
+    energy sources, and other factors. Many of these factors - and therefore their
+    contribution to GHG production - are influenceable through spatial planning and
+    economic policy. Recent advances in environmental data reporting and climate flux
+    measurement have produced high fidelity GHG emissions estimates at detailed spatial
+    and temporal resolutions. Using one such dataset (Vulcan v3.0 1-km gridcell estimates
+    of fossil-fuel CO2 for the U.S.), we explore the relationship between land use
+    features and CO2 emissions. Analysis is conducted at multiple scales (neighbourhoods
+    and metropolitan areas) to explore scale law effects. Using a data-driven propensity
+    score approach, we develop doubly robust causal estimands for the effects of multiple
+    land use features on CO2 emissions by sector. Preliminary results suggest that
+    per capita transportation emissions are not significantly affected by local population
+    density after controlling for metropolitan population density factors. However,
+    results are likely influenced by the way transportation emissions are allocated
+    in the Vulcan dataset. Results for scope 2 residential electricity and non-electricity
+    energy are also considered in the study.
+  path: http://arxiv.org/abs/2510.08611v1
+  date: '2025-10-07'
+  categories:
+  - Ecological Economics
+  - General Transport
+  - Vehicle Adoption
+  author: Jason Hawkins, Mehrnoosh Zare
+  pub_number: arXiv:2510.08611
+  journ: arXiv Preprint
+  year: '2025'
+  url_preprint: http://arxiv.org/abs/2510.08611v1
+- title: 'Mobility Behavior Evolution During Extended Emergencies: Returners, Explorers,
+    and the 15-Minute City'
+  description: 'Understanding human mobility during emergencies is critical for strengthening
+    urban resilience and guiding emergency management. This study examines transitions
+    between returners, who repeatedly visit a limited set of locations, and explorers,
+    who travel across broader destinations, over a 15-day emergency period in a densely
+    populated metropolitan region using the YJMob100K dataset. High-resolution spatial
+    data reveal intra-urban behavioral dynamics often masked at coarser scales. Beyond
+    static comparisons, we analyze how mobility evolves over time, with varying emergency
+    durations, across weekdays and weekends, and relative to neighborhood boundaries,
+    linking the analysis to the 15-minute city framework.   Results show that at least
+    two weeks of data are required to detect meaningful behavioral shifts. During
+    prolonged emergencies, individuals resume visits to non-essential locations more
+    slowly than under normal conditions. Explorers markedly reduce long distance travel,
+    while weekends and holidays consistently exhibit returner-like, short distance
+    patterns. Residents of low Points of Interest (POI) density neighborhoods often
+    travel to POI rich areas, highlighting spatial disparities. Strengthening local
+    accessibility may improve urban resilience during crises.   Full reproducibility
+    is supported through the project website: https://github.com/wissamkontar'
+  path: http://arxiv.org/abs/2510.00469v1
+  date: '2025-10-01'
+  categories:
+  - Equity
+  - General Transport
+  - Vehicle Adoption
+  author: Omid Armantalab, Jason Hawkins, Wissam Kontar
+  pub_number: arXiv:2510.00469
+  journ: arXiv Preprint
+  year: '2025'
+  url_preprint: http://arxiv.org/abs/2510.00469v1

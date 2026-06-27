@@ -1,0 +1,21 @@
+---
+title: "Inquiry- and Task-Oriented Modes of Research"
+description: "A comment on the AI future"
+author:
+  - name: Jason Hawkins
+date: "2026-06-26"
+categories: [science and technology studies, philosophy of science, research]
+image: banner.jpg
+format:
+  html
+---
+
+Many people of have written about how AI is affecting the way we work and its ability to replace tasks. Concern about task replacement has long been a concern; think of the Luddites of 19-th century England as the common reference point in these discussions. Acemoglu and Johnson (see [previous post](https://hawkins-tech-lab.github.io/thoughts/posts/10-29-2024/)), as well as Harari and numerous other (more to come on this topic), give excellent critiques of the risks associated with widespread AI adoption from the perspectives of power and transhumanism. I want to talk about how we can think about research in a future that includes AI and LLMs.
+
+I will frame my discussion around a contrasting of research approach by two groups with whom I work. Both study the same topic, but I argue from dramatically different epistemological foundations that bear on the way AI/LLMs affect their work. The contrast can also be considered through the lens of Bent Flyvbjerg's model of Megaproject construction - i.e., which part of a project should be done fast and which done more slowly and deliberately.
+
+The first group begin by quickly identifying a problem to solve. They then compile large datasets and apply AI models to extract relevant variables. The focus is on the execution of a set of concrete tasks to be completed in sequence. I term this approach *task-oriented research*. The second group dwell on the problem statement. Has the question been asked before? How was it previously framed? Was that the appropriate way to ask the question? Are there other related questions that are more important discovered in the course of reviewing the problem statement? What are the implicit assumptions and underlying mechanisms that led to the current system state? They will proceed to answer the problem (or problems) that were identified through this deliberative process. I term this approach *inquiry-oriented research*.
+
+The question we need to answer is which of these two approaches is more resilient to the advance of AI? I argue that *inquiry-oriented research* is by far the more resilient of the two. AI, by their algorithmic nature, are designed to leverage large data and execute a series of well-defined tasks to solve a problem. They are excellent tools to answer a wide range of questions. However, the definition of the task remains in the hands of the human. This is the realm of inquiry; asking the right questions. Of course, one could make the argument that LLM do (or in the future will) possess the ability to formulate questions and test the veraricity of potential solutions. This discussion moves into the sphere of transhumanism, questions of whether we want to outsource our democratic freedoms to artificial intelligences (or their owners). This is not my focus today.
+
+I think Star Trek gets it right. In a future of advanced computers, intergalactic space flight, and teleportation, most episodes focus on humans (or other carbon-based lifeforms) communicating with each other in-person and grappling with tough problems of philosophy and morality. Many is the time that Geordi La Forge asks the computer to run a calculation for him; few are the times that Picard, Kirk, or Janeway ask for advice on how to deal with an alien species or where to explore next. As we hand off the menial and mundane to our silicon friends, let us increase the time we spend in community, writing poetry, and striving for a more enlightened society. Not because we cannot ask a bot, but because we need to fill that time between birth and death with more than waste and war.
