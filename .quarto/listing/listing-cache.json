@@ -1,0 +1,40 @@
+{
+  "listingMap": {
+    "index.qmd": [
+      "research/choice_methods/index.qmd",
+      "research/ecological_economics/index.qmd",
+      "research/equity/index.qmd",
+      "research/infrastructure_finance/index.qmd",
+      "research/shared_mobility/index.qmd",
+      "research/vehicle_adoption/index.qmd",
+      "research/general_transport/index.qmd"
+    ],
+    "publications\\index.qmd": [
+      "publications_by_topic.yml"
+    ],
+    "research\\choice_methods\\index.qmd": [
+      "../../publications/publications_by_topic.yml"
+    ],
+    "research\\ecological_economics\\index.qmd": [
+      "../../publications/publications_by_topic.yml"
+    ],
+    "research\\equity\\index.qmd": [
+      "../../publications/publications_by_topic.yml"
+    ],
+    "research\\general_transport\\index.qmd": [
+      "../../publications/publications_by_topic.yml"
+    ],
+    "research\\infrastructure_finance\\index.qmd": [
+      "../../publications/publications_by_topic.yml"
+    ],
+    "research\\shared_mobility\\index.qmd": [
+      "../../publications/publications_by_topic.yml"
+    ],
+    "research\\vehicle_adoption\\index.qmd": [
+      "../../publications/publications_by_topic.yml"
+    ],
+    "thoughts\\blog.qmd": [
+      "posts"
+    ]
+  }
+}

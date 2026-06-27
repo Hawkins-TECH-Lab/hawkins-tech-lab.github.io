@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="87mm"
+   height="37mm"
+   viewBox="0 0 87 37"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="binary_multi_choice3.svg"
+   inkscape:export-filename="binary_multi_choice1.svg"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.4378367"
+     inkscape:cx="303.92881"
+     inkscape:cy="184.6524"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <rect
+       x="-162.74449"
+       y="-125.18807"
+       width="963.94812"
+       height="595.33881"
+       id="rect5" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.9389px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+       x="28.522305"
+       y="4.4599214"
+       id="text1"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.9389px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+         x="28.522305"
+         y="4.4599214">Choice</tspan></text>
+    <g
+       id="text4"
+       style="font-size:4.9389px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:none;white-space:pre-wrap;stroke-width:0.264583"
+       transform="translate(-0.19261624,-1.7322571)"
+       aria-label="Private Vehicle" />
+    <ellipse
+       style="fill:none;stroke:#ff0000;stroke-width:0.67;stroke-dasharray:none"
+       id="path3-8"
+       cx="60.276585"
+       cy="25.400797"
+       rx="25.668903"
+       ry="10.195838" />
+    <ellipse
+       style="fill:none;stroke:#ff0000;stroke-width:0.602164"
+       id="path3-8-8"
+       cx="16.035915"
+       cy="25.400797"
+       rx="15.735"
+       ry="10.179025" />
+    <g
+       id="text4-8"
+       style="font-size:4.9389px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:none;white-space:pre-wrap;stroke-width:0.264583"
+       transform="translate(-0.21836184,-1.6997009)"
+       aria-label="Public Transit" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 36.434945,4.6411613 14.287775,15.204959"
+       id="path14"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 60.276583,15.204959 36.434945,4.6411613"
+       id="path15"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text5"
+       style="font-size:18.6667px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:none;text-align:center;white-space:pre;shape-inside:url(#rect5);display:inline" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.05;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style, Normal';font-variant-ligatures:none;text-align:center;white-space:pre-wrap;shape-inside:url(#path3-8-8);display:inline;stroke-width:0.264583"
+       x="21.713755"
+       y="46.555763"
+       id="text2"><tspan
+         x="11.09517"
+         y="24.436751"
+         id="tspan5"><tspan
+           style="font-family:Arial;-inkscape-font-specification:'Arial, Normal'"
+           id="tspan4">Best </tspan></tspan><tspan
+         x="2.6736069"
+         y="29.696"
+         id="tspan7"><tspan
+           style="font-family:Arial;-inkscape-font-specification:'Arial, Normal'"
+           id="tspan6">alternative, j</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.05;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:none;text-align:center;white-space:pre-wrap;shape-inside:url(#path3-8);display:inline;stroke-width:0.264583"
+       x="47.107807"
+       y="44.16357"
+       id="text3"><tspan
+         x="38.039261"
+         y="24.345768"
+         id="tspan8">Best of the rest (2nd </tspan><tspan
+         x="39.551317"
+         y="29.531613"
+         id="tspan9">best)alternatives, k</tspan></text>
+  </g>
+</svg>

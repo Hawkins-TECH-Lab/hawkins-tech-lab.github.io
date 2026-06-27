@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="83mm"
+   viewBox="0 0 210 83"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="sample_frame.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.4912879"
+     inkscape:cx="388.5903"
+     inkscape:cy="104.27229"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;stroke-width:0.363"
+       x="3.5483868"
+       y="8.1612892"
+       id="text1"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="stroke-width:0.363"
+         x="3.5483868"
+         y="8.1612892">TARGET POPULATION</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;stroke-width:0.363"
+       x="181.91907"
+       y="3.9238253"
+       id="text2"><tspan
+         sodipodi:role="line"
+         id="tspan2"
+         style="stroke-width:0.363"
+         x="181.91907"
+         y="3.9238253">SAMPLING </tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.363"
+         x="181.91907"
+         y="8.157155"
+         id="tspan3">FRAME </tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.363"
+         x="181.91907"
+         y="12.390485"
+         id="tspan4">POPULATION</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.663;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4"
+       width="140.16129"
+       height="71.677414"
+       x="7.8064518"
+       y="10.146914" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.598611;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5"
+       width="127.56452"
+       height="59.258064"
+       x="78.229568"
+       y="16.888838" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.663001;stroke-dasharray:none;stroke-opacity:1"
+       x="175.9716"
+       y="45.0513"
+       id="text5"><tspan
+         sodipodi:role="line"
+         id="tspan5"
+         style="text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.663"
+         x="175.9716"
+         y="45.0513">Not eligible </tspan><tspan
+         sodipodi:role="line"
+         style="text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.663"
+         x="175.9716"
+         y="49.28463"
+         id="tspan6">for survey</tspan></text>
+    <rect
+       style="fill:none;fill-opacity:1;stroke:none;stroke-width:0.663001;stroke-dasharray:none;stroke-opacity:1"
+       id="rect6"
+       width="28.91935"
+       height="59.258064"
+       x="47.19355"
+       y="16.888838" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.22992;stroke-dasharray:none;stroke-opacity:1"
+       id="rect7"
+       width="30.851961"
+       height="19.591944"
+       x="47.277065"
+       y="17.172125" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.22693;stroke-dasharray:none;stroke-opacity:1"
+       id="rect7-2"
+       width="30.855068"
+       height="19.494576"
+       x="47.275517"
+       y="56.348789" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.22992;stroke-dasharray:none;stroke-opacity:1"
+       id="rect7-1"
+       width="30.851961"
+       height="19.591944"
+       x="47.277065"
+       y="36.752449" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.063;stroke-dasharray:none;stroke-opacity:1"
+       x="116.65668"
+       y="45.0513"
+       id="text7"><tspan
+         sodipodi:role="line"
+         id="tspan7"
+         style="text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.063"
+         x="116.65668"
+         y="45.0513">SAMPLED</tspan><tspan
+         sodipodi:role="line"
+         style="text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.063"
+         x="116.65668"
+         y="49.28463"
+         id="tspan8">POPULATION</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.063;stroke-dasharray:none;stroke-opacity:1"
+       x="50.839951"
+       y="26.824322"
+       id="text9"><tspan
+         sodipodi:role="line"
+         id="tspan9"
+         style="text-align:start;text-anchor:start;stroke-width:1.063"
+         x="50.839951"
+         y="26.824322">Not </tspan><tspan
+         sodipodi:role="line"
+         style="text-align:start;text-anchor:start;stroke-width:1.063"
+         x="50.839951"
+         y="31.057652"
+         id="tspan10">reachable</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.063;stroke-dasharray:none;stroke-opacity:1"
+       x="50.43689"
+       y="45.061638"
+       id="text9-5"><tspan
+         sodipodi:role="line"
+         style="text-align:start;text-anchor:start;stroke-width:1.063"
+         x="50.43689"
+         y="45.061638"
+         id="tspan17">Refused to</tspan><tspan
+         sodipodi:role="line"
+         style="text-align:start;text-anchor:start;stroke-width:1.063"
+         x="50.43689"
+         y="49.294968"
+         id="tspan18">respond</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.063;stroke-dasharray:none;stroke-opacity:1"
+       x="26.939386"
+       y="45.039932"
+       id="text12"><tspan
+         sodipodi:role="line"
+         id="tspan12"
+         style="stroke-width:1.063"
+         x="26.939386"
+         y="45.039932">Not included in </tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:1.063"
+         x="26.939386"
+         y="49.273262"
+         id="tspan13">sampling frame</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.063;stroke-dasharray:none;stroke-opacity:1"
+       x="48.246159"
+       y="65.856575"
+       id="text14"><tspan
+         sodipodi:role="line"
+         id="tspan14"
+         style="text-align:start;text-anchor:start;stroke-width:1.063"
+         x="48.246159"
+         y="65.856575">Not capable </tspan><tspan
+         sodipodi:role="line"
+         style="text-align:start;text-anchor:start;stroke-width:1.063"
+         x="48.246159"
+         y="70.089905"
+         id="tspan15">of responding</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Hawkinslab</title>
+<link>https://hawkins-tech-lab.github.io/thoughts/blog.html</link>
+<atom:link href="https://hawkins-tech-lab.github.io/thoughts/blog.xml" rel="self" type="application/rss+xml"/>
+<description>TECH lab website</description>
+<generator>quarto-1.8.25</generator>
+<lastBuildDate>Fri, 26 Jun 2026 06:00:00 GMT</lastBuildDate>
+<item>
+  <title>Inquiry- and Task-Oriented Modes of Research</title>
+  <dc:creator>Jason Hawkins</dc:creator>
+  <link>https://hawkins-tech-lab.github.io/thoughts/posts/06-26-2026/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Many people of have written about how AI is affecting the way we work and its ability to replace tasks. Concern about task replacement has long been a concern; think of the Luddites of 19-th century England as the common reference point in these discussions. Acemoglu and Johnson (see <a href="https://hawkins-tech-lab.github.io/thoughts/posts/10-29-2024/">previous post</a>), as well as Harari and numerous other (more to come on this topic), give excellent critiques of the risks associated with widespread AI adoption from the perspectives of power and transhumanism. I want to talk about how we can think about research in a future that includes AI and LLMs.</p>
+<p>I will frame my discussion around a contrasting of research approach by two groups with whom I work. Both study the same topic, but I argue from dramatically different epistemological foundations that bear on the way AI/LLMs affect their work. The contrast can also be considered through the lens of Bent Flyvbjerg’s model of Megaproject construction - i.e., which part of a project should be done fast and which done more slowly and deliberately.</p>
+<p>The first group begin by quickly identifying a problem to solve. They then compile large datasets and apply AI models to extract relevant variables. The focus is on the execution of a set of concrete tasks to be completed in sequence. I term this approach <em>task-oriented research</em>. The second group dwell on the problem statement. Has the question been asked before? How was it previously framed? Was that the appropriate way to ask the question? Are there other related questions that are more important discovered in the course of reviewing the problem statement? What are the implicit assumptions and underlying mechanisms that led to the current system state? They will proceed to answer the problem (or problems) that were identified through this deliberative process. I term this approach <em>inquiry-oriented research</em>.</p>
+<p>The question we need to answer is which of these two approaches is more resilient to the advance of AI? I argue that <em>inquiry-oriented research</em> is by far the more resilient of the two. AI, by their algorithmic nature, are designed to leverage large data and execute a series of well-defined tasks to solve a problem. They are excellent tools to answer a wide range of questions. However, the definition of the task remains in the hands of the human. This is the realm of inquiry; asking the right questions. Of course, one could make the argument that LLM do (or in the future will) possess the ability to formulate questions and test the veraricity of potential solutions. This discussion moves into the sphere of transhumanism, questions of whether we want to outsource our democratic freedoms to artificial intelligences (or their owners). This is not my focus today.</p>
+<p>I think Star Trek gets it right. In a future of advanced computers, intergalactic space flight, and teleportation, most episodes focus on humans (or other carbon-based lifeforms) communicating with each other in-person and grappling with tough problems of philosophy and morality. Many is the time that Geordi La Forge asks the computer to run a calculation for him; few are the times that Picard, Kirk, or Janeway ask for advice on how to deal with an alien species or where to explore next. As we hand off the menial and mundane to our silicon friends, let us increase the time we spend in community, writing poetry, and striving for a more enlightened society. Not because we cannot ask a bot, but because we need to fill that time between birth and death with more than waste and war.</p>
+
+
+
+ ]]></description>
+  <category>science and technology studies</category>
+  <category>philosophy of science</category>
+  <category>research</category>
+  <guid>https://hawkins-tech-lab.github.io/thoughts/posts/06-26-2026/</guid>
+  <pubDate>Fri, 26 Jun 2026 06:00:00 GMT</pubDate>
+  <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/06-26-2026/banner.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Communicative Decision Making Under Uncertainty as Fault Trees</title>
+  <dc:creator>Jason Hawkins</dc:creator>
+  <link>https://hawkins-tech-lab.github.io/thoughts/posts/03-23-2026/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>The German philosophy Jürgen Habermas passed away on March 14, 2026. I was introduced to his work over the last year by my colleague Byron Miller. Byron and I have been working on a project that includes a review of diverse perspectives on rationality. I am by no means an expert on the work of Habermas. In fact, my colleagues who have read his work inform me it can be a challenging read.</p>
+<p>Habermas’ communicative rationality, unlike the instrumental rationality commmonly employed in microeconomic models, is dialogical; it is founded on principles of rationality through communication and democratic coordination. I will focus herein on this concept of communicative rationality, but I must also note that Habermas had many other profound insights that have impacted my thinking on research topics. As one such example, he drew distinctions between the lifeworld (i.e., background world of shared meanings and informal social relations) and system (i.e., money and government adminstration). Habermas had much to say on the impacts of AI and social media on the lifeworld, which I may revisit in a future post.</p>
+<p>For today, I will focus on a model architecture I am developing to measure barriers to communicative action in our social structure. Equal in importance to Habermas’ theory of communicative rationality was his work on these barriers, social hierarchies that lead to a diminishment of communicative rationlity in our society. My proposed model is inspired by fault trees, which I teach in my course on engineering uncertainty. A fault tree is a method developed in safety and reliability engineering to understand the failure paths for a complex system. A simple example for a system. The system is several ways based on the failure of components 1, 2, 3, and 4. Failure conditions take one of three forms. The OR operator denotes failure conditions for which one of two or more components may fail for system failure. The AND operator denotes failure conditions for which all components must fail for system fail. A third condition is the inhibit operator, which denotes failure conditions for which all components must fail and an exogenous condition must hold true. The MOCUS algorithm developed by the US Army Environmental Command (USAEC) may be used to solve the fault tree problem for any standard fault tree.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div id="fig-system-failure" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-system-failure-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-system-failure">flowchart TD
+
+    %% Top Event
+    TE([TOP EVENT&lt;br&gt;System Failure])
+
+    %% Gates
+    G1([G1])
+    G2([G2])
+    G3([G3])
+
+    %% Basic Events
+    G1_1([1])
+    G1_2([2])
+
+    G2_2([2])
+    G2_3([3])
+
+    G3_2([2])
+    G3_4([4])
+
+    %% Logic Gates
+    OR1{{OR}}
+    AND2{{AND}}
+    OR3{{OR}}
+
+    %% Structure
+    TE ==&gt; OR1
+    OR1 ==&gt; G1
+    OR1 ==&gt; G2
+    OR1 ==&gt; G3
+
+    G1 ==&gt; OR3
+    OR3 ==&gt; G1_1
+    OR3 ==&gt; G1_2
+
+    G2 ==&gt; AND2
+    AND2 ==&gt; G2_2
+    AND2 ==&gt; G2_3
+
+    G3 ==&gt; OR3b{{OR}}
+    OR3b ==&gt; G3_2
+    OR3b ==&gt; G3_4
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-system-failure-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: System Failure Fault Tree Analysis
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>The proposed model extends the above failure structure to social systems of group decision making. I will use the example of the Green Line LRT in Calgary to illustrate the model concept. Failure of the Green Line LRT represents the event that the Green Line is not funded. Succesful funding requires the approval of all three levels of government. It also requires the approval of a majority of households (technically an m-choose-n failure), and the support of developers. We could further subdivide households into communities and/or social strata, government into individual officials, and developers into residential and commercial sectors. Of course, the writing the illstration would test my patience with ASCI figures. Through the lens of communicative action, approval requires dialogue between these various agents to avoid the triggering of a fault (i.e., a decision sector not satisfying the fault tree condition). The twist is that this idealized structure may not represent reality due to structural inequities in the communicative power of agents. That is, a particular developer may hold sway such that the developer failure mode is not triggered despite dissent within the sector. Similarly, one community may control the failure of household consent despite a majority of the population supporting project funding.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div id="fig-social-failure" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-social-failure-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-social-failure">flowchart TD
+    %% Top Level
+    TE[TOP EVENT:&lt;br&gt;GREEN LINE LRT]
+    
+    %% Logic Gates
+    AND1{{AND}}
+    AND_G{{AND}}
+    OR_H{{OR}}
+    AND_D{{AND}}
+
+    %% Relationships
+    TE ==&gt; AND1
+    AND1 ==&gt; G[Government]
+    AND1 ==&gt; H[Households]
+    AND1 ==&gt; D[Developers]
+
+    %% Government Branch
+    G ==&gt; AND_G
+    AND_G ==&gt; GL[Local]
+    AND_G ==&gt; GP[Provincial]
+    AND_G ==&gt; GF[Federal]
+
+    %% Households Branch
+    H ==&gt; OR_H
+    OR_H ==&gt; H1[1]
+    OR_H ==&gt; H2[2]
+
+    %% Developers Branch
+    D ==&gt; AND_D
+    AND_D ==&gt; D1[1]
+    AND_D ==&gt; D2[2]
+
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-social-failure-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Green Line LRT Failure Fault Tree Analysis
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>I further extend the model structure by integrating the fault tree structure with my work on choice econometrics. If we consider each agent as a decision-maker described by a Luce-style choice architecture, the fault tree becomes probabilistic in the stochastic agent state (approve/decline). The fault tree structure provides the mechanism for extending individual choice econometrics to social consensus choice. Consensus models are not unknown in the group decision literature; however, they are limited in their representation of choice archicture and structural conditions across agent strata.</p>
+<p>The model structure would use Bayesian fault trees that replace Boolean gates (G1, G2, G3) in the fault tree model with probabilistic gates representing stochastic preferences and social influence mechanisms. This model structure would help us predict dissent, infer social structure, and identify influential or fragile subcomponents (or agents) in the network.</p>
+<p>The first limitation of this proposed model is that the data do not exist (to the best of my knowledge and searching online) to capture this decision structure. The most feasible path to implementation would be to run the model on synthetic data with known biases in social system structure. Thus, we could identify structural barriers to communicative action in group choice problems.</p>
+<p>Another core element of fault tree analysis that provides an interesting interpretation when applied to social structure is the minimum cut set. This is the smallest set of components for which component failure will cause system failure. In the social context, we can think of the cut set as the smallest set of agents whose dissent is sufficient to trigger widespread community disagreement and a failure to fund the project.</p>
+<p>Another avenue for exploring the influence of Habermas on my research came up during a lecture on decision making under deep uncertainty (DMDU). An online presentation by DMDU pioneer Robert Lempert referenced the work of Amartya Sen on relational reasoning. The idea in this case is that modelling tools should be designed so they are useful for consensus-forming among diverse actors in the transportation, water, energy, etc. system planning process. Sen’s relational reasoning work centers on justice and the effect of individual choices on other citizens. It focuses on how public reasoning helps compare and assess social states. My current understanding of the difference from communicative action is that Sen sees public reasoning as valuable even without consensus, while Habermas viewed consensus as the goal. I have much work ahead to better understand these thinkers’ perspectives and how their work may be incorporated into evidence-based urban planning processes. I look forward to continuing my explorations at the intersection of critical social theory and quantitative modelling research.</p>
+
+
+
+ ]]></description>
+  <category>decision making</category>
+  <category>communicative rationality</category>
+  <category>fault trees</category>
+  <category>deep uncertainty</category>
+  <guid>https://hawkins-tech-lab.github.io/thoughts/posts/03-23-2026/</guid>
+  <pubDate>Mon, 23 Mar 2026 06:00:00 GMT</pubDate>
+  <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/03-23-2026/banner.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Stating the revealed preferences of choice.</title>
+  <dc:creator>Jason Hawkins</dc:creator>
+  <link>https://hawkins-tech-lab.github.io/thoughts/posts/12-21-2025/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="context" class="level1">
+<h1>Context</h1>
+<p>I am developing an article on the foundations of revealed preference (RP) and stated preference (SP) methods. This article is motivated by the common assumption in choice analysis that RP acts as a “Gold Standard” and SP is an ersatz option used only as a last resort when RP data are unavailable. From the outset, I recognize that the article may face challenges to publication. A non-exhaustive list of reasons would include positivist epistemology bias (“where is the data?”), gate keeping (“you were not invited to submit an editorial article”), and ontological bias (“but this is the way the world works”). I am a bit sardonic but also pragmatic. I will post the full article online for posterity and my graduate students to review while it is under review for publication.</p>
+<p>Harvey (1969) and Gregory (1978) argue that if we start from different epistemologies, we will get different results. This is as good a starting point as any to situate this post. Epistemology concerns how we know things and the methods of validation our knowledge. RP theory is premised on observation of choice providing knowledge of “choice”. This is a good start point for a choice analysis, but does RP represent preferences? It depends on a number of factors, which we can consider through the lens of ontology, or our theory of the nature of reality. RP assumes a world in which individuals are free, unconstrained agents that make free and informed choices. Simon extended the rational choice framework to “bounded rationality”, in which individuals are free to make decisions but possess only imperfect information. Sheppard and Barnes state that “[t]heory and observation cannot be separated from one another, and the ontological priority of the one or the other is an interminable dispute in philosophy”.</p>
+</section>
+<section id="a-natural-analogy" class="level1">
+<h1>A Natural Analogy</h1>
+<p>I was struck by an analogy given by Nate Hagens on a recent episode of The Great Simplification podcast. Hagens was discussing sunk costs - a past expenditure of time, money, effort that cannot be recovered - which raised the thought for me that observed RP data is a sunk cost. These costs include the identity, status, and institutional structures encapsulated in our past choices. Hagens makes a nice analogy to an oak tree, which was badly pruned many decades ago. The tree grows out in an unbalanced way, with heavy limbs at odd angles. “Those branches of the tree are sunk costs in wood.” When a storm comes, the tree will be torn apart. A good arborist will study the structure of the tree, making careful cuts that “guide the new growth in stronger directions”. The tree may be smaller, but it have a healthier and more resilient structure.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hawkins-tech-lab.github.io/thoughts/posts/12-21-2025/hagens_tree_figure.jpg" class="img-fluid figure-img"></p>
+<figcaption>TGS Oak Tree</figcaption>
+</figure>
+</div>
+<p>Hagens is talking about the size and diversity of the economy and our patterns of consumption, but I believe we can also interpret his argument in terms of the RP-SP dialectic. Positivist research is based on an existing reality at a fixed point in time (or over a fixed period). RP theory follows Aristotelian logic: a hypothesis either true or false and stays that way. Positivist science works because it empirically tests hypotheses on the current system, therefore accurately describes existing structures. Dialetical materialism says that we must also consider the historical roots, to continue the nature analogy, that led to the current system of consumption and available options.</p>
+<p>I’ll bring things closer to home with a dwelling location choice example that builds off the analogy of Hagens from above. In many North American cities, the available dwelling options are some combination of detached houses of various sizes and colours. The neighbourhood is a mix of houses, small parks, and perhaps a gas station on the main road. RP theory would suggest that this pattern is the revealed preference of households. For a wide variety of reasons, this is a highly biased and (I would argue) problematic framing. The left-hand tree represents my attempt to map Hagens’ analogy onto the problem. The tree is dominated by detached houses, imbalanced, and unhealthy. The right-hand tree includes a more diverse mix of housing options and is much healthier. Of course, I am making a highly normative decision by making my preferred neighbourhood a healthy tree, but it is my prerogative as the blog author. The point I seek to make here is not that we should all live in high-rise apartments. Rather, we must provide households diverse options that recognized their diverse neighbourhood and dwelling preferences. This is an SP question - what do people say they prefer in their neighbourhoods?</p>
+<div class="columns">
+<p><img src="https://hawkins-tech-lab.github.io/thoughts/posts/12-21-2025/rp_tree.png" class="img-fluid" style="width:45.0%" alt="RP Tree"> <img src="https://hawkins-tech-lab.github.io/thoughts/posts/12-21-2025/sp_tree.png" class="img-fluid" style="width:45.0%" alt="SP Tree"></p>
+</div>
+</section>
+<section id="conclusions" class="level1">
+<h1>Conclusions</h1>
+<p>There is obviously much more to say on this topic. In the full article, I will provide the mathematical and theoretical details of RP, as formulated by Samuelson and McFadden from different perspectives; I would say Samuelson’s RP theory is more theoretical and mathematical while McFadden’s theory aligns with his more pragmatic econometric approach to economics. I am also using crude and unnuanced interpretations of RP and SP in this post. I will provide more nuanced interpretations and groundings in the literature in the full article. The main point to make in this post is that RP is not a “Gold Standard”. It has its merits but must be considered in its historical context. Our decisions as consumers are heavily influenced by the alternatives made available to us, budget and information constraints, and socio-political forces. In the same way, SP is not a perfect solution. Respondents can say what they like in a survey. Both RP and SP are necessary tools to formulate policy and plan for the future but neither is sufficient.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>Economics</category>
+  <category>Surveys</category>
+  <guid>https://hawkins-tech-lab.github.io/thoughts/posts/12-21-2025/</guid>
+  <pubDate>Sun, 21 Dec 2025 07:00:00 GMT</pubDate>
+  <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/12-21-2025/banner.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Spirit of the City</title>
+  <dc:creator>Jason Hawkins</dc:creator>
+  <link>https://hawkins-tech-lab.github.io/thoughts/posts/11-15-2025/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>I attended a workshop this week on the spiritual and intangible aspects of the city. It was an interesting event that raised fundamental questions for me and some pretty interesting dichotomies of ontology. The keynote speaker was a world renowned architect who motivates his work by metaphor. The buildings were visually striking and demonstrated clear talent. Frankly, it was a bit much for my engineer brain - “The architecture of today is the archeology of the future”. Could we get any more pretentious??</p>
+<p>Following the presentation, we were asked to reflect on the “spirit of Calgary” - what makes the city unique? My table talked about the rivers and mountains, landscapes, and iconic buildings in the city. Many at the table lamented the restrictions imposed on design by city regulations. One person noted that he felt there was little difference between Calgary, Vancouver, Toronto, or other North American cities. Having lived in all three of these cities, as well as having lived in or visited many other cities, I disagreed with his assessment. While the housing may look similar in each of these cities, my notion of them is defined by their physical settings. Vancouver is a strikingly beautiful city of mountains, oceans, and bridges. It has a coastal spirit in stark contrast to the foothills of Calgary or lakeshore “city of neighbourhoods” of Toronto.</p>
+<p>A second point that struck me was the lack of discussion about the translation from individual buildings to the city. A wealthy couple can agree upon a metaphor and aesthetic for their home, not to mention pay for the cost of an architect. How do we define a single metaphor for a city? One could argue that each building could be designed according to the metaphor of its residents. Of course, that would lead to a city without any definable spirit, no better than the uniformity of “cookie cutter” designs we see in many communities today. The individualistic vision and lack of collective and organic character that to me defines “The City” was stark, bordering on troubling.</p>
+<p>A third reflection from this workshop was the final “Spirit of Calgary” that I came to in my mind. It is a city of immigrants and change, drawing metaphor from the flow of the Bow and Elbow Rivers. However, it is also a city that is rediscovering its pre-colonial history through the process of reconciliation. These forces of constant change and return to long ignored past are in tension. Calgary is not a city with large stocks of historical buildings, so it is not about preservation of physical form. Rather, it is a question of re-introduces historical forms by a city that increasingly houses residents unassociated with its colonial cultural genocide. It is a difficult situation to work through as a city. But, when combined with an emphasis on its setting in the foothills of the Rocky Mountains, one would be hard-pressed to miss the spirt of the place!</p>
+
+
+
+ ]]></description>
+  <category>ontology</category>
+  <guid>https://hawkins-tech-lab.github.io/thoughts/posts/11-15-2025/</guid>
+  <pubDate>Sat, 15 Nov 2025 07:00:00 GMT</pubDate>
+  <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/11-15-2025/banner.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Civilization Complexity and Collapse</title>
+  <dc:creator>Jason Hawkins</dc:creator>
+  <link>https://hawkins-tech-lab.github.io/thoughts/posts/10-20-2025/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="defining-complex-civilization" class="level1">
+<h1>Defining Complex Civilization</h1>
+<p>Joseph Tainter defines collapse as “a rapid, significant loss of an established level of sociopolitical complexity”. This definition relies on a society maintaining a level of complexity over generations and the loss must be rapid (over a few decades). It is a complex process to define and identify in history. Consider the case of Rome, which declined over a period of a few decades but also saw a shift to the east (Rome to Constantinople). One could argue that Rome did not collapse; rather, it simply declined and shifted its center of gravity.</p>
+<p>Likewise, Tainter defines civilizational complexity based on its size, hierarchy, and complex. Luke Kemp in “Goliath’s Curse” and David Graeber/Wengrow in “The Dawn of Everything” make counter arguments that hierarchy is a function of dominance and is not necessary for complex civilization. My view is somewhere in the middle. Current civilization, as documnented by Thomas Piketty in “Capital in the 21st Century”, is too hierarchical and uneven. However, there is a need for hierarchy and heterogeneity in that individuals must necesessary hold different roles that lead to stratification and hierarchy - I advise graduate students and teach undergraduate students; the Prime Minister is the leader of Canada; and income should increase with experience and responsibility (though not as steeply as in many settings).</p>
+<p>Another dimension of complexity is attributed to Robert Boyd, as discussed in “A Different Kind of Animal”. Boyd describes the human ability to weigh imitation and environmental responses. Imitation is the copying of social patterns across generations, which Boyd frames around culture as an evolutionary force. Environmental response is the adaptation by individuals to current conditions. If individuals rely more heavily on imitation, the population will track environmental change less closely. In the face of climate change, I argue that there is a need to re-evaluate this balance, shifting it increasingly towards adaptation to environmental responses rather than imitation of the cultural norms we inherited from previous generations. Conversely, I agree with Boyd that the collective brainpower enabled by our propensity for imitation means that culture allows large populations of humans to acquire and pool local adaptations to invent solutions to global challenges. Paraphrasing the words of the ecologist E.O. Wilson, the problem we must solve is how to align our paleolithic emotions and imitation of millions of generations of ancestors with the speed of environmental change induced by our god-like technology, given the signals and structures provided by our medieval institutions.</p>
+</section>
+<section id="measuring-civilizational-progress" class="level1">
+<h1>Measuring Civilizational Progress</h1>
+<p>Ian Morris defines a measure of social progress based on energy capture, organizational capacity, information processing capability, and military power. The choice of metrics is strongly influenced by one’s worldview and definition of progress. We can reference the work of XXX on the limitations of ordered quantification…. Energy capture begins from a value statement that can be connected to Howard T. Odum’s definition of the maximimum power principle - that systems seek out the maximum power (i.e., input energy per unit time) and not necessary the maximum efficiency alternative. The unspoken assumption is that energy capture (and therefore consumption) is an objective good. Information processing capabability is measured based on written communcation. Of course, some civilizations (notably the Incan use of quipu, or knotted strings, for recording keeping) had no formal system of writing to represent abstract concepts.</p>
+<p>We respond to what we measure. While the Morris Score of Social Development is a useful framework for tracking change over time, it is firmly rooted in a Western value system. In the same way that Kate Raworth, in “Doughnut Economics”, critiques the reliance on GDP growth as a measure of progress or decline, civilizational metrics are prone to definitional bias. Collapse as measured by Morris’ social development or Kuznets’ GDP are simply one a slice of civilizational status that obfuscates all complexity. If we change our metrics, collapse may represent a reorientation in response to constraints imposed by environmental or social forces. I will expand on this theme in the following two sections.</p>
+</section>
+<section id="energy-capture-and-the-carbon-pulse" class="level1">
+<h1>Energy capture and the carbon pulse</h1>
+<p>Our current fossil fuel-based energy system is a marvel. As energy market analyst Andrew Nikiforuk terms them, we have access to an army of “energy slaves”. Depending upon the price of oil, we would require 7,000-26,000 humans (working 24/7) to replace the energy from a barrel of oil. Andreas Malm provides an excellent history of the shift from human and flow-based energy to stock-based energy. A stock is by its nature finite and depletable. He makes the argument that energy capture transitioned during the Industrial Revolution from flow-based (i.e., water and wind) to stock-based (i.e., fossil fuels) energy. Flow-based energy is constrained in its location by access to waterways, whereas stock-based energy may be moved and accumulated as a stock. This feature gives rise to the capitalist capture of the means of production (i.e, fossil fuels). Marx describes the process of divorcing the worker from the means of production in Theory of Surplus Value - energy can be concentrated under one roof and its ownership separated from labour. I’ll have more to say on this topic, as well as Malm’s discussion of concrete and abstract time, in future posts.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hawkins-tech-lab.github.io/thoughts/posts/10-20-2025/energy_slave.png" class="img-fluid figure-img"></p>
+<figcaption>Energy Slave Comparison</figcaption>
+</figure>
+</div>
+<p>Turning back to Morris’ social development score, its energy capture component parallels the recent argument (made by Nate Hagens and others) that we are currently living in a carbon pulse - a short-term period in which we are extracting fossil fuel energy stocks at unprecidented and unsustainable rates. Over the span of a 200 years, we have extracted millions of years of stored carbon-based fossil fuels. It presents a bleak outlook, but I argue this is only true if we employ a capitalist set of metrics. When viewed through the lens of GPD and consumption, we will see a massive shift. Viewing the carbon pulse through the lens of inclusive wealth and wellbeing can offer a more positive prospect. A “Great Simplification” (again using Hagens term), offers the opportunity for simplified lifestyles within planetary boundaries. If we must move from 250 sqm (2700 sqft) homes to 110 sqm (1190 sqft) homes, does it necessarily mean a reduction in quality of life? Or might it mean a more intimate family and community life of greater social cohesion and shared spaces? <img src="https://hawkins-tech-lab.github.io/thoughts/posts/10-20-2025/carbon_pulse.png" class="img-fluid" alt="Carbon Pulse"></p>
+</section>
+<section id="meta-crisis-and-carbon-tunnel-vision" class="level1">
+<h1>Meta Crisis and Carbon Tunnel Vision</h1>
+<p>When examining what leads to the rise and fall of civilizations, the conclusion we can draw is that the factors are numerous. No one factor describes the pattern across all civilizations. Nor will any one factor lead to the fall of our current global civilization. One conclusion that can be drawn is that our analyses should increasingly take a wide boundary perspective. Many in the environmental sphere, and in response those working in the energy sector, have become fixated on carbon emissions as a metric to track. In the same way that Morris’ social score is an oversimplification, we must also not become stuck in “carbon tunnel vision”.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hawkins-tech-lab.github.io/thoughts/posts/10-20-2025/carbon_tunnel.png" class="img-fluid figure-img"></p>
+<figcaption>Carbon Tunnel Vision</figcaption>
+</figure>
+</div>
+<p>Recognizing the complexity of the current global crises, Daniel Schmachtenberger has called the situation a “meta crisis”. This crisis includes environmental dimensions such as carbon emissions and climate change. It includes global geopolitics and war. It also includes popularism and technology. Yes, these are all important to consider and plan for a future characterized by greater constraints across each dimension. But we must also remember that these individual crises exist within an interconnected web of complexity. Given our inability to characterize the rise and fall of historical complex civilizations, how much more will we struggle to do the same for our increasingly complex and global civilization? We must move forward with humility, caution, collaboration, but also optimism that we can accomplish great things. History tells us we have done it countless times before!</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hawkins-tech-lab.github.io/thoughts/posts/10-20-2025/meta_crisis.png" class="img-fluid figure-img"></p>
+<figcaption>Meta Crisis</figcaption>
+</figure>
+</div>
+
+
+</section>
+
+ ]]></description>
+  <category>History</category>
+  <category>Complexity</category>
+  <guid>https://hawkins-tech-lab.github.io/thoughts/posts/10-20-2025/</guid>
+  <pubDate>Mon, 20 Oct 2025 06:00:00 GMT</pubDate>
+  <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/10-20-2025/banner.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>The Roles of the University</title>
+  <dc:creator>Jason Hawkins</dc:creator>
+  <link>https://hawkins-tech-lab.github.io/thoughts/posts/10-18-2025/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>The university has faced criticism in recent years as a liberal institution (in the modern sense of social progressivism rather than the classical liberal sense of individual rights and free enterprise as discussed by Fukuyama and others). I will return to this topic at the end of this post, but to start I will focus on the role of the university as an insitution of basic science. Being in an engineering school, value is typically placed on the practical applications of research. Translating one’s work into tools, products, or services of direct value to industry, government, or society writ large. I certainly do not disagree with there being value in such work. However, I will argue that there is also a need to not lose sight of the historical role of the university as an institution of unfettered exploration.</p>
+<p>John Ioannidis, a physician-scientist among the most highly cited researchers in the world (about 650,000 citations), argues that public research funds should go towards exploratory research - work that is “searching through the jungle, may run into pythons, and is likely to fail in many cases”. Industry has the incentives to conduct research for which the answer is clear and the objective is a clear and marketable outcome. In medicine, one might think of the development of a new vaccine that will target a currently prevalent virus. I agree with his perspective for the most part, in that I think many in engineering have a mindset of conducting science with the aim of producing a clear output or tool (again, very much of value). Some federal funding in Canada has this model, such as the NSERC Alliance program which requires the buy-in of an industry partner. One can structure the work in such a way that both basic and applied science can be completed - public dollars going towards basic science and industry match towards applied science - though it is hard and requires strategic thinking to ensure both objectives are being given their due. However, I also see such thinking arising in the NSERC Discovery Grant program, a program with the term “discovery” in the name. Many is the time that I’ve been adviced “discovery is in the name but do not take too many risks until you have proven yourself.” This is a version of what Ioannidis terms the “eminence”/“evidence” dialetic. Eminence is structured around the advice of eminent scholars in the field, regardless of its basis in strong scientific evidence. Evidence is structured around the merit of the research and its basis in sound scientific logic, data, and analysis.</p>
+<p>The recent Bouchard Report (2023) in Canada is commonly cited as identifying a lack of knowledge translation by universities. However, I believe this is a misreading of the report recommendations. The stated goal was to “better maximize the impact of investments and improve the agility and coordination of the system, particularly regarding talent development and commercialization.” This goal has a clear basis in the capitalist political economy of utility maximization. Note that the report was produced for the Minister of innovation, Science, and Industry, who has a mandate that is arguably more heavily influenced by industry than scientific inquiry. Reading deeper, The Report states that there is a need for reinvestment in Canadian research to readjust funding to match inflation and cost of living factors. Critically, The Report notes that investigator-initiated (i.e., basic) research “has plateaued while new funding has been earmarked for mission-driven or targeted research projects.” Buchard recommends the creation of a centralized funding program, with the suggested name of the Canadian Knowledge and Science Foundation. Let me finish on the topic of The Bouchard Report by noting that its eponymous author, Frédéric Bouchard, is a philosopher of science! Glancing at his publication record, one would be hard-pressed to find a tangible product or industry-relevant output.</p>
+<p>Casting a broad and historical net, the Academy has always had a role separate from direct industrial relevance. Greek Socratic academies, Arabic Madrasas, and British Oxford-style debates, in all of these settings the technocat would find a frustrating level of abstraction, erudition, and dreaming. In my view, we can think of the rising utilitarian view of the univeristy as comorbid with the rising criticism of its “liberal wokeness”. If the university as a philosophical institution of learning and exploration is perceived as expousing a single (and some would argue) wrong ideological perspective, then it must justify itself on capitalist grounds. That is, if we discount its role as an institution independent of political currents, then its value must be “internalized” in the economic parlance through justification as a market actor. Under such a role, products and services of direct value become the outputs of the university. Again, the two purposes are not mutually exclusive even with a single scholar. Leonardo Da Vinci produced great works of art and also engineering innovations. Ibn Sina was both a philosopher and a physician. John Ioannidis, who partially motivated this post, is best known for his advocacy of evidence-based medicine but started his career as a clinician. I love providing useful insights to my city, province, and county, but I have an equal passion for questioning assumptions and critiquing systems, with this basic science being informed by my applied work. Let us value the improvers of existing cities, charters of known lands, and explorers of wilderness with equal weights.</p>
+
+
+
+ ]]></description>
+  <category>Education</category>
+  <category>Funding</category>
+  <guid>https://hawkins-tech-lab.github.io/thoughts/posts/10-18-2025/</guid>
+  <pubDate>Sat, 18 Oct 2025 06:00:00 GMT</pubDate>
+  <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/10-18-2025/banner.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Are we producers or are we consumers?</title>
+  <dc:creator>Jason Hawkins</dc:creator>
+  <link>https://hawkins-tech-lab.github.io/thoughts/posts/10-17-2025/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>According to Schumacher, “economics operates legitimately and usefully within a given framework which lies altogether outside the economic calculus”. Economics is therefore a “derived” body of thought (from within meta-economics) which requires one to be constantly cognizant of its assumptions while engaging in analysis within the economic framing. Edward Copleston pointed to the danger of economics usurping the rest of science roughly 200 years ago, due to its relevance to certain strong drivers of human nature - envy and greed. Schumacher makes the distinction between ‘primary’ goods taken directly from nature and ‘secondary’ goods that are manufactured by humans out of primary goods. He reasons that increased production of manufacture(secondary) goods is predicated on the ability to extract additional primary resources from the earth. Critical to the present discussion, this framing of economics requires us to make clear distinctions between production and consumption, which are often less coherent on further inspection.</p>
+<p>According to the economic calculus, we engage in productive work so as to purchase certain amenities or comforts in the market as ‘consumers’. However, as Schumacher notes, everything depends on whether one considers man-as-producer or man-as-consumer. If a person uses a luxurious car or flies first-class for business, man-as-producer, it is considered a waste of money. The same person traveling for leisure, man-as-consumer, is considered to be exhibiting a high standard of life. Schumacher, like Marx, often goes back to land as a primary means of production around which to frame his argument. In an intriguing parallel to Harden’s ‘Tragedy Of the Commons’, Schumacher notes that the farmer who raises his productivity and lowers his costs (e.g., through the application of synthetic fertilizers and mechanization) does so at the expenese of man-as-consumer, who suffers from water contamination, climate change, and lost landscape aesthetics. In a tongue-in-cheek remark, Schumacher states “[t]here are large-scale farmers, horticulturists, food manufacturers and fruit growers today who would never think of consuming any of their own products. ’Luckily, they say, ’we have enough money to be able to afford to buy products which have been organically grown, without the use of poisons.” He then continues with the hypothetical of asking said farmer why they do not follow similar practices on their own farm, to which they respond that they could not afford it, offering through a stark dichotomy of man-as-producer and man-as-consumer a picture of our competing roles. In my own research on goal-based choice, I am looking at how we might reframe these tradeoffs - work that requires careful meta-economic thought.</p>
+<p>Turning to the moral implications of primary and secondary goods, Schumacher contrasts the use of a car with that of a calf. One could legitimately argue that the best management strategy for a car (a manufactured secondary good) is to neglect maintenance and simply run it to ruin. If economical, one cannot be faulted for acting upon this logic as there is nothing sacred about secondary goods. On the other hand, treating a calf in the same manner would raise raise questions regarding the morality of inflicting suffering on a living and sensitive creature for the sake of utility maximization. With the caveat that I am by no means a virtuous vegan (though I try to limit my meat consumption), one does not have to look far to find such suffering on display in our industrialized agriculture system.</p>
+<p>Some may argue that Schumacher is a fringe economic philosopher in the field of economics, though he was a protege of the venerated John Maynard Keynes. Let me then talk about another economists, Sir Richard Stone, who some consider the ‘father of national income accounting’. He too was leary of applying economic calculus outside the market. Sir Stone questioned the exclusion of household labour from the United Nations System of National Accounts (UN-SNA). 70+ years on, there remains little theory that explains why homemakers should not be included in GDP. SNA developers have devised a different defence because although equivalent to work done by servants “by convention… only the wages of the domestic staff are treated as the value of output”. We are brought back to the confounding of man-as-producer and man-as-consumer. There is an awkward logic to GDP rising if we look after each others children, essentially swapping home production for market production that adds no additional wellbeing to any of the individuals involved in the exchange (unless you are a child with much better neighbours than parents). Despite this apparent inability to value home production, the home itself is included in GDP accounts. In the United States, such ‘work’ amounts to 6 per cent of GDP even though none of this work exists. It is simply payment of rents from the home owners to themselves as a measure of capital gains. The argument made is that there would be a distortion in international and inter-temporal comparisons of production and consumption if housing services were ignored in the GDP accounts. The example would be Switzerland (high rent rate) having a higher GDP than the US (high ownership rate) due to the difference in these rates. Rent seeking is also an issue - increasing the rent increases the value produced by the real estate sector, but what if the quality of rental services does not see a corresponding improvement? Vancouver and Toronto tenants know too well the impact of rising real estate markets but no change in quality of life for them as tenants.</p>
+<p>The image for this post is inspired by my slow capitulation to the AI overlords.</p>
+
+
+
+ ]]></description>
+  <category>Economics</category>
+  <category>Production</category>
+  <category>Consumption</category>
+  <guid>https://hawkins-tech-lab.github.io/thoughts/posts/10-17-2025/</guid>
+  <pubDate>Fri, 17 Oct 2025 06:00:00 GMT</pubDate>
+  <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/10-17-2025/banner.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>On Education</title>
+  <dc:creator>Jason Hawkins</dc:creator>
+  <link>https://hawkins-tech-lab.github.io/thoughts/posts/06-23-2025/</link>
+  <description><![CDATA[ 
+
+
+
+
+<blockquote class="blockquote">
+<p>In this new state, with a simple and solitary life, very limited needs, and the implements they had invented to provide for them, since men enjoyed very great leisure, they used it to procure many kinds of commodities unknown to their Fathers; and that was the first yoke they imposed on themselves without thinking about it, and the first source of the evils they prepared for their Descendants. For, besides their continuing thus to soften body and mind, as these commodities had lost almost all their pleasantness through habit, and as they had at the same time degenerated into true needs, being deprived of them became much more cruel than possessing them was sweet; and people were unhappy to lose them without being happy to possess them.</p>
+</blockquote>
+<p>Excerpt from J.-J. Rousseau, Discourse on the Origin and Foundations of Inequality among Men (trans. by Roger Masters). Part II</p>
+<p>I, like many educators, have been giving careful thought to the role of artificial intelligence (AI) in the classroom. Specifically, what is the role of large language models (LLMs) like ChatGPT and Claude? The above is a quote I heard from Rousseau on one of my favourite podcasts, EconTalk. The host, Ross Roberts, also notes that his favourite economists/moral philosopher Adam Smith had something to say on the topic of technology, too. In The Theory of Moral Sentiments, Smith points out that a person will acquire an expensive watch that does a slightly better job at keeping time, but it doesn’t mean that person will will by any less tardy for meetings.</p>
+<p>Another of my favourite podcast hosts, Nate Hagens, had the philosopher of education Zak Stein on his show and raised some excellent points that shaped my thinking on the subject. His arguments around AI and education parallel those of Daron Acemoglu and other on AI and jobs - technology should build upon human capacity and increase (or improve) our quality of life and social interactions. In many historical cases, technology accomplished these purposes. However, it questionable whether current advances in AI are creating more human interactions or supplanting human-human interactions. We risk nurturing an inability to connect with other humans, as we increasingly rely on AI for the development of young minds through both informal online interactions and the growing formal role of AI in education. Stein and Hagens in their conversation go so far as suggesting that cognitive aptitudes will be diminished in developed nations with access to AI, with those in developing nations dominating the future world due to their continued nurturing of critical thinking skills. However, they also raise concerns about the increased use of LLM in development work - replacing on-the-ground teachers with online AI alternatives.</p>
+<p>Another source that has influenced my recent thinking on this topic is an article in The Walrus by the philosophy professor Troy Jollimore. He argues that the purpose of higher education is to train students in critical thinking and writing. Like him, I am an academic purist in my believ that it is not the purpose of the university to train students in technical tools to solve problems. Jollimore uses the analogy of The Magic Bag, a common theme across myths and fables, which gives the lesson that one should be careful what they wish for. I also agree with Jollimore that North American culture does not value intellectual pursuit, that “[t]hose who emphasize theory, study, and scholarship are often viewed as marooned in ivory towers with expertise that is mostly, if not entirely, spurious.” As he says in his article, many students want to exit university with a degree but otherwise unaltered by the experience. This perspective is strongly influenced by the belief that university prepares students for their ‘job’ and overlooks its role in preparing them for ‘life’. Specifically, but philosophically, education may not give you a bigger paycheque but will “give you access to a more rewarding life”. What Jollimore says about health ethics I believe to also be true about engineering ethics. What do you do when you are asked to develop infrastructure that systematically restricts the access of other people? Or do you decline to build a pipeline that will contribute to climate change?</p>
+<p>How to address the role of AI in the classroom? Like Jollimore, I don’t think that having students complete all their work in the classroom under close supervision is the answer. Writing performed under the pressure of time in no subsitute for the careful refining of an idea over several weeks (though I am not naive to the fact that many of my students are subjecting themselves to similar constraints outside the classroom finishing their assignments at the last minute). I have no illusion that I can prevent students from using LLMs, nor is it my intention that they not use them. Rather, my measure of success is whether the use of LLMs in work is improving (or diminishing) the ability of students to think critically and build a strong internal life centered on personal wellbeing and curiosity. I sometimes wonder, if I was born a decade later, would I be on TikTok or still spending my evenings writing about Rousseau and Smith?</p>
+
+
+
+ ]]></description>
+  <category>Pedagogy</category>
+  <category>AI</category>
+  <guid>https://hawkins-tech-lab.github.io/thoughts/posts/06-23-2025/</guid>
+  <pubDate>Mon, 23 Jun 2025 06:00:00 GMT</pubDate>
+  <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/06-23-2025/banner.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Values and Axioms</title>
+  <dc:creator>Jason Hawkins</dc:creator>
+  <link>https://hawkins-tech-lab.github.io/thoughts/posts/06-17-2025/</link>
+  <description><![CDATA[ 
+
+
+
+
+<blockquote class="blockquote">
+<p>The danger arises when a culture takes its own story as the absolute truth, and seeks to impose this truth on others as the yardstick for all knowledge and belief. We should never forget that, at their deepest level, all questions, all searches for knowledge, by they “scientific”, “mystical”, “philosophical”, or “religious” point to the same truch, but often in profoundly different ways. From Certainty to Uncertainty - F. David Peat</p>
+</blockquote>
+<p>There is a long-running debate about hierarchies of purity in science. At the top is mathematic, the cold, hard science of logic and numbers. Physics sits below mathematics, being founded in the rigour of mathematics and focused on the very small and very large scales, but is constrained by an uncertain reality. Chemistry and biology follow physics because they study the world at (or close to) scales observable by humans. Engineering and the social sciences are ersatz shadows of the physical sciences. But is the purity of mathematics an illusion? If so, what does it suggest for other sciences and fields of study?</p>
+<p>The philosopher Bertrand Russell believed in the certainty of mathematics. Along with his colleague A.N. Whitehead, he set out to establish its logical foundations with the results summarized in their two volume <em>Principia Mathematica</em>. They defined their proofs in terms of a system of signs, a gammar (i.e., set of rules) for combing signs into formulae, transformation rules, axioms, and proofs involving a finite set of formulas. Axioms are the fundamental building blocks of mathematics, with their roots in ancient Greece. Euclid compiled a set of fundamental units - points, lines, planes, etc. - that defined the basis for geometry. Axioms should be self-evident and not rely on any other assumptions. Proofs are then built from these axioms, and nothing else. Following Russell and Whitehead, mathematicians were undecided as to whether the field had been proven complete and consistent. However, a 25 year old Wiener named Kurt Gödel showed the limits of the axiomatic method in his paper “On Formally Undecided Propositions of <em>Principia Mathematica</em> and Related Systems”. He was able to show that true statements exist in mathematics that cannot be proven: that mathematics is incomplete. One example of an unprovable truth termed Goldbach’s Conjecture states that “every even number is the sum of two primes”. For example, 20 = 17 + 3 and 8 = 7 + 1. No exception has yet been found to this conjecture, but no one has been able to prove it. Even should someone find a proof, the result would be the number of axioms being increased by one and further conjectures remaining by Gödel’s Theorem.</p>
+<p>So why does any of this matter to applied and social scientists? My point is to highlight that, if even the pure white cloth of mathematical logic has shades of grey, then how much more will the messier applied natural and social sciences face the spectre of uncertainty? Laws of nature are immutable but constantly evolving as we gain new knowledge. Gravity is a law of nature defined by mathematical terms developed by Newton but expanded upon and refined by Einstein. Laws of social behaviour are by their nature constructs of a particular social (i.e., moral) system. For illustration, let us consider the consumption of goods central to microeconomic analysis. The classical economic calculus says that a good has a monetary price, which an individual considers subject to a constraint imposed by their income. Their goal is to maximize the utility of goods consumption subject to this income constraint. Let us examine the assumptions of this statement. First, do all goods have a monetary price? Certainly not! I can take a tree branch and transform it into a walking staff, fence post, or any number of other useful goods without any expenditure of money. Until the last 300 years, most households produced the majority of their own goods and services outside the economic market. I recall submitting a grant proposal on consumption subject to natural resource constraints. The response from reviewers was that individuals do not consider resources when making consumption decisions, as though this behaviour were an immutable feature of human decision-making and not a feature of the prevailing social system being prefaced on monetary markets. For most of human history, resource considerations were the prevailing constraint on consumption as goods could not be shipped over long distances at low cost. Within the blip of human existence on Earth, the centering of income constrained consumption is a sub-blip of inperceivable duration. Not a fundamental law of nature - just a social construct that may be altered through a change in moral perspective. In the Dawn of Everything, David Graeber and David Wengrow discuss the historical and cross-cultural instability of social axioms. They note the presence of “a mythical substructure to our ‘social sciences’- what appear as unassailable axioms, the stable points around which our self-knowledge is organized, are scattering like mice.”. However, as they note, myth is not a problem in its own right; it is “the way in which human societies give structure and meaning to experience”. The problem is the assumption that the current myths are correct and axiomatic. Again citing Graeber and Wengrow, “Max Planck once remarked that new scientific truths don’t replace old ones by convincing established scientists that they were wrong; they do so because proponents of the older theory eventually die, and generations that follow find the new truths and theories to be familiar, obvious even”. This is a reminder that research as an objective and value-free process for observing and understanding natural and human systems is taken for granted by many researchers. What then is the purpose of new knowledge (or re-discover old knowledge), if not to create new and (or re-create) different forms of social reality?</p>
+<p>I was struck by Linda Tuhiwai Smith’s framing of the problem around methods in “Decolonizing Methodologies: Research and Indigenous Peoples”. In the same way that different cultures interpret good and moral behaviour in their diverse ways, different fields of study have their own methods for approaching research problems. As noted many times on this blog, I am trained as an engineer but conduct research on social problems. Some social scientists might (and have) say that I am referencing the wrong literature or using the wrong method. My perspective is that I conduct social inquiry through an engineering lens; at times using different methods but always grounded in the objective of a better society from the intersectional perspective of my Western cultural and engineering background. Tuhiwai Smith brings an Indigeneous New Zealand perspective to the discussion by elevating Indigenous ‘ways of knowing’ that may differ from Western science. While the scientific method takes ‘on faith’ its axioms as certain and foundational, other knowledge systems may rely on other assumptions (termed ‘myths’ by Graeber and Wengrow). At its core, the debate is over the lens through which one should view human society and its position within broader ecosystems, and the corpus of knowledge that validates that perspective. Quoting Tuhiwai Smith, it is a dispute over “the validity of scientific methods within the positivist paradigm, and whether this is an appropriate paradigm for understanding human society.”</p>
+
+
+
+ ]]></description>
+  <category>Economics</category>
+  <category>Value</category>
+  <category>Axioms</category>
+  <guid>https://hawkins-tech-lab.github.io/thoughts/posts/06-17-2025/</guid>
+  <pubDate>Tue, 17 Jun 2025 06:00:00 GMT</pubDate>
+  <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/06-17-2025/banner.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Spatial Location Choice</title>
+  <dc:creator>Jason Hawkins</dc:creator>
+  <link>https://hawkins-tech-lab.github.io/thoughts/posts/06-11-2025/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Spatial choice is an important topic in my research. I have studied both home and establishment location choice based on the work of William Alonso, John Douglas Hunt (MSc advisor), Kara Kockelman (postdoc advisor), Steve Lerman, Francisco Martinez, Eric Miller (PhD committee member), Rolf Moeckel, Paul Waddell (PhD committee member), and many others. I was therefore pleasantly surprised to be directed by my colleague Byron Miller to a 1980 paper by Eric Sheppard entitled “The Ideology of Spatial Choice”. Eric provides many arguments that parallel my own thoughts on the topic, which I will share here.</p>
+<p>A first element to highlight is that location choice comprises two elements. First, following Manski and others in the econometrics literature, choice set formation that defines the available alternatives. Sheppard notes that the choice set is a function of current social structures - the system of values and economics that lead to a particular set of dwelling and neighbourhood typologies - which contrasts with the standard econometrics assumption that all alternatives are available to the decision-maker and they simply make a decision as to which alternative they prefer. Second, the spatial location choice is made conditional upon the available choice set. At this stage, it is often assumed that the decision-maker is a utility maximizer - i.e., makes a fully compensatory choice after weighing all the attributes of all available alternatives in their choice set. Sheppard notes that such a decision process is both infeasible and incomplete in its assumption of the means of decision-making.</p>
+<p>The choice set problem is fundamental because it “grounds verification in comparing our theories to actual observed events” (Sheppard, 1980). In other words, the empirical approach characteristic of engineering and economics implicitly assumes that, so called, <em>revealed preferences</em> based on observed choice represent the decision-maker’s preferences unconstrained by the decisions of other actors, including other residents, property developers, and government regulations. This characterization of choice as synonymous with preference is not founded in immutable law. Rather, it is based on a theoretical framework put forward by the economist Paul Samuelson in the 1940s, and subsequent perpetuation by other scholars leading to it becoming de facto axiomatic.</p>
+<p>A further point made by Sheppard that I wholeheartedly endorse is that <em>rational</em> choice is typically conflated with the egoistic choice of homo economicus. It is argued by many scholars that deviations from purely egoistic rational choice is a function of imperfect information and inferior ability, rather than a mischaracterization of the choice process. Rarely does the discussion touch on the goals of behaviour, a topic that I have been putting considerable thought towards addressing in my work. Forty years on from Sheppard, it still rings true that few utility-based models of spatial choice exist that consider the utility of others or collective utility. As argued by Sheppard, such assumptions about human nature are also statements on current social relations. He notes that there is an inductive justification of such assumptions - i.e., in a classical liberal society, individuals often do act egoistically and it is therefore valid to model behaviour thus.</p>
+<p>Critiques of conventional economic theory, such as that outlined above with application to spatial location choice, are examples of what Schumacher termed <em>meta-economics</em> for their questioning of neoclassical economic theory and its promotion as a universal law of human nature. Applying the concept of meta-economics to non-market valuation, Schumacher notes that the valuation of ecosystem services typical of environmental economics “is a procedure by which the higher is reduced to the level of the lower and the priceless is given a price”. Both Schumacher and Sheppard note that economic analysis is usefully applied within a given framework that as Schumacher says “lies altogether outside the economic calculus”. Sheppard argues that any validation of economic assumptions must necessarily be independent of the theory it seeks to validate. An assessment of choice behaviour requires a method of evaluating the decision-maker’s level of information about, and preferences for, the available alternatives. The stated preference approach pioneered by Louviere, Hensher, Street, and others provides such a framework for evaluating alternatives. However, as noted by Hollis and Nell, one enters an infinite recursion in that the stated preference approach then requires its assumptions to be evaluated by a third theory, etc. In the same way, Sheppard argues that revealed preference is tautological in its assumption that people choose what they prefer.</p>
+<p>We now come to the question of what drives the discrepency between choice and preference. One explanation is that choices are constrained by the available alternatives - i.e., choice set. Revealed preference analysis assumes that the most frequently selected choices from historical empirical data are indicative of preferences. However, it may well be the case that these data represent choice from a non-exhaustive set of alternatives and, as stated by Sheppard, “represent no preference at all”. Sheppard provides an excellent example that again rings true to my own thoughts on this topic. In the standard bid-rent model of Alonso, suburbanization arises from the preferences of high income households for space. The implication of the model according to Sheppard, and I support with him on this point, is that the crowding of low income households onto “higher priced inner-city land” is an outcome of their preferences. However, higher income households can clearly outbid lower income households regardless of the preferences of each group. Harvey also supports the argument that revealed preference observations are more indicative of the capitalist social structure than household preferences for housing. This discussion does not even touch on the sociospatial structures and exclusionary zoning constraints on home choice. Let me conclude with a quote by the great location theorist, August Lösch, himself referencing Schiller: ” ‘Live with thy century, but be not its creature; give to thy contemporaries, but give what they need, not what they laud’? No! The real duty of the economist is not to explain our sorry reality, but to improve it. The question of the best location is far more dignified than determination of the actual one”.</p>
+
+
+
+ ]]></description>
+  <category>Econometrics</category>
+  <category>Choice models</category>
+  <category>Location</category>
+  <guid>https://hawkins-tech-lab.github.io/thoughts/posts/06-11-2025/</guid>
+  <pubDate>Wed, 11 Jun 2025 06:00:00 GMT</pubDate>
+  <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/06-11-2025/banner.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Deep Ecology</title>
+  <dc:creator>Jason Hawkins</dc:creator>
+  <link>https://hawkins-tech-lab.github.io/thoughts/posts/06-02-2025/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><em>Image credit: https://sites.middlebury.edu/rethinking/about-this-site/deep-ecology/</em></p>
+<p>Deep ecology is a philosophical movement that can be traced to a set of principles laid out by Arne Naess and George Sessions in the 1980s, though its roots extend earlier to the work Henry David Thoreau, John Muir, D.H. Lawrence, Robinson Jeffers, and Aldous Huxley. They summarize the movement by eight points as follows (maintaining their emphasis): 1. The well-being and flourishing of human and non-human life on Earth have value in themselves. These values are independent of the usefulness of the non-human world for human purposes. 2. Richness and diversity of life forms contribute to the realization of these values and are also values in themselves. 3. Humans have no right to reduce this richness and diversity except to satisfy vital needs. 4. The flourishing of human life and cultures is compatible with a substantially smaller human population. The flourishing of non-human life <em>requires</em> a smaller human population. 5. Present human interference with the non-human world is excessive, and the situation is rapidly worsening. 6. Policies must therefore be changed. These policies affect basic economic, technological, and ideological structures. The resulting state of affairs will be deeply different from the present. 7. The ideological change will be mainly that of appreciating life quality (dwelling in situations of inherent value) rather than adhering to an increasingly higher standard of living. There will be a profound awareness of the differences between bigness and greatness. 8. Those who subscribe to the foregoing points have an obligation directly or indirectly to try to implement the necessary changes.</p>
+<p>Deep ecology can be classified as an <em>ecocentric</em> philosophy, which stands in contrast to the standard environmental movement as an <em>anthropocentric</em> philosophy. This latter philosophy arose from the 1960s environmental movement that was a reaction to industrial pollution, making it more urban pollution-oriented and therefore centered on human wellbeing. Sierra Club founder David Browers was an ecocentrist and believed in the inherent value of nature. His successor, Michael Mcloskey, shared this view and worried that “the new environmentalism” looked upon the ecocentric view as “parochial and old fashioned”. This new, anthropocentric, view misses the critical role of diversity in complex nonlinear systems. In fact, it is common across many fields of study that I engage with myself to make simplifying linear assumptions and take an anthropocentric perspective that draws upon (if at times implicitly) capitalist economics and Western moral philosophy. As such, it does not surprise me that the environmental movement shifted in this direction over the 20th century.</p>
+<p>On the third point above, Daniel Bell in ‘The Cultural Contradictions of Capitalism’ distinguishes between “needs” as universal and “wants” as the idiosyncratic desires of individuals. Keynes draws a similar distinction between those needs that exist regardless of their impact on other people, which he argues are satiable, and those needs that “lift us above, make us feel superior to, our fellows”. He argues needs of the second kind may indeed by insatiable. In a similar way, Bell notes Thomas Aquinas argued that needs in the form of food, clothing, and shelter have limits (such as the space in your stomach) but the desire for money has no limit.</p>
+<p>On the sixth point, it must be emphasized that they use the term ‘structures’ to mean a significant change that contrasts the incremental conservatism of current policy (by all nations). Considering the future from a deep ecology mindset requires an uncomfortable grappling with human population growth. Bigness, growth of consumption through more people and increasing per capita consumption, is not synonymous with greatness. A meaningful life arises from the enjoyment of inherent value, rather than the extractive value associated with human interference in the non-human world.</p>
+<p>Naess provides some nice contrasts between <em>shallow</em> and <em>deep</em> ecology that illuminate the distinction from his perspective. In the case of pollution, a <em>shallow</em> approach focuses on technological solutions that purify the air, land, and water. Laws set limits on pollution and industries are off-shored to regions with more permissive regulations. In some sense, it is Tiebout sorting from the urban economics literature: households with children will move into towns with good schools and seniors will move to towns with no public schools. In the same way, industry sorts into the jurisdiction that provide the optimal policy mix for their needs. The <em>shallow</em> solution to acid rain (a pressing issue at the time of writing by Naess in the 1980s) is to avoid action and find flora species that are resilient to high acidity. In the <em>deep</em> approach, health is evaluated from the biospheric rather than human perspective and solutions are systematic. A <em>deep</em> approach would focus on the economic and technology conditions responsible for acid rain, then pursue long-term (greater than 100 year time horizon) impacts on all systems. Taking the example of resources, Naess argues that a <em>shallow</em> perspective views resources as belonging to those of the present generation with the capacity to exploit them. A <em>deep</em> perspective asks the question “how can resource use serve the quality of life rather the economic standard of living as generally promoted by consumerism”?</p>
+<p>Beyond ecological diversity, Naess argues for cultural diversity that does not assume the hegemonic superiority of industrialized Western culture. Rather, it is an intrinsic good to maintain cultural diversity in the same way that maintaining biodiversity should be valued. The ecologist Thomas Crowther makes a similar argument for biodiversity in his advocacy for increasing tree populations, not simply in absolute terms but also by increasing species diversity. Continuing on the thread of superiority leading to unsustainable value systems, Paul Shepard charts the history of Western science focusing on the uniqueness of humans in their ability to form language, traditions, culture, love, and an inter-generational history conscience. Shepard interprets the view of the contemporay biologist Julian Huxley as emblematic of the overall field, when Huxley states that the purpose of the world was to produce humans as a species characterized by a social evolution that removes them from the strictures of biological evolution. Shepard argues that growing evidence of language and other traits previously thought uniquely human beg the question of whether it is moral for humans to place their welfare above that of nature. To Shepard, the ecological crisis is not a function of differences among humans by their trade but rather the intersection of personality and experience that shape our feelings towards other people and the Earth. Furthermore, he agues, the ‘search for identity’ is not only social by ecological in its origins. Lacking a sense of place and time, we are told that improvement of current social forms - rather than their replacement with new forms - is the solution to the societal malaise. Sessions continues this argument of cultural and ecological synergy through his statement that “The Scientific Revolution [overturned] the age-old organic view of the world as a living organism and replaced it with a mechanistic clockwork image of the world as a machine”.</p>
+<p>To conclude with my own thoughts on the above matters, it can be challenging for the concrete-minded scientist to grapple with questions of philosophy and morality. For me, a starting point is to reflect on assumptions we take for granted as engineers. Carbon capture and storage (CCS) is a hot topic at the University of Calgary as a solution to the climate crisis. How does this technology square with the principles of deep ecology? Is it solving a <em>shallow</em> or a <em>deep</em> problem? Does it center human well-being and the continuance of extractive patterns of consumption? I would argue, yes. My own research on electric vehicle adoption is founded on an assumption that switching one technology for another will address climate change, but what are the long-run implications of battery production? Rather than seeking technical solutions to accomodate continued population growth, we could address human population growth head-on. Urusula K. Le Guin’s “The Lathe of Heaven” provides an interesting study of our ability to address environmental damage through human action, including population control, and the human ‘God’ complex. I do not want to end on population control as the solution though. Therefore, I will leave things on this note: let us always be open to a different perspective, that we may be wrong or limited in our thinking, that we are just one resident occupying this planet and not a particularly long-lived one at that.</p>
+<p>Note: An online search finds that the common criticism of deep ecology is its spiritual overtones; perhaps, we need more spirituality in our lives. But why give any credance to the muddled up opinions of an Agnostic married in a Catholic church who could spend the better part of the day reflecting on his time in Baptist youth groups being baffled by discussions about UFC fights mixed with discussions of Jesus telling a crowd to “turn the other cheek”. I wrote an essay in grade 12 English on what I viewed as the contradictions, or misweightings, of the contemporary evangelical Christian worldview that I believe remains among my best pieces of literary criticism. Maybe that ‘itch’ is why I started a blog documenting my thoughts on my readings after a decade-long hiatus from such writing.</p>
+
+
+
+ ]]></description>
+  <category>Ecology</category>
+  <category>Philosophy</category>
+  <guid>https://hawkins-tech-lab.github.io/thoughts/posts/06-02-2025/</guid>
+  <pubDate>Mon, 02 Jun 2025 06:00:00 GMT</pubDate>
+  <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/06-02-2025/banner.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>The Metabolic Rift</title>
+  <dc:creator>Jason Hawkins</dc:creator>
+  <link>https://hawkins-tech-lab.github.io/thoughts/posts/05-28-2025/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>When one thinks of Karl Marx, environmentalist is unlikely to be the first word that comes to mind. Yet, sociologist John Bellamy Foster makes the case for an environmental dimension to the Marxian theory of production through what he terms a ‘metabolic rift’. Quoting Marx, Foster defines this as the “irreparable rift in the interdependent process of social metabolism” (Capital, Vol. III., 1894, p.&nbsp;949). The ‘rift’ arises from the isolation of urban inhabitants from nature in a capitalist and industrial system of agricultural production. This separation between production and consumption, Marx argues, leads to a rift in the ecological system. In their excellent book “The Ecological Rift”, Foster, York, and Clark elaborte the Marxian ecological perspective in a way that is highly appealing to the spatial thinker. Spatial separation between production and consumption is not simply an argument about a lack of knowledge by urban dwellers about the source of their food. Rather, it has concrete implications for the ecological system. Consider that nutrients embodied in food products are transported away from their source, where they would provide fertilizer for the next year of crops, to the city where they are disposed at a landfill. Industrial agriculture therefore requires copious quantities of synthetic fertilizers to be transported back to these farms to replace nutrients lost from the local ecosystem.</p>
+<p>Foster, York, and Clark go further by suggesting a ‘global economic rift’ characterized by a decoupling of the global economic system from nature and prefaced on the ability to consume resources without limit. In discussion with this argument, Johan Rockstr"om and the Potsdam Institute suggest that capitalism may be deemed an acceptable economic system only so long as it is maintained within planetary limits. However, their analysis suggests we have crossed several planetary limits and are on track to cross others. The solution proposed within the capitalist paradigm is termed as ecological modernization - a management approach based on technology and market-based solutions - advocated by Thomas Friedman, Fred Krupp of the Environmental Defense Fund, Nobel Memorial Prize-winning economist William Nordhaus, and Michale Schellenberger of the Breakthrough Institute. Such advocates view ‘green markets’ as the solution to environmental ills, enhancing economic growth as the central societal objective. Natural scientists, including me, are beginning to pay attention to these trends and question the viability of such a system. I agree with Foster et al.&nbsp;that the pursuit by some, though not all, social scientists of fundamental laws that parallel those of the natural sciences is one way to understand the issue. Furthermore, the exercise of developing social laws often requires ahistorical treatments that fix social relations at their current conditions. As noted by Foster et al., “analysis and what is deemed acceptable/unacceptable tends to be filtered through the dominant institutions and structures of prevailing hierarchical social order” (2010, p.&nbsp;20). Further, John Stuart Mills stated that “[t]he fundamental problem, therefore, of the social science, is to find the laws according to which any state of society produces the state which succeeds it and takes its place.” (A System of Logic, 1843, p.&nbsp;631). An ahistorical perspective renders the preceding argument moot, as the future is assumed to be essentially like the present. The problem is most evident in positive social sciences (e.g., economics) that search most ardently for fundamental social laws of nature. The relative stability over the period of positive social science analysis (i.e., since the 19th century work of Alfred Marshall and others) leads to incorrect inferences based on the perpetuation of current social structures and relationships. As gravity has become a constant term in physical system dynamics, so economic principles are assumed axiomatic and are taken for granted in most analyses. I will return to the question of axioms in mathematics in a subsequent post.</p>
+<p>The novelist and chemist C.P. Snow noted the disconnect between physical and social sciences in his “two cultures” dichotomy, which Foster et al.&nbsp;reference when noting that “social sciences [have] erect[ed] ever higher walls, constructing deeper moats, all directed at separating themselves off from the objects (if not the methods) of natural science.” At the risk of crudely paraphrasing Foster et al.&nbsp;at great length, which I believe to be an incredible work of academic thought, let me continue this thread. They argue that social sciences have resisted nature “essentialism”, whereby humans are reduced to biological vessels, and rather framed nature as fixed or changing too slowly to have a direct bearing on human society. It then becomes customary to view the human/societal realm as separate from the natural realm. This anthropocentric view is reinforced by the “so-called conquest of nature associated with modern science and technology, feeding a ‘human-exceptionalist paradigm’, or notion that humans are exempt from natural laws and can transcend them in almost infinite ways, given ingenuity.” Social sciences, in their most positivist and empirical forms, aim to replicate the methodology of natural sciences by defining immutable laws of social relations. This approach “has almost invariably meant dehistoricizing both nature and society - either via a unchanging status quo or structural-functionalist and teleological notion of ‘modernism’”. The modernist movement has its roots in industrialization and the transition towards scientific reasoning. For those less steeped in social theory language (myself included), structural-functionalism relates to the components of society having specific functions that maintain the stability and is prefaced on the assumption that modernity follows a rational design and evolution. Then, modernism is the teleological goal of progress towards a better state by following our current path. That is, history leads necessary to the modern state - an assumption that faces criticism for its Eurocentrism and determinism.</p>
+<p>Returning to Snow, it would be a simplification to characterize the solution to the natural-humanities dialectic as an increased reliance on either field. As explained by Paul Shepard, Snow did not view the two cultures division as ideological, economic, or political. The issue is the framing in Western thought of ‘nature’ as either a resource or scenery, to be exploited or enjoyed for human consumption. This perspective draws on principles of ‘deep ecology’ I will expand upon in my next post.</p>
+<p>Mainstream economics is enmeshed with the global policy agenda in ways that constrain true progress on climate mitigation. Let us take a dialetical approach by contrast the extremes of mainstream economics on target atmospheric CO2 levels with targets established by climatologists. To start, determining the CO2 for a 1.5 degree C increase in global mean temperature above preindustrial levels is hard to pinpoint. However, a good estimate is in the range of 443 ppm. Nicholas Stern and William Nordhaus represent bounds on the economic view. In a progressive treatment of climate change, Stern argues the CO2 equivalent concentration in the atmosphere should be stablized at 550 ppm, or 480 ppm of CO2 and a global rise in mean temperature of 3-4 degrees C above preindustrial levels. Despite his recommendation being above that of many climatologists, Stern argues efforts to limit greenhouse gases to levels below this level should not be attepmed, given that they “are unlikely to be economically viable” and would threaten the economic system. In essence, this approach prioritizes what is economically feasible over what is ecologically necessary. William Nordhaus, a major figure in US climate policy analysis, advocates for only minor reductions in emissions in the near term, with more serious cuts postponed to the future (aligned with the position of the current Alberta government). He warns against aggressive attempts to stabilize emissions within this century. Instead, he proposes an ‘optimal path’, whereby emissions gradually rise and peak around 700 ppm of CO2 by 2175—potentially pushing global temperatures 6 degrees C above preindustrial levels. In his view, this trajectory would allow economic growth to continue, enabling investments aimed at mitigating climate risks and improving welfare.</p>
+<p>Nordhaus even considers the more precautionary path suggested by Nicholas Stern to be too costly. Yet both of these mainstream economic approaches—though presented as environmentally conscious—still lead to atmospheric CO2 levels that many natural scientists working on models of the Earth system believe would trigger catastrophic outcomes. In short, the dominant economic logic of climate change sets targets that are out of step with ecological realities, potentially threatening the stability of human civilization and causing mass mortality and species extinction (but let us not get too heavy). According to Foster et al., this dynamic can be described as ‘the Midas Effect’: a metaphor drawn from ancient mythology where King Midas, granted a wish by the god Dionysus, chooses the ability to turn everything he touches into gold, only to realize too late that such a gift is a curse. Similarly, economics tries to convert ecological values into monetary terms, but in doing so risks destroying the very systems it seeks to manage.</p>
+<p>Modernization theorists like Arthur Mol argue that environmental degradation is not an inevitable feature of capitalism. They remain optimistic that technological progress will ‘dematerialize’ society ('a la the environmental Kuznets curve), reducing dependence on energy and raw materials, and eventually decoupling economic growth from environmental harm. Some, like author and political advisor Charles Leadbeater, suggest that as economies evolve, they become more knowledge-based and less reliant on physical resources. Proponents of ecological modernization believe that rationality within the market system can drive sustainability. They envision an ‘ecological rationality’ emerging from within economic institutions—essentially an extension of economic logic, not a challenge to it. This outlook treats nature as a source of inputs for economic processes and views environmental problems as technical challenges to be solved through innovation and reform of the existing systems. However, this perspective neglects a deeper understanding of nature. It fails to fully account for ecological limits or the possibility of sudden, irreversible shifts in natural systems. From a dialectical and historical standpoint, recognizing ecological thresholds is crucial. Environmental change doesn’t always happen gradually; small increases in human impact can suddenly tip systems past a critical point, leading to drastic and unpredictable consequences. For example, emitting billions of tons of carbon might have limited effects initially, but as natural thresholds are approached, complexity theory postulates (based on ample evidence within individual human and ecological systems) that the resulting damage could escalate rapidly and according to a nonlinear trajectory.</p>
+
+
+
+ ]]></description>
+  <category>Marx</category>
+  <category>Capitalism</category>
+  <guid>https://hawkins-tech-lab.github.io/thoughts/posts/05-28-2025/</guid>
+  <pubDate>Wed, 28 May 2025 06:00:00 GMT</pubDate>
+  <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/05-28-2025/banner.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Private Space. Private Land</title>
+  <dc:creator>Jason Hawkins</dc:creator>
+  <link>https://hawkins-tech-lab.github.io/thoughts/posts/05-14-2025/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Books, podcasts, movies, and other media are a rich source of insights in my life. However, often the insights gained are due to a tangential comment rather than the main thrust of the narrative. One recent example is the discussion on <a href="https://www.econtalk.org/the-past-and-present-of-privacy-and-public-life-with-tiffany-jenkins">EconTalk</a> between host Russ Roberts and his guest Tiffany Jenkins. Ostensibly, the episode topic was the role of various factors on the shaping of public and private life. A short discussion on private space in the home and architectural history peaked my interest. Jenkins talks about the the corridor (or hallway) as a relatively recent addition to the home. Previously, rooms were simply connected to one another with minimal barriers to provide privacy. As noted by the Victorian architectural critic Robert Kerr, the home needed a separation between the private spaces of its occupants and the common spaces of the public sphere. Corridors were introduced to the home to separate occupants from servants, the latter being required to request entry from the corridor (in plain language “knock”).</p>
+<p>It is an interesting historical note but also parallels my current work on zoning and land use in Calgary, AB. In the same way that the rooms of the home are perceived as private spaces requiring a separation by design via corridors, zoning segregates land use between private residential space and shared retail and public space. Those passing through a residential community are relegated to the streets (i.e., corridors) of the neighbourhood. Entry to the social space of the residence (and increasingly many third spaces such as clubs and eateries) is restricted through zoning. Access requires the permission of the private owner. This example illustrates the parallel structure at multiple scales (or fractal relationship) exhibited by built form. Neat stuff!</p>
+<p>Reviewing some notes, I was reminded of a discussion by Anand Giridharadas in his book “Winner Take All: The Elite Charade of Changing the World” in which Giridharadas references Daren Walker, President of the Ford Foundation, who stated that “life goes more and more behind the gate”. Walker was references a pattern among his affluent friends of retreating to private schools, jets, and privately run public parks. Writ large, Walker notes that many of our public institutions have become privatized - an interestingly comment, particularly coming from the president of a private philanthropic foundation. Giridharadas continues by arguing that the privatization of public services stems from a culture that exhibits a decreasing trust in public institutitions. Continuing the historical discussion from above on the rise of corridors, the ‘(re)public’ in many historical periods and places was seen as a solution to the ‘privat(ion)’ of capital and inequity. It was an achievement of modernity that we gradually expanded our sphere of care beyond the family and tribe to encompass all fellow citizens. The resurgence of inequity since its historical low in the 1970s (according to Thomas Piketty and others) is slowing shifting us back towards tribalism and segregation through institutions and built form.</p>
+<p>As in so many cases, the start of a solution to these problems is to recognize the trend. In the same way there is a debate as to the relative roles of nature and nurture in child-rearing, we can also consider whether it is our natural tendency as a species to isolate (it is not - going back to our desire for social interactions and settlement as agricultural ‘(soc)ieties’ rather than the more energy capture efficient hunter gatherer existence) or something that has been nurtured in our society through dominance patterns. I do not have answers to the question of tribalism. If I did then I would not be an engineering professor writing drivel on a laptop in a Calgary townhouse. I see my role as studying these dynamics and testing alternative organizational structures through surveys and models. I hope that my small contribution will provide tools for those with more eloquence and powers of persuation to shift the political conversation: from tribal isolationism to inclusive codependence; from structural, in the literal sense, delineation between the public and private spheres to an open space (dare I say ‘Agora’) for cultural dialogue and social understanding. Shifting gears, in the importal words of Bugs Bunny ‘that’s all folks’!</p>
+
+
+
+ ]]></description>
+  <category>architecture</category>
+  <category>land use planning</category>
+  <guid>https://hawkins-tech-lab.github.io/thoughts/posts/05-14-2025/</guid>
+  <pubDate>Wed, 14 May 2025 06:00:00 GMT</pubDate>
+  <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/05-14-2025/banner.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Nature as organism. Nature as machine.</title>
+  <dc:creator>Jason Hawkins</dc:creator>
+  <link>https://hawkins-tech-lab.github.io/thoughts/posts/05-13-2025/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Let us begin with a framing curtesy of the Deep Ecology philosopher Geoge Sessions, who argues that Western perspectives on nature have long been influenced by the Christian anthropocentric theology. Francis Bacon (in Novum Organon) claimed that science would allow humans to regain control over Nature, lost with the fall of Adam in the Garden of Eden. Descartes continued the argument through his mind-body dualism, the view that only humans had minds; all other animals were merely bodies (machines).</p>
+<p>The Scientific Revolution shifted the standard view of the natural world as a living organism towards a view of nature as a “mechanistic clockwork image of the world as a machine” (Sessions, Deep Ecology for the Twenty-First Century: Readings on the Philosophy and Practice of the New Environmentalism, p.&nbsp;161). Through the scientific method, humans could control and shape nature to our will. The modern era has seen an extension of this worldview to encompass technology-based innovation as a further means of control and domination.</p>
+<p>Ecocentralism has only come back as a mainstream view since the mid-20th century through the advocacy of David Bower and the Sierra Club, among others. However, it remains subordinate to an environmental movement focused on what Sessions terms an anthropocentric industrial “pollution conciousness” with a narrow focus on human survival. Stephen Fox argues that this environmental movement (led by Barry Commoner, Ralph Nader, and the Environmental Defense Fund) saw industrial pollution as the main problem to be solved. Commoner engaged in debates with the biologist Paul Ehrlich over whether overpopulation was a major factor (Ehrlich’s view). Critically, such pollution-framings are short-range and conducive to technological solutions - capture the emissions and all will be well. Long-range ecocentric concerns incluidng wild ecosystem preservation and species protection receive less attention.</p>
+<p>The short-range environmental perspective is prevalent among engineers; not surprising given its focus on nature as a machine. Like any machine, the solution is a technology that reinstates the component’s function. Well-meaning and environmentally-minded engineers offer carbon capture, electric vehicles, and heat pumps as the solutions to pollution damage. As an engineer, I am trained in the identification of problems according to this mechanistic paradigm and its solution via engineering design. However, as a systems scientist I understand the importance of humility regarding our incomplete understanding and myopic thinking about nature. As an organism, or more correctly ecosystem of interdependent organisms, nature encompasses all that we observed on Earth (and much more). Even as our hubris increasingly sees us question our own power relative to artificial intelligences created by humans, we remain woefully ignorant of the consequences of our actions. Let us hope that we can introduce a little more humanity and a little less machination in our thinking.</p>
+
+
+
+ ]]></description>
+  <category>environmental philosophy</category>
+  <guid>https://hawkins-tech-lab.github.io/thoughts/posts/05-13-2025/</guid>
+  <pubDate>Tue, 13 May 2025 06:00:00 GMT</pubDate>
+  <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/05-13-2025/banner.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Ecosystem Service Measurement</title>
+  <dc:creator>Jason Hawkins</dc:creator>
+  <link>https://hawkins-tech-lab.github.io/thoughts/posts/04-29-2025/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>I recently listened to an episode of EconTalk with Russ Roberts in which Russ <a href="https://www.econtalk.org/how-better-feedback-can-revolutionize-education-with-daisy-christodoulou/">interviews educational consultant Daisy Christodoulou</a>. Daisy talked about student evaluation, which interested me as an educator, but she made an analogy that generates ideas for me along an entirely different line of thinking. Her analogy was that we should consider a grade on an exam like a thermometer; it gives an indication of the temperature (or correctness of a response) but does not suggest changes (actions for improvement). A thermastat is device that embeds a thermometer but can also take action by increasing or decreasing the temperature through engaging a furnace, air conditioner, or heat pump.</p>
+<p>Thinking on this analogy during my walk home, it struck me that a thermastat is a device that measures and takes action assuming a certain objective. Specifically, it is designed to measure and act upon temperature variations from a preferred value - i.e., “room temperature”. Classical environmental economics works in a similar manner. Its goal is to measure environmental impacts using a system of measurement based on dollars (or similar units of monetary value), in the same way a thermastat measures room conditions based on celsius degrees (or similar). The insight raised for me was how this analogy extends further when applied to ecosystem valuation.</p>
+<p>Let us consider the example of a house with a leaking roof on a rainy day. A thermastat will register the leak as a change in temperature and activate the furnace. While the furnance will address the change in temperature associated with the leak, it cannot fill the hole, nor can it address the change in humidity. A thermastat is an imperfect measuring and management device for a leaky roof. In the same way, environmental economics provides an imperfect instrument for managing ecosystem service impacts from human civilization. We must devise multi-instrumental approaches with the capacity to measure and manage impacts via appropriate units. A thermastat directs indoor temperature and money directs finance not ecosystems!</p>
+
+
+
+ ]]></description>
+  <category>ecological economics</category>
+  <guid>https://hawkins-tech-lab.github.io/thoughts/posts/04-29-2025/</guid>
+  <pubDate>Tue, 29 Apr 2025 06:00:00 GMT</pubDate>
+  <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/04-29-2025/banner.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Our Grand Omaha to Calgary Trip</title>
+  <dc:creator>Jason Hawkins</dc:creator>
+  <link>https://hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="overview" class="level1">
+<h1>Overview</h1>
+<p>In 2024, I received an offer to return to Canada and join the faculty at the Univerity of Calgary. My partner and I both did our degrees at the University of Calgary and love western Canada, so we were excited to return. The University very generously covered the cost of our relocation, including both household goods and a good portion of our trip back with our vehicle.</p>
+<p>Would I recommend driving a Chevrolet Bolt 2,500 km with two small kids and a trunk full of suitcases and food? It depends on your kids and personal fortitude. My children are amazing roadtrip buddies. You also need to accept that you are not going to get anywhere fast. We spread our trip out over about a week. It also requires a lot of planning, particularly when you are driving through the US Midwest, which is not known for its extensive network of public charging stations. The 2023 Chevrolet Bolt also has a limit of 50kW on its charging rate - lots of fun getting to an ultra fast 350 kW station and maxing out at about 45 kW.</p>
+<section id="route" class="level2">
+<h2 class="anchored" data-anchor-id="route">Route</h2>
+<p>Our route was partially determined by the location of charging stations and partially by landmarks along the way. We knew we wanted to see Mount Rushmore and stop at Waterton Lakes National Park when we crossed into Canada.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/trip-map.png" class="img-fluid figure-img"></p>
+<figcaption>Route map</figcaption>
+</figure>
+</div>
+</section>
+<section id="charging" class="level2">
+<h2 class="anchored" data-anchor-id="charging">Charging</h2>
+<p>To understand long-distance travel by EV, one needs a basic knowledge of the charging technology. The Society of Automotive Engineers (SAE) defines three levels, but they vary widely in their power - i.e., speed. Power is simply a measure of how much energy a charger can deliver in a given time. It’s usually measured in kW, or thousands of Joules of energy per second.</p>
+<p><strong>Level 1</strong> is the lowest charging level. It’s what you get with a typical 120V outlet. Basically, you are charging your car with the power of a hairdryer. A typical Level 1 charger will deliver about 1.2-2.4 kW, which translates to about 5 km of range per hour of charging. It is slow! We have a Level 1 charger at home, which works fine for our minimal driving needs.</p>
+<p><strong>Level 2</strong> is the middle of the road charger that many people install in their homes. It operates at 240V. Keeping the air dryer analogy going, if a Level 1 charger is a hair dryer then Level 2 is a clothing dryer. It’ll give you about 20-52 km of driving range per hour of charging. These are great overnight charging options if you drive a lot, but they are still a bit slow for long-distance trips. However, they’re often cheap (or free) to use and widely available. Campgrounds are also starting to provide Level 2 service through their RV power supply units.</p>
+<p><strong>Level 3 or DCFC</strong> is the quickest option. Depending on the station, these can provide 50-500 kW of power. Note that some vehicles (e.g., our Chevrolet Bolt with a limit of 50 kW) cannot make full use of DCFC. Most stations we saw on our drive were 250-350 kW units. DCFC stations will charge most vehicles from empty in about 30-45 minutes, though the time is decreasing and you probably don’t want to arrive at a station with less than 20 percent charge.</p>
+</section>
+</section>
+<section id="day-1-omaha-ne-to-sioux-falls-sd" class="level1">
+<h1>Day 1: Omaha, NE to Sioux Falls, SD</h1>
+<p>Our first day was a hectic. The movers arrived in the morning and we needed to be in Sioux Falls, SD by that evening to be on track. Unfortunately, the movers were not the best planners. They ran out of boxes midday and we had to wait around for several hours for a resupply. With a plan to be out of town by 3PM at the latest, we left Omaha at 4PM after cleaning up the mess around the house.</p>
+<p>The drive from Omaha to Sioux Falls was fairly uneventful. We passed through Iowa and arrived after dark. We left Omaha with 90% charge and arrived at our hotel with 25% charge. The first night was a series of hard lessons though. Public charging stations remain a <em>wild west</em>. You need half a dozen different apps on your phone to be ready to charge at any station along your route. On the topic of charging, <strong>make sure your phone is charged!</strong> Navigating to a charging station in the dark and rain with minimal vehicle charge <strong>and</strong> a phone on its last bit of juice is not a good combination. I used a DCFC managed by EV Connect on the other side of town from our hotel. We went back and forth by text message, with me at the charging station and my partner at the hotel with the kids, trying to sort out how to start the session when she had the EV Connect app on her phone (we had to split the apps between our phones because neither of us had sufficient space to install all the apps on our phone and maintain space for photos along the route).</p>
+<p>Once we sorted out the charging logististics, it was a nice experience. I sat in an auto dealership parking lot and listened to the radio - again, no phone charge. It was the week of the Democratic National Convention and the Obamas were center stage that night. What a one-two punch of speeches! Unfortunately, as we now know in hindsight, my family was on the run from a spray tanned President who would throw Canada into tarriff threat-induced chaos. At the time, we fell peacefully fast asleep after a very long first day of travel home.</p>
+</section>
+<section id="day-2-sioux-falls-sd-to-rapid-city-sd" class="level1">
+<h1>Day 2: Sioux Falls, SD to Rapid City, SD</h1>
+<p>We stayed in Sioux Falls for a bit the next morning. After charging the previous night, we had an 81% charge and wanted to get a bit more range before leaving town for a full day of driving. We explored the riverfront and walked to the eponymous falls, while our car got a slowish charge from a Level 2 ChargePoint station. The falls did not disappoint. For context, we lived in Toronto during my Ph.D., so Niagara Falls was a weekend trip. That is to say, the falls are an impressive sight even for Canadians accustomed to great natural wonders. They are a swirling and bubbling mass, with massive red-brown rocky outcroppings.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240821_080222366_HDR.jpg" class="img-fluid figure-img"></p>
+<figcaption>Charger</figcaption>
+</figure>
+</div>
+<p>As I said, they are impressive falls and well worth a visit if you are in the area.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240821_082710772_HDR.jpg" class="img-fluid figure-img"></p>
+<figcaption>Falls</figcaption>
+</figure>
+</div>
+<p>Walking through downtown afterwards, I got the feeling that the city took advantage of its local resources as many buildings are built of the same stone.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240821_084540966_HDR.jpg" class="img-fluid figure-img"></p>
+<figcaption>Sioux Falls Building</figcaption>
+</figure>
+</div>
+<p>A common thread in our drive across South Dakota was the many signs for Wall Drugs. The signs actually started the previous day on I-29 driving north through Iowa, but we didn’t start recording them until the second day. It was a classic midcontinental roadtrip experience. There isn’t much civilization or reason to stop, so businesses work very hard to draw you in. Wall Drugs is the best I have seen. It seemed every sign had a new attration available for your viewing pleasure - food, coffee, a splashpad, dinosaurs, and a petting zoo (I made the last one up because I couldn’t recall all the attractions. I had to confirm online there isn’t one because it would not surprise me to find out they have the second largest zoo in the region, after Omaha.). A small drug store, purchased in 1931 by Ted Hustead and expanded into a 76,000 square foot tourist attraction on the way to Mount Rushmore. We aren’t big fans of trinkets and tchotchke so didn’t stay long, but if that is your scene then all power to you and enjoy the wonders of Wall Drugs!</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240821_093857479_HDR.jpg" class="img-fluid figure-img"></p>
+<figcaption>Wall Drugs</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240821_094755704.jpg" class="img-fluid figure-img"></p>
+<figcaption>Wall Drugs</figcaption>
+</figure>
+</div>
+<p>We stopped to charge in Mitchell, SD and I took a meeting by Zoom.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240821_102839285_HDR.jpg" class="img-fluid figure-img"></p>
+<figcaption>Charger</figcaption>
+</figure>
+</div>
+<p>We stopped again in Chamberlain, SD to charge and went to Subway. We didn’t get a good picture of it, but the hill to Missouri River is quite impressive. Don’t believe the stories that there is no topography in the Midwest. It’s there if you look for it.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240821_125804423_HDR.jpg" class="img-fluid figure-img"></p>
+<figcaption>Charger</figcaption>
+</figure>
+</div>
+<p>Wall drugs!!!</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240821_135709140.jpg" class="img-fluid figure-img"></p>
+<figcaption>Wall Drugs</figcaption>
+</figure>
+</div>
+<p>Don’t forget… stop at Wall Drugs for their many attractions.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240821_141722421.jpg" class="img-fluid figure-img"></p>
+<figcaption>Wall Drugs</figcaption>
+</figure>
+</div>
+<p>Don’t just see wall drugs - go to the Firehouse Brewery in Rapid City. Though their advertising campaign was slightly less extensive, the Firehouse Brewery also has quite a few fun signs along I-90.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240821_141746252.jpg" class="img-fluid figure-img"></p>
+<figcaption>Brewery</figcaption>
+</figure>
+</div>
+<p>We went back and forth with this truck all day. It looked like they were transporting a wind turbine tower (or a section of a NASA rocket).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240821_145635153_HDR.jpg" class="img-fluid figure-img"></p>
+<figcaption>Truck</figcaption>
+</figure>
+</div>
+<p>My partner and I had heard mixed reviews about Mount Rushmore. Some people said that it is not as big as you expect. We mostly knew it from Hitchcock’s North by Northwest. It is a nice drive through the Black Hills to the entrance road, though steep and winding so make sure you have plenty of charge. The National Park Service has a smooth operation - parking attendants and a large concrete parkade rising out of the forest. First, thank you for the free charging stations at the monument. Second, Mount Rushmore is an impressive sight. We spend some time at the monument and had dinner at the cafe - standard hot dogs and hamburgers.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240821_174714502.jpg" class="img-fluid figure-img"></p>
+<figcaption>Rushmore</figcaption>
+</figure>
+</div>
+<p>We did not have a charging station at our hotel in Rapid City, but there was a Level 2 charger at the office of the local utility (Black Hills Electric) across the street - i.e., across the freeway. It was well maintained and available upon arrival.</p>
+</section>
+<section id="day-3-rapid-city-sd-to-billings-mt" class="level1">
+<h1>Day 3: Rapid City, SD to Billings, MT</h1>
+<p>The next day, we left for Montana via Wyoming with a 100% charge. Our route was slightly altered by the ubiqituous wildfires of summer, so we were happy to have a full charge.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240822_082335349_HDR.jpg" class="img-fluid figure-img"></p>
+<figcaption>Wyoming sign</figcaption>
+</figure>
+</div>
+<p>We stopped in Gillette, WY to charge and get some groceries. We also re-planned our route to bypass the wildfires on I-90 near Buffalo, WY.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240822_102557399_HDR.jpg" class="img-fluid figure-img"></p>
+<figcaption>Charger</figcaption>
+</figure>
+</div>
+<p>I’ll pause to note the changing landscapes on a long-distance trip. We passed through prairie and badlands, mountains and dunes. While long-distance drives inevitably have their moments of monotony, it is hard not to be struck by the beauty and diversity of this planet. As a civil engineer, I noticed another type of beauty - the many hues of pavement as local mineral compositions changed over our drive. Greys, changed to reds, then blacks as we traversed South Dakota and Wyoming. It is a reminder of how the uniformity and standards of engineering cannot overcome natural diversity.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240822_104312292_HDR.jpg" class="img-fluid figure-img"></p>
+<figcaption>Landscape</figcaption>
+</figure>
+</div>
+<p>Having made it safely past the wildfires, we were relieved to stop in Sheridan, WY for a charge and a surprisingly nice lunch from the local gas station.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240822_123905524_HDR.jpg" class="img-fluid figure-img"></p>
+<figcaption>Charger</figcaption>
+</figure>
+</div>
+<p>Crossing into Montana, we decided to stop at the site of the Battle of Little Bighorn. I had read the account of events in “Bury My Heart at Wounded Knee” a few months prior and was interested in visiting the site. We moved to the US during a period of change in Indigenous relations in Canada following the Truth and Reconciliation reporting. While Canada still has a long way to go on the path to reconciliation, we knew that the US was still behind in this process. However, we were unprepared for the extent of the gap in reconciliation. The below image is taken from the cemetary and memorial site managed by the federal National Park Service. In fairness, the language on the website for the site suggests the NPS is moving the right direction. With this concession, we were shocked by the language in the plaque. To frame the scene as American soldiers “clearing the land of hostile Indians” is problematic on multiple fronts, a full descrption of which would distract us from the goals of this summary of an otherwise uneventful roadtrip. Our conversation with a guide from the surrounding Crow Reservation provides the best response - “You can’t fix stupid…I’m still here”.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/cluster-last-stand.jpg" class="img-fluid figure-img"></p>
+<figcaption>Plaque</figcaption>
+</figure>
+</div>
+<p>Unpictured: we stopped at the Target upon arrival in Billings, MT to charge for the night because our hotel did not have a nearby charging option. We also went for dinner and continued our charging session at a nearby parkade.</p>
+</section>
+<section id="day-4-billings-mt-to-grand-falls-mt" class="level1">
+<h1>Day 4: Billings, MT to Grand Falls, MT</h1>
+<p>From Billings, we drove north and stopped at a playground in Harlowton, MT for some decompression and charging. There were no public charging stations through this section of our trip. Fortunately, a campground offered charging at their RV plugins (220V - Level 2) for a $5 fee.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240823_130147196.jpg" class="img-fluid figure-img"></p>
+<figcaption>Charger</figcaption>
+</figure>
+</div>
+<p>We had a lovely drive through the rolling hills of Montana leading to our final US stop - Great Falls, MT. Our hotel had a Level 2 charger and we had a nice evening in the rain.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240823_160248399.jpg" class="img-fluid figure-img"></p>
+<figcaption>Charger</figcaption>
+</figure>
+</div>
+</section>
+<section id="day-5-great-falls-mt-to-waterton-lakes-ab" class="level1">
+<h1>Day 5: Great Falls, MT to Waterton Lakes, AB</h1>
+<p>We were relieved to cross the Sweetwater, MT-Coutts, AB border crosing into Canada! The change was fairly immediate. We stopped at a flo station in Milk River, AB. It was a DCFC sponsored by ATCO Gas a consortium of regional and federal government agencies.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240824_122244992_HDR.jpg" class="img-fluid figure-img"></p>
+<figcaption>Charger</figcaption>
+</figure>
+</div>
+<p>I decided to take a picture of the instructions and sponsor text. Note the clear charging instructions, wayfinding map, and “Kumbaya” collaboration of various groups to make a network happen. As the saying goes, “we are not in Kansas (Nebraska) anymore”. I remain hopeful that Canada will not lose this culture of collaboration in the wilderness, but we will see how various events turn out over the coming months.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240824_122254856.jpg" class="img-fluid figure-img"></p>
+<figcaption>Charger</figcaption>
+</figure>
+</div>
+<p>We had a great view from this charger in Waterton Lakes, AB. Unfornately, I made the mistake of leaving our vehicle parked overnight and paying the parking charge after reaching 100% charge. My partner and I have fond memories of visiting Waterton Lakes pre-children when we were dating and living together in Calgary. We took our kids around the park to re-create various memories because we are cheesy people.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240824_145938456_HDR.jpg" class="img-fluid figure-img"></p>
+<figcaption>Charger</figcaption>
+</figure>
+</div>
+</section>
+<section id="day-6-waterton-lakes-ab" class="level1">
+<h1>Day 6: Waterton Lakes, AB</h1>
+<p>Did I mention how great it felt to be home in Canada! We spent a couple days at the park relaxing after our long drive north.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240825_102600747_HDR.jpg" class="img-fluid figure-img"></p>
+<figcaption>Landscape</figcaption>
+</figure>
+</div>
+</section>
+<section id="day-7-waterton-lakes-ab-to-calgary-ab" class="level1">
+<h1>Day 7: Waterton Lakes, AB to Calgary, AB</h1>
+<p>After some much needed relaxation, we continued our journey north to Calgary. What better way to return home than a trip to IKEA. Nebraska has no IKEA store, partially because Warren Buffett’s Nebraska Furniture Mart is a local substitute. NFM is great, but we did miss our Swedish meatballs and lingonberry drink. The many charging stations (both free and paid), as well as free daycare, make IKEA a great destination for the EV-owning family. Disclaimer: I work for the University of Calgary and am not paid by IKEA. I just really like the place.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/IMG_20240826_155500948_HDR.jpg" class="img-fluid figure-img"></p>
+<figcaption>Charger</figcaption>
+</figure>
+</div>
+</section>
+<section id="conclusion" class="level1">
+<h1>Conclusion</h1>
+<p>We could have flown from Omaha to Calgary (via Denver) in a single day. It would have been shorter and may have been lower stress than the anxiety of driving an EV through “middle America/Canada”. I don’t think regret for a minute taking advantage of the opportunity to spend a bit of dedicated family time and see a parts of America that I won’t see on the academic conference circuit. I can now tell colleagues, from personal experience, that you can indeed have a successful roadtrip in an electric car. Mount Rushmore is worth a visit. People are basically good no matter where you go. However, there is no place like home.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>travel</category>
+  <category>infrastructure</category>
+  <guid>https://hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/</guid>
+  <pubDate>Thu, 16 Jan 2025 07:00:00 GMT</pubDate>
+  <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/banner.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Technology and Development</title>
+  <dc:creator>Jason Hawkins</dc:creator>
+  <link>https://hawkins-tech-lab.github.io/thoughts/posts/10-29-2024/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>I’ll return to our old friend Schumacher today, but with a different focus and more recent insights from Acemoglu and Johnson (2024 winners of The Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel, along with James A. Robinson). The topic for today is what Schumacher terms <em>intermediate technology</em> in the context of development economics. The problem to be addressed is the uplift of economic and living conditions for those living in developing nations, principally those outside major cities – i.e., in villages and small towns. An important factor for these residents is the lack of financial and institutional supports for industrial development using the same technology as employed in developed nations. Schumacher identifies a negative effect on employment if development focuses solely on industrial enterprise in major cities, which he sees as leading to the “migration of destitute people into towns that cannot absorb them” (SIB, p.&nbsp;183). While I have a rosier perspective than that of Schumacher (he was not a fan of cities as a general rule), I agree with his notion that maximizing output per person will not be as effective as maximizing the available work opportunities. Schumacher calls this principle <em>intermediate technology</em> for its focus on providing an intermediate technological solution – one that improves working conditions beyond their current levels but does not automate production to the point of eliminating low skill labour. Without an extensive tangent, the term <em>low skill</em> (or <em>unskilled</em>) has always bothered me. It seems a snobbish way of describing skilled labour obtained over many years of practice, though perhaps not in a formal educational setting. It is also the case the agricultural work in the developed world (again, a bit of an imprecise term) requires much formal education in agricultural science, mechanical engineering, and other fields.</p>
+<p>Schumacher makes it clear that modern industry cannot meet the needs of developing nations, which are rich in labour and short on capital, given that the processes are tailored to nations short on labour and rich in capital. He defines an intermediate technology using the reference of developing nation technology as a $1 technology and developed nation technology as a $1000 technology. What is needed is a $100 technology, one which improves the efficiency of production without a significant reduction in labour requirements and at a capital cost. Without restating Schumacher verbatim, we can consider two ways of approaching intermediate technology: 1) a small-scale deployment of a current technology. He gives the example of a small-scale petroleum refinery that has a lower capital cost but with similar levels of efficiency of their larger counterparts; 2) the use of a technology from the recent past, during a time when developed nations relied more heavily on labour rather than capital. A couple scenarios I have observed in my own life ring true with the approach of Schumacher. As a high school student, I had the opportunity to travel to the Peruvian Andes on a school trip. We worked with a local village to construct a preschool. One of the key features of the construction that I recall was the use of local materials. Having heard of other projects using modern materials (e.g., a steel roof, plywood walls, etc.) leading to issues for the community when the structured failed or required repairs, I thought the use of local materials was an excellent idea. While it did not result in a shiny modern building, the school fit into the context of the village and employed methods and materials known to the residents. I was also reminded of a program a friend took part in during our time as undergraduate students. She worked with an NGO to repair medical equipment in a central American hospital (I believe it was in Guatemala). The hospital received donations of medical equipment, but it often lacked the local expertise to make repairs to the equipment. This case reminds me of the way transit management often works, with government being excited about a new train line but more apathetic about operations and maintenance.</p>
+<p>Let me turn now to the work of Acemoglu and Johnson. In their book “Power and Progress”, they provide an interesting analysis of technology and its relationship with prosperity. A motivation for their work is the effect of artificial intelligence on progress and its equitable distribution. They highlight the cases of South Korea, Taiwan, Mauritius, and China as seeing rapid growth (of greater than 5 percent per year) due to their integration into the technology economy, in conjunction with exports to global markets. Acemoglu and Johnson provide examples that parallel the arguments of Schumacher, though they do not reference his work. For example, high- and middle-income nations invest heavily in research into crop pest and pathogen solutions. Corn strains resistant to the European Maize Borer and Western Corn Rootworm have been developed over the last few decades. However, most of these crop strains and chemicals are not useful to African or Asian farmers facing infestations of African Maize Stalk Borer or Desert Locust. They cite estimates that global agricultural productivity could be raised by 42 percent if research was redirected towards pests and pathogens affecting crops in low-income nations. They also highlight the negative effects on equality associated with capital-intensive solutions adopted from high-income nations in development work. Such solutions lead to a small and well-paid workforce operating alongside a larger and low paid workforce using existing capital.</p>
+<p>We now come to a central thesis of Acemoglu and Johnson that the AI revolution risks producing an economy that replaces low-skilled labour without a viable alternative outlet for that labour. AI requires highly skilled production and service labour, resources severely lacking in most developing nations. A key point here is that technology should raise the marginal productivity of labour, not replace it. Such a pattern was associated with the Industrial Revolution of the 18th century. Development began with the power in the hands of a small number of capital owners, before shifting to workers through changes in social power. Acemoglu and Johnson chart this history over 1000 years and make the argument that AI is not following the same path of facilitating marginal labour productivity growth and distribution of social power to the population. They advocate for machine usefulness over machine intelligence. It is an interesting discussion, but one that goes beyond the scope of this article.</p>
+
+
+
+ ]]></description>
+  <category>development economics</category>
+  <guid>https://hawkins-tech-lab.github.io/thoughts/posts/10-29-2024/</guid>
+  <pubDate>Tue, 29 Oct 2024 06:00:00 GMT</pubDate>
+  <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/10-29-2024/banner.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Travel Behaviour as Scientific Art</title>
+  <dc:creator>Jason Hawkins</dc:creator>
+  <link>https://hawkins-tech-lab.github.io/thoughts/posts/07-30-2024/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>When I was a child, my parents would read poetry to me. Statistically speaking, I don’t know the percent of engineering professors with this particular life experience, but I would hazard to guess it is small. One of my favourite poems was Robert Frost’s “The Road Not Taken”. The message I got from it was to pursue the path not taken, which I’d like to think I have taken forward in my life. I recently read Thomas Kuhn’s “The Structure of Scientific Revolutions”, one of those books that people like to say they read to sound intellectual but only skim a few pages then read the Wikipedia page - I read about 80% before skimming.</p>
+<p>One of the key insights by Kuhn is that science differs from other fields in its linear treatment of innovation. That is, a scientific field reaches a divergence in the yellow wood and takes a single path. Kuhn characterizes the evolution of science in terms of general science and paradigm shifts. General science is the drudgery of research to make incremental advancements. Paradigm shifts are rare but move a field in a new direction. The key difference from other fields, at least according to Kuhn, is that the shift means a releasing of past ideas. After Einstein developed general relativity, Newtonian gravitation was deemed incomplete and a previous paradigm. While there may be a certain amount of competition among theories at a given time, there will ultimately be a winner.</p>
+<p>I think Kuhn is making an interesting insight, but I would also argue it’s largely a feature of fundamental physical sciences. To clarify his point, we can consider visual art. Cubism and Art Deco developed during the same period, but one did not subsume the other after vigorous discussion among artists. In art, multiple schools of thought can exist without raising questions of consistency. There are certainly debates about the merits of style and individuals are free to express their opinion about a particular piece of art, but revolution does not invalidate the continued pursuit of extent styles.</p>
+<p>In my own field of travel behaviour, we often talk about modeling human behaviour as a mix of science and art. I think this rings true in the Kuhnian sense that parallel theories or approaches can coexist without being incongruent. When two roads diverge in the woods of behaviour, there is merit to pursuing both paths in order to get a fuller picture of behaviour. To come full circle, I recently read “Cosmic Wonder” by the young Canadian astronomer (from Victoria, BC - yes, my parents got me a signed copy) Nathan Hellner-Mestelman. It brought me back to my high school days reading pop science cosmology by Brian Greene and others. While I think Kuhn made some deep insights, I think physical sciences can also overstate its knowledge of the universe. They should also feel the freedom to pursue diverse paths, even if it diverges from the conventional wisdom and never leads to a paradigm shift. Of course, questions of consistency and equilibrium of thought (i.e., you cannot build on a scattered foundation) are important. We just need to not take ourselves too seriously as scientists and recognize we are all really artists - even if our fourth grade teacher told us we were no good at art.</p>
+
+
+
+ ]]></description>
+  <category>philosophy of science</category>
+  <category>metascience</category>
+  <category>roads in woods</category>
+  <guid>https://hawkins-tech-lab.github.io/thoughts/posts/07-30-2024/</guid>
+  <pubDate>Tue, 30 Jul 2024 06:00:00 GMT</pubDate>
+  <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/07-30-2024/banner.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Computing The Climate</title>
+  <dc:creator>Jason Hawkins</dc:creator>
+  <link>https://hawkins-tech-lab.github.io/thoughts/posts/07-01-2024/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Happy Canada Day!</p>
+<p>As a member of the <a href="https://zephyrtransport.org/">Zephyr Foundation</a>, I spend a fair bit of time thinking about transportation analysis and how to make it more open and transparent. At the same time, I am an academic who conducts computational research and thinks about how to do a better job of sharing data, code, and papers. On the paper front, I do an okay job. On the data and code… it’s a work in progress. A few years ago (Joe Castiglione tells me it was maybe 2015), there was a session at the Transportation Research Board (TRB) annual meeting on hurrican forecasting and how they collaborate on model development. The implication is that we as transportation modelers could follow a similar path to more collaborative and transparent model practices. My perspective on this question comes from experience in local government, consulting, and academia. I think there are two difference between hurricane and transportation demand forecasting that are relevant to this discussion (likely many more, but let’s focus on two avoid a classic Hawkins multi-dimensional ramble).</p>
+<p>The first difference is the spatial scope. Transportation demand models tend to be developed at the metropolitan or state scale. The reason this matters is that it has led to a competitive market among consulting firms. While a hurricane forecast model is essentially a natural monopoly - i.e., there is a large region affected and competing commercial models would not be feasible as only one contract would be awarded by a federal agency. Granted, there are competing research models for hurricans, which we do not tend to see in transportation where competition occurs among firms but across metropolitan areas (minimal comparison of models within a single region). Consider the excellent <a href="https://mitpress.mit.edu/9780262048101/forecasting-travel-in-urban-america/">history of the transportation forecasting field in the United States</a> by Konstantinos Chatzis. While including many prominent academics, it is predominantly a history of consultancy and commercial contracts rather than academic grants to develop general model systems (with the except of TRANSIMS, POLARIS, and a few other example) - note: while I love the POLARIS developers, it is still a largely commercial package in that model applications rely on grant dollars for development within a specific region and the codebase is not wholely available open access.</p>
+<p>The second difference is the politics of transportation. I am not an expert on hurricanes and disaster management, but I think we can be fairly confident politics has less influence on the location of hurricanes (at the risk of a digression - politics certainly has some indirect effect on the frequency and severity of hurricanes through insufficient action on anthropogenic climate change). Transportation investments are an extremely politic process, particuarly at the scale assessed by transportation demand models. These politics lead to distorted incentives, legal battles, and other messiness.</p>
+<p>Related to hurricane forecasting, climate models seek to forecast climatic conditions in response to technology and policy decisions, as well as economic and health impacts depending upon the particular model focus. Steve Easterbrook at the University of Toronto provides an excellent overview of this field in <a href="https://www.environment.utoronto.ca/people/directories/all-faculty/steve-easterbrook">Computing The Climate</a>. I’ve yet to shell out for the full book, but the Chapter 1, 2, and 9 are available online. The book is highly readable, including a nice history and summary of interviews with modeling teams from around the world. As stated by Steve: &gt; The question they were called upon to answer wasn’t whether the planet would warm in response to rising carbon dioxide emissions – by the late 1970s, that was no longer in dispute in the scientific community. The question was: how certain can we be about the numbers?</p>
+<p>Hey, this sounds a lot like the uncertainty movement in transportation demand modeling! We’re just 50 years late to the game. One impetus for these efforts to understand climate uncertainty was a report from the JASON group (a group of top physicist advisors to the US president on nuclear security matters. They were named for Jason and the Argonauts - I wasn’t part of the team, being born many years after its inception). National Academy of Science (NAS) panels were established and many discussions had as to how best to model climate systems and quantify uncertainty. While NAS has empaneled many committees on transportation issues, to my understand they have not had the same collectivizing effect on our field.</p>
+<p>One reason I like Steve’s book is that he is not a climate scientist. He is a computer scientist interested in how large teams of scientists, largely untrained in production grade software development practices, develop complex computer programs and manage quality control. This topic is generalizable and very useful to understand! Something I found interesting from the start was the MetOffice approach in the UK. Their climate model is built on the same code base as the weather model. The weather model must be run daily to provide forecasts to the UK government and public. As such, its code is constantly reviewed, optimized, and validated against observations. This software setup means the climate model code also exhibits a high level of consistency. The parallel I could draw to transportation is that we produce daily road condition reports, short-term forecasts at intersections, Waze routing recommendations, etc. However, these models are decentralized and variable. They are not a national forecast produced by one centralized agency. Within a metropolitan area, I could see a structure similar to that of the MetOffice being feasible. We have loads of new data and model providers - StreetLight, INRIX, Replica, etc. - which could be ingested into a short-term forecasting and analysis software framework. That same forecasting framework could be extended to provide long-range forecasts at greater spatial aggregation and with additional modules for auto ownership and other long-term decisions. It’s not a perfectly fleshed out idea, but it is something.</p>
+<p><strong>Charney Sensitivity</strong> - You’ll have to read Steve’s book to get the full history, but Jules Charney was an early climate modeler - as in was tasked by John von Neumann in 1948 to build a weather forecasting program. The concept of Charney Sensitivity is simple. Double the <img src="https://latex.codecogs.com/png.latex?CO_2"> in the atmosphere and see what happens a few decades in the future. Do models agree? The first issue we would face in transportation modeling is that not all models follow an evolutionary, path dependent, simulation approach. Many models forecast population, land use, economics, and transportation with separate and loosely coupled model systems. Furthermore, many of these models simply provide forecasts for a subset of future years (say 10, 25, 40 years into the future). It could be difficult to compare these models. One “elephant in the room” referenced above is that most models are developed by consultants. Backcasting to check the accuracy of a model or comparing your model against the competitor models may not be good for business. However, we can take a different perspective, as was done by Charney and his team when tasked with the problem of uncertainty quantification by US President Jimmy Carter in the 1970s. While each model may provide a single output that will vary as a function of slight differences in model formulation and setup, the combination of results provides an uncertainty band on the climate (transportation) future.</p>
+
+
+
+ ]]></description>
+  <category>climate modeling</category>
+  <guid>https://hawkins-tech-lab.github.io/thoughts/posts/07-01-2024/</guid>
+  <pubDate>Mon, 01 Jul 2024 06:00:00 GMT</pubDate>
+  <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/07-01-2024/banner.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Emergy and States</title>
+  <dc:creator>Jason Hawkins</dc:creator>
+  <link>https://hawkins-tech-lab.github.io/thoughts/posts/06-24-2024/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Howard T. Odum was an American ecologist and systems theorist. He developed the principles of emergy beginning in the 1950s in response to an inadequate representation of the <em>quality</em> variation among various forms of energy. Emergy is defined as the amount of energy consumed in direct and indirect transformations for the production of a product or service. Its standard unit is the emjoule, measured in a consistent form of energy (typically solar energy). Emergy is then a measure of the amount of solar energy required to produce a particular energy source.</p>
+<p>I found the concept a bit opaque based on the Wikipedia page. The International Association for the Advacement of Emergy provides a nice example that helped me understand the idea. Consider a log. The available energy in the log is the heat it can provided through the process of its combustion. Its emergy is measured as the required input energy through sunlight and transpiration to grow the tree, harvest the tree, and process that tree into a log (and other contributions for it to reach your home). We can think of emergy as an input measurement equivalent to the energy output we typically consider in analysis. The objective inherent in emergy is to provide a consistent comparison between the usefulness of different products or services, as well as their energy efficiency. For example, the energy in a log measured in Joules is not readily comparable to that embodied in human metabolism because they do not produce comparable outputs (heating in the case of a log and heat, movement, and various other outputs in the case of human metabolism). Emergy lets us consider the inputs in a common unit based on the required solar energy.</p>
+<p>A nice metric we can derive from emergy is <em>transformity</em>, measured as the remaining energy in the product compared with its input energy - measured in se/J. From the second law of thermodynamics, we know that available energy decreases with each transformation. However, the emergy at the start of the process will remain fixed. As a result, the transformity (se/J) of the remaining available energy tends to increase with each transformation - more emergy is required per unit of energy. This makes sense to me if we consider progressive steps down the line. For example, the emergy required for a unit of human metabolism will be a function of the conversion rate of food energy into human energy; food production will require some energy from fertilizers, water, transportation, etc.; each of these products will require some amount of energy from electricity, sunlight, etc.; and so on. A given quantity of energy produced via human metabolism will require a greater input of solar energy (emergy) than a similar quantity of energy for fertilizer, as there are energy loses along the intermediate steps and inputs to human metabolism that are separate from its fertilizer requirements.</p>
+<p>Another concept I’d like to write about today is the steady state economy. The idea here is that an economy can be defined that is constant in its population and capital stocks. I was reminded of this concept while reviewing a chapter of the Nebraska Climate Plan today. They discussed the idea of “sustainable growth”. By including the term “growth”, the discussion is already framed in a context of non-steady state sustainability. If we consider the IPAT equation (Impact = Population x Affluence x Technology), “sustainable growth” requires that technology play an inordinate role to ensure stable, or preferably declining impacts, because neither population nor affluence are held at steady state conditions. The growth mindset is unfortunately baked into many analyses. We see it in IEA/EIA forecasts - not just growing population but growth of the “good things” (renewables, electric vehicles, energy efficiency, etc.) into the future. The only variation is by how much these various quantities are assumed to grow. Even the paragon of capitalist economics, Adam Smith, believed national economies would reach stationary conditions. Herman Daly, a prominent ecological economists, argued for a steady state economy, based on natural resource flows, that would impose hard limits on resource use. This view differs from the classical view beginning with Smith, which believed that conditions would evolve without government intervention. While Daly’s approach seems restrictive and infeasible in a democratic society, I also believe it naive to assume that stationarity will naturally evolve as a function of standard market evolution. In my work, I am starting to examining these views from a microeconomic perspective through econometric model estimation. While not a perfect solution to the forecasting problem inherent in the discussion, this approach does allow us to operationalize various steady state mechanisms as simulations based upon empirical data and structural behavioural assumptions.</p>
+
+
+
+ ]]></description>
+  <category>emergy</category>
+  <category>state-state economics</category>
+  <category>constraints on growth</category>
+  <guid>https://hawkins-tech-lab.github.io/thoughts/posts/06-24-2024/</guid>
+  <pubDate>Mon, 24 Jun 2024 06:00:00 GMT</pubDate>
+  <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/06-24-2024/banner.jpg" medium="image" type="image/jpeg"/>
+</item>
+</channel>
+</rss>

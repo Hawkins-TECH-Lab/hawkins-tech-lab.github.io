@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="249.72034mm"
+   height="102.40041mm"
+   viewBox="0 0 249.72034 102.40041"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <marker
+       style="overflow:visible"
+       id="Triangle"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135" />
+    </marker>
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(-15.363956,-37.436242)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre-wrap;shape-inside:url(#rect5);fill:#000000;stroke-width:1.063"
+       x="106.43454"
+       y="48.967743"
+       id="text1"><tspan
+         x="112.51872"
+         y="44.544972"
+         id="tspan6">Aggregate Direct </tspan><tspan
+         x="114.58784"
+         y="53.011643"
+         id="tspan7">Demand Models</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre-wrap;shape-inside:url(#rect5-1);fill:#000000;stroke-width:1.063"
+       x="54.999996"
+       y="74.98008"
+       id="text3"
+       transform="translate(0,0.38838752)"><tspan
+         x="33.962753"
+         y="75.574269"
+         id="tspan8">Model for </tspan><tspan
+         x="24.429481"
+         y="84.040936"
+         id="tspan9">Total Demand</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre-wrap;shape-inside:url(#rect5-1-1);fill:#000000;stroke-width:1.063"
+       x="54.999996"
+       y="74.98008"
+       id="text3-23"
+       transform="translate(0,1.0322166)"><tspan
+         x="29.973074"
+         y="102.9063"
+         id="tspan10">Linear
+</tspan><tspan
+         x="23.98274"
+         y="111.37297"
+         id="tspan11">demand/</tspan><tspan
+         x="17.70095"
+         y="119.83963"
+         id="tspan12">expenditure </tspan><tspan
+         x="27.817133"
+         y="128.3063"
+         id="tspan13">system </tspan><tspan
+         x="30.033019"
+         y="136.77297"
+         id="tspan14">model</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.80531;stroke-opacity:1"
+       id="rect5-1-1"
+       width="54.548012"
+       height="43.193176"
+       x="15.76661"
+       y="96.240822" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre-wrap;shape-inside:url(#rect5-1-1-1);fill:#000000;stroke-width:1.063"
+       x="54.999996"
+       y="74.98008"
+       id="text3-23-9"
+       transform="translate(0,0.85707012)"><tspan
+         x="86.933081"
+         y="102.9063"
+         id="tspan15">Log-linear </tspan><tspan
+         x="93.361631"
+         y="111.37297"
+         id="tspan16">model: </tspan><tspan
+         x="95.569249"
+         y="119.83963"
+         id="tspan17">Cobb-</tspan><tspan
+         x="91.234629"
+         y="128.3063"
+         id="tspan18">Douglas </tspan><tspan
+         x="83.84903"
+         y="136.77297"
+         id="tspan19">formulation</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.80531;stroke-opacity:1"
+       id="rect5-1-1-1"
+       width="54.548012"
+       height="43.193176"
+       x="81.017776"
+       y="96.240822" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre-wrap;shape-inside:url(#rect5-1-1-1-9);fill:#000000;stroke-width:1.063"
+       x="54.999996"
+       y="74.98008"
+       id="text3-23-9-8"
+       transform="translate(0,1.4664451)"><tspan
+         x="153.82693"
+         y="102.9063"
+         id="tspan20">Translog, </tspan><tspan
+         x="150.74495"
+         y="111.37297"
+         id="tspan21">AIDS, CES </tspan><tspan
+         x="155.95393"
+         y="119.83963"
+         id="tspan22">demand </tspan><tspan
+         x="157.86596"
+         y="128.3063"
+         id="tspan23">system </tspan><tspan
+         x="160.08185"
+         y="136.77297"
+         id="tspan24">model</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.80531;stroke-opacity:1"
+       id="rect5-1-1-1-9"
+       width="54.548012"
+       height="43.193176"
+       x="145.81596"
+       y="96.240822" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre-wrap;shape-inside:url(#rect5-7);fill:#000000;stroke-width:1.063"
+       x="147.72527"
+       y="74.98008"
+       id="text3-2"><tspan
+         x="152.71045"
+         y="74.982472"
+         id="tspan25">Model for Proportions of </tspan><tspan
+         x="154.10778"
+         y="83.449139"
+         id="tspan26">Demand: Market Share</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1.07914;stroke-opacity:1"
+       id="rect5-7"
+       width="104.83951"
+       height="17.414917"
+       x="151.362"
+       y="68.315598" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.88659;stroke-opacity:1"
+       id="rect5"
+       width="74.692535"
+       height="16.498991"
+       x="111.15373"
+       y="37.879536" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.80531;stroke-opacity:1"
+       id="rect5-1"
+       width="58.806076"
+       height="17.289948"
+       x="24.370409"
+       y="68.908707" />
+    <g
+       id="g1"
+       transform="translate(128.70988,0.21804142)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre-wrap;shape-inside:url(#rect5-1-1-1-0);display:inline;fill:#000000;stroke-width:1.063"
+         x="54.999996"
+         y="74.98008"
+         id="text3-23-9-86"><tspan
+           x="86.970483"
+           y="115.11333"
+           id="tspan27">Aggregate </tspan><tspan
+           x="98.444722"
+           y="123.58"
+           id="tspan28">Logit</tspan></text>
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:0.524798;stroke-opacity:1"
+         id="rect5-1-1-1-0"
+         width="54.548012"
+         height="18.343138"
+         x="81.564003"
+         y="108.4478" />
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.932789;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
+       d="M 148.5,54.378525 53.752016,67.225688"
+       id="path5" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.933454;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
+       d="m 148.58764,54.434073 54.81488,12.501442"
+       id="path6" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
+       d="M 53.790758,86.178956 42.900733,95.065083"
+       id="path7" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.956957;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
+       d="m 202.68442,85.710082 -29.73955,9.933181"
+       id="path9" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.975982;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
+       d="m 203.77514,85.720506 33.84384,21.796684"
+       id="path10" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
+       d="m 53.769887,86.178766 54.362893,9.274351"
+       id="path11" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
+       d="M 53.771021,86.170013 168.99268,95.407802"
+       id="path12" />
+  </g>
+</svg>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="121mm"
+   height="50mm"
+   viewBox="0 0 121 50"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="transit_car_choice.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:zoom="2.8756734"
+     inkscape:cx="295.2352"
+     inkscape:cy="82.241606"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       id="grid4"
+       units="mm"
+       originx="0"
+       originy="0"
+       spacingx="0.99999998"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       enabled="true"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <rect
+       x="434.64566"
+       y="-75.590553"
+       width="661.41736"
+       height="661.4173"
+       id="rect7" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.140783px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 20,0.11666541 V 35.506832"
+       id="path1"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="24.778135"
+       y="3.5136607"
+       id="text1"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="stroke-width:0.264583"
+         x="24.778135"
+         y="3.5136607">Pr(car)</tspan></text>
+    <path
+       style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:0.585136;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="M 19.778137,8.5136598 H 40"
+       id="path3"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:0.579997;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="M 0,35.482499 H 19.868238"
+       id="path3-5"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="10"
+       y="6.8250012"
+       id="text3"><tspan
+         sodipodi:role="line"
+         id="tspan3"
+         style="stroke-width:0.264583"
+         x="10"
+         y="6.8250012">1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="16.749197"
+       y="39.94212"
+       id="text4"><tspan
+         sodipodi:role="line"
+         id="tspan4"
+         style="stroke-width:0.264583"
+         x="16.749197"
+         y="39.94212">0</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="24.565918"
+       y="39.859325"
+       id="text5"><tspan
+         sodipodi:role="line"
+         id="tspan5"
+         style="stroke-width:0.264583"
+         x="24.565918"
+         y="39.859325">(U<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan7">car</tspan> - U<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan6">transit</tspan>)</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text7"
+       style="font-size:18.6667px;line-height:1.25;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style, Normal';font-variant-ligatures:none;white-space:pre;shape-inside:url(#rect7);display:inline" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="4.7660775"
+       y="48.537777"
+       id="text9"><tspan
+         sodipodi:role="line"
+         id="tspan9"
+         style="stroke-width:0.264583"
+         x="4.7660775"
+         y="48.537777">Deterministic Choice</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.072;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="M 40,8.4708331 H 0.03900019"
+       id="path10"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.072;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="M 39.9805,35.470832 H 0.0195003"
+       id="path10-8"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.140783px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 84.930115,0.11666526 V 35.506832"
+       id="path1-9"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="89.708252"
+       y="3.5136607"
+       id="text1-5"><tspan
+         sodipodi:role="line"
+         id="tspan1-4"
+         style="stroke-width:0.264583"
+         x="89.708252"
+         y="3.5136607">Pr(car)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="74.930115"
+       y="6.8250012"
+       id="text3-2"><tspan
+         sodipodi:role="line"
+         id="tspan3-3"
+         style="stroke-width:0.264583"
+         x="74.930115"
+         y="6.8250012">1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="81.679314"
+       y="39.942123"
+       id="text4-3"><tspan
+         sodipodi:role="line"
+         id="tspan4-4"
+         style="stroke-width:0.264583"
+         x="81.679314"
+         y="39.942123">0</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="89.496033"
+       y="39.859329"
+       id="text5-1"><tspan
+         sodipodi:role="line"
+         id="tspan5-1"
+         style="stroke-width:0.264583"
+         x="89.496033"
+         y="39.859329">(U<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan7-3">car</tspan> - U<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan6-8">transit</tspan>)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="69.71302"
+       y="48.537777"
+       id="text9-7"><tspan
+         sodipodi:role="line"
+         id="tspan9-4"
+         style="stroke-width:0.264583"
+         x="69.71302"
+         y="48.537777">Stochastic Choice</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.072;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="M 104.93012,8.4708333 H 64.969115"
+       id="path10-2"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.072;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="M 104.91062,35.470832 H 64.949615"
+       id="path10-8-7"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.572;stroke-dasharray:none;stroke-opacity:1"
+       d="M 64.949614,35.470832 C 75.401024,34.708981 81.465508,33.279712 84.999998,19.999999 86.924449,12.065673 90.969846,8.6359511 104.93012,8.4708332"
+       id="path11"
+       sodipodi:nodetypes="ccc" />
+  </g>
+</svg>
