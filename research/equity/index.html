@@ -80,9 +80,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-publication','listing-title','listing-categories','listing-image','listing-date','listing-author',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-title','listing-description','listing-date','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
       
-      searchColumns: [],
+      searchColumns: ["listing-title","listing-description","listing-date","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -207,7 +207,7 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -220,7 +220,7 @@ window.Quarto = {
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -229,7 +229,7 @@ window.Quarto = {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page-left">
 
     
   
@@ -253,6 +253,61 @@ window.Quarto = {
     </div>
 </div>
 <div class="list quarto-listing-default">
+    
+    
+    <div class="quarto-post image-right" data-index="0" data-categories="RXF1aXR5JTJDR2VuZXJhbCUyMFRyYW5zcG9ydCUyQ1ZlaGljbGUlMjBBZG9wdGlvbg==" data-listing-date-sort="1759298400000">
+        <div class="thumbnail">
+            <!-- <a href="http://arxiv.org/abs/2510.00469v1"> -->
+
+                <p>
+                    
+
+                </p>
+      
+
+            <!-- </a> -->
+        </div>
+        <div class="body">
+            <!-- <a href="http://arxiv.org/abs/2510.00469v1"> -->
+            <div class="no-anchor listing-pub-title listing-title">Mobility Behavior Evolution During Extended Emergencies: Returners, Explorers, and the 15-Minute City</div>
+            <!-- </a> -->
+            <!-- <a href="http://arxiv.org/abs/2510.00469v1"> -->
+                
+                <div class="listing-pub-author listing-author">
+                    <br> 
+                </div>
+                
+                <div class="metadata-value listing-pub-journal listing-publication">
+                    
+                        
+                        
+                        
+                        
+                </div>
+                    
+                    
+                    
+            <!-- </a> -->
+ <!--               <div class="listing-categories">
+                
+                <div class="listing-category" onclick="window.quartoListingCategory('Equity'); return false;">Equity</div>
+                
+                <div class="listing-category" onclick="window.quartoListingCategory('General Transport'); return false;">General Transport</div>
+                
+                <div class="listing-category" onclick="window.quartoListingCategory('Vehicle Adoption'); return false;">Vehicle Adoption</div>
+                
+                </div>
+                -->
+        </div>
+        <div class="metadata">
+
+            
+  
+              
+
+        </div>
+    </div>
+    
     
     </div>
 
