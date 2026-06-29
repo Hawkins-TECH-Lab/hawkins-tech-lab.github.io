@@ -15,9 +15,6 @@ urllib.request.install_opener(
     urllib.request.build_opener(BlockHTTPSRedirect())
 )
 
-# arXiv API endpoint querying for the author name
-URL = 'http://export.arxiv.org/api/query?search_query=au:"Hawkins"&sortBy=submittedDate&sortOrder=descending&max_results=50'
-
 # Define your static topic categories and target keywords
 TOPIC_CATEGORIES = {
     "Equity": [
@@ -51,7 +48,7 @@ TOPIC_CATEGORIES = {
 }
 
 # Base URL
-BASE_URL = 'http://export.arxiv.org/api/query?'
+BASE_URL = 'https://arxiv.org/api/query?'
 
 # Use a dictionary for the query parameters
 params = {
