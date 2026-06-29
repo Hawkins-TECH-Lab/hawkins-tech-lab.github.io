@@ -132,6 +132,7 @@ if __name__ == '__main__':
     pubs = fetch_and_categorize()
     
     os.makedirs('data', exist_ok=True)
+    os.makedirs('../publications', exist_ok=True)
     
     with open('../publications/publications_by_topic.yml', 'w') as f:
         yaml.dump(pubs, f, sort_keys=False)
