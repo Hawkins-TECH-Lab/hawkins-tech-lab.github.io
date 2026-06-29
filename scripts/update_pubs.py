@@ -1,4 +1,4 @@
-import urllib.request
+import requests
 import urllib.parse
 import xml.etree.ElementTree as ET
 import yaml
@@ -73,21 +73,36 @@ def categorize_paper(text):
     return matches if matches else ["General Transport"]
 
 def fetch_and_categorize():
-# Properly encode the parameters into a URL string
+    # Build the query string
     query_string = urllib.parse.urlencode(params)
     full_url = BASE_URL + query_string
-    
-    # Add a User-Agent header (arXiv sometimes blocks requests without one)
-    headers = {'User-Agent': 'Mozilla/5.0'}
-    req = urllib.request.Request(full_url, headers=headers)
-    
-    with urllib.request.urlopen(req) as response:
-        xml_data = response.read()
-        
+
+    # arXiv API requires HTTP; GitHub Actions sometimes forces HTTPS.
+    # We explicitly disable redirects to prevent HTTPS upgrade.
+    headers = {
+        "User-Agent": "Mozilla/5.0",
+        "Accept": "*/*"
+    }
+
+    response = requests.get(
+        full_url,
+        headers=headers,
+        allow_redirects=False,   # CRITICAL: prevents GitHub Actions HTTPS rewrite
+        timeout=20               # avoids hanging CI jobs
+    )
+
+    # Fail loudly if arXiv returns something unexpected
+    if response.status_code != 200:
+        raise RuntimeError(
+            f"arXiv returned {response.status_code} for URL: {full_url}"
+        )
+
+    xml_data = response.text
+
+    # Parse XML
     root = ET.fromstring(xml_data)
     ns = {'atom': 'http://www.w3.org/2005/Atom'}
-    
-    # Initialize a flat list for all publications
+
     publications = []
 
     for entry in root.findall('atom:entry', ns):
@@ -95,28 +110,29 @@ def fetch_and_categorize():
         summary = entry.find('atom:summary', ns).text.replace('\n', ' ').strip()
         link = entry.find('atom:id', ns).text
         published = entry.find('atom:published', ns).text[:10]
-        
-        # Calculate categories as a list
+
+        # Categorize
         assigned_categories = categorize_paper(title + " " + summary)
-        
-        # Extract author names
-        authors = [author.find('atom:name', ns).text for author in entry.findall('atom:author', ns)]
-        
+
+        # Authors
+        authors = [
+            author.find('atom:name', ns).text
+            for author in entry.findall('atom:author', ns)
+        ]
+
         publications.append({
             'title': title,
             'description': summary,
             'path': link,
             'date': published,
             'categories': assigned_categories,
-            # Map these to match your EJS template keys:
             'author': ", ".join(authors),
             'pub_number': "arXiv:" + link.split('/')[-1].replace('v1', ''),
-            'journ': "arXiv Preprint", # You can customize this
+            'journ': "arXiv Preprint",
             'year': published[:4],
             'url_preprint': link
         })
-        
-    # Return the flat list directly
+
     return publications
 
 if __name__ == '__main__':
