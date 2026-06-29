@@ -70,33 +70,31 @@ def categorize_paper(text):
     return matches if matches else ["General Transport"]
 
 def fetch_and_categorize():
-    # Build the query string
     query_string = urllib.parse.urlencode(params)
     full_url = BASE_URL + query_string
 
-    # arXiv API requires HTTP; GitHub Actions sometimes forces HTTPS.
-    # We explicitly disable redirects to prevent HTTPS upgrade.
     headers = {
         "User-Agent": "Mozilla/5.0",
         "Accept": "*/*"
     }
 
-    response = requests.get(
-        full_url,
-        headers=headers,
-        allow_redirects=False,   # CRITICAL: prevents GitHub Actions HTTPS rewrite
-        timeout=20               # avoids hanging CI jobs
-    )
+    # First request (may return 302)
+    r = requests.get(full_url, headers=headers, allow_redirects=False, timeout=20)
 
-    # Fail loudly if arXiv returns something unexpected
-    if response.status_code != 200:
-        raise RuntimeError(
-            f"arXiv returned {response.status_code} for URL: {full_url}"
-        )
+    # If arXiv returns a redirect, follow it manually
+    if r.status_code in (301, 302, 303, 307, 308):
+        redirect_url = r.headers.get("Location")
+        if not redirect_url:
+            raise RuntimeError("Redirect without Location header")
 
-    xml_data = response.text
+        r = requests.get(redirect_url, headers=headers, timeout=20)
 
-    # Parse XML
+    # Now we expect 200
+    if r.status_code != 200:
+        raise RuntimeError(f"arXiv returned {r.status_code} for URL: {full_url}")
+
+    xml_data = r.text
+
     root = ET.fromstring(xml_data)
     ns = {'atom': 'http://www.w3.org/2005/Atom'}
 
@@ -108,10 +106,8 @@ def fetch_and_categorize():
         link = entry.find('atom:id', ns).text
         published = entry.find('atom:published', ns).text[:10]
 
-        # Categorize
         assigned_categories = categorize_paper(title + " " + summary)
 
-        # Authors
         authors = [
             author.find('atom:name', ns).text
             for author in entry.findall('atom:author', ns)
