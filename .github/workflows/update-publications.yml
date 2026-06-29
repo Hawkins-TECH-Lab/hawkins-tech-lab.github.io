@@ -40,6 +40,10 @@ jobs:
           else
             echo "No changes to commit."
           fi
+# Install Quarto (required)
+      - name: Install Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
 # Quarto handles the build AND the gh-pages push all in one step!
       - name: Render and Publish to GitHub Pages
         uses: quarto-dev/quarto-actions/publish@v2
