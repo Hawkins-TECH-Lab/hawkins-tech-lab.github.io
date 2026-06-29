@@ -4,6 +4,17 @@ import xml.etree.ElementTree as ET
 import yaml
 import os
 
+class BlockHTTPSRedirect(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        # Block GitHub Actions from upgrading arXiv HTTP → HTTPS
+        if newurl.startswith("https://export.arxiv.org"):
+            return None
+        return super().redirect_request(req, fp, code, msg, headers, newurl)
+
+urllib.request.install_opener(
+    urllib.request.build_opener(BlockHTTPSRedirect())
+)
+
 # arXiv API endpoint querying for the author name
 URL = 'http://export.arxiv.org/api/query?search_query=au:"Hawkins"&sortBy=submittedDate&sortOrder=descending&max_results=50'
 
