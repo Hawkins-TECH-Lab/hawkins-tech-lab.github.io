@@ -80,6 +80,9 @@ def fetch_and_categorize():
 
     # First request (may return 302)
     r = requests.get(full_url, headers=headers, allow_redirects=False, timeout=20)
+    if r.status_code in (301, 302, 303, 307, 308):
+        raise RuntimeError(f"Unexpected redirect to {r.headers.get('Location')}")
+
 
     # If arXiv returns a redirect, follow it manually
     if r.status_code in (301, 302, 303, 307, 308):
