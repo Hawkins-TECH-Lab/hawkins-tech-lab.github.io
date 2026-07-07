@@ -4,17 +4,6 @@ import xml.etree.ElementTree as ET
 import yaml
 import os
 
-class BlockHTTPSRedirect(urllib.request.HTTPRedirectHandler):
-    def redirect_request(self, req, fp, code, msg, headers, newurl):
-        # Block GitHub Actions from upgrading arXiv HTTP → HTTPS
-        if newurl.startswith("https://export.arxiv.org"):
-            return None
-        return super().redirect_request(req, fp, code, msg, headers, newurl)
-
-urllib.request.install_opener(
-    urllib.request.build_opener(BlockHTTPSRedirect())
-)
-
 # Define your static topic categories and target keywords
 TOPIC_CATEGORIES = {
     "Equity": [
@@ -48,7 +37,7 @@ TOPIC_CATEGORIES = {
 }
 
 # Base URL
-BASE_URL = 'http://export.arxiv.org/api/query?'
+BASE_URL = 'https://export.arxiv.org/api/query?'
 
 # Use a dictionary for the query parameters
 params = {
@@ -78,14 +67,8 @@ def fetch_and_categorize():
         "Accept": "*/*"
     }
 
-    # First request (do NOT follow redirects)
-    r = requests.get(full_url, headers=headers, allow_redirects=False, timeout=20)
+    r = requests.get(full_url, headers=headers, timeout=20)
 
-    # Block any redirect (HTTPS upgrade)
-    if r.status_code in (301, 302, 303, 307, 308):
-        raise RuntimeError(f"Unexpected redirect to {r.headers.get('Location')}")
-
-    # Now we expect 200
     if r.status_code != 200:
         raise RuntimeError(f"arXiv returned {r.status_code} for URL: {full_url}")
 
