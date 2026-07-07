@@ -48,7 +48,7 @@ TOPIC_CATEGORIES = {
 }
 
 # Base URL
-BASE_URL = 'https://arxiv.org/api/query?'
+BASE_URL = 'http://export.arxiv.org/api/query?'
 
 # Use a dictionary for the query parameters
 params = {
