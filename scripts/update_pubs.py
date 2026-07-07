@@ -78,19 +78,12 @@ def fetch_and_categorize():
         "Accept": "*/*"
     }
 
-    # First request (may return 302)
+    # First request (do NOT follow redirects)
     r = requests.get(full_url, headers=headers, allow_redirects=False, timeout=20)
+
+    # Block any redirect (HTTPS upgrade)
     if r.status_code in (301, 302, 303, 307, 308):
         raise RuntimeError(f"Unexpected redirect to {r.headers.get('Location')}")
-
-
-    # If arXiv returns a redirect, follow it manually
-    if r.status_code in (301, 302, 303, 307, 308):
-        redirect_url = r.headers.get("Location")
-        if not redirect_url:
-            raise RuntimeError("Redirect without Location header")
-
-        r = requests.get(redirect_url, headers=headers, timeout=20)
 
     # Now we expect 200
     if r.status_code != 200:
