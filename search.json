@@ -3983,6 +3983,27 @@
     "text": "Model Development Process\nflowchart TD\nA[Input FFCO2 by sector] –&gt; B[Add climate & 5D land use data]\nB –&gt; C[Correlation analysisIdentify redundant variablesfor GPS construction]\nC –&gt; D[Confounder analysis using DAGsAssess strata-sum importance scores]\nD –&gt; E[Test GPS functionsGLM, BART, etc.]\nE –&gt; F[Estimate doubly robustoutcome model with BART]\nF –&gt; G[Estimate outcome modelfor all 5D treatment variableswith linear regression]"
   },
   {
+    "objectID": "presentations/slides/WCTR_2026.html#confounder-identification",
+    "href": "presentations/slides/WCTR_2026.html#confounder-identification",
+    "title": "Multiscale Carbon Burden of Infrastructure in the United States",
+    "section": "Confounder Identification",
+    "text": "Confounder Identification"
+  },
+  {
+    "objectID": "presentations/slides/WCTR_2026.html#results",
+    "href": "presentations/slides/WCTR_2026.html#results",
+    "title": "Multiscale Carbon Burden of Infrastructure in the United States",
+    "section": "## Results",
+    "text": "## Results"
+  },
+  {
+    "objectID": "presentations/slides/WCTR_2026.html#next-steps",
+    "href": "presentations/slides/WCTR_2026.html#next-steps",
+    "title": "Multiscale Carbon Burden of Infrastructure in the United States",
+    "section": "Next Steps",
+    "text": "Next Steps"
+  },
+  {
     "objectID": "presentations/slides/WCTR_2026.html#thank-you",
     "href": "presentations/slides/WCTR_2026.html#thank-you",
     "title": "Multiscale Carbon Burden of Infrastructure in the United States",
