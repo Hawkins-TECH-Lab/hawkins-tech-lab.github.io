@@ -122,6 +122,9 @@
       margin-right: 0; 
     }
   </style>
+  <script src="../../site_libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="../../site_libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -146,6 +149,7 @@ Jason Hawkins, PhD PEng
 <ul>
 <li>Study land use &amp; climate mitigation relationship by combining Vulcan 1-km gridded fossil fuel CO2 (FFCO2) &amp; EPA Smart Location Database land use features</li>
 <li>Partition emissions into transportation, residential energy, &amp; scope 2 residential electricity</li>
+<li>Perform doubly robust inference using continuous propensity scores &amp; BART outcome regression</li>
 </ul>
 </section>
 <section id="motivation" class="slide level2">
@@ -173,41 +177,285 @@ Jason Hawkins, PhD PEng
 </section>
 <section id="model-development-process" class="slide level2">
 <h2>Model Development Process</h2>
-<p>flowchart TD</p>
-<p>A[Input FFCO2 by sector] –&gt; B[Add climate &amp; 5D land use data]</p>
-<p>B –&gt; C[Correlation analysis<br>Identify redundant variables<br>for GPS construction]</p>
-<p>C –&gt; D[Confounder analysis using DAGs<br>Assess strata-sum importance scores]</p>
-<p>D –&gt; E[Test GPS functions<br>GLM, BART, etc.]</p>
-<p>E –&gt; F[Estimate doubly robust<br>outcome model with BART]</p>
-<p>F –&gt; G[Estimate outcome model<br>for all 5D treatment variables<br>with linear regression]</p>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+  classDef big font-size:36px,fill:#9CD97A,stroke:#11AB67,color:#000000;
+
+  A["Input&lt;br/&gt;FFCO2 by&lt;br/&gt;sector"] --&gt; 
+  B["Add climate&lt;br/&gt;and 5D land&lt;br/&gt;use data"] --&gt;
+
+  C["Correlation&lt;br/&gt;analysis to&lt;br/&gt;identify&lt;br/&gt;redundant&lt;br/&gt;variables&lt;br/&gt;for GPS"] --&gt;
+
+  D["Confounder&lt;br/&gt;analysis&lt;br/&gt;DAGs using&lt;br/&gt;Strata‑sum&lt;br/&gt;importance"] --&gt;
+
+  E["Test GPS&lt;br/&gt;functions&lt;br/&gt;GLM, BART,&lt;br/&gt;etc."] --&gt;
+
+  F["Doubly&lt;br/&gt;robust&lt;br/&gt;outcome&lt;br/&gt;model&lt;br/&gt;BART"] --&gt;
+
+  G["Outcome&lt;br/&gt;models&lt;br/&gt;for 5D&lt;br/&gt;treatments&lt;br/&gt;linear&lt;br/&gt;regression"]
+
+  class A,B,C,D,E,F,G big;
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 </section>
 <section id="confounder-identification" class="slide level2">
 <h2>Confounder Identification</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./images/confounders.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./images/pearson_correlation.png"></p>
+<figcaption>Transportation Pearson Correlation Matrix</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
-<section id="causal-identification-strategy" class="slide level2">
-<h2>Causal Identification Strategy</h2>
-</section>
+<section id="conditional-variable-importance" class="slide level2">
+<h2>Conditional Variable Importance</h2>
+
+<img data-src="./images/algorithm.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="doubly-robust-outcome-model" class="slide level2">
 <h2>Doubly Robust Outcome Model</h2>
+<h3 id="bart-outcome-model">BART Outcome Model</h3>
 <p><span class="math display">\[\begin{split}
-\ln(CO_2 \text{ per capita}) =&amp; \text{ln(total CBSA population)} + \text{ln(CBSA population density)} \\&amp;+ \text{ln(average CBG treatment level in CBSA)} + \text{propensity score} \\&amp;+ \text{CBSA fixed effect}
+\ln(CO_2 \text{ per capita}) =&amp; \text{ln(total CBSA population)} \\&amp;+ \text{ln(CBSA population density)} \\&amp;+ \text{ln(average CBG treatment level in CBSA)} \\&amp;+ \text{propensity score} \\&amp;+ \text{CBSA fixed effect}
 \end{split}\]</span></p>
+<h3 id="doubly-robust-adjustment-using-bart-continuous-gps">Doubly Robust Adjustment using BART &amp; Continuous GPS</h3>
 <p><span class="math display">\[\hat{\mu}_{i}^{DR}(t) = m(t,X_i) + w_i(t)\left\{Y_i - m(T_i,X_i)\right\}\]</span></p>
 </section>
-<section id="transportation-results" class="slide level2">
-<h2>Transportation Results</h2>
+<section id="individual-transportation-results" class="slide level2">
+<h2>Individual Transportation Results</h2>
+<ul>
+<li><strong>Note:</strong> results are production-based, meaning allocated to the point of emissions not trip origin <!-- ![](./images/indiv_transport.png){fig-align="center" width="35%"} --></li>
+</ul>
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; justify-items: center;">
+  <figure style="margin: 0;">
+    <img src="./images/tran_dens.png" style="height: 180px;">
+    <figcaption style="margin: 2px 0 0 0; font-size: 0.8em;">Density</figcaption>
+  </figure>
+  <figure style="margin: 0;">
+    <img src="./images/tran_div.png" style="height: 180px;">
+    <figcaption style="margin: 2px 0 0 0; font-size: 0.8em;">Diversity</figcaption>
+  </figure>
+  <figure style="margin: 0;">
+    <img src="./images/tran_des.png" style="height: 180px;">
+    <figcaption style="margin: 2px 0 0 0; font-size: 0.8em;">Design</figcaption>
+  </figure>
+  <figure style="margin: 0;">
+    <img src="./images/tran_dist.png" style="height: 180px;">
+    <figcaption style="margin: 2px 0 0 0; font-size: 0.8em;">Distance</figcaption>
+  </figure>
+  <figure style="margin: 0;">
+    <img src="./images/tran_dest.png" style="height: 180px;">
+    <figcaption style="margin: 2px 0 0 0; font-size: 0.8em;">Destination</figcaption>
+  </figure>
+</div>
 </section>
-<section id="residential-electricity-results" class="slide level2">
-<h2>Residential Electricity Results</h2>
+<section id="joint-transportation-results" class="slide level2">
+<h2>Joint Transportation Results</h2>
+<ul>
+<li>Various joint treatment models estimated with metro/local treatments, propensity score adjustment, &amp; spatial parameters</li>
+</ul>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Base OLS</th>
+<th>Spatial EV</th>
+<th>SEM + SLX(10km)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Local density</td>
+<td>-0.187***</td>
+<td>-0.187***</td>
+<td>-0.194***</td>
+</tr>
+<tr class="even">
+<td>Roadway design</td>
+<td>-0.449***</td>
+<td>-0.449***</td>
+<td>-0.475***</td>
+</tr>
+<tr class="odd">
+<td>Transit distance</td>
+<td>-0.001</td>
+<td>-0.001</td>
+<td>+0.067***</td>
+</tr>
+<tr class="even">
+<td>W Transit distance</td>
+<td>–</td>
+<td>–</td>
+<td>-0.144***</td>
+</tr>
+<tr class="odd">
+<td>Residual Moran’s I</td>
+<td>0.370</td>
+<td>0.368</td>
+<td>0.174</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="residential-energy-results" class="slide level2">
-<h2>Residential Energy Results</h2>
+<section id="individual-residential-electricity-results" class="slide level2">
+<h2>Individual Residential Electricity Results</h2>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./images/elec_dens.png" height="300"></p>
+<figcaption>Density</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./images/elec_div.png" height="300"></p>
+<figcaption>Diversity</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="joint-residential-electricity-results" class="slide level2">
+<h2>Joint Residential Electricity Results</h2>
+<ul>
+<li>Various joint treatment models estimated with metro/local treatments, propensity score adjustment, &amp; spatial parameters</li>
+</ul>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Base OLS</th>
+<th>Spatial EV</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Local density</td>
+<td>-0.068***</td>
+<td>-0.068***</td>
+</tr>
+<tr class="even">
+<td>Local diversity</td>
+<td>+0.037***</td>
+<td>+0.037***</td>
+</tr>
+<tr class="odd">
+<td>Local diversity <span class="math inline">\(\times\)</span> PS</td>
+<td>-0.035***</td>
+<td>-0.035***</td>
+</tr>
+<tr class="even">
+<td>Residual Moran’s I</td>
+<td>0.648</td>
+<td>0.648</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="individual-residential-energy-results" class="slide level2">
+<h2>Individual Residential Energy Results</h2>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./images/res_dens.png" height="300"></p>
+<figcaption>Density</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./images/res_div.png" height="300"></p>
+<figcaption>Diversity</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="joint-residential-energy-results" class="slide level2">
+<h2>Joint Residential Energy Results</h2>
+<ul>
+<li>Various joint treatment models estimated with metro/local treatments, propensity score adjustment, &amp; spatial parameters</li>
+</ul>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Base OLS</th>
+<th>Spatial EV</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Local density</td>
+<td>-0.120***</td>
+<td>-0.120***</td>
+</tr>
+<tr class="even">
+<td>Local diversity</td>
+<td>+0.008***</td>
+<td>+0.008***</td>
+</tr>
+<tr class="odd">
+<td>Local diversity <span class="math inline">\(\times\)</span> PS</td>
+<td>+0.010***</td>
+<td>+0.010***</td>
+</tr>
+<tr class="even">
+<td>Residual Moran’s I</td>
+<td>0.431</td>
+<td>0.431</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="overall-results" class="slide level2">
+<h2>Overall Results</h2>
+<ul>
+<li>Production- and consumption-based emissions allocations tell fundamentally different stories: for production-based transportatation FFCO2, higher density lowers FFCO2 emissions but higher land use mix/destination access raises them</li>
+<li>Residential emissions results are mixed: density lowers both sources but other results vary</li>
+<li>Roadway network density has a consistently negative effect on transportation FFCO2 emissions</li>
+</ul>
 </section>
 <section id="discussion" class="slide level2">
 <h2>Discussion</h2>
+<ul>
+<li><strong>Congestion pricing/low-emission zones</strong> address external cost on local results from production-based transportation emissions</li>
+<li>Compact development reduces residential emissions</li>
+<li>Regional 5D averages have minimal effects on sector-specific emissions after controlling for local 5D effects</li>
+</ul>
 </section>
-<section id="next-steps" class="slide level2">
-<h2>Next Steps</h2>
+<section id="future-work" class="slide level2">
+<h2>Future work</h2>
+<ul>
+<li>Develop consumption(home)-based transportation emissions estimates based on OD flows</li>
+<li>Extension to other criteria air pollutants</li>
+<li>Spatial scaling analysis by city &amp; climatic zone for population &amp; 5D metrics</li>
+</ul>
 </section>
 <section id="thank-you" class="slide level2">
 <h2>Thank you</h2>

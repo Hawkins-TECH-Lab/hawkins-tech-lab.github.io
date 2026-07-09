@@ -3959,7 +3959,7 @@
     "href": "presentations/slides/WCTR_2026.html#overview",
     "title": "Multiscale Carbon Burden of Infrastructure in the United States",
     "section": "Overview",
-    "text": "Overview\n\nStudy land use & climate mitigation relationship by combining Vulcan 1-km gridded fossil fuel CO2 (FFCO2) & EPA Smart Location Database land use features\nPartition emissions into transportation, residential energy, & scope 2 residential electricity"
+    "text": "Overview\n\nStudy land use & climate mitigation relationship by combining Vulcan 1-km gridded fossil fuel CO2 (FFCO2) & EPA Smart Location Database land use features\nPartition emissions into transportation, residential energy, & scope 2 residential electricity\nPerform doubly robust inference using continuous propensity scores & BART outcome regression"
   },
   {
     "objectID": "presentations/slides/WCTR_2026.html#motivation",
@@ -3980,63 +3980,91 @@
     "href": "presentations/slides/WCTR_2026.html#model-development-process",
     "title": "Multiscale Carbon Burden of Infrastructure in the United States",
     "section": "Model Development Process",
-    "text": "Model Development Process\nflowchart TD\nA[Input FFCO2 by sector] –&gt; B[Add climate & 5D land use data]\nB –&gt; C[Correlation analysisIdentify redundant variablesfor GPS construction]\nC –&gt; D[Confounder analysis using DAGsAssess strata-sum importance scores]\nD –&gt; E[Test GPS functionsGLM, BART, etc.]\nE –&gt; F[Estimate doubly robustoutcome model with BART]\nF –&gt; G[Estimate outcome modelfor all 5D treatment variableswith linear regression]"
+    "text": "Model Development Process\n\n\n\n\n\nflowchart LR\n  classDef big font-size:36px,fill:#9CD97A,stroke:#11AB67,color:#000000;\n\n  A[\"Input&lt;br/&gt;FFCO2 by&lt;br/&gt;sector\"] --&gt; \n  B[\"Add climate&lt;br/&gt;and 5D land&lt;br/&gt;use data\"] --&gt;\n\n  C[\"Correlation&lt;br/&gt;analysis to&lt;br/&gt;identify&lt;br/&gt;redundant&lt;br/&gt;variables&lt;br/&gt;for GPS\"] --&gt;\n\n  D[\"Confounder&lt;br/&gt;analysis&lt;br/&gt;DAGs using&lt;br/&gt;Strata‑sum&lt;br/&gt;importance\"] --&gt;\n\n  E[\"Test GPS&lt;br/&gt;functions&lt;br/&gt;GLM, BART,&lt;br/&gt;etc.\"] --&gt;\n\n  F[\"Doubly&lt;br/&gt;robust&lt;br/&gt;outcome&lt;br/&gt;model&lt;br/&gt;BART\"] --&gt;\n\n  G[\"Outcome&lt;br/&gt;models&lt;br/&gt;for 5D&lt;br/&gt;treatments&lt;br/&gt;linear&lt;br/&gt;regression\"]\n\n  class A,B,C,D,E,F,G big;"
   },
   {
     "objectID": "presentations/slides/WCTR_2026.html#confounder-identification",
     "href": "presentations/slides/WCTR_2026.html#confounder-identification",
     "title": "Multiscale Carbon Burden of Infrastructure in the United States",
     "section": "Confounder Identification",
-    "text": "Confounder Identification"
+    "text": "Confounder Identification\n\n\n\n\n\n\n\n\n\n\n\nTransportation Pearson Correlation Matrix"
   },
   {
-    "objectID": "presentations/slides/WCTR_2026.html#causal-identification-strategy",
-    "href": "presentations/slides/WCTR_2026.html#causal-identification-strategy",
+    "objectID": "presentations/slides/WCTR_2026.html#conditional-variable-importance",
+    "href": "presentations/slides/WCTR_2026.html#conditional-variable-importance",
     "title": "Multiscale Carbon Burden of Infrastructure in the United States",
-    "section": "Causal Identification Strategy",
-    "text": "Causal Identification Strategy"
+    "section": "Conditional Variable Importance",
+    "text": "Conditional Variable Importance"
   },
   {
     "objectID": "presentations/slides/WCTR_2026.html#doubly-robust-outcome-model",
     "href": "presentations/slides/WCTR_2026.html#doubly-robust-outcome-model",
     "title": "Multiscale Carbon Burden of Infrastructure in the United States",
     "section": "Doubly Robust Outcome Model",
-    "text": "Doubly Robust Outcome Model\n\\[\\begin{split}\n\\ln(CO_2 \\text{ per capita}) =& \\text{ln(total CBSA population)} + \\text{ln(CBSA population density)} \\\\&+ \\text{ln(average CBG treatment level in CBSA)} + \\text{propensity score} \\\\&+ \\text{CBSA fixed effect}\n\\end{split}\\]\n\\[\\hat{\\mu}_{i}^{DR}(t) = m(t,X_i) + w_i(t)\\left\\{Y_i - m(T_i,X_i)\\right\\}\\]"
+    "text": "Doubly Robust Outcome Model\nBART Outcome Model\n\\[\\begin{split}\n\\ln(CO_2 \\text{ per capita}) =& \\text{ln(total CBSA population)} \\\\&+ \\text{ln(CBSA population density)} \\\\&+ \\text{ln(average CBG treatment level in CBSA)} \\\\&+ \\text{propensity score} \\\\&+ \\text{CBSA fixed effect}\n\\end{split}\\]\nDoubly Robust Adjustment using BART & Continuous GPS\n\\[\\hat{\\mu}_{i}^{DR}(t) = m(t,X_i) + w_i(t)\\left\\{Y_i - m(T_i,X_i)\\right\\}\\]"
   },
   {
-    "objectID": "presentations/slides/WCTR_2026.html#transportation-results",
-    "href": "presentations/slides/WCTR_2026.html#transportation-results",
+    "objectID": "presentations/slides/WCTR_2026.html#individual-transportation-results",
+    "href": "presentations/slides/WCTR_2026.html#individual-transportation-results",
     "title": "Multiscale Carbon Burden of Infrastructure in the United States",
-    "section": "Transportation Results",
-    "text": "Transportation Results"
+    "section": "Individual Transportation Results",
+    "text": "Individual Transportation Results\n\nNote: results are production-based, meaning allocated to the point of emissions not trip origin \n\n\n  \n    \n    Density\n  \n  \n    \n    Diversity\n  \n  \n    \n    Design\n  \n  \n    \n    Distance\n  \n  \n    \n    Destination"
   },
   {
-    "objectID": "presentations/slides/WCTR_2026.html#residential-electricity-results",
-    "href": "presentations/slides/WCTR_2026.html#residential-electricity-results",
+    "objectID": "presentations/slides/WCTR_2026.html#joint-transportation-results",
+    "href": "presentations/slides/WCTR_2026.html#joint-transportation-results",
     "title": "Multiscale Carbon Burden of Infrastructure in the United States",
-    "section": "Residential Electricity Results",
-    "text": "Residential Electricity Results"
+    "section": "Joint Transportation Results",
+    "text": "Joint Transportation Results\n\nVarious joint treatment models estimated with metro/local treatments, propensity score adjustment, & spatial parameters\n\n\n\n\nVariable\nBase OLS\nSpatial EV\nSEM + SLX(10km)\n\n\n\n\nLocal density\n-0.187***\n-0.187***\n-0.194***\n\n\nRoadway design\n-0.449***\n-0.449***\n-0.475***\n\n\nTransit distance\n-0.001\n-0.001\n+0.067***\n\n\nW Transit distance\n–\n–\n-0.144***\n\n\nResidual Moran’s I\n0.370\n0.368\n0.174"
   },
   {
-    "objectID": "presentations/slides/WCTR_2026.html#residential-energy-results",
-    "href": "presentations/slides/WCTR_2026.html#residential-energy-results",
+    "objectID": "presentations/slides/WCTR_2026.html#individual-residential-electricity-results",
+    "href": "presentations/slides/WCTR_2026.html#individual-residential-electricity-results",
     "title": "Multiscale Carbon Burden of Infrastructure in the United States",
-    "section": "Residential Energy Results",
-    "text": "Residential Energy Results"
+    "section": "Individual Residential Electricity Results",
+    "text": "Individual Residential Electricity Results\n\n\n\n\n\n\nDensity\n\n\n\n\n\n\n\nDiversity"
+  },
+  {
+    "objectID": "presentations/slides/WCTR_2026.html#joint-residential-electricity-results",
+    "href": "presentations/slides/WCTR_2026.html#joint-residential-electricity-results",
+    "title": "Multiscale Carbon Burden of Infrastructure in the United States",
+    "section": "Joint Residential Electricity Results",
+    "text": "Joint Residential Electricity Results\n\nVarious joint treatment models estimated with metro/local treatments, propensity score adjustment, & spatial parameters\n\n\n\n\nVariable\nBase OLS\nSpatial EV\n\n\n\n\nLocal density\n-0.068***\n-0.068***\n\n\nLocal diversity\n+0.037***\n+0.037***\n\n\nLocal diversity \\(\\times\\) PS\n-0.035***\n-0.035***\n\n\nResidual Moran’s I\n0.648\n0.648"
+  },
+  {
+    "objectID": "presentations/slides/WCTR_2026.html#individual-residential-energy-results",
+    "href": "presentations/slides/WCTR_2026.html#individual-residential-energy-results",
+    "title": "Multiscale Carbon Burden of Infrastructure in the United States",
+    "section": "Individual Residential Energy Results",
+    "text": "Individual Residential Energy Results\n\n\n\n\n\n\nDensity\n\n\n\n\n\n\n\nDiversity"
+  },
+  {
+    "objectID": "presentations/slides/WCTR_2026.html#joint-residential-energy-results",
+    "href": "presentations/slides/WCTR_2026.html#joint-residential-energy-results",
+    "title": "Multiscale Carbon Burden of Infrastructure in the United States",
+    "section": "Joint Residential Energy Results",
+    "text": "Joint Residential Energy Results\n\nVarious joint treatment models estimated with metro/local treatments, propensity score adjustment, & spatial parameters\n\n\n\n\nVariable\nBase OLS\nSpatial EV\n\n\n\n\nLocal density\n-0.120***\n-0.120***\n\n\nLocal diversity\n+0.008***\n+0.008***\n\n\nLocal diversity \\(\\times\\) PS\n+0.010***\n+0.010***\n\n\nResidual Moran’s I\n0.431\n0.431"
+  },
+  {
+    "objectID": "presentations/slides/WCTR_2026.html#overall-results",
+    "href": "presentations/slides/WCTR_2026.html#overall-results",
+    "title": "Multiscale Carbon Burden of Infrastructure in the United States",
+    "section": "Overall Results",
+    "text": "Overall Results\n\nProduction- and consumption-based emissions allocations tell fundamentally different stories: for production-based transportatation FFCO2, higher density lowers FFCO2 emissions but higher land use mix/destination access raises them\nResidential emissions results are mixed: density lowers both sources but other results vary\nRoadway network density has a consistently negative effect on transportation FFCO2 emissions"
   },
   {
     "objectID": "presentations/slides/WCTR_2026.html#discussion",
     "href": "presentations/slides/WCTR_2026.html#discussion",
     "title": "Multiscale Carbon Burden of Infrastructure in the United States",
     "section": "Discussion",
-    "text": "Discussion"
+    "text": "Discussion\n\nCongestion pricing/low-emission zones address external cost on local results from production-based transportation emissions\nCompact development reduces residential emissions\nRegional 5D averages have minimal effects on sector-specific emissions after controlling for local 5D effects"
   },
   {
-    "objectID": "presentations/slides/WCTR_2026.html#next-steps",
-    "href": "presentations/slides/WCTR_2026.html#next-steps",
+    "objectID": "presentations/slides/WCTR_2026.html#future-work",
+    "href": "presentations/slides/WCTR_2026.html#future-work",
     "title": "Multiscale Carbon Burden of Infrastructure in the United States",
-    "section": "Next Steps",
-    "text": "Next Steps"
+    "section": "Future work",
+    "text": "Future work\n\nDevelop consumption(home)-based transportation emissions estimates based on OD flows\nExtension to other criteria air pollutants\nSpatial scaling analysis by city & climatic zone for population & 5D metrics"
   },
   {
     "objectID": "presentations/slides/WCTR_2026.html#thank-you",
