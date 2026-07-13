@@ -47,6 +47,9 @@ params = {
     'max_results': '50'
 }
 
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PUBLICATIONS_DIR = os.path.join(SCRIPT_DIR, '..', 'publications')
+
 def categorize_paper(text):
     """Returns a list of all categories that match the paper."""
     text_lower = text.lower()
@@ -110,8 +113,8 @@ def fetch_and_categorize():
 if __name__ == '__main__':
     pubs = fetch_and_categorize()
     
-    os.makedirs('data', exist_ok=True)
-    os.makedirs('../publications', exist_ok=True)
-    
-    with open('../publications/publications_by_topic.yml', 'w') as f:
+    os.makedirs(PUBLICATIONS_DIR, exist_ok=True)
+    out_path = os.path.join(PUBLICATIONS_DIR, 'publications_by_topic.yml')
+    with open(out_path, 'w') as f:
         yaml.dump(pubs, f, sort_keys=False)
+    print(f"Wrote {len(pubs)} publications to {out_path}")
