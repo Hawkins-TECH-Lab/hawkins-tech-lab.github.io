@@ -82,9 +82,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-description','listing-date','listing-categories','listing-author','listing-pub_number','listing-journ','listing-year','listing-url_preprint',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      valueNames: [{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-title","listing-description","listing-date","listing-categories","listing-author","listing-pub_number","listing-journ","listing-year","listing-url_preprint"],
+      searchColumns: [],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -255,47 +255,7 @@ window.Quarto = {
     </div>
 </div>
 <div class="list quarto-listing-default">
-<pre><code>&lt;div class="quarto-post image-right" data-index='0' data-categories='RWNvbG9naWNhbCUyMEVjb25vbWljcyUyQ0dlbmVyYWwlMjBUcmFuc3BvcnQlMkNWZWhpY2xlJTIwQWRvcHRpb24=' data-listing-date-sort='1759795200000'&gt;
-    
-    &lt;!-- Thumbnail Section --&gt;
-    &lt;div class="thumbnail"&gt;
-        
-    &lt;/div&gt;
 
-    &lt;!-- Main Content Section --&gt;
-    &lt;div class="body"&gt;
-        &lt;div class="no-anchor listing-pub-title listing-title"&gt;
-            Multi-Scale Land Use Impacts on Fossil Fuel-Related CO$_2$ Emissions in the United States
-        &lt;/div&gt;
-        
-        &lt;div class="listing-pub-author listing-author"&gt;
-            Jason Hawkins, Mehrnoosh Zare
-        &lt;/div&gt;
-        
-        
-            &lt;div class="metadata-value listing-pub-journal listing-publication"&gt;
-                &lt;i&gt;arXiv Preprint&lt;/i&gt;&lt;!--
-             --&gt;&lt;!--
-             --&gt;&lt;!--
-             --&gt; (2025)
-            &lt;/div&gt;
-        
-    &lt;/div&gt;
-
-    &lt;!-- Links / Metadata Section --&gt;
-    &lt;div class="metadata"&gt;
-        
-
-
-            &lt;div class="listing-pub-url"&gt;
-                &lt;a href="http://arxiv.org/abs/2510.08611v1" style="color: #8250E6; text-decoration: none;"&gt;
-                    preprint URL &lt;i class="bi bi-box-arrow-up-right"&gt;&lt;/i&gt;
-                &lt;/a&gt;
-            &lt;/div&gt;
-        
-    &lt;/div&gt;
-
-&lt;/div&gt;</code></pre>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div>

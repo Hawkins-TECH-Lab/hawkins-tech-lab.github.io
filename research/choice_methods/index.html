@@ -82,9 +82,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: [{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-title','listing-description','listing-date','listing-categories','listing-author','listing-pub_number','listing-journ','listing-year','listing-url_preprint',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
       
-      searchColumns: [],
+      searchColumns: ["listing-title","listing-description","listing-date","listing-categories","listing-author","listing-pub_number","listing-journ","listing-year","listing-url_preprint"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -255,7 +255,89 @@ window.Quarto = {
     </div>
 </div>
 <div class="list quarto-listing-default">
+<pre><code>&lt;div class="quarto-post image-right" data-index='0' data-categories='Q2hvaWNlJTIwTW9kZWwlMjBNZXRob2RzJTJDR2VuZXJhbCUyMFRyYW5zcG9ydCUyQ1ZlaGljbGUlMjBBZG9wdGlvbg==' data-listing-date-sort='1782691200000'&gt;
+    
+    &lt;!-- Thumbnail Section --&gt;
+    &lt;div class="thumbnail"&gt;
+        
+    &lt;/div&gt;
 
+    &lt;!-- Main Content Section --&gt;
+    &lt;div class="body"&gt;
+        &lt;div class="no-anchor listing-pub-title listing-title"&gt;
+            Modeling Mode and Departure Time Responses to Congestion Pricing: A Spatial and Behavioral Analysis Using Cross-Nested Logit Model
+        &lt;/div&gt;
+        
+        &lt;div class="listing-pub-author listing-author"&gt;
+            Mohammad Amin Ashena, Adam Weiss, Jason Hawkins, Lina Kattan
+        &lt;/div&gt;
+        
+        
+            &lt;div class="metadata-value listing-pub-journal listing-publication"&gt;
+                &lt;i&gt;arXiv Preprint&lt;/i&gt;&lt;!--
+             --&gt;&lt;!--
+             --&gt;&lt;!--
+             --&gt; (2026)
+            &lt;/div&gt;
+        
+    &lt;/div&gt;
+
+    &lt;!-- Links / Metadata Section --&gt;
+    &lt;div class="metadata"&gt;
+        
+
+
+            &lt;div class="listing-pub-url"&gt;
+                &lt;a href="http://arxiv.org/abs/2606.29756v1" style="color: #8250E6; text-decoration: none;"&gt;
+                    preprint URL &lt;i class="bi bi-box-arrow-up-right"&gt;&lt;/i&gt;
+                &lt;/a&gt;
+            &lt;/div&gt;
+        
+    &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div class="quarto-post image-right" data-index='1' data-categories='Q2hvaWNlJTIwTW9kZWwlMjBNZXRob2RzJTJDR2VuZXJhbCUyMFRyYW5zcG9ydA==' data-listing-date-sort='1782604800000'&gt;
+    
+    &lt;!-- Thumbnail Section --&gt;
+    &lt;div class="thumbnail"&gt;
+        
+    &lt;/div&gt;
+
+    &lt;!-- Main Content Section --&gt;
+    &lt;div class="body"&gt;
+        &lt;div class="no-anchor listing-pub-title listing-title"&gt;
+            Why Do We Need Travel Behavior Theory in the Age of AI? Multiple Goal Pursuit as an Illustrative Theory
+        &lt;/div&gt;
+        
+        &lt;div class="listing-pub-author listing-author"&gt;
+            Jason Hawkins, Omid Armantalab
+        &lt;/div&gt;
+        
+        
+            &lt;div class="metadata-value listing-pub-journal listing-publication"&gt;
+                &lt;i&gt;arXiv Preprint&lt;/i&gt;&lt;!--
+             --&gt;&lt;!--
+             --&gt;&lt;!--
+             --&gt; (2026)
+            &lt;/div&gt;
+        
+    &lt;/div&gt;
+
+    &lt;!-- Links / Metadata Section --&gt;
+    &lt;div class="metadata"&gt;
+        
+
+
+            &lt;div class="listing-pub-url"&gt;
+                &lt;a href="http://arxiv.org/abs/2606.29145v1" style="color: #8250E6; text-decoration: none;"&gt;
+                    preprint URL &lt;i class="bi bi-box-arrow-up-right"&gt;&lt;/i&gt;
+                &lt;/a&gt;
+            &lt;/div&gt;
+        
+    &lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
