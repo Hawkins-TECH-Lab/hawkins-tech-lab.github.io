@@ -14,6 +14,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -29,16 +31,17 @@ jobs:
       - name: Fetch latest publications
         run: python scripts/update_pubs.py
 
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v6
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "Auto-update publications from arXiv"
-          title: "Auto-update publications from arXiv"
-          body: "Automated update of publications_by_topic.yml from the arXiv API."
-          branch: auto-update-publications
-          delete-branch: true
-          add-paths: publications/publications_by_topic.yml
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          if [[ -n $(git status --porcelain) ]]; then
+            git add publications/publications_by_topic.yml
+            git commit -m "Auto-update publications from arXiv [skip ci]"
+            git push
+          else
+            echo "No changes to commit."
+          fi
 
       # Install Quarto (required)
       - name: Install Quarto
