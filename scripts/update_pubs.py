@@ -67,7 +67,7 @@ def fetch_and_categorize():
         "Accept": "*/*"
     }
 
-    r = requests.get(full_url, headers=headers, timeout=20)
+    r = requests.get(full_url, headers=headers, timeout=60)
 
     if r.status_code != 200:
         raise RuntimeError(f"arXiv returned {r.status_code} for URL: {full_url}")
