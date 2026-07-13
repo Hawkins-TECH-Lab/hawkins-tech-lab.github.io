@@ -1,53 +1,65 @@
+```{=html}
 <div class="list quarto-listing-default">
     <% for (const item of items) { %>
-    <div class="quarto-post image-right" <%= metadataAttrs(item) %>>
-        
-        <!-- Thumbnail Section -->
+    
+    <div class="quarto-post image-right" <%= metadataAttrs(item) %> >
         <div class="thumbnail">
-            <% if (item.image) { %>
-                <img alt="<%= item.title || '' %>" src="<%= item.image %>" class="thumbnail-image">
-            <% } %>
-        </div>
-
-        <!-- Main Content Section -->
+            <a href="<%- item.path %>">
+                <% if (item.image) { %>
+                <img alt="<%= item.title %>" src="<%= item.image %>" class="thumbnail-image">
+                <% } else { %>
+                <% } %>
+            </a>
+        </div> 
+        
         <div class="body">
-            <div class="no-anchor listing-pub-title listing-title">
-                <%= item.title %>
-            </div>
+            <a href="<%- item.path %>" class="no-anchor">
+                <div class="listing-pub-title listing-title"><%= item.title %></div>
+            </a>
             
             <div class="listing-pub-author listing-author">
-                <%= item.author %>
+                <%= item.author %><br> 
             </div>
             
-            <% if (item.journ) { %>
-                <div class="metadata-value listing-pub-journal listing-publication">
-                    <i><%= item.journ %></i><!--
-                 --><% if (item.issue) { %>, <b><%= item.issue %></b><% } %><!--
-                 --><% if (item.page) { %>, <%= item.page %><% } %><!--
-                 --><% if (item.year) { %> (<%= item.year %>)<% } %>
-                </div>
-            <% } %>
-        </div>
+            <div class="metadata-value listing-pub-journal listing-publication">
+                <% if (item.journ) { %>
+                    <i><%= item.journ %></i><% if (item.issue) { %>, <b><%= item.issue %></b><% } %><% if (item.page) { %>, <%= item.page %> <% } %><% if (item.year) { %> (<%= item.year %>)<% } %><br>
+                <% } %>
+            </div> 
 
-        <!-- Links / Metadata Section -->
+            <% if (item.categories && Array.isArray(item.categories)) { %>
+            <div class="listing-categories">
+                <% for (const category of item.categories) { %>
+                <span class="badge bg-light text-dark border me-1" onclick="window.quartoListingCategory('<%=category%>'); return false;" style="cursor: pointer;">
+                    <%= category %>
+                </span>
+                <% } %>
+            </div> 
+            <% } %>
+        </div> 
+
         <div class="metadata">
-            <% if (item.url_source) { %>
-                <div class="listing-pub-url">
-                    <a href="<%- item.url_source %>" style="color: #8250E6; text-decoration: none;">
-                        journal URL <i class="bi bi-box-arrow-up-right"></i>
-                    </a>
-                </div>
-            <% } %>
-  
-            <% if (item.url_preprint) { %>
-                <div class="listing-pub-url">
-                    <a href="<%- item.url_preprint %>" style="color: #8250E6; text-decoration: none;">
-                        preprint URL <i class="bi bi-box-arrow-up-right"></i>
-                    </a>
-                </div>
-            <% } %>
-        </div>
+            <div class="listing-pub-number">
+                <%= item.pub_number %><br> 
+            </div>
 
-    </div>
+            <% if (item.url_source) { %>
+            <div class="listing-pub-url">
+                <a href="<%- item.url_source %>" style="color:#8250E6; text-decoration: none;">
+                    journal URL <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+            </div> 
+            <% } %>
+
+            <% if (item.url_preprint) { %>
+            <div class="listing-pub-url">
+                <a href="<%- item.url_preprint %>" style="color:#8250E6; text-decoration: none;">
+                    preprint URL <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+            </div> 
+            <% } %>
+        </div> 
+    </div> 
     <% } %>
 </div>
+```

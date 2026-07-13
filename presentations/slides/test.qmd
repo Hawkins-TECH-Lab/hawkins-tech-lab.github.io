@@ -1,0 +1,127 @@
+---
+title: "Joint Treatment Effects of Land Use Variables on Transportation FFCO2 Emissions"
+subtitle: "A Counterfactual Framework for Urban Decarbonization Policy"
+author: "Hawkins-TECH-Lab"
+institute: "University of Calgary"
+date: "2026-07-08"
+format:
+  revealjs:
+    theme: simple
+    slide-number: true
+    show-slide-number: all
+    preview-links: auto
+    chalkboard: true
+    width: 1280
+    height: 720
+    transition: fade
+    css: styles.css
+---
+
+## Introduction & Motivation {background-color="#f8f9fa"}
+
+### The Urban Transportation Decarbonization Challenge
+* **The Imperative:** Reducing Fossil Fuel CO₂ (FFCO₂) emissions in urban transportation is critical for meeting municipal net-zero targets.
+* **The Complexity:** Built form and land use variables (density, diversity, design) do not act in isolation. They exert **joint treatment effects** on travel behavior.
+* **The Research Gap:** Traditional elasticities often model land use attributes linearly or in isolation, failing to capture non-linear interactions, self-selection bias, and spatial dependencies.
+
+---
+
+## Phase 1: Conceptual Framework
+### Beyond Isolated Elasticities
+
+::: {.columns}
+::: {.column width="50%"}
+**Traditional Approaches:**
+* Separate treatment of density (e.g., population/employment density).
+* Ignores compounding feedback loops.
+* Prone to omitted variable bias from unobserved sorting.
+:::
+
+::: {.column width="50%"}
+**Proposed Framework:**
+* Treats land use configurations as a **joint multi-valued treatment**.
+* Explicitly models the structural interactions between built form features.
+* Acknowledges the Lifeworld-System dynamics governing household location and travel choices.
+:::
+:::
+
+---
+
+## Phase 2: Econometric Methodology
+### Causal Inference & Counterfactuals
+
+To evaluate the true impact of structural interventions, we define the causal effect using potential outcomes. Let $Y_i(t)$ be the potential FFCO₂ emissions of zone $i$ under joint land use treatment vector $t \in \mathcal{T}$.
+
+$$\tau(t, t') = \mathbb{E}[Y_i(t) - Y_i(t')]$$
+
+### Overcoming Confounding via Propensity Scores
+We utilize Generalized Propensity Scores (GPS) to adjust for multi-valued joint treatments, ensuring covariate balance across disparate urban fabrics:
+
+$$R = r(T, X) = f_{T|X}(T|X)$$
+
+> **Core Assumption (Weak Ignorability):** Conditional on observable spatial and demographic covariates $X$, the assignment to a specific land use intensity $T$ is orthogonal to the potential emissions outcomes.
+
+---
+
+## Phase 3: Empirical Model Specification
+### Joint Treatment Identification
+
+We specify a multi-equation structural system where spatial parameters are evaluated simultaneously.
+
+$$Y_{\text{FFCO2}} = \alpha + \mathbf{\beta \cdot T_{\text{Joint}}} + \mathbf{\gamma \cdot X} + \epsilon$$
+
+* $\mathbf{T_{\text{Joint}}}$: Vector representing cross-densities of employment, residential concentration, and intersection density.
+* $\mathbf{X}$: Matrix of socio-economic control variables (household income, vehicle ownership rates).
+* **Non-linearities:** Captured via non-parametric extensions and machine learning-driven propensity weighting (e.g., WeightIt framework).
+
+---
+
+## Phase 4: Model Estimation & Key Results
+
+### Average Treatment Effects (ATE) on Zone-Level FFCO2
+| Treatment Mix ($T_{\text{Joint}}$) | Density Metric | ATE ($\Delta$ Tonnes CO₂/yr) | Std. Error |
+|:---|:---:|:---:|:---:|
+| Baseline (Sprawl Suburban) | Low | *Reference* | — |
+| Transit-Oriented Core | High | $-42.3$ | 3.12 |
+| Balanced Mixed-Use | Med-High | $-28.7$ | 2.45 |
+| Jobs-Rich Compact | High | $-34.1$ | 2.89 |
+
+: Counterfactual Model Estimates (N = 1,420 Urban Zones)
+
+---
+
+### Key Insight: Non-Linear Thresholds
+
+::: {.columns}
+::: {.column width="60%"}
+* **The Synergy Effect:** Increasing density without a corresponding increase in land use *diversity* yields diminishing returns in FFCO₂ mitigation.
+* **Thresholds:** A minimum intersection density is required before transit-oriented development triggers significant vehicle-kilometers traveled (VMT) reduction.
+:::
+
+::: {.column width="40%"}
+> **Policy Implication:**
+> 
+> Single-dimension zoning amendments (e.g., merely increasing allowable floor-area ratios) are structurally insufficient. Interventions must be bundled.
+:::
+:::
+
+---
+
+## Phase 5: Policy Implications & Next Steps
+### Systems-Level Planning Interventions
+
+1. **Integrated Spatial Targeting:** Allocate infrastructure funds preferentially to zones where the joint probability of behavioral shifts is maximized.
+2. **Active Transportation Infrastructure:** Couple compact zoning with pedestrian overpass priorities and multi-modal network connectivity to lock in low-emission baselines.
+3. **Future Scalability:** Extending the framework to incorporate Bayesian Additive Regression Trees (BART) to relax parametric assumptions regarding the joint treatment surface.
+
+---
+
+## Discussion & Conclusion {background-color="#343a40"}
+
+::: {style="color: white; text-align: center; margin-top: 50px;"}
+### Strategic Takeaway
+Urban form is a highly coupled system. Only by evaluating the **joint treatments** of density, diversity, and network design can we reliably predict—and realize—the deep decarbonization of urban transportation networks.
+
+**Thank you!**
+*Questions & Collaborative Discussion*
+:::

@@ -20,6 +20,8 @@ website:
         href: team/index.qmd
       - text: "Publications"
         href: publications/index.qmd
+      - text: "Presentations"
+        href: presentations/index.qmd
       - text: "Teaching"
         menu:
           - text: "CIVE461/861"

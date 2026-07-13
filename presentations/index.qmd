@@ -1,0 +1,13 @@
+---
+pagetitle: "Presentations"
+section-divs: true
+---
+
+# Presentations
+
+## 2026
+
+* [REES - A Home Production Approach to Housing Location Choice and Travel Behaviour](./slides/REES_May_2026.html)
+* [Department Meeting - Stated Preference Elicitation](./slides/April_Department_Meeting.html)
+* [WCTR - Multiscale Carbon Burden of Infrastructure in the United States](./slides/WCTR_2026.html)
+
