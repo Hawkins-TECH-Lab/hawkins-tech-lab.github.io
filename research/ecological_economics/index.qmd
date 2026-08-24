@@ -1,17 +1,16 @@
 ---
 title: Ecological Economics
-alias: &ALIAS ecological_economics
 image: featured.jpg
+page-layout: full
 listing:
   id: pubs
-  template: ../../_ejs/publications-people.ejs 
-  contents: ../../publications/**/*.qmd
-  sort: "pub_number desc"
+  template: ../../_ejs/publications.ejs 
+  contents: ../../publications/publications_by_topic.yml
+  sort: "date desc"
   # sort-ui: true
   filter-ui: true
   include:
-    categories: *ALIAS
-  fields: [publication, title, categories, image, date, author]
+    categories: "Ecological Economics"
 
 ---
 ![](featured.jpg)

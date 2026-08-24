@@ -1,0 +1,15 @@
+format:
+  revealjs:
+    theme: [default, theme.scss]
+    slide-number: c/t
+    center-title-slide: true
+    transition: fade
+    background-transition: fade
+    highlight-style: github
+    code-line-numbers: true
+    logo: images/hex-icon-1.png
+    chalkboard: false
+    preview-links: auto
+    title-slide-attributes:
+      data-background-size: cover
+      data-background-position: center

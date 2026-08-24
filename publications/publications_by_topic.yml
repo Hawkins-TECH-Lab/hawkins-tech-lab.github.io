@@ -1,0 +1,180 @@
+- title: A Framework for Transportation and Land Use Integration as a Parallel Constrained
+    Multiple Discrete-Continuous Extreme Value (PC-MDCEV) Home Production Model
+  description: Integrated urban models (IUM) typically rely on a measure of accessibility
+    or travel time to form the link between the transportation and land use systems.
+    Such integration does not fully capture the trade-offs made by households in how
+    they spend their limited temporal and monetary budgets. We propose a microeconomic
+    foundation for transportation and land use choice model integration based on the
+    theory of home production. A utility function is developed that considers both
+    household monetary expenditure and individual time use. We address several limitations
+    in previous home production functions. First, the introduction of a parallel constrained
+    multiple discrete-continuous extreme value (MDCEV) structure that allows for the
+    inclusion of multi-person households in the model. Second, travel time is defined
+    as the minimum time required to conduct an activity and deducted from the temporal
+    budget. This assumption has several appealing features. It defines the minimum
+    time to complete an activity as a measure of accessibility. An empirical application
+    is provided for the Greater Toronto Area using a validated synthetic dataset.
+    Empirical results demonstrate an economy of scale in time devoted to home production,
+    analogous to scaling exhibit in market production. It was found that the mix of
+    dwelling types (detached, apartment, etc.) has a significant influence on both
+    time use and consumption. Finally, we provide several directions for future research
+    to advance the practice of urban modelling and better capture the complex dynamics
+    of household decision-making.
+  path: http://arxiv.org/abs/2607.05862v1
+  date: '2026-07-07'
+  categories:
+  - Equity
+  - General Transport
+  - Vehicle Adoption
+  author: Jason Hawkins, Khandker Nurul Habib
+  pub_number: arXiv:2607.05862
+  journ: arXiv Preprint
+  year: '2026'
+  url_preprint: http://arxiv.org/abs/2607.05862v1
+- title: A Pseudo Panel Difference-in-Differences (DiD) Analysis of Online Shopping
+    Behavior in the Puget Sound Regional Council (PSRC) Region
+  description: Online shopping is a growing trend, particularly following the COVID-19
+    lock-downs enacted by many cities. Understanding these trends requires robust
+    panel dat methods. However, panel data (i.e., with repeated measurements of the
+    same observational units) are often unavailable. In this study, we use a propensity
+    score weighting (PSW) approach to adjust repeated cross-sectional travel diary
+    surveys collected in the Puget Sound Regional Council (PSRC) region. The most
+    common home delivery is packages (2.09 days per week in 2023), followed by food
+    (0.36 days per week in 2023). We find that single-family detached and townhouse
+    residents tend to receive more home deliveries than those living in apartments.
+    We also find a difference in several patterns pre- and post-COVID pandemic. Vehicle
+    deficient households did not exhibit the same increase in home delivery frequency
+    as other households pre-COVID, but the pattern reversed in the post-COVID period
+    - i.e., vehicle deficient households saw a relative increase in delivery frequency.
+    Overall, this study demonstrates the pseudo-panel approach to causal inference
+    by leveraging differences in PSW-weighted in delivery frequency across treatment
+    groups.
+  path: http://arxiv.org/abs/2607.03665v1
+  date: '2026-07-04'
+  categories:
+  - Vehicle Adoption
+  author: Jason Hawkins, Usman Ahmed, Omid Armantalab
+  pub_number: arXiv:2607.03665
+  journ: arXiv Preprint
+  year: '2026'
+  url_preprint: http://arxiv.org/abs/2607.03665v1
+- title: 'Modeling Mode and Departure Time Responses to Congestion Pricing: A Spatial
+    and Behavioral Analysis Using Cross-Nested Logit Model'
+  description: Effective congestion management strategies require a detailed understanding
+    of how travellers respond to different pricing interventions. This paper presents
+    an in-depth analysis of traveller behaviour under congestion pricing scenarios,
+    focusing specifically on mode and departure time decisions. Utilizing stated preference
+    survey data from commuters in Calgary, Canada, three discrete choice models including
+    Multinomial Logit, Nested Logit, and Cross-Nested Logit are developed and compared.
+    Results indicate that the Cross-Nested Logit model provides superior behavioural
+    realism and flexibility by capturing simultaneous substitutions across modes and
+    departure times.   Spatial analysis and elasticity assessments reveal substantial
+    geographic variation in traveller sensitivity to pricing, particularly highlighting
+    stronger responses among commuters travelling to high-demand central locations
+    and during peak travel periods. Further elasticity analyses clarify behavioural
+    patterns, identifying traveller groups with varying degrees of flexibility. Policy
+    analyses underscore the effectiveness of targeted, dynamic tolling, particularly
+    cordon-based pricing combined with time-specific toll adjustments, in reducing
+    congestion levels. Additionally, the findings highlight the necessity of complementary
+    measures, including improved transit services and targeted discounts, to ensure
+    equitable outcomes. The findings offer targeted insights into how specific pricing
+    strategies such as cordon, distance, and travel time-based tolls can be used to
+    influence travel behaviour, reduce peak-period congestion, and guide equitable
+    policy design in urban transportation planning.
+  path: http://arxiv.org/abs/2606.29756v1
+  date: '2026-06-29'
+  categories:
+  - Choice Model Methods
+  - General Transport
+  - Vehicle Adoption
+  author: Mohammad Amin Ashena, Adam Weiss, Jason Hawkins, Lina Kattan
+  pub_number: arXiv:2606.29756
+  journ: arXiv Preprint
+  year: '2026'
+  url_preprint: http://arxiv.org/abs/2606.29756v1
+- title: Why Do We Need Travel Behavior Theory in the Age of AI? Multiple Goal Pursuit
+    as an Illustrative Theory
+  description: 'Travel behavior and demand modeling seeks to understand the factors
+    that motivate transportation decisions. At the same time, the field is increasingly
+    adopting algorithmic and artificial intelligence (AI) tools that improve predictive
+    accuracy, often at the cost of a grounding in hypothesis-based theory validation
+    and behavioural explanation. In this discussion paper, we use goal pursuit theory
+    (GPT) to illustrate why behavioral theory is a necessary complement to prediction
+    in travel behavior research. Unlike random utility maximization (RUM) or close
+    alternatives (e.g., random regret minimization (RRM)), GPT explicitly models how
+    travelers (1) activate context-dependent goals (hedonic, gain, normative), (2)
+    resolve conflicts between competing objectives, and (3) make sequential decisions
+    across temporal scales. We demonstrate GPT''s merits through three transport applications:
+    activity scheduling (handling hierarchical goal structures), vehicle ownership
+    (disentangling bundled mobility goals), and location choice (capturing latent
+    goal interactions via matrix factorization). We provide actionable guidance for
+    implementation, including: (a) hybrid choice model specifications linking goals
+    to observable behaviors, (b) parallels to complementary behavioral theories from
+    the transportation field, and (c) data requirements and comparative benchmarks
+    against RUM/RRM models.'
+  path: http://arxiv.org/abs/2606.29145v1
+  date: '2026-06-28'
+  categories:
+  - Choice Model Methods
+  - General Transport
+  author: Jason Hawkins, Omid Armantalab
+  pub_number: arXiv:2606.29145
+  journ: arXiv Preprint
+  year: '2026'
+  url_preprint: http://arxiv.org/abs/2606.29145v1
+- title: Multiscale Carbon Burden of Infrastructure in the United States
+  description: 'Anthropogenic greenhouse gas (GHG) emissions vary spatially with development
+    patterns, climate, economic structure, and energy systems. Using Vulcan v4.0 fossil-fuel
+    CO2 (FFCO2) data for the United States at 1-km resolution, this study examines
+    how land use and infrastructure shape emissions at local and metropolitan scales.
+    I combine doubly robust Bayesian Additive Regression Tree estimators with multi-treatment
+    spatial regression models to identify local and spillover effects by sector. A
+    key methodological contribution is treating transportation emissions as production-based,
+    capturing infrastructure carbon burden rather than household-attributed travel
+    demand. Results show strong scale dependence and spatial interaction: in the preferred
+    heteroscedasticity-robust SLX+SEM model with a 10-km distance band, residual spatial
+    autocorrelation declines substantially. Local roadway design is a strong negative
+    predictor of transportation FFCO2, while neighbouring land use diversity exceeds
+    local diversity. In residential sectors, higher local density is consistently
+    associated with lower per-capita emissions. These findings support coordinated
+    multi-scale mitigation policy in the United States.'
+  path: http://arxiv.org/abs/2510.08611v2
+  date: '2025-10-07'
+  categories:
+  - General Transport
+  - Vehicle Adoption
+  author: Jason Hawkins
+  pub_number: arXiv:2510.08611v2
+  journ: arXiv Preprint
+  year: '2025'
+  url_preprint: http://arxiv.org/abs/2510.08611v2
+- title: 'Mobility Behavior Evolution During Extended Emergencies: Returners, Explorers,
+    and the 15-Minute City'
+  description: 'Understanding human mobility during emergencies is critical for strengthening
+    urban resilience and guiding emergency management. This study examines transitions
+    between returners, who repeatedly visit a limited set of locations, and explorers,
+    who travel across broader destinations, over a 15-day emergency period in a densely
+    populated metropolitan region using the YJMob100K dataset. High-resolution spatial
+    data reveal intra-urban behavioral dynamics often masked at coarser scales. Beyond
+    static comparisons, we analyze how mobility evolves over time, with varying emergency
+    durations, across weekdays and weekends, and relative to neighborhood boundaries,
+    linking the analysis to the 15-minute city framework.   Results show that at least
+    two weeks of data are required to detect meaningful behavioral shifts. During
+    prolonged emergencies, individuals resume visits to non-essential locations more
+    slowly than under normal conditions. Explorers markedly reduce long distance travel,
+    while weekends and holidays consistently exhibit returner-like, short distance
+    patterns. Residents of low Points of Interest (POI) density neighborhoods often
+    travel to POI rich areas, highlighting spatial disparities. Strengthening local
+    accessibility may improve urban resilience during crises.   Full reproducibility
+    is supported through the project website: https://github.com/wissamkontar'
+  path: http://arxiv.org/abs/2510.00469v1
+  date: '2025-10-01'
+  categories:
+  - Equity
+  - General Transport
+  - Vehicle Adoption
+  author: Omid Armantalab, Jason Hawkins, Wissam Kontar
+  pub_number: arXiv:2510.00469
+  journ: arXiv Preprint
+  year: '2025'
+  url_preprint: http://arxiv.org/abs/2510.00469v1

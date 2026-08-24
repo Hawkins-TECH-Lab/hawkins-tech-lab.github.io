@@ -1,0 +1,103 @@
+---
+title: "Multiscale Carbon Burden of Infrastructure in the United States"
+subtitle: "WCTR, Toulouse, France"
+author: "Jason Hawkins, PhD PEng"
+date: today
+format: revealjs
+---
+
+## Overview
+
+- Study land use & climate mitigation relationship by combining Vulcan 1-km gridded fossil fuel CO2 (FFCO2) \& EPA Smart Location Database land use features
+- Partition emissions into transportation, residential energy, \& scope 2 residential electricity
+
+## Motivation
+
+![Newman \& Kenworthy (1989)](./images/kenworthy_newman.png){fig-align="center"}
+
+## Literature{.smaller}
+- **Urban economics:** Glaeser & Kahn (2008) used an ad-hoc CO2 estimation strategy to compare 66 metropolitan areas​
+    - Lowest CO2 rates in California​
+    - Highest CO2 rates in Texas & Oklahoma​
+    - Development restrictions push new development into high CO2 regions​
+- **Urban planning:** Kockelman (1997) + Cervero & Ewing (2010) examine 3/5Ds of land use​
+    - Density, Diversity, Design, Destination Access, & Distance to Transit​
+- **Urban science:** Fragkias et al. (2013) used earlier version of Vulcan CO2 dataset (1999-2008) to study urban scaling in total CO2​
+    - Found proportional scaling of 0.95% increased CO2 per 1% increase in population – i.e., larger cities not significantly more efficient
+
+## 
+
+## Two Column Layout
+
+::: {.columns}
+::: {.column width="50%"}
+### Left column
+
+- Point one
+- Point two
+- Point three
+:::
+
+::: {.column width="50%"}
+### Right column
+
+![](images/hex-icon-2.png){width="60%"}
+:::
+:::
+
+## Results, by the numbers
+
+::: {.columns}
+::: {.column width="33%"}
+::: {.stat}
+[92%]{.stat-number}
+[Adoption rate]{.stat-label}
+:::
+:::
+
+::: {.column width="33%"}
+::: {.stat}
+[3.4x]{.stat-number}
+[Faster delivery]{.stat-label}
+:::
+:::
+
+::: {.column width="33%"}
+::: {.stat}
+[$1.2M]{.stat-number}
+[Annual savings]{.stat-label}
+:::
+:::
+:::
+
+## Comparison
+
+| Option        | Cost   | Time to launch | Risk   |
+|---------------|--------|-----------------|--------|
+| Build in-house| High   | 6 months        | Medium |
+| Partner build | Medium | 3 months        | Low    |
+| Off-the-shelf | Low    | 2 weeks         | High   |
+
+## In their words
+
+> This is where a pull-quote goes — styled with a left accent rule
+> instead of a decorative bar, matching the "avoid accent stripes"
+> guidance while still standing apart from body text.
+
+::: {.badge}
+Case study
+:::
+
+## What's next {.section-slide}
+
+Approvals → Kickoff → Delivery
+
+## Thank you
+
+Questions? Reach out any time.
+
+[jfhawkin@ucalgary.ca](mailto:jfhawkin@ucalgary.ca)
+
+Presentation \& paper available:
+
+![https://hawkins-tech-lab.github.io/](./images/qr-code.png){fig-align="center"}
