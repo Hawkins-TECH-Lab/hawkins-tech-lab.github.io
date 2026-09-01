@@ -1,12 +1,13 @@
 ---
 title: "Syllabus"
+link-external-newwindow: true
 ---
 
 ## Course Info
 
 |           | Day       | Time              | Location                       |
 |-----------|-----------|-------------------|--------------------------------|
-| Lectures  | Wed | 2:00 pm - 4:45 pm | ENF 304     |
+| Lectures  | Tue, Thu | 2:00 pm - 3:15 pm | ENF 304     |
 | Office hours  | Mon | 2:00 pm - 4:00 pm | ENF284      |
 
 **Prerequisites:** A basic knowledge of statistics and coding in either R or Python. \
@@ -16,16 +17,17 @@ Credit Hours: 3
 ### Instructor:
 Dr. Jason Hawkins \
 ENF284 \
-Email me through the course D2L messenger system
+Email: jfhawkin@ucalgary.ca (please include "ENCI 707" in the subject line) or message me through the course D2L messenger system
 
 ## Learning objectives
 
 Students will be able to:
+
 1.	 Explain the economic theory underlying disaggregate demand models.
 2.	Analyze the validity and limitations of survey and other datasets for use in engineering and planning demand and policy analysis.
-3.	Perform basic demand model estimation using packages in either Python or R.
-4.	Construct causal experiments for use in engineering and planning policy analysis.
-5.	Value diverse perspectives on the valuation of engineering policy outcomes.
+3.	Formulate basic demand models using packages in either Python or R.
+4.	Construct experimental design for use in engineering and planning policy analysis.
+5.	Investigate a choice econometrics problem of moderate to high complexity.
 
 ## Required Materials
 No textbook is required for this course. Students will require access to a computer capable of running Python or R.
@@ -55,64 +57,73 @@ I find course management software inflexible and painful tools. As such, aside f
 
 ## Lectures
 
-The goal of lectures is for them to be as interactive as possible.
-My role as instructor is to introduce you to new theories, tools, and techniques, but it is up to you to take them and make use of them.
-Some of what you do in this course will involve writing code, and coding is a skill that is best learned by doing.
-Therefore, as much as possible, you will be working on a variety of tasks and activities during lecture.
-You are expected to attend all lecture sessions and meaningfully contribute to in-class exercises and discussions.
-Additionally, some lectures will feature [application exercises] that will be graded.
+The goal of lectures is for them to be as interactive as possible. You are expected to attend all lecture sessions and meaningfully contribute to discussions. My role as instructor is to introduce you to new theories, tools, and techniques, but it is up to you to take them and make use of them. Prior to most lectures, you will be asked to review a set of readings and/or videos and complete a short pre-class quiz on D2L; lectures will assume you have completed this preparation.
 
-You are expected to bring a laptop to each class so that you can take part in the in-class exercises.
-Please make sure your laptop is fully charged before you come to class as the number of outlets in the classroom will not be sufficient to accommodate everyone.
+If for any reason you are unable to attend lecture in-person, please provide notice at least 24 hours prior to lecture and an online option will be made available for the week.
 
 ## Assessment
 
-The main deliverables for this class comprise a set of assignments designed to walk students through the process of setting up a demand or policy analysis study. Students will not carry out their study to completion. Additional details are provided on the course website for each component. Students will also be required to complete three short group assignments.
+The main deliverable for this course is a term paper, which is a culmination of the skills gained throughout the course. I will make myself available on a regular basis to provide input on papers, and I strongly encourage you to take advantage of these opportunities. Additional details for all assessments are provided on the course website. Students will also be required to complete three group assignments.
 
 The final course grade will be calculated as follows:
 
 | Category              | Percentage      |
 |-----------------------|-----------------|
-| Application exercises | 10%              |
+| Pre-class quizzes     | 5%              |
 | Group assignments     | 15% (5% x 3)    |
-| Project proposal      | 15%             |
-| Project literature review  | 15%        |
-| Draft project data and experimental design plan  | 15%        |
-| Final project data and experimental design plan  | 30%        |
+| Paper proposal        | 5%              |
+| Midterm exam          | 20%             |
+| Term paper            | 55%             |
 
 The final letter grade will be determined based on the following thresholds:
 
 | Letter Grade | Final Course Grade |
 |--------------|--------------------|
-| A+            | \>= 97            |
-| A            | 93 - 96.99         |
-| A-           | 90 - 92.99         |
-| B+           | 87 - 89.99         |
-| B            | 83 - 86.99         |
-| B-           | 80 - 82.99         |
-| C+           | 77 - 79.99         |
-| C            | 73 - 76.99         |
-| C-           | 70 - 72.99         |
-| D+           | 67 - 69.99         |
-| D            | 63 - 66.99         |
-| D-           | 60 - 62.99         |
-| F            | \< 60              |
+| A+           | 97 - 100           |
+| A            | 92 - 96.9          |
+| A-           | 88 - 91.9          |
+| B+           | 83 - 88.9          |
+| B            | 78 - 82.9          |
+| B-           | 73 - 78.9          |
+| C+           | 68 - 72.9          |
+| C            | 63 - 68.9          |
+| C-           | 58 - 62.9          |
+| D            | 52 - 57.9          |
+| F            | \< 51.9            |
+
+All grades of "C+" or lower are indicative of failure at the graduate level and cannot be counted toward Faculty of Graduate Studies course requirements. Individual programs may require a higher passing grade. Additional information on the grading system is available in the University Calendar under [F.1.2 Graduate Studies Grading System](https://www.ucalgary.ca/pubs/calendar/current/f-1-2.html).
 
 ## Group Assignments
 
-You will be assigned to groups at the beginning of the semester to complete several assignments. All group members are expected to contribute equally to the completion of the assignments and you will be asked to evaluate your group members throughout the semester. Failure to adequately contribute to an assignment will result in a penalty to your mark relative to the team's overall mark. However, equal contribution does not necessarily mean that all group members must complete the same tasks. Please feel free to distribute work based on interests and experience. However, you are also encouraged to challenge yourselves to learn new tasks and support each other in this learning.
+Assignments should be completed in groups of 2-3 students. The purpose of these assignments is to apply the skills gained in the course; they should not be time-consuming exercises. Evaluation will be holistic and based on completion rather than correctness.
 
-### Application exercises
+The assignments are as follows:
 
-Parts of some lectures will be dedicated to working on Application Exercises (AEs). These exercises which give you an opportunity to practice applying the transportation planning concepts and code introduced in the readings and lectures. These AEs are due by midnight on the day of the corresponding lecture period. These exercises are marked as complete/incomplete.
+-   **Assignment 1** (due Sept. 24 at 11:59 PM): Aggregate demand model estimation
+-   **Assignment 2** (due Oct. 22 at 11:59 PM): Stated preference experimental design
+-   **Assignment 3** (due Nov. 12 at 11:59 PM): Disaggregate demand model estimation
 
-### Pre-lecture content
+### Pre-class quizzes
 
-Prior to most lectures, you will be asked to complete a set of readings and/or videos. Reviewing these resources will help you come prepared to lecture.
+Prior to each lecture, you will be asked to review a set of videos or readings. A corresponding quiz must be completed on D2L for completion only.
 
-### Exams
+### Paper proposal
 
-There is no final exam for this course.
+Due Sept. 17. The purpose of the project proposal is to help you think about your analysis strategy early and receive feedback. The more effort and detail you demonstrate in the proposal, the more complete feedback you will receive from me.
+
+### Term paper
+
+Due Dec. 15. The term paper is a culmination of the skills gained throughout the course.
+
+### Midterm exam
+
+The midterm exam will be held in-person on Nov. 05 during the lecture period, in ENF304. This will be a closed book, closed notes, long-answer written exam. During the exam, you may use any hand-held calculator; laptops, tablets, personal digital assistants, cellular phones, or any other electronic devices are not allowed.
+
+Students who miss the midterm exam will be assigned a grade of zero on the exam. If you have a valid reason for missing the midterm, you must contact me within 48 hours of the midterm explaining the reason for the missed assessment and include supporting documentation (see [University Calendar, M.1](https://calendar.ucalgary.ca/pages/jyekfh6xwhoHwxcetCi1)) that best suits your situation. If circumstances prevent you from contacting me within 48 hours (e.g., hospitalization or emergency), please do so as soon as reasonably possible. If approved, the weight of the missed exam will be shifted to the term paper, which will then be worth 75% of the course grade. If not approved, the grade on the exam will remain zero.
+
+## Use of AI tools
+
+The use of AI tools is encouraged as part of your workflow in this course. You are expected to use AI critically and responsibly to enhance your work. Assessment will focus on your ability to interpret, evaluate, and build upon AI-generated outputs. You must document how AI was used and demonstrate your understanding of the submitted content.
 
 ## Five tips for success
 
@@ -121,7 +132,7 @@ The course has been organized so that the burden of learning is on you.
 I will help you by providing you with materials and answering questions and setting a pace, but for this to work you must do the following:
 
 1.  Complete all the preparation work before class.
-2.  Ask questions. As often as you can. In class, out of class. Ask me, ask your friends, ask the person sitting next to you. This will help you more than anything else. If you get a question wrong on an assessment, ask me why. If you're not sure about the assignments or project, ask. If you hear something on the news that sounds related to what we discussed, ask. If the reading is confusing, ask.
+2.  Ask questions. As often as you can. In class, out of class. Ask me, ask your friends, ask the person sitting next to you. This will help you more than anything else. If you get a question wrong on an assessment, ask me why. If you're not sure about the assignments or term paper, ask. If you hear something on the news that sounds related to what we discussed, ask. If the reading is confusing, ask.
 3.  Do the readings.
 4.  Contribute to the group assignments.
 5.  Don't procrastinate. If something is confusing to you in Week 2, Week 3 will become more confusing, Week 4 even worse, and eventually you won't know where to begin asking questions. Don't let the week end with unanswered questions. But if you find yourself falling behind and not knowing where to begin asking, come to office hours, and let me help you identify a good (re)starting point.
@@ -129,7 +140,7 @@ I will help you by providing you with materials and answering questions and sett
 ## Diversity and Inclusion
 
 It is my intent that students from all diverse backgrounds and perspectives be well-served by this course, that students' learning needs be addressed both in and out of class, and that the diversity that students bring to this class be viewed as a resource, strength and benefit. I would like to create a learning environment for my students that supports thoughts, perspectives, and experiences, and honors your identities (including gender, sexuality, disability, age, socioeconomic status, ethnicity, race, nationality, religion, culture, etc.). To help accomplish this:
--   If you have a name and/or set of pronouns that differ from those that appear in your official University of Nebraska records, please let me know!
+-   If you have a name and/or set of pronouns that differ from those that appear in your official University of Calgary records, please let me know!
 -   If you feel like your performance in the class is being impacted by your experiences outside of class, please don't hesitate to come and talk with me. I want to be a resource for you. Remember that you can also submit anonymous feedback (which will lead to me making a general announcement to the class, if necessary to address your concerns). If you prefer to speak with someone outside of the course, there are many resources available on-campus (e.g. CAPS).
 -   I (like many people) am still in the process of learning about diverse perspectives and identities. If something was said in class (by anyone) that made you feel uncomfortable, please talk to me about it. (Again, anonymous feedback is always an option).
 Your suggestions are encouraged and appreciated.
@@ -141,18 +152,23 @@ The University of Calgary, located in the heart of Southern Alberta, both acknow
 **TL;DR: Don't cheat!**
 
 ### Academic honesty policy
-Academic integrity is of the utmost importance at Nebraska.  Be sure you understand expectations of you and your academic work. For more information, please visit https://www.ucalgary.ca/legal-services/university-policies-procedures/student-academic-misconduct-policy.  If you are unsure what counts as academic dishonesty in this course, please visit me to. The first instance of academic dishonesty will result in a score of zero for the assignment.  The second incidence of academic dishonesty will result in a failing grade for the course.
+Academic integrity is of the utmost importance at the University of Calgary. Be sure you understand expectations of you and your academic work. For more information, please visit https://www.ucalgary.ca/legal-services/university-policies-procedures/student-academic-misconduct-policy. If you are unsure what counts as academic dishonesty in this course, please visit me to. The first instance of academic dishonesty will result in a score of zero for the assignment. The second incidence of academic dishonesty will result in a failing grade for the course.
+
+Academic Misconduct refers to student behavior which compromises proper assessment of a student's academic activities and includes cheating; fabrication; falsification; plagiarism; unauthorized assistance; failure to comply with an instructor's expectations regarding conduct required of students completing academic assessments in their courses; and failure to comply with exam regulations applied by the Registrar. For information on the University of Calgary Student Academic Misconduct Policy and Procedure and the SSE Academic Misconduct Operating Standard, please visit the [Schulich policies page](https://schulich.ucalgary.ca/current-students/undergraduate/student-resources/policies-and-procedures). Additional information is available on the [Academic Integrity Website](https://ucalgary.ca/student-services/student-success/learning/academic-integrity).
 
 ### Accommodations for students with disabilities policy
-It is my goal that this class be an accessible and welcoming experience for all students.  Reasonable accommodations are provided for students who are registered with Student Accessibility Services make their requests sufficiently in advance. For more information, contact [Student Accessibility Services](https://ucalgary.ca/student-services/access)
+It is my goal that this class be an accessible and welcoming experience for all students. Reasonable accommodations are provided for students who are registered with Student Accessibility Services make their requests sufficiently in advance. For more information, contact [Student Accessibility Services](https://ucalgary.ca/student-services/access).
+
+Students needing an accommodation because of a disability or medical concerns should communicate this need to Student Accessibility Services (SAS) in accordance with the [Procedure for Accommodations for Students with Disabilities](https://www.ucalgary.ca/legal-services/sites/default/files/teams/1/Policies-Accommodation-for-Students-with-Disabilities-Procedure.pdf).
+
+Students needing an accommodation in relation to their coursework or to fulfill requirements for a degree, based on a Protected Ground other than Disability, should communicate this need by submitting the SSE Request for Academic Accommodation Form to the Associate Head (Undergraduate Studies) of the department offering the course, within 10 business days prior to the class, test, exam, or assignment at issue.
 
 ### Resource for students seeking mental health help
-The University offers a variety of options to students to aid them in dealing with stress and adversity.  There is a multidisciplinary team of experts that works collaboratively with Calgary students to help them explore their feelings and thoughts and learn helpful ways to improve their mental, psychological and emotional well-being when issues arise. More details are available from [Mental Health Services](https://ucalgary.ca/wellness-services/services/mental-health-services).
-
+The University offers a variety of options to students to aid them in dealing with stress and adversity. There is a multidisciplinary team of experts that works collaboratively with Calgary students to help them explore their feelings and thoughts and learn helpful ways to improve their mental, psychological and emotional well-being when issues arise. More details are available from [Mental Health Services](https://ucalgary.ca/wellness-services/services/mental-health-services).
 
 ### Communication
 
-All lecture notes, assignment instructions, an up-to-date schedule, and other course materials may be found on the [course website] (https://unl-hawkins-lab.github.io/Hawkinslab/teaching/ENCI707/ENCI707.html).
+All lecture notes, assignment instructions, an up-to-date schedule, and other course materials may be found on the [course website](https://hawkins-tech-lab.github.io/teaching/ENCI707/).
 
 I will regularly send course announcements via email and D2L - make sure to check one or the other of these regularly.
 If an announcement is sent Monday through Thursday, I will assume that you have read the announcement by the next day.
@@ -164,11 +180,6 @@ If an announcement is sent on a Friday or over the weekend, I will assume that y
 -   I am here to help you be successful in the course. You are encouraged to attend office hours to ask questions about the course content and assignments. Many questions are most effectively answered as you discuss them with others, so office hours are a valuable resource. Please use them!
 -   Emails should be reserved for questions not appropriate for the public forum. **If you email me, please include "ENCI 707" in the subject line.** Barring extenuating circumstances, I will respond to ENCI 707 emails within 48 hours Monday - Friday. Response time may be slower for emails sent Friday evening - Sunday.
 
-### Policy on sharing and reusing code
-
-I am well aware that a huge volume of code is available on the web to solve any number of problems.
-Unless I explicitly tell you not to use something, the course's policy is that you may make use of any online resources (e.g. StackOverflow, ChatGPT) but you must explicitly cite where you obtained any code you directly use (or use as inspiration). Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism.
-
 ### Late work policy
 
 The due dates for assignments are there to help you keep up with the course material and to ensure I can provide feedback within a timely manner.
@@ -177,9 +188,9 @@ I understand that things come up periodically that could make it difficult to su
 -   Assignments may be submitted up to 3 days late.
     There will be a 5% deduction for each 24-hour period the assignment is late.
 
--   There is no late work accepted for application exercises, since these are designed to help you prepare for assignments.
+-   There is no late work accepted for pre-class quizzes, since these are designed to help you prepare for lecture.
 
--   The late work policy holds for both group assignments and individual project deliverables.
+-   The late work policy holds for both group assignments and individual project deliverables (paper proposal and term paper). It does not apply to the midterm exam - see the Midterm exam section above for the missed-assessment policy that applies instead.
 
 ### Waiver for extenuating circumstances
 
@@ -187,12 +198,9 @@ If there are circumstances that prevent you from completing a homework assignmen
 In your email, you only need to request the waiver; you do not need to provide explanation.
 This waiver may only be used once in the semester, so only use it for a truly extenuating circumstance.
 
-### Regrade request policy
+### Reappraisal (regrade request) policy
 
-Regrade requests must be submitted by D2L within a week of when an assignment is returned.
-Regrade requests will be considered if there was an error in the grade calculation or if you feel a correct answer was mistakenly marked as incorrect.
-Requests to dispute the number of points deducted for an incorrect response will not be considered.
-Note that by submitting a regrade request, the entire question will be graded which could potentially result in losing points.
+For reappraisals of graded term work or academic assessments (including final grades), please refer to the [SSE Reappraisal of Graded Term Work and Academic Assessments Policy](https://schulich.ucalgary.ca/sites/default/files/teams/1/SSE%20Reappraisal%20Policy.pdf). Reappraisal requests must be based on an alleged grading error and follow the procedures and deadlines specified in the policy. For graded term work, students must first discuss their concerns with me within 10 business days of receiving or viewing the graded work. Reappraisal outcomes may result in a grade increase, decrease, or no change. Forms are available on the Engineering Student Center D2L site.
 
 *No grades will be changed after the final project deadline.*
 
@@ -212,4 +220,46 @@ In the event of inclement weather or other connectivity-related events that proh
 This might entail holding the class on Zoom synchronously or watching a recording of the class.
 
 ### Cell phone use and professional behaviour
-When you come to class, your cell phone must be turned off or silenced and put away where it is not a distraction to you or anyone else.  The instructor’s expectations for classroom behaviour are based on the norms of the engineering profession.  Questions and discussion related to class material are welcome and encouraged but respect for the instructor and fellow classmates is required at all times.
+When you come to class, your cell phone must be turned off or silenced and put away where it is not a distraction to you or anyone else. The instructor’s expectations for classroom behaviour are based on the norms of the engineering profession. Questions and discussion related to class material are welcome and encouraged but respect for the instructor and fellow classmates is required at all times.
+
+As members of an engineering program, students are also expected to begin developing the professional behaviours and ethical judgment expected of engineers. Throughout this course, students should demonstrate integrity, accountability, respect for others, and a commitment to public safety and responsible engineering practice. Students are encouraged to familiarize themselves with the [APEGA Ethical Practice guideline](https://www.apega.ca/docs/default-source/pdfs/standards-guidelines/ethical-practice.pdf).
+
+### Use of electronic communication devices in class
+
+The use of laptop and mobile devices in class is acceptable when used in a manner appropriate to the course and classroom activities. Please refrain from accessing websites and resources that may be distracting to you or for other learners during class time. Students are responsible for being aware of the University's [Internet and email use policy](https://www.ucalgary.ca/legal-services/university-policies-procedures/acceptable-use-electronic-resources-and-information-policy).
+
+### Expectations for writing
+
+All written assignments (including, to a lesser extent, written exam responses) will be assessed at least partly on writing skills. Writing skills include not only surface correctness (grammar, punctuation, sentence structure, etc.) but also general clarity and organization. Sources used in research papers must be properly documented. If you need help with your writing, you may use the [Writing Support](https://ucalgary.ca/student-services/student-success/writing-support) at the Chancellor Cuthbertson Student Success Centre. For further information, please refer to the University Calendar, Academic Regulations, [E.2: Writing Across the Curriculum](https://calendar.ucalgary.ca/pages/2c2d1ce47b8c4d008aec9cc3da49876e).
+
+### Guidelines for recording sessions
+
+For more information about recording classes in any learning environment see the [Media Recording of Students in Learning Spaces policy](https://www.ucalgary.ca/provost/teaching-learning/recordings-learning-environments).
+
+Students who wish to audio record lectures for personal study purposes need to follow the guidelines outlined in [Section E.6 of the University Calendar](https://calendar.ucalgary.ca/pages/4ba66d5bd43b422ba2e9ab3d6331d5b0). Unless the audio recording of lectures is part of a student accessibility requirement, permission must be sought from me to audio record lectures.
+
+I may use media recordings to capture the delivery of a lecture for lecture-capture purposes only; recordings will be posted on D2L and normally deleted at the end of term. Turn off your camera and/or microphone if you do not wish to be recorded. I may also use media recordings as part of the assessment of student learning (e.g. presentations); these recordings are used for assessment purposes only and will be destroyed as specified by Retention Rule 2000.01. Finally, I may use media recordings as a tool for self-assessment of my own teaching practices; although the recording device will be fixed on me, student participation may be inadvertently captured, and these recordings will be destroyed as specified by Retention Rule 90.0011.
+
+### Research ethics
+
+Students are advised that any research with human participants - including any interviewing (even with friends and family), opinion polling, or unobtrusive observation - must have the approval of the [Conjoint Faculties Research Ethics Board](https://research.ucalgary.ca/conduct-research/ethics-compliance/human-research-ethics/conjoint-faculties-research-ethics-board-cfreb) or the [Conjoint Health Research Ethics Board](https://research.ucalgary.ca/conduct-research/ethics-compliance/human-research-ethics/conjoint-health-research-ethics-board-chreb). In completing course requirements, students must not undertake any human subjects research without discussing their plans with me first, to determine if ethics approval is required. For further information see [Section E.5 Ethics of Human Studies](https://calendar.ucalgary.ca/pages/627ed88eb4b041b7a2e8155effac3501) of the University Calendar.
+
+### Instructor intellectual property
+
+Course materials created by me (including presentations and posted notes, labs, case studies, assignments and exams) remain my intellectual property. These materials may NOT be reproduced, redistributed or copied without my explicit consent. The posting of course materials to third party websites such as note-sharing sites without permission is prohibited. Sharing of extracts of course materials with other students enrolled in the course at the same time may be allowed under fair dealing.
+
+### UCalgary notice of collection
+
+The University of Calgary respects your privacy and is committed to ensuring the privacy of all students, staff, and community members. Your personal information is collected under the authority of section 4(c) of the Protection of Privacy Act (POPA) and is collected, used and disclosed for the purposes outlined in [UCalgary's Notice of Collection, Use and Disclosure of Personal Information](https://www.ucalgary.ca/legal-services/access-information-privacy/ucalgary-notice-collection), managed in accordance with UCalgary's [Privacy Management Program](https://www.ucalgary.ca/legal-services/access-information-privacy/privacy-management-program). Your personal information may be input into automated systems to generate content or make decisions, recommendations, or predictions. Assignments can only be returned to the student and will be accessible only to authorized faculty and staff. Questions can be directed to accessandprivacy@ucalgary.ca.
+
+### Copyright legislation
+
+All students are required to read the University of Calgary policy on [Acceptable Use of Material Protected by Copyright](https://www.ucalgary.ca/legal-services/university-policies-procedures/acceptable-use-material-protected-copyright-policy) and the requirements of the [Copyright Act](https://laws-lois.justice.gc.ca/eng/acts/C-42/index.html), to ensure they are aware of the consequences of unauthorized sharing of course materials (including instructor notes, electronic versions of textbooks, etc.). Students who use material protected by copyright in violation of this policy may be disciplined under the [Non-Academic Misconduct Policy](https://www.ucalgary.ca/legal-services/university-policies-procedures/student-non-academic-misconduct-policy).
+
+### Sexual and gender-based violence policy
+
+The University recognizes that all members of the University Community should be able to learn, work, teach and live in an environment where they are free from harassment, discrimination, and violence. The University of Calgary's sexual violence policy guides us in how we respond to incidents of sexual violence, including supports available to those who have experienced or witnessed sexual violence, or those who are alleged to have committed sexual violence. Please see the [policy](https://www.ucalgary.ca/legal-services/university-policies-procedures/sexual-and-gender-based-violence-policy) for details.
+
+### Additional support and resources
+
+For important information on Wellness and Mental Health Resources, Student Success, the Student Ombuds Office, Student Union (SU) Information, Graduate Students' Association (GSA) Information, Emergency Evacuation/Assembly Points, and Safewalk, please visit the [Registrar's website](https://www.ucalgary.ca/registrar/registration/course-outlines).

@@ -1,26 +1,19 @@
 ---
 title: "Week 7"
-subtitle: "Software Tools"
+subtitle: "Stated Preference Methods"
+link-external-newwindow: true
 ---
 
 ## Prepare
 
-📖 Prepare GitHub repository for lecture. Additional instructions [here](/teaching/ENCI707/computing-access.html)
-
-📖 Read Ch. 8 of Regression and Other Stories [ROS](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/dc0772ab0b84414af5737676f07761518ea46dcf/Resources/Gelman_Et_Al_ROS_1ed.pdf)
+📖 Review [Bliemer and Rose (2024) Designing and Conducting Stated Choice Experiments](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/dfbc011e10eef1c4d207c6c9f484b039363ddd3a/Resources/2024_Bliemer_Rose_Designing_Conducting_SCE.pdf)
 
 ## Participate
 
-None
-
-## Practice
-
-🖥️ [Activity 7 - Computing Visuals](/teaching/ENCI707/ae/ae-7.html)
-
-🖥️ [Activity 8 - Computing Models](/teaching/ENCI707/ae/ae-8.html)
+📋 [Lecture 6 - Stated Preference Methods](/teaching/ENCI707/slides/lec-6.html)
 
 ## Deliver
-📝 Aggregate demand group assignment due Feb. 28 by 11:59 PM on D2L.
+None
 
 <br><br>
 

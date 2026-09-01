@@ -1,23 +1,28 @@
 ---
 title: "Week 6"
-subtitle: "Winter Break"
+subtitle: "Applied Disaggregate Demand Models"
+link-external-newwindow: true
 ---
 
 ## Prepare
 
-📖 Prepare GitHub repository for following week. Additional instructions [here](/teaching/ENCI707/computing-access.html)
+📖 Review [Parady and Axhausen (2023) Transportation paper](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/28088286106811a96653d706b55c7da4c39dde0b/Resources/2023_Parady_Size_Matters.pdf)
+
+📖 Review [Parady, Ory, and Walker (2021) Transportation paper](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/28088286106811a96653d706b55c7da4c39dde0b/Resources/2021_Parady_GoF_Transportation.pdf)
 
 ## Participate
 
-None
+📋 [Lecture 5 - Applied Logit Model](/teaching/ENCI707/slides/lec-5.html)
 
 ## Practice
 
-None
+🖥️ [Activity - Policy Evaluation](/teaching/ENCI707/ae/ae-2.html)
+
+🖥️ [Activity - News Article Evaluation](/teaching/ENCI707/ae/ae-3.html)
 
 ## Deliver
 
-📝 Literature review due Feb. 21 by 11:59 PM on D2L.
+None
 
 <br><br>
 

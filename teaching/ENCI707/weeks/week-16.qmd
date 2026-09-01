@@ -1,0 +1,15 @@
+---
+title: "Week 16"
+subtitle: "End of Term"
+link-external-newwindow: true
+---
+
+
+## Deliver
+📝 Final term paper due Dec. 15 by 11:59 PM on D2L.
+
+<br><br>
+
+::: {style="font-size: 0.875em;"}
+Back to [course schedule](/teaching/ENCI707/ "Course schedule") ⏎
+:::

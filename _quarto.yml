@@ -193,6 +193,8 @@ website:
               text: "Description"
             - href: teaching/ENCI707/project/data-sets.qmd
               text: "Data sources"
+            - href: teaching/ENCI707/project/potential-project-topics.qmd
+              text: "Potential Topics"
         - section: "Assignments"
           contents:
             - href: teaching/ENCI707/assignments/assignment-1.qmd
@@ -201,26 +203,6 @@ website:
               text: "Assignment 2"
             - href: teaching/ENCI707/assignments/assignment-3.qmd
               text: "Assignment 3"
-        - section: "Application Exercises"
-          contents:
-            - href: teaching/ENCI707/ae/ae-1.qmd
-              text: "AE 1 - Demand Analysis"
-            - href: teaching/ENCI707/ae/ae-2.qmd
-              text: "AE 2 - Ecological Economics"
-            - href: teaching/ENCI707/ae/ae-3.qmd
-              text: "AE 3 - Surveys"
-            - href: teaching/ENCI707/ae/ae-4.qmd
-              text: "AE 4 - Statistics Activity"
-            - href: teaching/ENCI707/ae/ae-5.qmd
-              text: "AE 5 - Policy Case Study I"
-            - href: teaching/ENCI707/ae/ae-6.qmd
-              text: "AE 6 - Policy Case Study II"
-            - href: teaching/ENCI707/ae/ae-7.qmd
-              text: "AE 7 - Computing Visuals"
-            - href: teaching/ENCI707/ae/ae-8.qmd
-              text: "AE 8 - Computing Models"
-            - href: teaching/ENCI707/ae/ae-9.qmd
-              text: "AE 8 - Disaggregate Demand"
 
     - id: vehicle_adoption
       style: "docked"
@@ -304,11 +286,3 @@ format:
     link-external-newwindow: false
     grid:
       margin-width: 500px
-
-comments:
-    giscus:
-      repo: Hawkins-TECH-Lab/hawkins-tech-lab.github.io
-      repo-id: R_kgDOJlz51w
-      category: General
-      category-id: DIC_kwDOJlz5184C5I_J
-      mapping: pathname

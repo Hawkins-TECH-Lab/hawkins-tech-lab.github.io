@@ -1,22 +1,23 @@
 ---
 title: "Week 14"
-subtitle: "Final Project Submission"
+subtitle: "AI Extensions"
+link-external-newwindow: true
 ---
 
 ## Prepare
 
-None
+📖 Read [Feng et al. (2024) TR-C paper](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/dfbc011e10eef1c4d207c6c9f484b039363ddd3a/Resources/2024_Feng_DNN_Choice.pdf)
 
 ## Participate
 
-None
+🖥️ [Lecture 13 - AI Extensions](/teaching/ENCI707/slides/lec-13.html)
 
 ## Practice
 
 None
 
 ## Deliver
-📝 Final data and experimental design due Apr. 18 by 11:59 PM on D2L.
+None
 
 <br><br>
 

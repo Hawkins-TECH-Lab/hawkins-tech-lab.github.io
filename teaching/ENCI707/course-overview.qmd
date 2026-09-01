@@ -1,6 +1,6 @@
 ---
-title: "ENCI707: Engineering Demand Analysis"
+title: "ENCI707: Engineering Demand and Policy Analysis"
 ---
 
 Development of engineering and planning analysis objectives and  goals. 
-Data  collection  procedures,  demand modeling techniques, causal inference, geographic data science.
+Data  collection  procedures,  demand modeling techniques, and causal inference.

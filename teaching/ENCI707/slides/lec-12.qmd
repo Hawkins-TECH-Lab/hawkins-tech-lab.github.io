@@ -1,0 +1,594 @@
+---
+title: "Lecture 12 - Non-Market Valuation"
+subtitle: "ENCI707: Engineering Demand and Policy Analysis"
+author: "Based on lecture by Mikołaj Czajkowski"
+footer:  "[ENCI707 Home](/teaching/ENCI707/)"
+logo: "../../../assets/images/teaching/ENCI707/logo.png"
+format: 
+  revealjs: 
+    theme: simple
+    transition: fade
+    chalkboard: true
+    slide-number: true
+execute:
+  freeze: auto
+---
+## Outline
+
+::: incremental
+1. Motivation for valuation
+2. Individuals' motivation for willingness to pay (WTP)
+3. Economic theory
+4. Nonmarket valuation methods
+5. Short history of contingent valuation
+:::
+
+# Foundations of Economic Valuation
+
+## Topics
+
+
+
+---
+
+# Why Economic Valuation?
+
+## Environmental Decision Making
+
+Environmental changes affect:
+
+- Human welfare
+- Economic activity
+- Public goods
+- External effects
+
+Applications:
+
+- Cost-benefit analysis
+- Environmental policy evaluation
+- Priority setting
+- Legal damage assessment
+- Green national accounting
+
+---
+
+# Cost-Benefit Analysis
+
+## Basic Framework
+
+A complete CBA should:
+
+- Compare all costs and benefits
+- Include environmental and health impacts
+- Quantify environmental changes
+- Value those changes monetarily
+- Calculate net benefits
+- Account for discounting
+- Compare alternatives
+
+---
+
+# Example: Electricity Generation
+
+## The Problem
+
+Electricity production generates:
+
+- Air pollution
+- Greenhouse gases
+- Health impacts
+- Ecosystem damage
+
+These external effects are often not reflected in market prices.
+
+Economic theory suggests:
+
+- Taxing emissions according to marginal external damage
+- Comparing technologies based on social costs
+
+---
+
+# External Costs of Electricity
+
+## The ExternE Approach
+
+Major European research efforts:
+
+- ExternE
+- ExternEPol
+- NEEDS
+- CASES
+- EXIOPOL
+
+Goal:
+
+Estimate the external costs of electricity generation.
+
+---
+
+# Impact Pathway Approach
+
+## Valuation Process
+
+1. Emissions released
+2. Atmospheric transport
+3. Chemical transformations
+4. Concentration changes
+5. Physical impacts
+6. Welfare impacts
+7. Monetary valuation
+
+---
+
+# Types of Welfare Effects
+
+## Examples
+
+Health:
+
+- Mortality
+- Morbidity
+
+Environment:
+
+- Biodiversity loss
+- Acidification
+- Eutrophication
+
+Economic:
+
+- Agriculture
+- Materials damage
+
+---
+
+# Why Valuation Matters
+
+## Importance in Practice
+
+Economic valuation:
+
+- Supports major policy decisions
+- Appears in thousands of studies
+- Is central to welfare economics
+- Is used in environment, health, transportation, and culture
+
+Examples include large regulatory analyses such as clean water policies.
+
+---
+
+# Sources of Economic Value
+
+## Total Economic Value (TEV)
+
+\[
+TEV = UV + EV + SV + BV + OV + \cdots
+\]
+
+Where:
+
+- UV = Use Value
+- EV = Existence Value
+- SV = Stewardship Value
+- BV = Bequest Value
+- OV = Option Value
+
+---
+
+# Use and Non-Use Values
+
+## Use Value
+
+Benefits obtained from direct or indirect use.
+
+Examples:
+
+- Recreation
+- Fishing
+- Water consumption
+
+## Non-Use Value
+
+Benefits independent of actual use.
+
+Examples:
+
+- Knowing a species exists
+- Preserving resources for future generations
+
+---
+
+# Existence Value
+
+## Definition
+
+Utility gained simply from knowing that an environmental resource exists.
+
+Examples:
+
+- Endangered species protection
+- Wilderness preservation
+
+Individuals may value protection even if they never visit the resource.
+
+---
+
+# Stewardship Value
+
+## Definition
+
+Value derived from acting as a responsible caretaker.
+
+Examples:
+
+- Maintaining water quality
+- Preserving habitats
+- Preventing human-caused species losses
+
+---
+
+# Bequest and Option Values
+
+## Bequest Value
+
+Protecting resources for future generations.
+
+## Option Value
+
+Maintaining future opportunities for use.
+
+Important when:
+
+- Future preferences are uncertain
+- Environmental damage may be irreversible
+
+---
+
+# Other Motivations
+
+## Altruism
+
+Concern for others' welfare.
+
+Examples:
+
+- Concern for future generations
+- Concern for wildlife
+
+## Warm Glow
+
+Utility from contributing to a socially desirable cause.
+
+Examples:
+
+- Charitable giving
+- Environmental donations
+
+---
+
+# What Is Economic Value?
+
+## Price vs Value
+
+Price is not necessarily value.
+
+Economic value is linked to:
+
+- Preferences
+- Welfare
+- Willingness to pay
+
+The relevant concept is welfare change.
+
+---
+
+# Willingness to Pay
+
+## Concept
+
+WTP measures:
+
+> The maximum amount an individual would sacrifice to obtain a benefit or avoid a loss.
+
+WTP is the foundation of modern economic valuation.
+
+---
+
+# Consumer Surplus
+
+## Basic Idea
+
+Consumer surplus equals:
+
+- What consumers are willing to pay
+- Minus what they actually pay
+
+Graphically:
+
+- Area under the demand curve
+- Above market price
+
+---
+
+# Welfare Measures
+
+## Beyond Consumer Surplus
+
+When income effects matter:
+
+### Compensating Variation (CV)
+
+Income adjustment needed after a change to restore original utility.
+
+### Equivalent Variation (EV)
+
+Income adjustment before a change to achieve final utility.
+
+---
+
+# WTP and WTA
+
+## Property Rights Matter
+
+Two key measures:
+
+- WTP (Willingness to Pay)
+- WTA (Willingness to Accept)
+
+Choice depends on:
+
+- Initial entitlement
+- Property rights
+
+---
+
+# Nonmarket Goods
+
+## Why Special Methods?
+
+Examples:
+
+- Biodiversity
+- Water quality
+- Recreation sites
+- Ecosystem services
+
+These goods often lack market prices.
+
+---
+
+# Valuation Approaches
+
+## Two Major Families
+
+### Revealed Preference (RP)
+
+Observed behavior in actual markets.
+
+### Stated Preference (SP)
+
+Choices observed in hypothetical settings.
+
+---
+
+# Revealed Preference Methods
+
+## Examples
+
+### Productivity Method
+
+Environmental inputs used in production.
+
+### Avoided Damage Method
+
+Value inferred from prevented losses.
+
+### Hedonic Pricing
+
+Property or wage markets.
+
+### Travel Cost Method
+
+Recreation demand and site valuation.
+
+---
+
+# Hedonic Pricing
+
+## Applications
+
+Examples:
+
+- House prices near lakes
+- Air quality impacts on housing
+- Labor market risk premiums
+- Value of statistical life
+
+Approach:
+
+- Collect market data
+- Statistically isolate environmental effects
+
+---
+
+# Travel Cost Method
+
+## Applications
+
+Examples:
+
+- National parks
+- Urban parks
+- Recreation areas
+
+Uses:
+
+- Travel expenses
+- Travel time
+- Visit frequency
+
+to estimate demand.
+
+---
+
+# Limitations of RP Methods
+
+## Challenges
+
+- Suitable markets may not exist
+- Only observed conditions can be valued
+- Limited ability to estimate passive-use values
+
+Often produces lower-bound estimates.
+
+---
+
+# Stated Preference Methods
+
+## Main Idea
+
+Respondents evaluate hypothetical scenarios.
+
+Allows valuation of:
+
+- Future policies
+- Unobserved outcomes
+- Non-use values
+
+Includes:
+
+- Contingent valuation
+- Discrete choice experiments
+
+---
+
+# Contingent Valuation
+
+## Basic Question
+
+Typical format:
+
+> What is the maximum amount you would be willing to pay?
+
+Advantages:
+
+- Simple
+- Direct
+
+Challenges:
+
+- Strategic responses
+- Hypothetical bias
+
+---
+
+# Early Elicitation Formats
+
+## Historical Approaches
+
+### Bidding Game
+
+Iterative price adjustments.
+
+### Open-Ended Questions
+
+Direct WTP response.
+
+### Payment Cards
+
+Respondents select from offered values.
+
+---
+
+# Problems with Early Methods
+
+## Common Issues
+
+- Starting point bias
+- Nonresponse
+- WTP/WTA disparity
+- Incentive compatibility concerns
+- Hypothetical bias
+
+---
+
+# The Exxon Valdez Turning Point
+
+## Why It Matters
+
+The oil spill generated:
+
+- Large environmental damages
+- Legal disputes over valuation
+- Major scrutiny of contingent valuation methods
+
+---
+
+# NOAA Panel Recommendations
+
+## Arrow-Solow Panel
+
+Recommendations:
+
+- Use realistic scenarios
+- Use referendum-style questions
+- Use single binary choice formats
+- Emphasize incentive compatibility
+
+These recommendations became highly influential.
+
+---
+
+# Emergence of Choice Experiments
+
+## Adamowicz, Louviere & Williams (1994)
+
+Respondents choose among alternatives characterized by:
+
+- Multiple attributes
+- Different levels
+
+Benefits:
+
+- Richer preference information
+- Explicit valuation of attributes
+
+---
+
+# Why DCEs Became Popular
+
+## Advantages
+
+- More information per respondent
+- Attribute-level valuation
+- Flexible policy analysis
+- Closer connection to random utility theory
+
+---
+
+# Terminology
+
+## Related Terms
+
+- Choice experiments
+- Stated choice
+- Choice modelling
+- Conjoint analysis
+- Conjoint choice experiments
+
+Modern term:
+
+### Discrete Choice Experiments (DCE)
+
+---
+
+# Key Takeaways
+
+## Summary
+
+- Economic valuation supports environmental decision making.
+- Value is based on welfare and preferences.
+- Total economic value includes use and non-use components.
+- Many environmental goods lack market prices.
+- RP and SP methods provide complementary approaches.
+- DCEs emerged as a powerful stated-preference method.

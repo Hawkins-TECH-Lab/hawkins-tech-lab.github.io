@@ -1,5 +1,5 @@
 ---
-title: "Lecture 7 - Causal Inference"
+title: "Lecture 7 - Surveys"
 subtitle: "ENCI707: Engineering Demand and Policy Analysis"
 footer:  "[ENCI707 Home](/teaching/ENCI707/)"
 logo: "../../../assets/images/teaching/ENCI707/logo.png"
@@ -12,244 +12,193 @@ format:
 execute:
   freeze: auto
 ---
+
 ## Outline
 
 ::: incremental
-1. Need for causal inference
-2. Methods of causal inference
-    - Propensity score matching
-    - Instrumental variables
-    - Regression discontinuity
-    - Difference-in-differences
-3. Causal Graph Theory
+1. Survey terms
+2. Survey design
 :::
 
-## Causal Inference in Transportation Planning
-- Large-scale transportation models principally concerned with prediction
-- However, increasingly interested in policy interventions & treatments
+# Survey Terms
 
-## Need for Causal Inference - Interpretation
-- People are told to run around in a dark room for 5 minutes
-- **Observation**: Men are found to have many more head injuries than women
-- Conclusion: 
-    - Women see better in the dark? 
-    - Men are more reckless runners?
+## Infrastructure Demand & Surveys
+- Infrastructure demand is a function of individual decisions
+- Analysis requires behavioral data: surveys!​
+- As with other forms of engineering analysis, survey experiments require careful design & execution
+- A demand analyst must be an expert in both the subject area & knowledgeable about survey methods
 
-## Need for Causal Inference - Unobserved Heterogeneity
-- Women who smoke have babies that are 600 grams under weight on average
-- **Problem**: 
-    - Is it due to smoking or unobserved factors that are correlated with smoking?
+## Survey Jargon {.smaller}
+- **Observation unit**: basic unit of measurement. In human populations, it is often individuals.​
+- **Target population**: The complete set of observations we want to study. E.g., university students, seniors, or adults with a driver’s license.​
+- **Sample**: A subset of the population.​
+- **Sampled population**: The collection of all possible observation units that might have been chosen in a sample. E.g., Canada or Alberta.​
+- **Sampling unit**: A unit that can be selected from a sample. Often, we are interested in individuals but sample households.​
+- **Sampling frame**: A list, map, or other specification of sampling units in the population from which the sample may be chosen. E.g., all residential telephone numbers in a city.​
 
-## Need for Causal Inference – Endogeneity & Self-Selection
-- Cars with side impact airbags have lower injury severities when involved in crashes
-- **Problem**: 
-    - People owning side-impact airbags are not a **random sample** from the population (likely safer drivers)
-    - Safter drivers expected to have lower injury severities
+## Requirements of a Good Survey {.smaller}
+- **Representative:** does the sample represent the **population of interest**?
+- **Example** Target vs. sample population for a telephone survey of likely voters
+  - Not all households have telephones: as of 2021 93.9% of Canadian households had cellphones & 47.4% had a landline
+  - Not all **households with telephones** are eligible to vote
+  - Some **eligible respondents** in the sample frame cannot be contacted, refuse to respond, or are ill
 
-## Need for Causal Inference – Endogeneity & Self-Selection
-- People who take motorcycle safety courses have higher crash rates
-- **Problem**: 
-    - Are courses ineffective?
-    - People taking the course are not a random sample from the population (possibly less skilled)
+![](../../../assets/images/teaching/ENCI707/Lecture2/sample_frame.svg){fig-align="center"}
 
-## Causation = Potential Outcomes
-- A key concept in causal inference is **potential outcomes**
-- What happened vs. what could have happened (**counterfactual states**)
-- We will work with several examples to illustrate the principles…
+## Applications Outside Home-Subject Surveys {.smaller}
+- National Pesticide Survey, conducted by EPA, studied **pesticides & nitrates in drinking water wells US-wide​**
+  - **Target population**: All community water systems & rural domestic wells in the US​
+  - **Sampled population**: All community water systems (as listed in Federal Reporting Data System) & all identifiable domestic wells willing to participate in survey​
+  - How do we define **identifiable**?​
+  - Do we expect a different **response rate** between **community systems** & **domestic well owners**?
 
-## Example: Omega-3 Fatty Acids {.smaller}
-**Problem**: Does consumption of omega-3 fish oil supplements promote a healthy blood pressure?
+## Selection Bias {.smaller}
+- Occurs when some part of the target population is sampled at a **different rate** than its appearance in the population​
+  - **Example**: 60% of collected responses coming from men in a general population survey​
+- **Convenience sample**: When the most convenient respondents are disproportionately sampled
+  - **Example**: You sample your friends & colleagues on social media for a survey​
+- **Example**: A study of how frequently adolescents discussed alcohol use with their parents & teachers is likely **biased** by the fact those willing to talk to interviewers are also more likely to talk to their parents & teachers (form of self-selection)​
+  - Likely to **overestimate** amount of communication on the topic
 
-**Experiment**: Eight friends agree to be part of an informal study on the relationship between fish oil supplements and systolic blood pressure. Four of the friends are placed in the “fish oil supplement” **treatment group**. Members of this group agree to consume 3 grams of fish oil supplements per day for one year while otherwise maintaining their current diets. The other four friends agreed to simply maintain their current diets free from fish oil supplements for the same year. At the end of the study period:
+## Sample Bias Due to Undercoverage {.smaller}
+- Individuals in **institutions** (nursing homes or prisons) often excluded from surveys​
+- Conducting a **survey by telephone** will undersample younger individuals who are less likely to own a landline phone​
+- Conducting a **survey by the internet** will undersample rural & senior individuals​
+- Conducting a **survey by in-person intercept** will undersample introverts & reclusive authors​
+- If a household does not answer the door, an interviewer may select a neighbour - less likely to work outside the home?
 
-- Measure blood pressure
-- Assume 160 mmHg and above represents “high blood pressure”
+## Non-Response Bias {.smaller}
+- Even a carefully designed survey will suffer from non-response bias​
+- Differences between responding & non-responding populations often unknown​
+- Many public & academic surveys have low response rates (<10%) - How to generalize results when 90% of targeted sample did not respond?
 
-## Formal Problem Statement {.smaller}
-$$𝑧 = 0 \text{; no fish oil supplement}$$
-$$𝑧 = 1 \text{; fish oil supplement}$$
+| Type of School District                      | Participation Rate (%) |
+|----------------------------------------------|------------------------|
+| Urban                                        | 100                    |
+| Metropolitan suburban                        | 25                     |
+| Nonmetropolitan with more than 2000 students | 62                     |
+| Nonmetropolitan with 1000-1999 students      | 27                     |
+| Nonmetropolitan with 500-999 students        | 61                     |
+| Nonmetropolitan with fewer than 500 students | 53                     |
 
-- Need to consider two cases:
-    - Blood pressure given a person **did not** ingest any fish oil supplement $(y_i^0)$
-    - Blood pressure given a person **did** ingest fish oil supplement $(y_i^1)$
-- Only ever observe **one outcome per person** – no time machines!
+## Measurement Error
+- Occurs when responses differ from the true (population) value in one direction​
+- People sometimes do not tell the truth: E.g., income, exercise frequency, & alcohol consumption​
+- People do not always understand the question: E.g., questions using jargon​
+- People forget: E.g., recall of all long-distance travel over the past year
 
-## Formal Problem Statement
-- Treatment given by $T_i = y_i^1 - y_i^0$
-- **Fundamental problem of causal inference**: cannot observe both $y_i^1$ and $y_i^0$
-- Can only estimate average causal effect across a sample (population)
+## Measurement Error
+- People say what they think the interviewer wants to hear or what they think will impress the interview: E.g., stating they plan to buy an EV​
+- Certain words mean different things to different people: E.g., "Do you own a car?"​
+  - "Does it count if I am making payments?​"
+  - "Is a pickup truck a car?​"
+  - "My parents own a car that I drive. Does that count?""
 
-## Close Substitutes
-- What about using pre-study blood pressure as $𝑦_𝑖^0$?
-    - Do not know if person made other changes over the year
-- What about using post-study blood pressure as $𝑦_𝑖^0$?
-    - Do not know if treatment has effect into year 2
+## Sampling & Nonsampling Error
+- **Selection bias** & **measurement error** are examples of **nonsampling error**
+- **Sampling error** arises from the use of a sample rather than the population
+- **Sampling error** may be negligible compared with **non-sampling error**
+  - A survey with a 30% response rate may proudly state a **3% margin of error**, while ignoring a significant selection bias
 
-## Average Treatment Effects {.smaller}
-- Start with treatment and control groups
-- Need sufficiently similar groups – balance
-- Beware self-selection bias
-![](../../../assets/images/teaching/ENCI707/Lecture7/ate_figure.png){fig-align="center"}
-- True average treatment effect = -7.5 mmHG
-- Average treatment effect|treatment = +12.5 mmHG
+## Margin of Error
+![](../../../assets/images/teaching/ENCI707/Lecture2/margin_of_error.png){fig-align="center"}
 
-## Causal Experiment Design
-- **Randomized controlled trials** are “gold standard”
-- **Almost never available** for transportation/social science research questions
-- What to do?
+## Intuition for Statistical Properties
+![](../../../assets/images/teaching/ENCI707/Lecture2/statistical_property_target.png){fig-align="center"}
 
-## Adjustment for Pretreatment Variables
-- Differences between treatment & control variables can be captured by including **pretreatment variables** in the model
-- Addresses both random (**variance**) and systematic (**bias**) differences between treatment & control
-- **Do not** adjust for posttreatment variables unless performing more complex analysis – e.g., instrumental variables (**IV**)
+# Survey Design
+## Questionaire Design 1 {.smaller}
+1. Always write down the objective of your survey​
+2. Objectives should be **specific** rather than general​
+  - Bad: “I want to learn something about auto ownership”​
+  - Good: “What factors do people considering when deciding to own a seven-passenger over a five-passenger vehicle?​
+3. Ask **one concept** per question​
+  - “Do you agree with the *Biden administration’s* *infrastructure spending package*?”. Confuses two opinions: the opinion of Joe Biden and the opinion of the infrastructure package. Also, “spending” can have a different connotation than “investment” or “improvement”
 
-## Ignorability Condition
-- **Ignorability in causal inference**: no imbalance between treatment & control, on average
-- **Assignment to treatment** does not imply anything about potential outcome
+## Questionaire Design 2 {.smaller}
+4. Keep questions **simple** & **clear**​
+  - One study tested the question “What proportion of your evening viewing time do you spend watching news programs? on 53 people. Only 14 people correctly interpreted the word “proportion” as “percentage”, “part”, or “fraction”. Others interpreted it as “how long do you watch?” or “which news programs do you watch?”​
+5. Use **specific questions** instead of **general questions**​
+  - Bad: “Does it make you nervous taking a ride-hailing (e.g., Uber or Lyft) trip?”​
+  - Better: “I have the following concerns when making a ride-hailing (e.g., Uber or Lyft) trip : (a) It will be slower than driving myself, (b) The driver will not drive safely, (c) I do not want to share a ride with others, (d) I have no concerns, (e) Other. Please specify: ______.”​
 
-# Causal Inference in Observational Studies
+## Questionaire Design 3 {.smaller}
+6. On the other hand, avoid questions that **prompt respondents** to give the answer you want to hear​
+  - “*Most traffic crashes involve private vehicles.* Would you take public transit to reduce the number of crashes on the road?”​
+7. Avoid **double negatives**​
+  - “Do you favor or *oppose not* allowing drivers to use cell phones while driving?” might elicit either response from a person who thinks people should not use cell phones while driving​
 
-## Causal Inference in Observational Studies
-- We rarely have access to a random controlled trial
-- Observational causation is an exercise in logic & relative causal strength **NOT** causation
+## Sampling Strategies {.smaller}
+- **Simple random sampling (SRS)**: Randomly sample n individuals from a population of N
+- **Cluster sampling**: Observation units in the population are aggregated into larger sample units (clusters)
+  - **Example**: You would like to sample all Tesla owners in the United States but do not have access to a list of all owners. You do have a list of Tesla clubs. You can use SRS among the clubs and then survey all or a subsample of members in each club
+- **Stratified random sampling**: Population divided into subgroups called strata. SRS is applied within each strata. Strata are often subgroups of interest to the researcher
+  - **Example**: Regions of the country, sizes of cities, or other variables that are readily available without having to first interview the respondents
+  - Stratified random sampling is common in transportation field
+- **Systematic sample**: A starting point is chosen from a list of population members using a random number & equally spaced individuals are chosen from the list
 
-## Health Status Example
-- Consider 100 patients receive a treatment and 1000 receive the control condition
-- **Causal truth**: treatment has zero effect on health outcomes
-- Suppose treatment and control groups **systematically differ**, with healthier patients receiving treatment
+## Sampling Strategies
+![](../../../assets/images/teaching/ENCI707/Lecture2/sampling_strategy.png){fig-align="center"}
 
-## Health Status Example
-![](../../../assets/images/teaching/ENCI707/Lecture7/health_status_ex.png){fig-align="center"}
+## Stratified Sampling {.smaller}
+- Often have supplementary information prior to conducting survey that is useful to our survey design
+  - New York residents pay more for housing than residents of Lincoln
+  - Rural residents shop for groceries less frequently than urban residents
+- If there is **high heteroskedicity** (variance takes on different values in different subpopulations) may be able to obtain more precise (i.e., lower variance) population quantities using stratified sampling
+  - **Example**: In a population of 1,000 male and 1,000 female students, it is theoretically possible for a random sample of 100 students to contain few male (or female) students. Can take a random sample of 50 male and 50 female students to ensure correct distribution
+- Sampling design can be varied between strata
+  - **Example**: In a survey of businesses, an internet survey might be used for large firms while a mail or telephone survey is used for small firms
 
-## Adding Predictors: Omitted Variables
-- Simple solution is to compare treated and control units **conditional on previous health status**
-- Health status is a **confounding variable** – affects both treatment & outcome
-- If all confounding variable observed, then consistent causal treatment is possible
+## Types of Stratified Sampling {.smaller}
+- **Proportional allocation**: Number of sampled units in each stratum is proportional to the size of the stratum
+- **Optimal allocation**: useful with heteroskedastic data. Often the case that variance is higher in larger (or higher valued) than smaller (or smaller valued) units.
+- **Example**: A study by the Chesapeake and Ohio (C&O) Railroad Company to determine how much revenue they should get from interline freight shipments, since the total freight from a shipment that traveled along several railroads was divided among the different railroads. The C&O took a stratified sample of waybills - the documents that detailed the goods, route, and charge for the shipments. The waybills were stratified by the total freight charges. All waybills with charges over $40 were sampled, whereas only 1% of those with charges less than $5 were sampled. There was little variation in the amount owed to C&O among the smallest total freight charges, whereas the variability in the stratum with charges of over $40 was much higher.
 
-## Omitted Variable Bias {.smaller}
-- Correct specification:
-$$y_i = \beta_0 + \beta_1 𝑧_𝑖 + \beta_2 x_i + \epsilon_𝑖$$
-- where $𝑧_𝑖$ is the treatment and $𝑥_𝑖$ is the covariate for unit $i$
-- If $𝑥_𝑖$ is ignored then:
-$$𝑦_𝑖=\beta_0^∗+\beta_1^∗ 𝑧_𝑖+\epsilon_𝑖^∗$$
-- Using $𝑥_𝑖=\gamma_0+\gamma_1 𝑧_𝑖+𝜈_𝑖$:
-$$𝑦_𝑖=\beta_0+\beta_2 \gamma_1+(\beta_1+\beta_2 \gamma_1 ) 𝑧_𝑖+\epsilon_𝑖+\beta_2 𝜈_𝑖$$
-- Then:
-$$\beta_1^∗=\beta_1+\beta_2 \gamma_1 \text{; }\gamma_1=0 \text{ denotes a non-confounding variable}$$
+## Common Strata {.smaller}
+- **Geography**: region, division, state, or county
+- **Sampling unit size**: number of employees, number of establishments, or number of household members
+- **Sampling unit composition**: industry classification, racial composition, or similar variables
+- **Note**: Setting quotas is **NOT** stratified sampling if random sampling is not used to select individuals from each subpopulation. With quotas, we do not know the inclusion probability for a sampling unit.
+  - **Sampling bias may exist.** Interviewer will likely pick the most convenient units: persons who are easily reachable by telephone, households without menacing dogs, or areas of the forest close to the road (in case of ecological study)
 
-## Ignorability in Observational Studies {.smaller}
-- **Strict ignorability** says distribution of potential outcomes same across treatment levels:
-$$𝑦^0,𝑦_1 \perp 𝑧$$
-- Conditional ignorability says the distribution of potential outcomes across treatment levels is the same, conditional on the covariates, $x$:
-$$𝑦^0,𝑦_1 \perp 𝑧|𝑥$$
-- Must make “leap of faith” that we have conditioned on all necessary confounding variables – **selection on observables** in econometrics literature
+## Sample Size Determination {.smaller}
+$$n = \frac{z_{\alpha/2}^2 S^2}{e^2+\frac{z_{\alpha/2}^2 S^2}{N}}$$
+- where
+  - $𝑧$ is a z-statistic
+  - $𝑆^2$ is the sample variance (generally unknown)
+  - $𝑒$ is the desired margin of error
+  - $𝑁$ is the population
+- If $𝑛_0=\left(\frac{𝑧_{\alpha∕2}^2 𝑆}{e}\right)^2>𝑁$ then simply take a census of $n=N$ or use $𝑛=𝑛_0/(1+𝑛_𝑜/𝑁)$
+- For large populations ($n \approx n_0$), need approximately same sample size regardless of if the population is 10 million or 1 billion
+- Approximation of 𝑆^2
+  1. Use sample quantities from pretesting of survey
+  2. Use previous studies or data available from literature
+  3. If all else fails... guess  the variance based on some hypothesized distribution for the data! If you assume a normal distribution, could approximate variance as feasible range of values divided by 4 (within 2 SD of mean) or 6 (within 3 SD of mean).
 
-## Common Support or Overlap
-![](../../../assets/images/teaching/ENCI707/Lecture7/common_support.svg){fig-align="center"}
+## Online Surveys {.smaller}
+- Increasingly common form of survey administration​
+- Spectrum of convenience sample characteristics:​
+  - Interviewing your friends and colleagues on social media (**high bias potential**)​
+  - Using an opt-in internet panel (**medium bias potential**)​
+  - Using an internet panel compiled using a variety of random sampling techniques: email, telephone, and mail-out invitations to a random sample of individuals (**low bias potential**)​
+- Effect of **offering incentives and rewards** for completing surveys?
 
-## Propensity Score Matching (PSM)
-- **Matching**: restructure data for statistical analysis
-- Goal is to create attribute balance between treatment & control samples
-- Five step procedure
+## Online Surveys {.smaller}
+- As of 2024 ACS, 10% of US households **did not** have access to high-speed internet​
+- Low response rate (often 10% or less) means significant selection bias risk​
+- Standard online survey method is quota-based sampling with poststratification weights​
+- Study in 2011 found sampling-based surveys consistently more accurate than non-probability-sample surveys, even after poststratification weighting of data​
+- Study that recruited US adults from seven vendors found a 15-25% overlap in the sample pool
 
-## PSM: Step 1 - Define confounders & estimand
-- Based on relevant literature
-- Typically adjust control group to match treated to estimate **effect of the treatment on the treated**
-- **Careful!** Including additional covariates may increase bias away from the true estimate if not all confounding covariates are available – avoid potential **instrumental variables**
-
-## PSM: Step 2 - Estimating propensity score
-- Model of Pr(receiving treatment)
-- Typically, a **logistic regression** for binary treatment, then use propensity score as covariate summary
-- Propensity score gives a distance metric
-
-## PSM: Step 3 - Matching to restructure data
-- Create matched pairs with control samples with closest propensity score – can be with/without replacement
-- Better matches with replacement but may overuse some sample units
-
-## PSM: Step 4 - Diagnostics for balance & overlap
-- Several diagnostics exist based on difference of means, etc.
-- Evaluate and change model or method (if required)
-
-## PSM: Step 5 - Estimate treatment effect using restructured data
-- Estimate regression model with propensity score and confounder variables
-- Incorporate data restructuring via **weights** – typically inverse probability weights
-
-## Instrumental Variable (IV)
-- When ignorability of treatment seems weak, IV can be a good approach
-- Instrument $z$ should predict the treatment $T$ but not the outcome $y$
-- Assumptions:
-    - Ignorability of instrument
-    - Monotonicity
-    - Nonzero association between treatment & instrument
-    - Exclusion restriction – no instrument effect on excluded variables
-
-## IV in Regression
-- General framework
-$$𝑦_𝑖=\beta_0+\beta_1 𝑇_𝑖+\epsilon_𝑖$$
-$$𝑇_𝑖=\gamma_0+\gamma_1 𝑧_𝑖+𝜈_𝑖$$
-- Where $𝑧_𝑖$ is uncorrelated with both $\epsilon_𝑖$ and $𝜈_𝑖$ (ignorability and exclusion restriction)
-- **Identifiability**: whether data contain sufficient information for unique estimation of parameter (or set of parameters)
-
-## IV in Regression
-- With 
-$$𝑦=\beta_0+\beta_1 𝑇+\beta_2 𝑧+𝑒𝑟𝑟𝑜𝑟$$
-$$𝑇=\gamma_0+\gamma_1 𝑧+𝑒𝑟𝑟𝑜𝑟$$
-- Substituting T into y:
-$$𝑦=(\beta_0+\beta_1 \gamma_0 )+(\beta_1 \gamma_1+\beta_2 )𝑧+𝑒𝑟𝑟𝑜𝑟$$
-- where $\beta_1$ is our parameter of interest
-- Using $𝑦=\delta_0+\delta_1 𝑧+𝑒𝑟𝑟𝑜𝑟$ where $\delta_1=\beta_1 \gamma_1+\beta_2$
-we get
-$$\beta_1=(\delta_1−\beta_2)/\gamma_1$$
-
-## IV in Regression
-- Cannot estimate $\beta_2$ because error in $f(y)$ can be correlated with T – exclusion restriction means $\beta_2=0$ giving
-$\beta_1=\delta_1/\gamma_1$
-- Estimation is by two-stage least squares (2SLS)
-- Standard errors require adjustment in instrumental variable estimation – should be accounted for in any software package
-
-## Exclusion Restriction Plausibility
-- One way to assess the plausibility of the exclusion restriction is to calculate an estimate within a sample that would not be expected to be affected by the instrument
-- Researchers estimated the effect of military service on earnings (and other outcomes) using, as an instrument, the lottery number for young men eligible for the draft during the Vietnam War
-    - Randomly assigned number and strongly affected the probability of military service
-    - Men with low lottery numbers may have altered their educational plans to avoid or postpone military service (would void exclusion restriction)
-- Ran IV model for a sample of men who were assigned numbers so late that the war ended before they ever had to serve
-    - No clear relation between lottery number and earnings, providing support for the exclusion restriction
-
-## Weak Instrument
-- Only assumption we can test – instrument has non-zero correlation with treatment variable
-- If low correlation, then a **weak instrument**
-
-## Regression Discontinuity
-- **Non-random assignment** but **mechanism** entirely known to researcher
-- Consider a policy that gives tutoring to students with test scores < 60
-- Consider all students with score in range of 60 – discontinuity at 60
-    - Works well when discontinuity relates to outcome – e.g., pre-test scores on post-test scores
-    - Does not work well if comparing across **geography** due to spatial heterogeneity
-
-## Fixed Effect Models
-- Use repeated observations within groups – e.g., twin comparisons that holds confounding variables fixed
-- Simply a regression model with group-specific intercepts
-$$𝑦_𝑖𝑗=\beta_0+𝜏𝑧_𝑖𝑗+𝛼_𝑖+𝜖_𝑖𝑗$$
-- where j is an indicator of intra-group units
-- Requires treatment to vary within groups
-
-## Difference-In-Differences
-- Comparison across units (typically) using time as an additional dimension of variation
-- E.g., effect of new school busing program on housing prices in school district
-    - Compare prices before/after between district with school busing program and those without it
-    - A measure of **differences in trajectory**
-
-# Quick Overview of Causal Graph Theory
-
-## Causal Graph Theory
-- Another perspective on causal inference from computer science – Judea Pearl et al.
-- Abstract causal inference to a visual/graphical depiction
-- Develop system of symbolic calculus
-- Nonparametrically solve identification problem
-- Concept of directed acyclic graphs (DAGs)
-
-## Causal Graph Theory
-- **English**: Smoking (X), Cancer (Y), Tar (Z), Genotypes(U)
-- Directed acyclic graph (DAG)
-
-![](../../../assets/images/teaching/ENCI707/Lecture7/dag.svg){fig-align="center" width="40%"}
+## Poststratification Weighting​ {.smaller}
+- Method to adjust sample so it better matches population​
+- Standard method is called raking or iterative proportional fitting (IPF)​
+  - Like a trip distribution model, we want to match marginal control totals by adjusting a vector of weights until convergence​
+- Typical poststratification weighting variables: ​
+ - **Person weights**: age, educational attainment, & employment status​
+ - **Household weights**: size, income, & geographic location​
+- General process:​
+  1. Aggregate observations along a given dimension (e.g., age by 10-year interval)​
+  2. Generate ratios of population vs. sample along the given dimension​
+  3. Apply ratios across individual weights (initially all 1s)​
+  4. Repeat to convergence of weighting ratios

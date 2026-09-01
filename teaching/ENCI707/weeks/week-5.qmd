@@ -1,20 +1,21 @@
 ---
 title: "Week 5"
-subtitle: "Policy Analysis"
+subtitle: "Multinomial Logit Model"
+link-external-newwindow: true
 ---
 
 ## Prepare
 
-📖 Read Basic Methods of Policy Analysis and Planning Ch 2 (section 5) and Ch. 12 (all) [BMPAP](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/6c18872fe3fd73e8ddb1edf6e1ba18fc7883387f/Resources/Basic_Methods_of_Policy_Analysis_and_Planing.pdf)
+📖 Read [Mokhtarian (2016) JCM on IIA](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/b68c92c3ae8939dea7c2b6719d62ac0ec41013ea/Resources/Mokhtarian_IIA_JC.pdf)
+
+📖 Read [Mokhtarian (2016) JCM on Rho-squared](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/b68c92c3ae8939dea7c2b6719d62ac0ec41013ea/Resources/Mokhtarian_Rho_Squared_JC.pdf)
 
 ## Participate
-📋 [Lecture 3 - Aggregate Demand Models](/teaching/ENCI707/slides/lec-3.html)
-
-🖥️ [Activity 5 - Policy Analysis I](/teaching/ENCI707/ae/ae-5.html)
+📋 [Lecture 4 - Multinomial Logit Model](/teaching/ENCI707/slides/lec-4.html)
 
 ## Practice
 
-🖥️ [Activity 6 - Policy Analysis II](/teaching/ENCI707/ae/ae-6.html)
+🖥️ [Activity - Model Hand Calculation](/teaching/ENCI707/ae/ae-1.html)
 
 ## Deliver
 None

@@ -1,17 +1,29 @@
 ---
-title: "Survey Design Assignment"
+title: "Aggregate Demand Model Assignment"
 ---
 
 ## Assignment description
-The objective of this assignment is to familiarize you with the process of developing a survey instrument. The assignment is due Feb. 07 by 11:59 PM on D2L. The assignment should be completed in groups of 2-3 persons. You may choose your own group.
+The objective of this assignment is to familiarize you with the estimation and analysis of transportation demand models. The assignment is due Sept. 24 by 11:59 PM on D2L. The assignment should be completed in groups of 2-3 students. You may choose your own group.
 
-You have been tasked by the Province of Alberta to develop a survey to understand the demand for travel between Calgary and Banff as part of their provincial rail strategy. You final deliverable is a survey provided in text format. Your survey must include the following general elements for each survey respondent, but the details of the question text and scope is left to your group.
+The assignment comprises two model estimation tasks:
 
-1. Demographics.
-2. Current travel frequency and mode to/from Banff, Alberta.
-3. Attitudes about passenger rail between Calgary and Banff.
-4. A stated preference experiment. The experiment must include at least two modes and at least two attributes for each mode. Each attribute must have at least two levels. You should provide an illustration in the form of a table.
+1. Trip Generation Model
+A dataset of total quarterly ridership of a transit service along an intercity corridor is [available in MS Excel format](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/b114be6a8092f4184f264b88f8cf946727db9e67/assignment-data/TransitRidershipData.xlsx). Develop a direct demand model for total ridership per quarter for each of the two transit services (economy class and 1st class) along this corridor. Please investigate the role of lag demand in the model.
+For estimation, you can use any software (MS Excel should be fine).
 
+2. Ordered Probability Model
+A dataset of bicycle users’ perceptions of the bike system/facilities for a city is [available in MS Excel format](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/b114be6a8092f4184f264b88f8cf946727db9e67/assignment-data/CyclingPerceptionData.xlsx). Please investigate their perception of overall quality of biking in the city through estimation of an ordered probability (either logit or probit) model.
+For estimation, you can use any software (functions are available in R, Python, Stata, etc.).
+
+You may separate the two model tasks within your group or conduct all analyses as a group. All group members must contribute to the writing of the summary report.
+
+The report should include at least the following sections:
+- Introduce the objective(s) and parts of the work.
+- Present the model formulation and justification of independent variables for each model task.
+- Selection of the best model specification (select one) for each model task.
+- Discuss the elasticities of independent variables of the final models.
+
+The assignment deliverable should have the form of a professional report and should not be more than 10 pages (single-spaced).
 
 ## Overall grading
 
@@ -19,16 +31,17 @@ The grade breakdown is as follows:
 
 | Total                              | 25 pts  |
 |------------------------------------|---------|
-| **Demographics are relevant and complete**   | 5 pts   |
-| **Travel pattern data are complete and capture necessary details to plan for passenger rail**   | 10 pts  |
-| **Stated preference experiment is described in full. Attributes are relevant and their levels are reasonable.** | 10 pts   |
-| **Formatting and survey quality**  | 5 pts  |
+| **Introduction**                   | 5 pts   |
+| **Correct model interpretation**   | 10 pts  |
+| **Includes all required elements** | 5 pts   |
+| **Formatting and report quality**  | 5 pts  |
 
 ### Grading summary
 
 A general breakdown of scoring is as follows:
 
--   *90%-100%*: Outstanding effort. Students understand all survey concepts, understand the study needs, and can formulate clear questions.
--   *80%-89%*: Good effort. Students understand most survey concepts, understand the study needs, and can formulate mostly clear questions.
--   *70%-79%*: Passing effort. Students have some misunderstandings about survey concepts, miss elements of the study needs, and/or questions are poorly worded.
--   *60%-69%*: Struggling effort. Students are making some effort, but have misunderstanding of many concepts and are unable to put together a cogent survey.
+-   *90%-100%*: Outstanding effort. Students understand how to apply all statistical concepts, can put the results into a cogent argument, can identify weaknesses in the argument, and can clearly communicate the results to others.
+-   *80%-89%*: Good effort. Students understand most of the concepts, put together an adequate argument, identify some weaknesses of their argument, and communicate most results clearly to others.
+-   *70%-79%*: Passing effort. Students have misunderstanding of concepts in several areas, have some trouble putting results together in a cogent argument, and communication of results is sometimes unclear.
+-   *60%-69%*: Struggling effort. Students are making some effort, but have misunderstanding of many concepts and are unable to put together a cogent argument. Communication of results is unclear.
+-   *Below 60%*: Students are not making a sufficient effort.

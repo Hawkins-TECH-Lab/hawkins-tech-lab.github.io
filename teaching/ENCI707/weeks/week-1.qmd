@@ -1,21 +1,20 @@
 ---
 title: "Week 1"
-subtitle: "Welcome to ENCI707"
+subtitle: "Welcome to ENCI707 + Microeconomic Theory"
+link-external-newwindow: true
 ---
 
 ## Prepare
 
 📖 Read the [syllabus](/teaching/ENCI707/course-syllabus.html)
 
+📖 Review the [ABM report](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/a5912e137c7dc21b80a5cd158c43a338849f9f83/Resources/2014_Castiglione_Et_Al_ABM_Primer.pdf)
+
 📖 Watch the [videos](/teaching/ENCI707/prep/week1/week1-videos.html)
 
 ## Participate
 
 📋 [Lecture 1 - Microeconomic Theory](/teaching/ENCI707/slides/lec-1.html)
-
-## Practice
-
-🖥️ [Activity 1 - Demand Analysis](/teaching/ENCI707/ae/ae-1.html)
 
 ## Deliver
 

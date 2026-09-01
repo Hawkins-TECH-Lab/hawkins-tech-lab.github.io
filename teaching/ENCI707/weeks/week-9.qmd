@@ -1,21 +1,22 @@
 ---
 title: "Week 9"
-subtitle: "Multinomial Logit Model"
+subtitle: "Advanced Choice Models"
+link-external-newwindow: true
 ---
 
 ## Prepare
 
-📖 Read Mokhtarian on IIA  [IIA](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/b68c92c3ae8939dea7c2b6719d62ac0ec41013ea/Resources/Mokhtarian_IIA_JC.pdf)
-
-📖 Read Mokhtarian on Rho-squared  [Rho](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/b68c92c3ae8939dea7c2b6719d62ac0ec41013ea/Resources/Mokhtarian_Rho_Squared_JC.pdf)
+📖 Review Discrete Choice Methods with Simulation Ch. 4 [DCMS4](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/6a17dbbd701554fca22c5c434eb4bf6e746f8518/Resources/Ch04_p76-96.pdf)
 
 ## Participate
 
-📋 [Lecture 5 - Multinomial Logit Model](/teaching/ENCI707/slides/lec-5.html)
+📋 [Lecture 9 - Advanced Logit Models](/teaching/ENCI707/slides/lec-8.html)
 
 ## Practice
 
-🖥️ [Activity 10 - Choice Models](/teaching/ENCI707/ae/ae-10.html)
+📖 Review [GEV supplemental notes](/teaching/ENCI707/supplemental/gev-models.html)
+
+📖 Review [Mixed logit supplemental notes](/teaching/ENCI707/supplemental/mixed-logit-models.html)
 
 ## Deliver
 None

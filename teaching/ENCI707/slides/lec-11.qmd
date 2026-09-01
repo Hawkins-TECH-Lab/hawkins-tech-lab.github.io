@@ -1,0 +1,130 @@
+---
+title: "Lecture 11 - Causal Inference Methods"
+subtitle: "ENCI707: Engineering Demand and Policy Analysis"
+footer:  "[ENCI707 Home](/teaching/ENCI707/)"
+logo: "../../../assets/images/teaching/ENCI707/logo.png"
+format: 
+  revealjs: 
+    theme: simple
+    transition: fade
+    chalkboard: true
+    slide-number: true
+execute:
+  freeze: auto
+---
+## Outline
+
+::: incremental
+2. Methods of causal inference
+    - Propensity score matching
+    - Instrumental variables
+    - Regression discontinuity
+    - Difference-in-differences
+:::
+
+## Propensity Score Matching (PSM)
+- **Matching**: restructure data for statistical analysis
+- Goal is to create attribute balance between treatment & control samples
+- Five step procedure
+
+## PSM: Step 1 - Define confounders & estimand
+- Based on relevant literature
+- Typically adjust control group to match treated to estimate **effect of the treatment on the treated**
+- **Careful!** Including additional covariates may increase bias away from the true estimate if not all confounding covariates are available – avoid potential **instrumental variables**
+
+## PSM: Step 2 - Estimating propensity score
+- Model of Pr(receiving treatment)
+- Typically, a **logistic regression** for binary treatment, then use propensity score as covariate summary
+- Propensity score gives a distance metric
+
+## PSM: Step 3 - Matching to restructure data
+- Create matched pairs with control samples with closest propensity score – can be with/without replacement
+- Better matches with replacement but may overuse some sample units
+
+## PSM: Step 4 - Diagnostics for balance & overlap
+- Several diagnostics exist based on difference of means, etc.
+- Evaluate and change model or method (if required)
+
+## PSM: Step 5 - Estimate treatment effect using restructured data
+- Estimate regression model with propensity score and confounder variables
+- Incorporate data restructuring via **weights** – typically inverse probability weights
+
+## Instrumental Variable (IV)
+- When ignorability of treatment seems weak, IV can be a good approach
+- Instrument $z$ should predict the treatment $T$ but not the outcome $y$
+- Assumptions:
+    - Ignorability of instrument
+    - Monotonicity
+    - Nonzero association between treatment & instrument
+    - Exclusion restriction – no instrument effect on excluded variables
+
+## IV in Regression
+- General framework
+$$𝑦_𝑖=\beta_0+\beta_1 𝑇_𝑖+\epsilon_𝑖$$
+$$𝑇_𝑖=\gamma_0+\gamma_1 𝑧_𝑖+𝜈_𝑖$$
+- Where $𝑧_𝑖$ is uncorrelated with both $\epsilon_𝑖$ and $𝜈_𝑖$ (ignorability and exclusion restriction)
+- **Identifiability**: whether data contain sufficient information for unique estimation of parameter (or set of parameters)
+
+## IV in Regression
+- With 
+$$𝑦=\beta_0+\beta_1 𝑇+\beta_2 𝑧+𝑒𝑟𝑟𝑜𝑟$$
+$$𝑇=\gamma_0+\gamma_1 𝑧+𝑒𝑟𝑟𝑜𝑟$$
+- Substituting T into y:
+$$𝑦=(\beta_0+\beta_1 \gamma_0 )+(\beta_1 \gamma_1+\beta_2 )𝑧+𝑒𝑟𝑟𝑜𝑟$$
+- where $\beta_1$ is our parameter of interest
+- Using $𝑦=\delta_0+\delta_1 𝑧+𝑒𝑟𝑟𝑜𝑟$ where $\delta_1=\beta_1 \gamma_1+\beta_2$
+we get
+$$\beta_1=(\delta_1−\beta_2)/\gamma_1$$
+
+## IV in Regression
+- Cannot estimate $\beta_2$ because error in $f(y)$ can be correlated with T – exclusion restriction means $\beta_2=0$ giving
+$\beta_1=\delta_1/\gamma_1$
+- Estimation is by two-stage least squares (2SLS)
+- Standard errors require adjustment in instrumental variable estimation – should be accounted for in any software package
+
+## Exclusion Restriction Plausibility
+- One way to assess the plausibility of the exclusion restriction is to calculate an estimate within a sample that would not be expected to be affected by the instrument
+- Researchers estimated the effect of military service on earnings (and other outcomes) using, as an instrument, the lottery number for young men eligible for the draft during the Vietnam War
+    - Randomly assigned number and strongly affected the probability of military service
+    - Men with low lottery numbers may have altered their educational plans to avoid or postpone military service (would void exclusion restriction)
+- Ran IV model for a sample of men who were assigned numbers so late that the war ended before they ever had to serve
+    - No clear relation between lottery number and earnings, providing support for the exclusion restriction
+
+## Weak Instrument
+- Only assumption we can test – instrument has non-zero correlation with treatment variable
+- If low correlation, then a **weak instrument**
+
+## Regression Discontinuity
+- **Non-random assignment** but **mechanism** entirely known to researcher
+- Consider a policy that gives tutoring to students with test scores < 60
+- Consider all students with score in range of 60 – discontinuity at 60
+    - Works well when discontinuity relates to outcome – e.g., pre-test scores on post-test scores
+    - Does not work well if comparing across **geography** due to spatial heterogeneity
+
+## Fixed Effect Models
+- Use repeated observations within groups – e.g., twin comparisons that holds confounding variables fixed
+- Simply a regression model with group-specific intercepts
+$$𝑦_𝑖𝑗=\beta_0+𝜏𝑧_𝑖𝑗+𝛼_𝑖+𝜖_𝑖𝑗$$
+- where j is an indicator of intra-group units
+- Requires treatment to vary within groups
+
+## Difference-In-Differences
+- Comparison across units (typically) using time as an additional dimension of variation
+- E.g., effect of new school busing program on housing prices in school district
+    - Compare prices before/after between district with school busing program and those without it
+    - A measure of **differences in trajectory**
+
+# Quick Overview of Causal Graph Theory
+
+## Causal Graph Theory
+- Another perspective on causal inference from computer science – Judea Pearl et al.
+- Abstract causal inference to a visual/graphical depiction
+- Develop system of symbolic calculus
+- Nonparametrically solve identification problem
+- Concept of directed acyclic graphs (DAGs)
+
+## Causal Graph Theory
+- **English**: Smoking (X), Cancer (Y), Tar (Z), Genotypes(U)
+- Directed acyclic graph (DAG)
+
+![](../../../assets/images/teaching/ENCI707/Lecture7/dag.svg){fig-align="center" width="40%"}

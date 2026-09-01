@@ -1,24 +1,23 @@
 ---
 title: "Week 11"
-subtitle: "Advanced Choice Models"
+subtitle: "Term Break"
+link-external-newwindow: true
 ---
 
 ## Prepare
 
-📖 Review Discrete Choice Methods with Simulation Ch. 4 [DCMS4](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/6a17dbbd701554fca22c5c434eb4bf6e746f8518/Resources/Ch04_p76-96.pdf)
+None
 
 ## Participate
 
-📋 [Lecture 6 - Advanced Logit Models](/teaching/ENCI707/slides/lec-6.html)
+None
 
 ## Practice
 
-📖 Review [GEV supplemental notes](/teaching/ENCI707/supplemental/gev-models.html)
-
-📖 Review [Mixed logit supplemental notes](/teaching/ENCI707/supplemental/mixed-logit-models.html)
+None
 
 ## Deliver
-📝 Logit model group assignment due Mar. 23 by 11:59 PM on D2L.
+📝 [Disaggregate demand model assignment](/teaching/ENCI707/assignments/assignment-3.html) due Nov. 12 by 11:59 PM on D2L.
 
 <br><br>
 

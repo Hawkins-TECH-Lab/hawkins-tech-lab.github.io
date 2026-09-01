@@ -1,15 +1,16 @@
 ---
 title: "Week 13"
-subtitle: "TBD"
+subtitle: "Non-Market Valuation"
+link-external-newwindow: true
 ---
 
 ## Prepare
 
-TBD
+📖 Read [Adamowicz et al. (1994) JEEM paper](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/76cdb8b07cb7ab6c7139f796f659d114af646042/Resources/1994_Adamowicz_et_al_RP_SP_Environmental_Amenities.pdf)
 
 ## Participate
 
-TBD
+🖥️ [Lecture 12 - Non-Market Valuation](/teaching/ENCI707/slides/lec-12.html)
 
 ## Practice
 None

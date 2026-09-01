@@ -1,31 +1,43 @@
 ---
 title: "ENCI707"
 sidebar: ENCI707
-tbl-colwidths: [5,10,30,5,5,5,5,5]
+tbl-colwidths: [5,10,30,5,5,5,5]
 ---
 
 This page contains an outline of the topics, content, and assignments for the semester.
-Note that this schedule will be updated as the semester progresses, with all changes documented here.
+Note that this schedule may be updated as the semester progresses, with all changes documented here.
 
 ::: column-screen-inset-right
 ::: column-screen-inset-right
-| Week | Date | Topic | Prepare | Slides | AE | HW | Project |
-|--------------------------------------------------|-----------------|------------------------------------------------|----------------------------------------------------------|-----------------------------------------------------------------------------------|--------------------------------------------------------------------|-------------------------------------------------------------------------------|-----------------------|
-| [1](/teaching/ENCI707/weeks/week-1.html) | Wed, Jan 15 | Microeconomic Theory | [📖](/teaching/ENCI707/weeks/week-1.html#prepare) | [📋](/teaching/ENCI707/slides/lec-1.html "Microeconomics Lecture") | [🖥️](/teaching/ENCI707/ae/ae-1.html "Demand Analysis Activity") | | |
-| [2](/teaching/ENCI707/weeks/week-2.html) | Wed, Jan 22 | Microeconomic Theory | [📖](/teaching/ENCI707/weeks/week-2.html#prepare) |  | [🖥️](/teaching/ENCI707/ae/ae-2.html "Ecological Economics Activity") | | |
-| | | Data Sources | |  |  | | |
-| [3](/teaching/ENCI707/weeks/week-3.html) | Wed, Jan 29 | Surveys | [📖](/teaching/ENCI707/weeks/week-3.html#prepare) | [📋](/teaching/ENCI707/slides/lec-2.html "Surveys Lecture") | [🖥️](/teaching/ENCI707/ae/ae-3.html "Survey Activity") | | [📝](/teaching/ENCI707/project/project-description.html#project-proposal) |
-| [4](/teaching/ENCI707/weeks/week-4.html) | Wed, Feb 05 | Aggregate Demand Models | [📖](/teaching/ENCI707/weeks/week-4.html#prepare) | [📋](/teaching/ENCI707/slides/lec-3.html "Aggregate Demand Lecture") | [🖥️](/teaching/ENCI707/ae/ae-4.html "Statistics Activity") | [📝](/teaching/ENCI707/assignments/assignment-1.html) | |
-| [5](/teaching/ENCI707/weeks/week-5.html) | Wed, Feb 12 | Policy Analysis | [📖](/teaching/ENCI707/weeks/week-5.html#prepare) | | [🖥️](/teaching/ENCI707/ae/ae-5.html "Policy Case Study 1") | | |
-| | | Policy Analysis | | | [🖥️](/teaching/ENCI707/ae/ae-6.html "Policy Case Study 2") | | |
-| [6](/teaching/ENCI707/weeks/week-6.html) | Wed, Feb 19 | Winter Break | | | | | [📝](/teaching/ENCI707/project/project-description.html#lit-review) |
-| [7](/teaching/ENCI707/weeks/week-7.html) | Wed, Feb 26 | Computational Model Estimation | [📖](/teaching/ENCI707/weeks/week.html#prepare) | | [🖥️](/teaching/ENCI707/ae/ae-7.html "Computing Activity") | [📝](/teaching/ENCI707/assignments/assignment-2.html) | |
-| |  | Computational Model Estimation | | | [🖥️](/teaching/ENCI707/ae/ae-8.html "Model Activity") | | |
-| [8](/teaching/ENCI707/weeks/week-8.html) | Wed, Mar 05 | Disaggregate Demand Theory | [📖](/teaching/ENCI707/weeks/week-8.html#prepare) | [📋](/teaching/ENCI707/slides/lec-4.html "Disggregate Demand Lecture") | [🖥️](/teaching/ENCI707/ae/ae-9.html "Disaggregate Demand Activity") | | |
-| [9](/teaching/ENCI707/weeks/week-9.html) | Wed, Mar 12 | Disaggregate Demand Models: Multinomial Logit | [📖](/teaching/ENCI707/weeks/week-9.html#prepare) | [📋](/teaching/ENCI707/slides/lec-5.html "MNL Lecture") | | | |
-| [10](/teaching/ENCI707/weeks/week-10.html) | Wed, Mar 19 | Applying Disaggrate Demand Models | [📖](/teaching/ENCI707/weeks/week-10.html#prepare) | | [🖥️](/teaching/ENCI707/ae/ae-10.html "MNL Activity") | [📝](/teaching/ENCI707/assignments/assignment-3.html) | [📝](/teaching/ENCI707/project/project-description.html#draft-plan) |
-| [11](/teaching/ENCI707/weeks/week-11.html) | Wed, Mar 26 | Advanced Choice Models | [📖](/teaching/ENCI707/weeks/week-11.html#prepare) | [📋](/teaching/ENCI707/slides/lec-6.html "Advanced Choice Lecture") |  | | |
-| [12](/teaching/ENCI707/weeks/week-12.html) | Wed, Apr 02 | Causal Inference | [📖](/teaching/ENCI707/weeks/week-12.html#prepare) | [📋](/teaching/ENCI707/slides/lec-7.html "Causal Inference Lecture") | [🖥️](/teaching/ENCI707/ae/ae-11.html "Causal Inference Activity") | | |
-| [13](/teaching/ENCI707/weeks/week-13.html) | Wed, Apr 09 | Summary Applications | [📖](/teaching/ENCI707/weeks/week.html#prepare) | | [🖥️](/teaching/ENCI707/ae/ae-14.html "Policy Analysis Activity")| | |
-| [14](/teaching/ENCI707/weeks/week-14.html) | Wed, Apr 16 | Exams Week | | | | | [📝](/teaching/ENCI707/project/project-description.html#final-plan)|
+| Week | Date | Topic | Prepare | Slides | HW | Project |
+|--------------------------------------------------|-----------------|------------------------------------------------|----------------------------------------------------------|-----------------------------------------------------------------------------------|--------------------------------------------------------------------|-------------------------------------------------------------------------------|
+| [1](/teaching/ENCI707/weeks/week-1.html) | Tues, Sept 01 | Transportation Demand Models | [📖](/teaching/ENCI707/weeks/week-1.html#prepare) | | | |
+| | Thurs, Sept 03 | Microeconomic Theory | [📖](/teaching/ENCI707/weeks/week-1.html#prepare) | [📋](/teaching/ENCI707/slides/lec-1.html "Microeconomics Lecture") | | |
+| [2](/teaching/ENCI707/weeks/week-2.html) | Tues, Sept 08 | Microeconomic Theory | [📖](/teaching/ENCI707/weeks/week-2.html#prepare) | [📋](/teaching/ENCI707/slides/lec-1.html "Microeconomics Lecture") | | |
+| | Thurs, Sept 10 | Aggregate Demand Models | [📖](/teaching/ENCI707/weeks/week-2.html#prepare) | [📋](/teaching/ENCI707/slides/lec-3.html "Aggregate Demand Lecture") |  | |
+| [3](/teaching/ENCI707/weeks/week-3.html) | Tues, Sept 15 | Aggregate Demand Models | [📖](/teaching/ENCI707/weeks/week-3.html#prepare) | [📋](/teaching/ENCI707/slides/lec-2.html "Aggregate Demand Lecture") | | |
+| | Thurs, Sept 17 | Aggregate Demand Paper Review | [📖](/teaching/ENCI707/weeks/week-3.html#prepare) | | | [📝](/teaching/ENCI707/project/project-description.html#draft-plan) |
+| [4](/teaching/ENCI707/weeks/week-4.html) | Tues, Sept 22 | Disaggregate Demand Theory | [📖](/teaching/ENCI707/weeks/week-4.html#prepare) | [📋](/teaching/ENCI707/slides/lec-3.html "Disggregate Demand Lecture") | | |
+| | Thurs, Sept 24 | Disaggregate Demand Theory | [📖](/teaching/ENCI707/weeks/week-4.html#prepare) | [📋](/teaching/ENCI707/slides/lec-3.html "Disggregate Demand Lecture") | [📝](/teaching/ENCI707/assignments/assignment-1.html) | |
+| [5](/teaching/ENCI707/weeks/week-5.html) | Tues, Sept 29 | Disaggregate Demand Models: Multinomial Logit | [📖](/teaching/ENCI707/weeks/week-5.html#prepare) | [📋](/teaching/ENCI707/slides/lec-4.html "MNL Lecture") | | |
+|  | Thurs, Oct 01 | Disaggregate Demand Models: Multinomial Logit | [📖](/teaching/ENCI707/weeks/week-5.html#prepare) | [📋](/teaching/ENCI707/slides/lec-4.html "MNL Lecture") | | |
+| [6](/teaching/ENCI707/weeks/week-6.html) | Tues, Oct 06 | Applying Disaggrate Demand Models | [📖](/teaching/ENCI707/weeks/week-6.html#prepare) | [📋](/teaching/ENCI707/slides/lec-5.html "Applied MNL Lecture") |  |  |
+|  | Thurs, Oct 08 | Disaggrate Demand Paper Review | [📖](/teaching/ENCI707/weeks/week-6.html#prepare) | |  |  |
+| [7](/teaching/ENCI707/weeks/week-8.html) | Tues, Oct 13 | Stated Preference Methods | [📖](/teaching/ENCI707/weeks/week-7.html#prepare) | [📋](/teaching/ENCI707/slides/lec-6.html "SP Lecture") | | |
+| | Thurs, Oct 15 | Stated Preference Methods | [📖](/teaching/ENCI707/weeks/week-7.html#prepare) | [📋](/teaching/ENCI707/slides/lec-6.html "SP Lecture") | | |
+| [8](/teaching/ENCI707/weeks/week-8.html) | Tues, Oct 20 | Surveys and Data | [📖](/teaching/ENCI707/weeks/week-7.html#prepare) | [📋](/teaching/ENCI707/slides/lec-7.html "Data Lecture") |  | |
+|  | Thurs, Oct 22 | 	Computational Model Estimation | [📖](/teaching/ENCI707/weeks/week-8.html#prepare) | [📋](/teaching/ENCI707/slides/lec-8.html "Computing Lecture") | [📝](/teaching/ENCI707/assignments/assignment-2.html) | |
+| [9](/teaching/ENCI707/weeks/week-9.html) | Tues, Oct 27 | Advanced Disaggregate Demand Models | [📖](/teaching/ENCI707/weeks/week-9.html#prepare) | [📋](/teaching/ENCI707/slides/lec-9.html "Advanced Choice Lecture") | |  |
+|  | Thurs, Oct 29 | Advanced Disaggregate Demand Models | [📖](/teaching/ENCI707/weeks/week-9.html#prepare) | [📋](/teaching/ENCI707/slides/lec-9.html "Advanced Choice Lecture") | | |
+| [10](/teaching/ENCI707/weeks/week-10.html) | Tues, Nov 03 | HC Model Paper Review | [📖](/teaching/ENCI707/weeks/week-10.html#prepare) |  | | |
+|  | Thurs, Nov 05 | **Midterm Exam** | [📖](/teaching/ENCI707/weeks/week-10.html#prepare) | | | |
+| [11](/teaching/ENCI707/weeks/week-11.html) | Tues, Nov 10 | Term Break | | | | |
+| | Thurs, Nov 12 | Term Break | | | [📝](/teaching/ENCI707/assignments/assignment-3.html) | |
+| [12](/teaching/ENCI707/weeks/week-12.html) | Tues, Nov 17 | Causal Inference Theory | [📋](/teaching/ENCI707/slides/lec-10.html "Causal Inference Theory Lecture") | | | |
+|  | Thurs, Nov 19 | Causal Inference Methods | [📋](/teaching/ENCI707/slides/lec-11.html "Causal Inference Methods Lecture") | | | |
+| [13](/teaching/ENCI707/weeks/week-13.html) | Tues, Nov 24 | Non-Market Valuation | [📋](/teaching/ENCI707/slides/lec-12.html "Non-Market Valuation Lecture") | | | |
+|  | Thurs, Nov 26 | Non-Market Valuation Paper Review | | | | |
+| [14](/teaching/ENCI707/weeks/week-14.html) | Tues, Dec 01  | AI Extensions | [📋](/teaching/ENCI707/slides/lec-13.html "AI Extensions Lecture") | | | |
+|  | Thurs, Dec 03  | AI Extensions Paper Review | | | | |
+| [16](/teaching/ENCI707/weeks/week-16.html) | Tues, Dec 15  | **Term Paper Due** | | | | [📝](/teaching/ENCI707/project/project-description.html#final)|
 :::

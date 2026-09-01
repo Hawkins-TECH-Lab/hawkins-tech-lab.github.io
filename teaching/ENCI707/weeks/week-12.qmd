@@ -1,24 +1,23 @@
 ---
 title: "Week 12"
 subtitle: "Causal Inference"
+link-external-newwindow: true
 ---
 
 ## Prepare
 
-📖 Watch the [videos](/teaching/ENCI707/prep/week11/week11-videos.html)
+📖 Watch the [videos](/teaching/ENCI707/prep/week11/week12-videos.html)
 
 📖 Review Ch. 18-21 of Regression and Other Stories [ROS](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/dc0772ab0b84414af5737676f07761518ea46dcf/Resources/Gelman_Et_Al_ROS_1ed.pdf)
 
 ## Participate
 
-🖥️ [Lecture 7 - Causal Inference](/teaching/ENCI707/slides/lec-7.html)
+🖥️ [Lecture 10 - Causal Inference Theory](/teaching/ENCI707/slides/lec-10.html)
 
-## Practice
-
-🖥️ [Activity 11 - Causal Inference](/teaching/ENCI707/ae/ae-11.html)
+🖥️ [Lecture 11 - Causal Inference Methods](/teaching/ENCI707/slides/lec-11.html)
 
 ## Deliver
-📝 Draft data and experimental design due Apr. 04 by 11:59 PM on D2L.
+None
 
 <br><br>
 

@@ -1,19 +1,18 @@
 ---
 title: "Week 2"
-subtitle: "Microeconomic Theory & Data"
+subtitle: "Microeconomic Theory + Aggregate Demand Models"
+link-external-newwindow: true
 ---
 
 ## Prepare
 
-📖 Read Ch. 2 of Regression and Other Stories [ROS](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/dc0772ab0b84414af5737676f07761518ea46dcf/Resources/Gelman_Et_Al_ROS_1ed.pdf)
+📖 Watch the [videos](/teaching/ENCI707/prep/week2/week2-videos.html)
 
 ## Participate
 
 📋 [Lecture 1 - Microeconomic Theory](/teaching/ENCI707/slides/lec-1.html)
 
-## Practice
-
-🖥️ [Activity 2 - Ecological Economics](/teaching/ENCI707/ae/ae-2.html)
+📋 [Lecture 2 - Aggregate Demand Models](/teaching/ENCI707/slides/lec-2.html)
 
 ## Deliver
 

@@ -1,25 +1,26 @@
 ---
 title: "Week 8"
-subtitle: "Disaggregate Demand Theory"
+subtitle: "Data & Computation"
+link-external-newwindow: true
 ---
 
 ## Prepare
 
-📖 Watch the [videos](/teaching/ENCI707/prep/week8/week8-videos.html)
-
-📖 Review Discrete Choice Methods with Simulation Ch. 2 [DCMS2](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/6a17dbbd701554fca22c5c434eb4bf6e746f8518/Resources/Ch02_p9-33.pdf)
-
-📖 Review Discrete Choice Methods with Simulation Ch. 3 [DCMS3](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/6a17dbbd701554fca22c5c434eb4bf6e746f8518/Resources/Ch03_p34-75.pdf)
+📖 Read Ch. 2 of National Household Travel Survey Documentation [NHTS](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/a5912e137c7dc21b80a5cd158c43a338849f9f83/Resources/NHTS2017_UsersGuide_04232019_1.pdf)
 
 ## Participate
 
-📋 [Lecture 4 - Disaggregate Choice Theory](/teaching/ENCI707/slides/lec-4.html)
+📋 [Lecture 6 - Surveys and Data](/teaching/ENCI707/slides/lec-6.html)
+
+📋 [Lecture 7 - Computation](/teaching/ENCI707/slides/lec-7.html)
 
 ## Practice
 
-🖥️ [Activity 9 - Disaggregate Demand](/teaching/ENCI707/ae/ae-9.html)
+🖥️ [Activity - Surveys](/teaching/ENCI707/ae/ae-4.html)
 
-📖 Review [binary logit derivation notes](/teaching/ENCI707/supplemental/binary-logit.html)
+🖥️ [Activity - Visualization](/teaching/ENCI707/ae/ae-5.html)
+
+🖥️ [Activity - Model Estimation](/teaching/ENCI707/ae/ae-6.html)
 
 ## Deliver
 None

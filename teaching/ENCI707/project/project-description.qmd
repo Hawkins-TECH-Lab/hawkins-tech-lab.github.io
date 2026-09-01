@@ -4,15 +4,13 @@ title: "Project description"
 
 ## Timeline
 
-[Topic ideas](#topic-ideas) due Wed, Jan 22
+[Proposal](#project-proposal) due Thurs, Sept 17
 
-[Proposal](#project-proposal) due Fri, Jan 31
+[Literature review](#lit-review) complete by Thurs, Oct 08
 
-[Literature review](#lit-review) due Fri, Feb 21
+[Data and experimental design plan](#plan) complete by Thurs, Nov 05
 
-[Draft data and experimental design plan](#plan) due Fri, Apr 04
-
-[Final data and experimental design plan](#plan) due Fri, Apr 18
+[Final term paper](#paper) due Tues, Dec 15
 
 ## Introduction
 
@@ -26,13 +24,7 @@ The goal of this project is for you to demonstrate proficiency in the techniques
 
 You will work on the project as an individual.
 
-The final deliverables for the term project is a detailed proposal. If interested, I am happy to support the implementation of promising projects into a thesis chapter and/or publication.
-
-## Topic ideas {#topic-ideas}
-
-Identify 2-3 data sets you're interested in potentially using for the term project. We will discuss some datasets in class if you are unsure where to start. It may also help to think of topics you're interested in investigating and find datasets on those topics.
-
-The purpose of submitting project ideas is to give you time to find data for the project and to make sure there are datasets available that can help you be successful in the project.
+The final deliverables for the term project is a journal-style manuscript. If interested, I am happy to support the implementation of promising papers into a thesis chapter and/or publication.
 
 ## Project proposal {#project-proposal}
 
@@ -89,45 +81,50 @@ Each component will be graded as follows:
 
 ## Literature review {#lit-review}
 
-The purpose of the literature review is to situate your work in the existing literature.
+The purpose of the literature review is to situate your work in the existing literature. There is no formal deliverable. Dates and details are provided for your reference only.
 
 Below is a brief description of the areas to focus on in the literature review:
 
-### Introduction
-
-This section includes an overview of your project and any changes to its scope. You should also briefly describe your approach to conducting the literature review. Did your review draw on specific academic databases? Did you review non-academic sources? Did you follow a *snowball approach* of reviewing papers cited in an initial set of sources?
-
-### Existing Research
-
-This section should focus on the main themes in your field of study. Has your research question been examined in prior work? If so, was it for a different geographic area? What were the findings of previous studies? The review of existing research should cover datasets, methods, and findings.
-
-### Contributions
-
-In this section, you will identify how your proposed research contributes to the existing literature. Do you propose a new method? Will you make use of a new dataset that facilates more detailed or new analysis?
+- What are the main themes in your field of study? 
+- Has your research question been examined in prior work? If so, was it for a different geographic area? What were the findings of previous studies? 
+- How does your proposed research contributes to the existing literature? Do you propose a new method? Will you make use of a new dataset that facilates more detailed or new analysis?
 
 ## Data and experimental design plan {#plan}
 
-The draft data and experimental design plan submission is an opportunity to receive feedback on your work prior to final submission. While it is a **draft**, I expect high quality and thorough submissions at this stage. I will provide detailed feedback and schedule a time for a review discussion.
+The draft data and experimental design plan is an opportunity to receive feedback on your work prior to starting empirical estimation. There is no formal deliverable. Dates and details are provided for your reference only.
 
+#### Review criteria
 
-**You will submit the PDF of your plan on D2L.**
+- Are the research motivation and objectives clearly stated?
+- Do the research objectives have a logical structure centered on the research motivation? Objectives should be easily understood and limited to the key objectives - a suggested number of objectives is 3-5.
+- Do the research questions/hypotheses flow logically from the motivations and objectives defined in the previous section?
+- Do the research questions/hypotheses demonstrate extensive thought about the process under study and its mechanisms?
+- Are the research questions firmly situated in the literature in terms of previous findings and how your work contributes to the relevant literature?
+- Are the data sufficient to address the research questions included in the research plan?
+- If an econometric methods paper, is there sufficient sophistication in the proposed work based on the background of the student? 
+- If causal inference paper paper, is there an identification strategy that is supported by the literature and available data?
+- If a policy evaluation plan, is there a clear translation of outcomes into policy recommendations?
 
-There is a 15-page limit for the plan document (excluding references). The draft plan will be marked out of 60, broken down as follows
+## Final term paper {#paper}
+
+The final term paper is an opportunity to demonstrate your ability to apply the methods from the course to a research question. **You will submit the PDF of your paper on D2L.**
+
+There is a 15-page limit for the paper (excluding references). You may use any manuscript structure that makes sense for your research. The following sections and structure are provided as guidance for marking purposes only. The paper will be marked out of 60, broken down as follows
 
 | Total                         | 60 pts |
 |-------------------------------|--------|
 | **Introduction**         | 6 pts  |
 | **Data**               | 10 pts |
 | **Research questions/hypotheses**   | 10 pts |
-| **Analysis Plan**                   | 24 pts |
-| **Next Steps**   | 6 pts  |
+| **Analysis**                   | 24 pts |
+| **Conclusions**   | 6 pts  |
 | **Organization + formatting** | 4 pts  |
 
 ### Introduction
 
 This section includes an introduction to the project motivation and objectives.
 
-#### Grading criteria
+#### Review criteria
 
 1. The research motivation and objectives are clearly stated in the introduction, including citations for any external research.
 2. The research objectives have a logical structure centered on the research motivation. Objectives should be easily understood and limited to the key objectives - a suggested number of objectives is 3-5.
@@ -143,45 +140,45 @@ This section provides an elaboration of the research objectives, questions, and 
 
 ### Data
 
-This section should detail the datasets used to accomplish the research objectives and answer the associated research questions/hypotheses. The data section should provide details on data formats and sources. You should discuss the reliability of each data source in terms of its sample size relative to the population, measurement accuracy, and other details discussed in lecture. You should also discuss the limitations of each dataset in terms of its spatial and temporal resolution, completeness, and other details discussed in lecture. This section should also include a discussion of data processing steps. It may include basic summary statistics and charts, depending upon the availability of data (e.g., a study proposing a new survey instrument would not require such details) and the complexity of the data processing task.
+This section should detail the datasets used to accomplish the research objectives and answer the associated research questions/hypotheses. The data section may provide details on data formats and sources. You may discuss the reliability of each data source in terms of its sample size relative to the population, measurement accuracy, and other details discussed in lecture. You should discuss the limitations of each dataset in terms of its spatial and temporal resolution, completeness, and other details discussed in lecture. This section may also include a discussion of data processing steps. It may include basic summary statistics and charts, depending upon the availability of data (e.g., a study proposing a new survey instrument would not require such details) and the complexity of the data processing task.
 
 #### Grading criteria
 1. The data are sufficient to address the research questions included in the research plan.
 2. Sufficient detail is provided for the reader to understand the merits and limitations of the proposed datasets.
 3. The research questions are firmly situated in the literature in terms of previous findings and how your work contributes to the relevant literature.
 
-### Analysis plan
-This section is the core of the plan. You should demonstrate how you will integrate data and methods to accomplish your researh objectives. While it is not required that you perform the analysis, it should be clear from the plan how you would execute the analysis. You should include a discussion of the proposed methods, as well as practical details. Methods might include econometric models, statistical tests, algorithms, or other analytics. Practical details are the specific software packages you propose to use in the work. If the research includes a survey, its details must be provided here including survey questions, sample frame, recruitment methods, and other details necessary to assess the ability of the survey instrument to answer the research question(s). An econometric methods plan must include initial derivations. A causal inference plan must include a plausible identification strategy that is specific to the research question.
+### Analysis
+This section is the core of the paper. You should demonstrate how you integrated data and methods to accomplish your researh objectives. You should include a discussion of the methods, as well as practical details. Methods might include econometric models, statistical tests, algorithms, or other analytics. Practical details are the specific software packages you used in the work. If the research includes a survey, its details should be provided here including survey questions, sample frame, recruitment methods, and other details necessary to assess the ability of the survey instrument to answer the research question(s). An econometric methods paper must include derivations. A causal inference paper must include a plausible identification strategy that is specific to the research question.
 
 #### Grading criteria
 
 1. Sufficient detail is provided for the reader to execute the research plan with minimal assumptions.
-2. If an ecometric methods plan, there is sufficient sophistication in the proposed work based on the background of the student. If a survey plan, a detailed survey instrument is included in the document. If the survey includes a stated choice experiment, the attributes and their levels are supported by literature sources. If a causal inference plan, the identification strategy is supported by the literature and available data. If a policy analysis plan,...
+2. If an ecometric methods paper, there is sufficient sophistication in the proposed work based on the background of the student. If a causal inference paper, the identification strategy is supported by the literature and available data. If a policy analysis plan, suitable policy evaluation/sensitivity work is done.
 
 ### Organization + formatting
 
-This is an assessment of the overall presentation and formatting of the written report.
+This is an assessment of the overall presentation and formatting of the written manuscript.
 
 #### Grading criteria
 
-1. The report is neatly written and organized with clear section headers and appropriately sized figures with informative labels.
+1. The paper is neatly written and organized with clear section headers and appropriately sized figures with informative labels.
 2. Numerical results are displayed with a reasonable number of digits, and all visualizations are neatly formatted.
 3. All citations and links are properly formatted.
-4. The main body of the written report (not including the references) is no longer than 15 pages.
+4. The main body of the written manuscript (not including the references) is no longer than 15 pages.
 
 ### Grading summary
 
-Grading of the project will take into account the following:
+Grading of the term paper will take into account the following:
 
 -   Content - What is the quality of research and/or policy question and relevancy of data to those questions?
--   Correctness - Are statistical procedures explained correctly?
+-   Correctness - Are statistical procedures executed correctly?
 -   Writing and Presentation - What is the quality of the statistical presentation, writing, and explanations?
--   Creativity and Critical Thought - Is the project carefully thought out? Are the limitations carefully considered? Does it appear that time and effort went into the planning of the project?
+-   Creativity and Critical Thought - Is the research carefully thought out? Are the limitations carefully considered? Does it appear that time and effort went into the planning of the research?
 
 A general breakdown of scoring is as follows:
 
--   *90%-100%*: Outstanding effort. Student understands how to apply all econometric and policy analysis concepts, can translate their learning into a cogent plan, can identify weaknesses in the plan, and can clearly communicate the plan to others.
--   *80%-89%*: Good effort. Student understands most of the concepts, puts together an adequate plan, identifies some weaknesses of their plan, and communicates most plan elements clearly to others.
--   *70%-79%*: Passing effort. Student has misunderstanding of concepts in several areas, has some trouble putting concepts together in a cogent plan, and communication of plans is sometimes unclear.
--   *60%-69%*: Struggling effort. Student is making some effort, but has misunderstanding of many concepts and is unable to put together a cogent plan. Communication of results is unclear.
+-   *90%-100%*: Outstanding effort. Student understands how to apply all econometric and policy analysis concepts, can translate their learning into a cogent research plan, can identify weaknesses in the plan, and can clearly communicate the plan to others.
+-   *80%-89%*: Good effort. Student understands most of the concepts, puts together an adequate research plan, identifies some weaknesses of their plan, and communicates most research elements clearly to others.
+-   *70%-79%*: Passing effort. Student has misunderstanding of concepts in several areas, has some trouble putting concepts together in a cogent research plan, and communication of plans is sometimes unclear.
+-   *60%-69%*: Struggling effort. Student is making some effort, but has misunderstanding of many concepts and is unable to put together a cogent research plan. Communication of results is unclear.
 -   *Below 60%*: Student is not making a sufficient effort.
