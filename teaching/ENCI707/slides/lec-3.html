@@ -6,20 +6,26 @@
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.6.39">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.10.18">
 
-  <title>Hawkinslab – Lecture 3 - Disaggregate Econometric Choice Theory</title>
+  <title>Hawkinslab – Lecture 3 - Aggregate Demand Models</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
   <link rel="stylesheet" href="../../../site_libs/revealjs/dist/reset.css">
   <link rel="stylesheet" href="../../../site_libs/revealjs/dist/reveal.css">
   <style>
-    code{white-space: pre-wrap;}
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
     ul.task-list li input[type="checkbox"] {
@@ -28,7 +34,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../../../site_libs/revealjs/dist/theme/quarto-423d414d36ce366a9d05f36d06304417.css">
+  <link rel="stylesheet" href="../../../site_libs/revealjs/dist/theme/quarto-0427d8d92a431aa6a6430e53ec02a470.css">
   <link href="../../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -128,266 +134,457 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Lecture 3 - Disaggregate Econometric Choice Theory</h1>
+  <h1 class="title">Lecture 3 - Aggregate Demand Models</h1>
   <p class="subtitle">ENCI707: Engineering Demand and Policy Analysis</p>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="demand-versus-choice" class="slide level2">
-<h2>Demand Versus Choice</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Demand</strong></p>
-<ul>
-<li>Aggregate</li>
-<li>Homogenous people</li>
-<li>Identical behaviour</li>
-<li><strong>Variables:</strong> Price (P) and quantity (Q)</li>
-<li><strong>Demand function:</strong> Q = f(P)</li>
-<li>Demand = Bundle of choices</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><strong>Choice</strong></p>
-<ul>
-<li>Disaggregate</li>
-<li>Heterogeneous people</li>
-<li>Random behaviour</li>
-<li><strong>Variables:</strong> Attributes of choice alternatives; attributes of choice maker; context of choices</li>
-<li>Non-linear choice function</li>
-</ul>
-</div></div>
-</section>
-<section id="transportation-choices" class="slide level2">
-<h2>Transportation Choices</h2>
-<p>Many travel demand related choices are:</p>
-<ul>
-<li><strong>Discrete:</strong> activity type choice, mode choice, route choice, vehicle type choice, time of the day choice, location of trip destination choice etc.</li>
-<li><strong>Continuous:</strong> activity duration, vehicle usage, housing duration, etc.</li>
-<li><strong>Heterogeneous:</strong> Wide variations of choices across the population.</li>
-<li><strong>Probabilistic/stochastic/random:</strong> We can’t defined deterministically.</li>
-</ul>
-</section>
-<section id="choice-as-consumption" class="slide level2">
-<h2>Choice as Consumption</h2>
-<p><img data-src="../../../assets/images/teaching/ENCI707/Lecture4/continuous_solutions.svg" class="absolute" style="top: 100px; left: 0px; "></p>
-<p><img data-src="../../../assets/images/teaching/ENCI707/Lecture4/discrete_solutions.svg" class="absolute" style="top: 100px; right: 0px; "></p>
-</section>
-<section id="choice-as-consumption-1" class="slide level2">
-<h2>Choice as Consumption</h2>
-<p><strong>Disaggregate to Aggregate</strong></p>
-<ul>
-<li>Choice of private vehicle as mode -&gt; # of vehicle trips</li>
-<li>Choice of transit as mode -&gt; # of transit trips</li>
-<li>Choice of shared vehicle as mode -&gt; # of shared vehicle trips</li>
-</ul>
-</section>
-<section id="theory-of-choice-behaviour" class="slide level2">
-<h2>Theory of Choice Behaviour</h2>
-<ul>
-<li><strong>Descriptive (or positive):</strong> how human beings behave, not how they should/ought to behave</li>
-<li><strong>Abstract:</strong> that can be formalized in general cases not specific to particular circumstances</li>
-<li><strong>Operational:</strong> can be applied to develop models with variables and parameters that can be observed and estimated. Models can be used for prediction and/or policy evaluation</li>
-</ul>
-</section>
-<section id="framework-of-choice-theory" class="slide level2 smaller">
-<h2>Framework of Choice Theory</h2>
-<ul>
-<li>Choice as outcome of sequential decision-making:
+<section id="outline" class="slide level2">
+<h2>Outline</h2>
 <ol type="1">
-<li>Definition of the choice problem</li>
-<li>Generation of alternatives</li>
-<li>Evaluation of attributes of alternatives</li>
-<li>Choice making</li>
-<li>Executing the choice</li>
-</ol></li>
-<li>Define:
+<li class="fragment">Some econometric tools used in demand modeling:
 <ul>
-<li>Decision maker</li>
-<li>Characteristics of decision maker</li>
-<li>Alternatives</li>
-<li>Attributes of alternatives</li>
-<li>Decision rules to make choice</li>
+<li class="fragment">Normal regression</li>
+<li class="fragment">Lognormal regression</li>
+<li class="fragment">Ordered regression</li>
+<li class="fragment">Count regression</li>
+</ul></li>
+<li class="fragment">Aggregrate transportation demand models</li>
+</ol>
+</section>
+<section>
+<section id="crash-course-in-statistical-models" class="title-slide slide level1 center">
+<h1>Crash Course in Statistical Models</h1>
+
+</section>
+<section id="normal-regression" class="slide level2 smaller">
+<h2>Normal Regression</h2>
+<p><span class="math display">\[y_i = \beta_0 + \sum_j \beta_j x_j + \epsilon_j, \epsilon_j \text{ is } \sim N(0,\sigma^2)\]</span></p>
+<ul>
+<li>Equivalently <span class="math inline">\(y_i\)</span> is <span class="math inline">\(\sim N(\beta_0 + \sum_j \beta_j x_j, \sigma^2)\)</span></li>
+<li>Estimation
+<ul>
+<li>Least-squares: minimize squared residuals</li>
+<li>Maximum likelihood by normal pdf <span class="math display">\[L_i = \frac{1}{\sigma}\phi\left(\frac{y_i-\beta_0-\sum_j \beta_j x_j}{\sigma}\right)\]</span></li>
+</ul></li>
+<li>Regression to mean is deterministic for expected value of most regression model expressed as f(covariates)</li>
+<li>Probabilistic application through simulation</li>
+</ul>
+</section>
+<section id="functions-of-random-variables" class="slide level2">
+<h2>Functions of Random Variables</h2>
+<ul>
+<li>From probability theory courses …. transformation of random error term to random variable via Jacobian transformation</li>
+</ul>
+</section>
+<section id="log-normal-regression" class="slide level2 smaller">
+<h2>Log-Normal Regression</h2>
+<p><span class="math display">\[\ln(y_i) = \beta_0 + \sum_j \beta_j x_j + \epsilon_j, \epsilon_j \text{ is } \sim N(0,\sigma^2)\]</span></p>
+<ul>
+<li><p>Equivalently <span class="math inline">\(\ln(y_i)\)</span> is <span class="math inline">\(\sim N(\beta_0 + \sum_j \beta_j x_j, \sigma^2)\)</span></p></li>
+<li><p>Estimation</p>
+<ul>
+<li>Least-squares: minimize squared residuals</li>
+<li>Maximum likelihood by normal pdf <span class="math display">\[L_i = \frac{1}{y_i \sigma}\phi\left(\frac{\ln(y_i)-\beta_0-\sum_j \beta_j x_j}{\sigma}\right)\]</span></li>
+<li><span class="math inline">\(y_i\)</span> must be positive (i.e., non-negative and non-zero)</li>
 </ul></li>
 </ul>
 </section>
-<section id="decision-maker" class="slide level2 smaller">
-<h2>Decision Maker</h2>
+<section id="probit-regression" class="slide level2" style="font-size: 0.6em;">
+<h2>Probit Regression</h2>
+<p><span class="math display">\[y_i^* = \beta_0 + \sum_j \beta_j x_j + \epsilon_j, \epsilon_j \text{ is } \sim N(0,\sigma^2)\]</span></p>
 <ul>
-<li><strong>Disaggregate:</strong> Individual or group (household, family, firms, government agency, etc.)</li>
-<li><strong>Heterogeneous choice makers:</strong> Wide variety in choice behaviour across the population
+<li><p>Observed value is <strong>binary</strong> (0/1) <span class="math display">\[Pr(y_i=1) = \pi_i = \Phi \left((\beta_0 + \sum_j \beta_j x_j)/\sigma \right)\]</span> <span class="math display">\[Pr(y_i=0) = 1 - \pi_i = 1 - \Phi \left((\beta_0 + \sum_j \beta_j x_j)/\sigma \right) = \Phi \left( - (\beta_0 + \sum_j \beta_j x_j)/\sigma \right)\]</span></p></li>
+<li><p>Estimation by Maximum likelihood by normal cdf <span class="math display">\[L_i = \pi_i^{\delta_i}(1-\pi_i)^{1-\delta_i} \text{  }\delta_i=1 \text{, if }y_i=1, 0 \text{ otherwise}\]</span></p>
 <ul>
-<li>Taste variations across the choice/decision makers: <strong>Idiosyncrasy</strong></li>
-<li>Different choice situations for different people</li>
-</ul></li>
-<li><strong>Characteristics of heterogeneous choice maker:</strong> age, gender, income, education, household/firm size, etc.</li>
-<li><strong>Choice situations/context:</strong> spatial, temporal, economic</li>
-</ul>
-</section>
-<section id="alternatives" class="slide level2 smaller">
-<h2>Alternatives</h2>
-<ul>
-<li><strong>Choice</strong> means choosing an alternative out of a choice set (<em>mutually exclusive and collectively exhaustive countable set of alternatives</em>):</li>
-<li>Universal choice set: <span class="math inline">\(C\)</span></li>
-<li>Feasible / Individual-specific: <span class="math inline">\(C_i\)</span></li>
-<li>Consideration (awareness) set: <span class="math inline">\(C_{ci}\)</span></li>
-</ul>
-<p><strong>Example:</strong></p>
-<p><span class="math inline">\(C\)</span> = { Private car, Ridehail, Taxi, Bus, Bicycle, Walk}</p>
-<ul>
-<li>No driver’s license, distance &gt; 3 km</li>
-</ul>
-<p><span class="math inline">\(C_i\)</span> = { Ridehail, Taxi, Bus, Bicycle}</p>
-<ul>
-<li>No driver’s license, distance &gt; 3 km &amp; not aware of Ridehail</li>
-</ul>
-<p><span class="math inline">\(C_{ci}\)</span> = { Taxi, Bus, Bicycle}</p>
-</section>
-<section id="alternatives---attributes" class="slide level2">
-<h2>Alternatives - Attributes</h2>
-<ul>
-<li>Decision maker <strong>evaluates alternatives</strong> in terms of attribute values: Attribute values can be measured on the scale of attractiveness:</li>
-<li><strong>Categorical:</strong> Binary, ordinal (reliability, safety, convenience, etc.)</li>
-<li><strong>Cardinal:</strong> absolute values (time, cost, etc.)</li>
-<li><strong>Generic</strong> versus <strong>alternative-specific</strong></li>
-<li><strong>Measured</strong> versus <strong>perceived</strong></li>
-</ul>
-</section>
-<section id="decision-rules" class="slide level2">
-<h2>Decision Rules</h2>
-<ul>
-<li><strong>Rational behaviour (homo economicus):</strong> self-interested economic actor who optimizes own choice outcomes</li>
-<li><strong>Bounded rationality:</strong> Use rules to simplify:
-<ul>
-<li><strong>Dominance:</strong> Rules used to remove inferior alternative</li>
-<li><strong>Satisfaction:</strong> Attributes of the alternatives need to satisfy the expectation level</li>
-<li><strong>Lexicographic:</strong> attributes are rank ordered by their level of importance</li>
-<li><strong>Utility maximizing:</strong> maximize a latent function of different attributes of alternatives in the choice set</li>
+<li>Variance normalized to 1 (<strong>homogeneous</strong>) or parameterized without a constant (<strong>heterogeneous</strong>)</li>
 </ul></li>
 </ul>
 </section>
-<section id="utility-maximization" class="slide level2 smaller">
-<h2>Utility Maximization</h2>
-<p><strong>Utility function:</strong></p>
+<section id="logistic-regression" class="slide level2" style="font-size: 0.6em;">
+<h2>Logistic Regression</h2>
 <ul>
-<li>Captures <strong>relative attractiveness</strong> of alternative in the choice set</li>
-<li>Measures the satisfaction that the decision maker wants to optimize</li>
-</ul>
-<p><strong>Assumptions:</strong></p>
+<li>Observed value is <strong>binary</strong> (0/1) with <span class="math inline">\(\epsilon_i\)</span> being logistically distributed this time <span class="math display">\[Pr(y_i=1) = \pi_i = \frac{\exp (\beta_0 + \sum_j \beta_j x_j)}{1 + \exp(\beta_0 + \sum_j \beta_j x_j)}\]</span> <span class="math display">\[Pr(y_i=0) = 1 - \pi_i = 1 - \pi_i = \frac{1}{1 + \exp(\beta_0 + \sum_j \beta_j x_j)}\]</span></li>
+<li>Estimation by Maximum likelihood <span class="math display">\[L_i = \pi_i^{\delta_i}(1-\pi_i)^{1-\delta_i} \text{  }\delta_i=1 \text{, if }y_i=1, 0 \text{ otherwise}\]</span>
 <ul>
-<li>Decision maker has <strong>full knowledge</strong> about the attributes of the alternatives and is able to process information</li>
-<li>Base on information processing, decision maker <strong>associates a utility</strong> to each alternative</li>
-<li>Decision maker has <strong>transitive preferences</strong></li>
-<li>Decision maker is <strong>rational</strong> and <strong>perfect optimizer</strong></li>
-<li>Decision maker is <strong>consistent</strong></li>
+<li>Interpretation (scale compounded parameters): <span class="math display">\[logit(\pi_i) = \text{log of odds ratio} = \ln\left(\frac{\pi_i}{1-\pi_i}\right)=\beta_0 + \sum_j \beta_j x_j\]</span></li>
+</ul></li>
 </ul>
 </section>
-<section id="probability-in-utility-maximization" class="slide level2 smaller">
-<h2>Probability in Utility Maximization</h2>
+<section id="probitlogistic-regression" class="slide level2">
+<h2>Probit/Logistic Regression</h2>
+<ul>
+<li>Binary outcome model can be used to model market shares in aggregate demand models</li>
+<li>Pseudo-likelihood function <span class="math display">\[L_i = \pi_i^{y_i}(1-\pi_i)^{1-y_i}\]</span></li>
+<li><span class="math inline">\(i\)</span> is the aggregation unit (e.g., zones, groups, etc.)</li>
+<li><span class="math inline">\(y_i\)</span> is the share (proportion) of <span class="math inline">\(y\)</span> in unit <span class="math inline">\(i\)</span></li>
+</ul>
+</section>
+<section id="ordered-regression" class="slide level2">
+<h2>Ordered Regression</h2>
+<ul>
+<li>We often have ordinal measures for which we cannot assume that the categories are <strong>equally spaced</strong> (if they were then we likely would use linear regression model)
+<ul>
+<li>Questionnaire items for opinions</li>
+<li>Data that were originally measured at the interval/ratio level then grouped (lumped) into ordered categories (age, income)</li>
+<li>Qualitative measures that are not truly continuous</li>
+</ul></li>
+<li>Ordered regression is a useful tool for above situations</li>
+</ul>
+</section>
+<section id="ordered-regression-1" class="slide level2">
+<h2>Ordered Regression</h2>
+<ul>
+<li>An important criteria for the ordered probability model is that the <strong>results remain consistent</strong> regardless of how the dependent variable is cut into categories</li>
+<li>This means, if a <strong>new category</strong> is added to an existing variable, the variable’s <strong>coefficients</strong> should remain the same regardless of the number of categories in the dependent variable</li>
+</ul>
+</section>
+<section id="ordered-regression-2" class="slide level2 smaller">
+<h2>Ordered Regression</h2>
+<ul>
+<li>Consider the latent variable model <span class="math display">\[y_i^* = \beta x_i + \epsilon_i\]</span> <span class="math display">\[y_i = j \text{ if } \tau_{j-1} \leq y_i^* \leq \tau_j, j \in \{0,1,2\dots J\}\]</span></li>
+<li>We have <span class="math inline">\(J\)</span> levels and <span class="math inline">\((J-1)\)</span> cut points represented by <span class="math inline">\(\tau\)</span>. End categories are 0 and <span class="math inline">\(J\)</span> for which values of cut points will be <span class="math inline">\(-\infty\)</span> and <span class="math inline">\(+\infty\)</span>, respectively.</li>
+<li>For example, if <span class="math inline">\(J=4\)</span> <span class="math display">\[y_i = 1 \text{ if } -\infty &lt; y_i^* &lt; \tau_1\]</span> <span class="math display">\[y_i = 2 \text{ if } \tau_1 \leq y_i^* &lt; \tau_2\]</span> <span class="math display">\[y_i = 3 \text{ if } \tau_2 \leq y_i^* &lt; \tau_3\]</span> <span class="math display">\[y_i = 4 \text{ if } \tau_3 \leq y_i^* &lt; +\infty\]</span></li>
+</ul>
+</section>
+<section id="ordered-regression-3" class="slide level2 smaller">
+<h2>Ordered Regression</h2>
+<ul>
+<li>Now, if we replace the latent variable by corresponding utility functions <span class="math display">\[Pr(y_i=j|x_i) = Pr(\tau_{j-1} \leq \beta x_i + \epsilon &lt; \tau_j)\]</span> <span class="math display">\[Pr(y_i=j|x_i) = Pr(\tau_{j-1} - \beta x_i \leq  \epsilon &lt; \tau_j - \beta x_i)\]</span> <span class="math display">\[Pr(y_i=j|x_i) = \int_{-\infty}^{\tau_j - \beta x_i} f(\epsilon_i) d\epsilon_i - \int_{-\infty}^{\tau_{j-1} - \beta x_i} f(\epsilon_i) d\epsilon_i\]</span> <span class="math display">\[Pr(y_i=j|x_i) = F(\tau_j - \beta x_i) - F(\tau_{j-1} - \beta x_i)\]</span></li>
+</ul>
+</section>
+<section id="ordered-regression-4" class="slide level2 smaller">
+<h2>Ordered Regression</h2>
+<ul>
+<li>If we assume <span class="math inline">\(\epsilon_i\)</span> follows a normal distribution with <strong>zero mean</strong> and <span class="math inline">\(\sigma^2\)</span> <strong>variance</strong>, then
+<ul>
+<li>Ordered Probit Regression <span class="math display">\[Pr(y_i=j|_i = \Phi((\tau_j - \beta x_i)/\sigma) - \Phi((\tau_{j-1} - \beta x_i)/\sigma) \]</span></li>
+<li>Typically, set <span class="math inline">\(\sigma=1\)</span></li>
+</ul></li>
+<li>If we assume <span class="math inline">\(\epsilon_i\)</span> follows a Type I Extreme Value distribution with scale <span class="math inline">\(\mu\)</span>
+<ul>
+<li>Ordered Logit Regression <span class="math display">\[Pr(y_i=j|x_i) = \frac{\exp(\mu(\tau_j - \beta x_i))}{1 + \exp(\mu(\tau_j - \beta x_i))} - \frac{\exp(\mu(\tau_{j-1} - \beta x_i))}{1 + \exp(\mu(\tau_{j-1} - \beta x_i))}\]</span></li>
+<li>Typically assume <span class="math inline">\(\mu=1\)</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="ordered-regression-5" class="slide level2" style="font-size: 0.6em;">
+<h2>Ordered Regression</h2>
+<ul>
+<li>Ordered Probit model <span class="math display">\[Pr(y_i=1|x_i) = \Phi(\tau_1 - \beta x_i) - 0\]</span> <span class="math display">\[Pr(y_i=2|x_i) = \Phi(\tau_2 - \beta x_i) - \Phi(\tau_1 - \beta x_i)\]</span> <span class="math display">\[Pr(y_i=3|x_i) = \Phi(\tau_3 - \beta x_i) - \Phi(\tau_2 - \beta x_i)\]</span> <span class="math display">\[Pr(y_i=4|x_i) = 1 - \Phi(\tau_3 - \beta x_i)\]</span></li>
+<li>Ordered Logit model <span class="math display">\[Pr(y_i=1|x_i) = \exp(\tau_1 - \beta x_i)/(1 + \exp(\tau_1 - \beta x_i)) - 0\]</span> <span class="math display">\[Pr(y_i=2|x_i) = \exp(\tau_2 - \beta x_i)/(1 + \exp(\tau_2 - \beta x_i)) - \exp(\tau_1 - \beta x_i)/(1 + \exp(\tau_1 - \beta x_i))\]</span> <span class="math display">\[Pr(y_i=3|x_i) = \exp(\tau_3 - \beta x_i)/(1 + \exp(\tau_3 - \beta x_i)) - \exp(\tau_2 - \beta x_i)/(1 + \exp(\tau_2 - \beta x_i))\]</span> <span class="math display">\[Pr(y_i=3|x_i) = 1 - \exp(\tau_3 - \beta x_i)/(1 + \exp(\tau_3 - \beta x_i))\]</span></li>
+</ul>
+</section>
+<section id="ordered-regression-6" class="slide level2 smaller">
+<h2>Ordered Regression</h2>
+<ul>
+<li>Ordered Probit vs Ordered Logit model: Parameters of Probit and Logit are <strong>not comparable</strong>
+<ul>
+<li>Normal error with unit variance in an Ordered Probit: variance of ordered regression, <span class="math inline">\(\sigma^1=1\)</span></li>
+<li>Type I Extreme Value has a variance, <span class="math inline">\(\sigma^2=\pi^2/6\mu^2\)</span>. So, with a unit scale (<span class="math inline">\(\mu=1\)</span>) in an Ordered Logit, the variance <span class="math inline">\(\sigma^2=\pi^2/6\)</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="ordered-regression-7" class="slide level2 smaller">
+<h2>Ordered Regression</h2>
+<ul>
+<li>Estimation: likelihood function <span class="math display">\[L(y|x,\beta,\theta = \prod_{i=1}^N\prod_{j=1}^J \left(F(\tau_j - \beta x_i) - F(\tau_{j-1} - \beta x_i) \right)^{z_{ij}}\]</span> <span class="math display">\[z_{ij}=1 \text{ if } y_i = j\]</span> <span class="math display">\[z_{ij}=0 \text{ otherwise }\]</span></li>
+<li>Useful to think of <span class="math inline">\(\tau_j\)</span> as <strong>intercepts</strong></li>
+<li>Standard practice is to think of intercept as <strong>baseline probability</strong> when <span class="math inline">\(x=0\)</span></li>
+</ul>
+</section>
+<section id="zero-inflated-ordered-regression" class="slide level2" style="font-size: 0.6em;">
+<h2>Zero-Inflated Ordered Regression</h2>
+<ul>
+<li>Observed data have overwhelming portion with zero values: <strong>zero-inflation</strong> <span class="math display">\[y_i = 0 \text{, no further regression model}\]</span> <span class="math display">\[y_i &gt; 0 \text{, } Pr(y_i=j|x)\]</span></li>
+<li>Estimation: Maximum likelihood <span class="math display">\[y_i=0 -&gt; \eta_i \leq \sum_k \gamma z_k\]</span> <span class="math display">\[y_i &gt; 0, -&gt; \eta_i &gt; \sum_k \gamma_k z_k \text{ &amp; } Pr(y_i=j|x)\]</span> <span class="math display">\[L_i = \Phi(\sum_k \gamma_k z_k)^{y_i=0} \times \left(\Phi(-\sum_k \gamma_k z_k)(F(\tau_j - \beta x_i) - F(\tau_{j-1} - \beta x_i))\right)^{y_i=j}\]</span></li>
+<li>2 models: model of <strong>binary</strong> zero/non-zero <span class="math inline">\(y\)</span> &amp; <strong>ordered</strong> regression model</li>
+</ul>
+</section>
+<section id="count-variable-regression" class="slide level2 smaller">
+<h2>Count Variable Regression</h2>
+<ul>
+<li>Count (<span class="math inline">\(y_i\)</span>) of events occuring <strong>randomly</strong> &amp; <strong>uniformly</strong> in tmie with constant expected rate of occurence <span class="math display">\[Pr(y_i) = \frac{\lambda^{y_i}e^{-\lambda}}{y_i!} \text{, } E[y_i] = V[y_i] = \lambda \text{, } \lambda = exp(\sum_j \beta_j x_j)\]</span></li>
+<li>Likelihood function for estimation <span class="math display">\[L(y_i|x,\beta) = Pr(y_i)\]</span></li>
+<li>Issues with Poisson model
+<ul>
+<li>Heterogeneity can violate <strong>constant expected rate assumption</strong></li>
+<li><strong>Upper limit</strong> of count data can exist - can cause violation of <span class="math inline">\(E[y_i] = V[y_i]\)</span> assumption and cause <strong>over/under dispersion</strong></li>
+</ul></li>
+</ul>
+</section>
+<section id="poisson-regression-with-heterogeneity" class="slide level2 smaller">
+<h2>Poisson Regression with Heterogeneity</h2>
+<ul>
+<li>Existence of over-dispersion requires correction
+<ul>
+<li>Assume additional gamma heterogeneity <span class="math display">\[\theta^* = exp(\sum_j \beta_j x_j + u) = exp(\sum_j \beta_j x_j) \times exp(u)\]</span></li>
+<li>Consider a positive distribution for <span class="math inline">\(u\)</span>, a Gamma distribution with mean 1 and variance <span class="math inline">\(1/\theta=\alpha\)</span></li>
+<li>Results in a Negative Binomial regression model <span class="math display">\[Pr(y_i) = \frac{\Gamma(\theta + y_i)}{\Gamma(y_i +1)\Gamma(\theta)}r_i^{y_i}(1-r_i)^{\theta} \text{, } r_i = \frac{exp(\sum_j \beta_j x_j)}{exp(\sum_j \beta_j x_j) + \theta}\]</span></li>
+</ul></li>
+<li>Likelihood function for estimation: <span class="math inline">\(L(y_i|x,\beta,\theta) = Pr(y_i)\)</span>, <span class="math inline">\(\theta\)</span> is the dispersion parameter, which should be a positive value</li>
+</ul>
+</section>
+<section id="zero-inflated-count-regression" class="slide level2" style="font-size: 0.6em;">
+<h2>Zero-Inflated Count Regression</h2>
+<ul>
+<li>Observed data have overwhelming portion with zero values: <strong>zero-inflation</strong> <span class="math display">\[y_i = 0 \text{, no further regression model}\]</span> <span class="math display">\[y_i &gt; 0 \text{, } Pr(y_i=j|x) \text{Poisson or Negative Binomial}\]</span></li>
+<li>Estimation: Maximum likelihood <span class="math display">\[y_i=0 -&gt; \eta_i \leq \sum_k \gamma z_k\]</span> <span class="math display">\[y_i &gt; 0, -&gt; \eta_i &gt; \sum_k \gamma_k z_k \text{ &amp; } Pr(y_i=j|x)\]</span> <span class="math display">\[L_i = \Phi(\sum_k \gamma_k z_k)^{y_i=0} \times \left(\Phi(-\sum_k \gamma_k z_k)Pr(y_i)\right)^{y_i=j}\]</span></li>
+<li>2 models: model of <strong>binary</strong> zero/non-zero <span class="math inline">\(y\)</span> &amp; <strong>count</strong> regression model</li>
+</ul>
+</section>
+<section id="use-of-econometric-models" class="slide level2 smaller">
+<h2>Use of Econometric Models</h2>
+<ul>
+<li>Parameter of explanatory variable makes little sense unless put into context</li>
+<li>Econometric models should be used for:
+<ul>
+<li><strong>Prediction</strong> of the dependent variable and/or probability of different values of independent variables</li>
+<li><strong>Meaningful interpretation</strong> of estimated model parameters</li>
+</ul></li>
+<li>Marginal effects (ME) <span class="math display">\[ME = \frac{\partial y_i}{\partial x_j} \text{, } ME=\frac{\partial Pr(y_i/U_i/V_i)}{\partial x_j}\]</span></li>
+<li>Elasticity (E) <span class="math display">\[E = \frac{\partial y_i}{\partial x_j}\frac{x_j}{y_j} \text{, } E=\frac{\partial Pr(y_i/U_i/V_i)}{\partial x_j}\frac{x_j}{Pr(y_i/U_i/V_i)}\]</span></li>
+</ul>
+</section>
+<section id="practical-significance" class="slide level2 smaller">
+<h2>Practical Significance</h2>
+<ul>
+<li><strong>Marginal effects</strong> and <strong>elasticities</strong> can be challenging to interpret</li>
+<li><strong>Practical significance</strong> (PS) is an approach to provide a clear illustration of the significance of a variable – sometimes termed <strong>effect size</strong></li>
+<li>Measured as:
+<ul>
+<li><strong>Continuous variables</strong>: % change in <span class="math inline">\(Pr⁡( 𝑉_𝑖)\)</span> for a 1 standard deviation (SD) change in <span class="math inline">\(𝑥_𝑗\)</span>
+<ul>
+<li>Ex. % change in <span class="math inline">\(Pr⁡( 𝑉_𝑖)\)</span> for a 1 SD change in income</li>
+</ul></li>
+<li><strong>Discrete variables</strong>: % change in <span class="math inline">\(Pr⁡( 𝑉_𝑖)\)</span> for presence of variable
+<ul>
+<li>Ex. % change in <span class="math inline">\(Pr⁡( 𝑉_𝑖)\)</span> given a person is male</li>
+</ul></li>
+</ul></li>
+</ul>
+</section></section>
+<section>
+<section id="transportation-demand-models" class="title-slide slide level1 center">
+<h1>Transportation Demand Models</h1>
+
+</section>
+<section id="decision-making" class="slide level2 smaller">
+<h2>Decision Making</h2>
+<ul>
+<li>In transportation modeling, analysis deals both directly and indirectly with decision-making of people and firms</li>
+<li>Decisions can be expressed as elements related to demand and supply</li>
+<li>We define decision as we (<strong>the modeler</strong>) observe it</li>
+<li>Observed decisions can be (or measured as):
+<ul>
+<li>Continuous type – Example?</li>
+<li>Discrete type – Example?</li>
+<li>Ordered type – Example?</li>
+<li>Count type – Example?</li>
+</ul></li>
+</ul>
+</section>
+<section id="complexities-of-decision-making" class="slide level2 smaller">
+<h2>Complexities of Decision-Making</h2>
+<ul>
+<li>Univariate decisions: Example?</li>
+<li>Joint decisions: Examples?
+<ul>
+<li>Combination of same type of decision</li>
+<li>Combination of different types of decision</li>
+<li>Intra-household joint decision</li>
+<li>Inter-household joint decision</li>
+</ul></li>
+<li>Issues related to joint decisions:
+<ul>
+<li>Correlations</li>
+<li>Endogeneity or self-selection</li>
+</ul></li>
+</ul>
+</section>
+<section id="modeling-passenger-travel-demand" class="slide level2 smaller">
+<h2>Modeling Passenger Travel Demand</h2>
+<ul>
+<li>Urban travel demand:
+<ul>
+<li>Number of trips, types of trips, destination location of trips, mode of trips, routes of trips</li>
+</ul></li>
+<li>Intercity travel demand:
+<ul>
+<li>Cross-boundary trips</li>
+<li>Intercity trips by bus</li>
+<li>Intercity trips by rail</li>
+<li>Intercity trips by plane</li>
+</ul></li>
+<li>International travel: Air transportation, ferry, ship, etc.</li>
+<li>Tourism Travel: Number of tourists, number of tourists by different modes</li>
+</ul>
+</section>
+<section id="modelling-passenger-travel-demand" class="slide level2">
+<h2>Modelling Passenger Travel Demand</h2>
+<ul>
+<li>Modelling multiple dimensions of demand: number of trips, time of trips, mode of trips, etc.
+<ul>
+<li>Urban Transportation Modeling System (UTMS): trip-based model, activity-based models</li>
+</ul></li>
+<li>Modeling specific dimension of trips: total trips, transit ridership, etc.
+<ul>
+<li>Intended to investigate specific <strong>policy impacts</strong>: transit ridership, willingness to pay for better transit, willingness to pay for parking, air passenger demand, tourism demand</li>
+</ul></li>
+</ul>
+</section>
+<section id="travel-demand-classifications" class="slide level2 smaller">
+<h2>Travel Demand Classifications</h2>
+<ul>
+<li>Based on the concept of utility:
+<ul>
+<li>Direct Utility/ Direct Demand Model</li>
+<li>Indirect Utility/ Demand Model</li>
+</ul></li>
+<li>Based on uncertainty in predictions:
+<ul>
+<li>Deterministic Model</li>
+<li>Stochastic Model</li>
+</ul></li>
+<li>Based on maximization approach:
+<ul>
+<li>Random utility maximization</li>
+<li>Unconstrained model: Fitting demand function</li>
+</ul></li>
+<li>Based on level of aggregation:
+<ul>
+<li>Aggregate demand model</li>
+<li>Disaggregate demand model</li>
+</ul></li>
+</ul>
+</section>
+<section id="travel-demand-classifications-1" class="slide level2 smaller">
+<h2>Travel Demand Classifications</h2>
+<ul>
+<li>Aggregate versus disaggregate modeling:
+<ul>
+<li>Based on different <strong>functional form</strong> and data needs for model estimation, <strong>purpose of study</strong> and <strong>time/money constraints</strong> of the project</li>
+<li>Disaggregate models are always better than corresponding aggregate ones, if and only if <strong>detailed data</strong> requirements and <strong>computational</strong> burdens are understood</li>
+<li>In most cases aggregate model can <strong>complement</strong> disaggregate modeling approaches by making the trends better understood</li>
+</ul></li>
+</ul>
+</section>
+<section id="aggregate-travel-demand-models" class="slide level2">
+<h2>Aggregate Travel Demand Models</h2>
+
+<img data-src="../../../assets/images/teaching/ENCI707/Lecture3/model_types.svg" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="linear-demand-model" class="slide level2 smaller">
+<h2>Linear Demand Model</h2>
+<ul>
+<li><p>Linear Regression <span class="math display">\[\text{Total Demand, D (e.g., number of trips)} = \beta_0 + \beta_n x_j + \epsilon\]</span></p></li>
+<li><p>Elasticity of demand with respect to any variable <span class="math display">\[E = \frac{\partial D/D}{\partial x_j/x_j} = \frac{\partial D}{\partial x_j}\times\frac{x_j}{D}=\frac{\beta_j}{D}x_j\]</span></p></li>
+<li><p>Elasticity is a function of the value at a data point</p></li>
+<li><p>Model estimation: Least-Square</p></li>
+<li><p><strong>Limitations</strong>: Linearity assumption &amp; can result in negative demand</p></li>
+</ul>
+</section>
+<section id="cobb-douglas-demand-model" class="slide level2 smaller">
+<h2>Cobb-Douglas Demand Model</h2>
+<ul>
+<li><p>Optimum Deand in Cobb-Douglas <span class="math display">\[D_j^* = \frac{I}{p_j}(\frac{\alpha}{\alpha+\beta}) = \alpha' I^1p_j^{-1}\]</span></p></li>
+<li><p>In absense of budget constraints, the optimum demand function may look similar to Cobb-Douglas direct utility function <span class="math display">\[D_j^* = e^{\alpha_o}I^{\gamma}\prod_k x_k^{\beta_k}\prod_m e^{\beta_m z_m}\]</span></p></li>
+<li><p><span class="math inline">\(x_k\)</span> includes price/cost variable &amp; <span class="math inline">\(z_m\)</span> includes categorical/dummy variables or any other variable that does not have to be log-transformed</p></li>
+</ul>
+</section>
+<section id="cobb-douglas-demand-model-1" class="slide level2 smaller">
+<h2>Cobb-Douglas Demand Model</h2>
+<ul>
+<li>Stochastic econometric model adds random error (<span class="math inline">\(\epsilon_j\)</span>)</li>
+</ul>
+<p><span class="math display">\[D_j^* = e^{\alpha_o}I^{\gamma}\prod_k x_k^{\beta_k}\prod_m e^{\beta_m z_m}e^{\epsilon_j}\]</span></p>
+<ul>
+<li>Log-transformation results in a log-linear model <span class="math display">\[\ln(D_j^*) = \alpha_0 + \sum_k \beta_k \ln(x_k) + \sum_m \beta_m z_m + \epsilon_j\]</span></li>
+<li>Can accomodate any type of explanatory variables (continuous/categorical)</li>
+<li><strong>Elasticity</strong>: corresponding parameter - constant elasticity! <span class="math display">\[E=\frac{\partial D}{\partial x_k}\frac{x_k}{D_j} = \beta_j\]</span></li>
+</ul>
+</section>
+<section id="cobb-douglas-demand-model-example" class="slide level2">
+<h2>Cobb-Douglas Demand Model: Example</h2>
+<p><img data-src="../../../assets/images/teaching/ENCI707/Lecture3/cobb-douglas-paper1.png" class="absolute" style="top: 75px; left: 0px; "> <img data-src="../../../assets/images/teaching/ENCI707/Lecture3/cobb-douglas-paper2.png" class="absolute" style="top: 75px; right: 0px; "> <img data-src="../../../assets/images/teaching/ENCI707/Lecture3/cobb-douglas-paper3.png" class="absolute" style="top: 300px; left: 0px; "> <img data-src="../../../assets/images/teaching/ENCI707/Lecture3/cobb-douglas-paper4.png" class="absolute" style="top: 375px; right: 0px; "></p>
+</section>
+<section id="translog-demand-model" class="slide level2" style="font-size: 0.6em;">
+<h2>Translog Demand Model</h2>
+<ul>
+<li>Indirect utility (various other forms also possible) <span class="math display">\[\ln(V) = \alpha_0 + \sum_i \alpha_i \ln(p_i) + \sum_i \sum_{j \ne i} (1/2)\beta_{ij}\ln(p_i)\ln(p_j) \\ + \sum_i \gamma_i \ln(Y_e)\ln(p_i) + \gamma_y \ln(Y_e)\]</span></li>
+<li><span class="math inline">\(p_i\)</span> &amp; <span class="math inline">\(p_j\)</span> are generalized costs for <span class="math inline">\(i\)</span> &amp; <span class="math inline">\(j\)</span></li>
+<li><span class="math inline">\(Y_e\)</span> is the generalized time-money budget</li>
+<li><strong>Roy’s Identity</strong> <span class="math display">\[D_i = \frac{\partial V / \partial p_i}{\partial V / \partial Y_e} = - \frac{\partial \ln(V) / \partial \ln(p_i)}{\partial \ln(V) / \partial \ln(Y_e)}\]</span></li>
+<li>Resulting optimum demand <span class="math display">\[D_i^* = - \frac{(1/p_i)(\sum_i \alpha_i + \sum_{j \ne i} \beta_{ij}\ln(p_j) + \gamma_i Y_e}{(1/Y_e)(\sum_{j \ne i}\gamma_j \ln(p_j) + \gamma_y)}\]</span></li>
+</ul>
+</section>
+<section id="translog-demand-model-1" class="slide level2 smaller">
+<h2>Translog Demand Model</h2>
+<ul>
+<li>Empirical model: observed demand (<span class="math inline">\(x_i\)</span>) for alternative consumption <span class="math inline">\(i\)</span> follows
+<ul>
+<li>Lognormal distribution</li>
+<li>Count variable distribution</li>
+<li>Other feasible distribution</li>
+</ul></li>
+<li>Following optimal demand <span class="math inline">\(D_i\)</span> as the latent variable</li>
+<li><span class="math inline">\(x_i\)</span> follows a parametric distribution with mean value as <span class="math inline">\(D_i\)</span>
+<ul>
+<li><span class="math inline">\(x_i \sim\)</span> Poisson(mean = <span class="math inline">\(D_i\)</span>)</li>
+<li><span class="math inline">\(x_i \sim\)</span> Negative Binomial(mean = <span class="math inline">\(D_i\)</span>)</li>
+<li><span class="math inline">\(x_i \sim\)</span> Lognormal(mean = <span class="math inline">\(D_i\)</span>)</li>
+</ul></li>
+</ul>
+</section>
+<section id="translog-demand-model-example" class="slide level2 smaller">
+<h2>Translog Demand Model: Example</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Constant utility:</strong></p>
-<ul>
-<li>Utility is <strong>deterministic</strong> and <strong>cardinal</strong> in nature</li>
-<li>Decision maker <strong>does not</strong> maximize utility</li>
-<li>However, human behaviour is inherently random</li>
-</ul>
+<div class="column" style="width:60%;">
+<p><img data-src="../../../assets/images/teaching/ENCI707/Lecture3/translog-paper1.png" class="absolute" style="top: 60px; left: 0px; "> <img data-src="../../../assets/images/teaching/ENCI707/Lecture3/translog-paper2.png" class="absolute" style="top: 275px; left: 0px; "></p>
 </div><div class="column" style="width:40%;">
-<p><strong>Random utility:</strong></p>
 <ul>
-<li>Decision maker is a <strong>rational optimizer</strong></li>
-<li>Modeller <strong>does not</strong> observe the exact measure of utility used by the decision maker</li>
-<li>Utility becomes <strong>random</strong> and <strong>ordinal</strong> variable</li>
-<li>Probabilistic choice model because of <strong>unobserved heterogeneity</strong> (randomness)</li>
+<li>Used TransLog indirect utility and Roy’s identity to model trip generation</li>
+<li>Observed trip generation is considered to follow count variable regression</li>
+<li>Different measures of effective price of making trips and effective budget constraints are tested in two papers</li>
+<li>Microeconomic rigour of the model allows one to <strong>perform welfare analysis</strong> using the trip generation model</li>
 </ul>
 </div></div>
 </section>
-<section id="discrete-choice" class="slide level2 smaller">
-<h2>Discrete Choice</h2>
-<p><strong>Two alternatives:</strong> transit, car <span class="math display">\[𝑈_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}=\beta_𝑡 𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}+\beta_𝑐 𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} \text{ (Typically, }\beta_t, \beta_c &lt;0)\]</span></p>
-<p><span class="math display">\[𝑈_{𝑐𝑎𝑟}=\beta_𝑡 𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟}+\beta_𝑐 𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟}\]</span></p>
-<p>Equivalent specification <span class="math display">\[𝑈_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}=(\beta_𝑡/\beta_𝑐)𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}+𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}\]</span></p>
-<p><span class="math display">\[𝑈_{𝑐𝑎𝑟}=(\beta_𝑡/\beta_𝑐)𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟}+𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟}
-\]</span></p>
-<p><strong>Choice:</strong> car, if <span class="math display">\[\beta_𝑡 𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟}+\beta_𝑐 𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} \geq \beta_𝑡 𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} + \beta_𝑐 𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}
-\]</span></p>
-<p>or <span class="math display">\[(\beta_𝑡/\beta_𝑐)𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟}+𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} \leq (\beta_𝑡/\beta_𝑐)𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}+𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}
-\]</span></p>
-</section>
-<section id="discrete-choice-1" class="slide level2 smaller">
-<h2>Discrete Choice</h2>
-<p>Car is the <strong>dominant alternative</strong>, if <span class="math display">\[𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟} &lt; 𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} \text{ &amp; } 𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} &lt; 𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} \therefore 𝑈_{𝑐𝑎𝑟} &gt; 𝑈_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}\]</span></p>
-<p>Car and transit in competition, if <span class="math display">\[𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟} &lt; 𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} \text{ &amp; } 𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} &gt; 𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}\]</span></p>
-<p>Is the traveler willing to pay extra <span class="math inline">\((Cost_{car}-Cost_{transit})\)</span> to save <span class="math inline">\((Time_{transit} -Time_{car})\)</span>?</p>
-<p>If yes (pick car): <span class="math inline">\(\left(\frac{\beta_𝑡}{\beta_𝑐}\right)𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟} + 𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} \leq \left(\frac{\beta_𝑡}{\beta_𝑐}\right)𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} + 𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}\)</span></p>
-<p>Willingness-to-pay or Value of Travel Time Savings (VOTS): <span class="math display">\[\left(\frac{\beta_𝑡}{\beta_𝑐}\right) \geq \frac{(𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟}−𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡})}{(𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}−𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟})}\]</span></p>
-</section>
-<section id="discrete-choice-2" class="slide level2">
-<h2>Discrete Choice</h2>
+<section id="translog-demand-model-example-1" class="slide level2">
+<h2>Translog Demand Model: Example</h2>
 
-<img data-src="../../../assets/images/teaching/ENCI707/Lecture4/transit_car_indifference.svg" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="discrete-choice-3" class="slide level2">
-<h2>Discrete Choice</h2>
-
-<img data-src="../../../assets/images/teaching/ENCI707/Lecture4/transit_car_choice.svg" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="stochastic-discrete-choice" class="slide level2 smaller">
-<h2>Stochastic Discrete Choice</h2>
+<img data-src="../../../assets/images/teaching/ENCI707/Lecture3/translog-paper3.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="aggregate-logit-model" class="slide level2" style="font-size: 0.6em;">
+<h2>Aggregate Logit Model</h2>
 <ul>
-<li><p>Choice Probability of an alternative <span class="math inline">\(j\)</span> for an individual <span class="math inline">\(i\)</span> with choice set <span class="math inline">\(C_i\)</span> <span class="math display">\[Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( 𝑈_{𝑖𝑗} \geq 𝑈_{𝑖𝑘}) \text{, } 𝑘 \neq 𝑗 \text{ &amp; } 𝑘 \in 𝐶_𝑖\]</span></p></li>
-<li><p>Random utility: <span class="math display">\[𝑈_{𝑖𝑗}=𝑉_{𝑖𝑗}+\epsilon_{𝑖𝑗} \text{, } 𝑗 \in 𝐶_𝑖\]</span></p></li>
-<li><p>Random Utility Maximizing (RUM) Choice Model: <span class="math display">\[Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( 𝑉_{𝑖𝑗} + \epsilon_{𝑖𝑗} \ge 𝑉_{𝑖𝑘} + \epsilon_{𝑖𝑘}) \text{, } 𝑘 \neq 𝑗 \text{ &amp; } 𝑘 \in 𝐶_𝑖\]</span> Or <span class="math display">\[Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( \epsilon_{ik} - \epsilon_{ij} \leq V_{ij} - V_{ik}) \text{, } 𝑘 \neq 𝑗 \text{ &amp; } 𝑘 \in 𝐶_𝑖\]</span></p></li>
+<li><p>Aggregate logit model: model of market shares <span class="math display">\[D_A = \text{Total demand for alternative A}\]</span> <span class="math display">\[D_B = \text{Total demand for alternative B}\]</span> <span class="math display">\[D_C = \text{Total demand for alternative C}\]</span> <span class="math display">\[V_A = \text{Ratio of total demand for A} = D_A/(D_A+D_B+D_C)\]</span> <span class="math display">\[V_B = \text{Ratio of total demand for B} = D_B/(D_A+D_B+D_C)\]</span> <span class="math display">\[V_C = \text{Ratio of total demand for C} = D_C/(D_A+D_B+D_C)\]</span></p></li>
+<li><p>Considering an alternative, <span class="math inline">\(A\)</span>, as the reference &amp; using Cobb-Douglas log form <span class="math display">\[\ln(V_B/V_A) = \beta_{0BA} + \sum_{i=1}^n \beta_{iBA}\ln(x_{iB}/x_{iA}) + \sum_{j=1}^n \gamma_{jB}y_j + \epsilon_{BA} \text{ or}\]</span> <span class="math display">\[\ln(V_B/V_A) = \beta_{0BA} + \sum_{i=1}^n \beta_{iBA}(x_{iB} - x_{iA}) + \sum_{j=1}^n \gamma_{jB}y_j + \epsilon_{BA}\]</span></p></li>
 </ul>
 </section>
-<section id="rum-based-discrete-choice" class="slide level2 smaller">
-<h2>RUM-Based Discrete Choice</h2>
+<section id="aggregate-logit-model-1" class="slide level2" style="font-size: 0.6em;">
+<h2>Aggregate Logit Model</h2>
 <ul>
-<li><strong>Fully specified</strong> choice set <span class="math inline">\(C_i\)</span></li>
-<li>Attributes of alternatives are <strong>completely defined</strong></li>
-<li>Only <strong>differences in utility</strong> matter</li>
-<li><strong>Systematic utility function</strong> is specified as a function of attributes</li>
-<li>An attribute may have the <strong>same</strong> (generic) weighting factors (coefficient) for all alternatives <strong>if it varies across the alternatives</strong> (e.g., travel time, travel cost, etc.).</li>
-<li>An attribute may have <strong>different</strong> weighting factors (coefficient) for different alternatives if it <strong>does not vary across the alternatives</strong> (age, gender, income, etc.).</li>
-<li>Assumption on distribution of random utility is necessary to derive choice probability: <strong>Stochastic Choice Model</strong></li>
+<li><p>Similarly for alternative <span class="math inline">\(C\)</span> <span class="math display">\[\ln(V_C/V_A) = \beta_{0CA} + \sum_{i=1}^n \beta_{iCA}\ln(x_{iC}/x_{iA}) + \sum_{j=1}^n \gamma_{jB}y_j + \epsilon_{BA} \text{ or}\]</span> <span class="math display">\[\ln(V_B/V_A) = \beta_{0CA} + \sum_{i=1}^n \beta_{iBA}(x_{iC} - x_{iA}) + \sum_{j=1}^n \gamma_{jC}y_j + \epsilon_{CA}\]</span></p></li>
+<li><p>Can be estimated as linear regression model for a set of observed shares and corresponding variable values.</p></li>
+<li><p><strong>Issues</strong>:</p>
+<ul>
+<li>No underlying behavioural theory</li>
+<li>Different elasticity results from different functional forms (ratio or difference of price/cost variable)</li>
+</ul></li>
 </ul>
 </section>
-<section id="binary-discrete-choice" class="slide level2 smaller">
-<h2>Binary Discrete Choice</h2>
-<p>Choice Probability of an alternative <span class="math inline">\(j\)</span> for an individual <span class="math inline">\(i\)</span> with choice set <span class="math inline">\(C_i\)</span> of two alternatives: <span class="math inline">\(j, k\)</span> (dropping <span class="math inline">\(i\)</span> for sake of simplicity) <span class="math display">\[Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( 𝑉_𝑗+\epsilon_𝑗 \ge 𝑉_𝑘+\epsilon_𝑘)\]</span> <span class="math display">\[Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( \epsilon_𝑘−\epsilon_𝑗≤𝑉_𝑗−𝑉_𝑘)\]</span> <strong>Binary Probit:</strong></p>
-<ul>
-<li><span class="math inline">\(\epsilon_j,\epsilon_k\)</span> are both <strong>normally distributed</strong></li>
-<li>So,(<span class="math inline">\(\epsilon_k-\epsilon_j\)</span>) is also <strong>normally distributed</strong></li>
-<li>With fully specified alternative specific constants, (<span class="math inline">\(\epsilon_k-\epsilon_j\)</span>) is <span class="math inline">\(N(0,\sigma^2)\)</span>: <span class="math display">\[V-j - V_k = \beta_0 + \sum \beta(x_j - x_k)\]</span></li>
-<li><strong>Resulting Choice model:</strong> <span class="math inline">\(Pr(j) = \Phi(V/\sigma)\)</span></li>
-<li><span class="math inline">\(\sigma\)</span> normalized to 1, giving <strong>probit model</strong> with unit variance</li>
-</ul>
-</section>
-<section id="binary-discrete-choice-1" class="slide level2 smaller">
-<h2>Binary Discrete Choice</h2>
-<p><strong>Binary Logit:</strong></p>
-<ul>
-<li><p><span class="math inline">\(\epsilon_j,\epsilon_k\)</span> are <strong>IID Type I EV distributed</strong> with scale <span class="math inline">\(\mu\)</span> and variance <span class="math inline">\(\pi^2/6\mu^2\)</span></p></li>
-<li><p>With fully specified alternative specific constants, (<span class="math inline">\(\epsilon_k-\epsilon_j\)</span>) is <strong>logistically distributed</strong> with scale <span class="math inline">\(\mu\)</span> and variance <span class="math inline">\(\pi^2/3\mu^2\)</span>: <span class="math display">\[V_j - V_k = V = \beta_0 + \sum \beta (x_j - x_k)\]</span> Resulting Choice model: <span class="math display">\[Pr(j) = \frac{1}{1+\exp(-\mu(V_j - V_k))} = \frac{\exp(\mu V_j)}{\exp(\mu V_j)+\exp(\mu V_k)}\]</span></p></li>
-<li><p><span class="math inline">\(\mu\)</span> normalized to 1, giving <strong>logit model</strong> with variance of <span class="math inline">\(\pi^2/3\)</span></p></li>
-</ul>
-</section>
-<section id="binary-discrete-choice-2" class="slide level2 smaller">
-<h2>Binary Discrete Choice</h2>
-<p><strong>Binary Probit/Logit Identification</strong></p>
-<ul>
-<li>Only <strong>one</strong> alternative specific constant</li>
-<li>Scale of logit model is <strong>not identified</strong> as a constant</li>
-<li><strong>Reference alternative</strong> is irrelevant <span class="math display">\[𝑉_𝑗−𝑉_𝑘=𝑉=\beta_0+\sum \beta(𝑥_𝑗−𝑥_𝑘)\]</span> <span class="math display">\[𝑉_𝑗=\beta_0+\beta(𝑥_{𝑔𝑒𝑛𝑒𝑟𝑖𝑐})_𝑗+\beta_{(𝑗−𝑠𝑝𝑒𝑐𝑖𝑓𝑖𝑐)} 𝑥_{(𝑗−𝑠𝑝𝑒𝑐𝑖𝑓𝑖𝑐)}\]</span> <span class="math display">\[𝑉_𝑘=0+\beta(𝑥_{𝑔𝑒𝑛𝑒𝑟𝑖𝑐})_𝑘 + \beta_{(𝑘−𝑠𝑝𝑒𝑐𝑖𝑓𝑖𝑐)} 𝑥_{(𝑘−𝑠𝑝𝑒𝑐𝑖𝑓𝑖𝑐)}\]</span> <span class="math display">\[𝑉_{𝑐𝑎𝑟}=\beta_0+\beta_𝑡 time_{𝑐𝑎𝑟} + \beta_𝑐 cost_{𝑐𝑎𝑟} +\beta_𝑜 CarOwnership \]</span> <span class="math display">\[𝑉_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} = 0 + \beta_𝑡 time_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} + \beta_𝑐 fare_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} + \beta_𝑟 On−TimePerformance\]</span></li>
-<li>Allows <strong>non-linear transformation</strong> and <strong>normalizations</strong></li>
-</ul>
+<section id="lagged-effects-in-aggregate-models-example" class="slide level2">
+<h2>Lagged Effects in Aggregate Models: Example</h2>
+<p><img data-src="../../../assets/images/teaching/ENCI707/Lecture3/lag-effect-paper1.png" class="absolute" style="top: 70px; left: 0px; "> <img data-src="../../../assets/images/teaching/ENCI707/Lecture3/lag-effect-paper2.png" class="absolute" style="top: 250px; left: 0px; "></p>
 
 
-</section>
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="../../../assets/images/teaching/ENCI707/logo.png" class="slide-logo"></p>
 <div class="footer footer-default">
-<p><a href="../../..\teaching/ENCI707/">ENCI707 Home</a></p>
+<p><a href="../../../teaching/ENCI707/">ENCI707 Home</a></p>
 </div>
 </div></div>
 
@@ -575,7 +772,7 @@
         margin: 0.1,
 
         math: {
-          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
@@ -602,189 +799,201 @@
       });
     </script>
     <script id="quarto-html-after-body" type="application/javascript">
-    window.document.addEventListener("DOMContentLoaded", function (event) {
-      const toggleBodyColorMode = (bsSheetEl) => {
-        const mode = bsSheetEl.getAttribute("data-mode");
-        const bodyEl = window.document.querySelector("body");
-        if (mode === "dark") {
-          bodyEl.classList.add("quarto-dark");
-          bodyEl.classList.remove("quarto-light");
-        } else {
-          bodyEl.classList.add("quarto-light");
-          bodyEl.classList.remove("quarto-dark");
-        }
-      }
-      const toggleBodyColorPrimary = () => {
-        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-        if (bsSheetEl) {
-          toggleBodyColorMode(bsSheetEl);
-        }
-      }
-      toggleBodyColorPrimary();  
-      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
-      tabsets.forEach(function(tabset) {
-        const tabby = new Tabby('#' + tabset.id);
-      });
-      const isCodeAnnotation = (el) => {
-        for (const clz of el.classList) {
-          if (clz.startsWith('code-annotation-')) {                     
-            return true;
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
           }
+          return false;
         }
-        return false;
-      }
-      const onCopySuccess = function(e) {
-        // button target
-        const button = e.trigger;
-        // don't keep focus
-        button.blur();
-        // flash "checked"
-        button.classList.add('code-copy-button-checked');
-        var currentTitle = button.getAttribute("title");
-        button.setAttribute("title", "Copied!");
-        let tooltip;
-        if (window.bootstrap) {
-          button.setAttribute("data-bs-toggle", "tooltip");
-          button.setAttribute("data-bs-placement", "left");
-          button.setAttribute("data-bs-title", "Copied!");
-          tooltip = new bootstrap.Tooltip(button, 
-            { trigger: "manual", 
-              customClass: "code-copy-button-tooltip",
-              offset: [0, -8]});
-          tooltip.show();    
-        }
-        setTimeout(function() {
-          if (tooltip) {
-            tooltip.hide();
-            button.removeAttribute("data-bs-title");
-            button.removeAttribute("data-bs-toggle");
-            button.removeAttribute("data-bs-placement");
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
           }
-          button.setAttribute("title", currentTitle);
-          button.classList.remove('code-copy-button-checked');
-        }, 1000);
-        // clear code selection
-        e.clearSelection();
-      }
-      const getTextToCopy = function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
           for (const childEl of codeEl.children) {
             if (isCodeAnnotation(childEl)) {
               childEl.remove();
             }
           }
           return codeEl.innerText;
-      }
-      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-        text: getTextToCopy
-      });
-      clipboard.on('success', onCopySuccess);
-      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-          text: getTextToCopy,
-          container: window.document.getElementById('quarto-embedded-source-code-modal')
-        });
-        clipboardModal.on('success', onCopySuccess);
-      }
-        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-        var mailtoRegex = new RegExp(/^mailto:/);
-          var filterRegex = new RegExp("https:\/\/hawkins-tech-lab\.github\.io\/");
-        var isInternal = (href) => {
-            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
         }
-        // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-        for (var i=0; i<links.length; i++) {
-          const link = links[i];
-          if (!isInternal(link.href)) {
-            // undo the damage that might have been done by quarto-nav.js in the case of
-            // links that we want to consider external
-            if (link.dataset.originalHref !== undefined) {
-              link.href = link.dataset.originalHref;
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp("https:\/\/hawkins-tech-lab\.github\.io\/");
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
             }
           }
-        }
-      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-        const config = {
-          allowHTML: true,
-          maxWidth: 500,
-          delay: 100,
-          arrow: false,
-          appendTo: function(el) {
-              return el.closest('section.slide') || el.parentElement;
-          },
-          interactive: true,
-          interactiveBorder: 10,
-          theme: 'light-border',
-          placement: 'bottom-start',
-        };
-        if (contentFn) {
-          config.content = contentFn;
-        }
-        if (onTriggerFn) {
-          config.onTrigger = onTriggerFn;
-        }
-        if (onUntriggerFn) {
-          config.onUntrigger = onUntriggerFn;
-        }
-          config['offset'] = [0,0];
-          config['maxWidth'] = 700;
-        window.tippy(el, config); 
-      }
-      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-      for (var i=0; i<noterefs.length; i++) {
-        const ref = noterefs[i];
-        tippyHover(ref, function() {
-          // use id or data attribute instead here
-          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-          try { href = new URL(href).hash; } catch {}
-          const id = href.replace(/^#\/?/, "");
-          const note = window.document.getElementById(id);
-          if (note) {
-            return note.innerHTML;
-          } else {
-            return "";
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
           }
-        });
-      }
-      const findCites = (el) => {
-        const parentEl = el.parentElement;
-        if (parentEl) {
-          const cites = parentEl.dataset.cites;
-          if (cites) {
-            return {
-              el,
-              cites: cites.split(' ')
-            };
-          } else {
-            return findCites(el.parentElement)
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
           }
-        } else {
-          return undefined;
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
         }
-      };
-      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-      for (var i=0; i<bibliorefs.length; i++) {
-        const ref = bibliorefs[i];
-        const citeInfo = findCites(ref);
-        if (citeInfo) {
-          tippyHover(citeInfo.el, function() {
-            var popup = window.document.createElement('div');
-            citeInfo.cites.forEach(function(cite) {
-              var citeDiv = window.document.createElement('div');
-              citeDiv.classList.add('hanging-indent');
-              citeDiv.classList.add('csl-entry');
-              var biblioDiv = window.document.getElementById('ref-' + cite);
-              if (biblioDiv) {
-                citeDiv.innerHTML = biblioDiv.innerHTML;
-              }
-              popup.appendChild(citeDiv);
-            });
-            return popup.innerHTML;
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
           });
         }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    <input type="hidden" id="giscus-base-theme" value="light">
+    <input type="hidden" id="giscus-alt-theme" value="dark">
+    <script>
+      function loadGiscus() {
+        // Function to get the theme based on body class
+        const getTheme = () => {
+          let baseTheme = document.getElementById('giscus-base-theme').value;
+          let altTheme = document.getElementById('giscus-alt-theme').value;
+          return document.body.classList.contains('quarto-dark') ? altTheme : baseTheme;
+        };
+        const script = document.createElement("script");
+        script.src = "https://giscus.app/client.js";
+        script.async = true;
+        script.dataset.repo = "Hawkins-TECH-Lab/hawkins-tech-lab.github.io";
+        script.dataset.repoId = "R_kgDOJlz51w";
+        script.dataset.category = "General";
+        script.dataset.categoryId = "DIC_kwDOJlz5184C5I_J";
+        script.dataset.mapping = "pathname";
+        script.dataset.reactionsEnabled = "1";
+        script.dataset.emitMetadata = "0";
+        script.dataset.inputPosition = "top";
+        script.dataset.theme = getTheme();
+        script.dataset.lang = "en";
+        script.crossOrigin = "anonymous";
+        // Append the script to the desired div instead of at the end of the body
+        document.getElementById("quarto-content").appendChild(script);
       }
-    });
+      loadGiscus();
     </script>
     
 
