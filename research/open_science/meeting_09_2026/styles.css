@@ -1,0 +1,84 @@
+/* Spectrum of Open Science diagram */
+.spectrum-wrap {
+  position: relative;
+  width: 100%;
+  height: 340px;
+  margin-top: 60px;
+}
+
+.spectrum-bar {
+  position: absolute;
+  top: 90px;
+  left: 2%;
+  width: 96%;
+  height: 10px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #c9c9c9 0%, #7fb3d5 35%, #4a90d9 65%, #1a5fa8 100%);
+}
+
+.spectrum-points {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.point {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.dot {
+  position: absolute;
+  top: 82px;
+  width: 26px;
+  height: 26px;
+  margin-left: -13px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 4px solid #1a5fa8;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.label {
+  position: absolute;
+  top: 130px;
+  width: 220px;
+  margin-left: -110px;
+  text-align: center;
+  font-size: 0.68em;
+  line-height: 1.3em;
+}
+
+.label strong {
+  display: block;
+  font-size: 1.05em;
+  margin-bottom: 6px;
+  color: #1a5fa8;
+}
+
+.label span {
+  color: #444;
+}
+
+/* keep last label from overflowing off the right edge */
+.point:last-child .label {
+  margin-left: -180px;
+  text-align: right;
+}
+
+.point:first-child .label {
+  margin-left: -10px;
+  text-align: left;
+}
+
+.columns {
+  display: flex;
+  gap: 2em;
+}
+
+.column {
+  flex: 1;
+}

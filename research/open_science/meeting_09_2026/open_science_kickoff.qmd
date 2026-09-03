@@ -1,0 +1,270 @@
+---
+title: "Open Science in Canadian Transportation Research"
+subtitle: "Kickoff Meeting"
+author: "Jason Hawkins"
+date: today
+format:
+  revealjs:
+    theme: simple
+    slide-number: true
+    transition: fade
+    incremental: false
+    allow-html: true
+    logo: ""
+    footer: "Open Science in Canadian Transportation Research — Kickoff"
+    css: styles.css
+---
+    
+## Welcome
+
+Thanks for joining — since we all know each other, let's get straight into it.
+
+**Today's goals:**
+
+- Ground everyone in the objectives of the funded project
+- Introduce a shared way of talking about "how open" our work can (should) be
+- Sketch the structure of the working sessions ahead
+- Open the floor for discussion
+
+---
+
+## The Project {.smaller}
+
+**Canadian Framework for Open Science in Urban Modelling**
+
+- Funded by the University of Calgary VPR Open Science Fund (Round 1, June 2026)
+- $10,000 — August 2026 to July 2027
+
+**Team:**
+
+- Jason Hawkins (University of Calgary)
+- Eric Miller (University of Toronto)
+- Khandker Nurul Habib (University of Toronto)
+- Catherine Morency (Polytechnique Montreal)
+- Mahmudur Fatmi (University of British Columbia)
+- Ahsan Habib (Dalhousie University)
+
+---
+
+## What the Fund Supports {.smaller}
+
+The Open Science Fund is meant to add an **Open Science layer** to work we're already doing — not to start from scratch.
+
+That layer can include:
+
+- Practices
+- Workflows
+- Tools
+- Policies
+- Infrastructure
+
+...that make our research and its outputs more **open, accessible, and reusable** — and build a culture of open science across Canadian transportation research groups.
+
+---
+
+## Why This, Why Now
+
+Across Europe, the EAABM position paper (2026) points to a familiar pattern:
+
+- Strong research capability, but slow practical adoption
+- Institutional silos between agencies and developers
+- A steep divide between academic frontiers and mainstream practice
+- Almost no shared curriculum for activity-based modelling
+
+::: {.fragment}
+**Canada has a similar fragmentation** — every group has its own survey instrument, its own model codebase, its own conventions. This project asks: what would it take to change that?
+:::
+
+---
+
+## What "Open Science" Means, Federally {.smaller}
+
+Canada's *Roadmap for Open Science* (Office of the Chief Science Advisor, 2020) describes open science as making the inputs, outputs, and processes of research as freely available as possible, with minimal restriction — while still fully respecting privacy, security, ethical considerations, and appropriate IP protection.
+
+The federal lifecycle model has **four stages**, feeding back into each other:
+
+1. **Ideation** — open, community-engaged research questions
+2. **Data Collection & Analysis** — open methods, open data, citizen science
+3. **Publication** — preprints, open access
+4. **Knowledge Mobilization** — sharing results so they're actually usable
+
+::: {.fragment}
+Note: openness is a *practice across the whole lifecycle*, not just "put the data online at the end."
+:::
+
+---
+
+## What "Open Science" Means {.smaller}
+
+- Openness is a **spectrum**, not a binary — a project can be further along on some dimensions (e.g., open-access publication) and less far along on others (e.g., shared code).
+
+**Four pillars** UCalgary uses to organize this:
+
+- Open scientific knowledge
+- Open science infrastructures
+- Open engagement of societal actors
+- Open dialogue with other knowledge systems
+
+::: {.fragment}
+Our project — and the spectrum on the next slide — is essentially us asking what these pillars look like specifically for **transportation survey and model development**.
+:::
+
+---
+
+## The Spectrum of Open Science {.smaller}
+
+```{=html}
+<div class="spectrum-wrap">
+  <div class="spectrum-bar"></div>
+  <div class="spectrum-points">
+    <div class="point">
+      <div class="dot" style="left:6%"></div>
+      <div class="label" style="left:6%">
+        <strong>Share What We Do</strong>
+        <span>Publish methods, papers, documentation. Code and data stay private.</span>
+      </div>
+    </div>
+    <div class="point">
+      <div class="dot" style="left:38%"></div>
+      <div class="label" style="left:38%">
+        <strong>Common Language</strong>
+        <span>Same programming language / platform conventions, so code is at least legible across groups.</span>
+      </div>
+    </div>
+    <div class="point">
+      <div class="dot" style="left:68%"></div>
+      <div class="label" style="left:68%">
+        <strong>Shared Structure</strong>
+        <span>Common survey instrument design, common model schema — outputs are comparable, still built independently.</span>
+      </div>
+    </div>
+    <div class="point">
+      <div class="dot" style="left:96%"></div>
+      <div class="label" style="left:96%">
+        <strong>Common Model</strong>
+        <span>One shared model / instrument, with modules independently developed and maintained by different groups.</span>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+::: {.fragment .fade-up}
+Not every research project (or even field) needs to sit at the far end — but we should be intentional about *where* we sit, and *why*.
+:::
+
+---
+
+## A Model From Another Field: Climate Science {.smaller}
+
+Steve Easterbrook (University of Toronto) has spent two decades studying how climate modelling groups build and share their models — most recently summarized in his 2023 book *Computing the Climate*.
+
+A few things climate science worked out decades before transportation modelling:
+
+- Institutions build separate **components** (atmosphere, ocean, ice, land surface) that plug into a shared **coupler** — a modular architecture where components can be swapped without breaking the whole system
+- International **model intercomparison projects** (e.g., CMIP) run the same benchmark experiment across dozens of independently developed models, so the community can see exactly where models agree and where they diverge
+- Shared coupling frameworks (e.g., ESMF/NUOPC) standardize how components talk to each other — groups don't have to agree on everything, just on the interfaces
+
+---
+
+## Barriers Climate Modelling Had to Solve {.smaller}
+
+Easterbrook's research on climate code-sharing identified recurring barriers to openness — several will sound familiar:
+
+- **Portability** — code that only runs on one lab's specific setup
+- **Configurability** — local tweaks and edge cases baked into the code
+- **Entrenchment** — decades of institutional investment in existing tools
+- **Model–data blur** — model code tangled up with specific input datasets
+- **Provenance** — losing track of where a result came from once code is modified and passed around
+
+::: {.fragment}
+**Discussion:** which of these look most like our situation with survey instruments and ABMs?
+:::
+
+---
+
+## Structure of Future Meetings {.smaller}
+
+Two parallel tracks, each built around the same set of questions:
+
+::: {.columns}
+::: {.column width="50%"}
+### Track 1 — Surveys
+
+- What questions do we include?
+- What are the common elements?
+- Where do we already agree?
+- Where do we disagree on methods / implementation?
+:::
+
+::: {.column width="50%"}
+### Track 2 — Models
+
+- What is an ABM, for our purposes?
+- What are the common elements?
+- Where do we already agree?
+- Where do we disagree on methods / implementation?
+:::
+:::
+
+Each session: a **short presentation** from one or two groups, followed by **open discussion**.
+
+---
+
+## Track 1: Survey Fundamentals
+
+Possible starting topics:
+
+- Core question modules (trips, activities, household roster, attitudes)
+- Recruitment and sampling approaches across our cities
+- Definitions: what counts as a "trip purpose"?
+- Data formats and codebooks — could we agree on a common schema?
+- GDPR/PIPEDA-equivalent handling and anonymization practices
+
+---
+
+## Track 2: Model Fundamentals
+
+Possible starting topics:
+
+- Population synthesis approaches in use across groups
+- Tour vs. activity-based scheduling logic
+- Software stacks: internal code (C#/Python/Java) vs. assignment (Emme/MatSim)
+- Where do our models diverge most — mode choice? scheduling? assignment?
+- What would a "reference" Canadian ABM even look like?
+
+---
+
+## Beyond Surveys and Models 
+
+Other threads worth carving out sessions for:
+
+- **ABM in graduate curricula** — EAABM's teaching committee found ABM development is rarely taught outside PhD programs; is it worth covering in courses?
+- **Interdisciplinary frontiers** — energy systems, public health, EV charging demand
+- **Software ecosystem** — where do we build vs. adopt vs. contribute upstream?
+- **Emerging methods** — generative AI / ML approaches to schedule synthesis
+
+---
+
+## Format Going Forward
+
+- Recurring monthly sessions (dates to be determined today)
+- Short (7-10 min) presentations to seed discussion, not exhaustive reviews
+- Rotate presenting responsibility across participants
+- Shared notes to track where we agree, disagree, and want to converge
+- Aim: a living record that seeds future collaborations
+
+---
+
+## Discussion
+
+- Does this structure make sense?
+- Which track should we start with?
+- Who wants to give the first short presentation, and on what?
+- What's missing from this list?
+
+---
+
+## Thank You
+
+I look forward to learning from everyone!
