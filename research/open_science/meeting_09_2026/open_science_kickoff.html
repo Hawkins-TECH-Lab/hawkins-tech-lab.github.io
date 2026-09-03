@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-html/tabby.min.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-0626ff4d7a71b55c8707dcae1d04a9b6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.6.39">
 
-  <meta name="author" content="Jason Hawkins, PhD PEng">
+  <meta name="author" content="Jason Hawkins">
   <meta name="dcterms.date" content="2026-09-03">
-  <title>Hawkinslab – Multiscale Carbon Burden of Infrastructure in the United States</title>
+  <title>Hawkinslab – Open Science in Canadian Transportation Research</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="../../../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../../../site_libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -30,11 +30,12 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-4ccf900a41d1abd30d8fa692c89c423b.css">
-  <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="../../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../../site_libs/revealjs/dist/theme/quarto-423d414d36ce366a9d05f36d06304417.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="../../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../../../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
     .reveal div.sourceCode {
       margin: 0;
@@ -122,378 +123,273 @@
       margin-right: 0; 
     }
   </style>
-  <script src="../../site_libs/quarto-diagram/mermaid.min.js"></script>
-  <script src="../../site_libs/quarto-diagram/mermaid-init.js"></script>
-  <link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" data-background-position="center" data-background-size="cover" class="quarto-title-block center">
-  <h1 class="title">Multiscale Carbon Burden of Infrastructure in the United States</h1>
-  <p class="subtitle">WCTR, Toulouse, France</p>
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Open Science in Canadian Transportation Research</h1>
+  <p class="subtitle">Kickoff Meeting</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Jason Hawkins, PhD PEng 
+Jason Hawkins 
 </div>
 </div>
 </div>
 
   <p class="date">2026-09-03</p>
 </section>
-<section id="overview" class="slide level2">
-<h2>Overview</h2>
+<section id="welcome" class="slide level2">
+<h2>Welcome</h2>
+<p>Thanks for joining — since we all know each other, let’s get straight into it.</p>
+<p><strong>Today’s goals:</strong></p>
 <ul>
-<li>Study land use &amp; climate mitigation relationship by combining Vulcan 1-km gridded fossil fuel CO2 (FFCO2) &amp; EPA Smart Location Database land use features</li>
-<li>Partition emissions into transportation, residential energy, &amp; scope 2 residential electricity</li>
-<li>Perform doubly robust inference using continuous propensity scores &amp; BART outcome regression</li>
+<li>Ground everyone in the objectives of the funded project</li>
+<li>Introduce a shared way of talking about “how open” our work can (should) be</li>
+<li>Sketch the structure of the working sessions ahead</li>
+<li>Open the floor for discussion</li>
 </ul>
 </section>
-<section id="motivation" class="slide level2">
-<h2>Motivation</h2>
-
-<img data-src="./images/kenworthy_newman.png" class="r-stretch quarto-figure-center"><p class="caption">Newman &amp; Kenworthy (1989)</p></section>
-<section id="literature" class="slide level2 smaller">
-<h2>Literature</h2>
+<section id="the-project" class="slide level2 smaller">
+<h2>The Project</h2>
+<p><strong>Canadian Framework for Open Science in Urban Modelling</strong></p>
 <ul>
-<li><strong>Urban economics:</strong> Glaeser &amp; Kahn (2008) used an ad-hoc CO2 estimation strategy to compare 66 metropolitan areas​
+<li>Funded by the University of Calgary VPR Open Science Fund (Round 1, June 2026)</li>
+<li>$10,000 — August 2026 to July 2027</li>
+</ul>
+<p><strong>Team:</strong></p>
 <ul>
-<li>Lowest CO2 rates in California​</li>
-<li>Highest CO2 rates in Texas &amp; Oklahoma​</li>
-<li>Development restrictions push new development into high CO2 regions​</li>
-</ul></li>
-<li><strong>Urban planning:</strong> Kockelman (1997) + Cervero &amp; Ewing (2010) examine 3/5Ds of land use​
-<ul>
-<li>Density, Diversity, Design, Destination Access, &amp; Distance to Transit​</li>
-</ul></li>
-<li><strong>Urban science:</strong> Fragkias et al.&nbsp;(2013) used earlier version of Vulcan CO2 dataset (1999-2008) to study urban scaling in total CO2​
-<ul>
-<li>Found proportional scaling of 0.95% increased CO2 per 1% increase in population – i.e., larger cities not significantly more efficient</li>
-</ul></li>
+<li>Jason Hawkins (University of Calgary)</li>
+<li>Eric Miller (University of Toronto)</li>
+<li>Khandker Nurul Habib (University of Toronto)</li>
+<li>Catherine Morency (Polytechnique Montreal)</li>
+<li>Mahmudur Fatmi (University of British Columbia)</li>
+<li>Ahsan Habib (Dalhousie University)</li>
 </ul>
 </section>
-<section id="model-development-process" class="slide level2">
-<h2>Model Development Process</h2>
-<div class="cell" data-reveal="true" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class=""><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart LR
-  classDef big font-size:36px,fill:#9CD97A,stroke:#11AB67,color:#000000;
-
-  A["Input&lt;br/&gt;FFCO2 by&lt;br/&gt;sector"] --&gt; 
-  B["Add climate&lt;br/&gt;and 5D land&lt;br/&gt;use data"] --&gt;
-
-  C["Correlation&lt;br/&gt;analysis to&lt;br/&gt;identify&lt;br/&gt;redundant&lt;br/&gt;variables&lt;br/&gt;for GPS"] --&gt;
-
-  D["Confounder&lt;br/&gt;analysis&lt;br/&gt;DAGs using&lt;br/&gt;Strata‑sum&lt;br/&gt;importance"] --&gt;
-
-  E["Test GPS&lt;br/&gt;functions&lt;br/&gt;GLM, BART,&lt;br/&gt;etc."] --&gt;
-
-  F["Doubly&lt;br/&gt;robust&lt;br/&gt;outcome&lt;br/&gt;model&lt;br/&gt;BART"] --&gt;
-
-  G["Outcome&lt;br/&gt;models&lt;br/&gt;for 5D&lt;br/&gt;treatments&lt;br/&gt;linear&lt;br/&gt;regression"]
-
-  class A,B,C,D,E,F,G big;
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
+<section id="what-the-fund-supports" class="slide level2 smaller">
+<h2>What the Fund Supports</h2>
+<p>The Open Science Fund is meant to add an <strong>Open Science layer</strong> to work we’re already doing — not to start from scratch.</p>
+<p>That layer can include:</p>
+<ul>
+<li>Practices</li>
+<li>Workflows</li>
+<li>Tools</li>
+<li>Policies</li>
+<li>Infrastructure</li>
+</ul>
+<p>…that make our research and its outputs more <strong>open, accessible, and reusable</strong> — and build a culture of open science across Canadian transportation research groups.</p>
+</section>
+<section id="why-this-why-now" class="slide level2">
+<h2>Why This, Why Now</h2>
+<p>Across Europe, the EAABM position paper (2026) points to a familiar pattern:</p>
+<ul>
+<li>Strong research capability, but slow practical adoption</li>
+<li>Institutional silos between agencies and developers</li>
+<li>A steep divide between academic frontiers and mainstream practice</li>
+<li>Almost no shared curriculum for activity-based modelling</li>
+</ul>
+<div class="fragment">
+<p><strong>Canada has a similar fragmentation</strong> — every group has its own survey instrument, its own model codebase, its own conventions. This project asks: what would it take to change that?</p>
 </div>
 </section>
-<section id="confounder-identification" class="slide level2">
-<h2>Confounder Identification</h2>
+<section id="what-open-science-means-federally" class="slide level2 smaller">
+<h2>What “Open Science” Means, Federally</h2>
+<p>Canada’s <em>Roadmap for Open Science</em> (Office of the Chief Science Advisor, 2020) describes open science as making the inputs, outputs, and processes of research as freely available as possible, with minimal restriction — while still fully respecting privacy, security, ethical considerations, and appropriate IP protection.</p>
+<p>The federal lifecycle model has <strong>four stages</strong>, feeding back into each other:</p>
+<ol type="1">
+<li><strong>Ideation</strong> — open, community-engaged research questions</li>
+<li><strong>Data Collection &amp; Analysis</strong> — open methods, open data, citizen science</li>
+<li><strong>Publication</strong> — preprints, open access</li>
+<li><strong>Knowledge Mobilization</strong> — sharing results so they’re actually usable</li>
+</ol>
+<div class="fragment">
+<p>Note: openness is a <em>practice across the whole lifecycle</em>, not just “put the data online at the end.”</p>
+</div>
+</section>
+<section id="what-open-science-means" class="slide level2 smaller">
+<h2>What “Open Science” Means</h2>
+<ul>
+<li>Openness is a <strong>spectrum</strong>, not a binary — a project can be further along on some dimensions (e.g., open-access publication) and less far along on others (e.g., shared code).</li>
+</ul>
+<p><strong>Four pillars</strong> UCalgary uses to organize this:</p>
+<ul>
+<li>Open scientific knowledge</li>
+<li>Open science infrastructures</li>
+<li>Open engagement of societal actors</li>
+<li>Open dialogue with other knowledge systems</li>
+</ul>
+<div class="fragment">
+<p>Our project — and the spectrum on the next slide — is essentially us asking what these pillars look like specifically for <strong>transportation survey and model development</strong>.</p>
+</div>
+</section>
+<section id="the-spectrum-of-open-science" class="slide level2 smaller">
+<h2>The Spectrum of Open Science</h2>
+<div class="spectrum-wrap">
+  <div class="spectrum-bar"></div>
+  <div class="spectrum-points">
+    <div class="point">
+      <div class="dot" style="left:6%"></div>
+      <div class="label" style="left:6%">
+        <strong>Share What We Do</strong>
+        <span>Publish methods, papers, documentation. Code and data stay private.</span>
+      </div>
+    </div>
+    <div class="point">
+      <div class="dot" style="left:38%"></div>
+      <div class="label" style="left:38%">
+        <strong>Common Language</strong>
+        <span>Same programming language / platform conventions, so code is at least legible across groups.</span>
+      </div>
+    </div>
+    <div class="point">
+      <div class="dot" style="left:68%"></div>
+      <div class="label" style="left:68%">
+        <strong>Shared Structure</strong>
+        <span>Common survey instrument design, common model schema — outputs are comparable, still built independently.</span>
+      </div>
+    </div>
+    <div class="point">
+      <div class="dot" style="left:96%"></div>
+      <div class="label" style="left:96%">
+        <strong>Common Model</strong>
+        <span>One shared model / instrument, with modules independently developed and maintained by different groups.</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="fragment fade-up">
+<p>Not every research project (or even field) needs to sit at the far end — but we should be intentional about <em>where</em> we sit, and <em>why</em>.</p>
+</div>
+</section>
+<section id="a-model-from-another-field-climate-science" class="slide level2 smaller">
+<h2>A Model From Another Field: Climate Science</h2>
+<p>Steve Easterbrook (University of Toronto) has spent two decades studying how climate modelling groups build and share their models — most recently summarized in his 2023 book <em>Computing the Climate</em>.</p>
+<p>A few things climate science worked out decades before transportation modelling:</p>
+<ul>
+<li>Institutions build separate <strong>components</strong> (atmosphere, ocean, ice, land surface) that plug into a shared <strong>coupler</strong> — a modular architecture where components can be swapped without breaking the whole system</li>
+<li>International <strong>model intercomparison projects</strong> (e.g., CMIP) run the same benchmark experiment across dozens of independently developed models, so the community can see exactly where models agree and where they diverge</li>
+<li>Shared coupling frameworks (e.g., ESMF/NUOPC) standardize how components talk to each other — groups don’t have to agree on everything, just on the interfaces</li>
+</ul>
+</section>
+<section id="barriers-climate-modelling-had-to-solve" class="slide level2 smaller">
+<h2>Barriers Climate Modelling Had to Solve</h2>
+<p>Easterbrook’s research on climate code-sharing identified recurring barriers to openness — several will sound familiar:</p>
+<ul>
+<li><strong>Portability</strong> — code that only runs on one lab’s specific setup</li>
+<li><strong>Configurability</strong> — local tweaks and edge cases baked into the code</li>
+<li><strong>Entrenchment</strong> — decades of institutional investment in existing tools</li>
+<li><strong>Model–data blur</strong> — model code tangled up with specific input datasets</li>
+<li><strong>Provenance</strong> — losing track of where a result came from once code is modified and passed around</li>
+</ul>
+<div class="fragment">
+<p><strong>Discussion:</strong> which of these look most like our situation with survey instruments and ABMs?</p>
+</div>
+</section>
+<section id="structure-of-future-meetings" class="slide level2 smaller">
+<h2>Structure of Future Meetings</h2>
+<p>Two parallel tracks, each built around the same set of questions:</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="./images/confounders.png" class="quarto-figure quarto-figure-center"></p>
-</figure>
-</div>
+<h3 id="track-1-surveys">Track 1 — Surveys</h3>
+<ul>
+<li>What questions do we include?</li>
+<li>What are the common elements?</li>
+<li>Where do we already agree?</li>
+<li>Where do we disagree on methods / implementation?</li>
+</ul>
 </div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="./images/pearson_correlation.png"></p>
-<figcaption>Transportation Pearson Correlation Matrix</figcaption>
-</figure>
-</div>
+<h3 id="track-2-models">Track 2 — Models</h3>
+<ul>
+<li>What is an ABM, for our purposes?</li>
+<li>What are the common elements?</li>
+<li>Where do we already agree?</li>
+<li>Where do we disagree on methods / implementation?</li>
+</ul>
 </div></div>
+<p>Each session: a <strong>short presentation</strong> from one or two groups, followed by <strong>open discussion</strong>.</p>
 </section>
-<section id="conditional-variable-importance" class="slide level2">
-<h2>Conditional Variable Importance</h2>
-
-<img data-src="./images/algorithm.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="doubly-robust-outcome-model" class="slide level2">
-<h2>Doubly Robust Outcome Model</h2>
-<h3 id="bart-outcome-model">BART Outcome Model</h3>
-<p><span class="math display">\[\begin{split}
-\ln(CO_2 \text{ per capita}) =&amp; \text{ln(total CBSA population)} \\&amp;+ \text{ln(CBSA population density)} \\&amp;+ \text{ln(average CBG treatment level in CBSA)} \\&amp;+ \text{propensity score} \\&amp;+ \text{CBSA fixed effect}
-\end{split}\]</span></p>
-<h3 id="doubly-robust-adjustment-using-bart-continuous-gps">Doubly Robust Adjustment using BART &amp; Continuous GPS</h3>
-<p><span class="math display">\[\hat{\mu}_{i}^{DR}(t) = m(t,X_i) + w_i(t)\left\{Y_i - m(T_i,X_i)\right\}\]</span></p>
-</section>
-<section id="individual-transportation-results" class="slide level2">
-<h2>Individual Transportation Results</h2>
+<section id="track-1-survey-fundamentals" class="slide level2">
+<h2>Track 1: Survey Fundamentals</h2>
+<p>Possible starting topics:</p>
 <ul>
-<li><strong>Note:</strong> results are production-based, meaning allocated to the point of emissions not trip origin <!-- ![](./images/indiv_transport.png){fig-align="center" width="35%"} --></li>
+<li>Core question modules (trips, activities, household roster, attitudes)</li>
+<li>Recruitment and sampling approaches across our cities</li>
+<li>Definitions: what counts as a “trip purpose”?</li>
+<li>Data formats and codebooks — could we agree on a common schema?</li>
+<li>GDPR/PIPEDA-equivalent handling and anonymization practices</li>
 </ul>
-<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; justify-items: center;">
-  <figure style="margin: 0;">
-    <img src="./images/tran_dens.png" style="height: 180px;">
-    <figcaption style="margin: 2px 0 0 0; font-size: 0.8em;">Density</figcaption>
-  </figure>
-  <figure style="margin: 0;">
-    <img src="./images/tran_div.png" style="height: 180px;">
-    <figcaption style="margin: 2px 0 0 0; font-size: 0.8em;">Diversity</figcaption>
-  </figure>
-  <figure style="margin: 0;">
-    <img src="./images/tran_des.png" style="height: 180px;">
-    <figcaption style="margin: 2px 0 0 0; font-size: 0.8em;">Design</figcaption>
-  </figure>
-  <figure style="margin: 0;">
-    <img src="./images/tran_dist.png" style="height: 180px;">
-    <figcaption style="margin: 2px 0 0 0; font-size: 0.8em;">Distance</figcaption>
-  </figure>
-  <figure style="margin: 0;">
-    <img src="./images/tran_dest.png" style="height: 180px;">
-    <figcaption style="margin: 2px 0 0 0; font-size: 0.8em;">Destination</figcaption>
-  </figure>
-</div>
 </section>
-<section id="joint-transportation-results" class="slide level2">
-<h2>Joint Transportation Results</h2>
+<section id="track-2-model-fundamentals" class="slide level2">
+<h2>Track 2: Model Fundamentals</h2>
+<p>Possible starting topics:</p>
 <ul>
-<li>Various joint treatment models estimated with metro/local treatments, propensity score adjustment, &amp; spatial parameters</li>
+<li>Population synthesis approaches in use across groups</li>
+<li>Tour vs.&nbsp;activity-based scheduling logic</li>
+<li>Software stacks: internal code (C#/Python/Java) vs.&nbsp;assignment (Emme/MatSim)</li>
+<li>Where do our models diverge most — mode choice? scheduling? assignment?</li>
+<li>What would a “reference” Canadian ABM even look like?</li>
 </ul>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Variable</th>
-<th>Base OLS</th>
-<th>Spatial EV</th>
-<th>SEM + SLX(10km)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Local density</td>
-<td>-0.187***</td>
-<td>-0.187***</td>
-<td>-0.194***</td>
-</tr>
-<tr class="even">
-<td>Roadway design</td>
-<td>-0.449***</td>
-<td>-0.449***</td>
-<td>-0.475***</td>
-</tr>
-<tr class="odd">
-<td>Transit distance</td>
-<td>-0.001</td>
-<td>-0.001</td>
-<td>+0.067***</td>
-</tr>
-<tr class="even">
-<td>W Transit distance</td>
-<td>–</td>
-<td>–</td>
-<td>-0.144***</td>
-</tr>
-<tr class="odd">
-<td>Residual Moran’s I</td>
-<td>0.370</td>
-<td>0.368</td>
-<td>0.174</td>
-</tr>
-</tbody>
-</table>
 </section>
-<section id="individual-residential-electricity-results" class="slide level2">
-<h2>Individual Residential Electricity Results</h2>
-<div>
-
-</div>
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="./images/elec_dens.png" height="300"></p>
-<figcaption>Density</figcaption>
-</figure>
-</div>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="./images/elec_div.png" height="300"></p>
-<figcaption>Diversity</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="joint-residential-electricity-results" class="slide level2">
-<h2>Joint Residential Electricity Results</h2>
+<section id="beyond-surveys-and-models" class="slide level2">
+<h2>Beyond Surveys and Models</h2>
+<p>Other threads worth carving out sessions for:</p>
 <ul>
-<li>Various joint treatment models estimated with metro/local treatments, propensity score adjustment, &amp; spatial parameters</li>
+<li><strong>ABM in graduate curricula</strong> — EAABM’s teaching committee found ABM development is rarely taught outside PhD programs; is it worth covering in courses?</li>
+<li><strong>Interdisciplinary frontiers</strong> — energy systems, public health, EV charging demand</li>
+<li><strong>Software ecosystem</strong> — where do we build vs.&nbsp;adopt vs.&nbsp;contribute upstream?</li>
+<li><strong>Emerging methods</strong> — generative AI / ML approaches to schedule synthesis</li>
 </ul>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Variable</th>
-<th>Base OLS</th>
-<th>Spatial EV</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Local density</td>
-<td>-0.068***</td>
-<td>-0.068***</td>
-</tr>
-<tr class="even">
-<td>Local diversity</td>
-<td>+0.037***</td>
-<td>+0.037***</td>
-</tr>
-<tr class="odd">
-<td>Local diversity <span class="math inline">\(\times\)</span> PS</td>
-<td>-0.035***</td>
-<td>-0.035***</td>
-</tr>
-<tr class="even">
-<td>Residual Moran’s I</td>
-<td>0.648</td>
-<td>0.648</td>
-</tr>
-</tbody>
-</table>
 </section>
-<section id="individual-residential-energy-results" class="slide level2">
-<h2>Individual Residential Energy Results</h2>
-<div>
-
-</div>
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="./images/res_dens.png" height="300"></p>
-<figcaption>Density</figcaption>
-</figure>
-</div>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="./images/res_div.png" height="300"></p>
-<figcaption>Diversity</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="joint-residential-energy-results" class="slide level2">
-<h2>Joint Residential Energy Results</h2>
+<section id="format-going-forward" class="slide level2">
+<h2>Format Going Forward</h2>
 <ul>
-<li>Various joint treatment models estimated with metro/local treatments, propensity score adjustment, &amp; spatial parameters</li>
-</ul>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Variable</th>
-<th>Base OLS</th>
-<th>Spatial EV</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Local density</td>
-<td>-0.120***</td>
-<td>-0.120***</td>
-</tr>
-<tr class="even">
-<td>Local diversity</td>
-<td>+0.008***</td>
-<td>+0.008***</td>
-</tr>
-<tr class="odd">
-<td>Local diversity <span class="math inline">\(\times\)</span> PS</td>
-<td>+0.010***</td>
-<td>+0.010***</td>
-</tr>
-<tr class="even">
-<td>Residual Moran’s I</td>
-<td>0.431</td>
-<td>0.431</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="overall-results" class="slide level2">
-<h2>Overall Results</h2>
-<ul>
-<li>Production- and consumption-based emissions allocations tell fundamentally different stories: for production-based transportatation FFCO2, higher density lowers emissions but higher land use mix/destination access raises them</li>
-<li>Residential emissions results are mixed: density lowers both sources but other results vary</li>
-<li>Roadway network density has a consistently negative effect on transportation FFCO2 emissions</li>
+<li>Recurring monthly sessions (dates to be determined today)</li>
+<li>Short (7-10 min) presentations to seed discussion, not exhaustive reviews</li>
+<li>Rotate presenting responsibility across participants</li>
+<li>Shared notes to track where we agree, disagree, and want to converge</li>
+<li>Aim: a living record that seeds future collaborations</li>
 </ul>
 </section>
 <section id="discussion" class="slide level2">
 <h2>Discussion</h2>
 <ul>
-<li><strong>Congestion pricing/low-emission zones</strong> address external cost on local results from production-based transportation emissions</li>
-<li>Compact development reduces residential emissions</li>
-<li>Regional 5D averages have minimal effects on sector-specific emissions after controlling for local 5D effects</li>
-</ul>
-</section>
-<section id="future-work" class="slide level2">
-<h2>Future work</h2>
-<ul>
-<li>Develop consumption(home)-based transportation emissions estimates based on OD flows</li>
-<li>Extension to other criteria air pollutants</li>
-<li>Spatial scaling analysis by city &amp; climatic zone for population &amp; 5D metrics</li>
+<li>Does this structure make sense?</li>
+<li>Which track should we start with?</li>
+<li>Who wants to give the first short presentation, and on what?</li>
+<li>What’s missing from this list?</li>
 </ul>
 </section>
 <section id="thank-you" class="slide level2">
-<h2>Thank you</h2>
-<p>Questions? Reach out any time.</p>
-<p><a href="mailto:jfhawkin@ucalgary.ca">jfhawkin@ucalgary.ca</a></p>
-<p>Presentation &amp; paper available:</p>
+<h2>Thank You</h2>
+<p>I look forward to learning from everyone!</p>
 
 
-
-<img data-src="./images/qr-code.png" class="r-stretch quarto-figure-center"><p class="caption">https://hawkins-tech-lab.github.io/</p></section>
+</section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
-<p><img src="images/hex-icon-1.png" class="slide-logo"></p>
 <div class="footer footer-default">
-
+<p>Open Science in Canadian Transportation Research — Kickoff</p>
 </div>
 </div></div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="../../site_libs/revealjs/dist/reveal.js"></script>
+  <script src="../../../site_libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="../../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="../../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="../../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="../../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../../../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../../../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../../../site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
-  <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
+  <script src="../../../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../../../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../../../site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -502,7 +398,7 @@ Jason Hawkins, PhD PEng
       // https://revealjs.com/config/
       Reveal.initialize({
 'controlsAuto': true,
-'previewLinksAuto': true,
+'previewLinksAuto': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
@@ -641,7 +537,7 @@ Jason Hawkins, PhD PEng
 
         // Transition style for full page slide backgrounds
         // (none/fade/slide/convex/concave/zoom)
-        backgroundTransition: 'fade',
+        backgroundTransition: 'none',
 
         // Number of slides away from the current that are visible
         viewDistance: 3,
