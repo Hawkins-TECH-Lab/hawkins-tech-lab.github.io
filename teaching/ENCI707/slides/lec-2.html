@@ -6,8 +6,8 @@
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.6.39">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.8.25">
 
   <title>Hawkinslab – Lecture 2 - Aggregate Demand Models</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -28,7 +28,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../../../site_libs/revealjs/dist/theme/quarto-423d414d36ce366a9d05f36d06304417.css">
+  <link rel="stylesheet" href="../../../site_libs/revealjs/dist/theme/quarto-0fde88a82f0356838740f155f1088782.css">
   <link href="../../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -137,9 +137,8 @@
 </section>
 <section id="outline" class="slide level2">
 <h2>Outline</h2>
-<div>
 <ol type="1">
-<li class="fragment">Some econometric tools used in demand modeling:
+<li class="fragment">Some econometric tools used in demand modelling:
 <ul>
 <li class="fragment">Normal regression</li>
 <li class="fragment">Lognormal regression</li>
@@ -148,7 +147,6 @@
 </ul></li>
 <li class="fragment">Aggregrate transportation demand models</li>
 </ol>
-</div>
 </section>
 <section>
 <section id="crash-course-in-statistical-models" class="title-slide slide level1 center">
@@ -166,7 +164,7 @@
 <li>Maximum likelihood by normal pdf <span class="math display">\[L_i = \frac{1}{\sigma}\phi\left(\frac{y_i-\beta_0-\sum_j \beta_j x_j}{\sigma}\right)\]</span></li>
 </ul></li>
 <li>Regression to mean is deterministic for expected value of most regression model expressed as f(covariates)</li>
-<li>Probabilistic application through simulation</li>
+<li>Probabilistic application through simulation to propogate uncertainty</li>
 </ul>
 </section>
 <section id="functions-of-random-variables" class="slide level2">
@@ -193,7 +191,7 @@
 <p><span class="math display">\[y_i^* = \beta_0 + \sum_j \beta_j x_j + \epsilon_j, \epsilon_j \text{ is } \sim N(0,\sigma^2)\]</span></p>
 <ul>
 <li><p>Observed value is <strong>binary</strong> (0/1) <span class="math display">\[Pr(y_i=1) = \pi_i = \Phi \left((\beta_0 + \sum_j \beta_j x_j)/\sigma \right)\]</span> <span class="math display">\[Pr(y_i=0) = 1 - \pi_i = 1 - \Phi \left((\beta_0 + \sum_j \beta_j x_j)/\sigma \right) = \Phi \left( - (\beta_0 + \sum_j \beta_j x_j)/\sigma \right)\]</span></p></li>
-<li><p>Estimation by Maximum likelihood by normal cdf <span class="math display">\[L_i = \pi_i^{\delta_i}(1-\pi_i)^{1-\delta_i} \text{  }\delta_i=1 \text{, if }y_i=1, 0 \text{ otherwise}\]</span></p>
+<li><p>Estimation by maximum likelihood assuming normal cdf <span class="math display">\[L_i = \pi_i^{\delta_i}(1-\pi_i)^{1-\delta_i} \text{  }\delta_i=1 \text{, if }y_i=1, 0 \text{ otherwise}\]</span></p>
 <ul>
 <li>Variance normalized to 1 (<strong>homogeneous</strong>) or parameterized without a constant (<strong>heterogeneous</strong>)</li>
 </ul></li>
@@ -203,7 +201,7 @@
 <h2>Logistic Regression</h2>
 <ul>
 <li>Observed value is <strong>binary</strong> (0/1) with <span class="math inline">\(\epsilon_i\)</span> being logistically distributed this time <span class="math display">\[Pr(y_i=1) = \pi_i = \frac{\exp (\beta_0 + \sum_j \beta_j x_j)}{1 + \exp(\beta_0 + \sum_j \beta_j x_j)}\]</span> <span class="math display">\[Pr(y_i=0) = 1 - \pi_i = 1 - \pi_i = \frac{1}{1 + \exp(\beta_0 + \sum_j \beta_j x_j)}\]</span></li>
-<li>Estimation by Maximum likelihood <span class="math display">\[L_i = \pi_i^{\delta_i}(1-\pi_i)^{1-\delta_i} \text{  }\delta_i=1 \text{, if }y_i=1, 0 \text{ otherwise}\]</span>
+<li>Estimation by maximum likelihood <span class="math display">\[L_i = \pi_i^{\delta_i}(1-\pi_i)^{1-\delta_i} \text{  }\delta_i=1 \text{, if }y_i=1, 0 \text{ otherwise}\]</span>
 <ul>
 <li>Interpretation (scale compounded parameters): <span class="math display">\[logit(\pi_i) = \text{log of odds ratio} = \ln\left(\frac{\pi_i}{1-\pi_i}\right)=\beta_0 + \sum_j \beta_j x_j\]</span></li>
 </ul></li>
@@ -294,41 +292,144 @@
 <section id="zero-inflated-ordered-regression" class="slide level2" style="font-size: 0.6em;">
 <h2>Zero-Inflated Ordered Regression</h2>
 <ul>
-<li>Observed data have overwhelming portion with zero values: <strong>zero-inflation</strong> <span class="math display">\[y_i = 0 \text{, no further regression model}\]</span> <span class="math display">\[y_i &gt; 0 \text{, } Pr(y_i=j|x)\]</span></li>
-<li>Estimation: Maximum likelihood <span class="math display">\[y_i=0 -&gt; \eta_i \leq \sum_k \gamma z_k\]</span> <span class="math display">\[y_i &gt; 0, -&gt; \eta_i &gt; \sum_k \gamma_k z_k \text{ &amp; } Pr(y_i=j|x)\]</span> <span class="math display">\[L_i = \Phi(\sum_k \gamma_k z_k)^{y_i=0} \times \left(\Phi(-\sum_k \gamma_k z_k)(F(\tau_j - \beta x_i) - F(\tau_{j-1} - \beta x_i))\right)^{y_i=j}\]</span></li>
-<li>2 models: model of <strong>binary</strong> zero/non-zero <span class="math inline">\(y\)</span> &amp; <strong>ordered</strong> regression model</li>
+<li><p>Excess zeros arise from <strong>two processes</strong>:</p>
+<ul>
+<li><strong>Structural zeros</strong> from a binary model</li>
+<li><strong>Sampling zeros</strong> from the ordered model</li>
+</ul></li>
+<li><p>Mixture structure: <span class="math display">\[
+P(Y_i = 0) = \pi_i + (1-\pi_i)F(\tau_0 - \eta_i)
+\]</span> <span class="math display">\[
+P(Y_i = j&gt;0) = (1-\pi_i)\left[F(\tau_j - \eta_i) - F(\tau_{j-1} - \eta_i)\right]
+\]</span></p></li>
+<li><p>Components:</p>
+<ul>
+<li>Structural-zero probability:<br>
+<span class="math display">\[
+\pi_i = \Phi(\gamma z_i)
+\]</span></li>
+<li>Ordered latent index:<br>
+<span class="math display">\[
+\eta_i = \beta x_i
+\]</span></li>
+</ul></li>
+<li><p>Likelihood: <span class="math display">\[
+L_i =
+\left[\pi_i + (1-\pi_i)F(\tau_0 - \eta_i)\right]^{I(y_i=0)}
+\left[(1-\pi_i)\left(F(\tau_j - \eta_i) - F(\tau_{j-1} - \eta_i)\right)\right]^{I(y_i=j&gt;0)}
+\]</span></p></li>
+<li><p>Two models:</p>
+<ul>
+<li><strong>Binary structural-zero model</strong></li>
+<li><strong>Ordered regression model</strong> (not truncated)</li>
+</ul></li>
+</ul>
+</section>
+<section id="ordered-hurdle-regression" class="slide level2" style="font-size: 0.6em;">
+<h2>Ordered Hurdle Regression</h2>
+<ul>
+<li><p>Zeros arise from <strong>one process only</strong> (binary hurdle)</p></li>
+<li><p>Positive ordered outcomes arise from a <strong>zero-truncated ordered model</strong></p></li>
+<li><p>Structure: <span class="math display">\[
+P(Y_i = 0) = 1 - p_i
+\]</span> <span class="math display">\[
+P(Y_i = j&gt;0) = p_i \cdot
+\frac{F(\tau_j - \eta_i) - F(\tau_{j-1} - \eta_i)}
+     {1 - F(\tau_0 - \eta_i)}
+\]</span></p></li>
+<li><p>Components:</p>
+<ul>
+<li>Hurdle probability:<br>
+<span class="math display">\[
+p_i = \Phi(\gamma z_i)
+\]</span></li>
+<li>Ordered latent index:<br>
+<span class="math display">\[
+\eta_i = \beta x_i
+\]</span></li>
+</ul></li>
+<li><p>Likelihood: <span class="math display">\[
+L_i =
+(1-p_i)^{I(y_i=0)}
+\left[p_i \cdot
+\frac{F(\tau_j - \eta_i) - F(\tau_{j-1} - \eta_i)}
+     {1 - F(\tau_0 - \eta_i)}\right]^{I(y_i=j&gt;0)}
+\]</span></p></li>
 </ul>
 </section>
 <section id="count-variable-regression" class="slide level2 smaller">
 <h2>Count Variable Regression</h2>
 <ul>
-<li>Count (<span class="math inline">\(y_i\)</span>) of events occuring <strong>randomly</strong> &amp; <strong>uniformly</strong> in tmie with constant expected rate of occurence <span class="math display">\[Pr(y_i) = \frac{\lambda^{y_i}e^{-\lambda}}{y_i!} \text{, } E[y_i] = V[y_i] = \lambda \text{, } \lambda = exp(\sum_j \beta_j x_j)\]</span></li>
-<li>Likelihood function for estimation <span class="math display">\[L(y_i|x,\beta) = Pr(y_i)\]</span></li>
-<li>Issues with Poisson model
+<li><p>Count of events occurring <strong>randomly</strong> and <strong>uniformly</strong> in time with constant rate: <span class="math display">\[
+P(Y_i = y_i) = \frac{\lambda^{y_i}e^{-\lambda}}{y_i!}
+\]</span> <span class="math display">\[
+E[Y_i] = V[Y_i] = \lambda
+\]</span> <span class="math display">\[
+\lambda_i = \exp(\beta x_i)
+\]</span></p></li>
+<li><p>Likelihood: <span class="math display">\[
+L_i = P(Y_i = y_i)
+\]</span></p></li>
+<li><p>Issues:</p>
 <ul>
-<li>Heterogeneity can violate <strong>constant expected rate assumption</strong></li>
-<li><strong>Upper limit</strong> of count data can exist - can cause violation of <span class="math inline">\(E[y_i] = V[y_i]\)</span> assumption and cause <strong>over/under dispersion</strong></li>
+<li>Heterogeneity violates constant-rate assumption</li>
+<li>Upper limits → over/under dispersion</li>
 </ul></li>
 </ul>
 </section>
 <section id="poisson-regression-with-heterogeneity" class="slide level2 smaller">
 <h2>Poisson Regression with Heterogeneity</h2>
 <ul>
-<li>Existence of over-dispersion requires correction
-<ul>
-<li>Assume additional gamma heterogeneity <span class="math display">\[\theta^* = exp(\sum_j \beta_j x_j + u) = exp(\sum_j \beta_j x_j) \times exp(u)\]</span></li>
-<li>Consider a positive distribution for <span class="math inline">\(u\)</span>, a Gamma distribution with mean 1 and variance <span class="math inline">\(1/\theta=\alpha\)</span></li>
-<li>Results in a Negative Binomial regression model <span class="math display">\[Pr(y_i) = \frac{\Gamma(\theta + y_i)}{\Gamma(y_i +1)\Gamma(\theta)}r_i^{y_i}(1-r_i)^{\theta} \text{, } r_i = \frac{exp(\sum_j \beta_j x_j)}{exp(\sum_j \beta_j x_j) + \theta}\]</span></li>
-</ul></li>
-<li>Likelihood function for estimation: <span class="math inline">\(L(y_i|x,\beta,\theta) = Pr(y_i)\)</span>, <span class="math inline">\(\theta\)</span> is the dispersion parameter, which should be a positive value</li>
+<li><p>Add gamma heterogeneity: <span class="math display">\[
+\theta_i^* = \exp(\beta x_i + u_i)
+\]</span> <span class="math display">\[
+u_i \sim \text{Gamma}(1, 1/\theta)
+\]</span></p></li>
+<li><p>Negative Binomial pmf: <span class="math display">\[
+P(Y_i = y_i) =
+\frac{\Gamma(\theta + y_i)}{\Gamma(y_i +1)\Gamma(\theta)}
+r_i^{y_i}(1-r_i)^{\theta}
+\]</span> <span class="math display">\[
+r_i = \frac{\exp(\beta x_i)}{\exp(\beta x_i) + \theta}
+\]</span></p></li>
+<li><p>Likelihood: <span class="math display">\[
+L_i = P(Y_i = y_i)
+\]</span></p></li>
 </ul>
 </section>
 <section id="zero-inflated-count-regression" class="slide level2" style="font-size: 0.6em;">
 <h2>Zero-Inflated Count Regression</h2>
 <ul>
-<li>Observed data have overwhelming portion with zero values: <strong>zero-inflation</strong> <span class="math display">\[y_i = 0 \text{, no further regression model}\]</span> <span class="math display">\[y_i &gt; 0 \text{, } Pr(y_i=j|x) \text{Poisson or Negative Binomial}\]</span></li>
-<li>Estimation: Maximum likelihood <span class="math display">\[y_i=0 -&gt; \eta_i \leq \sum_k \gamma z_k\]</span> <span class="math display">\[y_i &gt; 0, -&gt; \eta_i &gt; \sum_k \gamma_k z_k \text{ &amp; } Pr(y_i=j|x)\]</span> <span class="math display">\[L_i = \Phi(\sum_k \gamma_k z_k)^{y_i=0} \times \left(\Phi(-\sum_k \gamma_k z_k)Pr(y_i)\right)^{y_i=j}\]</span></li>
-<li>2 models: model of <strong>binary</strong> zero/non-zero <span class="math inline">\(y\)</span> &amp; <strong>count</strong> regression model</li>
+<li><p>Excess zeros arise from <strong>two processes</strong>:</p>
+<ul>
+<li>Structural zeros (binary model)</li>
+<li>Sampling zeros (Poisson/NB)</li>
+</ul></li>
+<li><p>Mixture structure: <span class="math display">\[
+P(Y_i = 0) = \pi_i + (1-\pi_i)f(0)
+\]</span> <span class="math display">\[
+P(Y_i = j&gt;0) = (1-\pi_i)f(j)
+\]</span></p></li>
+<li><p>Components:</p>
+<ul>
+<li>Structural-zero probability: <span class="math display">\[
+\pi_i = \Phi(\gamma z_i)
+\]</span></li>
+<li>Count model: <span class="math display">\[
+f(j) = \text{Poisson or NB pmf}
+\]</span></li>
+</ul></li>
+<li><p>Likelihood: <span class="math display">\[
+L_i =
+\left[\pi_i + (1-\pi_i)f(0)\right]^{I(y_i=0)}
+\left[(1-\pi_i)f(y_i)\right]^{I(y_i&gt;0)}
+\]</span></p></li>
+<li><p>Contrast:</p>
+<ul>
+<li><strong>Zero-inflated:</strong> mixture; count model can produce zeros<br>
+</li>
+<li><strong>Hurdle:</strong> single hurdle; count model is zero-truncated</li>
+</ul></li>
 </ul>
 </section>
 <section id="use-of-econometric-models" class="slide level2 smaller">
@@ -370,7 +471,7 @@
 <section id="decision-making" class="slide level2 smaller">
 <h2>Decision Making</h2>
 <ul>
-<li>In transportation modeling, analysis deals both directly and indirectly with decision-making of people and firms</li>
+<li>In transportation modelling, analysis deals both directly and indirectly with decision-making of people and firms</li>
 <li>Decisions can be expressed as elements related to demand and supply</li>
 <li>We define decision as we (<strong>the modeler</strong>) observe it</li>
 <li>Observed decisions can be (or measured as):
@@ -400,8 +501,8 @@
 </ul></li>
 </ul>
 </section>
-<section id="modeling-passenger-travel-demand" class="slide level2 smaller">
-<h2>Modeling Passenger Travel Demand</h2>
+<section id="modelling-passenger-travel-demand" class="slide level2 smaller">
+<h2>Modelling Passenger Travel Demand</h2>
 <ul>
 <li>Urban travel demand:
 <ul>
@@ -418,14 +519,14 @@
 <li>Tourism Travel: Number of tourists, number of tourists by different modes</li>
 </ul>
 </section>
-<section id="modelling-passenger-travel-demand" class="slide level2">
+<section id="modelling-passenger-travel-demand-1" class="slide level2">
 <h2>Modelling Passenger Travel Demand</h2>
 <ul>
 <li>Modelling multiple dimensions of demand: number of trips, time of trips, mode of trips, etc.
 <ul>
-<li>Urban Transportation Modeling System (UTMS): trip-based model, activity-based models</li>
+<li>Urban Transportation modelling System (UTMS): trip-based model, activity-based models</li>
 </ul></li>
-<li>Modeling specific dimension of trips: total trips, transit ridership, etc.
+<li>modelling specific dimension of trips: total trips, transit ridership, etc.
 <ul>
 <li>Intended to investigate specific <strong>policy impacts</strong>: transit ridership, willingness to pay for better transit, willingness to pay for parking, air passenger demand, tourism demand</li>
 </ul></li>
@@ -434,36 +535,11 @@
 <section id="travel-demand-classifications" class="slide level2 smaller">
 <h2>Travel Demand Classifications</h2>
 <ul>
-<li>Based on the concept of utility:
-<ul>
-<li>Direct Utility/ Direct Demand Model</li>
-<li>Indirect Utility/ Demand Model</li>
-</ul></li>
-<li>Based on uncertainty in predictions:
-<ul>
-<li>Deterministic Model</li>
-<li>Stochastic Model</li>
-</ul></li>
-<li>Based on maximization approach:
-<ul>
-<li>Random utility maximization</li>
-<li>Unconstrained model: Fitting demand function</li>
-</ul></li>
-<li>Based on level of aggregation:
-<ul>
-<li>Aggregate demand model</li>
-<li>Disaggregate demand model</li>
-</ul></li>
-</ul>
-</section>
-<section id="travel-demand-classifications-1" class="slide level2 smaller">
-<h2>Travel Demand Classifications</h2>
-<ul>
-<li>Aggregate versus disaggregate modeling:
+<li>Aggregate versus disaggregate modelling:
 <ul>
 <li>Based on different <strong>functional form</strong> and data needs for model estimation, <strong>purpose of study</strong> and <strong>time/money constraints</strong> of the project</li>
 <li>Disaggregate models are always better than corresponding aggregate ones, if and only if <strong>detailed data</strong> requirements and <strong>computational</strong> burdens are understood</li>
-<li>In most cases aggregate model can <strong>complement</strong> disaggregate modeling approaches by making the trends better understood</li>
+<li>In most cases aggregate model can <strong>complement</strong> disaggregate modelling approaches by making the trends better understood</li>
 </ul></li>
 </ul>
 </section>
@@ -504,6 +580,29 @@
 <section id="cobb-douglas-demand-model-example" class="slide level2">
 <h2>Cobb-Douglas Demand Model: Example</h2>
 <p><img data-src="../../../assets/images/teaching/ENCI707/Lecture3/cobb-douglas-paper1.png" class="absolute" style="top: 75px; left: 0px; "> <img data-src="../../../assets/images/teaching/ENCI707/Lecture3/cobb-douglas-paper2.png" class="absolute" style="top: 75px; right: 0px; "> <img data-src="../../../assets/images/teaching/ENCI707/Lecture3/cobb-douglas-paper3.png" class="absolute" style="top: 300px; left: 0px; "> <img data-src="../../../assets/images/teaching/ENCI707/Lecture3/cobb-douglas-paper4.png" class="absolute" style="top: 375px; right: 0px; "></p>
+</section>
+<section id="aggregate-logit-model" class="slide level2" style="font-size: 0.6em;">
+<h2>Aggregate Logit Model</h2>
+<ul>
+<li><p>Aggregate logit model: model of market shares <span class="math display">\[D_A = \text{Total demand for alternative A}\]</span> <span class="math display">\[D_B = \text{Total demand for alternative B}\]</span> <span class="math display">\[D_C = \text{Total demand for alternative C}\]</span> <span class="math display">\[V_A = \text{Ratio of total demand for A} = D_A/(D_A+D_B+D_C)\]</span> <span class="math display">\[V_B = \text{Ratio of total demand for B} = D_B/(D_A+D_B+D_C)\]</span> <span class="math display">\[V_C = \text{Ratio of total demand for C} = D_C/(D_A+D_B+D_C)\]</span></p></li>
+<li><p>Considering an alternative, <span class="math inline">\(A\)</span>, as the reference &amp; using Cobb-Douglas log form <span class="math display">\[\ln(V_B/V_A) = \beta_{0BA} + \sum_{i=1}^n \beta_{iBA}\ln(x_{iB}/x_{iA}) + \sum_{j=1}^n \gamma_{jB}y_j + \epsilon_{BA} \text{ or}\]</span> <span class="math display">\[\ln(V_B/V_A) = \beta_{0BA} + \sum_{i=1}^n \beta_{iBA}(x_{iB} - x_{iA}) + \sum_{j=1}^n \gamma_{jB}y_j + \epsilon_{BA}\]</span></p></li>
+</ul>
+</section>
+<section id="aggregate-logit-model-1" class="slide level2" style="font-size: 0.6em;">
+<h2>Aggregate Logit Model</h2>
+<ul>
+<li><p>Similarly for alternative <span class="math inline">\(C\)</span> <span class="math display">\[\ln(V_C/V_A) = \beta_{0CA} + \sum_{i=1}^n \beta_{iCA}\ln(x_{iC}/x_{iA}) + \sum_{j=1}^n \gamma_{jB}y_j + \epsilon_{BA} \text{ or}\]</span> <span class="math display">\[\ln(V_B/V_A) = \beta_{0CA} + \sum_{i=1}^n \beta_{iBA}(x_{iC} - x_{iA}) + \sum_{j=1}^n \gamma_{jC}y_j + \epsilon_{CA}\]</span></p></li>
+<li><p>Can be estimated as linear regression model for a set of observed shares and corresponding variable values.</p></li>
+<li><p><strong>Issues</strong>:</p>
+<ul>
+<li>No underlying behavioural theory</li>
+<li>Different elasticity results from different functional forms (ratio or difference of price/cost variable)</li>
+</ul></li>
+</ul>
+</section>
+<section id="lagged-effects-in-aggregate-models-example" class="slide level2">
+<h2>Lagged Effects in Aggregate Models: Example</h2>
+<p><img data-src="../../../assets/images/teaching/ENCI707/Lecture3/lag-effect-paper1.png" class="absolute" style="top: 70px; left: 0px; "> <img data-src="../../../assets/images/teaching/ENCI707/Lecture3/lag-effect-paper2.png" class="absolute" style="top: 250px; left: 0px; "></p>
 </section>
 <section id="translog-demand-model" class="slide level2" style="font-size: 0.6em;">
 <h2>Translog Demand Model</h2>
@@ -550,32 +649,9 @@
 <section id="translog-demand-model-example-1" class="slide level2">
 <h2>Translog Demand Model: Example</h2>
 
-<img data-src="../../../assets/images/teaching/ENCI707/Lecture3/translog-paper3.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="aggregate-logit-model" class="slide level2" style="font-size: 0.6em;">
-<h2>Aggregate Logit Model</h2>
-<ul>
-<li><p>Aggregate logit model: model of market shares <span class="math display">\[D_A = \text{Total demand for alternative A}\]</span> <span class="math display">\[D_B = \text{Total demand for alternative B}\]</span> <span class="math display">\[D_C = \text{Total demand for alternative C}\]</span> <span class="math display">\[V_A = \text{Ratio of total demand for A} = D_A/(D_A+D_B+D_C)\]</span> <span class="math display">\[V_B = \text{Ratio of total demand for B} = D_B/(D_A+D_B+D_C)\]</span> <span class="math display">\[V_C = \text{Ratio of total demand for C} = D_C/(D_A+D_B+D_C)\]</span></p></li>
-<li><p>Considering an alternative, <span class="math inline">\(A\)</span>, as the reference &amp; using Cobb-Douglas log form <span class="math display">\[\ln(V_B/V_A) = \beta_{0BA} + \sum_{i=1}^n \beta_{iBA}\ln(x_{iB}/x_{iA}) + \sum_{j=1}^n \gamma_{jB}y_j + \epsilon_{BA} \text{ or}\]</span> <span class="math display">\[\ln(V_B/V_A) = \beta_{0BA} + \sum_{i=1}^n \beta_{iBA}(x_{iB} - x_{iA}) + \sum_{j=1}^n \gamma_{jB}y_j + \epsilon_{BA}\]</span></p></li>
-</ul>
-</section>
-<section id="aggregate-logit-model-1" class="slide level2" style="font-size: 0.6em;">
-<h2>Aggregate Logit Model</h2>
-<ul>
-<li><p>Similarly for alternative <span class="math inline">\(C\)</span> <span class="math display">\[\ln(V_C/V_A) = \beta_{0CA} + \sum_{i=1}^n \beta_{iCA}\ln(x_{iC}/x_{iA}) + \sum_{j=1}^n \gamma_{jB}y_j + \epsilon_{BA} \text{ or}\]</span> <span class="math display">\[\ln(V_B/V_A) = \beta_{0CA} + \sum_{i=1}^n \beta_{iBA}(x_{iC} - x_{iA}) + \sum_{j=1}^n \gamma_{jC}y_j + \epsilon_{CA}\]</span></p></li>
-<li><p>Can be estimated as linear regression model for a set of observed shares and corresponding variable values.</p></li>
-<li><p><strong>Issues</strong>:</p>
-<ul>
-<li>No underlying behavioural theory</li>
-<li>Different elasticity results from different functional forms (ratio or difference of price/cost variable)</li>
-</ul></li>
-</ul>
-</section>
-<section id="lagged-effects-in-aggregate-models-example" class="slide level2">
-<h2>Lagged Effects in Aggregate Models: Example</h2>
-<p><img data-src="../../../assets/images/teaching/ENCI707/Lecture3/lag-effect-paper1.png" class="absolute" style="top: 70px; left: 0px; "> <img data-src="../../../assets/images/teaching/ENCI707/Lecture3/lag-effect-paper2.png" class="absolute" style="top: 250px; left: 0px; "></p>
 
 
-</section></section>
+<img data-src="../../../assets/images/teaching/ENCI707/Lecture3/translog-paper3.png" class="quarto-figure quarto-figure-center r-stretch"></section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="../../../assets/images/teaching/ENCI707/logo.png" class="slide-logo"></p>
@@ -768,7 +844,7 @@
         margin: 0.1,
 
         math: {
-          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
@@ -795,190 +871,173 @@
       });
     </script>
     <script id="quarto-html-after-body" type="application/javascript">
-    window.document.addEventListener("DOMContentLoaded", function (event) {
-      const toggleBodyColorMode = (bsSheetEl) => {
-        const mode = bsSheetEl.getAttribute("data-mode");
-        const bodyEl = window.document.querySelector("body");
-        if (mode === "dark") {
-          bodyEl.classList.add("quarto-dark");
-          bodyEl.classList.remove("quarto-light");
-        } else {
-          bodyEl.classList.add("quarto-light");
-          bodyEl.classList.remove("quarto-dark");
-        }
-      }
-      const toggleBodyColorPrimary = () => {
-        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-        if (bsSheetEl) {
-          toggleBodyColorMode(bsSheetEl);
-        }
-      }
-      toggleBodyColorPrimary();  
-      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
-      tabsets.forEach(function(tabset) {
-        const tabby = new Tabby('#' + tabset.id);
-      });
-      const isCodeAnnotation = (el) => {
-        for (const clz of el.classList) {
-          if (clz.startsWith('code-annotation-')) {                     
-            return true;
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
           }
+          return false;
         }
-        return false;
-      }
-      const onCopySuccess = function(e) {
-        // button target
-        const button = e.trigger;
-        // don't keep focus
-        button.blur();
-        // flash "checked"
-        button.classList.add('code-copy-button-checked');
-        var currentTitle = button.getAttribute("title");
-        button.setAttribute("title", "Copied!");
-        let tooltip;
-        if (window.bootstrap) {
-          button.setAttribute("data-bs-toggle", "tooltip");
-          button.setAttribute("data-bs-placement", "left");
-          button.setAttribute("data-bs-title", "Copied!");
-          tooltip = new bootstrap.Tooltip(button, 
-            { trigger: "manual", 
-              customClass: "code-copy-button-tooltip",
-              offset: [0, -8]});
-          tooltip.show();    
-        }
-        setTimeout(function() {
-          if (tooltip) {
-            tooltip.hide();
-            button.removeAttribute("data-bs-title");
-            button.removeAttribute("data-bs-toggle");
-            button.removeAttribute("data-bs-placement");
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
           }
-          button.setAttribute("title", currentTitle);
-          button.classList.remove('code-copy-button-checked');
-        }, 1000);
-        // clear code selection
-        e.clearSelection();
-      }
-      const getTextToCopy = function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
           for (const childEl of codeEl.children) {
             if (isCodeAnnotation(childEl)) {
               childEl.remove();
             }
           }
           return codeEl.innerText;
-      }
-      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-        text: getTextToCopy
-      });
-      clipboard.on('success', onCopySuccess);
-      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-          text: getTextToCopy,
-          container: window.document.getElementById('quarto-embedded-source-code-modal')
-        });
-        clipboardModal.on('success', onCopySuccess);
-      }
-        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-        var mailtoRegex = new RegExp(/^mailto:/);
-          var filterRegex = new RegExp("https:\/\/hawkins-tech-lab\.github\.io\/");
-        var isInternal = (href) => {
-            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
         }
-        // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-        for (var i=0; i<links.length; i++) {
-          const link = links[i];
-          if (!isInternal(link.href)) {
-            // undo the damage that might have been done by quarto-nav.js in the case of
-            // links that we want to consider external
-            if (link.dataset.originalHref !== undefined) {
-              link.href = link.dataset.originalHref;
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp("https:\/\/hawkins-tech-lab\.github\.io\/");
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
             }
           }
-        }
-      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-        const config = {
-          allowHTML: true,
-          maxWidth: 500,
-          delay: 100,
-          arrow: false,
-          appendTo: function(el) {
-              return el.closest('section.slide') || el.parentElement;
-          },
-          interactive: true,
-          interactiveBorder: 10,
-          theme: 'light-border',
-          placement: 'bottom-start',
-        };
-        if (contentFn) {
-          config.content = contentFn;
-        }
-        if (onTriggerFn) {
-          config.onTrigger = onTriggerFn;
-        }
-        if (onUntriggerFn) {
-          config.onUntrigger = onUntriggerFn;
-        }
-          config['offset'] = [0,0];
-          config['maxWidth'] = 700;
-        window.tippy(el, config); 
-      }
-      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-      for (var i=0; i<noterefs.length; i++) {
-        const ref = noterefs[i];
-        tippyHover(ref, function() {
-          // use id or data attribute instead here
-          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-          try { href = new URL(href).hash; } catch {}
-          const id = href.replace(/^#\/?/, "");
-          const note = window.document.getElementById(id);
-          if (note) {
-            return note.innerHTML;
-          } else {
-            return "";
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
           }
-        });
-      }
-      const findCites = (el) => {
-        const parentEl = el.parentElement;
-        if (parentEl) {
-          const cites = parentEl.dataset.cites;
-          if (cites) {
-            return {
-              el,
-              cites: cites.split(' ')
-            };
-          } else {
-            return findCites(el.parentElement)
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
           }
-        } else {
-          return undefined;
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
         }
-      };
-      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-      for (var i=0; i<bibliorefs.length; i++) {
-        const ref = bibliorefs[i];
-        const citeInfo = findCites(ref);
-        if (citeInfo) {
-          tippyHover(citeInfo.el, function() {
-            var popup = window.document.createElement('div');
-            citeInfo.cites.forEach(function(cite) {
-              var citeDiv = window.document.createElement('div');
-              citeDiv.classList.add('hanging-indent');
-              citeDiv.classList.add('csl-entry');
-              var biblioDiv = window.document.getElementById('ref-' + cite);
-              if (biblioDiv) {
-                citeDiv.innerHTML = biblioDiv.innerHTML;
-              }
-              popup.appendChild(citeDiv);
-            });
-            return popup.innerHTML;
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
           });
         }
-      }
-    });
-    </script>
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
     
 
 </body></html>
