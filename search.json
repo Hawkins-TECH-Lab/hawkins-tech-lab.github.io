@@ -923,7 +923,7 @@
     "href": "teaching/ENCI707/slides/lec-5.html#consumer-surplus-1",
     "title": "Lecture 5 - Applied Disaggregate Demand Models",
     "section": "Consumer Surplus",
-    "text": "Consumer Surplus\nFor Changes in only one (independent) alternative (\\(j\\)): \\[\\Delta CS = \\frac{1}{\\mu}\\ln\\left(\\exp(\\mu V_j^2) + \\sum_{k \\in C_i} \\exp(\\mu V_k)\\right) - \\frac{1}{\\mu}\\ln\\left(\\exp(\\mu V_j^1) + \\sum_{k \\in C_i} \\exp(\\mu V_k)\\right)\\] - For changes in multiple alternatives (existence of equal or unequal cross-elasticity, e.g., nested logit, GEV, mixed logit) the integral is path dependent since it becomes conditional upon an income effect - For logit model \\[\\Delta CS = \\frac{1}{\\mu}\\ln\\left(\\sum_{j \\in C_i} \\exp(\\mu V_j^2)\\right) - \\frac{1}{\\mu}\\ln\\left(\\sum_{j \\in C_i} \\exp(\\mu V_j^1)\\right)\\]"
+    "text": "Consumer Surplus\nFor changes in only one (independent) alternative (\\(j\\)): \\[\\Delta CS = \\frac{1}{\\mu}\\ln\\left(\\exp(\\mu V_j^2) + \\sum_{k \\in C_i} \\exp(\\mu V_k)\\right) - \\frac{1}{\\mu}\\ln\\left(\\exp(\\mu V_j^1) + \\sum_{k \\in C_i} \\exp(\\mu V_k)\\right)\\] - For changes in multiple alternatives (existence of equal or unequal cross-elasticity, e.g., nested logit, GEV, mixed logit) the integral is path dependent since it becomes conditional upon an income effect - For logit model \\[\\Delta CS = \\frac{1}{\\mu}\\ln\\left(\\sum_{j \\in C_i} \\exp(\\mu V_j^2)\\right) - \\frac{1}{\\mu}\\ln\\left(\\sum_{j \\in C_i} \\exp(\\mu V_j^1)\\right)\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-5.html#welfare-analysis",
@@ -1045,22 +1045,22 @@
     "text": "Sampling of Choice Makers\n\\[\\text{Choice Model: }Pr(j|x(j),\\beta)\\]\n\nEndogenous/Choice-based sampling of choice makers (randomly select choice makers of specific choices)\n\nSelection of respondent of specific choice maker group (e.g. transit users, driver, bicyclists) still should be random in some way\nChoice model with choice-based sample produces unbiased estimates of all parameters except the Alternative Specific Constants (ASC)\nASCs need to corrected/updated to match actual market share"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-5.html#sampling-of-alternatives-large-choice-set",
-    "href": "teaching/ENCI707/slides/lec-5.html#sampling-of-alternatives-large-choice-set",
+    "objectID": "teaching/ENCI707/slides/lec-5.html#sampling-of-alternatives-large-choice-sets",
+    "href": "teaching/ENCI707/slides/lec-5.html#sampling-of-alternatives-large-choice-sets",
     "title": "Lecture 5 - Applied Disaggregate Demand Models",
-    "section": "Sampling of alternatives: Large Choice Set",
-    "text": "Sampling of alternatives: Large Choice Set\n\nLarge number of alternatives (e.g., destination location choice model), a random sample of alternatives can be used to estimate the model - where \\(C = \\text{full choice set}\\) and \\(G = \\text{subset of alternatives drawn from C}\\)\nConditional probability of selecting a subset of alternatives \\[q(G|j) &gt; 0 \\text{; if G includes the chosen alt. j}\\] \\[q(G|j) = 0 \\text{; if G excludes the chosen alt. j}\\]\nJoint probability that \\(J\\) is drawn with non-zero probability and \\(j\\) is chosen by an individual \\(i\\) \\[Pr(G,j) = q(G|j)Pr(G) = Pr(j|G)Q(G) \\text{; (Bayes Theorem)}\\] \\[\\text{Marginal probability: } Q(G) = \\sum_{k \\in C} Pr(k)q(G|k) \\text{; (Sum over all possible subsets of j')}\\]"
+    "section": "Sampling of alternatives: Large choice sets",
+    "text": "Sampling of alternatives: Large choice sets\n\nLarge number of alternatives (e.g., destination location choice model), a random sample of alternatives can be used to estimate the model - where \\(C = \\text{full choice set}\\) and \\(G = \\text{subset of alternatives drawn from C}\\)\nConditional probability of selecting a subset of alternatives \\[q(G|j) &gt; 0 \\text{; if G includes the chosen alt. j}\\] \\[q(G|j) = 0 \\text{; if G excludes the chosen alt. j}\\]\nJoint probability that \\(J\\) is drawn with non-zero probability and \\(j\\) is chosen by an individual \\(i\\) \\[Pr(G,j) = q(G|j)Pr(G) = Pr(j|G)Q(G) \\text{; (Bayes Theorem)}\\] \\[\\text{Marginal probability: } Q(G) = \\sum_{k \\in C} Pr(k)q(G|k) \\text{; (Sum over all possible subsets of j')}\\]"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-5.html#sampling-of-alternatives-large-choice-set-1",
-    "href": "teaching/ENCI707/slides/lec-5.html#sampling-of-alternatives-large-choice-set-1",
+    "objectID": "teaching/ENCI707/slides/lec-5.html#sampling-of-alternatives-large-choice-set",
+    "href": "teaching/ENCI707/slides/lec-5.html#sampling-of-alternatives-large-choice-set",
     "title": "Lecture 5 - Applied Disaggregate Demand Models",
     "section": "Sampling of alternatives: Large Choice Set",
     "text": "Sampling of alternatives: Large Choice Set\n\nChoice probability of alternative \\(j\\) from subset: \\[Pr(j|G)Q(G) = q(G|j)Pr(j)\\] \\[Pr(j|G)Q(G) = \\frac{Pr(j)q(G|j)}{Q(G)} = \\frac{Pr(j)q(G|j)}{\\sum_{k \\in C} Pr(k)q(G|k)} = \\frac{\\exp(V_j)q(G|j)}{\\sum_{k \\in C} \\exp(V_k)q(G|k)}\\]\nFor any subset, \\(q\\), that does not include \\(k\\), \\(q(G|k)=0\\), so: \\[Pr(j|G) = \\frac{\\exp(V_j)q(G|j)}{\\sum_{k \\in G} \\exp(V_k)q(G|k)} \\text{; within C, any G without k drops out}\\] \\[Pr(j|G) = \\frac{\\exp(V_j)\\exp(\\ln(q(G|j)))}{\\sum_{k \\in G} \\exp(V_k)\\exp(\\ln(q(G|j)))} = \\frac{\\exp(V_j + \\ln(q(G|j)))}{\\sum_{k \\in G} \\exp(V_k + \\ln(q(G|j)))}\\]"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-5.html#sampling-of-alternatives-large-choice-set-2",
-    "href": "teaching/ENCI707/slides/lec-5.html#sampling-of-alternatives-large-choice-set-2",
+    "objectID": "teaching/ENCI707/slides/lec-5.html#sampling-of-alternatives-large-choice-set-1",
+    "href": "teaching/ENCI707/slides/lec-5.html#sampling-of-alternatives-large-choice-set-1",
     "title": "Lecture 5 - Applied Disaggregate Demand Models",
     "section": "Sampling of alternatives: Large Choice Set",
     "text": "Sampling of alternatives: Large Choice Set\n\nChoice model with sampling from the alternatives: \\[Pr(j|G) = \\frac{\\exp(V_j + ln(q(G|j)))}{\\sum_{k \\in G} \\exp(V_k + ln(q(G|k)))} \\text{; } q(G|j) = \\prod_{l=1}^{G-1}Pr(l)\\]\nwhere \\(Pr(l)\\) is the binary probability of drawing a choice\nUnder simple random sampling, samples are drawn uniformly with equal probability\nThis makes the additional \\(ln(q(G|j))\\) redundant (same for all alternative and so drops out: uniform conditional property) - MNL result becomes standard form\nNot true for other models such as nested logit, GEV, or mixed logit"

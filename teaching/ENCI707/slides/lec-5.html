@@ -191,7 +191,7 @@
 </section>
 <section id="consumer-surplus-1" class="slide level2 smaller">
 <h2>Consumer Surplus</h2>
-<p>For Changes in only one (independent) alternative (<span class="math inline">\(j\)</span>): <span class="math display">\[\Delta CS = \frac{1}{\mu}\ln\left(\exp(\mu V_j^2) + \sum_{k \in C_i} \exp(\mu V_k)\right) - \frac{1}{\mu}\ln\left(\exp(\mu V_j^1) + \sum_{k \in C_i} \exp(\mu V_k)\right)\]</span> - For changes in <strong>multiple alternatives</strong> (existence of equal or unequal cross-elasticity, e.g., nested logit, GEV, mixed logit) the integral is <strong>path dependent</strong> since it becomes conditional upon an income effect - For logit model <span class="math display">\[\Delta CS = \frac{1}{\mu}\ln\left(\sum_{j \in C_i} \exp(\mu V_j^2)\right) - \frac{1}{\mu}\ln\left(\sum_{j \in C_i} \exp(\mu V_j^1)\right)\]</span></p>
+<p>For changes in only one (independent) alternative (<span class="math inline">\(j\)</span>): <span class="math display">\[\Delta CS = \frac{1}{\mu}\ln\left(\exp(\mu V_j^2) + \sum_{k \in C_i} \exp(\mu V_k)\right) - \frac{1}{\mu}\ln\left(\exp(\mu V_j^1) + \sum_{k \in C_i} \exp(\mu V_k)\right)\]</span> - For changes in <strong>multiple alternatives</strong> (existence of equal or unequal cross-elasticity, e.g., nested logit, GEV, mixed logit) the integral is <strong>path dependent</strong> since it becomes conditional upon an income effect - For logit model <span class="math display">\[\Delta CS = \frac{1}{\mu}\ln\left(\sum_{j \in C_i} \exp(\mu V_j^2)\right) - \frac{1}{\mu}\ln\left(\sum_{j \in C_i} \exp(\mu V_j^1)\right)\]</span></p>
 </section>
 <section id="welfare-analysis" class="slide level2 smaller">
 <h2>Welfare Analysis</h2>
@@ -857,22 +857,22 @@ n(J)/n
 </ul></li>
 </ul>
 </section>
-<section id="sampling-of-alternatives-large-choice-set" class="slide level2 smaller">
-<h2>Sampling of alternatives: Large Choice Set</h2>
+<section id="sampling-of-alternatives-large-choice-sets" class="slide level2 smaller">
+<h2>Sampling of alternatives: Large choice sets</h2>
 <ul>
 <li>Large number of alternatives (e.g., destination location choice model), a random sample of alternatives can be used to estimate the model - where <span class="math inline">\(C = \text{full choice set}\)</span> and <span class="math inline">\(G = \text{subset of alternatives drawn from C}\)</span></li>
 <li>Conditional probability of selecting a subset of alternatives <span class="math display">\[q(G|j) &gt; 0 \text{; if G includes the chosen alt. j}\]</span> <span class="math display">\[q(G|j) = 0 \text{; if G excludes the chosen alt. j}\]</span></li>
 <li>Joint probability that <span class="math inline">\(J\)</span> is drawn with non-zero probability and <span class="math inline">\(j\)</span> is chosen by an individual <span class="math inline">\(i\)</span> <span class="math display">\[Pr(G,j) = q(G|j)Pr(G) = Pr(j|G)Q(G) \text{; (Bayes Theorem)}\]</span> <span class="math display">\[\text{Marginal probability: } Q(G) = \sum_{k \in C} Pr(k)q(G|k) \text{; (Sum over all possible subsets of j')}\]</span></li>
 </ul>
 </section>
-<section id="sampling-of-alternatives-large-choice-set-1" class="slide level2 smaller">
+<section id="sampling-of-alternatives-large-choice-set" class="slide level2 smaller">
 <h2>Sampling of alternatives: Large Choice Set</h2>
 <ul>
 <li>Choice probability of alternative <span class="math inline">\(j\)</span> from subset: <span class="math display">\[Pr(j|G)Q(G) = q(G|j)Pr(j)\]</span> <span class="math display">\[Pr(j|G)Q(G) = \frac{Pr(j)q(G|j)}{Q(G)} = \frac{Pr(j)q(G|j)}{\sum_{k \in C} Pr(k)q(G|k)} = \frac{\exp(V_j)q(G|j)}{\sum_{k \in C} \exp(V_k)q(G|k)}\]</span></li>
 <li>For any subset, <span class="math inline">\(q\)</span>, that does not include <span class="math inline">\(k\)</span>, <span class="math inline">\(q(G|k)=0\)</span>, so: <span class="math display">\[Pr(j|G) = \frac{\exp(V_j)q(G|j)}{\sum_{k \in G} \exp(V_k)q(G|k)} \text{; within C, any G without k drops out}\]</span> <span class="math display">\[Pr(j|G) = \frac{\exp(V_j)\exp(\ln(q(G|j)))}{\sum_{k \in G} \exp(V_k)\exp(\ln(q(G|j)))} = \frac{\exp(V_j + \ln(q(G|j)))}{\sum_{k \in G} \exp(V_k + \ln(q(G|j)))}\]</span></li>
 </ul>
 </section>
-<section id="sampling-of-alternatives-large-choice-set-2" class="slide level2 smaller">
+<section id="sampling-of-alternatives-large-choice-set-1" class="slide level2 smaller">
 <h2>Sampling of alternatives: Large Choice Set</h2>
 <ul>
 <li>Choice model with sampling from the alternatives: <span class="math display">\[Pr(j|G) = \frac{\exp(V_j + ln(q(G|j)))}{\sum_{k \in G} \exp(V_k + ln(q(G|k)))} \text{; } q(G|j) = \prod_{l=1}^{G-1}Pr(l)\]</span></li>
