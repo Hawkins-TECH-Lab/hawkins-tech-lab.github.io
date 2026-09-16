@@ -6748,14 +6748,14 @@
     "href": "teaching/ENCI707/slides/lec-2.html#zero-inflated-ordered-regression",
     "title": "Lecture 2 - Aggregate Demand Models",
     "section": "Zero-Inflated Ordered Regression",
-    "text": "Zero-Inflated Ordered Regression\n\nExcess zeros arise from two processes:\n\nStructural zeros from a binary model\nSampling zeros from the ordered model (not truncated)\n\nMixture structure: \\[\nP(Y_i = 0) = \\pi_i + (1-\\pi_i)F(\\tau_0 - \\eta_i)\n\\] \\[\nP(Y_i = j&gt;0) = (1-\\pi_i)\\left[F(\\tau_j - \\eta_i) - F(\\tau_{j-1} - \\eta_i)\\right]\n\\]\nComponents:\n\nStructural-zero probability:\n\\[\n\\pi_i = \\Phi(\\gamma z_i)\n\\]\nOrdered latent index:\n\\[\n\\eta_i = \\beta x_i\n\\]\n\nLikelihood: \\[\nL_i =\n\\left[\\pi_i + (1-\\pi_i)F(\\tau_0 - \\eta_i)\\right]^{I(y_i=0)}\n\\left[(1-\\pi_i)\\left(F(\\tau_j - \\eta_i) - F(\\tau_{j-1} - \\eta_i)\\right)\\right]^{I(y_i=j&gt;0)}\n\\]"
+    "text": "Zero-Inflated Ordered Regression\n\nExcess zeros arise from two processes:\n\nStructural zeros from a binary model\nSampling zeros from the ordered model (not truncated)\n\nMixture structure: \\[\nP(Y_i = 0) = \\pi_i + (1-\\pi_i)F(\\tau_0 - \\eta_i)\n\\] \\[\nP(Y_i = j&gt;0) = (1-\\pi_i)\\left[F(\\tau_j - \\eta_i) - F(\\tau_{j-1} - \\eta_i)\\right]\n\\]\nComponents:\n\nStructural-zero probability: \\(\\pi_i = \\Phi(\\gamma z_i)\\)\nOrdered latent index: \\(\\eta_i = \\beta x_i\\)\n\nLikelihood: \\[\nL_i =\n\\left[\\pi_i + (1-\\pi_i)F(\\tau_0 - \\eta_i)\\right]^{I(y_i=0)}\n\\left[(1-\\pi_i)\\left(F(\\tau_j - \\eta_i) - F(\\tau_{j-1} - \\eta_i)\\right)\\right]^{I(y_i=j&gt;0)}\n\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-2.html#ordered-hurdle-regression",
     "href": "teaching/ENCI707/slides/lec-2.html#ordered-hurdle-regression",
     "title": "Lecture 2 - Aggregate Demand Models",
     "section": "Ordered Hurdle Regression",
-    "text": "Ordered Hurdle Regression\n\nZeros arise from one process only (binary hurdle)\nPositive ordered outcomes arise from a zero-truncated ordered model \\[\nP(Y_i = 0) = 1 - p_i\n\\] \\[\nP(Y_i = j&gt;0) = p_i \\cdot\n\\frac{F(\\tau_j - \\eta_i) - F(\\tau_{j-1} - \\eta_i)}\n     {1 - F(\\tau_0 - \\eta_i)}\n\\]\nComponents:\n\nHurdle probability:\n\\[\np_i = \\Phi(\\gamma z_i)\n\\]\nOrdered latent index:\n\\[\n\\eta_i = \\beta x_i\n\\]\n\nLikelihood: \\[\nL_i =\n(1-p_i)^{I(y_i=0)}\n\\left[p_i \\cdot\n\\frac{F(\\tau_j - \\eta_i) - F(\\tau_{j-1} - \\eta_i)}\n     {1 - F(\\tau_0 - \\eta_i)}\\right]^{I(y_i=j&gt;0)}\n\\]"
+    "text": "Ordered Hurdle Regression\n\nZeros arise from one process only (binary hurdle)\nPositive ordered outcomes arise from a zero-truncated ordered model \\[\nP(Y_i = 0) = 1 - p_i\n\\] \\[\nP(Y_i = j&gt;0) = p_i \\cdot\n\\frac{F(\\tau_j - \\eta_i) - F(\\tau_{j-1} - \\eta_i)}\n     {1 - F(\\tau_0 - \\eta_i)}\n\\]\nComponents:\n\nHurdle probability: \\(p_i = \\Phi(\\gamma z_i)\\)\nOrdered latent index: \\(\\eta_i = \\beta x_i\\)\n\nLikelihood: \\[\nL_i =\n(1-p_i)^{I(y_i=0)}\n\\left[p_i \\cdot\n\\frac{F(\\tau_j - \\eta_i) - F(\\tau_{j-1} - \\eta_i)}\n     {1 - F(\\tau_0 - \\eta_i)}\\right]^{I(y_i=j&gt;0)}\n\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-2.html#count-variable-regression",
@@ -6776,7 +6776,7 @@
     "href": "teaching/ENCI707/slides/lec-2.html#zero-inflated-count-regression",
     "title": "Lecture 2 - Aggregate Demand Models",
     "section": "Zero-Inflated Count Regression",
-    "text": "Zero-Inflated Count Regression\n\nExcess zeros arise from two processes:\n\nStructural zeros (binary model)\nSampling zeros (Poisson/NB)\n\nMixture structure: \\[\nP(Y_i = 0) = \\pi_i + (1-\\pi_i)f(0)\n\\] \\[\nP(Y_i = j&gt;0) = (1-\\pi_i)f(j)\n\\]\nComponents:\n\nStructural-zero probability: \\[\n\\pi_i = \\Phi(\\gamma z_i)\n\\]\nCount model: \\[\nf(j) = \\text{Poisson or NB pmf}\n\\]\n\nLikelihood: \\[\nL_i =\n\\left[\\pi_i + (1-\\pi_i)f(0)\\right]^{I(y_i=0)}\n\\left[(1-\\pi_i)f(y_i)\\right]^{I(y_i&gt;0)}\n\\]"
+    "text": "Zero-Inflated Count Regression\n\nExcess zeros arise from two processes:\n\nStructural zeros (binary model)\nSampling zeros (Poisson/NB)\n\nMixture structure: \\[\nP(Y_i = 0) = \\pi_i + (1-\\pi_i)f(0)\n\\] \\[\nP(Y_i = j&gt;0) = (1-\\pi_i)f(j)\n\\]\nComponents:\n\nStructural-zero probability:\\(\\pi_i = \\Phi(\\gamma z_i)\\)\nCount model: \\(f(j) = \\text{Poisson or NB pmf}\\)\n\nLikelihood: \\[\nL_i =\n\\left[\\pi_i + (1-\\pi_i)f(0)\\right]^{I(y_i=0)}\n\\left[(1-\\pi_i)f(y_i)\\right]^{I(y_i&gt;0)}\n\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-2.html#use-of-econometric-models",
