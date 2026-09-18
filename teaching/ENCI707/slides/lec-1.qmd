@@ -432,7 +432,7 @@ $$U(Q,y,\tilde{z}^Ty,\tilde{z}^T,\theta)$$
 ## Optimization Problem​
 $$\max_{Q,y} U(Q,y,\tilde{z}^Ty)$$
 
-Suject to
+Subject to
 
 $$p^T Q + c^T y \le I$$
 
@@ -440,7 +440,7 @@ $$\sum y_j = 1$$
 
 $$y_j \in {0,1} \forall j$$
 
-Why is it impossible to derive a direct demand function?
+Why is it impossible to derive demand functions directly?
 
 ## Solution to Optimization Problem​
 - In a mixed integer programming problem, need to condition on the discrete variables to obtain continuous demand functions​
