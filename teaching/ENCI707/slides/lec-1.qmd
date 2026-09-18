@@ -395,7 +395,7 @@ $$\ln(V) = \alpha_0 + \sum_j \alpha_j \ln\left(\frac{p_j}{I}\right) + \frac{1}{2
 - **AIDS** is a combination of **Cobb-Douglas** and **translog** demand functions, describing an expenditure function necessary to attain a specific utility level at a given price
 - Typical form is
 
-$$\ln(V) = \alpha_0 + \sum_j \alpha_j \ln(p_j) + \frac{1}{2}\sum_j \alpha_j \ln(p_j) + \frac{1}{2}\sum_j\sum_k \gamma_{jk} \ln(p_j) \ln(p_k) + \beta_o \prod_j p_k^{\beta_k}$$
+$$\ln(V) = \alpha_0 + \sum_j \alpha_j \ln(p_j) + \frac{1}{2}\sum_j\sum_k \gamma_{jk} \ln(p_j) \ln(p_k) + \beta_o \prod_j p_j^{\beta_j}$$
 
 # Discrete Demand
 

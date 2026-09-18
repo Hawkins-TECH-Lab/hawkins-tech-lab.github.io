@@ -57,7 +57,7 @@ $$VOR = \frac{\partial p_j}{+ \partial r_j} = - \frac{\beta_r}{\beta_p}\text{; }
 $$\Delta CS = \int_{V_j^1}^{V_j^2} Pr_i(j|V_j, V_{k \in C_i, k \neq j}) d V_j = \int_{V_j^1}^{V_j^2} \frac{\exp(\mu V_j)}{\sum_{k \in C_i} \exp(\mu V_k)}d V_j$$
 
 ## Consumer Surplus {.smaller}
-For Changes in only one (independent) alternative ($j$):
+For changes in only one (independent) alternative ($j$):
 $$\Delta CS = \frac{1}{\mu}\ln\left(\exp(\mu V_j^2) + \sum_{k \in C_i} \exp(\mu V_k)\right) - \frac{1}{\mu}\ln\left(\exp(\mu V_j^1) + \sum_{k \in C_i} \exp(\mu V_k)\right)$$
 - For changes in **multiple alternatives** (existence of equal or unequal cross-elasticity, e.g., nested logit, GEV, mixed logit) the integral is **path dependent** since it becomes conditional upon an income effect
 - For logit model
@@ -389,7 +389,7 @@ $$\text{Choice Model: }Pr(j|x(j),\beta)$$
   - Choice model with choice-based sample produces **unbiased estimates** of all parameters except the Alternative Specific Constants (ASC)
   - ASCs need to corrected/updated to match actual **market share**
 
-## Sampling of alternatives: Large Choice Set {.smaller}
+## Sampling of alternatives: Large choice sets {.smaller}
 - Large number of alternatives (e.g., destination location choice model), a random sample of alternatives can be used to estimate the model - where $C = \text{full choice set}$ and $G = \text{subset of alternatives drawn from C}$
 - Conditional probability of selecting a subset of alternatives
 $$q(G|j) > 0 \text{; if G includes the chosen alt. j}$$
