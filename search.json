@@ -1700,7 +1700,7 @@
     "href": "teaching/ENCI707/slides/lec-1.html#almost-ideal-demand-system-aids",
     "title": "Lecture 1 - Microeconomics",
     "section": "Almost Ideal Demand System (AIDS)​",
-    "text": "Almost Ideal Demand System (AIDS)​\n\nAIDS is a combination of Cobb-Douglas and translog demand functions, describing an expenditure function necessary to attain a specific utility level at a given price\nTypical form is\n\n\\[\\ln(V) = \\alpha_0 + \\sum_j \\alpha_j \\ln(p_j) + \\frac{1}{2}\\sum_j \\alpha_j \\ln(p_j) + \\frac{1}{2}\\sum_j\\sum_k \\gamma_{jk} \\ln(p_j) \\ln(p_k) + \\beta_o \\prod_j p_k^{\\beta_k}\\]"
+    "text": "Almost Ideal Demand System (AIDS)​\n\nAIDS is a combination of Cobb-Douglas and translog demand functions, describing an expenditure function necessary to attain a specific utility level at a given price\nTypical form is\n\n\\[\\ln(V) = \\alpha_0 + \\sum_j \\alpha_j \\ln(p_j) + \\frac{1}{2}\\sum_j\\sum_k \\gamma_{jk} \\ln(p_j) \\ln(p_k) + \\beta_o \\prod_j p_j^{\\beta_j}\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-1.html#microeconomic-theory-of-discrete-goods",
