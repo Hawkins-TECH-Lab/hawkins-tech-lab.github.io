@@ -6818,14 +6818,14 @@
     "href": "teaching/ENCI707/slides/lec-2.html#modelling-passenger-travel-demand-1",
     "title": "Lecture 2 - Aggregate Demand Models",
     "section": "Modelling Passenger Travel Demand",
-    "text": "Modelling Passenger Travel Demand\n\nModelling multiple dimensions of demand: number of trips, time of trips, mode of trips, etc.\n\nUrban Transportation modelling System (UTMS): trip-based model, activity-based models\n\nmodelling specific dimension of trips: total trips, transit ridership, etc.\n\nIntended to investigate specific policy impacts: transit ridership, willingness to pay for better transit, willingness to pay for parking, air passenger demand, tourism demand"
+    "text": "Modelling Passenger Travel Demand\n\nModelling multiple dimensions of demand: number of trips, time of trips, mode of trips, etc.\n\nUrban Transportation Modelling System (UTMS): trip-based model, activity-based models\n\nModelling specific dimension of trips: total trips, transit ridership, etc.\n\nIntended to investigate specific policy impacts: transit ridership, willingness to pay for better transit, willingness to pay for parking, air passenger demand, tourism demand"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-2.html#travel-demand-classifications",
     "href": "teaching/ENCI707/slides/lec-2.html#travel-demand-classifications",
     "title": "Lecture 2 - Aggregate Demand Models",
     "section": "Travel Demand Classifications",
-    "text": "Travel Demand Classifications\n\nAggregate versus disaggregate modelling:\n\nBased on different functional form and data needs for model estimation, purpose of study and time/money constraints of the project\nDisaggregate models are always better than corresponding aggregate ones, if and only if detailed data requirements and computational burdens are understood\nIn most cases aggregate model can complement disaggregate modelling approaches by making the trends better understood"
+    "text": "Travel Demand Classifications\n\nAggregate versus disaggregate modelling:\n\nBased on different functional form and data needs for model estimation, purpose of study and time/money constraints of the project\nDisaggregate models are always better than corresponding aggregate ones, if and only if detailed data requirements and computational burdens are understood\nIn most cases aggregate models can complement disaggregate modelling approaches by making the trends better understood"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-2.html#aggregate-travel-demand-models",
@@ -6839,14 +6839,14 @@
     "href": "teaching/ENCI707/slides/lec-2.html#linear-demand-model",
     "title": "Lecture 2 - Aggregate Demand Models",
     "section": "Linear Demand Model",
-    "text": "Linear Demand Model\n\nLinear Regression \\[\\text{Total Demand, D (e.g., number of trips)} = \\beta_0 + \\beta_n x_j + \\epsilon\\]\nElasticity of demand with respect to any variable \\[E = \\frac{\\partial D/D}{\\partial x_j/x_j} = \\frac{\\partial D}{\\partial x_j}\\times\\frac{x_j}{D}=\\frac{\\beta_j}{D}x_j\\]\nElasticity is a function of the value at a data point\nModel estimation: Least-Square\nLimitations: Linearity assumption & can result in negative demand"
+    "text": "Linear Demand Model\n\nLinear Regression \\[\\text{Total Demand, D (e.g., number of trips)} = \\beta_0 + \\beta_n x_j + \\epsilon\\]\nElasticity of demand with respect to any variable \\[E = \\frac{\\partial D/D}{\\partial x_j/x_j} = \\frac{\\partial D}{\\partial x_j}\\times\\frac{x_j}{D}=\\frac{\\beta_j}{D}x_j\\]\nElasticity is a function of the value at a data point\nModel estimation: LSE\nLimitations: Linearity assumption & can result in negative demand"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-2.html#cobb-douglas-demand-model",
     "href": "teaching/ENCI707/slides/lec-2.html#cobb-douglas-demand-model",
     "title": "Lecture 2 - Aggregate Demand Models",
     "section": "Cobb-Douglas Demand Model",
-    "text": "Cobb-Douglas Demand Model\n\nOptimum Deand in Cobb-Douglas \\[D_j^* = \\frac{I}{p_j}(\\frac{\\alpha}{\\alpha+\\beta}) = \\alpha' I^1p_j^{-1}\\]\nIn absense of budget constraints, the optimum demand function may look similar to Cobb-Douglas direct utility function \\[D_j^* = e^{\\alpha_o}I^{\\gamma}\\prod_k x_k^{\\beta_k}\\prod_m e^{\\beta_m z_m}\\]\n\\(x_k\\) includes price/cost variable & \\(z_m\\) includes categorical/dummy variables or any other variable that does not have to be log-transformed"
+    "text": "Cobb-Douglas Demand Model\n\nOptimum Demand in Cobb-Douglas \\[D_j^* = \\frac{I}{p_j}(\\frac{\\alpha}{\\alpha+\\beta}) = \\alpha' I^1p_j^{-1}\\]\nIn absense of budget constraints, the optimum demand function may look similar to Cobb-Douglas direct utility function \\[D_j^* = e^{\\alpha_o}I^{\\gamma}\\prod_k x_k^{\\beta_k}\\prod_m e^{\\beta_m z_m}\\]\n\\(x_k\\) includes price/cost variable & \\(z_m\\) includes categorical/dummy variables or any other variable that does not have to be log-transformed"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-2.html#cobb-douglas-demand-model-1",
@@ -6874,7 +6874,7 @@
     "href": "teaching/ENCI707/slides/lec-2.html#aggregate-logit-model-1",
     "title": "Lecture 2 - Aggregate Demand Models",
     "section": "Aggregate Logit Model",
-    "text": "Aggregate Logit Model\n\nSimilarly for alternative \\(C\\) \\[\\ln(V_C/V_A) = \\beta_{0CA} + \\sum_{i=1}^n \\beta_{iCA}\\ln(x_{iC}/x_{iA}) + \\sum_{j=1}^n \\gamma_{jB}y_j + \\epsilon_{BA} \\text{ or}\\] \\[\\ln(V_B/V_A) = \\beta_{0CA} + \\sum_{i=1}^n \\beta_{iBA}(x_{iC} - x_{iA}) + \\sum_{j=1}^n \\gamma_{jC}y_j + \\epsilon_{CA}\\]\nCan be estimated as linear regression model for a set of observed shares and corresponding variable values.\nIssues:\n\nNo underlying behavioural theory\nDifferent elasticity results from different functional forms (ratio or difference of price/cost variable)"
+    "text": "Aggregate Logit Model\n\nSimilarly for alternative \\(C\\) \\[\\ln(V_C/V_A) = \\beta_{0CA} + \\sum_{i=1}^n \\beta_{iCA}\\ln(x_{iC}/x_{iA}) + \\sum_{j=1}^n \\gamma_{jB}y_j + \\epsilon_{BA} \\text{ or}\\] \\[\\ln(V_C/V_A) = \\beta_{0CA} + \\sum_{i=1}^n \\beta_{iBA}(x_{iC} - x_{iA}) + \\sum_{j=1}^n \\gamma_{jC}y_j + \\epsilon_{CA}\\]\nCan be estimated as linear regression model for a set of observed shares and corresponding variable values.\nIssues:\n\nNo underlying behavioural theory\nDifferent elasticity results from different functional forms (ratio or difference of price/cost variable)"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-2.html#lagged-effects-in-aggregate-models-example",

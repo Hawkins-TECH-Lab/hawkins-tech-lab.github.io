@@ -496,9 +496,9 @@ L_i =
 <ul>
 <li>Modelling multiple dimensions of demand: number of trips, time of trips, mode of trips, etc.
 <ul>
-<li>Urban Transportation modelling System (UTMS): trip-based model, activity-based models</li>
+<li>Urban Transportation Modelling System (UTMS): trip-based model, activity-based models</li>
 </ul></li>
-<li>modelling specific dimension of trips: total trips, transit ridership, etc.
+<li>Modelling specific dimension of trips: total trips, transit ridership, etc.
 <ul>
 <li>Intended to investigate specific <strong>policy impacts</strong>: transit ridership, willingness to pay for better transit, willingness to pay for parking, air passenger demand, tourism demand</li>
 </ul></li>
@@ -511,7 +511,7 @@ L_i =
 <ul>
 <li>Based on different <strong>functional form</strong> and data needs for model estimation, <strong>purpose of study</strong> and <strong>time/money constraints</strong> of the project</li>
 <li>Disaggregate models are always better than corresponding aggregate ones, if and only if <strong>detailed data</strong> requirements and <strong>computational</strong> burdens are understood</li>
-<li>In most cases aggregate model can <strong>complement</strong> disaggregate modelling approaches by making the trends better understood</li>
+<li>In most cases aggregate models can <strong>complement</strong> disaggregate modelling approaches by making the trends better understood</li>
 </ul></li>
 </ul>
 </section>
@@ -525,14 +525,14 @@ L_i =
 <li><p>Linear Regression <span class="math display">\[\text{Total Demand, D (e.g., number of trips)} = \beta_0 + \beta_n x_j + \epsilon\]</span></p></li>
 <li><p>Elasticity of demand with respect to any variable <span class="math display">\[E = \frac{\partial D/D}{\partial x_j/x_j} = \frac{\partial D}{\partial x_j}\times\frac{x_j}{D}=\frac{\beta_j}{D}x_j\]</span></p></li>
 <li><p>Elasticity is a function of the value at a data point</p></li>
-<li><p>Model estimation: Least-Square</p></li>
+<li><p>Model estimation: LSE</p></li>
 <li><p><strong>Limitations</strong>: Linearity assumption &amp; can result in negative demand</p></li>
 </ul>
 </section>
 <section id="cobb-douglas-demand-model" class="slide level2 smaller">
 <h2>Cobb-Douglas Demand Model</h2>
 <ul>
-<li><p>Optimum Deand in Cobb-Douglas <span class="math display">\[D_j^* = \frac{I}{p_j}(\frac{\alpha}{\alpha+\beta}) = \alpha' I^1p_j^{-1}\]</span></p></li>
+<li><p>Optimum Demand in Cobb-Douglas <span class="math display">\[D_j^* = \frac{I}{p_j}(\frac{\alpha}{\alpha+\beta}) = \alpha' I^1p_j^{-1}\]</span></p></li>
 <li><p>In absense of budget constraints, the optimum demand function may look similar to Cobb-Douglas direct utility function <span class="math display">\[D_j^* = e^{\alpha_o}I^{\gamma}\prod_k x_k^{\beta_k}\prod_m e^{\beta_m z_m}\]</span></p></li>
 <li><p><span class="math inline">\(x_k\)</span> includes price/cost variable &amp; <span class="math inline">\(z_m\)</span> includes categorical/dummy variables or any other variable that does not have to be log-transformed</p></li>
 </ul>
@@ -563,7 +563,7 @@ L_i =
 <section id="aggregate-logit-model-1" class="slide level2" style="font-size: 0.6em;">
 <h2>Aggregate Logit Model</h2>
 <ul>
-<li><p>Similarly for alternative <span class="math inline">\(C\)</span> <span class="math display">\[\ln(V_C/V_A) = \beta_{0CA} + \sum_{i=1}^n \beta_{iCA}\ln(x_{iC}/x_{iA}) + \sum_{j=1}^n \gamma_{jB}y_j + \epsilon_{BA} \text{ or}\]</span> <span class="math display">\[\ln(V_B/V_A) = \beta_{0CA} + \sum_{i=1}^n \beta_{iBA}(x_{iC} - x_{iA}) + \sum_{j=1}^n \gamma_{jC}y_j + \epsilon_{CA}\]</span></p></li>
+<li><p>Similarly for alternative <span class="math inline">\(C\)</span> <span class="math display">\[\ln(V_C/V_A) = \beta_{0CA} + \sum_{i=1}^n \beta_{iCA}\ln(x_{iC}/x_{iA}) + \sum_{j=1}^n \gamma_{jB}y_j + \epsilon_{BA} \text{ or}\]</span> <span class="math display">\[\ln(V_C/V_A) = \beta_{0CA} + \sum_{i=1}^n \beta_{iBA}(x_{iC} - x_{iA}) + \sum_{j=1}^n \gamma_{jC}y_j + \epsilon_{CA}\]</span></p></li>
 <li><p>Can be estimated as linear regression model for a set of observed shares and corresponding variable values.</p></li>
 <li><p><strong>Issues</strong>:</p>
 <ul>
