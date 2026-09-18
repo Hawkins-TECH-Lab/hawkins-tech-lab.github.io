@@ -16,7 +16,7 @@ execute:
 ## Outline
 
 ::: incremental
-1.  Some econometric tools used in demand modeling:
+1.  Some econometric tools used in demand modelling:
     - Normal regression
     - Lognormal regression
     - Ordered regression
@@ -36,7 +36,7 @@ $$y_i = \beta_0 + \sum_j \beta_j x_j + \epsilon_j, \epsilon_j \text{ is } \sim N
     - Maximum likelihood by normal pdf
     $$L_i = \frac{1}{\sigma}\phi\left(\frac{y_i-\beta_0-\sum_j \beta_j x_j}{\sigma}\right)$$
 - Regression to mean is deterministic for expected value of most regression model expressed as f(covariates)
-- Probabilistic application through simulation
+- Probabilistic application through simulation to propogate uncertainty
 
 ## Functions of Random Variables
 - From probability theory courses .... transformation of random error term to random variable via Jacobian transformation
@@ -59,7 +59,7 @@ $$y_i^* = \beta_0 + \sum_j \beta_j x_j + \epsilon_j, \epsilon_j \text{ is } \sim
 $$Pr(y_i=1) = \pi_i = \Phi \left((\beta_0 + \sum_j \beta_j x_j)/\sigma \right)$$
 $$Pr(y_i=0) = 1 - \pi_i = 1 - \Phi \left((\beta_0 + \sum_j \beta_j x_j)/\sigma \right) = \Phi \left( - (\beta_0 + \sum_j \beta_j x_j)/\sigma \right)$$
 
-- Estimation by Maximum likelihood by normal cdf
+- Estimation by maximum likelihood assuming normal cdf
     $$L_i = \pi_i^{\delta_i}(1-\pi_i)^{1-\delta_i} \text{  }\delta_i=1 \text{, if }y_i=1, 0 \text{ otherwise}$$
     - Variance normalized to 1 (**homogeneous**) or parameterized without a constant (**heterogeneous**)
 
@@ -67,7 +67,7 @@ $$Pr(y_i=0) = 1 - \pi_i = 1 - \Phi \left((\beta_0 + \sum_j \beta_j x_j)/\sigma \
 - Observed value is **binary** (0/1) with $\epsilon_i$ being logistically distributed this time
 $$Pr(y_i=1) = \pi_i = \frac{\exp (\beta_0 + \sum_j \beta_j x_j)}{1 + \exp(\beta_0 + \sum_j \beta_j x_j)}$$
 $$Pr(y_i=0) = 1 - \pi_i = 1 - \pi_i = \frac{1}{1 + \exp(\beta_0 + \sum_j \beta_j x_j)}$$
-- Estimation by Maximum likelihood
+- Estimation by maximum likelihood
     $$L_i = \pi_i^{\delta_i}(1-\pi_i)^{1-\delta_i} \text{  }\delta_i=1 \text{, if }y_i=1, 0 \text{ otherwise}$$
     - Interpretation (scale compounded parameters):
     $$logit(\pi_i) = \text{log of odds ratio} = \ln\left(\frac{\pi_i}{1-\pi_i}\right)=\beta_0 + \sum_j \beta_j x_j$$
@@ -111,7 +111,7 @@ $$Pr(y_i=j|x_i) = F(\tau_j - \beta x_i) - F(\tau_{j-1} - \beta x_i)$$
 ## Ordered Regression {.smaller}
 - If we assume $\epsilon_i$ follows a normal distribution with **zero mean** and $\sigma^2$ **variance**, then
     - Ordered Probit Regression
-    $$Pr(y_i=j|_i = \Phi((\tau_j - \beta x_i)/\sigma) - \Phi((\tau_{j-1} - \beta x_i)/\sigma) $$
+    $$Pr(y_i=j|x_i) = \Phi((\tau_j - \beta x_i)/\sigma) - \Phi((\tau_{j-1} - \beta x_i)/\sigma) $$
     - Typically, set $\sigma=1$
 - If we assume $\epsilon_i$ follows a Type I Extreme Value distribution with scale $\mu$
     - Ordered Logit Regression
@@ -128,7 +128,7 @@ $$Pr(y_i=4|x_i) = 1 - \Phi(\tau_3 - \beta x_i)$$
 $$Pr(y_i=1|x_i) = \exp(\tau_1 - \beta x_i)/(1 + \exp(\tau_1 - \beta x_i)) - 0$$
 $$Pr(y_i=2|x_i) = \exp(\tau_2 - \beta x_i)/(1 + \exp(\tau_2 - \beta x_i)) - \exp(\tau_1 - \beta x_i)/(1 + \exp(\tau_1 - \beta x_i))$$
 $$Pr(y_i=3|x_i) = \exp(\tau_3 - \beta x_i)/(1 + \exp(\tau_3 - \beta x_i)) - \exp(\tau_2 - \beta x_i)/(1 + \exp(\tau_2 - \beta x_i))$$
-$$Pr(y_i=3|x_i) = 1 - \exp(\tau_3 - \beta x_i)/(1 + \exp(\tau_3 - \beta x_i))$$
+$$Pr(y_i=4|x_i) = 1 - \exp(\tau_3 - \beta x_i)/(1 + \exp(\tau_3 - \beta x_i))$$
 
 ## Ordered Regression {.smaller}
 - Ordered Probit vs Ordered Logit model: Parameters of Probit and Logit are **not comparable**
@@ -144,42 +144,135 @@ $$z_{ij}=0 \text{ otherwise }$$
 - Standard practice is to think of intercept as **baseline probability** when $x=0$
 
 ## Zero-Inflated Ordered Regression {style="font-size: 0.6em;"}
-- Observed data have overwhelming portion with zero values: **zero-inflation**
-$$y_i = 0 \text{, no further regression model}$$
-$$y_i > 0 \text{, } Pr(y_i=j|x)$$
-- Estimation: Maximum likelihood
-$$y_i=0 -> \eta_i \leq \sum_k \gamma z_k$$
-$$y_i > 0, -> \eta_i > \sum_k \gamma_k z_k \text{ & } Pr(y_i=j|x)$$
-$$L_i = \Phi(\sum_k \gamma_k z_k)^{y_i=0} \times \left(\Phi(-\sum_k \gamma_k z_k)(F(\tau_j - \beta x_i) - F(\tau_{j-1} - \beta x_i))\right)^{y_i=j}$$
-- 2 models: model of **binary** zero/non-zero $y$ & **ordered** regression model
+
+- Excess zeros arise from **two processes**:
+  - **Structural zeros** from a binary model
+  - **Sampling zeros** from the ordered model (not truncated)
+
+- Mixture structure:
+  $$
+  P(Y_i = 0) = \pi_i + (1-\pi_i)F(\tau_0 - \eta_i)
+  $$
+  $$
+  P(Y_i = j>0) = (1-\pi_i)\left[F(\tau_j - \eta_i) - F(\tau_{j-1} - \eta_i)\right]
+  $$
+
+- Components:
+  - Structural-zero probability: $\pi_i = \Phi(\gamma z_i)$
+  - Ordered latent index: $\eta_i = \beta x_i$
+
+- Likelihood:
+  $$
+  L_i =
+  \left[\pi_i + (1-\pi_i)F(\tau_0 - \eta_i)\right]^{I(y_i=0)}
+  \left[(1-\pi_i)\left(F(\tau_j - \eta_i) - F(\tau_{j-1} - \eta_i)\right)\right]^{I(y_i=j>0)}
+  $$
+
+---
+
+## Ordered Hurdle Regression {style="font-size: 0.6em;"}
+
+- Zeros arise from **one process only** (binary hurdle)
+- Positive ordered outcomes arise from a **zero-truncated ordered model**
+  $$
+  P(Y_i = 0) = 1 - p_i
+  $$
+  $$
+  P(Y_i = j>0) = p_i \cdot 
+  \frac{F(\tau_j - \eta_i) - F(\tau_{j-1} - \eta_i)}
+       {1 - F(\tau_0 - \eta_i)}
+  $$
+
+- Components:
+  - Hurdle probability:  $p_i = \Phi(\gamma z_i)$
+  - Ordered latent index: $\eta_i = \beta x_i$
+
+- Likelihood:
+  $$
+  L_i =
+  (1-p_i)^{I(y_i=0)}
+  \left[p_i \cdot 
+  \frac{F(\tau_j - \eta_i) - F(\tau_{j-1} - \eta_i)}
+       {1 - F(\tau_0 - \eta_i)}\right]^{I(y_i=j>0)}
+  $$
+
+---
 
 ## Count Variable Regression {.smaller}
-- Count ($y_i$) of events occuring **randomly** & **uniformly** in tmie with constant expected rate of occurence
-$$Pr(y_i) = \frac{\lambda^{y_i}e^{-\lambda}}{y_i!} \text{, } E[y_i] = V[y_i] = \lambda \text{, } \lambda = exp(\sum_j \beta_j x_j)$$
-- Likelihood function for estimation
-$$L(y_i|x,\beta) = Pr(y_i)$$
-- Issues with Poisson model
-    - Heterogeneity can violate **constant expected rate assumption**
-    - **Upper limit** of count data can exist - can cause violation of $E[y_i] = V[y_i]$ assumption and cause **over/under dispersion**
+
+- Count of events occurring **randomly** and **uniformly** in time with constant rate:
+  $$
+  P(Y_i = y_i) = \frac{\lambda^{y_i}e^{-\lambda}}{y_i!}
+  $$
+  $$
+  E[Y_i] = V[Y_i] = \lambda
+  $$
+  $$
+  \lambda_i = \exp(\beta x_i)
+  $$
+
+- Likelihood:
+  $$
+  L_i = P(Y_i = y_i)
+  $$
+
+- Issues:
+  - Heterogeneity violates constant-rate assumption
+  - Upper limits → over/under dispersion
+
+---
 
 ## Poisson Regression with Heterogeneity {.smaller}
-- Existence of over-dispersion requires correction
-    - Assume additional gamma heterogeneity
-    $$\theta^* = exp(\sum_j \beta_j x_j + u) = exp(\sum_j \beta_j x_j) \times exp(u)$$
-    - Consider a positive distribution for $u$, a Gamma distribution with mean 1 and variance $1/\theta=\alpha$
-    - Results in a Negative Binomial regression model
-    $$Pr(y_i) = \frac{\Gamma(\theta + y_i)}{\Gamma(y_i +1)\Gamma(\theta)}r_i^{y_i}(1-r_i)^{\theta} \text{, } r_i = \frac{exp(\sum_j \beta_j x_j)}{exp(\sum_j \beta_j x_j) + \theta}$$
-- Likelihood function for estimation: $L(y_i|x,\beta,\theta) = Pr(y_i)$, $\theta$ is the dispersion parameter, which should be a positive value
+
+- Add gamma heterogeneity:
+  $$
+  \theta_i^* = \exp(\beta x_i + u_i)
+  $$
+  $$
+  u_i \sim \text{Gamma}(1, 1/\theta)
+  $$
+
+- Negative Binomial pmf:
+  $$
+  P(Y_i = y_i) =
+  \frac{\Gamma(\theta + y_i)}{\Gamma(y_i +1)\Gamma(\theta)}
+  r_i^{y_i}(1-r_i)^{\theta}
+  $$
+  $$
+  r_i = \frac{\exp(\beta x_i)}{\exp(\beta x_i) + \theta}
+  $$
+
+- Likelihood:
+  $$
+  L_i = P(Y_i = y_i)
+  $$
+
+---
 
 ## Zero-Inflated Count Regression {style="font-size: 0.6em;"}
-- Observed data have overwhelming portion with zero values: **zero-inflation**
-$$y_i = 0 \text{, no further regression model}$$
-$$y_i > 0 \text{, } Pr(y_i=j|x) \text{Poisson or Negative Binomial}$$
-- Estimation: Maximum likelihood
-$$y_i=0 -> \eta_i \leq \sum_k \gamma z_k$$
-$$y_i > 0, -> \eta_i > \sum_k \gamma_k z_k \text{ & } Pr(y_i=j|x)$$
-$$L_i = \Phi(\sum_k \gamma_k z_k)^{y_i=0} \times \left(\Phi(-\sum_k \gamma_k z_k)Pr(y_i)\right)^{y_i=j}$$
-- 2 models: model of **binary** zero/non-zero $y$ & **count** regression model
+
+- Excess zeros arise from **two processes**:
+  - Structural zeros (binary model)
+  - Sampling zeros (Poisson/NB)
+
+- Mixture structure:
+  $$
+  P(Y_i = 0) = \pi_i + (1-\pi_i)f(0)
+  $$
+  $$
+  P(Y_i = j>0) = (1-\pi_i)f(j)
+  $$
+
+- Components:
+  - Structural-zero probability:$\pi_i = \Phi(\gamma z_i)$
+  - Count model: $f(j) = \text{Poisson or NB pmf}$
+
+- Likelihood:
+  $$
+  L_i =
+  \left[\pi_i + (1-\pi_i)f(0)\right]^{I(y_i=0)}
+  \left[(1-\pi_i)f(y_i)\right]^{I(y_i>0)}
+  $$
 
 ## Use  of Econometric Models {.smaller}
 - Parameter of explanatory variable makes little sense unless put into context
@@ -203,7 +296,7 @@ $$E = \frac{\partial y_i}{\partial x_j}\frac{x_j}{y_j} \text{, } E=\frac{\partia
 # Transportation Demand Models
 
 ## Decision Making {.smaller}
-- In transportation modeling, analysis deals both directly and  indirectly with decision-making of people and firms
+- In transportation modelling, analysis deals both directly and  indirectly with decision-making of people and firms
 - Decisions can be expressed as elements related to demand and supply
 - We define decision as we (**the modeler**) observe it
 - Observed decisions can be (or measured as):
@@ -223,7 +316,7 @@ $$E = \frac{\partial y_i}{\partial x_j}\frac{x_j}{y_j} \text{, } E=\frac{\partia
     - Correlations
     - Endogeneity or self-selection
 
-## Modeling Passenger Travel Demand {.smaller}
+## Modelling Passenger Travel Demand {.smaller}
 - Urban travel demand:
     - Number of trips, types of trips, destination location of trips, mode of trips, routes of trips
 - Intercity travel demand: 
@@ -236,29 +329,15 @@ $$E = \frac{\partial y_i}{\partial x_j}\frac{x_j}{y_j} \text{, } E=\frac{\partia
 
 ## Modelling Passenger Travel Demand
 - Modelling multiple dimensions of demand: number of trips, time of trips, mode of trips, etc.
-    - Urban Transportation Modeling System (UTMS): trip-based model, activity-based models
-- Modeling specific dimension of trips: total trips, transit ridership, etc.
+    - Urban Transportation Modelling System (UTMS): trip-based model, activity-based models
+- Modelling specific dimension of trips: total trips, transit ridership, etc.
     - Intended to investigate specific **policy impacts**: transit ridership, willingness to pay for better transit, willingness to pay for parking, air passenger demand, tourism demand
 
 ## Travel Demand Classifications {.smaller}
-- Based on the concept of utility:
-    - Direct Utility/ Direct Demand Model
-    - Indirect Utility/ Demand Model
-- Based on uncertainty in predictions:
-    - Deterministic Model
-    - Stochastic Model
-- Based on maximization approach:
-    - Random utility maximization
-    - Unconstrained model: Fitting demand function
-- Based on level of aggregation:
-    - Aggregate demand model
-    - Disaggregate demand model
-
-## Travel Demand Classifications {.smaller}
-- Aggregate versus disaggregate modeling:
+- Aggregate versus disaggregate modelling:
     - Based on different **functional form** and data needs for model estimation, **purpose of study** and **time/money constraints** of the project
     - Disaggregate models are always better than corresponding aggregate ones, if and only if **detailed data** requirements and **computational** burdens are understood
-    - In most cases aggregate model can **complement** disaggregate modeling approaches by making the trends better understood
+    - In most cases aggregate models can **complement** disaggregate modelling approaches by making the trends better understood
 
 ## Aggregate Travel Demand Models
 ![](../../../assets/images/teaching/ENCI707/Lecture3/model_types.svg){fig-align="center"}
@@ -271,11 +350,11 @@ $$\text{Total Demand, D (e.g., number of trips)} = \beta_0 + \beta_n x_j + \epsi
 $$E = \frac{\partial D/D}{\partial x_j/x_j} = \frac{\partial D}{\partial x_j}\times\frac{x_j}{D}=\frac{\beta_j}{D}x_j$$ 
 	
 - Elasticity is a function of the value at a data point
-- Model estimation: Least-Square
+- Model estimation: LSE
 - **Limitations**: Linearity assumption & can result in negative demand
 
 ## Cobb-Douglas Demand Model {.smaller}
-- Optimum Deand in Cobb-Douglas
+- Optimum Demand in Cobb-Douglas
 $$D_j^* = \frac{I}{p_j}(\frac{\alpha}{\alpha+\beta}) = \alpha' I^1p_j^{-1}$$
 
 - In absense of budget constraints, the optimum demand function may look similar to Cobb-Douglas direct utility function
@@ -298,6 +377,33 @@ $$E=\frac{\partial D}{\partial x_k}\frac{x_k}{D_j} = \beta_j$$
 ![](../../../assets/images/teaching/ENCI707/Lecture3/cobb-douglas-paper2.png){.absolute top="75" right="0"}
 ![](../../../assets/images/teaching/ENCI707/Lecture3/cobb-douglas-paper3.png){.absolute top="300" left="0"}
 ![](../../../assets/images/teaching/ENCI707/Lecture3/cobb-douglas-paper4.png){.absolute top="375" right="0"}
+
+## Aggregate Logit Model {style="font-size: 0.6em;"}
+- Aggregate logit model: model of market shares
+$$D_A = \text{Total demand for alternative A}$$
+$$D_B = \text{Total demand for alternative B}$$
+$$D_C = \text{Total demand for alternative C}$$
+$$V_A = \text{Ratio of total demand for A} = D_A/(D_A+D_B+D_C)$$
+$$V_B = \text{Ratio of total demand for B} = D_B/(D_A+D_B+D_C)$$
+$$V_C = \text{Ratio of total demand for C} = D_C/(D_A+D_B+D_C)$$
+
+- Considering an alternative, $A$, as the reference & using Cobb-Douglas log form
+$$\ln(V_B/V_A) = \beta_{0BA} + \sum_{i=1}^n \beta_{iBA}\ln(x_{iB}/x_{iA}) + \sum_{j=1}^n \gamma_{jB}y_j + \epsilon_{BA} \text{ or}$$
+$$\ln(V_B/V_A) = \beta_{0BA} + \sum_{i=1}^n \beta_{iBA}(x_{iB} - x_{iA}) + \sum_{j=1}^n \gamma_{jB}y_j + \epsilon_{BA}$$
+
+## Aggregate Logit Model {style="font-size: 0.6em;"}
+- Similarly for alternative $C$
+$$\ln(V_C/V_A) = \beta_{0CA} + \sum_{i=1}^n \beta_{iCA}\ln(x_{iC}/x_{iA}) + \sum_{j=1}^n \gamma_{jB}y_j + \epsilon_{BA} \text{ or}$$
+$$\ln(V_C/V_A) = \beta_{0CA} + \sum_{i=1}^n \beta_{iBA}(x_{iC} - x_{iA}) + \sum_{j=1}^n \gamma_{jC}y_j + \epsilon_{CA}$$
+
+- Can be estimated as linear regression model for a set of observed shares and corresponding variable values.
+- **Issues**:
+    -   No underlying behavioural theory
+    -   Different elasticity results from different functional forms (ratio or difference of price/cost variable)
+
+## Lagged Effects in Aggregate Models: Example
+![](../../../assets/images/teaching/ENCI707/Lecture3/lag-effect-paper1.png){.absolute top="70" left="0"}
+![](../../../assets/images/teaching/ENCI707/Lecture3/lag-effect-paper2.png){.absolute top="250" left="0"}
 
 ## Translog Demand Model {style="font-size: 0.6em;"}
 - Indirect utility (various other forms also possible)
@@ -336,30 +442,3 @@ $$D_i^* = - \frac{(1/p_i)(\sum_i \alpha_i + \sum_{j \ne i} \beta_{ij}\ln(p_j) + 
 
 ## Translog Demand Model: Example 
 ![](../../../assets/images/teaching/ENCI707/Lecture3/translog-paper3.png){fig-align="center"}
-
-## Aggregate Logit Model {style="font-size: 0.6em;"}
-- Aggregate logit model: model of market shares
-$$D_A = \text{Total demand for alternative A}$$
-$$D_B = \text{Total demand for alternative B}$$
-$$D_C = \text{Total demand for alternative C}$$
-$$V_A = \text{Ratio of total demand for A} = D_A/(D_A+D_B+D_C)$$
-$$V_B = \text{Ratio of total demand for B} = D_B/(D_A+D_B+D_C)$$
-$$V_C = \text{Ratio of total demand for C} = D_C/(D_A+D_B+D_C)$$
-
-- Considering an alternative, $A$, as the reference & using Cobb-Douglas log form
-$$\ln(V_B/V_A) = \beta_{0BA} + \sum_{i=1}^n \beta_{iBA}\ln(x_{iB}/x_{iA}) + \sum_{j=1}^n \gamma_{jB}y_j + \epsilon_{BA} \text{ or}$$
-$$\ln(V_B/V_A) = \beta_{0BA} + \sum_{i=1}^n \beta_{iBA}(x_{iB} - x_{iA}) + \sum_{j=1}^n \gamma_{jB}y_j + \epsilon_{BA}$$
-
-## Aggregate Logit Model {style="font-size: 0.6em;"}
-- Similarly for alternative $C$
-$$\ln(V_C/V_A) = \beta_{0CA} + \sum_{i=1}^n \beta_{iCA}\ln(x_{iC}/x_{iA}) + \sum_{j=1}^n \gamma_{jB}y_j + \epsilon_{BA} \text{ or}$$
-$$\ln(V_B/V_A) = \beta_{0CA} + \sum_{i=1}^n \beta_{iBA}(x_{iC} - x_{iA}) + \sum_{j=1}^n \gamma_{jC}y_j + \epsilon_{CA}$$
-
-- Can be estimated as linear regression model for a set of observed shares and corresponding variable values.
-- **Issues**:
-    -   No underlying behavioural theory
-    -   Different elasticity results from different functional forms (ratio or difference of price/cost variable)
-
-## Lagged Effects in Aggregate Models: Example
-![](../../../assets/images/teaching/ENCI707/Lecture3/lag-effect-paper1.png){.absolute top="70" left="0"}
-![](../../../assets/images/teaching/ENCI707/Lecture3/lag-effect-paper2.png){.absolute top="250" left="0"}
