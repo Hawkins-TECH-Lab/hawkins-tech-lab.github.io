@@ -18,6 +18,7 @@ For estimation, you can use any software (functions are available in R, Python, 
 You may separate the two model tasks within your group or conduct all analyses as a group. All group members must contribute to the writing of the summary report.
 
 The report should include at least the following sections:
+
 - Introduce the objective(s) and parts of the work.
 - Present the model formulation and justification of independent variables for each model task.
 - Selection of the best model specification (select one) for each model task.
