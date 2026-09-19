@@ -1112,7 +1112,7 @@
     "href": "teaching/ENCI707/slides/lec-3.html#transportation-choices",
     "title": "Lecture 3 - Disaggregate Econometric Choice Theory",
     "section": "Transportation Choices",
-    "text": "Transportation Choices\nMany travel demand related choices are:\n\nDiscrete: activity type choice, mode choice, route choice, vehicle type choice, time of the day choice, location of trip destination choice etc.\nContinuous: activity duration, vehicle usage, housing duration, etc.\nHeterogeneous: Wide variations of choices across the population.\nProbabilistic/stochastic/random: We can’t defined deterministically."
+    "text": "Transportation Choices\nMany travel demand related choices are:\n\nDiscrete: activity type choice, mode choice, route choice, vehicle type choice, time of the day choice, location of trip destination choice etc.\nContinuous: activity duration, vehicle usage, housing duration, etc.\nHeterogeneous: Wide variations of choices across the population.\nProbabilistic/stochastic/random: We cannot define deterministically."
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-3.html#choice-as-consumption",
@@ -1147,21 +1147,21 @@
     "href": "teaching/ENCI707/slides/lec-3.html#decision-maker",
     "title": "Lecture 3 - Disaggregate Econometric Choice Theory",
     "section": "Decision Maker",
-    "text": "Decision Maker\n\nDisaggregate: Individual or group (household, family, firms, government agency, etc.)\nHeterogeneous choice makers: Wide variety in choice behaviour across the population\n\nTaste variations across the choice/decision makers: Idiosyncrasy\nDifferent choice situations for different people\n\nCharacteristics of heterogeneous choice maker: age, gender, income, education, household/firm size, etc.\nChoice situations/context: spatial, temporal, economic"
+    "text": "Decision Maker\n\nDisaggregate: Individual or group (household, family, firms, government agency, etc.)\nHeterogeneous choice makers: Wide variety of choice behaviour across the population\n\nTaste variations across the choice/decision makers: Idiosyncrasy\nDifferent choice situations for different people\n\nCharacteristics of heterogeneous choice maker: age, gender, income, education, household/firm size, etc.\nChoice situation/context: spatial, temporal, economic"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-3.html#alternatives",
     "href": "teaching/ENCI707/slides/lec-3.html#alternatives",
     "title": "Lecture 3 - Disaggregate Econometric Choice Theory",
     "section": "Alternatives",
-    "text": "Alternatives\n\nChoice means choosing an alternative out of a choice set (mutually exclusive and collectively exhaustive countable set of alternatives):\nUniversal choice set: \\(C\\)\nFeasible / Individual-specific: \\(C_i\\)\nConsideration (awareness) set: \\(C_{ci}\\)\n\nExample:\n\\(C\\) = { Private car, Ridehail, Taxi, Bus, Bicycle, Walk}\n\nNo driver’s license, distance &gt; 3 km\n\n\\(C_i\\) = { Ridehail, Taxi, Bus, Bicycle}\n\nNo driver’s license, distance &gt; 3 km & not aware of Ridehail\n\n\\(C_{ci}\\) = { Taxi, Bus, Bicycle}"
+    "text": "Alternatives\n\nChoice means choosing an alternative out of a choice set (mutually exclusive and collectively exhaustive countable set of alternatives):\n\nUniversal choice set: \\(C\\)\nFeasible / Individual-specific: \\(C_i\\)\nConsideration (awareness) set: \\(C_{ci}\\)\n\n\nExample:\n\\(C\\) = { Private car, Ridehail, Taxi, Bus, Bicycle, Walk}\n\nNo driver’s license, distance &gt; 3 km\n\n\\(C_i\\) = { Ridehail, Taxi, Bus, Bicycle}\n\nNo driver’s license, distance &gt; 3 km & not aware of Ridehail\n\n\\(C_{ci}\\) = { Taxi, Bus, Bicycle}"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-3.html#alternatives---attributes",
     "href": "teaching/ENCI707/slides/lec-3.html#alternatives---attributes",
     "title": "Lecture 3 - Disaggregate Econometric Choice Theory",
     "section": "Alternatives - Attributes",
-    "text": "Alternatives - Attributes\n\nDecision maker evaluates alternatives in terms of attribute values: Attribute values can be measured on the scale of attractiveness:\nCategorical: Binary, ordinal (reliability, safety, convenience, etc.)\nCardinal: absolute values (time, cost, etc.)\nGeneric versus alternative-specific\nMeasured versus perceived"
+    "text": "Alternatives - Attributes\n\nDecision maker evaluates alternatives in terms of attribute values: Attribute values can be measured on the scale of attractiveness:\n\nCategorical: Binary, ordinal (reliability, safety, convenience, etc.)\nCardinal: absolute values (time, cost, etc.)\nGeneric versus alternative-specific\nMeasured versus perceived"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-3.html#decision-rules",
@@ -1175,7 +1175,7 @@
     "href": "teaching/ENCI707/slides/lec-3.html#utility-maximization",
     "title": "Lecture 3 - Disaggregate Econometric Choice Theory",
     "section": "Utility Maximization",
-    "text": "Utility Maximization\nUtility function:\n\nCaptures relative attractiveness of alternative in the choice set\nMeasures the satisfaction that the decision maker wants to optimize\n\nAssumptions:\n\nDecision maker has full knowledge about the attributes of the alternatives and is able to process information\nBase on information processing, decision maker associates a utility to each alternative\nDecision maker has transitive preferences\nDecision maker is rational and perfect optimizer\nDecision maker is consistent"
+    "text": "Utility Maximization\nUtility function:\n\nCaptures relative attractiveness of alternatives in the choice set\nMeasures the satisfaction that the decision maker wants to optimize\n\nAssumptions:\n\nDecision maker has full knowledge about the attributes of the alternatives and is able to process information\nBased on information processing, decision maker associates a utility to each alternative\nDecision maker has transitive preferences\nDecision maker is rational and perfect optimizer\nDecision maker is consistent"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-3.html#probability-in-utility-maximization",
@@ -1189,14 +1189,14 @@
     "href": "teaching/ENCI707/slides/lec-3.html#discrete-choice",
     "title": "Lecture 3 - Disaggregate Econometric Choice Theory",
     "section": "Discrete Choice",
-    "text": "Discrete Choice\nTwo alternatives: transit, car \\[𝑈_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}=\\beta_𝑡 𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}+\\beta_𝑐 𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} \\text{ (Typically, }\\beta_t, \\beta_c &lt;0)\\]\n\\[𝑈_{𝑐𝑎𝑟}=\\beta_𝑡 𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟}+\\beta_𝑐 𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟}\\]\nEquivalent specification \\[𝑈_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}=(\\beta_𝑡/\\beta_𝑐)𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}+𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}\\]\n\\[𝑈_{𝑐𝑎𝑟}=(\\beta_𝑡/\\beta_𝑐)𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟}+𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟}\n\\]\nChoice: car, if \\[\\beta_𝑡 𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟}+\\beta_𝑐 𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} \\geq \\beta_𝑡 𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} + \\beta_𝑐 𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}\n\\]\nor \\[(\\beta_𝑡/\\beta_𝑐)𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟}+𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} \\leq (\\beta_𝑡/\\beta_𝑐)𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}+𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}\n\\]"
+    "text": "Discrete Choice\nTwo alternatives: transit, car \\[𝑈_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}=\\beta_𝑡 𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}+\\beta_𝑐 𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} \\text{ (Typically, }\\beta_t, \\beta_c &lt;0)\\]\n\\[𝑈_{𝑐𝑎𝑟}=\\beta_𝑡 𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟}+\\beta_𝑐 𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟}\\]\nEquivalent specification \\[𝑈_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}=(\\beta_𝑡/\\beta_𝑐)𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}+𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}\\]\n\\[𝑈_{𝑐𝑎𝑟}=(\\beta_𝑡/\\beta_𝑐)𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟}+𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟}\n\\]\nChoice: car, if \\[\\beta_𝑡 𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟}+\\beta_𝑐 𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} &gt; \\beta_𝑡 𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} + \\beta_𝑐 𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}\n\\]\nor \\[(\\beta_𝑡/\\beta_𝑐)𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟}+𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} &lt; (\\beta_𝑡/\\beta_𝑐)𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}+𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}\n\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-3.html#discrete-choice-1",
     "href": "teaching/ENCI707/slides/lec-3.html#discrete-choice-1",
     "title": "Lecture 3 - Disaggregate Econometric Choice Theory",
     "section": "Discrete Choice",
-    "text": "Discrete Choice\nCar is the dominant alternative, if \\[𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟} &lt; 𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} \\text{ & } 𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} &lt; 𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} \\therefore 𝑈_{𝑐𝑎𝑟} &gt; 𝑈_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}\\]\nCar and transit in competition, if \\[𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟} &lt; 𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} \\text{ & } 𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} &gt; 𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}\\]\nIs the traveler willing to pay extra \\((Cost_{car}-Cost_{transit})\\) to save \\((Time_{transit} -Time_{car})\\)?\nIf yes (pick car): \\(\\left(\\frac{\\beta_𝑡}{\\beta_𝑐}\\right)𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟} + 𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} \\leq \\left(\\frac{\\beta_𝑡}{\\beta_𝑐}\\right)𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} + 𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}\\)\nWillingness-to-pay or Value of Travel Time Savings (VOTS): \\[\\left(\\frac{\\beta_𝑡}{\\beta_𝑐}\\right) \\geq \\frac{(𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟}−𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡})}{(𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}−𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟})}\\]"
+    "text": "Discrete Choice\nCar is the dominant alternative, if \\[𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟} &lt; 𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} \\text{ & } 𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} &lt; 𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} \\therefore 𝑈_{𝑐𝑎𝑟} &gt; 𝑈_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}\\]\nCar and transit in competition, if \\[𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟} &lt; 𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} \\text{ & } 𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} &gt; 𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}\\]\nIs the traveler willing to pay extra \\((Cost_{car}-Cost_{transit})\\) to save \\((Time_{transit} -Time_{car})\\)?\nIf yes (pick car): \\(\\left(\\frac{\\beta_𝑡}{\\beta_𝑐}\\right)𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟} + 𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} &lt; \\left(\\frac{\\beta_𝑡}{\\beta_𝑐}\\right)𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} + 𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}\\)\nWillingness-to-pay or Value of Travel Time Savings (VOTS): \\[\\left(\\frac{\\beta_𝑡}{\\beta_𝑐}\\right) &gt; \\frac{(𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟}−𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡})}{(𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}−𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟})}\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-3.html#discrete-choice-2",

@@ -166,7 +166,7 @@
 <li><strong>Discrete:</strong> activity type choice, mode choice, route choice, vehicle type choice, time of the day choice, location of trip destination choice etc.</li>
 <li><strong>Continuous:</strong> activity duration, vehicle usage, housing duration, etc.</li>
 <li><strong>Heterogeneous:</strong> Wide variations of choices across the population.</li>
-<li><strong>Probabilistic/stochastic/random:</strong> We can’t defined deterministically.</li>
+<li><strong>Probabilistic/stochastic/random:</strong> We cannot define deterministically.</li>
 </ul>
 </section>
 <section id="choice-as-consumption" class="slide level2">
@@ -216,22 +216,24 @@
 <h2>Decision Maker</h2>
 <ul>
 <li><strong>Disaggregate:</strong> Individual or group (household, family, firms, government agency, etc.)</li>
-<li><strong>Heterogeneous choice makers:</strong> Wide variety in choice behaviour across the population
+<li><strong>Heterogeneous choice makers:</strong> Wide variety of choice behaviour across the population
 <ul>
 <li>Taste variations across the choice/decision makers: <strong>Idiosyncrasy</strong></li>
 <li>Different choice situations for different people</li>
 </ul></li>
 <li><strong>Characteristics of heterogeneous choice maker:</strong> age, gender, income, education, household/firm size, etc.</li>
-<li><strong>Choice situations/context:</strong> spatial, temporal, economic</li>
+<li><strong>Choice situation/context:</strong> spatial, temporal, economic</li>
 </ul>
 </section>
 <section id="alternatives" class="slide level2 smaller">
 <h2>Alternatives</h2>
 <ul>
-<li><strong>Choice</strong> means choosing an alternative out of a choice set (<em>mutually exclusive and collectively exhaustive countable set of alternatives</em>):</li>
+<li><strong>Choice</strong> means choosing an alternative out of a choice set (<em>mutually exclusive and collectively exhaustive countable set of alternatives</em>):
+<ul>
 <li>Universal choice set: <span class="math inline">\(C\)</span></li>
 <li>Feasible / Individual-specific: <span class="math inline">\(C_i\)</span></li>
 <li>Consideration (awareness) set: <span class="math inline">\(C_{ci}\)</span></li>
+</ul></li>
 </ul>
 <p><strong>Example:</strong></p>
 <p><span class="math inline">\(C\)</span> = { Private car, Ridehail, Taxi, Bus, Bicycle, Walk}</p>
@@ -247,11 +249,13 @@
 <section id="alternatives---attributes" class="slide level2">
 <h2>Alternatives - Attributes</h2>
 <ul>
-<li>Decision maker <strong>evaluates alternatives</strong> in terms of attribute values: Attribute values can be measured on the scale of attractiveness:</li>
+<li>Decision maker <strong>evaluates alternatives</strong> in terms of attribute values: Attribute values can be measured on the scale of attractiveness:
+<ul>
 <li><strong>Categorical:</strong> Binary, ordinal (reliability, safety, convenience, etc.)</li>
 <li><strong>Cardinal:</strong> absolute values (time, cost, etc.)</li>
 <li><strong>Generic</strong> versus <strong>alternative-specific</strong></li>
 <li><strong>Measured</strong> versus <strong>perceived</strong></li>
+</ul></li>
 </ul>
 </section>
 <section id="decision-rules" class="slide level2">
@@ -271,13 +275,13 @@
 <h2>Utility Maximization</h2>
 <p><strong>Utility function:</strong></p>
 <ul>
-<li>Captures <strong>relative attractiveness</strong> of alternative in the choice set</li>
+<li>Captures <strong>relative attractiveness</strong> of alternatives in the choice set</li>
 <li>Measures the satisfaction that the decision maker wants to optimize</li>
 </ul>
 <p><strong>Assumptions:</strong></p>
 <ul>
 <li>Decision maker has <strong>full knowledge</strong> about the attributes of the alternatives and is able to process information</li>
-<li>Base on information processing, decision maker <strong>associates a utility</strong> to each alternative</li>
+<li>Based on information processing, decision maker <strong>associates a utility</strong> to each alternative</li>
 <li>Decision maker has <strong>transitive preferences</strong></li>
 <li>Decision maker is <strong>rational</strong> and <strong>perfect optimizer</strong></li>
 <li>Decision maker is <strong>consistent</strong></li>
@@ -310,9 +314,9 @@
 <p>Equivalent specification <span class="math display">\[𝑈_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}=(\beta_𝑡/\beta_𝑐)𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}+𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}\]</span></p>
 <p><span class="math display">\[𝑈_{𝑐𝑎𝑟}=(\beta_𝑡/\beta_𝑐)𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟}+𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟}
 \]</span></p>
-<p><strong>Choice:</strong> car, if <span class="math display">\[\beta_𝑡 𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟}+\beta_𝑐 𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} \geq \beta_𝑡 𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} + \beta_𝑐 𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}
+<p><strong>Choice:</strong> car, if <span class="math display">\[\beta_𝑡 𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟}+\beta_𝑐 𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} &gt; \beta_𝑡 𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} + \beta_𝑐 𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}
 \]</span></p>
-<p>or <span class="math display">\[(\beta_𝑡/\beta_𝑐)𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟}+𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} \leq (\beta_𝑡/\beta_𝑐)𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}+𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}
+<p>or <span class="math display">\[(\beta_𝑡/\beta_𝑐)𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟}+𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} &lt; (\beta_𝑡/\beta_𝑐)𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}+𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}
 \]</span></p>
 </section>
 <section id="discrete-choice-1" class="slide level2 smaller">
@@ -320,8 +324,8 @@
 <p>Car is the <strong>dominant alternative</strong>, if <span class="math display">\[𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟} &lt; 𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} \text{ &amp; } 𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} &lt; 𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} \therefore 𝑈_{𝑐𝑎𝑟} &gt; 𝑈_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}\]</span></p>
 <p>Car and transit in competition, if <span class="math display">\[𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟} &lt; 𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} \text{ &amp; } 𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} &gt; 𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}\]</span></p>
 <p>Is the traveler willing to pay extra <span class="math inline">\((Cost_{car}-Cost_{transit})\)</span> to save <span class="math inline">\((Time_{transit} -Time_{car})\)</span>?</p>
-<p>If yes (pick car): <span class="math inline">\(\left(\frac{\beta_𝑡}{\beta_𝑐}\right)𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟} + 𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} \leq \left(\frac{\beta_𝑡}{\beta_𝑐}\right)𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} + 𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}\)</span></p>
-<p>Willingness-to-pay or Value of Travel Time Savings (VOTS): <span class="math display">\[\left(\frac{\beta_𝑡}{\beta_𝑐}\right) \geq \frac{(𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟}−𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡})}{(𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}−𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟})}\]</span></p>
+<p>If yes (pick car): <span class="math inline">\(\left(\frac{\beta_𝑡}{\beta_𝑐}\right)𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟} + 𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} &lt; \left(\frac{\beta_𝑡}{\beta_𝑐}\right)𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} + 𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}\)</span></p>
+<p>Willingness-to-pay or Value of Travel Time Savings (VOTS): <span class="math display">\[\left(\frac{\beta_𝑡}{\beta_𝑐}\right) &gt; \frac{(𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟}−𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡})}{(𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}−𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟})}\]</span></p>
 </section>
 <section id="discrete-choice-2" class="slide level2">
 <h2>Discrete Choice</h2>
