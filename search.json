@@ -1217,21 +1217,21 @@
     "href": "teaching/ENCI707/slides/lec-3.html#stochastic-discrete-choice",
     "title": "Lecture 3 - Disaggregate Econometric Choice Theory",
     "section": "Stochastic Discrete Choice",
-    "text": "Stochastic Discrete Choice\n\nChoice Probability of an alternative \\(j\\) for an individual \\(i\\) with choice set \\(C_i\\) \\[Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( 𝑈_{𝑖𝑗} \\geq 𝑈_{𝑖𝑘}) \\text{, } 𝑘 \\neq 𝑗 \\text{ & } 𝑘 \\in 𝐶_𝑖\\]\nRandom utility: \\[𝑈_{𝑖𝑗}=𝑉_{𝑖𝑗}+\\epsilon_{𝑖𝑗} \\text{, } 𝑗 \\in 𝐶_𝑖\\]\nRandom Utility Maximizing (RUM) Choice Model: \\[Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( 𝑉_{𝑖𝑗} + \\epsilon_{𝑖𝑗} \\ge 𝑉_{𝑖𝑘} + \\epsilon_{𝑖𝑘}) \\text{, } 𝑘 \\neq 𝑗 \\text{ & } 𝑘 \\in 𝐶_𝑖\\] Or \\[Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( \\epsilon_{ik} - \\epsilon_{ij} \\leq V_{ij} - V_{ik}) \\text{, } 𝑘 \\neq 𝑗 \\text{ & } 𝑘 \\in 𝐶_𝑖\\]"
+    "text": "Stochastic Discrete Choice\n\nChoice Probability of an alternative \\(j\\) for an individual \\(i\\) with choice set \\(C_i\\) \\[Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( 𝑈_{𝑖𝑗} \\geq 𝑈_{𝑖𝑘}) \\text{, } 𝑘 \\neq 𝑗 \\text{ & } 𝑘 \\in 𝐶_𝑖\\]\nRandom utility: \\[𝑈_{𝑖𝑗}=𝑉_{𝑖𝑗}+\\epsilon_{𝑖𝑗} \\text{, } 𝑗 \\in 𝐶_𝑖\\]\nRandom Utility Maximizing (RUM) choice model: \\[Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( 𝑉_{𝑖𝑗} + \\epsilon_{𝑖𝑗} \\ge 𝑉_{𝑖𝑘} + \\epsilon_{𝑖𝑘}) \\text{, } 𝑘 \\neq 𝑗 \\text{ & } 𝑘 \\in 𝐶_𝑖\\] Or \\[Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( \\epsilon_{ik} - \\epsilon_{ij} \\leq V_{ij} - V_{ik}) \\text{, } 𝑘 \\neq 𝑗 \\text{ & } 𝑘 \\in 𝐶_𝑖\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-3.html#rum-based-discrete-choice",
     "href": "teaching/ENCI707/slides/lec-3.html#rum-based-discrete-choice",
     "title": "Lecture 3 - Disaggregate Econometric Choice Theory",
     "section": "RUM-Based Discrete Choice",
-    "text": "RUM-Based Discrete Choice\n\nFully specified choice set \\(C_i\\)\nAttributes of alternatives are completely defined\nOnly differences in utility matter\nSystematic utility function is specified as a function of attributes\nAn attribute may have the same (generic) weighting factors (coefficient) for all alternatives if it varies across the alternatives (e.g., travel time, travel cost, etc.).\nAn attribute may have different weighting factors (coefficient) for different alternatives if it does not vary across the alternatives (age, gender, income, etc.).\nAssumption on distribution of random utility is necessary to derive choice probability: Stochastic Choice Model"
+    "text": "RUM-Based Discrete Choice\n\nFully specified choice set \\(C_i\\)\nAttributes of alternatives are completely defined\nOnly differences in utility matter\nSystematic utility function is specified as a function of attributes\nAn attribute may have the same (generic) weighting factors (coefficients) for all alternatives if it varies across the alternatives (e.g., travel time, travel cost, etc.).\nAn attribute may have different weighting factors (coefficients) for different alternatives if it does not vary across the alternatives (age, gender, income, etc.).\nAssumption on distribution of random utility is necessary to derive choice probability: Stochastic choice model"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-3.html#binary-discrete-choice",
     "href": "teaching/ENCI707/slides/lec-3.html#binary-discrete-choice",
     "title": "Lecture 3 - Disaggregate Econometric Choice Theory",
     "section": "Binary Discrete Choice",
-    "text": "Binary Discrete Choice\nChoice Probability of an alternative \\(j\\) for an individual \\(i\\) with choice set \\(C_i\\) of two alternatives: \\(j, k\\) (dropping \\(i\\) for sake of simplicity) \\[Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( 𝑉_𝑗+\\epsilon_𝑗 \\ge 𝑉_𝑘+\\epsilon_𝑘)\\] \\[Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( \\epsilon_𝑘−\\epsilon_𝑗≤𝑉_𝑗−𝑉_𝑘)\\] Binary Probit:\n\n\\(\\epsilon_j,\\epsilon_k\\) are both normally distributed\nSo,(\\(\\epsilon_k-\\epsilon_j\\)) is also normally distributed\nWith fully specified alternative specific constants, (\\(\\epsilon_k-\\epsilon_j\\)) is \\(N(0,\\sigma^2)\\): \\[V-j - V_k = \\beta_0 + \\sum \\beta(x_j - x_k)\\]\nResulting Choice model: \\(Pr(j) = \\Phi(V/\\sigma)\\)\n\\(\\sigma\\) normalized to 1, giving probit model with unit variance"
+    "text": "Binary Discrete Choice\nChoice probability of an alternative \\(j\\) for an individual \\(i\\) with choice set \\(C_i\\) of two alternatives: \\(j, k\\) (dropping \\(i\\) for sake of simplicity) \\[Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( 𝑉_𝑗+\\epsilon_𝑗 \\ge 𝑉_𝑘+\\epsilon_𝑘)\\] \\[Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( \\epsilon_𝑘−\\epsilon_𝑗≤𝑉_𝑗−𝑉_𝑘)\\] Binary Probit:\n\n\\(\\epsilon_j,\\epsilon_k\\) are both normally distributed\nSo,(\\(\\epsilon_k-\\epsilon_j\\)) is also normally distributed\nWith fully specified alternative specific constants, (\\(\\epsilon_k-\\epsilon_j\\)) is \\(N(0,\\sigma^2)\\): \\[V_j - V_k = \\beta_0 + \\sum \\beta(x_j - x_k)\\]\nResulting choice model: \\(Pr(j) = \\Phi(V/\\sigma)\\)\n\\(\\sigma\\) normalized to 1, giving probit model with unit variance"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-3.html#binary-discrete-choice-1",

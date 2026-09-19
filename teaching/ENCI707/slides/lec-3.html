@@ -340,7 +340,7 @@
 <ul>
 <li><p>Choice Probability of an alternative <span class="math inline">\(j\)</span> for an individual <span class="math inline">\(i\)</span> with choice set <span class="math inline">\(C_i\)</span> <span class="math display">\[Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( 𝑈_{𝑖𝑗} \geq 𝑈_{𝑖𝑘}) \text{, } 𝑘 \neq 𝑗 \text{ &amp; } 𝑘 \in 𝐶_𝑖\]</span></p></li>
 <li><p>Random utility: <span class="math display">\[𝑈_{𝑖𝑗}=𝑉_{𝑖𝑗}+\epsilon_{𝑖𝑗} \text{, } 𝑗 \in 𝐶_𝑖\]</span></p></li>
-<li><p>Random Utility Maximizing (RUM) Choice Model: <span class="math display">\[Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( 𝑉_{𝑖𝑗} + \epsilon_{𝑖𝑗} \ge 𝑉_{𝑖𝑘} + \epsilon_{𝑖𝑘}) \text{, } 𝑘 \neq 𝑗 \text{ &amp; } 𝑘 \in 𝐶_𝑖\]</span> Or <span class="math display">\[Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( \epsilon_{ik} - \epsilon_{ij} \leq V_{ij} - V_{ik}) \text{, } 𝑘 \neq 𝑗 \text{ &amp; } 𝑘 \in 𝐶_𝑖\]</span></p></li>
+<li><p>Random Utility Maximizing (RUM) choice model: <span class="math display">\[Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( 𝑉_{𝑖𝑗} + \epsilon_{𝑖𝑗} \ge 𝑉_{𝑖𝑘} + \epsilon_{𝑖𝑘}) \text{, } 𝑘 \neq 𝑗 \text{ &amp; } 𝑘 \in 𝐶_𝑖\]</span> Or <span class="math display">\[Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( \epsilon_{ik} - \epsilon_{ij} \leq V_{ij} - V_{ik}) \text{, } 𝑘 \neq 𝑗 \text{ &amp; } 𝑘 \in 𝐶_𝑖\]</span></p></li>
 </ul>
 </section>
 <section id="rum-based-discrete-choice" class="slide level2 smaller">
@@ -350,19 +350,19 @@
 <li>Attributes of alternatives are <strong>completely defined</strong></li>
 <li>Only <strong>differences in utility</strong> matter</li>
 <li><strong>Systematic utility function</strong> is specified as a function of attributes</li>
-<li>An attribute may have the <strong>same</strong> (generic) weighting factors (coefficient) for all alternatives <strong>if it varies across the alternatives</strong> (e.g., travel time, travel cost, etc.).</li>
-<li>An attribute may have <strong>different</strong> weighting factors (coefficient) for different alternatives if it <strong>does not vary across the alternatives</strong> (age, gender, income, etc.).</li>
-<li>Assumption on distribution of random utility is necessary to derive choice probability: <strong>Stochastic Choice Model</strong></li>
+<li>An attribute may have the <strong>same</strong> (generic) weighting factors (coefficients) for all alternatives <strong>if it varies across the alternatives</strong> (e.g., travel time, travel cost, etc.).</li>
+<li>An attribute may have <strong>different</strong> weighting factors (coefficients) for different alternatives if it <strong>does not vary across the alternatives</strong> (age, gender, income, etc.).</li>
+<li>Assumption on distribution of random utility is necessary to derive choice probability: <strong>Stochastic choice model</strong></li>
 </ul>
 </section>
 <section id="binary-discrete-choice" class="slide level2 smaller">
 <h2>Binary Discrete Choice</h2>
-<p>Choice Probability of an alternative <span class="math inline">\(j\)</span> for an individual <span class="math inline">\(i\)</span> with choice set <span class="math inline">\(C_i\)</span> of two alternatives: <span class="math inline">\(j, k\)</span> (dropping <span class="math inline">\(i\)</span> for sake of simplicity) <span class="math display">\[Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( 𝑉_𝑗+\epsilon_𝑗 \ge 𝑉_𝑘+\epsilon_𝑘)\]</span> <span class="math display">\[Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( \epsilon_𝑘−\epsilon_𝑗≤𝑉_𝑗−𝑉_𝑘)\]</span> <strong>Binary Probit:</strong></p>
+<p>Choice probability of an alternative <span class="math inline">\(j\)</span> for an individual <span class="math inline">\(i\)</span> with choice set <span class="math inline">\(C_i\)</span> of two alternatives: <span class="math inline">\(j, k\)</span> (dropping <span class="math inline">\(i\)</span> for sake of simplicity) <span class="math display">\[Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( 𝑉_𝑗+\epsilon_𝑗 \ge 𝑉_𝑘+\epsilon_𝑘)\]</span> <span class="math display">\[Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( \epsilon_𝑘−\epsilon_𝑗≤𝑉_𝑗−𝑉_𝑘)\]</span> <strong>Binary Probit:</strong></p>
 <ul>
 <li><span class="math inline">\(\epsilon_j,\epsilon_k\)</span> are both <strong>normally distributed</strong></li>
 <li>So,(<span class="math inline">\(\epsilon_k-\epsilon_j\)</span>) is also <strong>normally distributed</strong></li>
-<li>With fully specified alternative specific constants, (<span class="math inline">\(\epsilon_k-\epsilon_j\)</span>) is <span class="math inline">\(N(0,\sigma^2)\)</span>: <span class="math display">\[V-j - V_k = \beta_0 + \sum \beta(x_j - x_k)\]</span></li>
-<li><strong>Resulting Choice model:</strong> <span class="math inline">\(Pr(j) = \Phi(V/\sigma)\)</span></li>
+<li>With fully specified alternative specific constants, (<span class="math inline">\(\epsilon_k-\epsilon_j\)</span>) is <span class="math inline">\(N(0,\sigma^2)\)</span>: <span class="math display">\[V_j - V_k = \beta_0 + \sum \beta(x_j - x_k)\]</span></li>
+<li><strong>Resulting choice model:</strong> <span class="math inline">\(Pr(j) = \Phi(V/\sigma)\)</span></li>
 <li><span class="math inline">\(\sigma\)</span> normalized to 1, giving <strong>probit model</strong> with unit variance</li>
 </ul>
 </section>
