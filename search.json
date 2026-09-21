@@ -4010,7 +4010,7 @@
     "href": "research/open_science/meeting_09_2026/open_science_kickoff.html#barriers-climate-modelling-had-to-solve",
     "title": "Open Science in Canadian Transportation Research",
     "section": "Barriers Climate Modelling Had to Solve",
-    "text": "Barriers Climate Modelling Had to Solve\nEasterbrook’s research on climate code-sharing identified recurring barriers to openness — several will sound familiar:\n\nPortability — code that only runs on one lab’s specific setup\nConfigurability — local tweaks and edge cases baked into the code\nEntrenchment — decades of institutional investment in existing tools\nModel–data blur — model code tangled up with specific input datasets\nProvenance — losing track of where a result came from once code is modified and passed around\n\n\nDiscussion: which of these look most like our situation with survey instruments and ABMs?"
+    "text": "Barriers Climate Modelling Had to Solve\nEasterbrook’s research on climate code-sharing identified recurring barriers to openness — several will sound familiar:\n\nPortability: code that only runs on one lab’s specific setup\nConfigurability: local tweaks and edge cases baked into the code\nEntrenchment: decades of institutional investment in existing tools\nModel–data blur: model code tangled up with specific input datasets\nProvenance: losing track of where a result came from once code is modified and passed around\n\n\nDiscussion: which of these look most like our situation with survey instruments and models?"
   },
   {
     "objectID": "research/open_science/meeting_09_2026/open_science_kickoff.html#structure-of-future-meetings",
@@ -4024,7 +4024,7 @@
     "href": "research/open_science/meeting_09_2026/open_science_kickoff.html#track-1-survey-fundamentals",
     "title": "Open Science in Canadian Transportation Research",
     "section": "Track 1: Survey Fundamentals",
-    "text": "Track 1: Survey Fundamentals\nPossible starting topics:\n\nCore question modules (trips, activities, household roster, attitudes)\nRecruitment and sampling approaches across our cities\nDefinitions: what counts as a “trip purpose”?\nData formats and codebooks — could we agree on a common schema?\nGDPR/PIPEDA-equivalent handling and anonymization practices"
+    "text": "Track 1: Survey Fundamentals\nPossible starting topics:\n\nCore question modules (trips, activities, household roster, attitudes)\nRecruitment and sampling approaches across our cities\nDefinitions: what counts as a “trip purpose”?\nData formats and codebooks: could we agree on a common schema?\nPIPEDA-equivalent handling and anonymization practices (PIPEDA = Personal Information Protection and Electronic Documents Act)"
   },
   {
     "objectID": "research/open_science/meeting_09_2026/open_science_kickoff.html#track-2-model-fundamentals",
@@ -4038,14 +4038,14 @@
     "href": "research/open_science/meeting_09_2026/open_science_kickoff.html#beyond-surveys-and-models",
     "title": "Open Science in Canadian Transportation Research",
     "section": "Beyond Surveys and Models",
-    "text": "Beyond Surveys and Models\nOther threads worth carving out sessions for:\n\nABM in graduate curricula — EAABM’s teaching committee found ABM development is rarely taught outside PhD programs; is it worth covering in courses?\nInterdisciplinary frontiers — energy systems, public health, EV charging demand\nSoftware ecosystem — where do we build vs. adopt vs. contribute upstream?\nEmerging methods — generative AI / ML approaches to schedule synthesis"
+    "text": "Beyond Surveys and Models\nOther threads worth carving out sessions for?\n\nABM in graduate curricula: EAABM’s teaching committee found ABM development is rarely taught outside PhD programs; is it worth covering in courses?\nInterdisciplinary frontiers: energy systems, public health, EV charging demand\nSoftware ecosystem: where do we build vs. adopt vs. contribute upstream?\nEmerging methods: generative AI / ML approaches to schedule synthesis"
   },
   {
     "objectID": "research/open_science/meeting_09_2026/open_science_kickoff.html#format-going-forward",
     "href": "research/open_science/meeting_09_2026/open_science_kickoff.html#format-going-forward",
     "title": "Open Science in Canadian Transportation Research",
     "section": "Format Going Forward",
-    "text": "Format Going Forward\n\nRecurring monthly sessions (dates to be determined today)\nShort (7-10 min) presentations to seed discussion, not exhaustive reviews\nRotate presenting responsibility across participants\nShared notes to track where we agree, disagree, and want to converge\nAim: a living record that seeds future collaborations"
+    "text": "Format Going Forward\n\nRecurring monthly sessions (dates to be determined via poll)\nShort (7-10 min) presentations to seed discussion, not exhaustive reviews\nRotate presenting responsibility across participants\nShared notes to track where we agree, disagree, and want to converge\nAim: a living record that seeds future collaborations"
   },
   {
     "objectID": "research/open_science/meeting_09_2026/open_science_kickoff.html#discussion",
