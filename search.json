@@ -4031,7 +4031,7 @@
     "href": "research/open_science/meeting_09_2026/open_science_kickoff.html#track-2-model-fundamentals",
     "title": "Open Science in Canadian Transportation Research",
     "section": "Track 2: Model Fundamentals",
-    "text": "Track 2: Model Fundamentals\nPossible starting topics:\n\nPopulation synthesis approaches in use across groups\nTour vs. activity-based scheduling logic\nSoftware stacks: internal code (C#/Python/Java) vs. assignment (Emme/MatSim)\nWhere do our models diverge most — mode choice? scheduling? assignment?\nWhat would a “reference” Canadian ABM even look like?"
+    "text": "Track 2: Model Fundamentals\nPossible starting topics:\n\nPopulation synthesis approaches in use across groups\nTour vs. activity-based scheduling logic\nSoftware stacks: internal code (C#/Python/Java) vs. assignment (Emme/MatSim)\nWhere do our models diverge most: mode choice? scheduling? assignment?\nWhat would a “reference” Canadian ABM even look like?"
   },
   {
     "objectID": "research/open_science/meeting_09_2026/open_science_kickoff.html#beyond-surveys-and-models",
