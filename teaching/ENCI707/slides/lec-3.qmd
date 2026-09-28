@@ -221,7 +221,7 @@ $$Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( \epsilon_𝑘−\epsilon_𝑗≤𝑉_𝑗−𝑉
 - $\epsilon_j,\epsilon_k$ are both **normally distributed**
 - So,($\epsilon_k-\epsilon_j$) is also **normally distributed**
 - With fully specified alternative specific constants, ($\epsilon_k-\epsilon_j$) is $N(0,\sigma^2)$:
-$$V-j - V_k = \beta_0 + \sum \beta(x_j - x_k)$$
+$$V_j - V_k = \beta_0 + \sum \beta(x_j - x_k)$$
 - **Resulting Choice model:** $Pr(j) = \Phi(V/\sigma)$
 - $\sigma$ normalized to 1, giving **probit model** with unit variance
 
