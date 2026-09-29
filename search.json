@@ -6965,7 +6965,7 @@
     "href": "teaching/ENCI707/slides/lec-4.html#basic-properties-of-gumbel-distribution",
     "title": "Lecture 4 - Multinomial Logit",
     "section": "Basic Properties of Gumbel distribution",
-    "text": "Basic Properties of Gumbel distribution\n\nThe mode of the distribution is \\(\\eta\\) (the location of peak of the PDF on x axis from zero).\nThe mean is (\\(\\eta+\\gamma/\\mu\\)), where \\(\\gamma\\) = Euler’s constant=0.577.\nThe variance is \\(\\pi^2/6\\mu^2\\).\nIf \\(\\epsilon\\) is Gumbel distributed with (\\(\\eta, \\mu\\)), and if \\(\\alpha\\) is any positive scalar constant, then (\\(\\alpha \\epsilon + V\\)) is also Gumbel distributed with parameters (\\(\\alpha \\eta +V\\)) and \\(\\mu/\\alpha\\).\nIf \\(\\epsilon_1\\) and \\(\\epsilon_2\\) are independent Gumbel variables, then (\\(\\epsilon_1-\\epsilon_2\\)) is logistically distributed.\nIf \\(\\epsilon_1\\) and are Identical and Independent Gumbel variables with parameters (\\(\\eta_1,\\mu\\)) and (\\(\\eta_2,\\mu\\)) respectively then \\(\\max(\\epsilon_1,\\epsilon_2)\\) is also Gumbel distributed with parameters:\n\\[\\left(\\frac{1}{\\mu} \\ln⁡(𝑒^{\\mu\\eta_1}+𝑒^{\\mu\\eta_2 } ),\\mu \\right)\\]"
+    "text": "Basic Properties of Gumbel distribution\n\nThe mode of the distribution is \\(\\eta\\) (the location of peak of the PDF on x axis from zero).\nThe mean is (\\(\\eta+\\gamma/\\mu\\)), where \\(\\gamma\\) = Euler’s constant=0.577.\nThe variance is \\(\\pi^2/6\\mu^2\\).\nIf \\(\\epsilon\\) is Gumbel distributed with (\\(\\eta, \\mu\\)), and if \\(\\alpha\\) is any positive scalar constant, then (\\(\\alpha \\epsilon + V\\)) is also Gumbel distributed with parameters (\\(\\alpha \\eta +V\\)) and \\(\\mu/\\alpha\\).\nIf \\(\\epsilon_1\\) and \\(\\epsilon_2\\) are independent Gumbel variables, then (\\(\\epsilon_1-\\epsilon_2\\)) is logistically distributed.\nIf \\(\\epsilon_1\\) and \\(\\epsilon_2\\) are Identical and Independent Gumbel variables with parameters (\\(\\eta_1,\\mu\\)) and (\\(\\eta_2,\\mu\\)) respectively then \\(\\max(\\epsilon_1,\\epsilon_2)\\) is also Gumbel distributed with parameters:\n\\[\\left(\\frac{1}{\\mu} \\ln⁡(𝑒^{\\mu\\eta_1}+𝑒^{\\mu\\eta_2 } ),\\mu \\right)\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-4.html#basic-properties-of-gumbel-distribution-1",
@@ -7238,7 +7238,7 @@
     "href": "teaching/ENCI707/slides/lec-6.html#outline",
     "title": "Lecture 6 - Stated Preference Methods",
     "section": "Outline",
-    "text": "Outline\n\n\nStated choice experiments"
+    "text": "Outline\n\n\nMotivation for SP\nMain Characteristics of DCE\nExperimental Design"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#need-for-stated-preference-data",
@@ -7246,6 +7246,13 @@
     "title": "Lecture 6 - Stated Preference Methods",
     "section": "Need for Stated Preference Data",
     "text": "Need for Stated Preference Data\n\nIt is rare to observe the decision-making process\nWhat if we want to know demand for a good or service that does not exist yet (at least not locally)?\n\nExample: Would you use a vertical takeoff and landing (VTOL) vehicle?"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-6.html#need-for-stated-preference-data-1",
+    "href": "teaching/ENCI707/slides/lec-6.html#need-for-stated-preference-data-1",
+    "title": "Lecture 6 - Stated Preference Methods",
+    "section": "Need for Stated Preference Data",
+    "text": "Need for Stated Preference Data"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#comparison-of-revealed-preference-rp-stated-preference-sp-observations",
@@ -7259,21 +7266,21 @@
     "href": "teaching/ENCI707/slides/lec-6.html#stated-preference-methods",
     "title": "Lecture 6 - Stated Preference Methods",
     "section": "Stated Preference Methods",
-    "text": "Stated Preference Methods\n\nContingent Valuation - CV\n\nExplicit stated willingness-to-pay (WTP) information for policy or product\nCannot be used to disentangle WTP for individual attributes\n\nConjoint Analysis\n\nRanking/rating of alternatives\nCan assign WTP to individual attributes\nRanking as dependent variable questionable because not interval scaled\nDo respondents rank/rate alternatives in real-world?\n\nStated choice (or preference) - SP\n\nBased on random utility theory\nOur preferred approach in this class"
+    "text": "Stated Preference Methods\n\nContingent Valuation - CV\n\nExplicit stated willingness-to-pay (WTP) information for policy or product\nCannot be used to disentangle WTP for individual attributes\n\nConjoint Analysis\n\nRanking/rating of alternatives\nCan assign WTP to individual attributes\nRanking as dependent variable questionable because not interval scaled\nDo respondents rank/rate alternatives in real-world?\n\nStated choice (or preference) - DCE\n\nBased on random utility theory\nOur preferred approach in this class\nAlso includes best-worst scaling (BWS) and ranking via exploded logit"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-6.html#stated-preference-sp-experiment-components",
-    "href": "teaching/ENCI707/slides/lec-6.html#stated-preference-sp-experiment-components",
+    "objectID": "teaching/ENCI707/slides/lec-6.html#dce-experiment-components",
+    "href": "teaching/ENCI707/slides/lec-6.html#dce-experiment-components",
     "title": "Lecture 6 - Stated Preference Methods",
-    "section": "Stated Preference (SP) Experiment Components",
-    "text": "Stated Preference (SP) Experiment Components\n\nAlternatives: person making choice between alternatives\nAttributes: alternatives are defined by their attributes\nAttribute levels: attributes are described by their levels"
+    "section": "DCE Experiment Components",
+    "text": "DCE Experiment Components\n\nAlternatives: person making choice between alternatives\nAttributes: alternatives are defined by their attributes\nAttribute levels: attributes are described by their levels"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-6.html#sp-experimental-design-process",
-    "href": "teaching/ENCI707/slides/lec-6.html#sp-experimental-design-process",
+    "objectID": "teaching/ENCI707/slides/lec-6.html#dce-experimental-design-process",
+    "href": "teaching/ENCI707/slides/lec-6.html#dce-experimental-design-process",
     "title": "Lecture 6 - Stated Preference Methods",
-    "section": "SP Experimental Design Process",
-    "text": "SP Experimental Design Process"
+    "section": "DCE Experimental Design Process",
+    "text": "DCE Experimental Design Process"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#example---mode-choice-in-toronto-experiment",
@@ -7290,81 +7297,25 @@
     "text": "Example - Mode Choice in Toronto (Attributes)"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-6.html#sp-considerations-1",
-    "href": "teaching/ENCI707/slides/lec-6.html#sp-considerations-1",
+    "objectID": "teaching/ENCI707/slides/lec-6.html#labelled-vs.-unlabelled-alternatives",
+    "href": "teaching/ENCI707/slides/lec-6.html#labelled-vs.-unlabelled-alternatives",
     "title": "Lecture 6 - Stated Preference Methods",
-    "section": "SP Considerations 1",
-    "text": "SP Considerations 1\n\nWill the experiment be labelled (i.e., alternative names have meaning beyond their ordering) or unlabelled?\nWill a non-purchase or status quo alternative be presented?\nWill the outputs be used as inputs to another model – e.g., a network model does not allow for a comfort attribute so may not want to include it in experiment"
+    "section": "Labelled vs. Unlabelled Alternatives",
+    "text": "Labelled vs. Unlabelled Alternatives\n\nWill the experiment be labelled?\n\nBrands, models, alternative names have meaning beyond their ordering\nUseful when there are many attributes which are always associated with the label\nUseful if brand matters"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-6.html#sp-considerations-2",
-    "href": "teaching/ENCI707/slides/lec-6.html#sp-considerations-2",
+    "objectID": "teaching/ENCI707/slides/lec-6.html#labelled-vs.-unlabelled-alternatives-1",
+    "href": "teaching/ENCI707/slides/lec-6.html#labelled-vs.-unlabelled-alternatives-1",
     "title": "Lecture 6 - Stated Preference Methods",
-    "section": "SP Considerations 2",
-    "text": "SP Considerations 2\n\nShould not omit realistic alternatives a respondent might consider in practice – e.g., driver response to a new road pricing initiative\n\nMay consider alternative modes, but more likely you will change departure time or destination choice to avoid more expensive road tolls on that day\n\nDo not want to place respondent in an unnecessarily unrealistic scenario\nAlways do internal and external pilots!"
+    "section": "Labelled vs. Unlabelled Alternatives",
+    "text": "Labelled vs. Unlabelled Alternatives"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-6.html#sp-experimental-design-1",
-    "href": "teaching/ENCI707/slides/lec-6.html#sp-experimental-design-1",
+    "objectID": "teaching/ENCI707/slides/lec-6.html#status-quo-alternative",
+    "href": "teaching/ENCI707/slides/lec-6.html#status-quo-alternative",
     "title": "Lecture 6 - Stated Preference Methods",
-    "section": "SP Experimental Design 1",
-    "text": "SP Experimental Design 1\n\nAttribute level balance: Each attribute level appears an equal number of times over design\nDesirable property although it may impact on statistical efficiency\n\nExample: Consider a design with four attributes, where two have two levels, one has three levels and the last has four levels. In the classical jargon in this field we would refer to this as a 22 31 41 factorial design; note that the product of levels to the power of attributes (48 in this case) represents the total number of choice tasks needed to recover all effects (i.e. main or linear effects and all interactions), i.e. a full factorial design (more about this below).Assuming each attribute will produce a unique parameter estimate (i.e. main effects only), the smallest design would require just four choice tasks based on the number of parameters criterion; however, to maintain attribute level balance, the smallest possible design would require 12 choice tasks (12 being divisible without remainder by 2, 3, and 4)."
-  },
-  {
-    "objectID": "teaching/ENCI707/slides/lec-6.html#sp-experimental-design-2",
-    "href": "teaching/ENCI707/slides/lec-6.html#sp-experimental-design-2",
-    "title": "Lecture 6 - Stated Preference Methods",
-    "section": "SP Experimental Design 2",
-    "text": "SP Experimental Design 2\n\nNumber of attribute levels: More levels requires more choice tasks due to additional parameters\nVarying range: Use a wide range (e.g., $0-$30) is statistically preferable over a narrow range (e.g., $0-$10) because theoretically leads to smaller standard errors\nWide range may also be problematic though due to dominated alternatives\nNarrow range may result in alternatives for which respondents cannot distinguish differences"
-  },
-  {
-    "objectID": "teaching/ENCI707/slides/lec-6.html#sp-experimental-design-3",
-    "href": "teaching/ENCI707/slides/lec-6.html#sp-experimental-design-3",
-    "title": "Lecture 6 - Stated Preference Methods",
-    "section": "SP Experimental Design 3",
-    "text": "SP Experimental Design 3\n\nWhich option would you pick?\n\n\n\n\nAttribute\nBus\nCar\n\n\n\n\nTravel time\n11\n10\n\n\nTravel cost\n2.75\n3\n\n\n\n\nWhy would someone pick bus in this case?\n\n\n\n\nAttribute\nBus\nCar\n\n\n\n\nTravel time\n31\n10\n\n\nTravel cost\n2.75\n3"
-  },
-  {
-    "objectID": "teaching/ENCI707/slides/lec-6.html#sp-experimental-design-4",
-    "href": "teaching/ENCI707/slides/lec-6.html#sp-experimental-design-4",
-    "title": "Lecture 6 - Stated Preference Methods",
-    "section": "SP Experimental Design 4",
-    "text": "SP Experimental Design 4\n\nRecommendation: Use the worst case utility specification to design the experiment\nCan always estimate simpler models but choosing a design with too few choice tasks may preclude estimating valid model specifications at a later state"
-  },
-  {
-    "objectID": "teaching/ENCI707/slides/lec-6.html#experiment-design-processes-1",
-    "href": "teaching/ENCI707/slides/lec-6.html#experiment-design-processes-1",
-    "title": "Lecture 6 - Stated Preference Methods",
-    "section": "Experiment Design Processes 1",
-    "text": "Experiment Design Processes 1\n\nFull factorial (FF) design: consider all possible attribute combinations\nFractional factorial design:\n\nRandomly select from (FF) design\nOrthogonal design: zero correlation between attributes (great for linear models)\n\nEfficient design: Reduce parameter variance and covariance (D-efficient)"
-  },
-  {
-    "objectID": "teaching/ENCI707/slides/lec-6.html#experiment-design-processes-2",
-    "href": "teaching/ENCI707/slides/lec-6.html#experiment-design-processes-2",
-    "title": "Lecture 6 - Stated Preference Methods",
-    "section": "Experiment Design Processes 2",
-    "text": "Experiment Design Processes 2\n\nTwo competing schools of thought on how to define the covariance matrix (\\(S^2\\) calculated as negative inverse of Fisher information/Hessian matrix)\n\nNull hypothesis school: Zero-valued parameter priors. Assumes designs are orthogonal within alternatives and maximize differences in attribute levels between alternatives\n\nCan only be developed assuming a multinomial logit (MNL) model\n\nNon-null hypothesis school: Non-zero-valued parameter priors\n\nBayesian (B)-efficient design:\n\nAllow for a range of parameter priors (e.g., \\(\\theta~N(-0.8,2)\\))\nNot limited to orthogonal coding\nDirectly related to expected outcome of modeling process\nCan assume any model structure, not just MNL"
-  },
-  {
-    "objectID": "teaching/ENCI707/slides/lec-6.html#experiment-design-processes-3",
-    "href": "teaching/ENCI707/slides/lec-6.html#experiment-design-processes-3",
-    "title": "Lecture 6 - Stated Preference Methods",
-    "section": "Experiment Design Processes 3",
-    "text": "Experiment Design Processes 3\n\nD-efficient named for use of scaled (by 1/K to account for number of parameters) matrix determinant\nS-efficient named for use of sample size provide theoretically minimum sample size to obtain asymptotically significant parameter estimates"
-  },
-  {
-    "objectID": "teaching/ENCI707/slides/lec-6.html#experiment-design-processes-4",
-    "href": "teaching/ENCI707/slides/lec-6.html#experiment-design-processes-4",
-    "title": "Lecture 6 - Stated Preference Methods",
-    "section": "Experiment Design Processes 4",
-    "text": "Experiment Design Processes 4\n\nFisher information matrix for N respondents given by \\(\\mathbf{𝑰}_𝑁(\\theta)\\) \\[\\mathbf{𝑰}_𝑁 (\\theta)=N\\mathbf{𝑰}_1 (\\theta)\\] Then \\[\\mathbf{𝑺}_𝑁^2=(\\mathbf{𝑰}_𝑛 (𝜃))^{−1}=1/𝑁 \\mathbf{𝑺}_1^2\\] And \\[𝑠𝑒_𝑁 (\\theta)=\\frac{𝑠𝑒_1 (\\theta)}{\\sqrt{N}}\\]\nStandard errors exhibit diminishing marginal returns for increasing sample size"
-  },
-  {
-    "objectID": "teaching/ENCI707/slides/lec-6.html#design-blocking",
-    "href": "teaching/ENCI707/slides/lec-6.html#design-blocking",
-    "title": "Lecture 6 - Stated Preference Methods",
-    "section": "Design Blocking",
-    "text": "Design Blocking\n\nOften the number of choice tasks generated by a design is too large for a single respondent to handle\nBlocking is a method to group choice tasks\n\nUses modular algebra to decide one effect that will be confounded\nFor orthogonal designs, need to define an additional blocking column to allocate subsets of generated tasks to respondents\nUse of orthogonal design avoids one respondent seeing only high price alternatives and another only low price alternatives"
+    "section": "Status Quo Alternative",
+    "text": "Status Quo Alternative\n\nWill a non-purchase or status quo alternative be presented?\nCan measure ‘non-participation’ via hurdle functions\n‘Opt-out’ or ‘status quo’ choice can result from choice complexity"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#non-purchase-option-npo",
@@ -7374,11 +7325,221 @@
     "text": "Non-Purchase Option (NPO)\n\nNot commonly applied in transportation literature\nRisk with exclusion is that respondent will be forced to pick a non-preferred option\nOlsen and Swait (1998) find\n\nIf NPO is not present, attribute weights will differ from those observed when NPO is offered in design\nIf NPO is included in design, analyst should be able to identify more non-linear preference structures\nModels based on data with no NPO may show low predictive capacity for choice situations including an NPO, whereas those with an NPO will show good predictive capacity in any situation"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-6.html#challenge-of-interattribute-correlation",
-    "href": "teaching/ENCI707/slides/lec-6.html#challenge-of-interattribute-correlation",
+    "objectID": "teaching/ENCI707/slides/lec-6.html#use-case",
+    "href": "teaching/ENCI707/slides/lec-6.html#use-case",
     "title": "Lecture 6 - Stated Preference Methods",
-    "section": "Challenge of Interattribute Correlation",
-    "text": "Challenge of Interattribute Correlation\n\nDespite the use of the word correlation, not a statistical concept\nRefers to cognitive perception that respondents associated to attributes we include in experiments\nPrice & quality often associated with each other by respondents\nHow will a person respond to a high price and low quality alternative?\n\nRespondent may stop taking survey experiment seriously, biasing the results"
+    "section": "Use Case",
+    "text": "Use Case\n\nWill the outputs be used as inputs to another model?\n\nA traffic network model does not allow for a comfort attribute so may not want to include it in experiment\n\nWill the experiment be used for willingness-to-pay analysis?\n\nNeed to consider incentive compatibility"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-6.html#dce-considerations",
+    "href": "teaching/ENCI707/slides/lec-6.html#dce-considerations",
+    "title": "Lecture 6 - Stated Preference Methods",
+    "section": "DCE Considerations",
+    "text": "DCE Considerations\n\nShould not omit realistic alternatives a respondent might consider in practice – e.g., driver response to a new road pricing initiative\n\nMay consider alternative modes, but more likely you will change departure time or destination choice to avoid more expensive road tolls on that day\n\nDo not want to place respondent in an unnecessarily unrealistic scenario\nAlways do internal and external pilots!"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-6.html#incentive-compatibility",
+    "href": "teaching/ENCI707/slides/lec-6.html#incentive-compatibility",
+    "title": "Lecture 6 - Stated Preference Methods",
+    "section": "Incentive Compatibility",
+    "text": "Incentive Compatibility\n\n3 views of the world\n\nPeople try to truthfully reveawl their preferences irrespective of the incentives they face?\nPeople tell the truth if there are no consequences associated with their answers?\nPeople only try to tell the truth when it is in their economic interest to do so?\n\nSurvey results need to be seen as consequential - how will results be used?"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-6.html#gibbard-and-satterthwaite-theorem",
+    "href": "teaching/ENCI707/slides/lec-6.html#gibbard-and-satterthwaite-theorem",
+    "title": "Lecture 6 - Stated Preference Methods",
+    "section": "Gibbard and Satterthwaite theorem",
+    "text": "Gibbard and Satterthwaite theorem\n\nGibbard (1973) and Satterthwaite (1975) theorem:\n\nAbout strategic behaviour and insincere choice\nNo mechanism with larger than a binary message space can be incentive compatible without restricting the space of allowable preference functions\nNot all binary discrete choice questions are incentive compatible - e.g., take-it-or-leave-it offer (vote doesn’t influence any other offers that may be made to the agents) or coersive payment mechanism (each agent required to pay independent of their decision)\n\nRarely discussed in transportation literature vs. considered vital in environmental economics"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-6.html#how-many-alternatives",
+    "href": "teaching/ENCI707/slides/lec-6.html#how-many-alternatives",
+    "title": "Lecture 6 - Stated Preference Methods",
+    "section": "How many alternatives?",
+    "text": "How many alternatives?\n\nNo clear answer\nIncentive compatible = 2\nMore alternatives = more information\nCognitive burden: more alternatives = more error variance\nRelevance sometimes more important than cognitive burden: real life choices are complex & might involve many alternatives!"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-6.html#whichhow-many-attributes-to-include",
+    "href": "teaching/ENCI707/slides/lec-6.html#whichhow-many-attributes-to-include",
+    "title": "Lecture 6 - Stated Preference Methods",
+    "section": "Which/how many attributes to include?",
+    "text": "Which/how many attributes to include?\n\nNo theory: case study-specific choice\nComplete, relevant, comprehensive\n\nPre-testing\nResearch questions\nAvoid ambiguity (e.g., comfort)\nBe aware of perceptual inter-attribute correlations\n\nValuation: include at least one monetary attribute\nToo many attributes increases cognitive burden"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-6.html#challenge-of-inter-attribute-correlation",
+    "href": "teaching/ENCI707/slides/lec-6.html#challenge-of-inter-attribute-correlation",
+    "title": "Lecture 6 - Stated Preference Methods",
+    "section": "Challenge of Inter-attribute Correlation",
+    "text": "Challenge of Inter-attribute Correlation\n\nDespite the use of the word correlation, not a statistical concept\nRefers to cognitive perception that respondents associated to attributes we include in experiments\nPrice & quality often associated with each other by respondents\nHow will a person respond to a high price and low quality alternative?\n\nRespondent may stop taking survey experiment seriously, biasing the results"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-6.html#what-and-how-many-attribute-levels-to-include",
+    "href": "teaching/ENCI707/slides/lec-6.html#what-and-how-many-attribute-levels-to-include",
+    "title": "Lecture 6 - Stated Preference Methods",
+    "section": "What and how many attribute levels to include?",
+    "text": "What and how many attribute levels to include?\n\nWhat is the reasonable range of each attribute?\n\nShown to have an influence upon results through behaviour and statistical impacts\n\nWider range = more differences between alternatives\n\nChoices easier to make\nProbabilities closer to deterministic (0/1)\nIf levels too wide, respondents may not take study seriously\n\nWide range preferred over narrow range (but keep it realistic)\nKeep levels evenly spaced"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-6.html#be-random",
+    "href": "teaching/ENCI707/slides/lec-6.html#be-random",
+    "title": "Lecture 6 - Stated Preference Methods",
+    "section": "Be Random",
+    "text": "Be Random\n\nAvoid bias through randomization\nRandom order of choice tasks\nRandom order of alternatives\nRandom order of attributes"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-6.html#experiment-design-processes",
+    "href": "teaching/ENCI707/slides/lec-6.html#experiment-design-processes",
+    "title": "Lecture 6 - Stated Preference Methods",
+    "section": "Experiment Design Processes",
+    "text": "Experiment Design Processes\n\nFull factorial (FF) design: consider all possible attribute combinations\nFractional factorial design:\n\nRandomly select from (FF) design\nOrthogonal design: zero correlation between attributes (great for linear models)\n\nEfficient design: Reduce parameter variance and covariance (D-efficient)"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-6.html#attribute-level-balance",
+    "href": "teaching/ENCI707/slides/lec-6.html#attribute-level-balance",
+    "title": "Lecture 6 - Stated Preference Methods",
+    "section": "Attribute Level Balance",
+    "text": "Attribute Level Balance\n\nEach attribute level appears an equal number of times over design\nDesirable property although it may impact on statistical efficiency\n\nExample: Consider a design with four attributes, where two have two levels, one has three levels and the last has four levels. In the classical jargon in this field we would refer to this as a 22 31 41 factorial design; note that the product of levels to the power of attributes (48 in this case) represents the total number of choice tasks needed to recover all effects (i.e. main or linear effects and all interactions), i.e. a full factorial design (more about this below).Assuming each attribute will produce a unique parameter estimate (i.e. main effects only), the smallest design would require just four choice tasks based on the number of parameters criterion; however, to maintain attribute level balance, the smallest possible design would require 12 choice tasks (12 being divisible without remainder by 2, 3, and 4)."
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-6.html#attribute-level-balance-1",
+    "href": "teaching/ENCI707/slides/lec-6.html#attribute-level-balance-1",
+    "title": "Lecture 6 - Stated Preference Methods",
+    "section": "Attribute Level Balance",
+    "text": "Attribute Level Balance\n\nBalanced design with each attribute level occuring an equal number of times, independent of the alternative\n\n\n\nOption A\n\n\n\nA1\nA2\nA3\n\n\n\n\n10\n3\n2\n\n\n20\n-5\n4\n\n\n30\n3\n6\n\n\n30\n-5\n6\n\n\n30\n-5\n2\n\n\n20\n-5\n6\n\n\n\n\nOption B\n\n\n\nA1\nA2\nA3\n\n\n\n\n10\n3\n2\n\n\n20\n-5\n4\n\n\n30\n3\n4\n\n\n10\n3\n4\n\n\n10\n-5\n2\n\n\n20\n3\n6"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-6.html#attribute-level-balance-2",
+    "href": "teaching/ENCI707/slides/lec-6.html#attribute-level-balance-2",
+    "title": "Lecture 6 - Stated Preference Methods",
+    "section": "Attribute Level Balance",
+    "text": "Attribute Level Balance\n\nBalanced design with each attribute level occurring an equal number of times across choice sets.\n\n\n\nOption A\n\n\n\nA1\nA2\nA3\n\n\n\n\n10\n3\n2\n\n\n20\n-5\n4\n\n\n30\n3\n6\n\n\n10\n-5\n6\n\n\n30\n-5\n2\n\n\n20\n3\n4\n\n\n\n\nOption B\n\n\n\nA1\nA2\nA3\n\n\n\n\n10\n3\n2\n\n\n30\n-5\n6\n\n\n20\n-5\n4\n\n\n20\n3\n4\n\n\n10\n-5\n2\n\n\n30\n3\n6"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-6.html#dce-experimental-design",
+    "href": "teaching/ENCI707/slides/lec-6.html#dce-experimental-design",
+    "title": "Lecture 6 - Stated Preference Methods",
+    "section": "DCE Experimental Design",
+    "text": "DCE Experimental Design\n\nNumber of attribute levels: More levels requires more choice tasks due to additional parameters\nVarying range: Use a wide range (e.g., $0-$30) is statistically preferable over a narrow range (e.g., $0-$10) because theoretically leads to smaller standard errors\nWide range may also be problematic though due to dominated alternatives\nNarrow range may result in alternatives for which respondents cannot distinguish differences"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-6.html#full-factorial-design",
+    "href": "teaching/ENCI707/slides/lec-6.html#full-factorial-design",
+    "title": "Lecture 6 - Stated Preference Methods",
+    "section": "Full Factorial Design",
+    "text": "Full Factorial Design\n\nGenerates all possible choice tasks using all combinations of attribute levels \\[\\prod_{A=1}^{\\text{No. of A}} \\text{No. of levels of A}\\]"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-6.html#full-factorial-design-example",
+    "href": "teaching/ENCI707/slides/lec-6.html#full-factorial-design-example",
+    "title": "Lecture 6 - Stated Preference Methods",
+    "section": "Full Factorial Design Example",
+    "text": "Full Factorial Design Example\n\nHow many choice sets does the full factorial design have?\n\n\n\nSolution: 9\n\n\n\nSolution: 12"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-6.html#full-factorial-design-1",
+    "href": "teaching/ENCI707/slides/lec-6.html#full-factorial-design-1",
+    "title": "Lecture 6 - Stated Preference Methods",
+    "section": "Full Factorial Design",
+    "text": "Full Factorial Design\n\nAdvantages\n\nAlways orthogonal: mathematical consraint requiring that all attributes are statistically independent of one another (i.e., zero correlation between attributes)\nAlways balanced\nAllows estimation of all main and interaction effects\n\nDisadvantages\n\nMay contain many choice tasks\nMany of the choice tasks reveal hardly any information"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-6.html#design-blocking",
+    "href": "teaching/ENCI707/slides/lec-6.html#design-blocking",
+    "title": "Lecture 6 - Stated Preference Methods",
+    "section": "Design Blocking",
+    "text": "Design Blocking\n\nOften the number of choice tasks generated by a design is too large for a single respondent to handle\nBlocking is a method to group choice tasks\n\nUses modular algebra to decide one effect that will be confounded\nFor orthogonal designs, need to define an additional blocking column to allocate subsets of generated tasks to respondents\nUse of orthogonal design avoids one respondent seeing only high price alternatives and another only low price alternatives"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-6.html#fractional-design",
+    "href": "teaching/ENCI707/slides/lec-6.html#fractional-design",
+    "title": "Lecture 6 - Stated Preference Methods",
+    "section": "Fractional Design",
+    "text": "Fractional Design\n\nUse a subset of choice sets from the full factorial design\nNot all effects can be mesured (e.g., only main effects and a few interaction effects)\nLower bound on number of choice observations for parameter identification still exists"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-6.html#fractional-factorial-orthogonal-designs",
+    "href": "teaching/ENCI707/slides/lec-6.html#fractional-factorial-orthogonal-designs",
+    "title": "Lecture 6 - Stated Preference Methods",
+    "section": "Fractional Factorial Orthogonal Designs",
+    "text": "Fractional Factorial Orthogonal Designs\n\nConsider the following example: find an orthogonal fractional factorial main effects only design\n\n\n\nModel: \\[U_1 = \\beta_1 + \\beta_2 X_{11} + \\beta_3 X_{21} + \\beta_4 X_{31} \\] \\[U_2 = \\beta_5 + \\beta_2 X_{12} + \\beta_3 X_{22} + \\beta_6 X_{32} \\] \\[U_3 = \\beta_2 X_{13} + \\beta_3 X_{23} + \\beta_7 X_{33} \\]\n\nAttribute levels: \\[X_{11},X_{12},X_{13} \\in {2,4,6}\\] \\[X_{21},X_{22},X_{23} \\in {1,3,5}\\] \\[X_{31},X_{32},X_{33} \\in {3,5,7}\\]\n\n\nThe design needs to have enough choice sets to:\n\nSatisfy design degrees of freedom\nSatisfy attribute level balance\nSatisfy orthogonality"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-6.html#fractional-factorial-orthogonal-designs-1",
+    "href": "teaching/ENCI707/slides/lec-6.html#fractional-factorial-orthogonal-designs-1",
+    "title": "Lecture 6 - Stated Preference Methods",
+    "section": "Fractional Factorial Orthogonal Designs",
+    "text": "Fractional Factorial Orthogonal Designs\n\nThe smallest design that is orthogonal in all main effects has 12 choice sets (7 parameters / (3-1) independent comparisons)\n\nNot easy to find orthogonal design\nOut of \\(\\approx 10^51\\) possible designs (from \\(27 \\times 26 \\times 25\\) and \\(3^3=27\\) profiles)…\n\nOrthogonal fractional factorial design might still be too large for any one respondent to complete all tasks\nCan be hard to find a blocking column"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-6.html#problems-with-orthogonal-designs",
+    "href": "teaching/ENCI707/slides/lec-6.html#problems-with-orthogonal-designs",
+    "title": "Lecture 6 - Stated Preference Methods",
+    "section": "Problems with Orthogonal Designs",
+    "text": "Problems with Orthogonal Designs\n\nDesign must have no missing data\nDesign must have no missing blocks\nAttribute levels must be evenly spaced\nMust use orthogonal coding (-1,0,1) not effects coding (0/1/1)\nNot possible to discard ‘silly’ choice sets"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-6.html#dominated-designs",
+    "href": "teaching/ENCI707/slides/lec-6.html#dominated-designs",
+    "title": "Lecture 6 - Stated Preference Methods",
+    "section": "Dominated Designs",
+    "text": "Dominated Designs\n\nWhich option would you pick?\n\n\n\n\nAttribute\nBus\nCar\n\n\n\n\nTravel time\n11\n10\n\n\nTravel cost\n2.75\n3\n\n\n\n\nWhy would someone pick bus in this case?\n\n\n\n\nAttribute\nBus\nCar\n\n\n\n\nTravel time\n31\n10\n\n\nTravel cost\n2.75\n3"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-6.html#dce-experimental-design-1",
+    "href": "teaching/ENCI707/slides/lec-6.html#dce-experimental-design-1",
+    "title": "Lecture 6 - Stated Preference Methods",
+    "section": "DCE Experimental Design",
+    "text": "DCE Experimental Design\n\nRecommendation: Use the worst case utility specification to design the experiment\nCan always estimate simpler models but choosing a design with too few choice tasks may preclude estimating valid model specifications at a later state"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-6.html#does-orthogonality-matter",
+    "href": "teaching/ENCI707/slides/lec-6.html#does-orthogonality-matter",
+    "title": "Lecture 6 - Stated Preference Methods",
+    "section": "Does orthogonality matter?",
+    "text": "Does orthogonality matter?\n\nParameter estimates reflect preference strength\nStandard errors come from variance-covariance matrix of estimated model\nOrthogonality - correlation structure of the data (design) matrix (\\(X\\))\n\nLinear regression - variance-covariance matrix is given by \\(\\frac{\\sigma^2}{X'X}\\)\nModels for discrete choice - non-linear! (\\(I(\\beta) = \\sum_n X_n'W_nX_n}\\) where \\(W_n\\) is a weight matrix defined by the model structure)"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-6.html#experiment-design-processes-1",
+    "href": "teaching/ENCI707/slides/lec-6.html#experiment-design-processes-1",
+    "title": "Lecture 6 - Stated Preference Methods",
+    "section": "Experiment Design Processes",
+    "text": "Experiment Design Processes\n\nTwo competing schools of thought on how to define the covariance matrix (\\(S^2\\) calculated as negative inverse of Fisher information/Hessian matrix)\n\nNull hypothesis school: Zero-valued parameter priors. Assumes designs are orthogonal within alternatives and maximize differences in attribute levels between alternatives\n\nCan only be developed assuming a multinomial logit (MNL) model\n\nNon-null hypothesis school: Non-zero-valued parameter priors\n\nBayesian (B)-efficient design:\n\nAllow for a range of parameter priors (e.g., \\(\\theta~N(-0.8,2)\\))\nNot limited to orthogonal coding\nDirectly related to expected outcome of modeling process\nCan assume any model structure, not just MNL"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-6.html#efficient-design",
+    "href": "teaching/ENCI707/slides/lec-6.html#efficient-design",
+    "title": "Lecture 6 - Stated Preference Methods",
+    "section": "Efficient Design",
+    "text": "Efficient Design\n\nEfficiency of design\n\n\n\n\n\n\nflowchart LR\nA[Experimental Design] --&gt; B[Survey Administration]\nB --&gt; C[Choice Data]\nC --&gt; D[Parameter Estimation]\n \nclassDef box fill:#d9d9d9,stroke:#bdbdbd,color:#000;\nclass A,B,C,D box;\n\n\n\n\n\n\n\nHow can we determine the efficiency of a design without conducting a survey?\n\nAssume prior parameter estimates (best guess)\nApproximate the variance-covariance matrix for the parameter estimates"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-6.html#efficient-design-1",
+    "href": "teaching/ENCI707/slides/lec-6.html#efficient-design-1",
+    "title": "Lecture 6 - Stated Preference Methods",
+    "section": "Efficient Design",
+    "text": "Efficient Design\n\nAsymptotic variance-covariance (AVC) matrix - approximation of true VC matrix\n\n\\[\\mathbf{\\Sigma} = \\begin{pmatrix} se(\\hat{\\beta}_1)^2 & \\cdots & 0 \\\\ \\vdots & \\ddots & \\vdots \\\\ 0 & \\cdots & se(\\hat{\\beta}_K)^2 \\end{pmatrix}\\] - “Asymptotic” - assuming very large sample or many repetitions using a small sample"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-6.html#how-to-derive-avc-matrix",
+    "href": "teaching/ENCI707/slides/lec-6.html#how-to-derive-avc-matrix",
+    "title": "Lecture 6 - Stated Preference Methods",
+    "section": "How to derive AVC matrix?",
+    "text": "How to derive AVC matrix?\n\nSimulate it considering a design and prior parameters\n\nFor large sample of virtual respondents, compute observed utilities for all alternatives and add random terms, then assume each respondent chooses the alternative with highest utility\n\nAnalytical solution considering \\(X,\\beta\\)\n\nDetermine log-likelihood of choice function \\[L_N(\\beta|X,y)=\\sum_{n=1}^N\\sum_{s=1}^S\\sum_{j=1}^J y_{jsn} log(P_{jsn}(X|\\beta)\\]\nDetermine Fischer information matrix (Hessian of second derivatives of LL \\[I_N(\\beta|X,y)=\\frac{\\partial^2L_N(\\beta|X,y)}{\\partial \\beta \\partial \\beta'}\\]\nAVC = negative inverse of Fisher information matrix \\[\\Omega_N(\\beta|X,y)=-I_N^{-1}(\\beta|X,y)\\]"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-6.html#forms-of-efficient-design",
+    "href": "teaching/ENCI707/slides/lec-6.html#forms-of-efficient-design",
+    "title": "Lecture 6 - Stated Preference Methods",
+    "section": "Forms of Efficient Design",
+    "text": "Forms of Efficient Design\n\nD-efficient named for use of scaled (by 1/K to account for number of parameters) matrix determinant\nS-efficient named for use of sample size provide theoretically minimum sample size to obtain asymptotically significant parameter estimates"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-6.html#efficient-design-2",
+    "href": "teaching/ENCI707/slides/lec-6.html#efficient-design-2",
+    "title": "Lecture 6 - Stated Preference Methods",
+    "section": "Efficient Design",
+    "text": "Efficient Design\n\nFisher information matrix for N respondents given by \\(\\mathbf{𝑰}_𝑁(\\theta)\\) \\[\\mathbf{𝑰}_𝑁 (\\theta)=N\\mathbf{𝑰}_1 (\\theta)\\] Then \\[\\mathbf{𝑺}_𝑁^2=(\\mathbf{𝑰}_𝑛 (𝜃))^{−1}=1/𝑁 \\mathbf{𝑺}_1^2\\] And \\[𝑠𝑒_𝑁 (\\theta)=\\frac{𝑠𝑒_1 (\\theta)}{\\sqrt{N}}\\]\nStandard errors exhibit diminishing marginal returns for increasing sample size"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#sp-pivoted-off-rp",
@@ -7388,18 +7549,18 @@
     "text": "SP-Pivoted-Off-RP\n\nOne method for overcoming unrealistic choice experiments\nAsk the respondent a series of RP questions, then base (pivot) the SP experiment off their response\nExample: What are your home and work locations?\n\nUse Google Directions API to obtain typical driving, transit, cycling, and walking times for the given OD pair\nSpecify SP travel times that are within ±15% of the Google values by mode\nSimilarly, calculate travel costs based on supplemental per mile values"
   },
   {
+    "objectID": "teaching/ENCI707/slides/lec-6.html#other-design-recommendations",
+    "href": "teaching/ENCI707/slides/lec-6.html#other-design-recommendations",
+    "title": "Lecture 6 - Stated Preference Methods",
+    "section": "Other Design Recommendations",
+    "text": "Other Design Recommendations\n\nFocus on specific rather than general behaviour - e.g., respondents should be asked how they would respond to an alternative on a given occasion, rather than in general\nUse realistic choice context - e.g., recent personal experience of (pivot design)\n\nRetaining the constraints on choice required to make the context realistic - e.g., ‘if today you would prefer to use the car to visit your dentist in the evening directly from work, then retain this restriction in your choices’\n\nUse existing (perceived) levels of attributes so that the options are built around existing experience"
+  },
+  {
     "objectID": "teaching/ENCI707/slides/lec-6.html#other-design-recommendations-1",
     "href": "teaching/ENCI707/slides/lec-6.html#other-design-recommendations-1",
     "title": "Lecture 6 - Stated Preference Methods",
-    "section": "Other Design Recommendations 1",
-    "text": "Other Design Recommendations 1\n\nFocus on specific rather than general behaviour - e.g., respondents should be asked how they would respond to an alternative on a given occasion, rather than in general\nUse realistic choice context - e.g., recent personal experience of (pivot design)\n\nRetaining the constraints on choice required to make the context realistic - e.g., ‘if today you would prefer to use the car to visit your dentist in the evening directly from work, then retain this restriction in your choices’\n\nUse existing (perceived) levels of attributes so that the options are built around existing experience"
-  },
-  {
-    "objectID": "teaching/ENCI707/slides/lec-6.html#other-design-recommendations-2",
-    "href": "teaching/ENCI707/slides/lec-6.html#other-design-recommendations-2",
-    "title": "Lecture 6 - Stated Preference Methods",
-    "section": "Other Design Recommendations 2",
-    "text": "Other Design Recommendations 2\n\nKeep choice experiments simple - we respond to very complex choices in practice but do so over a long period of time\nAllow respondents to opt for response outside set of experimental alternatives - e.g., in mode choice exercise, if all options become too unattractive respondent may decide to change destination, time of travel, or not to travel at all\nAllow ‘will do something else’ alternative - could be programmed to branch to another exercise exploring precisely these other options\nMake sure alternatives are clearly and unambiguously defined (difficult when dealing with qualitative attributes like security or comfort)\n\nE.g., do not express alternatives as ‘poor’ or ‘improved’, which are vague and prone to different interpretations by respondents - what measures or facilities, etc.)."
+    "section": "Other Design Recommendations",
+    "text": "Other Design Recommendations\n\nKeep choice experiments simple - we respond to very complex choices in practice but do so over a long period of time\nAllow respondents to opt for response outside set of experimental alternatives - e.g., in mode choice exercise, if all options become too unattractive respondent may decide to change destination, time of travel, or not to travel at all\nAllow ‘will do something else’ alternative - could be programmed to branch to another exercise exploring precisely these other options\nMake sure alternatives are clearly and unambiguously defined (difficult when dealing with qualitative attributes like security or comfort)\n\nE.g., do not express alternatives as ‘poor’ or ‘improved’, which are vague and prone to different interpretations by respondents - what measures or facilities, etc.)."
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-8.html#outline",

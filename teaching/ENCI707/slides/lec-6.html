@@ -122,6 +122,9 @@
       margin-right: 0; 
     }
   </style>
+  <script src="../../../site_libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="../../../site_libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="../../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -138,14 +141,16 @@
 <section id="outline" class="slide level2">
 <h2>Outline</h2>
 <div>
-<ol start="3" type="1">
-<li class="fragment">Stated choice experiments</li>
+<ol type="1">
+<li class="fragment">Motivation for SP</li>
+<li class="fragment">Main Characteristics of DCE</li>
+<li class="fragment">Experimental Design</li>
 </ol>
 </div>
 </section>
 <section>
-<section id="stated-preference-experiments" class="title-slide slide level1 center">
-<h1>Stated Preference Experiments</h1>
+<section id="motivation-for-stated-preference-sp-data" class="title-slide slide level1 center">
+<h1>Motivation for Stated Preference (SP) Data</h1>
 
 </section>
 <section id="need-for-stated-preference-data" class="slide level2 smaller">
@@ -158,7 +163,16 @@
 </ul></li>
 </ul>
 
-<img data-src="../../../assets/images/teaching/ENCI707/Lecture2/vtol.jpg" class="quarto-figure quarto-figure-center r-stretch" style="width:50.0%"></section>
+<img data-src="../../../assets/images/teaching/ENCI707/Lecture6/vtol.jpg" class="quarto-figure quarto-figure-center r-stretch" style="width:50.0%"></section>
+<section id="need-for-stated-preference-data-1" class="slide level2 smaller">
+<h2>Need for Stated Preference Data</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="../../../assets/images/teaching/ENCI707/Lecture6/NW_Calgary.png" style="width:80.0%"> <img data-src="../../../assets/images/teaching/ENCI707/Lecture6/SW_Calgary.png" style="width:80.0%"></p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="../../../assets/images/teaching/ENCI707/Lecture6/NE_Calgary.png" style="width:80.0%"> <img data-src="../../../assets/images/teaching/ENCI707/Lecture6/SE_Calgary.png" style="width:80.0%"></p>
+</div></div>
+</section>
 <section id="comparison-of-revealed-preference-rp-stated-preference-sp-observations" class="slide level2">
 <h2>Comparison of Revealed Preference (RP) &amp; Stated Preference (SP) Observations</h2>
 <div style="font-size: 0.35em;">
@@ -251,23 +265,29 @@
 <li>Ranking as dependent variable questionable because not interval scaled</li>
 <li>Do respondents rank/rate alternatives in real-world?</li>
 </ul></li>
-<li><strong>Stated choice (or preference)</strong> - SP
+<li><strong>Stated choice (or preference)</strong> - DCE
 <ul>
 <li>Based on random utility theory</li>
 <li>Our preferred approach in this class</li>
+<li>Also includes best-worst scaling (BWS) and ranking via exploded logit</li>
 </ul></li>
 </ul>
+</section></section>
+<section>
+<section id="main-characteristics-of-dce" class="title-slide slide level1 center">
+<h1>Main Characteristics of DCE</h1>
+
 </section>
-<section id="stated-preference-sp-experiment-components" class="slide level2">
-<h2>Stated Preference (SP) Experiment Components</h2>
+<section id="dce-experiment-components" class="slide level2">
+<h2>DCE Experiment Components</h2>
 <ul>
 <li><strong>Alternatives</strong>: person making choice between alternatives</li>
 <li><strong>Attributes</strong>: alternatives are defined by their attributes</li>
 <li><strong>Attribute levels</strong>: attributes are described by their levels</li>
 </ul>
 </section>
-<section id="sp-experimental-design-process" class="slide level2">
-<h2>SP Experimental Design Process</h2>
+<section id="dce-experimental-design-process" class="slide level2">
+<h2>DCE Experimental Design Process</h2>
 
 <img data-src="../../../assets/images/teaching/ENCI707/Lecture2/experimental_design_process.png" class="quarto-figure quarto-figure-center r-stretch" style="width:50.0%"></section>
 <section id="example---mode-choice-in-toronto-experiment" class="slide level2">
@@ -291,16 +311,57 @@
 </div>
 </div></div>
 </section>
-<section id="sp-considerations-1" class="slide level2">
-<h2>SP Considerations 1</h2>
+<section id="labelled-vs.-unlabelled-alternatives" class="slide level2 smaller">
+<h2>Labelled vs.&nbsp;Unlabelled Alternatives</h2>
 <ul>
-<li>Will the experiment be <strong>labelled</strong> (i.e., alternative names have meaning beyond their ordering) or <strong>unlabelled</strong>?</li>
-<li>Will a <strong>non-purchase or status quo</strong> alternative be presented?</li>
-<li>Will the outputs be used as inputs to another model – e.g., a network model does not allow for a comfort attribute so may not want to include it in experiment</li>
+<li>Will the experiment be <strong>labelled</strong>?
+<ul>
+<li>Brands, models, alternative names have meaning beyond their ordering</li>
+<li>Useful when there are many attributes which are always associated with the label</li>
+<li>Useful if brand matters <img data-src="../../../assets/images/teaching/ENCI707/Lecture6/label_wine.png" style="width:100.0%"></li>
+</ul></li>
 </ul>
 </section>
-<section id="sp-considerations-2" class="slide level2">
-<h2>SP Considerations 2</h2>
+<section id="labelled-vs.-unlabelled-alternatives-1" class="slide level2 smaller">
+<h2>Labelled vs.&nbsp;Unlabelled Alternatives</h2>
+
+<img data-src="../../../assets/images/teaching/ENCI707/Lecture6/unlabel_wine.png" style="width:70.0%" class="r-stretch"></section>
+<section id="status-quo-alternative" class="slide level2 smaller">
+<h2>Status Quo Alternative</h2>
+<ul>
+<li>Will a <strong>non-purchase or status quo</strong> alternative be presented?</li>
+<li>Can measure ‘non-participation’ via hurdle functions</li>
+<li>‘Opt-out’ or ‘status quo’ choice can result from choice complexity</li>
+</ul>
+</section>
+<section id="non-purchase-option-npo" class="slide level2 smaller">
+<h2>Non-Purchase Option (NPO)</h2>
+<ul>
+<li>Not commonly applied in transportation literature</li>
+<li>Risk with exclusion is that respondent will be forced to pick a <strong>non-preferred option</strong></li>
+<li>Olsen and Swait (1998) find
+<ul>
+<li>If NPO is not present, attribute weights will differ from those observed when NPO is offered in design</li>
+<li>If NPO is included in design, analyst should be able to identify more non-linear preference structures</li>
+<li>Models based on data with no NPO may show low predictive capacity for choice situations including an NPO, whereas those with an NPO will show good predictive capacity in any situation</li>
+</ul></li>
+</ul>
+</section>
+<section id="use-case" class="slide level2 smaller">
+<h2>Use Case</h2>
+<ul>
+<li>Will the outputs be used as inputs to another model?
+<ul>
+<li>A traffic network model does not allow for a comfort attribute so may not want to include it in experiment</li>
+</ul></li>
+<li>Will the experiment be used for willingness-to-pay analysis?
+<ul>
+<li>Need to consider incentive compatibility</li>
+</ul></li>
+</ul>
+</section>
+<section id="dce-considerations" class="slide level2">
+<h2>DCE Considerations</h2>
 <ul>
 <li>Should not omit realistic alternatives a respondent might consider in practice – e.g., driver response to a new road pricing initiative
 <ul>
@@ -310,16 +371,308 @@
 <li>Always do internal and external pilots!</li>
 </ul>
 </section>
-<section id="sp-experimental-design-1" class="slide level2 smaller">
-<h2>SP Experimental Design 1</h2>
+<section id="incentive-compatibility" class="slide level2 smaller">
+<h2>Incentive Compatibility</h2>
 <ul>
-<li><strong>Attribute level balance</strong>: Each attribute level appears an equal number of times over design</li>
+<li>3 views of the world
+<ul>
+<li>People try to truthfully reveawl their preferences irrespective of the incentives they face?</li>
+<li>People tell the truth if there are no consequences associated with their answers?</li>
+<li>People only try to tell the truth when it is in their economic interest to do so?</li>
+</ul></li>
+<li>Survey results need to be seen as consequential - how will results be used?</li>
+</ul>
+</section>
+<section id="gibbard-and-satterthwaite-theorem" class="slide level2 smaller">
+<h2>Gibbard and Satterthwaite theorem</h2>
+<ul>
+<li>Gibbard (1973) and Satterthwaite (1975) theorem:
+<ul>
+<li>About strategic behaviour and insincere choice</li>
+<li>No mechanism with larger than a binary message space can be incentive compatible without restricting the space of allowable preference functions</li>
+<li>Not all binary discrete choice questions are incentive compatible - e.g., take-it-or-leave-it offer (vote doesn’t influence any other offers that may be made to the agents) or coersive payment mechanism (each agent required to pay independent of their decision)</li>
+</ul></li>
+<li>Rarely discussed in transportation literature vs.&nbsp;considered vital in environmental economics</li>
+</ul>
+</section>
+<section id="how-many-alternatives" class="slide level2 smaller">
+<h2>How many alternatives?</h2>
+<ul>
+<li>No clear answer</li>
+<li>Incentive compatible = 2</li>
+<li>More alternatives = more information</li>
+<li>Cognitive burden: more alternatives = more error variance</li>
+<li>Relevance sometimes more important than cognitive burden: real life choices are complex &amp; might involve many alternatives!</li>
+</ul>
+</section>
+<section id="whichhow-many-attributes-to-include" class="slide level2">
+<h2>Which/how many attributes to include?</h2>
+<ul>
+<li>No theory: case study-specific choice</li>
+<li>Complete, relevant, comprehensive
+<ul>
+<li>Pre-testing</li>
+<li>Research questions</li>
+<li>Avoid ambiguity (e.g., comfort)</li>
+<li>Be aware of perceptual inter-attribute correlations</li>
+</ul></li>
+<li>Valuation: include at least one monetary attribute</li>
+<li>Too many attributes increases cognitive burden</li>
+</ul>
+</section>
+<section id="challenge-of-inter-attribute-correlation" class="slide level2 smaller">
+<h2>Challenge of Inter-attribute Correlation</h2>
+<ul>
+<li>Despite the use of the word <strong>correlation</strong>, not a statistical concept</li>
+<li>Refers to <strong>cognitive perception</strong> that respondents associated to attributes we include in experiments</li>
+<li><strong>Price</strong> &amp; <strong>quality</strong> often associated with each other by respondents</li>
+<li>How will a person respond to a high price and low quality alternative?
+<ul>
+<li>Respondent may stop taking survey experiment seriously, biasing the results</li>
+</ul></li>
+</ul>
+</section>
+<section id="what-and-how-many-attribute-levels-to-include" class="slide level2 smaller">
+<h2>What and how many attribute levels to include?</h2>
+<ul>
+<li>What is the reasonable range of each attribute?
+<ul>
+<li>Shown to have an influence upon results through behaviour and statistical impacts</li>
+</ul></li>
+<li>Wider range = more differences between alternatives
+<ul>
+<li>Choices easier to make</li>
+<li>Probabilities closer to deterministic (0/1)</li>
+<li>If levels too wide, respondents may not take study seriously</li>
+</ul></li>
+<li>Wide range preferred over narrow range (but keep it realistic)</li>
+<li>Keep levels evenly spaced</li>
+</ul>
+</section>
+<section id="be-random" class="slide level2">
+<h2>Be Random</h2>
+<ul>
+<li>Avoid bias through randomization</li>
+<li>Random order of choice tasks</li>
+<li>Random order of alternatives</li>
+<li>Random order of attributes</li>
+</ul>
+</section></section>
+<section>
+<section id="experimental-design" class="title-slide slide level1 center">
+<h1>Experimental Design</h1>
+
+</section>
+<section id="experiment-design-processes" class="slide level2">
+<h2>Experiment Design Processes</h2>
+<ul>
+<li><strong>Full factorial (FF) design</strong>: consider all possible attribute combinations</li>
+<li><strong>Fractional factorial design</strong>:
+<ul>
+<li>Randomly select from (FF) design</li>
+<li><strong>Orthogonal design</strong>: zero correlation between attributes (great for linear models)</li>
+</ul></li>
+<li><strong>Efficient design</strong>: Reduce parameter variance and covariance (D-efficient)</li>
+</ul>
+</section>
+<section id="attribute-level-balance" class="slide level2 smaller">
+<h2>Attribute Level Balance</h2>
+<ul>
+<li>Each attribute level appears an equal number of times over design</li>
 <li>Desirable property although it may impact on <strong>statistical efficiency</strong></li>
 </ul>
 <p><strong>Example:</strong> Consider a design with four attributes, where two have two levels, one has three levels and the last has four levels. In the classical jargon in this field we would refer to this as a 22 31 41 factorial design; note that the product of levels to the power of attributes (48 in this case) represents the total number of choice tasks needed to recover all effects (i.e.&nbsp;main or linear effects and all interactions), i.e.&nbsp;a full factorial design (more about this below).Assuming each attribute will produce a unique parameter estimate (i.e.&nbsp;main effects only), the smallest design would require just four choice tasks based on the number of parameters criterion; however, to maintain attribute level balance, the smallest possible design would require 12 choice tasks (12 being divisible without remainder by 2, 3, and 4).</p>
 </section>
-<section id="sp-experimental-design-2" class="slide level2 smaller">
-<h2>SP Experimental Design 2</h2>
+<section id="attribute-level-balance-1" class="slide level2 smaller">
+<h2>Attribute Level Balance</h2>
+<ul>
+<li>Balanced design with each attribute level occuring an equal number of times, independent of the alternative</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:48%;">
+<h3 id="option-a">Option A</h3>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: right;">A1</th>
+<th style="text-align: right;">A2</th>
+<th style="text-align: right;">A3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">-5</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">-5</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">-5</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">-5</td>
+<td style="text-align: right;">6</td>
+</tr>
+</tbody>
+</table>
+</div><div class="column" style="width:48%;">
+<h3 id="option-b">Option B</h3>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: right;">A1</th>
+<th style="text-align: right;">A2</th>
+<th style="text-align: right;">A3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">-5</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">-5</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">6</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+</section>
+<section id="attribute-level-balance-2" class="slide level2 smaller">
+<h2>Attribute Level Balance</h2>
+<ul>
+<li>Balanced design with each attribute level occurring an equal number of times across choice sets.</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="option-a-1">Option A</h3>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: right;">A1</th>
+<th style="text-align: right;">A2</th>
+<th style="text-align: right;">A3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">-5</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">-5</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">-5</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+</tr>
+</tbody>
+</table>
+</div><div class="column" style="width:50%;">
+<h3 id="option-b-1">Option B</h3>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: right;">A1</th>
+<th style="text-align: right;">A2</th>
+<th style="text-align: right;">A3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">-5</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">-5</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">-5</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">6</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+</section>
+<section id="dce-experimental-design" class="slide level2 smaller">
+<h2>DCE Experimental Design</h2>
 <ul>
 <li><strong>Number of attribute levels</strong>: More levels requires more choice tasks due to additional parameters</li>
 <li><strong>Varying range</strong>: Use a wide range (e.g., $0-$30) is statistically preferable over a narrow range (e.g., $0-$10) because theoretically leads to smaller standard errors</li>
@@ -327,8 +680,106 @@
 <li>Narrow range may result in alternatives for which respondents cannot distinguish differences</li>
 </ul>
 </section>
-<section id="sp-experimental-design-3" class="slide level2">
-<h2>SP Experimental Design 3</h2>
+<section id="full-factorial-design" class="slide level2">
+<h2>Full Factorial Design</h2>
+<ul>
+<li>Generates all possible choice tasks using all combinations of attribute levels <span class="math display">\[\prod_{A=1}^{\text{No. of A}} \text{No. of levels of A}\]</span></li>
+</ul>
+</section>
+<section id="full-factorial-design-example" class="slide level2">
+<h2>Full Factorial Design Example</h2>
+<ul>
+<li>How many choice sets does the full factorial design have?</li>
+</ul>
+<p><img data-src="../../../assets/images/teaching/ENCI707/Lecture6/wine_ff1.png" style="width:80.0%"></p>
+<div class="fragment">
+<p>Solution: 9</p>
+</div>
+<p><img data-src="../../../assets/images/teaching/ENCI707/Lecture6/wine_ff2.png" style="width:80.0%"></p>
+<div class="fragment">
+<p>Solution: 12</p>
+</div>
+</section>
+<section id="full-factorial-design-1" class="slide level2">
+<h2>Full Factorial Design</h2>
+<ul>
+<li>Advantages
+<ul>
+<li>Always orthogonal: mathematical consraint requiring that all attributes are statistically independent of one another (i.e., zero correlation between attributes)</li>
+<li>Always balanced</li>
+<li>Allows estimation of all main and interaction effects</li>
+</ul></li>
+<li>Disadvantages
+<ul>
+<li>May contain many choice tasks</li>
+<li>Many of the choice tasks reveal hardly any information</li>
+</ul></li>
+</ul>
+</section>
+<section id="design-blocking" class="slide level2 smaller">
+<h2>Design Blocking</h2>
+<ul>
+<li>Often the number of choice tasks generated by a design is too large for a single respondent to handle</li>
+<li><strong>Blocking</strong> is a method to group choice tasks
+<ul>
+<li>Uses modular algebra to decide one effect that will be confounded</li>
+<li>For orthogonal designs, need to define an additional blocking column to allocate subsets of generated tasks to respondents</li>
+<li>Use of orthogonal design avoids one respondent seeing only high price alternatives and another only low price alternatives</li>
+</ul></li>
+</ul>
+</section>
+<section id="fractional-design" class="slide level2">
+<h2>Fractional Design</h2>
+<ul>
+<li>Use a subset of choice sets from the full factorial design</li>
+<li>Not all effects can be mesured (e.g., only main effects and a few interaction effects)</li>
+<li>Lower bound on number of choice observations for parameter identification still exists</li>
+</ul>
+</section>
+<section id="fractional-factorial-orthogonal-designs" class="slide level2">
+<h2>Fractional Factorial Orthogonal Designs</h2>
+<ul>
+<li>Consider the following example: find an orthogonal fractional factorial main effects only design</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Model: <span class="math display">\[U_1 = \beta_1 + \beta_2 X_{11} + \beta_3 X_{21} + \beta_4 X_{31} \]</span> <span class="math display">\[U_2 = \beta_5 + \beta_2 X_{12} + \beta_3 X_{22} + \beta_6 X_{32} \]</span> <span class="math display">\[U_3 = \beta_2 X_{13} + \beta_3 X_{23} + \beta_7 X_{33} \]</span></p>
+</div><div class="column" style="width:50%;">
+<p>Attribute levels: <span class="math display">\[X_{11},X_{12},X_{13} \in {2,4,6}\]</span> <span class="math display">\[X_{21},X_{22},X_{23} \in {1,3,5}\]</span> <span class="math display">\[X_{31},X_{32},X_{33} \in {3,5,7}\]</span></p>
+</div></div>
+<ul>
+<li>The design needs to have enough choice sets to:
+<ul>
+<li>Satisfy design degrees of freedom</li>
+<li>Satisfy attribute level balance</li>
+<li>Satisfy orthogonality</li>
+</ul></li>
+</ul>
+</section>
+<section id="fractional-factorial-orthogonal-designs-1" class="slide level2">
+<h2>Fractional Factorial Orthogonal Designs</h2>
+<ul>
+<li>The smallest design that is orthogonal in all main effects has 12 choice sets (7 parameters / (3-1) independent comparisons)
+<ul>
+<li>Not easy to find orthogonal design</li>
+<li>Out of <span class="math inline">\(\approx 10^51\)</span> possible designs (from <span class="math inline">\(27 \times 26 \times 25\)</span> and <span class="math inline">\(3^3=27\)</span> profiles)…</li>
+</ul></li>
+<li>Orthogonal fractional factorial design might still be too large for any one respondent to complete all tasks</li>
+<li>Can be hard to find a blocking column</li>
+</ul>
+</section>
+<section id="problems-with-orthogonal-designs" class="slide level2">
+<h2>Problems with Orthogonal Designs</h2>
+<ul>
+<li>Design must have no missing data</li>
+<li>Design must have no missing blocks</li>
+<li>Attribute levels must be evenly spaced</li>
+<li>Must use orthogonal coding (-1,0,1) not effects coding (0/1/1)</li>
+<li>Not possible to discard ‘silly’ choice sets</li>
+</ul>
+</section>
+<section id="dominated-designs" class="slide level2">
+<h2>Dominated Designs</h2>
 <ul>
 <li>Which option would you pick?</li>
 </ul>
@@ -378,27 +829,27 @@
 </tbody>
 </table>
 </section>
-<section id="sp-experimental-design-4" class="slide level2">
-<h2>SP Experimental Design 4</h2>
+<section id="dce-experimental-design-1" class="slide level2">
+<h2>DCE Experimental Design</h2>
 <ul>
 <li><strong>Recommendation</strong>: Use the worst case utility specification to design the experiment</li>
 <li>Can always estimate simpler models but choosing a design with too few choice tasks may preclude estimating valid model specifications at a later state</li>
 </ul>
 </section>
-<section id="experiment-design-processes-1" class="slide level2">
-<h2>Experiment Design Processes 1</h2>
+<section id="does-orthogonality-matter" class="slide level2">
+<h2>Does orthogonality matter?</h2>
 <ul>
-<li><strong>Full factorial (FF) design</strong>: consider all possible attribute combinations</li>
-<li><strong>Fractional factorial design</strong>:
+<li>Parameter estimates reflect preference strength</li>
+<li>Standard errors come from variance-covariance matrix of estimated model</li>
+<li>Orthogonality - correlation structure of the data (design) matrix (<span class="math inline">\(X\)</span>)
 <ul>
-<li>Randomly select from (FF) design</li>
-<li><strong>Orthogonal design</strong>: zero correlation between attributes (great for linear models)</li>
+<li>Linear regression - variance-covariance matrix is given by <span class="math inline">\(\frac{\sigma^2}{X'X}\)</span></li>
+<li>Models for discrete choice - non-linear! (<span class="math inline">\(I(\beta) = \sum_n X_n'W_nX_n}\)</span> where <span class="math inline">\(W_n\)</span> is a weight matrix defined by the model structure)</li>
 </ul></li>
-<li><strong>Efficient design</strong>: Reduce parameter variance and covariance (D-efficient)</li>
 </ul>
 </section>
-<section id="experiment-design-processes-2" class="slide level2 smaller">
-<h2>Experiment Design Processes 2</h2>
+<section id="experiment-design-processes-1" class="slide level2 smaller">
+<h2>Experiment Design Processes</h2>
 <ul>
 <li>Two competing schools of thought on how to define the covariance matrix (<span class="math inline">\(S^2\)</span> calculated as negative inverse of <strong>Fisher information/Hessian matrix</strong>)
 <ul>
@@ -417,55 +868,71 @@
 </ul></li>
 </ul>
 </section>
-<section id="experiment-design-processes-3" class="slide level2">
-<h2>Experiment Design Processes 3</h2>
+<section id="efficient-design" class="slide level2">
+<h2>Efficient Design</h2>
+<ul>
+<li>Efficiency of design</li>
+</ul>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+A[Experimental Design] --&gt; B[Survey Administration]
+B --&gt; C[Choice Data]
+C --&gt; D[Parameter Estimation]
+&nbsp;
+classDef box fill:#d9d9d9,stroke:#bdbdbd,color:#000;
+class A,B,C,D box;
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<ul>
+<li>How can we determine the efficiency of a design without conducting a survey?
+<ul>
+<li>Assume prior parameter estimates (best guess)</li>
+<li>Approximate the variance-covariance matrix for the parameter estimates</li>
+</ul></li>
+</ul>
+</section>
+<section id="efficient-design-1" class="slide level2">
+<h2>Efficient Design</h2>
+<ul>
+<li>Asymptotic variance-covariance (AVC) matrix - approximation of true VC matrix</li>
+</ul>
+<p><span class="math display">\[\mathbf{\Sigma} = \begin{pmatrix} se(\hat{\beta}_1)^2 &amp; \cdots &amp; 0 \\ \vdots &amp; \ddots &amp; \vdots \\ 0 &amp; \cdots &amp; se(\hat{\beta}_K)^2 \end{pmatrix}\]</span> - “Asymptotic” - assuming very large sample or many repetitions using a small sample</p>
+</section>
+<section id="how-to-derive-avc-matrix" class="slide level2">
+<h2>How to derive AVC matrix?</h2>
+<ul>
+<li>Simulate it considering a design and prior parameters
+<ul>
+<li>For large sample of virtual respondents, compute observed utilities for all alternatives and add random terms, then assume each respondent chooses the alternative with highest utility</li>
+</ul></li>
+<li>Analytical solution considering <span class="math inline">\(X,\beta\)</span>
+<ul>
+<li>Determine log-likelihood of choice function <span class="math display">\[L_N(\beta|X,y)=\sum_{n=1}^N\sum_{s=1}^S\sum_{j=1}^J y_{jsn} log(P_{jsn}(X|\beta)\]</span></li>
+<li>Determine Fischer information matrix (Hessian of second derivatives of LL <span class="math display">\[I_N(\beta|X,y)=\frac{\partial^2L_N(\beta|X,y)}{\partial \beta \partial \beta'}\]</span></li>
+<li>AVC = negative inverse of Fisher information matrix <span class="math display">\[\Omega_N(\beta|X,y)=-I_N^{-1}(\beta|X,y)\]</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="forms-of-efficient-design" class="slide level2">
+<h2>Forms of Efficient Design</h2>
 <ul>
 <li><strong>D-efficient</strong> named for use of scaled (by 1/K to account for number of parameters) matrix determinant</li>
 <li><strong>S-efficient</strong> named for use of sample size provide theoretically minimum sample size to obtain asymptotically significant parameter estimates</li>
 </ul>
 </section>
-<section id="experiment-design-processes-4" class="slide level2 smaller">
-<h2>Experiment Design Processes 4</h2>
+<section id="efficient-design-2" class="slide level2 smaller">
+<h2>Efficient Design</h2>
 <ul>
 <li><strong>Fisher information matrix</strong> for N respondents given by <span class="math inline">\(\mathbf{𝑰}_𝑁(\theta)\)</span> <span class="math display">\[\mathbf{𝑰}_𝑁 (\theta)=N\mathbf{𝑰}_1 (\theta)\]</span> Then <span class="math display">\[\mathbf{𝑺}_𝑁^2=(\mathbf{𝑰}_𝑛 (𝜃))^{−1}=1/𝑁 \mathbf{𝑺}_1^2\]</span> And <span class="math display">\[𝑠𝑒_𝑁 (\theta)=\frac{𝑠𝑒_1 (\theta)}{\sqrt{N}}\]</span></li>
 <li>Standard errors exhibit diminishing marginal returns for increasing sample size</li>
-</ul>
-</section>
-<section id="design-blocking" class="slide level2 smaller">
-<h2>Design Blocking</h2>
-<ul>
-<li>Often the number of choice tasks generated by a design is too large for a single respondent to handle</li>
-<li><strong>Blocking</strong> is a method to group choice tasks
-<ul>
-<li>Uses modular algebra to decide one effect that will be confounded</li>
-<li>For orthogonal designs, need to define an additional blocking column to allocate subsets of generated tasks to respondents</li>
-<li>Use of orthogonal design avoids one respondent seeing only high price alternatives and another only low price alternatives</li>
-</ul></li>
-</ul>
-</section>
-<section id="non-purchase-option-npo" class="slide level2 smaller">
-<h2>Non-Purchase Option (NPO)</h2>
-<ul>
-<li>Not commonly applied in transportation literature</li>
-<li>Risk with exclusion is that respondent will be forced to pick a <strong>non-preferred option</strong></li>
-<li>Olsen and Swait (1998) find
-<ul>
-<li>If NPO is not present, attribute weights will differ from those observed when NPO is offered in design</li>
-<li>If NPO is included in design, analyst should be able to identify more non-linear preference structures</li>
-<li>Models based on data with no NPO may show low predictive capacity for choice situations including an NPO, whereas those with an NPO will show good predictive capacity in any situation</li>
-</ul></li>
-</ul>
-</section>
-<section id="challenge-of-interattribute-correlation" class="slide level2 smaller">
-<h2>Challenge of Interattribute Correlation</h2>
-<ul>
-<li>Despite the use of the word <strong>correlation</strong>, not a statistical concept</li>
-<li>Refers to <strong>cognitive perception</strong> that respondents associated to attributes we include in experiments</li>
-<li><strong>Price</strong> &amp; <strong>quality</strong> often associated with each other by respondents</li>
-<li>How will a person respond to a high price and low quality alternative?
-<ul>
-<li>Respondent may stop taking survey experiment seriously, biasing the results</li>
-</ul></li>
 </ul>
 </section>
 <section id="sp-pivoted-off-rp" class="slide level2 smaller">
@@ -481,8 +948,8 @@
 </ul></li>
 </ul>
 </section>
-<section id="other-design-recommendations-1" class="slide level2 smaller">
-<h2>Other Design Recommendations 1</h2>
+<section id="other-design-recommendations" class="slide level2 smaller">
+<h2>Other Design Recommendations</h2>
 <ul>
 <li>Focus on specific rather than general behaviour - e.g., respondents should be asked how they would respond to an alternative on a given occasion, rather than in general</li>
 <li>Use realistic choice context - e.g., recent personal experience of (pivot design)
@@ -492,8 +959,8 @@
 <li>Use existing (perceived) levels of attributes so that the options are built around existing experience</li>
 </ul>
 </section>
-<section id="other-design-recommendations-2" class="slide level2 smaller">
-<h2>Other Design Recommendations 2</h2>
+<section id="other-design-recommendations-1" class="slide level2 smaller">
+<h2>Other Design Recommendations</h2>
 <ul>
 <li>Keep choice experiments simple - we respond to very complex choices in practice but do so over a long period of time</li>
 <li>Allow respondents to opt for response outside set of experimental alternatives - e.g., in mode choice exercise, if all options become too unattractive respondent may decide to change destination, time of travel, or not to travel at all</li>
