@@ -139,10 +139,10 @@
 <h2>Outline</h2>
 <div>
 <ul>
-<li class="fragment">Policy Evaluation</li>
-<li class="fragment">Forecasting &amp; Prediction</li>
-<li class="fragment">Confidence Intervals on Predictions</li>
-<li class="fragment">Model transferability &amp; Parameter Updating</li>
+<li class="fragment">Policy evaluation</li>
+<li class="fragment">Forecasting &amp; prediction</li>
+<li class="fragment">Confidence intervals on predictions</li>
+<li class="fragment">Model transferability &amp; Parameter updating</li>
 </ul>
 </div>
 </section>
@@ -162,7 +162,7 @@
 <li>Consumer surplus &amp; social welfare analysis</li>
 <li>Marginal rate of substitution between two variables (ratio of corresponding parameters) in the choice model:
 <ul>
-<li>Value of Travel Time Savings (<strong>VOTTS</strong>) in mode choice</li>
+<li>Value of Travel Time (<strong>VTT</strong>) in mode choice</li>
 <li>Willingness to pay for improved transit reliability in transit choice</li>
 <li>Willingness to pay for transit accessibility in home location choice</li>
 </ul></li>
@@ -172,9 +172,9 @@
 <h2>Willingness-to-pay Analysis</h2>
 <ul>
 <li>Systematic utility function needs to have cost as a variable <span class="math inline">\(p\)</span> along with another variable of interest <span class="math inline">\(x\)</span>. <span class="math display">\[V_j = V_j(p_j,x_j, \dots) -&gt; p\text{ is a continuous variable &amp; } V_j \text{ is differentiable in x and p}\]</span></li>
-<li><strong>Assumption:</strong> Any changes in <span class="math inline">\(x\)</span> is balanced by changes in <span class="math inline">\(p\)</span> to maintain same level of utility: total utility does not change <span class="math display">\[V_j = V_j(p_j,x_j, \dots) = V_j((p_j+\delta p_j),(x_j + \delta x_j), \dots)\]</span></li>
-<li>Using first-order Taylor series expansion <span class="math display">\[V_j(p_j,x_j, \dots) = V_j(p_j,x_j, \dots) + \delta p_j \frac{\partial V_j(p_j,x_j, \dots)}{\partial p_j} + \delta x_j \frac{\partial V_j(p_j,x_j, \dots)}{\partial x_j}\]</span></li>
-<li>After transposing (assuming overall utility change is zero) <span class="math display">\[\frac{\delta p_j}{\delta x_j} = - \frac{V_j(p_j, x_j, \dots)/\partial x_j}{V_j(p_j, x_j, \dots)/\partial p_j} \text{; additional price to compensate additional x}\]</span></li>
+<li><strong>Assumption:</strong> Any change in <span class="math inline">\(x\)</span> is balanced by a change in <span class="math inline">\(p\)</span> to maintain same level of utility: total utility does not change <span class="math display">\[V_j = V_j(p_j,x_j, \dots) = V_j((p_j+d p_j),(x_j + d x_j), \dots)\]</span></li>
+<li>Using first-order Taylor series expansion <span class="math display">\[V_j(p_j,x_j, \dots) = V_j(p_j,x_j, \dots) + d p_j \frac{\partial V_j(p_j,x_j, \dots)}{\partial p_j} + d x_j \frac{\partial V_j(p_j,x_j, \dots)}{\partial x_j}\]</span></li>
+<li>After transposing (assuming overall utility change is zero) <span class="math display">\[\frac{d p_j}{d x_j} = - \frac{\partial V_j(p_j, x_j, \dots)/\partial x_j}{\partial V_j(p_j, x_j, \dots)/\partial p_j} \text{; additional price to compensate additional x}\]</span></li>
 </ul>
 </section>
 <section id="willingness-to-pay-analysis-1" class="slide level2 smaller">
@@ -182,8 +182,8 @@
 <ul>
 <li>For linear-in-parameter utility function <span class="math inline">\(V_j = \beta_j + \beta_p p_j + \beta_x x_j + \dots\)</span></li>
 <li>Willing-to-pay for any continuous variable change <span class="math inline">\(\frac{\partial p_j}{\partial x_j} = - \frac{\beta_x}{\beta_p}\)</span></li>
-<li>Value of Travel Time Savings (<strong>VOTTS</strong>): additional amount of money to <strong>reduce</strong> 1 unit of time <span class="math display">\[VOTTS = \frac{\partial p_j}{- \partial t_j} = \frac{\beta_t}{\beta_p}\]</span></li>
-<li>Value of Reliability (<strong>VOR</strong>) or Safety (<strong>VOS</strong>) : additional amount of money to <strong>increase</strong> 1 level of reliability (r), safety (s) <span class="math display">\[VOR = \frac{\partial p_j}{+ \partial r_j} = - \frac{\beta_r}{\beta_p}\text{; } VOS = - \frac{\partial p_j}{+ \partial s_j} = \frac{\beta_s}{\beta_p}\]</span></li>
+<li>Value of Travel Time (<strong>VTT</strong>): additional amount of money to <strong>reduce</strong> 1 unit of time <span class="math display">\[VTT = \frac{d p_j}{- d t_j} = \frac{\beta_t}{\beta_p}\]</span></li>
+<li>Value of Reliability (<strong>VR</strong>) or Safety (<strong>VS</strong>) : additional amount of money to <strong>increase</strong> 1 level of reliability (r), safety (s) <span class="math display">\[VR = \frac{d p_j}{+ d r_j} = - \frac{\beta_r}{\beta_p}\text{; } VS = \frac{d p_j}{+ d s_j} = - \frac{\beta_s}{\beta_p}\]</span></li>
 </ul>
 </section>
 <section id="consumer-surplus" class="slide level2 smaller">
@@ -193,13 +193,16 @@
 </section>
 <section id="consumer-surplus-1" class="slide level2 smaller">
 <h2>Consumer Surplus</h2>
-<p>For changes in only one (independent) alternative (<span class="math inline">\(j\)</span>): <span class="math display">\[\Delta CS = \frac{1}{\mu}\ln\left(\exp(\mu V_j^2) + \sum_{k \in C_i} \exp(\mu V_k)\right) - \frac{1}{\mu}\ln\left(\exp(\mu V_j^1) + \sum_{k \in C_i} \exp(\mu V_k)\right)\]</span> - For changes in <strong>multiple alternatives</strong> (existence of equal or unequal cross-elasticity, e.g., nested logit, GEV, mixed logit) the integral is <strong>path dependent</strong> since it becomes conditional upon an income effect - For logit model <span class="math display">\[\Delta CS = \frac{1}{\mu}\ln\left(\sum_{j \in C_i} \exp(\mu V_j^2)\right) - \frac{1}{\mu}\ln\left(\sum_{j \in C_i} \exp(\mu V_j^1)\right)\]</span></p>
+<p>For changes in only one (independent) alternative (<span class="math inline">\(j\)</span>): <span class="math display">\[\Delta CS = \frac{1}{\mu}\ln\left(\exp(\mu V_j^2) + \sum_{k \in C_i} \exp(\mu V_k)\right) - \frac{1}{\mu}\ln\left(\exp(\mu V_j^1) + \sum_{k \in C_i} \exp(\mu V_k)\right)\]</span></p>
+<ul>
+<li>For changes in <strong>multiple alternatives</strong> (existence of equal or unequal cross-elasticity, e.g., nested logit, GEV, mixed logit) the integral is <strong>path dependent</strong> since it becomes conditional upon an income effect</li>
+<li>For logit model <span class="math display">\[\Delta CS = \frac{1}{\mu}\ln\left(\sum_{j \in C_i} \exp(\mu V_j^2)\right) - \frac{1}{\mu}\ln\left(\sum_{j \in C_i} \exp(\mu V_j^1)\right)\]</span></li>
+</ul>
 </section>
 <section id="welfare-analysis" class="slide level2 smaller">
 <h2>Welfare Analysis</h2>
 <ul>
-<li><strong>Compensating variation analysis:</strong> normalized changes in expected maximum utility of a particular choice before/after any changes (policy/infrastructure): <span class="math display">\[U_j = \beta_I(I-p_j) + \sum \beta x + \epsilon_j\]</span></li>
-<li>where <span class="math inline">\(I\)</span> = income, <span class="math inline">\(p_j\)</span> = price/cost, <span class="math inline">\(\beta_I\)</span> = marginal utility of income = coefficient of income normalized cost</li>
+<li><strong>Compensating variation analysis:</strong> normalized changes in expected maximum utility of a particular choice before/after any changes (policy/infrastructure): <span class="math display">\[U_j = \beta_I(I-p_j) + \sum \beta x + \epsilon_j\]</span> where <span class="math inline">\(I\)</span> = income, <span class="math inline">\(p_j\)</span> = price/cost, <span class="math inline">\(\beta_I\)</span> = marginal utility of income = coefficient of income normalized cost</li>
 <li>Consumer surplus (<strong>CS</strong>): <span class="math display">\[CS = \frac{1}{\mu}\left(\ln \sum_j \exp \left(\mu (\beta_I(I-p_j) + \sum \beta x)\right) \right)\]</span></li>
 <li>Compensting variation (<strong>CV</strong>) in monetary value: <span class="math display">\[CV = \frac{1}{|\beta_I|}\left( CS_{after-change} - CS_{before-change} \right)\]</span></li>
 </ul>
@@ -212,7 +215,7 @@
 <section id="applying-disaggregate-model-for-forecasting" class="slide level2 smaller">
 <h2>Applying Disaggregate Model for Forecasting</h2>
 <ul>
-<li>Aggregate forecasting <span class="math display">\[\sum_{individuals} \text{Individual Behaviour} = \text{Aggregate(collective) Outcome}\]</span></li>
+<li>Aggregate forecasting <span class="math display">\[\sum_{individuals} \text{Individual Behaviour} = \text{Aggregate (collective) Outcome}\]</span></li>
 <li>Can synthesize people with attributes from census data - i.e., 100% microsimulation with <strong>synthetic population</strong></li>
 </ul>
 
@@ -546,8 +549,8 @@ n(J)/<span class="math inline">\(N_S\)</span>
 </tr>
 </tbody></table>
 </section>
-<section id="sample-enumeration-1" class="slide level2 smaller">
-<h2>Sample Enumeration</h2>
+<section id="stratified-sample-enumeration" class="slide level2 smaller">
+<h2>(Stratified) Sample Enumeration</h2>
 <ul>
 <li><p>Although there may be sampling error, the expected value should match the population average</p></li>
 <li><p>For a ‘G’ stratified sample: <span class="math display">\[\overset{\sim}{W_i} = \sum_{g=1}^G \left(\frac{N_g}{N_T}\right) \frac{1}{N_{sg}}\sum_{t=1}^{N_{sg}} Pr(j|X_t,\beta)\]</span></p></li>
@@ -593,16 +596,16 @@ Sum
 Market share
 </td>
 <td>
-<span class="math inline">\(Pr(1|x_1,\beta)\)</span>
+<span class="math inline">\(Pr(1|\bar{x},\beta)\)</span>
 </td>
 <td>
-<span class="math inline">\(Pr(2|x_1,\beta)\)</span>
+<span class="math inline">\(Pr(2|\bar{x},\beta)\)</span>
 </td>
 <td>
 .
 </td>
 <td>
-<span class="math inline">\(Pr(J|x_1,\beta)\)</span>
+<span class="math inline">\(Pr(J|\bar{x},\beta)\)</span>
 </td>
 <td>
 1
@@ -614,7 +617,7 @@ Market share
 <section id="classification-with-naïve-aggregation" class="slide level2 smaller">
 <h2>Classification with Naïve Aggregation</h2>
 <ul>
-<li>Classify population into a number of strata and consider population within a particular segment as <strong>homogenous</strong> (having same attributes)</li>
+<li>Classify population into a number of strata and consider population within a particular strata as <strong>homogenous</strong> (having same attributes)</li>
 <li>When sample enumeration infeasible, can use classification with naïve aggregation</li>
 <li>Categorization is based on attributes / market segmentation</li>
 </ul>
@@ -825,9 +828,9 @@ n(J)/n
 <ul>
 <li>Population size, <span class="math inline">\(N\)</span></li>
 <li>Stratification of population into total <span class="math inline">\(G\)</span> groups</li>
-<li>Share (%) individual in a particular group, g in population, <span class="math inline">\(W_g\)</span></li>
+<li>Share (%) of individuals in a particular group, g in population, <span class="math inline">\(W_g\)</span></li>
 <li>Sample size, <span class="math inline">\(n\)</span></li>
-<li>Share (%) individual in the particular group, <span class="math inline">\(g\)</span> in sample, <span class="math inline">\(w_g\)</span></li>
+<li>Share (%) of individuals in a particular group, <span class="math inline">\(g\)</span> in sample, <span class="math inline">\(w_g\)</span></li>
 <li>Probability of an individual being selected in the sample, <span class="math inline">\(q_g = \frac{w_g n}{W_g N}\)</span></li>
 <li>Sampling probability is not a function of parameter, <span class="math inline">\(\beta\)</span></li>
 </ul></li>
@@ -843,7 +846,7 @@ n(J)/n
 <li>For representative exogenous sample (stratified/simple random sampling) no correction to choice model estimates is needed
 <ul>
 <li>For non-representative sample, parameters except the Alternative Specific Constants (ASC) do not require correction</li>
-<li>ASC needs to corrected/updated to match actual <strong>market share</strong></li>
+<li>ASC needs to be corrected/updated to match actual <strong>market share</strong></li>
 </ul></li>
 </ul>
 </section>
@@ -855,7 +858,7 @@ n(J)/n
 <ul>
 <li>Selection of respondent of specific choice maker group (e.g.&nbsp;transit users, driver, bicyclists) still should be random in some way</li>
 <li>Choice model with choice-based sample produces <strong>unbiased estimates</strong> of all parameters except the Alternative Specific Constants (ASC)</li>
-<li>ASCs need to corrected/updated to match actual <strong>market share</strong></li>
+<li>ASCs need to be corrected/updated to match actual <strong>market share</strong></li>
 </ul></li>
 </ul>
 </section>
@@ -864,13 +867,13 @@ n(J)/n
 <ul>
 <li>Large number of alternatives (e.g., destination location choice model), a random sample of alternatives can be used to estimate the model - where <span class="math inline">\(C = \text{full choice set}\)</span> and <span class="math inline">\(G = \text{subset of alternatives drawn from C}\)</span></li>
 <li>Conditional probability of selecting a subset of alternatives <span class="math display">\[q(G|j) &gt; 0 \text{; if G includes the chosen alt. j}\]</span> <span class="math display">\[q(G|j) = 0 \text{; if G excludes the chosen alt. j}\]</span></li>
-<li>Joint probability that <span class="math inline">\(J\)</span> is drawn with non-zero probability and <span class="math inline">\(j\)</span> is chosen by an individual <span class="math inline">\(i\)</span> <span class="math display">\[Pr(G,j) = q(G|j)Pr(G) = Pr(j|G)Q(G) \text{; (Bayes Theorem)}\]</span> <span class="math display">\[\text{Marginal probability: } Q(G) = \sum_{k \in C} Pr(k)q(G|k) \text{; (Sum over all possible subsets of j')}\]</span></li>
+<li>Joint probability that <span class="math inline">\(J\)</span> is drawn with non-zero probability and <span class="math inline">\(j\)</span> is chosen by an individual <span class="math inline">\(i\)</span> <span class="math display">\[Pr(G,j) = q(G|j)Pr(j) = Pr(j|G)Q(G) \text{; (Bayes Theorem)}\]</span> <span class="math display">\[\text{Marginal probability: } Q(G) = \sum_{k \in C} Pr(k)q(G|k) \text{; (Sum over all possible subsets including $j$)}\]</span></li>
 </ul>
 </section>
 <section id="sampling-of-alternatives-large-choice-set" class="slide level2 smaller">
 <h2>Sampling of alternatives: Large Choice Set</h2>
 <ul>
-<li>Choice probability of alternative <span class="math inline">\(j\)</span> from subset: <span class="math display">\[Pr(j|G)Q(G) = q(G|j)Pr(j)\]</span> <span class="math display">\[Pr(j|G)Q(G) = \frac{Pr(j)q(G|j)}{Q(G)} = \frac{Pr(j)q(G|j)}{\sum_{k \in C} Pr(k)q(G|k)} = \frac{\exp(V_j)q(G|j)}{\sum_{k \in C} \exp(V_k)q(G|k)}\]</span></li>
+<li>Choice probability of alternative <span class="math inline">\(j\)</span> from subset: <span class="math display">\[Pr(j|G)Q(G) = q(G|j)Pr(j)\]</span> <span class="math display">\[Pr(j|G) = \frac{Pr(j)q(G|j)}{Q(G)} = \frac{Pr(j)q(G|j)}{\sum_{k \in C} Pr(k)q(G|k)} = \frac{\exp(V_j)q(G|j)}{\sum_{k \in C} \exp(V_k)q(G|k)}\]</span></li>
 <li>For any subset, <span class="math inline">\(q\)</span>, that does not include <span class="math inline">\(k\)</span>, <span class="math inline">\(q(G|k)=0\)</span>, so: <span class="math display">\[Pr(j|G) = \frac{\exp(V_j)q(G|j)}{\sum_{k \in G} \exp(V_k)q(G|k)} \text{; within C, any G without k drops out}\]</span> <span class="math display">\[Pr(j|G) = \frac{\exp(V_j)\exp(\ln(q(G|j)))}{\sum_{k \in G} \exp(V_k)\exp(\ln(q(G|j)))} = \frac{\exp(V_j + \ln(q(G|j)))}{\sum_{k \in G} \exp(V_k + \ln(q(G|j)))}\]</span></li>
 </ul>
 </section>
@@ -887,7 +890,7 @@ n(J)/n
 <section id="managing-large-choice-sets" class="slide level2">
 <h2>Managing Large Choice Sets</h2>
 <ul>
-<li>Reducing alternatives:
+<li>Reduce alternatives:
 <ul>
 <li>Use various feasibility constraints to reduce number of alternatives</li>
 <li>Random sampling from large choice set</li>
@@ -905,12 +908,16 @@ n(J)/n
 <ul>
 <li>Transferability issues:
 <ul>
-<li>Systematic bias.</li>
-<li>Local conditions.</li>
+<li>Systematic bias</li>
+<li>Local conditions</li>
 </ul></li>
-<li>Model Updating Issues:
+<li>Model updating issues:
 <ul>
-<li>Systematic bias of the model is captured by model constants. - Alternative Specific Constants (ASC) are <strong>error basket</strong> - At a minimum level, the constant terms change from place-to-place</li>
+<li>Systematic bias of the model is captured by model constants
+<ul>
+<li>Alternative Specific Constants (ASC) are <strong>error basket</strong></li>
+<li>At a minimum, these constant terms change from place-to-place</li>
+</ul></li>
 <li><strong>Scale parameter</strong> of random error term changes from place-to-place</li>
 <li><strong>Model specification</strong> changes from place-to-place</li>
 </ul></li>
@@ -930,7 +937,7 @@ n(J)/n
 <ul>
 <li>Population market share of <span class="math inline">\(𝑗= 𝐻_𝑗\)</span></li>
 <li>Sample share of <span class="math inline">\(j = h_j\)</span></li>
-<li>Adjustment proprtion of <span class="math inline">\(j = s_j - \frac{H_j}{h_j}\)</span></li>
+<li>Adjustment proportion of <span class="math inline">\(j \text{ is } s_j = \frac{H_j}{h_j}\)</span></li>
 <li>Adjusted choice probability <span class="math inline">\(Pr(j) = \frac{s_j \exp(\beta_{0,j}+\sum \beta x)}{\sum_k s_k \exp(\beta_{0,k}+\sum \beta x)}\)</span> <span class="math display">\[Pr(j) = \frac{\exp(\beta_{0,j}+\sum \beta x + \ln(s_j))}{\sum_k \exp(\beta_{0,k}+\sum \beta x + \ln(s_k))} = \frac{\exp(\beta_{0,j}+\sum \beta x + \ln(H_j/h_j))}{\sum_k \exp(\beta_{0,k}+\sum \beta x + \ln(H_k/h_k))}\]</span> <span class="math display">\[\text{Updated } \beta_{0,j} = (\beta_{0,j})_{estimated} + ln(H_j/h_j)\]</span></li>
 </ul>
 </section>

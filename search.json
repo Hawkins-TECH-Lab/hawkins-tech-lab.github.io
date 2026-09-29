@@ -888,28 +888,28 @@
     "href": "teaching/ENCI707/slides/lec-5.html#outline",
     "title": "Lecture 5 - Applied Disaggregate Demand Models",
     "section": "Outline",
-    "text": "Outline\n\n\nPolicy Evaluation\nForecasting & Prediction\nConfidence Intervals on Predictions\nModel transferability & Parameter Updating"
+    "text": "Outline\n\n\nPolicy evaluation\nForecasting & prediction\nConfidence intervals on predictions\nModel transferability & Parameter updating"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-5.html#policy-evaluations",
     "href": "teaching/ENCI707/slides/lec-5.html#policy-evaluations",
     "title": "Lecture 5 - Applied Disaggregate Demand Models",
     "section": "Policy Evaluations",
-    "text": "Policy Evaluations\n\nElasticity:\n\nDirect elasticity\nCross elasticity\n\nConsumer surplus & social welfare analysis\nMarginal rate of substitution between two variables (ratio of corresponding parameters) in the choice model:\n\nValue of Travel Time Savings (VOTTS) in mode choice\nWillingness to pay for improved transit reliability in transit choice\nWillingness to pay for transit accessibility in home location choice"
+    "text": "Policy Evaluations\n\nElasticity:\n\nDirect elasticity\nCross elasticity\n\nConsumer surplus & social welfare analysis\nMarginal rate of substitution between two variables (ratio of corresponding parameters) in the choice model:\n\nValue of Travel Time (VTT) in mode choice\nWillingness to pay for improved transit reliability in transit choice\nWillingness to pay for transit accessibility in home location choice"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-5.html#willingness-to-pay-analysis",
     "href": "teaching/ENCI707/slides/lec-5.html#willingness-to-pay-analysis",
     "title": "Lecture 5 - Applied Disaggregate Demand Models",
     "section": "Willingness-to-pay Analysis",
-    "text": "Willingness-to-pay Analysis\n\nSystematic utility function needs to have cost as a variable \\(p\\) along with another variable of interest \\(x\\). \\[V_j = V_j(p_j,x_j, \\dots) -&gt; p\\text{ is a continuous variable & } V_j \\text{ is differentiable in x and p}\\]\nAssumption: Any changes in \\(x\\) is balanced by changes in \\(p\\) to maintain same level of utility: total utility does not change \\[V_j = V_j(p_j,x_j, \\dots) = V_j((p_j+\\delta p_j),(x_j + \\delta x_j), \\dots)\\]\nUsing first-order Taylor series expansion \\[V_j(p_j,x_j, \\dots) = V_j(p_j,x_j, \\dots) + \\delta p_j \\frac{\\partial V_j(p_j,x_j, \\dots)}{\\partial p_j} + \\delta x_j \\frac{\\partial V_j(p_j,x_j, \\dots)}{\\partial x_j}\\]\nAfter transposing (assuming overall utility change is zero) \\[\\frac{\\delta p_j}{\\delta x_j} = - \\frac{V_j(p_j, x_j, \\dots)/\\partial x_j}{V_j(p_j, x_j, \\dots)/\\partial p_j} \\text{; additional price to compensate additional x}\\]"
+    "text": "Willingness-to-pay Analysis\n\nSystematic utility function needs to have cost as a variable \\(p\\) along with another variable of interest \\(x\\). \\[V_j = V_j(p_j,x_j, \\dots) -&gt; p\\text{ is a continuous variable & } V_j \\text{ is differentiable in x and p}\\]\nAssumption: Any change in \\(x\\) is balanced by a change in \\(p\\) to maintain same level of utility: total utility does not change \\[V_j = V_j(p_j,x_j, \\dots) = V_j((p_j+d p_j),(x_j + d x_j), \\dots)\\]\nUsing first-order Taylor series expansion \\[V_j(p_j,x_j, \\dots) = V_j(p_j,x_j, \\dots) + d p_j \\frac{\\partial V_j(p_j,x_j, \\dots)}{\\partial p_j} + d x_j \\frac{\\partial V_j(p_j,x_j, \\dots)}{\\partial x_j}\\]\nAfter transposing (assuming overall utility change is zero) \\[\\frac{d p_j}{d x_j} = - \\frac{\\partial V_j(p_j, x_j, \\dots)/\\partial x_j}{\\partial V_j(p_j, x_j, \\dots)/\\partial p_j} \\text{; additional price to compensate additional x}\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-5.html#willingness-to-pay-analysis-1",
     "href": "teaching/ENCI707/slides/lec-5.html#willingness-to-pay-analysis-1",
     "title": "Lecture 5 - Applied Disaggregate Demand Models",
     "section": "Willingness-to-pay Analysis",
-    "text": "Willingness-to-pay Analysis\n\nFor linear-in-parameter utility function \\(V_j = \\beta_j + \\beta_p p_j + \\beta_x x_j + \\dots\\)\nWilling-to-pay for any continuous variable change \\(\\frac{\\partial p_j}{\\partial x_j} = - \\frac{\\beta_x}{\\beta_p}\\)\nValue of Travel Time Savings (VOTTS): additional amount of money to reduce 1 unit of time \\[VOTTS = \\frac{\\partial p_j}{- \\partial t_j} = \\frac{\\beta_t}{\\beta_p}\\]\nValue of Reliability (VOR) or Safety (VOS) : additional amount of money to increase 1 level of reliability (r), safety (s) \\[VOR = \\frac{\\partial p_j}{+ \\partial r_j} = - \\frac{\\beta_r}{\\beta_p}\\text{; } VOS = - \\frac{\\partial p_j}{+ \\partial s_j} = \\frac{\\beta_s}{\\beta_p}\\]"
+    "text": "Willingness-to-pay Analysis\n\nFor linear-in-parameter utility function \\(V_j = \\beta_j + \\beta_p p_j + \\beta_x x_j + \\dots\\)\nWilling-to-pay for any continuous variable change \\(\\frac{\\partial p_j}{\\partial x_j} = - \\frac{\\beta_x}{\\beta_p}\\)\nValue of Travel Time (VTT): additional amount of money to reduce 1 unit of time \\[VTT = \\frac{d p_j}{- d t_j} = \\frac{\\beta_t}{\\beta_p}\\]\nValue of Reliability (VR) or Safety (VS) : additional amount of money to increase 1 level of reliability (r), safety (s) \\[VR = \\frac{d p_j}{+ d r_j} = - \\frac{\\beta_r}{\\beta_p}\\text{; } VS = \\frac{d p_j}{+ d s_j} = - \\frac{\\beta_s}{\\beta_p}\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-5.html#consumer-surplus",
@@ -923,21 +923,21 @@
     "href": "teaching/ENCI707/slides/lec-5.html#consumer-surplus-1",
     "title": "Lecture 5 - Applied Disaggregate Demand Models",
     "section": "Consumer Surplus",
-    "text": "Consumer Surplus\nFor changes in only one (independent) alternative (\\(j\\)): \\[\\Delta CS = \\frac{1}{\\mu}\\ln\\left(\\exp(\\mu V_j^2) + \\sum_{k \\in C_i} \\exp(\\mu V_k)\\right) - \\frac{1}{\\mu}\\ln\\left(\\exp(\\mu V_j^1) + \\sum_{k \\in C_i} \\exp(\\mu V_k)\\right)\\] - For changes in multiple alternatives (existence of equal or unequal cross-elasticity, e.g., nested logit, GEV, mixed logit) the integral is path dependent since it becomes conditional upon an income effect - For logit model \\[\\Delta CS = \\frac{1}{\\mu}\\ln\\left(\\sum_{j \\in C_i} \\exp(\\mu V_j^2)\\right) - \\frac{1}{\\mu}\\ln\\left(\\sum_{j \\in C_i} \\exp(\\mu V_j^1)\\right)\\]"
+    "text": "Consumer Surplus\nFor changes in only one (independent) alternative (\\(j\\)): \\[\\Delta CS = \\frac{1}{\\mu}\\ln\\left(\\exp(\\mu V_j^2) + \\sum_{k \\in C_i} \\exp(\\mu V_k)\\right) - \\frac{1}{\\mu}\\ln\\left(\\exp(\\mu V_j^1) + \\sum_{k \\in C_i} \\exp(\\mu V_k)\\right)\\]\n\nFor changes in multiple alternatives (existence of equal or unequal cross-elasticity, e.g., nested logit, GEV, mixed logit) the integral is path dependent since it becomes conditional upon an income effect\nFor logit model \\[\\Delta CS = \\frac{1}{\\mu}\\ln\\left(\\sum_{j \\in C_i} \\exp(\\mu V_j^2)\\right) - \\frac{1}{\\mu}\\ln\\left(\\sum_{j \\in C_i} \\exp(\\mu V_j^1)\\right)\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-5.html#welfare-analysis",
     "href": "teaching/ENCI707/slides/lec-5.html#welfare-analysis",
     "title": "Lecture 5 - Applied Disaggregate Demand Models",
     "section": "Welfare Analysis",
-    "text": "Welfare Analysis\n\nCompensating variation analysis: normalized changes in expected maximum utility of a particular choice before/after any changes (policy/infrastructure): \\[U_j = \\beta_I(I-p_j) + \\sum \\beta x + \\epsilon_j\\]\nwhere \\(I\\) = income, \\(p_j\\) = price/cost, \\(\\beta_I\\) = marginal utility of income = coefficient of income normalized cost\nConsumer surplus (CS): \\[CS = \\frac{1}{\\mu}\\left(\\ln \\sum_j \\exp \\left(\\mu (\\beta_I(I-p_j) + \\sum \\beta x)\\right) \\right)\\]\nCompensting variation (CV) in monetary value: \\[CV = \\frac{1}{|\\beta_I|}\\left( CS_{after-change} - CS_{before-change} \\right)\\]"
+    "text": "Welfare Analysis\n\nCompensating variation analysis: normalized changes in expected maximum utility of a particular choice before/after any changes (policy/infrastructure): \\[U_j = \\beta_I(I-p_j) + \\sum \\beta x + \\epsilon_j\\] where \\(I\\) = income, \\(p_j\\) = price/cost, \\(\\beta_I\\) = marginal utility of income = coefficient of income normalized cost\nConsumer surplus (CS): \\[CS = \\frac{1}{\\mu}\\left(\\ln \\sum_j \\exp \\left(\\mu (\\beta_I(I-p_j) + \\sum \\beta x)\\right) \\right)\\]\nCompensting variation (CV) in monetary value: \\[CV = \\frac{1}{|\\beta_I|}\\left( CS_{after-change} - CS_{before-change} \\right)\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-5.html#applying-disaggregate-model-for-forecasting",
     "href": "teaching/ENCI707/slides/lec-5.html#applying-disaggregate-model-for-forecasting",
     "title": "Lecture 5 - Applied Disaggregate Demand Models",
     "section": "Applying Disaggregate Model for Forecasting",
-    "text": "Applying Disaggregate Model for Forecasting\n\nAggregate forecasting \\[\\sum_{individuals} \\text{Individual Behaviour} = \\text{Aggregate(collective) Outcome}\\]\nCan synthesize people with attributes from census data - i.e., 100% microsimulation with synthetic population"
+    "text": "Applying Disaggregate Model for Forecasting\n\nAggregate forecasting \\[\\sum_{individuals} \\text{Individual Behaviour} = \\text{Aggregate (collective) Outcome}\\]\nCan synthesize people with attributes from census data - i.e., 100% microsimulation with synthetic population"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-5.html#applying-disaggregate-choice-model-for-forecasting",
@@ -968,25 +968,25 @@
     "text": "Sample Enumeration\n\nRather than 100% population, use a representative sample\n\nIf we have a representative sample, \\(N_S\\), of the target population \\(N_T\\) then: \\[\\overset{\\sim}{W_i} = \\text{Predicted sample share of j} = \\frac{1}{N_S}\\sum_{s=1}^{N_S} Pr(j|X_S,\\beta)\\]\n\n\n\n\n\nRepresentative Sample\n\n\nChoice Alternatives\n\n\n\n\n\n\n1\n\n\n2\n\n\n…\n\n\nJ\n\n\nSum\n\n\n\n\n1\n\n\n\\(Pr(1|x_1,\\beta)\\)\n\n\n\\(Pr(2|x_1,\\beta)\\)\n\n\n.\n\n\n\\(Pr(J|x_1,\\beta)\\)\n\n\n1\n\n\n\n\n2\n\n\n\\(Pr(1|x_2,\\beta)\\)\n\n\n\\(Pr(2|x_2,\\beta)\\)\n\n\n.\n\n\n\\(Pr(J|x_2,\\beta)\\)\n\n\n1\n\n\n\n\n…\n\n\n.\n\n\n.\n\n\n.\n\n\n.\n\n\n.\n\n\n\n\nN\n\n\n\\(Pr(1|x_S,\\beta)\\)\n\n\n\\(Pr(2|x_S,\\beta)\\)\n\n\n.\n\n\n\\(Pr(J|x_S,\\beta)\\)\n\n\n1\n\n\n\n\nSum\n\n\nn(1)\n\n\nn(2)\n\n\n\n\nn(J)\n\n\n\\(N_S\\)\n\n\n\n\nMarket share\n\n\nn(1)/\\(N_S\\)\n\n\nn(2)/\\(N_S\\)\n\n\n\n\nn(J)/\\(N_S\\)\n\n\n1"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-5.html#sample-enumeration-1",
-    "href": "teaching/ENCI707/slides/lec-5.html#sample-enumeration-1",
+    "objectID": "teaching/ENCI707/slides/lec-5.html#stratified-sample-enumeration",
+    "href": "teaching/ENCI707/slides/lec-5.html#stratified-sample-enumeration",
     "title": "Lecture 5 - Applied Disaggregate Demand Models",
-    "section": "Sample Enumeration",
-    "text": "Sample Enumeration\n\nAlthough there may be sampling error, the expected value should match the population average\nFor a ‘G’ stratified sample: \\[\\overset{\\sim}{W_i} = \\sum_{g=1}^G \\left(\\frac{N_g}{N_T}\\right) \\frac{1}{N_{sg}}\\sum_{t=1}^{N_{sg}} Pr(j|X_t,\\beta)\\]\nHere, \\(N_g\\) is the population in segment \\(g\\), \\(N_{sg}\\) is the sample population in segment \\(g\\), and \\(N_T\\) is the target population\nSample for estimation should be representative\nSample enumeration can generally be used to test policies in the short-run during which the base population sample can be assumed to remain representative"
+    "section": "(Stratified) Sample Enumeration",
+    "text": "(Stratified) Sample Enumeration\n\nAlthough there may be sampling error, the expected value should match the population average\nFor a ‘G’ stratified sample: \\[\\overset{\\sim}{W_i} = \\sum_{g=1}^G \\left(\\frac{N_g}{N_T}\\right) \\frac{1}{N_{sg}}\\sum_{t=1}^{N_{sg}} Pr(j|X_t,\\beta)\\]\nHere, \\(N_g\\) is the population in segment \\(g\\), \\(N_{sg}\\) is the sample population in segment \\(g\\), and \\(N_T\\) is the target population\nSample for estimation should be representative\nSample enumeration can generally be used to test policies in the short-run during which the base population sample can be assumed to remain representative"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-5.html#naïve-aggregation",
     "href": "teaching/ENCI707/slides/lec-5.html#naïve-aggregation",
     "title": "Lecture 5 - Applied Disaggregate Demand Models",
     "section": "Naïve Aggregation",
-    "text": "Naïve Aggregation\n\nConsidering mean value of \\(X_t\\) as the unique value for whole population gives crude estimate\n\n\n\nPopulation Strata\n\n\nChoice Alternatives\n\n\n\n\n\n\n1\n\n\n2\n\n\n…\n\n\nJ\n\n\nSum\n\n\n\n\nMarket share\n\n\n\\(Pr(1|x_1,\\beta)\\)\n\n\n\\(Pr(2|x_1,\\beta)\\)\n\n\n.\n\n\n\\(Pr(J|x_1,\\beta)\\)\n\n\n1"
+    "text": "Naïve Aggregation\n\nConsidering mean value of \\(X_t\\) as the unique value for whole population gives crude estimate\n\n\n\nPopulation Strata\n\n\nChoice Alternatives\n\n\n\n\n\n\n1\n\n\n2\n\n\n…\n\n\nJ\n\n\nSum\n\n\n\n\nMarket share\n\n\n\\(Pr(1|\\bar{x},\\beta)\\)\n\n\n\\(Pr(2|\\bar{x},\\beta)\\)\n\n\n.\n\n\n\\(Pr(J|\\bar{x},\\beta)\\)\n\n\n1"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-5.html#classification-with-naïve-aggregation",
     "href": "teaching/ENCI707/slides/lec-5.html#classification-with-naïve-aggregation",
     "title": "Lecture 5 - Applied Disaggregate Demand Models",
     "section": "Classification with Naïve Aggregation",
-    "text": "Classification with Naïve Aggregation\n\nClassify population into a number of strata and consider population within a particular segment as homogenous (having same attributes)\nWhen sample enumeration infeasible, can use classification with naïve aggregation\nCategorization is based on attributes / market segmentation\n\n\n\n\nPopulation Strata\n\n\nChoice Alternatives\n\n\n\n\n\n\n1\n\n\n2\n\n\n…\n\n\nJ\n\n\nSum\n\n\n\n\n1\n\n\n\\(Pr(1|x_1,\\beta)\\)\n\n\n\\(Pr(2|x_1,\\beta)\\)\n\n\n.\n\n\n\\(Pr(J|x_1,\\beta)\\)\n\n\n1\n\n\n\n\n2\n\n\n\\(Pr(1|x_2,\\beta)\\)\n\n\n\\(Pr(2|x_2,\\beta)\\)\n\n\n.\n\n\n\\(Pr(J|x_2,\\beta)\\)\n\n\n1\n\n\n\n\n…\n\n\n.\n\n\n.\n\n\n.\n\n\n.\n\n\n.\n\n\n\n\nn\n\n\n\\(Pr(1|x_S,\\beta)\\)\n\n\n\\(Pr(2|x_S,\\beta)\\)\n\n\n.\n\n\n\\(Pr(J|x_S,\\beta)\\)\n\n\n1\n\n\n\n\nSum\n\n\nn(1)\n\n\nn(2)\n\n\n\n\nn(J)\n\n\nn\n\n\n\n\nMarket share\n\n\nn(1)/n\n\n\nn(2)/n\n\n\n\n\nn(J)/n\n\n\n1"
+    "text": "Classification with Naïve Aggregation\n\nClassify population into a number of strata and consider population within a particular strata as homogenous (having same attributes)\nWhen sample enumeration infeasible, can use classification with naïve aggregation\nCategorization is based on attributes / market segmentation\n\n\n\n\nPopulation Strata\n\n\nChoice Alternatives\n\n\n\n\n\n\n1\n\n\n2\n\n\n…\n\n\nJ\n\n\nSum\n\n\n\n\n1\n\n\n\\(Pr(1|x_1,\\beta)\\)\n\n\n\\(Pr(2|x_1,\\beta)\\)\n\n\n.\n\n\n\\(Pr(J|x_1,\\beta)\\)\n\n\n1\n\n\n\n\n2\n\n\n\\(Pr(1|x_2,\\beta)\\)\n\n\n\\(Pr(2|x_2,\\beta)\\)\n\n\n.\n\n\n\\(Pr(J|x_2,\\beta)\\)\n\n\n1\n\n\n\n\n…\n\n\n.\n\n\n.\n\n\n.\n\n\n.\n\n\n.\n\n\n\n\nn\n\n\n\\(Pr(1|x_S,\\beta)\\)\n\n\n\\(Pr(2|x_S,\\beta)\\)\n\n\n.\n\n\n\\(Pr(J|x_S,\\beta)\\)\n\n\n1\n\n\n\n\nSum\n\n\nn(1)\n\n\nn(2)\n\n\n\n\nn(J)\n\n\nn\n\n\n\n\nMarket share\n\n\nn(1)/n\n\n\nn(2)/n\n\n\n\n\nn(J)/n\n\n\n1"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-5.html#confidence-interval-on-predictions-1",
@@ -1028,35 +1028,35 @@
     "href": "teaching/ENCI707/slides/lec-5.html#sampling-of-choice-makers",
     "title": "Lecture 5 - Applied Disaggregate Demand Models",
     "section": "Sampling of Choice Makers",
-    "text": "Sampling of Choice Makers\n\\[\\text{Choice Model: }Pr(j|x,\\beta)\\]\n\nExogenous sampling of choice makers (Stratified Random Sampling)\n\nPopulation size, \\(N\\)\nStratification of population into total \\(G\\) groups\nShare (%) individual in a particular group, g in population, \\(W_g\\)\nSample size, \\(n\\)\nShare (%) individual in the particular group, \\(g\\) in sample, \\(w_g\\)\nProbability of an individual being selected in the sample, \\(q_g = \\frac{w_g n}{W_g N}\\)\nSampling probability is not a function of parameter, \\(\\beta\\)"
+    "text": "Sampling of Choice Makers\n\\[\\text{Choice Model: }Pr(j|x,\\beta)\\]\n\nExogenous sampling of choice makers (Stratified Random Sampling)\n\nPopulation size, \\(N\\)\nStratification of population into total \\(G\\) groups\nShare (%) of individuals in a particular group, g in population, \\(W_g\\)\nSample size, \\(n\\)\nShare (%) of individuals in a particular group, \\(g\\) in sample, \\(w_g\\)\nProbability of an individual being selected in the sample, \\(q_g = \\frac{w_g n}{W_g N}\\)\nSampling probability is not a function of parameter, \\(\\beta\\)"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-5.html#sampling-of-choice-makers-1",
     "href": "teaching/ENCI707/slides/lec-5.html#sampling-of-choice-makers-1",
     "title": "Lecture 5 - Applied Disaggregate Demand Models",
     "section": "Sampling of Choice Makers",
-    "text": "Sampling of Choice Makers\n\\[\\text{Choice Model: }Pr(j|x,\\beta)\\]\n\nExogenous sampling of choice makers (Simple Random Sampling)\nProbability of an individual being selected in the sample, \\(q_g = \\frac{n}{N}\\)\nSampling probability is not a function of parameter, \\(\\beta\\)\nFor representative exogenous sample (stratified/simple random sampling) no correction to choice model estimates is needed\n\nFor non-representative sample, parameters except the Alternative Specific Constants (ASC) do not require correction\nASC needs to corrected/updated to match actual market share"
+    "text": "Sampling of Choice Makers\n\\[\\text{Choice Model: }Pr(j|x,\\beta)\\]\n\nExogenous sampling of choice makers (Simple Random Sampling)\nProbability of an individual being selected in the sample, \\(q_g = \\frac{n}{N}\\)\nSampling probability is not a function of parameter, \\(\\beta\\)\nFor representative exogenous sample (stratified/simple random sampling) no correction to choice model estimates is needed\n\nFor non-representative sample, parameters except the Alternative Specific Constants (ASC) do not require correction\nASC needs to be corrected/updated to match actual market share"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-5.html#sampling-of-choice-makers-2",
     "href": "teaching/ENCI707/slides/lec-5.html#sampling-of-choice-makers-2",
     "title": "Lecture 5 - Applied Disaggregate Demand Models",
     "section": "Sampling of Choice Makers",
-    "text": "Sampling of Choice Makers\n\\[\\text{Choice Model: }Pr(j|x(j),\\beta)\\]\n\nEndogenous/Choice-based sampling of choice makers (randomly select choice makers of specific choices)\n\nSelection of respondent of specific choice maker group (e.g. transit users, driver, bicyclists) still should be random in some way\nChoice model with choice-based sample produces unbiased estimates of all parameters except the Alternative Specific Constants (ASC)\nASCs need to corrected/updated to match actual market share"
+    "text": "Sampling of Choice Makers\n\\[\\text{Choice Model: }Pr(j|x(j),\\beta)\\]\n\nEndogenous/Choice-based sampling of choice makers (randomly select choice makers of specific choices)\n\nSelection of respondent of specific choice maker group (e.g. transit users, driver, bicyclists) still should be random in some way\nChoice model with choice-based sample produces unbiased estimates of all parameters except the Alternative Specific Constants (ASC)\nASCs need to be corrected/updated to match actual market share"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-5.html#sampling-of-alternatives-large-choice-sets",
     "href": "teaching/ENCI707/slides/lec-5.html#sampling-of-alternatives-large-choice-sets",
     "title": "Lecture 5 - Applied Disaggregate Demand Models",
     "section": "Sampling of alternatives: Large choice sets",
-    "text": "Sampling of alternatives: Large choice sets\n\nLarge number of alternatives (e.g., destination location choice model), a random sample of alternatives can be used to estimate the model - where \\(C = \\text{full choice set}\\) and \\(G = \\text{subset of alternatives drawn from C}\\)\nConditional probability of selecting a subset of alternatives \\[q(G|j) &gt; 0 \\text{; if G includes the chosen alt. j}\\] \\[q(G|j) = 0 \\text{; if G excludes the chosen alt. j}\\]\nJoint probability that \\(J\\) is drawn with non-zero probability and \\(j\\) is chosen by an individual \\(i\\) \\[Pr(G,j) = q(G|j)Pr(G) = Pr(j|G)Q(G) \\text{; (Bayes Theorem)}\\] \\[\\text{Marginal probability: } Q(G) = \\sum_{k \\in C} Pr(k)q(G|k) \\text{; (Sum over all possible subsets of j')}\\]"
+    "text": "Sampling of alternatives: Large choice sets\n\nLarge number of alternatives (e.g., destination location choice model), a random sample of alternatives can be used to estimate the model - where \\(C = \\text{full choice set}\\) and \\(G = \\text{subset of alternatives drawn from C}\\)\nConditional probability of selecting a subset of alternatives \\[q(G|j) &gt; 0 \\text{; if G includes the chosen alt. j}\\] \\[q(G|j) = 0 \\text{; if G excludes the chosen alt. j}\\]\nJoint probability that \\(J\\) is drawn with non-zero probability and \\(j\\) is chosen by an individual \\(i\\) \\[Pr(G,j) = q(G|j)Pr(j) = Pr(j|G)Q(G) \\text{; (Bayes Theorem)}\\] \\[\\text{Marginal probability: } Q(G) = \\sum_{k \\in C} Pr(k)q(G|k) \\text{; (Sum over all possible subsets including $j$)}\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-5.html#sampling-of-alternatives-large-choice-set",
     "href": "teaching/ENCI707/slides/lec-5.html#sampling-of-alternatives-large-choice-set",
     "title": "Lecture 5 - Applied Disaggregate Demand Models",
     "section": "Sampling of alternatives: Large Choice Set",
-    "text": "Sampling of alternatives: Large Choice Set\n\nChoice probability of alternative \\(j\\) from subset: \\[Pr(j|G)Q(G) = q(G|j)Pr(j)\\] \\[Pr(j|G)Q(G) = \\frac{Pr(j)q(G|j)}{Q(G)} = \\frac{Pr(j)q(G|j)}{\\sum_{k \\in C} Pr(k)q(G|k)} = \\frac{\\exp(V_j)q(G|j)}{\\sum_{k \\in C} \\exp(V_k)q(G|k)}\\]\nFor any subset, \\(q\\), that does not include \\(k\\), \\(q(G|k)=0\\), so: \\[Pr(j|G) = \\frac{\\exp(V_j)q(G|j)}{\\sum_{k \\in G} \\exp(V_k)q(G|k)} \\text{; within C, any G without k drops out}\\] \\[Pr(j|G) = \\frac{\\exp(V_j)\\exp(\\ln(q(G|j)))}{\\sum_{k \\in G} \\exp(V_k)\\exp(\\ln(q(G|j)))} = \\frac{\\exp(V_j + \\ln(q(G|j)))}{\\sum_{k \\in G} \\exp(V_k + \\ln(q(G|j)))}\\]"
+    "text": "Sampling of alternatives: Large Choice Set\n\nChoice probability of alternative \\(j\\) from subset: \\[Pr(j|G)Q(G) = q(G|j)Pr(j)\\] \\[Pr(j|G) = \\frac{Pr(j)q(G|j)}{Q(G)} = \\frac{Pr(j)q(G|j)}{\\sum_{k \\in C} Pr(k)q(G|k)} = \\frac{\\exp(V_j)q(G|j)}{\\sum_{k \\in C} \\exp(V_k)q(G|k)}\\]\nFor any subset, \\(q\\), that does not include \\(k\\), \\(q(G|k)=0\\), so: \\[Pr(j|G) = \\frac{\\exp(V_j)q(G|j)}{\\sum_{k \\in G} \\exp(V_k)q(G|k)} \\text{; within C, any G without k drops out}\\] \\[Pr(j|G) = \\frac{\\exp(V_j)\\exp(\\ln(q(G|j)))}{\\sum_{k \\in G} \\exp(V_k)\\exp(\\ln(q(G|j)))} = \\frac{\\exp(V_j + \\ln(q(G|j)))}{\\sum_{k \\in G} \\exp(V_k + \\ln(q(G|j)))}\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-5.html#sampling-of-alternatives-large-choice-set-1",
@@ -1070,14 +1070,14 @@
     "href": "teaching/ENCI707/slides/lec-5.html#managing-large-choice-sets",
     "title": "Lecture 5 - Applied Disaggregate Demand Models",
     "section": "Managing Large Choice Sets",
-    "text": "Managing Large Choice Sets\n\nReducing alternatives:\n\nUse various feasibility constraints to reduce number of alternatives\nRandom sampling from large choice set\nWrong choice set may generate distorted predictions"
+    "text": "Managing Large Choice Sets\n\nReduce alternatives:\n\nUse various feasibility constraints to reduce number of alternatives\nRandom sampling from large choice set\nWrong choice set may generate distorted predictions"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-5.html#model-transferability",
     "href": "teaching/ENCI707/slides/lec-5.html#model-transferability",
     "title": "Lecture 5 - Applied Disaggregate Demand Models",
     "section": "Model Transferability",
-    "text": "Model Transferability\n\nTransferability issues:\n\nSystematic bias.\nLocal conditions.\n\nModel Updating Issues:\n\nSystematic bias of the model is captured by model constants. - Alternative Specific Constants (ASC) are error basket - At a minimum level, the constant terms change from place-to-place\nScale parameter of random error term changes from place-to-place\nModel specification changes from place-to-place"
+    "text": "Model Transferability\n\nTransferability issues:\n\nSystematic bias\nLocal conditions\n\nModel updating issues:\n\nSystematic bias of the model is captured by model constants\n\nAlternative Specific Constants (ASC) are error basket\nAt a minimum, these constant terms change from place-to-place\n\nScale parameter of random error term changes from place-to-place\nModel specification changes from place-to-place"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-5.html#updating-mnl-model-parameters",
@@ -1091,7 +1091,7 @@
     "href": "teaching/ENCI707/slides/lec-5.html#updating-mnl-model-parameters-1",
     "title": "Lecture 5 - Applied Disaggregate Demand Models",
     "section": "Updating MNL Model Parameters",
-    "text": "Updating MNL Model Parameters\n\nPopulation market share of \\(𝑗= 𝐻_𝑗\\)\nSample share of \\(j = h_j\\)\nAdjustment proprtion of \\(j = s_j - \\frac{H_j}{h_j}\\)\nAdjusted choice probability \\(Pr(j) = \\frac{s_j \\exp(\\beta_{0,j}+\\sum \\beta x)}{\\sum_k s_k \\exp(\\beta_{0,k}+\\sum \\beta x)}\\) \\[Pr(j) = \\frac{\\exp(\\beta_{0,j}+\\sum \\beta x + \\ln(s_j))}{\\sum_k \\exp(\\beta_{0,k}+\\sum \\beta x + \\ln(s_k))} = \\frac{\\exp(\\beta_{0,j}+\\sum \\beta x + \\ln(H_j/h_j))}{\\sum_k \\exp(\\beta_{0,k}+\\sum \\beta x + \\ln(H_k/h_k))}\\] \\[\\text{Updated } \\beta_{0,j} = (\\beta_{0,j})_{estimated} + ln(H_j/h_j)\\]"
+    "text": "Updating MNL Model Parameters\n\nPopulation market share of \\(𝑗= 𝐻_𝑗\\)\nSample share of \\(j = h_j\\)\nAdjustment proportion of \\(j \\text{ is } s_j = \\frac{H_j}{h_j}\\)\nAdjusted choice probability \\(Pr(j) = \\frac{s_j \\exp(\\beta_{0,j}+\\sum \\beta x)}{\\sum_k s_k \\exp(\\beta_{0,k}+\\sum \\beta x)}\\) \\[Pr(j) = \\frac{\\exp(\\beta_{0,j}+\\sum \\beta x + \\ln(s_j))}{\\sum_k \\exp(\\beta_{0,k}+\\sum \\beta x + \\ln(s_k))} = \\frac{\\exp(\\beta_{0,j}+\\sum \\beta x + \\ln(H_j/h_j))}{\\sum_k \\exp(\\beta_{0,k}+\\sum \\beta x + \\ln(H_k/h_k))}\\] \\[\\text{Updated } \\beta_{0,j} = (\\beta_{0,j})_{estimated} + ln(H_j/h_j)\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-5.html#further-topics-among-many-others",
@@ -1196,7 +1196,7 @@
     "href": "teaching/ENCI707/slides/lec-3.html#discrete-choice-1",
     "title": "Lecture 3 - Disaggregate Econometric Choice Theory",
     "section": "Discrete Choice",
-    "text": "Discrete Choice\nCar is the dominant alternative, if \\[𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟} &lt; 𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} \\text{ & } 𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} &lt; 𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} \\therefore 𝑈_{𝑐𝑎𝑟} &gt; 𝑈_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}\\]\nCar and transit in competition, if \\[𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟} &lt; 𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} \\text{ & } 𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} &gt; 𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}\\]\nIs the traveler willing to pay extra \\((Cost_{car}-Cost_{transit})\\) to save \\((Time_{transit} -Time_{car})\\)?\nIf yes (pick car): \\(\\left(\\frac{\\beta_𝑡}{\\beta_𝑐}\\right)𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟} + 𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} \\leq \\left(\\frac{\\beta_𝑡}{\\beta_𝑐}\\right)𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} + 𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}\\)\nWillingness-to-pay or Value of Travel Time Savings (VOTS): \\[\\left(\\frac{\\beta_𝑡}{\\beta_𝑐}\\right) \\geq \\frac{(𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟}−𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡})}{(𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}−𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟})}\\]"
+    "text": "Discrete Choice\nCar is the dominant alternative, if \\[𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟} &lt; 𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} \\text{ & } 𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} &lt; 𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} \\therefore 𝑈_{𝑐𝑎𝑟} &gt; 𝑈_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}\\]\nCar and transit in competition, if \\[𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟} &lt; 𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} \\text{ & } 𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} &gt; 𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}\\]\nIs the traveler willing to pay extra \\((Cost_{car}-Cost_{transit})\\) to save \\((Time_{transit} -Time_{car})\\)?\nIf yes (pick car): \\(\\left(\\frac{\\beta_𝑡}{\\beta_𝑐}\\right)𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟} + 𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} \\leq \\left(\\frac{\\beta_𝑡}{\\beta_𝑐}\\right)𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} + 𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}\\)\nWillingness-to-pay or Value of Travel Time (VTT): \\[\\left(\\frac{\\beta_𝑡}{\\beta_𝑐}\\right) \\geq \\frac{(𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟}−𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡})}{(𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}−𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟})}\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-3.html#discrete-choice-2",
@@ -7028,7 +7028,7 @@
     "href": "teaching/ENCI707/slides/lec-4.html#goodness-of-fit",
     "title": "Lecture 4 - Multinomial Logit",
     "section": "Goodness-of-Fit",
-    "text": "Goodness-of-Fit\nModel goodness-of-fit is measured by \\(\\rho^2\\) value\n \n\n\\(k\\) = difference in total number of parameters between two models \\[\\rho_0^2 = \\frac{LL(\\beta) - LL(0)}{LL(*) - LL(0)} = 1 - \\frac{LL(\\beta)}{LL(0)} \\text{; } adj-\\rho_0^2 = 1 - \\frac{LL(\\beta) - k}{LL(0)}\\]\n\n\\[\\rho_C^2 = \\frac{LL(\\beta) - LL(C)}{LL(*) - LL(C)} = 1 - \\frac{LL(\\beta)}{LL(C)} \\text{; } adj-\\rho_C^2 = 1 - \\frac{LL(\\beta) - k}{LL(C)}\\]\n\nAdjusted \\(\\rho^2\\) value in range 0.3 to 0.5 is considered reasonable (but depends on model)\nAlternative: Comparing predicted vs. observed shares"
+    "text": "Goodness-of-Fit\nModel goodness-of-fit is measured by \\(\\rho^2\\) value\n \n\n\\(k\\) = difference in total number of parameters between two models \\[\\rho_0^2 = \\frac{LL(\\beta) - LL(0)}{LL(*) - LL(0)} = 1 - \\frac{LL(\\beta)}{LL(0)} \\text{; } adj-\\rho_0^2 = 1 - \\frac{LL(\\beta) - k}{LL(0)}\\] \\[\\rho_C^2 = \\frac{LL(\\beta) - LL(C)}{LL(*) - LL(C)} = 1 - \\frac{LL(\\beta)}{LL(C)} \\text{; } adj-\\rho_C^2 = 1 - \\frac{LL(\\beta) - k}{LL(C)}\\]\nAdjusted \\(\\rho^2\\) value in range 0.3 to 0.5 is considered reasonable (but depends on model)\nAlternative: Comparing predicted vs. observed shares"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-4.html#goodness-of-fit-1",
@@ -7056,7 +7056,7 @@
     "href": "teaching/ENCI707/slides/lec-4.html#specification-tests",
     "title": "Lecture 4 - Multinomial Logit",
     "section": "Specification Tests",
-    "text": "Specification Tests\n\nExpected signs of the coefficients\nExpected substitution patterns - e.g., value of time savings, etc.\nLikelihood ratio test for (\\(\\times\\)-2 by Wilks Theorem):\\(-2[LL(\\beta')-LL(\\beta)]\\) is \\(\\chi^2\\) distributed with \\(k\\) (= number of restricted parameters = the difference between number of parameters of two models) degrees of freedom and \\(\\beta'\\) being the restricted model\nGoodness-of-Fit measures: \\(\\rho^2\\), AIC, BIC"
+    "text": "Specification Tests\n\nExpected signs of the coefficients\nExpected substitution patterns - e.g., value of time, etc.\nLikelihood ratio test for (\\(\\times\\)-2 by Wilks Theorem):\\(-2[LL(\\beta')-LL(\\beta)]\\) is \\(\\chi^2\\) distributed with \\(k\\) (= number of restricted parameters = the difference between number of parameters of two models) degrees of freedom and \\(\\beta'\\) being the restricted model\nGoodness-of-Fit measures: \\(\\rho^2\\), AIC, BIC"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-4.html#specification-of-logit-model",

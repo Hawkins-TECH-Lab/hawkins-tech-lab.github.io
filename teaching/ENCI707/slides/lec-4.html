@@ -313,12 +313,9 @@ Now for the probability of choosing alternative <span class="math inline">\(j\)<
 <p>Model goodness-of-fit is measured by <span class="math inline">\(\rho^2\)</span> value</p>
 <p><img data-src="../../../assets/images/teaching/ENCI707/Lecture5/gof_LL.svg" class="absolute" style="top: 150px; left: 0px; "> <br><br><br><br><br></p>
 <ul>
-<li><span class="math inline">\(k\)</span> = difference in total number of parameters between two models <span class="math display">\[\rho_0^2 = \frac{LL(\beta) - LL(0)}{LL(*) - LL(0)} = 1 - \frac{LL(\beta)}{LL(0)} \text{; } adj-\rho_0^2 = 1 - \frac{LL(\beta) - k}{LL(0)}\]</span></li>
-</ul>
-<p><span class="math display">\[\rho_C^2 = \frac{LL(\beta) - LL(C)}{LL(*) - LL(C)} = 1 - \frac{LL(\beta)}{LL(C)} \text{; } adj-\rho_C^2 = 1 - \frac{LL(\beta) - k}{LL(C)}\]</span></p>
-<ul>
-<li>Adjusted <span class="math inline">\(\rho^2\)</span> value in range 0.3 to 0.5 is considered reasonable (<em>but depends on model</em>)</li>
-<li><strong>Alternative:</strong> Comparing predicted vs.&nbsp;observed shares</li>
+<li><p><span class="math inline">\(k\)</span> = difference in total number of parameters between two models <span class="math display">\[\rho_0^2 = \frac{LL(\beta) - LL(0)}{LL(*) - LL(0)} = 1 - \frac{LL(\beta)}{LL(0)} \text{; } adj-\rho_0^2 = 1 - \frac{LL(\beta) - k}{LL(0)}\]</span> <span class="math display">\[\rho_C^2 = \frac{LL(\beta) - LL(C)}{LL(*) - LL(C)} = 1 - \frac{LL(\beta)}{LL(C)} \text{; } adj-\rho_C^2 = 1 - \frac{LL(\beta) - k}{LL(C)}\]</span></p></li>
+<li><p>Adjusted <span class="math inline">\(\rho^2\)</span> value in range 0.3 to 0.5 is considered reasonable (<em>but depends on model</em>)</p></li>
+<li><p><strong>Alternative:</strong> Comparing predicted vs.&nbsp;observed shares</p></li>
 </ul>
 </section>
 <section id="goodness-of-fit-1" class="slide level2 smaller">
@@ -406,7 +403,7 @@ Now for the probability of choosing alternative <span class="math inline">\(j\)<
 <h2>Specification Tests</h2>
 <ul>
 <li>Expected signs of the coefficients</li>
-<li>Expected substitution patterns - e.g., value of time savings, etc.</li>
+<li>Expected substitution patterns - e.g., value of time, etc.</li>
 <li>Likelihood ratio test for (<span class="math inline">\(\times\)</span>-2 by Wilks Theorem):<span class="math inline">\(-2[LL(\beta')-LL(\beta)]\)</span> is <span class="math inline">\(\chi^2\)</span> distributed with <span class="math inline">\(k\)</span> (= number of restricted parameters = the difference between number of parameters of two models) degrees of freedom and <span class="math inline">\(\beta'\)</span> being the restricted model</li>
 <li>Goodness-of-Fit measures: <span class="math inline">\(\rho^2\)</span>, AIC, BIC</li>
 </ul>
