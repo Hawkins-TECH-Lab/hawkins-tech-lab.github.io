@@ -7528,18 +7528,74 @@
     "text": "How to derive AVC matrix?\n\nSimulate it considering a design and prior parameters\n\nFor large sample of virtual respondents, compute observed utilities for all alternatives and add random terms, then assume each respondent chooses the alternative with highest utility\n\nAnalytical solution considering \\(X,\\beta\\)\n\nDetermine log-likelihood of choice function \\[L_N(\\beta|X,y)=\\sum_{n=1}^N\\sum_{s=1}^S\\sum_{j=1}^J y_{jsn} log(P_{jsn}(X|\\beta)\\]\nDetermine Fischer information matrix (Hessian of second derivatives of LL \\[I_N(\\beta|X,y)=\\frac{\\partial^2L_N(\\beta|X,y)}{\\partial \\beta \\partial \\beta'}\\]\nAVC = negative inverse of Fisher information matrix \\[\\Omega_N(\\beta|X,y)=-I_N^{-1}(\\beta|X,y)\\]"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-6.html#forms-of-efficient-design",
-    "href": "teaching/ENCI707/slides/lec-6.html#forms-of-efficient-design",
-    "title": "Lecture 6 - Stated Preference Methods",
-    "section": "Forms of Efficient Design",
-    "text": "Forms of Efficient Design\n\nD-efficient named for use of scaled (by 1/K to account for number of parameters) matrix determinant\nS-efficient named for use of sample size provide theoretically minimum sample size to obtain asymptotically significant parameter estimates"
-  },
-  {
     "objectID": "teaching/ENCI707/slides/lec-6.html#efficient-design-2",
     "href": "teaching/ENCI707/slides/lec-6.html#efficient-design-2",
     "title": "Lecture 6 - Stated Preference Methods",
     "section": "Efficient Design",
+    "text": "Efficient Design\n\nAVC matrix \\[\\Omega_N(\\beta|X,y) = -I_N^{-1}(\\beta|X,y)\\]\n\nDepends on the design, \\(X\\)\nDepends on the choice observations, \\(y\\)\nDepends on the parameters, \\(\\beta\\)\n\nProblems\n\nAVC matrix depends on unknown \\(y\\) (turns out to be independent of outcomes \\(y\\))\nAVC matrix depends on unkown \\(\\beta\\) (use prior knowledge to make “best guess’’)"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-6.html#efficient-design-3",
+    "href": "teaching/ENCI707/slides/lec-6.html#efficient-design-3",
+    "title": "Lecture 6 - Stated Preference Methods",
+    "section": "Efficient Design",
+    "text": "Efficient Design\n\nAVC depends on number of respondents \\[\\Omega_N(\\beta|X) = \\frac{1}{N} \\Omega_1(\\beta|X)\\] \\[se_N(\\beta|X)=\\frac{1}{\\sqrt{N}}se_1(\\beta|X)\\]"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-6.html#efficient-design-4",
+    "href": "teaching/ENCI707/slides/lec-6.html#efficient-design-4",
+    "title": "Lecture 6 - Stated Preference Methods",
+    "section": "Efficient Design",
+    "text": "Efficient Design"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-6.html#efficient-design-5",
+    "href": "teaching/ENCI707/slides/lec-6.html#efficient-design-5",
+    "title": "Lecture 6 - Stated Preference Methods",
+    "section": "Efficient Design",
     "text": "Efficient Design\n\nFisher information matrix for N respondents given by \\(\\mathbf{𝑰}_𝑁(\\theta)\\) \\[\\mathbf{𝑰}_𝑁 (\\theta)=N\\mathbf{𝑰}_1 (\\theta)\\] Then \\[\\mathbf{𝑺}_𝑁^2=(\\mathbf{𝑰}_𝑛 (𝜃))^{−1}=1/𝑁 \\mathbf{𝑺}_1^2\\] And \\[𝑠𝑒_𝑁 (\\theta)=\\frac{𝑠𝑒_1 (\\theta)}{\\sqrt{N}}\\]\nStandard errors exhibit diminishing marginal returns for increasing sample size"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-6.html#forms-of-efficient-design",
+    "href": "teaching/ENCI707/slides/lec-6.html#forms-of-efficient-design",
+    "title": "Lecture 6 - Stated Preference Methods",
+    "section": "Forms of Efficient Design",
+    "text": "Forms of Efficient Design\n\nD-efficient named for use of scaled (by 1/K to account for number of parameters) matrix determinant\nA-efficient named for use of average variance of the parameter estimates compared to an ideal orthogonal design\nS-efficient named for use of sample size to provide theoretically minimum sample size to obtain asymptotically significant parameter estimates"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-6.html#measuring-efficiency",
+    "href": "teaching/ENCI707/slides/lec-6.html#measuring-efficiency",
+    "title": "Lecture 6 - Stated Preference Methods",
+    "section": "Measuring Efficiency",
+    "text": "Measuring Efficiency\nWhat in the AVC matters most?\n\n\nDesign 1\n\n\n\n\nSet\nA1\nA2\nB1\nB2\n\n\n\n\n1\n2\n1\n2\n1\n\n\n2\n4\n3\n6\n2\n\n\n3\n6\n5\n4\n3\n\n\n4\n2\n5\n4\n1\n\n\n5\n4\n3\n2\n2\n\n\n6\n6\n1\n6\n3\n\n\n\n\\[\n\\Omega_1=\n\\begin{bmatrix}\n8.76 & 0.69 & -0.78 & 2.91\\\\\n0.69 & 0.38 & 0.02 & 0.39\\\\\n-0.78 & 0.02 & 0.30 & 0.07\\\\\n2.91 & 0.39 & 0.07 & 1.61\n\\end{bmatrix}\n\\]\n\n\nDesign 2\n\n\n\n\nSet\nA1\nA2\nB1\nB2\n\n\n\n\n1\n6\n3\n2\n2\n\n\n2\n4\n1\n6\n1\n\n\n3\n2\n5\n4\n3\n\n\n4\n2\n5\n4\n1\n\n\n5\n6\n1\n2\n2\n\n\n6\n4\n3\n6\n3\n\n\n\n\\[\n\\Omega_1=\n\\begin{bmatrix}\n6.97 & -0.22 & -0.77 & 1.92\\\\\n-0.22 & 0.13 & 0.12 & 0.06\\\\\n-0.77 & 0.12 & 0.39 & 0.21\\\\\n1.92 & 0.06 & 0.21 & 1.27\n\\end{bmatrix}\n\\]"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-6.html#measuring-efficiency-da",
+    "href": "teaching/ENCI707/slides/lec-6.html#measuring-efficiency-da",
+    "title": "Lecture 6 - Stated Preference Methods",
+    "section": "Measuring Efficiency (D/A)",
+    "text": "Measuring Efficiency (D/A)\n\nD-error \\(= det(\\Omega_1)^{1/K}\\)\nA-error \\(= trace(\\Omega_1)/K\\)\n\\(K\\) is the number of parameters (dimension of AVC matrix)\nLower value = more efficient design\nDesign 1: D-error = 0.568 and A-error = 2.761\nDesign 2: D-error = 0.434 and A-error = 2.194\nStandard errors for ASCs typically large - some suggest omitting from the efficiency measures"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-6.html#measuring-efficiency-s",
+    "href": "teaching/ENCI707/slides/lec-6.html#measuring-efficiency-s",
+    "title": "Lecture 6 - Stated Preference Methods",
+    "section": "Measuring Efficiency (S)",
+    "text": "Measuring Efficiency (S)\n\nS-error = (asymptotic) t-ratios for each parameter\nExtracts the (theoretical) minimum sample size needed for all parameters to be statistically significant\n\n\n\nGiven:\n\\[\n\\beta_1=-0.2, \\quad \\beta_2=0.3\n\\]\n\\[\n\\beta_3=0.4, \\quad \\beta_4=0.5\n\\]\n\\[\n\\Omega_1 = \\text{same as before}\n\\]\n\\[\nt_N(\\beta|X) = \\frac{\\beta}{se_N(\\beta|X)}\n\\]\n\\[\n\\Omega_N(\\beta|X) = \\frac{1}{N}\\Omega_1(\\beta|X)\n\\]\n\nS-estimate = 842 (incl. constants)\nS-estimate = 17 (excl. constants)\n\n\n\\(N=1\\)\n\\[\nt_1(\\beta_1) = \\frac{-0.2}{\\sqrt{8.76}} = -0.068\n\\]\n\\[\nt_1(\\beta_2) = \\frac{0.3}{\\sqrt{0.38}} = 0.487\n\\]\n\\[\nt_1(\\beta_3) = \\frac{0.4}{\\sqrt{0.30}} = 0.730\n\\]\n\\[\nt_1(\\beta_4) = \\frac{0.5}{\\sqrt{0.07}} = 1.890\n\\]\n\nRequired sample size (\\(t=2\\))\n\\[\nt_{842}(\\beta_1) = \\frac{-0.2}{\\sqrt{8.76/842}} = -1.961\n\\]\n\\[\nt_{17}(\\beta_2) = \\frac{0.3}{\\sqrt{0.38/17}} = 2.007\n\\]\n\\[\nt_{8}(\\beta_3) = \\frac{0.4}{\\sqrt{0.30/8}} = 2.066\n\\]\n\\[\nt_{2}(\\beta_4) = \\frac{0.5}{\\sqrt{0.07/2}} = 2.673\n\\]"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-6.html#priors",
+    "href": "teaching/ENCI707/slides/lec-6.html#priors",
+    "title": "Lecture 6 - Stated Preference Methods",
+    "section": "Priors",
+    "text": "Priors\n\nWhere to get priors from?\n\nPilot study\nFocus group\nLiterature\nExpert judgement\n\nWhat if no priors are available?\n\nCreate an orthogonal design/efficient design with 0 priors\nGive it to 10% of respondents\nEstimate parameters\nCreate efficient design\nGive it to remaining 90% of respondents"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-6.html#bayesian-efficient-design",
+    "href": "teaching/ENCI707/slides/lec-6.html#bayesian-efficient-design",
+    "title": "Lecture 6 - Stated Preference Methods",
+    "section": "Bayesian Efficient Design",
+    "text": "Bayesian Efficient Design\n\nWang et al. (2017) found d-efficient design can lead to low efficiency if priors incorrectly specified\nBayesian efficient design assumes prior parameters only approximately known (according to a distribution)\nBayesian efficient design less ‘optimal’ but more robust to misspecification\nEach efficiency measure has a corresponding Bayesian version \\[\\text{Bayesian D-error} = \\int_{\\beta} det(\\Omega(\\beta|X))^{1/K}f(\\beta|\\mu,\\sigma^2)d\\beta\\]\nDifficult to compute but can approximate via simulation"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#sp-pivoted-off-rp",

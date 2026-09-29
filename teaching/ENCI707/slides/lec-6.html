@@ -921,18 +921,288 @@ class A,B,C,D box;
 </ul></li>
 </ul>
 </section>
-<section id="forms-of-efficient-design" class="slide level2">
-<h2>Forms of Efficient Design</h2>
+<section id="efficient-design-2" class="slide level2 smaller">
+<h2>Efficient Design</h2>
 <ul>
-<li><strong>D-efficient</strong> named for use of scaled (by 1/K to account for number of parameters) matrix determinant</li>
-<li><strong>S-efficient</strong> named for use of sample size provide theoretically minimum sample size to obtain asymptotically significant parameter estimates</li>
+<li>AVC matrix <span class="math display">\[\Omega_N(\beta|X,y) = -I_N^{-1}(\beta|X,y)\]</span>
+<ul>
+<li>Depends on the design, <span class="math inline">\(X\)</span></li>
+<li>Depends on the choice observations, <span class="math inline">\(y\)</span></li>
+<li>Depends on the parameters, <span class="math inline">\(\beta\)</span></li>
+</ul></li>
+<li>Problems
+<ul>
+<li>AVC matrix depends on unknown <span class="math inline">\(y\)</span> (turns out to be independent of outcomes <span class="math inline">\(y\)</span>)</li>
+<li>AVC matrix depends on unkown <span class="math inline">\(\beta\)</span> (use prior knowledge to make “best guess’’)</li>
+</ul></li>
 </ul>
 </section>
-<section id="efficient-design-2" class="slide level2 smaller">
+<section id="efficient-design-3" class="slide level2 smaller">
+<h2>Efficient Design</h2>
+<ul>
+<li>AVC depends on number of respondents <span class="math display">\[\Omega_N(\beta|X) = \frac{1}{N} \Omega_1(\beta|X)\]</span> <span class="math display">\[se_N(\beta|X)=\frac{1}{\sqrt{N}}se_1(\beta|X)\]</span></li>
+</ul>
+
+<img data-src="../../../assets/images/teaching/ENCI707/Lecture6/se_fig.png" style="width:100.0%" class="r-stretch"></section>
+<section id="efficient-design-4" class="slide level2 smaller">
+<h2>Efficient Design</h2>
+
+<img data-src="../../../assets/images/teaching/ENCI707/Lecture6/se_sample_design.png" style="width:100.0%" class="r-stretch"></section>
+<section id="efficient-design-5" class="slide level2 smaller">
 <h2>Efficient Design</h2>
 <ul>
 <li><strong>Fisher information matrix</strong> for N respondents given by <span class="math inline">\(\mathbf{𝑰}_𝑁(\theta)\)</span> <span class="math display">\[\mathbf{𝑰}_𝑁 (\theta)=N\mathbf{𝑰}_1 (\theta)\]</span> Then <span class="math display">\[\mathbf{𝑺}_𝑁^2=(\mathbf{𝑰}_𝑛 (𝜃))^{−1}=1/𝑁 \mathbf{𝑺}_1^2\]</span> And <span class="math display">\[𝑠𝑒_𝑁 (\theta)=\frac{𝑠𝑒_1 (\theta)}{\sqrt{N}}\]</span></li>
 <li>Standard errors exhibit diminishing marginal returns for increasing sample size</li>
+</ul>
+</section>
+<section id="forms-of-efficient-design" class="slide level2">
+<h2>Forms of Efficient Design</h2>
+<ul>
+<li><strong>D-efficient</strong> named for use of scaled (by 1/K to account for number of parameters) matrix determinant</li>
+<li><strong>A-efficient</strong> named for use of average variance of the parameter estimates compared to an ideal orthogonal design</li>
+<li><strong>S-efficient</strong> named for use of sample size to provide theoretically minimum sample size to obtain asymptotically significant parameter estimates</li>
+</ul>
+</section>
+<section id="measuring-efficiency" class="slide level2 smaller">
+<h2>Measuring Efficiency</h2>
+<p>What in the AVC matters most?</p>
+<div class="columns" style="font-size: 0.75em;">
+<div class="column" style="width:48%;">
+<h4 id="design-1">Design 1</h4>
+<div data-align="center">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Set</th>
+<th>A1</th>
+<th>A2</th>
+<th>B1</th>
+<th>B2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>4</td>
+<td>3</td>
+<td>6</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>6</td>
+<td>5</td>
+<td>4</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>2</td>
+<td>5</td>
+<td>4</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>4</td>
+<td>3</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>6</td>
+<td>1</td>
+<td>6</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<p><span class="math display">\[
+\Omega_1=
+\begin{bmatrix}
+8.76 &amp; 0.69 &amp; -0.78 &amp; 2.91\\
+0.69 &amp; 0.38 &amp; 0.02 &amp; 0.39\\
+-0.78 &amp; 0.02 &amp; 0.30 &amp; 0.07\\
+2.91 &amp; 0.39 &amp; 0.07 &amp; 1.61
+\end{bmatrix}
+\]</span></p>
+</div>
+</div><div class="column" style="width:48%;">
+<h4 id="design-2">Design 2</h4>
+<div data-align="center">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Set</th>
+<th>A1</th>
+<th>A2</th>
+<th>B1</th>
+<th>B2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>6</td>
+<td>3</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>4</td>
+<td>1</td>
+<td>6</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>2</td>
+<td>5</td>
+<td>4</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>2</td>
+<td>5</td>
+<td>4</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>6</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>4</td>
+<td>3</td>
+<td>6</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<p><span class="math display">\[
+\Omega_1=
+\begin{bmatrix}
+6.97 &amp; -0.22 &amp; -0.77 &amp; 1.92\\
+-0.22 &amp; 0.13 &amp; 0.12 &amp; 0.06\\
+-0.77 &amp; 0.12 &amp; 0.39 &amp; 0.21\\
+1.92 &amp; 0.06 &amp; 0.21 &amp; 1.27
+\end{bmatrix}
+\]</span></p>
+</div>
+</div></div>
+</section>
+<section id="measuring-efficiency-da" class="slide level2 smaller">
+<h2>Measuring Efficiency (D/A)</h2>
+<ul>
+<li>D-error <span class="math inline">\(= det(\Omega_1)^{1/K}\)</span></li>
+<li>A-error <span class="math inline">\(= trace(\Omega_1)/K\)</span></li>
+<li><span class="math inline">\(K\)</span> is the number of parameters (dimension of AVC matrix)</li>
+<li>Lower value = more efficient design</li>
+<li>Design 1: D-error = 0.568 and A-error = 2.761</li>
+<li>Design 2: D-error = 0.434 and A-error = 2.194</li>
+<li>Standard errors for ASCs typically large - some suggest omitting from the efficiency measures</li>
+</ul>
+</section>
+<section id="measuring-efficiency-s" class="slide level2 smaller">
+<h2>Measuring Efficiency (S)</h2>
+<ul>
+<li>S-error = (asymptotic) t-ratios for each parameter</li>
+<li>Extracts the (theoretical) minimum sample size needed for all parameters to be statistically significant</li>
+</ul>
+<div class="columns" style="font-size: 0.75em;">
+<div class="column" style="width:32%;">
+<p>Given:</p>
+<p><span class="math display">\[
+\beta_1=-0.2, \quad \beta_2=0.3
+\]</span></p>
+<p><span class="math display">\[
+\beta_3=0.4, \quad \beta_4=0.5
+\]</span></p>
+<p><span class="math display">\[
+\Omega_1 = \text{same as before}
+\]</span></p>
+<p><span class="math display">\[
+t_N(\beta|X) = \frac{\beta}{se_N(\beta|X)}
+\]</span></p>
+<p><span class="math display">\[
+\Omega_N(\beta|X) = \frac{1}{N}\Omega_1(\beta|X)
+\]</span></p>
+<div style="margin-top: 0.8em;">
+<p><strong>S-estimate = 842</strong> (incl.&nbsp;constants)</p>
+<p><strong>S-estimate = 17</strong> (excl. constants)</p>
+</div>
+</div><div class="column" style="width:34%;">
+<h4 id="n1"><span class="math inline">\(N=1\)</span></h4>
+<p><span class="math display">\[
+t_1(\beta_1) = \frac{-0.2}{\sqrt{8.76}} = -0.068
+\]</span></p>
+<p><span class="math display">\[
+t_1(\beta_2) = \frac{0.3}{\sqrt{0.38}} = 0.487
+\]</span></p>
+<p><span class="math display">\[
+t_1(\beta_3) = \frac{0.4}{\sqrt{0.30}} = 0.730
+\]</span></p>
+<p><span class="math display">\[
+t_1(\beta_4) = \frac{0.5}{\sqrt{0.07}} = 1.890
+\]</span></p>
+</div><div class="column" style="width:34%;">
+<h4 id="required-sample-size-t2">Required sample size (<span class="math inline">\(t=2\)</span>)</h4>
+<p><span class="math display">\[
+t_{842}(\beta_1) = \frac{-0.2}{\sqrt{8.76/842}} = -1.961
+\]</span></p>
+<p><span class="math display">\[
+t_{17}(\beta_2) = \frac{0.3}{\sqrt{0.38/17}} = 2.007
+\]</span></p>
+<p><span class="math display">\[
+t_{8}(\beta_3) = \frac{0.4}{\sqrt{0.30/8}} = 2.066
+\]</span></p>
+<p><span class="math display">\[
+t_{2}(\beta_4) = \frac{0.5}{\sqrt{0.07/2}} = 2.673
+\]</span></p>
+</div></div>
+</section>
+<section id="priors" class="slide level2 smaller">
+<h2>Priors</h2>
+<ul>
+<li>Where to get priors from?
+<ul>
+<li>Pilot study</li>
+<li>Focus group</li>
+<li>Literature</li>
+<li>Expert judgement</li>
+</ul></li>
+<li>What if no priors are available?
+<ul>
+<li>Create an orthogonal design/efficient design with 0 priors</li>
+<li>Give it to 10% of respondents</li>
+<li>Estimate parameters</li>
+<li>Create efficient design</li>
+<li>Give it to remaining 90% of respondents</li>
+</ul></li>
+</ul>
+</section>
+<section id="bayesian-efficient-design" class="slide level2 smaller">
+<h2>Bayesian Efficient Design</h2>
+<ul>
+<li><p>Wang et al.&nbsp;(2017) found d-efficient design can lead to low efficiency if priors incorrectly specified</p></li>
+<li><p>Bayesian efficient design assumes prior parameters only approximately known (according to a distribution)</p></li>
+<li><p>Bayesian efficient design less ‘optimal’ but more robust to misspecification</p></li>
+<li><p>Each efficiency measure has a corresponding Bayesian version <span class="math display">\[\text{Bayesian D-error} = \int_{\beta} det(\Omega(\beta|X))^{1/K}f(\beta|\mu,\sigma^2)d\beta\]</span></p></li>
+<li><p>Difficult to compute but can approximate via simulation</p></li>
 </ul>
 </section>
 <section id="sp-pivoted-off-rp" class="slide level2 smaller">
