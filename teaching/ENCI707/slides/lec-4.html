@@ -169,14 +169,14 @@
 <li><p>where <span class="math inline">\(C_i\)</span> is the <strong>choice set</strong> of decision maker <span class="math inline">\(i\)</span>, <span class="math inline">\(j\)</span> is the <strong>best alternative</strong>, and <span class="math inline">\(k\)</span> is the <strong>second best</strong> alternative</p></li>
 <li><p>Probability of choosing alternative j:</p></li>
 </ul>
-<p><span class="math display">\[Pr⁡(𝑗) = Pr⁡((𝑉_𝑗+\epsilon_𝑗) \ge (𝑉_𝑘+\epsilon_𝑘 ))\]</span> <span class="math display">\[Pr⁡( 𝑗)=Pr⁡(\epsilon_𝑘 \leq (𝑉_𝑗−𝑉_𝑘+\epsilon_𝑗 )) \text{ (a CDF function)}\]</span></p>
+<p><span class="math display">\[Pr⁡(𝑗) = Pr⁡((𝑉_𝑗+\varepsilon_𝑗) \ge (𝑉_𝑘+\varepsilon_𝑘 ))\]</span> <span class="math display">\[Pr⁡( 𝑗)=Pr⁡(\varepsilon_𝑘 \leq (𝑉_𝑗−𝑉_𝑘+\varepsilon_𝑗 )) \text{ (a CDF function)}\]</span></p>
 </section>
 <section id="discrete-multinomial-choice-1" class="slide level2 smaller">
 <h2>Discrete Multinomial Choice</h2>
-<p>A multinomial choice reduced into an equivalen Choice probability in a multinomial choice context: <span class="math display">\[Pr⁡(𝑗)=Pr⁡(\epsilon_𝑘 \leq (𝑉_𝑗−𝑉_𝑘+\epsilon_𝑗 ))\]</span></p>
-<p>Probability distribution of random utility (<span class="math inline">\(\epsilon\)</span>) needs to be fully specified to get the unconditional probability: <span class="math display">\[Pr⁡(𝑗)=\int_{\epsilon_𝑗=−\infty}^{+\infty}\int_{\epsilon_𝑘=−\infty}^{𝑉_𝑗−𝑉_𝑘+\epsilon_𝑗} 𝑓(\epsilon_𝑗,\epsilon_𝑘)𝑑 \epsilon_𝑗 𝑑 \epsilon_𝑘\]</span></p>
+<p>A multinomial choice reduced into an equivalen Choice probability in a multinomial choice context: <span class="math display">\[Pr⁡(𝑗)=Pr⁡(\varepsilon_𝑘 \leq (𝑉_𝑗−𝑉_𝑘+\varepsilon_𝑗 ))\]</span></p>
+<p>Probability distribution of random utility (<span class="math inline">\(\varepsilon\)</span>) needs to be fully specified to get the unconditional probability: <span class="math display">\[Pr⁡(𝑗)=\int_{\varepsilon_𝑗=−\infty}^{+\infty}\int_{\varepsilon_𝑘=−\infty}^{𝑉_𝑗−𝑉_𝑘+\varepsilon_𝑗} 𝑓(\varepsilon_𝑗,\varepsilon_𝑘)𝑑 \varepsilon_𝑗 𝑑 \varepsilon_𝑘\]</span></p>
 <ul>
-<li>Specification of univariate distribution, <span class="math inline">\(f(\epsilon_k)\)</span> , and the joint distribution, <span class="math inline">\(f(\epsilon_j,\epsilon_k)\)</span>, are necessary</li>
+<li>Specification of univariate distribution, <span class="math inline">\(f(\varepsilon_k)\)</span> , and the joint distribution, <span class="math inline">\(f(\varepsilon_j,\varepsilon_k)\)</span>, are necessary</li>
 <li>Possible distributions:
 <ul>
 <li>Multivariate normal distribution</li>
@@ -189,7 +189,7 @@
 <ul>
 <li>Type I (<strong>Gumbel</strong>) distribution is the most convenient distribution to derive a closed form choice model
 <ul>
-<li>If is Type I Extreme Value (Gumbel) distributed: <span class="math display">\[𝑓(\epsilon)=\mu 𝑒^{−\mu(\epsilon−\eta)} 𝑒^{−𝑒^{−\mu(\epsilon−\eta)}}\]</span> <span class="math display">\[F = e^{-e^{-\mu(\epsilon-\eta)}} \text{; } \mu &gt; 0\]</span></li>
+<li>If is Type I Extreme Value (Gumbel) distributed: <span class="math display">\[𝑓(\varepsilon)=\mu 𝑒^{−\mu(\varepsilon−\eta)} 𝑒^{−𝑒^{−\mu(\varepsilon−\eta)}}\]</span> <span class="math display">\[F = e^{-e^{-\mu(\varepsilon-\eta)}} \text{; } \mu &gt; 0\]</span></li>
 </ul></li>
 <li><span class="math inline">\(\eta\)</span> is a <strong>location parameter</strong> and <span class="math inline">\(\mu\)</span> is a <strong>positive scale parameter</strong></li>
 <li>Location parameter is <strong>mode</strong> of distribution</li>
@@ -206,16 +206,16 @@
 <li>The <strong>mode</strong> of the distribution is <span class="math inline">\(\eta\)</span> (the location of peak of the PDF on x axis from zero).</li>
 <li>The <strong>mean</strong> is (<span class="math inline">\(\eta+\gamma/\mu\)</span>), where <span class="math inline">\(\gamma\)</span> = Euler’s constant=0.577.</li>
 <li>The <strong>variance</strong> is <span class="math inline">\(\pi^2/6\mu^2\)</span>.</li>
-<li>If <span class="math inline">\(\epsilon\)</span> is Gumbel distributed with (<span class="math inline">\(\eta, \mu\)</span>), and if <span class="math inline">\(\alpha\)</span> is any positive scalar constant, then (<span class="math inline">\(\alpha \epsilon + V\)</span>) is also Gumbel distributed with parameters (<span class="math inline">\(\alpha \eta +V\)</span>) and <span class="math inline">\(\mu/\alpha\)</span>.</li>
-<li>If <span class="math inline">\(\epsilon_1\)</span> and <span class="math inline">\(\epsilon_2\)</span> are independent Gumbel variables, then (<span class="math inline">\(\epsilon_1-\epsilon_2\)</span>) is <strong>logistically distributed</strong>.</li>
-<li>If <span class="math inline">\(\epsilon_1\)</span> and <span class="math inline">\(\epsilon_2\)</span> are <strong>Identical and Independent Gumbel variables</strong> with parameters (<span class="math inline">\(\eta_1,\mu\)</span>) and (<span class="math inline">\(\eta_2,\mu\)</span>), respectively, then <span class="math inline">\(\max(\epsilon_1,\epsilon_2)\)</span> is also Gumbel distributed with parameters:<br>
+<li>If <span class="math inline">\(\varepsilon\)</span> is Gumbel distributed with (<span class="math inline">\(\eta, \mu\)</span>), and if <span class="math inline">\(\alpha\)</span> is any positive scalar constant, then (<span class="math inline">\(\alpha \varepsilon + V\)</span>) is also Gumbel distributed with parameters (<span class="math inline">\(\alpha \eta +V\)</span>) and <span class="math inline">\(\mu/\alpha\)</span>.</li>
+<li>If <span class="math inline">\(\varepsilon_1\)</span> and <span class="math inline">\(\varepsilon_2\)</span> are independent Gumbel variables, then (<span class="math inline">\(\varepsilon_1-\varepsilon_2\)</span>) is <strong>logistically distributed</strong>.</li>
+<li>If <span class="math inline">\(\varepsilon_1\)</span> and <span class="math inline">\(\varepsilon_2\)</span> are <strong>Identical and Independent Gumbel variables</strong> with parameters (<span class="math inline">\(\eta_1,\mu\)</span>) and (<span class="math inline">\(\eta_2,\mu\)</span>), respectively, then <span class="math inline">\(\max(\varepsilon_1,\varepsilon_2)\)</span> is also Gumbel distributed with parameters:<br>
 <span class="math display">\[\left(\frac{1}{\mu} \ln⁡(𝑒^{\mu\eta_1}+𝑒^{\mu\eta_2 } ),\mu \right)\]</span></li>
 </ol>
 </section>
 <section id="basic-properties-of-gumbel-distribution-1" class="slide level2 smaller">
 <h2>Basic Properties of Gumbel distribution</h2>
 <ol start="7" type="1">
-<li>If <span class="math inline">\(( \epsilon_1,\epsilon_2,\epsilon_3,\dots ,\epsilon_n )\)</span> are <span class="math inline">\(n\)</span> independent Gumbel distributed variables with parameters (<span class="math inline">\(\eta_1,\mu), (\eta_2,\mu),\dots (\eta_n,\mu)\)</span> respectively then <span class="math inline">\(\max(\epsilon_1,\epsilon_2,\epsilon_3,\dots,\epsilon_n)\)</span> is also Gumbel distributed with parameters (mean, scale): <span class="math display">\[\left(\frac{1}{\mu} \ln⁡\sum_{𝑗=1}^𝑛 𝑒^{\mu \eta_𝑗}, \mu \right)\]</span></li>
+<li>If <span class="math inline">\(( \varepsilon_1,\varepsilon_2,\varepsilon_3,\dots ,\varepsilon_n )\)</span> are <span class="math inline">\(n\)</span> independent Gumbel distributed variables with parameters (<span class="math inline">\(\eta_1,\mu), (\eta_2,\mu),\dots (\eta_n,\mu)\)</span> respectively then <span class="math inline">\(\max(\varepsilon_1,\varepsilon_2,\varepsilon_3,\dots,\varepsilon_n)\)</span> is also Gumbel distributed with parameters (mean, scale): <span class="math display">\[\left(\frac{1}{\mu} \ln⁡\sum_{𝑗=1}^𝑛 𝑒^{\mu \eta_𝑗}, \mu \right)\]</span></li>
 </ol>
 <p><strong>Notes:</strong></p>
 <ul>
@@ -232,16 +232,16 @@
 <section id="multinomial-logit-model-mnl" class="slide level2 smaller">
 <h2>Multinomial Logit Model (MNL)</h2>
 <ul>
-<li>In case of a multinomial choice situation: Assume random utility (<span class="math inline">\(\epsilon\)</span>) is Gumbel distributed with <span class="math inline">\(\eta = 0\)</span> location parameter and a common scale, <span class="math inline">\(\mu\)</span>.</li>
-<li>Assume that the utility of the second-best alternative is <span class="math inline">\(U^*\)</span>, which is the <strong>maximum of all other alternatives except alternative <span class="math inline">\(j\)</span></strong>, the best one. <span class="math display">\[𝑈^∗=\max_{k \neq j \text{ &amp; } 𝑗,𝑘 \in 𝐶_𝑖} (𝑉_𝑘+\epsilon_𝑘 )\]</span></li>
+<li>In case of a multinomial choice situation: Assume random utility (<span class="math inline">\(\varepsilon\)</span>) is Gumbel distributed with <span class="math inline">\(\eta = 0\)</span> location parameter and a common scale, <span class="math inline">\(\mu\)</span>.</li>
+<li>Assume that the utility of the second-best alternative is <span class="math inline">\(U^*\)</span>, which is the <strong>maximum of all other alternatives except alternative <span class="math inline">\(j\)</span></strong>, the best one. <span class="math display">\[𝑈^∗=\max_{k \neq j \text{ &amp; } 𝑗,𝑘 \in 𝐶_𝑖} (𝑉_𝑘+\varepsilon_𝑘 )\]</span></li>
 <li>According to Property 7, <span class="math inline">\(U^*\)</span> is also Gumbel distributed with parameters (mean, scale)</li>
 </ul>
 <p><span class="math display">\[ \left( \frac{1}{\mu} \ln \sum_{k \neq j \text{ &amp; } 𝑗,𝑘 \in 𝐶_𝑖} e^{\mu V_k}, \mu \right)\]</span></p>
 </section>
 <section id="multinomial-logit-model-mnl-1" class="slide level2 smaller">
 <h2>Multinomial Logit Model (MNL)</h2>
-<p>We can write that the second-best alternative is <span class="math display">\[U^∗= V^∗+\epsilon^∗ \text{, } V^* = \frac{1}{\mu} \ln \sum_{k \neq j \text{ &amp; } 𝑗,𝑘 \in 𝐶_𝑖} e^{\mu V_k}\]</span><br>
-Now for the probability of choosing alternative <span class="math inline">\(j\)</span> (equivalent binary logit form) <span class="math display">\[Pr⁡(𝑗)=Pr⁡\left((𝑉_𝑗+\epsilon_𝑗) \ge \max_{k \neq j \text{ &amp; } 𝑗,𝑘 \in 𝐶_𝑖} (V_k + \epsilon_k)\right)\]</span> <span class="math display">\[Pr⁡(𝑗)=Pr\left((𝑉_𝑗+\epsilon_𝑗) \ge (𝑉^∗+\epsilon^∗)\right)\]</span> <span class="math display">\[Pr⁡(𝑗)=Pr⁡\left((𝑉^∗+\epsilon^∗)−(𝑉_𝑗+\epsilon_𝑗) \leq 0\right)=Pr\left((\epsilon^∗−\epsilon_𝑗) \leq(𝑉_𝑗−𝑉^∗)\right)\]</span></p>
+<p>We can write that the second-best alternative is <span class="math display">\[U^∗= V^∗+\varepsilon^∗ \text{, } V^* = \frac{1}{\mu} \ln \sum_{k \neq j \text{ &amp; } 𝑗,𝑘 \in 𝐶_𝑖} e^{\mu V_k}\]</span><br>
+Now for the probability of choosing alternative <span class="math inline">\(j\)</span> (equivalent binary logit form) <span class="math display">\[Pr⁡(𝑗)=Pr⁡\left((𝑉_𝑗+\varepsilon_𝑗) \ge \max_{k \neq j \text{ &amp; } 𝑗,𝑘 \in 𝐶_𝑖} (V_k + \varepsilon_k)\right)\]</span> <span class="math display">\[Pr⁡(𝑗)=Pr\left((𝑉_𝑗+\varepsilon_𝑗) \ge (𝑉^∗+\varepsilon^∗)\right)\]</span> <span class="math display">\[Pr⁡(𝑗)=Pr⁡\left((𝑉^∗+\varepsilon^∗)−(𝑉_𝑗+\varepsilon_𝑗) \leq 0\right)=Pr\left((\varepsilon^∗−\varepsilon_𝑗) \leq(𝑉_𝑗−𝑉^∗)\right)\]</span></p>
 </section>
 <section id="multinomial-logit-model-mnl-2" class="slide level2 smaller">
 <h2>Multinomial Logit Model (MNL)</h2>
@@ -407,7 +407,7 @@ Now for the probability of choosing alternative <span class="math inline">\(j\)<
 <ul>
 <li>Expected signs of the coefficients</li>
 <li>Expected substitution patterns - e.g., value of time savings, etc.</li>
-<li>Likelihood ratio test for (<span class="math inline">\(\times\)</span>-2 by Wilks Theorem):<span class="math inline">\(-2[LL(\beta_R)-LL(\beta_{UR})]\)</span> is <span class="math inline">\(\chi^2\)</span> distributed with <span class="math inline">\(k\)</span> (= number of restricted parameters = the difference between number of parameters of two models) degrees of freedom</li>
+<li>Likelihood ratio test for (<span class="math inline">\(\times\)</span>-2 by Wilks Theorem):<span class="math inline">\(-2[LL(\beta')-LL(\beta)]\)</span> is <span class="math inline">\(\chi^2\)</span> distributed with <span class="math inline">\(k\)</span> (= number of restricted parameters = the difference between number of parameters of two models) degrees of freedom and <span class="math inline">\(\beta'\)</span> being the restricted model</li>
 <li>Goodness-of-Fit measures: <span class="math inline">\(\rho^2\)</span>, AIC, BIC</li>
 </ul>
 </section>
@@ -548,7 +548,7 @@ Now for the probability of choosing alternative <span class="math inline">\(j\)<
 </ul>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><span class="math display">\[𝐸_{𝑥_𝑘}^𝑗=\sum_{i=1}^n \frac{Pr_i(j)}{\sum_{i=1}^n Pr_i(j)}E_{x_k}^{Pr_i(j)}\]</span></p>
+<p><span class="math display">\[𝐸_{𝑥_𝑘}^𝑗=\sum_{i=1}^n \frac{Pr_i(j)}{\sum_{i=1}^n Pr_i(j)}E_{x_k}^{ij}\]</span></p>
 </div><div class="column" style="width:50%;">
 <ul>
 <li><span class="math inline">\(i\)</span> is the individual in the sample of size n</li>
@@ -569,15 +569,15 @@ Now for the probability of choosing alternative <span class="math inline">\(j\)<
 <section id="marginalelasticity-attributes-of-choice-makerchoice-context" class="slide level2" style="font-size: 0.65em;">
 <h2>Marginal/Elasticity: Attributes of Choice Maker/Choice Context</h2>
 <ul>
-<li>Such attributes have <strong>alternative-specific coefficients</strong>: For example, consider income of choice maker <span class="math display">\[\frac{\partial Pr(j)}{\partial Inc_{ij}} = (1-Pr(j))Pr(j)\beta_{inc,ij} \text{; }j,k\in C_i\]</span> <span class="math display">\[\frac{\partial Pr(j)}{\partial Inc_{ik}} = Pr(j)Pr(k)\beta_{inc,ik}\]</span></li>
+<li>Such attributes have <strong>alternative-specific coefficients</strong>: For example, consider income of individual, <span class="math inline">\(i\)</span> <span class="math display">\[\frac{\partial Pr(j)}{\partial Inc_{ij}} = (1-Pr(j))Pr(j)\beta_{inc,ij} \text{; }j,k\in C_i\]</span> <span class="math display">\[\frac{\partial Pr(j)}{\partial Inc_{ik}} = - Pr(j)Pr(k)\beta_{inc,ik}\]</span></li>
 <li>Corresponding sum of all alternatives, <span class="math inline">\(j \neq k\)</span> <span class="math display">\[\sum_{j \neq k} \frac{\partial Pr(j)}{\partial Inc_{ik}} = -Pr(j) \sum_{k \neq j} Pr(k) \beta_{inc,ik}\]</span></li>
-<li>Rate of change of <span class="math inline">\(Pr(j)\)</span> with respect to income of individual, i: <span class="math display">\[\frac{\partial Pr(j)}{\partial Inc_i} = \underset{\text{Direct Elasticity}}{\frac{\partial Pr(j)}{\partial Inc_{ij}}} + \underset{\text{Cross Elasticity}}{\sum_{j \neq k}\frac{\partial Pr(j)}{\partial Inc_{ij}}}\]</span></li>
+<li>Rate of change of <span class="math inline">\(Pr(j)\)</span> with respect to income of individual, <span class="math inline">\(i\)</span>: <span class="math display">\[\frac{\partial Pr(j)}{\partial Inc_i} = \underset{\text{Direct Elasticity}}{\frac{\partial Pr(j)}{\partial Inc_{ij}}} + \underset{\text{Cross Elasticity}}{\sum_{j \neq k}\frac{\partial Pr(j)}{\partial Inc_{ij}}}\]</span></li>
 </ul>
 </section>
 <section id="marginalelasticity-attributes-of-choice-makerchoice-context-1" class="slide level2 smaller">
 <h2>Marginal/Elasticity: Attributes of Choice Maker/Choice Context</h2>
 <ul>
-<li>Rate of change of <span class="math inline">\(Pr(j)\)</span> with respect to income: <span class="math display">\[\frac{\partial Pr(j)}{\partial Inc_i} = \frac{\partial Pr(j)}{\partial Inc_{ij}} + \sum_{k \neq j} \frac{\partial Pr(j)}{\partial Inc_{ik}} = (1-Pr(j))Pr(j)\beta_{inc,ij}-Pr(j)\sum_{k \neq j} Pr(k) \beta_{inc,ik}\]</span> <span class="math display">\[\frac{\partial Pr(j)}{\partial Inc_i} = Pr(j)\beta_{inc,ij}-Pr(j)Pr(j)\beta_{inc,ij}-Pr(j)\sum_{k \neq j}Pr(k)\beta_{inc,ik}\]</span> <span class="math display">\[\frac{\partial Pr(j)}{\partial Inc_i} = Pr(j)\left( \beta_{inc,ij} - \overline{\beta_{inc}} \right)\]</span> <span class="math display">\[\overline{\beta_{inc,i}} = \sum_{k \in C_i} Pr(k)\beta_{inc,k} \begin{array}{c}\text{; probability weighted average of}\\ \text{alt specific income parameters}\end{array}\]</span></li>
+<li>Rate of change of <span class="math inline">\(Pr(j)\)</span> with respect to income of individual, <span class="math inline">\(i\)</span>: <span class="math display">\[\frac{\partial Pr(j)}{\partial Inc_i} = \frac{\partial Pr(j)}{\partial Inc_{ij}} + \sum_{k \neq j} \frac{\partial Pr(j)}{\partial Inc_{ik}} = (1-Pr(j))Pr(j)\beta_{inc,ij}-Pr(j)\sum_{k \neq j} Pr(k) \beta_{inc,ik}\]</span> <span class="math display">\[\frac{\partial Pr(j)}{\partial Inc_i} = Pr(j)\beta_{inc,ij}-Pr(j)Pr(j)\beta_{inc,ij}-Pr(j)\sum_{k \neq j}Pr(k)\beta_{inc,ik}\]</span> <span class="math display">\[\frac{\partial Pr(j)}{\partial Inc_i} = Pr(j)\left( \beta_{inc,ij} - \overline{\beta_{inc}} \right)\]</span> <span class="math display">\[\overline{\beta_{inc,i}} = \sum_{k \in C_i} Pr(k)\beta_{inc,ik} \begin{array}{c}\text{; probability weighted average of}\\ \text{alt specific income parameters}\end{array}\]</span></li>
 </ul>
 </section>
 <section id="marginalelasticity-attributes-of-choice-makerchoice-context-2" class="slide level2 smaller">
@@ -622,11 +622,11 @@ Now for the probability of choosing alternative <span class="math inline">\(j\)<
 <h2>IIA: Independent and Irrelevant Alternatives</h2>
 <p><span class="math display">\[\frac{Pr(j)}{Pr(k)} = \frac{\exp(V_j)}{\exp(V)k)} = \exp(V_j - V_k)\]</span></p>
 <ul>
-<li>This property is derived from assumption: the random utilities,<span class="math inline">\(\epsilon\)</span> are <strong>independent and identical in distribution</strong></li>
+<li>This property is derived from assumption: the random utilities,<span class="math inline">\(\varepsilon\)</span> are <strong>independent and identical in distribution</strong></li>
 <li>Random error are identically distributed, having <strong>same scale or variance</strong> <span class="math display">\[\begin{equation}
-\begin{bmatrix} \epsilon_1 \\
-\epsilon_2 \\
-\epsilon_3 \end{bmatrix} =
+\begin{bmatrix} \varepsilon_1 \\
+\varepsilon_2 \\
+\varepsilon_3 \end{bmatrix} =
 \begin{bmatrix} \sigma^2 &amp; 0 &amp; 0 \\
 0 &amp; \sigma^2 &amp; 0 \\
 0 &amp; 0 &amp; \sigma^2 \end{bmatrix} =
@@ -651,7 +651,7 @@ Now for the probability of choosing alternative <span class="math inline">\(j\)<
 <ul>
 <li>Three alternatives with same utilities 1: car, 2: <span style="color: blue;">blue bus</span> and 3: <span style="color: red;">red bus</span> and (V1=V2=V3=V)
 <ul>
-<li>Now probability of choosing 1: car would be compared against the second highest attractive alternative (<span class="math inline">\(U^*\)</span>) <span class="math display">\[𝑈^∗=\max⁡( 𝑈_2,𝑈_3)=𝑉^∗+\epsilon^∗
+<li>Now probability of choosing 1: car would be compared against the second highest attractive alternative (<span class="math inline">\(U^*\)</span>) <span class="math display">\[𝑈^∗=\max⁡( 𝑈_2,𝑈_3)=𝑉^∗+\varepsilon^∗
 \]</span></li>
 </ul></li>
 <li>As per Gumbel distribution with 0 mean and unit scale <span class="math display">\[𝑉^∗=\ln⁡( 𝑒^{𝑉_2}+𝑒^{𝑉_3})=\ln⁡( 2𝑒^𝑉)=\ln⁡(2)+𝑉
@@ -663,7 +663,7 @@ Now for the probability of choosing alternative <span class="math inline">\(j\)<
 <section id="iia-independent-and-irrelevant-alternatives-3" class="slide level2 smaller">
 <h2>IIA: Independent and Irrelevant Alternatives</h2>
 <ul>
-<li>Actually, 2(<span style="color: blue;">blue bus</span>) and 3(<span style="color: red;">red bus</span>) are <strong>perfectly correlated</strong> and in that case the maximum utility of 2 and 3 are simply <span class="math inline">\((V+\epsilon)\)</span> that means <span class="math inline">\(V^*=V\)</span> <span class="math display">\[𝑃(𝑐𝑎𝑟) = \frac{1}{1+𝑒^{𝑉^∗−𝑉_1}} = \frac{1}{1+𝑒^{𝑉−𝑉}} = \frac{1}{1+1}=1/2
+<li>Actually, 2(<span style="color: blue;">blue bus</span>) and 3(<span style="color: red;">red bus</span>) are <strong>perfectly correlated</strong> and in that case the maximum utility of 2 and 3 are simply <span class="math inline">\((V+\varepsilon)\)</span> that means <span class="math inline">\(V^*=V\)</span> <span class="math display">\[𝑃(𝑐𝑎𝑟) = \frac{1}{1+𝑒^{𝑉^∗−𝑉_1}} = \frac{1}{1+𝑒^{𝑉−𝑉}} = \frac{1}{1+1}=1/2
 \]</span></li>
 <li>That means IID assumption makes <span class="math inline">\(V^*\)</span> <strong>too high</strong> by an amount of <span class="math inline">\(\ln2\)</span></li>
 <li>IIA is <strong>attributed to disaggregate/individual choice situations, not the overall market share</strong></li>
