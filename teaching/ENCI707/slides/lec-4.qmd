@@ -77,7 +77,7 @@ $$F = e^{-e^{-\mu(\epsilon-\eta)}} \text{; } \mu > 0$$
 3. The **variance** is $\pi^2/6\mu^2$.
 4. If $\epsilon$ is Gumbel distributed with ($\eta, \mu$), and if $\alpha$ is any positive scalar constant, then ($\alpha \epsilon + V$) is also Gumbel distributed with parameters ($\alpha \eta +V$) and $\mu/\alpha$.
 5. If $\epsilon_1$ and $\epsilon_2$ are independent Gumbel variables, then ($\epsilon_1-\epsilon_2$) is **logistically distributed**.
-6. If $\epsilon_1$ and \epsilon2 are **Identical and Independent Gumbel variables** with parameters ($\eta_1,\mu$) and ($\eta_2,\mu$) respectively then $\max(\epsilon_1,\epsilon_2)$ is also Gumbel distributed with parameters:      
+6. If $\epsilon_1$ and $\epsilon_2$ are **Identical and Independent Gumbel variables** with parameters ($\eta_1,\mu$) and ($\eta_2,\mu$) respectively then $\max(\epsilon_1,\epsilon_2)$ is also Gumbel distributed with parameters:      
 $$\left(\frac{1}{\mu} \ln⁡(𝑒^{\mu\eta_1}+𝑒^{\mu\eta_2 } ),\mu \right)$$
 
 ## Basic Properties of Gumbel distribution {.smaller}
