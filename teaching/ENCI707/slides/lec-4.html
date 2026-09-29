@@ -208,7 +208,7 @@
 <li>The <strong>variance</strong> is <span class="math inline">\(\pi^2/6\mu^2\)</span>.</li>
 <li>If <span class="math inline">\(\epsilon\)</span> is Gumbel distributed with (<span class="math inline">\(\eta, \mu\)</span>), and if <span class="math inline">\(\alpha\)</span> is any positive scalar constant, then (<span class="math inline">\(\alpha \epsilon + V\)</span>) is also Gumbel distributed with parameters (<span class="math inline">\(\alpha \eta +V\)</span>) and <span class="math inline">\(\mu/\alpha\)</span>.</li>
 <li>If <span class="math inline">\(\epsilon_1\)</span> and <span class="math inline">\(\epsilon_2\)</span> are independent Gumbel variables, then (<span class="math inline">\(\epsilon_1-\epsilon_2\)</span>) is <strong>logistically distributed</strong>.</li>
-<li>If <span class="math inline">\(\epsilon_1\)</span> and <span class="math inline">\(\epsilon_2\)</span> are <strong>Identical and Independent Gumbel variables</strong> with parameters (<span class="math inline">\(\eta_1,\mu\)</span>) and (<span class="math inline">\(\eta_2,\mu\)</span>) respectively then <span class="math inline">\(\max(\epsilon_1,\epsilon_2)\)</span> is also Gumbel distributed with parameters:<br>
+<li>If <span class="math inline">\(\epsilon_1\)</span> and <span class="math inline">\(\epsilon_2\)</span> are <strong>Identical and Independent Gumbel variables</strong> with parameters (<span class="math inline">\(\eta_1,\mu\)</span>) and (<span class="math inline">\(\eta_2,\mu\)</span>), respectively, then <span class="math inline">\(\max(\epsilon_1,\epsilon_2)\)</span> is also Gumbel distributed with parameters:<br>
 <span class="math display">\[\left(\frac{1}{\mu} \ln⁡(𝑒^{\mu\eta_1}+𝑒^{\mu\eta_2 } ),\mu \right)\]</span></li>
 </ol>
 </section>
@@ -257,7 +257,7 @@ Now for the probability of choosing alternative <span class="math inline">\(j\)<
 <h2>Scale of the MNL Model</h2>
 <ul>
 <li>Scale (<span class="math inline">\(\mu\)</span>) is inversely related to the variance of random error term</li>
-<li>Variance is <span class="math inline">\(\pi^2/6\mu^2\)</span> for a IID Type I EV error</li>
+<li>Variance is <span class="math inline">\(\pi^2/6\mu^2\)</span> for an IID Type I EV error</li>
 <li>As <span class="math inline">\(\mu -&gt; \infty\)</span>, Variance <span class="math inline">\(-&gt; 0\)</span>
 <ul>
 <li>All information are captured by the deterministic component (<span class="math inline">\(V\)</span></li>
@@ -274,7 +274,7 @@ Now for the probability of choosing alternative <span class="math inline">\(j\)<
 </section>
 <section id="systematic-utility-function" class="slide level2 smaller">
 <h2>Systematic Utility Function</h2>
-<p>Systematic utility function: Linear-in-parameter function <span class="math display">\[𝑉_1=\beta_1+\beta_𝑡 𝑥_{1𝑡}+\beta_{1𝑎} 𝑥_𝑎+\beta_𝑏 𝑥_{1𝑏}^2+\beta_{1𝑎𝑐} 𝑥_𝑎^3+\beta_{1𝑎𝑙}  \ln⁡(𝑥_𝑎)+\dots\]</span> <span class="math display">\[𝑉_2=\beta_2+\beta_𝑡 𝑥_{2𝑡}+\beta_{2𝑎} 𝑥_𝑎+\beta_𝑏 𝑥_{2𝑏}^2+\beta_{2𝑎𝑐} 𝑥_𝑎^3+\beta_{2𝑎𝑙} + \ln⁡(x_a)+\dots\]</span> <span class="math display">\[\vdots\]</span> <span class="math display">\[𝑉_J=\beta_J+\beta_𝑡 𝑥_{Jt}+\beta_{J𝑎} 𝑥_𝑎+\beta_𝑏 𝑥_{J𝑏}^2+\beta_{J𝑎𝑐} 𝑥_𝑎^3+\beta_{J𝑎𝑙} + \ln⁡(x_a)+\dots\]</span></p>
+<p>Systematic utility function: Linear-in-parameters function <span class="math display">\[𝑉_1=\beta_1+\beta_𝑡 𝑥_{1𝑡}+\beta_{1𝑎} 𝑥_𝑎+\beta_𝑏 𝑥_{1𝑏}^2+\beta_{1𝑎𝑐} 𝑥_𝑎^3+\beta_{1𝑎𝑙}  \ln⁡(𝑥_𝑎)+\dots\]</span> <span class="math display">\[𝑉_2=\beta_2+\beta_𝑡 𝑥_{2𝑡}+\beta_{2𝑎} 𝑥_𝑎+\beta_𝑏 𝑥_{2𝑏}^2+\beta_{2𝑎𝑐} 𝑥_𝑎^3+\beta_{2𝑎𝑙} + \ln⁡(x_a)+\dots\]</span> <span class="math display">\[\vdots\]</span> <span class="math display">\[𝑉_J=\beta_J+\beta_𝑡 𝑥_{Jt}+\beta_{J𝑎} 𝑥_𝑎+\beta_𝑏 𝑥_{J𝑏}^2+\beta_{J𝑎𝑐} 𝑥_𝑎^3+\beta_{J𝑎𝑙} + \ln⁡(x_a)+\dots\]</span></p>
 <ul>
 <li>Alternative Specific Constant - (J-1) are identified</li>
 <li>Permits <strong>non-linear transformed</strong> variables</li>
@@ -311,10 +311,13 @@ Now for the probability of choosing alternative <span class="math inline">\(j\)<
 <section id="goodness-of-fit" class="slide level2 smaller">
 <h2>Goodness-of-Fit</h2>
 <p>Model goodness-of-fit is measured by <span class="math inline">\(\rho^2\)</span> value</p>
-<p><img data-src="../../../assets/images/teaching/ENCI707/Lecture5/gof_LL.svg" class="absolute" style="top: 150px; left: 0px; "> <br><br><br><br><br> - <span class="math inline">\(k\)</span> = difference in total number of parameters between two models <span class="math display">\[\rho_0^2 = \frac{LL(\beta) - LL(0)}{LL(*) - LL(0)} = 1 - \frac{LL(\beta)}{LL(0)} \text{; } adj-\rho_0^2 = 1 - \frac{LL(\beta) - k}{LL(0)}\]</span></p>
+<p><img data-src="../../../assets/images/teaching/ENCI707/Lecture5/gof_LL.svg" class="absolute" style="top: 150px; left: 0px; "> <br><br><br><br><br></p>
+<ul>
+<li><span class="math inline">\(k\)</span> = difference in total number of parameters between two models <span class="math display">\[\rho_0^2 = \frac{LL(\beta) - LL(0)}{LL(*) - LL(0)} = 1 - \frac{LL(\beta)}{LL(0)} \text{; } adj-\rho_0^2 = 1 - \frac{LL(\beta) - k}{LL(0)}\]</span></li>
+</ul>
 <p><span class="math display">\[\rho_C^2 = \frac{LL(\beta) - LL(C)}{LL(*) - LL(C)} = 1 - \frac{LL(\beta)}{LL(C)} \text{; } adj-\rho_C^2 = 1 - \frac{LL(\beta) - k}{LL(C)}\]</span></p>
 <ul>
-<li>Adjusted <span class="math inline">\(\rho^2\)</span> value 0.3 to 0.5 is considered reasonable (<em>but depends on model</em>)</li>
+<li>Adjusted <span class="math inline">\(\rho^2\)</span> value in range 0.3 to 0.5 is considered reasonable (<em>but depends on model</em>)</li>
 <li><strong>Alternative:</strong> Comparing predicted vs.&nbsp;observed shares</li>
 </ul>
 </section>
@@ -404,8 +407,8 @@ Now for the probability of choosing alternative <span class="math inline">\(j\)<
 <ul>
 <li>Expected signs of the coefficients</li>
 <li>Expected substitution patterns - e.g., value of time savings, etc.</li>
-<li>Likelihood ratio test (<span class="math inline">\(\times\)</span>-2 by Wilks Theorem):<span class="math inline">\(-2[LL(\beta)-LL(\beta^{'})]\)</span> is <span class="math inline">\(\chi^2\)</span> distributed with <span class="math inline">\(k\)</span> (= number of restricted parameters = the difference between number of parameters of two models) degrees of freedom</li>
-<li>Goodness-of-Fit measures: Rho-square, AIC, BIC</li>
+<li>Likelihood ratio test for (<span class="math inline">\(\times\)</span>-2 by Wilks Theorem):<span class="math inline">\(-2[LL(\beta_R)-LL(\beta_{UR})]\)</span> is <span class="math inline">\(\chi^2\)</span> distributed with <span class="math inline">\(k\)</span> (= number of restricted parameters = the difference between number of parameters of two models) degrees of freedom</li>
+<li>Goodness-of-Fit measures: <span class="math inline">\(\rho^2\)</span>, AIC, BIC</li>
 </ul>
 </section>
 <section id="specification-of-logit-model" class="slide level2 smaller">
@@ -466,7 +469,7 @@ Now for the probability of choosing alternative <span class="math inline">\(j\)<
 <li>Addressing income effects:
 <ul>
 <li>Income normalization as (<span class="math inline">\(Cost/Income\)</span>) or (<span class="math inline">\(Income-Cost\)</span>)</li>
-<li>Classifying population into different income categories and develop separate models for each</li>
+<li>Classify population into different income categories and develop separate models for each</li>
 <li>Interact income category with other variables</li>
 </ul></li>
 </ul>
@@ -517,7 +520,7 @@ Now for the probability of choosing alternative <span class="math inline">\(j\)<
 <section id="marginal-effectelasticity-attributes-of-alternatives-1" class="slide level2 smaller">
 <h2>Marginal Effect/Elasticity: Attributes of Alternatives</h2>
 <ul>
-<li><p><strong>Disaggregate Cross elasticity/marginal effect:</strong> with respect to an attribute of <strong>different alternative</strong> <span class="math display">\[\text{Cross ME} =\frac{\partial Pr⁡(𝑗)}{\partial 𝑥_k}=Pr⁡(𝑗)Pr⁡(k) \beta_{𝑥_k}\]</span> <span class="math display">\[\text{Cross E}=  \frac{\partial Pr⁡(𝑗)}{\partial 𝑥_k}\frac{x_k}{Pr(j)}=-x_kPr⁡(k) \beta_{𝑥_k}\]</span></p></li>
+<li><p><strong>Disaggregate Cross elasticity/marginal effect:</strong> with respect to an attribute of a <strong>different alternative</strong> <span class="math display">\[\text{Cross ME} = \frac{\partial Pr⁡(𝑗)}{\partial 𝑥_k} = - Pr⁡(𝑗)Pr⁡(k) \beta_{𝑥_k}\]</span> <span class="math display">\[\text{Cross E}=  \frac{\partial Pr⁡(𝑗)}{\partial 𝑥_k}\frac{x_k}{Pr(j)}=-x_kPr⁡(k) \beta_{𝑥_k}\]</span></p></li>
 <li><p>Cross elasticity is the same for all other alternative than alternative <span class="math inline">\(k\)</span></p></li>
 <li><p>This is <strong>proportional substitution</strong>: an improvement in one alternative, draws proportionately from all other alternatives!</p></li>
 </ul>
@@ -527,7 +530,7 @@ Now for the probability of choosing alternative <span class="math inline">\(j\)<
 <ul>
 <li>Summation of all probabilities of a choice model = 1
 <ul>
-<li>Summation of changes in probabilities (of all alternatives) with respect to a variable (derivative) = 0 <span class="math display">\[\sum_j \frac{\partial Pr(j)}{\partial x_{jp}}=\frac{\partial Pr(j)}{\partial x_{jp}} + \sum_{k \neq j} \frac{\partial Pr(k)}{\partial x_{jp}} \text{; (Considering generic coefficients)}\]</span> <span class="math display">\[\sum_j \frac{\partial Pr(j)}{\partial x_{jp}}=\beta_p Pr(j) (1-Pr(j)) - \beta_p Pr(j)\sum_{k \neq j}Pr(k)\]</span> <span class="math display">\[\sum_j \frac{\partial Pr(j)}{\partial x_{jp}}=\beta_p Pr(j) (1-Pr(j)) - \beta_p Pr(j) (1-Pr(j)) = 0\]</span></li>
+<li>Summation of changes in probabilities (of all alternatives) with respect to a variable (derivative) = 0 <span class="math display">\[\sum_j \frac{\partial Pr(j)}{\partial x_{j}}=\frac{\partial Pr(j)}{\partial x_{j}} + \sum_{k \neq j} \frac{\partial Pr(k)}{\partial x_{j}} \text{; (Considering generic coefficients)}\]</span> <span class="math display">\[\sum_j \frac{\partial Pr(j)}{\partial x_{j}}=\beta_{x_j} Pr(j) (1-Pr(j)) - \beta_{x_j} Pr(j)\sum_{k \neq j}Pr(k)\]</span> <span class="math display">\[\sum_j \frac{\partial Pr(j)}{\partial x_{j}}=\beta_{x_j} Pr(j) (1-Pr(j)) - \beta_{x_j} Pr(j) (1-Pr(j)) = 0\]</span></li>
 </ul></li>
 <li>This is true for <strong>any discrete choice model</strong> and can be used to verify accuracy of elasticity calculation</li>
 </ul>

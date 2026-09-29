@@ -6965,7 +6965,7 @@
     "href": "teaching/ENCI707/slides/lec-4.html#basic-properties-of-gumbel-distribution",
     "title": "Lecture 4 - Multinomial Logit",
     "section": "Basic Properties of Gumbel distribution",
-    "text": "Basic Properties of Gumbel distribution\n\nThe mode of the distribution is \\(\\eta\\) (the location of peak of the PDF on x axis from zero).\nThe mean is (\\(\\eta+\\gamma/\\mu\\)), where \\(\\gamma\\) = Euler’s constant=0.577.\nThe variance is \\(\\pi^2/6\\mu^2\\).\nIf \\(\\epsilon\\) is Gumbel distributed with (\\(\\eta, \\mu\\)), and if \\(\\alpha\\) is any positive scalar constant, then (\\(\\alpha \\epsilon + V\\)) is also Gumbel distributed with parameters (\\(\\alpha \\eta +V\\)) and \\(\\mu/\\alpha\\).\nIf \\(\\epsilon_1\\) and \\(\\epsilon_2\\) are independent Gumbel variables, then (\\(\\epsilon_1-\\epsilon_2\\)) is logistically distributed.\nIf \\(\\epsilon_1\\) and \\(\\epsilon_2\\) are Identical and Independent Gumbel variables with parameters (\\(\\eta_1,\\mu\\)) and (\\(\\eta_2,\\mu\\)) respectively then \\(\\max(\\epsilon_1,\\epsilon_2)\\) is also Gumbel distributed with parameters:\n\\[\\left(\\frac{1}{\\mu} \\ln⁡(𝑒^{\\mu\\eta_1}+𝑒^{\\mu\\eta_2 } ),\\mu \\right)\\]"
+    "text": "Basic Properties of Gumbel distribution\n\nThe mode of the distribution is \\(\\eta\\) (the location of peak of the PDF on x axis from zero).\nThe mean is (\\(\\eta+\\gamma/\\mu\\)), where \\(\\gamma\\) = Euler’s constant=0.577.\nThe variance is \\(\\pi^2/6\\mu^2\\).\nIf \\(\\epsilon\\) is Gumbel distributed with (\\(\\eta, \\mu\\)), and if \\(\\alpha\\) is any positive scalar constant, then (\\(\\alpha \\epsilon + V\\)) is also Gumbel distributed with parameters (\\(\\alpha \\eta +V\\)) and \\(\\mu/\\alpha\\).\nIf \\(\\epsilon_1\\) and \\(\\epsilon_2\\) are independent Gumbel variables, then (\\(\\epsilon_1-\\epsilon_2\\)) is logistically distributed.\nIf \\(\\epsilon_1\\) and \\(\\epsilon_2\\) are Identical and Independent Gumbel variables with parameters (\\(\\eta_1,\\mu\\)) and (\\(\\eta_2,\\mu\\)), respectively, then \\(\\max(\\epsilon_1,\\epsilon_2)\\) is also Gumbel distributed with parameters:\n\\[\\left(\\frac{1}{\\mu} \\ln⁡(𝑒^{\\mu\\eta_1}+𝑒^{\\mu\\eta_2 } ),\\mu \\right)\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-4.html#basic-properties-of-gumbel-distribution-1",
@@ -7000,14 +7000,14 @@
     "href": "teaching/ENCI707/slides/lec-4.html#scale-of-the-mnl-model",
     "title": "Lecture 4 - Multinomial Logit",
     "section": "Scale of the MNL Model",
-    "text": "Scale of the MNL Model\n\nScale (\\(\\mu\\)) is inversely related to the variance of random error term\nVariance is \\(\\pi^2/6\\mu^2\\) for a IID Type I EV error\nAs \\(\\mu -&gt; \\infty\\), Variance \\(-&gt; 0\\)\n\nAll information are captured by the deterministic component (\\(V\\)\nChoice becomes deterministic (the alternative with maximum V is chosen)\n\nAs \\(\\mu -&gt; 0\\), Variance \\(-&gt; \\infty\\) & \\(\\exp(\\mu V) = 1\\)\n\nAlternatives are equally likely\nChoice model does not provide any information\n\nConstant scale, \\(\\mu\\), is not identified in an MNL using only one dataset\nSeparate scale needs to be specified when fusing multiple datasets"
+    "text": "Scale of the MNL Model\n\nScale (\\(\\mu\\)) is inversely related to the variance of random error term\nVariance is \\(\\pi^2/6\\mu^2\\) for an IID Type I EV error\nAs \\(\\mu -&gt; \\infty\\), Variance \\(-&gt; 0\\)\n\nAll information are captured by the deterministic component (\\(V\\)\nChoice becomes deterministic (the alternative with maximum V is chosen)\n\nAs \\(\\mu -&gt; 0\\), Variance \\(-&gt; \\infty\\) & \\(\\exp(\\mu V) = 1\\)\n\nAlternatives are equally likely\nChoice model does not provide any information\n\nConstant scale, \\(\\mu\\), is not identified in an MNL using only one dataset\nSeparate scale needs to be specified when fusing multiple datasets"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-4.html#systematic-utility-function",
     "href": "teaching/ENCI707/slides/lec-4.html#systematic-utility-function",
     "title": "Lecture 4 - Multinomial Logit",
     "section": "Systematic Utility Function",
-    "text": "Systematic Utility Function\nSystematic utility function: Linear-in-parameter function \\[𝑉_1=\\beta_1+\\beta_𝑡 𝑥_{1𝑡}+\\beta_{1𝑎} 𝑥_𝑎+\\beta_𝑏 𝑥_{1𝑏}^2+\\beta_{1𝑎𝑐} 𝑥_𝑎^3+\\beta_{1𝑎𝑙}  \\ln⁡(𝑥_𝑎)+\\dots\\] \\[𝑉_2=\\beta_2+\\beta_𝑡 𝑥_{2𝑡}+\\beta_{2𝑎} 𝑥_𝑎+\\beta_𝑏 𝑥_{2𝑏}^2+\\beta_{2𝑎𝑐} 𝑥_𝑎^3+\\beta_{2𝑎𝑙} + \\ln⁡(x_a)+\\dots\\] \\[\\vdots\\] \\[𝑉_J=\\beta_J+\\beta_𝑡 𝑥_{Jt}+\\beta_{J𝑎} 𝑥_𝑎+\\beta_𝑏 𝑥_{J𝑏}^2+\\beta_{J𝑎𝑐} 𝑥_𝑎^3+\\beta_{J𝑎𝑙} + \\ln⁡(x_a)+\\dots\\]\n\nAlternative Specific Constant - (J-1) are identified\nPermits non-linear transformed variables\nCan be generic if vary across alternatives\nMust be alternative-specific if constant across alternatives (only J-1 are identified)"
+    "text": "Systematic Utility Function\nSystematic utility function: Linear-in-parameters function \\[𝑉_1=\\beta_1+\\beta_𝑡 𝑥_{1𝑡}+\\beta_{1𝑎} 𝑥_𝑎+\\beta_𝑏 𝑥_{1𝑏}^2+\\beta_{1𝑎𝑐} 𝑥_𝑎^3+\\beta_{1𝑎𝑙}  \\ln⁡(𝑥_𝑎)+\\dots\\] \\[𝑉_2=\\beta_2+\\beta_𝑡 𝑥_{2𝑡}+\\beta_{2𝑎} 𝑥_𝑎+\\beta_𝑏 𝑥_{2𝑏}^2+\\beta_{2𝑎𝑐} 𝑥_𝑎^3+\\beta_{2𝑎𝑙} + \\ln⁡(x_a)+\\dots\\] \\[\\vdots\\] \\[𝑉_J=\\beta_J+\\beta_𝑡 𝑥_{Jt}+\\beta_{J𝑎} 𝑥_𝑎+\\beta_𝑏 𝑥_{J𝑏}^2+\\beta_{J𝑎𝑐} 𝑥_𝑎^3+\\beta_{J𝑎𝑙} + \\ln⁡(x_a)+\\dots\\]\n\nAlternative Specific Constant - (J-1) are identified\nPermits non-linear transformed variables\nCan be generic if vary across alternatives\nMust be alternative-specific if constant across alternatives (only J-1 are identified)"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-4.html#systematic-utility-function-1",
@@ -7028,7 +7028,7 @@
     "href": "teaching/ENCI707/slides/lec-4.html#goodness-of-fit",
     "title": "Lecture 4 - Multinomial Logit",
     "section": "Goodness-of-Fit",
-    "text": "Goodness-of-Fit\nModel goodness-of-fit is measured by \\(\\rho^2\\) value\n  - \\(k\\) = difference in total number of parameters between two models \\[\\rho_0^2 = \\frac{LL(\\beta) - LL(0)}{LL(*) - LL(0)} = 1 - \\frac{LL(\\beta)}{LL(0)} \\text{; } adj-\\rho_0^2 = 1 - \\frac{LL(\\beta) - k}{LL(0)}\\]\n\\[\\rho_C^2 = \\frac{LL(\\beta) - LL(C)}{LL(*) - LL(C)} = 1 - \\frac{LL(\\beta)}{LL(C)} \\text{; } adj-\\rho_C^2 = 1 - \\frac{LL(\\beta) - k}{LL(C)}\\]\n\nAdjusted \\(\\rho^2\\) value 0.3 to 0.5 is considered reasonable (but depends on model)\nAlternative: Comparing predicted vs. observed shares"
+    "text": "Goodness-of-Fit\nModel goodness-of-fit is measured by \\(\\rho^2\\) value\n \n\n\\(k\\) = difference in total number of parameters between two models \\[\\rho_0^2 = \\frac{LL(\\beta) - LL(0)}{LL(*) - LL(0)} = 1 - \\frac{LL(\\beta)}{LL(0)} \\text{; } adj-\\rho_0^2 = 1 - \\frac{LL(\\beta) - k}{LL(0)}\\]\n\n\\[\\rho_C^2 = \\frac{LL(\\beta) - LL(C)}{LL(*) - LL(C)} = 1 - \\frac{LL(\\beta)}{LL(C)} \\text{; } adj-\\rho_C^2 = 1 - \\frac{LL(\\beta) - k}{LL(C)}\\]\n\nAdjusted \\(\\rho^2\\) value in range 0.3 to 0.5 is considered reasonable (but depends on model)\nAlternative: Comparing predicted vs. observed shares"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-4.html#goodness-of-fit-1",
@@ -7056,7 +7056,7 @@
     "href": "teaching/ENCI707/slides/lec-4.html#specification-tests",
     "title": "Lecture 4 - Multinomial Logit",
     "section": "Specification Tests",
-    "text": "Specification Tests\n\nExpected signs of the coefficients\nExpected substitution patterns - e.g., value of time savings, etc.\nLikelihood ratio test (\\(\\times\\)-2 by Wilks Theorem):\\(-2[LL(\\beta)-LL(\\beta^{'})]\\) is \\(\\chi^2\\) distributed with \\(k\\) (= number of restricted parameters = the difference between number of parameters of two models) degrees of freedom\nGoodness-of-Fit measures: Rho-square, AIC, BIC"
+    "text": "Specification Tests\n\nExpected signs of the coefficients\nExpected substitution patterns - e.g., value of time savings, etc.\nLikelihood ratio test for (\\(\\times\\)-2 by Wilks Theorem):\\(-2[LL(\\beta_R)-LL(\\beta_{UR})]\\) is \\(\\chi^2\\) distributed with \\(k\\) (= number of restricted parameters = the difference between number of parameters of two models) degrees of freedom\nGoodness-of-Fit measures: \\(\\rho^2\\), AIC, BIC"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-4.html#specification-of-logit-model",
@@ -7084,7 +7084,7 @@
     "href": "teaching/ENCI707/slides/lec-4.html#incomebudget-effects",
     "title": "Lecture 4 - Multinomial Logit",
     "section": "Income/Budget Effects",
-    "text": "Income/Budget Effects\n\n\nTesting income effects:\n\nUse \\(Cost\\) and \\(Cost^2\\) as separate variables\nIf \\(Cost^2\\) has a statistically significant and reasonable parameter value, income effects need to be addressed\n\nAddressing income effects:\n\nIncome normalization as (\\(Cost/Income\\)) or (\\(Income-Cost\\))\nClassifying population into different income categories and develop separate models for each\nInteract income category with other variables"
+    "text": "Income/Budget Effects\n\n\nTesting income effects:\n\nUse \\(Cost\\) and \\(Cost^2\\) as separate variables\nIf \\(Cost^2\\) has a statistically significant and reasonable parameter value, income effects need to be addressed\n\nAddressing income effects:\n\nIncome normalization as (\\(Cost/Income\\)) or (\\(Income-Cost\\))\nClassify population into different income categories and develop separate models for each\nInteract income category with other variables"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-4.html#aggregationmarket-segmentation",
@@ -7126,14 +7126,14 @@
     "href": "teaching/ENCI707/slides/lec-4.html#marginal-effectelasticity-attributes-of-alternatives-1",
     "title": "Lecture 4 - Multinomial Logit",
     "section": "Marginal Effect/Elasticity: Attributes of Alternatives",
-    "text": "Marginal Effect/Elasticity: Attributes of Alternatives\n\nDisaggregate Cross elasticity/marginal effect: with respect to an attribute of different alternative \\[\\text{Cross ME} =\\frac{\\partial Pr⁡(𝑗)}{\\partial 𝑥_k}=Pr⁡(𝑗)Pr⁡(k) \\beta_{𝑥_k}\\] \\[\\text{Cross E}=  \\frac{\\partial Pr⁡(𝑗)}{\\partial 𝑥_k}\\frac{x_k}{Pr(j)}=-x_kPr⁡(k) \\beta_{𝑥_k}\\]\nCross elasticity is the same for all other alternative than alternative \\(k\\)\nThis is proportional substitution: an improvement in one alternative, draws proportionately from all other alternatives!"
+    "text": "Marginal Effect/Elasticity: Attributes of Alternatives\n\nDisaggregate Cross elasticity/marginal effect: with respect to an attribute of a different alternative \\[\\text{Cross ME} = \\frac{\\partial Pr⁡(𝑗)}{\\partial 𝑥_k} = - Pr⁡(𝑗)Pr⁡(k) \\beta_{𝑥_k}\\] \\[\\text{Cross E}=  \\frac{\\partial Pr⁡(𝑗)}{\\partial 𝑥_k}\\frac{x_k}{Pr(j)}=-x_kPr⁡(k) \\beta_{𝑥_k}\\]\nCross elasticity is the same for all other alternative than alternative \\(k\\)\nThis is proportional substitution: an improvement in one alternative, draws proportionately from all other alternatives!"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-4.html#fact-to-check-attributes-of-alternatives",
     "href": "teaching/ENCI707/slides/lec-4.html#fact-to-check-attributes-of-alternatives",
     "title": "Lecture 4 - Multinomial Logit",
     "section": "Fact to check: Attributes of Alternatives",
-    "text": "Fact to check: Attributes of Alternatives\n\nSummation of all probabilities of a choice model = 1\n\nSummation of changes in probabilities (of all alternatives) with respect to a variable (derivative) = 0 \\[\\sum_j \\frac{\\partial Pr(j)}{\\partial x_{jp}}=\\frac{\\partial Pr(j)}{\\partial x_{jp}} + \\sum_{k \\neq j} \\frac{\\partial Pr(k)}{\\partial x_{jp}} \\text{; (Considering generic coefficients)}\\] \\[\\sum_j \\frac{\\partial Pr(j)}{\\partial x_{jp}}=\\beta_p Pr(j) (1-Pr(j)) - \\beta_p Pr(j)\\sum_{k \\neq j}Pr(k)\\] \\[\\sum_j \\frac{\\partial Pr(j)}{\\partial x_{jp}}=\\beta_p Pr(j) (1-Pr(j)) - \\beta_p Pr(j) (1-Pr(j)) = 0\\]\n\nThis is true for any discrete choice model and can be used to verify accuracy of elasticity calculation"
+    "text": "Fact to check: Attributes of Alternatives\n\nSummation of all probabilities of a choice model = 1\n\nSummation of changes in probabilities (of all alternatives) with respect to a variable (derivative) = 0 \\[\\sum_j \\frac{\\partial Pr(j)}{\\partial x_{j}}=\\frac{\\partial Pr(j)}{\\partial x_{j}} + \\sum_{k \\neq j} \\frac{\\partial Pr(k)}{\\partial x_{j}} \\text{; (Considering generic coefficients)}\\] \\[\\sum_j \\frac{\\partial Pr(j)}{\\partial x_{j}}=\\beta_{x_j} Pr(j) (1-Pr(j)) - \\beta_{x_j} Pr(j)\\sum_{k \\neq j}Pr(k)\\] \\[\\sum_j \\frac{\\partial Pr(j)}{\\partial x_{j}}=\\beta_{x_j} Pr(j) (1-Pr(j)) - \\beta_{x_j} Pr(j) (1-Pr(j)) = 0\\]\n\nThis is true for any discrete choice model and can be used to verify accuracy of elasticity calculation"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-4.html#aggregating-elasticity-attributes-of-alternatives",
