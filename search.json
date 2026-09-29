@@ -7000,7 +7000,7 @@
     "href": "teaching/ENCI707/slides/lec-4.html#scale-of-the-mnl-model",
     "title": "Lecture 4 - Multinomial Logit",
     "section": "Scale of the MNL Model",
-    "text": "Scale of the MNL Model\n\nScale (\\(\\mu\\)) is inversely related to the variance of random error term\nVariance is \\(\\pi^2/6\\mu^2\\) for an IID Type I EV error\nAs \\(\\mu -&gt; \\infty\\), Variance \\(-&gt; 0\\)\n\nAll information are captured by the deterministic component (\\(V\\)\nChoice becomes deterministic (the alternative with maximum V is chosen)\n\nAs \\(\\mu -&gt; 0\\), Variance \\(-&gt; \\infty\\) & \\(\\exp(\\mu V) = 1\\)\n\nAlternatives are equally likely\nChoice model does not provide any information\n\nConstant scale, \\(\\mu\\), is not identified in an MNL using only one dataset\nSeparate scale needs to be specified when fusing multiple datasets"
+    "text": "Scale of the MNL Model\n\nScale (\\(\\mu\\)) is inversely related to the variance of random error term\nVariance is \\(\\pi^2/6\\mu^2\\) for an IID Type I EV error\nAs \\(\\mu -&gt; \\infty\\), Variance \\(-&gt; 0\\)\n\nAll information are captured by the deterministic component (\\(V\\))\nChoice becomes deterministic (the alternative with maximum V is chosen)\n\nAs \\(\\mu -&gt; 0\\), Variance \\(-&gt; \\infty\\) & \\(\\exp(\\mu V) = 1\\)\n\nAlternatives are equally likely\nChoice model does not provide any information\n\nConstant scale, \\(\\mu\\), is not identified in an MNL using only one dataset\nSeparate scale needs to be specified when fusing multiple datasets"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-4.html#systematic-utility-function",
