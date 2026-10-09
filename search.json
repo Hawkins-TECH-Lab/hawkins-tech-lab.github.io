@@ -7616,7 +7616,7 @@
     "href": "teaching/ENCI707/slides/lec-6.html#other-design-recommendations-1",
     "title": "Lecture 6 - Stated Preference Methods",
     "section": "Other Design Recommendations",
-    "text": "Other Design Recommendations\n\nKeep choice experiments simple - we respond to very complex choices in practice but do so over a long period of time\nAllow respondents to opt for response outside set of experimental alternatives - e.g., in mode choice exercise, if all options become too unattractive respondent may decide to change destination, time of travel, or not to travel at all\nAllow ‘will do something else’ alternative - could be programmed to branch to another exercise exploring precisely these other options\nMake sure alternatives are clearly and unambiguously defined (difficult when dealing with qualitative attributes like security or comfort)\n\nE.g., do not express alternatives as ‘poor’ or ‘improved’, which are vague and prone to different interpretations by respondents - what measures or facilities, etc.)."
+    "text": "Other Design Recommendations\n\nKeep choice experiments simple - we respond to very complex choices in practice but do so over a long period of time\nAllow respondents to opt for response outside set of experimental alternatives - e.g., in mode choice exercise, if all options become too unattractive respondent may decide to change destination, time of travel, or not to travel at all\nAllow ‘will do something else’ alternative - could be programmed to branch to another exercise exploring precisely these other options\nMake sure alternatives are clearly and unambiguously defined (difficult when dealing with qualitative attributes like security or comfort)\n\nE.g., do not express alternatives as ‘poor’ or ‘improved’, which are vague and prone to different interpretations by respondents - what measures or facilities, etc.)"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-8.html#outline",
@@ -7819,7 +7819,7 @@
     "href": "teaching/ENCI707/weeks/week-10.html",
     "title": "Week 10",
     "section": "",
-    "text": "📖 Review Parady and Axhausen on Parameter Interpretation PI\n📖 Review Parady, Ory, and Walker on Goodness of Fit Interpretation GOF",
+    "text": "📖 Review Parady and Axhausen on Parameter Interpretation PI",
     "crumbs": [
       "Weekly Materials",
       "Week 10"
@@ -7830,7 +7830,7 @@
     "href": "teaching/ENCI707/weeks/week-10.html#prepare",
     "title": "Week 10",
     "section": "",
-    "text": "📖 Review Parady and Axhausen on Parameter Interpretation PI\n📖 Review Parady, Ory, and Walker on Goodness of Fit Interpretation GOF",
+    "text": "📖 Review Parady and Axhausen on Parameter Interpretation PI",
     "crumbs": [
       "Weekly Materials",
       "Week 10"
@@ -7841,7 +7841,7 @@
     "href": "teaching/ENCI707/weeks/week-10.html#participate",
     "title": "Week 10",
     "section": "Participate",
-    "text": "Participate\nDiscussion of Guti’errez et al. (2020)",
+    "text": "Participate\n\n📖 Discussion of Guti’errez et al. paper",
     "crumbs": [
       "Weekly Materials",
       "Week 10"
@@ -8149,7 +8149,7 @@
     "href": "teaching/ENCI707/weeks/week-8.html#participate",
     "title": "Week 8",
     "section": "Participate",
-    "text": "Participate\n📋 Lecture 6 - Surveys and Data\n📋 Lecture 7 - Computation",
+    "text": "Participate\n📋 Lecture 7 - Surveys and Data\n📋 Lecture 8 - Computation",
     "crumbs": [
       "Weekly Materials",
       "Week 8"
