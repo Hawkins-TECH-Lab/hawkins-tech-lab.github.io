@@ -109,7 +109,7 @@ execute:
 ## Labelled vs. Unlabelled Alternatives {.smaller}
 ![](../../../assets/images/teaching/ENCI707/Lecture6/unlabel_wine.png){width="70%"}
 
-## Status Quo Alternative {.smaller}
+## Status Quo Alternative
 - Will a **non-purchase or status quo** alternative be presented?
 - Can measure 'non-participation' via hurdle functions
 - 'Opt-out' or 'status quo' choice can result from choice complexity
@@ -122,7 +122,7 @@ execute:
   - If NPO is included in design, analyst should be able to identify more non-linear preference structures
   - Models based on data with no NPO may show low predictive capacity for choice situations including an NPO, whereas those with an NPO will show good predictive capacity in any situation
 
-## Use Case {.smaller}
+## Use Case
 - Will the outputs be used as inputs to another model?
   - A traffic network model does not allow for a comfort attribute so may not want to include it in experiment
 - Will the experiment be used for willingness-to-pay analysis?
@@ -134,21 +134,24 @@ execute:
 - Do not want to place respondent in an unnecessarily unrealistic scenario
 - Always do internal and external pilots!
 
-## Incentive Compatibility {.smaller}
+## Incentive Compatibility
 - 3 views of the world
-  - People try to truthfully reveawl their preferences irrespective of the incentives they face?
+  - People try to truthfully reveal their preferences irrespective of the incentives they face?
   - People tell the truth if there are no consequences associated with their answers?
   - People only try to tell the truth when it is in their economic interest to do so?
 - Survey results need to be seen as consequential - how will results be used?
 
-## Gibbard and Satterthwaite theorem {.smaller}
-- Gibbard (1973) and Satterthwaite (1975) theorem:
-  - About strategic behaviour and insincere choice
-  - No mechanism with larger than a binary message space can be incentive compatible without restricting the space of allowable preference functions
-  - Not all binary discrete choice questions are incentive compatible - e.g., take-it-or-leave-it offer (vote doesn't influence any other offers that may be made to the agents) or coersive payment mechanism (each agent required to pay independent of their decision)
+## Gibbard and Satterthwaite Theorem {.smaller}
+- Gibbard (1973) and Satterthwaite (1975):
+  - Concern strategic behaviour and incentives for truthful reporting
+  - With three or more alternatives, any deterministic, non-dictatorial social choice mechanism is manipulable (i.e., not strategy-proof)
+  - Incentive compatibility generally requires either:
+      - Restricting the preference space, or
+      - Restricting the set of feasible mechanisms
+  - Many stated-preference surveys are not incentive compatible because respondents can benefit from misrepresenting preferences
 - Rarely discussed in transportation literature vs. considered vital in environmental economics
 
-## How many alternatives? {.smaller}
+## How many alternatives?
 - No clear answer
 - Incentive compatible = 2
 - More alternatives = more information
@@ -165,7 +168,7 @@ execute:
 - Valuation: include at least one monetary attribute
 - Too many attributes increases cognitive burden
 
-## Challenge of Inter-attribute Correlation {.smaller}
+## Challenge of Inter-attribute Correlation
 - Despite the use of the word **correlation**, not a statistical concept
 - Refers to **cognitive perception** that respondents associated to attributes we include in experiments
 - **Price** & **quality** often associated with each other by respondents
@@ -202,7 +205,7 @@ execute:
 - Desirable property although it may impact on **statistical efficiency**
 
 **Example:**
-Consider a design with four attributes, where two have two levels, one has three levels and the last has four levels. In the classical jargon in this field we would refer to this as a 22 31 41 factorial design; note that the product of levels to the power of attributes (48 in this case) represents the total number of choice tasks needed to recover all effects (i.e. main or linear effects and all interactions), i.e. a full factorial design (more about this below).Assuming each attribute will produce a unique parameter estimate (i.e. main effects only), the smallest design would require just four choice tasks based on the number of parameters criterion; however, to maintain attribute level balance, the smallest possible design would require 12 choice tasks (12 being divisible without remainder by 2, 3, and 4).
+Consider a design with four attributes, where two have two levels, one has three levels and the last has four levels. In the classical jargon in this field we would refer to this as a 22 31 41 factorial design; note that the product of attributes to the power of levels (48 in this case) represents the total number of choice tasks needed to recover all effects (i.e. main or linear effects and all interactions), i.e. a full factorial design (more about this below). Assuming each attribute will produce a unique parameter estimate (i.e. main effects only), the smallest design would require just four choice tasks based on the number of parameters criterion; however, to maintain attribute level balance, the smallest possible design would require 12 choice tasks (12 being divisible without remainder by 2, 3, and 4).
 
 ## Attribute Level Balance {.smaller}
 - Balanced design with each attribute level occuring an equal number of times, independent of the alternative
@@ -317,7 +320,7 @@ Solution: 12
 - Not all effects can be mesured (e.g., only main effects and a few interaction effects)
 - Lower bound on number of choice observations for parameter identification still exists
 
-## Fractional Factorial Orthogonal Designs
+## Fractional Factorial Orthogonal Designs {.smaller}
 - Consider the following example: find an orthogonal fractional factorial main effects only design
 
 ::: {.columns}
@@ -367,12 +370,15 @@ $$X_{31},X_{32},X_{33} \in {3,5,7}$$
 |     Travel time    |      11     |      10    |
 |     Travel cost    |     2.75    |      3     |
 
+::: {.fragment}
 - Why would someone pick bus in this case?
 
 |      Attribute     |      Bus    |     Car    |
 |:------------------:|:-----------:|:----------:|
 |     Travel time    |      31     |      10    |
 |     Travel cost    |     2.75    |      3     |
+
+:::
 
 ## DCE Experimental Design
 - **Recommendation**: Use the worst case utility specification to design the experiment
@@ -383,7 +389,7 @@ $$X_{31},X_{32},X_{33} \in {3,5,7}$$
 - Standard errors come from variance-covariance matrix of estimated model
 - Orthogonality - correlation structure of the data (design) matrix ($X$)
   - Linear regression - variance-covariance matrix is given by $\frac{\sigma^2}{X'X}$
-  - Models for discrete choice - non-linear! ($I(\beta) = \sum_n X_n'W_nX_n}$ where $W_n$ is a weight matrix defined by the model structure)
+  - Models for discrete choice - non-linear! $I(\beta) = \sum_n X_n'W_nX_n$ where $W_n$ is a weight matrix defined by the model structure
 
 ## Experiment Design Processes {.smaller}
 - Two competing schools of thought on how to define the covariance matrix ($S^2$ calculated as negative inverse of **Fisher information/Hessian matrix**)
@@ -413,9 +419,11 @@ class A,B,C,D box;
   - Approximate the variance-covariance matrix for the parameter estimates
 
 ## Efficient Design
+
 - Asymptotic variance-covariance (AVC) matrix - approximation of true VC matrix
 
 $$\mathbf{\Sigma} = \begin{pmatrix} se(\hat{\beta}_1)^2 & \cdots & 0 \\ \vdots & \ddots & \vdots \\ 0 & \cdots & se(\hat{\beta}_K)^2 \end{pmatrix}$$
+
 - "Asymptotic" - assuming very large sample or many repetitions using a small sample
 
 ## How to derive AVC matrix?
@@ -429,9 +437,25 @@ $$\mathbf{\Sigma} = \begin{pmatrix} se(\hat{\beta}_1)^2 & \cdots & 0 \\ \vdots &
   - AVC = negative inverse of Fisher information matrix
   $$\Omega_N(\beta|X,y)=-I_N^{-1}(\beta|X,y)$$
 
-## Forms of Efficient Design
-- **D-efficient** named for use of scaled (by 1/K to account for number of parameters) matrix determinant
-- **S-efficient** named for use of sample size provide theoretically minimum sample size to obtain asymptotically significant parameter estimates
+## Efficient Design {.smaller}
+- AVC matrix
+$$\Omega_N(\beta|X,y) = -I_N^{-1}(\beta|X,y)$$
+  - Depends on the design, $X$
+  - Depends on the choice observations, $y$
+  - Depends on the parameters, $\beta$
+- Problems
+  - AVC matrix depends on unknown $y$ (turns out to be independent of outcomes $y$)
+  - AVC matrix depends on unkown $\beta$ (use prior knowledge to make "best guess'')
+
+## Efficient Design {.smaller}
+- AVC depends on number of respondents
+$$\Omega_N(\beta|X) = \frac{1}{N} \Omega_1(\beta|X)$$
+$$se_N(\beta|X)=\frac{1}{\sqrt{N}}se_1(\beta|X)$$
+
+![](../../../assets/images/teaching/ENCI707/Lecture6/se_fig.png){width="100%"}
+
+## Efficient Design {.smaller}
+![](../../../assets/images/teaching/ENCI707/Lecture6/se_sample_design.png){width="100%"}
 
 ## Efficient Design {.smaller}
 - **Fisher information matrix** for N respondents given by $\mathbf{𝑰}_𝑁(\theta)$
@@ -441,6 +465,191 @@ $$\mathbf{𝑺}_𝑁^2=(\mathbf{𝑰}_𝑛 (𝜃))^{−1}=1/𝑁 \mathbf{𝑺}_1
 And
 $$𝑠𝑒_𝑁 (\theta)=\frac{𝑠𝑒_1 (\theta)}{\sqrt{N}}$$
 - Standard errors exhibit diminishing marginal returns for increasing sample size
+
+## Forms of Efficient Design
+- **D-efficient** named for use of scaled (by 1/K to account for number of parameters) matrix determinant
+- **A-efficient** named for use of average variance of the parameter estimates compared to an ideal orthogonal design
+- **S-efficient** named for use of sample size to provide theoretically minimum sample size to obtain asymptotically significant parameter estimates
+
+## Measuring Efficiency {.smaller}
+What in the AVC matters most?
+
+::: {.columns style="font-size: 0.75em;"}
+
+::: {.column width="48%"}
+
+#### Design 1
+
+::: {align="center"}
+
+| Set | A1 | A2 | B1 | B2 |
+|---|---|---|---|---|
+| 1 | 2 | 1 | 2 | 1 |
+| 2 | 4 | 3 | 6 | 2 |
+| 3 | 6 | 5 | 4 | 3 |
+| 4 | 2 | 5 | 4 | 1 |
+| 5 | 4 | 3 | 2 | 2 |
+| 6 | 6 | 1 | 6 | 3 |
+
+$$
+\Omega_1=
+\begin{bmatrix}
+8.76 & 0.69 & -0.78 & 2.91\\
+0.69 & 0.38 & 0.02 & 0.39\\
+-0.78 & 0.02 & 0.30 & 0.07\\
+2.91 & 0.39 & 0.07 & 1.61
+\end{bmatrix}
+$$
+
+:::
+
+:::
+
+::: {.column width="48%"}
+
+#### Design 2
+
+::: {align="center"}
+
+| Set | A1 | A2 | B1 | B2 |
+|---|---|---|---|---|
+| 1 | 6 | 3 | 2 | 2 |
+| 2 | 4 | 1 | 6 | 1 |
+| 3 | 2 | 5 | 4 | 3 |
+| 4 | 2 | 5 | 4 | 1 |
+| 5 | 6 | 1 | 2 | 2 |
+| 6 | 4 | 3 | 6 | 3 |
+
+$$
+\Omega_1=
+\begin{bmatrix}
+6.97 & -0.22 & -0.77 & 1.92\\
+-0.22 & 0.13 & 0.12 & 0.06\\
+-0.77 & 0.12 & 0.39 & 0.21\\
+1.92 & 0.06 & 0.21 & 1.27
+\end{bmatrix}
+$$
+
+:::
+
+:::
+
+:::
+
+## Measuring Efficiency (D/A) {.smaller}
+- D-error $= det(\Omega_1)^{1/K}$
+- A-error $= trace(\Omega_1)/K$
+- $K$ is the number of parameters (dimension of AVC matrix)
+- Lower value = more efficient design
+- Design 1: D-error = 0.568 and A-error = 2.761
+- Design 2: D-error = 0.434 and A-error = 2.194
+- Standard errors for ASCs typically large - some suggest omitting from the efficiency measures
+
+## Measuring Efficiency (S) {.smaller}
+- S-error = (asymptotic) t-ratios for each parameter
+- Extracts the (theoretical) minimum sample size needed for all parameters to be statistically significant
+
+::: {.columns style="font-size: 0.75em;"}
+
+::: {.column width="32%"}
+
+Given:
+
+$$
+\beta_1=-0.2, \quad \beta_2=0.3
+$$
+
+$$
+\beta_3=0.4, \quad \beta_4=0.5
+$$
+
+$$
+\Omega_1 = \text{same as before}
+$$
+
+$$
+t_N(\beta|X) = \frac{\beta}{se_N(\beta|X)}
+$$
+
+$$
+\Omega_N(\beta|X) = \frac{1}{N}\Omega_1(\beta|X)
+$$
+
+::: {style="margin-top: 0.8em;"}
+**S-estimate = 842** (incl. constants)
+
+**S-estimate = 17** (excl. constants)
+:::
+
+:::
+
+::: {.column width="34%"}
+
+#### $N=1$
+
+$$
+t_1(\beta_1) = \frac{-0.2}{\sqrt{8.76}} = -0.068
+$$
+
+$$
+t_1(\beta_2) = \frac{0.3}{\sqrt{0.38}} = 0.487
+$$
+
+$$
+t_1(\beta_3) = \frac{0.4}{\sqrt{0.30}} = 0.730
+$$
+
+$$
+t_1(\beta_4) = \frac{0.5}{\sqrt{0.07}} = 1.890
+$$
+
+:::
+
+::: {.column width="34%"}
+
+#### Required sample size ($t=2$)
+
+$$
+t_{842}(\beta_1) = \frac{-0.2}{\sqrt{8.76/842}} = -1.961
+$$
+
+$$
+t_{17}(\beta_2) = \frac{0.3}{\sqrt{0.38/17}} = 2.007
+$$
+
+$$
+t_{8}(\beta_3) = \frac{0.4}{\sqrt{0.30/8}} = 2.066
+$$
+
+$$
+t_{2}(\beta_4) = \frac{0.5}{\sqrt{0.07/2}} = 2.673
+$$
+
+:::
+
+:::
+
+## Priors {.smaller}
+- Where to get priors from?
+  - Pilot study
+  - Focus group
+  - Literature
+  - Expert judgement
+- What if no priors are available?
+  - Create an orthogonal design/efficient design with 0 priors
+  - Give it to 10\% of respondents
+  - Estimate parameters
+  - Create efficient design
+  - Give it to remaining 90\% of respondents
+
+## Bayesian Efficient Design {.smaller}
+- Wang et al. (2017) found d-efficient design can lead to low efficiency if priors incorrectly specified
+- Bayesian efficient design assumes prior parameters only approximately known (according to a distribution)
+- Bayesian efficient design less 'optimal' but more robust to misspecification
+- Each efficiency measure has a corresponding Bayesian version
+$$\text{Bayesian D-error} = \int_{\beta} det(\Omega(\beta|X))^{1/K}f(\beta|\mu,\sigma^2)d\beta$$
+
+- Difficult to compute but can approximate via simulation
 
 ## SP-Pivoted-Off-RP {.smaller}
 - One method for overcoming unrealistic choice experiments

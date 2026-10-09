@@ -42,27 +42,27 @@ $$𝑈_𝑗 \ge 𝑈_𝑘 \text{; } k \neq j \text{ & } j,k \in C_i$$
 
 - Probability of choosing alternative j:
 
-$$Pr⁡(𝑗) = Pr⁡((𝑉_𝑗+\epsilon_𝑗) \ge (𝑉_𝑘+\epsilon_𝑘 ))$$
-$$Pr⁡( 𝑗)=Pr⁡(\epsilon_𝑘 \leq (𝑉_𝑗−𝑉_𝑘+\epsilon_𝑗 )) \text{ (a CDF function)}$$
+$$Pr⁡(𝑗) = Pr⁡((𝑉_𝑗+\varepsilon_𝑗) \ge (𝑉_𝑘+\varepsilon_𝑘 ))$$
+$$Pr⁡( 𝑗)=Pr⁡(\varepsilon_𝑘 \leq (𝑉_𝑗−𝑉_𝑘+\varepsilon_𝑗 )) \text{ (a CDF function)}$$
 
 ## Discrete Multinomial Choice {.smaller}
 A multinomial choice reduced into an equivalen
 Choice probability in a multinomial choice context:
-$$Pr⁡(𝑗)=Pr⁡(\epsilon_𝑘 \leq (𝑉_𝑗−𝑉_𝑘+\epsilon_𝑗 ))$$
+$$Pr⁡(𝑗)=Pr⁡(\varepsilon_𝑘 \leq (𝑉_𝑗−𝑉_𝑘+\varepsilon_𝑗 ))$$
 
-Probability distribution of random utility ($\epsilon$) needs to be fully specified to get the unconditional probability:
-$$Pr⁡(𝑗)=\int_{\epsilon_𝑗=−\infty}^{+\infty}\int_{\epsilon_𝑘=−\infty}^{𝑉_𝑗−𝑉_𝑘+\epsilon_𝑗} 𝑓(\epsilon_𝑗,\epsilon_𝑘)𝑑 \epsilon_𝑗 𝑑 \epsilon_𝑘$$
+Probability distribution of random utility ($\varepsilon$) needs to be fully specified to get the unconditional probability:
+$$Pr⁡(𝑗)=\int_{\varepsilon_𝑗=−\infty}^{+\infty}\int_{\varepsilon_𝑘=−\infty}^{𝑉_𝑗−𝑉_𝑘+\varepsilon_𝑗} 𝑓(\varepsilon_𝑗,\varepsilon_𝑘)𝑑 \varepsilon_𝑗 𝑑 \varepsilon_𝑘$$
 
-  - Specification of univariate distribution, $f(\epsilon_k)$ , and the joint distribution, $f(\epsilon_j,\epsilon_k)$, are necessary
+  - Specification of univariate distribution, $f(\varepsilon_k)$ , and the joint distribution, $f(\varepsilon_j,\varepsilon_k)$, are necessary
 - Possible distributions: 
   - Multivariate normal distribution
   - Type I Extreme Value distribution
 
 ## Type I Extreme Value Distribution {.smaller}
 - Type I (**Gumbel**) distribution is the most convenient distribution to derive a closed form choice model
-  - If \epsilon is Type I Extreme Value (Gumbel) distributed:
-$$𝑓(\epsilon)=\mu 𝑒^{−\mu(\epsilon−\eta)} 𝑒^{−𝑒^{−\mu(\epsilon−\eta)}}$$
-$$F = e^{-e^{-\mu(\epsilon-\eta)}} \text{; } \mu > 0$$
+  - If \varepsilon is Type I Extreme Value (Gumbel) distributed:
+$$𝑓(\varepsilon)=\mu 𝑒^{−\mu(\varepsilon−\eta)} 𝑒^{−𝑒^{−\mu(\varepsilon−\eta)}}$$
+$$F = e^{-e^{-\mu(\varepsilon-\eta)}} \text{; } \mu > 0$$
 
 - $\eta$ is a **location parameter** and $\mu$ is a **positive scale parameter**
 - Location parameter is **mode** of distribution
@@ -75,13 +75,13 @@ $$F = e^{-e^{-\mu(\epsilon-\eta)}} \text{; } \mu > 0$$
 1. The **mode** of the distribution is $\eta$ (the location of peak of the PDF on x axis from zero).
 2. The **mean** is ($\eta+\gamma/\mu$), where $\gamma$ = Euler’s constant=0.577.
 3. The **variance** is $\pi^2/6\mu^2$.
-4. If $\epsilon$ is Gumbel distributed with ($\eta, \mu$), and if $\alpha$ is any positive scalar constant, then ($\alpha \epsilon + V$) is also Gumbel distributed with parameters ($\alpha \eta +V$) and $\mu/\alpha$.
-5. If $\epsilon_1$ and $\epsilon_2$ are independent Gumbel variables, then ($\epsilon_1-\epsilon_2$) is **logistically distributed**.
-6. If $\epsilon_1$ and $\epsilon_2$ are **Identical and Independent Gumbel variables** with parameters ($\eta_1,\mu$) and ($\eta_2,\mu$) respectively then $\max(\epsilon_1,\epsilon_2)$ is also Gumbel distributed with parameters:      
+4. If $\varepsilon$ is Gumbel distributed with ($\eta, \mu$), and if $\alpha$ is any positive scalar constant, then ($\alpha \varepsilon + V$) is also Gumbel distributed with parameters ($\alpha \eta +V$) and $\mu/\alpha$.
+5. If $\varepsilon_1$ and $\varepsilon_2$ are independent Gumbel variables, then ($\varepsilon_1-\varepsilon_2$) is **logistically distributed**.
+6. If $\varepsilon_1$ and $\varepsilon_2$ are **Identical and Independent Gumbel variables** with parameters ($\eta_1,\mu$) and ($\eta_2,\mu$), respectively, then $\max(\varepsilon_1,\varepsilon_2)$ is also Gumbel distributed with parameters:      
 $$\left(\frac{1}{\mu} \ln⁡(𝑒^{\mu\eta_1}+𝑒^{\mu\eta_2 } ),\mu \right)$$
 
 ## Basic Properties of Gumbel distribution {.smaller}
-7. If $( \epsilon_1,\epsilon_2,\epsilon_3,\dots ,\epsilon_n )$ are $n$ independent Gumbel distributed variables with parameters ($\eta_1,\mu), (\eta_2,\mu),\dots (\eta_n,\mu)$ respectively then $\max(\epsilon_1,\epsilon_2,\epsilon_3,\dots,\epsilon_n)$ is also Gumbel distributed with parameters (mean, scale): 
+7. If $( \varepsilon_1,\varepsilon_2,\varepsilon_3,\dots ,\varepsilon_n )$ are $n$ independent Gumbel distributed variables with parameters ($\eta_1,\mu), (\eta_2,\mu),\dots (\eta_n,\mu)$ respectively then $\max(\varepsilon_1,\varepsilon_2,\varepsilon_3,\dots,\varepsilon_n)$ is also Gumbel distributed with parameters (mean, scale): 
 $$\left(\frac{1}{\mu} \ln⁡\sum_{𝑗=1}^𝑛 𝑒^{\mu \eta_𝑗}, \mu \right)$$
 
 **Notes:**
@@ -93,20 +93,20 @@ $$\left(\frac{1}{\mu} \ln⁡\sum_{𝑗=1}^𝑛 𝑒^{\mu \eta_𝑗}, \mu \right)
 # Multinomial Logit Model - Scale & Systematic Utility Functions
 
 ## Multinomial Logit Model (MNL) {.smaller}
-- In case of a multinomial choice situation: Assume random utility ($\epsilon$) is Gumbel distributed with $\eta = 0$ location parameter and a common scale, $\mu$.
+- In case of a multinomial choice situation: Assume random utility ($\varepsilon$) is Gumbel distributed with $\eta = 0$ location parameter and a common scale, $\mu$.
 - Assume that the utility of the second-best alternative is $U^*$, which is the **maximum of all other alternatives except alternative $j$**, the best one. 
-$$𝑈^∗=\max_{k \neq j \text{ & } 𝑗,𝑘 \in 𝐶_𝑖} (𝑉_𝑘+\epsilon_𝑘 )$$
+$$𝑈^∗=\max_{k \neq j \text{ & } 𝑗,𝑘 \in 𝐶_𝑖} (𝑉_𝑘+\varepsilon_𝑘 )$$
 - According to Property 7, $U^*$ is also Gumbel distributed with parameters (mean, scale)
 
 $$ \left( \frac{1}{\mu} \ln \sum_{k \neq j \text{ & } 𝑗,𝑘 \in 𝐶_𝑖} e^{\mu V_k}, \mu \right)$$
 
 ## Multinomial Logit Model (MNL) {.smaller}
 We can write that the second-best alternative is
-$$U^∗= V^∗+\epsilon^∗ \text{, } V^* = \frac{1}{\mu} \ln \sum_{k \neq j \text{ & } 𝑗,𝑘 \in 𝐶_𝑖} e^{\mu V_k}$$		     		
+$$U^∗= V^∗+\varepsilon^∗ \text{, } V^* = \frac{1}{\mu} \ln \sum_{k \neq j \text{ & } 𝑗,𝑘 \in 𝐶_𝑖} e^{\mu V_k}$$		     		
 Now for the probability of choosing alternative $j$ (equivalent binary logit form)
-$$Pr⁡(𝑗)=Pr⁡\left((𝑉_𝑗+\epsilon_𝑗) \ge \max_{k \neq j \text{ & } 𝑗,𝑘 \in 𝐶_𝑖} (V_k + \epsilon_k)\right)$$
-$$Pr⁡(𝑗)=Pr\left((𝑉_𝑗+\epsilon_𝑗) \ge (𝑉^∗+\epsilon^∗)\right)$$
-$$Pr⁡(𝑗)=Pr⁡\left((𝑉^∗+\epsilon^∗)−(𝑉_𝑗+\epsilon_𝑗) \leq 0\right)=Pr\left((\epsilon^∗−\epsilon_𝑗) \leq(𝑉_𝑗−𝑉^∗)\right)$$
+$$Pr⁡(𝑗)=Pr⁡\left((𝑉_𝑗+\varepsilon_𝑗) \ge \max_{k \neq j \text{ & } 𝑗,𝑘 \in 𝐶_𝑖} (V_k + \varepsilon_k)\right)$$
+$$Pr⁡(𝑗)=Pr\left((𝑉_𝑗+\varepsilon_𝑗) \ge (𝑉^∗+\varepsilon^∗)\right)$$
+$$Pr⁡(𝑗)=Pr⁡\left((𝑉^∗+\varepsilon^∗)−(𝑉_𝑗+\varepsilon_𝑗) \leq 0\right)=Pr\left((\varepsilon^∗−\varepsilon_𝑗) \leq(𝑉_𝑗−𝑉^∗)\right)$$
 
 ## Multinomial Logit Model (MNL) {.smaller}
 - According to Property 5, this function is logistically distributed. So
@@ -119,9 +119,9 @@ $$Pr⁡(𝑗)=\frac{e^{\mu V_j}}{\sum_{𝑘 \in 𝐶_𝑖} e^{\mu V_k}}$$
 
 ## Scale of the MNL Model {.smaller}
 - Scale ($\mu$) is inversely related to the variance of random error term
-- Variance is $\pi^2/6\mu^2$ for a IID Type I EV error
+- Variance is $\pi^2/6\mu^2$ for an IID Type I EV error
 - As $\mu -> \infty$, Variance $-> 0$
-  - All information are captured by the deterministic component ($V$
+  - All information are captured by the deterministic component ($V$)
   - Choice becomes deterministic (the alternative with maximum V is chosen)
 - As $\mu -> 0$, Variance $-> \infty$ & $\exp(\mu V) = 1$ 
   - Alternatives are **equally likely**
@@ -130,7 +130,7 @@ $$Pr⁡(𝑗)=\frac{e^{\mu V_j}}{\sum_{𝑘 \in 𝐶_𝑖} e^{\mu V_k}}$$
 - Separate scale needs to be specified when fusing multiple datasets
 
 ## Systematic Utility Function {.smaller}
-Systematic utility function: Linear-in-parameter function
+Systematic utility function: Linear-in-parameters function
 $$𝑉_1=\beta_1+\beta_𝑡 𝑥_{1𝑡}+\beta_{1𝑎} 𝑥_𝑎+\beta_𝑏 𝑥_{1𝑏}^2+\beta_{1𝑎𝑐} 𝑥_𝑎^3+\beta_{1𝑎𝑙}  \ln⁡(𝑥_𝑎)+\dots$$
 $$𝑉_2=\beta_2+\beta_𝑡 𝑥_{2𝑡}+\beta_{2𝑎} 𝑥_𝑎+\beta_𝑏 𝑥_{2𝑏}^2+\beta_{2𝑎𝑐} 𝑥_𝑎^3+\beta_{2𝑎𝑙} + \ln⁡(x_a)+\dots$$
 $$\vdots$$
@@ -170,12 +170,13 @@ Model goodness-of-fit is measured by $\rho^2$ value
 
 ![](../../../assets/images/teaching/ENCI707/Lecture5/gof_LL.svg){.absolute top="150" left="0"}
 <br><br><br><br><br>
+
 - $k$ = difference in total number of parameters between two models
 $$\rho_0^2 = \frac{LL(\beta) - LL(0)}{LL(*) - LL(0)} = 1 - \frac{LL(\beta)}{LL(0)} \text{; } adj-\rho_0^2 = 1 - \frac{LL(\beta) - k}{LL(0)}$$
-
+\vspace{-1em}
 $$\rho_C^2 = \frac{LL(\beta) - LL(C)}{LL(*) - LL(C)} = 1 - \frac{LL(\beta)}{LL(C)} \text{; } adj-\rho_C^2 = 1 - \frac{LL(\beta) - k}{LL(C)}$$
 
-- Adjusted $\rho^2$ value 0.3 to 0.5 is considered reasonable (*but depends on model*)
+- Adjusted $\rho^2$ value in range 0.3 to 0.5 is considered reasonable (*but depends on model*)
 - **Alternative:** Comparing predicted vs. observed shares
 
 ## Goodness-of-Fit {.smaller}
@@ -204,9 +205,9 @@ Validation by 1000 Bootstrap Sample Simulation
 
 ## Specification Tests
 - Expected signs of the coefficients
-- Expected substitution patterns - e.g., value of time savings, etc.
-- Likelihood ratio test ($\times$-2 by Wilks Theorem):$-2[LL(\beta)-LL(\beta^{'})]$ is $\chi^2$ distributed with $k$ (= number of restricted parameters = the difference between number of parameters of two models) degrees of freedom
-- Goodness-of-Fit measures: Rho-square, AIC, BIC
+- Expected substitution patterns - e.g., value of time, etc.
+- Likelihood ratio test for ($\times$-2 by Wilks Theorem):$-2[LL(\beta')-LL(\beta)]$ is $\chi^2$ distributed with $k$ (= number of restricted parameters = the difference between number of parameters of two models) degrees of freedom and $\beta'$ being the restricted model
+- Goodness-of-Fit measures: $\rho^2$, AIC, BIC
 
 ## Specification of Logit Model {.smaller}
 - Logit model works fine if there is no significant random variation of effects of any systematic variables:
@@ -239,7 +240,7 @@ Validation by 1000 Bootstrap Sample Simulation
   - If $Cost^2$ has a statistically significant and reasonable parameter value, income effects need to be addressed
 - Addressing income effects:
   - Income normalization as ($Cost/Income$) or ($Income-Cost$)
-  - Classifying population into different income categories and develop separate models for each
+  - Classify population into different income categories and develop separate models for each
   - Interact income category with other variables
 
 ## Aggregation/Market Segmentation
@@ -271,8 +272,8 @@ $$\text{Direct ME} =\frac{\partial Pr⁡(𝑗)}{\partial 𝑥_j}=Pr⁡(𝑗)(1�
 $$\text{Direct E}=  \frac{\partial Pr⁡(𝑗)}{\partial 𝑥_j}\frac{x_j}{Pr(j)}=x_j(1−Pr⁡( 𝑗)) \beta_{𝑥_𝑗}$$
 
 ## Marginal Effect/Elasticity:  Attributes of Alternatives {.smaller}
-- **Disaggregate Cross elasticity/marginal effect:** with respect to an attribute of **different alternative**
-$$\text{Cross ME} =\frac{\partial Pr⁡(𝑗)}{\partial 𝑥_k}=Pr⁡(𝑗)Pr⁡(k) \beta_{𝑥_k}$$
+- **Disaggregate Cross elasticity/marginal effect:** with respect to an attribute of a **different alternative**
+$$\text{Cross ME} = \frac{\partial Pr⁡(𝑗)}{\partial 𝑥_k} = - Pr⁡(𝑗)Pr⁡(k) \beta_{𝑥_k}$$
 $$\text{Cross E}=  \frac{\partial Pr⁡(𝑗)}{\partial 𝑥_k}\frac{x_k}{Pr(j)}=-x_kPr⁡(k) \beta_{𝑥_k}$$
 
 - Cross elasticity is the same for all other alternative than alternative $k$
@@ -281,9 +282,9 @@ $$\text{Cross E}=  \frac{\partial Pr⁡(𝑗)}{\partial 𝑥_k}\frac{x_k}{Pr(j)}
 ## Fact to check: Attributes of Alternatives {.smaller}
 - Summation of all probabilities of a choice model = 1
   - Summation of changes in probabilities (of all alternatives) with respect to a variable (derivative)  = 0
-$$\sum_j \frac{\partial Pr(j)}{\partial x_{jp}}=\frac{\partial Pr(j)}{\partial x_{jp}} + \sum_{k \neq j} \frac{\partial Pr(k)}{\partial x_{jp}} \text{; (Considering generic coefficients)}$$
-$$\sum_j \frac{\partial Pr(j)}{\partial x_{jp}}=\beta_p Pr(j) (1-Pr(j)) - \beta_p Pr(j)\sum_{k \neq j}Pr(k)$$
-$$\sum_j \frac{\partial Pr(j)}{\partial x_{jp}}=\beta_p Pr(j) (1-Pr(j)) - \beta_p Pr(j) (1-Pr(j)) = 0$$
+$$\sum_j \frac{\partial Pr(j)}{\partial x_{j}}=\frac{\partial Pr(j)}{\partial x_{j}} + \sum_{k \neq j} \frac{\partial Pr(k)}{\partial x_{j}} \text{; (Considering generic coefficients)}$$
+$$\sum_j \frac{\partial Pr(j)}{\partial x_{j}}=\beta_{x_j} Pr(j) (1-Pr(j)) - \beta_{x_j} Pr(j)\sum_{k \neq j}Pr(k)$$
+$$\sum_j \frac{\partial Pr(j)}{\partial x_{j}}=\beta_{x_j} Pr(j) (1-Pr(j)) - \beta_{x_j} Pr(j) (1-Pr(j)) = 0$$
 
 - This is true for **any discrete choice model** and can be used to verify accuracy of elasticity calculation
 
@@ -296,7 +297,7 @@ $$\sum_j \frac{\partial Pr(j)}{\partial x_{jp}}=\beta_p Pr(j) (1-Pr(j)) - \beta_
 
 ::::: columns
 ::: {.column width="50%"}
-$$𝐸_{𝑥_𝑘}^𝑗=\sum_{i=1}^n \frac{Pr_i(j)}{\sum_{i=1}^n Pr_i(j)}E_{x_k}^{Pr_i(j)}$$
+$$𝐸_{𝑥_𝑘}^𝑗=\sum_{i=1}^n \frac{Pr_i(j)}{\sum_{i=1}^n Pr_i(j)}E_{x_k}^{ij}$$
 :::
 ::: {.column width="50%"}
 - $i$ is the individual in the sample of size n
@@ -312,20 +313,20 @@ $$𝐸_{𝑥_𝑘}^𝑗=\sum_{i=1}^n \frac{Pr_i(j)}{\sum_{i=1}^n Pr_i(j)}E_{x_k}
 ![](../../../assets/images/teaching/ENCI707/Lecture5/figure8.1.png){fig-align="center"}
 
 ## Marginal/Elasticity: Attributes of Choice Maker/Choice Context {style="font-size: 0.65em;"}
-- Such attributes have **alternative-specific coefficients**: For example, consider income of choice maker
+- Such attributes have **alternative-specific coefficients**: For example, consider income of individual, $i$
 $$\frac{\partial Pr(j)}{\partial Inc_{ij}} = (1-Pr(j))Pr(j)\beta_{inc,ij} \text{; }j,k\in C_i$$
-$$\frac{\partial Pr(j)}{\partial Inc_{ik}} = Pr(j)Pr(k)\beta_{inc,ik}$$
+$$\frac{\partial Pr(j)}{\partial Inc_{ik}} = - Pr(j)Pr(k)\beta_{inc,ik}$$
 - Corresponding sum of all alternatives, $j \neq k$
 $$\sum_{j \neq k} \frac{\partial Pr(j)}{\partial Inc_{ik}} = -Pr(j) \sum_{k \neq j} Pr(k) \beta_{inc,ik}$$
-- Rate of change of $Pr(j)$ with respect to income of individual, i:
+- Rate of change of $Pr(j)$ with respect to income of individual, $i$:
 $$\frac{\partial Pr(j)}{\partial Inc_i} = \underset{\text{Direct Elasticity}}{\frac{\partial Pr(j)}{\partial Inc_{ij}}} + \underset{\text{Cross Elasticity}}{\sum_{j \neq k}\frac{\partial Pr(j)}{\partial Inc_{ij}}}$$
 
 ## Marginal/Elasticity: Attributes of Choice Maker/Choice Context {.smaller}
-- Rate of change of $Pr(j)$ with respect to income:
+- Rate of change of $Pr(j)$ with respect to income of individual, $i$:
 $$\frac{\partial Pr(j)}{\partial Inc_i} = \frac{\partial Pr(j)}{\partial Inc_{ij}} + \sum_{k \neq j} \frac{\partial Pr(j)}{\partial Inc_{ik}} = (1-Pr(j))Pr(j)\beta_{inc,ij}-Pr(j)\sum_{k \neq j} Pr(k) \beta_{inc,ik}$$
 $$\frac{\partial Pr(j)}{\partial Inc_i} = Pr(j)\beta_{inc,ij}-Pr(j)Pr(j)\beta_{inc,ij}-Pr(j)\sum_{k \neq j}Pr(k)\beta_{inc,ik}$$
 $$\frac{\partial Pr(j)}{\partial Inc_i} = Pr(j)\left( \beta_{inc,ij} - \overline{\beta_{inc}} \right)$$
-$$\overline{\beta_{inc,i}} = \sum_{k \in C_i} Pr(k)\beta_{inc,k} \begin{array}{c}\text{; probability weighted average of}\\ \text{alt specific income parameters}\end{array}$$
+$$\overline{\beta_{inc,i}} = \sum_{k \in C_i} Pr(k)\beta_{inc,ik} \begin{array}{c}\text{; probability weighted average of}\\ \text{alt specific income parameters}\end{array}$$
 
 ## Marginal/Elasticity: Attributes of Choice Maker/Choice Context {.smaller}
 - Elasticity $Pr(j)$ with respect to income:
@@ -360,12 +361,12 @@ $$E_{x_i}^{ji} = \frac{Pr(j)_{x_i=1} - Pr(j)_{x_i=0}}{Pr(j)_{x_i=1}+Pr(j)_{x_i=0
 ## IIA: Independent and Irrelevant Alternatives {.smaller}
 $$\frac{Pr(j)}{Pr(k)} = \frac{\exp(V_j)}{\exp(V)k)} = \exp(V_j - V_k)$$
 
-- This property is derived from assumption: the random utilities,$\epsilon$ are **independent and identical in distribution**
+- This property is derived from assumption: the random utilities,$\varepsilon$ are **independent and identical in distribution**
 - Random error are identically distributed, having **same scale or variance**
 \begin{equation}
-\begin{bmatrix} \epsilon_1 \\
-\epsilon_2 \\
-\epsilon_3 \end{bmatrix} = 
+\begin{bmatrix} \varepsilon_1 \\
+\varepsilon_2 \\
+\varepsilon_3 \end{bmatrix} = 
 \begin{bmatrix} \sigma^2 & 0 & 0 \\
 0 & \sigma^2 & 0 \\
 0 & 0 & \sigma^2 \end{bmatrix} = 
@@ -383,7 +384,7 @@ Actual will be P(car)=1/2, P(<span style="color: blue;">blue bus</span>)=1/4 and
 ## IIA: Independent and Irrelevant Alternatives {style="font-size: 0.65em;"}
 - Three alternatives with same utilities 1: car, 2: <span style="color: blue;">blue bus</span> and 3: <span style="color: red;">red bus</span> and (V1=V2=V3=V) 
   - Now probability of choosing 1: car would be compared against the second highest attractive alternative ($U^*$)
-$$𝑈^∗=\max⁡( 𝑈_2,𝑈_3)=𝑉^∗+\epsilon^∗
+$$𝑈^∗=\max⁡( 𝑈_2,𝑈_3)=𝑉^∗+\varepsilon^∗
 $$
 - As per Gumbel distribution with 0 mean and unit scale
 $$𝑉^∗=\ln⁡( 𝑒^{𝑉_2}+𝑒^{𝑉_3})=\ln⁡( 2𝑒^𝑉)=\ln⁡(2)+𝑉
@@ -393,7 +394,7 @@ $$𝑃(𝑐𝑎𝑟)=\frac{1}{1+𝑒^{𝑉^∗−𝑉_1}} = \frac{1}{1+𝑒^{�
 $$
 
 ## IIA: Independent and Irrelevant Alternatives {.smaller}
-- Actually, 2(<span style="color: blue;">blue bus</span>) and 3(<span style="color: red;">red bus</span>) are **perfectly correlated** and in that case the maximum utility of 2 and 3 are simply $(V+\epsilon)$ that means $V^*=V$
+- Actually, 2(<span style="color: blue;">blue bus</span>) and 3(<span style="color: red;">red bus</span>) are **perfectly correlated** and in that case the maximum utility of 2 and 3 are simply $(V+\varepsilon)$ that means $V^*=V$
 $$𝑃(𝑐𝑎𝑟) = \frac{1}{1+𝑒^{𝑉^∗−𝑉_1}} = \frac{1}{1+𝑒^{𝑉−𝑉}} = \frac{1}{1+1}=1/2
 $$
 - That means IID assumption makes $V^*$ **too high** by an amount of $\ln2$ 

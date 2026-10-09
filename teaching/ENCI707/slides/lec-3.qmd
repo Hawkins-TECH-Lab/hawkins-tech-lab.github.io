@@ -181,7 +181,7 @@ Is the traveler willing to pay extra $(Cost_{car}-Cost_{transit})$ to save $(Tim
 
 If yes (pick car): $\left(\frac{\beta_𝑡}{\beta_𝑐}\right)𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟} + 𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} \leq \left(\frac{\beta_𝑡}{\beta_𝑐}\right)𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} + 𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}$
 
-Willingness-to-pay or Value of Travel Time Savings (VOTS):
+Willingness-to-pay or Value of Travel Time (VTT):
 $$\left(\frac{\beta_𝑡}{\beta_𝑐}\right) \geq \frac{(𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟}−𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡})}{(𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}−𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟})}$$
 
 ## Discrete Choice

@@ -8,7 +8,7 @@ link-external-newwindow: true
 |           | Day       | Time              | Location                       |
 |-----------|-----------|-------------------|--------------------------------|
 | Lectures  | Tue, Thu | 2:00 pm - 3:15 pm | ENF 304     |
-| Office hours  | Mon | 2:00 pm - 4:00 pm | ENF284      |
+| Office hours  | Wed | 3:00 pm - 4:30 pm | ENF284      |
 
 **Prerequisites:** A basic knowledge of statistics and coding in either R or Python. \
 **Description:** ENCI 707 is graduate-level course covering the estimation and application of econometric models. This course deals with the quantitative analysis and modeling of demand for civil engineering planning and policy analysis. Students will gain an understanding of the theories and models of demand based on basic microeconomic concepts of consumer behaviour. The theory covered in this course is applicable to transportation demand, environmental resource valuation, and any other consumer behaviour context. An overview will be given of data challenges and methods of survey design. The course will focus on two main topic areas: (1) econometric model theory and estimation and (2) experimental design for policy analysis. \

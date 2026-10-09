@@ -16,6 +16,796 @@ execute:
 ## Outline
 
 ::: incremental
-1. Survey terms
-2. Survey design
+1. Maximum likelihood estimation
+2. Maximum simulated likelihood estimation
+3. Profile likelihood estimation
+4. Automatic differentiation
 :::
+
+# Maximum Likelihood (ML) Estimation
+
+## Representative model estimation problem {.smaller}
+
+- Consider the logit model:
+
+$$
+Pr(Y_i=1\mid X_i)
+=
+\frac{\exp(X_i\beta)}
+     {1+\exp(X_i\beta)}
+$$
+$$
+l(\beta\mid \mathbf Y,\mathbf X)
+=
+\prod_{i=1}^{n}
+Pr(Y_i=1\mid X_i)^{Y_i}
+\Bigl(1-Pr(Y_i=1\mid X_i)\Bigr)^{1-Y_i}
+$$
+$$
+L(\beta\mid \mathbf Y,\mathbf X)
+=
+\sum_{i=1}^{n}
+Y_i\log Pr(Y_i=1\mid X_i)
++
+(1-Y_i)\log\left(1-Pr(Y_i=1\mid X_i)\right)
+$$
+
+- Rule of thumb: likelihood is the joint probability of the observed data
+  - We are exploiting the independent nature of the data
+  - Joint probability of two independent values is the product of their marginals
+- Any monotonic transformation preserves the maximizing value
+
+## Plug in Logit to the ML {.smaller}
+
+Substituting the logit probability:
+
+$$
+L(\beta)
+=
+\sum_{i=1}^{n}
+\left[
+Y_i\log
+\left(
+\frac{\exp(X_i\beta)}
+     {1+\exp(X_i\beta)}
+\right)
++
+(1-Y_i)
+\log
+\left(
+\frac{1}
+     {1+\exp(X_i\beta)}
+\right)
+\right]
+$$
+
+After simplification:
+
+$$
+L(\beta)
+=
+\sum_{i=1}^{n}
+\left[
+Y_iX_i\beta
+-
+\log\left(1+\exp(X_i\beta)\right)
+\right]
+$$
+
+- We now have a likelihood function. Goal: $\max_{\beta} L(\beta)$
+
+- Take derivatives and search for the maximum
+
+- Some good and bad news...
+
+## The Bad News... {.smaller}
+
+$$
+L(\beta)
+=
+\sum_{i=1}^{n}
+\left[
+Y_iX_i\beta
+-
+\log(1+\exp(X_i\beta))
+\right]
+$$
+
+- There is no analytic solution for this $\beta$. Unlike with OLS, we cannot get a closed-form solution for our estimate - this is true of most estimators
+- This is actually a well-behaved solution because it is globally concave and has easily calculated first and second derivatives
+- Good news? We have computers!
+
+## The Good News {.smaller}
+Score function:
+$$
+\frac{\partial L(\beta)}
+{\partial \beta}
+=
+\sum_{i=1}^{n}
+X_i
+\left(
+Y_i
+-
+\frac{\exp(X_i\beta)}
+     {1+\exp(X_i\beta)}
+\right)
+$$
+
+- While there is not an analytic solution, if there is a maximum where $\hat{\beta}$ satisfies $\frac{\partial L(\hat{\beta})}{\partial \beta} = 0$, then there are sets of conditions such that
+$$
+\lim_{n\to\infty}
+Pr\!\left(
+\|\hat\beta_n-\beta_0\|>\varepsilon
+\right)
+=
+0 \text{ (weak consistency)}
+$$
+$$
+\sqrt n
+(\hat\beta_n-\beta_0)
+\overset{d}{\to}
+N
+\left(
+0,
+-\mathbb E
+\left[
+\frac{\partial^2L(\beta_0)}
+     {\partial\beta\partial\beta'}
+\right]^{-1}
+\right) \text{ (asymptotic normality)}
+$$
+
+- The challenge is that the conditions for when this is satisfied vary from problem to
+problem
+
+## How to Compute: Newton-Raphson
+
+- We focus on a few numerical optimization routines
+- Many possible optimization methods!
+- One common approach is Newton-Raphson
+
+## Newton-Raphson Computation of MLE {.smaller}
+
+- Let $Q(\theta)=-L(\theta)$ (denote with $\theta$ to highlight that this is a general problem)
+- Idea is to take arbitrary objective function and fit a local quadratic based on derivatives
+  - Find the minimizer of that quadratic. Repeat!
+
+Update rule:
+$$
+\theta_{k+1}
+=
+\theta_k
+-
+\left[
+\frac{\partial^2Q(\theta_k)}
+     {\partial\theta\partial\theta'}
+\right]^{-1}
+\frac{\partial Q(\theta_k)}
+     {\partial\theta}
+$$
+
+- For logit, we already know the first derivative and can easily calculate the second derivative
+- Works well because the problem is convex and smooth
+
+## More General Methods {.smaller}
+
+- Suppose the Hessian is unavailable or expensive to compute
+- Let $A_k$ be any positive-definite matrix
+
+::: {.columns}
+
+:::: {.column width="40%"}
+Then:
+
+$$
+\theta_{k+1}
+=
+\theta_k
+-
+\lambda_k
+A_k
+\frac{\partial Q}{\partial\theta}(\theta_k)
+$$
+
+Newton-Raphson is a special case:
+
+$$
+\lambda_k=1
+$$
+
+$$
+A_k
+=
+\left[
+\frac{\partial^2L(\theta_k)}
+     {\partial\theta\partial\theta'}
+\right]^{-1}
+$$
+::::
+
+:::: {.column width="60%"}
+- Two ingredients: (1) Step length $\lambda_k$ and (2) Search direction $d_k = A_k \frac{\partial Q}{\partial\theta}(\theta_k)$ (controlled by $A_k$, which selects direction of gradient)
+- Sometimes rescale: $\tilde d_k = \frac{d_k} {1+\sqrt{d_k'd_k}}$ to ensure $\|\tilde d_k\|<1$
+::::
+
+:::
+
+
+## Simple Version of the Algorithm
+
+Choose a direction, then choose how far to move:
+
+$$
+\lambda_k
+=
+\arg\min_{\lambda}
+Q(\theta_k+\lambda\tilde d_k)
+$$
+
+Simplest choice (steepest ascent):
+
+$$
+A_k=I
+$$
+
+- How do we find $\lambda_k$? If $\theta$ is scalar, it is feasible (but inefficient) to calculate using a simple grid search
+- Higher-dimensional problems: too slow
+
+## Two Line Search Algorithms: (1) Newton's Method {.smaller}
+
+Given a direction $d$, define
+
+$$
+\lambda^{*}
+=
+\arg\min_\lambda Q(\lambda)
+$$
+
+- Newton's method updates (finds root of function - e.g., derivative):
+- Start with an initial guess $\lambda_0$. Then,
+
+$$\lambda_{k+1}
+=
+\lambda_k
+-
+\frac{Q'(\lambda_k)}
+     {Q''(\lambda_k)}
+$$
+
+- Repeat until: $|\lambda_{k+1}-\lambda_k|$ is sufficiently small
+
+- Drawback: Requires evaluation of the second derivative
+
+## Two Line Search Algorithms: (2) Golden Search {.smaller}
+
+Requirements:
+
+- Unimodal objective function
+- Initial interval:
+
+$$
+[\lambda_l,\lambda_h]
+$$
+
+Choose:
+
+$$
+\lambda_{m1}
+=
+\lambda_l
++
+0.392(\lambda_h-\lambda_l)
+$$
+
+$$
+\lambda_{m2}
+=
+\lambda_l
++
+0.618(\lambda_h-\lambda_l)
+$$
+
+## Two Line Search Algorithms: (2) Golden Search {.smaller}
+Given the four points, can check two conditions:
+
+1) If $Q(\lambda_{m2})>Q(\lambda_{m1})$ then the minimizer lies in
+$$
+[\lambda_l,\lambda_{m2}]
+$$
+
+2) If $Q(\lambda_{m2})<Q(\lambda_{m1})$ then the minimizer lies in
+$$
+[\lambda_{m1},\lambda_h]
+$$
+
+Repeat until convergence
+
+## Davidson-Fletcher-Powell (DFP) {.smaller}
+
+- How do we construct $A_k$? 
+  - Quasi-Newton method such as DFP or more commonly BFGS (Broyden-Fletcher-Goldfarb-Shanno)
+  - BFGS uses a related update to DFP but updates the Hessian not its inverse
+- Initialize with any positive definite matrix $A$ (e.g., identity matrix)
+- Algorithm (repeat until convergence)
+  1. Compute direction $\tilde d_k$
+  2. Compute optimal step length $\lambda_k$
+  3. Compute actual step $p_k=\lambda_k\tilde d_k$ and new parameter $\theta_{k+1} = \theta_k+p_k$
+  4. Compute gradient change $q_k$ from $\theta_k$ to $\theta_{k+1}$
+  5. Update: $A_{k+1} = A_k  +  \frac{p_kp_k'}      {p_k'q_k}  -  \frac{A_kq_kq_k'A_k}      {q_k'A_kq_k}$
+
+# Maximum Simulated Likelihood (MSL) Estimation
+
+## Maximum Simulated Likelihood Estimation {.smaller}
+- Considered a mixture likelihood function (e.g., mixed logit model that we will cover later in course)
+$$
+Pr(i)
+=
+\int l_i(\beta)f(\beta \mid \theta) d\beta 
+$$
+- Does not have closed-form solution and cannot directly maximize likelihood function
+- Solution? Simulation! 
+
+## Maximum Simulated Likelihood Estimation {.smaller}
+MSL steps:
+
+1) Draw a value of $\beta$ from $f(\beta \mid \theta)$ and label it $\beta^r$
+2) Compute likelihood given $\beta^r$
+3) Repeat steps 1 and 2 many times and average the results
+$$\hat{Pr(i)} = \frac{1}{R}\sum_{r=1}^R l_i(\beta^r)$$
+
+For mixed logit
+$$SL = \sum_{n=1}^N \sum_{j=1}^J (Y_j=i) ln(\hat{Pr(i)})$$
+
+# Profile Likelihood (PL) Estimation
+
+## Problem Statement
+- Models frequently run the risk of convergence to inferior local optima when using structures other than simple linear-in-parameters logit - e.g., latent class, mixed logit, and integrated choice and latent variable model
+- Problem is often ignored or handled using multiple random starting parameter values
+- How to address in systematic manner?
+
+## Solutions
+- Standard approach is to randomly generate multiple starting values, find local maximizers, and choose the one with the largest log-likelihood
+- Other approaches include simulated annealing, tabu search, and genetic algorithms
+- Expectation maximization (EM) is another approach that ensures maximization at each step - but very slow
+- Hess, Bunch, and Daly (2025) suggest a profile likelihood solution
+
+## Profile Likelihood as a Diagnostic Tool {.smaller}
+
+::: columns
+
+:::: {.column width="55%"}
+
+For parameter $\beta_k$:
+
+1. Move away from $\hat{\beta}_k$
+2. Fix $\beta_k$ at candidate values
+3. Re-estimate all remaining parameters
+4. Record the best constrained log-likelihood
+
+This produces a **profile likelihood**
+
+**Interpretation**
+
+✅ Smooth decline away from the optimum = Likelihood behaves as expected
+
+❌ Another region has a higher log-likelihood = Evidence of a superior local optimum nearby
+
+::::
+
+:::: {.column width="45%"}
+
+```{mermaid}
+flowchart LR
+
+    A["MLE"]
+    B["βₖ - 4σ"]
+    C["βₖ - 2σ"]
+    D["βₖ"]
+    E["βₖ + 2σ"]
+    F["βₖ + 4σ"]
+
+    A --> B
+    A --> C
+    A --> D
+    A --> E
+    A --> F
+```
+
+::::
+
+:::
+
+
+## What Did Hess et al. Find? {.smaller}
+
+Using a Swiss route-choice stated-preference dataset:
+
+::: {.columns}
+
+:::: {.column width="50%"}
+
+**Latent Class Model**
+
+Initial solution:
+
+$$
+LL=-1578.3
+$$
+
+Profile likelihood search identified:
+
+- 99 improved candidate solutions
+- 4 distinct superior optima
+
+:::
+
+:::: {.column width="50%"}
+
+**Mixed Logit Model**
+
+Initial solution:
+
+$$
+LL=-1405.2
+$$
+
+Profile likelihood search identified:
+
+- 210 improved candidate solutions
+- 76 distinct superior optima
+
+::::
+
+:::
+
+**Key Finding**
+
+- Differences in log-likelihood were often small, but the implied: Values of travel time, Values of headway, and Values of interchange could differ substantially
+
+# Automatic Differentiation (AD)
+
+## Why Do We Need Automatic Differentiation? {.smaller}
+
+::: {.columns}
+
+:::: {.column width="55%"}
+
+Suppose we need the gradient of a loss function:
+
+$$
+L(\theta)=\sum_i\left(y_i-\hat y_i(\theta)\right)^2
+$$
+
+for optimization algorithms such as:
+
+- Gradient descent
+- Newton-Raphson
+- BFGS
+- Adam
+
+::::
+
+:::: {.column width="45%"}
+
+
+**Three options**
+
+1. **Symbolic differentiation**
+   - Exact algebraic derivative
+   - Can become very complicated
+
+2. **Finite differences**
+   - Approximate derivative
+   - Numerical error
+
+3. **Automatic differentiation**
+   - Exact derivatives to machine precision
+   - Efficient for large models
+
+::::
+
+:::
+
+## Automatic Differentiation via the Chain Rule {style="font-size:0.5em;"}
+
+Consider
+
+$$
+f(x)=\sin(x^2+1)
+$$
+
+Break the computation into elementary steps:
+
+$$
+v_1=x
+$$
+
+$$
+v_2=v_1^2
+$$
+
+$$
+v_3=v_2+1
+$$
+
+$$
+v_4=\sin(v_3)
+$$
+
+The chain rule gives
+
+$$
+\frac{df}{dx}
+=
+\frac{\partial v_4}{\partial v_3}
+\frac{\partial v_3}{\partial v_2}
+\frac{\partial v_2}{\partial v_1}
+\frac{\partial v_1}{\partial x}
+$$
+
+Result:
+
+$$
+\frac{df}{dx}
+=
+\cos(x^2+1)\,2x
+$$
+
+> AD applies the chain rule automatically to every elementary operation
+
+## Forward Mode Automatic Differentiation {style="font-size:0.5em;"}
+
+Track both the value and derivative simultaneously
+
+For
+
+$$
+f(x)=\sin(x^2+1)
+$$
+
+with $x=2$:
+
+| Variable | Value | Derivative |
+|-----------|---------|---------|
+| $v_1=x$ | $2$ | $1$ |
+| $v_2=v_1^2$ | $4$ | $2v_1(1)=4$ |
+| $v_3=v_2+1$ | $5$ | $4$ |
+| $v_4=\sin(v_3)$ | $\sin(5)$ | $\cos(5)\times4$ |
+
+### Key idea
+
+Each operation propagates:
+
+$$
+(\text{value},\text{derivative})
+\rightarrow
+(\text{new value},\text{new derivative})
+$$
+
+**Most efficient when:** Few inputs \& many outputs
+
+## Reverse Mode (Backpropagation) {style="font-size:0.5em;"}
+
+For a scalar objective:
+
+$$
+L=f(\theta_1,\theta_2,\ldots,\theta_n)
+$$
+
+We first compute all intermediate values:
+
+$$
+\theta \rightarrow v_1 \rightarrow v_2 \rightarrow \cdots \rightarrow L
+$$
+
+Then work backward:
+
+$$
+\frac{\partial L}{\partial v_i}
+=
+\frac{\partial L}{\partial v_{i+1}}
+\frac{\partial v_{i+1}}{\partial v_i}
+$$
+
+### Why it matters
+
+- One forward evaluation computes the function value
+- One backward pass computes gradients for **all parameters**
+- Complexity roughly independent of the number of parameters
+
+## Automatic Differentiation {.smaller}
+
+::: {.columns}
+
+:::: {.column width="60%"}
+
+```{mermaid}
+flowchart TD
+
+    X["x"]
+    V2["x²"]
+    V3["+1"]
+    V4["sin(.)"]
+    F["f(x)"]
+
+    X --> V2
+    V2 --> V3
+    V3 --> V4
+    V4 --> F
+
+    F -.->|"1"| V4
+    V4 -.->|"cos(v₃)"| V3
+    V3 -.->|"1"| V2
+    V2 -.->|"2x"| X
+
+    classDef node fill:#dbeafe,stroke:#2563eb,stroke-width:2px;
+    class X,V2,V3,V4,F node;
+```
+
+::::
+
+:::: {.column width="40%"}
+
+For
+
+$$
+f(x)=\sin(x^2+1)
+$$
+
+**Forward pass**
+
+- Compute values
+- Store intermediates
+
+**Reverse pass**
+
+- Start with $\partial f / \partial f = 1$
+- Move backward
+- Multiply local derivatives
+
+$$
+\frac{df}{dx}
+=
+2x\cos(x^2+1)
+$$
+
+::::
+
+:::
+
+# Aside on Differential Model Calibration
+
+## Transportation Models as CG {.smaller}
+
+::: {.columns}
+
+:::: {.column width="55%"}
+
+**Traditional View**
+
+```text
+Demand Model
+      ↓
+Path Choice
+      ↓
+Traffic Assignment
+      ↓
+Travel Times
+      ↓
+Updated Demand
+      ↓
+...
+```
+
+::::
+
+:::: {.column width="45%"}
+
+**Key Insight**
+
+- Forward pass: compute flows and travel times
+- Reverse pass: compute gradients automatically
+- No need to derive derivatives manually
+
+:::
+::::
+
+Iterative feedback is required until demand and network conditions are consistent
+
+**Automatic Differentiation View**
+
+```{mermaid}
+flowchart LR
+
+    C["Travel Costs"]
+    D["Mode & Route Choice"]
+    X["Path Flows"]
+    V["Link Volumes"]
+    T["Travel Times"]
+
+    C --> D
+    D --> X
+    X --> V
+    V --> T
+    T --> C
+
+    classDef node fill:#dbeafe,stroke:#2563eb,stroke-width:2px;
+    class C,D,X,V,T node;
+```
+
+The entire transportation system can be viewed as a computational graph
+
+## Why Automatic Differentiation Helps Calibration {style="font-size:0.65em;"}
+
+::: {.columns}
+
+:::: {.column width="40%"}
+
+Calibration chooses model parameters
+
+$$
+\theta=(\beta_{\text{time}},\beta_{\text{cost}},\ldots)
+$$
+
+to minimize a calibration loss:
+
+$$
+L(\boldsymbol{\theta})
+=
+\text{Observed Data}
+-
+\text{Model Predictions}
+$$
+
+::::
+
+:::: {.column width="60%"}
+
+```{mermaid}
+flowchart LR
+
+    B["Parameters<br>θ"]
+    M["Transportation<br>Model"]
+    L["Loss<br>L(θ)"]
+
+    B --> M
+    M --> L
+    L -. "Gradients" .-> B
+
+    classDef blue fill:#dbeafe,stroke:#2563eb;
+    classDef red fill:#fee2e2,stroke:#dc2626;
+
+    class B,M blue;
+    class L red;
+```
+
+::::
+
+:::
+
+::: {.columns}
+
+:::: {.column width="45%"}
+
+### Traditional
+
+- Finite differences
+- Manual derivatives
+- Many model evaluations
+
+::::
+
+:::: {.column width="55%"}
+
+### With AD
+
+- 1 forward pass → compute \(L(\theta)\)
+- 1 backward pass → compute \(\nabla L\)
+- All parameter gradients obtained simultaneously
+
+::::
+
+:::
+
+
+> **Key takeaway:** Treat the transportation model as a computational graph and use backpropagation to obtain gradients for efficient calibration
