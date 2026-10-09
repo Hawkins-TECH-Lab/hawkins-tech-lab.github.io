@@ -326,7 +326,7 @@
 <h2>Labelled vs.&nbsp;Unlabelled Alternatives</h2>
 
 <img data-src="../../../assets/images/teaching/ENCI707/Lecture6/unlabel_wine.png" style="width:70.0%" class="r-stretch"></section>
-<section id="status-quo-alternative" class="slide level2 smaller">
+<section id="status-quo-alternative" class="slide level2">
 <h2>Status Quo Alternative</h2>
 <ul>
 <li>Will a <strong>non-purchase or status quo</strong> alternative be presented?</li>
@@ -347,7 +347,7 @@
 </ul></li>
 </ul>
 </section>
-<section id="use-case" class="slide level2 smaller">
+<section id="use-case" class="slide level2">
 <h2>Use Case</h2>
 <ul>
 <li>Will the outputs be used as inputs to another model?
@@ -371,12 +371,12 @@
 <li>Always do internal and external pilots!</li>
 </ul>
 </section>
-<section id="incentive-compatibility" class="slide level2 smaller">
+<section id="incentive-compatibility" class="slide level2">
 <h2>Incentive Compatibility</h2>
 <ul>
 <li>3 views of the world
 <ul>
-<li>People try to truthfully reveawl their preferences irrespective of the incentives they face?</li>
+<li>People try to truthfully reveal their preferences irrespective of the incentives they face?</li>
 <li>People tell the truth if there are no consequences associated with their answers?</li>
 <li>People only try to tell the truth when it is in their economic interest to do so?</li>
 </ul></li>
@@ -384,18 +384,23 @@
 </ul>
 </section>
 <section id="gibbard-and-satterthwaite-theorem" class="slide level2 smaller">
-<h2>Gibbard and Satterthwaite theorem</h2>
+<h2>Gibbard and Satterthwaite Theorem</h2>
 <ul>
-<li>Gibbard (1973) and Satterthwaite (1975) theorem:
+<li>Gibbard (1973) and Satterthwaite (1975):
 <ul>
-<li>About strategic behaviour and insincere choice</li>
-<li>No mechanism with larger than a binary message space can be incentive compatible without restricting the space of allowable preference functions</li>
-<li>Not all binary discrete choice questions are incentive compatible - e.g., take-it-or-leave-it offer (vote doesn’t influence any other offers that may be made to the agents) or coersive payment mechanism (each agent required to pay independent of their decision)</li>
+<li>Concern strategic behaviour and incentives for truthful reporting</li>
+<li>With three or more alternatives, any deterministic, non-dictatorial social choice mechanism is manipulable (i.e., not strategy-proof)</li>
+<li>Incentive compatibility generally requires either:
+<ul>
+<li>Restricting the preference space, or</li>
+<li>Restricting the set of feasible mechanisms</li>
+</ul></li>
+<li>Many stated-preference surveys are not incentive compatible because respondents can benefit from misrepresenting preferences</li>
 </ul></li>
 <li>Rarely discussed in transportation literature vs.&nbsp;considered vital in environmental economics</li>
 </ul>
 </section>
-<section id="how-many-alternatives" class="slide level2 smaller">
+<section id="how-many-alternatives" class="slide level2">
 <h2>How many alternatives?</h2>
 <ul>
 <li>No clear answer</li>
@@ -420,7 +425,7 @@
 <li>Too many attributes increases cognitive burden</li>
 </ul>
 </section>
-<section id="challenge-of-inter-attribute-correlation" class="slide level2 smaller">
+<section id="challenge-of-inter-attribute-correlation" class="slide level2">
 <h2>Challenge of Inter-attribute Correlation</h2>
 <ul>
 <li>Despite the use of the word <strong>correlation</strong>, not a statistical concept</li>
@@ -481,7 +486,7 @@
 <li>Each attribute level appears an equal number of times over design</li>
 <li>Desirable property although it may impact on <strong>statistical efficiency</strong></li>
 </ul>
-<p><strong>Example:</strong> Consider a design with four attributes, where two have two levels, one has three levels and the last has four levels. In the classical jargon in this field we would refer to this as a 22 31 41 factorial design; note that the product of levels to the power of attributes (48 in this case) represents the total number of choice tasks needed to recover all effects (i.e.&nbsp;main or linear effects and all interactions), i.e.&nbsp;a full factorial design (more about this below).Assuming each attribute will produce a unique parameter estimate (i.e.&nbsp;main effects only), the smallest design would require just four choice tasks based on the number of parameters criterion; however, to maintain attribute level balance, the smallest possible design would require 12 choice tasks (12 being divisible without remainder by 2, 3, and 4).</p>
+<p><strong>Example:</strong> Consider a design with four attributes, where two have two levels, one has three levels and the last has four levels. In the classical jargon in this field we would refer to this as a 22 31 41 factorial design; note that the product of attributes to the power of levels (48 in this case) represents the total number of choice tasks needed to recover all effects (i.e.&nbsp;main or linear effects and all interactions), i.e.&nbsp;a full factorial design (more about this below). Assuming each attribute will produce a unique parameter estimate (i.e.&nbsp;main effects only), the smallest design would require just four choice tasks based on the number of parameters criterion; however, to maintain attribute level balance, the smallest possible design would require 12 choice tasks (12 being divisible without remainder by 2, 3, and 4).</p>
 </section>
 <section id="attribute-level-balance-1" class="slide level2 smaller">
 <h2>Attribute Level Balance</h2>
@@ -736,7 +741,7 @@
 <li>Lower bound on number of choice observations for parameter identification still exists</li>
 </ul>
 </section>
-<section id="fractional-factorial-orthogonal-designs" class="slide level2">
+<section id="fractional-factorial-orthogonal-designs" class="slide level2 smaller">
 <h2>Fractional Factorial Orthogonal Designs</h2>
 <ul>
 <li>Consider the following example: find an orthogonal fractional factorial main effects only design</li>
@@ -804,6 +809,7 @@
 </tr>
 </tbody>
 </table>
+<div class="fragment">
 <ul>
 <li>Why would someone pick bus in this case?</li>
 </ul>
@@ -828,6 +834,7 @@
 </tr>
 </tbody>
 </table>
+</div>
 </section>
 <section id="dce-experimental-design-1" class="slide level2">
 <h2>DCE Experimental Design</h2>
@@ -844,7 +851,7 @@
 <li>Orthogonality - correlation structure of the data (design) matrix (<span class="math inline">\(X\)</span>)
 <ul>
 <li>Linear regression - variance-covariance matrix is given by <span class="math inline">\(\frac{\sigma^2}{X'X}\)</span></li>
-<li>Models for discrete choice - non-linear! (<span class="math inline">\(I(\beta) = \sum_n X_n'W_nX_n}\)</span> where <span class="math inline">\(W_n\)</span> is a weight matrix defined by the model structure)</li>
+<li>Models for discrete choice - non-linear! <span class="math inline">\(I(\beta) = \sum_n X_n'W_nX_n\)</span> where <span class="math inline">\(W_n\)</span> is a weight matrix defined by the model structure</li>
 </ul></li>
 </ul>
 </section>
@@ -904,7 +911,10 @@ class A,B,C,D box;
 <ul>
 <li>Asymptotic variance-covariance (AVC) matrix - approximation of true VC matrix</li>
 </ul>
-<p><span class="math display">\[\mathbf{\Sigma} = \begin{pmatrix} se(\hat{\beta}_1)^2 &amp; \cdots &amp; 0 \\ \vdots &amp; \ddots &amp; \vdots \\ 0 &amp; \cdots &amp; se(\hat{\beta}_K)^2 \end{pmatrix}\]</span> - “Asymptotic” - assuming very large sample or many repetitions using a small sample</p>
+<p><span class="math display">\[\mathbf{\Sigma} = \begin{pmatrix} se(\hat{\beta}_1)^2 &amp; \cdots &amp; 0 \\ \vdots &amp; \ddots &amp; \vdots \\ 0 &amp; \cdots &amp; se(\hat{\beta}_K)^2 \end{pmatrix}\]</span></p>
+<ul>
+<li>“Asymptotic” - assuming very large sample or many repetitions using a small sample</li>
+</ul>
 </section>
 <section id="how-to-derive-avc-matrix" class="slide level2">
 <h2>How to derive AVC matrix?</h2>

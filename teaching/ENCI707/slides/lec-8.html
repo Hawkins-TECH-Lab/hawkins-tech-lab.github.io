@@ -27,6 +27,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../../../site_libs/revealjs/dist/theme/quarto-423d414d36ce366a9d05f36d06304417.css">
   <link href="../../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -122,6 +187,9 @@
       margin-right: 0; 
     }
   </style>
+  <script src="../../../site_libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="../../../site_libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="../../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -139,13 +207,778 @@
 <h2>Outline</h2>
 <div>
 <ol type="1">
-<li class="fragment">Survey terms</li>
-<li class="fragment">Survey design</li>
+<li class="fragment">Maximum likelihood estimation</li>
+<li class="fragment">Maximum simulated likelihood estimation</li>
+<li class="fragment">Profile likelihood estimation</li>
+<li class="fragment">Automatic differentiation</li>
 </ol>
 </div>
-
+</section>
+<section>
+<section id="maximum-likelihood-ml-estimation" class="title-slide slide level1 center">
+<h1>Maximum Likelihood (ML) Estimation</h1>
 
 </section>
+<section id="representative-model-estimation-problem" class="slide level2 smaller">
+<h2>Representative model estimation problem</h2>
+<ul>
+<li>Consider the logit model:</li>
+</ul>
+<p><span class="math display">\[
+Pr(Y_i=1\mid X_i)
+=
+\frac{\exp(X_i\beta)}
+     {1+\exp(X_i\beta)}
+\]</span> <span class="math display">\[
+l(\beta\mid \mathbf Y,\mathbf X)
+=
+\prod_{i=1}^{n}
+Pr(Y_i=1\mid X_i)^{Y_i}
+\Bigl(1-Pr(Y_i=1\mid X_i)\Bigr)^{1-Y_i}
+\]</span> <span class="math display">\[
+L(\beta\mid \mathbf Y,\mathbf X)
+=
+\sum_{i=1}^{n}
+Y_i\log Pr(Y_i=1\mid X_i)
++
+(1-Y_i)\log\left(1-Pr(Y_i=1\mid X_i)\right)
+\]</span></p>
+<ul>
+<li>Rule of thumb: likelihood is the joint probability of the observed data
+<ul>
+<li>We are exploiting the independent nature of the data</li>
+<li>Joint probability of two independent values is the product of their marginals</li>
+</ul></li>
+<li>Any monotonic transformation preserves the maximizing value</li>
+</ul>
+</section>
+<section id="plug-in-logit-to-the-ml" class="slide level2 smaller">
+<h2>Plug in Logit to the ML</h2>
+<p>Substituting the logit probability:</p>
+<p><span class="math display">\[
+L(\beta)
+=
+\sum_{i=1}^{n}
+\left[
+Y_i\log
+\left(
+\frac{\exp(X_i\beta)}
+     {1+\exp(X_i\beta)}
+\right)
++
+(1-Y_i)
+\log
+\left(
+\frac{1}
+     {1+\exp(X_i\beta)}
+\right)
+\right]
+\]</span></p>
+<p>After simplification:</p>
+<p><span class="math display">\[
+L(\beta)
+=
+\sum_{i=1}^{n}
+\left[
+Y_iX_i\beta
+-
+\log\left(1+\exp(X_i\beta)\right)
+\right]
+\]</span></p>
+<ul>
+<li><p>We now have a likelihood function. Goal: <span class="math inline">\(\max_{\beta} L(\beta)\)</span></p></li>
+<li><p>Take derivatives and search for the maximum</p></li>
+<li><p>Some good and bad news…</p></li>
+</ul>
+</section>
+<section id="the-bad-news" class="slide level2 smaller">
+<h2>The Bad News…</h2>
+<p><span class="math display">\[
+L(\beta)
+=
+\sum_{i=1}^{n}
+\left[
+Y_iX_i\beta
+-
+\log(1+\exp(X_i\beta))
+\right]
+\]</span></p>
+<ul>
+<li>There is no analytic solution for this <span class="math inline">\(\beta\)</span>. Unlike with OLS, we cannot get a closed-form solution for our estimate - this is true of most estimators</li>
+<li>This is actually a well-behaved solution because it is globally concave and has easily calculated first and second derivatives</li>
+<li>Good news? We have computers!</li>
+</ul>
+</section>
+<section id="the-good-news" class="slide level2 smaller">
+<h2>The Good News</h2>
+<p>Score function: <span class="math display">\[
+\frac{\partial L(\beta)}
+{\partial \beta}
+=
+\sum_{i=1}^{n}
+X_i
+\left(
+Y_i
+-
+\frac{\exp(X_i\beta)}
+     {1+\exp(X_i\beta)}
+\right)
+\]</span></p>
+<ul>
+<li><p>While there is not an analytic solution, if there is a maximum where <span class="math inline">\(\hat{\beta}\)</span> satisfies <span class="math inline">\(\frac{\partial L(\hat{\beta})}{\partial \beta} = 0\)</span>, then there are sets of conditions such that <span class="math display">\[
+\lim_{n\to\infty}
+Pr\!\left(
+\|\hat\beta_n-\beta_0\|&gt;\varepsilon
+\right)
+=
+0 \text{ (weak consistency)}
+\]</span> <span class="math display">\[
+\sqrt n
+(\hat\beta_n-\beta_0)
+\overset{d}{\to}
+N
+\left(
+0,
+-\mathbb E
+\left[
+\frac{\partial^2L(\beta_0)}
+   {\partial\beta\partial\beta'}
+\right]^{-1}
+\right) \text{ (asymptotic normality)}
+\]</span></p></li>
+<li><p>The challenge is that the conditions for when this is satisfied vary from problem to problem</p></li>
+</ul>
+</section>
+<section id="how-to-compute-newton-raphson" class="slide level2">
+<h2>How to Compute: Newton-Raphson</h2>
+<ul>
+<li>We focus on a few numerical optimization routines</li>
+<li>Many possible optimization methods!</li>
+<li>One common approach is Newton-Raphson</li>
+</ul>
+</section>
+<section id="newton-raphson-computation-of-mle" class="slide level2 smaller">
+<h2>Newton-Raphson Computation of MLE</h2>
+<ul>
+<li>Let <span class="math inline">\(Q(\theta)=-L(\theta)\)</span> (denote with <span class="math inline">\(\theta\)</span> to highlight that this is a general problem)</li>
+<li>Idea is to take arbitrary objective function and fit a local quadratic based on derivatives
+<ul>
+<li>Find the minimizer of that quadratic. Repeat!</li>
+</ul></li>
+</ul>
+<p>Update rule: <span class="math display">\[
+\theta_{k+1}
+=
+\theta_k
+-
+\left[
+\frac{\partial^2Q(\theta_k)}
+     {\partial\theta\partial\theta'}
+\right]^{-1}
+\frac{\partial Q(\theta_k)}
+     {\partial\theta}
+\]</span></p>
+<ul>
+<li>For logit, we already know the first derivative and can easily calculate the second derivative</li>
+<li>Works well because the problem is convex and smooth</li>
+</ul>
+</section>
+<section id="more-general-methods" class="slide level2 smaller">
+<h2>More General Methods</h2>
+<ul>
+<li>Suppose the Hessian is unavailable or expensive to compute</li>
+<li>Let <span class="math inline">\(A_k\)</span> be any positive-definite matrix</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p>Then:</p>
+<p><span class="math display">\[
+\theta_{k+1}
+=
+\theta_k
+-
+\lambda_k
+A_k
+\frac{\partial Q}{\partial\theta}(\theta_k)
+\]</span></p>
+<p>Newton-Raphson is a special case:</p>
+<p><span class="math display">\[
+\lambda_k=1
+\]</span></p>
+<p><span class="math display">\[
+A_k
+=
+\left[
+\frac{\partial^2L(\theta_k)}
+     {\partial\theta\partial\theta'}
+\right]^{-1}
+\]</span></p>
+</div><div class="column" style="width:60%;">
+<ul>
+<li>Two ingredients: (1) Step length <span class="math inline">\(\lambda_k\)</span> and (2) Search direction <span class="math inline">\(d_k = A_k \frac{\partial Q}{\partial\theta}(\theta_k)\)</span> (controlled by <span class="math inline">\(A_k\)</span>, which selects direction of gradient)</li>
+<li>Sometimes rescale: <span class="math inline">\(\tilde d_k = \frac{d_k} {1+\sqrt{d_k'd_k}}\)</span> to ensure <span class="math inline">\(\|\tilde d_k\|&lt;1\)</span></li>
+</ul>
+</div></div>
+</section>
+<section id="simple-version-of-the-algorithm" class="slide level2">
+<h2>Simple Version of the Algorithm</h2>
+<p>Choose a direction, then choose how far to move:</p>
+<p><span class="math display">\[
+\lambda_k
+=
+\arg\min_{\lambda}
+Q(\theta_k+\lambda\tilde d_k)
+\]</span></p>
+<p>Simplest choice (steepest ascent):</p>
+<p><span class="math display">\[
+A_k=I
+\]</span></p>
+<ul>
+<li>How do we find <span class="math inline">\(\lambda_k\)</span>? If <span class="math inline">\(\theta\)</span> is scalar, it is feasible (but inefficient) to calculate using a simple grid search</li>
+<li>Higher-dimensional problems: too slow</li>
+</ul>
+</section>
+<section id="two-line-search-algorithms-1-newtons-method" class="slide level2 smaller">
+<h2>Two Line Search Algorithms: (1) Newton’s Method</h2>
+<p>Given a direction <span class="math inline">\(d\)</span>, define</p>
+<p><span class="math display">\[
+\lambda^{*}
+=
+\arg\min_\lambda Q(\lambda)
+\]</span></p>
+<ul>
+<li>Newton’s method updates (finds root of function - e.g., derivative):</li>
+<li>Start with an initial guess <span class="math inline">\(\lambda_0\)</span>. Then,</li>
+</ul>
+<p><span class="math display">\[\lambda_{k+1}
+=
+\lambda_k
+-
+\frac{Q'(\lambda_k)}
+     {Q''(\lambda_k)}
+\]</span></p>
+<ul>
+<li><p>Repeat until: <span class="math inline">\(|\lambda_{k+1}-\lambda_k|\)</span> is sufficiently small</p></li>
+<li><p>Drawback: Requires evaluation of the second derivative</p></li>
+</ul>
+</section>
+<section id="two-line-search-algorithms-2-golden-search" class="slide level2 smaller">
+<h2>Two Line Search Algorithms: (2) Golden Search</h2>
+<p>Requirements:</p>
+<ul>
+<li>Unimodal objective function</li>
+<li>Initial interval:</li>
+</ul>
+<p><span class="math display">\[
+[\lambda_l,\lambda_h]
+\]</span></p>
+<p>Choose:</p>
+<p><span class="math display">\[
+\lambda_{m1}
+=
+\lambda_l
++
+0.392(\lambda_h-\lambda_l)
+\]</span></p>
+<p><span class="math display">\[
+\lambda_{m2}
+=
+\lambda_l
++
+0.618(\lambda_h-\lambda_l)
+\]</span></p>
+</section>
+<section id="two-line-search-algorithms-2-golden-search-1" class="slide level2 smaller">
+<h2>Two Line Search Algorithms: (2) Golden Search</h2>
+<p>Given the four points, can check two conditions:</p>
+<ol type="1">
+<li><p>If <span class="math inline">\(Q(\lambda_{m2})&gt;Q(\lambda_{m1})\)</span> then the minimizer lies in <span class="math display">\[
+[\lambda_l,\lambda_{m2}]
+\]</span></p></li>
+<li><p>If <span class="math inline">\(Q(\lambda_{m2})&lt;Q(\lambda_{m1})\)</span> then the minimizer lies in <span class="math display">\[
+[\lambda_{m1},\lambda_h]
+\]</span></p></li>
+</ol>
+<p>Repeat until convergence</p>
+</section>
+<section id="davidson-fletcher-powell-dfp" class="slide level2 smaller">
+<h2>Davidson-Fletcher-Powell (DFP)</h2>
+<ul>
+<li>How do we construct <span class="math inline">\(A_k\)</span>?
+<ul>
+<li>Quasi-Newton method such as DFP or more commonly BFGS (Broyden-Fletcher-Goldfarb-Shanno)</li>
+<li>BFGS uses a related update to DFP but updates the Hessian not its inverse</li>
+</ul></li>
+<li>Initialize with any positive definite matrix <span class="math inline">\(A\)</span> (e.g., identity matrix)</li>
+<li>Algorithm (repeat until convergence)
+<ol type="1">
+<li>Compute direction <span class="math inline">\(\tilde d_k\)</span></li>
+<li>Compute optimal step length <span class="math inline">\(\lambda_k\)</span></li>
+<li>Compute actual step <span class="math inline">\(p_k=\lambda_k\tilde d_k\)</span> and new parameter <span class="math inline">\(\theta_{k+1} = \theta_k+p_k\)</span></li>
+<li>Compute gradient change <span class="math inline">\(q_k\)</span> from <span class="math inline">\(\theta_k\)</span> to <span class="math inline">\(\theta_{k+1}\)</span></li>
+<li>Update: <span class="math inline">\(A_{k+1} = A_k  +  \frac{p_kp_k'}      {p_k'q_k}  -  \frac{A_kq_kq_k'A_k}      {q_k'A_kq_k}\)</span></li>
+</ol></li>
+</ul>
+</section></section>
+<section>
+<section id="maximum-simulated-likelihood-msl-estimation" class="title-slide slide level1 center">
+<h1>Maximum Simulated Likelihood (MSL) Estimation</h1>
+
+</section>
+<section id="maximum-simulated-likelihood-estimation" class="slide level2 smaller">
+<h2>Maximum Simulated Likelihood Estimation</h2>
+<ul>
+<li>Considered a mixture likelihood function (e.g., mixed logit model that we will cover later in course) <span class="math display">\[
+Pr(i)
+=
+\int l_i(\beta)f(\beta \mid \theta) d\beta
+\]</span></li>
+<li>Does not have closed-form solution and cannot directly maximize likelihood function</li>
+<li>Solution? Simulation!</li>
+</ul>
+</section>
+<section id="maximum-simulated-likelihood-estimation-1" class="slide level2 smaller">
+<h2>Maximum Simulated Likelihood Estimation</h2>
+<p>MSL steps:</p>
+<ol type="1">
+<li>Draw a value of <span class="math inline">\(\beta\)</span> from <span class="math inline">\(f(\beta \mid \theta)\)</span> and label it <span class="math inline">\(\beta^r\)</span></li>
+<li>Compute likelihood given <span class="math inline">\(\beta^r\)</span></li>
+<li>Repeat steps 1 and 2 many times and average the results <span class="math display">\[\hat{Pr(i)} = \frac{1}{R}\sum_{r=1}^R l_i(\beta^r)\]</span></li>
+</ol>
+<p>For mixed logit <span class="math display">\[SL = \sum_{n=1}^N \sum_{j=1}^J (Y_j=i) ln(\hat{Pr(i)})\]</span></p>
+</section></section>
+<section>
+<section id="profile-likelihood-pl-estimation" class="title-slide slide level1 center">
+<h1>Profile Likelihood (PL) Estimation</h1>
+
+</section>
+<section id="problem-statement" class="slide level2">
+<h2>Problem Statement</h2>
+<ul>
+<li>Models frequently run the risk of convergence to inferior local optima when using structures other than simple linear-in-parameters logit - e.g., latent class, mixed logit, and integrated choice and latent variable model</li>
+<li>Problem is often ignored or handled using multiple random starting parameter values</li>
+<li>How to address in systematic manner?</li>
+</ul>
+</section>
+<section id="solutions" class="slide level2">
+<h2>Solutions</h2>
+<ul>
+<li>Standard approach is to randomly generate multiple starting values, find local maximizers, and choose the one with the largest log-likelihood</li>
+<li>Other approaches include simulated annealing, tabu search, and genetic algorithms</li>
+<li>Expectation maximization (EM) is another approach that ensures maximization at each step - but very slow</li>
+<li>Hess, Bunch, and Daly (2025) suggest a profile likelihood solution</li>
+</ul>
+</section>
+<section id="profile-likelihood-as-a-diagnostic-tool" class="slide level2 smaller">
+<h2>Profile Likelihood as a Diagnostic Tool</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p>For parameter <span class="math inline">\(\beta_k\)</span>:</p>
+<ol type="1">
+<li>Move away from <span class="math inline">\(\hat{\beta}_k\)</span></li>
+<li>Fix <span class="math inline">\(\beta_k\)</span> at candidate values</li>
+<li>Re-estimate all remaining parameters</li>
+<li>Record the best constrained log-likelihood</li>
+</ol>
+<p>This produces a <strong>profile likelihood</strong></p>
+<p><strong>Interpretation</strong></p>
+<p>✅ Smooth decline away from the optimum = Likelihood behaves as expected</p>
+<p>❌ Another region has a higher log-likelihood = Evidence of a superior local optimum nearby</p>
+</div><div class="column" style="width:45%;">
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+
+    A["MLE"]
+    B["βₖ - 4σ"]
+    C["βₖ - 2σ"]
+    D["βₖ"]
+    E["βₖ + 2σ"]
+    F["βₖ + 4σ"]
+
+    A --&gt; B
+    A --&gt; C
+    A --&gt; D
+    A --&gt; E
+    A --&gt; F
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</div></div>
+</section>
+<section id="what-did-hess-et-al.-find" class="slide level2 smaller">
+<h2>What Did Hess et al.&nbsp;Find?</h2>
+<p>Using a Swiss route-choice stated-preference dataset:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Latent Class Model</strong></p>
+<p>Initial solution:</p>
+<p><span class="math display">\[
+LL=-1578.3
+\]</span></p>
+<p>Profile likelihood search identified:</p>
+<ul>
+<li>99 improved candidate solutions</li>
+<li>4 distinct superior optima</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><strong>Mixed Logit Model</strong></p>
+<p>Initial solution:</p>
+<p><span class="math display">\[
+LL=-1405.2
+\]</span></p>
+<p>Profile likelihood search identified:</p>
+<ul>
+<li>210 improved candidate solutions</li>
+<li>76 distinct superior optima</li>
+</ul>
+</div></div>
+<p><strong>Key Finding</strong></p>
+<ul>
+<li>Differences in log-likelihood were often small, but the implied: Values of travel time, Values of headway, and Values of interchange could differ substantially</li>
+</ul>
+</section></section>
+<section>
+<section id="automatic-differentiation-ad" class="title-slide slide level1 center">
+<h1>Automatic Differentiation (AD)</h1>
+
+</section>
+<section id="why-do-we-need-automatic-differentiation" class="slide level2 smaller">
+<h2>Why Do We Need Automatic Differentiation?</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p>Suppose we need the gradient of a loss function:</p>
+<p><span class="math display">\[
+L(\theta)=\sum_i\left(y_i-\hat y_i(\theta)\right)^2
+\]</span></p>
+<p>for optimization algorithms such as:</p>
+<ul>
+<li>Gradient descent</li>
+<li>Newton-Raphson</li>
+<li>BFGS</li>
+<li>Adam</li>
+</ul>
+</div><div class="column" style="width:45%;">
+<p><strong>Three options</strong></p>
+<ol type="1">
+<li><strong>Symbolic differentiation</strong>
+<ul>
+<li>Exact algebraic derivative</li>
+<li>Can become very complicated</li>
+</ul></li>
+<li><strong>Finite differences</strong>
+<ul>
+<li>Approximate derivative</li>
+<li>Numerical error</li>
+</ul></li>
+<li><strong>Automatic differentiation</strong>
+<ul>
+<li>Exact derivatives to machine precision</li>
+<li>Efficient for large models</li>
+</ul></li>
+</ol>
+</div></div>
+</section>
+<section id="automatic-differentiation-via-the-chain-rule" class="slide level2" style="font-size:0.5em;">
+<h2>Automatic Differentiation via the Chain Rule</h2>
+<p>Consider</p>
+<p><span class="math display">\[
+f(x)=\sin(x^2+1)
+\]</span></p>
+<p>Break the computation into elementary steps:</p>
+<p><span class="math display">\[
+v_1=x
+\]</span></p>
+<p><span class="math display">\[
+v_2=v_1^2
+\]</span></p>
+<p><span class="math display">\[
+v_3=v_2+1
+\]</span></p>
+<p><span class="math display">\[
+v_4=\sin(v_3)
+\]</span></p>
+<p>The chain rule gives</p>
+<p><span class="math display">\[
+\frac{df}{dx}
+=
+\frac{\partial v_4}{\partial v_3}
+\frac{\partial v_3}{\partial v_2}
+\frac{\partial v_2}{\partial v_1}
+\frac{\partial v_1}{\partial x}
+\]</span></p>
+<p>Result:</p>
+<p><span class="math display">\[
+\frac{df}{dx}
+=
+\cos(x^2+1)\,2x
+\]</span></p>
+<blockquote>
+<p>AD applies the chain rule automatically to every elementary operation</p>
+</blockquote>
+</section>
+<section id="forward-mode-automatic-differentiation" class="slide level2" style="font-size:0.5em;">
+<h2>Forward Mode Automatic Differentiation</h2>
+<p>Track both the value and derivative simultaneously</p>
+<p>For</p>
+<p><span class="math display">\[
+f(x)=\sin(x^2+1)
+\]</span></p>
+<p>with <span class="math inline">\(x=2\)</span>:</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Value</th>
+<th>Derivative</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(v_1=x\)</span></td>
+<td><span class="math inline">\(2\)</span></td>
+<td><span class="math inline">\(1\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(v_2=v_1^2\)</span></td>
+<td><span class="math inline">\(4\)</span></td>
+<td><span class="math inline">\(2v_1(1)=4\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(v_3=v_2+1\)</span></td>
+<td><span class="math inline">\(5\)</span></td>
+<td><span class="math inline">\(4\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(v_4=\sin(v_3)\)</span></td>
+<td><span class="math inline">\(\sin(5)\)</span></td>
+<td><span class="math inline">\(\cos(5)\times4\)</span></td>
+</tr>
+</tbody>
+</table>
+<h3 id="key-idea">Key idea</h3>
+<p>Each operation propagates:</p>
+<p><span class="math display">\[
+(\text{value},\text{derivative})
+\rightarrow
+(\text{new value},\text{new derivative})
+\]</span></p>
+<p><strong>Most efficient when:</strong> Few inputs &amp; many outputs</p>
+</section>
+<section id="reverse-mode-backpropagation" class="slide level2" style="font-size:0.5em;">
+<h2>Reverse Mode (Backpropagation)</h2>
+<p>For a scalar objective:</p>
+<p><span class="math display">\[
+L=f(\theta_1,\theta_2,\ldots,\theta_n)
+\]</span></p>
+<p>We first compute all intermediate values:</p>
+<p><span class="math display">\[
+\theta \rightarrow v_1 \rightarrow v_2 \rightarrow \cdots \rightarrow L
+\]</span></p>
+<p>Then work backward:</p>
+<p><span class="math display">\[
+\frac{\partial L}{\partial v_i}
+=
+\frac{\partial L}{\partial v_{i+1}}
+\frac{\partial v_{i+1}}{\partial v_i}
+\]</span></p>
+<h3 id="why-it-matters">Why it matters</h3>
+<ul>
+<li>One forward evaluation computes the function value</li>
+<li>One backward pass computes gradients for <strong>all parameters</strong></li>
+<li>Complexity roughly independent of the number of parameters</li>
+</ul>
+</section>
+<section id="automatic-differentiation" class="slide level2 smaller">
+<h2>Automatic Differentiation</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+
+    X["x"]
+    V2["x²"]
+    V3["+1"]
+    V4["sin(.)"]
+    F["f(x)"]
+
+    X --&gt; V2
+    V2 --&gt; V3
+    V3 --&gt; V4
+    V4 --&gt; F
+
+    F -.-&gt;|"1"| V4
+    V4 -.-&gt;|"cos(v₃)"| V3
+    V3 -.-&gt;|"1"| V2
+    V2 -.-&gt;|"2x"| X
+
+    classDef node fill:#dbeafe,stroke:#2563eb,stroke-width:2px;
+    class X,V2,V3,V4,F node;
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:40%;">
+<p>For</p>
+<p><span class="math display">\[
+f(x)=\sin(x^2+1)
+\]</span></p>
+<p><strong>Forward pass</strong></p>
+<ul>
+<li>Compute values</li>
+<li>Store intermediates</li>
+</ul>
+<p><strong>Reverse pass</strong></p>
+<ul>
+<li>Start with <span class="math inline">\(\partial f / \partial f = 1\)</span></li>
+<li>Move backward</li>
+<li>Multiply local derivatives</li>
+</ul>
+<p><span class="math display">\[
+\frac{df}{dx}
+=
+2x\cos(x^2+1)
+\]</span></p>
+</div></div>
+</section></section>
+<section>
+<section id="aside-on-differential-model-calibration" class="title-slide slide level1 center">
+<h1>Aside on Differential Model Calibration</h1>
+
+</section>
+<section id="transportation-models-as-cg" class="slide level2 smaller">
+<h2>Transportation Models as CG</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p><strong>Traditional View</strong></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a></a>Demand Model</span>
+<span id="cb1-2"><a></a>      ↓</span>
+<span id="cb1-3"><a></a>Path Choice</span>
+<span id="cb1-4"><a></a>      ↓</span>
+<span id="cb1-5"><a></a>Traffic Assignment</span>
+<span id="cb1-6"><a></a>      ↓</span>
+<span id="cb1-7"><a></a>Travel Times</span>
+<span id="cb1-8"><a></a>      ↓</span>
+<span id="cb1-9"><a></a>Updated Demand</span>
+<span id="cb1-10"><a></a>      ↓</span>
+<span id="cb1-11"><a></a>...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column" style="width:45%;">
+<p><strong>Key Insight</strong></p>
+<ul>
+<li>Forward pass: compute flows and travel times</li>
+<li>Reverse pass: compute gradients automatically</li>
+<li>No need to derive derivatives manually</li>
+</ul>
+</div></div>
+<p>Iterative feedback is required until demand and network conditions are consistent</p>
+<p><strong>Automatic Differentiation View</strong></p>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+
+    C["Travel Costs"]
+    D["Mode &amp; Route Choice"]
+    X["Path Flows"]
+    V["Link Volumes"]
+    T["Travel Times"]
+
+    C --&gt; D
+    D --&gt; X
+    X --&gt; V
+    V --&gt; T
+    T --&gt; C
+
+    classDef node fill:#dbeafe,stroke:#2563eb,stroke-width:2px;
+    class C,D,X,V,T node;
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>The entire transportation system can be viewed as a computational graph</p>
+</section>
+<section id="why-automatic-differentiation-helps-calibration" class="slide level2" style="font-size:0.65em;">
+<h2>Why Automatic Differentiation Helps Calibration</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p>Calibration chooses model parameters</p>
+<p><span class="math display">\[
+\theta=(\beta_{\text{time}},\beta_{\text{cost}},\ldots)
+\]</span></p>
+<p>to minimize a calibration loss:</p>
+<p><span class="math display">\[
+L(\boldsymbol{\theta})
+=
+\text{Observed Data}
+-
+\text{Model Predictions}
+\]</span></p>
+</div><div class="column" style="width:60%;">
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+
+    B["Parameters&lt;br&gt;θ"]
+    M["Transportation&lt;br&gt;Model"]
+    L["Loss&lt;br&gt;L(θ)"]
+
+    B --&gt; M
+    M --&gt; L
+    L -. "Gradients" .-&gt; B
+
+    classDef blue fill:#dbeafe,stroke:#2563eb;
+    classDef red fill:#fee2e2,stroke:#dc2626;
+
+    class B,M blue;
+    class L red;
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</div></div>
+<div class="columns">
+<div class="column" style="width:45%;">
+<h3 id="traditional">Traditional</h3>
+<ul>
+<li>Finite differences</li>
+<li>Manual derivatives</li>
+<li>Many model evaluations</li>
+</ul>
+</div><div class="column" style="width:55%;">
+<h3 id="with-ad">With AD</h3>
+<ul>
+<li>1 forward pass → compute (L())</li>
+<li>1 backward pass → compute (L)</li>
+<li>All parameter gradients obtained simultaneously</li>
+</ul>
+</div></div>
+<blockquote>
+<p><strong>Key takeaway:</strong> Treat the transportation model as a computational graph and use backpropagation to obtain gradients for efficient calibration</p>
+</blockquote>
+
+
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="../../../assets/images/teaching/ENCI707/logo.png" class="slide-logo"></p>

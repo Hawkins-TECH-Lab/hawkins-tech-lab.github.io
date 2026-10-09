@@ -7343,14 +7343,14 @@
     "href": "teaching/ENCI707/slides/lec-6.html#incentive-compatibility",
     "title": "Lecture 6 - Stated Preference Methods",
     "section": "Incentive Compatibility",
-    "text": "Incentive Compatibility\n\n3 views of the world\n\nPeople try to truthfully reveawl their preferences irrespective of the incentives they face?\nPeople tell the truth if there are no consequences associated with their answers?\nPeople only try to tell the truth when it is in their economic interest to do so?\n\nSurvey results need to be seen as consequential - how will results be used?"
+    "text": "Incentive Compatibility\n\n3 views of the world\n\nPeople try to truthfully reveal their preferences irrespective of the incentives they face?\nPeople tell the truth if there are no consequences associated with their answers?\nPeople only try to tell the truth when it is in their economic interest to do so?\n\nSurvey results need to be seen as consequential - how will results be used?"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#gibbard-and-satterthwaite-theorem",
     "href": "teaching/ENCI707/slides/lec-6.html#gibbard-and-satterthwaite-theorem",
     "title": "Lecture 6 - Stated Preference Methods",
-    "section": "Gibbard and Satterthwaite theorem",
-    "text": "Gibbard and Satterthwaite theorem\n\nGibbard (1973) and Satterthwaite (1975) theorem:\n\nAbout strategic behaviour and insincere choice\nNo mechanism with larger than a binary message space can be incentive compatible without restricting the space of allowable preference functions\nNot all binary discrete choice questions are incentive compatible - e.g., take-it-or-leave-it offer (vote doesn’t influence any other offers that may be made to the agents) or coersive payment mechanism (each agent required to pay independent of their decision)\n\nRarely discussed in transportation literature vs. considered vital in environmental economics"
+    "section": "Gibbard and Satterthwaite Theorem",
+    "text": "Gibbard and Satterthwaite Theorem\n\nGibbard (1973) and Satterthwaite (1975):\n\nConcern strategic behaviour and incentives for truthful reporting\nWith three or more alternatives, any deterministic, non-dictatorial social choice mechanism is manipulable (i.e., not strategy-proof)\nIncentive compatibility generally requires either:\n\nRestricting the preference space, or\nRestricting the set of feasible mechanisms\n\nMany stated-preference surveys are not incentive compatible because respondents can benefit from misrepresenting preferences\n\nRarely discussed in transportation literature vs. considered vital in environmental economics"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#how-many-alternatives",
@@ -7399,7 +7399,7 @@
     "href": "teaching/ENCI707/slides/lec-6.html#attribute-level-balance",
     "title": "Lecture 6 - Stated Preference Methods",
     "section": "Attribute Level Balance",
-    "text": "Attribute Level Balance\n\nEach attribute level appears an equal number of times over design\nDesirable property although it may impact on statistical efficiency\n\nExample: Consider a design with four attributes, where two have two levels, one has three levels and the last has four levels. In the classical jargon in this field we would refer to this as a 22 31 41 factorial design; note that the product of levels to the power of attributes (48 in this case) represents the total number of choice tasks needed to recover all effects (i.e. main or linear effects and all interactions), i.e. a full factorial design (more about this below).Assuming each attribute will produce a unique parameter estimate (i.e. main effects only), the smallest design would require just four choice tasks based on the number of parameters criterion; however, to maintain attribute level balance, the smallest possible design would require 12 choice tasks (12 being divisible without remainder by 2, 3, and 4)."
+    "text": "Attribute Level Balance\n\nEach attribute level appears an equal number of times over design\nDesirable property although it may impact on statistical efficiency\n\nExample: Consider a design with four attributes, where two have two levels, one has three levels and the last has four levels. In the classical jargon in this field we would refer to this as a 22 31 41 factorial design; note that the product of attributes to the power of levels (48 in this case) represents the total number of choice tasks needed to recover all effects (i.e. main or linear effects and all interactions), i.e. a full factorial design (more about this below). Assuming each attribute will produce a unique parameter estimate (i.e. main effects only), the smallest design would require just four choice tasks based on the number of parameters criterion; however, to maintain attribute level balance, the smallest possible design would require 12 choice tasks (12 being divisible without remainder by 2, 3, and 4)."
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#attribute-level-balance-1",
@@ -7483,7 +7483,7 @@
     "href": "teaching/ENCI707/slides/lec-6.html#dominated-designs",
     "title": "Lecture 6 - Stated Preference Methods",
     "section": "Dominated Designs",
-    "text": "Dominated Designs\n\nWhich option would you pick?\n\n\n\n\nAttribute\nBus\nCar\n\n\n\n\nTravel time\n11\n10\n\n\nTravel cost\n2.75\n3\n\n\n\n\nWhy would someone pick bus in this case?\n\n\n\n\nAttribute\nBus\nCar\n\n\n\n\nTravel time\n31\n10\n\n\nTravel cost\n2.75\n3"
+    "text": "Dominated Designs\n\nWhich option would you pick?\n\n\n\n\nAttribute\nBus\nCar\n\n\n\n\nTravel time\n11\n10\n\n\nTravel cost\n2.75\n3\n\n\n\n\n\nWhy would someone pick bus in this case?\n\n\n\n\nAttribute\nBus\nCar\n\n\n\n\nTravel time\n31\n10\n\n\nTravel cost\n2.75\n3"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#dce-experimental-design-1",
@@ -7497,7 +7497,7 @@
     "href": "teaching/ENCI707/slides/lec-6.html#does-orthogonality-matter",
     "title": "Lecture 6 - Stated Preference Methods",
     "section": "Does orthogonality matter?",
-    "text": "Does orthogonality matter?\n\nParameter estimates reflect preference strength\nStandard errors come from variance-covariance matrix of estimated model\nOrthogonality - correlation structure of the data (design) matrix (\\(X\\))\n\nLinear regression - variance-covariance matrix is given by \\(\\frac{\\sigma^2}{X'X}\\)\nModels for discrete choice - non-linear! (\\(I(\\beta) = \\sum_n X_n'W_nX_n}\\) where \\(W_n\\) is a weight matrix defined by the model structure)"
+    "text": "Does orthogonality matter?\n\nParameter estimates reflect preference strength\nStandard errors come from variance-covariance matrix of estimated model\nOrthogonality - correlation structure of the data (design) matrix (\\(X\\))\n\nLinear regression - variance-covariance matrix is given by \\(\\frac{\\sigma^2}{X'X}\\)\nModels for discrete choice - non-linear! \\(I(\\beta) = \\sum_n X_n'W_nX_n\\) where \\(W_n\\) is a weight matrix defined by the model structure"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#experiment-design-processes-1",
@@ -7518,7 +7518,7 @@
     "href": "teaching/ENCI707/slides/lec-6.html#efficient-design-1",
     "title": "Lecture 6 - Stated Preference Methods",
     "section": "Efficient Design",
-    "text": "Efficient Design\n\nAsymptotic variance-covariance (AVC) matrix - approximation of true VC matrix\n\n\\[\\mathbf{\\Sigma} = \\begin{pmatrix} se(\\hat{\\beta}_1)^2 & \\cdots & 0 \\\\ \\vdots & \\ddots & \\vdots \\\\ 0 & \\cdots & se(\\hat{\\beta}_K)^2 \\end{pmatrix}\\] - “Asymptotic” - assuming very large sample or many repetitions using a small sample"
+    "text": "Efficient Design\n\nAsymptotic variance-covariance (AVC) matrix - approximation of true VC matrix\n\n\\[\\mathbf{\\Sigma} = \\begin{pmatrix} se(\\hat{\\beta}_1)^2 & \\cdots & 0 \\\\ \\vdots & \\ddots & \\vdots \\\\ 0 & \\cdots & se(\\hat{\\beta}_K)^2 \\end{pmatrix}\\]\n\n“Asymptotic” - assuming very large sample or many repetitions using a small sample"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#how-to-derive-avc-matrix",
@@ -7623,7 +7623,182 @@
     "href": "teaching/ENCI707/slides/lec-8.html#outline",
     "title": "Lecture 8 - Computing Methods",
     "section": "Outline",
-    "text": "Outline\n\n\nSurvey terms\nSurvey design"
+    "text": "Outline\n\n\nMaximum likelihood estimation\nMaximum simulated likelihood estimation\nProfile likelihood estimation\nAutomatic differentiation"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-8.html#representative-model-estimation-problem",
+    "href": "teaching/ENCI707/slides/lec-8.html#representative-model-estimation-problem",
+    "title": "Lecture 8 - Computing Methods",
+    "section": "Representative model estimation problem",
+    "text": "Representative model estimation problem\n\nConsider the logit model:\n\n\\[\nPr(Y_i=1\\mid X_i)\n=\n\\frac{\\exp(X_i\\beta)}\n     {1+\\exp(X_i\\beta)}\n\\] \\[\nl(\\beta\\mid \\mathbf Y,\\mathbf X)\n=\n\\prod_{i=1}^{n}\nPr(Y_i=1\\mid X_i)^{Y_i}\n\\Bigl(1-Pr(Y_i=1\\mid X_i)\\Bigr)^{1-Y_i}\n\\] \\[\nL(\\beta\\mid \\mathbf Y,\\mathbf X)\n=\n\\sum_{i=1}^{n}\nY_i\\log Pr(Y_i=1\\mid X_i)\n+\n(1-Y_i)\\log\\left(1-Pr(Y_i=1\\mid X_i)\\right)\n\\]\n\nRule of thumb: likelihood is the joint probability of the observed data\n\nWe are exploiting the independent nature of the data\nJoint probability of two independent values is the product of their marginals\n\nAny monotonic transformation preserves the maximizing value"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-8.html#plug-in-logit-to-the-ml",
+    "href": "teaching/ENCI707/slides/lec-8.html#plug-in-logit-to-the-ml",
+    "title": "Lecture 8 - Computing Methods",
+    "section": "Plug in Logit to the ML",
+    "text": "Plug in Logit to the ML\nSubstituting the logit probability:\n\\[\nL(\\beta)\n=\n\\sum_{i=1}^{n}\n\\left[\nY_i\\log\n\\left(\n\\frac{\\exp(X_i\\beta)}\n     {1+\\exp(X_i\\beta)}\n\\right)\n+\n(1-Y_i)\n\\log\n\\left(\n\\frac{1}\n     {1+\\exp(X_i\\beta)}\n\\right)\n\\right]\n\\]\nAfter simplification:\n\\[\nL(\\beta)\n=\n\\sum_{i=1}^{n}\n\\left[\nY_iX_i\\beta\n-\n\\log\\left(1+\\exp(X_i\\beta)\\right)\n\\right]\n\\]\n\nWe now have a likelihood function. Goal: \\(\\max_{\\beta} L(\\beta)\\)\nTake derivatives and search for the maximum\nSome good and bad news…"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-8.html#the-bad-news",
+    "href": "teaching/ENCI707/slides/lec-8.html#the-bad-news",
+    "title": "Lecture 8 - Computing Methods",
+    "section": "The Bad News…",
+    "text": "The Bad News…\n\\[\nL(\\beta)\n=\n\\sum_{i=1}^{n}\n\\left[\nY_iX_i\\beta\n-\n\\log(1+\\exp(X_i\\beta))\n\\right]\n\\]\n\nThere is no analytic solution for this \\(\\beta\\). Unlike with OLS, we cannot get a closed-form solution for our estimate - this is true of most estimators\nThis is actually a well-behaved solution because it is globally concave and has easily calculated first and second derivatives\nGood news? We have computers!"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-8.html#the-good-news",
+    "href": "teaching/ENCI707/slides/lec-8.html#the-good-news",
+    "title": "Lecture 8 - Computing Methods",
+    "section": "The Good News",
+    "text": "The Good News\nScore function: \\[\n\\frac{\\partial L(\\beta)}\n{\\partial \\beta}\n=\n\\sum_{i=1}^{n}\nX_i\n\\left(\nY_i\n-\n\\frac{\\exp(X_i\\beta)}\n     {1+\\exp(X_i\\beta)}\n\\right)\n\\]\n\nWhile there is not an analytic solution, if there is a maximum where \\(\\hat{\\beta}\\) satisfies \\(\\frac{\\partial L(\\hat{\\beta})}{\\partial \\beta} = 0\\), then there are sets of conditions such that \\[\n\\lim_{n\\to\\infty}\nPr\\!\\left(\n\\|\\hat\\beta_n-\\beta_0\\|&gt;\\varepsilon\n\\right)\n=\n0 \\text{ (weak consistency)}\n\\] \\[\n\\sqrt n\n(\\hat\\beta_n-\\beta_0)\n\\overset{d}{\\to}\nN\n\\left(\n0,\n-\\mathbb E\n\\left[\n\\frac{\\partial^2L(\\beta_0)}\n   {\\partial\\beta\\partial\\beta'}\n\\right]^{-1}\n\\right) \\text{ (asymptotic normality)}\n\\]\nThe challenge is that the conditions for when this is satisfied vary from problem to problem"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-8.html#how-to-compute-newton-raphson",
+    "href": "teaching/ENCI707/slides/lec-8.html#how-to-compute-newton-raphson",
+    "title": "Lecture 8 - Computing Methods",
+    "section": "How to Compute: Newton-Raphson",
+    "text": "How to Compute: Newton-Raphson\n\nWe focus on a few numerical optimization routines\nMany possible optimization methods!\nOne common approach is Newton-Raphson"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-8.html#newton-raphson-computation-of-mle",
+    "href": "teaching/ENCI707/slides/lec-8.html#newton-raphson-computation-of-mle",
+    "title": "Lecture 8 - Computing Methods",
+    "section": "Newton-Raphson Computation of MLE",
+    "text": "Newton-Raphson Computation of MLE\n\nLet \\(Q(\\theta)=-L(\\theta)\\) (denote with \\(\\theta\\) to highlight that this is a general problem)\nIdea is to take arbitrary objective function and fit a local quadratic based on derivatives\n\nFind the minimizer of that quadratic. Repeat!\n\n\nUpdate rule: \\[\n\\theta_{k+1}\n=\n\\theta_k\n-\n\\left[\n\\frac{\\partial^2Q(\\theta_k)}\n     {\\partial\\theta\\partial\\theta'}\n\\right]^{-1}\n\\frac{\\partial Q(\\theta_k)}\n     {\\partial\\theta}\n\\]\n\nFor logit, we already know the first derivative and can easily calculate the second derivative\nWorks well because the problem is convex and smooth"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-8.html#more-general-methods",
+    "href": "teaching/ENCI707/slides/lec-8.html#more-general-methods",
+    "title": "Lecture 8 - Computing Methods",
+    "section": "More General Methods",
+    "text": "More General Methods\n\nSuppose the Hessian is unavailable or expensive to compute\nLet \\(A_k\\) be any positive-definite matrix\n\n\n\nThen:\n\\[\n\\theta_{k+1}\n=\n\\theta_k\n-\n\\lambda_k\nA_k\n\\frac{\\partial Q}{\\partial\\theta}(\\theta_k)\n\\]\nNewton-Raphson is a special case:\n\\[\n\\lambda_k=1\n\\]\n\\[\nA_k\n=\n\\left[\n\\frac{\\partial^2L(\\theta_k)}\n     {\\partial\\theta\\partial\\theta'}\n\\right]^{-1}\n\\]\n\n\nTwo ingredients: (1) Step length \\(\\lambda_k\\) and (2) Search direction \\(d_k = A_k \\frac{\\partial Q}{\\partial\\theta}(\\theta_k)\\) (controlled by \\(A_k\\), which selects direction of gradient)\nSometimes rescale: \\(\\tilde d_k = \\frac{d_k} {1+\\sqrt{d_k'd_k}}\\) to ensure \\(\\|\\tilde d_k\\|&lt;1\\)"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-8.html#simple-version-of-the-algorithm",
+    "href": "teaching/ENCI707/slides/lec-8.html#simple-version-of-the-algorithm",
+    "title": "Lecture 8 - Computing Methods",
+    "section": "Simple Version of the Algorithm",
+    "text": "Simple Version of the Algorithm\nChoose a direction, then choose how far to move:\n\\[\n\\lambda_k\n=\n\\arg\\min_{\\lambda}\nQ(\\theta_k+\\lambda\\tilde d_k)\n\\]\nSimplest choice (steepest ascent):\n\\[\nA_k=I\n\\]\n\nHow do we find \\(\\lambda_k\\)? If \\(\\theta\\) is scalar, it is feasible (but inefficient) to calculate using a simple grid search\nHigher-dimensional problems: too slow"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-8.html#two-line-search-algorithms-1-newtons-method",
+    "href": "teaching/ENCI707/slides/lec-8.html#two-line-search-algorithms-1-newtons-method",
+    "title": "Lecture 8 - Computing Methods",
+    "section": "Two Line Search Algorithms: (1) Newton’s Method",
+    "text": "Two Line Search Algorithms: (1) Newton’s Method\nGiven a direction \\(d\\), define\n\\[\n\\lambda^{*}\n=\n\\arg\\min_\\lambda Q(\\lambda)\n\\]\n\nNewton’s method updates (finds root of function - e.g., derivative):\nStart with an initial guess \\(\\lambda_0\\). Then,\n\n\\[\\lambda_{k+1}\n=\n\\lambda_k\n-\n\\frac{Q'(\\lambda_k)}\n     {Q''(\\lambda_k)}\n\\]\n\nRepeat until: \\(|\\lambda_{k+1}-\\lambda_k|\\) is sufficiently small\nDrawback: Requires evaluation of the second derivative"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-8.html#two-line-search-algorithms-2-golden-search",
+    "href": "teaching/ENCI707/slides/lec-8.html#two-line-search-algorithms-2-golden-search",
+    "title": "Lecture 8 - Computing Methods",
+    "section": "Two Line Search Algorithms: (2) Golden Search",
+    "text": "Two Line Search Algorithms: (2) Golden Search\nRequirements:\n\nUnimodal objective function\nInitial interval:\n\n\\[\n[\\lambda_l,\\lambda_h]\n\\]\nChoose:\n\\[\n\\lambda_{m1}\n=\n\\lambda_l\n+\n0.392(\\lambda_h-\\lambda_l)\n\\]\n\\[\n\\lambda_{m2}\n=\n\\lambda_l\n+\n0.618(\\lambda_h-\\lambda_l)\n\\]"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-8.html#two-line-search-algorithms-2-golden-search-1",
+    "href": "teaching/ENCI707/slides/lec-8.html#two-line-search-algorithms-2-golden-search-1",
+    "title": "Lecture 8 - Computing Methods",
+    "section": "Two Line Search Algorithms: (2) Golden Search",
+    "text": "Two Line Search Algorithms: (2) Golden Search\nGiven the four points, can check two conditions:\n\nIf \\(Q(\\lambda_{m2})&gt;Q(\\lambda_{m1})\\) then the minimizer lies in \\[\n[\\lambda_l,\\lambda_{m2}]\n\\]\nIf \\(Q(\\lambda_{m2})&lt;Q(\\lambda_{m1})\\) then the minimizer lies in \\[\n[\\lambda_{m1},\\lambda_h]\n\\]\n\nRepeat until convergence"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-8.html#davidson-fletcher-powell-dfp",
+    "href": "teaching/ENCI707/slides/lec-8.html#davidson-fletcher-powell-dfp",
+    "title": "Lecture 8 - Computing Methods",
+    "section": "Davidson-Fletcher-Powell (DFP)",
+    "text": "Davidson-Fletcher-Powell (DFP)\n\nHow do we construct \\(A_k\\)?\n\nQuasi-Newton method such as DFP or more commonly BFGS (Broyden-Fletcher-Goldfarb-Shanno)\nBFGS uses a related update to DFP but updates the Hessian not its inverse\n\nInitialize with any positive definite matrix \\(A\\) (e.g., identity matrix)\nAlgorithm (repeat until convergence)\n\nCompute direction \\(\\tilde d_k\\)\nCompute optimal step length \\(\\lambda_k\\)\nCompute actual step \\(p_k=\\lambda_k\\tilde d_k\\) and new parameter \\(\\theta_{k+1} = \\theta_k+p_k\\)\nCompute gradient change \\(q_k\\) from \\(\\theta_k\\) to \\(\\theta_{k+1}\\)\nUpdate: \\(A_{k+1} = A_k  +  \\frac{p_kp_k'}      {p_k'q_k}  -  \\frac{A_kq_kq_k'A_k}      {q_k'A_kq_k}\\)"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-8.html#maximum-simulated-likelihood-estimation",
+    "href": "teaching/ENCI707/slides/lec-8.html#maximum-simulated-likelihood-estimation",
+    "title": "Lecture 8 - Computing Methods",
+    "section": "Maximum Simulated Likelihood Estimation",
+    "text": "Maximum Simulated Likelihood Estimation\n\nConsidered a mixture likelihood function (e.g., mixed logit model that we will cover later in course) \\[\nPr(i)\n=\n\\int l_i(\\beta)f(\\beta \\mid \\theta) d\\beta\n\\]\nDoes not have closed-form solution and cannot directly maximize likelihood function\nSolution? Simulation!"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-8.html#maximum-simulated-likelihood-estimation-1",
+    "href": "teaching/ENCI707/slides/lec-8.html#maximum-simulated-likelihood-estimation-1",
+    "title": "Lecture 8 - Computing Methods",
+    "section": "Maximum Simulated Likelihood Estimation",
+    "text": "Maximum Simulated Likelihood Estimation\nMSL steps:\n\nDraw a value of \\(\\beta\\) from \\(f(\\beta \\mid \\theta)\\) and label it \\(\\beta^r\\)\nCompute likelihood given \\(\\beta^r\\)\nRepeat steps 1 and 2 many times and average the results \\[\\hat{Pr(i)} = \\frac{1}{R}\\sum_{r=1}^R l_i(\\beta^r)\\]\n\nFor mixed logit \\[SL = \\sum_{n=1}^N \\sum_{j=1}^J (Y_j=i) ln(\\hat{Pr(i)})\\]"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-8.html#problem-statement",
+    "href": "teaching/ENCI707/slides/lec-8.html#problem-statement",
+    "title": "Lecture 8 - Computing Methods",
+    "section": "Problem Statement",
+    "text": "Problem Statement\n\nModels frequently run the risk of convergence to inferior local optima when using structures other than simple linear-in-parameters logit - e.g., latent class, mixed logit, and integrated choice and latent variable model\nProblem is often ignored or handled using multiple random starting parameter values\nHow to address in systematic manner?"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-8.html#solutions",
+    "href": "teaching/ENCI707/slides/lec-8.html#solutions",
+    "title": "Lecture 8 - Computing Methods",
+    "section": "Solutions",
+    "text": "Solutions\n\nStandard approach is to randomly generate multiple starting values, find local maximizers, and choose the one with the largest log-likelihood\nOther approaches include simulated annealing, tabu search, and genetic algorithms\nExpectation maximization (EM) is another approach that ensures maximization at each step - but very slow\nHess, Bunch, and Daly (2025) suggest a profile likelihood solution"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-8.html#profile-likelihood-as-a-diagnostic-tool",
+    "href": "teaching/ENCI707/slides/lec-8.html#profile-likelihood-as-a-diagnostic-tool",
+    "title": "Lecture 8 - Computing Methods",
+    "section": "Profile Likelihood as a Diagnostic Tool",
+    "text": "Profile Likelihood as a Diagnostic Tool\n\n\nFor parameter \\(\\beta_k\\):\n\nMove away from \\(\\hat{\\beta}_k\\)\nFix \\(\\beta_k\\) at candidate values\nRe-estimate all remaining parameters\nRecord the best constrained log-likelihood\n\nThis produces a profile likelihood\nInterpretation\n✅ Smooth decline away from the optimum = Likelihood behaves as expected\n❌ Another region has a higher log-likelihood = Evidence of a superior local optimum nearby\n\n\n\n\n\n\nflowchart LR\n\n    A[\"MLE\"]\n    B[\"βₖ - 4σ\"]\n    C[\"βₖ - 2σ\"]\n    D[\"βₖ\"]\n    E[\"βₖ + 2σ\"]\n    F[\"βₖ + 4σ\"]\n\n    A --&gt; B\n    A --&gt; C\n    A --&gt; D\n    A --&gt; E\n    A --&gt; F"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-8.html#what-did-hess-et-al.-find",
+    "href": "teaching/ENCI707/slides/lec-8.html#what-did-hess-et-al.-find",
+    "title": "Lecture 8 - Computing Methods",
+    "section": "What Did Hess et al. Find?",
+    "text": "What Did Hess et al. Find?\nUsing a Swiss route-choice stated-preference dataset:\n\n\nLatent Class Model\nInitial solution:\n\\[\nLL=-1578.3\n\\]\nProfile likelihood search identified:\n\n99 improved candidate solutions\n4 distinct superior optima\n\n\nMixed Logit Model\nInitial solution:\n\\[\nLL=-1405.2\n\\]\nProfile likelihood search identified:\n\n210 improved candidate solutions\n76 distinct superior optima\n\n\nKey Finding\n\nDifferences in log-likelihood were often small, but the implied: Values of travel time, Values of headway, and Values of interchange could differ substantially"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-8.html#why-do-we-need-automatic-differentiation",
+    "href": "teaching/ENCI707/slides/lec-8.html#why-do-we-need-automatic-differentiation",
+    "title": "Lecture 8 - Computing Methods",
+    "section": "Why Do We Need Automatic Differentiation?",
+    "text": "Why Do We Need Automatic Differentiation?\n\n\nSuppose we need the gradient of a loss function:\n\\[\nL(\\theta)=\\sum_i\\left(y_i-\\hat y_i(\\theta)\\right)^2\n\\]\nfor optimization algorithms such as:\n\nGradient descent\nNewton-Raphson\nBFGS\nAdam\n\n\nThree options\n\nSymbolic differentiation\n\nExact algebraic derivative\nCan become very complicated\n\nFinite differences\n\nApproximate derivative\nNumerical error\n\nAutomatic differentiation\n\nExact derivatives to machine precision\nEfficient for large models"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-8.html#automatic-differentiation-via-the-chain-rule",
+    "href": "teaching/ENCI707/slides/lec-8.html#automatic-differentiation-via-the-chain-rule",
+    "title": "Lecture 8 - Computing Methods",
+    "section": "Automatic Differentiation via the Chain Rule",
+    "text": "Automatic Differentiation via the Chain Rule\nConsider\n\\[\nf(x)=\\sin(x^2+1)\n\\]\nBreak the computation into elementary steps:\n\\[\nv_1=x\n\\]\n\\[\nv_2=v_1^2\n\\]\n\\[\nv_3=v_2+1\n\\]\n\\[\nv_4=\\sin(v_3)\n\\]\nThe chain rule gives\n\\[\n\\frac{df}{dx}\n=\n\\frac{\\partial v_4}{\\partial v_3}\n\\frac{\\partial v_3}{\\partial v_2}\n\\frac{\\partial v_2}{\\partial v_1}\n\\frac{\\partial v_1}{\\partial x}\n\\]\nResult:\n\\[\n\\frac{df}{dx}\n=\n\\cos(x^2+1)\\,2x\n\\]\n\nAD applies the chain rule automatically to every elementary operation"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-8.html#forward-mode-automatic-differentiation",
+    "href": "teaching/ENCI707/slides/lec-8.html#forward-mode-automatic-differentiation",
+    "title": "Lecture 8 - Computing Methods",
+    "section": "Forward Mode Automatic Differentiation",
+    "text": "Forward Mode Automatic Differentiation\nTrack both the value and derivative simultaneously\nFor\n\\[\nf(x)=\\sin(x^2+1)\n\\]\nwith \\(x=2\\):\n\n\n\nVariable\nValue\nDerivative\n\n\n\n\n\\(v_1=x\\)\n\\(2\\)\n\\(1\\)\n\n\n\\(v_2=v_1^2\\)\n\\(4\\)\n\\(2v_1(1)=4\\)\n\n\n\\(v_3=v_2+1\\)\n\\(5\\)\n\\(4\\)\n\n\n\\(v_4=\\sin(v_3)\\)\n\\(\\sin(5)\\)\n\\(\\cos(5)\\times4\\)\n\n\n\nKey idea\nEach operation propagates:\n\\[\n(\\text{value},\\text{derivative})\n\\rightarrow\n(\\text{new value},\\text{new derivative})\n\\]\nMost efficient when: Few inputs & many outputs"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-8.html#reverse-mode-backpropagation",
+    "href": "teaching/ENCI707/slides/lec-8.html#reverse-mode-backpropagation",
+    "title": "Lecture 8 - Computing Methods",
+    "section": "Reverse Mode (Backpropagation)",
+    "text": "Reverse Mode (Backpropagation)\nFor a scalar objective:\n\\[\nL=f(\\theta_1,\\theta_2,\\ldots,\\theta_n)\n\\]\nWe first compute all intermediate values:\n\\[\n\\theta \\rightarrow v_1 \\rightarrow v_2 \\rightarrow \\cdots \\rightarrow L\n\\]\nThen work backward:\n\\[\n\\frac{\\partial L}{\\partial v_i}\n=\n\\frac{\\partial L}{\\partial v_{i+1}}\n\\frac{\\partial v_{i+1}}{\\partial v_i}\n\\]\nWhy it matters\n\nOne forward evaluation computes the function value\nOne backward pass computes gradients for all parameters\nComplexity roughly independent of the number of parameters"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-8.html#automatic-differentiation",
+    "href": "teaching/ENCI707/slides/lec-8.html#automatic-differentiation",
+    "title": "Lecture 8 - Computing Methods",
+    "section": "Automatic Differentiation",
+    "text": "Automatic Differentiation\n\n\n\n\n\n\n\nflowchart TD\n\n    X[\"x\"]\n    V2[\"x²\"]\n    V3[\"+1\"]\n    V4[\"sin(.)\"]\n    F[\"f(x)\"]\n\n    X --&gt; V2\n    V2 --&gt; V3\n    V3 --&gt; V4\n    V4 --&gt; F\n\n    F -.-&gt;|\"1\"| V4\n    V4 -.-&gt;|\"cos(v₃)\"| V3\n    V3 -.-&gt;|\"1\"| V2\n    V2 -.-&gt;|\"2x\"| X\n\n    classDef node fill:#dbeafe,stroke:#2563eb,stroke-width:2px;\n    class X,V2,V3,V4,F node;\n\n\n\n\n\n\n\nFor\n\\[\nf(x)=\\sin(x^2+1)\n\\]\nForward pass\n\nCompute values\nStore intermediates\n\nReverse pass\n\nStart with \\(\\partial f / \\partial f = 1\\)\nMove backward\nMultiply local derivatives\n\n\\[\n\\frac{df}{dx}\n=\n2x\\cos(x^2+1)\n\\]"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-8.html#transportation-models-as-cg",
+    "href": "teaching/ENCI707/slides/lec-8.html#transportation-models-as-cg",
+    "title": "Lecture 8 - Computing Methods",
+    "section": "Transportation Models as CG",
+    "text": "Transportation Models as CG\n\n\nTraditional View\nDemand Model\n      ↓\nPath Choice\n      ↓\nTraffic Assignment\n      ↓\nTravel Times\n      ↓\nUpdated Demand\n      ↓\n...\n\nKey Insight\n\nForward pass: compute flows and travel times\nReverse pass: compute gradients automatically\nNo need to derive derivatives manually\n\n\nIterative feedback is required until demand and network conditions are consistent\nAutomatic Differentiation View\n\n\n\n\n\nflowchart LR\n\n    C[\"Travel Costs\"]\n    D[\"Mode & Route Choice\"]\n    X[\"Path Flows\"]\n    V[\"Link Volumes\"]\n    T[\"Travel Times\"]\n\n    C --&gt; D\n    D --&gt; X\n    X --&gt; V\n    V --&gt; T\n    T --&gt; C\n\n    classDef node fill:#dbeafe,stroke:#2563eb,stroke-width:2px;\n    class C,D,X,V,T node;\n\n\n\n\n\n\nThe entire transportation system can be viewed as a computational graph"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-8.html#why-automatic-differentiation-helps-calibration",
+    "href": "teaching/ENCI707/slides/lec-8.html#why-automatic-differentiation-helps-calibration",
+    "title": "Lecture 8 - Computing Methods",
+    "section": "Why Automatic Differentiation Helps Calibration",
+    "text": "Why Automatic Differentiation Helps Calibration\n\n\nCalibration chooses model parameters\n\\[\n\\theta=(\\beta_{\\text{time}},\\beta_{\\text{cost}},\\ldots)\n\\]\nto minimize a calibration loss:\n\\[\nL(\\boldsymbol{\\theta})\n=\n\\text{Observed Data}\n-\n\\text{Model Predictions}\n\\]\n\n\n\n\n\n\nflowchart LR\n\n    B[\"Parameters&lt;br&gt;θ\"]\n    M[\"Transportation&lt;br&gt;Model\"]\n    L[\"Loss&lt;br&gt;L(θ)\"]\n\n    B --&gt; M\n    M --&gt; L\n    L -. \"Gradients\" .-&gt; B\n\n    classDef blue fill:#dbeafe,stroke:#2563eb;\n    classDef red fill:#fee2e2,stroke:#dc2626;\n\n    class B,M blue;\n    class L red;\n\n\n\n\n\n\n\n\n\nTraditional\n\nFinite differences\nManual derivatives\nMany model evaluations\n\n\nWith AD\n\n1 forward pass → compute (L())\n1 backward pass → compute (L)\nAll parameter gradients obtained simultaneously\n\n\n\nKey takeaway: Treat the transportation model as a computational graph and use backpropagation to obtain gradients for efficient calibration"
   },
   {
     "objectID": "teaching/ENCI707/supplemental/binary-logit.html",
