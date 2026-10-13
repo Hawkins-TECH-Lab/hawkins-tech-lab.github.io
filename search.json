@@ -7413,7 +7413,7 @@
     "href": "teaching/ENCI707/slides/lec-6.html#attribute-level-balance-2",
     "title": "Lecture 6 - Stated Preference Methods",
     "section": "Attribute Level Balance",
-    "text": "Attribute Level Balance\n\nBalanced design with each attribute level occurring an equal number of times across choice sets.\n\n\n\nOption A\n\n\n\nA1\nA2\nA3\n\n\n\n\n10\n3\n2\n\n\n20\n-5\n4\n\n\n30\n3\n6\n\n\n10\n-5\n6\n\n\n30\n-5\n2\n\n\n20\n3\n4\n\n\n\n\nOption B\n\n\n\nA1\nA2\nA3\n\n\n\n\n10\n3\n2\n\n\n30\n-5\n6\n\n\n20\n-5\n4\n\n\n20\n3\n4\n\n\n10\n-5\n2\n\n\n30\n3\n6"
+    "text": "Attribute Level Balance\n\nBalanced design with each attribute level occurring an equal number of times for choice.\n\n\n\nOption A\n\n\n\nA1\nA2\nA3\n\n\n\n\n10\n3\n2\n\n\n20\n-5\n4\n\n\n30\n3\n6\n\n\n10\n-5\n6\n\n\n30\n-5\n2\n\n\n20\n3\n4\n\n\n\n\nOption B\n\n\n\nA1\nA2\nA3\n\n\n\n\n10\n3\n2\n\n\n30\n-5\n6\n\n\n20\n-5\n4\n\n\n20\n3\n4\n\n\n10\n-5\n2\n\n\n30\n3\n6"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#dce-experimental-design",
@@ -7462,14 +7462,14 @@
     "href": "teaching/ENCI707/slides/lec-6.html#fractional-factorial-orthogonal-designs",
     "title": "Lecture 6 - Stated Preference Methods",
     "section": "Fractional Factorial Orthogonal Designs",
-    "text": "Fractional Factorial Orthogonal Designs\n\nConsider the following example: find an orthogonal fractional factorial main effects only design\n\n\n\nModel: \\[U_1 = \\beta_1 + \\beta_2 X_{11} + \\beta_3 X_{21} + \\beta_4 X_{31} \\] \\[U_2 = \\beta_5 + \\beta_2 X_{12} + \\beta_3 X_{22} + \\beta_6 X_{32} \\] \\[U_3 = \\beta_2 X_{13} + \\beta_3 X_{23} + \\beta_7 X_{33} \\]\n\nAttribute levels: \\[X_{11},X_{12},X_{13} \\in {2,4,6}\\] \\[X_{21},X_{22},X_{23} \\in {1,3,5}\\] \\[X_{31},X_{32},X_{33} \\in {3,5,7}\\]\n\n\nThe design needs to have enough choice sets to:\n\nSatisfy design degrees of freedom\nSatisfy attribute level balance\nSatisfy orthogonality"
+    "text": "Fractional Factorial Orthogonal Designs\n\nConsider the following example: find an orthogonal fractional factorial main effects only design\n\n\n\nModel: \\[\n\\begin{aligned}\nU_1 &= \\beta_1 + \\beta_2 X_{11} + \\beta_3 X_{21} + \\beta_4 X_{31} \\\\\nU_2 &= \\beta_5 + \\beta_2 X_{12} + \\beta_3 X_{22} + \\beta_6 X_{32} \\\\\nU_3 &= \\phantom{\\beta_5 +\\ } \\beta_2 X_{13} + \\beta_3 X_{23} + \\beta_7 X_{33}\n\\end{aligned}\n\\]\n\nAttribute levels: \\[\n\\begin{aligned}\nX_{11}, X_{12}, X_{13} &\\in \\{2, 4, 6\\} \\\\\nX_{21}, X_{22}, X_{23} &\\in \\{1, 3, 5\\} \\\\\nX_{31}, X_{32}, X_{33} &\\in \\{3, 5, 7\\}\n\\end{aligned}\n\\]\n\n\nThe design needs to have enough choice sets to:\n\nSatisfy design degrees of freedom\nSatisfy attribute level balance\nSatisfy orthogonality"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#fractional-factorial-orthogonal-designs-1",
     "href": "teaching/ENCI707/slides/lec-6.html#fractional-factorial-orthogonal-designs-1",
     "title": "Lecture 6 - Stated Preference Methods",
     "section": "Fractional Factorial Orthogonal Designs",
-    "text": "Fractional Factorial Orthogonal Designs\n\nThe smallest design that is orthogonal in all main effects has 12 choice sets (7 parameters / (3-1) independent comparisons)\n\nNot easy to find orthogonal design\nOut of \\(\\approx 10^51\\) possible designs (from \\(27 \\times 26 \\times 25\\) and \\(3^3=27\\) profiles)…\n\nOrthogonal fractional factorial design might still be too large for any one respondent to complete all tasks\nCan be hard to find a blocking column"
+    "text": "Fractional Factorial Orthogonal Designs\n\nThe smallest design that is orthogonal in all main effects has 12 choice sets\n\n7 parameters / (3-1) independent comparisons gives 4 choice sets by degrees of freedom condition\nAttribute level balance with 3 levels and orthogonality requires \\(4 \\times 3 = 12\\) choice sets\nNot easy to find orthogonal design\nThere are \\(3.38 \\cdot 10^{51}\\) possible designs to search through (from \\(3^3=27\\) profiles and \\(27^{12}\\) choice sets)…\n\nOrthogonal fractional factorial design might still be too large for any one respondent to complete all tasks\nCan be hard to find a blocking column"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#problems-with-orthogonal-designs",
