@@ -1371,7 +1371,7 @@
     "href": "teaching/ENCI707/slides/lec-11.html#iv-in-regression-1",
     "title": "Lecture 11 - Causal Inference Methods",
     "section": "IV in Regression",
-    "text": "IV in Regression\n\nWith \\[𝑦=\\beta_0+\\beta_1 𝑇+\\beta_2 𝑧+𝑒𝑟𝑟𝑜𝑟\\] \\[𝑇=\\gamma_0+\\gamma_1 𝑧+𝑒𝑟𝑟𝑜𝑟\\]\nSubstituting T into y: \\[𝑦=(\\beta_0+\\beta_1 \\gamma_0 )+(\\beta_1 \\gamma_1+\\beta_2 )𝑧+𝑒𝑟𝑟𝑜𝑟\\]\nwhere \\(\\beta_1\\) is our parameter of interest\nUsing \\(𝑦=\\delta_0+\\delta_1 𝑧+𝑒𝑟𝑟𝑜𝑟\\) where \\(\\delta_1=\\beta_1 \\gamma_1+\\beta_2\\) we get \\[\\beta_1=(\\delta_1−\\beta_2)/\\gamma_1\\]"
+    "text": "IV in Regression\n\nWith \\[𝑦=\\beta_0+\\beta_1 𝑇+\\beta_2 𝑧+𝑒𝑟𝑟𝑜𝑟\\] \\[𝑇=\\gamma_0+\\gamma_1 𝑧+𝑒𝑟𝑟𝑜𝑟\\]\nSubstituting \\(T\\) into \\(y\\): \\[𝑦=(\\beta_0+\\beta_1 \\gamma_0 )+(\\beta_1 \\gamma_1+\\beta_2 )𝑧+𝑒𝑟𝑟𝑜𝑟\\]\nwhere \\(\\beta_1\\) is our parameter of interest\nUsing \\(𝑦=\\delta_0+\\delta_1 𝑧+𝑒𝑟𝑟𝑜𝑟\\) where \\(\\delta_1=\\beta_1 \\gamma_1+\\beta_2\\) we get \\[\\beta_1=(\\delta_1−\\beta_2)/\\gamma_1\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-11.html#iv-in-regression-2",
@@ -1406,7 +1406,7 @@
     "href": "teaching/ENCI707/slides/lec-11.html#fixed-effect-models",
     "title": "Lecture 11 - Causal Inference Methods",
     "section": "Fixed Effect Models",
-    "text": "Fixed Effect Models\n\nUse repeated observations within groups – e.g., twin comparisons that holds confounding variables fixed\nSimply a regression model with group-specific intercepts \\[𝑦_𝑖𝑗=\\beta_0+𝜏𝑧_𝑖𝑗+𝛼_𝑖+𝜖_𝑖𝑗\\]\nwhere j is an indicator of intra-group units\nRequires treatment to vary within groups"
+    "text": "Fixed Effect Models\n\nUse repeated observations within groups – e.g., twin comparisons that holds confounding variables fixed\nSimply a regression model with group-specific intercepts \\[𝑦_{𝑖𝑗}=\\beta_0+\\tau z_{𝑖𝑗}+\\alpha_𝑖+\\varepsilon_{𝑖𝑗}\\]\nwhere \\(j\\) is an indicator of intra-group units\nRequires treatment to vary within groups"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-11.html#difference-in-differences",

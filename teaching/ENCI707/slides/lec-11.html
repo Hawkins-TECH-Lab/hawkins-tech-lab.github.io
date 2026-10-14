@@ -409,11 +409,11 @@ flowchart LR
 <li><strong>Identifiability</strong>: whether data contain sufficient information for unique estimation of parameter (or set of parameters)</li>
 </ul>
 </section>
-<section id="iv-in-regression-1" class="slide level2">
+<section id="iv-in-regression-1" class="slide level2 smaller">
 <h2>IV in Regression</h2>
 <ul>
 <li>With <span class="math display">\[𝑦=\beta_0+\beta_1 𝑇+\beta_2 𝑧+𝑒𝑟𝑟𝑜𝑟\]</span> <span class="math display">\[𝑇=\gamma_0+\gamma_1 𝑧+𝑒𝑟𝑟𝑜𝑟\]</span></li>
-<li>Substituting T into y: <span class="math display">\[𝑦=(\beta_0+\beta_1 \gamma_0 )+(\beta_1 \gamma_1+\beta_2 )𝑧+𝑒𝑟𝑟𝑜𝑟\]</span></li>
+<li>Substituting <span class="math inline">\(T\)</span> into <span class="math inline">\(y\)</span>: <span class="math display">\[𝑦=(\beta_0+\beta_1 \gamma_0 )+(\beta_1 \gamma_1+\beta_2 )𝑧+𝑒𝑟𝑟𝑜𝑟\]</span></li>
 <li>where <span class="math inline">\(\beta_1\)</span> is our parameter of interest</li>
 <li>Using <span class="math inline">\(𝑦=\delta_0+\delta_1 𝑧+𝑒𝑟𝑟𝑜𝑟\)</span> where <span class="math inline">\(\delta_1=\beta_1 \gamma_1+\beta_2\)</span> we get <span class="math display">\[\beta_1=(\delta_1−\beta_2)/\gamma_1\]</span></li>
 </ul>
@@ -426,7 +426,7 @@ flowchart LR
 <li>Standard errors require adjustment in instrumental variable estimation – should be accounted for in any software package</li>
 </ul>
 </section>
-<section id="exclusion-restriction-plausibility" class="slide level2">
+<section id="exclusion-restriction-plausibility" class="slide level2 smaller">
 <h2>Exclusion Restriction Plausibility</h2>
 <ul>
 <li>One way to assess the plausibility of the exclusion restriction is to calculate an estimate within a sample that would not be expected to be affected by the instrument</li>
@@ -464,12 +464,12 @@ flowchart LR
 <h2>Fixed Effect Models</h2>
 <ul>
 <li>Use repeated observations within groups – e.g., twin comparisons that holds confounding variables fixed</li>
-<li>Simply a regression model with group-specific intercepts <span class="math display">\[𝑦_𝑖𝑗=\beta_0+𝜏𝑧_𝑖𝑗+𝛼_𝑖+𝜖_𝑖𝑗\]</span></li>
-<li>where j is an indicator of intra-group units</li>
+<li>Simply a regression model with group-specific intercepts <span class="math display">\[𝑦_{𝑖𝑗}=\beta_0+\tau z_{𝑖𝑗}+\alpha_𝑖+\varepsilon_{𝑖𝑗}\]</span></li>
+<li>where <span class="math inline">\(j\)</span> is an indicator of intra-group units</li>
 <li>Requires treatment to vary within groups</li>
 </ul>
 </section>
-<section id="difference-in-differences" class="slide level2">
+<section id="difference-in-differences" class="slide level2 smaller">
 <h2>Difference-In-Differences</h2>
 <ul>
 <li>Comparison across units (typically) using time as an additional dimension of variation</li>
@@ -481,7 +481,8 @@ flowchart LR
 </ul>
 
 
-</section></section>
+
+<img data-src="lec-11_files/figure-revealjs/unnamed-chunk-6-1.png" width="960" class="r-stretch"></section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="../../../assets/images/teaching/ENCI707/logo.png" class="slide-logo"></p>
@@ -700,6 +701,82 @@ flowchart LR
         ]
       });
     </script>
+    
+
+    <script>
+
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+
+      // slide changes (different for each slide format).
+
+      (function () {
+
+        // dispatch for htmlwidgets
+
+        function fireSlideEnter() {
+
+          const event = window.document.createEvent("Event");
+
+          event.initEvent("slideenter", true, true);
+
+          window.document.dispatchEvent(event);
+
+        }
+
+    
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+
+          fireSlideEnter();
+
+    
+
+          // dispatch for shiny
+
+          if (window.jQuery) {
+
+            if (previousSlide) {
+
+              window.jQuery(previousSlide).trigger("hidden");
+
+            }
+
+            if (currentSlide) {
+
+              window.jQuery(currentSlide).trigger("shown");
+
+            }
+
+          }
+
+        }
+
+    
+
+        // hookup for slidy
+
+        if (window.w3c_slidy) {
+
+          window.w3c_slidy.add_observer(function (slide_num) {
+
+            // slide_num starts at position 1
+
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+
+          });
+
+        }
+
+    
+
+      })();
+
+    </script>
+
+    
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
