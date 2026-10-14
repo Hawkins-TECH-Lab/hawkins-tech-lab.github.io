@@ -7413,7 +7413,7 @@
     "href": "teaching/ENCI707/slides/lec-6.html#attribute-level-balance-2",
     "title": "Lecture 6 - Stated Preference Methods",
     "section": "Attribute Level Balance",
-    "text": "Attribute Level Balance\n\nBalanced design with each attribute level occurring an equal number of times for choice.\n\n\n\nOption A\n\n\n\nA1\nA2\nA3\n\n\n\n\n10\n3\n2\n\n\n20\n-5\n4\n\n\n30\n3\n6\n\n\n10\n-5\n6\n\n\n30\n-5\n2\n\n\n20\n3\n4\n\n\n\n\nOption B\n\n\n\nA1\nA2\nA3\n\n\n\n\n10\n3\n2\n\n\n30\n-5\n6\n\n\n20\n-5\n4\n\n\n20\n3\n4\n\n\n10\n-5\n2\n\n\n30\n3\n6"
+    "text": "Attribute Level Balance\n\nBalanced design with each attribute level occurring an equal number of times for each alternative.\n\n\n\nOption A\n\n\n\nA1\nA2\nA3\n\n\n\n\n10\n3\n2\n\n\n20\n-5\n4\n\n\n30\n3\n6\n\n\n10\n-5\n6\n\n\n30\n-5\n2\n\n\n20\n3\n4\n\n\n\n\nOption B\n\n\n\nA1\nA2\nA3\n\n\n\n\n10\n3\n2\n\n\n30\n-5\n6\n\n\n20\n-5\n4\n\n\n20\n3\n4\n\n\n10\n-5\n2\n\n\n30\n3\n6"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#dce-experimental-design",
@@ -7469,7 +7469,7 @@
     "href": "teaching/ENCI707/slides/lec-6.html#fractional-factorial-orthogonal-designs-1",
     "title": "Lecture 6 - Stated Preference Methods",
     "section": "Fractional Factorial Orthogonal Designs",
-    "text": "Fractional Factorial Orthogonal Designs\n\nThe smallest design that is orthogonal in all main effects has 12 choice sets\n\n7 parameters / (3-1) independent comparisons gives 4 choice sets by degrees of freedom condition\nAttribute level balance with 3 levels and orthogonality requires \\(4 \\times 3 = 12\\) choice sets\nNot easy to find orthogonal design\nThere are \\(3.38 \\cdot 10^{51}\\) possible designs to search through (from \\(3^3=27\\) profiles and \\(27^{12}\\) choice sets)…\n\nOrthogonal fractional factorial design might still be too large for any one respondent to complete all tasks\nCan be hard to find a blocking column"
+    "text": "Fractional Factorial Orthogonal Designs\n\nThe smallest design that is orthogonal in all main effects has 12 choice sets\n\n7 parameters / (3-1) independent alternative comparisons gives 4 choice sets by degrees of freedom condition\nAttribute level balance with 3 levels and orthogonality requires \\(4 \\times 3 = 12\\) choice sets\nNot easy to find orthogonal design\nThere are \\(3.38 \\times 10^{51}\\) possible designs to search through (from \\(3 alts \\times 3 attr \\times 3 level = 3^3=27\\) profiles and \\(27^{12}\\) choice sets)…\n\nOrthogonal fractional factorial design might still be too large for any one respondent to complete all tasks\nCan be hard to find a blocking column"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#problems-with-orthogonal-designs",
@@ -7504,7 +7504,7 @@
     "href": "teaching/ENCI707/slides/lec-6.html#experiment-design-processes-1",
     "title": "Lecture 6 - Stated Preference Methods",
     "section": "Experiment Design Processes",
-    "text": "Experiment Design Processes\n\nTwo competing schools of thought on how to define the covariance matrix (\\(S^2\\) calculated as negative inverse of Fisher information/Hessian matrix)\n\nNull hypothesis school: Zero-valued parameter priors. Assumes designs are orthogonal within alternatives and maximize differences in attribute levels between alternatives\n\nCan only be developed assuming a multinomial logit (MNL) model\n\nNon-null hypothesis school: Non-zero-valued parameter priors\n\nBayesian (B)-efficient design:\n\nAllow for a range of parameter priors (e.g., \\(\\theta~N(-0.8,2)\\))\nNot limited to orthogonal coding\nDirectly related to expected outcome of modeling process\nCan assume any model structure, not just MNL"
+    "text": "Experiment Design Processes\n\nTwo competing schools of thought on how to define the covariance matrix (asymptotic \\(S^2\\) calculated as inverse of Fisher information matrix (negative inverse of Hessian))\n\nNull hypothesis school: Zero-valued parameter priors. Assumes designs are orthogonal within alternatives and maximize differences in attribute levels between alternatives\n\nCollapses any logit-based choice model to a multinomial logit (MNL) model\n\nNon-null hypothesis school: Non-zero-valued parameter priors\n\nBayesian (B)-efficient design:\n\nAllow for a range of parameter priors (e.g., \\(\\theta~N(-0.8,2)\\))\nNot limited to orthogonal coding\nDirectly related to expected outcome of modelling process\nCan represent any logit model structure, not just MNL"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#efficient-design",

@@ -585,7 +585,7 @@
 <section id="attribute-level-balance-2" class="slide level2 smaller">
 <h2>Attribute Level Balance</h2>
 <ul>
-<li>Balanced design with each attribute level occurring an equal number of times for choice.</li>
+<li>Balanced design with each attribute level occurring an equal number of times for each alternative.</li>
 </ul>
 <div class="columns">
 <div class="column" style="width:50%;">
@@ -778,10 +778,10 @@ X_{31}, X_{32}, X_{33} &amp;\in \{3, 5, 7\}
 <ul>
 <li>The smallest design that is orthogonal in all main effects has <strong>12 choice sets</strong>
 <ul>
-<li>7 parameters / (3-1) independent comparisons gives 4 choice sets by degrees of freedom condition</li>
+<li>7 parameters / (3-1) independent alternative comparisons gives 4 choice sets by degrees of freedom condition</li>
 <li>Attribute level balance with 3 levels and orthogonality requires <span class="math inline">\(4 \times 3 = 12\)</span> choice sets</li>
 <li>Not easy to find orthogonal design</li>
-<li>There are <span class="math inline">\(3.38 \cdot 10^{51}\)</span> possible designs to search through (from <span class="math inline">\(3^3=27\)</span> profiles and <span class="math inline">\(27^{12}\)</span> choice sets)…</li>
+<li>There are <span class="math inline">\(3.38 \times 10^{51}\)</span> possible designs to search through (from <span class="math inline">\(3 alts \times 3 attr \times 3 level = 3^3=27\)</span> profiles and <span class="math inline">\(27^{12}\)</span> choice sets)…</li>
 </ul></li>
 <li>Orthogonal fractional factorial design might still be too large for any one respondent to complete all tasks</li>
 <li>Can be hard to find a blocking column</li>
@@ -872,11 +872,11 @@ X_{31}, X_{32}, X_{33} &amp;\in \{3, 5, 7\}
 <section id="experiment-design-processes-1" class="slide level2 smaller">
 <h2>Experiment Design Processes</h2>
 <ul>
-<li>Two competing schools of thought on how to define the covariance matrix (<span class="math inline">\(S^2\)</span> calculated as negative inverse of <strong>Fisher information/Hessian matrix</strong>)
+<li>Two competing schools of thought on how to define the covariance matrix (asymptotic <span class="math inline">\(S^2\)</span> calculated as inverse of <strong>Fisher information matrix</strong> (negative inverse of Hessian))
 <ul>
 <li><strong>Null hypothesis school</strong>: Zero-valued parameter priors. Assumes designs are orthogonal within alternatives and maximize differences in attribute levels between alternatives
 <ul>
-<li>Can only be developed assuming a multinomial logit (MNL) model</li>
+<li>Collapses any logit-based choice model to a multinomial logit (MNL) model</li>
 </ul></li>
 <li><strong>Non-null hypothesis school</strong>: Non-zero-valued parameter priors</li>
 </ul></li>
@@ -884,8 +884,8 @@ X_{31}, X_{32}, X_{33} &amp;\in \{3, 5, 7\}
 <ul>
 <li>Allow for a range of parameter priors (e.g., <span class="math inline">\(\theta~N(-0.8,2)\)</span>)</li>
 <li>Not limited to orthogonal coding</li>
-<li>Directly related to expected outcome of modeling process</li>
-<li>Can assume any model structure, not just MNL</li>
+<li>Directly related to expected outcome of modelling process</li>
+<li>Can represent any logit model structure, not just MNL</li>
 </ul></li>
 </ul>
 </section>
