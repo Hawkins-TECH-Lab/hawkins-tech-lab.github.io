@@ -1255,11 +1255,60 @@
     "text": "Outline"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-11.html#outline",
-    "href": "teaching/ENCI707/slides/lec-11.html#outline",
+    "objectID": "teaching/ENCI707/slides/lec-11.html#learning-objectives",
+    "href": "teaching/ENCI707/slides/lec-11.html#learning-objectives",
     "title": "Lecture 11 - Causal Inference Methods",
-    "section": "Outline",
-    "text": "Outline\n\n\nMethods of causal inference\n\nPropensity score matching\nInstrumental variables\nRegression discontinuity\nDifference-in-differences"
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\n\n\nUnderstand why choice modellers should care about causal inference\nExplain the three sources of causal identification\nConnect causal identification sources to tools\nIncorporate causal identification tools into choice model specifications"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-11.html#why-choice-modellers-should-care-about-causal-inference",
+    "href": "teaching/ENCI707/slides/lec-11.html#why-choice-modellers-should-care-about-causal-inference",
+    "title": "Lecture 11 - Causal Inference Methods",
+    "section": "Why Choice Modellers Should Care About Causal Inference",
+    "text": "Why Choice Modellers Should Care About Causal Inference\n\nTraditional choice studies estimate \\[P(y_i=j|X_i)\\]\nBut policymakers usually ask ``what would happen if we changed X?”\n\nThis is a counterfactual question, not about prediction or goodness-of-fit\n\nReturning to our previous example: People who like transit move near transit & ride transit\n\nWe observe transit-proximate home choice & transit use choice but the real story is transit preference"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-11.html#three-sources-of-causal-identification",
+    "href": "teaching/ENCI707/slides/lec-11.html#three-sources-of-causal-identification",
+    "title": "Lecture 11 - Causal Inference Methods",
+    "section": "Three Sources of Causal Identification",
+    "text": "Three Sources of Causal Identification\n\nRandomization to create comparability - e.g., random treatment in DCE\nStatistical adjustment to control for observed confounders\n\nMatching\nPropensity scores (PS)\nRegression\n\nNatural experiments by exploiting external variation\n\nInstrumental variables (IV)\nDifference-in-differences (DiD)\nRegression discontinuity design (RDD)"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-11.html#propensity-score-matching-for-tod-choice",
+    "href": "teaching/ENCI707/slides/lec-11.html#propensity-score-matching-for-tod-choice",
+    "title": "Lecture 11 - Causal Inference Methods",
+    "section": "Propensity Score Matching for TOD Choice",
+    "text": "Propensity Score Matching for TOD Choice\n\nPolicy question: Does living near transit increase transit use?\nProblem: People are not randomly assigned to neighbourhoods\nMatching on confounders: Find people who are similar on income, household size, age, employment, and vehicle ownership but differ on transit proximity\nOption 1: Estimate the model using a sample filtered to include only matched samples\nOption 2: Use inverse propensity score weights directly in the choice model - i.e., \\(w_i = \\frac{T_i}{e_i} + \\frac{1-T_i}{1-e_i}\\) where \\(e_i = P(T_i=1|X_i)\\)"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-11.html#iv-for-residential-self-selection",
+    "href": "teaching/ENCI707/slides/lec-11.html#iv-for-residential-self-selection",
+    "title": "Lecture 11 - Causal Inference Methods",
+    "section": "IV for Residential Self-Selection",
+    "text": "IV for Residential Self-Selection\n\nPolicy question: Does living near transit increase transit use?\nProblem: if \\(U_{Transit} = \\beta N + \\varepsilon\\) where \\(N\\) is a binary treatment for living near transit and we omit transit preference then \\(Cov(N,\\varepsilon)\\neq0\\)\nIV solution: use 2-stage control function estimation to adjust for endogeneity bias\n\\(N = \\pi Z + \\nu\\) where \\(Z\\) is an instrument - e.g., historical streetcar network\n\n\\(Z\\) affects whether someone lives near transit today but does not directly affect current transit use\n\n\\(U_{Transit} = \\beta N + \\lambda \\hat{\\nu} + \\varepsilon\\)\n\n\\(\\hat{\\nu}\\) is the residual part of residential location that could be related to transit preference"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-11.html#did-for-new-rail-line",
+    "href": "teaching/ENCI707/slides/lec-11.html#did-for-new-rail-line",
+    "title": "Lecture 11 - Causal Inference Methods",
+    "section": "DiD for New Rail Line",
+    "text": "DiD for New Rail Line\n\nPolicy question: Did a new rail line increase transit ridership?\nProblem: need a counterfactual trend for before-after case\nDiD solution: \\(U_{Transit,nt} = \\beta X_{nt} + \\delta (RailArea_n\\times Post_t) + \\varepsilon_{nt}\\)\n\n\\(\\delta\\) measures the DiD treatment effect\nRequires panel data\nCan include heterogeneity via \\(\\delta_i\\) and panel mixed logit model"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-11.html#mediation-for-carbon-information-attitude-housing-downsizing",
+    "href": "teaching/ENCI707/slides/lec-11.html#mediation-for-carbon-information-attitude-housing-downsizing",
+    "title": "Lecture 11 - Causal Inference Methods",
+    "section": "Mediation for Carbon Information->Attitude->Housing Downsizing",
+    "text": "Mediation for Carbon Information-&gt;Attitude-&gt;Housing Downsizing\n\nPolicy question: Does information affect residential choice?\nProblem: need to capture information-&gt;attitude connection\n\n\\(U_{ni} = \\beta Size_i + \\gamma Carbon_i +\\varepsilon_{ni}\\)\nTells use whether carbon information matters but not why\n\nICLV solution: Mediation structure\n\n\n\n\n\n\nflowchart LR\n    I[\"Carbon Information\"]\n    A[\"Environmental Concern\"]\n    D[\"Downsizing Choice\"]\n    I --&gt; A\n    A --&gt; D\n\n\n\n\n\n\n\nCarbon information changes latent environmental concern, which changes residential preference"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-11.html#illustrating-the-4-methods",
+    "href": "teaching/ENCI707/slides/lec-11.html#illustrating-the-4-methods",
+    "title": "Lecture 11 - Causal Inference Methods",
+    "section": "Illustrating the 4 Methods",
+    "text": "Illustrating the 4 Methods\n\n\nPS\n\n\n\n\n\n%%{init: {'theme': 'base', 'themeVariables': { 'fontSize': '12px' }}}%%\nflowchart TB\n    P[\"Income, Age, &lt;br&gt;Household Characteristics\"] --&gt; N[\"Transit Proximity\"]\n    P --&gt; T[\"Transit Mode Choice\"]\n    N --&gt; T\n\n\n\n\n\n\n\nIV\n\n\n\n\n\n%%{init: {'theme': 'base', 'themeVariables': { 'fontSize': '12px' }}}%%\nflowchart LR\n    Z[\"Streetcar&lt;br&gt;Network\"] --&gt; N[\"Lives Near&lt;br&gt;Transit\"]\n    N --&gt; T[\"Transit Use\"]\n    V[\"Residual ν\"] --&gt; T\n\n\n\n\n\n\n\n\nDiD\n\n\n\n\n\n%%{init: {'theme': 'base', 'themeVariables': { 'fontSize': '12px' }}}%%\nflowchart TB\n    T[\"Treatment &lt;br&gt;(Near Stations)\"] --&gt; B1[\"Before\"]\n    T --&gt; A1[\"After\"]\n    C[\"Control &lt;br&gt;(Far Stations)\"] --&gt; B2[\"Before\"]\n    C --&gt; A2[\"After\"]\n\n\n\n\n\n\n\nMediation ICLV Model\n\n\n\n\n\n%%{init: {'theme': 'base', 'themeVariables': { 'fontSize': '12px' }}}%%\nflowchart LR\n    I[\"Carbon Info\"] --&gt; A[\"Environmental &lt;br&gt;Concern\"]\n    A --&gt; Q[\"Indicators &lt;br&gt;(Q1-Q3)\"]\n    A --&gt; U[\"Downsizing &lt;br&gt;Utility\"] --&gt; C[\"Housing &lt;br&gt;Choice\"]\n\n\n\n\n\n\n\n\nSupplemental Additional Details on Methods\n\n\n\nPropensity Score Matching (PSM)\n\nMatching: restructure data for statistical analysis\nGoal is to create attribute balance between treatment & control samples\nFive step procedure\n\n\n\nPSM: Step 1 - Define confounders & estimand\n\nBased on relevant literature\nTypically adjust control group to match treated to estimate effect of the treatment on the treated\nCareful! Including additional covariates may increase bias away from the true estimate if not all confounding covariates are available – avoid potential instrumental variables\n\n\n\nPSM: Step 2 - Estimating propensity score\n\nModel of Pr(receiving treatment)\nTypically, a logistic regression for binary treatment, then use propensity score as covariate summary\nPropensity score gives a distance metric\n\n\n\nPSM: Step 3 - Matching to restructure data\n\nCreate matched pairs with control samples with closest propensity score – can be with/without replacement\nBetter matches with replacement but may overuse some sample units\n\n\n\nPSM: Step 4 - Diagnostics for balance & overlap\n\nSeveral diagnostics exist based on difference of means, etc.\nEvaluate and change model or method (if required)\n\n\n\nPSM: Step 5 - Estimate treatment effect using restructured data\n\nEstimate regression model with propensity score and confounder variables\nIncorporate data restructuring via weights – typically inverse probability weights\n\n\n\nInstrumental Variable (IV)\n\nWhen ignorability of treatment seems weak, IV can be a good approach\nInstrument \\(z\\) should predict the treatment \\(T\\) but not the outcome \\(y\\)\nAssumptions:\n\nIgnorability of instrument\nMonotonicity\nNonzero association between treatment & instrument\nExclusion restriction – no instrument effect on excluded variables\n\n\n\n\nIV in Regression\n\nGeneral framework \\[𝑦_𝑖=\\beta_0+\\beta_1 𝑇_𝑖+\\epsilon_𝑖\\] \\[𝑇_𝑖=\\gamma_0+\\gamma_1 𝑧_𝑖+𝜈_𝑖\\]\nWhere \\(𝑧_𝑖\\) is uncorrelated with both \\(\\epsilon_𝑖\\) and \\(𝜈_𝑖\\) (ignorability and exclusion restriction)\nIdentifiability: whether data contain sufficient information for unique estimation of parameter (or set of parameters)\n\n\n\nIV in Regression\n\nWith \\[𝑦=\\beta_0+\\beta_1 𝑇+\\beta_2 𝑧+𝑒𝑟𝑟𝑜𝑟\\] \\[𝑇=\\gamma_0+\\gamma_1 𝑧+𝑒𝑟𝑟𝑜𝑟\\]\nSubstituting T into y: \\[𝑦=(\\beta_0+\\beta_1 \\gamma_0 )+(\\beta_1 \\gamma_1+\\beta_2 )𝑧+𝑒𝑟𝑟𝑜𝑟\\]\nwhere \\(\\beta_1\\) is our parameter of interest\nUsing \\(𝑦=\\delta_0+\\delta_1 𝑧+𝑒𝑟𝑟𝑜𝑟\\) where \\(\\delta_1=\\beta_1 \\gamma_1+\\beta_2\\) we get \\[\\beta_1=(\\delta_1−\\beta_2)/\\gamma_1\\]\n\n\n\nIV in Regression\n\nCannot estimate \\(\\beta_2\\) because error in \\(f(y)\\) can be correlated with T – exclusion restriction means \\(\\beta_2=0\\) giving \\(\\beta_1=\\delta_1/\\gamma_1\\)\nEstimation is by two-stage least squares (2SLS)\nStandard errors require adjustment in instrumental variable estimation – should be accounted for in any software package\n\n\n\nExclusion Restriction Plausibility\n\nOne way to assess the plausibility of the exclusion restriction is to calculate an estimate within a sample that would not be expected to be affected by the instrument\nResearchers estimated the effect of military service on earnings (and other outcomes) using, as an instrument, the lottery number for young men eligible for the draft during the Vietnam War\n\nRandomly assigned number and strongly affected the probability of military service\nMen with low lottery numbers may have altered their educational plans to avoid or postpone military service (would void exclusion restriction)\n\nRan IV model for a sample of men who were assigned numbers so late that the war ended before they ever had to serve\n\nNo clear relation between lottery number and earnings, providing support for the exclusion restriction\n\n\n\n\nWeak Instrument\n\nOnly assumption we can test – instrument has non-zero correlation with treatment variable\nIf low correlation, then a weak instrument\n\n\n\nRegression Discontinuity\n\nNon-random assignment but mechanism entirely known to researcher\nConsider a policy that gives tutoring to students with test scores &lt; 60\nConsider all students with score in range of 60 – discontinuity at 60\n\nWorks well when discontinuity relates to outcome – e.g., pre-test scores on post-test scores\nDoes not work well if comparing across geography due to spatial heterogeneity\n\n\n\n\nFixed Effect Models\n\nUse repeated observations within groups – e.g., twin comparisons that holds confounding variables fixed\nSimply a regression model with group-specific intercepts \\[𝑦_𝑖𝑗=\\beta_0+𝜏𝑧_𝑖𝑗+𝛼_𝑖+𝜖_𝑖𝑗\\]\nwhere j is an indicator of intra-group units\nRequires treatment to vary within groups\n\n\n\nDifference-In-Differences\n\nComparison across units (typically) using time as an additional dimension of variation\nE.g., effect of new school busing program on housing prices in school district\n\nCompare prices before/after between district with school busing program and those without it\nA measure of differences in trajectory"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-11.html#propensity-score-matching-psm",
@@ -1365,20 +1414,6 @@
     "title": "Lecture 11 - Causal Inference Methods",
     "section": "Difference-In-Differences",
     "text": "Difference-In-Differences\n\nComparison across units (typically) using time as an additional dimension of variation\nE.g., effect of new school busing program on housing prices in school district\n\nCompare prices before/after between district with school busing program and those without it\nA measure of differences in trajectory"
-  },
-  {
-    "objectID": "teaching/ENCI707/slides/lec-11.html#causal-graph-theory",
-    "href": "teaching/ENCI707/slides/lec-11.html#causal-graph-theory",
-    "title": "Lecture 11 - Causal Inference Methods",
-    "section": "Causal Graph Theory",
-    "text": "Causal Graph Theory\n\nAnother perspective on causal inference from computer science – Judea Pearl et al.\nAbstract causal inference to a visual/graphical depiction\nDevelop system of symbolic calculus\nNonparametrically solve identification problem\nConcept of directed acyclic graphs (DAGs)"
-  },
-  {
-    "objectID": "teaching/ENCI707/slides/lec-11.html#causal-graph-theory-1",
-    "href": "teaching/ENCI707/slides/lec-11.html#causal-graph-theory-1",
-    "title": "Lecture 11 - Causal Inference Methods",
-    "section": "Causal Graph Theory",
-    "text": "Causal Graph Theory\n\nEnglish: Smoking (X), Cancer (Y), Tar (Z), Genotypes(U)\nDirected acyclic graph (DAG)"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-1.html#outline",
@@ -6198,11 +6233,11 @@
     ]
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-10.html#outline",
-    "href": "teaching/ENCI707/slides/lec-10.html#outline",
+    "objectID": "teaching/ENCI707/slides/lec-10.html#learning-objectives",
+    "href": "teaching/ENCI707/slides/lec-10.html#learning-objectives",
     "title": "Lecture 10 - Causal Inference Theory",
-    "section": "Outline",
-    "text": "Outline\n\n\nNeed for causal inference\nCausal Graph Theory"
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\n\n\nDistinguish prediction from causation\nDefine causal effects using potential outcomes\nExplain the fundamental problem of causal inference\nIdentify confounders, mediators, and colliders\nInterpret DAGs\nRecognize causal estimands (ATE, ATT, CATE)\nUnderstand why identification strategies are needed\nConnect causal inference to transportation choice modelling"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-10.html#causal-inference-in-transportation-planning",
@@ -6216,7 +6251,7 @@
     "href": "teaching/ENCI707/slides/lec-10.html#need-for-causal-inference---interpretation",
     "title": "Lecture 10 - Causal Inference Theory",
     "section": "Need for Causal Inference - Interpretation",
-    "text": "Need for Causal Inference - Interpretation\n\nPeople are told to run around in a dark room for 5 minutes\nObservation: Men are found to have many more head injuries than women\nConclusion:\n\nWomen see better in the dark?\nMen are more reckless runners?"
+    "text": "Need for Causal Inference - Interpretation\n\nPeople are told to run around in a dark room for 5 minutes\nObservation: Men are found to have many more head injuries than women\nPotential causal conclusions:\n\nWomen see better in the dark?\nMen are more reckless runners?"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-10.html#need-for-causal-inference---unobserved-heterogeneity",
@@ -6240,18 +6275,123 @@
     "text": "Need for Causal Inference – Endogeneity & Self-Selection\n\nPeople who take motorcycle safety courses have higher crash rates\nProblem:\n\nAre courses ineffective?\nPeople taking the course are not a random sample from the population (possibly less skilled)"
   },
   {
+    "objectID": "teaching/ENCI707/slides/lec-10.html#need-for-causal-inference---endogeneity-self-selection",
+    "href": "teaching/ENCI707/slides/lec-10.html#need-for-causal-inference---endogeneity-self-selection",
+    "title": "Lecture 10 - Causal Inference Theory",
+    "section": "Need for Causal Inference - Endogeneity & Self-Selection",
+    "text": "Need for Causal Inference - Endogeneity & Self-Selection\n\n\nDoes living near transit increase transit use? (Yes, No, Cannot tell)\nWhat evidence would convince you?"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-10.html#transportation-questions---which-are-causal",
+    "href": "teaching/ENCI707/slides/lec-10.html#transportation-questions---which-are-causal",
+    "title": "Lecture 10 - Causal Inference Theory",
+    "section": "Transportation Questions - Which are causal?",
+    "text": "Transportation Questions - Which are causal?\n\n\n\n\n\n\n\nQuestion\nPredictive or Causal?\n\n\n\n\nWho rides transit?\nPredictive\n\n\nWho buys EVs?\nPredictive\n\n\nDoes rail access increase transit use?\nCausal\n\n\nWill congestion pricing reduce driving?\nCausal\n\n\nDoes carbon labeling induce downsizing?\nCausal\n\n\n\n\nPolicy problems are often causal\nChoice modelling typically used on prediction tasks in transportation\nHow to integrate casaul inference in choice modelling?"
+  },
+  {
     "objectID": "teaching/ENCI707/slides/lec-10.html#causation-potential-outcomes",
     "href": "teaching/ENCI707/slides/lec-10.html#causation-potential-outcomes",
     "title": "Lecture 10 - Causal Inference Theory",
     "section": "Causation = Potential Outcomes",
-    "text": "Causation = Potential Outcomes\n\nA key concept in causal inference is potential outcomes\nWhat happened vs. what could have happened (counterfactual states)\nWe will work with several examples to illustrate the principles…"
+    "text": "Causation = Potential Outcomes\n\nA key concept in causal inference is potential outcomes\nWhat happened vs. what could have happened (counterfactual states)\nWe will work with the home location example to illustrate the principles…"
   },
   {
-    "objectID": "teaching/ENCI707/slides/lec-10.html#example-omega-3-fatty-acids",
-    "href": "teaching/ENCI707/slides/lec-10.html#example-omega-3-fatty-acids",
+    "objectID": "teaching/ENCI707/slides/lec-10.html#potential-outcomes-framework",
+    "href": "teaching/ENCI707/slides/lec-10.html#potential-outcomes-framework",
     "title": "Lecture 10 - Causal Inference Theory",
-    "section": "Example: Omega-3 Fatty Acids",
-    "text": "Example: Omega-3 Fatty Acids\nProblem: Does consumption of omega-3 fish oil supplements promote a healthy blood pressure?\nExperiment: Eight friends agree to be part of an informal study on the relationship between fish oil supplements and systolic blood pressure. Four of the friends are placed in the “fish oil supplement” treatment group. Members of this group agree to consume 3 grams of fish oil supplements per day for one year while otherwise maintaining their current diets. The other four friends agreed to simply maintain their current diets free from fish oil supplements for the same year. At the end of the study period:\n\nMeasure blood pressure\nAssume 160 mmHg and above represents “high blood pressure”"
+    "section": "Potential Outcomes Framework",
+    "text": "Potential Outcomes Framework\n\nConsider household \\(i\\) with treatment \\(T_i = \\{0,1\\}\\) representing their potential home location state\n\n\\(T_i = 1\\) means they live near a rail station\n\\(T_i = 0\\) means they do not live near a rail station\n\\(Y_i\\) is the outcome of interest - e.g., transit trips per week\n\nPotential outcomes are \\(Y_i(1) = \\text{ Trips given live near rail station}\\) and \\(Y_i(0) = \\text{ Trips given do not live near rail station}\\)\nIndividual causal effect is then \\(\\tau_i = Y(1) - Y(0)\\)\nCan we observe both outcome states for a single individual?"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-10.html#fundamental-problem-of-causal-inference",
+    "href": "teaching/ENCI707/slides/lec-10.html#fundamental-problem-of-causal-inference",
+    "title": "Lecture 10 - Causal Inference Theory",
+    "section": "Fundamental Problem of Causal Inference",
+    "text": "Fundamental Problem of Causal Inference\n\nWe observe \\(Y_i = T_iY_i(1) - (1-T_i)Y_i(0)\\) but never both outcomes\nCausal inference is fundamentally a missing data problem\n\n\n\n\nHousehold\nTreatment\nOutcome\n\n\n\n\nA\n1\n15\n\n\nB\n0\n7\n\n\nC\n1\n12\n\n\n\n\nWhat is Household A’s causal effect?"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-10.html#causal-experiment-design",
+    "href": "teaching/ENCI707/slides/lec-10.html#causal-experiment-design",
+    "title": "Lecture 10 - Causal Inference Theory",
+    "section": "Causal Experiment Design",
+    "text": "Causal Experiment Design\n\nRandomized controlled trials are “gold standard”\nAlmost never available for transportation/social science research questions\nWhat to do?"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-10.html#adjustment-for-pretreatment-variables",
+    "href": "teaching/ENCI707/slides/lec-10.html#adjustment-for-pretreatment-variables",
+    "title": "Lecture 10 - Causal Inference Theory",
+    "section": "Adjustment for Pretreatment Variables",
+    "text": "Adjustment for Pretreatment Variables\n\nDifferences between treatment & control variables can be captured by including pretreatment variables in the model\nAddresses both random (variance) and systematic (bias) differences between treatment & control\nDo not adjust for posttreatment variables unless performing more complex analysis – e.g., instrumental variables (IV)"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-10.html#ignorability-condition",
+    "href": "teaching/ENCI707/slides/lec-10.html#ignorability-condition",
+    "title": "Lecture 10 - Causal Inference Theory",
+    "section": "Ignorability Condition",
+    "text": "Ignorability Condition\n\nIgnorability in causal inference: no imbalance between treatment & control, on average\nAssignment to treatment does not imply anything about potential outcome"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-10.html#average-causal-effects",
+    "href": "teaching/ENCI707/slides/lec-10.html#average-causal-effects",
+    "title": "Lecture 10 - Causal Inference Theory",
+    "section": "Average Causal Effects",
+    "text": "Average Causal Effects\n\nAverage treatment effect \\[ATE = E[Y(1)-Y(0)]\\]\n\nInterpretation: Average effect in the population\n\nAverage treatment effect on treated \\[ATT = E[Y(1)-Y(0)\\mid T=1]\\]\n\nInterpretation: Average effect for those receiving treatment\n\nConditional average treatment effect \\[CATE(x) = E[Y(1)-Y(0)\\mid X=x]\\]\n\nInterpretation: Average treatment effect given mediation variable value (connection to heterogeneity)"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-10.html#transportation-examples",
+    "href": "teaching/ENCI707/slides/lec-10.html#transportation-examples",
+    "title": "Lecture 10 - Causal Inference Theory",
+    "section": "Transportation examples",
+    "text": "Transportation examples\n\n\n\n\n\n\n\nEstimand\nExample\n\n\n\n\nATE\nAverage effect of rail station proximity on transit use\n\n\nATT\nEffect of rail station proximity on households actually exposed\n\n\nCATE\nEffect of rail station proximity by income group\n\n\n\n\nHeterogeneous treatment effects = taste heterogeneity = random coefficients"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-10.html#why-correlation-fails",
+    "href": "teaching/ENCI707/slides/lec-10.html#why-correlation-fails",
+    "title": "Lecture 10 - Causal Inference Theory",
+    "section": "Why Correlation Fails",
+    "text": "Why Correlation Fails\n\n\n\nObserved relationship:\n\n\n\n\n\n\nflowchart LR\n    A[\"Lives Near Transit\"] --&gt; B[\"Transit Use\"]\n\n\n\n\n\n\n\nIntroduce preferences:\n\n\n\n\n\n\nflowchart TB\n    P[\"Transit Preference\"]\n    P --&gt; N[\"Lives Near Transit\"]\n    P --&gt; T[\"Transit Use\"]\n\n\n\n\n\n\n\n\nAssociation is confounded\nConfounder is a variable that affects both that affects both the treatment & outcome\nInterpretation: people who like transit choose transit-oriented neighbourhoods & people who like transit ride it more\nObserved association may arise from preferences not treatment effect"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-10.html#mediator-variables",
+    "href": "teaching/ENCI707/slides/lec-10.html#mediator-variables",
+    "title": "Lecture 10 - Causal Inference Theory",
+    "section": "Mediator Variables",
+    "text": "Mediator Variables\n\nSuppose transit proximity changes vehicle ownership\n\n\n\n\n\n\nflowchart LR\n    N[\"Lives Near Transit\"]\n    C[\"Car Ownership\"]\n    T[\"Transit Use\"]\n    N --&gt; C\n    C --&gt; T\n\n\n\n\n\n\n\nInterpretation: living near transit may reduce (mediate) car ownership, which then increases transit use\nCan capture \\(\\text{Total effect} = \\text{Direct effect} + \\text{Indirect effect}\\)\n\n\n\n\n\n\nflowchart LR\n    N[\"Lives Near Transit\"]\n    C[\"Car Ownership\"]\n    T[\"Transit Use\"]\n    N --&gt; T\n    N --&gt; C\n    C --&gt; T"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-10.html#collider-variables",
+    "href": "teaching/ENCI707/slides/lec-10.html#collider-variables",
+    "title": "Lecture 10 - Causal Inference Theory",
+    "section": "Collider Variables",
+    "text": "Collider Variables\n\nSuppose we only have information on households who recently moved\n\n\n\n\n\n\nflowchart TB\n    P[\"Transit Preference\"]\n    H[\"Housing Affordability\"]\n    P --&gt; M[\"Recently Moved\"]\n    H --&gt; M\n    P --&gt; T[\"Transit Use\"]\n\n\n\n\n\n\n\nIf we condition on movers, we inadvertently create an association between transit preference & housing affordability\n\n\n\n\n\n\nflowchart TB\n    P[\"Transit Preference\"]\n    H[\"Housing Affordability\"]\n    P --&gt; M[\"Recently Moved\"]\n    H --&gt; M\n    P --&gt; T[\"Transit Use\"]\n    M:::highlight\n    classDef highlight fill:#ffd9a8"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-10.html#final-summary-dag",
+    "href": "teaching/ENCI707/slides/lec-10.html#final-summary-dag",
+    "title": "Lecture 10 - Causal Inference Theory",
+    "section": "Final Summary DAG",
+    "text": "Final Summary DAG\n\n\n\n\n\n\n\nflowchart TD\n    Q[\"Causal Question\"]\n    PO[\"Potential Outcomes\"]\n    DAG[\"Causal Graphs\"]\n    ID[\"Identification Strategy\"]\n    EST[\"Effect Estimation\"]\n    Q --&gt; PO\n    Q --&gt; DAG\n    PO --&gt; ID\n    DAG --&gt; ID\n    ID --&gt; EST\n\n\n\n\n\n\n\n\nDAGs tell us what assumptions are needed\nPotential outcomes tell us what quantity we want to estimate\nIdentification strategies tell us how to estimate it\nConfounders: We control for them because they capture associations that exist\nColliders: We avoid controlling for them because they create associations that do not exist"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-10.html#simpsons-paradox",
+    "href": "teaching/ENCI707/slides/lec-10.html#simpsons-paradox",
+    "title": "Lecture 10 - Causal Inference Theory",
+    "section": "Simpson’s Paradox",
+    "text": "Simpson’s Paradox\n\nIssue of inference on aggregate & disaggregate data\nSuppose we observe the following aggregate data\n\n\n\n\nNeighborhood\nTransit Share\n\n\n\n\nTOD\n40%\n\n\nNon-TOD\n20%\n\n\n\n\nNow stratify by transit preference\n\n\n\nPeople who prefer transit\n\n\n\nNeighborhood\nTransit Share\n\n\n\n\nTOD\n80%\n\n\nNon-TOD\n85%\n\n\n\n\nPeople who prefer driving\n\n\n\nNeighborhood\nTransit Share\n\n\n\n\nTOD\n10%\n\n\nNon-TOD\n15%"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-10.html#simpsons-paradox-1",
+    "href": "teaching/ENCI707/slides/lec-10.html#simpsons-paradox-1",
+    "title": "Lecture 10 - Causal Inference Theory",
+    "section": "Simpson’s Paradox",
+    "text": "Simpson’s Paradox\n\nWithin both groups, transit use is actually lower in TODs\nWhy? Transit enthusiasts disproportionately choose TODs\nE.g., | Group | TOD | Non-TOD | | ——————- | –: | ——: | | Transit enthusiasts | 90% | 10% | | Drivers | 10% | 90% |\nProblem: aggregate comparison is mostly comparing transit enthusiasts against drivers (not TOD against non-TOD) - confounding with transit preference!\nSimpson’s paradox is what happens when we compare the wrong groups"
+  },
+  {
+    "objectID": "teaching/ENCI707/slides/lec-10.html#causal-inference-example-omega-3-fatty-acids",
+    "href": "teaching/ENCI707/slides/lec-10.html#causal-inference-example-omega-3-fatty-acids",
+    "title": "Lecture 10 - Causal Inference Theory",
+    "section": "Causal Inference Example: Omega-3 Fatty Acids",
+    "text": "Causal Inference Example: Omega-3 Fatty Acids\nProblem: Does consumption of omega-3 fish oil supplements promote a healthy blood pressure?\nExperiment: Eight friends agree to be part of an informal study on the relationship between fish oil supplements and systolic blood pressure. Four of the friends are placed in the “fish oil supplement” treatment group. Members of this group agree to consume 3 grams of fish oil supplements per day for one year while otherwise maintaining their current diets. The other four friends agreed to simply maintain their current diets free from fish oil supplements for the same year. At the end of the study period:\n\nMeasure blood pressure\nAssume 160 mmHg and above represents “high blood pressure”"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-10.html#formal-problem-statement",
@@ -6280,34 +6420,6 @@
     "title": "Lecture 10 - Causal Inference Theory",
     "section": "Average Treatment Effects",
     "text": "Average Treatment Effects\n\nStart with treatment and control groups\nNeed sufficiently similar groups – balance\nBeware self-selection bias \nTrue average treatment effect = -7.5 mmHG\nAverage treatment effect|treatment = +12.5 mmHG"
-  },
-  {
-    "objectID": "teaching/ENCI707/slides/lec-10.html#causal-experiment-design",
-    "href": "teaching/ENCI707/slides/lec-10.html#causal-experiment-design",
-    "title": "Lecture 10 - Causal Inference Theory",
-    "section": "Causal Experiment Design",
-    "text": "Causal Experiment Design\n\nRandomized controlled trials are “gold standard”\nAlmost never available for transportation/social science research questions\nWhat to do?"
-  },
-  {
-    "objectID": "teaching/ENCI707/slides/lec-10.html#adjustment-for-pretreatment-variables",
-    "href": "teaching/ENCI707/slides/lec-10.html#adjustment-for-pretreatment-variables",
-    "title": "Lecture 10 - Causal Inference Theory",
-    "section": "Adjustment for Pretreatment Variables",
-    "text": "Adjustment for Pretreatment Variables\n\nDifferences between treatment & control variables can be captured by including pretreatment variables in the model\nAddresses both random (variance) and systematic (bias) differences between treatment & control\nDo not adjust for posttreatment variables unless performing more complex analysis – e.g., instrumental variables (IV)"
-  },
-  {
-    "objectID": "teaching/ENCI707/slides/lec-10.html#ignorability-condition",
-    "href": "teaching/ENCI707/slides/lec-10.html#ignorability-condition",
-    "title": "Lecture 10 - Causal Inference Theory",
-    "section": "Ignorability Condition",
-    "text": "Ignorability Condition\n\nIgnorability in causal inference: no imbalance between treatment & control, on average\nAssignment to treatment does not imply anything about potential outcome"
-  },
-  {
-    "objectID": "teaching/ENCI707/slides/lec-10.html#causal-inference-in-observational-studies-1",
-    "href": "teaching/ENCI707/slides/lec-10.html#causal-inference-in-observational-studies-1",
-    "title": "Lecture 10 - Causal Inference Theory",
-    "section": "Causal Inference in Observational Studies",
-    "text": "Causal Inference in Observational Studies\n\nWe rarely have access to a random controlled trial\nObservational causation is an exercise in logic & relative causal strength NOT causation"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-10.html#health-status-example",
@@ -6350,20 +6462,6 @@
     "title": "Lecture 10 - Causal Inference Theory",
     "section": "Common Support or Overlap",
     "text": "Common Support or Overlap"
-  },
-  {
-    "objectID": "teaching/ENCI707/slides/lec-10.html#causal-graph-theory",
-    "href": "teaching/ENCI707/slides/lec-10.html#causal-graph-theory",
-    "title": "Lecture 10 - Causal Inference Theory",
-    "section": "Causal Graph Theory",
-    "text": "Causal Graph Theory\n\nAnother perspective on causal inference from computer science – Judea Pearl et al.\nAbstract causal inference to a visual/graphical depiction\nDevelop system of symbolic calculus\nNonparametrically solve identification problem\nConcept of directed acyclic graphs (DAGs)"
-  },
-  {
-    "objectID": "teaching/ENCI707/slides/lec-10.html#causal-graph-theory-1",
-    "href": "teaching/ENCI707/slides/lec-10.html#causal-graph-theory-1",
-    "title": "Lecture 10 - Causal Inference Theory",
-    "section": "Causal Graph Theory",
-    "text": "Causal Graph Theory\n\nEnglish: Smoking (X), Cancer (Y), Tar (Z), Genotypes(U)\nDirected acyclic graph (DAG)"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-12.html#outline",
@@ -7469,7 +7567,7 @@
     "href": "teaching/ENCI707/slides/lec-6.html#fractional-factorial-orthogonal-designs-1",
     "title": "Lecture 6 - Stated Preference Methods",
     "section": "Fractional Factorial Orthogonal Designs",
-    "text": "Fractional Factorial Orthogonal Designs\n\nThe smallest design that is orthogonal in all main effects has 12 choice sets\n\n7 parameters / (3-1) independent alternative comparisons gives 4 choice sets by degrees of freedom condition\nAttribute level balance with 3 levels and orthogonality requires \\(4 \\times 3 = 12\\) choice sets\nNot easy to find orthogonal design\nThere are \\(3.38 \\times 10^{51}\\) possible designs to search through (from \\(3 alts \\times 3 attr \\times 3 level = 3^3=27\\) profiles and \\(27^{12}\\) choice sets)…\n\nOrthogonal fractional factorial design might still be too large for any one respondent to complete all tasks\nCan be hard to find a blocking column"
+    "text": "Fractional Factorial Orthogonal Designs\n\nThe smallest design that is orthogonal in all main effects has 12 choice sets\n\n7 parameters / (3-1) independent alternative comparisons gives 4 choice sets by degrees of freedom condition\nAttribute level balance with 3 levels and orthogonality requires \\(4 \\times 3 = 12\\) choice sets\nNot easy to find orthogonal design\nThere are \\(3.38 \\times 10^{51}\\) possible designs to search through (from \\(3 \\text{ alts} \\times 3 \\text{ attr} \\times 3 \\text{ level} = 3^3=27\\) profiles and \\(27^{12}\\) choice sets)…\n\nOrthogonal fractional factorial design might still be too large for any one respondent to complete all tasks\nCan be hard to find a blocking column"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#problems-with-orthogonal-designs",
@@ -7532,7 +7630,7 @@
     "href": "teaching/ENCI707/slides/lec-6.html#efficient-design-2",
     "title": "Lecture 6 - Stated Preference Methods",
     "section": "Efficient Design",
-    "text": "Efficient Design\n\nAVC matrix \\[\\Omega_N(\\beta|X,y) = -I_N^{-1}(\\beta|X,y)\\]\n\nDepends on the design, \\(X\\)\nDepends on the choice observations, \\(y\\)\nDepends on the parameters, \\(\\beta\\)\n\nProblems\n\nAVC matrix depends on unknown \\(y\\) (turns out to be independent of outcomes \\(y\\))\nAVC matrix depends on unkown \\(\\beta\\) (use prior knowledge to make “best guess’’)"
+    "text": "Efficient Design\n\nAVC matrix \\[\\Omega_N(\\beta|X,y) = I_N^{-1}(\\beta|X,y)\\]\n\nDepends on the design, \\(X\\)\nDepends on the choice observations, \\(y\\)\nDepends on the parameters, \\(\\beta\\)\n\nProblems\n\nAVC matrix depends on unknown \\(y\\) (turns out to be independent of outcomes \\(y\\))\nAVC matrix depends on unkown \\(\\beta\\) (use prior knowledge to make “best guess’’)"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-6.html#efficient-design-3",

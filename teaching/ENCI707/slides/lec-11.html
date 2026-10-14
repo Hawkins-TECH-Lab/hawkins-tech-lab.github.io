@@ -122,6 +122,9 @@
       margin-right: 0; 
     }
   </style>
+  <script src="../../../site_libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="../../../site_libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="../../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -135,19 +138,206 @@
 </div>
 
 </section>
-<section id="outline" class="slide level2">
-<h2>Outline</h2>
+<section id="learning-objectives" class="slide level2">
+<h2>Learning Objectives</h2>
 <div>
-<ol start="2" type="1">
-<li class="fragment">Methods of causal inference
-<ul>
-<li class="fragment">Propensity score matching</li>
-<li class="fragment">Instrumental variables</li>
-<li class="fragment">Regression discontinuity</li>
-<li class="fragment">Difference-in-differences</li>
-</ul></li>
+<ol type="1">
+<li class="fragment">Understand why choice modellers should care about causal inference</li>
+<li class="fragment">Explain the three sources of causal identification</li>
+<li class="fragment">Connect causal identification sources to tools</li>
+<li class="fragment">Incorporate causal identification tools into choice model specifications</li>
 </ol>
 </div>
+</section>
+<section id="why-choice-modellers-should-care-about-causal-inference" class="slide level2 smaller">
+<h2>Why Choice Modellers Should Care About Causal Inference</h2>
+<ul>
+<li><p>Traditional choice studies estimate <span class="math display">\[P(y_i=j|X_i)\]</span></p></li>
+<li><p>But policymakers usually ask ``what would happen if we changed X?”</p>
+<ul>
+<li>This is a counterfactual question, not about prediction or goodness-of-fit</li>
+</ul></li>
+<li><p><strong>Returning to our previous example:</strong> People who like transit move near transit &amp; ride transit</p>
+<ul>
+<li>We observe transit-proximate home choice &amp; transit use choice but the real story is <strong>transit preference</strong></li>
+</ul></li>
+</ul>
+</section>
+<section id="three-sources-of-causal-identification" class="slide level2 smaller">
+<h2>Three Sources of Causal Identification</h2>
+<ol type="1">
+<li><strong>Randomization</strong> to create comparability - e.g., random treatment in DCE</li>
+<li><strong>Statistical adjustment</strong> to control for observed confounders
+<ul>
+<li>Matching</li>
+<li>Propensity scores (PS)</li>
+<li>Regression</li>
+</ul></li>
+<li><strong>Natural experiments</strong> by exploiting external variation
+<ul>
+<li>Instrumental variables (IV)</li>
+<li>Difference-in-differences (DiD)</li>
+<li>Regression discontinuity design (RDD)</li>
+</ul></li>
+</ol>
+</section>
+<section>
+<section id="transportation-examples" class="title-slide slide level1 center">
+<h1>Transportation Examples</h1>
+
+</section>
+<section id="propensity-score-matching-for-tod-choice" class="slide level2 smaller">
+<h2>Propensity Score Matching for TOD Choice</h2>
+<ul>
+<li><strong>Policy question:</strong> Does living near transit increase transit use?</li>
+<li><strong>Problem:</strong> People are not randomly assigned to neighbourhoods</li>
+<li><strong>Matching on confounders:</strong> Find people who are similar on income, household size, age, employment, and vehicle ownership but differ on transit proximity</li>
+<li><strong>Option 1:</strong> Estimate the model using a sample filtered to include only matched samples</li>
+<li><strong>Option 2:</strong> Use inverse propensity score weights directly in the choice model - i.e., <span class="math inline">\(w_i = \frac{T_i}{e_i} + \frac{1-T_i}{1-e_i}\)</span> where <span class="math inline">\(e_i = P(T_i=1|X_i)\)</span></li>
+</ul>
+</section>
+<section id="iv-for-residential-self-selection" class="slide level2 smaller">
+<h2>IV for Residential Self-Selection</h2>
+<ul>
+<li><strong>Policy question:</strong> Does living near transit increase transit use?</li>
+<li><strong>Problem:</strong> if <span class="math inline">\(U_{Transit} = \beta N + \varepsilon\)</span> where <span class="math inline">\(N\)</span> is a binary treatment for living near transit and we omit transit preference then <span class="math inline">\(Cov(N,\varepsilon)\neq0\)</span></li>
+<li><strong>IV solution:</strong> use 2-stage control function estimation to adjust for endogeneity bias</li>
+<li><span class="math inline">\(N = \pi Z + \nu\)</span> where <span class="math inline">\(Z\)</span> is an instrument - e.g., historical streetcar network
+<ul>
+<li><span class="math inline">\(Z\)</span> affects whether someone lives near transit today but does not directly affect current transit use</li>
+</ul></li>
+<li><span class="math inline">\(U_{Transit} = \beta N + \lambda \hat{\nu} + \varepsilon\)</span>
+<ul>
+<li><span class="math inline">\(\hat{\nu}\)</span> is the residual part of residential location that could be related to transit preference</li>
+</ul></li>
+</ul>
+</section>
+<section id="did-for-new-rail-line" class="slide level2 smaller">
+<h2>DiD for New Rail Line</h2>
+<ul>
+<li><strong>Policy question:</strong> Did a new rail line increase transit ridership?</li>
+<li><strong>Problem:</strong> need a counterfactual trend for before-after case</li>
+<li><strong>DiD solution:</strong> <span class="math inline">\(U_{Transit,nt} = \beta X_{nt} + \delta (RailArea_n\times Post_t) + \varepsilon_{nt}\)</span>
+<ul>
+<li><span class="math inline">\(\delta\)</span> measures the DiD treatment effect</li>
+<li>Requires panel data</li>
+<li>Can include heterogeneity via <span class="math inline">\(\delta_i\)</span> and panel mixed logit model</li>
+</ul></li>
+</ul>
+</section>
+<section id="mediation-for-carbon-information-attitude-housing-downsizing" class="slide level2 smaller">
+<h2>Mediation for Carbon Information-&gt;Attitude-&gt;Housing Downsizing</h2>
+<ul>
+<li><strong>Policy question:</strong> Does information affect residential choice?</li>
+<li><strong>Problem:</strong> need to capture information-&gt;attitude connection
+<ul>
+<li><span class="math inline">\(U_{ni} = \beta Size_i + \gamma Carbon_i +\varepsilon_{ni}\)</span></li>
+<li>Tells use whether carbon information matters but not why</li>
+</ul></li>
+<li><strong>ICLV solution:</strong> Mediation structure</li>
+</ul>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+    I["Carbon Information"]
+    A["Environmental Concern"]
+    D["Downsizing Choice"]
+    I --&gt; A
+    A --&gt; D
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<ul>
+<li>Carbon information changes latent environmental concern, which changes residential preference</li>
+</ul>
+</section>
+<section id="illustrating-the-4-methods" class="slide level2">
+<h2>Illustrating the 4 Methods</h2>
+<div class="{columns}">
+<div class="column" style="width:50%;">
+<h4 id="ps">PS</h4>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">%%{init: {'theme': 'base', 'themeVariables': { 'fontSize': '12px' }}}%%
+flowchart TB
+    P["Income, Age, &lt;br&gt;Household Characteristics"] --&gt; N["Transit Proximity"]
+    P --&gt; T["Transit Mode Choice"]
+    N --&gt; T
+
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<h4 id="iv">IV</h4>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">%%{init: {'theme': 'base', 'themeVariables': { 'fontSize': '12px' }}}%%
+flowchart LR
+    Z["Streetcar&lt;br&gt;Network"] --&gt; N["Lives Near&lt;br&gt;Transit"]
+    N --&gt; T["Transit Use"]
+    V["Residual ν"] --&gt; T
+
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<h4 id="did">DiD</h4>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">%%{init: {'theme': 'base', 'themeVariables': { 'fontSize': '12px' }}}%%
+flowchart TB
+    T["Treatment &lt;br&gt;(Near Stations)"] --&gt; B1["Before"]
+    T --&gt; A1["After"]
+    C["Control &lt;br&gt;(Far Stations)"] --&gt; B2["Before"]
+    C --&gt; A2["After"]
+
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<h4 id="mediation-iclv-model">Mediation ICLV Model</h4>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">%%{init: {'theme': 'base', 'themeVariables': { 'fontSize': '12px' }}}%%
+flowchart LR
+    I["Carbon Info"] --&gt; A["Environmental &lt;br&gt;Concern"]
+    A --&gt; Q["Indicators &lt;br&gt;(Q1-Q3)"]
+    A --&gt; U["Downsizing &lt;br&gt;Utility"] --&gt; C["Housing &lt;br&gt;Choice"]
+
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</div><section id="supplemental-additional-details-on-methods" class="title-slide slide level1 center">
+<h1>Supplemental Additional Details on Methods</h1>
+
 </section>
 <section id="propensity-score-matching-psm" class="slide level2">
 <h2>Propensity Score Matching (PSM)</h2>
@@ -286,32 +476,12 @@
 <li>A measure of <strong>differences in trajectory</strong></li>
 </ul></li>
 </ul>
-</section>
-<section>
-<section id="quick-overview-of-causal-graph-theory" class="title-slide slide level1 center">
-<h1>Quick Overview of Causal Graph Theory</h1>
+
 
 </section>
-<section id="causal-graph-theory" class="slide level2">
-<h2>Causal Graph Theory</h2>
-<ul>
-<li>Another perspective on causal inference from computer science – Judea Pearl et al.</li>
-<li>Abstract causal inference to a visual/graphical depiction</li>
-<li>Develop system of symbolic calculus</li>
-<li>Nonparametrically solve identification problem</li>
-<li>Concept of directed acyclic graphs (DAGs)</li>
-</ul>
-</section>
-<section id="causal-graph-theory-1" class="slide level2">
-<h2>Causal Graph Theory</h2>
-<ul>
-<li><strong>English</strong>: Smoking (X), Cancer (Y), Tar (Z), Genotypes(U)</li>
-<li>Directed acyclic graph (DAG)</li>
-</ul>
 
-
-
-<img data-src="../../../assets/images/teaching/ENCI707/Lecture7/dag.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:40.0%"></section></section>
+</div>
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="../../../assets/images/teaching/ENCI707/logo.png" class="slide-logo"></p>

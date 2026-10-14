@@ -122,6 +122,9 @@
       margin-right: 0; 
     }
   </style>
+  <script src="../../../site_libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="../../../site_libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="../../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -135,12 +138,18 @@
 </div>
 
 </section>
-<section id="outline" class="slide level2">
-<h2>Outline</h2>
+<section id="learning-objectives" class="slide level2">
+<h2>Learning Objectives</h2>
 <div>
 <ol type="1">
-<li class="fragment">Need for causal inference</li>
-<li class="fragment">Causal Graph Theory</li>
+<li class="fragment">Distinguish prediction from causation</li>
+<li class="fragment">Define causal effects using potential outcomes</li>
+<li class="fragment">Explain the fundamental problem of causal inference</li>
+<li class="fragment">Identify confounders, mediators, and colliders</li>
+<li class="fragment">Interpret DAGs</li>
+<li class="fragment">Recognize causal estimands (ATE, ATT, CATE)</li>
+<li class="fragment">Understand why identification strategies are needed</li>
+<li class="fragment">Connect causal inference to transportation choice modelling</li>
 </ol>
 </div>
 </section>
@@ -156,7 +165,7 @@
 <ul>
 <li>People are told to run around in a dark room for 5 minutes</li>
 <li><strong>Observation</strong>: Men are found to have many more head injuries than women</li>
-<li>Conclusion:
+<li>Potential causal conclusions:
 <ul>
 <li>Women see better in the dark?</li>
 <li>Men are more reckless runners?</li>
@@ -195,16 +204,501 @@
 </ul></li>
 </ul>
 </section>
+<section id="need-for-causal-inference---endogeneity-self-selection" class="slide level2">
+<h2>Need for Causal Inference - Endogeneity &amp; Self-Selection</h2>
+<div>
+<ul>
+<li class="fragment">Does living near transit increase transit use? (Yes, No, Cannot tell)</li>
+<li class="fragment">What evidence would convince you?</li>
+</ul>
+</div>
+</section>
+<section id="transportation-questions---which-are-causal" class="slide level2 smaller">
+<h2>Transportation Questions - Which are causal?</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 65%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Predictive or Causal?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Who rides transit?</td>
+<td><span class="fragment">Predictive</span></td>
+</tr>
+<tr class="even">
+<td>Who buys EVs?</td>
+<td><span class="fragment">Predictive</span></td>
+</tr>
+<tr class="odd">
+<td>Does rail access increase transit use?</td>
+<td><span class="fragment">Causal</span></td>
+</tr>
+<tr class="even">
+<td>Will congestion pricing reduce driving?</td>
+<td><span class="fragment">Causal</span></td>
+</tr>
+<tr class="odd">
+<td>Does carbon labeling induce downsizing?</td>
+<td><span class="fragment">Causal</span></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Policy problems are often causal</li>
+<li>Choice modelling typically used on prediction tasks in transportation</li>
+<li>How to integrate casaul inference in choice modelling?</li>
+</ul>
+</section>
 <section id="causation-potential-outcomes" class="slide level2">
 <h2>Causation = Potential Outcomes</h2>
 <ul>
 <li>A key concept in causal inference is <strong>potential outcomes</strong></li>
 <li>What happened vs.&nbsp;what could have happened (<strong>counterfactual states</strong>)</li>
-<li>We will work with several examples to illustrate the principles…</li>
+<li>We will work with the home location example to illustrate the principles…</li>
 </ul>
 </section>
-<section id="example-omega-3-fatty-acids" class="slide level2 smaller">
-<h2>Example: Omega-3 Fatty Acids</h2>
+<section id="potential-outcomes-framework" class="slide level2 smaller">
+<h2>Potential Outcomes Framework</h2>
+<ul>
+<li>Consider household <span class="math inline">\(i\)</span> with treatment <span class="math inline">\(T_i = \{0,1\}\)</span> representing their potential home location state
+<ul>
+<li><span class="math inline">\(T_i = 1\)</span> means they live near a rail station</li>
+<li><span class="math inline">\(T_i = 0\)</span> means they do not live near a rail station</li>
+<li><span class="math inline">\(Y_i\)</span> is the outcome of interest - e.g., transit trips per week</li>
+</ul></li>
+<li>Potential outcomes are <span class="math inline">\(Y_i(1) = \text{ Trips given live near rail station}\)</span> and <span class="math inline">\(Y_i(0) = \text{ Trips given do not live near rail station}\)</span></li>
+<li>Individual causal effect is then <span class="math inline">\(\tau_i = Y(1) - Y(0)\)</span></li>
+<li>Can we observe both outcome states for a single individual?</li>
+</ul>
+</section>
+<section id="fundamental-problem-of-causal-inference" class="slide level2 smaller">
+<h2>Fundamental Problem of Causal Inference</h2>
+<ul>
+<li>We observe <span class="math inline">\(Y_i = T_iY_i(1) - (1-T_i)Y_i(0)\)</span> but never both outcomes</li>
+<li><strong>Causal inference is fundamentally a missing data problem</strong></li>
+</ul>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Household</th>
+<th>Treatment</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>1</td>
+<td>15</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>0</td>
+<td>7</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>1</td>
+<td>12</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>What is Household A’s causal effect?</li>
+</ul>
+</section>
+<section id="causal-experiment-design" class="slide level2">
+<h2>Causal Experiment Design</h2>
+<ul>
+<li><strong>Randomized controlled trials</strong> are “gold standard”</li>
+<li><strong>Almost never available</strong> for transportation/social science research questions</li>
+<li>What to do?</li>
+</ul>
+</section>
+<section id="adjustment-for-pretreatment-variables" class="slide level2">
+<h2>Adjustment for Pretreatment Variables</h2>
+<ul>
+<li>Differences between treatment &amp; control variables can be captured by including <strong>pretreatment variables</strong> in the model</li>
+<li>Addresses both random (<strong>variance</strong>) and systematic (<strong>bias</strong>) differences between treatment &amp; control</li>
+<li><strong>Do not</strong> adjust for posttreatment variables unless performing more complex analysis – e.g., instrumental variables (<strong>IV</strong>)</li>
+</ul>
+</section>
+<section id="ignorability-condition" class="slide level2">
+<h2>Ignorability Condition</h2>
+<ul>
+<li><strong>Ignorability in causal inference</strong>: no imbalance between treatment &amp; control, on average</li>
+<li><strong>Assignment to treatment</strong> does not imply anything about potential outcome</li>
+</ul>
+</section>
+<section id="average-causal-effects" class="slide level2 smaller">
+<h2>Average Causal Effects</h2>
+<ul>
+<li>Average treatment effect <span class="math display">\[ATE = E[Y(1)-Y(0)]\]</span>
+<ul>
+<li><strong>Interpretation:</strong> Average effect in the population</li>
+</ul></li>
+<li>Average treatment effect on treated <span class="math display">\[ATT = E[Y(1)-Y(0)\mid T=1]\]</span>
+<ul>
+<li><strong>Interpretation:</strong> Average effect for those receiving treatment</li>
+</ul></li>
+<li>Conditional average treatment effect <span class="math display">\[CATE(x) = E[Y(1)-Y(0)\mid X=x]\]</span>
+<ul>
+<li><strong>Interpretation:</strong> Average treatment effect given mediation variable value (connection to heterogeneity)</li>
+</ul></li>
+</ul>
+</section>
+<section id="transportation-examples" class="slide level2">
+<h2>Transportation examples</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 17%">
+<col style="width: 82%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Estimand</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ATE</td>
+<td>Average effect of rail station proximity on transit use</td>
+</tr>
+<tr class="even">
+<td>ATT</td>
+<td>Effect of rail station proximity on households actually exposed</td>
+</tr>
+<tr class="odd">
+<td>CATE</td>
+<td>Effect of rail station proximity by income group</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Heterogeneous treatment effects = taste heterogeneity = random coefficients</li>
+</ul>
+</section>
+<section id="why-correlation-fails" class="slide level2 smaller">
+<h2>Why Correlation Fails</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li>Observed relationship:</li>
+</ul>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+    A["Lives Near Transit"] --&gt; B["Transit Use"]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<ul>
+<li>Introduce preferences:</li>
+</ul>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TB
+    P["Transit Preference"]
+    P --&gt; N["Lives Near Transit"]
+    P --&gt; T["Transit Use"]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:40%;">
+<ul>
+<li>Association is <strong>confounded</strong></li>
+<li><strong>Confounder</strong> is a variable that affects both that affects both the treatment &amp; outcome</li>
+<li><strong>Interpretation:</strong> people who like transit choose transit-oriented neighbourhoods &amp; people who like transit ride it more</li>
+<li>Observed association may arise from preferences not treatment effect</li>
+</ul>
+</div></div>
+</section>
+<section id="directed-acyclic-graphs-dags" class="title-slide slide level1 center">
+<h1>Directed Acyclic Graphs (DAGs)</h1>
+
+</section>
+
+<section>
+<section id="representing-causal-inference-via-dags" class="title-slide slide level1 smaller center">
+<h1>Representing Causal Inference Via DAGs</h1>
+<ul>
+<li>Visual representation of assumptions</li>
+<li>More complex confounder example:</li>
+</ul>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TB
+    P["Transit Preference"]
+    I["Income"]
+    D["Downtown Employment"]
+    P --&gt; N["Lives Near Transit"]
+    P --&gt; T["Transit Use"]
+    I --&gt; N
+    I --&gt; T
+    D --&gt; N
+    D --&gt; T
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<ul>
+<li>Controlling for confounders (next lecture: via propensity scores, etc.):</li>
+</ul>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+    N["Lives Near Transit"] --&gt; T["Transit Use"]
+
+    P["Transit Preference"]
+    P -. Controlled For .-&gt; N
+    P -. Controlled For .-&gt; T
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="mediator-variables" class="slide level2 smaller">
+<h2>Mediator Variables</h2>
+<ul>
+<li>Suppose transit proximity changes vehicle ownership</li>
+</ul>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+    N["Lives Near Transit"]
+    C["Car Ownership"]
+    T["Transit Use"]
+    N --&gt; C
+    C --&gt; T
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<ul>
+<li><strong>Interpretation:</strong> living near transit may reduce (mediate) car ownership, which then increases transit use</li>
+<li>Can capture <span class="math inline">\(\text{Total effect} = \text{Direct effect} + \text{Indirect effect}\)</span></li>
+</ul>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+    N["Lives Near Transit"]
+    C["Car Ownership"]
+    T["Transit Use"]
+    N --&gt; T
+    N --&gt; C
+    C --&gt; T
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="collider-variables" class="slide level2 smaller">
+<h2>Collider Variables</h2>
+<ul>
+<li>Suppose we only have information on households who recently moved</li>
+</ul>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TB
+    P["Transit Preference"]
+    H["Housing Affordability"]
+    P --&gt; M["Recently Moved"]
+    H --&gt; M
+    P --&gt; T["Transit Use"]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<ul>
+<li>If we condition on movers, we inadvertently create an association between transit preference &amp; housing affordability</li>
+</ul>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TB
+    P["Transit Preference"]
+    H["Housing Affordability"]
+    P --&gt; M["Recently Moved"]
+    H --&gt; M
+    P --&gt; T["Transit Use"]
+    M:::highlight
+    classDef highlight fill:#ffd9a8
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="final-summary-dag" class="slide level2 smaller">
+<h2>Final Summary DAG</h2>
+<div class="{columns}">
+<div class="column" style="width:50%;">
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+    Q["Causal Question"]
+    PO["Potential Outcomes"]
+    DAG["Causal Graphs"]
+    ID["Identification Strategy"]
+    EST["Effect Estimation"]
+    Q --&gt; PO
+    Q --&gt; DAG
+    PO --&gt; ID
+    DAG --&gt; ID
+    ID --&gt; EST
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>DAGs tell us <strong>what assumptions are needed</strong></li>
+<li>Potential outcomes tell us <strong>what quantity we want to estimate</strong></li>
+<li>Identification strategies tell us <strong>how to estimate it</strong></li>
+<li><strong>Confounders:</strong> We control for them because they capture associations that exist</li>
+<li><strong>Colliders:</strong> We avoid controlling for them because they create associations that do not exist</li>
+</ul>
+</div></div>
+</section></section>
+<section>
+<section id="additional-causal-inference-details" class="title-slide slide level1 center">
+<h1>Additional Causal Inference Details</h1>
+
+</section>
+<section id="simpsons-paradox" class="slide level2 smaller">
+<h2>Simpson’s Paradox</h2>
+<ul>
+<li>Issue of inference on aggregate &amp; disaggregate data</li>
+<li>Suppose we observe the following aggregate data</li>
+</ul>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Neighborhood</th>
+<th style="text-align: right;">Transit Share</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>TOD</td>
+<td style="text-align: right;">40%</td>
+</tr>
+<tr class="even">
+<td>Non-TOD</td>
+<td style="text-align: right;">20%</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Now stratify by transit preference</li>
+</ul>
+<div class="{columns}">
+<div class="column" style="width:50%;">
+<p>People who prefer transit</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Neighborhood</th>
+<th style="text-align: right;">Transit Share</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>TOD</td>
+<td style="text-align: right;">80%</td>
+</tr>
+<tr class="even">
+<td>Non-TOD</td>
+<td style="text-align: right;">85%</td>
+</tr>
+</tbody>
+</table>
+</div><div class="column" style="width:50%;">
+<p>People who prefer driving</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Neighborhood</th>
+<th style="text-align: right;">Transit Share</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>TOD</td>
+<td style="text-align: right;">10%</td>
+</tr>
+<tr class="even">
+<td>Non-TOD</td>
+<td style="text-align: right;">15%</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+</section>
+<section id="simpsons-paradox-1" class="slide level2 smaller">
+<h2>Simpson’s Paradox</h2>
+<ul>
+<li><p>Within both groups, transit use is actually <strong>lower</strong> in TODs</p></li>
+<li><p>Why? Transit enthusiasts disproportionately choose TODs</p></li>
+<li><p>E.g., | Group | TOD | Non-TOD | | ——————- | –: | ——: | | Transit enthusiasts | 90% | 10% | | Drivers | 10% | 90% |</p></li>
+<li><p><strong>Problem:</strong> aggregate comparison is mostly comparing transit enthusiasts against drivers (not TOD against non-TOD) - confounding with transit preference!</p></li>
+<li><p>Simpson’s paradox is what happens when we compare the wrong groups</p></li>
+</ul>
+</section>
+<section id="causal-inference-example-omega-3-fatty-acids" class="slide level2 smaller">
+<h2>Causal Inference Example: Omega-3 Fatty Acids</h2>
 <p><strong>Problem</strong>: Does consumption of omega-3 fish oil supplements promote a healthy blood pressure?</p>
 <p><strong>Experiment</strong>: Eight friends agree to be part of an informal study on the relationship between fish oil supplements and systolic blood pressure. Four of the friends are placed in the “fish oil supplement” <strong>treatment group</strong>. Members of this group agree to consume 3 grams of fish oil supplements per day for one year while otherwise maintaining their current diets. The other four friends agreed to simply maintain their current diets free from fish oil supplements for the same year. At the end of the study period:</p>
 <ul>
@@ -255,41 +749,6 @@
 <li>Average treatment effect|treatment = +12.5 mmHG</li>
 </ul>
 </section>
-<section id="causal-experiment-design" class="slide level2">
-<h2>Causal Experiment Design</h2>
-<ul>
-<li><strong>Randomized controlled trials</strong> are “gold standard”</li>
-<li><strong>Almost never available</strong> for transportation/social science research questions</li>
-<li>What to do?</li>
-</ul>
-</section>
-<section id="adjustment-for-pretreatment-variables" class="slide level2">
-<h2>Adjustment for Pretreatment Variables</h2>
-<ul>
-<li>Differences between treatment &amp; control variables can be captured by including <strong>pretreatment variables</strong> in the model</li>
-<li>Addresses both random (<strong>variance</strong>) and systematic (<strong>bias</strong>) differences between treatment &amp; control</li>
-<li><strong>Do not</strong> adjust for posttreatment variables unless performing more complex analysis – e.g., instrumental variables (<strong>IV</strong>)</li>
-</ul>
-</section>
-<section id="ignorability-condition" class="slide level2">
-<h2>Ignorability Condition</h2>
-<ul>
-<li><strong>Ignorability in causal inference</strong>: no imbalance between treatment &amp; control, on average</li>
-<li><strong>Assignment to treatment</strong> does not imply anything about potential outcome</li>
-</ul>
-</section>
-<section>
-<section id="causal-inference-in-observational-studies" class="title-slide slide level1 center">
-<h1>Causal Inference in Observational Studies</h1>
-
-</section>
-<section id="causal-inference-in-observational-studies-1" class="slide level2">
-<h2>Causal Inference in Observational Studies</h2>
-<ul>
-<li>We rarely have access to a random controlled trial</li>
-<li>Observational causation is an exercise in logic &amp; relative causal strength <strong>NOT</strong> causation</li>
-</ul>
-</section>
 <section id="health-status-example" class="slide level2">
 <h2>Health Status Example</h2>
 <ul>
@@ -331,32 +790,9 @@
 <section id="common-support-or-overlap" class="slide level2">
 <h2>Common Support or Overlap</h2>
 
+
+
 <img data-src="../../../assets/images/teaching/ENCI707/Lecture7/common_support.svg" class="quarto-figure quarto-figure-center r-stretch"></section></section>
-<section>
-<section id="quick-overview-of-causal-graph-theory" class="title-slide slide level1 center">
-<h1>Quick Overview of Causal Graph Theory</h1>
-
-</section>
-<section id="causal-graph-theory" class="slide level2">
-<h2>Causal Graph Theory</h2>
-<ul>
-<li>Another perspective on causal inference from computer science – Judea Pearl et al.</li>
-<li>Abstract causal inference to a visual/graphical depiction</li>
-<li>Develop system of symbolic calculus</li>
-<li>Nonparametrically solve identification problem</li>
-<li>Concept of directed acyclic graphs (DAGs)</li>
-</ul>
-</section>
-<section id="causal-graph-theory-1" class="slide level2">
-<h2>Causal Graph Theory</h2>
-<ul>
-<li><strong>English</strong>: Smoking (X), Cancer (Y), Tar (Z), Genotypes(U)</li>
-<li>Directed acyclic graph (DAG)</li>
-</ul>
-
-
-
-<img data-src="../../../assets/images/teaching/ENCI707/Lecture7/dag.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:40.0%"></section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="../../../assets/images/teaching/ENCI707/logo.png" class="slide-logo"></p>
