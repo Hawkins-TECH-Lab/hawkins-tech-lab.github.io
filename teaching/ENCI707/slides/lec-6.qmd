@@ -242,7 +242,7 @@ Consider a design with four attributes, where two have two levels, one has three
 
 ## Attribute Level Balance {.smaller}
 
-- Balanced design with each attribute level occurring an equal number of times across choice sets.
+- Balanced design with each attribute level occurring an equal number of times for each alternative.
 
 ::: {.columns}
 
@@ -328,16 +328,24 @@ Solution: 12
 ::: {.column width="50%"}
 
 Model:
-$$U_1 = \beta_1 + \beta_2 X_{11} + \beta_3 X_{21} + \beta_4 X_{31} $$
-$$U_2 = \beta_5 + \beta_2 X_{12} + \beta_3 X_{22} + \beta_6 X_{32} $$
-$$U_3 = \beta_2 X_{13} + \beta_3 X_{23} + \beta_7 X_{33} $$
+$$
+\begin{aligned}
+U_1 &= \beta_1 + \beta_2 X_{11} + \beta_3 X_{21} + \beta_4 X_{31} \\
+U_2 &= \beta_5 + \beta_2 X_{12} + \beta_3 X_{22} + \beta_6 X_{32} \\
+U_3 &= \phantom{\beta_5 +\ } \beta_2 X_{13} + \beta_3 X_{23} + \beta_7 X_{33}
+\end{aligned}
+$$
 
 ::: 
 ::: {.column width="50%"}
 Attribute levels:
-$$X_{11},X_{12},X_{13} \in {2,4,6}$$
-$$X_{21},X_{22},X_{23} \in {1,3,5}$$
-$$X_{31},X_{32},X_{33} \in {3,5,7}$$
+$$
+\begin{aligned}
+X_{11}, X_{12}, X_{13} &\in \{2, 4, 6\} \\
+X_{21}, X_{22}, X_{23} &\in \{1, 3, 5\} \\
+X_{31}, X_{32}, X_{33} &\in \{3, 5, 7\}
+\end{aligned}
+$$
 
 :::
 
@@ -348,10 +356,12 @@ $$X_{31},X_{32},X_{33} \in {3,5,7}$$
   - Satisfy attribute level balance
   - Satisfy orthogonality
 
-## Fractional Factorial Orthogonal Designs
-- The smallest design that is orthogonal in all main effects has 12 choice sets (7 parameters / (3-1) independent comparisons)
+## Fractional Factorial Orthogonal Designs {.smaller}
+- The smallest design that is orthogonal in all main effects has **12 choice sets** 
+  - 7 parameters / (3-1) independent alternative comparisons gives 4 choice sets by degrees of freedom condition
+  - Attribute level balance with 3 levels and orthogonality requires $4 \times 3 = 12$ choice sets
   - Not easy to find orthogonal design
-  - Out of $\approx 10^51$ possible designs (from $27 \times 26 \times 25$ and $3^3=27$ profiles)...
+  - There are $3.38 \times 10^{51}$ possible designs to search through (from $3 \text{ alts} \times 3 \text{ attr} \times 3 \text{ level} = 3^3=27$ profiles and $27^{12}$ choice sets)...
 - Orthogonal fractional factorial design might still be too large for any one respondent to complete all tasks
 - Can be hard to find a blocking column
 
@@ -392,15 +402,15 @@ $$X_{31},X_{32},X_{33} \in {3,5,7}$$
   - Models for discrete choice - non-linear! $I(\beta) = \sum_n X_n'W_nX_n$ where $W_n$ is a weight matrix defined by the model structure
 
 ## Experiment Design Processes {.smaller}
-- Two competing schools of thought on how to define the covariance matrix ($S^2$ calculated as negative inverse of **Fisher information/Hessian matrix**)
+- Two competing schools of thought on how to define the covariance matrix (asymptotic $S^2$ calculated as inverse of **Fisher information matrix** (negative inverse of Hessian))
   - **Null hypothesis school**: Zero-valued parameter priors. Assumes designs are orthogonal within alternatives and maximize differences in attribute levels between alternatives
-    - Can only be developed assuming a multinomial logit (MNL) model
+    - Collapses any logit-based choice model to a multinomial logit (MNL) model
   - **Non-null hypothesis school**: Non-zero-valued parameter priors
 - **Bayesian (B)-efficient design**:
   - Allow for a range of parameter priors (e.g., $\theta~N(-0.8,2)$)
   - Not limited to orthogonal coding
-  - Directly related to expected outcome of modeling process
-  - Can assume any model structure, not just MNL
+  - Directly related to expected outcome of modelling process
+  - Can represent any logit model structure, not just MNL
 
 ## Efficient Design
 - Efficiency of design
@@ -439,7 +449,7 @@ $$\mathbf{\Sigma} = \begin{pmatrix} se(\hat{\beta}_1)^2 & \cdots & 0 \\ \vdots &
 
 ## Efficient Design {.smaller}
 - AVC matrix
-$$\Omega_N(\beta|X,y) = -I_N^{-1}(\beta|X,y)$$
+$$\Omega_N(\beta|X,y) = I_N^{-1}(\beta|X,y)$$
   - Depends on the design, $X$
   - Depends on the choice observations, $y$
   - Depends on the parameters, $\beta$
@@ -670,4 +680,4 @@ $$\text{Bayesian D-error} = \int_{\beta} det(\Omega(\beta|X))^{1/K}f(\beta|\mu,\
 - Allow respondents to opt for response outside set of experimental alternatives - e.g., in mode choice exercise, if all options become too unattractive respondent may decide to change destination, time of travel, or not to travel at all
 - Allow ‘will do something else’ alternative - could be programmed to branch to another exercise exploring precisely these other options
 - Make sure alternatives are clearly and unambiguously defined (difficult when dealing with qualitative attributes like security or comfort)
-  - E.g., do not express alternatives as ‘poor’ or ‘improved’, which are vague and prone to different interpretations by respondents - what measures or facilities, etc.).
+  - E.g., do not express alternatives as ‘poor’ or ‘improved’, which are vague and prone to different interpretations by respondents - what measures or facilities, etc.)
