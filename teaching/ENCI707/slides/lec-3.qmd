@@ -42,7 +42,7 @@ Many travel demand related choices are:
 - **Discrete:** activity type choice, mode choice, route choice, vehicle type choice, time of the day choice, location of trip destination choice etc.
 - **Continuous:** activity duration, vehicle usage, housing duration, etc.
 - **Heterogeneous:** Wide variations of choices across the population.
-- **Probabilistic/stochastic/random:** We can’t defined deterministically. 
+- **Probabilistic/stochastic/random:** We cannot define deterministically. 
 
 
 ## Choice as Consumption
@@ -78,17 +78,17 @@ Many travel demand related choices are:
 
 ## Decision Maker {.smaller}
 - **Disaggregate:** Individual or group (household, family, firms, government agency, etc.)
-- **Heterogeneous choice makers:** Wide variety in choice behaviour across the population
+- **Heterogeneous choice makers:** Wide variety of choice behaviour across the population
   - Taste variations across the choice/decision makers: **Idiosyncrasy**
   - Different choice situations for different people
 - **Characteristics of heterogeneous choice maker:** age, gender, income, education, household/firm size, etc.
-- **Choice situations/context:** spatial, temporal, economic
+- **Choice situation/context:** spatial, temporal, economic
 
 ## Alternatives {.smaller}
 - **Choice** means choosing an alternative out of a choice set (*mutually exclusive and collectively exhaustive countable set of alternatives*):
-- Universal choice set: $C$
-- Feasible / Individual-specific: $C_i$
-- Consideration (awareness) set: $C_{ci}$
+  - Universal choice set: $C$
+  - Feasible / Individual-specific: $C_i$
+  - Consideration (awareness) set: $C_{ci}$
 
 **Example:**
 
@@ -104,10 +104,10 @@ $C_{ci}$ = { Taxi, Bus, Bicycle}
 
 ## Alternatives - Attributes
 - Decision maker **evaluates alternatives** in terms of attribute values: Attribute values can be measured on the scale of attractiveness:
-- **Categorical:** Binary, ordinal (reliability, safety, convenience, etc.)
-- **Cardinal:** absolute values (time, cost, etc.)
-- **Generic** versus **alternative-specific**
-- **Measured** versus **perceived**
+  - **Categorical:** Binary, ordinal (reliability, safety, convenience, etc.)
+  - **Cardinal:** absolute values (time, cost, etc.)
+  - **Generic** versus **alternative-specific**
+  - **Measured** versus **perceived**
 
 ## Decision Rules
 - **Rational behaviour (homo economicus):** self-interested economic actor who optimizes own choice outcomes
@@ -120,13 +120,13 @@ $C_{ci}$ = { Taxi, Bus, Bicycle}
 ## Utility Maximization {.smaller}
 **Utility function:**
 
-- Captures **relative attractiveness** of alternative in the choice set
+- Captures **relative attractiveness** of alternatives in the choice set
 - Measures the satisfaction that the decision maker wants to optimize
 
 **Assumptions:**
 
 - Decision maker has **full knowledge** about the attributes of the alternatives and is able to process information
-- Base on information processing, decision maker **associates a utility** to each alternative
+- Based on information processing, decision maker **associates a utility** to each alternative
 - Decision maker has **transitive preferences**
 - Decision maker is **rational** and **perfect optimizer**
 - Decision maker is **consistent**
@@ -163,11 +163,11 @@ $$𝑈_{𝑐𝑎𝑟}=(\beta_𝑡/\beta_𝑐)𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟}+�
 $$
 
 **Choice:** car, if
-$$\beta_𝑡 𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟}+\beta_𝑐 𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} \geq \beta_𝑡 𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} + \beta_𝑐 𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}
+$$\beta_𝑡 𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟}+\beta_𝑐 𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} > \beta_𝑡 𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} + \beta_𝑐 𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}
 $$
 
 or
-$$(\beta_𝑡/\beta_𝑐)𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟}+𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} \leq (\beta_𝑡/\beta_𝑐)𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}+𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}
+$$(\beta_𝑡/\beta_𝑐)𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟}+𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} < (\beta_𝑡/\beta_𝑐)𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}+𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}
 $$
 
 ## Discrete Choice {.smaller}
@@ -179,10 +179,10 @@ $$𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟} < 𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖�
 
 Is the traveler willing to pay extra $(Cost_{car}-Cost_{transit})$ to save $(Time_{transit} -Time_{car})$?
 
-If yes (pick car): $\left(\frac{\beta_𝑡}{\beta_𝑐}\right)𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟} + 𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} \leq \left(\frac{\beta_𝑡}{\beta_𝑐}\right)𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} + 𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}$
+If yes (pick car): $\left(\frac{\beta_𝑡}{\beta_𝑐}\right)𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟} + 𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟} < \left(\frac{\beta_𝑡}{\beta_𝑐}\right)𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡} + 𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}$
 
 Willingness-to-pay or Value of Travel Time Savings (VOTS):
-$$\left(\frac{\beta_𝑡}{\beta_𝑐}\right) \geq \frac{(𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟}−𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡})}{(𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}−𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟})}$$
+$$\left(\frac{\beta_𝑡}{\beta_𝑐}\right) > \frac{(𝐶𝑜𝑠𝑡_{𝑐𝑎𝑟}−𝐶𝑜𝑠𝑡_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡})}{(𝑇𝑖𝑚𝑒_{𝑡𝑟𝑎𝑛𝑠𝑖𝑡}−𝑇𝑖𝑚𝑒_{𝑐𝑎𝑟})}$$
 
 ## Discrete Choice
 ![](../../../assets/images/teaching/ENCI707/Lecture4/transit_car_indifference.svg){fig-align="center"}
@@ -197,7 +197,7 @@ $$Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( 𝑈_{𝑖𝑗} \geq 𝑈_{𝑖𝑘}) \text{, } 
 - Random utility:
 $$𝑈_{𝑖𝑗}=𝑉_{𝑖𝑗}+\epsilon_{𝑖𝑗} \text{, } 𝑗 \in 𝐶_𝑖$$
 
-- Random Utility Maximizing (RUM) Choice Model:
+- Random Utility Maximizing (RUM) choice model:
 $$Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( 𝑉_{𝑖𝑗} + \epsilon_{𝑖𝑗} \ge 𝑉_{𝑖𝑘} + \epsilon_{𝑖𝑘}) \text{, } 𝑘 \neq 𝑗 \text{ & } 𝑘 \in 𝐶_𝑖$$
 Or
 $$Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( \epsilon_{ik} - \epsilon_{ij} \leq V_{ij} - V_{ik}) \text{, } 𝑘 \neq 𝑗 \text{ & } 𝑘 \in 𝐶_𝑖$$
@@ -207,13 +207,13 @@ $$Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( \epsilon_{ik} - \epsilon_{ij} \leq V_{ij} - V_{i
 - Attributes of alternatives are **completely defined**
 - Only **differences in utility** matter
 - **Systematic utility function** is specified as a function of attributes
-- An attribute may have the **same** (generic) weighting factors (coefficient) for all alternatives **if it varies across the alternatives** (e.g., travel time, travel cost, etc.).
-- An attribute may have **different** weighting factors (coefficient) for different alternatives if it **does not vary across the alternatives** (age, gender, income, etc.).
-- Assumption on distribution of random utility is necessary to derive choice probability: **Stochastic Choice Model**
+- An attribute may have the **same** (generic) weighting factors (coefficients) for all alternatives **if it varies across the alternatives** (e.g., travel time, travel cost, etc.).
+- An attribute may have **different** weighting factors (coefficients) for different alternatives if it **does not vary across the alternatives** (age, gender, income, etc.).
+- Assumption on distribution of random utility is necessary to derive choice probability: **Stochastic choice model**
 
 
 ## Binary Discrete Choice {.smaller}
-Choice Probability of an alternative $j$ for an individual $i$ with choice set $C_i$ of two alternatives: $j, k$ (dropping $i$ for sake of simplicity)
+Choice probability of an alternative $j$ for an individual $i$ with choice set $C_i$ of two alternatives: $j, k$ (dropping $i$ for sake of simplicity)
 $$Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( 𝑉_𝑗+\epsilon_𝑗 \ge 𝑉_𝑘+\epsilon_𝑘)$$
 $$Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( \epsilon_𝑘−\epsilon_𝑗≤𝑉_𝑗−𝑉_𝑘)$$
 **Binary Probit:**
@@ -221,8 +221,8 @@ $$Pr⁡( 𝑗|𝐶_𝑖)=Pr⁡( \epsilon_𝑘−\epsilon_𝑗≤𝑉_𝑗−𝑉
 - $\epsilon_j,\epsilon_k$ are both **normally distributed**
 - So,($\epsilon_k-\epsilon_j$) is also **normally distributed**
 - With fully specified alternative specific constants, ($\epsilon_k-\epsilon_j$) is $N(0,\sigma^2)$:
-$$V-j - V_k = \beta_0 + \sum \beta(x_j - x_k)$$
-- **Resulting Choice model:** $Pr(j) = \Phi(V/\sigma)$
+$$V_j - V_k = \beta_0 + \sum \beta(x_j - x_k)$$
+- **Resulting choice model:** $Pr(j) = \Phi(V/\sigma)$
 - $\sigma$ normalized to 1, giving **probit model** with unit variance
 
 ## Binary Discrete Choice {.smaller}
