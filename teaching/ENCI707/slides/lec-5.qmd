@@ -15,10 +15,10 @@ execute:
 ## Outline {.smaller}
 
 ::: incremental
-- Policy Evaluation
-- Forecasting & Prediction
-- Confidence Intervals on Predictions
-- Model transferability & Parameter Updating
+- Policy evaluation
+- Forecasting & prediction
+- Confidence intervals on predictions
+- Model transferability & Parameter updating
 :::
 
 # Policy Evaluation Using MNL
@@ -29,27 +29,27 @@ execute:
   - Cross elasticity
 - Consumer surplus & social welfare analysis
 - Marginal rate of substitution between two variables (ratio of corresponding parameters) in the choice model:
-  - Value of Travel Time Savings (**VOTTS**) in mode choice
+  - Value of Travel Time (**VTT**) in mode choice
   - Willingness to pay for improved transit reliability in transit choice
   - Willingness to pay for transit accessibility in home location choice
 
 ## Willingness-to-pay Analysis {style="font-size: 0.65em;"}
 - Systematic utility function needs to have cost as a variable $p$ along with another variable of interest $x$.
 $$V_j = V_j(p_j,x_j, \dots) -> p\text{ is a continuous variable & } V_j \text{ is differentiable in x and p}$$
-- **Assumption:** Any changes in $x$ is balanced by changes in $p$ to maintain same level of utility: total utility does not change
-$$V_j = V_j(p_j,x_j, \dots) = V_j((p_j+\delta p_j),(x_j + \delta x_j), \dots)$$
+- **Assumption:** Any change in $x$ is balanced by a change in $p$ to maintain same level of utility: total utility does not change
+$$V_j = V_j(p_j,x_j, \dots) = V_j((p_j+d p_j),(x_j + d x_j), \dots)$$
 - Using first-order Taylor series expansion
-$$V_j(p_j,x_j, \dots) = V_j(p_j,x_j, \dots) + \delta p_j \frac{\partial V_j(p_j,x_j, \dots)}{\partial p_j} + \delta x_j \frac{\partial V_j(p_j,x_j, \dots)}{\partial x_j}$$
+$$V_j(p_j,x_j, \dots) = V_j(p_j,x_j, \dots) + d p_j \frac{\partial V_j(p_j,x_j, \dots)}{\partial p_j} + d x_j \frac{\partial V_j(p_j,x_j, \dots)}{\partial x_j}$$
 - After transposing (assuming overall utility change is zero)
-$$\frac{\delta p_j}{\delta x_j} = - \frac{V_j(p_j, x_j, \dots)/\partial x_j}{V_j(p_j, x_j, \dots)/\partial p_j} \text{; additional price to compensate additional x}$$
+$$\frac{d p_j}{d x_j} = - \frac{\partial V_j(p_j, x_j, \dots)/\partial x_j}{\partial V_j(p_j, x_j, \dots)/\partial p_j} \text{; additional price to compensate additional x}$$
 
 ## Willingness-to-pay Analysis {.smaller}
 - For linear-in-parameter utility function $V_j = \beta_j + \beta_p p_j + \beta_x x_j + \dots$
 - Willing-to-pay for any continuous variable change $\frac{\partial p_j}{\partial x_j} = - \frac{\beta_x}{\beta_p}$
-- Value of Travel Time Savings (**VOTTS**): additional amount of money to **reduce** 1 unit of time
-$$VOTTS = \frac{\partial p_j}{- \partial t_j} = \frac{\beta_t}{\beta_p}$$
-- Value of Reliability (**VOR**) or Safety (**VOS**) : additional amount of money to **increase** 1 level of reliability (r), safety (s)
-$$VOR = \frac{\partial p_j}{+ \partial r_j} = - \frac{\beta_r}{\beta_p}\text{; } VOS = - \frac{\partial p_j}{+ \partial s_j} = \frac{\beta_s}{\beta_p}$$
+- Value of Travel Time (**VTT**): additional amount of money to **reduce** 1 unit of time
+$$VTT = \frac{d p_j}{- d t_j} = \frac{\beta_t}{\beta_p}$$
+- Value of Reliability (**VR**) or Safety (**VS**) : additional amount of money to **increase** 1 level of reliability (r), safety (s)
+$$VR = \frac{d p_j}{+ d r_j} = - \frac{\beta_r}{\beta_p}\text{; } VS = \frac{d p_j}{+ d s_j} = - \frac{\beta_s}{\beta_p}$$
 
 ## Consumer Surplus {.smaller}
 ![](../../../assets/images/teaching/ENCI707/Lecture5/consumer_surplus.svg){fig-align="center"}
@@ -59,6 +59,7 @@ $$\Delta CS = \int_{V_j^1}^{V_j^2} Pr_i(j|V_j, V_{k \in C_i, k \neq j}) d V_j = 
 ## Consumer Surplus {.smaller}
 For changes in only one (independent) alternative ($j$):
 $$\Delta CS = \frac{1}{\mu}\ln\left(\exp(\mu V_j^2) + \sum_{k \in C_i} \exp(\mu V_k)\right) - \frac{1}{\mu}\ln\left(\exp(\mu V_j^1) + \sum_{k \in C_i} \exp(\mu V_k)\right)$$
+
 - For changes in **multiple alternatives** (existence of equal or unequal cross-elasticity, e.g., nested logit, GEV, mixed logit) the integral is **path dependent** since it becomes conditional upon an income effect
 - For logit model
 $$\Delta CS = \frac{1}{\mu}\ln\left(\sum_{j \in C_i} \exp(\mu V_j^2)\right) - \frac{1}{\mu}\ln\left(\sum_{j \in C_i} \exp(\mu V_j^1)\right)$$
@@ -66,7 +67,7 @@ $$\Delta CS = \frac{1}{\mu}\ln\left(\sum_{j \in C_i} \exp(\mu V_j^2)\right) - \f
 ## Welfare Analysis {.smaller}
 - **Compensating variation analysis:** normalized changes in expected maximum utility of a particular choice before/after any changes (policy/infrastructure):
 $$U_j = \beta_I(I-p_j) + \sum \beta x + \epsilon_j$$ 
-- where $I$ = income, $p_j$ = price/cost, $\beta_I$ = marginal utility of income = coefficient of income normalized cost
+ where $I$ = income, $p_j$ = price/cost, $\beta_I$ = marginal utility of income = coefficient of income normalized cost
 - Consumer surplus (**CS**):
 $$CS = \frac{1}{\mu}\left(\ln \sum_j \exp \left(\mu (\beta_I(I-p_j) + \sum \beta x)\right) \right)$$
 - Compensting variation (**CV**) in monetary value:
@@ -76,7 +77,7 @@ $$CV = \frac{1}{|\beta_I|}\left( CS_{after-change} - CS_{before-change} \right)$
 
 ## Applying Disaggregate Model for Forecasting {.smaller}
 - Aggregate forecasting
-$$\sum_{individuals} \text{Individual Behaviour} = \text{Aggregate(collective) Outcome}$$
+$$\sum_{individuals} \text{Individual Behaviour} = \text{Aggregate (collective) Outcome}$$
 - Can synthesize people with attributes  from census data - i.e., 100% microsimulation with **synthetic population**
 
 ![](../../../assets/images/teaching/ENCI707/Lecture5/aggregation_forecast.svg){fig-align="center"}
@@ -228,7 +229,7 @@ $$\sum_{individuals} \text{Individual Behaviour} = \text{Aggregate(collective) O
   </tr>
 </table>
 
-## Sample Enumeration {.smaller}
+## (Stratified) Sample Enumeration {.smaller}
 - Although there may be sampling error, the expected value should match the population average
 - For a ‘G’ stratified sample:
 $$\overset{\sim}{W_i} = \sum_{g=1}^G \left(\frac{N_g}{N_T}\right) \frac{1}{N_{sg}}\sum_{t=1}^{N_{sg}} Pr(j|X_t,\beta)$$
@@ -254,16 +255,16 @@ $$\overset{\sim}{W_i} = \sum_{g=1}^G \left(\frac{N_g}{N_T}\right) \frac{1}{N_{sg
   </tr>
   <tr>
     <td>Market share</td>
-    <td>$Pr(1|x_1,\beta)$</td>
-    <td>$Pr(2|x_1,\beta)$</td>
+    <td>$Pr(1|\bar{x},\beta)$</td>
+    <td>$Pr(2|\bar{x},\beta)$</td>
     <td>.</td>
-    <td>$Pr(J|x_1,\beta)$</td>
+    <td>$Pr(J|\bar{x},\beta)$</td>
     <td>1</td>
   </tr>
 </table>
 
 ## Classification with Naïve Aggregation {.smaller}
-- Classify population into a  number of strata and consider population within a particular segment as **homogenous** (having same attributes)
+- Classify population into a  number of strata and consider population within a particular strata as **homogenous** (having same attributes)
 - When sample enumeration infeasible, can use classification with naïve aggregation
 - Categorization is based on attributes / market segmentation
 
@@ -365,9 +366,9 @@ $$\text{Choice Model: }Pr(j|x,\beta)$$
 - Exogenous sampling of choice makers (Stratified Random Sampling) 
   - Population size, $N$
   - Stratification of population into total $G$ groups
-  - Share (%) individual in a particular group, g in population, $W_g$
+  - Share (%) of individuals in a particular group, g in population, $W_g$
   - Sample size, $n$
-  - Share (%) individual in the particular group, $g$ in sample, $w_g$
+  - Share (%) of individuals in a particular group, $g$ in sample, $w_g$
   - Probability of an individual being selected in the sample, $q_g = \frac{w_g n}{W_g N}$
   - Sampling probability is not a function of parameter, $\beta$
 
@@ -379,7 +380,7 @@ $$\text{Choice Model: }Pr(j|x,\beta)$$
 - Sampling probability is not a function of parameter, $\beta$
 - For representative exogenous sample (stratified/simple random sampling) no correction to choice model estimates is needed
   - For non-representative sample, parameters except the Alternative Specific Constants (ASC) do not require correction
-  - ASC needs to corrected/updated to match actual **market share**
+  - ASC needs to be corrected/updated to match actual **market share**
 
 ## Sampling of Choice Makers {.smaller}
 $$\text{Choice Model: }Pr(j|x(j),\beta)$$
@@ -387,7 +388,7 @@ $$\text{Choice Model: }Pr(j|x(j),\beta)$$
 - Endogenous/Choice-based sampling of choice makers (randomly select choice makers of specific choices)
   - Selection of respondent of specific choice maker group (e.g. transit users, driver, bicyclists) still should be random in some way
   - Choice model with choice-based sample produces **unbiased estimates** of all parameters except the Alternative Specific Constants (ASC)
-  - ASCs need to corrected/updated to match actual **market share**
+  - ASCs need to be corrected/updated to match actual **market share**
 
 ## Sampling of alternatives: Large choice sets {.smaller}
 - Large number of alternatives (e.g., destination location choice model), a random sample of alternatives can be used to estimate the model - where $C = \text{full choice set}$ and $G = \text{subset of alternatives drawn from C}$
@@ -395,13 +396,13 @@ $$\text{Choice Model: }Pr(j|x(j),\beta)$$
 $$q(G|j) > 0 \text{; if G includes the chosen alt. j}$$
 $$q(G|j) = 0 \text{; if G excludes the chosen alt. j}$$
 - Joint probability that $J$ is drawn with non-zero probability and $j$ is chosen by an individual $i$
-$$Pr(G,j) = q(G|j)Pr(G) = Pr(j|G)Q(G) \text{; (Bayes Theorem)}$$
-$$\text{Marginal probability: } Q(G) = \sum_{k \in C} Pr(k)q(G|k) \text{; (Sum over all possible subsets of j')}$$
+$$Pr(G,j) = q(G|j)Pr(j) = Pr(j|G)Q(G) \text{; (Bayes Theorem)}$$
+$$\text{Marginal probability: } Q(G) = \sum_{k \in C} Pr(k)q(G|k) \text{; (Sum over all possible subsets including $j$)}$$
 
 ## Sampling of alternatives: Large Choice Set {.smaller}
 - Choice probability of alternative $j$ from subset:
 $$Pr(j|G)Q(G) = q(G|j)Pr(j)$$
-$$Pr(j|G)Q(G) = \frac{Pr(j)q(G|j)}{Q(G)} = \frac{Pr(j)q(G|j)}{\sum_{k \in C} Pr(k)q(G|k)} = \frac{\exp(V_j)q(G|j)}{\sum_{k \in C} \exp(V_k)q(G|k)}$$
+$$Pr(j|G) = \frac{Pr(j)q(G|j)}{Q(G)} = \frac{Pr(j)q(G|j)}{\sum_{k \in C} Pr(k)q(G|k)} = \frac{\exp(V_j)q(G|j)}{\sum_{k \in C} \exp(V_k)q(G|k)}$$
 - For any subset, $q$, that does not include $k$, $q(G|k)=0$, so:
 $$Pr(j|G) = \frac{\exp(V_j)q(G|j)}{\sum_{k \in G} \exp(V_k)q(G|k)} \text{; within C, any G without k drops out}$$
 $$Pr(j|G) = \frac{\exp(V_j)\exp(\ln(q(G|j)))}{\sum_{k \in G} \exp(V_k)\exp(\ln(q(G|j)))} = \frac{\exp(V_j + \ln(q(G|j)))}{\sum_{k \in G} \exp(V_k + \ln(q(G|j)))}$$
@@ -415,7 +416,7 @@ $$Pr(j|G) = \frac{\exp(V_j + ln(q(G|j)))}{\sum_{k \in G} \exp(V_k + ln(q(G|k)))}
 - **Not true for other models** such as nested logit, GEV, or mixed logit
 
 ## Managing Large Choice Sets
-- Reducing alternatives:
+- Reduce alternatives:
   - Use various feasibility constraints to reduce number of alternatives
   - Random sampling from large choice set
   - Wrong choice set may generate **distorted predictions**
@@ -424,10 +425,12 @@ $$Pr(j|G) = \frac{\exp(V_j + ln(q(G|j)))}{\sum_{k \in G} \exp(V_k + ln(q(G|k)))}
 
 ## Model Transferability {.smaller}
 - Transferability issues:
-  - Systematic bias.
-  - Local conditions.
-- Model Updating Issues:
-  - Systematic bias of the model is captured by model constants. - Alternative Specific Constants (ASC) are **error basket** - At a minimum level, the constant terms change from place-to-place
+  - Systematic bias
+  - Local conditions
+- Model updating issues:
+  - Systematic bias of the model is captured by model constants
+    - Alternative Specific Constants (ASC) are **error basket** 
+    - At a minimum, these constant terms change from place-to-place
   - **Scale parameter** of random error term changes from place-to-place
   - **Model specification** changes from place-to-place
 
@@ -441,7 +444,7 @@ $$
 ## Updating MNL Model Parameters {.smaller}
 - Population market share of $𝑗= 𝐻_𝑗$
 - Sample share of $j = h_j$
-- Adjustment proprtion of $j = s_j - \frac{H_j}{h_j}$
+- Adjustment proportion of $j \text{ is } s_j = \frac{H_j}{h_j}$
 - Adjusted choice probability $Pr(j) = \frac{s_j \exp(\beta_{0,j}+\sum \beta x)}{\sum_k s_k \exp(\beta_{0,k}+\sum \beta x)}$
 $$Pr(j) = \frac{\exp(\beta_{0,j}+\sum \beta x + \ln(s_j))}{\sum_k \exp(\beta_{0,k}+\sum \beta x + \ln(s_k))} = \frac{\exp(\beta_{0,j}+\sum \beta x + \ln(H_j/h_j))}{\sum_k \exp(\beta_{0,k}+\sum \beta x + \ln(H_k/h_k))}$$
 $$\text{Updated } \beta_{0,j} = (\beta_{0,j})_{estimated} + ln(H_j/h_j)$$

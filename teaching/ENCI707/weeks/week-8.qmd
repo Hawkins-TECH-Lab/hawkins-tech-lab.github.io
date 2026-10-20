@@ -10,9 +10,9 @@ link-external-newwindow: true
 
 ## Participate
 
-📋 [Lecture 6 - Surveys and Data](/teaching/ENCI707/slides/lec-6.html)
+📋 [Lecture 7 - Surveys and Data](/teaching/ENCI707/slides/lec-7.html)
 
-📋 [Lecture 7 - Computation](/teaching/ENCI707/slides/lec-7.html)
+📋 [Lecture 8 - Computation](/teaching/ENCI707/slides/lec-8.html)
 
 ## Practice
 

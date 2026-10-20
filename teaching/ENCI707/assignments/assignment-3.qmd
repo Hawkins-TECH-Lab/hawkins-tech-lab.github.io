@@ -3,13 +3,13 @@ title: "Disaggregate Demand Model Assignment"
 ---
 
 ## Assignment description
-The objective of this assignment is to familiarize you with the estimation and analysis of discrete choice demand models. A dataset of observed commuting mode choice is [available in MS Excel format](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/d1aa920232070ad51cbb19e2afe55499172e2648/assignment-data/WeeklyModeChoiceDATA-MondayCommuting.xlsx). The dataset contains details on eight modes and various sociodemographic details for each individual. The assignment is due Mar. 19 by 11:59 PM on D2L. The assignment should be completed in groups of 2-3 persons. You may choose your own group. Your group does not need to be the same as prior assignments.
+The objective of this assignment is to familiarize you with the estimation and analysis of discrete choice demand models. A dataset of observed commuting mode choice is [available in MS Excel format](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/d1aa920232070ad51cbb19e2afe55499172e2648/assignment-data/WeeklyModeChoiceDATA-MondayCommuting.xlsx). The dataset contains details on eight modes and various sociodemographic details for each individual. The assignment is due Nov. 12 by 11:59 PM on D2L. The assignment should be completed in groups of 2-3 persons. I will assign groups.
 
 1. Develop an multinomial logit (MNL) model of commuting mode choice.
 2. Perform model validation. This validation could comprise bootstrap resampling, cross-valdiation, or any other similar method.
 3. Estimate direct elasticities of level-of-service variables.
 
-The assignment deliverable should have the form of a professional report and should not be more than 10 pages (single-spaced).
+The assignment deliverable may be provided in bullet-point form and should not be more than 10 pages (single-spaced).
 
 ## Overall grading
 

@@ -3,15 +3,14 @@ title: "Survey Design Assignment"
 ---
 
 ## Assignment description
-The objective of this assignment is to familiarize you with the process of developing a survey instrument. The assignment is due Feb. 07 by 11:59 PM on D2L. The assignment should be completed in groups of 2-3 persons. You may choose your own group.
+The objective of this assignment is to familiarize you with the process of developing a survey instrument. The assignment is due Oct. 22 by 11:59 PM on D2L. The assignment should be completed in groups of 2-3 persons. I will assign groups.
 
 You have been tasked by the Province of Alberta to develop a survey to understand the demand for travel between Calgary and Banff as part of their provincial rail strategy. You final deliverable is a survey provided in text format. Your survey must include the following general elements for each survey respondent, but the details of the question text and scope is left to your group.
 
 1. Demographics.
 2. Current travel frequency and mode to/from Banff, Alberta.
 3. Attitudes about passenger rail between Calgary and Banff.
-4. A stated preference experiment. The experiment must include at least two modes and at least two attributes for each mode. Each attribute must have at least two levels. You should provide an illustration in the form of a table.
-
+4. A stated preference experiment. The experiment must include at least two modes and at least two attributes for each mode. Each attribute must have at least two levels. You should provide an illustration in the form of a table. You must use an experimental design (orthogonal, factorial, or efficient), but the design choice is left to you.
 
 ## Overall grading
 

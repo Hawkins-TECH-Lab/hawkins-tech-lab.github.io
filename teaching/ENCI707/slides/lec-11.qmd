@@ -12,15 +12,133 @@ format:
 execute:
   freeze: auto
 ---
-## Outline
+## Learning Objectives
 
 ::: incremental
-2. Methods of causal inference
-    - Propensity score matching
-    - Instrumental variables
-    - Regression discontinuity
-    - Difference-in-differences
+1. Understand why choice modellers should care about causal inference
+2. Explain the three sources of causal identification
+3. Connect causal identification sources to tools
+4. Incorporate causal identification tools into choice model specifications
 :::
+
+## Why Choice Modellers Should Care About Causal Inference {.smaller}
+- Traditional choice studies estimate
+$$P(y_i=j|X_i)$$
+
+- But policymakers usually ask ``what would happen if we changed X?"
+    - This is a counterfactual question, not about prediction or goodness-of-fit
+- **Returning to our previous example:** People who like transit move near transit \& ride transit
+    - We observe transit-proximate home choice \& transit use choice but the real story is **transit preference**
+
+## Three Sources of Causal Identification {.smaller}
+1. **Randomization** to create comparability - e.g., random treatment in DCE
+2. **Statistical adjustment** to control for observed confounders
+    - Matching
+    - Propensity scores (PS)
+    - Regression
+3. **Natural experiments** by exploiting external variation
+    - Instrumental variables (IV)
+    - Difference-in-differences (DiD)
+    - Regression discontinuity design (RDD)
+
+# Transportation Examples
+
+## Propensity Score Matching for TOD Choice {.smaller}
+- **Policy question:** Does living near transit increase transit use?
+- **Problem:** People are not randomly assigned to neighbourhoods
+- **Matching on confounders:** Find people who are similar on income, household size, age, employment, and vehicle ownership but differ on transit proximity
+- **Option 1:** Estimate the model using a sample filtered to include only matched samples
+- **Option 2:** Use inverse propensity score weights directly in the choice model - i.e., $w_i = \frac{T_i}{e_i} + \frac{1-T_i}{1-e_i}$ where $e_i = P(T_i=1|X_i)$
+
+## IV for Residential Self-Selection {.smaller}
+- **Policy question:** Does living near transit increase transit use?
+- **Problem:** if $U_{Transit} = \beta N + \varepsilon$ where $N$ is a binary treatment for living near transit and we omit transit preference then $Cov(N,\varepsilon)\neq0$
+- **IV solution:** use 2-stage control function estimation to adjust for endogeneity bias
+- $N = \pi Z + \nu$ where $Z$ is an instrument - e.g., historical streetcar network
+     - $Z$ affects whether someone lives near transit today but does not directly affect current transit use
+- $U_{Transit} = \beta N + \lambda \hat{\nu} + \varepsilon$
+    - $\hat{\nu}$ is the residual part of residential location that could be related to transit preference
+
+## DiD for New Rail Line {.smaller}
+- **Policy question:** Did a new rail line increase transit ridership?
+- **Problem:** need a counterfactual trend for before-after case
+- **DiD solution:** $U_{Transit,nt} = \beta X_{nt} + \delta (RailArea_n\times Post_t) + \varepsilon_{nt}$
+    - $\delta$ measures the DiD treatment effect
+    - Requires panel data
+    - Can include heterogeneity via $\delta_i$ and panel mixed logit model
+
+## Mediation for Carbon Information->Attitude->Housing Downsizing {.smaller}
+- **Policy question:** Does information affect residential choice?
+- **Problem:** need to capture information->attitude connection
+    - $U_{ni} = \beta Size_i + \gamma Carbon_i +\varepsilon_{ni}$
+    - Tells use whether carbon information matters but not why
+- **ICLV solution:** Mediation structure
+```{mermaid}
+flowchart LR
+    I["Carbon Information"]
+    A["Environmental Concern"]
+    D["Downsizing Choice"]
+    I --> A
+    A --> D
+```
+- Carbon information changes latent environmental concern, which changes residential preference
+
+## Illustrating the 4 Methods
+
+:::{columns}
+::: {.column width="50%"}
+
+#### PS
+```{mermaid}
+%%{init: {'theme': 'base', 'themeVariables': { 'fontSize': '12px' }}}%%
+flowchart TB
+    P["Income, Age, <br>Household Characteristics"] --> N["Transit Proximity"]
+    P --> T["Transit Mode Choice"]
+    N --> T
+
+```
+
+#### IV
+
+```{mermaid}
+%%{init: {'theme': 'base', 'themeVariables': { 'fontSize': '12px' }}}%%
+flowchart LR
+    Z["Streetcar<br>Network"] --> N["Lives Near<br>Transit"]
+    N --> T["Transit Use"]
+    V["Residual ν"] --> T
+
+```
+
+:::
+::: {.column width="50%"}
+
+#### DiD
+
+```{mermaid}
+%%{init: {'theme': 'base', 'themeVariables': { 'fontSize': '12px' }}}%%
+flowchart TB
+    T["Treatment <br>(Near Stations)"] --> B1["Before"]
+    T --> A1["After"]
+    C["Control <br>(Far Stations)"] --> B2["Before"]
+    C --> A2["After"]
+
+```
+
+#### Mediation ICLV Model
+
+```{mermaid}
+%%{init: {'theme': 'base', 'themeVariables': { 'fontSize': '12px' }}}%%
+flowchart LR
+    I["Carbon Info"] --> A["Environmental <br>Concern"]
+    A --> Q["Indicators <br>(Q1-Q3)"]
+    A --> U["Downsizing <br>Utility"] --> C["Housing <br>Choice"]
+
+```
+
+:::
+:::
+
+# Supplemental Additional Details on Methods
 
 ## Propensity Score Matching (PSM)
 - **Matching**: restructure data for statistical analysis
@@ -65,11 +183,11 @@ $$𝑇_𝑖=\gamma_0+\gamma_1 𝑧_𝑖+𝜈_𝑖$$
 - Where $𝑧_𝑖$ is uncorrelated with both $\epsilon_𝑖$ and $𝜈_𝑖$ (ignorability and exclusion restriction)
 - **Identifiability**: whether data contain sufficient information for unique estimation of parameter (or set of parameters)
 
-## IV in Regression
+## IV in Regression {.smaller}
 - With 
 $$𝑦=\beta_0+\beta_1 𝑇+\beta_2 𝑧+𝑒𝑟𝑟𝑜𝑟$$
 $$𝑇=\gamma_0+\gamma_1 𝑧+𝑒𝑟𝑟𝑜𝑟$$
-- Substituting T into y:
+- Substituting $T$ into $y$:
 $$𝑦=(\beta_0+\beta_1 \gamma_0 )+(\beta_1 \gamma_1+\beta_2 )𝑧+𝑒𝑟𝑟𝑜𝑟$$
 - where $\beta_1$ is our parameter of interest
 - Using $𝑦=\delta_0+\delta_1 𝑧+𝑒𝑟𝑟𝑜𝑟$ where $\delta_1=\beta_1 \gamma_1+\beta_2$
@@ -82,7 +200,7 @@ $\beta_1=\delta_1/\gamma_1$
 - Estimation is by two-stage least squares (2SLS)
 - Standard errors require adjustment in instrumental variable estimation – should be accounted for in any software package
 
-## Exclusion Restriction Plausibility
+## Exclusion Restriction Plausibility {.smaller}
 - One way to assess the plausibility of the exclusion restriction is to calculate an estimate within a sample that would not be expected to be affected by the instrument
 - Researchers estimated the effect of military service on earnings (and other outcomes) using, as an instrument, the lottery number for young men eligible for the draft during the Vietnam War
     - Randomly assigned number and strongly affected the probability of military service
@@ -104,27 +222,115 @@ $\beta_1=\delta_1/\gamma_1$
 ## Fixed Effect Models
 - Use repeated observations within groups – e.g., twin comparisons that holds confounding variables fixed
 - Simply a regression model with group-specific intercepts
-$$𝑦_𝑖𝑗=\beta_0+𝜏𝑧_𝑖𝑗+𝛼_𝑖+𝜖_𝑖𝑗$$
-- where j is an indicator of intra-group units
+$$𝑦_{𝑖𝑗}=\beta_0+\tau z_{𝑖𝑗}+\alpha_𝑖+\varepsilon_{𝑖𝑗}$$
+- where $j$ is an indicator of intra-group units
 - Requires treatment to vary within groups
 
-## Difference-In-Differences
+## Difference-In-Differences {.smaller}
 - Comparison across units (typically) using time as an additional dimension of variation
 - E.g., effect of new school busing program on housing prices in school district
     - Compare prices before/after between district with school busing program and those without it
     - A measure of **differences in trajectory**
 
-# Quick Overview of Causal Graph Theory
+```{R}
+#| echo: false
 
-## Causal Graph Theory
-- Another perspective on causal inference from computer science – Judea Pearl et al.
-- Abstract causal inference to a visual/graphical depiction
-- Develop system of symbolic calculus
-- Nonparametrically solve identification problem
-- Concept of directed acyclic graphs (DAGs)
+library(ggplot2)
 
-## Causal Graph Theory
-- **English**: Smoking (X), Cancer (Y), Tar (Z), Genotypes(U)
-- Directed acyclic graph (DAG)
+# Control trend
+control <- data.frame(
+  time = c(0, 1, 2),
+  outcome = c(2, 3, 4),
+  group = "Control"
+)
 
-![](../../../assets/images/teaching/ENCI707/Lecture7/dag.svg){fig-align="center" width="40%"}
+# Observed treatment trend
+treated <- data.frame(
+  time = c(0, 1, 2),
+  outcome = c(3, 4, 7),
+  group = "Treatment"
+)
+
+main_data <- rbind(control, treated)
+
+# Counterfactual treatment trend
+counterfactual <- data.frame(
+  time = c(1, 2),
+  outcome = c(4, 5)
+)
+
+ggplot() +
+
+  geom_line(
+    data = main_data,
+    aes(time, outcome, colour = group),
+    linewidth = 1.5
+  ) +
+
+  geom_point(
+    data = main_data,
+    aes(time, outcome, colour = group),
+    size = 3
+  ) +
+
+  # Counterfactual (same treatment colour, but excluded from legend)
+  geom_line(
+    data = counterfactual,
+    aes(time, outcome),
+    colour = "#F0027F",
+    linewidth = 1.2,
+    linetype = "dotted"
+  ) +
+
+  geom_vline(
+    xintercept = 1,
+    colour = "steelblue",
+    linewidth = 1
+  ) +
+
+  geom_segment(
+    aes(x = 2, xend = 2,
+        y = 5, yend = 7),
+    linewidth = 1.2,
+    colour = "black"
+  ) +
+
+  annotate(
+    "text",
+    x = 2.12,
+    y = 6,
+    label = "Treatment\nEffect",
+    hjust = 0,
+    size = 5
+  ) +
+
+  scale_colour_manual(
+    values = c(
+      "Control" = "#7CAE00",
+      "Treatment" = "#F0027F"
+    ),
+    name = NULL
+  ) +
+
+  scale_x_continuous(
+    breaks = c(0, 1, 2),
+    labels = c("Pre", "Intervention", "Post")
+  ) +
+
+  labs(
+    x = NULL,
+    y = "Outcome"
+  ) +
+
+  theme_minimal(base_size = 18) +
+  coord_cartesian(
+    xlim = c(0, 2.2),
+    ylim = c(1.5, 7.5),
+    clip = "off"
+    ) +
+    theme(
+    plot.margin = margin(10, 60, 10, 10),
+    legend.position = "top",
+    panel.grid.minor = element_blank()
+    )
+```

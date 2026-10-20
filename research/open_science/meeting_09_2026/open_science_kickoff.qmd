@@ -17,7 +17,7 @@ format:
     
 ## Welcome
 
-Thanks for joining — since we all know each other, let's get straight into it.
+Thanks for joining! Since we all know each other, let's get straight into it.
 
 **Today's goals:**
 
@@ -32,14 +32,14 @@ Thanks for joining — since we all know each other, let's get straight into it.
 
 **Canadian Framework for Open Science in Urban Modelling**
 
-- Funded by the University of Calgary VPR Open Science Fund (Round 1, June 2026)
-- $10,000 — August 2026 to July 2027
+- Funded by the University of Calgary VPR Open Science Fund (Round 1)
+- $10,000 over August 2026 to July 2027
 
 **Team:**
 
 - Jason Hawkins (University of Calgary)
-- Eric Miller (University of Toronto)
 - Khandker Nurul Habib (University of Toronto)
+- Eric Miller (University of Toronto)
 - Catherine Morency (Polytechnique Montreal)
 - Mahmudur Fatmi (University of British Columbia)
 - Ahsan Habib (Dalhousie University)
@@ -48,7 +48,7 @@ Thanks for joining — since we all know each other, let's get straight into it.
 
 ## What the Fund Supports {.smaller}
 
-The Open Science Fund is meant to add an **Open Science layer** to work we're already doing — not to start from scratch.
+The Open Science Fund is meant to add an **Open Science layer** to work we're already doing not to start from scratch.
 
 That layer can include:
 
@@ -62,7 +62,7 @@ That layer can include:
 
 ---
 
-## Why This, Why Now
+## Why This, Why Now {.smaller}
 
 Across Europe, the EAABM position paper (2026) points to a familiar pattern:
 
@@ -72,21 +72,21 @@ Across Europe, the EAABM position paper (2026) points to a familiar pattern:
 - Almost no shared curriculum for activity-based modelling
 
 ::: {.fragment}
-**Canada has a similar fragmentation** — every group has its own survey instrument, its own model codebase, its own conventions. This project asks: what would it take to change that?
+**Canada has a similar fragmentation:** every group has its own survey instrument, its own model codebase, its own conventions. This project asks: what would it take to change that?
 :::
 
 ---
 
 ## What "Open Science" Means, Federally {.smaller}
 
-Canada's *Roadmap for Open Science* (Office of the Chief Science Advisor, 2020) describes open science as making the inputs, outputs, and processes of research as freely available as possible, with minimal restriction — while still fully respecting privacy, security, ethical considerations, and appropriate IP protection.
+Canada's *Roadmap for Open Science* (Office of the Chief Science Advisor, 2020) describes open science as making the inputs, outputs, and processes of research as freely available as possible, with minimal restriction, while respecting privacy, security, ethical considerations, and appropriate IP protection.
 
 The federal lifecycle model has **four stages**, feeding back into each other:
 
-1. **Ideation** — open, community-engaged research questions
-2. **Data Collection & Analysis** — open methods, open data, citizen science
-3. **Publication** — preprints, open access
-4. **Knowledge Mobilization** — sharing results so they're actually usable
+1. **Ideation:** open, community-engaged research questions
+2. **Data Collection & Analysis:** open methods, open data, citizen science
+3. **Publication:** preprints, open access
+4. **Knowledge Mobilization:** sharing results so they're actually usable
 
 ::: {.fragment}
 Note: openness is a *practice across the whole lifecycle*, not just "put the data online at the end."
@@ -106,7 +106,7 @@ Note: openness is a *practice across the whole lifecycle*, not just "put the dat
 - Open dialogue with other knowledge systems
 
 ::: {.fragment}
-Our project — and the spectrum on the next slide — is essentially us asking what these pillars look like specifically for **transportation survey and model development**.
+The project, and the spectrum on the next slide, is essentially us asking what these pillars look like specifically for **transportation survey and model development**.
 :::
 
 ---
@@ -150,16 +150,16 @@ Our project — and the spectrum on the next slide — is essentially us asking 
 ```
 
 ::: {.fragment .fade-up}
-Not every research project (or even field) needs to sit at the far end — but we should be intentional about *where* we sit, and *why*.
+Not every research project (or even field) needs to sit at the far end, but we should be intentional about *where* we sit and *why*.
 :::
 
 ---
 
 ## A Model From Another Field: Climate Science {.smaller}
 
-Steve Easterbrook (University of Toronto) has spent two decades studying how climate modelling groups build and share their models — most recently summarized in his 2023 book *Computing the Climate*.
+Steve Easterbrook (University of Toronto) has spent two decades studying how climate modelling groups build and share their models, most recently summarized in his 2023 book *Computing the Climate*.
 
-A few things climate science worked out decades before transportation modelling:
+A few things climate science worked out decades ago:
 
 - Institutions build separate **components** (atmosphere, ocean, ice, land surface) that plug into a shared **coupler** — a modular architecture where components can be swapped without breaking the whole system
 - International **model intercomparison projects** (e.g., CMIP) run the same benchmark experiment across dozens of independently developed models, so the community can see exactly where models agree and where they diverge
@@ -171,14 +171,14 @@ A few things climate science worked out decades before transportation modelling:
 
 Easterbrook's research on climate code-sharing identified recurring barriers to openness — several will sound familiar:
 
-- **Portability** — code that only runs on one lab's specific setup
-- **Configurability** — local tweaks and edge cases baked into the code
-- **Entrenchment** — decades of institutional investment in existing tools
-- **Model–data blur** — model code tangled up with specific input datasets
-- **Provenance** — losing track of where a result came from once code is modified and passed around
+- **Portability:** code that only runs on one lab's specific setup
+- **Configurability:** local tweaks and edge cases baked into the code
+- **Entrenchment:** decades of institutional investment in existing tools
+- **Model–data blur:** model code tangled up with specific input datasets
+- **Provenance:** losing track of where a result came from once code is modified and passed around
 
 ::: {.fragment}
-**Discussion:** which of these look most like our situation with survey instruments and ABMs?
+**Discussion:** which of these look most like our situation with survey instruments and models?
 :::
 
 ---
@@ -218,8 +218,8 @@ Possible starting topics:
 - Core question modules (trips, activities, household roster, attitudes)
 - Recruitment and sampling approaches across our cities
 - Definitions: what counts as a "trip purpose"?
-- Data formats and codebooks — could we agree on a common schema?
-- GDPR/PIPEDA-equivalent handling and anonymization practices
+- Data formats and codebooks: could we agree on a common schema?
+- PIPEDA-equivalent handling and anonymization practices (PIPEDA = Personal Information Protection and Electronic Documents Act)
 
 ---
 
@@ -230,25 +230,25 @@ Possible starting topics:
 - Population synthesis approaches in use across groups
 - Tour vs. activity-based scheduling logic
 - Software stacks: internal code (C#/Python/Java) vs. assignment (Emme/MatSim)
-- Where do our models diverge most — mode choice? scheduling? assignment?
+- Where do our models diverge most: mode choice? scheduling? assignment?
 - What would a "reference" Canadian ABM even look like?
 
 ---
 
 ## Beyond Surveys and Models 
 
-Other threads worth carving out sessions for:
+Other threads worth carving out sessions for?
 
-- **ABM in graduate curricula** — EAABM's teaching committee found ABM development is rarely taught outside PhD programs; is it worth covering in courses?
-- **Interdisciplinary frontiers** — energy systems, public health, EV charging demand
-- **Software ecosystem** — where do we build vs. adopt vs. contribute upstream?
-- **Emerging methods** — generative AI / ML approaches to schedule synthesis
+- **ABM in graduate curricula:** EAABM's teaching committee found ABM development is rarely taught outside PhD programs; is it worth covering in courses?
+- **Interdisciplinary frontiers:** energy systems, public health, EV charging demand
+- **Software ecosystem:** where do we build vs. adopt vs. contribute upstream?
+- **Emerging methods:** generative AI / ML approaches to schedule synthesis
 
 ---
 
 ## Format Going Forward
 
-- Recurring monthly sessions (dates to be determined today)
+- Recurring monthly sessions (dates to be determined via poll)
 - Short (7-10 min) presentations to seed discussion, not exhaustive reviews
 - Rotate presenting responsibility across participants
 - Shared notes to track where we agree, disagree, and want to converge
