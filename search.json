@@ -426,7 +426,7 @@
     "href": "teaching/ENCI707/slides/lec-9.html#sequential-logit-model-of-choice-bundle-2",
     "title": "Lecture 9 - Advanced Choice Models",
     "section": "Sequential Logit Model of Choice Bundle",
-    "text": "Sequential Logit Model of Choice Bundle\n\n\\[Pr(d) = \\frac{\\exp(V_d)}{\\sum_{d' \\in D} \\exp(V_d')} \\text{; } Pr(m|d) = \\frac{\\exp(V_{m|d})}{\\sum_{m' \\in M} \\exp(V_{m'|d})}\\]\n\nJoint probability of choice \\[Pr(md) = \\frac{\\exp(V_d)}{\\sum_{d' \\in D} \\exp(V_d') \\sum_{m' \\in M} \\exp(V_{m'|d})}\\frac{\\exp(V_{m|d})}{\\sum_{m' \\in M} \\exp(V_{m'|d})}\\] \\[Pr(md) = \\frac{\\exp(V_d + V_{m|d})}{\\sum_{d' \\in D} \\exp(V_d') \\sum_{m' \\in M} \\exp(V_{m'|d})}\\]"
+    "text": "Sequential Logit Model of Choice Bundle\n\n\\[Pr(d) = \\frac{\\exp(V_d)}{\\sum_{d' \\in D} \\exp(V_d')} \\text{; } Pr(m|d) = \\frac{\\exp(V_{m|d})}{\\sum_{m' \\in M} \\exp(V_{m'|d})}\\]\n\nJoint probability of choice \\[Pr(md) = \\frac{\\exp(V_d)}{\\sum_{d' \\in D} \\exp(V_d')}\\frac{\\exp(V_{m|d})}{\\sum_{m' \\in M} \\exp(V_{m'|d})}\\] \\[Pr(md) = \\frac{\\exp(V_d + V_{m|d})}{\\sum_{d' \\in D} \\exp(V_d') \\sum_{m' \\in M} \\exp(V_{m'|d})}\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-9.html#sequential-logit-model-of-choice-bundle-3",
@@ -510,7 +510,7 @@
     "href": "teaching/ENCI707/slides/lec-9.html#nested-logit-model-3",
     "title": "Lecture 9 - Advanced Choice Models",
     "section": "Nested Logit Model",
-    "text": "Nested Logit Model\n\nTo be a RUM choice model, the scale of the lower-level conditional choices should be higher than the scale of the upper-level choice (the opposite is true for variance) \\[0 \\leq (\\phi = \\frac{\\mu_d}{\\mu_m}) \\leq 1 \\text{; i.e., } \\mu_m \\geq \\mu_d\\]\nBoth scales are not identified individually, but, normalizing one of them make the other identified - normalize upper-level scale to 1\nConsidering \\(\\mu_d=1 \\therefore \\mu_m &gt; 1 \\text{ & } \\phi &lt; 1\\) \\[\\phi &gt; 1 \\text{ means nests should be reversed}\\] \\[\\phi =1 \\text{ means choice process is simultaneous}\\] \\[\\phi =0 \\text{ means choice process is sequential}\\] \\[\\phi &lt;0 \\text{ means no joint choice - i.e., Tversky's elimination by aspects model}\\]"
+    "text": "Nested Logit Model\n\nTo be a RUM choice model, the scale of the lower-level conditional choices should be higher than the scale of the upper-level choice (the opposite is true for variance) \\[0 \\leq \\left(\\phi = \\frac{\\mu_d}{\\mu_m}\\right) \\leq 1 \\text{; i.e., } \\mu_m \\geq \\mu_d\\]\nBoth scales are not identified individually, but, normalizing one of them make the other identified - normalize upper-level scale to 1\nConsidering \\(\\mu_d=1 \\therefore \\mu_m &gt; 1 \\text{ & } \\phi &lt; 1\\) \\[\\phi &gt; 1 \\text{ means nests should be reversed}\\] \\[\\phi =1 \\text{ means choice process is simultaneous}\\] \\[\\phi =0 \\text{ means choice process is sequential}\\] \\[\\phi &lt;0 \\text{ means no joint choice - i.e., Tversky's elimination by aspects model}\\]"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-9.html#estimation-nested-logit-model",
@@ -685,14 +685,14 @@
     "href": "teaching/ENCI707/slides/lec-9.html#generalized-extreme-value-gev-model-2",
     "title": "Lecture 9 - Advanced Choice Models",
     "section": "Generalized Extreme Value (GEV) Model",
-    "text": "Generalized Extreme Value (GEV) Model\n\\[Pr(j|C_i) = \\frac{y_j G_j(y_1,\\cdots,y_k)}{D G(y_1,\\cdots, y_k)}\\]\n\nGEV mode is the most flexible closed-form model that can capture a wide variety of choice models: For different generating functions, different choice models can arise.\nMNL and NL are special cases of the GEV model\nOther GEV models: Network GEV, Cross-nested Logit, Paired-Combinatorial Logit etc. for the \\(G(\\cdots)\\) function with degree, \\(\\mu\\)"
+    "text": "Generalized Extreme Value (GEV) Model\n\\[Pr(j|C_i) = \\frac{y_j G_j(y_1,\\cdots,y_k)}{D G(y_1,\\cdots, y_k)}\\]\n\nGEV mode is the most flexible closed-form model that can capture a wide variety of choice models: For different generating functions, different choice models can arise\nMNL and NL are special cases of the GEV model\nOther GEV models: Network GEV, Cross-nested Logit, Paired-Combinatorial Logit etc. for the \\(G(\\cdots)\\) function with degree, \\(\\mu\\)"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-9.html#estimation-gev-model",
     "href": "teaching/ENCI707/slides/lec-9.html#estimation-gev-model",
     "title": "Lecture 9 - Advanced Choice Models",
     "section": "Estimation: GEV Model",
-    "text": "Estimation: GEV Model\n\nGEV models are of closed form and so can be estimated using classical estimation technique: Maximum likelihood\nHowever, the conditions on scale (similarity or dissimilarity) parameters needs to be met\nConstrained Maximum Likelihood (CML) method for the GEV model estimation that maintains restrictions on parameter value range while estimating\n\nOne can use mathematical expressions to ensure such conditions while using classical Maximum Likelihood approach\nClassical Maximum Likelihood is less computationally intensive than the CML"
+    "text": "Estimation: GEV Model\n\nGEV models are of closed form and so can be estimated using classical estimation technique: Maximum likelihood\nHowever, the conditions on scale (similarity or dissimilarity) parameters needs to be met\nConstrained Maximum Likelihood (CML) method for the GEV model estimation that maintains restrictions on parameter value range while estimating\n\nOne can use mathematical expressions to ensure such conditions while using classical Maximum Likelihood approach\nClassical Maximum Likelihood is less computationally intensive than CML"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-9.html#multinomial-logit-model",

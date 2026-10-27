@@ -259,7 +259,7 @@
 
 <img data-src="../../../assets/images/teaching/ENCI707/Lecture6/sequential_logit.svg" class="quarto-figure quarto-figure-center r-stretch"><p><span class="math display">\[Pr(d) = \frac{\exp(V_d)}{\sum_{d' \in D} \exp(V_d')} \text{; } Pr(m|d) = \frac{\exp(V_{m|d})}{\sum_{m' \in M} \exp(V_{m'|d})}\]</span></p>
 <ul>
-<li>Joint probability of choice <span class="math display">\[Pr(md) = \frac{\exp(V_d)}{\sum_{d' \in D} \exp(V_d') \sum_{m' \in M} \exp(V_{m'|d})}\frac{\exp(V_{m|d})}{\sum_{m' \in M} \exp(V_{m'|d})}\]</span> <span class="math display">\[Pr(md) = \frac{\exp(V_d + V_{m|d})}{\sum_{d' \in D} \exp(V_d') \sum_{m' \in M} \exp(V_{m'|d})}\]</span></li>
+<li>Joint probability of choice <span class="math display">\[Pr(md) = \frac{\exp(V_d)}{\sum_{d' \in D} \exp(V_d')}\frac{\exp(V_{m|d})}{\sum_{m' \in M} \exp(V_{m'|d})}\]</span> <span class="math display">\[Pr(md) = \frac{\exp(V_d + V_{m|d})}{\sum_{d' \in D} \exp(V_d') \sum_{m' \in M} \exp(V_{m'|d})}\]</span></li>
 </ul>
 </section>
 <section id="sequential-logit-model-of-choice-bundle-3" class="slide level2 smaller">
@@ -366,7 +366,7 @@ U_{d} = V_d + (V_{m|d} + \epsilon_{m|d}) + \epsilon_d = \widetilde{V_d} + \epsil
 <section id="nested-logit-model-3" class="slide level2 smaller">
 <h2>Nested Logit Model</h2>
 <ul>
-<li>To be a <strong>RUM choice model</strong>, the scale of the lower-level conditional choices should be <strong>higher</strong> than the scale of the upper-level choice (the opposite is true for variance) <span class="math display">\[0 \leq (\phi = \frac{\mu_d}{\mu_m}) \leq 1 \text{; i.e., } \mu_m \geq \mu_d\]</span></li>
+<li>To be a <strong>RUM choice model</strong>, the scale of the lower-level conditional choices should be <strong>higher</strong> than the scale of the upper-level choice (the opposite is true for variance) <span class="math display">\[0 \leq \left(\phi = \frac{\mu_d}{\mu_m}\right) \leq 1 \text{; i.e., } \mu_m \geq \mu_d\]</span></li>
 <li>Both scales are <strong>not identified individually</strong>, but, normalizing one of them make the other identified - normalize upper-level scale to 1</li>
 <li>Considering <span class="math inline">\(\mu_d=1 \therefore \mu_m &gt; 1 \text{ &amp; } \phi &lt; 1\)</span> <span class="math display">\[\phi &gt; 1 \text{ means nests should be reversed}\]</span> <span class="math display">\[\phi =1 \text{ means choice process is simultaneous}\]</span> <span class="math display">\[\phi =0 \text{ means choice process is sequential}\]</span> <span class="math display">\[\phi &lt;0 \text{ means no joint choice - i.e., Tversky's elimination by aspects model}\]</span></li>
 </ul>
@@ -672,7 +672,7 @@ U_{d} = V_d + (V_{m|d} + \epsilon_{m|d}) + \epsilon_d = \widetilde{V_d} + \epsil
 <h2>Generalized Extreme Value (GEV) Model</h2>
 <p><span class="math display">\[Pr(j|C_i) = \frac{y_j G_j(y_1,\cdots,y_k)}{D G(y_1,\cdots, y_k)}\]</span></p>
 <ul>
-<li>GEV mode is the most flexible closed-form model that can capture a wide variety of choice models: For different generating functions, different choice models can arise.</li>
+<li>GEV mode is the most flexible closed-form model that can capture a wide variety of choice models: For different generating functions, different choice models can arise</li>
 <li>MNL and NL are special cases of the GEV model</li>
 <li>Other GEV models: Network GEV, Cross-nested Logit, Paired-Combinatorial Logit etc. for the <span class="math inline">\(G(\cdots)\)</span> function with degree, <span class="math inline">\(\mu\)</span></li>
 </ul>
@@ -685,7 +685,7 @@ U_{d} = V_d + (V_{m|d} + \epsilon_{m|d}) + \epsilon_d = \widetilde{V_d} + \epsil
 <li>Constrained Maximum Likelihood (CML) method for the GEV model estimation that maintains restrictions on parameter value range while estimating
 <ul>
 <li>One can use mathematical expressions to ensure such conditions while using classical Maximum Likelihood approach</li>
-<li>Classical Maximum Likelihood is less computationally intensive than the CML</li>
+<li>Classical Maximum Likelihood is less computationally intensive than CML</li>
 </ul></li>
 </ul>
 </section></section>
