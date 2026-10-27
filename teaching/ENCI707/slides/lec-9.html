@@ -182,7 +182,7 @@
 </div><div class="column" style="width:40%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="../../../assets/images/teaching/ENCI707/Lecture6/choice_bundle1.svg" class="quarto-figure quarto-figure-center"></p>
+<p><img data-src="../../../assets/images/teaching/ENCI707/Lecture9/choice_bundle1.svg" class="quarto-figure quarto-figure-center"></p>
 </figure>
 </div>
 </div></div>
@@ -206,7 +206,7 @@
 </div><div class="column" style="width:40%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="../../../assets/images/teaching/ENCI707/Lecture6/choice_bundle2.svg" class="quarto-figure quarto-figure-center"></p>
+<p><img data-src="../../../assets/images/teaching/ENCI707/Lecture9/choice_bundle2.svg" class="quarto-figure quarto-figure-center"></p>
 </figure>
 </div>
 </div></div>
@@ -251,13 +251,13 @@
 <li>Choose destination</li>
 <li>Then choose mode, given (<strong>conditional upon</strong>) the destination choice</li>
 </ul></li>
-<li>Sequentially modelling the choices of alternatives step by step <img data-src="../../../assets/images/teaching/ENCI707/Lecture6/sequential_logit.svg" class="quarto-figure quarto-figure-center"></li>
+<li>Sequentially modelling the choices of alternatives step by step <img data-src="../../../assets/images/teaching/ENCI707/Lecture9/sequential_logit.svg" class="quarto-figure quarto-figure-center"></li>
 </ul>
 </section>
 <section id="sequential-logit-model-of-choice-bundle-2" class="slide level2 smaller">
 <h2>Sequential Logit Model of Choice Bundle</h2>
 
-<img data-src="../../../assets/images/teaching/ENCI707/Lecture6/sequential_logit.svg" class="quarto-figure quarto-figure-center r-stretch"><p><span class="math display">\[Pr(d) = \frac{\exp(V_d)}{\sum_{d' \in D} \exp(V_d')} \text{; } Pr(m|d) = \frac{\exp(V_{m|d})}{\sum_{m' \in M} \exp(V_{m'|d})}\]</span></p>
+<img data-src="../../../assets/images/teaching/ENCI707/Lecture9/sequential_logit.svg" class="quarto-figure quarto-figure-center r-stretch"><p><span class="math display">\[Pr(d) = \frac{\exp(V_d)}{\sum_{d' \in D} \exp(V_d')} \text{; } Pr(m|d) = \frac{\exp(V_{m|d})}{\sum_{m' \in M} \exp(V_{m'|d})}\]</span></p>
 <ul>
 <li>Joint probability of choice <span class="math display">\[Pr(md) = \frac{\exp(V_d)}{\sum_{d' \in D} \exp(V_d')}\frac{\exp(V_{m|d})}{\sum_{m' \in M} \exp(V_{m'|d})}\]</span> <span class="math display">\[Pr(md) = \frac{\exp(V_d + V_{m|d})}{\sum_{d' \in D} \exp(V_d') \sum_{m' \in M} \exp(V_{m'|d})}\]</span></li>
 </ul>
@@ -290,7 +290,7 @@
 <ul>
 <li>Restructure the <strong>sequential decisions</strong> into a finite number of alternative pairs</li>
 <li>Alternative pairs are <strong>mutually exclusive</strong> and <strong>collectively exhaustive:</strong> single discrete choice case</li>
-<li>The example of mode(m) and destination(d) choice: <img data-src="../../../assets/images/teaching/ENCI707/Lecture6/simultaneous_logit1.svg" class="quarto-figure quarto-figure-center"> <span class="math display">\[Pr(md) = \frac{\exp(V_d + V_{m|d})}{\sum_{d' \in D}\sum_{m' \in M} \exp(V_{d'} + V_{m'|d})}\]</span></li>
+<li>The example of mode(m) and destination(d) choice: <img data-src="../../../assets/images/teaching/ENCI707/Lecture9/simultaneous_logit1.svg" class="quarto-figure quarto-figure-center"> <span class="math display">\[Pr(md) = \frac{\exp(V_d + V_{m|d})}{\sum_{d' \in D}\sum_{m' \in M} \exp(V_{d'} + V_{m'|d})}\]</span></li>
 </ul>
 </section>
 <section id="simultaneous-logit-model-of-choice-bundle-2" class="slide level2 smaller">
@@ -317,7 +317,7 @@
 <section id="simultaneous-logit-model-of-choice-bundle-5" class="slide level2 smaller">
 <h2>Simultaneous Logit Model of Choice Bundle</h2>
 <ul>
-<li>Unlike sequential model, simultaneous model incorporates expectations of conditional level utility at the conditioning levels: <img data-src="../../../assets/images/teaching/ENCI707/Lecture6/simultaneous_logit2.svg" class="quarto-figure quarto-figure-center"></li>
+<li>Unlike sequential model, simultaneous model incorporates expectations of conditional level utility at the conditioning levels: <img data-src="../../../assets/images/teaching/ENCI707/Lecture9/simultaneous_logit2.svg" class="quarto-figure quarto-figure-center"></li>
 <li>Systematic utility of destination choice: <span class="math display">\[\widetilde{V_d} = V_d + \text{{Expected Maximum Utility of choice of mode}}_d\]</span></li>
 <li>Scale parameters are same (unity) at both levels</li>
 </ul>
@@ -337,7 +337,7 @@
 </section>
 <section id="nested-logit-model" class="slide level2" style="font-size: 0.65em;">
 <h2>Nested Logit Model</h2>
-<p><img data-src="../../../assets/images/teaching/ENCI707/Lecture6/nested_logit1.svg" class="quarto-figure quarto-figure-center"> <span class="math display">\[U_{m|d} = V_{m|d} + \epsilon_{m|d} \text{ (Lower-level conditional utility function)}\]</span> <span class="math display">\[\begin{align}
+<p><img data-src="../../../assets/images/teaching/ENCI707/Lecture9/nested_logit1.svg" class="quarto-figure quarto-figure-center"> <span class="math display">\[U_{m|d} = V_{m|d} + \epsilon_{m|d} \text{ (Lower-level conditional utility function)}\]</span> <span class="math display">\[\begin{align}
 U_{d} = V_d + (V_{m|d} + \epsilon_{m|d}) + \epsilon_d = \widetilde{V_d} + \epsilon_d &amp; \text{ (Upper-level unconditional} \\
 &amp; \text{utility function for a pair of d-m)}
 \end{align}\]</span> <span class="math display">\[\begin{align}
@@ -395,11 +395,11 @@ U_{d} = V_d + (V_{m|d} + \epsilon_{m|d}) + \epsilon_d = \widetilde{V_d} + \epsil
 <section id="nested-logit-model-elasticities" class="slide level2 smaller">
 <h2>Nested Logit Model: Elasticities</h2>
 
-<img data-src="../../../assets/images/teaching/ENCI707/Lecture6/nested_logit2.svg" class="quarto-figure quarto-figure-center r-stretch"></section>
+<img data-src="../../../assets/images/teaching/ENCI707/Lecture9/nested_logit2.svg" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="nested-logit-model-elasticities-1" class="slide level2 smaller">
 <h2>Nested Logit Model: Elasticities</h2>
 
-<img data-src="../../../assets/images/teaching/ENCI707/Lecture6/nested_logit_elasticity.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<img data-src="../../../assets/images/teaching/ENCI707/Lecture9/nested_logit_elasticity.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="nested-logit" class="slide level2 smaller">
 <h2>Nested Logit</h2>
 <ul>
@@ -432,7 +432,7 @@ U_{d} = V_d + (V_{m|d} + \epsilon_{m|d}) + \epsilon_d = \widetilde{V_d} + \epsil
 <li><strong>Consider a route choice problem</strong>: In network, multiple alternative routes having common link will have correlated properties.</li>
 <li><strong>Example</strong>: 2 routes with <strong>no partial overlap</strong>. Under equilibrium, both have the same average travel time: <span class="math inline">\(t_1=t_2=t\)</span></li>
 <li>Consider: systematic utility of choosing a route: <span class="math inline">\(V_r=V_1=V_2=-t\)</span></li>
-<li>Logit choice probability: <span class="math display">\[Pr(route1) = Pr(route2) = \frac{\exp(V_1)}{\exp(V_1)+\exp(V_2)} = \frac{\exp(-t)}{\exp(-t)+\exp(-t)} = 0.5\]</span> <img data-src="../../../assets/images/teaching/ENCI707/Lecture6/route_choice1.svg" class="quarto-figure quarto-figure-center" style="width:30.0%"></li>
+<li>Logit choice probability: <span class="math display">\[Pr(route1) = Pr(route2) = \frac{\exp(V_1)}{\exp(V_1)+\exp(V_2)} = \frac{\exp(-t)}{\exp(-t)+\exp(-t)} = 0.5\]</span> <img data-src="../../../assets/images/teaching/ENCI707/Lecture9/route_choice1.svg" class="quarto-figure quarto-figure-center" style="width:30.0%"></li>
 </ul>
 </section>
 <section id="iid-and-nested-logit-model-1" class="slide level2 smaller">
@@ -441,7 +441,7 @@ U_{d} = V_d + (V_{m|d} + \epsilon_{m|d}) + \epsilon_d = \widetilde{V_d} + \epsil
 <li>Add a 3rd route that has <strong>partial overlap with route 2</strong></li>
 <li>Under equilibrium, all have the same average travel time: <span class="math inline">\(t_1=t_2=t_3=t\)</span></li>
 <li>Consider: systematic utility of choosing a route: <span class="math inline">\(V_1=V_2=V_3=-t\)</span></li>
-<li>Logit choice probability: <span class="math display">\[Pr(routeX) = \frac{\exp(V_X)}{\exp(V_1)+\exp(V_2)+\exp(V_3)} = \frac{\exp(-t)}{\exp(-t)+\exp(-t)+\exp(-t)} = 0.33\]</span> <img data-src="../../../assets/images/teaching/ENCI707/Lecture6/route_choice2.svg" class="quarto-figure quarto-figure-center" style="width:30.0%"></li>
+<li>Logit choice probability: <span class="math display">\[Pr(routeX) = \frac{\exp(V_X)}{\exp(V_1)+\exp(V_2)+\exp(V_3)} = \frac{\exp(-t)}{\exp(-t)+\exp(-t)+\exp(-t)} = 0.33\]</span> <img data-src="../../../assets/images/teaching/ENCI707/Lecture9/route_choice2.svg" class="quarto-figure quarto-figure-center" style="width:30.0%"></li>
 <li>Route 2 and 3 are very similar!</li>
 </ul>
 </section>
@@ -458,7 +458,7 @@ U_{d} = V_d + (V_{m|d} + \epsilon_{m|d}) + \epsilon_d = \widetilde{V_d} + \epsil
 <li>Normalizing <span class="math inline">\(\mu_1 = 1\)</span> and defining <span class="math inline">\(\phi=1/\mu_2\)</span></li>
 </ul>
 </div><div class="column" style="width:30%;">
-<p><img data-src="../../../assets/images/teaching/ENCI707/Lecture6/route_choice2.svg" class="quarto-figure quarto-figure-center" style="width:90.0%"> <br><br><br><br><br><br> <img data-src="../../../assets/images/teaching/ENCI707/Lecture6/route_choice3.svg" class="quarto-figure quarto-figure-center" style="width:80.0%"></p>
+<p><img data-src="../../../assets/images/teaching/ENCI707/Lecture9/route_choice2.svg" class="quarto-figure quarto-figure-center" style="width:90.0%"> <br><br><br><br><br><br> <img data-src="../../../assets/images/teaching/ENCI707/Lecture9/route_choice3.svg" class="quarto-figure quarto-figure-center" style="width:80.0%"></p>
 </div></div>
 </section>
 <section id="iid-and-nested-logit-model-3" class="slide level2" style="font-size: 0.65em;">
@@ -478,7 +478,7 @@ U_{d} = V_d + (V_{m|d} + \epsilon_{m|d}) + \epsilon_d = \widetilde{V_d} + \epsil
 </div><div class="column" style="width:25%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="../../../assets/images/teaching/ENCI707/Lecture6/route_choice3.svg" class="quarto-figure quarto-figure-center" style="width:85.0%"></p>
+<p><img data-src="../../../assets/images/teaching/ENCI707/Lecture9/route_choice3.svg" class="quarto-figure quarto-figure-center" style="width:85.0%"></p>
 </figure>
 </div>
 </div></div>
@@ -493,7 +493,7 @@ U_{d} = V_d + (V_{m|d} + \epsilon_{m|d}) + \epsilon_d = \widetilde{V_d} + \epsil
 <section id="nested-logit-to-address-iia" class="slide level2 smaller">
 <h2>Nested Logit to Address IIA</h2>
 
-<img data-src="../../../assets/images/teaching/ENCI707/Lecture6/nested_logit3.svg" class="quarto-figure quarto-figure-center r-stretch"><p>Variance-Covariance Matrix of Utility Functions (assuming unit scale) <span class="math display">\[\frac{\pi^2}{6}
+<img data-src="../../../assets/images/teaching/ENCI707/Lecture9/nested_logit3.svg" class="quarto-figure quarto-figure-center r-stretch"><p>Variance-Covariance Matrix of Utility Functions (assuming unit scale) <span class="math display">\[\frac{\pi^2}{6}
 \begin{bmatrix}
 1 &amp; \cdots &amp; 0 \\
 \vdots &amp; \ddots &amp; \vdots \\
@@ -503,7 +503,7 @@ U_{d} = V_d + (V_{m|d} + \epsilon_{m|d}) + \epsilon_d = \widetilde{V_d} + \epsil
 <section id="nested-logit-to-address-iia-1" class="slide level2 smaller">
 <h2>Nested Logit to Address IIA</h2>
 
-<img data-src="../../../assets/images/teaching/ENCI707/Lecture6/nested_logit4.svg" class="quarto-figure quarto-figure-center r-stretch"></section>
+<img data-src="../../../assets/images/teaching/ENCI707/Lecture9/nested_logit4.svg" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="nested-logit-to-address-iia-2" class="slide level2 smaller">
 <h2>Nested Logit to Address IIA</h2>
 <span class="math display">\[\begin{bmatrix}
@@ -521,7 +521,7 @@ U_{d} = V_d + (V_{m|d} + \epsilon_{m|d}) + \epsilon_d = \widetilde{V_d} + \epsil
 <section id="nested-logit-to-address-iia-3" class="slide level2 smaller">
 <h2>Nested Logit to Address IIA</h2>
 
-<img data-src="../../../assets/images/teaching/ENCI707/Lecture6/nested_logit5.svg" class="quarto-figure quarto-figure-center r-stretch"></section>
+<img data-src="../../../assets/images/teaching/ENCI707/Lecture9/nested_logit5.svg" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="nested-logit-to-address-iia-4" class="slide level2" style="font-size: 0.65em;">
 <h2>Nested Logit to Address IIA</h2>
 <p><span class="math display">\[\begin{align}
@@ -582,15 +582,15 @@ U_{d} = V_d + (V_{m|d} + \epsilon_{m|d}) + \epsilon_d = \widetilde{V_d} + \epsil
 <section id="section" class="slide level2">
 <h2></h2>
 
-<img data-src="../../../assets/images/teaching/ENCI707/Lecture6/nested_logit_paper1.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<img data-src="../../../assets/images/teaching/ENCI707/Lecture9/nested_logit_paper1.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="section-1" class="slide level2">
 <h2></h2>
 
-<img data-src="../../../assets/images/teaching/ENCI707/Lecture6/nested_logit_paper2.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<img data-src="../../../assets/images/teaching/ENCI707/Lecture9/nested_logit_paper2.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="section-2" class="slide level2">
 <h2></h2>
 
-<img data-src="../../../assets/images/teaching/ENCI707/Lecture6/nested_logit_paper3.png" class="quarto-figure quarto-figure-center r-stretch"></section></section>
+<img data-src="../../../assets/images/teaching/ENCI707/Lecture9/nested_logit_paper3.png" class="quarto-figure quarto-figure-center r-stretch"></section></section>
 <section>
 <section id="introduction-to-gev" class="title-slide slide level1 center">
 <h1>Introduction to GEV</h1>
