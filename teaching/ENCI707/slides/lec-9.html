@@ -6,8 +6,8 @@
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.8.25">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.6.39">
 
   <title>Hawkinslab – Lecture 9 - Advanced Choice Models</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -28,7 +28,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../../../site_libs/revealjs/dist/theme/quarto-0fde88a82f0356838740f155f1088782.css">
+  <link rel="stylesheet" href="../../../site_libs/revealjs/dist/theme/quarto-423d414d36ce366a9d05f36d06304417.css">
   <link href="../../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -137,6 +137,7 @@
 </section>
 <section id="outline" class="slide level2 smaller">
 <h2>Outline</h2>
+<div>
 <ol type="1">
 <li class="fragment">Choice bundle</li>
 <li class="fragment">Sequential logit model</li>
@@ -154,6 +155,7 @@
 <li class="fragment">MNL/NL as GEV models</li>
 <li class="fragment">Introduction to mixed logit</li>
 </ol>
+</div>
 </section>
 <section>
 <section id="discrete-choice-of-choice-bundles" class="title-slide slide level1 center">
@@ -174,7 +176,7 @@
 <li>Different <strong>substitution patterns</strong> may exist in three components of shopping trip choice</li>
 <li>Overall, a <strong>single discrete choice</strong> but multiple components of choices
 <ul>
-<li>Individual component have no meaning</li>
+<li>Individual components have no meaning</li>
 </ul></li>
 </ul>
 </div><div class="column" style="width:40%;">
@@ -198,7 +200,7 @@
 <li>Different <strong>substitution patterns</strong> may exist between choices of modes as well as between alternative Park &amp; Ride station locations</li>
 <li>Overall, a <strong>single discrete choice</strong> but <strong>multiple components of choices</strong>
 <ul>
-<li>Individual component have no meaning</li>
+<li>Individual components have no meaning</li>
 </ul></li>
 </ul>
 </div><div class="column" style="width:40%;">
@@ -255,7 +257,10 @@
 <section id="sequential-logit-model-of-choice-bundle-2" class="slide level2 smaller">
 <h2>Sequential Logit Model of Choice Bundle</h2>
 
-<img data-src="../../../assets/images/teaching/ENCI707/Lecture6/sequential_logit.svg" class="quarto-figure quarto-figure-center r-stretch"><p><span class="math display">\[Pr(d) = \frac{\exp(V_d)}{\sum_{d' \in D} \exp(V_d')} \text{; } Pr(m|d) = \frac{\exp(V_{m|d})}{\sum_{m' \in M} \exp(V_{m'|d})}\]</span> - Joint probability of choice <span class="math display">\[Pr(md) = \frac{\exp(V_d)}{\sum_{d' \in D} \exp(V_d') \sum_{m' \in M} \exp(V_{m'|d})}\frac{\exp(V_{m|d})}{\sum_{m' \in M} \exp(V_{m'|d})}\]</span> <span class="math display">\[Pr(md) = \frac{\exp(V_d + V_{m|d})}{\sum_{d' \in D} \exp(V_d') \sum_{m' \in M} \exp(V_{m'|d})}\]</span></p>
+<img data-src="../../../assets/images/teaching/ENCI707/Lecture6/sequential_logit.svg" class="quarto-figure quarto-figure-center r-stretch"><p><span class="math display">\[Pr(d) = \frac{\exp(V_d)}{\sum_{d' \in D} \exp(V_d')} \text{; } Pr(m|d) = \frac{\exp(V_{m|d})}{\sum_{m' \in M} \exp(V_{m'|d})}\]</span></p>
+<ul>
+<li>Joint probability of choice <span class="math display">\[Pr(md) = \frac{\exp(V_d)}{\sum_{d' \in D} \exp(V_d') \sum_{m' \in M} \exp(V_{m'|d})}\frac{\exp(V_{m|d})}{\sum_{m' \in M} \exp(V_{m'|d})}\]</span> <span class="math display">\[Pr(md) = \frac{\exp(V_d + V_{m|d})}{\sum_{d' \in D} \exp(V_d') \sum_{m' \in M} \exp(V_{m'|d})}\]</span></li>
+</ul>
 </section>
 <section id="sequential-logit-model-of-choice-bundle-3" class="slide level2 smaller">
 <h2>Sequential Logit Model of Choice Bundle</h2>
@@ -639,14 +644,18 @@ U_{d} = V_d + (V_{m|d} + \epsilon_{m|d}) + \epsilon_d = \widetilde{V_d} + \epsil
 <li><span class="math inline">\(G(y)\ge 0\)</span> for any argument, <span class="math inline">\(𝑦\)</span></li>
 <li><span class="math inline">\(G(y)\)</span> is homogenous of degree <span class="math inline">\(D &gt;0\)</span>. This means <span class="math inline">\(G(\alpha y_1,\alpha y_2,\cdots,\alpha y_J) = \alpha^D G(y_1,y_2,\cdots,y_J)\)</span> for <span class="math inline">\(\alpha&gt;0\)</span></li>
 <li><span class="math inline">\(\lim_{y_j-&gt;\infty} G(y_1,y_2,\cdots,y_J)=+\infty\)</span> for <span class="math inline">\(j=1,2,\cdots,J\)</span></li>
-<li>Cross partial derivatives exists and are continuous. Signs change in a particular way:<br>
+<li>Cross partial derivatives exist and are continuous. Signs change in a particular way:<br>
 <span class="math display">\[G_j(\cdots)=\frac{\partial G(\cdots)}{\partial y_j}&gt;0 \text{ for all }j\]</span> <span class="math display">\[G_{jk} = \frac{G_j(\cdots)}{\partial y_k} \le 0 \text{ for }j \neq k \text{; } G_{jkl}(\cdots) = \frac{\partial G_{jk}(\cdots)}{\partial y_l} \ge 0 \text{ for distinctive j,k,l}\]</span></li>
 </ol></li>
 </ul>
 </section>
 <section id="generalized-extreme-value-gev-model" class="slide level2 smaller">
 <h2>Generalized Extreme Value (GEV) Model</h2>
-<p><span class="math display">\[Pr(j|C_i) = \int_{\epsilon_j=-\infty}^{+\infty} F\left((V_j-V_1+\epsilon_j) \cdots \epsilon_j \cdots (V_j - V_k + \epsilon_j)  \right) d \epsilon_j\]</span> - Using GEV generating function <span class="math display">\[F(y_1, \cdots, y_j, \cdots, y_k) = \exp(-G(e^{-y_1},\cdots,e^{-y_j},\cdots, e^{-y_k}))\]</span> <span class="math display">\[F(y_1, \cdots, y_j, \cdots, y_k) = \partial F(\cdots)/\partial y_j\]</span> <span class="math display">\[F(y_1, \cdots, y_j, \cdots, y_k) = \exp \left(-G(e^{-y_1},\cdots, e^{-y_k})e^{-y_j}G_j(e^{-y_1},\cdots, e^{-y_k})\right)\]</span> - Applying Euler’s formula and homogeneity conditions in <span class="math inline">\(F_j(\cdots)\)</span> of the integral of <span class="math inline">\(Pr(j)\)</span>, results in a closed form function: <span class="math display">\[Pr(j|C_i) = \frac{e^{V_j}G_j(e^{V_1},\cdots,e^{V_j,\cdots e^{V_k}})}{G(e^{V_1},\cdots,e^{V_j},\cdots e^{V_k})}\]</span></p>
+<p><span class="math display">\[Pr(j|C_i) = \int_{\epsilon_j=-\infty}^{+\infty} F\left((V_j-V_1+\epsilon_j) \cdots \epsilon_j \cdots (V_j - V_k + \epsilon_j)  \right) d \epsilon_j\]</span></p>
+<ul>
+<li><p>Using GEV generating function <span class="math display">\[F(y_1, \cdots, y_j, \cdots, y_k) = \exp(-G(e^{-y_1},\cdots,e^{-y_j},\cdots, e^{-y_k}))\]</span> <span class="math display">\[F(y_1, \cdots, y_j, \cdots, y_k) = \partial F(\cdots)/\partial y_j\]</span> <span class="math display">\[F(y_1, \cdots, y_j, \cdots, y_k) = \exp \left(-G(e^{-y_1},\cdots, e^{-y_k})e^{-y_j}G_j(e^{-y_1},\cdots, e^{-y_k})\right)\]</span></p></li>
+<li><p>Applying Euler’s formula and homogeneity conditions in <span class="math inline">\(F_j(\cdots)\)</span> of the integral of <span class="math inline">\(Pr(j)\)</span>, results in a closed form function: <span class="math display">\[Pr(j|C_i) = \frac{e^{V_j}G_j(e^{V_1},\cdots,e^{V_j,\cdots e^{V_k}})}{G(e^{V_1},\cdots,e^{V_j},\cdots e^{V_k})}\]</span></p></li>
+</ul>
 </section>
 <section id="generalized-extreme-value-gev-model-1" class="slide level2" style="font-size: 0.65em;">
 <h2>Generalized Extreme Value (GEV) Model</h2>
@@ -655,7 +664,7 @@ U_{d} = V_d + (V_{m|d} + \epsilon_{m|d}) + \epsilon_d = \widetilde{V_d} + \epsil
 </ul>
 <p><span class="math display">\[Pr(j|C_i) = \frac{e^{V_j}G_j(e^{V_1},\cdots,e^{V_j,\cdots e^{V_k}})}{G(e^{V_1},\cdots,e^{V_j,\cdots e^{V_k}})}\]</span></p>
 <ul>
-<li><p>The general formulation of Choice Probability of a GEV model based on the GEV generating function <span class="math display">\[Pr(j) = \frac{y_j G_j(\cdots)}{DG(\cdots)} \text{; D is a degree of homogeneity &amp; }y_j \text{ is argument, }e^{V_j} \text{ above}\]</span></p></li>
+<li><p>The general formulation of Choice Probability of a GEV model based on the GEV generating function <span class="math display">\[Pr(j) = \frac{y_j G_j(\cdots)}{DG(\cdots)} \text{; D is a degree of homogeneity &amp; }y_j \text{ is argument }e^{V_j} \text{ above}\]</span></p></li>
 <li><p>Expected Maximum Utility of the GEV model generated by the <span class="math inline">\(G(\cdots)\)</span> function: <span class="math display">\[\overline{U} = \frac{1}{D} (\ln(G(\cdots)) + \gamma \text{; }\gamma \text{ is Euler's constant &amp; D is homogeneity degree defined by scale parameter} \]</span> <span class="math display">\[Pr(j) = \frac{\partial \overline{U}}{\partial y_j} = \frac{y_j \partial G(\cdots)/\partial y_j}{DG(\cdots)}\]</span></p></li>
 </ul>
 </section>
@@ -663,7 +672,8 @@ U_{d} = V_d + (V_{m|d} + \epsilon_{m|d}) + \epsilon_d = \widetilde{V_d} + \epsil
 <h2>Generalized Extreme Value (GEV) Model</h2>
 <p><span class="math display">\[Pr(j|C_i) = \frac{y_j G_j(y_1,\cdots,y_k)}{D G(y_1,\cdots, y_k)}\]</span></p>
 <ul>
-<li>GEV mode is the most flexible closed-form model that can capture a wide variety of choice models: For different generating function, different choice model can arise. MNL and NL are special cases of the GEV model</li>
+<li>GEV mode is the most flexible closed-form model that can capture a wide variety of choice models: For different generating functions, different choice models can arise.</li>
+<li>MNL and NL are special cases of the GEV model</li>
 <li>Other GEV models: Network GEV, Cross-nested Logit, Paired-Combinatorial Logit etc. for the <span class="math inline">\(G(\cdots)\)</span> function with degree, <span class="math inline">\(\mu\)</span></li>
 </ul>
 </section>
@@ -915,7 +925,7 @@ U_{d} = V_d + (V_{m|d} + \epsilon_{m|d}) + \epsilon_d = \widetilde{V_d} + \epsil
         margin: 0.1,
 
         math: {
-          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
@@ -942,173 +952,190 @@ U_{d} = V_d + (V_{m|d} + \epsilon_{m|d}) + \epsilon_d = \widetilde{V_d} + \epsil
       });
     </script>
     <script id="quarto-html-after-body" type="application/javascript">
-      window.document.addEventListener("DOMContentLoaded", function (event) {
-        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
-        tabsets.forEach(function(tabset) {
-          const tabby = new Tabby('#' + tabset.id);
-        });
-        const isCodeAnnotation = (el) => {
-          for (const clz of el.classList) {
-            if (clz.startsWith('code-annotation-')) {                     
-              return true;
-            }
-          }
-          return false;
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      const toggleBodyColorMode = (bsSheetEl) => {
+        const mode = bsSheetEl.getAttribute("data-mode");
+        const bodyEl = window.document.querySelector("body");
+        if (mode === "dark") {
+          bodyEl.classList.add("quarto-dark");
+          bodyEl.classList.remove("quarto-light");
+        } else {
+          bodyEl.classList.add("quarto-light");
+          bodyEl.classList.remove("quarto-dark");
         }
-        const onCopySuccess = function(e) {
-          // button target
-          const button = e.trigger;
-          // don't keep focus
-          button.blur();
-          // flash "checked"
-          button.classList.add('code-copy-button-checked');
-          var currentTitle = button.getAttribute("title");
-          button.setAttribute("title", "Copied!");
-          let tooltip;
-          if (window.bootstrap) {
-            button.setAttribute("data-bs-toggle", "tooltip");
-            button.setAttribute("data-bs-placement", "left");
-            button.setAttribute("data-bs-title", "Copied!");
-            tooltip = new bootstrap.Tooltip(button, 
-              { trigger: "manual", 
-                customClass: "code-copy-button-tooltip",
-                offset: [0, -8]});
-            tooltip.show();    
-          }
-          setTimeout(function() {
-            if (tooltip) {
-              tooltip.hide();
-              button.removeAttribute("data-bs-title");
-              button.removeAttribute("data-bs-toggle");
-              button.removeAttribute("data-bs-placement");
-            }
-            button.setAttribute("title", currentTitle);
-            button.classList.remove('code-copy-button-checked');
-          }, 1000);
-          // clear code selection
-          e.clearSelection();
+      }
+      const toggleBodyColorPrimary = () => {
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
         }
-        const getTextToCopy = function(trigger) {
-          const outerScaffold = trigger.parentElement.cloneNode(true);
-          const codeEl = outerScaffold.querySelector('code');
+      }
+      toggleBodyColorPrimary();  
+      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+      tabsets.forEach(function(tabset) {
+        const tabby = new Tabby('#' + tabset.id);
+      });
+      const isCodeAnnotation = (el) => {
+        for (const clz of el.classList) {
+          if (clz.startsWith('code-annotation-')) {                     
+            return true;
+          }
+        }
+        return false;
+      }
+      const onCopySuccess = function(e) {
+        // button target
+        const button = e.trigger;
+        // don't keep focus
+        button.blur();
+        // flash "checked"
+        button.classList.add('code-copy-button-checked');
+        var currentTitle = button.getAttribute("title");
+        button.setAttribute("title", "Copied!");
+        let tooltip;
+        if (window.bootstrap) {
+          button.setAttribute("data-bs-toggle", "tooltip");
+          button.setAttribute("data-bs-placement", "left");
+          button.setAttribute("data-bs-title", "Copied!");
+          tooltip = new bootstrap.Tooltip(button, 
+            { trigger: "manual", 
+              customClass: "code-copy-button-tooltip",
+              offset: [0, -8]});
+          tooltip.show();    
+        }
+        setTimeout(function() {
+          if (tooltip) {
+            tooltip.hide();
+            button.removeAttribute("data-bs-title");
+            button.removeAttribute("data-bs-toggle");
+            button.removeAttribute("data-bs-placement");
+          }
+          button.setAttribute("title", currentTitle);
+          button.classList.remove('code-copy-button-checked');
+        }, 1000);
+        // clear code selection
+        e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
           for (const childEl of codeEl.children) {
             if (isCodeAnnotation(childEl)) {
               childEl.remove();
             }
           }
           return codeEl.innerText;
-        }
-        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-          text: getTextToCopy
-        });
-        clipboard.on('success', onCopySuccess);
-        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-            text: getTextToCopy,
-            container: window.document.getElementById('quarto-embedded-source-code-modal')
-          });
-          clipboardModal.on('success', onCopySuccess);
-        }
-          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-          var mailtoRegex = new RegExp(/^mailto:/);
-            var filterRegex = new RegExp("https:\/\/hawkins-tech-lab\.github\.io\/");
-          var isInternal = (href) => {
-              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-          }
-          // Inspect non-navigation links and adorn them if external
-         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-          for (var i=0; i<links.length; i++) {
-            const link = links[i];
-            if (!isInternal(link.href)) {
-              // undo the damage that might have been done by quarto-nav.js in the case of
-              // links that we want to consider external
-              if (link.dataset.originalHref !== undefined) {
-                link.href = link.dataset.originalHref;
-              }
-            }
-          }
-        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-          const config = {
-            allowHTML: true,
-            maxWidth: 500,
-            delay: 100,
-            arrow: false,
-            appendTo: function(el) {
-                return el.closest('section.slide') || el.parentElement;
-            },
-            interactive: true,
-            interactiveBorder: 10,
-            theme: 'light-border',
-            placement: 'bottom-start',
-          };
-          if (contentFn) {
-            config.content = contentFn;
-          }
-          if (onTriggerFn) {
-            config.onTrigger = onTriggerFn;
-          }
-          if (onUntriggerFn) {
-            config.onUntrigger = onUntriggerFn;
-          }
-            config['offset'] = [0,0];
-            config['maxWidth'] = 700;
-          window.tippy(el, config); 
-        }
-        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-        for (var i=0; i<noterefs.length; i++) {
-          const ref = noterefs[i];
-          tippyHover(ref, function() {
-            // use id or data attribute instead here
-            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-            try { href = new URL(href).hash; } catch {}
-            const id = href.replace(/^#\/?/, "");
-            const note = window.document.getElementById(id);
-            if (note) {
-              return note.innerHTML;
-            } else {
-              return "";
-            }
-          });
-        }
-        const findCites = (el) => {
-          const parentEl = el.parentElement;
-          if (parentEl) {
-            const cites = parentEl.dataset.cites;
-            if (cites) {
-              return {
-                el,
-                cites: cites.split(' ')
-              };
-            } else {
-              return findCites(el.parentElement)
-            }
-          } else {
-            return undefined;
-          }
-        };
-        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-        for (var i=0; i<bibliorefs.length; i++) {
-          const ref = bibliorefs[i];
-          const citeInfo = findCites(ref);
-          if (citeInfo) {
-            tippyHover(citeInfo.el, function() {
-              var popup = window.document.createElement('div');
-              citeInfo.cites.forEach(function(cite) {
-                var citeDiv = window.document.createElement('div');
-                citeDiv.classList.add('hanging-indent');
-                citeDiv.classList.add('csl-entry');
-                var biblioDiv = window.document.getElementById('ref-' + cite);
-                if (biblioDiv) {
-                  citeDiv.innerHTML = biblioDiv.innerHTML;
-                }
-                popup.appendChild(citeDiv);
-              });
-              return popup.innerHTML;
-            });
-          }
-        }
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
       });
-      </script>
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp("https:\/\/hawkins-tech-lab\.github\.io\/");
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+        const config = {
+          allowHTML: true,
+          maxWidth: 500,
+          delay: 100,
+          arrow: false,
+          appendTo: function(el) {
+              return el.closest('section.slide') || el.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start',
+        };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
+          config['offset'] = [0,0];
+          config['maxWidth'] = 700;
+        window.tippy(el, config); 
+      }
+      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+      for (var i=0; i<noterefs.length; i++) {
+        const ref = noterefs[i];
+        tippyHover(ref, function() {
+          // use id or data attribute instead here
+          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+          try { href = new URL(href).hash; } catch {}
+          const id = href.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
+        });
+      }
+      const findCites = (el) => {
+        const parentEl = el.parentElement;
+        if (parentEl) {
+          const cites = parentEl.dataset.cites;
+          if (cites) {
+            return {
+              el,
+              cites: cites.split(' ')
+            };
+          } else {
+            return findCites(el.parentElement)
+          }
+        } else {
+          return undefined;
+        }
+      };
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const citeInfo = findCites(ref);
+        if (citeInfo) {
+          tippyHover(citeInfo.el, function() {
+            var popup = window.document.createElement('div');
+            citeInfo.cites.forEach(function(cite) {
+              var citeDiv = window.document.createElement('div');
+              citeDiv.classList.add('hanging-indent');
+              citeDiv.classList.add('csl-entry');
+              var biblioDiv = window.document.getElementById('ref-' + cite);
+              if (biblioDiv) {
+                citeDiv.innerHTML = biblioDiv.innerHTML;
+              }
+              popup.appendChild(citeDiv);
+            });
+            return popup.innerHTML;
+          });
+        }
+      }
+    });
+    </script>
     
 
 </body></html>
