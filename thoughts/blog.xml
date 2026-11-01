@@ -9,8 +9,8 @@
 <link>https://hawkins-tech-lab.github.io/thoughts/blog.html</link>
 <atom:link href="https://hawkins-tech-lab.github.io/thoughts/blog.xml" rel="self" type="application/rss+xml"/>
 <description>TECH lab website</description>
-<generator>quarto-1.6.39</generator>
-<lastBuildDate>Mon, 07 Sep 2026 06:00:00 GMT</lastBuildDate>
+<generator>quarto-1.10.20</generator>
+<lastBuildDate>Mon, 07 Sep 2026 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Group Camping Trip 2026</title>
   <dc:creator>Jason Hawkins</dc:creator>
@@ -50,7 +50,7 @@
   <category>Environment</category>
   <category>Community</category>
   <guid>https://hawkins-tech-lab.github.io/thoughts/posts/09-07-2026/</guid>
-  <pubDate>Mon, 07 Sep 2026 06:00:00 GMT</pubDate>
+  <pubDate>Mon, 07 Sep 2026 00:00:00 GMT</pubDate>
   <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/09-07-2026/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -75,7 +75,7 @@
   <category>philosophy of science</category>
   <category>research</category>
   <guid>https://hawkins-tech-lab.github.io/thoughts/posts/06-26-2026/</guid>
-  <pubDate>Fri, 26 Jun 2026 06:00:00 GMT</pubDate>
+  <pubDate>Fri, 26 Jun 2026 00:00:00 GMT</pubDate>
   <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/06-26-2026/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -211,7 +211,7 @@ Figure&nbsp;2: Green Line LRT Failure Fault Tree Analysis
   <category>fault trees</category>
   <category>deep uncertainty</category>
   <guid>https://hawkins-tech-lab.github.io/thoughts/posts/03-23-2026/</guid>
-  <pubDate>Mon, 23 Mar 2026 06:00:00 GMT</pubDate>
+  <pubDate>Mon, 23 Mar 2026 00:00:00 GMT</pubDate>
   <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/03-23-2026/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -254,7 +254,7 @@ Figure&nbsp;2: Green Line LRT Failure Fault Tree Analysis
   <category>Economics</category>
   <category>Surveys</category>
   <guid>https://hawkins-tech-lab.github.io/thoughts/posts/12-21-2025/</guid>
-  <pubDate>Sun, 21 Dec 2025 07:00:00 GMT</pubDate>
+  <pubDate>Sun, 21 Dec 2025 00:00:00 GMT</pubDate>
   <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/12-21-2025/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -276,7 +276,7 @@ Figure&nbsp;2: Green Line LRT Failure Fault Tree Analysis
  ]]></description>
   <category>ontology</category>
   <guid>https://hawkins-tech-lab.github.io/thoughts/posts/11-15-2025/</guid>
-  <pubDate>Sat, 15 Nov 2025 07:00:00 GMT</pubDate>
+  <pubDate>Sat, 15 Nov 2025 00:00:00 GMT</pubDate>
   <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/11-15-2025/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -334,7 +334,7 @@ Figure&nbsp;2: Green Line LRT Failure Fault Tree Analysis
   <category>History</category>
   <category>Complexity</category>
   <guid>https://hawkins-tech-lab.github.io/thoughts/posts/10-20-2025/</guid>
-  <pubDate>Mon, 20 Oct 2025 06:00:00 GMT</pubDate>
+  <pubDate>Mon, 20 Oct 2025 00:00:00 GMT</pubDate>
   <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/10-20-2025/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -357,7 +357,7 @@ Figure&nbsp;2: Green Line LRT Failure Fault Tree Analysis
   <category>Education</category>
   <category>Funding</category>
   <guid>https://hawkins-tech-lab.github.io/thoughts/posts/10-18-2025/</guid>
-  <pubDate>Sat, 18 Oct 2025 06:00:00 GMT</pubDate>
+  <pubDate>Sat, 18 Oct 2025 00:00:00 GMT</pubDate>
   <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/10-18-2025/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -382,7 +382,7 @@ Figure&nbsp;2: Green Line LRT Failure Fault Tree Analysis
   <category>Production</category>
   <category>Consumption</category>
   <guid>https://hawkins-tech-lab.github.io/thoughts/posts/10-17-2025/</guid>
-  <pubDate>Fri, 17 Oct 2025 06:00:00 GMT</pubDate>
+  <pubDate>Fri, 17 Oct 2025 00:00:00 GMT</pubDate>
   <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/10-17-2025/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -409,7 +409,7 @@ Figure&nbsp;2: Green Line LRT Failure Fault Tree Analysis
   <category>Pedagogy</category>
   <category>AI</category>
   <guid>https://hawkins-tech-lab.github.io/thoughts/posts/06-23-2025/</guid>
-  <pubDate>Mon, 23 Jun 2025 06:00:00 GMT</pubDate>
+  <pubDate>Mon, 23 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/06-23-2025/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -436,7 +436,7 @@ Figure&nbsp;2: Green Line LRT Failure Fault Tree Analysis
   <category>Value</category>
   <category>Axioms</category>
   <guid>https://hawkins-tech-lab.github.io/thoughts/posts/06-17-2025/</guid>
-  <pubDate>Tue, 17 Jun 2025 06:00:00 GMT</pubDate>
+  <pubDate>Tue, 17 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/06-17-2025/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -462,7 +462,7 @@ Figure&nbsp;2: Green Line LRT Failure Fault Tree Analysis
   <category>Choice models</category>
   <category>Location</category>
   <guid>https://hawkins-tech-lab.github.io/thoughts/posts/06-11-2025/</guid>
-  <pubDate>Wed, 11 Jun 2025 06:00:00 GMT</pubDate>
+  <pubDate>Wed, 11 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/06-11-2025/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -490,7 +490,7 @@ Figure&nbsp;2: Green Line LRT Failure Fault Tree Analysis
   <category>Ecology</category>
   <category>Philosophy</category>
   <guid>https://hawkins-tech-lab.github.io/thoughts/posts/06-02-2025/</guid>
-  <pubDate>Mon, 02 Jun 2025 06:00:00 GMT</pubDate>
+  <pubDate>Mon, 02 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/06-02-2025/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -516,7 +516,7 @@ Figure&nbsp;2: Green Line LRT Failure Fault Tree Analysis
   <category>Marx</category>
   <category>Capitalism</category>
   <guid>https://hawkins-tech-lab.github.io/thoughts/posts/05-28-2025/</guid>
-  <pubDate>Wed, 28 May 2025 06:00:00 GMT</pubDate>
+  <pubDate>Wed, 28 May 2025 00:00:00 GMT</pubDate>
   <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/05-28-2025/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -539,7 +539,7 @@ Figure&nbsp;2: Green Line LRT Failure Fault Tree Analysis
   <category>architecture</category>
   <category>land use planning</category>
   <guid>https://hawkins-tech-lab.github.io/thoughts/posts/05-14-2025/</guid>
-  <pubDate>Wed, 14 May 2025 06:00:00 GMT</pubDate>
+  <pubDate>Wed, 14 May 2025 00:00:00 GMT</pubDate>
   <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/05-14-2025/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -561,7 +561,7 @@ Figure&nbsp;2: Green Line LRT Failure Fault Tree Analysis
  ]]></description>
   <category>environmental philosophy</category>
   <guid>https://hawkins-tech-lab.github.io/thoughts/posts/05-13-2025/</guid>
-  <pubDate>Tue, 13 May 2025 06:00:00 GMT</pubDate>
+  <pubDate>Tue, 13 May 2025 00:00:00 GMT</pubDate>
   <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/05-13-2025/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -582,7 +582,7 @@ Figure&nbsp;2: Green Line LRT Failure Fault Tree Analysis
  ]]></description>
   <category>ecological economics</category>
   <guid>https://hawkins-tech-lab.github.io/thoughts/posts/04-29-2025/</guid>
-  <pubDate>Tue, 29 Apr 2025 06:00:00 GMT</pubDate>
+  <pubDate>Tue, 29 Apr 2025 00:00:00 GMT</pubDate>
   <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/04-29-2025/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -820,7 +820,7 @@ Figure&nbsp;2: Green Line LRT Failure Fault Tree Analysis
   <category>travel</category>
   <category>infrastructure</category>
   <guid>https://hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/</guid>
-  <pubDate>Thu, 16 Jan 2025 07:00:00 GMT</pubDate>
+  <pubDate>Thu, 16 Jan 2025 00:00:00 GMT</pubDate>
   <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/01-16-2025/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -842,7 +842,7 @@ Figure&nbsp;2: Green Line LRT Failure Fault Tree Analysis
  ]]></description>
   <category>development economics</category>
   <guid>https://hawkins-tech-lab.github.io/thoughts/posts/10-29-2024/</guid>
-  <pubDate>Tue, 29 Oct 2024 06:00:00 GMT</pubDate>
+  <pubDate>Tue, 29 Oct 2024 00:00:00 GMT</pubDate>
   <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/10-29-2024/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -866,7 +866,7 @@ Figure&nbsp;2: Green Line LRT Failure Fault Tree Analysis
   <category>metascience</category>
   <category>roads in woods</category>
   <guid>https://hawkins-tech-lab.github.io/thoughts/posts/07-30-2024/</guid>
-  <pubDate>Tue, 30 Jul 2024 06:00:00 GMT</pubDate>
+  <pubDate>Tue, 30 Jul 2024 00:00:00 GMT</pubDate>
   <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/07-30-2024/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -892,7 +892,7 @@ Figure&nbsp;2: Green Line LRT Failure Fault Tree Analysis
  ]]></description>
   <category>climate modeling</category>
   <guid>https://hawkins-tech-lab.github.io/thoughts/posts/07-01-2024/</guid>
-  <pubDate>Mon, 01 Jul 2024 06:00:00 GMT</pubDate>
+  <pubDate>Mon, 01 Jul 2024 00:00:00 GMT</pubDate>
   <media:content url="https://hawkins-tech-lab.github.io/thoughts/posts/07-01-2024/banner.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
