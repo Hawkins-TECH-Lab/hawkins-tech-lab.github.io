@@ -6,8 +6,8 @@
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-17888a1159294d3eb470f19f6f52f5a5.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.10.20">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.8.25">
 
   <title>Hawkinslab – Lecture 10 - Causal Inference Theory</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -16,16 +16,10 @@
   <link rel="stylesheet" href="../../../site_libs/revealjs/dist/reset.css">
   <link rel="stylesheet" href="../../../site_libs/revealjs/dist/reveal.css">
   <style>
-    /* Default styles provided by pandoc.
-    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-    */
+    code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: 1.5em;}
-    div.column{flex: auto;}
-    @media screen {
-    div.columns{gap: min(4vw, 1.5em);}
-    div.column{overflow-x: auto;}
-    }
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
     ul.task-list li input[type="checkbox"] {
@@ -34,7 +28,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../../../site_libs/revealjs/dist/theme/quarto-0427d8d92a431aa6a6430e53ec02a470.css">
+  <link rel="stylesheet" href="../../../site_libs/revealjs/dist/theme/quarto-0fde88a82f0356838740f155f1088782.css">
   <link href="../../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -434,14 +428,13 @@
 </ul>
 </div></div>
 </section>
+<section>
 <section id="directed-acyclic-graphs-dags" class="title-slide slide level1 center">
 <h1>Directed Acyclic Graphs (DAGs)</h1>
 
 </section>
-
-<section>
-<section id="representing-causal-inference-via-dags" class="title-slide slide level1 smaller center">
-<h1>Representing Causal Inference Via DAGs</h1>
+<section id="causal-inference-via-dags" class="slide level2 smaller">
+<h2>Causal Inference Via DAGs</h2>
 <ul>
 <li>Visual representation of assumptions</li>
 <li>More complex confounder example:</li>
@@ -692,11 +685,34 @@
 <section id="simpsons-paradox-1" class="slide level2 smaller">
 <h2>Simpson’s Paradox</h2>
 <ul>
-<li><p>Within both groups, transit use is actually <strong>lower</strong> in TODs</p></li>
-<li><p>Why? Transit enthusiasts disproportionately choose TODs</p></li>
-<li><p>E.g., | Group | TOD | Non-TOD | | ——————- | –: | ——: | | Transit enthusiasts | 90% | 10% | | Drivers | 10% | 90% |</p></li>
-<li><p><strong>Problem:</strong> aggregate comparison is mostly comparing transit enthusiasts against drivers (not TOD against non-TOD) - confounding with transit preference!</p></li>
-<li><p>Simpson’s paradox is what happens when we compare the wrong groups</p></li>
+<li>Within both groups, transit use is actually <strong>lower</strong> in TODs</li>
+<li>Why? Transit enthusiasts disproportionately choose TODs</li>
+<li>E.g.,</li>
+</ul>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Group</th>
+<th style="text-align: right;">TOD</th>
+<th style="text-align: right;">Non-TOD</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Transit enthusiasts</td>
+<td style="text-align: right;">90%</td>
+<td style="text-align: right;">10%</td>
+</tr>
+<tr class="even">
+<td>Drivers</td>
+<td style="text-align: right;">10%</td>
+<td style="text-align: right;">90%</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Problem:</strong> aggregate comparison is mostly comparing transit enthusiasts against drivers (not TOD against non-TOD) - confounding with transit preference!</li>
+<li>Simpson’s paradox is what happens when we compare the wrong groups</li>
 </ul>
 </section>
 <section id="causal-inference-example-omega-3-fatty-acids" class="slide level2 smaller">
@@ -799,7 +815,7 @@
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="../../../assets/images/teaching/ENCI707/logo.png" class="slide-logo"></p>
 <div class="footer footer-default">
-<p><a href="../../../teaching/ENCI707/">ENCI707 Home</a></p>
+<p><a href="../../..\teaching/ENCI707/">ENCI707 Home</a></p>
 </div>
 </div></div>
 

@@ -6,8 +6,8 @@
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-17888a1159294d3eb470f19f6f52f5a5.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.10.20">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.8.25">
 
   <title>Hawkinslab – Lecture 7 - Trip Assignment</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -16,16 +16,10 @@
   <link rel="stylesheet" href="../../../site_libs/revealjs/dist/reset.css">
   <link rel="stylesheet" href="../../../site_libs/revealjs/dist/reveal.css">
   <style>
-    /* Default styles provided by pandoc.
-    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-    */
+    code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: 1.5em;}
-    div.column{flex: auto;}
-    @media screen {
-    div.columns{gap: min(4vw, 1.5em);}
-    div.column{overflow-x: auto;}
-    }
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
     ul.task-list li input[type="checkbox"] {
@@ -100,7 +94,7 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="../../../site_libs/revealjs/dist/theme/quarto-0427d8d92a431aa6a6430e53ec02a470.css">
+  <link rel="stylesheet" href="../../../site_libs/revealjs/dist/theme/quarto-0fde88a82f0356838740f155f1088782.css">
   <link href="../../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -198,8 +192,11 @@
   <script src="../../../site_libs/quarto-diagram/mermaid-init.js"></script>
   <link href="../../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
+
   
+
   <script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -1539,94 +1536,94 @@ t_0((1+a-ab)+ab(\frac{v}{c})), \frac{v}{c} &gt; 1
 <section id="three-route-example---solution" class="slide level2 smaller">
 <h2>Three Route Example - Solution</h2>
 <p>We’ll start by creating a Pandas dataframe to store the iteration variables</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-code-line-numbers="5-15"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a aria-label="1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb1-2"><a aria-label="2"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb1-3"><a aria-label="3"></a><span class="im">from</span> scipy.optimize <span class="im">import</span> minimize_scalar</span>
-<span id="cb1-4"><a aria-label="4"></a></span>
-<span id="cb1-5"><a aria-label="5"></a>df <span class="op">=</span> pd.DataFrame({<span class="st">"f1"</span>: pd.Series(dtype<span class="op">=</span><span class="st">'float'</span>),</span>
-<span id="cb1-6"><a aria-label="6"></a>                  <span class="st">"f2"</span>: pd.Series(dtype<span class="op">=</span><span class="st">'float'</span>),</span>
-<span id="cb1-7"><a aria-label="7"></a>                  <span class="st">"f3"</span>: pd.Series(dtype<span class="op">=</span><span class="st">'float'</span>),</span>
-<span id="cb1-8"><a aria-label="8"></a>                  <span class="st">"V1"</span>: pd.Series(dtype<span class="op">=</span><span class="st">'float'</span>),</span>
-<span id="cb1-9"><a aria-label="9"></a>                  <span class="st">"V2"</span>: pd.Series(dtype<span class="op">=</span><span class="st">'float'</span>),</span>
-<span id="cb1-10"><a aria-label="10"></a>                  <span class="st">"V3"</span>: pd.Series(dtype<span class="op">=</span><span class="st">'float'</span>),</span>
-<span id="cb1-11"><a aria-label="11"></a>                  <span class="st">"F1"</span>: pd.Series(dtype<span class="op">=</span><span class="st">'float'</span>),</span>
-<span id="cb1-12"><a aria-label="12"></a>                  <span class="st">"F2"</span>: pd.Series(dtype<span class="op">=</span><span class="st">'float'</span>),</span>
-<span id="cb1-13"><a aria-label="13"></a>                  <span class="st">"F3"</span>: pd.Series(dtype<span class="op">=</span><span class="st">'float'</span>),</span>
-<span id="cb1-14"><a aria-label="14"></a>                  <span class="st">"F"</span>: pd.Series(dtype<span class="op">=</span><span class="st">'float'</span>),</span>
-<span id="cb1-15"><a aria-label="15"></a>                  <span class="st">"lambda"</span>: pd.Series(dtype<span class="op">=</span><span class="st">'float'</span>)})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-code-line-numbers="5-15"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-3"><a></a><span class="im">from</span> scipy.optimize <span class="im">import</span> minimize_scalar</span>
+<span id="cb1-4"><a></a></span>
+<span id="cb1-5"><a></a>df <span class="op">=</span> pd.DataFrame({<span class="st">"f1"</span>: pd.Series(dtype<span class="op">=</span><span class="st">'float'</span>),</span>
+<span id="cb1-6"><a></a>                  <span class="st">"f2"</span>: pd.Series(dtype<span class="op">=</span><span class="st">'float'</span>),</span>
+<span id="cb1-7"><a></a>                  <span class="st">"f3"</span>: pd.Series(dtype<span class="op">=</span><span class="st">'float'</span>),</span>
+<span id="cb1-8"><a></a>                  <span class="st">"V1"</span>: pd.Series(dtype<span class="op">=</span><span class="st">'float'</span>),</span>
+<span id="cb1-9"><a></a>                  <span class="st">"V2"</span>: pd.Series(dtype<span class="op">=</span><span class="st">'float'</span>),</span>
+<span id="cb1-10"><a></a>                  <span class="st">"V3"</span>: pd.Series(dtype<span class="op">=</span><span class="st">'float'</span>),</span>
+<span id="cb1-11"><a></a>                  <span class="st">"F1"</span>: pd.Series(dtype<span class="op">=</span><span class="st">'float'</span>),</span>
+<span id="cb1-12"><a></a>                  <span class="st">"F2"</span>: pd.Series(dtype<span class="op">=</span><span class="st">'float'</span>),</span>
+<span id="cb1-13"><a></a>                  <span class="st">"F3"</span>: pd.Series(dtype<span class="op">=</span><span class="st">'float'</span>),</span>
+<span id="cb1-14"><a></a>                  <span class="st">"F"</span>: pd.Series(dtype<span class="op">=</span><span class="st">'float'</span>),</span>
+<span id="cb1-15"><a></a>                  <span class="st">"lambda"</span>: pd.Series(dtype<span class="op">=</span><span class="st">'float'</span>)})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="three-route-example---solution-1" class="slide level2 smaller">
 <h2>Three Route Example - Solution</h2>
 <p>We can then define the inputs to the traffic assignment algorithm.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a aria-label="1"></a><span class="co"># Specify the freeflow travel times/capacities</span></span>
-<span id="cb2-2"><a aria-label="2"></a>ff_tt_1 <span class="op">=</span> <span class="dv">10</span></span>
-<span id="cb2-3"><a aria-label="3"></a>ff_tt_2 <span class="op">=</span> <span class="dv">20</span></span>
-<span id="cb2-4"><a aria-label="4"></a>ff_tt_3 <span class="op">=</span> <span class="dv">25</span></span>
-<span id="cb2-5"><a aria-label="5"></a>C1 <span class="op">=</span> <span class="dv">200</span></span>
-<span id="cb2-6"><a aria-label="6"></a>C2 <span class="op">=</span> <span class="dv">400</span></span>
-<span id="cb2-7"><a aria-label="7"></a>C3 <span class="op">=</span> <span class="dv">300</span></span>
-<span id="cb2-8"><a aria-label="8"></a></span>
-<span id="cb2-9"><a aria-label="9"></a>volume <span class="op">=</span> <span class="dv">1000</span> <span class="co"># veh/hr</span></span>
-<span id="cb2-10"><a aria-label="10"></a>min_tt <span class="op">=</span> np.<span class="bu">min</span>([ff_tt_1, ff_tt_2, ff_tt_3]) <span class="co"># minimum travel time</span></span>
-<span id="cb2-11"><a aria-label="11"></a></span>
-<span id="cb2-12"><a aria-label="12"></a><span class="co"># Define the volumes on each link (1,2, and 3)</span></span>
-<span id="cb2-13"><a aria-label="13"></a>V1 <span class="op">=</span> volume <span class="cf">if</span> (ff_tt_1<span class="op">==</span>min_tt) <span class="cf">else</span> <span class="dv">0</span></span>
-<span id="cb2-14"><a aria-label="14"></a>V2 <span class="op">=</span> volume <span class="cf">if</span> (ff_tt_2<span class="op">==</span>min_tt) <span class="cf">else</span> <span class="dv">0</span></span>
-<span id="cb2-15"><a aria-label="15"></a>V3 <span class="op">=</span> volume <span class="cf">if</span> (ff_tt_3<span class="op">==</span>min_tt) <span class="cf">else</span> <span class="dv">0</span></span>
-<span id="cb2-16"><a aria-label="16"></a></span>
-<span id="cb2-17"><a aria-label="17"></a><span class="co"># Define total costs as integrals of travel time costs over volume</span></span>
-<span id="cb2-18"><a aria-label="18"></a>F1 <span class="op">=</span> ff_tt_1<span class="op">*</span>V1 <span class="op">+</span> ff_tt_1<span class="op">*</span><span class="fl">0.15</span><span class="op">/</span>C1<span class="op">**</span><span class="dv">4</span><span class="op">*</span>V1<span class="op">**</span><span class="dv">5</span><span class="op">/</span><span class="dv">5</span> </span>
-<span id="cb2-19"><a aria-label="19"></a>F2 <span class="op">=</span> ff_tt_2<span class="op">*</span>V2 <span class="op">+</span> ff_tt_2<span class="op">*</span><span class="fl">0.15</span><span class="op">/</span>C2<span class="op">**</span><span class="dv">4</span><span class="op">*</span>V2<span class="op">**</span><span class="dv">5</span><span class="op">/</span><span class="dv">5</span></span>
-<span id="cb2-20"><a aria-label="20"></a>F3 <span class="op">=</span> ff_tt_3<span class="op">*</span>V3 <span class="op">+</span> ff_tt_3<span class="op">*</span><span class="fl">0.15</span><span class="op">/</span>C3<span class="op">**</span><span class="dv">4</span><span class="op">*</span>V3<span class="op">**</span><span class="dv">5</span><span class="op">/</span><span class="dv">5</span></span>
-<span id="cb2-21"><a aria-label="21"></a>F <span class="op">=</span> F1 <span class="op">+</span> F2 <span class="op">+</span> F3</span>
-<span id="cb2-22"><a aria-label="22"></a></span>
-<span id="cb2-23"><a aria-label="23"></a>l <span class="op">=</span> <span class="fl">1.0</span> <span class="co"># intialize lambda to 1.0</span></span>
-<span id="cb2-24"><a aria-label="24"></a>tol <span class="op">=</span> <span class="dv">10</span><span class="op">**-</span><span class="dv">2</span> <span class="co"># tolerance on the difference in total cost between iterations</span></span>
-<span id="cb2-25"><a aria-label="25"></a></span>
-<span id="cb2-26"><a aria-label="26"></a>row <span class="op">=</span> [ff_tt_1, ff_tt_2, ff_tt_3, V1, V2, V3, F1, F2, F3, F, l]</span>
-<span id="cb2-27"><a aria-label="27"></a>df.loc[<span class="bu">len</span>(df),:] <span class="op">=</span> row <span class="co"># add initial values to df</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a></a><span class="co"># Specify the freeflow travel times/capacities</span></span>
+<span id="cb2-2"><a></a>ff_tt_1 <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb2-3"><a></a>ff_tt_2 <span class="op">=</span> <span class="dv">20</span></span>
+<span id="cb2-4"><a></a>ff_tt_3 <span class="op">=</span> <span class="dv">25</span></span>
+<span id="cb2-5"><a></a>C1 <span class="op">=</span> <span class="dv">200</span></span>
+<span id="cb2-6"><a></a>C2 <span class="op">=</span> <span class="dv">400</span></span>
+<span id="cb2-7"><a></a>C3 <span class="op">=</span> <span class="dv">300</span></span>
+<span id="cb2-8"><a></a></span>
+<span id="cb2-9"><a></a>volume <span class="op">=</span> <span class="dv">1000</span> <span class="co"># veh/hr</span></span>
+<span id="cb2-10"><a></a>min_tt <span class="op">=</span> np.<span class="bu">min</span>([ff_tt_1, ff_tt_2, ff_tt_3]) <span class="co"># minimum travel time</span></span>
+<span id="cb2-11"><a></a></span>
+<span id="cb2-12"><a></a><span class="co"># Define the volumes on each link (1,2, and 3)</span></span>
+<span id="cb2-13"><a></a>V1 <span class="op">=</span> volume <span class="cf">if</span> (ff_tt_1<span class="op">==</span>min_tt) <span class="cf">else</span> <span class="dv">0</span></span>
+<span id="cb2-14"><a></a>V2 <span class="op">=</span> volume <span class="cf">if</span> (ff_tt_2<span class="op">==</span>min_tt) <span class="cf">else</span> <span class="dv">0</span></span>
+<span id="cb2-15"><a></a>V3 <span class="op">=</span> volume <span class="cf">if</span> (ff_tt_3<span class="op">==</span>min_tt) <span class="cf">else</span> <span class="dv">0</span></span>
+<span id="cb2-16"><a></a></span>
+<span id="cb2-17"><a></a><span class="co"># Define total costs as integrals of travel time costs over volume</span></span>
+<span id="cb2-18"><a></a>F1 <span class="op">=</span> ff_tt_1<span class="op">*</span>V1 <span class="op">+</span> ff_tt_1<span class="op">*</span><span class="fl">0.15</span><span class="op">/</span>C1<span class="op">**</span><span class="dv">4</span><span class="op">*</span>V1<span class="op">**</span><span class="dv">5</span><span class="op">/</span><span class="dv">5</span> </span>
+<span id="cb2-19"><a></a>F2 <span class="op">=</span> ff_tt_2<span class="op">*</span>V2 <span class="op">+</span> ff_tt_2<span class="op">*</span><span class="fl">0.15</span><span class="op">/</span>C2<span class="op">**</span><span class="dv">4</span><span class="op">*</span>V2<span class="op">**</span><span class="dv">5</span><span class="op">/</span><span class="dv">5</span></span>
+<span id="cb2-20"><a></a>F3 <span class="op">=</span> ff_tt_3<span class="op">*</span>V3 <span class="op">+</span> ff_tt_3<span class="op">*</span><span class="fl">0.15</span><span class="op">/</span>C3<span class="op">**</span><span class="dv">4</span><span class="op">*</span>V3<span class="op">**</span><span class="dv">5</span><span class="op">/</span><span class="dv">5</span></span>
+<span id="cb2-21"><a></a>F <span class="op">=</span> F1 <span class="op">+</span> F2 <span class="op">+</span> F3</span>
+<span id="cb2-22"><a></a></span>
+<span id="cb2-23"><a></a>l <span class="op">=</span> <span class="fl">1.0</span> <span class="co"># intialize lambda to 1.0</span></span>
+<span id="cb2-24"><a></a>tol <span class="op">=</span> <span class="dv">10</span><span class="op">**-</span><span class="dv">2</span> <span class="co"># tolerance on the difference in total cost between iterations</span></span>
+<span id="cb2-25"><a></a></span>
+<span id="cb2-26"><a></a>row <span class="op">=</span> [ff_tt_1, ff_tt_2, ff_tt_3, V1, V2, V3, F1, F2, F3, F, l]</span>
+<span id="cb2-27"><a></a>df.loc[<span class="bu">len</span>(df),:] <span class="op">=</span> row <span class="co"># add initial values to df</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="three-route-example---solution-2" class="slide level2 smaller">
 <h2>Three Route Example - Solution</h2>
 <p>Next we define the Frank-Wolfe algorithm and solve for <span class="math inline">\(\lambda\)</span> using <code>scipy optimize minimize_scalar</code>. The first step is to define a loop that repeatedly calls the minimization on a new set of volumes. We define the Frank-Wolfe algorithm and solve for <span class="math inline">\(\lambda\)</span> using <code>scipy optimize minimize_scalar</code>. The next step is to define the optimization problem. We’ll define the optimization in two functions: <code>get_optimal_vals</code> calculates the various values we need in each iteration and <code>FW_Alg</code> defines the function to be minized by <code>scipy optimize minimize_scalar</code>.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3" data-code-line-numbers="26-38|2-4|7-22"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a aria-label="1"></a><span class="co"># Apply the Frank-Wolfe algorithm on the example dataset</span></span>
-<span id="cb3-2"><a aria-label="2"></a><span class="kw">def</span> FW_Alg(x, prev_iter):</span>
-<span id="cb3-3"><a aria-label="3"></a>  f1, f2, f3, V1, V2, V3, F1, F2, F3 <span class="op">=</span> get_optimal_vals(x, prev_iter)</span>
-<span id="cb3-4"><a aria-label="4"></a>  <span class="cf">return</span> (F1 <span class="op">+</span> F2 <span class="op">+</span> F3)</span>
-<span id="cb3-5"><a aria-label="5"></a></span>
-<span id="cb3-6"><a aria-label="6"></a><span class="co"># Function computes the various traffic assignment algorithm values at optimality</span></span>
-<span id="cb3-7"><a aria-label="7"></a><span class="kw">def</span> get_optimal_vals(x, prev_iter):</span>
-<span id="cb3-8"><a aria-label="8"></a>  f1 <span class="op">=</span> ff_tt_1<span class="op">*</span>(<span class="dv">1</span><span class="op">+</span><span class="fl">0.15</span><span class="op">*</span>(prev_iter[<span class="st">"V1"</span>]<span class="op">/</span>C1)<span class="op">**</span><span class="dv">4</span>)</span>
-<span id="cb3-9"><a aria-label="9"></a>  f2 <span class="op">=</span> ff_tt_2<span class="op">*</span>(<span class="dv">1</span><span class="op">+</span><span class="fl">0.15</span><span class="op">*</span>(prev_iter[<span class="st">"V2"</span>]<span class="op">/</span>C2)<span class="op">**</span><span class="dv">4</span>)</span>
-<span id="cb3-10"><a aria-label="10"></a>  f3 <span class="op">=</span> ff_tt_3<span class="op">*</span>(<span class="dv">1</span><span class="op">+</span><span class="fl">0.15</span><span class="op">*</span>(prev_iter[<span class="st">"V3"</span>]<span class="op">/</span>C3)<span class="op">**</span><span class="dv">4</span>)</span>
-<span id="cb3-11"><a aria-label="11"></a></span>
-<span id="cb3-12"><a aria-label="12"></a>  min_tt <span class="op">=</span> np.<span class="bu">min</span>([f1, f2, f3]) <span class="co"># minimum travel time</span></span>
-<span id="cb3-13"><a aria-label="13"></a></span>
-<span id="cb3-14"><a aria-label="14"></a>  V1 <span class="op">=</span> x<span class="op">*</span>prev_iter[<span class="st">"V1"</span>] <span class="op">+</span> (<span class="dv">1</span><span class="op">-</span>x)<span class="op">*</span>(volume <span class="cf">if</span> f1<span class="op">==</span>min_tt <span class="cf">else</span> <span class="dv">0</span>)</span>
-<span id="cb3-15"><a aria-label="15"></a>  V2 <span class="op">=</span> x<span class="op">*</span>prev_iter[<span class="st">"V2"</span>] <span class="op">+</span> (<span class="dv">1</span><span class="op">-</span>x)<span class="op">*</span>(volume <span class="cf">if</span> f2<span class="op">==</span>min_tt <span class="cf">else</span> <span class="dv">0</span>)</span>
-<span id="cb3-16"><a aria-label="16"></a>  V3 <span class="op">=</span> x<span class="op">*</span>prev_iter[<span class="st">"V3"</span>] <span class="op">+</span> (<span class="dv">1</span><span class="op">-</span>x)<span class="op">*</span>(volume <span class="cf">if</span> f3<span class="op">==</span>min_tt <span class="cf">else</span> <span class="dv">0</span>)</span>
-<span id="cb3-17"><a aria-label="17"></a></span>
-<span id="cb3-18"><a aria-label="18"></a>  F1 <span class="op">=</span> ff_tt_1<span class="op">*</span>V1 <span class="op">+</span> ff_tt_1<span class="op">*</span><span class="fl">0.15</span><span class="op">/</span>C1<span class="op">**</span><span class="dv">4</span><span class="op">*</span>V1<span class="op">**</span><span class="dv">5</span><span class="op">/</span><span class="dv">5</span></span>
-<span id="cb3-19"><a aria-label="19"></a>  F2 <span class="op">=</span> ff_tt_2<span class="op">*</span>V2 <span class="op">+</span> ff_tt_2<span class="op">*</span><span class="fl">0.15</span><span class="op">/</span>C2<span class="op">**</span><span class="dv">4</span><span class="op">*</span>V2<span class="op">**</span><span class="dv">5</span><span class="op">/</span><span class="dv">5</span></span>
-<span id="cb3-20"><a aria-label="20"></a>  F3 <span class="op">=</span> ff_tt_3<span class="op">*</span>V3 <span class="op">+</span> ff_tt_3<span class="op">*</span><span class="fl">0.15</span><span class="op">/</span>C3<span class="op">**</span><span class="dv">4</span><span class="op">*</span>V3<span class="op">**</span><span class="dv">5</span><span class="op">/</span><span class="dv">5</span></span>
-<span id="cb3-21"><a aria-label="21"></a></span>
-<span id="cb3-22"><a aria-label="22"></a>  <span class="cf">return</span> f1, f2, f3, V1, V2, V3, F1, F2, F3</span>
-<span id="cb3-23"><a aria-label="23"></a></span>
-<span id="cb3-24"><a aria-label="24"></a>F_diff <span class="op">=</span> F </span>
-<span id="cb3-25"><a aria-label="25"></a></span>
-<span id="cb3-26"><a aria-label="26"></a><span class="cf">while</span> F_diff <span class="op">&gt;</span> tol:</span>
-<span id="cb3-27"><a aria-label="27"></a>  F_diff <span class="op">=</span> F</span>
-<span id="cb3-28"><a aria-label="28"></a>  prev_iter <span class="op">=</span> df.iloc[<span class="op">-</span><span class="dv">1</span>] <span class="co"># Get the values from the last iteration</span></span>
-<span id="cb3-29"><a aria-label="29"></a></span>
-<span id="cb3-30"><a aria-label="30"></a>  res <span class="op">=</span> minimize_scalar(FW_Alg, args<span class="op">=</span>(prev_iter), bounds<span class="op">=</span>[<span class="dv">0</span>,<span class="dv">1</span>])</span>
-<span id="cb3-31"><a aria-label="31"></a>  F <span class="op">=</span> res.fun</span>
-<span id="cb3-32"><a aria-label="32"></a>  l <span class="op">=</span> res.x</span>
-<span id="cb3-33"><a aria-label="33"></a>  f1, f2, f3, V1, V2, V3, F1, F2, F3 <span class="op">=</span> get_optimal_vals(l, prev_iter)</span>
-<span id="cb3-34"><a aria-label="34"></a></span>
-<span id="cb3-35"><a aria-label="35"></a>  row <span class="op">=</span> [f1, f2, f3, V1, V2, V3, F1, F2, F3, F, l]</span>
-<span id="cb3-36"><a aria-label="36"></a>  df.loc[<span class="bu">len</span>(df),:] <span class="op">=</span> row</span>
-<span id="cb3-37"><a aria-label="37"></a></span>
-<span id="cb3-38"><a aria-label="38"></a>  F_diff <span class="op">=</span> F_diff <span class="op">-</span> F</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3" data-code-line-numbers="26-38|2-4|7-22"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a><span class="co"># Apply the Frank-Wolfe algorithm on the example dataset</span></span>
+<span id="cb3-2"><a></a><span class="kw">def</span> FW_Alg(x, prev_iter):</span>
+<span id="cb3-3"><a></a>  f1, f2, f3, V1, V2, V3, F1, F2, F3 <span class="op">=</span> get_optimal_vals(x, prev_iter)</span>
+<span id="cb3-4"><a></a>  <span class="cf">return</span> (F1 <span class="op">+</span> F2 <span class="op">+</span> F3)</span>
+<span id="cb3-5"><a></a></span>
+<span id="cb3-6"><a></a><span class="co"># Function computes the various traffic assignment algorithm values at optimality</span></span>
+<span id="cb3-7"><a></a><span class="kw">def</span> get_optimal_vals(x, prev_iter):</span>
+<span id="cb3-8"><a></a>  f1 <span class="op">=</span> ff_tt_1<span class="op">*</span>(<span class="dv">1</span><span class="op">+</span><span class="fl">0.15</span><span class="op">*</span>(prev_iter[<span class="st">"V1"</span>]<span class="op">/</span>C1)<span class="op">**</span><span class="dv">4</span>)</span>
+<span id="cb3-9"><a></a>  f2 <span class="op">=</span> ff_tt_2<span class="op">*</span>(<span class="dv">1</span><span class="op">+</span><span class="fl">0.15</span><span class="op">*</span>(prev_iter[<span class="st">"V2"</span>]<span class="op">/</span>C2)<span class="op">**</span><span class="dv">4</span>)</span>
+<span id="cb3-10"><a></a>  f3 <span class="op">=</span> ff_tt_3<span class="op">*</span>(<span class="dv">1</span><span class="op">+</span><span class="fl">0.15</span><span class="op">*</span>(prev_iter[<span class="st">"V3"</span>]<span class="op">/</span>C3)<span class="op">**</span><span class="dv">4</span>)</span>
+<span id="cb3-11"><a></a></span>
+<span id="cb3-12"><a></a>  min_tt <span class="op">=</span> np.<span class="bu">min</span>([f1, f2, f3]) <span class="co"># minimum travel time</span></span>
+<span id="cb3-13"><a></a></span>
+<span id="cb3-14"><a></a>  V1 <span class="op">=</span> x<span class="op">*</span>prev_iter[<span class="st">"V1"</span>] <span class="op">+</span> (<span class="dv">1</span><span class="op">-</span>x)<span class="op">*</span>(volume <span class="cf">if</span> f1<span class="op">==</span>min_tt <span class="cf">else</span> <span class="dv">0</span>)</span>
+<span id="cb3-15"><a></a>  V2 <span class="op">=</span> x<span class="op">*</span>prev_iter[<span class="st">"V2"</span>] <span class="op">+</span> (<span class="dv">1</span><span class="op">-</span>x)<span class="op">*</span>(volume <span class="cf">if</span> f2<span class="op">==</span>min_tt <span class="cf">else</span> <span class="dv">0</span>)</span>
+<span id="cb3-16"><a></a>  V3 <span class="op">=</span> x<span class="op">*</span>prev_iter[<span class="st">"V3"</span>] <span class="op">+</span> (<span class="dv">1</span><span class="op">-</span>x)<span class="op">*</span>(volume <span class="cf">if</span> f3<span class="op">==</span>min_tt <span class="cf">else</span> <span class="dv">0</span>)</span>
+<span id="cb3-17"><a></a></span>
+<span id="cb3-18"><a></a>  F1 <span class="op">=</span> ff_tt_1<span class="op">*</span>V1 <span class="op">+</span> ff_tt_1<span class="op">*</span><span class="fl">0.15</span><span class="op">/</span>C1<span class="op">**</span><span class="dv">4</span><span class="op">*</span>V1<span class="op">**</span><span class="dv">5</span><span class="op">/</span><span class="dv">5</span></span>
+<span id="cb3-19"><a></a>  F2 <span class="op">=</span> ff_tt_2<span class="op">*</span>V2 <span class="op">+</span> ff_tt_2<span class="op">*</span><span class="fl">0.15</span><span class="op">/</span>C2<span class="op">**</span><span class="dv">4</span><span class="op">*</span>V2<span class="op">**</span><span class="dv">5</span><span class="op">/</span><span class="dv">5</span></span>
+<span id="cb3-20"><a></a>  F3 <span class="op">=</span> ff_tt_3<span class="op">*</span>V3 <span class="op">+</span> ff_tt_3<span class="op">*</span><span class="fl">0.15</span><span class="op">/</span>C3<span class="op">**</span><span class="dv">4</span><span class="op">*</span>V3<span class="op">**</span><span class="dv">5</span><span class="op">/</span><span class="dv">5</span></span>
+<span id="cb3-21"><a></a></span>
+<span id="cb3-22"><a></a>  <span class="cf">return</span> f1, f2, f3, V1, V2, V3, F1, F2, F3</span>
+<span id="cb3-23"><a></a></span>
+<span id="cb3-24"><a></a>F_diff <span class="op">=</span> F </span>
+<span id="cb3-25"><a></a></span>
+<span id="cb3-26"><a></a><span class="cf">while</span> F_diff <span class="op">&gt;</span> tol:</span>
+<span id="cb3-27"><a></a>  F_diff <span class="op">=</span> F</span>
+<span id="cb3-28"><a></a>  prev_iter <span class="op">=</span> df.iloc[<span class="op">-</span><span class="dv">1</span>] <span class="co"># Get the values from the last iteration</span></span>
+<span id="cb3-29"><a></a></span>
+<span id="cb3-30"><a></a>  res <span class="op">=</span> minimize_scalar(FW_Alg, args<span class="op">=</span>(prev_iter), bounds<span class="op">=</span>[<span class="dv">0</span>,<span class="dv">1</span>])</span>
+<span id="cb3-31"><a></a>  F <span class="op">=</span> res.fun</span>
+<span id="cb3-32"><a></a>  l <span class="op">=</span> res.x</span>
+<span id="cb3-33"><a></a>  f1, f2, f3, V1, V2, V3, F1, F2, F3 <span class="op">=</span> get_optimal_vals(l, prev_iter)</span>
+<span id="cb3-34"><a></a></span>
+<span id="cb3-35"><a></a>  row <span class="op">=</span> [f1, f2, f3, V1, V2, V3, F1, F2, F3, F, l]</span>
+<span id="cb3-36"><a></a>  df.loc[<span class="bu">len</span>(df),:] <span class="op">=</span> row</span>
+<span id="cb3-37"><a></a></span>
+<span id="cb3-38"><a></a>  F_diff <span class="op">=</span> F_diff <span class="op">-</span> F</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="three-route-example---solution-3" class="slide level2 smaller">
 <h2>Three Route Example - Solution</h2>
@@ -1801,7 +1798,7 @@ t_0((1+a-ab)+ab(\frac{v}{c})), \frac{v}{c} &gt; 1
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="../images/logo.png" class="slide-logo"></p>
 <div class="footer footer-default">
-<p><a href="../../../teaching/CIVE461/">CIVE461 Home</a></p>
+<p><a href="../../..\teaching/CIVE461/">CIVE461 Home</a></p>
 </div>
 </div></div>
 
