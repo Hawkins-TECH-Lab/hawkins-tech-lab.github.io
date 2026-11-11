@@ -1,3 +1,34 @@
+- title: 'Residential Price Modeling using Spatially Validated Machine Learning Methods:
+    A Comparison Across Geographic Contexts'
+  description: Land use and transportation infrastructure are tightly linked systems,
+    and residential property prices play a central role in transportation planning.
+    Transportation investments also influence property values, making accurate forecasting
+    of both systems an interconnected research challenge. This study examines these
+    interactions and evaluates machine learning methods for modeling residential real
+    estate prices across contrasting urban contexts. We use XGBoost and Random Forest
+    models to assess how land use and transportation infrastructure shape dwelling
+    prices, comparing results between the Rawalpindi and Islamabad Metropolitan Area
+    in Pakistan and the City of Toronto in Canada. We also examine the performance
+    of machine learning models on spatial data by comparing nonspatial and spatial
+    cross validation, and use SHAP values to interpret feature impacts. Despite differences
+    in demographics and economic development, both cities show similar effects of
+    transportation infrastructure and local amenities on prices. Proximity to major
+    urban cores increases sale price, while high quality transit such as subway and
+    bus rapid transit raises prices and conventional bus stop proximity lowers them.
+    Nonspatial cross validation overestimates predictive accuracy for spatial datasets.
+    XGBoost performs slightly better than Random Forest. We recommend careful application
+    of machine learning methods when modeling spatially dependent land price data.
+  path: http://arxiv.org/abs/2609.00375v1
+  date: '2026-07-16'
+  categories:
+  - General Transport
+  - Infrastructure Finance
+  - Vehicle Adoption
+  author: Usman Ahmed, Jason Hawkins
+  pub_number: arXiv:2609.00375
+  journ: arXiv Preprint
+  year: '2026'
+  url_preprint: http://arxiv.org/abs/2609.00375v1
 - title: A Framework for Transportation and Land Use Integration as a Parallel Constrained
     Multiple Discrete-Continuous Extreme Value (PC-MDCEV) Home Production Model
   description: Integrated urban models (IUM) typically rely on a measure of accessibility
@@ -112,16 +143,16 @@
     to observable behaviors, (b) parallels to complementary behavioral theories from
     the transportation field, and (c) data requirements and comparative benchmarks
     against RUM/RRM models.'
-  path: http://arxiv.org/abs/2606.29145v1
+  path: http://arxiv.org/abs/2606.29145v2
   date: '2026-06-28'
   categories:
   - Choice Model Methods
   - General Transport
   author: Jason Hawkins, Omid Armantalab
-  pub_number: arXiv:2606.29145
+  pub_number: arXiv:2606.29145v2
   journ: arXiv Preprint
   year: '2026'
-  url_preprint: http://arxiv.org/abs/2606.29145v1
+  url_preprint: http://arxiv.org/abs/2606.29145v2
 - title: Multiscale Carbon Burden of Infrastructure in the United States
   description: 'Anthropogenic greenhouse gas (GHG) emissions vary spatially with development
     patterns, climate, economic structure, and energy systems. Using Vulcan v4.0 fossil-fuel
