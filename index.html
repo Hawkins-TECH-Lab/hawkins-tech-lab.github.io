@@ -40,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-370a8468b885aab1167a3ecb223a7384.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-4e3518cd56f73d8deb44248989103c32.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,6 +69,64 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-recent-pubs .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-date','listing-year','listing-journ','listing-page','listing-pub_number','listing-doi','listing-url_source','listing-categories','listing-type','listing-description','listing-volume','listing-issue','listing-arxiv','listing-url_preprint',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      page: 25,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-title","listing-author","listing-date","listing-year","listing-journ","listing-page","listing-pub_number","listing-doi","listing-url_source","listing-categories","listing-type","listing-description","listing-volume","listing-issue","listing-arxiv","listing-url_preprint"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-recent-pubs'] = new List('listing-recent-pubs', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-recent-posts .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-date','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      page: 18,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-recent-posts'] = new List('listing-recent-posts', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
     const listingTargetEl = window.document.querySelector('#listing-research .list');
@@ -166,16 +224,12 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-teaching">    
         <li>
-    <a class="dropdown-item" href="./teaching/CIVE461/index.html">
- <span class="dropdown-text">CIVE461/861</span></a>
-  </li>  
-        <li>
     <a class="dropdown-item" href="./teaching/ENCI707/index.html">
  <span class="dropdown-text">ENCI707</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./teaching/Guest Lectures/CIVE990T.html">
- <span class="dropdown-text">CIVE990T</span></a>
+    <a class="dropdown-item" href="./teaching/teaching.html">
+ <span class="dropdown-text">All courses</span></a>
   </li>  
     </ul>
   </li>
@@ -197,7 +251,7 @@ window.Quarto = {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="./index.xml"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="./thoughts/blog.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -242,15 +296,11 @@ window.Quarto = {
 <p>We take a broad view of land use to encompass the impacts of human activity on ecosystems, drawing on theory from ecological economics to develop microeconometric choice models that recognize the various constraints on consumption and time use.</p>
 <h2 id="transdisciplinary-scholarship" class="anchored">Transdisciplinary Scholarship</h2>
 <p>The TECH Group is a transdisciplinary research group that combines engineering and social science expertise to understanding the pressing issues facing cities and regions. With a core focus on transportation and land use interactions, the group develops methods and studies to provide sound policy and behavioural analysis to our partners.</p>
-<p>See the <a href="https://transdisciplinary.ucalgary.ca/">University of Calgary Transciplinary Research</a> website for more details.</p>
+<p>See the <a href="https://transdisciplinary.ucalgary.ca/">University of Calgary Transdisciplinary Research</a> website for more details.</p>
 <h2 id="research-areas" class="anchored">Research Areas</h2>
-
-
-
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-research">
+<div id="listing-research" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1787606114458" data-listing-reading-time-sort="1" data-listing-word-count-sort="83">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1795128173035" data-listing-reading-time-sort="1" data-listing-word-count-sort="83">
 <a href="./research/choice_methods/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -272,7 +322,7 @@ Choice modelling is a core method in our research. We develop discrete and discr
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1787606114458" data-listing-reading-time-sort="1" data-listing-word-count-sort="104">
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1795128173035" data-listing-reading-time-sort="1" data-listing-word-count-sort="104">
 <a href="./research/ecological_economics/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -294,7 +344,7 @@ The human economy exists within broader social and ecological environments. Whil
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1787606114458" data-listing-reading-time-sort="1" data-listing-word-count-sort="53">
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1795128173036" data-listing-reading-time-sort="1" data-listing-word-count-sort="53">
 <a href="./research/equity/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -316,7 +366,7 @@ Equity is an important aspect of any research that affects humans, or any other 
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1787606114458" data-listing-reading-time-sort="1" data-listing-word-count-sort="23">
+<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1795128173036" data-listing-reading-time-sort="1" data-listing-word-count-sort="23">
 <a href="./research/general_transport/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -338,7 +388,7 @@ Transportation engineering and planning is a core area of our research. We condu
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1787606114475" data-listing-reading-time-sort="1" data-listing-word-count-sort="26">
+<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1795128173036" data-listing-reading-time-sort="1" data-listing-word-count-sort="26">
 <a href="./research/infrastructure_finance/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -360,7 +410,7 @@ Infrastructure finance is a constantly evolving landscape. As the goals and comp
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="5" data-listing-file-modified-sort="1787606114476" data-listing-reading-time-sort="1" data-listing-word-count-sort="58">
+<div class="g-col-1" data-index="5" data-listing-file-modified-sort="1795128173037" data-listing-reading-time-sort="1" data-listing-word-count-sort="58">
 <a href="./research/shared_mobility/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -382,7 +432,7 @@ We define shared mobility as any form of transportation with a shared ownership 
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="6" data-listing-file-modified-sort="1787606114476" data-listing-reading-time-sort="1" data-listing-word-count-sort="74">
+<div class="g-col-1" data-index="6" data-listing-file-modified-sort="1795128173037" data-listing-reading-time-sort="1" data-listing-word-count-sort="74">
 <a href="./research/vehicle_adoption/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -408,7 +458,373 @@ Vehicle adoption is the study of household and firm decisions regarding the purc
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-</div></main> <!-- /main -->
+</div>
+<h2 id="recent-publications" class="anchored">Recent Publications</h2>
+<div id="listing-recent-pubs" class="quarto-listing quarto-listing-container-custom">
+<div class="list quarto-listing-default">
+    
+    
+    <div class="quarto-post image-right" data-index="0" data-categories="RXF1aXR5JTJDVmVoaWNsZSUyMEFkb3B0aW9u" data-listing-date-sort="1788220800000">
+        <div class="thumbnail">
+            <a href="https://doi.org/10.1080/12265934.2026.2724069">
+                
+                
+            </a>
+        </div> 
+        
+        <div class="body">
+            <a href="https://doi.org/10.1080/12265934.2026.2724069" class="no-anchor">
+                <div class="listing-pub-title listing-title">An EVSE equity analysis framework considering differential job access</div>
+            </a>
+            
+            <div class="listing-pub-author listing-author">
+                Donya Negahbani, Ben Aaron, Jason Hawkins<br> 
+            </div>
+            
+            <div class="metadata-value listing-pub-journal listing-publication">
+                
+                    <i>International Journal of Urban Sciences</i>, 1–27 (2026)<br>
+                
+            </div> 
+
+            
+            <div class="listing-categories">
+                
+                <span class="badge bg-light text-dark border me-1" onclick="window.quartoListingCategory('Equity'); return false;" style="cursor: pointer;">
+                    Equity
+                </span>
+                
+                <span class="badge bg-light text-dark border me-1" onclick="window.quartoListingCategory('Vehicle Adoption'); return false;" style="cursor: pointer;">
+                    Vehicle Adoption
+                </span>
+                
+            </div> 
+            
+        </div> 
+
+        <div class="metadata">
+            <div class="listing-pub-number">
+                doi:10.1080/12265934.2026.2724069<br> 
+            </div>
+
+            
+            <div class="listing-pub-url">
+                <a href="https://doi.org/10.1080/12265934.2026.2724069" style="color:#8250E6; text-decoration: none;">
+                    publisher <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+            </div> 
+            
+
+            
+        </div> 
+    </div> 
+    
+    
+    <div class="quarto-post image-right" data-index="1" data-categories="R2VuZXJhbCUyMFRyYW5zcG9ydA==" data-listing-date-sort="1787270400000">
+        <div class="thumbnail">
+            <a href="https://doi.org/10.18260/1-2--58889">
+                
+                
+            </a>
+        </div> 
+        
+        <div class="body">
+            <a href="https://doi.org/10.18260/1-2--58889" class="no-anchor">
+                <div class="listing-pub-title listing-title">Civil Engineering Students’ Perceptions of Public Sector Transportation Roles during Search for Full-Time Employment</div>
+            </a>
+            
+            <div class="listing-pub-author listing-author">
+                Gracie Kerr, Logan Perry, Elizabeth Jones, Jason Hawkins<br> 
+            </div>
+            
+            <div class="metadata-value listing-pub-journal listing-publication">
+                
+                    <i>ASEE Annual Conference &amp; Exposition</i> (2026)<br>
+                
+            </div> 
+
+            
+            <div class="listing-categories">
+                
+                <span class="badge bg-light text-dark border me-1" onclick="window.quartoListingCategory('General Transport'); return false;" style="cursor: pointer;">
+                    General Transport
+                </span>
+                
+            </div> 
+            
+        </div> 
+
+        <div class="metadata">
+            <div class="listing-pub-number">
+                doi:10.18260/1-2--58889<br> 
+            </div>
+
+            
+            <div class="listing-pub-url">
+                <a href="https://doi.org/10.18260/1-2--58889" style="color:#8250E6; text-decoration: none;">
+                    publisher <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+            </div> 
+            
+
+            
+        </div> 
+    </div> 
+    
+    
+    <div class="quarto-post image-right" data-index="2" data-categories="RWNvbG9naWNhbCUyMEVjb25vbWljcw==" data-listing-date-sort="1786665600000">
+        <div class="thumbnail">
+            <a href="https://doi.org/10.1038/s44333-026-00123-2">
+                
+                
+            </a>
+        </div> 
+        
+        <div class="body">
+            <a href="https://doi.org/10.1038/s44333-026-00123-2" class="no-anchor">
+                <div class="listing-pub-title listing-title">Multiscale carbon burden of infrastructure in the United States</div>
+            </a>
+            
+            <div class="listing-pub-author listing-author">
+                Jason Hawkins<br> 
+            </div>
+            
+            <div class="metadata-value listing-pub-journal listing-publication">
+                
+                    <i>npj Sustainable Mobility and Transport</i>, <b>3</b>(1) (2026)<br>
+                
+            </div> 
+
+            
+            <div class="listing-categories">
+                
+                <span class="badge bg-light text-dark border me-1" onclick="window.quartoListingCategory('Ecological Economics'); return false;" style="cursor: pointer;">
+                    Ecological Economics
+                </span>
+                
+            </div> 
+            
+        </div> 
+
+        <div class="metadata">
+            <div class="listing-pub-number">
+                doi:10.1038/s44333-026-00123-2<br> 
+            </div>
+
+            
+            <div class="listing-pub-url">
+                <a href="https://doi.org/10.1038/s44333-026-00123-2" style="color:#8250E6; text-decoration: none;">
+                    publisher <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+            </div> 
+            
+
+            
+            <div class="listing-pub-url">
+                <a href="https://arxiv.org/abs/2510.08611" style="color:#8250E6; text-decoration: none;">
+                    preprint <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+            </div> 
+            
+        </div> 
+    </div> 
+    
+    
+    <div class="quarto-post image-right" data-index="3" data-categories="R2VuZXJhbCUyMFRyYW5zcG9ydA==" data-listing-date-sort="1783123200000">
+        <div class="thumbnail">
+            <a href="https://doi.org/10.48550/arxiv.2607.03665">
+                
+                
+            </a>
+        </div> 
+        
+        <div class="body">
+            <a href="https://doi.org/10.48550/arxiv.2607.03665" class="no-anchor">
+                <div class="listing-pub-title listing-title">A Pseudo Panel Difference-in-Differences (DiD) Analysis of Online Shopping Behavior in the Puget Sound Regional Council (PSRC) Region</div>
+            </a>
+            
+            <div class="listing-pub-author listing-author">
+                Jason Hawkins, Usman Ahmed, Omid Armantalab<br> 
+            </div>
+            
+            <div class="metadata-value listing-pub-journal listing-publication">
+                
+                    <i>arXiv Preprint</i> (2026)<br>
+                
+            </div> 
+
+            
+            <div class="listing-categories">
+                
+                <span class="badge bg-light text-dark border me-1" onclick="window.quartoListingCategory('General Transport'); return false;" style="cursor: pointer;">
+                    General Transport
+                </span>
+                
+            </div> 
+            
+        </div> 
+
+        <div class="metadata">
+            <div class="listing-pub-number">
+                arXiv:2607.03665<br> 
+            </div>
+
+            
+
+            
+            <div class="listing-pub-url">
+                <a href="https://doi.org/10.48550/arxiv.2607.03665" style="color:#8250E6; text-decoration: none;">
+                    preprint <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+            </div> 
+            
+        </div> 
+    </div> 
+    
+    
+    <div class="quarto-post image-right" data-index="4" data-categories="R2VuZXJhbCUyMFRyYW5zcG9ydA==" data-listing-date-sort="1783036800000">
+        <div class="thumbnail">
+            <a href="https://doi.org/10.1177/03611981261457410">
+                
+                
+            </a>
+        </div> 
+        
+        <div class="body">
+            <a href="https://doi.org/10.1177/03611981261457410" class="no-anchor">
+                <div class="listing-pub-title listing-title">Residential Price Modeling Using Spatially Validated Machine Learning Methods: A Comparison Across Geographical Contexts</div>
+            </a>
+            
+            <div class="listing-pub-author listing-author">
+                Usman Ahmed, Jason Hawkins<br> 
+            </div>
+            
+            <div class="metadata-value listing-pub-journal listing-publication">
+                
+                    <i>Transportation Research Record Journal of the Transportation Research Board</i> (2026)<br>
+                
+            </div> 
+
+            
+            <div class="listing-categories">
+                
+                <span class="badge bg-light text-dark border me-1" onclick="window.quartoListingCategory('General Transport'); return false;" style="cursor: pointer;">
+                    General Transport
+                </span>
+                
+            </div> 
+            
+        </div> 
+
+        <div class="metadata">
+            <div class="listing-pub-number">
+                doi:10.1177/03611981261457410<br> 
+            </div>
+
+            
+            <div class="listing-pub-url">
+                <a href="https://doi.org/10.1177/03611981261457410" style="color:#8250E6; text-decoration: none;">
+                    publisher <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+            </div> 
+            
+
+            
+            <div class="listing-pub-url">
+                <a href="https://arxiv.org/abs/2609.00375" style="color:#8250E6; text-decoration: none;">
+                    preprint <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+            </div> 
+            
+        </div> 
+    </div> 
+    
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+<p><a href="./publications/index.html">All publications →</a></p>
+<h2 id="latest-from-the-blog" class="anchored">Latest from the Blog</h2>
+<div id="listing-recent-posts" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="RW52aXJvbm1lbnQlMkNDb21tdW5pdHk=" data-listing-date-sort="1788739200000" data-listing-file-modified-sort="1795128173362" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="697">
+<a href="./thoughts/posts/09-07-2026/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./thoughts/posts/09-07-2026/banner.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Group Camping Trip 2026
+</h5>
+<div class="card-text listing-description">
+I took members of my reseach group camping this weekend. The weather was not ideal, a mix of rain and clouds, but it was an excellent night out of the city. My group…
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Sep 7, 2026
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="c2NpZW5jZSUyMGFuZCUyMHRlY2hub2xvZ3klMjBzdHVkaWVzJTJDcGhpbG9zb3BoeSUyMG9mJTIwc2NpZW5jZSUyQ3Jlc2VhcmNo" data-listing-date-sort="1782432000000" data-listing-file-modified-sort="1795128173355" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="587">
+<a href="./thoughts/posts/06-26-2026/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./thoughts/posts/06-26-2026/banner.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Inquiry- and Task-Oriented Modes of Research
+</h5>
+<div class="card-text listing-description">
+A comment on the AI future
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Jun 26, 2026
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="ZGVjaXNpb24lMjBtYWtpbmclMkNjb21tdW5pY2F0aXZlJTIwcmF0aW9uYWxpdHklMkNmYXVsdCUyMHRyZWVzJTJDZGVlcCUyMHVuY2VydGFpbnR5" data-listing-date-sort="1774224000000" data-listing-file-modified-sort="1795128173344" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1338">
+<a href="./thoughts/posts/03-23-2026/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./thoughts/posts/03-23-2026/banner.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Communicative Decision Making Under Uncertainty as Fault Trees
+</h5>
+<div class="card-text listing-description">
+In memory of Jürgen Habermas
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Mar 23, 2026
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+<p><a href="./thoughts/blog.html">All posts →</a></p>
+
+
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -838,8 +1254,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/hawkins-tech-lab/Hawkinslab">
-      <i class="bi bi-github" role="img" aria-label="Quarto GitHub">
+    <a class="nav-link" href="https://github.com/Hawkins-TECH-Lab">
+      <i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
     </a>
   </li>  

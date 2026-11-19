@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -38,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-370a8468b885aab1167a3ecb223a7384.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-4e3518cd56f73d8deb44248989103c32.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,9 +68,150 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-current-grad .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
-<link rel="stylesheet" href="../../assets/css/index.css">
+    const options = {
+      valueNames: ['listing-title','listing-group','listing-role','listing-institution','listing-description',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-title","listing-group","listing-role","listing-institution","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-current-grad'] = new List('listing-current-grad', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-former-grad .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-group','listing-role','listing-institution','listing-description','listing-image',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-title","listing-group","listing-role","listing-institution","listing-description","listing-image"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-former-grad'] = new List('listing-former-grad', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-former-ugrad .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-group','listing-years','listing-role','listing-institution',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-title","listing-group","listing-years","listing-role","listing-institution"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-former-ugrad'] = new List('listing-former-ugrad', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-former-hs .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-group','listing-years','listing-role','listing-institution',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-title","listing-group","listing-years","listing-role","listing-institution"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-former-hs'] = new List('listing-former-hs', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
 </head>
 
 <body class="nav-fixed">
@@ -106,16 +249,12 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-teaching">    
         <li>
-    <a class="dropdown-item" href="../teaching/CIVE461/index.html">
- <span class="dropdown-text">CIVE461/861</span></a>
-  </li>  
-        <li>
     <a class="dropdown-item" href="../teaching/ENCI707/index.html">
  <span class="dropdown-text">ENCI707</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../teaching/Guest Lectures/CIVE990T.html">
- <span class="dropdown-text">CIVE990T</span></a>
+    <a class="dropdown-item" href="../teaching/teaching.html">
+ <span class="dropdown-text">All courses</span></a>
   </li>  
     </ul>
   </li>
@@ -137,7 +276,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="../index.xml"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../thoughts/blog.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -149,24 +288,12 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#potential-graduate-students" id="toc-potential-graduate-students" class="nav-link active" data-scroll-target="#potential-graduate-students">Potential Graduate Students</a></li>
-  <li><a href="#research-associates" id="toc-research-associates" class="nav-link" data-scroll-target="#research-associates">Research Associates</a></li>
-  <li><a href="#graduate-students" id="toc-graduate-students" class="nav-link" data-scroll-target="#graduate-students">Graduate Students</a></li>
-  <li><a href="#undergraduate-research-assistant" id="toc-undergraduate-research-assistant" class="nav-link" data-scroll-target="#undergraduate-research-assistant">Undergraduate Research Assistant</a></li>
-  <li><a href="#previous-students" id="toc-previous-students" class="nav-link" data-scroll-target="#previous-students">Previous Students</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -175,7 +302,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -187,176 +314,233 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><img src="../assets/images/team/jason.jpg" style="float:right;padding:  10px; object-fit: cover; object-position: top;" alt="Headshot of Dr. Jason Hawkins" width="200" height="230"></p>
-<p><a href="https://profiles.ucalgary.ca/jason-hawkins"><strong>Dr.&nbsp;Jason Hawkins</strong></a> is an Assistant Professor in the Department of Civil Engineering at the University of Calgary. His expertise has expertise in travel behaviour, transportation demand modeling, spatial econometrics, and life-cycle assessment. Dr.&nbsp;Hawkins is a member of the Transportation Research Board (TRB) Traveler Behavior and Values Committee. He is also a board member on the Zephyr Foundation for open transportation analysis. Dr.&nbsp;Hawkins received his Ph.D.&nbsp;from the University of Toronto in 2021, for which he received the Eric Pas Award from the International Association for Travel Behaviour Research (IATBR). He holds M.Sc. (2016) and B.Sc. (2014) degrees in Civil Engineering from the University of Calgary. Dr.&nbsp;Hawkins completed postdoctoral work at the University of Texas at Austin. He was previously an Assistant Professor of Civil and Environmental Engineering at the University of Nebraska – Lincoln (2021-2024).</p>
-<section id="potential-graduate-students" class="level2">
-<h2 class="anchored" data-anchor-id="potential-graduate-students">Potential Graduate Students</h2>
-<p>The TECH Group is always looking for curious scholars to conduct transdisciplinary research in methods and empirics related to sutainable infrastructure development and household choice. Funding programs include the NSERC Graduate Programs for Master’s and Doctoral students, the SSHRC Joseph-Armand Bombardier Canada Graduate Scholarship, the China Scholarship Council, and other funded opportunities. If you have received funding from these programs (or plan to apply), please send me an email if you are interested in the TECH Group and the University of Calgary. Please also check your eligibility prior to emailing me if you plan to apply.</p>
-<p>We are particularly interested in students with transdisciplinary research interests in policy studies or planning. See the <a href="https://transdisciplinary.ucalgary.ca/programs/policy-studies">University of Calgary Transciplinary Research in Policy tudies</a> website for more details.</p>
-</section>
-<section id="research-associates" class="level2">
-<h2 class="anchored" data-anchor-id="research-associates">Research Associates</h2>
-<table class="caption-top">
-<colgroup>
-<col style="width: 19%">
-<col style="width: 24%">
-<col style="width: 56%">
-</colgroup>
-<thead>
-<tr class="header">
-<th></th>
-<th style="text-align: center;">Name</th>
-<th>About</th>
-</tr>
-</thead>
-
-</table>
-<p>| <img src="../assets/images/team/blank_avatar.jpg" class="quarto-figure quarto-figure-center" style="float:right; padding: 0 0 0 0; object-fit: cover; object-position: top;" width="166" height="200"> | Asiri Senasinghe | “The future belongs to those who see possibilities before they become obvious” ~ John Sculley.</p>
-<p>Asiri Senasinghe is a dedicated researcher with a PhD and MSc in Civil Engineering from the University of Calgary, where his doctoral work focused on enhancing public transit equity through simulation and mathematical modelling. He also holds an MSc in Applied Statistics, with an emphasis on highway safety improvements, along with an MSc in Applied Electronics and a BSc in Applied Sciences. His research interests centre on developing sustainable urban transportation systems to create resilient, equitable cities prepared for rapid future changes.|</p>
+<p><img src="../assets/images/team/jason.jpg" style="float:right; padding: 10px; object-fit: cover; object-position: top;" alt="Headshot of Dr. Jason Hawkins" width="200" height="230"></p>
+<p><a href="https://profiles.ucalgary.ca/jason-hawkins"><strong>Dr.&nbsp;Jason Hawkins</strong></a> is an Assistant Professor in the Department of Civil Engineering at the University of Calgary. His expertise is in travel behaviour, transportation demand modeling, spatial econometrics, and life-cycle assessment. Dr.&nbsp;Hawkins is a member of the Transportation Research Board (TRB) Traveler Behavior and Values Committee. He is also a board member on the Zephyr Foundation for open transportation analysis. Dr.&nbsp;Hawkins received his Ph.D.&nbsp;from the University of Toronto in 2021, for which he received the Eric Pas Award from the International Association for Travel Behaviour Research (IATBR). He holds M.Sc. (2016) and B.Sc. (2014) degrees in Civil Engineering from the University of Calgary. Dr.&nbsp;Hawkins completed postdoctoral work at the University of Texas at Austin. He was previously an Assistant Professor of Civil and Environmental Engineering at the University of Nebraska–Lincoln (2021–2024).</p>
+<section id="prospective-students" class="level2">
+<h2 class="anchored" data-anchor-id="prospective-students">Prospective Students</h2>
+<p>The TECH Group is always looking for curious scholars to conduct transdisciplinary research in methods and empirics related to sustainable infrastructure development and household choice. Funding programs include the NSERC Graduate Programs for Master’s and Doctoral students, the SSHRC Joseph-Armand Bombardier Canada Graduate Scholarship, the China Scholarship Council, and other funded opportunities. If you have received funding from these programs (or plan to apply), please send me an email if you are interested in the TECH Group and the University of Calgary. Please also check your eligibility prior to emailing me if you plan to apply.</p>
+<p>We are particularly interested in students with transdisciplinary research interests in policy studies or planning. See the <a href="https://transdisciplinary.ucalgary.ca/programs/policy-studies">University of Calgary Transdisciplinary Research in Policy Studies</a> website for more details.</p>
+<p>Undergraduate students at the University of Calgary are encouraged to reach out about research opportunities. Funding is available through <a href="https://ucalgary.ca/experiential-learning/undergraduate-research">PURE</a>.</p>
 </section>
 <section id="graduate-students" class="level2">
 <h2 class="anchored" data-anchor-id="graduate-students">Graduate Students</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 19%">
-<col style="width: 24%">
-<col style="width: 56%">
-</colgroup>
-<thead>
-<tr class="header">
-<th></th>
-<th style="text-align: center;">Name</th>
-<th>About</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><img src="../assets/images/team/blank_avatar.jpg" class="quarto-figure quarto-figure-center" style="float:right; padding: 0 0 0 0; object-fit: cover; object-position: top;" width="166" height="200"></td>
-<td style="text-align: center;">Mehrnoosh Zare</td>
-<td>Mehrnoosh is an M.Sc. student in Transportation Engineering at the University of Calgary. She received her M.Sc. in Industrial Engineering with a specialization in Logistics and Supply Chain Management from K.N Toosi University of Technology and her B.Sc. in Industrial Engineering from Azad University.</td>
-</tr>
-<tr class="even">
-<td><img src="../assets/images/team/blank_avatar.jpg" class="quarto-figure quarto-figure-center" style="float:right; padding: 0 0 0 0; object-fit: cover; object-position: top;" width="166" height="200"></td>
-<td style="text-align: center;">Sam Pollock</td>
-<td>Sam Pollock is a PhD student whose research focuses on the safety, comfort, and design of multi-use pathways. He is passionate about using preference and behavioural modelling to understand transportation choices and encourage people to make healthy and sustainable transportation decisions. Sam previously completed his BSc and MSc in Civil Engineering at the University of Calgary. Outside academia, Sam’s interests include coaching speed skating, climbing mountains, and baking banana bread.</td>
-</tr>
-<tr class="odd">
-<td><img src="../assets/images/team/blank_avatar.jpg" class="quarto-figure quarto-figure-center" style="float:right; padding: 0 0 0 0; object-fit: cover; object-position: top;" width="166" height="200"></td>
-<td style="text-align: center;">Mohammed Abuhadrous</td>
-<td>Mohammed is an M.Sc. student in transportation engineering at the University of Calgary - co-supervised with Dr.&nbsp;Lina Kattan. Mohammed received his B.Sc. in electrical engineering from XXX. He is working on EV charging station planning for multi-unit dwellings in Calgary considering travel patterns and grid constraints.</td>
-</tr>
-<tr class="even">
-<td><img src="../assets/images/team/hania.jpg" class="quarto-figure quarto-figure-center" style="float:right; padding: 0 0 0 0; object-fit: cover; object-position: top;" width="166" height="200"></td>
-<td style="text-align: center;">Hania Afzal</td>
-<td>Hania is a Ph.D.&nbsp;student in engineering policy at the University of Nebraska-Lincoln. She received her M.Sc. in Economics from IBA Karachi and her B.Sc. in Economics from Quaid-I-Azam University. Prior to joining UNL, Hania was a researcher at Pakistan Institute of Development Economics (PIDE). She is currently working on electric vehicle adoption in the United States.</td>
-</tr>
-<tr class="odd">
-<td><img src="../assets/images/team/omid.jpg" class="quarto-figure quarto-figure-center" style="float:right; padding: 0 0 0 0; object-fit: cover; object-position: top;" width="166" height="200"></td>
-<td style="text-align: center;">Omid Armantalab</td>
-<td>Omid is a Ph.D.&nbsp;student in transportation engineering at the University of Nebraska-Lincoln. He received his M.Sc. in Civil Engineering from Amirkabir University of Technology and his B.Sc. in Civil Engineering from Kharazmi University. He is currently working on Bayesian statistical representations of transportation accessibility for equity and Justice40 applications.</td>
-</tr>
-<tr class="even">
-<td><img src="../assets/images/team/mohammad.jpg" class="quarto-figure quarto-figure-center" style="float:right; padding: 0 0 0 0; object-fit: cover; object-position: top;" width="166" height="200"></td>
-<td style="text-align: center;">Mohammad Elayan</td>
-<td>Mohammad is a Ph.D.&nbsp;student in transportation engineering at the University of Nebraska-Lincoln. He received both his M.Sc. and B.Sc. in Civil Engineering from Jordan University of Science and Technology. Mohammad spent a decade working in the transportation industry in the UAE.</td>
-</tr>
-<tr class="odd">
-<td><img src="../assets/images/team/donya.jpg" class="quarto-figure quarto-figure-center" style="float:right; padding: 0 0 0 0; object-fit: cover; object-position: top;" width="166" height="200"></td>
-<td style="text-align: center;">Donya Negahbani</td>
-<td>Donya is an M.Sc. student in transportation engineering at the University of Nebraska-Lincoln. She received her B.Sc. in Civil Engineering from the University of Tehran.</td>
-</tr>
-</tbody>
-</table>
+<div id="listing-current-grad" class="quarto-listing quarto-listing-container-custom">
+<div class="team-grid">
+
+  <div class="team-card" data-index="0">
+    <img class="team-photo" alt="Photo of Sam Pollock" src="../assets/images/team/blank_avatar.jpg">
+    <div class="team-body">
+      <div class="team-name">Sam Pollock</div>
+      <div class="team-role">Ph.D. Student · University of Calgary</div>
+      <p class="team-bio">Sam's research focuses on the safety, comfort, and design of multi-use pathways. He is passionate about using preference and behavioural modelling to understand transportation choices and encourage people to make healthy and sustainable transportation decisions. Sam previously completed his BSc and MSc in Civil Engineering at the University of Calgary. Outside academia, Sam's interests include coaching speed skating, climbing mountains, and baking banana bread.</p>
+    </div>
+  </div>
+
+  <div class="team-card" data-index="1">
+    <img class="team-photo" alt="Photo of Mehrnoosh Zare" src="../assets/images/team/blank_avatar.jpg">
+    <div class="team-body">
+      <div class="team-name">Mehrnoosh Zare</div>
+      <div class="team-role">M.Sc. Student · University of Calgary</div>
+      <p class="team-bio">Mehrnoosh is an M.Sc. student in Transportation Engineering. She received her M.Sc. in Industrial Engineering with a specialization in Logistics and Supply Chain Management from K.N. Toosi University of Technology and her B.Sc. in Industrial Engineering from Azad University.</p>
+    </div>
+  </div>
+
+  <div class="team-card" data-index="2">
+    <img class="team-photo" alt="Photo of Thomas Williams" src="../assets/images/team/blank_avatar.jpg">
+    <div class="team-body">
+      <div class="team-name">Thomas Williams</div>
+      <div class="team-role">M.Sc. Student · University of Calgary</div>
+      
+    </div>
+  </div>
+
+  <div class="team-card" data-index="3">
+    <img class="team-photo" alt="Photo of Azin Dinarvand" src="../assets/images/team/blank_avatar.jpg">
+    <div class="team-body">
+      <div class="team-name">Azin Dinarvand</div>
+      <div class="team-role">M.Sc. Student · University of Calgary</div>
+      
+    </div>
+  </div>
+
+  <div class="team-card" data-index="4">
+    <img class="team-photo" alt="Photo of Zahra Dorri" src="../assets/images/team/blank_avatar.jpg">
+    <div class="team-body">
+      <div class="team-name">Zahra Dorri</div>
+      <div class="team-role">Ph.D. Student · University of Calgary</div>
+      
+    </div>
+  </div>
+
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
 </section>
-<section id="undergraduate-research-assistant" class="level2">
-<h2 class="anchored" data-anchor-id="undergraduate-research-assistant">Undergraduate Research Assistant</h2>
-<dl>
-<dt>Undergraduate students at the University of Calgary are encouraged to reach out to Dr.&nbsp;Hawkins about research opportunities. Funding opportunities are available via <a href="https://ucalgary.ca/experiential-learning/undergraduate-research">PURE</a>.</dt>
-<dd>
-<p>{tbl-colwidths=“[20,25,60]”}</p>
-</dd>
-</dl>
-<p>:—|:—|:—|:— 2025 | Yasmine Baccari | B.S. Civil Engineering | University of Calgary</p>
+<section id="alumni" class="level2">
+<h2 class="anchored" data-anchor-id="alumni">Alumni</h2>
+<section id="graduate-students-and-research-associates" class="level3">
+<h3 class="anchored" data-anchor-id="graduate-students-and-research-associates">Graduate Students and Research Associates</h3>
+<div id="listing-former-grad" class="quarto-listing quarto-listing-container-custom">
+<div class="team-grid">
+
+  <div class="team-card" data-index="0">
+    <img class="team-photo" alt="Photo of Asiri Senasinghe" src="../assets/images/team/blank_avatar.jpg">
+    <div class="team-body">
+      <div class="team-name">Asiri Senasinghe</div>
+      <div class="team-role">Research Associate · University of Calgary</div>
+      <p class="team-bio">PhD and MSc in Civil Engineering (University of Calgary), with doctoral work on public transit equity through simulation and mathematical modelling.</p>
+    </div>
+  </div>
+
+  <div class="team-card" data-index="1">
+    <img class="team-photo" alt="Photo of Mohammed Abuhadrous" src="../assets/images/team/blank_avatar.jpg">
+    <div class="team-body">
+      <div class="team-name">Mohammed Abuhadrous</div>
+      <div class="team-role">M.Sc. Student · University of Calgary</div>
+      <p class="team-bio">EV charging station planning for multi-unit dwellings in Calgary considering travel patterns and grid constraints (co-supervised with Dr. Lina Kattan).</p>
+    </div>
+  </div>
+
+  <div class="team-card" data-index="2">
+    <img class="team-photo" alt="Photo of Hania Afzal" src="../assets/images/team/hania.jpg">
+    <div class="team-body">
+      <div class="team-name">Hania Afzal</div>
+      <div class="team-role">Ph.D. Student · University of Nebraska–Lincoln</div>
+      <p class="team-bio">Electric vehicle adoption in the United States.</p>
+    </div>
+  </div>
+
+  <div class="team-card" data-index="3">
+    <img class="team-photo" alt="Photo of Omid Armantalab" src="../assets/images/team/omid.jpg">
+    <div class="team-body">
+      <div class="team-name">Omid Armantalab</div>
+      <div class="team-role">Ph.D. Student · University of Nebraska–Lincoln</div>
+      <p class="team-bio">Bayesian statistical representations of transportation accessibility for equity applications.</p>
+    </div>
+  </div>
+
+  <div class="team-card" data-index="4">
+    <img class="team-photo" alt="Photo of Mohammad Elayan" src="../assets/images/team/mohammad.jpg">
+    <div class="team-body">
+      <div class="team-name">Mohammad Elayan</div>
+      <div class="team-role">Ph.D. Student · University of Nebraska–Lincoln</div>
+      
+    </div>
+  </div>
+
+  <div class="team-card" data-index="5">
+    <img class="team-photo" alt="Photo of Donya Negahbani" src="../assets/images/team/donya.jpg">
+    <div class="team-body">
+      <div class="team-name">Donya Negahbani</div>
+      <div class="team-role">M.Sc. Student · University of Nebraska–Lincoln</div>
+      
+    </div>
+  </div>
+
+  <div class="team-card" data-index="6">
+    <img class="team-photo" alt="Photo of Nick Aldridge" src="../assets/images/team/nick.jpg">
+    <div class="team-body">
+      <div class="team-name">Nick Aldridge</div>
+      <div class="team-role">M.S. Student · University of Nebraska–Lincoln</div>
+      <p class="team-bio">Thesis: "Performing Motorized-to-Non-Motorized Crash Analysis Using Multi-Model LBS Traffic Data Calibrated Through Random Forest Models"</p>
+    </div>
+  </div>
+
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
 </section>
-<section id="previous-students" class="level2">
-<h2 class="anchored" data-anchor-id="previous-students">Previous Students</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 19%">
-<col style="width: 24%">
-<col style="width: 56%">
-</colgroup>
-<thead>
-<tr class="header">
-<th></th>
-<th style="text-align: center;">Name</th>
-<th>Thesis Topic</th>
-</tr>
-</thead>
+<section id="undergraduate-research-assistants" class="level3">
+<h3 class="anchored" data-anchor-id="undergraduate-research-assistants">Undergraduate Research Assistants</h3>
+<div id="listing-former-ugrad" class="quarto-listing quarto-listing-container-custom">
+<table class="table team-table caption-top" data-quarto-postprocess="true">
 <tbody>
-<tr class="odd">
-<td><img src="../assets/images/team/nick.jpg" class="quarto-figure quarto-figure-center" style="float:right; padding: 0 0 0 0; object-fit: cover; object-position: top;" width="166" height="200"></td>
-<td style="text-align: center;">Nick Aldridge</td>
-<td>“Performing Motorized-to-Non-Motorized Crash Analysis Using Multi-Model LBS Traffic Data Calibrated Through Random Forest Models”</td>
+<tr class="odd" data-index="0">
+<td class="team-years"></td>
+<td><strong>Zunera Ayaz</strong></td>
+<td>Undergraduate Research Assistant</td>
+<td>University of Calgary</td>
+</tr>
+<tr class="even" data-index="1">
+<td class="team-years"></td>
+<td><strong>Jawwad Ahmed</strong></td>
+<td>Undergraduate Research Assistant</td>
+<td>University of Calgary</td>
+</tr>
+<tr class="odd" data-index="2">
+<td class="team-years">2025</td>
+<td><strong>Yasmine Baccari</strong></td>
+<td>B.S. Civil Engineering</td>
+<td>University of Calgary</td>
+</tr>
+<tr class="even" data-index="3">
+<td class="team-years">2023–2024</td>
+<td><strong>Kun-Yu Lee</strong></td>
+<td>B.S. Computer Science</td>
+<td>University of Nebraska</td>
+</tr>
+<tr class="odd" data-index="4">
+<td class="team-years">2022–2024</td>
+<td><strong>Sagun Karki</strong></td>
+<td>B.S. Computer Science</td>
+<td>University of Nebraska</td>
+</tr>
+<tr class="even" data-index="5">
+<td class="team-years">2022–2023</td>
+<td><strong>Abigail Metschke</strong></td>
+<td>B.S. Environmental Engineering</td>
+<td>University of Nebraska</td>
+</tr>
+<tr class="odd" data-index="6">
+<td class="team-years">2022–2023</td>
+<td><strong>William Turman</strong></td>
+<td>B.S. Civil Engineering</td>
+<td>University of Nebraska</td>
+</tr>
+<tr class="even" data-index="7">
+<td class="team-years">2022</td>
+<td><strong>Casey Nolte</strong></td>
+<td>B.S. Chemical Engineering</td>
+<td>University of Nebraska</td>
+</tr>
+<tr class="odd" data-index="8">
+<td class="team-years">2022</td>
+<td><strong>Kumo Babe</strong></td>
+<td>B.S. Mechanical Engineering</td>
+<td>University of Nebraska</td>
 </tr>
 </tbody>
 </table>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Year</th>
-<th style="text-align: left;">Name</th>
-<th style="text-align: left;">Degree</th>
-<th style="text-align: left;">Institution</th>
-</tr>
-</thead>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+<section id="high-school-researchers" class="level3">
+<h3 class="anchored" data-anchor-id="high-school-researchers">High School Researchers</h3>
+<div id="listing-former-hs" class="quarto-listing quarto-listing-container-custom">
+<table class="table team-table caption-top" data-quarto-postprocess="true">
 <tbody>
-<tr class="odd">
-<td style="text-align: left;">2023-2024</td>
-<td style="text-align: left;">Kun-Yu Lee</td>
-<td style="text-align: left;">B.S. Computer Science</td>
-<td style="text-align: left;">University of Nebraska</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2022-2024</td>
-<td style="text-align: left;">Sagun Karki</td>
-<td style="text-align: left;">B.S. Computer Science</td>
-<td style="text-align: left;">University of Nebraska</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2022-2023</td>
-<td style="text-align: left;">Abigail Metschke</td>
-<td style="text-align: left;">B.S. Environmental Engineering</td>
-<td style="text-align: left;">University of Nebraska</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2022-2023</td>
-<td style="text-align: left;">William Turman</td>
-<td style="text-align: left;">B.S. Civil Engineering</td>
-<td style="text-align: left;">University of Nebraska</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2022-2022</td>
-<td style="text-align: left;">Casey Nolte</td>
-<td style="text-align: left;">B.S. Chemical Engineering</td>
-<td style="text-align: left;">University of Nebraska</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2022-2022</td>
-<td style="text-align: left;">Kumo Babe</td>
-<td style="text-align: left;">B.S. Mechanical Engineering</td>
-<td style="text-align: left;">University of Nebraska</td>
+<tr class="odd" data-index="0">
+<td class="team-years"></td>
+<td><strong>Zihan (Camila) Ma</strong></td>
+<td>High School Researcher</td>
+<td></td>
 </tr>
 </tbody>
 </table>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
 
 
+
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -789,8 +973,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/hawkins-tech-lab/Hawkinslab">
-      <i class="bi bi-github" role="img" aria-label="Quarto GitHub">
+    <a class="nav-link" href="https://github.com/Hawkins-TECH-Lab">
+      <i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
     </a>
   </li>  

@@ -40,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-370a8468b885aab1167a3ecb223a7384.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-4e3518cd56f73d8deb44248989103c32.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -78,9 +78,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-description','listing-date','listing-categories','listing-author','listing-pub_number','listing-journ','listing-year','listing-url_preprint',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-date','listing-year','listing-journ','listing-pub_number','listing-doi','listing-arxiv','listing-url_preprint','listing-categories','listing-type','listing-description','listing-volume','listing-page','listing-url_source','listing-issue',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
       
-      searchColumns: ["listing-title","listing-description","listing-date","listing-categories","listing-author","listing-pub_number","listing-journ","listing-year","listing-url_preprint"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-year","listing-journ","listing-pub_number","listing-doi","listing-arxiv","listing-url_preprint","listing-categories","listing-type","listing-description","listing-volume","listing-page","listing-url_source","listing-issue"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -165,16 +165,12 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-teaching">    
         <li>
-    <a class="dropdown-item" href="../../teaching/CIVE461/index.html">
- <span class="dropdown-text">CIVE461/861</span></a>
-  </li>  
-        <li>
     <a class="dropdown-item" href="../../teaching/ENCI707/index.html">
  <span class="dropdown-text">ENCI707</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../teaching/Guest Lectures/CIVE990T.html">
- <span class="dropdown-text">CIVE990T</span></a>
+    <a class="dropdown-item" href="../../teaching/teaching.html">
+ <span class="dropdown-text">All courses</span></a>
   </li>  
     </ul>
   </li>
@@ -196,7 +192,7 @@ window.Quarto = {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="../../index.xml"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../../thoughts/blog.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -256,16 +252,16 @@ window.Quarto = {
 <div class="list quarto-listing-default">
     
     
-    <div class="quarto-post image-right" data-index="0" data-categories="Q2hvaWNlJTIwTW9kZWwlMjBNZXRob2RzJTJDR2VuZXJhbCUyMFRyYW5zcG9ydCUyQ1ZlaGljbGUlMjBBZG9wdGlvbg==" data-listing-date-sort="1782716400000">
+    <div class="quarto-post image-right" data-index="0" data-categories="Q2hvaWNlJTIwTW9kZWwlMjBNZXRob2RzJTJDSW5mcmFzdHJ1Y3R1cmUlMjBGaW5hbmNl" data-listing-date-sort="1782691200000">
         <div class="thumbnail">
-            <a href="http://arxiv.org/abs/2606.29756v1">
+            <a href="https://doi.org/10.48550/arxiv.2606.29756">
                 
                 
             </a>
         </div> 
         
         <div class="body">
-            <a href="http://arxiv.org/abs/2606.29756v1" class="no-anchor">
+            <a href="https://doi.org/10.48550/arxiv.2606.29756" class="no-anchor">
                 <div class="listing-pub-title listing-title">Modeling Mode and Departure Time Responses to Congestion Pricing: A Spatial and Behavioral Analysis Using Cross-Nested Logit Model</div>
             </a>
             
@@ -286,12 +282,8 @@ window.Quarto = {
                     Choice Model Methods
                 </span>
                 
-                <span class="badge bg-light text-dark border me-1" onclick="window.quartoListingCategory('General Transport'); return false;" style="cursor: pointer;">
-                    General Transport
-                </span>
-                
-                <span class="badge bg-light text-dark border me-1" onclick="window.quartoListingCategory('Vehicle Adoption'); return false;" style="cursor: pointer;">
-                    Vehicle Adoption
+                <span class="badge bg-light text-dark border me-1" onclick="window.quartoListingCategory('Infrastructure Finance'); return false;" style="cursor: pointer;">
+                    Infrastructure Finance
                 </span>
                 
             </div> 
@@ -307,8 +299,8 @@ window.Quarto = {
 
             
             <div class="listing-pub-url">
-                <a href="http://arxiv.org/abs/2606.29756v1" style="color:#8250E6; text-decoration: none;">
-                    preprint URL <i class="bi bi-box-arrow-up-right"></i>
+                <a href="https://doi.org/10.48550/arxiv.2606.29756" style="color:#8250E6; text-decoration: none;">
+                    preprint <i class="bi bi-box-arrow-up-right"></i>
                 </a>
             </div> 
             
@@ -316,26 +308,26 @@ window.Quarto = {
     </div> 
     
     
-    <div class="quarto-post image-right" data-index="1" data-categories="Q2hvaWNlJTIwTW9kZWwlMjBNZXRob2RzJTJDR2VuZXJhbCUyMFRyYW5zcG9ydA==" data-listing-date-sort="1782630000000">
+    <div class="quarto-post image-right" data-index="1" data-categories="Q2hvaWNlJTIwTW9kZWwlMjBNZXRob2RzJTJDSW5mcmFzdHJ1Y3R1cmUlMjBGaW5hbmNl" data-listing-date-sort="1778803200000">
         <div class="thumbnail">
-            <a href="http://arxiv.org/abs/2606.29145v1">
+            <a href="https://doi.org/10.1016/j.trip.2026.102048">
                 
                 
             </a>
         </div> 
         
         <div class="body">
-            <a href="http://arxiv.org/abs/2606.29145v1" class="no-anchor">
-                <div class="listing-pub-title listing-title">Why Do We Need Travel Behavior Theory in the Age of AI? Multiple Goal Pursuit as an Illustrative Theory</div>
+            <a href="https://doi.org/10.1016/j.trip.2026.102048" class="no-anchor">
+                <div class="listing-pub-title listing-title">Understanding traveller behaviour under congestion pricing: A survey-based decision tracking approach</div>
             </a>
             
             <div class="listing-pub-author listing-author">
-                Jason Hawkins, Omid Armantalab<br> 
+                Mohammad Amin Ashena, Adam Weiss, Jason Hawkins, Lina Kattan<br> 
             </div>
             
             <div class="metadata-value listing-pub-journal listing-publication">
                 
-                    <i>arXiv Preprint</i> (2026)<br>
+                    <i>Transportation Research Interdisciplinary Perspectives</i>, <b>38</b>, 102048–102048 (2026)<br>
                 
             </div> 
 
@@ -346,8 +338,8 @@ window.Quarto = {
                     Choice Model Methods
                 </span>
                 
-                <span class="badge bg-light text-dark border me-1" onclick="window.quartoListingCategory('General Transport'); return false;" style="cursor: pointer;">
-                    General Transport
+                <span class="badge bg-light text-dark border me-1" onclick="window.quartoListingCategory('Infrastructure Finance'); return false;" style="cursor: pointer;">
+                    Infrastructure Finance
                 </span>
                 
             </div> 
@@ -356,17 +348,883 @@ window.Quarto = {
 
         <div class="metadata">
             <div class="listing-pub-number">
-                arXiv:2606.29145<br> 
+                doi:10.1016/j.trip.2026.102048<br> 
+            </div>
+
+            
+            <div class="listing-pub-url">
+                <a href="https://doi.org/10.1016/j.trip.2026.102048" style="color:#8250E6; text-decoration: none;">
+                    publisher <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+            </div> 
+            
+
+            
+        </div> 
+    </div> 
+    
+    
+    <div class="quarto-post image-right" data-index="2" data-categories="Q2hvaWNlJTIwTW9kZWwlMjBNZXRob2RzJTJDVmVoaWNsZSUyMEFkb3B0aW9u" data-listing-date-sort="1778457600000">
+        <div class="thumbnail">
+            <a href="https://doi.org/10.21203/rs.3.rs-8811117/v1">
+                
+                
+            </a>
+        </div> 
+        
+        <div class="body">
+            <a href="https://doi.org/10.21203/rs.3.rs-8811117/v1" class="no-anchor">
+                <div class="listing-pub-title listing-title">Why Do We Need Travel Behavior Theory in the Age of AI? Multiple Goal Pursuit as an Illustrative Theory</div>
+            </a>
+            
+            <div class="listing-pub-author listing-author">
+                Jason Hawkins, Omid Armantalab<br> 
+            </div>
+            
+            <div class="metadata-value listing-pub-journal listing-publication">
+                
+                    <i>Research Square Preprint</i> (2026)<br>
+                
+            </div> 
+
+            
+            <div class="listing-categories">
+                
+                <span class="badge bg-light text-dark border me-1" onclick="window.quartoListingCategory('Choice Model Methods'); return false;" style="cursor: pointer;">
+                    Choice Model Methods
+                </span>
+                
+                <span class="badge bg-light text-dark border me-1" onclick="window.quartoListingCategory('Vehicle Adoption'); return false;" style="cursor: pointer;">
+                    Vehicle Adoption
+                </span>
+                
+            </div> 
+            
+        </div> 
+
+        <div class="metadata">
+            <div class="listing-pub-number">
+                doi:10.21203/rs.3.rs-8811117/v1<br> 
             </div>
 
             
 
             
             <div class="listing-pub-url">
-                <a href="http://arxiv.org/abs/2606.29145v1" style="color:#8250E6; text-decoration: none;">
-                    preprint URL <i class="bi bi-box-arrow-up-right"></i>
+                <a href="https://doi.org/10.21203/rs.3.rs-8811117/v1" style="color:#8250E6; text-decoration: none;">
+                    preprint <i class="bi bi-box-arrow-up-right"></i>
                 </a>
             </div> 
+            
+        </div> 
+    </div> 
+    
+    
+    <div class="quarto-post image-right" data-index="3" data-categories="Q2hvaWNlJTIwTW9kZWwlMjBNZXRob2RzJTJDVmVoaWNsZSUyMEFkb3B0aW9u" data-listing-date-sort="1772841600000">
+        <div class="thumbnail">
+            <a href="https://doi.org/10.1016/j.jocm.2026.100597">
+                
+                
+            </a>
+        </div> 
+        
+        <div class="body">
+            <a href="https://doi.org/10.1016/j.jocm.2026.100597" class="no-anchor">
+                <div class="listing-pub-title listing-title">Potential for electric vehicle adoption in Midwest US States: A stated preference and two-stage MRP study</div>
+            </a>
+            
+            <div class="listing-pub-author listing-author">
+                Omid Armantalab, Riddhimoy Ghosh, Jason Hawkins<br> 
+            </div>
+            
+            <div class="metadata-value listing-pub-journal listing-publication">
+                
+                    <i>Journal of Choice Modelling</i>, <b>59</b>, 100597–100597 (2026)<br>
+                
+            </div> 
+
+            
+            <div class="listing-categories">
+                
+                <span class="badge bg-light text-dark border me-1" onclick="window.quartoListingCategory('Choice Model Methods'); return false;" style="cursor: pointer;">
+                    Choice Model Methods
+                </span>
+                
+                <span class="badge bg-light text-dark border me-1" onclick="window.quartoListingCategory('Vehicle Adoption'); return false;" style="cursor: pointer;">
+                    Vehicle Adoption
+                </span>
+                
+            </div> 
+            
+        </div> 
+
+        <div class="metadata">
+            <div class="listing-pub-number">
+                doi:10.1016/j.jocm.2026.100597<br> 
+            </div>
+
+            
+            <div class="listing-pub-url">
+                <a href="https://doi.org/10.1016/j.jocm.2026.100597" style="color:#8250E6; text-decoration: none;">
+                    publisher <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+            </div> 
+            
+
+            
+        </div> 
+    </div> 
+    
+    
+    <div class="quarto-post image-right" data-index="4" data-categories="Q2hvaWNlJTIwTW9kZWwlMjBNZXRob2RzJTJDVmVoaWNsZSUyMEFkb3B0aW9u" data-listing-date-sort="1761955200000">
+        <div class="thumbnail">
+            <a href="https://doi.org/10.1016/j.tranpol.2025.103877">
+                
+                
+            </a>
+        </div> 
+        
+        <div class="body">
+            <a href="https://doi.org/10.1016/j.tranpol.2025.103877" class="no-anchor">
+                <div class="listing-pub-title listing-title">Who is more likely to buy an EV? A descriptive and integrated choice model analysis in the US Midwest</div>
+            </a>
+            
+            <div class="listing-pub-author listing-author">
+                Omid Armantalab, Hania Afzal, Jason Hawkins<br> 
+            </div>
+            
+            <div class="metadata-value listing-pub-journal listing-publication">
+                
+                    <i>Transport Policy</i>, <b>175</b>, 103877–103877 (2025)<br>
+                
+            </div> 
+
+            
+            <div class="listing-categories">
+                
+                <span class="badge bg-light text-dark border me-1" onclick="window.quartoListingCategory('Choice Model Methods'); return false;" style="cursor: pointer;">
+                    Choice Model Methods
+                </span>
+                
+                <span class="badge bg-light text-dark border me-1" onclick="window.quartoListingCategory('Vehicle Adoption'); return false;" style="cursor: pointer;">
+                    Vehicle Adoption
+                </span>
+                
+            </div> 
+            
+        </div> 
+
+        <div class="metadata">
+            <div class="listing-pub-number">
+                doi:10.1016/j.tranpol.2025.103877<br> 
+            </div>
+
+            
+            <div class="listing-pub-url">
+                <a href="https://doi.org/10.1016/j.tranpol.2025.103877" style="color:#8250E6; text-decoration: none;">
+                    publisher <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+            </div> 
+            
+
+            
+        </div> 
+    </div> 
+    
+    
+    <div class="quarto-post image-right" data-index="5" data-categories="Q2hvaWNlJTIwTW9kZWwlMjBNZXRob2Rz" data-listing-date-sort="1721088000000">
+        <div class="thumbnail">
+            <a href="https://doi.org/10.1016/j.ijtst.2024.07.003">
+                
+                
+            </a>
+        </div> 
+        
+        <div class="body">
+            <a href="https://doi.org/10.1016/j.ijtst.2024.07.003" class="no-anchor">
+                <div class="listing-pub-title listing-title">Investigation of factors affecting crash severity of rear-end crashes with high collision speeds in work zones: A South Carolina case study</div>
+            </a>
+            
+            <div class="listing-pub-author listing-author">
+                Mahyar Madarshahian, Jason Hawkins, Nathan N. Huynh, Chowdhury Siddiqui<br> 
+            </div>
+            
+            <div class="metadata-value listing-pub-journal listing-publication">
+                
+                    <i>International Journal of Transportation Science and Technology</i>, <b>17</b>, 361–374 (2024)<br>
+                
+            </div> 
+
+            
+            <div class="listing-categories">
+                
+                <span class="badge bg-light text-dark border me-1" onclick="window.quartoListingCategory('Choice Model Methods'); return false;" style="cursor: pointer;">
+                    Choice Model Methods
+                </span>
+                
+            </div> 
+            
+        </div> 
+
+        <div class="metadata">
+            <div class="listing-pub-number">
+                doi:10.1016/j.ijtst.2024.07.003<br> 
+            </div>
+
+            
+            <div class="listing-pub-url">
+                <a href="https://doi.org/10.1016/j.ijtst.2024.07.003" style="color:#8250E6; text-decoration: none;">
+                    publisher <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+            </div> 
+            
+
+            
+        </div> 
+    </div> 
+    
+    
+    <div class="quarto-post image-right" data-index="6" data-categories="Q2hvaWNlJTIwTW9kZWwlMjBNZXRob2Rz" data-listing-date-sort="1712620800000">
+        <div class="thumbnail">
+            <a href="https://doi.org/10.1177/03611981241239650">
+                
+                
+            </a>
+        </div> 
+        
+        <div class="body">
+            <a href="https://doi.org/10.1177/03611981241239650" class="no-anchor">
+                <div class="listing-pub-title listing-title">Perturbation of Residential Preferences by COVID-19 Shocks in the Greater Toronto Area</div>
+            </a>
+            
+            <div class="listing-pub-author listing-author">
+                Saeed Shakib, Jason Hawkins, Khandker Nurul Habib<br> 
+            </div>
+            
+            <div class="metadata-value listing-pub-journal listing-publication">
+                
+                    <i>Transportation Research Record Journal of the Transportation Research Board</i>, <b>2678</b>(12), 702–719 (2024)<br>
+                
+            </div> 
+
+            
+            <div class="listing-categories">
+                
+                <span class="badge bg-light text-dark border me-1" onclick="window.quartoListingCategory('Choice Model Methods'); return false;" style="cursor: pointer;">
+                    Choice Model Methods
+                </span>
+                
+            </div> 
+            
+        </div> 
+
+        <div class="metadata">
+            <div class="listing-pub-number">
+                doi:10.1177/03611981241239650<br> 
+            </div>
+
+            
+            <div class="listing-pub-url">
+                <a href="https://doi.org/10.1177/03611981241239650" style="color:#8250E6; text-decoration: none;">
+                    publisher <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+            </div> 
+            
+
+            
+        </div> 
+    </div> 
+    
+    
+    <div class="quarto-post image-right" data-index="7" data-categories="Q2hvaWNlJTIwTW9kZWwlMjBNZXRob2Rz" data-listing-date-sort="1705881600000">
+        <div class="thumbnail">
+            <a href="https://doi.org/10.1080/21680566.2024.2303042">
+                
+                
+            </a>
+        </div> 
+        
+        <div class="body">
+            <a href="https://doi.org/10.1080/21680566.2024.2303042" class="no-anchor">
+                <div class="listing-pub-title listing-title">A framework for transportation and land use integration as a parallel constrained multiple discrete-continuous extreme value (PC-MDCEV) home production model</div>
+            </a>
+            
+            <div class="listing-pub-author listing-author">
+                Jason Hawkins, Khandker Nurul Habib<br> 
+            </div>
+            
+            <div class="metadata-value listing-pub-journal listing-publication">
+                
+                    <i>Transportmetrica B Transport Dynamics</i>, <b>12</b>(1) (2024)<br>
+                
+            </div> 
+
+            
+            <div class="listing-categories">
+                
+                <span class="badge bg-light text-dark border me-1" onclick="window.quartoListingCategory('Choice Model Methods'); return false;" style="cursor: pointer;">
+                    Choice Model Methods
+                </span>
+                
+            </div> 
+            
+        </div> 
+
+        <div class="metadata">
+            <div class="listing-pub-number">
+                doi:10.1080/21680566.2024.2303042<br> 
+            </div>
+
+            
+            <div class="listing-pub-url">
+                <a href="https://doi.org/10.1080/21680566.2024.2303042" style="color:#8250E6; text-decoration: none;">
+                    publisher <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+            </div> 
+            
+
+            
+            <div class="listing-pub-url">
+                <a href="https://arxiv.org/abs/2607.05862" style="color:#8250E6; text-decoration: none;">
+                    preprint <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+            </div> 
+            
+        </div> 
+    </div> 
+    
+    
+    <div class="quarto-post image-right" data-index="8" data-categories="Q2hvaWNlJTIwTW9kZWwlMjBNZXRob2RzJTJDU2hhcmVkJTIwTW9iaWxpdHk=" data-listing-date-sort="1690070400000">
+        <div class="thumbnail">
+            <a href="https://doi.org/10.1016/j.tranpol.2023.07.022">
+                
+                
+            </a>
+        </div> 
+        
+        <div class="body">
+            <a href="https://doi.org/10.1016/j.tranpol.2023.07.022" class="no-anchor">
+                <div class="listing-pub-title listing-title">Unravelling the relationship between ride-sourcing services and conventional modes in the city of Toronto: A stated preference study</div>
+            </a>
+            
+            <div class="listing-pub-author listing-author">
+                Patrick Loa, Felita Ong, Jason Hawkins, Khandker Nurul Habib<br> 
+            </div>
+            
+            <div class="metadata-value listing-pub-journal listing-publication">
+                
+                    <i>Transport Policy</i>, <b>141</b>, 209–220 (2023)<br>
+                
+            </div> 
+
+            
+            <div class="listing-categories">
+                
+                <span class="badge bg-light text-dark border me-1" onclick="window.quartoListingCategory('Choice Model Methods'); return false;" style="cursor: pointer;">
+                    Choice Model Methods
+                </span>
+                
+                <span class="badge bg-light text-dark border me-1" onclick="window.quartoListingCategory('Shared Mobility'); return false;" style="cursor: pointer;">
+                    Shared Mobility
+                </span>
+                
+            </div> 
+            
+        </div> 
+
+        <div class="metadata">
+            <div class="listing-pub-number">
+                doi:10.1016/j.tranpol.2023.07.022<br> 
+            </div>
+
+            
+            <div class="listing-pub-url">
+                <a href="https://doi.org/10.1016/j.tranpol.2023.07.022" style="color:#8250E6; text-decoration: none;">
+                    publisher <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+            </div> 
+            
+
+            
+        </div> 
+    </div> 
+    
+    
+    <div class="quarto-post image-right" data-index="9" data-categories="Q2hvaWNlJTIwTW9kZWwlMjBNZXRob2Rz" data-listing-date-sort="1654041600000">
+        <div class="thumbnail">
+            <a href="https://doi.org/10.1016/j.jtrangeo.2022.103391">
+                
+                
+            </a>
+        </div> 
+        
+        <div class="body">
+            <a href="https://doi.org/10.1016/j.jtrangeo.2022.103391" class="no-anchor">
+                <div class="listing-pub-title listing-title">Establishment location choice model considering intra-firm interactions</div>
+            </a>
+            
+            <div class="listing-pub-author listing-author">
+                Usman Ahmed, Jason Hawkins, Matthew J. Roorda<br> 
+            </div>
+            
+            <div class="metadata-value listing-pub-journal listing-publication">
+                
+                    <i>Journal of Transport Geography</i>, <b>102</b>, 103391–103391 (2022)<br>
+                
+            </div> 
+
+            
+            <div class="listing-categories">
+                
+                <span class="badge bg-light text-dark border me-1" onclick="window.quartoListingCategory('Choice Model Methods'); return false;" style="cursor: pointer;">
+                    Choice Model Methods
+                </span>
+                
+            </div> 
+            
+        </div> 
+
+        <div class="metadata">
+            <div class="listing-pub-number">
+                doi:10.1016/j.jtrangeo.2022.103391<br> 
+            </div>
+
+            
+            <div class="listing-pub-url">
+                <a href="https://doi.org/10.1016/j.jtrangeo.2022.103391" style="color:#8250E6; text-decoration: none;">
+                    publisher <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+            </div> 
+            
+
+            
+        </div> 
+    </div> 
+    
+    
+    <div class="quarto-post image-right" data-index="10" data-categories="Q2hvaWNlJTIwTW9kZWwlMjBNZXRob2RzJTJDRWNvbG9naWNhbCUyMEVjb25vbWljcyUyQ1NoYXJlZCUyME1vYmlsaXR5" data-listing-date-sort="1646092800000">
+        <div class="thumbnail">
+            <a href="https://doi.org/10.1016/j.multra.2022.100003">
+                
+                
+            </a>
+        </div> 
+        
+        <div class="body">
+            <a href="https://doi.org/10.1016/j.multra.2022.100003" class="no-anchor">
+                <div class="listing-pub-title listing-title">The taxi sharing practices: Matching, routing and pricing methods</div>
+            </a>
+            
+            <div class="listing-pub-author listing-author">
+                Jianrong Qiu, Kai Huang, Jason Hawkins<br> 
+            </div>
+            
+            <div class="metadata-value listing-pub-journal listing-publication">
+                
+                    <i>Multimodal Transportation</i>, <b>1</b>(1), 100003–100003 (2022)<br>
+                
+            </div> 
+
+            
+            <div class="listing-categories">
+                
+                <span class="badge bg-light text-dark border me-1" onclick="window.quartoListingCategory('Choice Model Methods'); return false;" style="cursor: pointer;">
+                    Choice Model Methods
+                </span>
+                
+                <span class="badge bg-light text-dark border me-1" onclick="window.quartoListingCategory('Ecological Economics'); return false;" style="cursor: pointer;">
+                    Ecological Economics
+                </span>
+                
+                <span class="badge bg-light text-dark border me-1" onclick="window.quartoListingCategory('Shared Mobility'); return false;" style="cursor: pointer;">
+                    Shared Mobility
+                </span>
+                
+            </div> 
+            
+        </div> 
+
+        <div class="metadata">
+            <div class="listing-pub-number">
+                doi:10.1016/j.multra.2022.100003<br> 
+            </div>
+
+            
+            <div class="listing-pub-url">
+                <a href="https://doi.org/10.1016/j.multra.2022.100003" style="color:#8250E6; text-decoration: none;">
+                    publisher <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+            </div> 
+            
+
+            
+        </div> 
+    </div> 
+    
+    
+    <div class="quarto-post image-right" data-index="11" data-categories="Q2hvaWNlJTIwTW9kZWwlMjBNZXRob2Rz" data-listing-date-sort="1637452800000">
+        <div class="thumbnail">
+            <a href="https://doi.org/10.5198/jtlu.2021.1854">
+                
+                
+            </a>
+        </div> 
+        
+        <div class="body">
+            <a href="https://doi.org/10.5198/jtlu.2021.1854" class="no-anchor">
+                <div class="listing-pub-title listing-title">The evolution of choice set formation in dwelling and location with rising prices: A decadal panel analysis in the Greater Toronto Area</div>
+            </a>
+            
+            <div class="listing-pub-author listing-author">
+                Jason Hawkins, Khandker Nurul Habib<br> 
+            </div>
+            
+            <div class="metadata-value listing-pub-journal listing-publication">
+                
+                    <i>Journal of Transport and Land Use</i>, <b>14</b>(1), 1227–1247 (2021)<br>
+                
+            </div> 
+
+            
+            <div class="listing-categories">
+                
+                <span class="badge bg-light text-dark border me-1" onclick="window.quartoListingCategory('Choice Model Methods'); return false;" style="cursor: pointer;">
+                    Choice Model Methods
+                </span>
+                
+            </div> 
+            
+        </div> 
+
+        <div class="metadata">
+            <div class="listing-pub-number">
+                doi:10.5198/jtlu.2021.1854<br> 
+            </div>
+
+            
+            <div class="listing-pub-url">
+                <a href="https://doi.org/10.5198/jtlu.2021.1854" style="color:#8250E6; text-decoration: none;">
+                    publisher <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+            </div> 
+            
+
+            
+        </div> 
+    </div> 
+    
+    
+    <div class="quarto-post image-right" data-index="12" data-categories="Q2hvaWNlJTIwTW9kZWwlMjBNZXRob2Rz" data-listing-date-sort="1635552000000">
+        <div class="thumbnail">
+            <a href="https://doi.org/10.1080/19427867.2021.1991554">
+                
+                
+            </a>
+        </div> 
+        
+        <div class="body">
+            <a href="https://doi.org/10.1080/19427867.2021.1991554" class="no-anchor">
+                <div class="listing-pub-title listing-title">Bayesian estimation of discrete choice models: a comparative analysis using effective sample size</div>
+            </a>
+            
+            <div class="listing-pub-author listing-author">
+                Jason Hawkins, Khandker Nurul Habib<br> 
+            </div>
+            
+            <div class="metadata-value listing-pub-journal listing-publication">
+                
+                    <i>Transportation Letters</i>, <b>14</b>(10), 1091–1099 (2021)<br>
+                
+            </div> 
+
+            
+            <div class="listing-categories">
+                
+                <span class="badge bg-light text-dark border me-1" onclick="window.quartoListingCategory('Choice Model Methods'); return false;" style="cursor: pointer;">
+                    Choice Model Methods
+                </span>
+                
+            </div> 
+            
+        </div> 
+
+        <div class="metadata">
+            <div class="listing-pub-number">
+                doi:10.1080/19427867.2021.1991554<br> 
+            </div>
+
+            
+            <div class="listing-pub-url">
+                <a href="https://doi.org/10.1080/19427867.2021.1991554" style="color:#8250E6; text-decoration: none;">
+                    publisher <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+            </div> 
+            
+
+            
+        </div> 
+    </div> 
+    
+    
+    <div class="quarto-post image-right" data-index="13" data-categories="Q2hvaWNlJTIwTW9kZWwlMjBNZXRob2Rz" data-listing-date-sort="1598313600000">
+        <div class="thumbnail">
+            <a href="https://doi.org/10.1177/2399808320946050">
+                
+                
+            </a>
+        </div> 
+        
+        <div class="body">
+            <a href="https://doi.org/10.1177/2399808320946050" class="no-anchor">
+                <div class="listing-pub-title listing-title">Evaluating pedestrian perceptions of street design with a 3D stated preference survey</div>
+            </a>
+            
+            <div class="listing-pub-author listing-author">
+                Dena Kasraian, Sneha Adhikari, David Kossowsky, Michael Luubert, G. Brent Hall, Jason Hawkins, Khandker Nurul Habib, Matthew J. Roorda<br> 
+            </div>
+            
+            <div class="metadata-value listing-pub-journal listing-publication">
+                
+                    <i>Environment and Planning B Urban Analytics and City Science</i>, <b>48</b>(7), 1787–1805 (2020)<br>
+                
+            </div> 
+
+            
+            <div class="listing-categories">
+                
+                <span class="badge bg-light text-dark border me-1" onclick="window.quartoListingCategory('Choice Model Methods'); return false;" style="cursor: pointer;">
+                    Choice Model Methods
+                </span>
+                
+            </div> 
+            
+        </div> 
+
+        <div class="metadata">
+            <div class="listing-pub-number">
+                doi:10.1177/2399808320946050<br> 
+            </div>
+
+            
+            <div class="listing-pub-url">
+                <a href="https://doi.org/10.1177/2399808320946050" style="color:#8250E6; text-decoration: none;">
+                    publisher <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+            </div> 
+            
+
+            
+        </div> 
+    </div> 
+    
+    
+    <div class="quarto-post image-right" data-index="14" data-categories="Q2hvaWNlJTIwTW9kZWwlMjBNZXRob2Rz" data-listing-date-sort="1582070400000">
+        <div class="thumbnail">
+            <a href="https://doi.org/10.1080/12265934.2020.1730224">
+                
+                
+            </a>
+        </div> 
+        
+        <div class="body">
+            <a href="https://doi.org/10.1080/12265934.2020.1730224" class="no-anchor">
+                <div class="listing-pub-title listing-title">Bus headway optimization with consumer surplus as a measure of societal benefit</div>
+            </a>
+            
+            <div class="listing-pub-author listing-author">
+                Jason Hawkins, S. C. Wirasinghe, John Douglas Hunt<br> 
+            </div>
+            
+            <div class="metadata-value listing-pub-journal listing-publication">
+                
+                    <i>International Journal of Urban Sciences</i>, <b>25</b>(1), 86–103 (2020)<br>
+                
+            </div> 
+
+            
+            <div class="listing-categories">
+                
+                <span class="badge bg-light text-dark border me-1" onclick="window.quartoListingCategory('Choice Model Methods'); return false;" style="cursor: pointer;">
+                    Choice Model Methods
+                </span>
+                
+            </div> 
+            
+        </div> 
+
+        <div class="metadata">
+            <div class="listing-pub-number">
+                doi:10.1080/12265934.2020.1730224<br> 
+            </div>
+
+            
+            <div class="listing-pub-url">
+                <a href="https://doi.org/10.1080/12265934.2020.1730224" style="color:#8250E6; text-decoration: none;">
+                    publisher <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+            </div> 
+            
+
+            
+        </div> 
+    </div> 
+    
+    
+    <div class="quarto-post image-right" data-index="15" data-categories="Q2hvaWNlJTIwTW9kZWwlMjBNZXRob2Rz" data-listing-date-sort="1575331200000">
+        <div class="thumbnail">
+            <a href="https://doi.org/10.5198/jtlu.2019.1624">
+                
+                
+            </a>
+        </div> 
+        
+        <div class="body">
+            <a href="https://doi.org/10.5198/jtlu.2019.1624" class="no-anchor">
+                <div class="listing-pub-title listing-title">A joint model of place of residence (POR) and place of work (POW): Making use of Gibbs sampling technique to overcome arbitrary assumptions in contexts of data limitation</div>
+            </a>
+            
+            <div class="listing-pub-author listing-author">
+                Hengyang Zhang, Jason Hawkins, Khandker Nurul Habib<br> 
+            </div>
+            
+            <div class="metadata-value listing-pub-journal listing-publication">
+                
+                    <i>Journal of Transport and Land Use</i>, <b>12</b>(1), 873–892 (2019)<br>
+                
+            </div> 
+
+            
+            <div class="listing-categories">
+                
+                <span class="badge bg-light text-dark border me-1" onclick="window.quartoListingCategory('Choice Model Methods'); return false;" style="cursor: pointer;">
+                    Choice Model Methods
+                </span>
+                
+            </div> 
+            
+        </div> 
+
+        <div class="metadata">
+            <div class="listing-pub-number">
+                doi:10.5198/jtlu.2019.1624<br> 
+            </div>
+
+            
+            <div class="listing-pub-url">
+                <a href="https://doi.org/10.5198/jtlu.2019.1624" style="color:#8250E6; text-decoration: none;">
+                    publisher <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+            </div> 
+            
+
+            
+        </div> 
+    </div> 
+    
+    
+    <div class="quarto-post image-right" data-index="16" data-categories="Q2hvaWNlJTIwTW9kZWwlMjBNZXRob2Rz" data-listing-date-sort="1567555200000">
+        <div class="thumbnail">
+            <a href="https://doi.org/10.1177/2399808319871308">
+                
+                
+            </a>
+        </div> 
+        
+        <div class="body">
+            <a href="https://doi.org/10.1177/2399808319871308" class="no-anchor">
+                <div class="listing-pub-title listing-title">Household-level dynamics in residential location choice modelling with a latent auction method</div>
+            </a>
+            
+            <div class="listing-pub-author listing-author">
+                Jason Hawkins, Adam Weiss, Khandker Nurul Habib<br> 
+            </div>
+            
+            <div class="metadata-value listing-pub-journal listing-publication">
+                
+                    <i>Environment and Planning B Urban Analytics and City Science</i>, <b>48</b>(2), 314–330 (2019)<br>
+                
+            </div> 
+
+            
+            <div class="listing-categories">
+                
+                <span class="badge bg-light text-dark border me-1" onclick="window.quartoListingCategory('Choice Model Methods'); return false;" style="cursor: pointer;">
+                    Choice Model Methods
+                </span>
+                
+            </div> 
+            
+        </div> 
+
+        <div class="metadata">
+            <div class="listing-pub-number">
+                doi:10.1177/2399808319871308<br> 
+            </div>
+
+            
+            <div class="listing-pub-url">
+                <a href="https://doi.org/10.1177/2399808319871308" style="color:#8250E6; text-decoration: none;">
+                    publisher <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+            </div> 
+            
+
+            
+        </div> 
+    </div> 
+    
+    
+    <div class="quarto-post image-right" data-index="17" data-categories="Q2hvaWNlJTIwTW9kZWwlMjBNZXRob2RzJTJDU2hhcmVkJTIwTW9iaWxpdHk=" data-listing-date-sort="1556668800000">
+        <div class="thumbnail">
+            <a href="http://hdl.handle.net/1807/100487">
+                
+                
+            </a>
+        </div> 
+        
+        <div class="body">
+            <a href="http://hdl.handle.net/1807/100487" class="no-anchor">
+                <div class="listing-pub-title listing-title">Report 4: Evaluating the Impacts of Private Transportation Companies on Travel Behaviour through a Stated Preference (SP) Survey</div>
+            </a>
+            
+            <div class="listing-pub-author listing-author">
+                Patrick Loa, Jason Hawkins, Khandker Nurul Habib<br> 
+            </div>
+            
+            <div class="metadata-value listing-pub-journal listing-publication">
+                
+                    <i>TSpace (University of Toronto)</i> (2019)<br>
+                
+            </div> 
+
+            
+            <div class="listing-categories">
+                
+                <span class="badge bg-light text-dark border me-1" onclick="window.quartoListingCategory('Choice Model Methods'); return false;" style="cursor: pointer;">
+                    Choice Model Methods
+                </span>
+                
+                <span class="badge bg-light text-dark border me-1" onclick="window.quartoListingCategory('Shared Mobility'); return false;" style="cursor: pointer;">
+                    Shared Mobility
+                </span>
+                
+            </div> 
+            
+        </div> 
+
+        <div class="metadata">
+            <div class="listing-pub-number">
+                <br> 
+            </div>
+
+            
+            <div class="listing-pub-url">
+                <a href="http://hdl.handle.net/1807/100487" style="color:#8250E6; text-decoration: none;">
+                    publisher <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+            </div> 
+            
+
             
         </div> 
     </div> 
@@ -811,8 +1669,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/hawkins-tech-lab/Hawkinslab">
-      <i class="bi bi-github" role="img" aria-label="Quarto GitHub">
+    <a class="nav-link" href="https://github.com/Hawkins-TECH-Lab">
+      <i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
     </a>
   </li>  
