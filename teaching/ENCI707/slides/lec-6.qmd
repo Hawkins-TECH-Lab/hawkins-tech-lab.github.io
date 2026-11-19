@@ -317,7 +317,7 @@ Solution: 12
 
 ## Fractional Design
 - Use a subset of choice sets from the full factorial design
-- Not all effects can be mesured (e.g., only main effects and a few interaction effects)
+- Not all effects can be measured (e.g., only main effects and a few interaction effects)
 - Lower bound on number of choice observations for parameter identification still exists
 
 ## Fractional Factorial Orthogonal Designs {.smaller}

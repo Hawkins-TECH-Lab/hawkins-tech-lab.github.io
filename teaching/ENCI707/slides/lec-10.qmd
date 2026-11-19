@@ -330,7 +330,7 @@ $$𝑧 = 1 \text{; fish oil supplement}$$
 - Start with treatment and control groups
 - Need sufficiently similar groups – balance
 - Beware self-selection bias
-![](../../../assets/images/teaching/ENCI707/Lecture7/ate_figure.png){fig-align="center"}
+![](../../../assets/images/teaching/ENCI707/Lecture10/ate_figure.png){fig-align="center"}
 - True average treatment effect = -7.5 mmHG
 - Average treatment effect|treatment = +12.5 mmHG
 
@@ -340,7 +340,7 @@ $$𝑧 = 1 \text{; fish oil supplement}$$
 - Suppose treatment and control groups **systematically differ**, with healthier patients receiving treatment
 
 ## Health Status Example
-![](../../../assets/images/teaching/ENCI707/Lecture7/health_status_ex.png){fig-align="center"}
+![](../../../assets/images/teaching/ENCI707/Lecture10/health_status_ex.png){fig-align="center"}
 
 ## Adding Predictors: Omitted Variables
 - Simple solution is to compare treated and control units **conditional on previous health status**
@@ -366,4 +366,4 @@ $$𝑦^0,𝑦_1 \perp 𝑧|𝑥$$
 - Must make “leap of faith” that we have conditioned on all necessary confounding variables – **selection on observables** in econometrics literature
 
 ## Common Support or Overlap
-![](../../../assets/images/teaching/ENCI707/Lecture7/common_support.svg){fig-align="center"}
+![](../../../assets/images/teaching/ENCI707/Lecture10/common_support.svg){fig-align="center"}

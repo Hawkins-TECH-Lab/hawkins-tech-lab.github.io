@@ -37,7 +37,7 @@ Note that this schedule may be updated as the semester progresses, with all chan
 |  | Thurs, Nov 19 | Causal Inference Methods | [📋](/teaching/ENCI707/slides/lec-11.html "Causal Inference Methods Lecture") | | | |
 | [13](/teaching/ENCI707/weeks/week-13.html) | Tues, Nov 24 | Non-Market Valuation | [📋](/teaching/ENCI707/slides/lec-12.html "Non-Market Valuation Lecture") | | | |
 |  | Thurs, Nov 26 | Non-Market Valuation Paper Review | | | | |
-| [14](/teaching/ENCI707/weeks/week-14.html) | Tues, Dec 01  | AI Extensions | [📋](/teaching/ENCI707/slides/lec-13.html "AI Extensions Lecture") | | | |
+| [14](/teaching/ENCI707/weeks/week-14.html) | Tues, Dec 01  | Term Paper Meetings |  | | | |
 |  | Thurs, Dec 03  | AI Extensions Paper Review | | | | |
 | [16](/teaching/ENCI707/weeks/week-16.html) | Tues, Dec 15  | **Term Paper Due** | | | | [📝](/teaching/ENCI707/project/project-description.html#final)|
 :::
