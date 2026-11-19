@@ -31,3 +31,7 @@ teaching/CIVE461/weeks/rough week 1.txt
 teaching/CIVE461/Introduction.txt
 
 **/*.quarto_ipynb
+
+# Standalone-render output (the site build goes to docs/ / gh-pages)
+*_files/libs/
+*-speaker*.html

@@ -9,7 +9,7 @@ about:
   links:
     - icon: github
       text: Github
-      href: https://github.com/UNL-Hawkins-Lab/Hawkinslab
+      href: https://github.com/Hawkins-TECH-Lab
 
 ---
 

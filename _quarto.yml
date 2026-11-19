@@ -2,6 +2,9 @@ project:
   type: website
   output-dir: docs
 
+execute:
+  freeze: auto  # CI never re-runs code; render locally and commit _freeze/
+
 editor:
   render-on-save: true
   
@@ -24,12 +27,10 @@ website:
         href: presentations/index.qmd
       - text: "Teaching"
         menu:
-          - text: "CIVE461/861"
-            href: teaching/CIVE461/index.qmd
           - text: "ENCI707"
             href: teaching/ENCI707/index.qmd
-          - text: "CIVE990T"
-            href: teaching/Guest Lectures/CIVE990T.qmd
+          - text: "All courses"
+            href: teaching/teaching.qmd
       - text: Thoughts
         menu:
           - text: "Books"
@@ -38,7 +39,7 @@ website:
             href:  thoughts/blog.qmd
     right:
       - icon: rss
-        href: index.xml
+        href: thoughts/blog.xml
     background: "#595758"
     
   sidebar:
@@ -237,25 +238,6 @@ website:
               text: Transportation Finance in Canada
             - href: projects/transport_canada/carbon_pricing.html
               text: Carbon Pricing
-    - id: Books
-      style: "docked"
-      search: true
-      align: center
-      contents:
-        - href: misc/books.qmd
-          text: Books
-
-    - id: Teaching
-      style: "docked"
-      search: true
-      align: center
-      contents:
-        - section: "Teaching"
-          contents:
-            - href: teaching/CIVE461/index.qmd
-              text: CIVE461
-            - href: teaching/ENCI707/index.qmd
-              text: ENCI707
 
   page-footer:
     left: |
@@ -272,8 +254,8 @@ website:
       
     right:
       - icon: github
-        href: https://github.com/hawkins-tech-lab/Hawkinslab
-        aria-label: Quarto GitHub     
+        href: https://github.com/Hawkins-TECH-Lab
+        aria-label: GitHub     
     background: "#595758"
     
 format:

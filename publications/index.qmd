@@ -4,10 +4,12 @@ page-layout: full
 listing:
   id: pubs
   template: ../_ejs/publications.ejs
-  contents: publications_by_topic.yml
+  contents: publications.yml
   sort: "date desc"
   page-size: 30
   filter-ui: true
+  exclude:
+    hidden: true
 ---
 
 :::{#pubs}

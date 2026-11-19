@@ -1,0 +1,33 @@
+name: Publish site
+
+# Render and deploy to GitHub Pages (gh-pages branch) on every push to main.
+# Code cells are NOT re-run here: pages use `freeze: auto`, so CI uses the
+# results in _freeze/. Render a computational page locally and commit its
+# _freeze/ output when you change it.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: 1.6.39
+
+      - uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -9,7 +9,6 @@ listing:
   filter-ui: false
   feed: true
 page-layout: full
-margin-header: signup.html
 title-block-banner: false
 ---
 ::: {.column-page}

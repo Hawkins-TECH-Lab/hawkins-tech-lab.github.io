@@ -1,56 +1,55 @@
-name: Update Publications
+name: Update publications
+
+# Monthly: pull new works from OpenAlex (ORCID) and arXiv, merge them into
+# publications/publications.yml, and open a pull request for review.
+# Merging the PR triggers the "Publish site" workflow.
 
 on:
   schedule:
-    - cron: '0 0 1 */2 *'  
-  workflow_dispatch: # Allows you to trigger it manually from the "Actions" tab
+    - cron: '0 12 1 * *'   # 1st of each month
+  workflow_dispatch:
 
 jobs:
   update-pubs:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Required to create branches/commits
-      pull-requests: write # Required to open the PR
+      contents: write
+      pull-requests: write
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.PAT_TOKEN }}
+      - uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-          cache: 'pip' # <-- This caches your venv packages so future runs are lightning fast!
 
-      - name: Install Python dependencies
+      - name: Install dependencies
+        run: pip install requests pyyaml
+
+      - name: Fetch and merge publications
+        id: sync
         run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          python scripts/update_pubs.py | tee sync.log
+          {
+            echo 'log<<EOF'
+            cat sync.log
+            echo 'EOF'
+          } >> "$GITHUB_OUTPUT"
 
-      - name: Fetch latest publications
-        run: python scripts/update_pubs.py
-
-      - name: Commit and push changes
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          if [[ -n $(git status --porcelain) ]]; then
-            git add publications/publications_by_topic.yml
-            git commit -m "Auto-update publications from arXiv [skip ci]"
-            git push
-          else
-            echo "No changes to commit."
-          fi
-
-      # Install Quarto (required)
-      - name: Install Quarto
-        uses: quarto-dev/quarto-actions/setup@v2
-
-      # Quarto handles the build AND the gh-pages push all in one step!
-      - name: Render and Publish to GitHub Pages
-        uses: quarto-dev/quarto-actions/publish@v2
+      - name: Open pull request
+        uses: peter-evans/create-pull-request@v7
         with:
-          target: gh-pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # A PAT lets the merge of this PR trigger the publish workflow and
+          # avoids needing the "Actions can create PRs" repo setting.
+          token: ${{ secrets.PAT_TOKEN || secrets.GITHUB_TOKEN }}
+          branch: auto/update-publications
+          delete-branch: true
+          add-paths: publications/publications.yml
+          commit-message: Update publications from OpenAlex/arXiv
+          title: New publications found
+          body: |
+            Check the suggested `categories` on new entries, and set
+            `hidden: true` on anything that shouldn't be listed, before merging.
+
+            ```
+            ${{ steps.sync.outputs.log }}
+            ```

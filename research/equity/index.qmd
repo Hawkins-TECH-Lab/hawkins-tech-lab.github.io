@@ -5,10 +5,12 @@ page-layout: full
 listing:
   id: pubs
   template: ../../_ejs/publications.ejs 
-  contents: ../../publications/publications_by_topic.yml
+  contents: ../../publications/publications.yml
   sort: "date desc"
   # sort-ui: true
   filter-ui: true
+  exclude:
+    hidden: true
   include:
     categories: "Equity"
 

@@ -1,0 +1,14 @@
+```{=html}
+<table class="table team-table">
+  <tbody>
+  <% for (const item of items) { %>
+    <tr <%= metadataAttrs(item) %>>
+      <td class="team-years"><%= item.years || '' %></td>
+      <td><strong><%= item.title %></strong></td>
+      <td><%= item.role %></td>
+      <td><%= item.institution || '' %></td>
+    </tr>
+  <% } %>
+  </tbody>
+</table>
+```

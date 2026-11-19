@@ -1,0 +1,177 @@
+# Team roster: the single source of truth for team/index.qmd.
+#
+# To add someone: copy an entry and edit it. To move someone to alumni, change
+# their `group`. Leave a field out (or blank) if you don't have it.
+#
+# group (decides which section the person appears in):
+#   current-grad   Current graduate students
+#   current-staff  Research associates / postdocs
+#   former-grad    Former graduate students
+#   former-staff   Former research associates / postdocs
+#   former-ugrad   Former undergraduate research assistants
+#   former-hs      Former high school researchers
+#
+# image: path relative to team/index.qmd; leave out to use the blank avatar.
+
+# ---- Current graduate students ---------------------------------------------
+- title: Sam Pollock
+  group: current-grad
+  role: Ph.D. Student
+  institution: University of Calgary
+  description: >-
+    Sam's research focuses on the safety, comfort, and design of multi-use
+    pathways. He is passionate about using preference and behavioural modelling
+    to understand transportation choices and encourage people to make healthy
+    and sustainable transportation decisions. Sam previously completed his BSc
+    and MSc in Civil Engineering at the University of Calgary. Outside
+    academia, Sam's interests include coaching speed skating, climbing
+    mountains, and baking banana bread.
+
+- title: Mehrnoosh Zare
+  group: current-grad
+  role: M.Sc. Student
+  institution: University of Calgary
+  description: >-
+    Mehrnoosh is an M.Sc. student in Transportation Engineering. She received
+    her M.Sc. in Industrial Engineering with a specialization in Logistics and
+    Supply Chain Management from K.N. Toosi University of Technology and her
+    B.Sc. in Industrial Engineering from Azad University.
+
+- title: Thomas Williams
+  group: current-grad
+  role: M.Sc. Student
+  institution: University of Calgary
+  description: ""
+
+- title: Azin Dinarvand
+  group: current-grad
+  role: M.Sc. Student
+  institution: University of Calgary
+  description: ""
+
+- title: Zahra Dorri
+  group: current-grad
+  role: Ph.D. Student
+  institution: University of Calgary
+  description: ""
+
+# ---- Former research associates ---------------------------------------------
+- title: Asiri Senasinghe
+  group: former-staff
+  role: Research Associate
+  institution: University of Calgary
+  description: >-
+    PhD and MSc in Civil Engineering (University of Calgary), with doctoral
+    work on public transit equity through simulation and mathematical
+    modelling.
+
+# ---- Former graduate students -----------------------------------------------
+- title: Mohammed Abuhadrous
+  group: former-grad
+  role: M.Sc. Student
+  institution: University of Calgary
+  description: >-
+    EV charging station planning for multi-unit dwellings in Calgary
+    considering travel patterns and grid constraints (co-supervised with
+    Dr. Lina Kattan).
+
+- title: Hania Afzal
+  group: former-grad
+  role: Ph.D. Student
+  institution: University of Nebraska–Lincoln
+  image: ../assets/images/team/hania.jpg
+  description: Electric vehicle adoption in the United States.
+
+- title: Omid Armantalab
+  group: former-grad
+  role: Ph.D. Student
+  institution: University of Nebraska–Lincoln
+  image: ../assets/images/team/omid.jpg
+  description: >-
+    Bayesian statistical representations of transportation accessibility for
+    equity applications.
+
+- title: Mohammad Elayan
+  group: former-grad
+  role: Ph.D. Student
+  institution: University of Nebraska–Lincoln
+  image: ../assets/images/team/mohammad.jpg
+  description: ""
+
+- title: Donya Negahbani
+  group: former-grad
+  role: M.Sc. Student
+  institution: University of Nebraska–Lincoln
+  image: ../assets/images/team/donya.jpg
+  description: ""
+
+- title: Nick Aldridge
+  group: former-grad
+  role: M.S. Student
+  institution: University of Nebraska–Lincoln
+  image: ../assets/images/team/nick.jpg
+  description: >-
+    Thesis: "Performing Motorized-to-Non-Motorized Crash Analysis Using
+    Multi-Model LBS Traffic Data Calibrated Through Random Forest Models"
+
+# ---- Former undergraduate research assistants -------------------------------
+- title: Zunera Ayaz
+  group: former-ugrad
+  years: ""
+  role: Undergraduate Research Assistant
+  institution: University of Calgary
+
+- title: Jawwad Ahmed
+  group: former-ugrad
+  years: ""
+  role: Undergraduate Research Assistant
+  institution: University of Calgary
+
+- title: Yasmine Baccari
+  group: former-ugrad
+  years: "2025"
+  role: B.S. Civil Engineering
+  institution: University of Calgary
+
+- title: Kun-Yu Lee
+  group: former-ugrad
+  years: 2023–2024
+  role: B.S. Computer Science
+  institution: University of Nebraska
+
+- title: Sagun Karki
+  group: former-ugrad
+  years: 2022–2024
+  role: B.S. Computer Science
+  institution: University of Nebraska
+
+- title: Abigail Metschke
+  group: former-ugrad
+  years: 2022–2023
+  role: B.S. Environmental Engineering
+  institution: University of Nebraska
+
+- title: William Turman
+  group: former-ugrad
+  years: 2022–2023
+  role: B.S. Civil Engineering
+  institution: University of Nebraska
+
+- title: Casey Nolte
+  group: former-ugrad
+  years: "2022"
+  role: B.S. Chemical Engineering
+  institution: University of Nebraska
+
+- title: Kumo Babe
+  group: former-ugrad
+  years: "2022"
+  role: B.S. Mechanical Engineering
+  institution: University of Nebraska
+
+# ---- Former high school researchers -----------------------------------------
+- title: Zihan (Camila) Ma
+  group: former-hs
+  years: ""
+  role: High School Researcher
+  institution: ""

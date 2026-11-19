@@ -6,7 +6,21 @@ section-divs: false
 toc: false
 css: assets/css/index.css
 listing:
-  id: research
+- id: recent-pubs
+  contents: publications/publications.yml
+  template: _ejs/publications.ejs
+  sort: "date desc"
+  max-items: 5
+  exclude:
+    hidden: true
+- id: recent-posts
+  contents: thoughts/posts
+  type: grid
+  sort: "date desc"
+  max-items: 3
+  grid-columns: 3
+  fields: [image, date, title, description]
+- id: research
   type: grid
   contents:
     - research/choice_methods/index.qmd
@@ -52,6 +66,23 @@ We take a broad view of land use to encompass the impacts of human activity on e
 ## Transdisciplinary Scholarship
 The TECH Group is a transdisciplinary research group that combines engineering and social science expertise to understanding the pressing issues facing cities and regions. With a core focus on transportation and land use interactions, the group develops methods and studies to provide sound policy and behavioural analysis to our partners.
 
-See the [University of Calgary Transciplinary Research](https://transdisciplinary.ucalgary.ca/) website for more details.
+See the [University of Calgary Transdisciplinary Research](https://transdisciplinary.ucalgary.ca/) website for more details.
 
 ## Research Areas
+
+::: {#research}
+:::
+
+## Recent Publications
+
+::: {#recent-pubs}
+:::
+
+[All publications →](publications/index.qmd)
+
+## Latest from the Blog
+
+::: {#recent-posts}
+:::
+
+[All posts →](thoughts/blog.qmd)

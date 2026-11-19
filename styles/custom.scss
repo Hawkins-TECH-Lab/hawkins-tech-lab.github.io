@@ -273,3 +273,50 @@ div.header-text {
   font-size: 13px;
 
 }
+/* -- team (team/team.yml) --*/
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin: 1rem 0 2rem;
+}
+
+.team-card {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 1rem;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  background: $sand;
+}
+
+.team-photo {
+  width: 88px;
+  height: 104px;
+  flex-shrink: 0;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 6px;
+}
+
+.team-name {
+  font-weight: 700;
+  font-size: 1.05rem;
+  line-height: 1.2;
+}
+
+.team-role {
+  color: #757883;
+  font-size: 0.85rem;
+  margin: 0.15rem 0 0.5rem;
+}
+
+.team-bio {
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.team-table td { vertical-align: top; }
+.team-years { white-space: nowrap; color: #757883; width: 8rem; }

@@ -1,0 +1,1328 @@
+# Publication list. Hand edits are safe: see scripts/update_pubs.py for conventions.
+- title: An EVSE equity analysis framework considering differential job access
+  author: Donya Negahbani, Ben Aaron, Jason Hawkins
+  date: '2026-09-01'
+  year: '2026'
+  journ: International Journal of Urban Sciences
+  page: 1–27
+  pub_number: doi:10.1080/12265934.2026.2724069
+  doi: 10.1080/12265934.2026.2724069
+  path: https://doi.org/10.1080/12265934.2026.2724069
+  url_source: https://doi.org/10.1080/12265934.2026.2724069
+  categories:
+  - Equity
+  - Vehicle Adoption
+  type: article
+  description: 'To address the risk of a widening rural–urban divide in electric vehicle (EV) charging
+    access, this study examines public charging infrastructure deployment through the lens of travel alternatives
+    and land-use differences. We argue that planning for electric vehicle supply equipment (EVSE) must
+    account for differences in the ability to replace private car trips with other transportation modes
+    or online alternatives. We analyze nationwide travel patterns for urban and rural populations in the
+    U.S., sequentially excluding trips that could be substituted (such as non-driving commutes or shopping
+    via e-commerce), to identify relative charging needs and to evaluate the equity of current charging
+    infrastructure distribution. Using job accessibility as a novel measure of rurality, our analysis
+    reveals that rural residents travel significantly longer distances daily, and that limited job access
+    (as a proxy for limited amenity access) corresponds to greater dependence on private vehicles. We
+    introduce an equity assessment framework based on the Lorenz curve, extended with a Cobb–Douglas-style
+    joint metric of job access and EVSE access, to evaluate how well charging infrastructure serves different
+    communities. This framework highlights substantial disparities in public charging availability: we
+    characterize and quantify the current distribution of public EVSE provision across accessibility contexts
+    across the U.S. as of 2024, underscoring the need for more inclusive charging infrastructure planning.'
+- title: Civil Engineering Students’ Perceptions of Public Sector Transportation Roles during Search for
+    Full-Time Employment
+  author: Gracie Kerr, Logan Perry, Elizabeth Jones, Jason Hawkins
+  date: '2026-08-21'
+  year: '2026'
+  journ: ASEE Annual Conference & Exposition
+  pub_number: doi:10.18260/1-2--58889
+  doi: 10.18260/1-2--58889
+  path: https://doi.org/10.18260/1-2--58889
+  url_source: https://doi.org/10.18260/1-2--58889
+  categories:
+  - General Transport
+  type: conference-paper
+- title: Multiscale carbon burden of infrastructure in the United States
+  author: Jason Hawkins
+  date: '2026-08-14'
+  year: '2026'
+  journ: npj Sustainable Mobility and Transport
+  volume: '3'
+  issue: '1'
+  pub_number: doi:10.1038/s44333-026-00123-2
+  doi: 10.1038/s44333-026-00123-2
+  arxiv: '2510.08611'
+  path: https://doi.org/10.1038/s44333-026-00123-2
+  url_source: https://doi.org/10.1038/s44333-026-00123-2
+  url_preprint: https://arxiv.org/abs/2510.08611
+  categories:
+  - Ecological Economics
+  type: article
+  description: 'Anthropogenic greenhouse gas (GHG) emissions vary spatially with development patterns,
+    climate, economic structure, and energy systems. Using Vulcan v4.0 fossil-fuel CO2 (FFCO2) data for
+    the United States at 1-km resolution, this study examines how land use and infrastructure shape emissions
+    at local and metropolitan scales. I combine doubly robust Bayesian Additive Regression Tree estimators
+    with multi-treatment spatial regression models to identify local and spillover effects by sector.
+    A key methodological contribution is treating transportation emissions as production-based, capturing
+    infrastructure carbon burden rather than household-attributed travel demand. Results show strong scale
+    dependence and spatial interaction: in the preferred heteroscedasticity-robust SEM+SLX model with
+    a 10-km distance band, residual spatial autocorrelation declines substantially. Local roadway design
+    is a strong negative predictor of transportation FFCO2, while neighbouring land use diversity exceeds
+    local diversity. In residential sectors, higher local density is consistently associated with lower
+    per-capita emissions. These findings support coordinated multi-scale mitigation policy in the United
+    States.'
+- title: A Pseudo Panel Difference-in-Differences (DiD) Analysis of Online Shopping Behavior in the Puget
+    Sound Regional Council (PSRC) Region
+  author: Jason Hawkins, Usman Ahmed, Omid Armantalab
+  date: '2026-07-04'
+  year: '2026'
+  journ: arXiv Preprint
+  pub_number: arXiv:2607.03665
+  doi: 10.48550/arxiv.2607.03665
+  arxiv: '2607.03665'
+  path: https://doi.org/10.48550/arxiv.2607.03665
+  url_preprint: https://doi.org/10.48550/arxiv.2607.03665
+  categories:
+  - General Transport
+  type: preprint
+  description: Online shopping is a growing trend, particularly following the COVID-19 lock-downs enacted
+    by many cities. Understanding these trends requires robust panel dat methods. However, panel data
+    (i.e., with repeated measurements of the same observational units) are often unavailable. In this
+    study, we use a propensity score weighting (PSW) approach to adjust repeated cross-sectional travel
+    diary surveys collected in the Puget Sound Regional Council (PSRC) region. The most common home delivery
+    is packages (2.09 days per week in 2023), followed by food (0.36 days per week in 2023). We find that
+    single-family detached and townhouse residents tend to receive more home deliveries than those living
+    in apartments. We also find a difference in several patterns pre- and post-COVID pandemic. Vehicle
+    deficient households did not exhibit the same increase in home delivery frequency as other households
+    pre-COVID, but the pattern reversed in the post-COVID period - i.e., vehicle deficient households
+    saw a relative increase in delivery frequency. Overall, this study demonstrates the pseudo-panel approach
+    to causal inference by leveraging differences in PSW-weighted in delivery frequency across treatment
+    groups.
+- title: 'Residential Price Modeling Using Spatially Validated Machine Learning Methods: A Comparison
+    Across Geographical Contexts'
+  author: Usman Ahmed, Jason Hawkins
+  date: '2026-07-03'
+  year: '2026'
+  journ: Transportation Research Record Journal of the Transportation Research Board
+  pub_number: doi:10.1177/03611981261457410
+  doi: 10.1177/03611981261457410
+  arxiv: '2609.00375'
+  path: https://doi.org/10.1177/03611981261457410
+  url_source: https://doi.org/10.1177/03611981261457410
+  url_preprint: https://arxiv.org/abs/2609.00375
+  categories:
+  - General Transport
+  type: article
+  description: Land use (i.e., buildings) and transportation infrastructure are tightly coupled systems,
+    such that residential property prices play a critical role in transportation planning. In a similar
+    manner, transportation infrastructure influences property prices, such that accurate forecasts of
+    both systems are related research problems. The objective of this study is to examine these interactions
+    and evaluate the effectiveness of machine learning methods in modeling residential real estate prices
+    across different urban contexts. Specifically, we first examine the impact of land and transportation
+    infrastructure on residential real estate prices using Extreme Gradient Boosting (XGBoost) and Random
+    Forest (RF) machine learning methods, and compare results between two cities representing diverse
+    geographic and socioeconomic contexts. Second, we investigate the application of machine learning
+    methods on spatial data and provide a comparison of non-spatial and spatial cross-validation on the
+    performance of machine learning methods. We use SHapley Additive exPlanations (SHAP) values to study
+    the impact of land use and transportation infrastructure on real estate prices. The models are applied,
+    and results are compared between the Rawalpindi and Islamabad Metropolitan Area in Pakistan and the
+    City of Toronto in Canada. We find that, despite differences in demographics and economic development,
+    the two cities exhibit similarities in the effect of transportation infrastructure and local amenities
+    on dwelling prices. Proximity to the major central city cores (i.e., downtowns) increases sale price.
+    The effect of transportation infrastructure is differentiated, with high quality transit (e.g., subway
+    and BRT) increasing and conventional bus stop proximity decreasing sale price, respectively. We confirm
+    the previous finding in other fields that non-spatial cross-validation over-estimates the prediction
+    accuracy of machine learning algorithms on spatially referenced datasets. We find that the XGBoost
+    model has slightly higher performance than the RF model. We recommend careful use of machine learning
+    methods in the case of spatial data specifically in modeling of land prices.
+- title: 'Modeling Mode and Departure Time Responses to Congestion Pricing: A Spatial and Behavioral Analysis
+    Using Cross-Nested Logit Model'
+  author: Mohammad Amin Ashena, Adam Weiss, Jason Hawkins, Lina Kattan
+  date: '2026-06-29'
+  year: '2026'
+  journ: arXiv Preprint
+  pub_number: arXiv:2606.29756
+  doi: 10.48550/arxiv.2606.29756
+  arxiv: '2606.29756'
+  path: https://doi.org/10.48550/arxiv.2606.29756
+  url_preprint: https://doi.org/10.48550/arxiv.2606.29756
+  categories:
+  - Choice Model Methods
+  - Infrastructure Finance
+  type: preprint
+  description: Effective congestion management strategies require a detailed understanding of how travellers
+    respond to different pricing interventions. This paper presents an in-depth analysis of traveller
+    behaviour under congestion pricing scenarios, focusing specifically on mode and departure time decisions.
+    Utilizing stated preference survey data from commuters in Calgary, Canada, three discrete choice models
+    including Multinomial Logit, Nested Logit, and Cross-Nested Logit are developed and compared. Results
+    indicate that the Cross-Nested Logit model provides superior behavioural realism and flexibility by
+    capturing simultaneous substitutions across modes and departure times. Spatial analysis and elasticity
+    assessments reveal substantial geographic variation in traveller sensitivity to pricing, particularly
+    highlighting stronger responses among commuters travelling to high-demand central locations and during
+    peak travel periods. Further elasticity analyses clarify behavioural patterns, identifying traveller
+    groups with varying degrees of flexibility. Policy analyses underscore the effectiveness of targeted,
+    dynamic tolling, particularly cordon-based pricing combined with time-specific toll adjustments, in
+    reducing congestion levels. Additionally, the findings highlight the necessity of complementary measures,
+    including improved transit services and targeted discounts, to ensure equitable outcomes. The findings
+    offer targeted insights into how specific pricing strategies such as cordon, distance, and travel
+    time-based tolls can be used to influence travel behaviour, reduce peak-period congestion, and guide
+    equitable policy design in urban transportation planning.
+- title: 'Understanding traveller behaviour under congestion pricing: A survey-based decision tracking
+    approach'
+  author: Mohammad Amin Ashena, Adam Weiss, Jason Hawkins, Lina Kattan
+  date: '2026-05-15'
+  year: '2026'
+  journ: Transportation Research Interdisciplinary Perspectives
+  volume: '38'
+  page: 102048–102048
+  pub_number: doi:10.1016/j.trip.2026.102048
+  doi: 10.1016/j.trip.2026.102048
+  path: https://doi.org/10.1016/j.trip.2026.102048
+  url_source: https://doi.org/10.1016/j.trip.2026.102048
+  categories:
+  - Choice Model Methods
+  - Infrastructure Finance
+  type: article
+  description: This paper examines commuter responses to three congestion pricing (CP) schemes including
+    cordon-based, distance-based, and travel time–based in Calgary, Canada. The study uses an efficiently
+    structured, personalized stated preference survey that integrates sociodemographic information, revealed
+    commuting patterns, and responses to hypothetical CP scenarios, with a focus on joint mode and departure-time
+    decisions. A key contribution of this study lies in the survey design, which records respondents’
+    interactions with the choice interface and identifies the alternatives actively examined during each
+    choice task. This information is used to estimate a tracked multinomial logit model in which the choice
+    set is restricted to alternatives genuinely considered by each respondent. Comparison with a conventional
+    non-tracked specification shows that assuming full consideration of all displayed alternatives inflates
+    sensitivity to travel time, cost, and toll attributes. By contrast, the tracked model yields more
+    moderate elasticities and parameter estimates that better reflect observed decision-making behaviour.
+    Applied to the congestion pricing context, the results suggest shifts towards transit and ridesharing
+    under certain pricing structures, highlighting how pricing design can influence peak-period travel
+    decisions. Overall, the findings demonstrate that incorporating interaction-tracking data into stated
+    preference surveys enhances the behavioural credibility and policy relevance of model-based evaluations
+    of congestion pricing strategies.
+- title: Why Do We Need Travel Behavior Theory in the Age of AI? Multiple Goal Pursuit as an Illustrative
+    Theory
+  author: Jason Hawkins, Omid Armantalab
+  date: '2026-05-11'
+  year: '2026'
+  journ: Research Square Preprint
+  pub_number: doi:10.21203/rs.3.rs-8811117/v1
+  doi: 10.21203/rs.3.rs-8811117/v1
+  arxiv: '2606.29145'
+  path: https://doi.org/10.21203/rs.3.rs-8811117/v1
+  url_preprint: https://doi.org/10.21203/rs.3.rs-8811117/v1
+  categories:
+  - Choice Model Methods
+  - Vehicle Adoption
+  type: preprint
+  description: 'Abstract Travel behavior and demand modeling seeks to understand the factors that motivate
+    transportation decisions. At the same time, the field is increasingly adopting algorithmic and artificial
+    intelligence (AI) tools that improve predictive accuracy, often at the cost of a grounding in hypothesis-based
+    theory validation and behavioural explanation. In this discussion paper, we use goal pursuit theory
+    (GPT) to illustrate why behavioral theory is a necessary complement to prediction in travel behavior
+    research. Unlike random utility maximization (RUM) or close alternatives (e.g., random regret minimization
+    (RRM)), GPT explicitly models how travelers (1) activate context-dependent goals (hedonic, gain, normative),
+    (2) resolve conflicts between competing objectives, and (3) make sequential decisions across temporal
+    scales. We demonstrate GPT''s merits through three transport applications: activity scheduling (handling
+    hierarchical goal structures), vehicle ownership (disentangling bundled mobility goals), and location
+    choice (capturing latent goal interactions via matrix factorization). We provide actionable guidance
+    for implementation, including: (a) hybrid choice model specifications linking goals to observable
+    behaviors, (b) parallels to complementary behavioral theories from the transportation field, and (c)
+    data requirements and comparative benchmarks against RUM/RRM models.'
+- title: 'Potential for electric vehicle adoption in Midwest US States: A stated preference and two-stage
+    MRP study'
+  author: Omid Armantalab, Riddhimoy Ghosh, Jason Hawkins
+  date: '2026-03-07'
+  year: '2026'
+  journ: Journal of Choice Modelling
+  volume: '59'
+  page: 100597–100597
+  pub_number: doi:10.1016/j.jocm.2026.100597
+  doi: 10.1016/j.jocm.2026.100597
+  path: https://doi.org/10.1016/j.jocm.2026.100597
+  url_source: https://doi.org/10.1016/j.jocm.2026.100597
+  categories:
+  - Choice Model Methods
+  - Vehicle Adoption
+  type: article
+- title: 'Safety, comfort, and design of multi-use pathways: a scoping review'
+  author: Sam Pollock, Jason Hawkins, Lina Kattan
+  date: '2026-01-08'
+  year: '2026'
+  journ: Transport Reviews
+  volume: '46'
+  issue: '4'
+  page: 644–678
+  pub_number: doi:10.1080/01441647.2025.2611825
+  doi: 10.1080/01441647.2025.2611825
+  path: https://doi.org/10.1080/01441647.2025.2611825
+  url_source: https://doi.org/10.1080/01441647.2025.2611825
+  categories:
+  - Equity
+  - Shared Mobility
+  type: article
+  description: Active modes of transportation support positive health, environmental, and equity outcomes
+    by promoting physical activity and reducing reliance on motor vehicles. Multi-use pathways are a type
+    of active transportation infrastructure that supports a variety of modes and trip purposes. Because
+    they accommodate diverse users, multi-use pathways have unique design considerations. Understanding
+    the safety, comfort, and design of multi-use pathways can help practitioners understand when these
+    facilities are appropriate and how to design them for the comfort and safety of all users. This paper
+    presents a scoping review of the literature related to the safety, comfort, and design of multi-use
+    pathways, with the aim of improving the understanding of the current research landscape and identifying
+    gaps in the literature. Systematic search and screening methods were used to find 59 relevant papers.
+    Common topics among the included papers were objective safety, user speeds, conflict/interaction,
+    level of service analysis, and the exploration of user preferences. Identified research gaps included
+    the need for more studies on emerging modes such as e-bikes and micromobility, a deeper understanding
+    of user preferences and behaviour, more comparisons between different regions, and the use of findings
+    to develop prescriptive design models for practitioners. The findings of this scoping review can guide
+    future research in the area of multi-use pathways and help researchers produce useful findings to
+    inform practitioners.
+- title: 'Uncovering Daily Travel Patterns from Activity Traces: A Multi-Stage Clustering Approach'
+  author: Omid Armantalab, Mohammad S. Elayan, Jason Hawkins
+  date: '2026-01-01'
+  year: '2026'
+  journ: SSRN Preprint
+  pub_number: doi:10.2139/ssrn.6100359
+  doi: 10.2139/ssrn.6100359
+  path: https://doi.org/10.2139/ssrn.6100359
+  url_preprint: https://doi.org/10.2139/ssrn.6100359
+  categories:
+  - General Transport
+  type: preprint
+- title: 'Better Safety Analyses through Smarter Data: Adding Open-Street-View and Traffic-Calibrated
+    Location-Based Services Data to Pedestrian Crash Analysis in Lincoln, NE'
+  author: Mohammad S. Elayan, Sagun Karki, Jason Hawkins
+  date: '2025-11-24'
+  year: '2025'
+  journ: Transportation Research Record Journal of the Transportation Research Board
+  volume: '2680'
+  issue: '7'
+  page: 261–274
+  pub_number: doi:10.1177/03611981251391714
+  doi: 10.1177/03611981251391714
+  path: https://doi.org/10.1177/03611981251391714
+  url_source: https://doi.org/10.1177/03611981251391714
+  categories:
+  - General Transport
+  type: article
+  description: Pedestrian crashes are a significant concern in the U.S., with pedestrian fatalities increasing
+    and outpacing those of vehicle occupants. This research investigates the potential of new data sources
+    to enhance pedestrian safety analysis and crash modeling. Specifically, it examines the use of StreetLight-calibrated
+    traffic volumes and Mapillary detections of street objects for modeling pedestrian crash counts and
+    severity. By integrating these innovative data sources, the study aims to improve the accuracy and
+    granularity of safety evaluations. Both generalized linear models and machine learning (ML) models,
+    including random forests (RF) and gradient boosting machines, demonstrated acceptable performance
+    and solid portrayal of crash dynamics, with ML models providing better predictive power at the cost
+    of complexity and lower interpretability. Additionally, the weighted RF classifier showed high accuracy
+    in predicting crash severity. Key variables in our analysis encompassed StreetLight volumes and various
+    Mapillary open street-view detections, including traffic signals, crosswalks, advertisement signs,
+    store signs, streetlights, and arrow markings. The association between these variables and crash counts
+    and severity aligns with our understanding of crash patterns. Overall, the research underscores the
+    importance of leveraging detailed, real-world data to improve pedestrian safety analyses and contribute
+    to more effective safety strategies and policy decisions.
+- title: Who is more likely to buy an EV? A descriptive and integrated choice model analysis in the US
+    Midwest
+  author: Omid Armantalab, Hania Afzal, Jason Hawkins
+  date: '2025-11-01'
+  year: '2025'
+  journ: Transport Policy
+  volume: '175'
+  page: 103877–103877
+  pub_number: doi:10.1016/j.tranpol.2025.103877
+  doi: 10.1016/j.tranpol.2025.103877
+  path: https://doi.org/10.1016/j.tranpol.2025.103877
+  url_source: https://doi.org/10.1016/j.tranpol.2025.103877
+  categories:
+  - Choice Model Methods
+  - Vehicle Adoption
+  type: article
+- title: 'Mobility Behavior Evolution During Extended Emergencies: Returners, Explorers, and the 15-Minute
+    City'
+  author: Omid Armantalab, Jason Hawkins, Wissam Kontar
+  date: '2025-10-01'
+  year: '2025'
+  journ: arXiv Preprint
+  pub_number: arXiv:2510.00469
+  arxiv: '2510.00469'
+  path: https://arxiv.org/abs/2510.00469
+  url_preprint: https://arxiv.org/abs/2510.00469
+  categories:
+  - General Transport
+  type: preprint
+  description: 'Understanding human mobility during emergencies is critical for strengthening urban resilience
+    and guiding emergency management. This study examines transitions between returners, who repeatedly
+    visit a limited set of locations, and explorers, who travel across broader destinations, over a 15-day
+    emergency period in a densely populated metropolitan region using the YJMob100K dataset. High-resolution
+    spatial data reveal intra-urban behavioral dynamics often masked at coarser scales. Beyond static
+    comparisons, we analyze how mobility evolves over time, with varying emergency durations, across weekdays
+    and weekends, and relative to neighborhood boundaries, linking the analysis to the 15-minute city
+    framework. Results show that at least two weeks of data are required to detect meaningful behavioral
+    shifts. During prolonged emergencies, individuals resume visits to non-essential locations more slowly
+    than under normal conditions. Explorers markedly reduce long distance travel, while weekends and holidays
+    consistently exhibit returner-like, short distance patterns. Residents of low Points of Interest (POI)
+    density neighborhoods often travel to POI rich areas, highlighting spatial disparities. Strengthening
+    local accessibility may improve urban resilience during crises. Full reproducibility is supported
+    through the project website: https://github.com/wissamkontar'
+- title: Mapping Vehicle Diffusion Dynamics in the United States
+  author: Hania Afzal, Omid Armantalab, Jason Hawkins
+  date: '2025-08-20'
+  year: '2025'
+  journ: Transportation Research Record Journal of the Transportation Research Board
+  volume: '2679'
+  issue: '11'
+  page: 335–349
+  pub_number: doi:10.1177/03611981251347621
+  doi: 10.1177/03611981251347621
+  path: https://doi.org/10.1177/03611981251347621
+  url_source: https://doi.org/10.1177/03611981251347621
+  categories:
+  - Vehicle Adoption
+  type: article
+  description: Household vehicle fleet composition is an important dimension of transportation policy
+    and planning. Vehicle choice and diffusion may be considered as a function of two network dimensions.
+    First, spatial proximity may be associated with diffusion of a new vehicle powertrain, category, or
+    model. A household purchases a vehicle based on local incentives or seeing the vehicle on the road.
+    Second, social proximity as measured by similarity in demographics. We use a historical county-level
+    vehicle registrations database for the United States to examine these factors. Results of the Moran
+    I coefficient of correlation confirm the spatial diffusion phenomena for plugin electric vehicles
+    (PEV)—including battery and plug-in hybrid electric, hybrid electric vehicles (HEV), hydrogen fuel
+    cell electric vehicles (FCEVs), and US brand vehicles. The spatial autoregressive (SAR) model is estimated
+    to measure the spatial diffusion effect after accounting for demographic variables associated with
+    social diffusion. Larger county populations are linked to higher PEV and HEV adoption rates but lower
+    US brand vehicle ownership. Elevated state grid eqCO 2 intensity is associated with higher adoption
+    rates for both PEV and HEV. Centrally located states maintain high US brand vehicle ownership rates,
+    while West and East Coast states show consistently low rates, with declining diffusing into neighboring
+    regions.
+- title: 'Integrating StreetLight Data, EPS Smart Location Data, and Road Attributes: A Random Forest
+    Approach to Multimodal Traffic Calibration in Lincoln, Nebraska'
+  author: Mohammad S. Elayan, Nicholas Aldridge, Jason Hawkins, Yunwoo Nam
+  date: '2025-06-12'
+  year: '2025'
+  journ: Journal of Transportation Engineering Part A Systems
+  volume: '151'
+  issue: '8'
+  pub_number: doi:10.1061/jtepbs.teeng-8949
+  doi: 10.1061/jtepbs.teeng-8949
+  path: https://doi.org/10.1061/jtepbs.teeng-8949
+  url_source: https://doi.org/10.1061/jtepbs.teeng-8949
+  categories:
+  - General Transport
+  type: article
+  description: The growing availability of location-based services (LBS) data has made networkwide traffic
+    inference a feasible and valuable tool for traffic analysis. This paper utilizes LBS data from the
+    commercial data vendor StreetLight data, along with a comprehensive data set of multimodal traffic
+    counts, to estimate vehicle, pedestrian, and bicycle volumes across all road segments in Lincoln,
+    Nebraska. By incorporating land use, built environment, and sociodemographic features from the EPA
+    Smart Location Database (EPA-SLD) and road attributes, the random forest models demonstrated strong
+    predictive performance across all modes, with R2 values exceeding 0.99 for all three models. However,
+    statistical tests revealed that the traffic count locations represent a biased sample, and significant
+    differences exist in the model predictors between training and prediction samples. Although the predictive
+    accuracy is high for the selected high-volume intersections, accuracy may be lower on less trafficked
+    segments, highlighting the need for further model refinement.
+- title: Transportation access equity analysis in two US cities using Bayesian inference-based logsum
+    compensating variation metrics
+  author: Omid Armantalab, Jason Hawkins, Md Sami Hasnine
+  date: '2025-06-08'
+  year: '2025'
+  journ: Travel Behaviour and Society
+  volume: '41'
+  page: 101073–101073
+  pub_number: doi:10.1016/j.tbs.2025.101073
+  doi: 10.1016/j.tbs.2025.101073
+  path: https://doi.org/10.1016/j.tbs.2025.101073
+  url_source: https://doi.org/10.1016/j.tbs.2025.101073
+  categories:
+  - Equity
+  type: article
+- title: Mobility Behavior Evolution Under Crisis
+  author: Omid Armantalab, Jason Hawkins, Wissam Kontar
+  date: '2025-01-01'
+  year: '2025'
+  journ: SSRN Preprint
+  pub_number: doi:10.2139/ssrn.5606533
+  doi: 10.2139/ssrn.5606533
+  path: https://doi.org/10.2139/ssrn.5606533
+  url_preprint: https://doi.org/10.2139/ssrn.5606533
+  categories:
+  - General Transport
+  type: preprint
+- title: Goal Pursuit and its Applications in Transportation
+  author: Jason Hawkins, Omid Armantalab
+  date: '2025-01-01'
+  year: '2025'
+  journ: SSRN Preprint
+  pub_number: doi:10.2139/ssrn.5210957
+  doi: 10.2139/ssrn.5210957
+  path: https://doi.org/10.2139/ssrn.5210957
+  url_preprint: https://doi.org/10.2139/ssrn.5210957
+  hidden: true  # SSRN version of 'Why Do We Need Travel Behavior Theory...'
+  categories:
+  - Choice Model Methods
+  type: preprint
+- title: Electric vehicle and supply equipment adoption dynamics in the United States
+  author: Hania Afzal, Jason Hawkins
+  date: '2024-08-02'
+  year: '2024'
+  journ: Energy Policy
+  volume: '193'
+  page: 114275–114275
+  pub_number: doi:10.1016/j.enpol.2024.114275
+  doi: 10.1016/j.enpol.2024.114275
+  path: https://doi.org/10.1016/j.enpol.2024.114275
+  url_source: https://doi.org/10.1016/j.enpol.2024.114275
+  categories:
+  - Vehicle Adoption
+  type: article
+- title: 'The US Economy as a Network: A Comparison across Economic and Environmental Metrics'
+  author: Jason Hawkins, Sagun Karki
+  date: '2024-07-26'
+  year: '2024'
+  journ: Sustainability
+  volume: '16'
+  issue: '15'
+  page: 6418–6418
+  pub_number: doi:10.3390/su16156418
+  doi: 10.3390/su16156418
+  path: https://doi.org/10.3390/su16156418
+  url_source: https://doi.org/10.3390/su16156418
+  categories:
+  - General Transport
+  type: article
+  description: Environmental-economic analysis is an evolving field that seeks to situate the human economy
+    within environmental systems through its consumption of environmental resources and cycling of resources
+    and waste products back into the environment. Environmental accounting has seen increased focus in
+    recent years as national and regional governments look to better track environmental flows to aid
+    in policy development and evaluation. This study outlines a conceptual environmental-economic framework
+    founded on network science principles. An empirical study operationalizes portions of the framework
+    and highlights the need for further research in this area to develop new data sources and analytic
+    methods. We demonstrate a spatial mismatch between the location of water-intensive industries and
+    the natural location of water resources (i.e., lakes, rivers, and precipitation), which climate change
+    is likely to exacerbate. We use eigenvector centrality to measure differences in the US economy according
+    to economic trade flow and five associated environmental flow accounts (land use, water consumption,
+    energy use, mineral metal use, and greenhouse gas production). Population normalization helps to identify
+    low-population counties that play a central role in the environmental-economic system as a function
+    of their natural resources.
+- title: 'Investigation of factors affecting crash severity of rear-end crashes with high collision speeds
+    in work zones: A South Carolina case study'
+  author: Mahyar Madarshahian, Jason Hawkins, Nathan N. Huynh, Chowdhury Siddiqui
+  date: '2024-07-16'
+  year: '2024'
+  journ: International Journal of Transportation Science and Technology
+  volume: '17'
+  page: 361–374
+  pub_number: doi:10.1016/j.ijtst.2024.07.003
+  doi: 10.1016/j.ijtst.2024.07.003
+  path: https://doi.org/10.1016/j.ijtst.2024.07.003
+  url_source: https://doi.org/10.1016/j.ijtst.2024.07.003
+  categories:
+  - Choice Model Methods
+  type: article
+  description: The aim of this study is to identify factors that affect injury severity levels of work
+    zone rear-end crashes with high collision speeds (⩾35 mi/hr). Using statewide crash data provided
+    by the South Carolina Department of Transportation from 2014 to 2020, a mixed binary logit model with
+    heterogeneity in mean and variance is estimated. The model’s outcome variable is injury or non-injury
+    (i.e., property damage only), and the explanatory variables include information related to vehicle,
+    collision, time, occupant, roadway, and environmental characteristics. The estimation results indicate
+    that the interstate variable is best modeled as a random parameter at 90% confidence level. Late-night
+    and dawn/dusk conditions are found to influence the mean effect while driving under the influence
+    has an effect on the variance of the random parameter. The factors that positively influence injury
+    severity are multi-vehicle involvement, airbag deployment, dark conditions, and crashes involving
+    trucks. Conversely, advanced warning area, activity area, lane shift/crossover, young and middle-aged
+    drivers, and dawn/dusk conditions have negative effects on injury severity.
+- title: Perturbation of Residential Preferences by COVID-19 Shocks in the Greater Toronto Area
+  author: Saeed Shakib, Jason Hawkins, Khandker Nurul Habib
+  date: '2024-04-09'
+  year: '2024'
+  journ: Transportation Research Record Journal of the Transportation Research Board
+  volume: '2678'
+  issue: '12'
+  page: 702–719
+  pub_number: doi:10.1177/03611981241239650
+  doi: 10.1177/03611981241239650
+  path: https://doi.org/10.1177/03611981241239650
+  url_source: https://doi.org/10.1177/03611981241239650
+  categories:
+  - Choice Model Methods
+  type: article
+  description: This research investigates the immediate effects of the COVID-19 pandemic on residential
+    preferences in the Greater Toronto Area (GTA), Canada, using a stated preference (SP) survey dataset.
+    The study examines changes in relocation preferences and trends in the GTA after the Ontario government
+    lifted the initial lockdown. The obtained choice data is then modeled using a mixed cross-nested logit
+    model to find substitution patterns across regions and dwelling types, as well as explore residents’
+    preferences for different dwelling characteristics and the accessibility of their residence, including
+    factors such as telecommuting options. The results reveal that the pandemic caused short-term residential
+    dissonance, with residents tending to want to move to lower-density areas to relocate to their preferred
+    dwelling type, emphasizing telecommuting as a key factor influencing residential relocation preferences.
+    Housing qualities were prioritized over accessibility. The study also found heterogeneous behavior
+    among GTA residents with regard to telecommuting as a factor in residential relocation. The study’s
+    findings are relevant for planners and policymakers in anticipating the potential long-term pandemic-induced
+    home relocation decisions and their impact on future household travel behavior, particularly with
+    regard to telecommuting and accessibility.
+- title: 'How does upzoning impact land use and transport: a case study of Seattle'
+  author: Naifu Fan, Kara Maria Kockelman, Peter Caballero, Jason Hawkins, Xiaohong Chen
+  date: '2024-02-06'
+  year: '2024'
+  journ: Transportation Planning and Technology
+  volume: '47'
+  issue: '5'
+  page: 656–680
+  pub_number: doi:10.1080/03081060.2024.2311829
+  doi: 10.1080/03081060.2024.2311829
+  path: https://doi.org/10.1080/03081060.2024.2311829
+  url_source: https://doi.org/10.1080/03081060.2024.2311829
+  categories:
+  - General Transport
+  type: article
+  description: This work simulates the long-term land use and transportation impacts of upzoning in the
+    region of Seattle, Washington at the parcel level, using UrbanSim and an agent-based travel demand
+    model (SoundCast). Scenario results are compared to illuminate differences in a Business-as-Usual
+    (BAU) future versus two upzoning scenarios that upzone all single-family-use residential parcels in
+    the region or just those in the City of Seattle to 3 dwelling units per parcel. Under BAU, affordability
+    falls 20% and rents rise 6% between 2014 and 2050, as the regional population grows to 5.7 million.
+    With regional upzoning, 68,400 more dwellings are added, with rents 10% lower compared to the BAU
+    future. The housing affordability index falls from 75.3 to 67.31, a significant improvement over the
+    BAU scenario's sharper fall to 60.6. If only the City of Seattle upzones, only 3,400 additional units
+    are predicted, but rents are 5.2% lower than the BAU case.
+- title: A framework for transportation and land use integration as a parallel constrained multiple discrete-continuous
+    extreme value (PC-MDCEV) home production model
+  author: Jason Hawkins, Khandker Nurul Habib
+  date: '2024-01-22'
+  year: '2024'
+  journ: Transportmetrica B Transport Dynamics
+  volume: '12'
+  issue: '1'
+  pub_number: doi:10.1080/21680566.2024.2303042
+  doi: 10.1080/21680566.2024.2303042
+  arxiv: '2607.05862'
+  path: https://doi.org/10.1080/21680566.2024.2303042
+  url_source: https://doi.org/10.1080/21680566.2024.2303042
+  url_preprint: https://arxiv.org/abs/2607.05862
+  categories:
+  - Choice Model Methods
+  type: article
+  description: We propose a microeconomic foundation for transportation and land use choice model integration
+    based on the theory of home production. A utility function is developed that considers both household
+    monetary expenditure and individual time use. We introduce a parallel constrained multiple discrete-continuous
+    extreme value (MDCEV) structure that allows for the inclusion of multi-person households in the model.
+    An empirical application is provided for the Greater Toronto Area using a validated synthetic dataset.
+    Empirical results demonstrate an economy of scale in time devoted to home production, analogous to
+    scaling exhibit in market production. It was found that the mix of dwelling types (detached, apartment,
+    etc.) has a significant influence on both time use and consumption. Finally, we provide several directions
+    for future research to advance the practice of urban modelling and better capture the complex dynamics
+    of household decision-making.
+- title: Supporting decarbonization through vehicle rightsizing, automation, and ride-splitting
+  author: Jason Hawkins, Kara Maria Kockelman
+  date: '2023-12-25'
+  year: '2023'
+  journ: Carbon Footprints
+  volume: '3'
+  issue: '1'
+  pub_number: doi:10.20517/cf.2023.46
+  doi: 10.20517/cf.2023.46
+  path: https://doi.org/10.20517/cf.2023.46
+  url_source: https://doi.org/10.20517/cf.2023.46
+  categories:
+  - Ecological Economics
+  - Shared Mobility
+  type: article
+  description: Vehicle automation and smartphone app-based ride-splitting are commonly discussed topics
+    in the transportation literature. While these technologies have been examined for their role in transportation
+    decarbonization through simulation study, the motivation for such work is rarely made explicit. In
+    this commentary, we provide a motivation for research in this area based on our own simulation research,
+    as well as land use and vehicle operational factors. Specifically, land use factors such as density
+    and the speed of its adjustment make traditional transit operations using large vehicles cost-prohibitive
+    in most U.S. communities (and many other communities around the world). Automation and ride-splitting
+    technologies may offer digitized transportation solutions that can match vehicle size to local land
+    development density and passenger demand. In addition, we highlight a difference in the supply-demand
+    relationship for freight transportation that causes additional challenges for decarbonizing that sector.
+    Finally, we emphasize that fleet ownership is key to ensuring timely vehicle fleet turnover as safer
+    and more efficient technologies enter the market.
+- title: Self-driving vehicles’ impacts on Americans’ long-distance domestic travel choices
+  author: Fatemeh Fakhrmoosavi, Priyanka Paithankar, Kara Maria Kockelman, Yantao Huang, Jason Hawkins
+  date: '2023-11-30'
+  year: '2023'
+  journ: Transportation Planning and Technology
+  volume: '47'
+  issue: '8'
+  page: 1262–1276
+  pub_number: doi:10.1080/03081060.2023.2288629
+  doi: 10.1080/03081060.2023.2288629
+  path: https://doi.org/10.1080/03081060.2023.2288629
+  url_source: https://doi.org/10.1080/03081060.2023.2288629
+  categories:
+  - Vehicle Adoption
+  type: article
+  description: This research estimated models for long-distance domestic passenger trips before and after
+    the introduction of autonomous vehicles (AVs) and their application to a 10% synthetic US population.
+    The authors synthesized 12.1M households and 28.1M individuals across 73,056 US census tracts. To
+    generate disaggregated passenger trips, travel demand models, including trip frequency, season, purpose,
+    party size, mode choice, and destination choice, and vehicle ownership models were estimated. Different
+    datasets, including a 2021 long-distance AV survey, 2016/17 National Household Travel Survey (NHTS)
+    survey, EPA Smart Location data, and FHWA rJourney dataset were used for model estimation. The model
+    applications indicated AV ownership to be 0.33 per capita after the introduction of AVs within the
+    marketplace with a $3500 AV technology cost premium in the year 2040. Total person-miles traveled
+    per capita in long-distance trips was also estimated to rise 35% (from 280 to 379 miles per month).
+- title: A latent auction model of firm establishment location choice in the Greater Toronto Area
+  author: Jason Hawkins, Khandker Nurul Habib
+  date: '2023-08-15'
+  year: '2023'
+  journ: Cities
+  volume: '141'
+  page: 104523–104523
+  pub_number: doi:10.1016/j.cities.2023.104523
+  doi: 10.1016/j.cities.2023.104523
+  path: https://doi.org/10.1016/j.cities.2023.104523
+  url_source: https://doi.org/10.1016/j.cities.2023.104523
+  categories:
+  - General Transport
+  type: article
+- title: 'Unravelling the relationship between ride-sourcing services and conventional modes in the city
+    of Toronto: A stated preference study'
+  author: Patrick Loa, Felita Ong, Jason Hawkins, Khandker Nurul Habib
+  date: '2023-07-23'
+  year: '2023'
+  journ: Transport Policy
+  volume: '141'
+  page: 209–220
+  pub_number: doi:10.1016/j.tranpol.2023.07.022
+  doi: 10.1016/j.tranpol.2023.07.022
+  path: https://doi.org/10.1016/j.tranpol.2023.07.022
+  url_source: https://doi.org/10.1016/j.tranpol.2023.07.022
+  categories:
+  - Choice Model Methods
+  - Shared Mobility
+  type: article
+- title: Anticipating Current and Coming Technologies that Affect U.S. Travel Choices
+  author: Jason Hawkins, Kara Maria Kockelman, Kai Huang
+  date: '2023-05-24'
+  year: '2023'
+  journ: Transportation Research Record Journal of the Transportation Research Board
+  volume: '2677'
+  issue: '12'
+  page: 449–462
+  pub_number: doi:10.1177/03611981231168856
+  doi: 10.1177/03611981231168856
+  path: https://doi.org/10.1177/03611981231168856
+  url_source: https://doi.org/10.1177/03611981231168856
+  categories:
+  - Vehicle Adoption
+  type: article
+  description: Understanding the preferences for new and future transportation technologies is important
+    to ensure an efficient and equitable future transportation system. A survey was conducted of Americans’
+    preferences for several such technologies. Americans are concerned about vehicle range and charging
+    station availability for electric vehicles (EVs) and hesitant about autonomous vehicle (AV) safety.
+    Opinions about many transportation technologies, such as vertical takeoff and landing (i.e., air taxis),
+    shared parking, and air-drone delivery are mixed. These less familiar technologies require continued
+    tracking of preferences. A 55% increase is estimated in the probability of an individual choosing
+    a battery electric vehicle (BEV) pickup truck if its fuel economy increases by about 9%. This result
+    supports a market for BEV pickup trucks currently under development by many automakers. The preference
+    for vehicle autonomation appears to depend on the use case. Driving task automation is preferred by
+    residents of low-density, car-dependent areas where long commutes are common. In contrast, automated
+    parking technologies are favored by those living in denser communities. Intermittent bus lanes are
+    favored by those living in high population density areas, but not among those in areas with high shares
+    of zero-vehicle households. These results provide indications of where to direct future research in
+    the field.
+- title: 'Assessing the impacts of COVID-19 on activity-travel scheduling: A survey in the greater Toronto
+    area'
+  author: Alireza Dianat, Jason Hawkins, Khandker Nurul Habib
+  date: '2022-06-28'
+  year: '2022'
+  journ: Transportation Research Part A Policy and Practice
+  volume: '162'
+  page: 296–314
+  pub_number: doi:10.1016/j.tra.2022.06.008
+  doi: 10.1016/j.tra.2022.06.008
+  path: https://doi.org/10.1016/j.tra.2022.06.008
+  url_source: https://doi.org/10.1016/j.tra.2022.06.008
+  categories:
+  - General Transport
+  type: article
+- title: Establishment location choice model considering intra-firm interactions
+  author: Usman Ahmed, Jason Hawkins, Matthew J. Roorda
+  date: '2022-06-01'
+  year: '2022'
+  journ: Journal of Transport Geography
+  volume: '102'
+  page: 103391–103391
+  pub_number: doi:10.1016/j.jtrangeo.2022.103391
+  doi: 10.1016/j.jtrangeo.2022.103391
+  path: https://doi.org/10.1016/j.jtrangeo.2022.103391
+  url_source: https://doi.org/10.1016/j.jtrangeo.2022.103391
+  categories:
+  - Choice Model Methods
+  type: article
+- title: 'Measuring the process of urban gentrification: A composite measure of the gentrification process
+    in Toronto'
+  author: Jason Hawkins, Usman Ahmed, Matthew J. Roorda, Khandker Nurul Habib
+  date: '2022-04-30'
+  year: '2022'
+  journ: Cities
+  volume: '126'
+  page: 103708–103708
+  pub_number: doi:10.1016/j.cities.2022.103708
+  doi: 10.1016/j.cities.2022.103708
+  path: https://doi.org/10.1016/j.cities.2022.103708
+  url_source: https://doi.org/10.1016/j.cities.2022.103708
+  categories:
+  - General Transport
+  type: article
+- title: Investigating the Effects of COVID-19 Pandemic on the Perception of Residential Accessibility
+    in Greater Toronto and Hamilton Area
+  author: Saeed Shakib, Jason Hawkins, Khandker Nurul Habib
+  date: '2022-04-28'
+  year: '2022'
+  journ: Transportation Research Record Journal of the Transportation Research Board
+  volume: '2678'
+  issue: '12'
+  page: 30–46
+  pub_number: doi:10.1177/03611981221086640
+  doi: 10.1177/03611981221086640
+  path: https://doi.org/10.1177/03611981221086640
+  url_source: https://doi.org/10.1177/03611981221086640
+  categories:
+  - Infrastructure Finance
+  type: article
+  description: This paper investigates the changes caused by the COVID-19 pandemic on households’ perceived
+    utility of the accessibility of their residence in the Greater Toronto and Hamilton Area (GTHA). The
+    paper considers several neighborhood and dwelling attributes and fuses those with property price data
+    from mid-March 2019 to mid-March 2021 to analyze changes in housing trends before and during the COVID-19
+    pandemic. Two mixed geographically weighted regression (MGWR) models are estimated for the year before
+    the start of the pandemic and the year during the pandemic to address spatial autocorrelation and
+    non-stationarity in price data. The empirical models reveal new patterns in accessibility perception
+    for some factors, including accessibility to regional subway and inter-regional rail transit. This
+    study also contributes to the literature of MGWR modeling by assessing the capacity of the model through
+    validation procedures. Estimation is performed on randomly selected samples from the population to
+    compare the errors with the population-based model and a traditional hedonic price model. The findings
+    suggest that the application of MGWR is restricted to cases where price data are abundant.
+- title: A multi-source data fusion framework for joint population, expenditure, and time use synthesis
+  author: Jason Hawkins, Khandker Nurul Habib
+  date: '2022-03-26'
+  year: '2022'
+  journ: Transportation
+  volume: '50'
+  issue: '4'
+  page: 1323–1346
+  pub_number: doi:10.1007/s11116-022-10279-8
+  doi: 10.1007/s11116-022-10279-8
+  path: https://doi.org/10.1007/s11116-022-10279-8
+  url_source: https://doi.org/10.1007/s11116-022-10279-8
+  categories:
+  - General Transport
+  type: article
+- title: 'The taxi sharing practices: Matching, routing and pricing methods'
+  author: Jianrong Qiu, Kai Huang, Jason Hawkins
+  date: '2022-03-01'
+  year: '2022'
+  journ: Multimodal Transportation
+  volume: '1'
+  issue: '1'
+  page: 100003–100003
+  pub_number: doi:10.1016/j.multra.2022.100003
+  doi: 10.1016/j.multra.2022.100003
+  path: https://doi.org/10.1016/j.multra.2022.100003
+  url_source: https://doi.org/10.1016/j.multra.2022.100003
+  categories:
+  - Choice Model Methods
+  - Ecological Economics
+  - Shared Mobility
+  type: article
+  description: 'Taxi sharing is becoming a trendy travel mode in an increasing number of cities. By encouraging
+    two or more passengers to share a taxi, taxi sharing can cut down travel costs, reduce traffic emissions,
+    and relieve traffic congestion. To promote taxi sharing, this paper first reviews the existing taxi
+    sharing practices in cities. The entire process of taxi sharing can be broken up into the following:
+    matching, route choice, and pricing. The current situation is revealed, as well as prospects for future
+    developments. Building on the review, new approaches are proposed to taxi sharing matching, route
+    choice modelling, and pricing schemes to improve taxi sharing practices and broaden their application.'
+- title: 'The evolution of choice set formation in dwelling and location with rising prices: A decadal
+    panel analysis in the Greater Toronto Area'
+  author: Jason Hawkins, Khandker Nurul Habib
+  date: '2021-11-21'
+  year: '2021'
+  journ: Journal of Transport and Land Use
+  volume: '14'
+  issue: '1'
+  page: 1227–1247
+  pub_number: doi:10.5198/jtlu.2021.1854
+  doi: 10.5198/jtlu.2021.1854
+  path: https://doi.org/10.5198/jtlu.2021.1854
+  url_source: https://doi.org/10.5198/jtlu.2021.1854
+  categories:
+  - Choice Model Methods
+  type: article
+  description: 'Home location choice is based on both the characteristics of the dwelling (e.g., size,
+    style, number of bedrooms) and the location (e.g., proximity to work, quality of schools, accessibility).
+    Recent years have seen a steep increase in the price of housing in many major cities. In this research,
+    we examine how these price increases are affecting the types of dwelling and locations considered
+    by households. A large sample of real estate listings from 2006 and 2016 from the Greater Toronto
+    Area is used to develop the empirical models. Two recently developed discrete choice models are used
+    in the study: a nested logit model with latent class feedback (LCF) and a semi-compensatory independent
+    availability logit (SCIAL) model. A method of alternative aggregation is proposed to overcome the
+    computational hurdle that often impedes the estimation of choice set models. We find a significant
+    increase in the probability of larger households considering townhouses and apartments over detached
+    single-family dwellings between 2006 and 2016.'
+- title: 'Bayesian estimation of discrete choice models: a comparative analysis using effective sample
+    size'
+  author: Jason Hawkins, Khandker Nurul Habib
+  date: '2021-10-30'
+  year: '2021'
+  journ: Transportation Letters
+  volume: '14'
+  issue: '10'
+  page: 1091–1099
+  pub_number: doi:10.1080/19427867.2021.1991554
+  doi: 10.1080/19427867.2021.1991554
+  path: https://doi.org/10.1080/19427867.2021.1991554
+  url_source: https://doi.org/10.1080/19427867.2021.1991554
+  categories:
+  - Choice Model Methods
+  type: article
+  description: In this paper, we provide a comparison of implementations of Bayesian estimation of mixed
+    multinomial logit (MMNL) models. Our objective is to provide a systematic comparison of the runtime,
+    efficiency, and model implementation details associated with several alternative workflows. The analysis
+    is based on three case studies. We argue that previous comparisons in the transportation literature
+    have lacked appropriate metrics for comparison. Effective sample size statistics are proposed as a
+    means of accurately comparing the ability of Bayesian samplers to generate independent draws for use
+    in statistical inference. The Allenby-Train algorithm implemented in the R package Apollo is compared
+    with the NUTS sampler implemented in Stan. While the Allenby-Train algorithm tends to generate draws
+    much faster than NUTS, we find that the high correlation between success samples makes the two methods
+    comparable. In addition to traditional MCMC sampling, we also examine the method of variational Bayes
+    (VB).
+- title: Effects of built environment and weather on demands for transportation network company trips
+  author: Md Sami Hasnine, Jason Hawkins, Khandker Nurul Habib
+  date: '2021-06-23'
+  year: '2021'
+  journ: Transportation Research Part A Policy and Practice
+  volume: '150'
+  page: 171–185
+  pub_number: doi:10.1016/j.tra.2021.06.011
+  doi: 10.1016/j.tra.2021.06.011
+  path: https://doi.org/10.1016/j.tra.2021.06.011
+  url_source: https://doi.org/10.1016/j.tra.2021.06.011
+  categories:
+  - General Transport
+  type: article
+- title: 'Assessing the impacts of COVID-19 on urban passenger travel demand in the greater Toronto area:
+    description of a multi-pronged and multi-staged study with initial results'
+  author: Khandker Nurul Habib, Jason Hawkins, Saeed Shakib, Patrick Loa, Sk. Md. Mashrur, Alireza Dianat,
+    Kaili Wang, Sanjana Hossain, Yicong Liu
+  date: '2021-03-10'
+  year: '2021'
+  journ: Transportation Letters
+  volume: '13'
+  issue: 5-6
+  page: 353–366
+  pub_number: doi:10.1080/19427867.2021.1899579
+  doi: 10.1080/19427867.2021.1899579
+  path: https://doi.org/10.1080/19427867.2021.1899579
+  url_source: https://doi.org/10.1080/19427867.2021.1899579
+  categories:
+  - General Transport
+  type: article
+  description: The COVID-19 outbreak created a context that was not previously considered by most urban
+    transportation planners and modellers. This paper presents a study design to comprehensively measure
+    the effects of COVID-19 induced Lockdown on changes in travel behaviour and its dynamics. The study
+    is designed for the Greater Toronto Area. The paper presents results from the common portion of four
+    specialized travel surveys. The empirical investigation presented in the paper is on the general pandemic
+    response, in terms of daily activity-travel adaptation behaviour), in the context of around four months
+    of complete Lockdown to stop the spread of COVID-19. Empirical investigation reveals that the Lockdown
+    did not cause any substantial increase in unemployment, but it did force the majority of the residents
+    to telecommute and practice flexible office hours. Overall, results show that Lockdown influences
+    people to engage in more family-oriented activities.
+- title: Finding the Subway Disruption Regimes of Switching Subway to Uber in Toronto
+  author: Jason Hawkins, Khandker Nurul Habib
+  date: '2020-10-09'
+  year: '2020'
+  journ: Transportation Research Record Journal of the Transportation Research Board
+  volume: '2674'
+  issue: '12'
+  page: 303–311
+  pub_number: doi:10.1177/0361198120953797
+  doi: 10.1177/0361198120953797
+  path: https://doi.org/10.1177/0361198120953797
+  url_source: https://doi.org/10.1177/0361198120953797
+  categories:
+  - Shared Mobility
+  type: article
+  description: 'The evolving relationship between public transit and transportation network companies
+    (TNCs), such as Uber and Lyft, is of great interest to government agencies and has seen much critical
+    attention in the academic literature. In this paper, we focus on the demand for TNC trips (also known
+    as ride-hailing trips) during the disruption of the subway service. We combined a detailed dataset
+    of Uber trips made in Toronto, Canada during the period September 2016 to August 2018 and subway disruption
+    data provided by the Toronto Transit Commission. These data were used to examine the question: how
+    long are subway users willing to wait during a disruption before switching modes? This question was
+    framed as a threshold point, and an innovative structural threshold regression model was used to obtain
+    an answer. Controlling for environmental and location-specific factors in the model, it was revealed
+    that subway users in Toronto tend to switch to Uber after a service delay of as little as 3 min, with
+    an average result of 7 min and an upper bound of 12 min.'
+- title: 'Travel distance and land use: a generalized Box–Cox model with conditional spatial lag dependence'
+  author: Jason Hawkins, Khandker Nurul Habib
+  date: '2020-10-01'
+  year: '2020'
+  journ: Transportmetrica A Transport Science
+  volume: '17'
+  issue: '4'
+  page: 1101–1121
+  pub_number: doi:10.1080/23249935.2020.1831649
+  doi: 10.1080/23249935.2020.1831649
+  path: https://doi.org/10.1080/23249935.2020.1831649
+  url_source: https://doi.org/10.1080/23249935.2020.1831649
+  categories:
+  - General Transport
+  type: article
+  description: Disentangling individual contributions to travel distance continues to be an active field
+    of research, with advances in econometrics being germane. In this study, we focus on several econometric
+    techniques, some of which have been applied in isolation in past studies, but the combination of which
+    has yet to be applied to the problem. We apply a series of statistical tests using the method of artificial
+    regression to test the joint effects of functional form and spatial autocorrelation on model fit.
+    An empirical application is made to the Greater Toronto Area using a large-scale travel survey. Several
+    results found in past studies are refuted through the use of advanced econometric methods, including
+    the previous finding of a positive correlation between travel distance and density in the study region.
+    Model results are validated using bootstrapped sampling and local indicators of spatial association.
+- title: Evaluating pedestrian perceptions of street design with a 3D stated preference survey
+  author: Dena Kasraian, Sneha Adhikari, David Kossowsky, Michael Luubert, G. Brent Hall, Jason Hawkins,
+    Khandker Nurul Habib, Matthew J. Roorda
+  date: '2020-08-25'
+  year: '2020'
+  journ: Environment and Planning B Urban Analytics and City Science
+  volume: '48'
+  issue: '7'
+  page: 1787–1805
+  pub_number: doi:10.1177/2399808320946050
+  doi: 10.1177/2399808320946050
+  path: https://doi.org/10.1177/2399808320946050
+  url_source: https://doi.org/10.1177/2399808320946050
+  categories:
+  - Choice Model Methods
+  type: article
+  description: In many places, streets are still primarily designed for the convenience of motorists,
+    considering mobility function as the principal design goal. There is a scarcity of empirical evidence
+    on the relationship between the design of a street and how it is experienced by pedestrians who use
+    it. This work focuses on quantifying pedestrians’ perception of walkability through a stated preference
+    survey using a dynamic 3D representation of various street designs in Toronto, Canada. The stated
+    preference scenarios are generated through a rule-based 3D environment (Esri’s CityEngine) and animated
+    using a gaming engine (Unity). A random sample of 600 Torontonians is used for the empirical investigation
+    by estimating a mixed multinomial logit model. The results indicate that there is a high preference
+    for (i) streets that include transit lanes as opposed to car-exclusive lanes, (ii) the presence of
+    trees on the sidewalk, and (iii) two-way cycle paths on the curb lane. Furthermore, pedestrians are
+    willing to trade sidewalk width for the presence of trees and outdoor dining. The survey’s innovative
+    presentation mode and its findings can contribute to the development of much-needed evidence-based
+    design tools to assess the trade-offs required between the many possible uses of roadway space, while
+    focusing on the overlooked role of the pedestrian experience.
+- title: A study of car and home ownership decisions in the face of increasing commuting expenses (CHOICE)
+    in the Greater Toronto Area (GTA)
+  author: Elli M Papaioannou, Jason Hawkins, Khandker Nurul Habib
+  date: '2020-05-04'
+  year: '2020'
+  journ: Case Studies on Transport Policy
+  volume: '8'
+  issue: '3'
+  page: 971–983
+  pub_number: doi:10.1016/j.cstp.2020.04.009
+  doi: 10.1016/j.cstp.2020.04.009
+  path: https://doi.org/10.1016/j.cstp.2020.04.009
+  url_source: https://doi.org/10.1016/j.cstp.2020.04.009
+  categories:
+  - General Transport
+  type: article
+- title: Bus headway optimization with consumer surplus as a measure of societal benefit
+  author: Jason Hawkins, S. C. Wirasinghe, John Douglas Hunt
+  date: '2020-02-19'
+  year: '2020'
+  journ: International Journal of Urban Sciences
+  volume: '25'
+  issue: '1'
+  page: 86–103
+  pub_number: doi:10.1080/12265934.2020.1730224
+  doi: 10.1080/12265934.2020.1730224
+  path: https://doi.org/10.1080/12265934.2020.1730224
+  url_source: https://doi.org/10.1080/12265934.2020.1730224
+  categories:
+  - Choice Model Methods
+  type: article
+  description: This paper derives the square root bus dispatch optimization developed by Newell from consumer
+    surplus rather than the original cost minimization function. We then extend the model to consider
+    dispatch-variant demand and outline its property relative to the original model by Newell. Demand
+    elasticity is introduced via a multinomial logit mode choice model. Results are tested for City of
+    Edmonton mode choice and ridership. The sensitivity of the function to wait time cost and passenger
+    demand is tested. For the observed passenger demand and value of travel time, our analysis suggests
+    there is a portion of riders who are captive and will suffer increasing wait time costs, but many
+    passengers will make the choice to utilize other modes of travel when faced with increasing bus headways.
+- title: 'A joint model of place of residence (POR) and place of work (POW): Making use of Gibbs sampling
+    technique to overcome arbitrary assumptions in contexts of data limitation'
+  author: Hengyang Zhang, Jason Hawkins, Khandker Nurul Habib
+  date: '2019-12-03'
+  year: '2019'
+  journ: Journal of Transport and Land Use
+  volume: '12'
+  issue: '1'
+  page: 873–892
+  pub_number: doi:10.5198/jtlu.2019.1624
+  doi: 10.5198/jtlu.2019.1624
+  path: https://doi.org/10.5198/jtlu.2019.1624
+  url_source: https://doi.org/10.5198/jtlu.2019.1624
+  categories:
+  - Choice Model Methods
+  type: article
+  description: Place or residence (POR) and place of work (POW) are two spatial pivots defining patterns
+    of travel behavior. These choices are considered part of long-term choice influencing short-term daily
+    travel choices. Hence, POR-POW distributions are input into almost all daily travel demand models.
+    However, in many cases, POW-POR is modelled in an ad-hoc way considering the gravity-based or entropy
+    is maximizing aggregate modelling approach. Lack of data on the sequence of choices related to POR
+    and POW is often blamed for avoiding using disaggregate choice model. Recognizing such data limitation,
+    this paper presents an alternative methodology of modelling joint distribution of POW-POW that uses
+    disaggregate choice models without necessarily knowing the sequence of POR and POW choices. It uses
+    the conditional probability break downs of joint POR-POW choice probabilities as depicted in the Gibbs
+    sampling approach. This allows capturing effects of household socioeconomic characteristics, zonal
+    land-use characteristics, and modal accessibility factors in the POR-POW models. The model is applied
+    for a case study in the city of Ottawa. Results reveal that the proposed methodology can replicate
+    observed patterns of POR-POW with a high degree of accuracy.
+- title: Household-level dynamics in residential location choice modelling with a latent auction method
+  author: Jason Hawkins, Adam Weiss, Khandker Nurul Habib
+  date: '2019-09-04'
+  year: '2019'
+  journ: Environment and Planning B Urban Analytics and City Science
+  volume: '48'
+  issue: '2'
+  page: 314–330
+  pub_number: doi:10.1177/2399808319871308
+  doi: 10.1177/2399808319871308
+  path: https://doi.org/10.1177/2399808319871308
+  url_source: https://doi.org/10.1177/2399808319871308
+  categories:
+  - Choice Model Methods
+  type: article
+  description: A longstanding deficiency in the modelling of residential location choices is the common
+    assumption of a single household decision-maker. This paper contributes to a growing literature on
+    methods to capture intra-household dynamics in this decision process. A latent auction approach is
+    employed to estimate a residential location choice model for the Greater Toronto Area. The present
+    work extends the consideration of individual utility factors beyond simple commute time, to include
+    frequency of automobile use, transit use, and the cost of parking at the destination. Results suggest
+    a weakening differential between male and female roles in the residential location choice, as multi-worker
+    households are increasing in response to increasing costs of living. The strength of the latent auction
+    model is confirmed as a means of linking bid-rent with observed market prices. Several conclusions
+    are drawn out of the model results, including a pattern of larger households preferring the larger
+    and cheaper houses characteristic of suburban areas of the Greater Toronto Area.
+- title: 'Heterogeneity in marginal value of urban mobility: evidence from a large-scale household travel
+    survey in the Greater Toronto and Hamilton Area'
+  author: Jason Hawkins, Khandker Nurul Habib
+  date: '2019-07-31'
+  year: '2019'
+  journ: Transportation
+  volume: '47'
+  issue: '6'
+  page: 3091–3108
+  pub_number: doi:10.1007/s11116-019-10041-7
+  doi: 10.1007/s11116-019-10041-7
+  path: https://doi.org/10.1007/s11116-019-10041-7
+  url_source: https://doi.org/10.1007/s11116-019-10041-7
+  categories:
+  - General Transport
+  type: article
+- title: 'Report 4: Evaluating the Impacts of Private Transportation Companies on Travel Behaviour through
+    a Stated Preference (SP) Survey'
+  author: Patrick Loa, Jason Hawkins, Khandker Nurul Habib
+  date: '2019-05-01'
+  year: '2019'
+  journ: TSpace (University of Toronto)
+  path: http://hdl.handle.net/1807/100487
+  url_source: http://hdl.handle.net/1807/100487
+  categories:
+  - Choice Model Methods
+  - Shared Mobility
+  type: report
+  description: 'This technical report presents the work undertaken in support of the City of Toronto’s
+    Vehicle for Hire Bylaw Review by the University of Toronto Transportation Research Institute (UTTRI)
+    and it presents the analysis of the factors that influence the residents’ (of the City of Toronto)
+    choices of using or not using exclusive and shared ride-hailing services in the City. The investigation
+    is based on data obtained through a specialized travel survey that uses a Stated Preference (SP) technique
+    build on Revealed Preference (RP) information of daily travel. The survey, named the “Survey to Predict
+    the Repercussions of the Introduction of Novel Transportation Network Services”: (SPRINT), collected
+    information from a random sample of residents (selected from a market research panel) of the City
+    of Toronto. Respondents were asked a series of questions pertaining to personal and household characteristics,
+    information on the extent to which respondents use ride-hailing services, and their familiarity with
+    and perceptions of ride-hailing services. In addition, respondents were asked to complete a series
+    of real (revealed) and hypothetical (stated) preference questions, which were used to understand the
+    trade-offs that people make when choosing a mode of travel in the City. The rest of this report is
+    organized as follows. Section 2 summarizes the goals of and motivation for the survey and presents
+    a discussion of the factors that influenced the design of each component of the survey. Section 3
+    provides an analysis of the data obtained through the SPRINT. The analysis of the results is comprised
+    of three elements: descriptive statistics, usage, and perceptions of ride-hailing services, and model
+    results. Section 4 summarizes the key findings of the report.'
+- title: Spatial statistical analysis of infrastructure systems in Calgary, Alberta
+  author: Jason Hawkins, Lina Kattan, J. Patrick A. Hettiaratchi, Joshua Taron, Getachew Assefa
+  date: '2019-01-01'
+  year: '2019'
+  journ: Journal of Environmental Planning and Management
+  volume: '62'
+  issue: '11'
+  page: 1929–1948
+  pub_number: doi:10.1080/09640568.2018.1523052
+  doi: 10.1080/09640568.2018.1523052
+  path: https://doi.org/10.1080/09640568.2018.1523052
+  url_source: https://doi.org/10.1080/09640568.2018.1523052
+  categories:
+  - General Transport
+  type: article
+  description: In this paper, the consumption of various infrastructure systems in Calgary, Alberta by
+    residential, commercial, and industrial sectors is considered. Statistical models are developed to
+    quantify the influences of built form factors, in addition to traditional factors of sociodemography.
+    Analyses are performed by census community for electricity, transportation by mode of travel, and
+    demolition permits by their size and frequency. The employment of a common methodology in a single
+    geography allows for comparison across infrastructure systems and determination of common patterns.
+    Assessing total consumption does not necessarily lead to a consistent interpretation. By differentiating
+    electricity consumption by sector and transportation by mode, consistent analysis can be conducted
+    that identifies the correct relationships. We find a trend toward increasing consumption of electricity
+    use moving out from the center of the city, but also an increasing reliance on the private automobile.
+- title: Spatio-Temporal Hedonic Price Model to Investigate the Dynamics of Housing Prices in Contexts
+    of Urban Form and Transportation Services in Toronto
+  author: Jason Hawkins, Khandker Nurul Habib
+  date: '2018-06-08'
+  year: '2018'
+  journ: Transportation Research Record Journal of the Transportation Research Board
+  volume: '2672'
+  issue: '6'
+  page: 21–30
+  pub_number: doi:10.1177/0361198118774153
+  doi: 10.1177/0361198118774153
+  path: https://doi.org/10.1177/0361198118774153
+  url_source: https://doi.org/10.1177/0361198118774153
+  categories:
+  - Infrastructure Finance
+  type: article
+  description: A spatio-temporal hedonic price model is developed for the Greater Toronto area to examine
+    the effects of urban configurations and proximity to transit services on housing price. A spatial
+    Durbin panel model is utilized to account for both spatial and temporal autocorrelation. This model
+    is shown to have advantages through its ability to reduce the number of explanatory variables required
+    to obtain a strong fit with empirical data. Analysis is completed for the period of 1996 to 2017 and
+    distinctions are made in housing stock between single-family houses, townhouses, and condominiums.
+    It is shown that heterogeneities exist between the hedonic representations of each dwelling type and
+    that separate models should be employed for each. In all cases, the average income of the community,
+    its distance to the central business district (CBD), and population and employment density are found
+    to be significant factors in the determination of price.
+- title: Development of environmentally extended social accounting matrices for policy analysis in Alberta
+  author: Jason Hawkins, John Douglas Hunt
+  date: '2018-05-24'
+  year: '2018'
+  journ: Economic Systems Research
+  volume: '31'
+  issue: '1'
+  page: 114–131
+  pub_number: doi:10.1080/09535314.2018.1474854
+  doi: 10.1080/09535314.2018.1474854
+  path: https://doi.org/10.1080/09535314.2018.1474854
+  url_source: https://doi.org/10.1080/09535314.2018.1474854
+  categories:
+  - Ecological Economics
+  type: article
+  description: 'This paper outlines the development of inputs to an integrated land use and transportation
+    model based on a series of environmentally extended social accounting matrices (SAMs) for the Canadian
+    province of Alberta. A novel form of industry disaggregation is employed, based on aggregate iterative
+    proportion and a unique formulation of location quotients. Social accounts are extended via the inclusion
+    of detailed household consumption broken down by income quintiles. The SAMs are developed from supply-use
+    matrices. Physical flow accounts are framed as derived demands, acting as necessary inputs to the
+    production of downstream goods and services. Applications to regional economic modeling are considered,
+    as planning authorities increasingly seek to model the environmental impacts of policy. The SAMs are
+    then applied to the assessment of two technology change scenarios: a shift in the provincial electricity
+    generation mix and a transition to a fully electric private automobile fleet.'
+- title: Integrated models of land use and transportation for the autonomous vehicle revolution
+  author: Jason Hawkins, Khandker Nurul Habib
+  date: '2018-03-12'
+  year: '2018'
+  journ: Transport Reviews
+  volume: '39'
+  issue: '1'
+  page: 66–83
+  pub_number: doi:10.1080/01441647.2018.1449033
+  doi: 10.1080/01441647.2018.1449033
+  path: https://doi.org/10.1080/01441647.2018.1449033
+  url_source: https://doi.org/10.1080/01441647.2018.1449033
+  categories:
+  - Vehicle Adoption
+  type: article
+  description: The advent of the autonomous vehicle (AV) will affect not only the transportation system,
+    but also future patterns of land development. Integrated land use and transportation models will be
+    critical tools in assessing the path forward with this technology. Key questions with respect to land
+    use impacts of AVs arise from potential changes in sensitivity to travel and reduced demand for parking.
+    It is an open question whether AVs will induce urban sprawl, or whether spatial economies of agglomeration
+    will mitigate any reductions in travel time sensitivity. The deployment of shared fleets of AVs would
+    likely reduce parking demand, producing yet to be explored impacts on property development within
+    existing urban footprints. We perform a critical assessment of currently operational models and their
+    ability to represent the adoption of AVs. We identify the representation of time in such models as
+    a vital component requiring additional development to model this new technology. Existing model applications
+    have focused on the discrete addition of new infrastructure or policy at a fixed point in time, whereas
+    AV adoption will occur incrementally through time. Stated adaptation surveys are recommended as tools
+    to quantify preferences and develop relevant model inputs. It is argued that existing models that
+    assume comparatively static equilibrium have been convenient in the past, but are insufficient to
+    model technology adoption. In contrast, dynamic model frameworks lack sufficient structure to maintain
+    reasonability under large perturbations from base conditions. The ongoing advancement of computing
+    has allowed models to move away from being mechanistic aggregate tools, towards behaviourally rich
+    depictions of individual persons and firms. However, much work remains to move from projections of
+    existing conditions into the future, to the evolution of the spatial economy as it evolves through
+    time in response to new technologies and exogenous stresses. Principles from complex and evolutionary
+    systems theory will be important in the development of models with the capacity to consider such dynamics.
+- title: 'Microsimulating Heterogeneous Traffic: An Implementation of the Porous Flow Approach'
+  author: Jason Hawkins, Lina Kattan
+  date: '2018-01-11'
+  year: '2018'
+  journ: Transportation in Developing Economies
+  volume: '4'
+  issue: '1'
+  pub_number: doi:10.1007/s40890-018-0057-1
+  doi: 10.1007/s40890-018-0057-1
+  path: https://doi.org/10.1007/s40890-018-0057-1
+  url_source: https://doi.org/10.1007/s40890-018-0057-1
+  categories:
+  - General Transport
+  type: article
+- title: 'Transportation Sector in Environmentally-Extended Economic Modelling: Case Study of Alberta,
+    Canada'
+  author: Jason Hawkins, John Douglas Hunt
+  date: '2016-01-01'
+  year: '2016'
+  journ: Transportation Research Board 95th Annual MeetingTransportation Research Board
+  path: https://trid.trb.org/view.aspx?id=1394537
+  url_source: https://trid.trb.org/view.aspx?id=1394537
+  categories:
+  - Ecological Economics
+  type: article
+  description: The inclusion of environmental metrics is an integral part of a complete representation
+    of the socio - economic system of a region. This research had the aim of advancing an economic input
+    - output model of the Canadian province of Alberta, with extension to environmental accounts. This
+    involved the development of a detailed account of inter - industry transactions and consumption of
+    goods and services by households, government, and capital formation. The provincial input - output
+    model of Alberta - developed by Statistics Canada as part of its 2010 System of National Accounts
+    - was substantially expanded to include a more granular representation of industries, commodities,
+    and agents of final demand. Environmental accounts were developed for energy use, water use, and the
+    production of greenhouse gas emissions. This work produced an expansive model with a variety of potential
+    avenues for retrospective and policy analysis. Transportation contributes approximately one quarter
+    of all such emissions in an industrialized economy. This paper summarizes model results for this sector,
+    specifically the industries with high demands for transportation services and the contributions of
+    personal transportation delineated by income quintile. Results confirm the importance of transportation
+    to the provincial economy and any potential environmental policies. This research involved the development
+    of a novel representation of environmental metrics for use by industry and agents of final demand.
+    This approach is described and potential extensions identified within the transportation – land use
+    modelling field.
+- title: 'Environmentally-Extended Economic Models: Development and Application to Carbon Pricing and
+    Technology Change in Alberta, Canada'
+  author: Jason Hawkins
+  date: '2016-01-01'
+  year: '2016'
+  journ: Libraries and Cultural Resources (University of Calgary)
+  pub_number: doi:10.11575/prism/25918
+  doi: 10.11575/prism/25918
+  path: https://doi.org/10.11575/prism/25918
+  url_source: https://doi.org/10.11575/prism/25918
+  categories:
+  - Ecological Economics
+  - Infrastructure Finance
+  type: dissertation
+  description: 'This thesis develops a detailed environmental-economic model of the province of Alberta.
+    Methods are developed for utilizing a variety of statistical data sources to develop disaggregate
+    provincial input-output models based on the national Canadian model. The model is extended to include
+    physical flows of water, energy, and greenhouse gas emissions. A new approach to distributing physical
+    flows is developed that considers physical flows as derived demands to satisfy the needs of utility
+    maximizing industrial and household activities. This framework is applied to analysis of carbon pricing
+    at the provincial scale and results presented. Detailed representations of household consumption and
+    electricity generation are utilized to better assess the effects of carbon pricing and where redistributive
+    measures should be applied. The model is then applied to assessment of three technology change scenarios:
+    a shift in the provincial electricity generation mix, a transition to a fully electric private automobile
+    fleet, and a partial change in the non-residential construction industry to reduce concrete use and
+    increase use of wood in construction.'

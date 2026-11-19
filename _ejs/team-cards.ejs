@@ -1,0 +1,15 @@
+```{=html}
+<div class="team-grid">
+<% for (const item of items) { %>
+  <div class="team-card" <%= metadataAttrs(item) %>>
+    <img class="team-photo" alt="Photo of <%= item.title %>"
+         src="<%= item.image ? item.image : '../assets/images/team/blank_avatar.jpg' %>">
+    <div class="team-body">
+      <div class="team-name"><%= item.title %></div>
+      <div class="team-role"><%= item.role %><% if (item.institution) { %> · <%= item.institution %><% } %></div>
+      <% if (item.description) { %><p class="team-bio"><%= item.description %></p><% } %>
+    </div>
+  </div>
+<% } %>
+</div>
+```

@@ -1,0 +1,12 @@
+{
+  "hash": "4da73c8dde4d6be8d17b0f39fc932ea9",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"About\"\n\njupyter: python3\n\nabout:\n  id: hero-heading\n  template: jolla\n  links:\n    - icon: github\n      text: Github\n      href: https://github.com/Hawkins-TECH-Lab\n\n---\n\n",
+    "supporting": [
+      "about_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

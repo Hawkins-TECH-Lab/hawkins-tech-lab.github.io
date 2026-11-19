@@ -1,4 +1,16 @@
 ---
 title: Teaching
-sidebar: Teaching
+toc: false
 ---
+
+## Current
+
+- [**ENCI707: Engineering Demand and Policy Analysis**](ENCI707/index.qmd) (University of Calgary, graduate course)
+
+## Past courses
+
+- [**CIVE461/861: Urban Transportation Planning**](CIVE461/index.qmd) (University of Nebraska–Lincoln)
+
+## Guest lectures
+
+- [CIVE990T: Introduction to Land Use & Urban Economic Modeling](Guest Lectures/CIVE990T.qmd)
