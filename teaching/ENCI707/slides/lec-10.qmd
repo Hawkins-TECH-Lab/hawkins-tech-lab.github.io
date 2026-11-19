@@ -160,7 +160,7 @@ flowchart TB
 :::
 
 # Directed Acyclic Graphs (DAGs)
-# Representing Causal Inference Via DAGs {.smaller}
+## Causal Inference Via DAGs {.smaller}
 - Visual representation of assumptions
 - More complex confounder example:
 ```{mermaid}
@@ -290,6 +290,7 @@ People who prefer driving
 - Within both groups, transit use is actually **lower** in TODs
 - Why? Transit enthusiasts disproportionately choose TODs
 - E.g.,
+
 | Group               | TOD | Non-TOD |
 | ------------------- | --: | ------: |
 | Transit enthusiasts | 90% |     10% |

@@ -2,7 +2,7 @@
 title: "Open Science in Canadian Transportation Research"
 subtitle: "Kickoff Meeting"
 author: "Jason Hawkins"
-date: today
+date: 2026-09-21
 format:
   revealjs:
     theme: simple

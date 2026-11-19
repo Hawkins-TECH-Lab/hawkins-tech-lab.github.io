@@ -6,7 +6,7 @@ link-external-newwindow: true
 
 ## Prepare
 
-📖 Watch the [videos](/teaching/ENCI707/prep/week11/week12-videos.html)
+📖 Watch the [videos](/teaching/ENCI707/prep/week12/week12-videos.html)
 
 📖 Review Ch. 18-21 of Regression and Other Stories [ROS](https://github.com/Hawkins-TECH-Lab/ENCI707/blob/dc0772ab0b84414af5737676f07761518ea46dcf/Resources/Gelman_Et_Al_ROS_1ed.pdf)
 
