@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" width="600" height="420" font-family="Helvetica, Arial, sans-serif">
+  <!-- Source: tikz/consumer_surplus.tex.  Demand from (80,60) to (500,360); purchase at x' = 320, p' at y = 231 -->
+  <defs>
+    <marker id="ax" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1b1b1b"/>
+    </marker>
+  </defs>
+  <rect width="600" height="420" fill="#ffffff"/>
+  <polygon points="80,60 80,231 320,231" fill="#f2c94c"/>
+  <rect x="80" y="231" width="240" height="129" fill="#8fc98f"/>
+  <line x1="320" y1="231" x2="320" y2="360" stroke="#616161" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <line x1="80" y1="60" x2="500" y2="360" stroke="#1b1b1b" stroke-width="3"/>
+  <circle cx="320" cy="231" r="5" fill="#1b1b1b"/>
+  <g stroke="#1b1b1b" stroke-width="2" marker-end="url(#ax)">
+    <line x1="80" y1="360" x2="550" y2="360"/>
+    <line x1="80" y1="360" x2="80" y2="30"/>
+  </g>
+  <g font-size="20" font-style="italic" fill="#1b1b1b">
+    <text x="58" y="30">p</text>
+    <text x="556" y="366">x</text>
+    <text x="48" y="237">p′</text>
+    <text x="312" y="385">x′</text>
+    <text x="470" y="320">D</text>
+  </g>
+  <text x="155" y="195" font-size="17" font-weight="bold" text-anchor="middle">Consumer</text>
+  <text x="155" y="215" font-size="17" font-weight="bold" text-anchor="middle">surplus</text>
+  <text x="200" y="292" font-size="17" font-weight="bold" text-anchor="middle">Expenditure</text>
+  <text x="200" y="314" font-size="15" text-anchor="middle">p′ × x′</text>
+  <g font-size="14" fill="#616161">
+    <text x="370" y="120">Area under D up to x′</text>
+    <text x="370" y="138">= gross WTP</text>
+    <text x="370" y="162">CS = gross WTP − expenditure</text>
+  </g>
+</svg>

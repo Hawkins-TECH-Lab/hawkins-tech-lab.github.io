@@ -23,58 +23,30 @@ execute:
 5. Short history of contingent valuation
 :::
 
-## Why Economic Valuation?
-- Rational decisions with respect to the environment
+# Motivation for Valuation
+
+## Environmental Decision Making {.smaller}
 
 :::: {.columns}
-
-::: {.column width="45%"}
-![Alt text](../../../assets/images/teaching/ENCI707/Lecture12/human_environment_welfare.svg)
-
+::: {.column width="50%"}
+![](../../../assets/images/teaching/ENCI707/Lecture12/valuation_cycle.svg){fig-align="center"}
 :::
+::: {.column width="50%"}
+Valuation supports rational decisions about the environment:
 
-::: {.column width="55%"}
-- Market inefficiency: public goods (CBA) & externality effects (Pigouvian tax)
-- Assessing economic desirability of a policy
-  - Demonstrate importance of the issue
+- Market inefficiencies
+  - Public goods → cost-benefit analysis
+  - External effects → Pigouvian taxes
+- Assessing the economic desirability of policies
+  - Demonstrating the importance of an issue
   - Priority setting
 - Legal damage assessment
 - Green national accounting
-- The least controversial argument
-
+- Often the least controversial argument
 :::
-
 ::::
 
-## Why Economic Valuation?
-
-::: {layout="[[50,50],[50]]" layout-valign="center"}
-![](../../../assets/images/teaching/ENCI707/Lecture12/protest-globe.png){fig-alt="Climate campaigners with a giant inflatable globe and a banner reading 'Climate: failure is not an option'"}
-
-![](../../../assets/images/teaching/ENCI707/Lecture12/protest-tent.png){fig-alt="Protester chained to a tree next to a tent with a 'Stop the chop' sign"}
-
-![](../../../assets/images/teaching/ENCI707/Lecture12/protest-street.png){fig-alt="Greenpeace activists unrolling a banner down a building facade"}
-:::
-
-## Environmental Decision Making
-
-Environmental changes affect:
-
-- Human welfare
-- Economic activity
-- Public goods
-- External effects
-
-Applications:
-
-- Cost-benefit analysis
-- Environmental policy evaluation
-- Priority setting
-- Legal damage assessment
-- Green national accounting
-
-
-## Cost-Benefit Analysis
+## Basic Cost-Benefit Analysis (CBA) Framework {.smaller}
 
 A complete CBA should:
 
@@ -85,634 +57,468 @@ A complete CBA should:
 - Calculate net benefits
 - Account for discounting
 - Compare alternatives
-- Support decision-making
+
+## Is Economic Valuation Important? {.smaller}
+
+- Tens of thousands of papers and studies
+- A major share of presentations at environmental economics conferences
+- Standard material in environmental economics textbooks
+- Used to assess very large policies, e.g., the U.S. Clean Water Act (U.S. EPA, 1994)
+- ...and a wide range of sectoral and regional policy decisions
+
+Central to modern welfare economics: environment, health, transport, marketing, culture, ...
 
 # Example: Electricity Generation
 
-## The Problem
+## The Problem {.smaller}
 
-How harmful are different ways of generating electricity?
+- How "harmful" are different ways of generating electricity?
+- Electricity production generates:
+  - Air pollution
+  - Greenhouse gases
+  - Health impacts
+  - Ecosystem damage
+- These external effects are not included in the economic decisions of power plants
+- Economic theory suggests:
+  - Taxing emissions according to marginal external damage
+  - Comparing technologies based on social costs: which sources should be promoted?
 
-Electricity production generates:
+## External Costs of Electricity {.smaller}
 
-- Air pollution
-- Greenhouse gases
-- Health impacts
-- Ecosystem damage
+Major European research efforts ([ExternE](https://www.externe.info) project series):
 
-These external effects are often not reflected in market prices (or in power plants' economic decisions).
+| Project | Years |
+|---|---|
+| ExternE-Pol | 2002–2004 |
+| NEEDS | 2004–2008 |
+| CASES | 2006–2008 |
+| EXIOPOL | 2007–2011 |
 
-Economic theory suggests:
+**Goal:** estimate the average external cost of electricity generation
 
-- Taxing emissions according to marginal external damage
-- Comparing technologies based on social costs
+- Bottom-up approach
+- Damages from each power plant depend on local conditions: technology, fuel, location, atmospheric conditions
 
-Which energy sources should be promoted?
+## Impact Pathway Approach
 
+![](../../../assets/images/teaching/ENCI707/Lecture12/impact_pathway.svg){fig-align="center" width="100%"}
 
-## The ExternE Approach
+Damages are summed over all receptors, then expressed per unit of energy (\$/kWh)
 
-Major European research efforts ([www.externe.info](http://www.externe.info)):
+## Types of Welfare Effects {.smaller}
 
-- ExternE
-- ExternE-Pol (2002–2004)
-- NEEDS (2004–2008)
-- CASES (2006–2008)
-- EXIOPOL (2007–2011)
+- Health:
+  - Mortality
+  - Morbidity
+- Environment:
+  - Biodiversity loss
+  - Acidification
+  - Eutrophication
+- Economic:
+  - Agriculture
+  - Materials damage
 
-Goal:
+# Individuals' Motivation for WTP
 
-Estimate the average external costs of electricity generation
+## Economic Value {.smaller}
 
-- Bottom-up approach: damages for each power plant depend on local conditions
-  - Technology, fuel, location, atmospheric conditions
-
-# Impact Pathway Approach
-
-## Valuation Process
-
-1. Emissions released (where, what, how)
-2. Atmospheric transport
-3. Chemical transformations (reactions with other pollutants)
-4. Concentration changes
-5. Physical impacts
-6. Welfare impacts
-7. Monetary valuation
-
-Damages are then recalculated per unit of energy.
-
-## Impact Pathway
-
-![](../../../assets/images/teaching/ENCI707/Lecture12/impact-pathway.svg){fig-alt="Impact pathway: emissions from cars and power plants, transport and chemical transformation across Europe, damages to health, buildings and crops, then valuation in money"}
-
-## Step 1: Concentration Increase
-
-![Additional SO~2~ concentration caused by the Lauffen coal-fired power plant [µg/m³]. © IER Universität Stuttgart](../../../assets/images/teaching/ENCI707/Lecture12/so2-concentration.png){fig-alt="Map of Europe showing additional SO2 concentration from the Lauffen plant, highest in southern Germany"}
-
-## Step 2: Exposed Population
-
-![Population density [millions]. © IER Universität Stuttgart](../../../assets/images/teaching/ENCI707/Lecture12/population-density.png){fig-alt="Gridded map of population density across Europe"}
-
-## Step 3: Physical Impact
-
-![Cumulative life years lost from increased SO~2~ concentrations caused by the Lauffen plant [years annually]. © IER Universität Stuttgart](../../../assets/images/teaching/ENCI707/Lecture12/life-years-lost.png){fig-alt="Map of Europe showing life years lost, concentrated around southern Germany"}
-
-## Step 4: Valuation
-
-We know how many life years are lost in each grid cell in Europe – what next?
-
-- How do we include it in a cost-benefit analysis?
-- What is the value of a statistical life (or of a life year lost)?
-- Valuation!
-
-# Types of Welfare Effects
-
-## Examples
-
-Health:
-
-- Mortality
-- Morbidity
-
-Environment:
-
-- Biodiversity loss
-- Acidification
-- Eutrophication
-
-Economic:
-
-- Agriculture
-- Materials damage
-
-# Why Valuation Matters
-
-## Importance in Practice
-
-Economic valuation:
-
-- Supports major policy decisions
-- Appears in tens of thousands of studies
-- Is a major part of environmental economics conferences and standard in textbooks
-- Is central to welfare economics
-- Is used in environment, health, transportation, marketing, and culture
-
-Examples include large regulatory analyses such as the U.S. Clean Water Act (U.S. EPA, 1994), plus many sectoral and regional decisions.
-
-# Sources of Economic Value
-
-## Whose Value?
-
-- [Economic]{.underline} value = consumers' aggregated willingness to pay
+- Economic value = consumers' **aggregated willingness to pay**
   - Based on people's preferences
   - Anthropocentric!
-- Motives are essentially irrelevant for the neoclassical theory of value
-  - Economists accept consumer sovereignty
-  - But this is not to say that motives are irrelevant at all…
+- Motives are essentially irrelevant to the neoclassical economic theory of value
+  - Economists accept **consumer sovereignty** (i.e., people know what is best for themselves)
+  - That does not mean motives are irrelevant altogether...
 
 ## Total Economic Value (TEV)
 
-![](../../../assets/images/teaching/ENCI707/Lecture12/tev.svg){fig-alt="TEV equals use value UV plus non-use (passive use) value EV plus SV plus BV plus OV plus more"}
+$$
+TEV = \underbrace{UV}_{\text{use}} + \underbrace{EV + SV + BV + OV + \cdots}_{\text{non-use (passive use)}}
+$$
 
-Where:
+![](../../../assets/images/teaching/ENCI707/Lecture12/tev_tree.svg){fig-align="center" width="75%"}
 
-- UV = Use Value
-- EV = Existence Value
-- SV = Stewardship Value
-- BV = Bequest Value
-- OV = Option Value
+## Use and Non-Use Values {.smaller}
 
-# Use and Non-Use Values
+#### Use Value
 
-## Use Value
+- Benefits obtained from direct or indirect use
+- Examples:
+  - Recreation
+  - Fishing
+  - Water consumption
 
-Benefits obtained from direct or indirect use.
+#### Non-Use Value
 
-Examples:
+- Benefits independent of actual use
+- Examples:
+  - Knowing a species exists
+  - Preserving resources for future generations
 
-- Recreation
-- Fishing
-- Water consumption
+## Existence Value {.smaller}
 
-## Non-Use Value
+- Utility gained simply from knowing that an environmental resource exists
 
-Benefits independent of actual use (also called passive-use value).
+> "[...] satisfaction from the mere knowledge that part of the wilderness [...] remains, even though they would be appalled by the prospect of being exposed to it."
 
-Examples:
+- Examples:
+  - Endangered species protection
+  - Wilderness preservation
 
-- Knowing a species exists
-- Preserving resources for future generations
+## Stewardship Value {.smaller}
 
-## Disentangling Motives
+- Value derived from acting as a responsible caretaker
+  - The government should be a "good steward" of an environmental resource
+  - A duty to protect some entity from harm imposed by human activity
+- Examples:
+  - Maintaining water quality
+  - Preserving habitats or setting aside land rather than developing it
+  - Preventing human-caused (not natural) species losses
 
-- Different motivations are not mutually exclusive
-  - They tend to be positively correlated
-- Difficult (if not impossible) to disaggregate
-- Use vs. non-use values
-  - Non-use values are unlikely to leave a trace in market behavior
-  - They require different valuation methods
+## Bequest and Option Values
 
-# Existence Value
+#### Bequest Value
 
-## Definition
+- Protecting resources for children, grandchildren and future generations
 
-Utility gained simply from knowing that an environmental resource exists.
+#### Option Value
 
-> "[…] satisfaction from the mere knowledge that part of the wilderness […] remains, even though they would be appalled by the prospect of being exposed to it."
+- Protecting a good from destruction or irreversible damage to keep the option of using it in the future
+- Important when:
+  - Future preferences are uncertain
+  - Environmental damage may be irreversible
 
-Examples:
+## Motivations {.smaller}
 
-- Endangered species protection
-- Wilderness preservation
+- Motives are irrelevant to economic value, but understanding them helps us interpret and use results
 
-Individuals may value protection even if they never visit the resource.
+#### Altruism
 
-# Stewardship Value
+- Concern for others' welfare
+  - Not an illegitimate source of value
+  - No problem if it is altruism towards animals or plants
+  - May cause **double counting** if respondents do not realize that others will pay too
 
-## Definition
+#### Warm Glow
 
-Value derived from acting as a responsible caretaker – a duty to protect some entity from harm imposed by human activity.
+- Utility from doing something that makes you feel good
+  - Charitable giving
+  - Environmental donations, especially voluntary contributions
 
-Examples:
+# Economic Theory
+<!-- 
+## What Is Economic Value?
 
-- Maintaining water quality
-- Preserving habitats / setting land aside rather than developing it
-- Preventing human-caused (not natural) species losses
+- What is the "value of a good"?
+- Is the price of a good equal to its value?
+- Start with the simple case: market goods -->
 
-# Bequest and Option Values
+## WTP Curve vs. Demand Curve {.smaller}
 
-## Bequest Value
-
-Protecting resources for future generations.
-
-## Option Value
-
-Maintaining future opportunities for use.
-
-Important when:
-
-- Future preferences are uncertain
-- Environmental damage may be irreversible
-
-# Other Motivations
-
-## Altruism
-
-Concern for others' welfare.
-
-Examples:
-
-- Concern for future generations
-- Concern for wildlife
-
-Not an illegitimate source of value, but may cause double counting if respondents don't realize that others will pay too.
-
-## Warm Glow
-
-Utility from contributing to a socially desirable cause.
-
-Examples:
-
-- Charitable giving
-- Environmental donations (especially voluntary contributions)
-
-# What Is Economic Value?
-
-## Price vs Value
-
-- Price is not necessarily value
-
-- Economic value is linked to:
-  - Preferences
-  - Welfare
-  - Willingness to pay
-- Relevant concept is welfare change
-
-## Value of a Market Good
-
-![](../../../assets/images/teaching/ENCI707/Lecture12/wtp-curve.svg){fig-alt="Step chart of reservation prices r_n for units n = 1 to 10, falling from 10 to 1, with a market price line at about 2.7; area above the price and below the WTP curve is net benefit, area below the price is cost"}
-
-## WTP Curve vs Demand Curve
-
-- The WTP curve is close to the demand curve, but they are not the same
-  - WTP curve: WTP for *subsequent* units
-  - Demand curve: WTP for *x* units (at once)
+- WTP curve is close to the demand curve, but they are not the same:
+  - The WTP curve reflects WTP for *subsequent* units
+  - The demand curve reflects WTP for $x$ units (at once)
   - Differences arise from income effects
-- In practice the WTP curve is difficult to estimate
-  - The demand curve is used as an approximation → consumer surplus
-
-# Willingness to Pay
-
-## Concept
-
-WTP measures:
-
-> The maximum amount an individual would sacrifice to obtain a benefit or avoid a loss.
-
-WTP is the foundation of modern economic valuation.
-
-
-# Consumer Surplus
-
-## Basic Idea
-
-Consumer surplus equals:
-
-- What consumers are willing to pay
-- Minus what they actually pay
-
-Graphically:
-
-- Area under the demand curve
-- Above market price
+- In practice, the WTP curve is difficult to estimate:
+  - The demand curve is used as an approximation
+  - With the demand curve we measure **consumer surplus**
 
 ## Consumer Surplus
 
-![](../../../assets/images/teaching/ENCI707/Lecture12/consumer-surplus.svg){fig-alt="Linear demand curve D; at price p1' and quantity x1' the triangle above the price is consumer's surplus (net) and the rectangle below is cost"}
+![](../../../assets/images/teaching/ENCI707/Lecture12/wtp_steps.svg){fig-align="center" width="80%"}
 
-## Consumer Surplus – an Approximation
+Each unit is bought while its reservation price $r_n \ge p$; consumer surplus is $\sum_{n:\, r_n \ge p} (r_n - p)$.
 
-- Income effects are not taken into account
-- If income effects are present:
-  - Marginal utility of income is decreasing (the richer we are, the less we care about money)
+## Beyond Consumer Surplus {.smaller}
+
+- Consumer surplus is an approximation: it ignores income effects
+- When income effects are present:
+- Marginal utility of income is decreasing
+  - The richer we are, the less we care about money
   - We need more money for the same utility increase
+- What is the true welfare-change measure?
 
+#### Compensating Variation (CV)
 
-# Welfare Measures
+- Income change that restores the *original* utility level after the change (measured *ex post*)
 
-## Beyond Consumer Surplus
+#### Equivalent Variation (EV)
 
-When income effects matter:
+- Income change that gives the utility level reached *after* the change, applied before it (measured *ex ante*)
 
-### Compensating Variation (CV)
+<!-- ## CV, EV, WTP and WTA {.smaller}
 
-Income adjustment needed after a change to restore original utility (measured ex post).
+For a change in environmental quality from $q$ to $q'$ (prices $p$, income $m$):
 
-### Equivalent Variation (EV)
+$$
+U(p,q,m) = U(p,q',m+CV) \qquad\qquad U(p,q,m-EV) = U(p,q',m)
+$$
 
-Income adjustment before a change to achieve final utility (measured ex ante).
+Which one is larger? $\quad q' > q \Rightarrow EV > CV, \qquad q' < q \Rightarrow EV < CV$
 
-## CV and EV Formally
-
-- Compensating variation: $U(p, q, m) = U(p, q', m + CV)$
-- Equivalent variation: $U(p, q, m - EV) = U(p, q', m)$
-
-Which one is larger?
-
-- $q' > q \Rightarrow EV > CV$
-- $q' < q \Rightarrow EV < CV$
-
-If there are no income effects: $EV = CV = CS$
-
-
-# WTP and WTA
-
-## Property Rights Matter
-
-Two key measures:
-
-- WTP (Willingness to Pay)
-- WTA (Willingness to Accept)
-
-Choice depends on:
-
-- Initial entitlement
-- Property rights
-
-## Which Is WTP and Which Is WTA?
+. . .
 
 :::: {.columns}
 ::: {.column width="50%"}
-Improvement, $q' > q$:
+**Improvement** ($q' > q$)
 
 $$
 \begin{aligned}
-U(p, q, m) &= U(p, q', m - WTP) \\
-U(p, q, m - WTA) &= U(p, q', m)
+U(p,q,m) &= U(p,q',m-WTP)\\
+U(p,q,m-WTA) &= U(p,q',m)
 \end{aligned}
 $$
 :::
 ::: {.column width="50%"}
-Deterioration, $q' < q$:
+**Deterioration** ($q' < q$)
 
 $$
 \begin{aligned}
-U(p, q, m) &= U(p, q', m + WTA) \\
-U(p, q, m - WTP) &= U(p, q', m)
+U(p,q,m) &= U(p,q',m+WTA)\\
+U(p,q,m-WTP) &= U(p,q',m)
 \end{aligned}
 $$
 :::
 ::::
 
+With no income effects: $EV = CV = CS$ -->
 
-# Nonmarket Goods
+## Property Rights Matter
 
-## Why Special Methods?
+- Two key measures:
+  - WTP (Willingness to Pay)
+  - WTA (Willingness to Accept)
+- Which one applies depends on:
+  - The initial entitlement
+  - Property rights
 
-Examples:
+## Summary: Price Is Not Value
 
-- Biodiversity
-- Water quality
-- Recreation sites
-- Ecosystem services
-
-These goods often lack market prices.
-
+- WTP / WTA = welfare-change measure
+- WTP or WTA? Depends on property rights
+- Market goods: use the demand curve to calculate CS
+- Non-market goods (public goods, environmental goods): no demand curve to observe
+  - Examples: biodiversity, water quality, recreation sites, ecosystem services
+- **Non-market valuation methods**
 
 # Valuation Approaches
 
 ## Two Major Families
 
-### Revealed Preference (RP)
+![](../../../assets/images/teaching/ENCI707/Lecture12/valuation_methods.svg){fig-align="center" width="100%"}
 
-Observed behavior in actual (or surrogate) markets.
+## Revealed vs. Stated Preference {.smaller}
 
-### Stated Preference (SP)
+#### Revealed Preference (RP)
 
-Choices observed in hypothetical settings, usually in a survey.
+- People's choices are observed in actual market situations
+- Can use indirect evidence from surrogate markets
 
-The families differ in scope of observed values, flexibility, and reliability.
+#### Stated Preference (SP)
 
+- Choices are observed in hypothetical situations
+- Usually in a survey
 
-# Revealed Preference Methods
 
-## Examples
+<hr style="width:100%; margin:auto;">
 
-### Productivity Method
 
-Environmental inputs used in production (e.g., water used to produce juice).
+- Trade-offs between the two:
+  - Scope of values that can be observed
+  - Flexibility
+  - Reliability
 
-### Avoided Damage / Substitute Cost Methods
+## Revealed Preference Methods {.smaller}
 
-Value inferred from prevented losses (e.g., flood protection).
+#### Productivity Method
 
-### Hedonic Pricing
+Environmental inputs used in production, e.g., water used to produce juice
 
-Property or wage markets.
+#### Avoided Damage / Substitute Cost Method
 
-### Travel Cost Method
+Value inferred from prevented losses, e.g., valuing flood protection
 
-Recreation demand and site valuation.
+#### Hedonic Pricing
 
+Property or wage markets
 
-# Hedonic Pricing
+#### Travel Cost Method
 
-## Applications
+Recreation demand and site valuation
 
-Examples:
+<!-- ## Hedonic Pricing {.smaller}
 
-- House prices near lakes
-- Air quality impacts on housing
-- Labor market risk premiums
-- Value of statistical life (airbags, work accidents)
-- Ecological attributes of goods (e.g., fair-trade coffee)
+- When is it used?
+  - Real estate markets
+  - "Ecological" attributes of some goods
+  - Wages influenced by working conditions
+- Approach:
+  - Control for all other attributes of the good
+  - Data → statistical analysis → aggregated value
+- Examples: airbags and the VSL, workplace accidents and the VSL, houses near a lake, fair-trade coffee
 
-Approach:
+## Travel Cost Method {.smaller}
 
-- Collect market data
-- Control for all other attributes of the good
-- Statistically isolate environmental effects
+- When is it used?
+  - Consumers spend money to get somewhere
+  - Environmental attributes, recreation
+- Travel data → valuation:
+  - Number of visitors
+  - Location (distance)
+    - Travel cost
+    - Travel time
+- Examples: national parks, urban parks -->
 
+## Limitations of RP Methods
 
-# Travel Cost Method
+- Suitable markets often do not exist
+- Only levels observed in markets can be valued
+- Little ability to estimate passive-use values
 
-## Applications
+They often produce **lower-bound** estimates
 
-Examples:
+## Stated Preference Methods {.smaller}
 
-- National parks
-- Urban parks
-- Recreation areas
+- Consumers' choices are *contingent* on scenarios posed in a survey → **contingent valuation (CV)**
 
-Uses:
+- Many ways to elicit preference information in a CV study:
+  - "What is your maximum willingness to pay for ...?"
+  - Discrete choice experiments (DCE)
+- SP methods can examine provision levels that differ substantially from anything observed now or in the past
+- SP is **the only approach** that can capture the passive-use component of economic value
 
-- Travel expenses
-- Travel time
-- Visit frequency
+# Short History of Contingent Valuation
 
-to estimate demand.
+<!-- ## Timeline
 
+![](../../../assets/images/teaching/ENCI707/Lecture12/cv_timeline.svg){fig-align="center" width="100%"} -->
 
-# Limitations of RP Methods
+## Early Development {.smaller}
 
-## Challenges
+- **Davis (1963):** first academic CV study, using surveys to value a wilderness area to hunters and tourists
+- **Knetsch and Davis (1966)**, Resources for the Future: compared CV with the travel cost method (suggested earlier by Hotelling)
+- Early studies focused on goods with a high passive-use component (species protection, wilderness areas)
+  - **Randall, Ives and Eastman (1974):** visibility changes from air pollution in the southwestern U.S.
+- **Water Resources Council (1979):** *Principles and Standards for Water and Related Land Resources Planning* lists CV as one of three acceptable methods for evaluating federal projects
+- **U.S. EPA:** major research programme developing CV (1970s–1980s)
 
-- Suitable markets may not exist
-- Only observed conditions can be valued
-- Limited ability to estimate passive-use values
+## Early Elicitation Formats {.smaller}
 
-Often produces lower-bound estimates.
+After describing the good and the scenario for providing it, WTP is elicited
 
+#### Bidding Game
 
-# Stated Preference Methods
+- Start from an initial amount and ask whether the respondent would pay it
+- Yes → increase the amount; no → decrease it
+- Continue until the answer changes
 
-## Main Idea
+#### Open-Ended Questions
 
-Respondents evaluate hypothetical scenarios; their choices are *contingent* on the scenario posed ⇒ contingent valuation (CV).
+Direct question: "What is your maximum WTP?"
 
-Allows valuation of:
+#### Payment Cards
 
-- Future policies
-- Unobserved outcomes (levels very different from current or past ones)
-- Non-use values – SP is the only approach that captures them
+- An array of amounts on a card
+- Respondents pick the amount that best represents their WTP
 
-Includes:
+## Problems with Early Methods {.smaller}
 
-- Contingent valuation
-- Discrete choice experiments
-
-
-# Contingent Valuation
-
-## Basic Question
-
-Typical format:
-
-> What is the maximum amount you would be willing to pay?
-
-Advantages:
-
-- Simple
-- Direct
-
-Challenges:
-
-- Strategic responses
-- Hypothetical bias
-
-
-# Short History of CV
-
-## Origins
-
-- First academic application: Davis (1963) – value hunters and tourists placed on a wilderness area
-  - Knetsch and Davis (1966, Resources for the Future) compared CV with the travel cost method
-- Early focus on goods with large passive-use value (species, wilderness)
-  - Randall, Ives and Eastman (1974) – visibility changes from air pollution in the U.S. southwest
-- Water Resources Council (1979): CV one of three acceptable methods for evaluating federal projects
-- U.S. EPA research program developing CV (1970s–1980s)
-
-
-# Early Elicitation Formats
-
-## Historical Approaches
-
-### Bidding Game
-
-Iterative price adjustments: start from an initial amount; increase if yes, decrease if no; continue until the answer changes.
-
-### Open-Ended Questions
-
-Direct WTP response.
-
-### Payment Cards
-
-Respondents select from an array of offered values.
-
-
-# Problems with Early Methods
-
-## Common Issues
-
-- Starting point bias
+- Starting-point bias
 - Nonresponse
 - WTP/WTA disparity
-- Incentive compatibility concerns
+- Need for **incentive compatibility:** a *single binary discrete choice question*
+  - Different bids randomly assigned to respondents
+  - Mirrors choice behaviour in markets with posted prices
 - Hypothetical bias
+- Validity of some studies' results
 
-Response: the single binary discrete choice question – different bids randomly assigned to respondents, mirroring markets with posted prices.
+## The Exxon Valdez Turning Point {.smaller}
 
-
-# The Exxon Valdez Turning Point
-
-## Exxon Valdez (1989)
-
-![](../../../assets/images/teaching/ENCI707/Lecture12/exxon-valdez.png){fig-alt="Photos of the Exxon Valdez oil spill: aerial views of the tanker and oil slick, oiled rocks, an oiled seabird, and cleanup crews on the shore"}
-
-## Why It Matters
-
-The oil spill generated:
-
-- Large environmental damages – spectacular scale, but no one directly suffered
-- Legal disputes over valuation (estimated damages \$3–15 bln; CV study by Carson et al., 1992)
-- Major scrutiny of contingent valuation methods (Exxon-sponsored symposia; Hausman, 1993)
-
-
-# NOAA Panel Recommendations
-
-## Arrow-Solow Panel
-
-Convened by the U.S. government (Arrow et al., 1993):
+- March 1989 oil spill in Prince William Sound, Alaska: spectacular in scale, but no one directly suffered market losses
+- Environmental organizations sued Exxon
+- Estimated environmental damages: **\$3–15 billion**
+  - CV study for the damage assessment (Carson et al., 1992)
+- Exxon sponsored symposia highlighting problems with CV (Hausman, 1993)
+- The U.S. government convened a panel co-chaired by Nobel laureates **Kenneth Arrow and Robert Solow** to assess CV for measuring passive-use values (Arrow et al., 1993)
 
 > "CVM studies can produce estimates reliable enough to be the starting point of a judicial or administrative determination of natural resource damages, including lost passive values."
 
-Recommendations:
+## NOAA Arrow–Solow Panel Recommendations {.smaller}
 
-- Use realistic scenarios
-- Use referendum-style questions
-- Use single binary choice formats
-- Emphasize incentive compatibility
+- Use *credible* scenarios
+- Use a single binary discrete choice question
+- Frame it as a vote (referendum)
+- Consequences:
+  - Arrow et al. (1993) became the standard reference for years
+  - The number of CV studies grew exponentially
+  - To extract more information, payment cards and other formats were still developed and used
+    - Multiple choice sets or multinomial choice questions
+    - e.g., double-bounded binary (dichotomous) choice
 
-These recommendations became highly influential; the number of CV studies grew exponentially, and richer formats (e.g., double-bounded dichotomous choice) kept developing.
+## Emergence of Choice Experiments {.smaller}
 
+#### Adamowicz, Louviere & Williams (1994)
 
-# Emergence of Choice Experiments
+- Presented choice situations in tables
+- Collected data on 16 choice sets with 3 alternatives each
+- Called it a "choice experiment"
 
-## Adamowicz, Louviere & Williams (1994)
+#### Hanley, Wright & Adamowicz (1998)
 
-Respondents choose among alternatives characterized by:
+- Summarized the fast-growing number of DCE studies
+- Explicitly valued programme attributes
 
-- Multiple attributes
-- Different levels
+## Example Choice Card {.smaller}
 
-(16 choice sets with 3 alternatives, presented in tables)
+*Adapted from Adamowicz, Louviere & Williams (1994): "Suppose last August you could have chosen only from the recreational opportunities below."*
 
-Benefits:
+::: {style="font-size: 60%;"}
+| | **A. Standing water** | **B. Running water** | **C. Non-water** |
+|---|---|---|---|
+| Water feature | Natural lake | Stream | Any other non-water recreation, or stay at home |
+| Terrain | Mountain | Foothills | |
+| Driving distance | 50 km | 50 km | |
+| Fish types | Pickerel, pike & perch | Rainbow trout & whitefish | |
+| Fish size | Large | Large | |
+| Fishing success | 1 fish / 35 min | 1 fish / 4 hours | |
+| Camping | Designated campsite | Designated campsite | |
+| Water quality | Good | Good | |
+| Boating / swimming / beach | None / Yes / No | None / No / Yes | |
+| Day-use fee | None | \$6 | |
 
-- Richer preference information
-- Explicit valuation of attributes
+Which would you most likely have chosen? ☐ A  ☐ B  ☐ C
+:::
 
-Hanley, Wright & Adamowicz (1998) summarized the rapidly growing DCE literature.
+<!-- ## Why DCEs Became Popular {.smaller}
 
+- The literature was confused at first:
+  - 2 alternatives = "CV"
+  - More alternatives or choice situations, usually in a table = "choice experiments"
 
-# Why DCEs Became Popular
+- Choice experiments were attractive because they were:
+  - Thought to avoid some problems associated with "CV"
+  - New and more advanced, so easier to publish
+  - Responsive to demand for valuing changes in attributes
+  - A source of more preference information per respondent
+  - Closely connected to random utility theory
 
-## Advantages
+## Terminology
 
-- More information per respondent
-- Attribute-level valuation
-- Flexible policy analysis
-- Closer connection to random utility theory
-- Thought to avoid some problems associated with "CV" (and new methods were easier to publish)
+- Many labels for closely related approaches:
+  - Choice experiments
+  - Stated choice
+  - Choice modelling
+  - Conjoint choice experiments
+  - Contingent rating
+  - Conjoint analysis
+- Today (Carson and Louviere, 2011), a DCE is seen as **one more elicitation format within the CV method**:
 
-Confusion in the literature: 2 alternatives = "CV"; more alternatives or choice situations in a table = "choice experiments".
+### Discrete Choice Experiments (DCE) -->
 
-# Terminology
+## Summary {.smaller}
 
-## Related Terms
-
-Now (Carson and Louviere, 2011), DCE is considered another elicitation format within the CV method.
-
-$$
-\left.
-\begin{array}{l}
-\text{Choice experiments} \\
-\text{Stated choice} \\
-\text{Choice modelling} \\
-\text{Conjoint choice experiments} \\
-\text{Contingent rating} \\
-\text{Conjoint analysis}
-\end{array}
-\right\}
-\;\longrightarrow\;
-\text{Discrete choice experiments (DCE)}
-$$
-
-## Summary
-
-- Economic valuation supports environmental decision making.
-- Value is based on welfare and preferences.
-- Total economic value includes use and non-use components.
-- Many environmental goods lack market prices.
-- RP and SP methods provide complementary approaches.
-- DCEs emerged as a powerful stated-preference method.
+- Economic valuation supports environmental decision making
+- Value is based on welfare and preferences; price is not value
+- Total economic value includes use and non-use components
+- Many environmental goods lack market prices
+- RP and SP methods are complementary; only SP captures passive-use value
+- After Exxon Valdez and the NOAA panel, DCEs emerged as a powerful stated-preference format

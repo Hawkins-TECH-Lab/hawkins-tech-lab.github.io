@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 430" width="600" height="430" font-family="Helvetica, Arial, sans-serif">
+  <!-- Source: tikz/valuation_cycle.tex -->
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="7" refY="5" markerUnits="userSpaceOnUse" markerWidth="26" markerHeight="26" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#7a7a7a"/>
+    </marker>
+  </defs>
+  <rect width="600" height="430" fill="#ffffff"/>
+  <!-- arcs on a circle centred (300,220), r = 150 -->
+  <g fill="none" stroke="#9e9e9e" stroke-width="10" stroke-linecap="butt" marker-end="url(#arr)">
+    <path d="M194,114 A150,150 0 0 1 406,114"/>
+    <path d="M445,181 A150,150 0 0 1 363,356"/>
+    <path d="M237,356 A150,150 0 0 1 155,181"/>
+  </g>
+  <!-- nodes -->
+  <g font-size="22" font-weight="bold" text-anchor="middle" fill="#1b1b1b">
+    <text x="150" y="145">Human</text>
+    <text x="150" y="171">activity</text>
+    <text x="450" y="158">Environment</text>
+    <text x="300" y="400">Welfare</text>
+  </g>
+  <!-- arc labels -->
+  <g font-size="15" font-style="italic" fill="#2e7d32" text-anchor="middle">
+    <text x="300" y="52">emissions, land use</text>
+    <text x="500" y="300">health, recreation,</text>
+    <text x="500" y="319">existence</text>
+    <text x="100" y="300">valuation informs</text>
+    <text x="100" y="319">decisions</text>
+  </g>
+</svg>

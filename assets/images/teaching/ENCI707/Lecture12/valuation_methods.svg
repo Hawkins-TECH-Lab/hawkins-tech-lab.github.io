@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" width="900" height="400" font-family="Helvetica, Arial, sans-serif">
+  <!-- Source: tikz/valuation_methods.tex -->
+  <rect width="900" height="400" fill="#ffffff"/>
+  <!-- connectors -->
+  <g fill="none" stroke="#757575" stroke-width="2">
+    <path d="M450,62 V86 H225 V110"/>
+    <path d="M450,86 H675 V110"/>
+    <path d="M225,160 V180 H75 V200"/>
+    <path d="M185,180 V200"/>
+    <path d="M265,180 H295 V200"/>
+    <path d="M225,180 H405 V200"/>
+    <path d="M675,160 V180 H590 V200"/>
+    <path d="M675,180 H790 V200"/>
+  </g>
+  <!-- root -->
+  <rect x="320" y="18" width="260" height="44" rx="8" fill="#1b1b1b"/>
+  <text x="450" y="46" font-size="18" font-weight="bold" fill="#ffffff" text-anchor="middle">Non-market valuation</text>
+  <!-- families -->
+  <rect x="95"  y="110" width="260" height="50" rx="8" fill="#eef3f9" stroke="#3b6ea8" stroke-width="2"/>
+  <rect x="545" y="110" width="260" height="50" rx="8" fill="#e8f3e8" stroke="#2e7d32" stroke-width="2"/>
+  <g font-size="17" font-weight="bold" text-anchor="middle">
+    <text x="225" y="141" fill="#3b6ea8">Revealed preference (RP)</text>
+    <text x="675" y="141" fill="#2e7d32">Stated preference (SP)</text>
+  </g>
+  <!-- RP methods -->
+  <g fill="#ffffff" stroke="#3b6ea8" stroke-width="1.5">
+    <rect x="25"  y="200" width="100" height="52" rx="6"/>
+    <rect x="135" y="200" width="100" height="52" rx="6"/>
+    <rect x="245" y="200" width="100" height="52" rx="6"/>
+    <rect x="355" y="200" width="100" height="52" rx="6"/>
+  </g>
+  <g font-size="14" text-anchor="middle" fill="#1b1b1b">
+    <text x="75"  y="222">Productivity</text><text x="75" y="240">method</text>
+    <text x="185" y="222">Avoided /</text><text x="185" y="240">substitute cost</text>
+    <text x="295" y="222">Hedonic</text><text x="295" y="240">pricing</text>
+    <text x="405" y="222">Travel</text><text x="405" y="240">cost</text>
+  </g>
+  <!-- SP methods -->
+  <g fill="#ffffff" stroke="#2e7d32" stroke-width="1.5">
+    <rect x="505" y="200" width="170" height="52" rx="6"/>
+    <rect x="705" y="200" width="170" height="52" rx="6"/>
+  </g>
+  <g font-size="14" text-anchor="middle" fill="#1b1b1b">
+    <text x="590" y="222">Contingent</text><text x="590" y="240">valuation (CV)</text>
+    <text x="790" y="222">Discrete choice</text><text x="790" y="240">experiments (DCE)</text>
+  </g>
+  <g font-size="12" font-style="italic" text-anchor="middle" fill="#616161">
+    <text x="590" y="270">open-ended · bidding game</text>
+    <text x="590" y="285">payment card · binary choice</text>
+    <text x="790" y="270">multiple alternatives</text>
+    <text x="790" y="285">described by attributes</text>
+  </g>
+  <!-- properties -->
+  <rect x="25" y="310" width="430" height="74" rx="8" fill="#3b6ea8"/>
+  <rect x="505" y="310" width="370" height="74" rx="8" fill="#2e7d32"/>
+  <g font-size="14" fill="#ffffff" text-anchor="middle">
+    <text x="240" y="334">actual market behaviour (often surrogate markets)</text>
+    <text x="240" y="353">only levels already observed · use values only</text>
+    <text x="240" y="372">often a lower-bound estimate</text>
+    <text x="690" y="334">hypothetical scenarios in a survey</text>
+    <text x="690" y="353">any provision level, including new ones</text>
+    <text x="690" y="372">use + non-use (passive-use) values</text>
+  </g>
+</svg>

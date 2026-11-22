@@ -1,0 +1,51 @@
+% Short history of contingent valuation and choice experiments.
+% Compile to SVG:  latex cv_timeline.tex && dvisvgm --no-fonts cv_timeline.dvi -o ../cv_timeline.svg
+\documentclass[tikz,border=6pt]{standalone}
+\usepackage[scaled]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usetikzlibrary{arrows.meta}
+\definecolor{blu}{HTML}{3B6EA8}
+\definecolor{accent}{HTML}{2E7D32}
+\definecolor{rd}{HTML}{C62828}
+\begin{document}
+\begin{tikzpicture}[x=0.36cm,
+    lab/.style={font=\footnotesize, align=center},
+    yr/.style={font=\footnotesize\bfseries, text=#1}]
+  % x coordinate = year - 1960
+  \fill[blu!20, rounded corners=3pt] (10,-0.15) rectangle (30,0.15);
+  \draw[-{Latex}, thick, black!75] (-0.6,0) -- (56.5,0);
+  \foreach \d in {1960,1970,...,2010} {
+    \draw[black!75] (\d-1960,-0.1) -- (\d-1960,0.1);
+    \node[below, font=\tiny, text=black!40] at (\d-1960,-0.15) {\d};
+  }
+  % \event{year}{colour}{height}{text}  (height > 0 above, < 0 below)
+  \newcommand{\event}[4]{
+    \pgfmathsetmacro{\x}{#1-1960}
+    \draw[black!35] (\x,0) -- (\x,#3);
+    \fill[#2] (\x,0) circle (3pt);
+    \ifdim #3pt>0pt
+      \node[lab, anchor=south] at (\x,#3) {\textcolor{#2}{\textbf{#1}}\\#4};
+    \else
+      \node[lab, anchor=north] at (\x,#3) {\textcolor{#2}{\textbf{#1}}\\#4};
+    \fi}
+  \event{1963}{blu}{0.9}{Davis: first\\academic CV study}
+  \event{1974}{blu}{0.9}{Randall, Ives \& Eastman:\\air-pollution visibility}
+  \event{1989}{rd}{0.9}{Exxon Valdez spill}
+  \event{1998}{accent}{0.9}{Hanley, Wright \&\\Adamowicz: DCE review}
+  \event{1993}{blu}{2.5}{NOAA panel\\(Arrow \& Solow)}
+  \event{1966}{blu}{-0.8}{Knetsch \& Davis:\\CV vs travel cost}
+  \event{1979}{blu}{-0.8}{Water Resources Council:\\CV accepted for\\federal projects}
+  \event{1992}{blu}{-0.8}{Carson et al.:\\Exxon Valdez CV}
+  \event{2011}{accent}{-0.8}{Carson \& Louviere:\\DCE as a CV\\elicitation format}
+  \event{1994}{accent}{-2.6}{Adamowicz, Louviere \&\\Williams: choice experiment}
+  % EPA programme (band 1970-1990)
+  \draw[black!35] (20,0.15) -- (20,2.5);
+  \node[lab, anchor=south] at (20,2.5) {\textcolor{blu}{\textbf{1970s--80s}}\\US EPA research\\programme on CV};
+  % legend
+  \begin{scope}[shift={(43,3.4)}, font=\scriptsize, text=black!65]
+    \fill[blu]    (0,0)    circle (3pt) node[right=3pt] {contingent valuation};
+    \fill[accent] (0,-0.5) circle (3pt) node[right=3pt] {choice experiments};
+    \fill[rd]     (0,-1)   circle (3pt) node[right=3pt] {trigger event};
+  \end{scope}
+\end{tikzpicture}
+\end{document}
