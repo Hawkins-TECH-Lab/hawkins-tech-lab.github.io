@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 270" width="960" height="270" font-family="Helvetica, Arial, sans-serif">
+  <!-- Source: tikz/impact_pathway.tex -->
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#3b6ea8"/>
+    </marker>
+  </defs>
+  <rect width="960" height="270" fill="#ffffff"/>
+  <!-- stage boxes -->
+  <g stroke-width="2">
+    <rect x="20"  y="40" width="160" height="120" rx="10" fill="#eef3f9" stroke="#3b6ea8"/>
+    <rect x="210" y="40" width="160" height="120" rx="10" fill="#eef3f9" stroke="#3b6ea8"/>
+    <rect x="400" y="40" width="160" height="120" rx="10" fill="#eef3f9" stroke="#3b6ea8"/>
+    <rect x="590" y="40" width="160" height="120" rx="10" fill="#eef3f9" stroke="#3b6ea8"/>
+    <rect x="780" y="40" width="160" height="120" rx="10" fill="#e8f3e8" stroke="#2e7d32"/>
+  </g>
+  <!-- arrows -->
+  <g stroke="#3b6ea8" stroke-width="3" marker-end="url(#arr)">
+    <line x1="182" y1="100" x2="207" y2="100"/>
+    <line x1="372" y1="100" x2="397" y2="100"/>
+    <line x1="562" y1="100" x2="587" y2="100"/>
+    <line x1="752" y1="100" x2="777" y2="100"/>
+  </g>
+  <!-- step numbers -->
+  <g font-size="13" fill="#3b6ea8" font-weight="bold" text-anchor="middle">
+    <text x="100" y="30">1</text><text x="290" y="30">2</text><text x="480" y="30">3</text><text x="670" y="30">4</text>
+    <text x="860" y="30" fill="#2e7d32">5</text>
+  </g>
+  <!-- titles -->
+  <g font-size="17" font-weight="bold" text-anchor="middle" fill="#1b1b1b">
+    <text x="100" y="80">Emissions</text>
+    <text x="290" y="72">Transport &amp;</text><text x="290" y="92">chemistry</text>
+    <text x="480" y="72">Concentration</text><text x="480" y="92">increase</text>
+    <text x="670" y="72">Physical</text><text x="670" y="92">impacts</text>
+    <text x="860" y="80">Valuation</text>
+  </g>
+  <!-- box details -->
+  <g font-size="13" text-anchor="middle" fill="#424242">
+    <text x="100" y="108">what, where, how</text>
+    <text x="100" y="126">much is emitted</text>
+    <text x="290" y="118">dispersion and</text>
+    <text x="290" y="136">secondary pollutants</text>
+    <text x="480" y="118">ΔC in each grid</text>
+    <text x="480" y="136">cell across Europe</text>
+    <text x="670" y="112">health · materials</text>
+    <text x="670" y="130">crops · ecosystems</text>
+    <text x="670" y="148">(acidification, biodiversity)</text>
+    <text x="860" y="108">$ per impact,</text>
+    <text x="860" y="126">then $ per kWh</text>
+  </g>
+  <!-- data/model inputs -->
+  <g font-size="12.5" font-style="italic" text-anchor="middle" fill="#757575">
+    <text x="100" y="195">technology, fuel,</text><text x="100" y="211">stack, location</text>
+    <text x="290" y="195">atmospheric</text><text x="290" y="211">dispersion models</text>
+    <text x="480" y="195">overlay with</text><text x="480" y="211">population grid</text>
+    <text x="670" y="195">exposure–response</text><text x="670" y="211">functions</text>
+    <text x="860" y="195">VSL, VOLY,</text><text x="860" y="211">stated-preference WTP</text>
+  </g>
+  <line x1="20" y1="175" x2="940" y2="175" stroke="#bdbdbd" stroke-dasharray="4 4"/>
+  <text x="480" y="250" font-size="13" text-anchor="middle" fill="#9e9e9e">inputs at each stage</text>
+</svg>

@@ -6,21 +6,27 @@
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.6.39">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.11.9">
 
   <meta name="author" content="Based on lecture by Mikołaj Czajkowski">
   <title>Hawkinslab – Lecture 12 - Non-Market Valuation</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../../site_libs/revealjs/dist/reset.css">
   <link rel="stylesheet" href="../../../site_libs/revealjs/dist/reveal.css">
   <style>
-    code{white-space: pre-wrap;}
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
     ul.task-list li input[type="checkbox"] {
@@ -29,7 +35,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../../../site_libs/revealjs/dist/theme/quarto-423d414d36ce366a9d05f36d06304417.css">
+  <link rel="stylesheet" href="../../../site_libs/revealjs/dist/theme/quarto-1ddb21c2f84686f497aff9e1fdc170fd.css">
   <link href="../../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -135,7 +141,7 @@
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Based on lecture by Mikołaj Czajkowski 
+Based on lecture by Mikołaj Czajkowski
 </div>
 </div>
 </div>
@@ -143,7 +149,6 @@ Based on lecture by Mikołaj Czajkowski
 </section>
 <section id="outline" class="slide level2">
 <h2>Outline</h2>
-<div>
 <ol type="1">
 <li class="fragment">Motivation for valuation</li>
 <li class="fragment">Individuals’ motivation for willingness to pay (WTP)</li>
@@ -151,76 +156,42 @@ Based on lecture by Mikołaj Czajkowski
 <li class="fragment">Nonmarket valuation methods</li>
 <li class="fragment">Short history of contingent valuation</li>
 </ol>
-</div>
 </section>
-<section id="why-economic-valuation" class="slide level2">
-<h2>Why Economic Valuation?</h2>
-<ul>
-<li>Rational decisions with respect to the environment</li>
-</ul>
+<section>
+<section id="motivation-for-valuation" class="title-slide slide level1 center">
+<h1>Motivation for Valuation</h1>
+
+</section>
+<section id="environmental-decision-making" class="slide level2 smaller">
+<h2>Environmental Decision Making</h2>
 <div class="columns">
-<div class="column" style="width:45%;">
+<div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="../../../assets/images/teaching/ENCI707/Lecture12/human_environment_welfare.svg"></p>
-<figcaption>Alt text</figcaption>
+<p><img data-src="../../../assets/images/teaching/ENCI707/Lecture12/valuation_cycle.svg" class="quarto-figure quarto-figure-center"></p>
 </figure>
 </div>
-</div><div class="column" style="width:55%;">
+</div><div class="column" style="width:50%;">
+<p>Valuation supports rational decisions about the environment:</p>
 <ul>
-<li>Market inefficiency: public goods (CBA) &amp; externality effects (Pigouvian tax)</li>
-<li>Assessing economic desirability of a policy
+<li>Market inefficiencies
 <ul>
-<li>Demonstrate importance of the issue</li>
+<li>Public goods → cost-benefit analysis</li>
+<li>External effects → Pigouvian taxes</li>
+</ul></li>
+<li>Assessing the economic desirability of policies
+<ul>
+<li>Demonstrating the importance of an issue</li>
 <li>Priority setting</li>
 </ul></li>
 <li>Legal damage assessment</li>
 <li>Green national accounting</li>
-<li>The least controversial argument</li>
+<li>Often the least controversial argument</li>
 </ul>
 </div></div>
 </section>
-<section id="why-economic-valuation-1" class="slide level2">
-<h2>Why Economic Valuation?</h2>
-<div>
-
-</div>
-<div class="quarto-layout-panel" data-layout="[[50,50],[50]]">
-<div class="quarto-layout-row quarto-layout-valign-center">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img data-src="../../../assets/images/teaching/ENCI707/Lecture12/protest-globe.png" alt="Climate campaigners with a giant inflatable globe and a banner reading 'Climate: failure is not an option'"></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img data-src="../../../assets/images/teaching/ENCI707/Lecture12/protest-tent.png" alt="Protester chained to a tree next to a tent with a 'Stop the chop' sign"></p>
-</div>
-</div>
-<div class="quarto-layout-row quarto-layout-valign-center">
-<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
-<p><img data-src="../../../assets/images/teaching/ENCI707/Lecture12/protest-street.png" alt="Greenpeace activists unrolling a banner down a building facade"></p>
-</div>
-</div>
-</div>
-</section>
-<section id="environmental-decision-making" class="slide level2">
-<h2>Environmental Decision Making</h2>
-<p>Environmental changes affect:</p>
-<ul>
-<li>Human welfare</li>
-<li>Economic activity</li>
-<li>Public goods</li>
-<li>External effects</li>
-</ul>
-<p>Applications:</p>
-<ul>
-<li>Cost-benefit analysis</li>
-<li>Environmental policy evaluation</li>
-<li>Priority setting</li>
-<li>Legal damage assessment</li>
-<li>Green national accounting</li>
-</ul>
-</section>
-<section id="cost-benefit-analysis" class="slide level2">
-<h2>Cost-Benefit Analysis</h2>
+<section id="basic-cost-benefit-analysis-cba-framework" class="slide level2 smaller">
+<h2>Basic Cost-Benefit Analysis (CBA) Framework</h2>
 <p>A complete CBA should:</p>
 <ul>
 <li>Compare all costs and benefits</li>
@@ -230,444 +201,339 @@ Based on lecture by Mikołaj Czajkowski
 <li>Calculate net benefits</li>
 <li>Account for discounting</li>
 <li>Compare alternatives</li>
-<li>Support decision-making</li>
 </ul>
 </section>
+<section id="is-economic-valuation-important" class="slide level2 smaller">
+<h2>Is Economic Valuation Important?</h2>
+<ul>
+<li>Tens of thousands of papers and studies</li>
+<li>A major share of presentations at environmental economics conferences</li>
+<li>Standard material in environmental economics textbooks</li>
+<li>Used to assess very large policies, e.g., the U.S. Clean Water Act (U.S. EPA, 1994)</li>
+<li>…and a wide range of sectoral and regional policy decisions</li>
+</ul>
+<p>Central to modern welfare economics: environment, health, transport, marketing, culture, …</p>
+</section></section>
 <section>
 <section id="example-electricity-generation" class="title-slide slide level1 center">
 <h1>Example: Electricity Generation</h1>
 
 </section>
-<section id="the-problem" class="slide level2">
+<section id="the-problem" class="slide level2 smaller">
 <h2>The Problem</h2>
-<p>How harmful are different ways of generating electricity?</p>
-<p>Electricity production generates:</p>
+<ul>
+<li>How “harmful” are different ways of generating electricity?</li>
+<li>Electricity production generates:
 <ul>
 <li>Air pollution</li>
 <li>Greenhouse gases</li>
 <li>Health impacts</li>
 <li>Ecosystem damage</li>
-</ul>
-<p>These external effects are often not reflected in market prices (or in power plants’ economic decisions).</p>
-<p>Economic theory suggests:</p>
+</ul></li>
+<li>These external effects are not included in the economic decisions of power plants</li>
+<li>Economic theory suggests:
 <ul>
 <li>Taxing emissions according to marginal external damage</li>
-<li>Comparing technologies based on social costs</li>
-</ul>
-<p>Which energy sources should be promoted?</p>
-</section>
-<section id="the-externe-approach" class="slide level2">
-<h2>The ExternE Approach</h2>
-<p>Major European research efforts (<a href="http://www.externe.info">www.externe.info</a>):</p>
-<ul>
-<li>ExternE</li>
-<li>ExternE-Pol (2002–2004)</li>
-<li>NEEDS (2004–2008)</li>
-<li>CASES (2006–2008)</li>
-<li>EXIOPOL (2007–2011)</li>
-</ul>
-<p>Goal:</p>
-<p>Estimate the average external costs of electricity generation</p>
-<ul>
-<li>Bottom-up approach: damages for each power plant depend on local conditions
-<ul>
-<li>Technology, fuel, location, atmospheric conditions</li>
+<li>Comparing technologies based on social costs: which sources should be promoted?</li>
 </ul></li>
 </ul>
-</section></section>
-<section>
-<section id="impact-pathway-approach" class="title-slide slide level1 center">
-<h1>Impact Pathway Approach</h1>
-
 </section>
-<section id="valuation-process" class="slide level2">
-<h2>Valuation Process</h2>
-<ol type="1">
-<li>Emissions released (where, what, how)</li>
-<li>Atmospheric transport</li>
-<li>Chemical transformations (reactions with other pollutants)</li>
-<li>Concentration changes</li>
-<li>Physical impacts</li>
-<li>Welfare impacts</li>
-<li>Monetary valuation</li>
-</ol>
-<p>Damages are then recalculated per unit of energy.</p>
-</section>
-<section id="impact-pathway" class="slide level2">
-<h2>Impact Pathway</h2>
-
-<img data-src="../../../assets/images/teaching/ENCI707/Lecture12/impact-pathway.svg" alt="Impact pathway: emissions from cars and power plants, transport and chemical transformation across Europe, damages to health, buildings and crops, then valuation in money" class="r-stretch"></section>
-<section id="step-1-concentration-increase" class="slide level2">
-<h2>Step 1: Concentration Increase</h2>
-
-<img data-src="../../../assets/images/teaching/ENCI707/Lecture12/so2-concentration.png" alt="Map of Europe showing additional SO2 concentration from the Lauffen plant, highest in southern Germany" class="r-stretch quarto-figure-center"><p class="caption">Additional SO<sub>2</sub> concentration caused by the Lauffen coal-fired power plant [µg/m³]. © IER Universität Stuttgart</p></section>
-<section id="step-2-exposed-population" class="slide level2">
-<h2>Step 2: Exposed Population</h2>
-
-<img data-src="../../../assets/images/teaching/ENCI707/Lecture12/population-density.png" alt="Gridded map of population density across Europe" class="r-stretch quarto-figure-center"><p class="caption">Population density [millions]. © IER Universität Stuttgart</p></section>
-<section id="step-3-physical-impact" class="slide level2">
-<h2>Step 3: Physical Impact</h2>
-
-<img data-src="../../../assets/images/teaching/ENCI707/Lecture12/life-years-lost.png" alt="Map of Europe showing life years lost, concentrated around southern Germany" class="r-stretch quarto-figure-center"><p class="caption">Cumulative life years lost from increased SO<sub>2</sub> concentrations caused by the Lauffen plant [years annually]. © IER Universität Stuttgart</p></section>
-<section id="step-4-valuation" class="slide level2">
-<h2>Step 4: Valuation</h2>
-<p>We know how many life years are lost in each grid cell in Europe – what next?</p>
+<section id="external-costs-of-electricity" class="slide level2 smaller">
+<h2>External Costs of Electricity</h2>
+<p>Major European research efforts (<a href="https://www.externe.info">ExternE</a> project series):</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Project</th>
+<th>Years</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ExternE-Pol</td>
+<td>2002–2004</td>
+</tr>
+<tr class="even">
+<td>NEEDS</td>
+<td>2004–2008</td>
+</tr>
+<tr class="odd">
+<td>CASES</td>
+<td>2006–2008</td>
+</tr>
+<tr class="even">
+<td>EXIOPOL</td>
+<td>2007–2011</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Goal:</strong> estimate the average external cost of electricity generation</p>
 <ul>
-<li>How do we include it in a cost-benefit analysis?</li>
-<li>What is the value of a statistical life (or of a life year lost)?</li>
-<li>Valuation!</li>
+<li>Bottom-up approach</li>
+<li>Damages from each power plant depend on local conditions: technology, fuel, location, atmospheric conditions</li>
 </ul>
-</section></section>
-<section>
-<section id="types-of-welfare-effects" class="title-slide slide level1 center">
-<h1>Types of Welfare Effects</h1>
-
 </section>
-<section id="examples" class="slide level2">
-<h2>Examples</h2>
-<p>Health:</p>
+<section id="impact-pathway-approach" class="slide level2">
+<h2>Impact Pathway Approach</h2>
+
+<img data-src="../../../assets/images/teaching/ENCI707/Lecture12/impact_pathway.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"><p>Damages are summed over all receptors, then expressed per unit of energy ($/kWh)</p>
+</section>
+<section id="types-of-welfare-effects" class="slide level2 smaller">
+<h2>Types of Welfare Effects</h2>
+<ul>
+<li>Health:
 <ul>
 <li>Mortality</li>
 <li>Morbidity</li>
-</ul>
-<p>Environment:</p>
+</ul></li>
+<li>Environment:
 <ul>
 <li>Biodiversity loss</li>
 <li>Acidification</li>
 <li>Eutrophication</li>
-</ul>
-<p>Economic:</p>
+</ul></li>
+<li>Economic:
 <ul>
 <li>Agriculture</li>
 <li>Materials damage</li>
+</ul></li>
 </ul>
 </section></section>
 <section>
-<section id="why-valuation-matters" class="title-slide slide level1 center">
-<h1>Why Valuation Matters</h1>
+<section id="individuals-motivation-for-wtp" class="title-slide slide level1 center">
+<h1>Individuals’ Motivation for WTP</h1>
 
 </section>
-<section id="importance-in-practice" class="slide level2">
-<h2>Importance in Practice</h2>
-<p>Economic valuation:</p>
+<section id="economic-value" class="slide level2 smaller">
+<h2>Economic Value</h2>
 <ul>
-<li>Supports major policy decisions</li>
-<li>Appears in tens of thousands of studies</li>
-<li>Is a major part of environmental economics conferences and standard in textbooks</li>
-<li>Is central to welfare economics</li>
-<li>Is used in environment, health, transportation, marketing, and culture</li>
-</ul>
-<p>Examples include large regulatory analyses such as the U.S. Clean Water Act (U.S. EPA, 1994), plus many sectoral and regional decisions.</p>
-</section></section>
-<section>
-<section id="sources-of-economic-value" class="title-slide slide level1 center">
-<h1>Sources of Economic Value</h1>
-
-</section>
-<section id="whose-value" class="slide level2">
-<h2>Whose Value?</h2>
-<ul>
-<li><u>Economic</u> value = consumers’ aggregated willingness to pay
+<li>Economic value = consumers’ <strong>aggregated willingness to pay</strong>
 <ul>
 <li>Based on people’s preferences</li>
 <li>Anthropocentric!</li>
 </ul></li>
-<li>Motives are essentially irrelevant for the neoclassical theory of value
+<li>Motives are essentially irrelevant to the neoclassical economic theory of value
 <ul>
-<li>Economists accept consumer sovereignty</li>
-<li>But this is not to say that motives are irrelevant at all…</li>
+<li>Economists accept <strong>consumer sovereignty</strong> (i.e., people know what is best for themselves)</li>
+<li>That does not mean motives are irrelevant altogether…</li>
 </ul></li>
 </ul>
 </section>
 <section id="total-economic-value-tev" class="slide level2">
 <h2>Total Economic Value (TEV)</h2>
+<p><span class="math display">\[
+TEV = \underbrace{UV}_{\text{use}} + \underbrace{EV + SV + BV + OV + \cdots}_{\text{non-use (passive use)}}
+\]</span></p>
 
-<img data-src="../../../assets/images/teaching/ENCI707/Lecture12/tev.svg" alt="TEV equals use value UV plus non-use (passive use) value EV plus SV plus BV plus OV plus more" class="r-stretch"><p>Where:</p>
+<img data-src="../../../assets/images/teaching/ENCI707/Lecture12/tev_tree.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:75.0%"></section>
+<section id="use-and-non-use-values" class="slide level2 smaller">
+<h2>Use and Non-Use Values</h2>
+<h4 id="use-value">Use Value</h4>
 <ul>
-<li>UV = Use Value</li>
-<li>EV = Existence Value</li>
-<li>SV = Stewardship Value</li>
-<li>BV = Bequest Value</li>
-<li>OV = Option Value</li>
-</ul>
-</section></section>
-<section>
-<section id="use-and-non-use-values" class="title-slide slide level1 center">
-<h1>Use and Non-Use Values</h1>
-
-</section>
-<section id="use-value" class="slide level2">
-<h2>Use Value</h2>
-<p>Benefits obtained from direct or indirect use.</p>
-<p>Examples:</p>
+<li>Benefits obtained from direct or indirect use</li>
+<li>Examples:
 <ul>
 <li>Recreation</li>
 <li>Fishing</li>
 <li>Water consumption</li>
+</ul></li>
 </ul>
-</section>
-<section id="non-use-value" class="slide level2">
-<h2>Non-Use Value</h2>
-<p>Benefits independent of actual use (also called passive-use value).</p>
-<p>Examples:</p>
+<h4 id="non-use-value">Non-Use Value</h4>
+<ul>
+<li>Benefits independent of actual use</li>
+<li>Examples:
 <ul>
 <li>Knowing a species exists</li>
 <li>Preserving resources for future generations</li>
-</ul>
-</section>
-<section id="disentangling-motives" class="slide level2">
-<h2>Disentangling Motives</h2>
-<ul>
-<li>Different motivations are not mutually exclusive
-<ul>
-<li>They tend to be positively correlated</li>
-</ul></li>
-<li>Difficult (if not impossible) to disaggregate</li>
-<li>Use vs.&nbsp;non-use values
-<ul>
-<li>Non-use values are unlikely to leave a trace in market behavior</li>
-<li>They require different valuation methods</li>
 </ul></li>
 </ul>
-</section></section>
-<section>
-<section id="existence-value" class="title-slide slide level1 center">
-<h1>Existence Value</h1>
-
 </section>
-<section id="definition" class="slide level2">
-<h2>Definition</h2>
-<p>Utility gained simply from knowing that an environmental resource exists.</p>
+<section id="existence-value" class="slide level2 smaller">
+<h2>Existence Value</h2>
+<ul>
+<li>Utility gained simply from knowing that an environmental resource exists</li>
+</ul>
 <blockquote>
 <p>“[…] satisfaction from the mere knowledge that part of the wilderness […] remains, even though they would be appalled by the prospect of being exposed to it.”</p>
 </blockquote>
-<p>Examples:</p>
+<ul>
+<li>Examples:
 <ul>
 <li>Endangered species protection</li>
 <li>Wilderness preservation</li>
+</ul></li>
 </ul>
-<p>Individuals may value protection even if they never visit the resource.</p>
-</section></section>
-<section>
-<section id="stewardship-value" class="title-slide slide level1 center">
-<h1>Stewardship Value</h1>
-
 </section>
-<section id="definition-1" class="slide level2">
-<h2>Definition</h2>
-<p>Value derived from acting as a responsible caretaker – a duty to protect some entity from harm imposed by human activity.</p>
-<p>Examples:</p>
+<section id="stewardship-value" class="slide level2 smaller">
+<h2>Stewardship Value</h2>
+<ul>
+<li>Value derived from acting as a responsible caretaker
+<ul>
+<li>The government should be a “good steward” of an environmental resource</li>
+<li>A duty to protect some entity from harm imposed by human activity</li>
+</ul></li>
+<li>Examples:
 <ul>
 <li>Maintaining water quality</li>
-<li>Preserving habitats / setting land aside rather than developing it</li>
+<li>Preserving habitats or setting aside land rather than developing it</li>
 <li>Preventing human-caused (not natural) species losses</li>
+</ul></li>
 </ul>
-</section></section>
-<section>
-<section id="bequest-and-option-values" class="title-slide slide level1 center">
-<h1>Bequest and Option Values</h1>
-
 </section>
-<section id="bequest-value" class="slide level2">
-<h2>Bequest Value</h2>
-<p>Protecting resources for future generations.</p>
-</section>
-<section id="option-value" class="slide level2">
-<h2>Option Value</h2>
-<p>Maintaining future opportunities for use.</p>
-<p>Important when:</p>
+<section id="bequest-and-option-values" class="slide level2">
+<h2>Bequest and Option Values</h2>
+<h4 id="bequest-value">Bequest Value</h4>
+<ul>
+<li>Protecting resources for children, grandchildren and future generations</li>
+</ul>
+<h4 id="option-value">Option Value</h4>
+<ul>
+<li>Protecting a good from destruction or irreversible damage to keep the option of using it in the future</li>
+<li>Important when:
 <ul>
 <li>Future preferences are uncertain</li>
 <li>Environmental damage may be irreversible</li>
+</ul></li>
 </ul>
-</section></section>
-<section>
-<section id="other-motivations" class="title-slide slide level1 center">
-<h1>Other Motivations</h1>
-
 </section>
-<section id="altruism" class="slide level2">
-<h2>Altruism</h2>
-<p>Concern for others’ welfare.</p>
-<p>Examples:</p>
+<section id="motivations" class="slide level2 smaller">
+<h2>Motivations</h2>
 <ul>
-<li>Concern for future generations</li>
-<li>Concern for wildlife</li>
+<li>Motives are irrelevant to economic value, but understanding them helps us interpret and use results</li>
 </ul>
-<p>Not an illegitimate source of value, but may cause double counting if respondents don’t realize that others will pay too.</p>
-</section>
-<section id="warm-glow" class="slide level2">
-<h2>Warm Glow</h2>
-<p>Utility from contributing to a socially desirable cause.</p>
-<p>Examples:</p>
+<h4 id="altruism">Altruism</h4>
+<ul>
+<li>Concern for others’ welfare
+<ul>
+<li>Not an illegitimate source of value</li>
+<li>No problem if it is altruism towards animals or plants</li>
+<li>May cause <strong>double counting</strong> if respondents do not realize that others will pay too</li>
+</ul></li>
+</ul>
+<h4 id="warm-glow">Warm Glow</h4>
+<ul>
+<li>Utility from doing something that makes you feel good
 <ul>
 <li>Charitable giving</li>
-<li>Environmental donations (especially voluntary contributions)</li>
+<li>Environmental donations, especially voluntary contributions</li>
+</ul></li>
 </ul>
 </section></section>
 <section>
-<section id="what-is-economic-value" class="title-slide slide level1 center">
-<h1>What Is Economic Value?</h1>
+<section id="economic-theory" class="title-slide slide level1 center">
+<h1>Economic Theory</h1>
+<!-- 
+## What Is Economic Value?
 
+- What is the "value of a good"?
+- Is the price of a good equal to its value?
+- Start with the simple case: market goods -->
 </section>
-<section id="price-vs-value" class="slide level2">
-<h2>Price vs Value</h2>
+<section id="wtp-curve-vs.-demand-curve" class="slide level2 smaller">
+<h2>WTP Curve vs.&nbsp;Demand Curve</h2>
 <ul>
-<li><p>Price is not necessarily value</p></li>
-<li><p>Economic value is linked to:</p>
+<li>WTP curve is close to the demand curve, but they are not the same:
 <ul>
-<li>Preferences</li>
-<li>Welfare</li>
-<li>Willingness to pay</li>
-</ul></li>
-<li><p>Relevant concept is welfare change</p></li>
-</ul>
-</section>
-<section id="value-of-a-market-good" class="slide level2">
-<h2>Value of a Market Good</h2>
-
-<img data-src="../../../assets/images/teaching/ENCI707/Lecture12/wtp-curve.svg" alt="Step chart of reservation prices r_n for units n = 1 to 10, falling from 10 to 1, with a market price line at about 2.7; area above the price and below the WTP curve is net benefit, area below the price is cost" class="r-stretch"></section>
-<section id="wtp-curve-vs-demand-curve" class="slide level2">
-<h2>WTP Curve vs Demand Curve</h2>
-<ul>
-<li>The WTP curve is close to the demand curve, but they are not the same
-<ul>
-<li>WTP curve: WTP for <em>subsequent</em> units</li>
-<li>Demand curve: WTP for <em>x</em> units (at once)</li>
+<li>The WTP curve reflects WTP for <em>subsequent</em> units</li>
+<li>The demand curve reflects WTP for <span class="math inline">\(x\)</span> units (at once)</li>
 <li>Differences arise from income effects</li>
 </ul></li>
-<li>In practice the WTP curve is difficult to estimate
+<li>In practice, the WTP curve is difficult to estimate:
 <ul>
-<li>The demand curve is used as an approximation → consumer surplus</li>
+<li>The demand curve is used as an approximation</li>
+<li>With the demand curve we measure <strong>consumer surplus</strong></li>
 </ul></li>
 </ul>
-</section></section>
-<section>
-<section id="willingness-to-pay" class="title-slide slide level1 center">
-<h1>Willingness to Pay</h1>
-
 </section>
-<section id="concept" class="slide level2">
-<h2>Concept</h2>
-<p>WTP measures:</p>
-<blockquote>
-<p>The maximum amount an individual would sacrifice to obtain a benefit or avoid a loss.</p>
-</blockquote>
-<p>WTP is the foundation of modern economic valuation.</p>
-</section></section>
-<section>
-<section id="consumer-surplus" class="title-slide slide level1 center">
-<h1>Consumer Surplus</h1>
-
-</section>
-<section id="basic-idea" class="slide level2">
-<h2>Basic Idea</h2>
-<p>Consumer surplus equals:</p>
-<ul>
-<li>What consumers are willing to pay</li>
-<li>Minus what they actually pay</li>
-</ul>
-<p>Graphically:</p>
-<ul>
-<li>Area under the demand curve</li>
-<li>Above market price</li>
-</ul>
-</section>
-<section id="consumer-surplus-1" class="slide level2">
+<section id="consumer-surplus" class="slide level2">
 <h2>Consumer Surplus</h2>
 
-<img data-src="../../../assets/images/teaching/ENCI707/Lecture12/consumer-surplus.svg" alt="Linear demand curve D; at price p1' and quantity x1' the triangle above the price is consumer's surplus (net) and the rectangle below is cost" class="r-stretch"></section>
-<section id="consumer-surplus-an-approximation" class="slide level2">
-<h2>Consumer Surplus – an Approximation</h2>
+<img data-src="../../../assets/images/teaching/ENCI707/Lecture12/wtp_steps.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p>Each unit is bought while its reservation price <span class="math inline">\(r_n \ge p\)</span>; consumer surplus is <span class="math inline">\(\sum_{n:\, r_n \ge p} (r_n - p)\)</span>.</p>
+</section>
+<section id="beyond-consumer-surplus" class="slide level2 smaller">
+<h2>Beyond Consumer Surplus</h2>
 <ul>
-<li>Income effects are not taken into account</li>
-<li>If income effects are present:
+<li>Consumer surplus is an approximation: it ignores income effects</li>
+<li>When income effects are present:</li>
+<li>Marginal utility of income is decreasing
 <ul>
-<li>Marginal utility of income is decreasing (the richer we are, the less we care about money)</li>
+<li>The richer we are, the less we care about money</li>
 <li>We need more money for the same utility increase</li>
 </ul></li>
+<li>What is the true welfare-change measure?</li>
 </ul>
-</section></section>
-<section>
-<section id="welfare-measures" class="title-slide slide level1 center">
-<h1>Welfare Measures</h1>
-
-</section>
-<section id="beyond-consumer-surplus" class="slide level2">
-<h2>Beyond Consumer Surplus</h2>
-<p>When income effects matter:</p>
-<h3 id="compensating-variation-cv">Compensating Variation (CV)</h3>
-<p>Income adjustment needed after a change to restore original utility (measured ex post).</p>
-<h3 id="equivalent-variation-ev">Equivalent Variation (EV)</h3>
-<p>Income adjustment before a change to achieve final utility (measured ex ante).</p>
-</section>
-<section id="cv-and-ev-formally" class="slide level2">
-<h2>CV and EV Formally</h2>
+<h4 id="compensating-variation-cv">Compensating Variation (CV)</h4>
 <ul>
-<li>Compensating variation: <span class="math inline">\(U(p, q, m) = U(p, q', m + CV)\)</span></li>
-<li>Equivalent variation: <span class="math inline">\(U(p, q, m - EV) = U(p, q', m)\)</span></li>
+<li>Income change that restores the <em>original</em> utility level after the change (measured <em>ex post</em>)</li>
 </ul>
-<p>Which one is larger?</p>
+<h4 id="equivalent-variation-ev">Equivalent Variation (EV)</h4>
 <ul>
-<li><span class="math inline">\(q' &gt; q \Rightarrow EV &gt; CV\)</span></li>
-<li><span class="math inline">\(q' &lt; q \Rightarrow EV &lt; CV\)</span></li>
+<li>Income change that gives the utility level reached <em>after</em> the change, applied before it (measured <em>ex ante</em>)</li>
 </ul>
-<p>If there are no income effects: <span class="math inline">\(EV = CV = CS\)</span></p>
-</section></section>
-<section>
-<section id="wtp-and-wta" class="title-slide slide level1 center">
-<h1>WTP and WTA</h1>
+<!-- ## CV, EV, WTP and WTA {.smaller}
 
+For a change in environmental quality from $q$ to $q'$ (prices $p$, income $m$):
+
+$$
+U(p,q,m) = U(p,q',m+CV) \qquad\qquad U(p,q,m-EV) = U(p,q',m)
+$$
+
+Which one is larger? $\quad q' > q \Rightarrow EV > CV, \qquad q' < q \Rightarrow EV < CV$
+
+. . .
+
+:::: {.columns}
+::: {.column width="50%"}
+**Improvement** ($q' > q$)
+
+$$
+\begin{aligned}
+U(p,q,m) &= U(p,q',m-WTP)\\
+U(p,q,m-WTA) &= U(p,q',m)
+\end{aligned}
+$$
+:::
+::: {.column width="50%"}
+**Deterioration** ($q' < q$)
+
+$$
+\begin{aligned}
+U(p,q,m) &= U(p,q',m+WTA)\\
+U(p,q,m-WTP) &= U(p,q',m)
+\end{aligned}
+$$
+:::
+::::
+
+With no income effects: $EV = CV = CS$ -->
 </section>
 <section id="property-rights-matter" class="slide level2">
 <h2>Property Rights Matter</h2>
-<p>Two key measures:</p>
+<ul>
+<li>Two key measures:
 <ul>
 <li>WTP (Willingness to Pay)</li>
 <li>WTA (Willingness to Accept)</li>
-</ul>
-<p>Choice depends on:</p>
+</ul></li>
+<li>Which one applies depends on:
 <ul>
-<li>Initial entitlement</li>
+<li>The initial entitlement</li>
 <li>Property rights</li>
+</ul></li>
 </ul>
 </section>
-<section id="which-is-wtp-and-which-is-wta" class="slide level2">
-<h2>Which Is WTP and Which Is WTA?</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>Improvement, <span class="math inline">\(q' &gt; q\)</span>:</p>
-<p><span class="math display">\[
-\begin{aligned}
-U(p, q, m) &amp;= U(p, q', m - WTP) \\
-U(p, q, m - WTA) &amp;= U(p, q', m)
-\end{aligned}
-\]</span></p>
-</div><div class="column" style="width:50%;">
-<p>Deterioration, <span class="math inline">\(q' &lt; q\)</span>:</p>
-<p><span class="math display">\[
-\begin{aligned}
-U(p, q, m) &amp;= U(p, q', m + WTA) \\
-U(p, q, m - WTP) &amp;= U(p, q', m)
-\end{aligned}
-\]</span></p>
-</div></div>
-</section></section>
-<section>
-<section id="nonmarket-goods" class="title-slide slide level1 center">
-<h1>Nonmarket Goods</h1>
-
-</section>
-<section id="why-special-methods" class="slide level2">
-<h2>Why Special Methods?</h2>
-<p>Examples:</p>
+<section id="summary-price-is-not-value" class="slide level2">
+<h2>Summary: Price Is Not Value</h2>
 <ul>
-<li>Biodiversity</li>
-<li>Water quality</li>
-<li>Recreation sites</li>
-<li>Ecosystem services</li>
+<li>WTP / WTA = welfare-change measure</li>
+<li>WTP or WTA? Depends on property rights</li>
+<li>Market goods: use the demand curve to calculate CS</li>
+<li>Non-market goods (public goods, environmental goods): no demand curve to observe
+<ul>
+<li>Examples: biodiversity, water quality, recreation sites, ecosystem services</li>
+</ul></li>
+<li><strong>Non-market valuation methods</strong></li>
 </ul>
-<p>These goods often lack market prices.</p>
 </section></section>
 <section>
 <section id="valuation-approaches" class="title-slide slide level1 center">
@@ -676,283 +542,304 @@ U(p, q, m - WTP) &amp;= U(p, q', m)
 </section>
 <section id="two-major-families" class="slide level2">
 <h2>Two Major Families</h2>
-<h3 id="revealed-preference-rp">Revealed Preference (RP)</h3>
-<p>Observed behavior in actual (or surrogate) markets.</p>
-<h3 id="stated-preference-sp">Stated Preference (SP)</h3>
-<p>Choices observed in hypothetical settings, usually in a survey.</p>
-<p>The families differ in scope of observed values, flexibility, and reliability.</p>
-</section></section>
-<section>
-<section id="revealed-preference-methods" class="title-slide slide level1 center">
-<h1>Revealed Preference Methods</h1>
 
-</section>
-<section id="examples-1" class="slide level2">
-<h2>Examples</h2>
-<h3 id="productivity-method">Productivity Method</h3>
-<p>Environmental inputs used in production (e.g., water used to produce juice).</p>
-<h3 id="avoided-damage-substitute-cost-methods">Avoided Damage / Substitute Cost Methods</h3>
-<p>Value inferred from prevented losses (e.g., flood protection).</p>
-<h3 id="hedonic-pricing">Hedonic Pricing</h3>
-<p>Property or wage markets.</p>
-<h3 id="travel-cost-method">Travel Cost Method</h3>
-<p>Recreation demand and site valuation.</p>
-</section></section>
-<section>
-<section id="hedonic-pricing-1" class="title-slide slide level1 center">
-<h1>Hedonic Pricing</h1>
-
-</section>
-<section id="applications" class="slide level2">
-<h2>Applications</h2>
-<p>Examples:</p>
+<img data-src="../../../assets/images/teaching/ENCI707/Lecture12/valuation_methods.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
+<section id="revealed-vs.-stated-preference" class="slide level2 smaller">
+<h2>Revealed vs.&nbsp;Stated Preference</h2>
+<h4 id="revealed-preference-rp">Revealed Preference (RP)</h4>
 <ul>
-<li>House prices near lakes</li>
-<li>Air quality impacts on housing</li>
-<li>Labor market risk premiums</li>
-<li>Value of statistical life (airbags, work accidents)</li>
-<li>Ecological attributes of goods (e.g., fair-trade coffee)</li>
+<li>People’s choices are observed in actual market situations</li>
+<li>Can use indirect evidence from surrogate markets</li>
 </ul>
-<p>Approach:</p>
+<h4 id="stated-preference-sp">Stated Preference (SP)</h4>
 <ul>
-<li>Collect market data</li>
-<li>Control for all other attributes of the good</li>
-<li>Statistically isolate environmental effects</li>
+<li>Choices are observed in hypothetical situations</li>
+<li>Usually in a survey</li>
 </ul>
-</section></section>
-<section>
-<section id="travel-cost-method-1" class="title-slide slide level1 center">
-<h1>Travel Cost Method</h1>
-
-</section>
-<section id="applications-1" class="slide level2">
-<h2>Applications</h2>
-<p>Examples:</p>
+<hr style="width:100%; margin:auto;">
 <ul>
-<li>National parks</li>
-<li>Urban parks</li>
-<li>Recreation areas</li>
-</ul>
-<p>Uses:</p>
+<li>Trade-offs between the two:
 <ul>
-<li>Travel expenses</li>
-<li>Travel time</li>
-<li>Visit frequency</li>
-</ul>
-<p>to estimate demand.</p>
-</section></section>
-<section>
-<section id="limitations-of-rp-methods" class="title-slide slide level1 center">
-<h1>Limitations of RP Methods</h1>
-
-</section>
-<section id="challenges" class="slide level2">
-<h2>Challenges</h2>
-<ul>
-<li>Suitable markets may not exist</li>
-<li>Only observed conditions can be valued</li>
-<li>Limited ability to estimate passive-use values</li>
-</ul>
-<p>Often produces lower-bound estimates.</p>
-</section></section>
-<section>
-<section id="stated-preference-methods" class="title-slide slide level1 center">
-<h1>Stated Preference Methods</h1>
-
-</section>
-<section id="main-idea" class="slide level2">
-<h2>Main Idea</h2>
-<p>Respondents evaluate hypothetical scenarios; their choices are <em>contingent</em> on the scenario posed ⇒ contingent valuation (CV).</p>
-<p>Allows valuation of:</p>
-<ul>
-<li>Future policies</li>
-<li>Unobserved outcomes (levels very different from current or past ones)</li>
-<li>Non-use values – SP is the only approach that captures them</li>
-</ul>
-<p>Includes:</p>
-<ul>
-<li>Contingent valuation</li>
-<li>Discrete choice experiments</li>
-</ul>
-</section></section>
-<section>
-<section id="contingent-valuation" class="title-slide slide level1 center">
-<h1>Contingent Valuation</h1>
-
-</section>
-<section id="basic-question" class="slide level2">
-<h2>Basic Question</h2>
-<p>Typical format:</p>
-<blockquote>
-<p>What is the maximum amount you would be willing to pay?</p>
-</blockquote>
-<p>Advantages:</p>
-<ul>
-<li>Simple</li>
-<li>Direct</li>
-</ul>
-<p>Challenges:</p>
-<ul>
-<li>Strategic responses</li>
-<li>Hypothetical bias</li>
-</ul>
-</section></section>
-<section>
-<section id="short-history-of-cv" class="title-slide slide level1 center">
-<h1>Short History of CV</h1>
-
-</section>
-<section id="origins" class="slide level2">
-<h2>Origins</h2>
-<ul>
-<li>First academic application: Davis (1963) – value hunters and tourists placed on a wilderness area
-<ul>
-<li>Knetsch and Davis (1966, Resources for the Future) compared CV with the travel cost method</li>
+<li>Scope of values that can be observed</li>
+<li>Flexibility</li>
+<li>Reliability</li>
 </ul></li>
-<li>Early focus on goods with large passive-use value (species, wilderness)
+</ul>
+</section>
+<section id="revealed-preference-methods" class="slide level2 smaller">
+<h2>Revealed Preference Methods</h2>
+<h4 id="productivity-method">Productivity Method</h4>
+<p>Environmental inputs used in production, e.g., water used to produce juice</p>
+<h4 id="avoided-damage-substitute-cost-method">Avoided Damage / Substitute Cost Method</h4>
+<p>Value inferred from prevented losses, e.g., valuing flood protection</p>
+<h4 id="hedonic-pricing">Hedonic Pricing</h4>
+<p>Property or wage markets</p>
+<h4 id="travel-cost-method">Travel Cost Method</h4>
+<p>Recreation demand and site valuation</p>
+<!-- ## Hedonic Pricing {.smaller}
+
+- When is it used?
+  - Real estate markets
+  - "Ecological" attributes of some goods
+  - Wages influenced by working conditions
+- Approach:
+  - Control for all other attributes of the good
+  - Data → statistical analysis → aggregated value
+- Examples: airbags and the VSL, workplace accidents and the VSL, houses near a lake, fair-trade coffee
+
+## Travel Cost Method {.smaller}
+
+- When is it used?
+  - Consumers spend money to get somewhere
+  - Environmental attributes, recreation
+- Travel data → valuation:
+  - Number of visitors
+  - Location (distance)
+    - Travel cost
+    - Travel time
+- Examples: national parks, urban parks -->
+</section>
+<section id="limitations-of-rp-methods" class="slide level2">
+<h2>Limitations of RP Methods</h2>
 <ul>
-<li>Randall, Ives and Eastman (1974) – visibility changes from air pollution in the U.S. southwest</li>
+<li>Suitable markets often do not exist</li>
+<li>Only levels observed in markets can be valued</li>
+<li>Little ability to estimate passive-use values</li>
+</ul>
+<p>They often produce <strong>lower-bound</strong> estimates</p>
+</section>
+<section id="stated-preference-methods" class="slide level2 smaller">
+<h2>Stated Preference Methods</h2>
+<ul>
+<li><p>Consumers’ choices are <em>contingent</em> on scenarios posed in a survey → <strong>contingent valuation (CV)</strong></p></li>
+<li><p>Many ways to elicit preference information in a CV study:</p>
+<ul>
+<li>“What is your maximum willingness to pay for …?”</li>
+<li>Discrete choice experiments (DCE)</li>
 </ul></li>
-<li>Water Resources Council (1979): CV one of three acceptable methods for evaluating federal projects</li>
-<li>U.S. EPA research program developing CV (1970s–1980s)</li>
+<li><p>SP methods can examine provision levels that differ substantially from anything observed now or in the past</p></li>
+<li><p>SP is <strong>the only approach</strong> that can capture the passive-use component of economic value</p></li>
 </ul>
 </section></section>
 <section>
-<section id="early-elicitation-formats" class="title-slide slide level1 center">
-<h1>Early Elicitation Formats</h1>
+<section id="short-history-of-contingent-valuation" class="title-slide slide level1 center">
+<h1>Short History of Contingent Valuation</h1>
+<!-- ## Timeline
 
+![](../../../assets/images/teaching/ENCI707/Lecture12/cv_timeline.svg){fig-align="center" width="100%"} -->
 </section>
-<section id="historical-approaches" class="slide level2">
-<h2>Historical Approaches</h2>
-<h3 id="bidding-game">Bidding Game</h3>
-<p>Iterative price adjustments: start from an initial amount; increase if yes, decrease if no; continue until the answer changes.</p>
-<h3 id="open-ended-questions">Open-Ended Questions</h3>
-<p>Direct WTP response.</p>
-<h3 id="payment-cards">Payment Cards</h3>
-<p>Respondents select from an array of offered values.</p>
-</section></section>
-<section>
-<section id="problems-with-early-methods" class="title-slide slide level1 center">
-<h1>Problems with Early Methods</h1>
-
-</section>
-<section id="common-issues" class="slide level2">
-<h2>Common Issues</h2>
+<section id="early-development" class="slide level2 smaller">
+<h2>Early Development</h2>
 <ul>
-<li>Starting point bias</li>
+<li><strong>Davis (1963):</strong> first academic CV study, using surveys to value a wilderness area to hunters and tourists</li>
+<li><strong>Knetsch and Davis (1966)</strong>, Resources for the Future: compared CV with the travel cost method (suggested earlier by Hotelling)</li>
+<li>Early studies focused on goods with a high passive-use component (species protection, wilderness areas)
+<ul>
+<li><strong>Randall, Ives and Eastman (1974):</strong> visibility changes from air pollution in the southwestern U.S.</li>
+</ul></li>
+<li><strong>Water Resources Council (1979):</strong> <em>Principles and Standards for Water and Related Land Resources Planning</em> lists CV as one of three acceptable methods for evaluating federal projects</li>
+<li><strong>U.S. EPA:</strong> major research programme developing CV (1970s–1980s)</li>
+</ul>
+</section>
+<section id="early-elicitation-formats" class="slide level2 smaller">
+<h2>Early Elicitation Formats</h2>
+<p>After describing the good and the scenario for providing it, WTP is elicited</p>
+<h4 id="bidding-game">Bidding Game</h4>
+<ul>
+<li>Start from an initial amount and ask whether the respondent would pay it</li>
+<li>Yes → increase the amount; no → decrease it</li>
+<li>Continue until the answer changes</li>
+</ul>
+<h4 id="open-ended-questions">Open-Ended Questions</h4>
+<p>Direct question: “What is your maximum WTP?”</p>
+<h4 id="payment-cards">Payment Cards</h4>
+<ul>
+<li>An array of amounts on a card</li>
+<li>Respondents pick the amount that best represents their WTP</li>
+</ul>
+</section>
+<section id="problems-with-early-methods" class="slide level2 smaller">
+<h2>Problems with Early Methods</h2>
+<ul>
+<li>Starting-point bias</li>
 <li>Nonresponse</li>
 <li>WTP/WTA disparity</li>
-<li>Incentive compatibility concerns</li>
-<li>Hypothetical bias</li>
-</ul>
-<p>Response: the single binary discrete choice question – different bids randomly assigned to respondents, mirroring markets with posted prices.</p>
-</section></section>
-<section>
-<section id="the-exxon-valdez-turning-point" class="title-slide slide level1 center">
-<h1>The Exxon Valdez Turning Point</h1>
-
-</section>
-<section id="exxon-valdez-1989" class="slide level2">
-<h2>Exxon Valdez (1989)</h2>
-
-<img data-src="../../../assets/images/teaching/ENCI707/Lecture12/exxon-valdez.png" alt="Photos of the Exxon Valdez oil spill: aerial views of the tanker and oil slick, oiled rocks, an oiled seabird, and cleanup crews on the shore" class="r-stretch"></section>
-<section id="why-it-matters" class="slide level2">
-<h2>Why It Matters</h2>
-<p>The oil spill generated:</p>
+<li>Need for <strong>incentive compatibility:</strong> a <em>single binary discrete choice question</em>
 <ul>
-<li>Large environmental damages – spectacular scale, but no one directly suffered</li>
-<li>Legal disputes over valuation (estimated damages $3–15 bln; CV study by Carson et al., 1992)</li>
-<li>Major scrutiny of contingent valuation methods (Exxon-sponsored symposia; Hausman, 1993)</li>
+<li>Different bids randomly assigned to respondents</li>
+<li>Mirrors choice behaviour in markets with posted prices</li>
+</ul></li>
+<li>Hypothetical bias</li>
+<li>Validity of some studies’ results</li>
 </ul>
-</section></section>
-<section>
-<section id="noaa-panel-recommendations" class="title-slide slide level1 center">
-<h1>NOAA Panel Recommendations</h1>
-
 </section>
-<section id="arrow-solow-panel" class="slide level2">
-<h2>Arrow-Solow Panel</h2>
-<p>Convened by the U.S. government (Arrow et al., 1993):</p>
+<section id="the-exxon-valdez-turning-point" class="slide level2 smaller">
+<h2>The Exxon Valdez Turning Point</h2>
+<ul>
+<li>March 1989 oil spill in Prince William Sound, Alaska: spectacular in scale, but no one directly suffered market losses</li>
+<li>Environmental organizations sued Exxon</li>
+<li>Estimated environmental damages: <strong>$3–15 billion</strong>
+<ul>
+<li>CV study for the damage assessment (Carson et al., 1992)</li>
+</ul></li>
+<li>Exxon sponsored symposia highlighting problems with CV (Hausman, 1993)</li>
+<li>The U.S. government convened a panel co-chaired by Nobel laureates <strong>Kenneth Arrow and Robert Solow</strong> to assess CV for measuring passive-use values (Arrow et al., 1993)</li>
+</ul>
 <blockquote>
 <p>“CVM studies can produce estimates reliable enough to be the starting point of a judicial or administrative determination of natural resource damages, including lost passive values.”</p>
 </blockquote>
-<p>Recommendations:</p>
+</section>
+<section id="noaa-arrowsolow-panel-recommendations" class="slide level2 smaller">
+<h2>NOAA Arrow–Solow Panel Recommendations</h2>
 <ul>
-<li>Use realistic scenarios</li>
-<li>Use referendum-style questions</li>
-<li>Use single binary choice formats</li>
-<li>Emphasize incentive compatibility</li>
+<li>Use <em>credible</em> scenarios</li>
+<li>Use a single binary discrete choice question</li>
+<li>Frame it as a vote (referendum)</li>
+<li>Consequences:
+<ul>
+<li>Arrow et al.&nbsp;(1993) became the standard reference for years</li>
+<li>The number of CV studies grew exponentially</li>
+<li>To extract more information, payment cards and other formats were still developed and used
+<ul>
+<li>Multiple choice sets or multinomial choice questions</li>
+<li>e.g., double-bounded binary (dichotomous) choice</li>
+</ul></li>
+</ul></li>
 </ul>
-<p>These recommendations became highly influential; the number of CV studies grew exponentially, and richer formats (e.g., double-bounded dichotomous choice) kept developing.</p>
-</section></section>
-<section>
-<section id="emergence-of-choice-experiments" class="title-slide slide level1 center">
-<h1>Emergence of Choice Experiments</h1>
+</section>
+<section id="emergence-of-choice-experiments" class="slide level2 smaller">
+<h2>Emergence of Choice Experiments</h2>
+<h4 id="adamowicz-louviere-williams-1994">Adamowicz, Louviere &amp; Williams (1994)</h4>
+<ul>
+<li>Presented choice situations in tables</li>
+<li>Collected data on 16 choice sets with 3 alternatives each</li>
+<li>Called it a “choice experiment”</li>
+</ul>
+<h4 id="hanley-wright-adamowicz-1998">Hanley, Wright &amp; Adamowicz (1998)</h4>
+<ul>
+<li>Summarized the fast-growing number of DCE studies</li>
+<li>Explicitly valued programme attributes</li>
+</ul>
+</section>
+<section id="example-choice-card" class="slide level2 smaller">
+<h2>Example Choice Card</h2>
+<p><em>Adapted from Adamowicz, Louviere &amp; Williams (1994): “Suppose last August you could have chosen only from the recreational opportunities below.”</em></p>
+<div style="font-size: 60%;">
+<table class="caption-top">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th><strong>A. Standing water</strong></th>
+<th><strong>B. Running water</strong></th>
+<th><strong>C. Non-water</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Water feature</td>
+<td>Natural lake</td>
+<td>Stream</td>
+<td>Any other non-water recreation, or stay at home</td>
+</tr>
+<tr class="even">
+<td>Terrain</td>
+<td>Mountain</td>
+<td>Foothills</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Driving distance</td>
+<td>50 km</td>
+<td>50 km</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Fish types</td>
+<td>Pickerel, pike &amp; perch</td>
+<td>Rainbow trout &amp; whitefish</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Fish size</td>
+<td>Large</td>
+<td>Large</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Fishing success</td>
+<td>1 fish / 35 min</td>
+<td>1 fish / 4 hours</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Camping</td>
+<td>Designated campsite</td>
+<td>Designated campsite</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Water quality</td>
+<td>Good</td>
+<td>Good</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Boating / swimming / beach</td>
+<td>None / Yes / No</td>
+<td>None / No / Yes</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Day-use fee</td>
+<td>None</td>
+<td>$6</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Which would you most likely have chosen? ☐ A ☐ B ☐ C</p>
+</div>
+<!-- ## Why DCEs Became Popular {.smaller}
 
-</section>
-<section id="adamowicz-louviere-williams-1994" class="slide level2">
-<h2>Adamowicz, Louviere &amp; Williams (1994)</h2>
-<p>Respondents choose among alternatives characterized by:</p>
-<ul>
-<li>Multiple attributes</li>
-<li>Different levels</li>
-</ul>
-<p>(16 choice sets with 3 alternatives, presented in tables)</p>
-<p>Benefits:</p>
-<ul>
-<li>Richer preference information</li>
-<li>Explicit valuation of attributes</li>
-</ul>
-<p>Hanley, Wright &amp; Adamowicz (1998) summarized the rapidly growing DCE literature.</p>
-</section></section>
-<section>
-<section id="why-dces-became-popular" class="title-slide slide level1 center">
-<h1>Why DCEs Became Popular</h1>
+- The literature was confused at first:
+  - 2 alternatives = "CV"
+  - More alternatives or choice situations, usually in a table = "choice experiments"
 
-</section>
-<section id="advantages" class="slide level2">
-<h2>Advantages</h2>
-<ul>
-<li>More information per respondent</li>
-<li>Attribute-level valuation</li>
-<li>Flexible policy analysis</li>
-<li>Closer connection to random utility theory</li>
-<li>Thought to avoid some problems associated with “CV” (and new methods were easier to publish)</li>
-</ul>
-<p>Confusion in the literature: 2 alternatives = “CV”; more alternatives or choice situations in a table = “choice experiments”.</p>
-</section></section>
-<section>
-<section id="terminology" class="title-slide slide level1 center">
-<h1>Terminology</h1>
+- Choice experiments were attractive because they were:
+  - Thought to avoid some problems associated with "CV"
+  - New and more advanced, so easier to publish
+  - Responsive to demand for valuing changes in attributes
+  - A source of more preference information per respondent
+  - Closely connected to random utility theory
 
+## Terminology
+
+- Many labels for closely related approaches:
+  - Choice experiments
+  - Stated choice
+  - Choice modelling
+  - Conjoint choice experiments
+  - Contingent rating
+  - Conjoint analysis
+- Today (Carson and Louviere, 2011), a DCE is seen as **one more elicitation format within the CV method**:
+
+### Discrete Choice Experiments (DCE) -->
 </section>
-<section id="related-terms" class="slide level2">
-<h2>Related Terms</h2>
-<p>Now (Carson and Louviere, 2011), DCE is considered another elicitation format within the CV method.</p>
-<p><span class="math display">\[
-\left.
-\begin{array}{l}
-\text{Choice experiments} \\
-\text{Stated choice} \\
-\text{Choice modelling} \\
-\text{Conjoint choice experiments} \\
-\text{Contingent rating} \\
-\text{Conjoint analysis}
-\end{array}
-\right\}
-\;\longrightarrow\;
-\text{Discrete choice experiments (DCE)}
-\]</span></p>
-</section>
-<section id="summary" class="slide level2">
+<section id="summary" class="slide level2 smaller">
 <h2>Summary</h2>
 <ul>
-<li>Economic valuation supports environmental decision making.</li>
-<li>Value is based on welfare and preferences.</li>
-<li>Total economic value includes use and non-use components.</li>
-<li>Many environmental goods lack market prices.</li>
-<li>RP and SP methods provide complementary approaches.</li>
-<li>DCEs emerged as a powerful stated-preference method.</li>
+<li>Economic valuation supports environmental decision making</li>
+<li>Value is based on welfare and preferences; price is not value</li>
+<li>Total economic value includes use and non-use components</li>
+<li>Many environmental goods lack market prices</li>
+<li>RP and SP methods are complementary; only SP captures passive-use value</li>
+<li>After Exxon Valdez and the NOAA panel, DCEs emerged as a powerful stated-preference format</li>
 </ul>
 
 
@@ -994,7 +881,7 @@ U(p, q, m - WTP) &amp;= U(p, q', m)
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
 'jumpToSlide': true,
-'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"\u003ci class=\"fas fa-gear\">\u003c/i>","content":"\u003cul class=\"slide-menu-items\">\n\u003cli class=\"slide-tool-item active\" data-item=\"0\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\">\u003ckbd>f\u003c/kbd> Fullscreen\u003c/a>\u003c/li>\n\u003cli class=\"slide-tool-item\" data-item=\"1\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\">\u003ckbd>s\u003c/kbd> Speaker View\u003c/a>\u003c/li>\n\u003cli class=\"slide-tool-item\" data-item=\"2\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\">\u003ckbd>o\u003c/kbd> Slide Overview\u003c/a>\u003c/li>\n\u003cli class=\"slide-tool-item\" data-item=\"3\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\">\u003ckbd>e\u003c/kbd> PDF Export Mode\u003c/a>\u003c/li>\n\u003cli class=\"slide-tool-item\" data-item=\"4\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\">\u003ckbd>r\u003c/kbd> Scroll View Mode\u003c/a>\u003c/li>\n\u003cli class=\"slide-tool-item\" data-item=\"5\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\">\u003ckbd>b\u003c/kbd> Toggle Chalkboard\u003c/a>\u003c/li>\n\u003cli class=\"slide-tool-item\" data-item=\"6\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\">\u003ckbd>c\u003c/kbd> Toggle Notes Canvas\u003c/a>\u003c/li>\n\u003cli class=\"slide-tool-item\" data-item=\"7\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\">\u003ckbd>d\u003c/kbd> Download Drawings\u003c/a>\u003c/li>\n\u003cli class=\"slide-tool-item\" data-item=\"8\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\">\u003ckbd>?\u003c/kbd> Keyboard Help\u003c/a>\u003c/li>\n\u003c/ul>"}],"openButton":true,"openButtonLabel":"Slide menu"},
 'chalkboard': {"buttons":true},
 'smaller': false,
  
@@ -1149,7 +1036,7 @@ U(p, q, m - WTP) &amp;= U(p, q', m)
         margin: 0.1,
 
         math: {
-          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
@@ -1176,190 +1063,236 @@ U(p, q, m - WTP) &amp;= U(p, q', m)
       });
     </script>
     <script id="quarto-html-after-body" type="application/javascript">
-    window.document.addEventListener("DOMContentLoaded", function (event) {
-      const toggleBodyColorMode = (bsSheetEl) => {
-        const mode = bsSheetEl.getAttribute("data-mode");
-        const bodyEl = window.document.querySelector("body");
-        if (mode === "dark") {
-          bodyEl.classList.add("quarto-dark");
-          bodyEl.classList.remove("quarto-light");
-        } else {
-          bodyEl.classList.add("quarto-light");
-          bodyEl.classList.remove("quarto-dark");
-        }
-      }
-      const toggleBodyColorPrimary = () => {
-        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-        if (bsSheetEl) {
-          toggleBodyColorMode(bsSheetEl);
-        }
-      }
-      toggleBodyColorPrimary();  
-      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
-      tabsets.forEach(function(tabset) {
-        const tabby = new Tabby('#' + tabset.id);
-      });
-      const isCodeAnnotation = (el) => {
-        for (const clz of el.classList) {
-          if (clz.startsWith('code-annotation-')) {                     
-            return true;
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
           }
+          return false;
         }
-        return false;
-      }
-      const onCopySuccess = function(e) {
-        // button target
-        const button = e.trigger;
-        // don't keep focus
-        button.blur();
-        // flash "checked"
-        button.classList.add('code-copy-button-checked');
-        var currentTitle = button.getAttribute("title");
-        button.setAttribute("title", "Copied!");
-        let tooltip;
-        if (window.bootstrap) {
-          button.setAttribute("data-bs-toggle", "tooltip");
-          button.setAttribute("data-bs-placement", "left");
-          button.setAttribute("data-bs-title", "Copied!");
-          tooltip = new bootstrap.Tooltip(button, 
-            { trigger: "manual", 
-              customClass: "code-copy-button-tooltip",
-              offset: [0, -8]});
-          tooltip.show();    
-        }
-        setTimeout(function() {
-          if (tooltip) {
-            tooltip.hide();
-            button.removeAttribute("data-bs-title");
-            button.removeAttribute("data-bs-toggle");
-            button.removeAttribute("data-bs-placement");
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
           }
-          button.setAttribute("title", currentTitle);
-          button.classList.remove('code-copy-button-checked');
-        }, 1000);
-        // clear code selection
-        e.clearSelection();
-      }
-      const getTextToCopy = function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
           for (const childEl of codeEl.children) {
             if (isCodeAnnotation(childEl)) {
               childEl.remove();
             }
           }
           return codeEl.innerText;
-      }
-      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-        text: getTextToCopy
-      });
-      clipboard.on('success', onCopySuccess);
-      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-          text: getTextToCopy,
-          container: window.document.getElementById('quarto-embedded-source-code-modal')
-        });
-        clipboardModal.on('success', onCopySuccess);
-      }
-        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-        var mailtoRegex = new RegExp(/^mailto:/);
-          var filterRegex = new RegExp("https:\/\/hawkins-tech-lab\.github\.io\/");
-        var isInternal = (href) => {
-            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
         }
-        // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-        for (var i=0; i<links.length; i++) {
-          const link = links[i];
-          if (!isInternal(link.href)) {
-            // undo the damage that might have been done by quarto-nav.js in the case of
-            // links that we want to consider external
-            if (link.dataset.originalHref !== undefined) {
-              link.href = link.dataset.originalHref;
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp("https:\/\/hawkins-tech-lab\.github\.io\/");
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+          window.quartoDecorateExternalLinks = function (root) {
+         var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+              if (!link.classList.contains('no-external-icon')) {
+              }
             }
           }
-        }
-      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-        const config = {
-          allowHTML: true,
-          maxWidth: 500,
-          delay: 100,
-          arrow: false,
-          appendTo: function(el) {
-              return el.closest('section.slide') || el.parentElement;
-          },
-          interactive: true,
-          interactiveBorder: 10,
-          theme: 'light-border',
-          placement: 'bottom-start',
-        };
-        if (contentFn) {
-          config.content = contentFn;
-        }
-        if (onTriggerFn) {
-          config.onTrigger = onTriggerFn;
-        }
-        if (onUntriggerFn) {
-          config.onUntrigger = onUntriggerFn;
-        }
-          config['offset'] = [0,0];
-          config['maxWidth'] = 700;
-        window.tippy(el, config); 
-      }
-      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-      for (var i=0; i<noterefs.length; i++) {
-        const ref = noterefs[i];
-        tippyHover(ref, function() {
-          // use id or data attribute instead here
-          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-          try { href = new URL(href).hash; } catch {}
-          const id = href.replace(/^#\/?/, "");
-          const note = window.document.getElementById(id);
-          if (note) {
-            return note.innerHTML;
-          } else {
-            return "";
-          }
-        });
-      }
-      const findCites = (el) => {
-        const parentEl = el.parentElement;
-        if (parentEl) {
-          const cites = parentEl.dataset.cites;
-          if (cites) {
-            return {
-              el,
-              cites: cites.split(' ')
+          };
+          window.quartoDecorateExternalLinks(window.document);
+        // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+        // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+        const hideOnEscAndFocusOut = {
+          name: 'hideOnEscAndFocusOut',
+          defaultValue: true,
+          fn(instance) {
+            const dismiss = () => {
+              // A show scheduled by the trigger delay would otherwise reopen it
+              instance.clearDelayTimeouts();
+              instance.hide();
             };
-          } else {
-            return findCites(el.parentElement)
-          }
-        } else {
-          return undefined;
-        }
-      };
-      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-      for (var i=0; i<bibliorefs.length; i++) {
-        const ref = bibliorefs[i];
-        const citeInfo = findCites(ref);
-        if (citeInfo) {
-          tippyHover(citeInfo.el, function() {
-            var popup = window.document.createElement('div');
-            citeInfo.cites.forEach(function(cite) {
-              var citeDiv = window.document.createElement('div');
-              citeDiv.classList.add('hanging-indent');
-              citeDiv.classList.add('csl-entry');
-              var biblioDiv = window.document.getElementById('ref-' + cite);
-              if (biblioDiv) {
-                citeDiv.innerHTML = biblioDiv.innerHTML;
+            const onKeyDown = (event) => {
+              if (event.key !== 'Escape') {
+                return;
               }
-              popup.appendChild(citeDiv);
-            });
-            return popup.innerHTML;
+              // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+              // except an open reveal.js slide menu, which Esc should close too.
+              // The menu handles keys only when its keyboard option is on.
+              const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+                window.Reveal.getConfig().menu?.keyboard !== false;
+              if (!menuHandlesEsc) {
+                event.stopPropagation();
+              }
+              if (instance.popper.contains(window.document.activeElement)) {
+                // Disabled while refocusing so the focus trigger does not reopen it
+                instance.disable();
+                instance.reference.focus();
+                instance.enable();
+              }
+              dismiss();
+            };
+            const onFocusOut = (event) => {
+              const target = event.relatedTarget;
+              if (target && !instance.reference.contains(target) &&
+                  !instance.popper.contains(target)) {
+                dismiss();
+              }
+            };
+            // On the trigger too: a click trigger (code-annotations: select) has no
+            // blur handling. Attached for the instance's lifetime so leaving the
+            // trigger also cancels a show still pending on the trigger delay.
+            instance.reference.addEventListener('focusout', onFocusOut);
+            return {
+              onShow() {
+                window.document.addEventListener('keydown', onKeyDown, true);
+                instance.popper.addEventListener('focusout', onFocusOut);
+              },
+              onHide() {
+                window.document.removeEventListener('keydown', onKeyDown, true);
+                instance.popper.removeEventListener('focusout', onFocusOut);
+              },
+              onDestroy() {
+                instance.reference.removeEventListener('focusout', onFocusOut);
+              },
+            };
+          },
+        };
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+            plugins: [hideOnEscAndFocusOut],
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
           });
         }
-      }
-    });
-    </script>
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
     
 
 </body></html>
