@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="650"
+   height="568"
+   viewBox="0 0 650 568"
+   version="1.1"
+   id="svg7"
+   sodipodi:docname="human_environment_welfare.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.1957143"
+     inkscape:cx="296.89367"
+     inkscape:cy="181.89964"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-5"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg7" />
+  <defs
+     id="defs1">
+    <marker
+       id="arrowhead"
+       markerWidth="3"
+       markerHeight="3"
+       refX="2.5"
+       refY="1.5"
+       orient="auto"
+       markerUnits="strokeWidth">
+      <path
+         d="M 0,0 3,1.5 0,3 Z"
+         fill="#d9d9d9"
+         id="path1" />
+    </marker>
+  </defs>
+  <!-- Top arrow -->
+  <path
+     d="m 195.91929,76.88341 a 250,250 0 0 1 300,0"
+     fill="none"
+     stroke="#d9d9d9"
+     stroke-width="28"
+     marker-end="url(#arrowhead)"
+     id="path2" />
+  <!-- Right arrow -->
+  <path
+     d="m 565.91929,206.88341 c 31.30302,73.52954 25.01191,155.62452 -13.04513,222.13963 -14.48826,25.32221 -33.58041,48.38641 -56.95487,67.86037"
+     fill="none"
+     stroke="#d9d9d9"
+     stroke-width="28"
+     marker-end="url(#arrowhead)"
+     id="path3"
+     sodipodi:nodetypes="csc" />
+  <!-- Left arrow -->
+  <path
+     d="m 145.91929,496.88341 a 250,250 0 0 1 -70.000001,-290"
+     fill="none"
+     stroke="#d9d9d9"
+     stroke-width="28"
+     marker-end="url(#arrowhead)"
+     id="path4" />
+  <!-- Human activity -->
+  <text
+     x="136.02019"
+     y="142.10202"
+     font-family="Arial, Helvetica, sans-serif"
+     font-size="30px"
+     font-weight="600"
+     text-anchor="middle"
+     id="text5"><tspan
+       x="136.02019"
+       dy="0"
+       id="tspan4">Human</tspan><tspan
+       x="136.02019"
+       dy="36"
+       id="tspan5">activity</tspan></text>
+  <!-- Environment -->
+  <text
+     x="551.62"
+     y="165.21861"
+     font-family="Arial, Helvetica, sans-serif"
+     font-size="30px"
+     font-weight="600"
+     text-anchor="middle"
+     id="text6">Environment</text>
+  <!-- Welfare -->
+  <text
+     x="322.26459"
+     y="557.31506"
+     font-family="Arial, Helvetica, sans-serif"
+     font-size="30px"
+     font-weight="600"
+     text-anchor="middle"
+     id="text7">Welfare</text>
+</svg>
