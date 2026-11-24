@@ -282,7 +282,7 @@ $$
 
 With no income effects: $EV = CV = CS$ -->
 
-## Property Rights Matter
+## Property Rights Matter {.smaller}
 
 - Two key measures:
   - WTP (Willingness to Pay)
@@ -290,6 +290,9 @@ With no income effects: $EV = CV = CS$ -->
 - Which one applies depends on:
   - The initial entitlement
   - Property rights
+- Example: Imagine a community located along a river.
+  - If residents are considered to have a **property right to clean water**, a polluter must compensate them for degradation. The relevant measure is **WTA**.
+  - If the river is already polluted and **residents seek restoration**, the relevant measure is **WTP** for improvement.
 
 ## Summary: Price Is Not Value
 
