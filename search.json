@@ -237,14 +237,22 @@
     "href": "teaching/ENCI707/weeks/week-16.html",
     "title": "Week 16",
     "section": "",
-    "text": "📝 Final term paper due Dec. 15 by 11:59 PM on D2L.\n\n\nBack to course schedule ⏎"
+    "text": "📝 Final term paper due Dec. 15 by 11:59 PM on D2L.\n\n\nBack to course schedule ⏎",
+    "crumbs": [
+      "Weekly Materials",
+      "Week 16"
+    ]
   },
   {
     "objectID": "teaching/ENCI707/weeks/week-16.html#deliver",
     "href": "teaching/ENCI707/weeks/week-16.html#deliver",
     "title": "Week 16",
     "section": "",
-    "text": "📝 Final term paper due Dec. 15 by 11:59 PM on D2L.\n\n\nBack to course schedule ⏎"
+    "text": "📝 Final term paper due Dec. 15 by 11:59 PM on D2L.\n\n\nBack to course schedule ⏎",
+    "crumbs": [
+      "Weekly Materials",
+      "Week 16"
+    ]
   },
   {
     "objectID": "teaching/ENCI707/weeks/week-13.html",
@@ -1406,7 +1414,7 @@
     "href": "teaching/ENCI707/slides/lec-12.html#property-rights-matter",
     "title": "Lecture 12 - Non-Market Valuation",
     "section": "Property Rights Matter",
-    "text": "Property Rights Matter\n\nTwo key measures:\n\nWTP (Willingness to Pay)\nWTA (Willingness to Accept)\n\nWhich one applies depends on:\n\nThe initial entitlement\nProperty rights\n\nExample: Imagine a community located along a river.\n\nIf residents are considered to have a property right to clean water, a polluter must compensate them for degradation. The relevant measure is WTA.\nIf the river is already polluted and residents seek restoration, the relevant measure is WTP for improvement."
+    "text": "Property Rights Matter\n\nTwo key measures:\n\nWTP (Willingness to Pay)\nWTA (Willingness to Accept)\n\nWhich one applies depends on:\n\nThe initial entitlement\nProperty rights\n\nExample: Imagine a community located along a river\n\nIf residents are considered to have a property right to clean water, a polluter must compensate them for degradation. The relevant measure is WTA\nIf the river is already polluted and residents seek restoration, the relevant measure is WTP for improvement"
   },
   {
     "objectID": "teaching/ENCI707/slides/lec-12.html#summary-price-is-not-value",
@@ -8024,7 +8032,7 @@
     "href": "teaching/ENCI707/weeks/week-14.html#participate",
     "title": "Week 14",
     "section": "Participate",
-    "text": "Participate\n🖥️ Lecture 13 - AI Extensions",
+    "text": "Participate\nDiscuss Feng et al. (2024) TR-C paper",
     "crumbs": [
       "Weekly Materials",
       "Week 14"
